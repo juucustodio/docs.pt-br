@@ -164,7 +164,7 @@ Este artigo organiza os membros de API afetados por namespace.
 | - | - |
 | <xref:System.Net.WebSockets.WebSocket.RegisterPrefixes?displayProperty=nameWithType> | Tudo |
 
-## <a name="systemreflection"></a>{1&gt;System.Reflection&lt;1}
+## <a name="systemreflection"></a>System.Reflection
 
 | Membro | Plataformas que lançam |
 | - | - |
@@ -176,13 +176,13 @@ Este artigo organiza os membros de API afetados por namespace.
 | <xref:System.Reflection.StrongNameKeyPair.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | Todos |
 | <xref:System.Reflection.StrongNameKeyPair.PublicKey?displayProperty=nameWithType> | Todos |
 
-## <a name="systemruntimecompilerservices"></a>{1&gt;{2&gt;System.Runtime.CompilerServices&lt;2}&lt;1}
+## <a name="systemruntimecompilerservices"></a>System.Runtime.CompilerServices
 
 | Membro | Plataformas que lançam |
 | - | - |
 | <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator?displayProperty=nameWithType> | Tudo |
 
-## <a name="systemruntimeinteropservices"></a>{1&gt;{2&gt;System.Runtime.InteropServices&lt;2}&lt;1}
+## <a name="systemruntimeinteropservices"></a>System.Runtime.InteropServices
 
 | Membro | Plataformas que lançam |
 | - | - |

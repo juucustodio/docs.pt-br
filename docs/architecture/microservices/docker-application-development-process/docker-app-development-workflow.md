@@ -2,12 +2,12 @@
 title: Fluxo de trabalho de desenvolvimento para aplicativos do Docker
 description: Entenda os detalhes do fluxo de trabalho para o desenvolvimento de aplicativos baseados no Docker. Comece o passo a passo e obtenha alguns detalhes para otimizar Dockerfiles e concluir com o fluxo de trabalho simplificado disponível ao usar o Visual Studio.
 ms.date: 01/30/2020
-ms.openlocfilehash: 421b1aaf3965bd3aa80c6e09da963404d2a46c09
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: 98dc931e10d5e1a3265ebd6f4e1919a6416e9b27
+ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359069"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90022929"
 ---
 # <a name="development-workflow-for-docker-apps"></a>Fluxo de trabalho de desenvolvimento para aplicativos do Docker
 
@@ -252,7 +252,7 @@ Ele seria igual para cada serviço, ele poderia copiar toda a solução e criar 
 
 1. o processo de cópia seria executado somente na primeira vez (e durante a recriação, se algum arquivo fosse alterado) e usaria o cache para todos os outros serviços e
 
-2. como a imagem maior ocorre em um estágio intermediário, ela não afeta o tamanho da imagem final.
+2. Como a imagem maior ocorre em um estágio intermediário, ela não afeta o tamanho final da imagem.
 
 A próxima otimização significativa envolve o comando `restore` executado na linha 17, que também é diferente para cada serviço do eShopOnContainers. Se você alterar essa linha para apenas:
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 4c8e597310ec0b02edbf993709f931a6093b6285
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 11bb23232dfedc9fd62cac46493c3fa5d195721b
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621765"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496883"
 ---
 ### <a name="coerceisselectionboxhighlighted"></a>CoerceIsSelectionBoxHighlighted
 
@@ -16,12 +16,20 @@ Determinadas sequências de ações que envolvem um <xref:System.Windows.Control
 
 Se possível, atualize para o .NET Framework 4.6.2.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.6|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Windows.Controls.ComboBox.IsSelectionBoxHighlighted?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.ComboBox.IsSelectionBoxHighlighted?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Windows.Controls.ComboBox.IsSelectionBoxHighlighted`
+
+-->

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c20d5fb3d700ba7649e423a79e4598b327c50a00
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 018c99d60dc8926cae2682dc9c035e25fba711e5
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622219"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496516"
 ---
 ### <a name="incorrect-code-generation-when-passing-and-comparing-uint16-values"></a>Geração de código incorreto ao passar e comparar valores UInt16
 
@@ -16,8 +16,20 @@ Em virtude das alterações realizadas no .NET Framework 4.7, em alguns casos, o
 
 Se houver problemas na comparação dos valores sem sinal de 16 bits no .NET Framework 4.7, atualize para o .NET Framework 4.7.1.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.7|
-|Type|Runtime|
+|Tipo|Runtime|
+
+#### <a name="affected-apis"></a>APIs afetadas
+
+Não detectável via análise de API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

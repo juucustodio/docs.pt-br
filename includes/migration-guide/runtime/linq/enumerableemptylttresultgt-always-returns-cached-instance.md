@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9131c91b34f4c24653dea37ea39af6be6e072287
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 05f60978f5380c406c43aa98ded0c812b1d50694
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619801"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497942"
 ---
 ### <a name="enumerableemptylttresultgt-always-returns-cached-instance"></a>Enumerable.Empty&lt;TResult&gt; sempre retorna instância em cache
 
@@ -16,12 +16,20 @@ Começando com o .NET Framework 4.5, <xref:System.Linq.Enumerable.Empty%60%601> 
 
 Como o comportamento anterior não era determinístico, é improvável que o código dependesse dele. No entanto, na improbabilidade de que enumeráveis vazios estivessem sendo comparados e, às vezes, esperados que fosse diferentes, matrizes vazias explícitas deviam ser criadas (<code>new T[0]</code>) em vez de usar <xref:System.Linq.Enumerable.Empty%60%601>.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Linq.Enumerable.Empty%60%601?displayProperty=nameWithType></li></ul>|
+- <xref:System.Linq.Enumerable.Empty%60%601?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- ``M:System.Linq.Enumerable.Empty``1``
+
+-->

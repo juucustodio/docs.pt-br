@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 87f9cc03f334233ef286abd11e6f5ff82d7988c2
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 4e937f56f6315ce2abf76dd56989f4d2c4059f22
+ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811335"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89598056"
 ---
-### <a name="ca1831-use-asspan-or-asmemory-instead-of-range-based-indexer"></a>CA1831 usar asspan ou asmemory em vez de indexador baseado em intervalo
+### <a name="ca1831-use-asspan-instead-of-range-based-indexers-for-string"></a>CA1831: usar asspan em vez de indexadores baseados em intervalo para cadeia de caracteres
 
 A regra do analisador de código .NET [CA1831](/visualstudio/code-quality/ca1831) está habilitada, por padrão, a partir do .NET 5,0. Ele produz um aviso de compilação para qualquer código em que um <xref:System.Range> indexador baseado em um é usado em uma cadeia de caracteres, mas nenhuma cópia foi pretendida.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 A partir do .NET 5,0, o SDK do .NET inclui [analisadores de código-fonte .net](../../../../docs/fundamentals/productivity/code-analysis.md). Várias dessas regras estão habilitadas, por padrão, incluindo [CA1831](/visualstudio/code-quality/ca1831). Se o seu projeto contiver código que viole essa regra e estiver configurado para tratar avisos como erros, essa alteração poderá interromper sua compilação.
 

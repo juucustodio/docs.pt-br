@@ -4,12 +4,12 @@ description: Visão geral dos métodos, parâmetros de método e valores retorna
 ms.technology: csharp-fundamentals
 ms.date: 05/21/2018
 ms.assetid: 577a8527-1081-4b36-9b9e-0685b6553c6e
-ms.openlocfilehash: 8c33bcb9dd4052589222c2cb1b375d94d6792ba2
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 879c553f8df560a3e2f3dccdbbf0d7e8a05c50cd
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88810567"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89495532"
 ---
 # <a name="methods-in-c"></a>Métodos em (C#)
 
@@ -61,7 +61,7 @@ Você também pode usar *argumentos nomeados* em vez de argumentos posicionais a
 
 [!code-csharp[csSnippets.Methods#45](../../samples/snippets/csharp/concepts/methods/named1.cs#45)]
 
-Você pode invocar um método usando argumentos posicionais e argumentos nomeados. No entanto, um argumento posicional não pode seguir um argumento nomeado. O exemplo a seguir invoca o método `TestMotorcycle.Drive` do exemplo anterior usando um argumento posicional e um argumento nomeado.
+Você pode invocar um método usando argumentos posicionais e argumentos nomeados. No entanto, os argumentos posicionais só podem seguir os argumentos nomeados quando os argumentos nomeados estão nas posições corretas. O exemplo a seguir invoca o método `TestMotorcycle.Drive` do exemplo anterior usando um argumento posicional e um argumento nomeado.
 
 [!code-csharp[csSnippets.Methods#46](../../samples/snippets/csharp/concepts/methods/named2.cs#46)]
 
@@ -282,7 +282,7 @@ O tipo de retorno de um iterador pode ser <xref:System.Collections.IEnumerable>,
 
 Para obter mais informações, consulte [Iteradores](programming-guide/concepts/iterators.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Modificadores de acesso](language-reference/keywords/access-modifiers.md)
 - [Classes static e membros de classes static](programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
@@ -290,6 +290,6 @@ Para obter mais informações, consulte [Iteradores](programming-guide/concepts/
 - [Classes e membros de classes abstract e sealed](programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)
 - [params](language-reference/keywords/params.md)
 - [fora](language-reference/keywords/out-parameter-modifier.md)
-- [referência](language-reference/keywords/ref.md)
+- [ref](language-reference/keywords/ref.md)
 - [Em](language-reference/keywords/in-parameter-modifier.md)
-- [Passando parâmetros](programming-guide/classes-and-structs/passing-parameters.md)
+- [Passar parâmetros](programming-guide/classes-and-structs/passing-parameters.md)

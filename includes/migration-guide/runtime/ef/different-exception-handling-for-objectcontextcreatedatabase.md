@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 687118157020ede200f97a0125c4740a06bf4b5e
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 8c593fa6490451c6236f0d4390f09d4e9e4f0cbb
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619795"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497431"
 ---
 ### <a name="different-exception-handling-for-objectcontextcreatedatabase-and-dbproviderservicescreatedatabase-methods"></a>Tratamento de exceção diferente para os métodos ObjectContext.CreateDatabase e DbProviderServices.CreateDatabase
 
@@ -16,12 +16,22 @@ Começando com o .NET Framework 4.5, se houver falha na criação do banco de da
 
 Ao capturar um <xref:System.InvalidOperationException?displayProperty=fullName> durante a execução de <xref:System.Data.Objects.ObjectContext.CreateDatabase> ou <xref:System.Data.Common.DbProviderServices.CreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)>, agora, SQLExceptions também devem ser capturadas.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Data.Objects.ObjectContext.CreateDatabase?displayProperty=nameWithType></li><li><xref:System.Data.Common.DbProviderServices.CreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Data.Objects.ObjectContext.CreateDatabase?displayProperty=nameWithType>
+- <xref:System.Data.Common.DbProviderServices.CreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Data.Objects.ObjectContext.CreateDatabase`
+- `M:System.Data.Common.DbProviderServices.CreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)`
+
+-->

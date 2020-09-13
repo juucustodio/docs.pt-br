@@ -11,12 +11,12 @@ metadata:
   author: BillWagner
   ms.author: wiwagn
   ms.date: 07/10/2020
-  ms.openlocfilehash: c49a11621858378d6741fd6c02506e03064d761a
-  ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+  ms.openlocfilehash: d324cfe43f5558f255746421ebd4d143e7343e81
+  ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/03/2020
-  ms.locfileid: "89414806"
+  ms.lasthandoff: 09/05/2020
+  ms.locfileid: "89495545"
 highlightedContent:
   items:
   - title: Baixar o .NET
@@ -77,6 +77,9 @@ conceptualContent:
     - url: standard/tour.md
       itemType: overview
       text: Visão geral do .NET
+    - url: core/dotnet-five.md
+      itemType: concept
+      text: Evolução para o .NET 5
     - url: standard/net-standard.md
       itemType: overview
       text: .NET Standard
@@ -86,9 +89,6 @@ conceptualContent:
     - url: /ef/core/
       itemType: overview
       text: Entity Framework Core
-    - url: standard/get-started.md
-      itemType: get-started
-      text: Introdução
     - url: standard/components.md
       itemType: concept
       text: Componentes de arquitetura do .NET
@@ -194,9 +194,9 @@ additionalContent:
         text: Aplicativos Universais do Windows
       - url: desktop-wpf/index.yml
         text: Windows Presentation Foundation (.NET Core)
-      - url: framework/wpf/index.md
+      - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
         text: Windows Presentation Foundation (.NET Framework)
-      - url: framework/winforms/index.md
+      - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
         text: Windows Forms
       - url: /xamarin/mac
         text: Xamarin para macOS

@@ -2,12 +2,12 @@
 title: dotnet-despejo-.NET Core
 description: Instalando e usando a ferramenta de linha de comando dotnet-dump.
 ms.date: 10/14/2019
-ms.openlocfilehash: 5489011538a4a11d60b333f0230a718c88722c97
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: e008dcfc734a8742c495ea32a7a149c9a55c54c6
+ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89140926"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89598103"
 ---
 # <a name="dump-collection-and-analysis-utility-dotnet-dump"></a>Utilitário de coleta e análise de despejo (dotNet-dump)
 
@@ -71,14 +71,15 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 
   Especifica o número de identificação do processo do qual coletar um despejo de memória.
 
-- **`--type <Heap|Mini>`**
+- **`--type <Full|Heap|Mini>`**
 
-  Especifica o tipo de despejo, que determina os tipos de informações que são coletadas do processo. Há dois tipos:
+  Especifica o tipo de despejo, que determina os tipos de informações que são coletadas do processo. Há três tipos:
 
+  - `Full` -O maior despejo que contém toda a memória, incluindo as imagens de módulo.
   - `Heap` -Um despejo grande e relativamente abrangente contendo listas de módulos, listas de threads, todas as pilhas, informações de exceção, informações de identificador e toda a memória, exceto imagens mapeadas.
   - `Mini` -Um despejo pequeno contendo listas de módulos, listas de threads, informações de exceção e todas as pilhas.
 
-  Se não for especificado, `Heap` será o padrão.
+  Se não for especificado, `Full` será o padrão.
 
 - **`-o|--output <output_dump_path>`**
 

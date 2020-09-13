@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: fc6066fd0b23d299158114cb397934041b99ba47
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: a806107456a65a4919592da9535a2617f677cfe0
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619892"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497099"
 ---
 ### <a name="wpf-dispatchersynchronizationcontextcreatecopy-now-returns-a-new-copy-instead-of-the-current-instance"></a>DispatcherSynchronizationContext.CreateCopy do WPF agora retorna uma nova cópia em vez da instância atual
 
@@ -16,12 +16,20 @@ No .NET Framework 4, <xref:System.Windows.Threading.DispatcherSynchronizationCon
 
 Lembre-se de que <xref:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy> agora retornará um novo objeto <xref:System.Threading.SynchronizationContext?displayProperty=fullName>. Anteriormente, o código que usava a equivalência de referências gerada dessa maneira não estava de fato verificado se ela estava no contexto apropriado, mas isso foi corrigido no .NET Framework 4.5 ou posteriores.  Embora não haja probabilidade de causar problemas, praticar os caminhos de código afetados deve ser suficiente para determinar se isso impõe algum problema.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy`
+
+-->

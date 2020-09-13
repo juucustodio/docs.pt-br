@@ -4,12 +4,12 @@ description: As funções locais em C# são métodos privados que são aninhados
 ms.date: 06/14/2017
 helpviewer_keywords:
 - local functions [C#]
-ms.openlocfilehash: 854ec7ab4a4cc637c0a5ad03e0344d2f1f7679d2
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: c1c6c6becb3894b05cb9ed89f7f33dcf249b20eb
+ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063296"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89656179"
 ---
 # <a name="local-functions-c-programming-guide"></a>Funções locais (Guia de Programação em C#)
 
@@ -46,7 +46,7 @@ Observe que todas as variáveis locais que estão definidas no membro recipiente
 Ao contrário de uma definição de método, uma definição de função local não pode incluir o modificador de acesso de membro. Já que todas as funções locais são privadas, incluir um modificador de acesso como a palavra-chave `private` gera o erro do compilador CS0106, "O modificador 'private' não é válido para este item".
 
 > [!NOTE]
-> Antes do C# 8,0, as funções locais não podem incluir o `static` modificador. Incluir a palavra-chave `static` gera o erro do compilador CS0106, "O modificador 'static' não é válido para este item".
+> Antes do C# 8,0, as funções locais não podem incluir o `static` modificador. A inclusão da `static` palavra-chave gera o erro CS0106 do compilador, "o modificador ' static ' não é válido para este item.", ou um erro do compilador informando que você deve usar C# 8,0 ou superior.
 
 Além disso, os atributos não podem ser aplicados à função local ou aos respectivos parâmetros e parâmetros de tipo.
 
@@ -128,6 +128,6 @@ Uma vantagem final não demonstrada neste exemplo é que as funções locais pod
 
 Embora as funções locais possam parecer redundantes para expressões lambda, elas realmente têm finalidades e usos diferentes. As funções locais são mais eficientes para quando você deseja escrever uma função que é chamada apenas do contexto de outro método.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Métodos](methods.md)

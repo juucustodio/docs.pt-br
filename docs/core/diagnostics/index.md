@@ -3,12 +3,12 @@ title: Visão geral das ferramentas de diagnóstico – .NET Core
 description: Uma visão geral das ferramentas e das técnicas disponíveis para diagnosticar aplicativos .NET Core.
 ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: ae3b9a1961f331c9cdea786bd5fe06b7bfa10927
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 568f237e131cde18dad7c87ddff2fdd3d4bc5b8b
+ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558108"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89597983"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>Quais ferramentas de diagnóstico estão disponíveis no .NET Core?
 
@@ -28,7 +28,11 @@ O [registro em log e o rastreamento](logging-tracing.md) são técnicas relacion
 
 O [teste de unidade](../testing/index.md) é um componente fundamental da integração e da implantação contínuas de software de alta qualidade. Os testes de unidade são projetados para fornecer um aviso antecipado quando você interrompe algo.
 
-## <a name="net-core-dotnet-diagnostic-global-tools"></a>Ferramentas globais de diagnóstico dotnet do .NET Core
+## <a name="debug-linux-dumps"></a>Depurar despejos do Linux
+
+[Depurar despejos do Linux](debug-linux-dumps.md) explica como coletar e analisar despejos no Linux.
+
+## <a name="net-core-diagnostic-global-tools"></a>Ferramentas globais de diagnóstico do .NET Core
 
 ### <a name="dotnet-counters"></a>dotnet-counters
 
@@ -45,6 +49,14 @@ A ferramenta [dotnet-gcdump](dotnet-gcdump.md) é uma maneira de coletar despejo
 ### <a name="dotnet-trace"></a>dotnet-trace
 
 O .NET Core inclui o que é chamado de `EventPipe` por meio do qual os dados de diagnóstico são expostos. A ferramenta [dotnet-Trace](dotnet-trace.md) permite que você consuma dados de criação de perfil interessantes de seu aplicativo que podem ajudar em cenários em que você precisa ter a causa raiz dos aplicativos em execução lenta.
+
+### <a name="dotnet-symbol"></a>dotnet-símbolo
+
+[dotnet-Symbol](dotnet-symbol.md) baixa arquivos (símbolos, DAC/DBI, arquivos de host, etc.) necessários para abrir um dump principal ou minidespejo. Use essa ferramenta se precisar de símbolos e módulos para depurar um arquivo de despejo capturado em um computador diferente.
+
+### <a name="dotnet-sos"></a>dotnet-SOS
+
+[dotnet-SOS](dotnet-sos.md) é usado para instalar a [extensão de depuração SOS](https://docs.microsoft.com/dotnet/framework/tools/sos-dll-sos-debugging-extension) no Linux ou MacOS (ou no Windows, se estiver usando ferramentas de depuração mais antigas).
 
 ## <a name="net-core-diagnostics-tutorials"></a>Tutoriais de diagnóstico do .NET Core
 

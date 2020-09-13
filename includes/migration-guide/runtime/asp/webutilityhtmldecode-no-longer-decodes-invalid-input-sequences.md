@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0b7d6d9543035ab0a8fdda675ae71572ace12a1f
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: ef3114a4eb9f62030c3ec36d3b463d07ccd59f6d
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619768"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497388"
 ---
 ### <a name="webutilityhtmldecode-no-longer-decodes-invalid-input-sequences"></a>WebUtility.HtmlDecode não decodifica mais sequências de entrada inválidas
 
@@ -16,12 +16,24 @@ Por padrão, os métodos de decodificação não decodificam mais uma sequência
 
 A alteração na saída do decodificador deve importar somente se você armazenar dados binários em vez de dados UTF-16 em cadeias de caracteres. Para controlar explicitamente esse comportamento, defina o atributo <code>aspnet:AllowRelaxedUnicodeDecoding</code> do elemento [appSettings](~/docs/framework/configure-apps/file-schema/appsettings/index.md) como <code>true</code> para habilitar o comportamento herdado ou como <code>false</code> para habilitar o comportamento atual.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Net.WebUtility.HtmlDecode(System.String)?displayProperty=nameWithType></li><li><xref:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)?displayProperty=nameWithType></li><li><xref:System.Net.WebUtility.UrlDecode(System.String)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Net.WebUtility.HtmlDecode(System.String)?displayProperty=nameWithType>
+- <xref:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)?displayProperty=nameWithType>
+- <xref:System.Net.WebUtility.UrlDecode(System.String)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Net.WebUtility.HtmlDecode(System.String)`
+- `M:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)`
+- `M:System.Net.WebUtility.UrlDecode(System.String)`
+
+-->

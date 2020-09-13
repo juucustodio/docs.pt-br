@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 7d3568fef933758c40e47cefa86c24d31d4119fc
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: cf34c5df1badcfd86d8a07bafdf1b759234712e0
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619763"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496785"
 ---
 ### <a name="httprequestcontentencoding-property-prohibits-utf7"></a>A propriedade HttpRequest.ContentEncoding proíbe a UTF7
 
@@ -16,12 +16,20 @@ A partir do .NET Framework 4.5, a codificação UTF-7 está proibida nos corpos 
 
 De modo ideal, os aplicativos devem ser atualizados para não usar a codificação UTF-7 em <xref:System.Web.HttpRequest?displayProperty=fullName>. De modo alternativo, o comportamento herdado pode ser restaurado usando o atributo <code>aspnet:AllowUtf7RequestContentEncoding</code> do elemento [appSettings](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md).
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Web.HttpRequest.ContentEncoding?displayProperty=nameWithType></li></ul>|
+- <xref:System.Web.HttpRequest.ContentEncoding?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Web.HttpRequest.ContentEncoding`
+
+-->

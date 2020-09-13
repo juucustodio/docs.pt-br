@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 87013a04f7ff975e40a3c49c41c1c5acc2374066
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 06424c4fa40343a881356c20003300f65e93efbb
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619875"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496464"
 ---
 ### <a name="wf-serializes-expressionsliterallttgt-datetimes-differently-now-breaks-custom-xaml-parsers"></a>O WF agora serializa Expressions.Literal&lt;T&gt; DateTimes de modo diferente (interrompe analisadores XAML personalizados)
 
@@ -16,8 +16,20 @@ O objeto <xref:System.Windows.Markup.ValueSerializer> associado converterá um o
 
 Essa alteração permite que os valores <xref:System.DateTime?displayProperty=fullName> e <xref:System.DateTimeOffset?displayProperty=fullName> completem um ciclo. Os analisadores XAML personalizados que assumem que a entrada XAML está na sintaxe de atributo não funcionará corretamente.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.5|
-|Type|Runtime|
+|Tipo|Runtime|
+
+#### <a name="affected-apis"></a>APIs afetadas
+
+Não detectável via análise de API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

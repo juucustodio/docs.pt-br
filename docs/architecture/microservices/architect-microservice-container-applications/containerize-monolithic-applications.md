@@ -2,12 +2,12 @@
 title: Implantar aplicativos monolíticos em contêineres
 description: Colocar em contêineres aplicativos monolíticos, embora não obtenha todos os benefícios da arquitetura de microsserviços, tem benefícios de implantação importantes que podem ser entregues imediatamente.
 ms.date: 01/30/2020
-ms.openlocfilehash: 0e6f7504a91d2b1a89193471746168fc34f50956
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b26a9b79ec00ba06404a12d62343ea31d67151cb
+ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77503280"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90022877"
 ---
 # <a name="containerizing-monolithic-applications"></a>Implantar aplicativos monolíticos em contêineres
 
@@ -15,15 +15,15 @@ Talvez você queira criar um aplicativo ou serviço Web único e monolítico e i
 
 Para gerenciar esse modelo, implante um contêiner único para representar o aplicativo. Para aumentar a capacidade, você expande, ou seja, apenas adiciona mais cópias com um balanceador de carga na frente. A simplicidade está em gerenciar um a implantação única em um contêiner ou VM único.
 
-![Diagrama mostrando os componentes de uma aplicação em contêiner monolítico.](./media/containerize-monolithic-applications/monolithic-containerized-application.png)
+![Diagrama mostrando os componentes de um aplicativo monolítico em contêineres.](./media/containerize-monolithic-applications/monolithic-containerized-application.png)
 
 **Figura 4-1**. Exemplo de arquitetura de um aplicativo monolítico em contêiner
 
-É possível incluir vários componentes, bibliotecas ou camadas internas em cada contêiner, conforme ilustrado na Figura 4-1. Um aplicativo em contêineres monolíticos tem a maior parte de sua funcionalidade dentro de um único contêiner, com camadas internas ou bibliotecas, e se escoa por clonagem do contêiner em vários servidores/VMs. No entanto, esse padrão monolítico pode entrar em conflito com o princípio do contêiner: "um contêiner executa uma ação em um processo". Porém, em alguns casos não haverá problemas.
+É possível incluir vários componentes, bibliotecas ou camadas internas em cada contêiner, conforme ilustrado na Figura 4-1. Um aplicativo monolítico em contêineres tem a maior parte de sua funcionalidade em um único contêiner, com camadas internas ou bibliotecas, e se expande clonando o contêiner em vários servidores/VMs. No entanto, esse padrão monolítico pode entrar em conflito com o princípio do contêiner: "um contêiner executa uma ação em um processo". Porém, em alguns casos não haverá problemas.
 
-O ponto negativo dessa abordagem ficará evidente se o aplicativo crescer e for necessário dimensioná-lo. Se o aplicativo inteiro puder ser dimensionado, não será realmente um problema. Entretanto, na maioria dos casos apenas algumas partes do aplicativo são os pontos de redução que exigem escalonamento, enquanto outros componentes são menos utilizados.
+O ponto negativo dessa abordagem ficará evidente se o aplicativo crescer e for necessário dimensioná-lo. Se o aplicativo inteiro puder ser dimensionado, não será realmente um problema. No entanto, na maioria dos casos, apenas algumas partes do aplicativo são pontos de obstrução que exigem dimensionamento, enquanto outros são usados com menos componentes.
 
-Por exemplo, em um aplicativo comum de comércio eletrônico, provavelmente é preciso dimensionar o subsistema de informações do produto, pois a procura por produtos é maior do que a compra. Mais clientes usam o carrinho em vez do pipeline de pagamento. Menos clientes fazem comentários ou exibem o histórico de compras. E você pode ter apenas um punhado de funcionários que precisam gerenciar o conteúdo e campanhas de marketing. Ao escalonar o design monolítico, todo o código dessas tarefas diferentes é implantado diversas vezes e dimensionado no mesmo grau.
+Por exemplo, em um aplicativo comum de comércio eletrônico, provavelmente é preciso dimensionar o subsistema de informações do produto, pois a procura por produtos é maior do que a compra. Mais clientes usam o carrinho em vez do pipeline de pagamento. Menos clientes fazem comentários ou exibem o histórico de compras. E você pode ter apenas alguns funcionários que precisam gerenciar as campanhas de conteúdo e marketing. Ao escalonar o design monolítico, todo o código dessas tarefas diferentes é implantado diversas vezes e dimensionado no mesmo grau.
 
 Há várias maneiras de dimensionar um aplicativo: duplicação horizontal, divisão de diferentes áreas do aplicativo e partição de conceitos ou dados empresariais semelhantes. No entanto, além do problema de dimensionamento de todos os componentes, alterar um único componente exige testar novamente todo o aplicativo e reimplantar todas as instâncias.
 
@@ -31,7 +31,7 @@ Porém, a abordagem monolítica é comum, pois o desenvolvimento do aplicativo �
 
 De uma perspectiva de infraestrutura, cada servidor pode executar vários aplicativos no mesmo host e ter um índice de eficiência razoável de uso de recursos, conforme mostrado na Figura 4-2.
 
-![Diagrama mostrando um host executando muitos aplicativos em contêineres.](./media/containerize-monolithic-applications/host-multiple-apps-containers.png)
+![Diagrama mostrando um host que executa muitos aplicativos em contêineres.](./media/containerize-monolithic-applications/host-multiple-apps-containers.png)
 
 **Figura 4-2**. Abordagem monolítica: host executando vários aplicativos, cada um em execução como um contêiner
 
@@ -39,7 +39,7 @@ Os aplicativos monolíticos no Microsoft Azure podem ser implantados por meio de
 
 Como em um ambiente de garantia de qualidade ou de produção limitada, é possível implantar diversas VMs host do Docker e balanceá-las usando o balanceador do Azure, conforme mostrado na Figura 4-3. Assim, você pode gerenciar o dimensionamento com uma abordagem de alta granularidade, pois o aplicativo inteiro está em um único contêiner.
 
-![Diagrama mostrando vários hosts executando os recipientes de aplicativos monolíticos.](./media/containerize-monolithic-applications/docker-infrastructure-monolithic-application.png)
+![Diagrama mostrando vários hosts que executam os contêineres de aplicativos monolíticos.](./media/containerize-monolithic-applications/docker-infrastructure-monolithic-application.png)
 
 **Figura 4-3**. Exemplo de vários hosts escalando verticalmente um aplicativo em contêiner único
 
@@ -59,9 +59,9 @@ Embora aplicativos monolíticos possam se beneficiar do Docker, estamos menciona
 
 Seja para validar um contêiner implantado no Azure ou quando um aplicativo é baseado em contêiner único, o Serviço de Aplicativo do Azure é uma ótima maneira de oferecer serviços escalonáveis baseados em contêiner único. Usar o Serviço de Aplicativo do Azure é simples. Ele tem uma ótima integração com o GIT para facilitar a implantação do código criado no Visual Studio diretamente no Azure.
 
-![Captura de tela da caixa de diálogo Criar serviço de aplicativo mostrando um Registro de Contêiner.](./media/containerize-monolithic-applications/publish-azure-app-service-container.png)
+![Captura de tela da caixa de diálogo Criar serviço de aplicativo mostrando um registro de contêiner.](./media/containerize-monolithic-applications/publish-azure-app-service-container.png)
 
-**Figura 4-4**. Publicando um aplicativo de contêiner único para o Azure App Service do Visual Studio 2019
+**Figura 4-4**. Publicando um aplicativo de contêiner único para Azure App serviço do Visual Studio 2019
 
 Sem o Docker, se você precisasse de outros recursos, estruturas ou dependências sem suporte no Serviço de Aplicativo do Azure, seria necessário aguardar até que a equipe do Azure atualizasse essas dependências no Serviço de Aplicativo. Outra opção era mudar para outros serviços, como Serviços de Nuvem do Azure, ou VMs, em que se tinha mais controle e era possível instalar o componente ou a estrutura exigidos pelo aplicativo.
 
@@ -70,5 +70,5 @@ No Visual Studio 2017 e posterior, o suporte para contêineres oferece a capacid
 A Figura 4-4 também mostra que o fluxo de publicação envia uma imagem por meio do registro de contêiner. Isso pode ser feito pelo Registro de Contêiner do Azure (um registro próximo às implantações no Azure e protegido por grupos e contas do Azure Active Directory) ou outros registros do Docker, como o Docker Hub ou um registro local.
 
 >[!div class="step-by-step"]
->[Próximo](index.md)
->[anterior](docker-application-state-data.md)
+>[Anterior](index.md) 
+> [Avançar](docker-application-state-data.md)

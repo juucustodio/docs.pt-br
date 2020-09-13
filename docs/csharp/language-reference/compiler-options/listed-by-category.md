@@ -7,12 +7,12 @@ helpviewer_keywords:
 - compiler options [C#], listed by category
 - Visual C#, compiler options listed by category
 ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
-ms.openlocfilehash: 27445b6685f48f7acf646c16de3201e68767da69
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: a1b65db6efb60d27ab82ab47854c0399b9476729
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125287"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89466073"
 ---
 # <a name="c-compiler-options-listed-by-category"></a>Opções do compilador de C# listadas por categoria
 
@@ -41,7 +41,7 @@ As opções do compilador a seguir são classificadas por categoria. Para obter 
 |[-destino](target-compiler-option.md)|Especifica o formato do arquivo de saída usando uma das seguintes opções: [-target: appcontainerexe](target-appcontainerexe-compiler-option.md), [-target: exe](target-exe-compiler-option.md), [-target: library](target-library-compiler-option.md), [-target: módulo](target-module-compiler-option.md), [-target: winexe](target-winexe-compiler-option.md)ou [-target: winmdobj](target-winmdobj-compiler-option.md).|
 |ModuleName\<string>|Especificar o nome do módulo de origem|
 
-## <a name="net-framework-assemblies"></a>Assemblies do .NET Framework
+## <a name="net-assemblies"></a>Assemblies .NET
 
 |Opção|Finalidade|
 |------------|-------------|
@@ -77,7 +77,7 @@ As opções do compilador a seguir são classificadas por categoria. Para obter 
 
 |Opção|Finalidade|
 |------------|-------------|
-|[-define](define-compiler-option.md)|Define símbolos do pré-processador.|
+|[-definir](define-compiler-option.md)|Define símbolos do pré-processador.|
 
 ## <a name="resources"></a>Recursos
 
@@ -85,7 +85,7 @@ As opções do compilador a seguir são classificadas por categoria. Para obter 
 |------------|-------------|
 |[-link](link-compiler-option.md)|Disponibiliza informações de tipo COM em assemblies especificados para o projeto.|
 |[-linkresource](linkresource-compiler-option.md)|Cria um link a um recurso gerenciado.|
-|[-recurso](resource-compiler-option.md)|Insere um recurso do .NET Framework no arquivo de saída.|
+|[-recurso](resource-compiler-option.md)|Insere um recurso do .NET no arquivo de saída.|
 |[-win32icon](win32icon-compiler-option.md)|Especifica um arquivo .ico a ser inserido no arquivo de saída.|
 |[-win32res](win32res-compiler-option.md)|Especifica um recurso Win32 a ser inserido no arquivo de saída.|
 
@@ -116,7 +116,7 @@ As opções do compilador a seguir são classificadas por categoria. Para obter 
 |---|---|
 |-incremental|Habilita a compilação incremental.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Opções do compilador C#](index.md)
 - [Opções do compilador de C# listadas em ordem alfabética](listed-alphabetically.md)

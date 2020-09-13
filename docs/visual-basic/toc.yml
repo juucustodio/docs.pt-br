@@ -1,7 +1,9 @@
 - name: Guia do Visual Basic
   href: index.yml
 - name: Novidades do Visual Basic
-  href: getting-started/whats-new.md
+  href: whats-new/index.md
+- name: Alterações da falha no compilador
+  href: whats-new/breaking-changes.md
 - name: Introdução
   href: getting-started/index.md
   items:
@@ -877,7 +879,7 @@
       items:
         - name: '''#ElseIf'' deve ser precedido por um ''#If'' ou ''#ElseIf'' correspondente'
           href: language-reference/error-messages/elseif-must-be-preceded-by-a-matching-if-or-elseif.md
-        - name: 'As instruções ''#Region'' e ''#End Region'' não são válidas dentro dos corpos/lambdas de várias linhas do método'
+        - name: As instruções '#Region' e '#End Region' não são válidas dentro dos corpos/lambdas de várias linhas do método
           href: language-reference/error-messages/region-and-end-region-are-not-valid-within-method-bodies-multiline-lambdas.md
         - name: '''<attribute>'' não pode ser aplicado porque o formato da GUID ''<number>'' não está correto'
           href: language-reference/error-messages/attribute-cannot-be-applied-because-the-format-of-the-guid-is-not-correct.md

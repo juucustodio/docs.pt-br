@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: dd7d3e445772e4b5ec148576ccd1374d56e251bd
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: f61cf21f9f30662cc8e383bb3aeb5c642f1665b8
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614294"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496224"
 ---
 ### <a name="deadlock-may-result-when-using-reentrant-services"></a>Uso de serviços Reentrantes pode resultar em deadlock
 
@@ -20,7 +20,7 @@ Um deadlock pode resultar em um serviço Reentrante, o que restringe as instânc
 
 Para solucionar esse problema, você pode fazer o seguinte:
 
-- Definir o modo de simultaneidade do serviço como <xref:System.ServiceModel.ConcurrencyMode.Single?displayProperty=nameWithType> ou &lt;System.ServiceModel.ConcurrencyMode.Multiple?displayProperty=nameWithType&gt;. Por exemplo:
+- Defina o modo de simultaneidade do serviço como <xref:System.ServiceModel.ConcurrencyMode.Single?displayProperty=nameWithType> ou <xref:System.ServiceModel.ConcurrencyMode.Multiple?displayProperty=nameWithType> . Por exemplo:
 
 ```csharp
 [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Reentrant)]
@@ -36,11 +36,11 @@ Para solucionar esse problema, você pode fazer o seguinte:
 
 O valor de `Switch.System.ServiceModel.DisableOperationContextAsyncFlow` nunca deve ser definido como `false` para serviços Reentrant.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   | Secundária       |
 | Versão | 4.6.2       |
-| Type    | Redirecionando |
+| Tipo    | Redirecionando |
 
 #### <a name="affected-apis"></a>APIs afetadas
 

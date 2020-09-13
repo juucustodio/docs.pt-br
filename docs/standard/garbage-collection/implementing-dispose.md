@@ -1,7 +1,7 @@
 ---
 title: Implementar um método Dispose
 description: Neste artigo, aprenda a implementar o método Dispose, que libera recursos não gerenciados usados pelo seu código no .NET.
-ms.date: 05/27/2020
+ms.date: 09/08/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Dispose method
 - garbage collection, Dispose method
 ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
-ms.openlocfilehash: 4f0cc9b88947d60638057ca83adb7f2e141c5d14
-ms.sourcegitcommit: 7499bdb428d63ed0e19e97f54d3d576c41598659
+ms.openlocfilehash: 863f78daf13ae9d795c37c1c6f428d387b9a026b
+ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87455733"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90022916"
 ---
 # <a name="implement-a-dispose-method"></a>Implementar um método Dispose
 
@@ -77,7 +77,7 @@ O corpo do método consiste em dois blocos de código:
 
   - **Objetos gerenciados que implementam <xref:System.IDisposable>.** O bloco condicional pode ser usado para chamar sua <xref:System.IDisposable.Dispose%2A> implementação (descarte em cascata). Se você tiver usado uma classe derivada do <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> para encapsular seu recurso não gerenciado, deverá chamar a <xref:System.Runtime.InteropServices.SafeHandle.Dispose?displayProperty=nameWithType> implementação aqui.
 
-  - **Objetos gerenciados que consomem muita memória ou consomem recursos escassos.** Atribua grandes referências de objeto gerenciado ao `null` para torná-las mais prováveis de serem inacessíveis. Isso libera mais rápido do que se eles fossem recuperados de forma não determinística.
+  - **Objetos gerenciados que consomem muita memória ou consomem recursos escassos.** Atribua grandes referências de objeto gerenciado ao `null` para torná-las mais prováveis de serem inacessíveis. Isso libera mais rápido do que se eles fossem recuperados de forma não determinística, e isso geralmente é feito fora do bloco condicional.
 
 Se a chamada do método vier de um finalizador, somente o código que libera recursos não gerenciados deve ser executado. O implementador é responsável por garantir que o caminho falso não interaja com objetos gerenciados que podem ter sido recuperados. Isso é importante porque a ordem na qual o coletor de lixo destrói os objetos gerenciados durante a finalização é não determinística.
 
@@ -149,7 +149,7 @@ O exemplo a seguir ilustra o padrão de descarte para uma classe derivada, `Disp
 [!code-csharp[Conceptual.Disposable#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/derived1.cs#10)]
 [!code-vb[Conceptual.Disposable#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/derived1.vb#10)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.GC.SuppressFinalize%2A>
 - <xref:System.IDisposable>

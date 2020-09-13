@@ -3,12 +3,12 @@ title: Introdução a eventos
 description: Saiba mais sobre eventos no .NET Core e nossas metas de design de linguagem para eventos nesta visão geral.
 ms.date: 06/20/2016
 ms.assetid: 9b8d2a00-1584-4a5b-8994-5003d54d8e0c
-ms.openlocfilehash: 4e660f85eecfd5668919baf21a0d26f858faf5a6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4da44c151244e8b5de34f550040c271131d9598c
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79146108"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89465228"
 ---
 # <a name="introduction-to-events"></a>Introdução a eventos
 
@@ -26,18 +26,18 @@ Assinar um evento também cria um acoplamento entre dois objetos (a origem do ev
 
 ## <a name="design-goals-for-event-support"></a>Metas de design para suporte a eventos
 
-O design do idioma para eventos tem como alvo esses objetivos:
+O design de idioma para eventos tem como alvo estas metas:
 
-- Habilite um acoplamento muito mínimo entre uma fonte de evento e uma pia de evento. Esses dois componentes não podem ter sido escritos pela mesma organização e podem até mesmo ser atualizados segundo cronogramas totalmente diferentes.
+- Habilite um acoplamento muito mínimo entre uma origem do evento e um coletor de eventos. Esses dois componentes não podem ter sido escritos pela mesma organização e podem até mesmo ser atualizados segundo cronogramas totalmente diferentes.
 
-- Deve ser muito simples se inscrever em um evento, e cancelar a inscrição desse mesmo evento.
+- Deve ser muito simples assinar um evento e cancelar a assinatura desse mesmo evento.
 
-- As fontes de eventos devem suportar vários assinantes de eventos. Elas também devem dar suporte a não ter assinantes de evento anexados.
+- As origens de eventos devem dar suporte a vários assinantes de eventos. Elas também devem dar suporte a não ter assinantes de evento anexados.
 
 Você pode ver que as metas para os eventos são muito semelhantes às metas para delegados.
 É por isso que o suporte à linguagem do evento é baseado no suporte à linguagem do delegado.
 
-## <a name="language-support-for-events"></a>Suporte de idiomas para eventos
+## <a name="language-support-for-events"></a>Suporte a idiomas para eventos
 
 A sintaxe para definir eventos e se inscrever ou cancelar a inscrição em eventos é uma extensão da sintaxe de delegados.
 
@@ -49,7 +49,7 @@ public event EventHandler<FileListArgs> Progress;
 
 O tipo de evento (`EventHandler<FileListArgs>` neste exemplo) deve ser um tipo delegado. Há uma série de convenções que você deve seguir ao declarar um evento. Normalmente, o tipo de delegado do evento tem um retorno nulo.
 Declarações de evento devem ser um verbo ou uma frase verbal.
-Use o tempo passado quando o evento relata algo que aconteceu. Use um tempo verbal presente (por exemplo, `Closing`) para informar algo que está prestes a ocorrer. Frequentemente, usar o tempo presente indica que sua classe dá suporte a algum tipo de comportamento de personalização. Um dos cenários mais comuns é dar suporte ao cancelamento. Por exemplo, um evento `Closing` pode incluir um argumento que indicaria se a operação de encerramento deve continuar ou não.  Outros cenários podem permitir que os chamadores modifiquem o comportamento atualizando propriedades dos argumentos do evento. Você pode acionar um evento para indicar uma próxima ação proposta que um algoritmo usará. O manipulador de eventos pode forçar uma ação diferente modificando as propriedades do argumento do evento.
+Use conjugação anteriores quando o evento relatar algo que aconteceu. Use um tempo verbal presente (por exemplo, `Closing`) para informar algo que está prestes a ocorrer. Frequentemente, usar o tempo presente indica que sua classe dá suporte a algum tipo de comportamento de personalização. Um dos cenários mais comuns é dar suporte ao cancelamento. Por exemplo, um evento `Closing` pode incluir um argumento que indicaria se a operação de encerramento deve continuar ou não.  Outros cenários podem permitir que os chamadores modifiquem o comportamento atualizando propriedades dos argumentos do evento. Você pode acionar um evento para indicar uma próxima ação proposta que um algoritmo usará. O manipulador de eventos pode forçar uma ação diferente modificando as propriedades do argumento do evento.
 
 Quando quiser acionar o evento, você pode chamar os manipuladores de eventos usando a sintaxe de invocação de delegado:
 
@@ -69,7 +69,7 @@ EventHandler<FileListArgs> onProgress = (sender, eventArgs) =>
 fileLister.Progress += onProgress;
 ```
 
-O método do manipulador normalmente tem o prefixo 'On' seguido pelo nome do evento, como mostrado acima.
+O método Handler normalmente tem o prefixo ' on ' seguido pelo nome do evento, como mostrado acima.
 
 Cancele a assinatura usando o operador `-=`:
 
@@ -77,9 +77,9 @@ Cancele a assinatura usando o operador `-=`:
 fileLister.Progress -= onProgress;
 ```
 
-É importante observar que eu declarei um variável local para a expressão que representa o manipulador de eventos. Isso garante que o cancelamento da assinatura remova o manipulador.
+É importante que você declare uma variável local para a expressão que representa o manipulador de eventos. Isso garante que o cancelamento da assinatura remova o manipulador.
 Se, em vez disso, você tiver usado o corpo da expressão lambda, você estará tentando remover um manipulador que nunca foi anexado, o que não faz nada.
 
 No próximo artigo, você aprenderá mais sobre padrões de evento típicos e diferentes variações deste exemplo.
 
-[Avançar](event-pattern.md)
+[Próximo](event-pattern.md)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6da589057cebfbf3f67a46b8d49d3a61f037c4c7
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: f50022d9a7bacd7be40fe3050ced26e7c25cf7aa
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622222"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497833"
 ---
 ### <a name="crash-in-selector-when-removing-an-item-from-a-custom-incc-collection"></a>Seletor falha ao remover um item de uma coleção INCC personalizada
 
@@ -16,8 +16,20 @@ Um <code>T:System.InvalidOperationException</code> pode ocorrer no seguinte cen�
 
 Atualizar para o .NET Framework 4.7.1.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.7|
-|Type|Runtime|
+|Tipo|Runtime|
+
+#### <a name="affected-apis"></a>APIs afetadas
+
+Não detectável via análise de API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

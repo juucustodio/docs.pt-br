@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5e2e8d1ec5d698d1c1649c2a0a1b4b77dbdf4022
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: e42bce91afab68e509cb35a8992fa3ca2f096872
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621028"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497378"
 ---
 ### <a name="wpf-printing-stack-update"></a>Atualização da pilha de impressão do WPF
 
@@ -16,8 +16,20 @@ Agora, as APIs de Impressão do WPF que usam <xref:System.Printing.PrintQueue?di
 
 Para usar a pilha antiga na Atualização do Windows 10 para Criadores, defina o valor REG_DWORD <code>UseXpsOMPrinting</code> da chave do Registro <code>HKEY_CURRENT_USER\Software\Microsoft\.NETFramework\Windows Presentation Foundation\Printing</code> como <code>1</code>.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.7|
-|Type|Runtime|
+|Tipo|Runtime|
+
+#### <a name="affected-apis"></a>APIs afetadas
+
+Não detectável via análise de API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

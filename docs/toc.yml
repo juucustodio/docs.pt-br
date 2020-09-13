@@ -1,26 +1,25 @@
-- name: Bem-vindo
-  href: welcome.md
-- name: Novidades nos documentos do .NET
-  href: whats-new/index.yml
-- name: Guia do .NET
-  href: standard/
-- name: Guia do .NET Core
-  href: core/
-- name: Guia do .NET Framework
-  href: framework/
-- name: Guia de área de trabalho do .NET – WPF
-  href: desktop-wpf/
-- name: 'Guia do C#'
-  href: csharp/index.yml
-- name: 'Guia do F#'
-  href: fsharp/index.yml
-- name: Guia do Visual Basic
-  href: visual-basic/index.yml
-- name: Guia do ML.NET
-  href: machine-learning/index.yml
-- name: Guia do .NET para Apache Spark
-  href: spark/index.yml
-- name: Guia de arquitetura do aplicativo .NET
-  href: architecture/index.yml
-- name: Exemplos e tutoriais
-  href: samples-and-tutorials/index.md
+items:
+  - name: Bem-Vindo
+    href: welcome.md
+  - name: Novidades nos documentos do .NET
+    href: whats-new/index.yml
+  - name: Conceitos básicos do .NET
+    href: fundamentals/
+  - name: Guia do .NET Framework
+    href: framework/
+  - name: Guia de área de trabalho do .NET – WPF
+    href: desktop-wpf/
+  - name: Guia do C#
+    href: csharp/index.yml
+  - name: Guia do F#
+    href: fsharp/index.yml
+  - name: Guia do Visual Basic
+    href: visual-basic/index.yml
+  - name: Guia do ML.NET
+    href: machine-learning/index.yml
+  - name: Guia do .NET para Apache Spark
+    href: spark/index.yml
+  - name: Guia de arquitetura do aplicativo .NET
+    href: architecture/index.yml
+  - name: Exemplos e tutoriais
+    href: samples-and-tutorials/index.md

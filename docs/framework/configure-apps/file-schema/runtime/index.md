@@ -6,12 +6,12 @@ helpviewer_keywords:
 - configuration schema [.NET Framework], runtime settings
 - runtime settings schema
 ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
-ms.openlocfilehash: d5af9f3299b48d431b43566c11610d745167b60b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 1797afe3e6347da1aef916d13be7678b7b8d4acf
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74431049"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89495167"
 ---
 # <a name="run-time-settings-schema"></a>Esquema de configurações do runtime
 
@@ -45,7 +45,7 @@ As configurações de tempo de execução são usadas pelo Common Language Runti
 &nbsp;&nbsp;&nbsp;&nbsp;[\<enforceFIPSPolicy>](enforcefipspolicy-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<etwEnable>](etwenable-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<forcePerformanceCounterUniqueSharedMemoryReads>](forceperformancecounteruniquesharedmemoryreads-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[\<gcAllowVeryLargeObjects>](gcconcurrent-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<gcAllowVeryLargeObjects>](gcallowverylargeobjects-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<gcConcurrent>](gcconcurrent-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<GCCpuGroup>](gccpugroup-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<GCHeapAffinitizeMask>](gcheapaffinitizemask-element.md)\
@@ -136,7 +136,7 @@ As configurações de tempo de execução são usadas pelo Common Language Runti
 |[\<UseRandomizedStringHashAlgorithm>](userandomizedstringhashalgorithm-element.md)|Especifica se o runtime calcula códigos hash para sequências com base no domínio do aplicativo.|
 |[\<UseSmallInternalThreadStacks>](usesmallinternalthreadstacks-element.md)|As solicitações que o runtime usa para explicitar os tamanhos das pilhas ao criar certos threads usados internamente, em vez do tamanho de pilha padrão.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Esquema de arquivos de configuração](../index.md)
 - [Para desabilitar a coleta de lixo simultânea](gcconcurrent-element.md#to-disable-background-garbage-collection)

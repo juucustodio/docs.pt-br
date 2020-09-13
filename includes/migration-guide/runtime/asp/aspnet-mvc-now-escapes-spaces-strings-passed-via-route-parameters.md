@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c53fe57f3278741a927a2f00b11af6e26dafce66
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: afbf34710c75d0f0586ddfdb2e7937d8d76d5399
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619766"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496431"
 ---
 ### <a name="aspnet-mvc-now-escapes-spaces-in-strings-passed-in-via-route-parameters"></a>O MVC do ASP.NET agora escapa espaços em cadeias de caracteres passadas por meio dos parâmetros de rota
 
@@ -16,12 +16,20 @@ Para estar em conformidade com a RFC 2396, os espaços nos caminhos de rota agor
 
 O código deve ser atualizado para não escapar parâmetros de cadeia de caracteres de uma rota. Se o URI original for necessário, ele poderá ser acessado com a API <xref:System.Net.HttpWebRequest.RequestUri>.OriginalString.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.5.2|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Web.Mvc.RouteAttribute.%23ctor(System.String)></li></ul>|
+- <xref:System.Web.Mvc.RouteAttribute.%23ctor(System.String)>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Web.Mvc.RouteAttribute.#ctor(System.String)`
+
+-->

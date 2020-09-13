@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d7a18a0b457c2a38f40c1da3b2f0bfc578259475
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: c27c63e5bbd4a144b9482a0b1cb74250ae78d91c
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621011"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496408"
 ---
 ### <a name="connection-pool-blocking-period-for-azure-sql-databases-is-removed"></a>Período de bloqueio do pool de conexões para bancos de dados SQL do Azure removido
 
@@ -16,12 +16,24 @@ Começando com o .NET Framework 4.6.2, para solicitações de conexão abertas p
 
 Se esse comportamento for indesejável, o período de bloqueio do pool de conexões poderá ser configurado definindo a propriedade <xref:System.Data.SqlClient.SqlConnectionStringBuilder.PoolBlockingPeriod?displayProperty=fullName> introduzida no .NET Framework 4.6.2. O valor da propriedade é membro da enumeração <xref:System.Data.SqlClient.PoolBlockingPeriod?displayProperty=fullName> que pode assumir um dos três valores:<ul><li><xref:System.Data.SqlClient.PoolBlockingPeriod.AlwaysBlock></li><li><xref:System.Data.SqlClient.PoolBlockingPeriod.Auto></li><li><xref:System.Data.SqlClient.PoolBlockingPeriod.NeverBlock></li></ul>É possível restaurar o comportamento anterior definindo a propriedade <xref:System.Data.SqlClient.SqlConnectionStringBuilder.PoolBlockingPeriod?displayProperty=fullName> como <xref:System.Data.SqlClient.PoolBlockingPeriod.AlwaysBlock>.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.6.2|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Data.Common.DbConnection.OpenAsync?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Data.Common.DbConnection.OpenAsync?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Data.Common.DbConnection.OpenAsync`
+- `M:System.Data.SqlClient.SqlConnection.Open`
+- `M:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)`
+
+-->

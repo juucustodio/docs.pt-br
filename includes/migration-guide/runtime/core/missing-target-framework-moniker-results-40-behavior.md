@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 26a001ec2009a1a66dd9038b9bd3a42d7bcefb73
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 49740d3b1890d72935e6e329a4f4be836ed70b25
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619785"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496248"
 ---
 ### <a name="missing-target-framework-moniker-results-in-40-behavior"></a>Ausência do Moniker da Estrutura de Destino resulta no comportamento da versão 4.0
 
@@ -16,8 +16,20 @@ Os aplicativos sem um <xref:System.Runtime.Versioning.TargetFrameworkAttribute?d
 
 O <xref:System.Runtime.Versioning.TargetFrameworkAttribute?displayProperty=fullName> deve ser fornecido, seja por meio da adição do atributo diretamente ao assembly ou da especificação de uma estrutura de destino no [arquivo de projeto, seja por meio da GUI das propriedades do projeto do Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-managed-multi-targeting-part-1-concepts-target-framework-moniker-target-framework/).
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Principal|
 |Versão|4.5|
-|Type|Runtime|
+|Tipo|Runtime|
+
+#### <a name="affected-apis"></a>APIs afetadas
+
+Não detectável via análise de API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

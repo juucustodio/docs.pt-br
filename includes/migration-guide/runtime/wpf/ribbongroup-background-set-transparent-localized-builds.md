@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a3ba42868577ac20ea2e082f90fc4973a1bfe108
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: d6405573e476ce18513938b500041adefbeeef1b
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622336"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496673"
 ---
 ### <a name="ribbongroup-background-is-set-to-transparent-in-localized-builds"></a>Tela de fundo RibbonGroup é definida como transparente em builds localizados
 
@@ -16,8 +16,20 @@ A tela de fundo <xref:System.Windows.Controls.Ribbon.RibbonGroup?displayProperty
 
 Atualizar para o .NET Framework 4.7
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.6.2|
-|Type|Runtime|
+|Tipo|Runtime|
+
+#### <a name="affected-apis"></a>APIs afetadas
+
+Não detectável via análise de API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

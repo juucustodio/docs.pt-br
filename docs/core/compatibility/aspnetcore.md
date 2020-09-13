@@ -2,15 +2,15 @@
 title: ASP.NET Core alterações significativas
 titleSuffix: ''
 description: Lista as alterações significativas em ASP.NET Core.
-ms.date: 08/25/2020
+ms.date: 09/09/2020
 author: scottaddie
 ms.author: scaddie
-ms.openlocfilehash: 443494291f4ec58aecd7c8d8ed42cb4086e64095
-ms.sourcegitcommit: 60dc0a11ebdd77f969f41891d5cca06335cda6a7
+ms.openlocfilehash: 2af0cc6721b66b1d07b196e4ba330f8425c14752
+ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88957724"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90022981"
 ---
 # <a name="aspnet-core-breaking-changes"></a>ASP.NET Core alterações significativas
 
@@ -76,6 +76,7 @@ As seguintes alterações significativas no ASP.NET Core 3,0, 3,1 e 5,0 estão d
 - [Localização: classe ResourceManagerWithCultureStringLocalizer e membro da interface WithCulture removidos](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Log: classe DebugLogger criada internamente](#logging-debuglogger-class-made-internal)
 - [Middleware: página de erro do banco de dados marcada como obsoleta](#middleware-database-error-page-marked-as-obsolete)
+- [Middleware: o middleware do manipulador de exceção lança a exceção original se o manipulador não for encontrado](#middleware-exception-handler-middleware-throws-original-exception-if-handler-not-found)
 - [MVC: sufixo assíncrono de ação do controlador removido](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC: JsonResult movido para Microsoft. AspNetCore. Mvc. Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
 - [MVC: ferramenta de pré-compilação preterida](#mvc-precompilation-tool-deprecated)
@@ -171,6 +172,10 @@ As seguintes alterações significativas no ASP.NET Core 3,0, 3,1 e 5,0 estão d
 ***
 
 [!INCLUDE[Middleware: Database error page marked as obsolete](~/includes/core-changes/aspnetcore/5.0/middleware-database-error-page-obsolete.md)]
+
+***
+
+[!INCLUDE[Middleware: Exception Handler Middleware throws original exception if handler not found](~/includes/core-changes/aspnetcore/5.0/middleware-exception-handler-throws-original-exception.md)]
 
 ***
 

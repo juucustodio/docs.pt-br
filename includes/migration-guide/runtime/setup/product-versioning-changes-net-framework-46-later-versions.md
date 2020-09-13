@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a5c6dda0c1d68468cd95f67716709dd059948c80
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 6a79f04af44f78313c4d5bb5c37dfad252d3024b
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621038"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496535"
 ---
 ### <a name="product-versioning-changes-in-the-net-framework-46-and-later-versions"></a>Alterações de controle de versão de produto no .NET Framework 4.6 e versões posteriores
 
@@ -16,8 +16,20 @@ O controle de versão do produto foi alterado nas versões anteriores do .NET Fr
 
 Em geral, os aplicativos devem depender das técnicas recomendadas para detecção de itens como a versão de runtime do .NET Framework e o diretório de instalação:<ul><li>Para detectar a versão de runtime do .NET Framework, confira [How to: Determine Which .NET Framework Versions Are Installed](~/docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md) (Como determinar quais versões do .NET Framework estão instaladas).</li><li>Para determinar o caminho de instalação do .NET Framework, use o valor da entrada <code>InstallPath</code> na chave <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</code>.</li></ul> <blockquote> [!IMPORTANT] O nome da subchave é <code>NET Framework Setup</code>, e não <code>.NET Framework Setup</code>.</blockquote> <ul><li>Para determinar o caminho do diretório do Common Language Runtime do .NET Framework, chame o método <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory?displayProperty=nameWithType>.</li><li>Para obter a versão do CLR, chame o método <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetSystemVersion?displayProperty=nameWithType>. Para o .NET Framework 4 e suas versões pontuais (o .NET Framework 4.5, 4.5.1, 4.5.2 e o .NET Framework 4.6, 4.6.1, 4.6.2, 4.7 e 4.7.1), ele retorna a cadeia de caracteres v4.0.30319.</li></ul>
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.6|
-|Type|Runtime|
+|Tipo|Runtime|
+
+#### <a name="affected-apis"></a>APIs afetadas
+
+Não detectável via análise de API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

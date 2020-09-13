@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e3b9711ac66901d69838de4c9f309d086b06fd4d
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 8c8477ae3719cfcc2060459ba85bcc9e76f11c41
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619911"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497661"
 ---
 ### <a name="xslt-forward-compat-now-works"></a>Compatibilidade com versões posteriores do XSLT agora funciona
 
@@ -16,12 +16,20 @@ No .NET Framework 4, a compatibilidade com versões posteriores do XSLT 1.0 tinh
 
 A maioria dos aplicativos não deve ser afetada, mas os dados serão classificados diferentemente em alguns casos agora que xsl:sort é respeitado. Se <code>xsl:sort</code> for usado em folhas de estilo 1.1, verifique se os aplicativos dependem da ordem sem classificação dos dados. Se os aplicativos dependerem do comportamento de classificação de 4.0, remova <code>xsl:sort</code> da folha de estilos.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=nameWithType></li></ul>|
+- <xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Xml.Xsl.XslCompiledTransform`
+
+-->

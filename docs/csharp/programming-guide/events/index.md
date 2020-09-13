@@ -7,12 +7,12 @@ helpviewer_keywords:
 - C# language, events
 - events [C#]
 ms.assetid: a8e51b22-d294-44fb-9539-0072f06c4cb3
-ms.openlocfilehash: 3160d1e381c6cb3af0f017538f9555b3fded9910
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: f56de15dd2c7b0a10e40a886dbd82a4147a03014
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87302068"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89466151"
 ---
 # <a name="events-c-programming-guide"></a>Eventos (Guia de Programação em C#)
 Eventos permitem que uma [classe](../../language-reference/keywords/class.md) ou objeto notifique outras classes ou objetos quando algo interessante ocorre. A classe que envia (ou *aciona*) o evento é chamada de *editor* e as classes que recebem (ou *manipulam*) os eventos são chamadas *assinantes*.  
@@ -32,10 +32,10 @@ Em um aplicativo Windows Forms em C# ou Web típico, você assina eventos aciona
   
 - Quando um evento tem vários assinantes, os manipuladores de eventos são invocados sincronicamente quando um evento é acionado. Para invocar eventos de forma assíncrona, consulte [Chamando métodos síncronos assincronamente](../../../standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
-- Na biblioteca de classes .NET Framework, os eventos são baseados no delegado <xref:System.EventHandler> e na classe base <xref:System.EventArgs>.  
+- Na biblioteca de classes .NET, os eventos são baseados no <xref:System.EventHandler> delegado e na <xref:System.EventArgs> classe base.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- Para obter mais informações, veja:  
+ Para obter mais informações, consulte:  
   
 - [Como realizar e cancelar a assinatura de eventos](./how-to-subscribe-to-and-unsubscribe-from-events.md)
 

@@ -2,12 +2,12 @@
 title: Alterações significativas na biblioteca de classes base
 description: Lista as alterações significativas nas principais bibliotecas do .NET.
 ms.date: 07/27/2020
-ms.openlocfilehash: 8b8fb9b88edf4f1e5f83ef7c21f1712af40479fd
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: c73909514bc738387a21f5ea68defe49c6a2c839
+ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359124"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89598186"
 ---
 # <a name="core-net-libraries-breaking-changes"></a>Principais alterações significativas nas bibliotecas do .NET
 
@@ -17,6 +17,8 @@ As seguintes alterações significativas estão documentadas nesta página:
 
 | Alteração significativa | Versão introduzida |
 | - | :-: |
+| [Thread. Abort é obsoleto](#threadabort-is-obsolete) | 5,0 |
+| [Propriedades obsoletas em ConsoleLoggerOptions](#obsolete-properties-on-consoleloggeroptions) | 5,0 |
 | [Verificações IsSupported de hardware intrínsecas podem diferir para tipos aninhados](#hardware-intrinsic-issupported-checks-may-differ-for-nested-types) | 5,0 |
 | [Nomes de parâmetro alterados em assemblies de referência](#parameter-names-changed-in-reference-assemblies) | 5,0 |
 | [Caminhos de URI com caracteres não ASCII são analisados corretamente no UNIX](#uri-paths-with-non-ascii-characters-parse-correctly-on-unix) | 5,0 |
@@ -51,6 +53,14 @@ As seguintes alterações significativas estão documentadas nesta página:
 | [Process. StartInfo gera InvalidOperationException para processos que você não iniciou](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## <a name="net-50"></a>.NET 5,0
+
+[!INCLUDE [thread-abort-obsolete](../../../includes/core-changes/corefx/5.0/thread-abort-obsolete.md)]
+
+***
+
+[!INCLUDE [obsolete-consoleloggeroptions-properties](../../../includes/core-changes/corefx/5.0/obsolete-consoleloggeroptions-properties.md)]
+
+***
 
 [!INCLUDE [hardware-instrinsics-issupported-checks](../../../includes/core-changes/corefx/5.0/hardware-instrinsics-issupported-checks.md)]
 

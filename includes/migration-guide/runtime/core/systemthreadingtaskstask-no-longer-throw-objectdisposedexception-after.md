@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3eab96149be1e40d528cfd552bbe05ca766cf4e8
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 58dbb54d42d89b450134758072e3133ae4e6b13d
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619788"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496241"
 ---
 ### <a name="systemthreadingtaskstask-no-longer-throw-objectdisposedexception-after-object-is-disposed"></a>System.Threading.Tasks.Task não gera mais ObjectDisposedException depois que o objeto é descartado
 
@@ -16,8 +16,20 @@ Exceto por <xref:System.Threading.Tasks.Task.System%23IAsyncResult%23AsyncWaitHa
 
 Lembre-se de que os métodos Task podem não gerar mais <xref:System.ObjectDisposedException?displayProperty=fullName> nos casos em que o objeto é descartado. Se um aplicativo dependia dessa exceção para saber que uma tarefa foi descartada, ele deverá ser atualizado para verificar explicitamente o status da tarefa usando <xref:System.Threading.Tasks.Task.Status>.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.5|
-|Type|Runtime|
+|Tipo|Runtime|
+
+#### <a name="affected-apis"></a>APIs afetadas
+
+Não detectável via análise de API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

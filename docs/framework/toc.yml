@@ -1,720 +1,742 @@
-- name: Documentação do .NET Framework
-  href: index.yml
-- name: Visão geral do .NET Framework
-  href: get-started/overview.md
-- name: Introdução
-  items:
-    - name: Visão geral
-      href: get-started/index.md
-    - name: .NET Framework e lançamentos fora de banda
-      href: get-started/the-net-framework-and-out-of-band-releases.md
-    - name: .NET Core e software livre
-      href: get-started/net-core-and-open-source.md
-    - name: Requisitos do sistema
-      href: get-started/system-requirements.md
-- name: Guia de instalação
-  items:
-    - name: Visão geral
-      href: install/index.md
-    - name: Para desenvolvedores
-      href: install/guide-for-developers.md
-    - name: Por versão do SO
-      items:
-        - name: Windows 10 e Windows Server 2016
-          href: install/on-windows-10.md
-        - name: Windows 8.1 e Windows Server 2012 R2
-          href: install/on-windows-8-1.md
-        - name: Windows 8 e Windows Server 2012
-          href: install/on-windows-8.md
-        - name: Windows 7 SP1 e Windows Server 2008 R2
-          href: install/on-windows-7.md
-        - name: Windows Vista e Windows Server 2008
-          href: install/on-windows-vista.md
-        - name: Windows XP e Windows Server 2003
-          href: install/on-windows-xp.md
-    - name: Reparar o .NET Framework
-      href: install/repair.md
-    - name: Solução de problemas
-      items:
-        - name: Solução de problemas de instalação e desinstalação
-          href: install/troubleshoot-blocked-installations-and-uninstallations.md
-        - name: Solução de problemas de "Não foi possível iniciar o aplicativo"
-          href: install/application-not-started.md
-    - name: .NET Framework 3.5 do Windows 8 ao Windows 10
-      href: install/dotnet-35-windows-10.md
-    - name: .NET Framework 1.1 do Windows 8 ao Windows 10
-      href: install/run-net-framework-1-1-apps.md
-- name: Guia de migração
-  items:
-    - name: Visão geral
-      href: migration-guide/index.md
-    - name: Compatibilidade
-      items:
-        - name: Compatibilidade de aplicativos
-          items:
-            - name: Visão geral
-              displayName: App compatibility
-              href: migration-guide/application-compatibility.md
-            - name: Alterações em runtime
-              items:
-                - name: 4.0 para 4.5
-                  href: migration-guide/runtime/4.0-4.5.md
-                - name: 4.0 para 4.5.1
-                  href: migration-guide/runtime/4.0-4.5.1.md
-                - name: 4.0 para 4.5.2
-                  href: migration-guide/runtime/4.0-4.5.2.md
-                - name: 4.0 para 4.6
-                  href: migration-guide/runtime/4.0-4.6.md
-                - name: 4.0 para 4.6.1
-                  href: migration-guide/runtime/4.0-4.6.1.md
-                - name: 4.0 para 4.6.2
-                  href: migration-guide/runtime/4.0-4.6.2.md
-                - name: 4.0 para 4.7
-                  href: migration-guide/runtime/4.0-4.7.md
-                - name: 4.0 para 4.7.1
-                  href: migration-guide/runtime/4.0-4.7.1.md
-                - name: 4.0 para 4.7.2
-                  href: migration-guide/runtime/4.0-4.7.2.md
-                - name: 4.0 para 4.8
-                  href: migration-guide/runtime/4.0-4.8.md
-                - name: 4.5 para 4.5.1
-                  href: migration-guide/runtime/4.5-4.5.1.md
-                - name: 4.5 para 4.5.2
-                  href: migration-guide/runtime/4.5-4.5.2.md
-                - name: 4.5 para 4.6
-                  href: migration-guide/runtime/4.5-4.6.md
-                - name: 4.5 para 4.6.1
-                  href: migration-guide/runtime/4.5-4.6.1.md
-                - name: 4.5 para 4.6.2
-                  href: migration-guide/runtime/4.5-4.6.2.md
-                - name: 4.5 para 4.7
-                  href: migration-guide/runtime/4.5-4.7.md
-                - name: 4.5 para 4.7.1
-                  href: migration-guide/runtime/4.5-4.7.1.md
-                - name: 4.5 para 4.7.2
-                  href: migration-guide/runtime/4.5-4.7.2.md
-                - name: 4.5 para 4.8
-                  href: migration-guide/runtime/4.5-4.8.md
-                - name: 4.5.1 para 4.5.2
-                  href: migration-guide/runtime/4.5.1-4.5.2.md
-                - name: 4.5.1 para 4.6
-                  href: migration-guide/runtime/4.5.1-4.6.md
-                - name: 4.5.1 para 4.6.1
-                  href: migration-guide/runtime/4.5.1-4.6.1.md
-                - name: 4.5.1 para 4.6.2
-                  href: migration-guide/runtime/4.5.1-4.6.2.md
-                - name: 4.5.1 para 4.7
-                  href: migration-guide/runtime/4.5.1-4.7.md
-                - name: 4.5.1 para 4.7.1
-                  href: migration-guide/runtime/4.5.1-4.7.1.md
-                - name: 4.5.1 para 4.7.2
-                  href: migration-guide/runtime/4.5.1-4.7.2.md
-                - name: 4.5.1 para 4.8
-                  href: migration-guide/runtime/4.5.1-4.8.md
-                - name: 4.5.2 para 4.6
-                  href: migration-guide/runtime/4.5.2-4.6.md
-                - name: 4.5.2 para 4.6.1
-                  href: migration-guide/runtime/4.5.2-4.6.1.md
-                - name: 4.5.2 para 4.6.2
-                  href: migration-guide/runtime/4.5.2-4.6.2.md
-                - name: 4.5.2 para 4.7
-                  href: migration-guide/runtime/4.5.2-4.7.md
-                - name: 4.5.2 para 4.7.1
-                  href: migration-guide/runtime/4.5.2-4.7.1.md
-                - name: 4.5.2 para 4.7.2
-                  href: migration-guide/runtime/4.5.2-4.7.2.md
-                - name: 4.5.2 para 4.8
-                  href: migration-guide/runtime/4.5.2-4.8.md
-                - name: 4.6 para 4.6.1
-                  href: migration-guide/runtime/4.6-4.6.1.md
-                - name: 4.6 para 4.6.2
-                  href: migration-guide/runtime/4.6-4.6.2.md
-                - name: 4.6 para 4.7
-                  href: migration-guide/runtime/4.6-4.7.md
-                - name: 4.6 para 4.7.1
-                  href: migration-guide/runtime/4.6-4.7.1.md
-                - name: 4.6 para 4.7.2
-                  href: migration-guide/runtime/4.6-4.7.2.md
-                - name: 4.6 para 4.8
-                  href: migration-guide/runtime/4.6-4.8.md
-                - name: 4.6.1 para 4.6.2
-                  href: migration-guide/runtime/4.6.1-4.6.2.md
-                - name: 4.6.1 para 4.7
-                  href: migration-guide/runtime/4.6.1-4.7.md
-                - name: 4.6.1 para 4.7.1
-                  href: migration-guide/runtime/4.6.1-4.7.1.md
-                - name: 4.6.1 para 4.7.2
-                  href: migration-guide/runtime/4.6.1-4.7.2.md
-                - name: 4.6.1 para 4.8
-                  href: migration-guide/runtime/4.6.1-4.8.md
-                - name: 4.6.2 para 4.7
-                  href: migration-guide/runtime/4.6.2-4.7.md
-                - name: 4.6.2 para 4.7.1
-                  href: migration-guide/runtime/4.6.2-4.7.1.md
-                - name: 4.6.2 para 4.7.2
-                  href: migration-guide/runtime/4.6.2-4.7.2.md
-                - name: 4.6.2 para 4.8
-                  href: migration-guide/runtime/4.6.2-4.8.md
-                - name: 4.7 para 4.7.1
-                  href: migration-guide/runtime/4.7-4.7.1.md
-                - name: 4.7 para 4.7.2
-                  href: migration-guide/runtime/4.7-4.7.2.md
-                - name: 4.7 para 4.8
-                  href: migration-guide/runtime/4.7-4.8.md
-                - name: 4.7.1 para 4.7.2
-                  href: migration-guide/runtime/4.7.1-4.7.2.md
-                - name: 4.7.1 para 4.8
-                  href: migration-guide/runtime/4.7.1-4.8.md
-                - name: 4.7.2 para 4.8
-                  href: migration-guide/runtime/4.7.2-4.8.md
-            - name: Alterações de redirecionamento
-              items:
-                - name: 4.0 para 4.5
-                  href: migration-guide/retargeting/4.0-4.5.md
-                - name: 4.0 para 4.5.1
-                  href: migration-guide/retargeting/4.0-4.5.1.md
-                - name: 4.0 para 4.5.2
-                  href: migration-guide/retargeting/4.0-4.5.2.md
-                - name: 4.0 para 4.6
-                  href: migration-guide/retargeting/4.0-4.6.md
-                - name: 4.0 para 4.6.1
-                  href: migration-guide/retargeting/4.0-4.6.1.md
-                - name: 4.0 para 4.6.2
-                  href: migration-guide/retargeting/4.0-4.6.2.md
-                - name: 4.0 para 4.7
-                  href: migration-guide/retargeting/4.0-4.7.md
-                - name: 4.0 para 4.7.1
-                  href: migration-guide/retargeting/4.0-4.7.1.md
-                - name: 4.0 para 4.7.2
-                  href: migration-guide/retargeting/4.0-4.7.2.md
-                - name: 4.0 para 4.8
-                  href: migration-guide/retargeting/4.0-4.8.md
-                - name: 4.5 para 4.5.1
-                  href: migration-guide/retargeting/4.5-4.5.1.md
-                - name: 4.5 para 4.5.2
-                  href: migration-guide/retargeting/4.5-4.5.2.md
-                - name: 4.5 para 4.6
-                  href: migration-guide/retargeting/4.5-4.6.md
-                - name: 4.5 para 4.6.1
-                  href: migration-guide/retargeting/4.5-4.6.1.md
-                - name: 4.5 para 4.6.2
-                  href: migration-guide/retargeting/4.5-4.6.2.md
-                - name: 4.5 para 4.7
-                  href: migration-guide/retargeting/4.5-4.7.md
-                - name: 4.5 para 4.7.1
-                  href: migration-guide/retargeting/4.5-4.7.1.md
-                - name: 4.5 para 4.7.2
-                  href: migration-guide/retargeting/4.5-4.7.2.md
-                - name: 4.5 para 4.8
-                  href: migration-guide/retargeting/4.5-4.8.md
-                - name: 4.5.1 para 4.5.2
-                  href: migration-guide/retargeting/4.5.1-4.5.2.md
-                - name: 4.5.1 para 4.6
-                  href: migration-guide/retargeting/4.5.1-4.6.md
-                - name: 4.5.1 para 4.6.1
-                  href: migration-guide/retargeting/4.5.1-4.6.1.md
-                - name: 4.5.1 para 4.6.2
-                  href: migration-guide/retargeting/4.5.1-4.6.2.md
-                - name: 4.5.1 para 4.7
-                  href: migration-guide/retargeting/4.5.1-4.7.md
-                - name: 4.5.1 para 4.7.1
-                  href: migration-guide/retargeting/4.5.1-4.7.1.md
-                - name: 4.5.1 para 4.7.2
-                  href: migration-guide/retargeting/4.5.1-4.7.2.md
-                - name: 4.5.1 para 4.8
-                  href: migration-guide/retargeting/4.5.1-4.8.md
-                - name: 4.5.2 para 4.6
-                  href: migration-guide/retargeting/4.5.2-4.6.md
-                - name: 4.5.2 para 4.6.1
-                  href: migration-guide/retargeting/4.5.2-4.6.1.md
-                - name: 4.5.2 para 4.6.2
-                  href: migration-guide/retargeting/4.5.2-4.6.2.md
-                - name: 4.5.2 para 4.7
-                  href: migration-guide/retargeting/4.5.2-4.7.md
-                - name: 4.5.2 para 4.7.1
-                  href: migration-guide/retargeting/4.5.2-4.7.1.md
-                - name: 4.5.2 para 4.7.2
-                  href: migration-guide/retargeting/4.5.2-4.7.2.md
-                - name: 4.5.2 para 4.8
-                  href: migration-guide/retargeting/4.5.2-4.8.md
-                - name: 4.6 para 4.6.1
-                  href: migration-guide/retargeting/4.6-4.6.1.md
-                - name: 4.6 para 4.6.2
-                  href: migration-guide/retargeting/4.6-4.6.2.md
-                - name: 4.6 para 4.7
-                  href: migration-guide/retargeting/4.6-4.7.md
-                - name: 4.6 para 4.7.1
-                  href: migration-guide/retargeting/4.6-4.7.1.md
-                - name: 4.6 para 4.7.2
-                  href: migration-guide/retargeting/4.6-4.7.2.md
-                - name: 4.6 para 4.8
-                  href: migration-guide/retargeting/4.6-4.8.md
-                - name: 4.6.1 para 4.6.2
-                  href: migration-guide/retargeting/4.6.1-4.6.2.md
-                - name: 4.6.1 para 4.7
-                  href: migration-guide/retargeting/4.6.1-4.7.md
-                - name: 4.6.1 para 4.7.1
-                  href: migration-guide/retargeting/4.6.1-4.7.1.md
-                - name: 4.6.1 para 4.7.2
-                  href: migration-guide/retargeting/4.6.1-4.7.2.md
-                - name: 4.6.1 para 4.8
-                  href: migration-guide/retargeting/4.6.1-4.8.md
-                - name: 4.6.2 para 4.7
-                  href: migration-guide/retargeting/4.6.2-4.7.md
-                - name: 4.6.2 para 4.7.1
-                  href: migration-guide/retargeting/4.6.2-4.7.1.md
-                - name: 4.6.2 para 4.7.2
-                  href: migration-guide/retargeting/4.6.2-4.7.2.md
-                - name: 4.6.2 para 4.8
-                  href: migration-guide/retargeting/4.6.2-4.8.md
-                - name: 4.7 para 4.7.1
-                  href: migration-guide/retargeting/4.7-4.7.1.md
-                - name: 4.7 para 4.7.2
-                  href: migration-guide/retargeting/4.7-4.7.2.md
-                - name: 4.7 para 4.8
-                  href: migration-guide/retargeting/4.7-4.8.md
-                - name: 4.7.1 para 4.7.2
-                  href: migration-guide/retargeting/4.7.1-4.7.2.md
-                - name: 4.7.1 para 4.8
-                  href: migration-guide/retargeting/4.7.1-4.8.md
-                - name: 4.7.2 para 4.8
-                  href: migration-guide/retargeting/4.7.2-4.8.md
-        - name: Mitigações de comportamento
-          items:
-            - name: Visão geral
-              href: migration-guide/mitigations.md
-            - name: Implementações personalizadas de IMessageFilter.PreFilterMessage
-              href: migration-guide/mitigation-custom-imessagefilter-prefiltermessage-implementations.md
-            - name: Desserialização de objetos em domínios do aplicativo
-              href: migration-guide/mitigation-deserialization-of-objects-across-app-domains.md
-            - name: Novo compilador JIT de 64 bits
-              href: migration-guide/mitigation-new-64-bit-jit-compiler.md
-            - name: Verificações de dois-pontos no caminho
-              href: migration-guide/mitigation-path-colon-checks.md
-            - name: Normalização de caminho
-              href: migration-guide/mitigation-path-normalization.md
-            - name: Quadros PNG em objetos de ícone
-              href: migration-guide/mitigation-png-frames-in-icon-objects.md
-            - name: Suporte para toque e caneta baseado em ponteiro
-              href: migration-guide/mitigation-pointer-based-touch-and-stylus-support.md
-            - name: Período de bloqueio do pool
-              href: migration-guide/mitigation-pool-blocking-period.md
-            - name: Controle de versão do produto
-              href: migration-guide/mitigation-product-versioning.md
-            - name: Serialização de caracteres de controle
-              href: migration-guide/mitigation-serialization-control-characters.md
-            - name: Protocolos TLS
-              href: migration-guide/mitigation-tls-protocols.md
-            - name: Serviços WCF e autenticação de certificado
-              href: migration-guide/mitigation-wcf-services-and-certificate-authentication.md
-            - name: Layout do WPF
-              href: migration-guide/mitigation-wpf-layout.md
-            - name: Renderização de janela WPF
-              href: migration-guide/mitigation-wpf-window-rendering.md
-            - name: Método X509CertificateClaimSet.FindClaims
-              href: migration-guide/mitigation-x509certificateclaimset-findclaims-method.md
-            - name: Validação do esquema XML
-              href: migration-guide/mitigation-xml-schema-validation.md
-            - name: Separador de caminho ZipArchiveEntry.FullName
-              href: migration-guide/mitigation-ziparchiveentry-fullname-path-separator.md
-        - name: Compatibilidade de versões
-          href: migration-guide/version-compatibility.md
-    - name: Versões do .NET Framework
-      items:
-        - name: Versões e dependências
-          href: migration-guide/versions-and-dependencies.md
-        - name: Localizar versões instaladas
-          href: migration-guide/how-to-determine-which-versions-are-installed.md
-        - name: Localizar atualizações instaladas
-          href: migration-guide/how-to-determine-which-net-framework-updates-are-installed.md
-    - name: Configurar um aplicativo para dar suporte ao .NET Framework 4 ou posterior
-      href: migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md
-    - name: Migrar do .NET Framework 1.1
-      href: migration-guide/migrating-from-the-net-framework-1-1.md
-    - name: Problemas de migração do .NET Framework 4
-      href: migration-guide/net-framework-4-migration-issues.md
-- name: Guia de desenvolvimento
-  href: development-guide.md
-  items:
-    - name: Domínios de aplicativo e assemblies
-      href: app-domains/
-    - name: Recursos em aplicativos de área de trabalho
-      href: resources/
-    - name: Acessibilidade
-      href: ui-automation/
-    - name: Dados e modelagem
-      href: data/
-    - name: Aplicativos cliente
-      items:
-        - name: Visão geral
-          href: develop-client-apps.md
-        - name: Windows Presentation Foundation
-          href: wpf/
-        - name: Windows Forms
-          href: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
-    - name: Aplicativos orientados a serviços com WCF
-      href: wcf/
-    - name: Windows Workflow Foundation
-      href: windows-workflow-foundation/
-    - name: Aplicativos de serviço do Windows
-      href: windows-services/
-    - name: Aplicativos de 64 bits
-      href: 64-bit-apps.md
-    - name: Aplicativos Web com ASP.NET
-      href: develop-web-apps-with-aspnet.md
-    - name: Programação de rede
-      href: network-programming/
-    - name: Configurar aplicativos
-      href: configure-apps/
-    - name: Compilar aplicativos com o .NET Nativo
-      href: net-native/
-    - name: 'Depuração, rastreamento e criação de perfil'
-      href: debug-trace-profile/
-    - name: Implantação
-      href: deployment/
-    - name: Desempenho
-      href: performance/
-    - name: Programação dinâmica
-      href: reflection-and-codedom/
-    - name: MEF (Managed Extensibility Framework)
-      href: mef/
-    - name: Interoperar com código não gerenciado
-      href: interop/
-    - name: Referência de API não gerenciada
-      href: unmanaged-api/
-    - name: Serviços XAML
-      href: ../desktop-wpf/xaml-services/
-- name: Ferramentas
-  items:
-    - name: Visão geral
-      href: tools/index.md
-    - name: Al.exe (Assembly linker)
-      href: tools/al-exe-assembly-linker.md
-    - name: Aximp.exe (Importador de controle ActiveX do Windows Forms)
-      href: tools/aximp-exe-windows-forms-activex-control-importer.md
-    - name: Caspol.exe (ferramenta de política de segurança de acesso de código)
-      href: tools/caspol-exe-code-access-security-policy-tool.md
-    - name: Cert2spc.exe (ferramenta de teste de certificado do fornecedor do software)
-      href: tools/cert2spc-exe-software-publisher-certificate-test-tool.md
-    - name: Certmgr.exe (ferramenta Gerenciador de Certificados)
-      href: tools/certmgr-exe-certificate-manager-tool.md
-    - name: Clrver.exe (ferramenta de versão do CLR)
-      href: tools/clrver-exe-clr-version-tool.md
-    - name: Prompts de comando
-      href: tools/developer-command-prompt-for-vs.md
-    - name: CorFlags.exe (ferramenta de conversão de CorFlags)
-      href: tools/corflags-exe-corflags-conversion-tool.md
-    - name: Fuslogvw.exe (visualizador de log de associações de assembly)
-      href: tools/fuslogvw-exe-assembly-binding-log-viewer.md
-    - name: Gacutil.exe (ferramenta de cache de assembly global)
-      href: tools/gacutil-exe-gac-tool.md
-    - name: Ilasm.exe (montador IL)
-      href: tools/ilasm-exe-il-assembler.md
-    - name: Ildasm.exe (desmontador IL)
-      href: tools/ildasm-exe-il-disassembler.md
-    - name: Installutil.exe (Ferramenta de Instalação)
-      href: tools/installutil-exe-installer-tool.md
-    - name: Lc.exe (compilador de licença)
-      href: tools/lc-exe-license-compiler.md
-    - name: Mage.exe (Manifest Generation and Editing Tool)
-      href: tools/mage-exe-manifest-generation-and-editing-tool.md
-    - name: 'MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)'
-      href: tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md
-    - name: MDbg.exe (depurador de linha de comando do .NET Framework)
-      href: tools/mdbg-exe.md
-    - name: Mgmtclassgen.exe (gerador de classe fortemente tipada de gerenciamento)
-      href: tools/mgmtclassgen-exe.md
-    - name: Mpgo.exe (ferramenta de otimização guiada por perfil gerenciado)
-      href: tools/mpgo-exe-managed-profile-guided-optimization-tool.md
-    - name: Ngen.exe (gerador de imagens nativas)
-      href: tools/ngen-exe-native-image-generator.md
-    - name: Peverify.exe (ferramenta PEVerify)
-      href: tools/peverify-exe-peverify-tool.md
-    - name: Regasm.exe (ferramenta de registro de assembly)
-      href: tools/regasm-exe-assembly-registration-tool.md
-    - name: Regsvcs.exe (ferramenta de instalação de serviços .NET)
-      href: tools/regsvcs-exe-net-services-installation-tool.md
-    - name: Resgen.exe (gerador de arquivo de recurso)
-      href: tools/resgen-exe-resource-file-generator.md
-    - name: SecAnnotate.exe (ferramenta Anotador de Segurança do .NET)
-      href: tools/secannotate-exe-net-security-annotator-tool.md
-    - name: SignTool.exe (ferramenta de assinatura)
-      href: tools/signtool-exe.md
-    - name: Sn.exe (ferramenta Nome Forte)
-      href: tools/sn-exe-strong-name-tool.md
-    - name: SOS.dll (extensão de depuração SOS)
-      href: tools/sos-dll-sos-debugging-extension.md
-    - name: SqlMetal.exe (ferramenta de geração de código)
-      href: tools/sqlmetal-exe-code-generation-tool.md
-    - name: Storeadm.exe (ferramenta de armazenamento isolado)
-      href: tools/storeadm-exe-isolated-storage-tool.md
-    - name: Tlbexp.exe (exportador de biblioteca de tipos)
-      href: tools/tlbexp-exe-type-library-exporter.md
-    - name: Tlbimp.exe (importador de biblioteca de tipos)
-      href: tools/tlbimp-exe-type-library-importer.md
-    - name: Winmdexp.exe (ferramenta de exportação de metadados do Windows Runtime)
-      href: tools/winmdexp-exe-windows-runtime-metadata-export-tool.md
-    - name: Mensagens de erro Winmdexp.exe
-      href: tools/winmdexp-exe-error-messages.md
-    - name: Winres.exe (editor de recursos do Windows Forms)
-      href: tools/winres-exe-windows-forms-resource-editor.md
-- name: APIs adicionais
-  items:
-    - name: Visão geral
-      href: additional-apis/index.md
-    - name: Microsoft.SqlServer.Server
-      items:
-        - name: Classe SmiOrderProperty
-          items:
-            - name: Propriedade Item
-              href: additional-apis/microsoft.sqlserver.server.smiorderproperty.item.md
-    - name: Sistema
-      items:
-        - name: Classe de exceção
-          items:
-            - name: Método PrepForRemoting
-              href: additional-apis/system.exception.prepforremoting.md
-    - name: System.Data.SqlTypes
-      items:
-        - name: Classe SqlChars
-          items:
-            - name: Propriedade Stream
-              href: additional-apis/system.data.sqltypes.sqlchars.stream.md
-        - name: Classe SqlStreamChars
-          items:
-            - name: Construtor SqlStreamChars
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.-ctor.md
-            - name: Propriedade CanSeek
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.canseek.md
-            - name: Propriedade IsNull
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.isnull.md
-            - name: Propriedade Length
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.length.md
-            - name: Método Close
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.close.md
-            - name: método Dispose
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.dispose.md
-            - name: Método Flush
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.flush.md
-            - name: Método Read
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.read.md
-            - name: Método Seek
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.seek.md
-            - name: Método SetLength
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.setlength.md
-            - name: Método Write
-              href: additional-apis/system.data.sqltypes.sqlstreamchars.write.md
-    - name: System.IO
-      items:
-        - name: Classe MemoryStream
-          items:
-            - name: Método InternalGetOriginAndLength
-              href: additional-apis/system.io.memorystream.internalgetoriginandlength.md
-    - name: System.Net
-      items:
-        - name: Classe ComNetOS
-          href: additional-apis/system.net.comnetos.md
-        - name: Classe Connection
-          href: additional-apis/connection.md
-          items:
-            - name: Campo m_WriteList
-              href: additional-apis/m_writelist.md
-        - name: Classe ConnectionGroup
-          href: additional-apis/connectiongroup.md
-          items:
-            - name: Campo m_ConnectionList
-              href: additional-apis/m_connectionlist.md
-        - name: Classe ConnectStream
-          items:
-            - name: Propriedade Connection
-              href: additional-apis/system.net.connectstream.connection.md
-        - name: Classe CoreResponseData
-          href: additional-apis/coreresponsedata.md
-          items:
-            - name: Campo m_ResponseHeaders
-              href: additional-apis/coreresponsedata_m_responseheaders.md
-            - name: Campo m_StatusCode
-              href: additional-apis/coreresponsedata_m_statuscode.md
-        - name: Classe ExceptionHelper
-          href: additional-apis/system.net.exceptionhelper.md
-        - name: Classe HttpStatusDescription
-          href: additional-apis/system.net.httpstatusdescription.md
-        - name: Classe HttpWebRequest
-          items:
-            - name: Campo _AutoRedirects
-              href: additional-apis/_autoredirects.md
-            - name: Campo _CoreResponse
-              href: additional-apis/httpwebrequest__coreresponse.md
-            - name: Campo _HttpResponse
-              href: additional-apis/_httpresponse.md
-        - name: Classe Logging
-          href: additional-apis/system.net.logging.md
-        - name: Classe MailAddressParser
-          href: additional-apis/system.net.mail.mailaddressparser.md
-        - name: Classe MailBnfHelper
-          href: additional-apis/system.net.mime.mailbnfhelper.md
-        - name: Classe PooledStream
-          items:
-            - name: Propriedade NetworkStream
-              href: additional-apis/system.net.pooledstream.networkstream.md
-        - name: Classe QuotedPairReader
-          href: additional-apis/system.net.mail.quotedpairreader.md
-        - name: Classe RtcState
-          href: additional-apis/system.net.rtcstate.md
-        - name: Classe ServicePoint
-          items:
-            - name: Campo m_ConnectionGroupList
-              href: additional-apis/m_connectiongrouplist.md
-        - name: Classe ServicePointManager
-          items:
-            - name: Método CloseConnectionGroups
-              href: additional-apis/system.net.servicepointmanager.closeconnectiongroups.md
-            - name: Campo s_ServicePointTable
-              href: additional-apis/s_servicepointtable.md
-        - name: Classe TlsStream
-          items:
-            - name: Campo m_Worker
-              href: additional-apis/system.net.tlsstream.m_worker.md
-        - name: Classe UnsafeNclNativeMethods
-          href: additional-apis/system.net.unsafenclnativemethods.md
-        - name: Classe WebHeaderCollection
-          items:
-            - name: Método Addinternal
-              href: additional-apis/system.net.webheadercollection.addinternal.md
-    - name: System.Net.Security
-      items:
-        - name: Classe SslState
-          items:
-            - name: Propriedade SslProtocol
-              href: additional-apis/system.net.security.sslstate.sslprotocol.md
-    - name: System.ServiceModel.Channels
-      items:
-        - name: Classe de mensagens
-          items:
-            - name: Método BodyToString
-              href: additional-apis/system.servicemodel.channels.message.bodytostring.md
-            - name: Método WriteStartHeaders
-              href: additional-apis/system.servicemodel.channels.message.writestartheaders.md
-    - name: System.Web.Compilation
-      items:
-        - name: Classe ControlBuilderInterceptor
-          href: additional-apis/controlbuilderinterceptor-class.md
-    - name: System.Windows.Diagnostics
-      items:
-        - name: Classe VisualDiagnostics
-          items:
-            - name: Campo s_isDebuggerCheckDisabledForTestPurposes
-              href: additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md
-    - name: System.Windows.Forms.Design
-      items:
-        - name: Classe DataMemberFieldEditor
-          href: additional-apis/datamemberfieldeditor-class.md
-        - name: Classe DataMemberListEditor
-          href: additional-apis/datamemberlisteditor-class.md
-    - name: System.Windows.Xps
-      items:
-        - name: Classe XpsDocumentWriter
-          items:
-            - name: Método raise__WritingCancelled
-              href: additional-apis/xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
-            - name: Método raise__WritingCompleted
-              href: additional-apis/xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
-            - name: Método raise__WritingPrintTicketRequired
-              href: additional-apis/xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md
-            - name: raise__WritingProgressChanged
-              href: additional-apis/xpsdocumentwriter-raise-writingprogresschanged-method-system-windows-xps.md
-            - name: _WritingCancelled
-              href: additional-apis/xpsdocumentwriter-writingcancelled-event-system-windows-xps.md
-            - name: _WritingCompleted
-              href: additional-apis/xpsdocumentwriter-writingcompleted-event-system-windows-xps.md
-            - name: _WritingProgressChanged
-              href: additional-apis/xpsdocumentwriter-writingprogresschanged-event-system-windows-xps.md
-    - name: System.Xml
-      items:
-        - name: Classe XmlReader
-          items:
-            - name: Método CreateSqlReader
-              href: additional-apis/system.xml.xmlreader.createsqlreader.md
-    - name: namespace adodb
-      items:
-        - name: Interface de Conexão
-          href: additional-apis/adodb.connection.md
-        - name: Enumeração EventReason
-          href: additional-apis/adodb.eventreasonenum.md
-        - name: Enumeração EventStatus
-          href: additional-apis/adodb.eventstatusenum.md
-    - name: namespace stdole
-      items:
-        - name: Estrutura DISPPARAMS
-          href: additional-apis/stdole.dispparams.md
-        - name: Estrutura EXCEPINFO
-          href: additional-apis/stdole.excepinfo.md
-        - name: Classe IFont
-          items:
-            - name: Propriedade Name
-              href: additional-apis/stdole.ifont.name.md
-        - name: Interface IFontDisp
-          href: additional-apis/stdole.ifontdisp.md
-        - name: Classe IPicture
-          items:
-            - name: Propriedade Handle
-              href: additional-apis/stdole.ipicture.handle.md
-        - name: Interface IPictureDisp
-          href: additional-apis/stdole.ipicturedisp.md
-        - name: Classe IPictureDisp
-          items:
-            - name: Propriedade Handle
-              href: additional-apis/stdole.ipicturedisp.handle.md
-        - name: Interface StdFont
-          href: additional-apis/stdole.stdfont.md
-        - name: Interface StdPicture
-          href: additional-apis/stdole.stdpicture.md
-- name: O que há de novo e obsoleto
-  items:
-    - name: O que há de novo
-      href: whats-new/index.md
-    - name: O que há de novo em acessibilidade
-      href: whats-new/whats-new-in-accessibility.md
-    - name: O que há de obsoleto na referência de API
-      href: whats-new/whats-obsolete.md
-      items:
-        - name: Tipos obsoletos
-          href: whats-new/obsolete-types.md
-        - name: Membros obsoletos
-          href: whats-new/obsolete-members.md
-- name: Segurança de acesso do código
-  items:
-    - name: Visão geral
-      href: misc/code-access-security.md
-    - name: Noções básicas da segurança de acesso do código
-      href: misc/code-access-security-basics.md
-    - name: Compatibilidade de políticas de segurança de acesso de código e migração
-      href: misc/code-access-security-policy-compatibility-and-migration.md
-    - name: Permissões perigosas e administração de políticas
-      href: misc/dangerous-permissions-and-policy-administration.md
-    - name: Como executar código parcialmente confiável em uma área restrita
-      href: misc/how-to-run-partially-trusted-code-in-a-sandbox.md
-    - name: Demandas de link
-      href: misc/link-demands.md
-    - name: Protegendo a manipulação de exceções
-      href: misc/securing-exception-handling.md
-    - name: Protegendo o acesso dos métodos
-      href: misc/securing-method-access.md
-    - name: Protegendo código de wrapper
-      href: misc/securing-wrapper-code.md
-    - name: Segurança e campos de matriz públicos somente leitura
-      href: misc/security-and-public-read-only-array-fields.md
-    - name: Considerações sobre segurança e comunicação remota
-      href: misc/security-and-remoting-considerations.md
-    - name: Segurança e serialização
-      href: misc/security-and-serialization.md
-    - name: 'Código transparente de segurança, nível 1'
-      href: misc/security-transparent-code-level-1.md
-    - name: 'Código transparente de segurança, nível 2'
-      href: misc/security-transparent-code-level-2.md
-    - name: Código transparente de segurança
-      href: misc/security-transparent-code.md
-    - name: Usando bibliotecas de código parcialmente confiável
-      href: misc/using-libraries-from-partially-trusted-code.md
-    - name: Usando o método Assert
-      href: misc/using-the-assert-method.md
+items:
+  - name: Documentação do .NET Framework
+    href: index.yml
+  - name: Visão geral do .NET Framework
+    href: get-started/overview.md
+  - name: Introdução
+    items:
+      - name: Visão geral
+        href: get-started/index.md
+      - name: .NET Framework e lançamentos fora de banda
+        href: get-started/the-net-framework-and-out-of-band-releases.md
+      - name: .NET Core e software livre
+        href: get-started/net-core-and-open-source.md
+      - name: Requisitos do sistema
+        href: get-started/system-requirements.md
+  - name: Guia de instalação
+    items:
+      - name: Visão geral
+        href: install/index.md
+      - name: Para desenvolvedores
+        href: install/guide-for-developers.md
+      - name: Por versão do SO
+        items:
+          - name: Windows 10 e Windows Server 2016
+            href: install/on-windows-10.md
+          - name: Windows 8.1 e Windows Server 2012 R2
+            href: install/on-windows-8-1.md
+          - name: Windows 8 e Windows Server 2012
+            href: install/on-windows-8.md
+          - name: Windows 7 SP1 e Windows Server 2008 R2
+            href: install/on-windows-7.md
+          - name: Windows Vista e Windows Server 2008
+            href: install/on-windows-vista.md
+          - name: Windows XP e Windows Server 2003
+            href: install/on-windows-xp.md
+      - name: Reparar o .NET Framework
+        href: install/repair.md
+      - name: Solução de problemas
+        items:
+          - name: Solução de problemas de instalação e desinstalação
+            href: install/troubleshoot-blocked-installations-and-uninstallations.md
+          - name: Solução de problemas de "Não foi possível iniciar o aplicativo"
+            href: install/application-not-started.md
+      - name: .NET Framework 3.5 do Windows 8 ao Windows 10
+        href: install/dotnet-35-windows-10.md
+      - name: .NET Framework 1.1 do Windows 8 ao Windows 10
+        href: install/run-net-framework-1-1-apps.md
+  - name: Guia de migração
+    items:
+      - name: Visão geral
+        href: migration-guide/index.md
+      - name: Compatibilidade
+        items:
+          - name: Compatibilidade de aplicativos
+            items:
+              - name: Visão geral
+                displayName: App compatibility
+                href: migration-guide/application-compatibility.md
+              - name: Alterações em runtime
+                items:
+                  - name: 4.0 para 4.5
+                    href: migration-guide/runtime/4.0-4.5.md
+                  - name: 4.0 para 4.5.1
+                    href: migration-guide/runtime/4.0-4.5.1.md
+                  - name: 4.0 para 4.5.2
+                    href: migration-guide/runtime/4.0-4.5.2.md
+                  - name: 4.0 para 4.6
+                    href: migration-guide/runtime/4.0-4.6.md
+                  - name: 4.0 para 4.6.1
+                    href: migration-guide/runtime/4.0-4.6.1.md
+                  - name: 4.0 para 4.6.2
+                    href: migration-guide/runtime/4.0-4.6.2.md
+                  - name: 4.0 para 4.7
+                    href: migration-guide/runtime/4.0-4.7.md
+                  - name: 4.0 para 4.7.1
+                    href: migration-guide/runtime/4.0-4.7.1.md
+                  - name: 4.0 para 4.7.2
+                    href: migration-guide/runtime/4.0-4.7.2.md
+                  - name: 4.0 para 4.8
+                    href: migration-guide/runtime/4.0-4.8.md
+                  - name: 4.5 para 4.5.1
+                    href: migration-guide/runtime/4.5-4.5.1.md
+                  - name: 4.5 para 4.5.2
+                    href: migration-guide/runtime/4.5-4.5.2.md
+                  - name: 4.5 para 4.6
+                    href: migration-guide/runtime/4.5-4.6.md
+                  - name: 4.5 para 4.6.1
+                    href: migration-guide/runtime/4.5-4.6.1.md
+                  - name: 4.5 para 4.6.2
+                    href: migration-guide/runtime/4.5-4.6.2.md
+                  - name: 4.5 para 4.7
+                    href: migration-guide/runtime/4.5-4.7.md
+                  - name: 4.5 para 4.7.1
+                    href: migration-guide/runtime/4.5-4.7.1.md
+                  - name: 4.5 para 4.7.2
+                    href: migration-guide/runtime/4.5-4.7.2.md
+                  - name: 4.5 para 4.8
+                    href: migration-guide/runtime/4.5-4.8.md
+                  - name: 4.5.1 para 4.5.2
+                    href: migration-guide/runtime/4.5.1-4.5.2.md
+                  - name: 4.5.1 para 4.6
+                    href: migration-guide/runtime/4.5.1-4.6.md
+                  - name: 4.5.1 para 4.6.1
+                    href: migration-guide/runtime/4.5.1-4.6.1.md
+                  - name: 4.5.1 para 4.6.2
+                    href: migration-guide/runtime/4.5.1-4.6.2.md
+                  - name: 4.5.1 para 4.7
+                    href: migration-guide/runtime/4.5.1-4.7.md
+                  - name: 4.5.1 para 4.7.1
+                    href: migration-guide/runtime/4.5.1-4.7.1.md
+                  - name: 4.5.1 para 4.7.2
+                    href: migration-guide/runtime/4.5.1-4.7.2.md
+                  - name: 4.5.1 para 4.8
+                    href: migration-guide/runtime/4.5.1-4.8.md
+                  - name: 4.5.2 para 4.6
+                    href: migration-guide/runtime/4.5.2-4.6.md
+                  - name: 4.5.2 para 4.6.1
+                    href: migration-guide/runtime/4.5.2-4.6.1.md
+                  - name: 4.5.2 para 4.6.2
+                    href: migration-guide/runtime/4.5.2-4.6.2.md
+                  - name: 4.5.2 para 4.7
+                    href: migration-guide/runtime/4.5.2-4.7.md
+                  - name: 4.5.2 para 4.7.1
+                    href: migration-guide/runtime/4.5.2-4.7.1.md
+                  - name: 4.5.2 para 4.7.2
+                    href: migration-guide/runtime/4.5.2-4.7.2.md
+                  - name: 4.5.2 para 4.8
+                    href: migration-guide/runtime/4.5.2-4.8.md
+                  - name: 4.6 para 4.6.1
+                    href: migration-guide/runtime/4.6-4.6.1.md
+                  - name: 4.6 para 4.6.2
+                    href: migration-guide/runtime/4.6-4.6.2.md
+                  - name: 4.6 para 4.7
+                    href: migration-guide/runtime/4.6-4.7.md
+                  - name: 4.6 para 4.7.1
+                    href: migration-guide/runtime/4.6-4.7.1.md
+                  - name: 4.6 para 4.7.2
+                    href: migration-guide/runtime/4.6-4.7.2.md
+                  - name: 4.6 para 4.8
+                    href: migration-guide/runtime/4.6-4.8.md
+                  - name: 4.6.1 para 4.6.2
+                    href: migration-guide/runtime/4.6.1-4.6.2.md
+                  - name: 4.6.1 para 4.7
+                    href: migration-guide/runtime/4.6.1-4.7.md
+                  - name: 4.6.1 para 4.7.1
+                    href: migration-guide/runtime/4.6.1-4.7.1.md
+                  - name: 4.6.1 para 4.7.2
+                    href: migration-guide/runtime/4.6.1-4.7.2.md
+                  - name: 4.6.1 para 4.8
+                    href: migration-guide/runtime/4.6.1-4.8.md
+                  - name: 4.6.2 para 4.7
+                    href: migration-guide/runtime/4.6.2-4.7.md
+                  - name: 4.6.2 para 4.7.1
+                    href: migration-guide/runtime/4.6.2-4.7.1.md
+                  - name: 4.6.2 para 4.7.2
+                    href: migration-guide/runtime/4.6.2-4.7.2.md
+                  - name: 4.6.2 para 4.8
+                    href: migration-guide/runtime/4.6.2-4.8.md
+                  - name: 4.7 para 4.7.1
+                    href: migration-guide/runtime/4.7-4.7.1.md
+                  - name: 4.7 para 4.7.2
+                    href: migration-guide/runtime/4.7-4.7.2.md
+                  - name: 4.7 para 4.8
+                    href: migration-guide/runtime/4.7-4.8.md
+                  - name: 4.7.1 para 4.7.2
+                    href: migration-guide/runtime/4.7.1-4.7.2.md
+                  - name: 4.7.1 para 4.8
+                    href: migration-guide/runtime/4.7.1-4.8.md
+                  - name: 4.7.2 para 4.8
+                    href: migration-guide/runtime/4.7.2-4.8.md
+              - name: Alterações de redirecionamento
+                items:
+                  - name: 4.0 para 4.5
+                    href: migration-guide/retargeting/4.0-4.5.md
+                  - name: 4.0 para 4.5.1
+                    href: migration-guide/retargeting/4.0-4.5.1.md
+                  - name: 4.0 para 4.5.2
+                    href: migration-guide/retargeting/4.0-4.5.2.md
+                  - name: 4.0 para 4.6
+                    href: migration-guide/retargeting/4.0-4.6.md
+                  - name: 4.0 para 4.6.1
+                    href: migration-guide/retargeting/4.0-4.6.1.md
+                  - name: 4.0 para 4.6.2
+                    href: migration-guide/retargeting/4.0-4.6.2.md
+                  - name: 4.0 para 4.7
+                    href: migration-guide/retargeting/4.0-4.7.md
+                  - name: 4.0 para 4.7.1
+                    href: migration-guide/retargeting/4.0-4.7.1.md
+                  - name: 4.0 para 4.7.2
+                    href: migration-guide/retargeting/4.0-4.7.2.md
+                  - name: 4.0 para 4.8
+                    href: migration-guide/retargeting/4.0-4.8.md
+                  - name: 4.5 para 4.5.1
+                    href: migration-guide/retargeting/4.5-4.5.1.md
+                  - name: 4.5 para 4.5.2
+                    href: migration-guide/retargeting/4.5-4.5.2.md
+                  - name: 4.5 para 4.6
+                    href: migration-guide/retargeting/4.5-4.6.md
+                  - name: 4.5 para 4.6.1
+                    href: migration-guide/retargeting/4.5-4.6.1.md
+                  - name: 4.5 para 4.6.2
+                    href: migration-guide/retargeting/4.5-4.6.2.md
+                  - name: 4.5 para 4.7
+                    href: migration-guide/retargeting/4.5-4.7.md
+                  - name: 4.5 para 4.7.1
+                    href: migration-guide/retargeting/4.5-4.7.1.md
+                  - name: 4.5 para 4.7.2
+                    href: migration-guide/retargeting/4.5-4.7.2.md
+                  - name: 4.5 para 4.8
+                    href: migration-guide/retargeting/4.5-4.8.md
+                  - name: 4.5.1 para 4.5.2
+                    href: migration-guide/retargeting/4.5.1-4.5.2.md
+                  - name: 4.5.1 para 4.6
+                    href: migration-guide/retargeting/4.5.1-4.6.md
+                  - name: 4.5.1 para 4.6.1
+                    href: migration-guide/retargeting/4.5.1-4.6.1.md
+                  - name: 4.5.1 para 4.6.2
+                    href: migration-guide/retargeting/4.5.1-4.6.2.md
+                  - name: 4.5.1 para 4.7
+                    href: migration-guide/retargeting/4.5.1-4.7.md
+                  - name: 4.5.1 para 4.7.1
+                    href: migration-guide/retargeting/4.5.1-4.7.1.md
+                  - name: 4.5.1 para 4.7.2
+                    href: migration-guide/retargeting/4.5.1-4.7.2.md
+                  - name: 4.5.1 para 4.8
+                    href: migration-guide/retargeting/4.5.1-4.8.md
+                  - name: 4.5.2 para 4.6
+                    href: migration-guide/retargeting/4.5.2-4.6.md
+                  - name: 4.5.2 para 4.6.1
+                    href: migration-guide/retargeting/4.5.2-4.6.1.md
+                  - name: 4.5.2 para 4.6.2
+                    href: migration-guide/retargeting/4.5.2-4.6.2.md
+                  - name: 4.5.2 para 4.7
+                    href: migration-guide/retargeting/4.5.2-4.7.md
+                  - name: 4.5.2 para 4.7.1
+                    href: migration-guide/retargeting/4.5.2-4.7.1.md
+                  - name: 4.5.2 para 4.7.2
+                    href: migration-guide/retargeting/4.5.2-4.7.2.md
+                  - name: 4.5.2 para 4.8
+                    href: migration-guide/retargeting/4.5.2-4.8.md
+                  - name: 4.6 para 4.6.1
+                    href: migration-guide/retargeting/4.6-4.6.1.md
+                  - name: 4.6 para 4.6.2
+                    href: migration-guide/retargeting/4.6-4.6.2.md
+                  - name: 4.6 para 4.7
+                    href: migration-guide/retargeting/4.6-4.7.md
+                  - name: 4.6 para 4.7.1
+                    href: migration-guide/retargeting/4.6-4.7.1.md
+                  - name: 4.6 para 4.7.2
+                    href: migration-guide/retargeting/4.6-4.7.2.md
+                  - name: 4.6 para 4.8
+                    href: migration-guide/retargeting/4.6-4.8.md
+                  - name: 4.6.1 para 4.6.2
+                    href: migration-guide/retargeting/4.6.1-4.6.2.md
+                  - name: 4.6.1 para 4.7
+                    href: migration-guide/retargeting/4.6.1-4.7.md
+                  - name: 4.6.1 para 4.7.1
+                    href: migration-guide/retargeting/4.6.1-4.7.1.md
+                  - name: 4.6.1 para 4.7.2
+                    href: migration-guide/retargeting/4.6.1-4.7.2.md
+                  - name: 4.6.1 para 4.8
+                    href: migration-guide/retargeting/4.6.1-4.8.md
+                  - name: 4.6.2 para 4.7
+                    href: migration-guide/retargeting/4.6.2-4.7.md
+                  - name: 4.6.2 para 4.7.1
+                    href: migration-guide/retargeting/4.6.2-4.7.1.md
+                  - name: 4.6.2 para 4.7.2
+                    href: migration-guide/retargeting/4.6.2-4.7.2.md
+                  - name: 4.6.2 para 4.8
+                    href: migration-guide/retargeting/4.6.2-4.8.md
+                  - name: 4.7 para 4.7.1
+                    href: migration-guide/retargeting/4.7-4.7.1.md
+                  - name: 4.7 para 4.7.2
+                    href: migration-guide/retargeting/4.7-4.7.2.md
+                  - name: 4.7 para 4.8
+                    href: migration-guide/retargeting/4.7-4.8.md
+                  - name: 4.7.1 para 4.7.2
+                    href: migration-guide/retargeting/4.7.1-4.7.2.md
+                  - name: 4.7.1 para 4.8
+                    href: migration-guide/retargeting/4.7.1-4.8.md
+                  - name: 4.7.2 para 4.8
+                    href: migration-guide/retargeting/4.7.2-4.8.md
+          - name: Mitigações de comportamento
+            items:
+              - name: Visão geral
+                href: migration-guide/mitigations.md
+              - name: Implementações personalizadas de IMessageFilter.PreFilterMessage
+                href: migration-guide/mitigation-custom-imessagefilter-prefiltermessage-implementations.md
+              - name: Desserialização de objetos em domínios do aplicativo
+                href: migration-guide/mitigation-deserialization-of-objects-across-app-domains.md
+              - name: Novo compilador JIT de 64 bits
+                href: migration-guide/mitigation-new-64-bit-jit-compiler.md
+              - name: Verificações de dois-pontos no caminho
+                href: migration-guide/mitigation-path-colon-checks.md
+              - name: Normalização de caminho
+                href: migration-guide/mitigation-path-normalization.md
+              - name: Quadros PNG em objetos de ícone
+                href: migration-guide/mitigation-png-frames-in-icon-objects.md
+              - name: Suporte para toque e caneta baseado em ponteiro
+                href: migration-guide/mitigation-pointer-based-touch-and-stylus-support.md
+              - name: Período de bloqueio do pool
+                href: migration-guide/mitigation-pool-blocking-period.md
+              - name: Controle de versão do produto
+                href: migration-guide/mitigation-product-versioning.md
+              - name: Serialização de caracteres de controle
+                href: migration-guide/mitigation-serialization-control-characters.md
+              - name: Protocolos TLS
+                href: migration-guide/mitigation-tls-protocols.md
+              - name: Serviços WCF e autenticação de certificado
+                href: migration-guide/mitigation-wcf-services-and-certificate-authentication.md
+              - name: Layout do WPF
+                href: migration-guide/mitigation-wpf-layout.md
+              - name: Renderização de janela WPF
+                href: migration-guide/mitigation-wpf-window-rendering.md
+              - name: Método X509CertificateClaimSet.FindClaims
+                href: migration-guide/mitigation-x509certificateclaimset-findclaims-method.md
+              - name: Validação do esquema XML
+                href: migration-guide/mitigation-xml-schema-validation.md
+              - name: Separador de caminho ZipArchiveEntry.FullName
+                href: migration-guide/mitigation-ziparchiveentry-fullname-path-separator.md
+          - name: Compatibilidade de versões
+            href: migration-guide/version-compatibility.md
+      - name: Versões do .NET Framework
+        items:
+          - name: Versões e dependências
+            href: migration-guide/versions-and-dependencies.md
+          - name: Localizar versões instaladas
+            href: migration-guide/how-to-determine-which-versions-are-installed.md
+          - name: Localizar atualizações instaladas
+            href: migration-guide/how-to-determine-which-net-framework-updates-are-installed.md
+      - name: Configurar um aplicativo para dar suporte ao .NET Framework 4 ou posterior
+        href: migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md
+      - name: Migrar do .NET Framework 1.1
+        href: migration-guide/migrating-from-the-net-framework-1-1.md
+      - name: Problemas de migração do .NET Framework 4
+        href: migration-guide/net-framework-4-migration-issues.md
+  - name: Guia de desenvolvimento
+    href: development-guide.md
+    items:
+      - name: Domínios de aplicativo e assemblies
+        href: app-domains/
+      - name: Recursos em aplicativos de área de trabalho
+        href: resources/
+      - name: Acessibilidade
+        href: ui-automation/
+      - name: Dados e modelagem
+        href: data/
+      - name: Aplicativos cliente
+        items:
+          - name: Visão geral
+            href: develop-client-apps.md
+          - name: Windows Presentation Foundation
+            href: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
+          - name: Windows Forms
+            href: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
+      - name: Aplicativos orientados a serviços com WCF
+        href: wcf/
+      - name: Windows Workflow Foundation
+        href: windows-workflow-foundation/
+      - name: Aplicativos de serviço do Windows
+        href: windows-services/
+      - name: Aplicativos de 64 bits
+        href: 64-bit-apps.md
+      - name: Aplicativos Web com ASP.NET
+        href: develop-web-apps-with-aspnet.md
+      - name: Programação de rede
+        href: network-programming/
+      - name: Configurar aplicativos
+        href: configure-apps/
+      - name: Compilar aplicativos com o .NET Nativo
+        href: net-native/
+      - name: 'Depuração, rastreamento e criação de perfil'
+        href: debug-trace-profile/
+      - name: Implantação
+        href: deployment/
+      - name: Desempenho
+        href: performance/
+      - name: Programação dinâmica
+        href: reflection-and-codedom/
+      - name: MEF (Managed Extensibility Framework)
+        href: mef/
+      - name: Interoperar com código não gerenciado
+        href: interop/
+      - name: Referência de API não gerenciada
+        href: unmanaged-api/
+      - name: Serviços XAML
+        href: ../desktop-wpf/xaml-services/
+  - name: Ferramentas
+    items:
+      - name: Visão geral
+        href: tools/index.md
+      - name: Al.exe (Assembly linker)
+        href: tools/al-exe-assembly-linker.md
+      - name: Aximp.exe (Importador de controle ActiveX do Windows Forms)
+        href: tools/aximp-exe-windows-forms-activex-control-importer.md
+      - name: Caspol.exe (ferramenta de política de segurança de acesso de código)
+        href: tools/caspol-exe-code-access-security-policy-tool.md
+      - name: Cert2spc.exe (ferramenta de teste de certificado do fornecedor do software)
+        href: tools/cert2spc-exe-software-publisher-certificate-test-tool.md
+      - name: Certmgr.exe (ferramenta Gerenciador de Certificados)
+        href: tools/certmgr-exe-certificate-manager-tool.md
+      - name: Clrver.exe (ferramenta de versão do CLR)
+        href: tools/clrver-exe-clr-version-tool.md
+      - name: Prompts de comando
+        href: tools/developer-command-prompt-for-vs.md
+      - name: CorFlags.exe (ferramenta de conversão de CorFlags)
+        href: tools/corflags-exe-corflags-conversion-tool.md
+      - name: Fuslogvw.exe (visualizador de log de associações de assembly)
+        href: tools/fuslogvw-exe-assembly-binding-log-viewer.md
+      - name: Gacutil.exe (ferramenta de cache de assembly global)
+        href: tools/gacutil-exe-gac-tool.md
+      - name: Ilasm.exe (montador IL)
+        href: tools/ilasm-exe-il-assembler.md
+      - name: Ildasm.exe (desmontador IL)
+        href: tools/ildasm-exe-il-disassembler.md
+      - name: Installutil.exe (Ferramenta de Instalação)
+        href: tools/installutil-exe-installer-tool.md
+      - name: Lc.exe (compilador de licença)
+        href: tools/lc-exe-license-compiler.md
+      - name: Mage.exe (Manifest Generation and Editing Tool)
+        href: tools/mage-exe-manifest-generation-and-editing-tool.md
+      - name: 'MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)'
+        href: tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md
+      - name: MDbg.exe (depurador de linha de comando do .NET Framework)
+        href: tools/mdbg-exe.md
+      - name: Mgmtclassgen.exe (gerador de classe fortemente tipada de gerenciamento)
+        href: tools/mgmtclassgen-exe.md
+      - name: Mpgo.exe (ferramenta de otimização guiada por perfil gerenciado)
+        href: tools/mpgo-exe-managed-profile-guided-optimization-tool.md
+      - name: Ngen.exe (gerador de imagens nativas)
+        href: tools/ngen-exe-native-image-generator.md
+      - name: Peverify.exe (ferramenta PEVerify)
+        href: tools/peverify-exe-peverify-tool.md
+      - name: Regasm.exe (ferramenta de registro de assembly)
+        href: tools/regasm-exe-assembly-registration-tool.md
+      - name: Regsvcs.exe (ferramenta de instalação de serviços .NET)
+        href: tools/regsvcs-exe-net-services-installation-tool.md
+      - name: Resgen.exe (gerador de arquivo de recurso)
+        href: tools/resgen-exe-resource-file-generator.md
+      - name: SecAnnotate.exe (ferramenta Anotador de Segurança do .NET)
+        href: tools/secannotate-exe-net-security-annotator-tool.md
+      - name: SignTool.exe (ferramenta de assinatura)
+        href: tools/signtool-exe.md
+      - name: Sn.exe (ferramenta Nome Forte)
+        href: tools/sn-exe-strong-name-tool.md
+      - name: SOS.dll (extensão de depuração SOS)
+        href: tools/sos-dll-sos-debugging-extension.md
+      - name: SqlMetal.exe (ferramenta de geração de código)
+        href: tools/sqlmetal-exe-code-generation-tool.md
+      - name: Storeadm.exe (ferramenta de armazenamento isolado)
+        href: tools/storeadm-exe-isolated-storage-tool.md
+      - name: Tlbexp.exe (exportador de biblioteca de tipos)
+        href: tools/tlbexp-exe-type-library-exporter.md
+      - name: Tlbimp.exe (importador de biblioteca de tipos)
+        href: tools/tlbimp-exe-type-library-importer.md
+      - name: Winmdexp.exe (ferramenta de exportação de metadados do Windows Runtime)
+        href: tools/winmdexp-exe-windows-runtime-metadata-export-tool.md
+      - name: Mensagens de erro Winmdexp.exe
+        href: tools/winmdexp-exe-error-messages.md
+      - name: Winres.exe (editor de recursos do Windows Forms)
+        href: tools/winres-exe-windows-forms-resource-editor.md
+  - name: APIs adicionais
+    items:
+      - name: Visão geral
+        href: additional-apis/index.md
+      - name: Microsoft.SqlServer.Server
+        items:
+          - name: Classe SmiOrderProperty
+            items:
+              - name: Propriedade Item
+                href: additional-apis/microsoft.sqlserver.server.smiorderproperty.item.md
+      - name: Sistema
+        items:
+          - name: Classe de exceção
+            items:
+              - name: Método PrepForRemoting
+                href: additional-apis/system.exception.prepforremoting.md
+      - name: System.Data.SqlTypes
+        items:
+          - name: Classe SqlChars
+            items:
+              - name: Propriedade Stream
+                href: additional-apis/system.data.sqltypes.sqlchars.stream.md
+          - name: Classe SqlStreamChars
+            items:
+              - name: Construtor SqlStreamChars
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.-ctor.md
+              - name: Propriedade CanSeek
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.canseek.md
+              - name: Propriedade IsNull
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.isnull.md
+              - name: Propriedade Length
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.length.md
+              - name: Método Close
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.close.md
+              - name: método Dispose
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.dispose.md
+              - name: Método Flush
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.flush.md
+              - name: Método Read
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.read.md
+              - name: Método Seek
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.seek.md
+              - name: Método SetLength
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.setlength.md
+              - name: Método Write
+                href: additional-apis/system.data.sqltypes.sqlstreamchars.write.md
+      - name: System.IO
+        items:
+          - name: Classe MemoryStream
+            items:
+              - name: Método InternalGetOriginAndLength
+                href: additional-apis/system.io.memorystream.internalgetoriginandlength.md
+      - name: System.Net
+        items:
+          - name: Classe ComNetOS
+            href: additional-apis/system.net.comnetos.md
+          - name: Classe Connection
+            href: additional-apis/connection.md
+            items:
+              - name: Campo m_WriteList
+                href: additional-apis/m_writelist.md
+          - name: Classe ConnectionGroup
+            href: additional-apis/connectiongroup.md
+            items:
+              - name: Campo m_ConnectionList
+                href: additional-apis/m_connectionlist.md
+          - name: Classe ConnectStream
+            items:
+              - name: Propriedade Connection
+                href: additional-apis/system.net.connectstream.connection.md
+          - name: Classe CoreResponseData
+            href: additional-apis/coreresponsedata.md
+            items:
+              - name: Campo m_ResponseHeaders
+                href: additional-apis/coreresponsedata_m_responseheaders.md
+              - name: Campo m_StatusCode
+                href: additional-apis/coreresponsedata_m_statuscode.md
+          - name: Classe ExceptionHelper
+            href: additional-apis/system.net.exceptionhelper.md
+          - name: Classe HttpStatusDescription
+            href: additional-apis/system.net.httpstatusdescription.md
+          - name: Classe HttpWebRequest
+            items:
+              - name: Campo _AutoRedirects
+                href: additional-apis/_autoredirects.md
+              - name: Campo _CoreResponse
+                href: additional-apis/httpwebrequest__coreresponse.md
+              - name: Campo _HttpResponse
+                href: additional-apis/_httpresponse.md
+          - name: Classe Logging
+            href: additional-apis/system.net.logging.md
+          - name: Classe MailAddressParser
+            href: additional-apis/system.net.mail.mailaddressparser.md
+          - name: Classe MailBnfHelper
+            href: additional-apis/system.net.mime.mailbnfhelper.md
+          - name: Classe PooledStream
+            items:
+              - name: Propriedade NetworkStream
+                href: additional-apis/system.net.pooledstream.networkstream.md
+          - name: Classe QuotedPairReader
+            href: additional-apis/system.net.mail.quotedpairreader.md
+          - name: Classe RtcState
+            href: additional-apis/system.net.rtcstate.md
+          - name: Classe ServicePoint
+            items:
+              - name: Campo m_ConnectionGroupList
+                href: additional-apis/m_connectiongrouplist.md
+          - name: Classe ServicePointManager
+            items:
+              - name: Método CloseConnectionGroups
+                href: additional-apis/system.net.servicepointmanager.closeconnectiongroups.md
+              - name: Campo s_ServicePointTable
+                href: additional-apis/s_servicepointtable.md
+          - name: Classe TlsStream
+            items:
+              - name: Campo m_Worker
+                href: additional-apis/system.net.tlsstream.m_worker.md
+          - name: Classe UnsafeNclNativeMethods
+            href: additional-apis/system.net.unsafenclnativemethods.md
+          - name: Classe WebHeaderCollection
+            items:
+              - name: Método Addinternal
+                href: additional-apis/system.net.webheadercollection.addinternal.md
+      - name: System.Net.Security
+        items:
+          - name: Classe SslState
+            items:
+              - name: Propriedade SslProtocol
+                href: additional-apis/system.net.security.sslstate.sslprotocol.md
+      - name: System.ServiceModel.Channels
+        items:
+          - name: Classe de mensagens
+            items:
+              - name: Método BodyToString
+                href: additional-apis/system.servicemodel.channels.message.bodytostring.md
+              - name: Método WriteStartHeaders
+                href: additional-apis/system.servicemodel.channels.message.writestartheaders.md
+      - name: System.Web.Compilation
+        items:
+          - name: Classe ControlBuilderInterceptor
+            href: additional-apis/controlbuilderinterceptor-class.md
+      - name: System.Windows.Diagnostics
+        items:
+          - name: Classe VisualDiagnostics
+            items:
+              - name: Campo s_isDebuggerCheckDisabledForTestPurposes
+                href: additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md
+      - name: System.Windows.Forms.Design
+        items:
+          - name: Classe DataMemberFieldEditor
+            href: additional-apis/datamemberfieldeditor-class.md
+          - name: Classe DataMemberListEditor
+            href: additional-apis/datamemberlisteditor-class.md
+      - name: System.Windows.Xps
+        items:
+          - name: Classe XpsDocumentWriter
+            items:
+              - name: Método raise__WritingCancelled
+                href: additional-apis/xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
+              - name: Método raise__WritingCompleted
+                href: additional-apis/xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
+              - name: Método raise__WritingPrintTicketRequired
+                href: additional-apis/xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md
+              - name: raise__WritingProgressChanged
+                href: additional-apis/xpsdocumentwriter-raise-writingprogresschanged-method-system-windows-xps.md
+              - name: _WritingCancelled
+                href: additional-apis/xpsdocumentwriter-writingcancelled-event-system-windows-xps.md
+              - name: _WritingCompleted
+                href: additional-apis/xpsdocumentwriter-writingcompleted-event-system-windows-xps.md
+              - name: _WritingProgressChanged
+                href: additional-apis/xpsdocumentwriter-writingprogresschanged-event-system-windows-xps.md
+      - name: System.Xml
+        items:
+          - name: Classe XmlReader
+            items:
+              - name: Método CreateSqlReader
+                href: additional-apis/system.xml.xmlreader.createsqlreader.md
+      - name: namespace adodb
+        items:
+          - name: Interface de Conexão
+            href: additional-apis/adodb.connection.md
+          - name: Enumeração EventReason
+            href: additional-apis/adodb.eventreasonenum.md
+          - name: Enumeração EventStatus
+            href: additional-apis/adodb.eventstatusenum.md
+      - name: namespace stdole
+        items:
+          - name: Estrutura DISPPARAMS
+            href: additional-apis/stdole.dispparams.md
+          - name: Estrutura EXCEPINFO
+            href: additional-apis/stdole.excepinfo.md
+          - name: Classe IFont
+            items:
+              - name: Propriedade Name
+                href: additional-apis/stdole.ifont.name.md
+          - name: Interface IFontDisp
+            href: additional-apis/stdole.ifontdisp.md
+          - name: Classe IPicture
+            items:
+              - name: Propriedade Handle
+                href: additional-apis/stdole.ipicture.handle.md
+          - name: Interface IPictureDisp
+            href: additional-apis/stdole.ipicturedisp.md
+          - name: Classe IPictureDisp
+            items:
+              - name: Propriedade Handle
+                href: additional-apis/stdole.ipicturedisp.handle.md
+          - name: Interface StdFont
+            href: additional-apis/stdole.stdfont.md
+          - name: Interface StdPicture
+            href: additional-apis/stdole.stdpicture.md
+  - name: O que há de novo e obsoleto
+    items:
+      - name: O que há de novo
+        href: whats-new/index.md
+      - name: O que há de novo em acessibilidade
+        href: whats-new/whats-new-in-accessibility.md
+      - name: O que há de obsoleto na referência de API
+        href: whats-new/whats-obsolete.md
+        items:
+          - name: Tipos obsoletos
+            href: whats-new/obsolete-types.md
+          - name: Membros obsoletos
+            href: whats-new/obsolete-members.md
+  - name: Segurança de acesso do código
+    items:
+      - name: Visão geral
+        href: misc/code-access-security.md
+      - name: Noções básicas da segurança de acesso do código
+        href: misc/code-access-security-basics.md
+      - name: Compatibilidade de políticas de segurança de acesso de código e migração
+        href: misc/code-access-security-policy-compatibility-and-migration.md
+      - name: Permissões perigosas e administração de políticas
+        href: misc/dangerous-permissions-and-policy-administration.md
+      - name: Como executar código parcialmente confiável em uma área restrita
+        href: misc/how-to-run-partially-trusted-code-in-a-sandbox.md
+      - name: Demandas de link
+        href: misc/link-demands.md
+      - name: Protegendo a manipulação de exceções
+        href: misc/securing-exception-handling.md
+      - name: Protegendo o acesso dos métodos
+        href: misc/securing-method-access.md
+      - name: Protegendo código de wrapper
+        href: misc/securing-wrapper-code.md
+      - name: Segurança e campos de matriz públicos somente leitura
+        href: misc/security-and-public-read-only-array-fields.md
+      - name: Considerações sobre segurança e comunicação remota
+        href: misc/security-and-remoting-considerations.md
+      - name: Segurança e serialização
+        href: misc/security-and-serialization.md
+      - name: 'Código transparente de segurança, nível 1'
+        href: misc/security-transparent-code-level-1.md
+      - name: 'Código transparente de segurança, nível 2'
+        href: misc/security-transparent-code-level-2.md
+      - name: Código transparente de segurança
+        href: misc/security-transparent-code.md
+      - name: Usando bibliotecas de código parcialmente confiável
+        href: misc/using-libraries-from-partially-trusted-code.md
+      - name: Usando o método Assert
+        href: misc/using-the-assert-method.md
+  - name: Criar aplicativos de console
+    href: ../standard/building-console-apps.md
+  - name: Consumir eventos em um aplicativo do Web Forms
+    href: ../standard/events/how-to-consume-events-in-a-web-forms-application.md
+  - name: Analisador de código do .NET Framework
+    href: ../standard/analyzers/framework-analyzer.md
+  - name: Desenvolvimento para várias plataformas
+    items:
+      - name: Visão geral
+        href: ../standard/cross-platform/index.md
+        displayName: cross platform
+      - name: Biblioteca de Classes Portátil
+        href: ../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md
+      - name: Usar a Biblioteca de Classes Portátil com MVVM
+        href: ../standard/cross-platform/using-portable-class-library-with-model-view-view-model.md
+      - name: Recursos do aplicativo para bibliotecas direcionadas a várias plataformas
+        href: ../standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
+      - name: Suporte do .NET Framework para aplicativos da Microsoft Store e Windows Runtime
+        href: ../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md
+      - name: Passar um URI para o Windows Runtime
+        href: ../standard/cross-platform/passing-a-uri-to-the-windows-runtime.md

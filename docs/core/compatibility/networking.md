@@ -2,12 +2,12 @@
 title: Alterações de quebra de rede
 description: Lista as alterações significativas na rede no .NET Core.
 ms.date: 05/05/2020
-ms.openlocfilehash: 568d26bde43ccd6e19fbe2d947f576ef5f99450a
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: fa5807c882c3bc6f66e8a27361ccc14254e90b3e
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608477"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89465502"
 ---
 # <a name="networking-breaking-changes"></a>Alterações de quebra de rede
 
@@ -15,10 +15,11 @@ As seguintes alterações significativas estão documentadas nesta página:
 
 | Alteração significativa | Versão introduzida |
 | - | - |
-| [WinHttpHandler removido do tempo de execução do .NET](#winhttphandler-removed-from-net-runtime) | 5.0 |
-| [MulticastOption. Group não aceita um valor nulo](#multicastoptiongroup-doesnt-accept-a-null-value) | 5.0 |
+| [WinHttpHandler removido do tempo de execução do .NET](#winhttphandler-removed-from-net-runtime) | 5,0 |
+| [MulticastOption. Group não aceita um valor nulo](#multicastoptiongroup-doesnt-accept-a-null-value) | 5,0 |
+| [O tratamento de caminho de cookie agora está em conformidade com RFC 6265](#cookie-path-handling-now-conforms-to-rfc-6265) | 5,0 |
 | [Valor padrão de HttpRequestMessage. Version alterado para 1,1](#default-value-of-httprequestmessageversion-changed-to-11) | 3.0 |
-| [WebClient. CancelAsync nem sempre cancela imediatamente](#webclientcancelasync-doesnt-always-cancel-immediately) | 2.0 |
+| [WebClient. CancelAsync nem sempre cancela imediatamente](#webclientcancelasync-doesnt-always-cancel-immediately) | 2,0 |
 
 ## <a name="net-50"></a>.NET 5,0
 
@@ -27,6 +28,10 @@ As seguintes alterações significativas estão documentadas nesta página:
 ***
 
 [!INCLUDE [multicastoption-group-doesnt-accept-null](../../../includes/core-changes/networking/5.0/multicastoption-group-doesnt-accept-null.md)]
+
+***
+
+[!INCLUDE [cookie-path-conforms-to-rfc6265](../../../includes/core-changes/networking/5.0/cookie-path-conforms-to-rfc6265.md)]
 
 ***
 

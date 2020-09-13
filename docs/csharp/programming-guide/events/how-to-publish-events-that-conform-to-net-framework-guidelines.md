@@ -1,20 +1,20 @@
 ---
 title: Publicar eventos que estão em conformidade com as diretrizes do .NET – guia de programação C#
-description: Saiba como publicar eventos que estão em conformidade com as diretrizes do .NET. Todos os eventos na biblioteca de classes de .NET Framework são baseados no delegado EventHandler.
+description: Saiba como publicar eventos que estão em conformidade com as diretrizes do .NET. Todos os eventos na biblioteca de classes do .NET são baseados no delegado EventHandler.
 ms.date: 05/26/2020
 helpviewer_keywords:
 - events [C#], implementation guidelines
 ms.assetid: 9310ae16-8627-44a2-b08c-05e5976202b1
-ms.openlocfilehash: 1b802e236026911b55bafcb3f48d487c43bba174
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 8cc8b0a9fdaeeb6ab6290630c5d78044c2696b9a
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87302107"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89466164"
 ---
 # <a name="how-to-publish-events-that-conform-to-net-guidelines-c-programming-guide"></a>Como publicar eventos que estão em conformidade com as diretrizes do .NET (guia de programação C#)
 
-O procedimento a seguir demonstra como adicionar eventos que seguem o padrão .NET padrão para suas classes e estruturas. Todos os eventos na biblioteca de classes do .NET Framework se baseiam no delegado <xref:System.EventHandler>, que é definido da seguinte maneira:
+O procedimento a seguir demonstra como adicionar eventos que seguem o padrão .NET padrão para suas classes e estruturas. Todos os eventos na biblioteca de classes do .NET são baseados no <xref:System.EventHandler> delegado, que é definido da seguinte maneira:
 
 ```csharp
 public delegate void EventHandler(object sender, EventArgs e);
@@ -75,7 +75,7 @@ O exemplo a seguir demonstra as etapas anteriores, usando uma classe EventArgs p
 
 [!code-csharp[csProgGuideEvents#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEvents/CS/Events.cs#2)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Delegate>
 - [Guia de programação C#](../index.md)

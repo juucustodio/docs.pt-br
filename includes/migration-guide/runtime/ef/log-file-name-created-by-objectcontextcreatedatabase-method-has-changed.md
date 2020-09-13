@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 768a948849064cedb38110f5ed271717442325c0
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: e77e37156de759856c8a6f2e0c009caf9e1fe826
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619797"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497091"
 ---
 ### <a name="log-file-name-created-by-the-objectcontextcreatedatabase-method-has-changed-to-match-sql-server-specifications"></a>O nome do arquivo de log criado pelo método ObjectContext.CreateDatabase foi alterado para corresponder às especificações do SQL Server
 
@@ -16,12 +16,20 @@ Quando o método <xref:System.Data.Objects.ObjectContext.CreateDatabase?displayP
 
 Se o nome do arquivo de log for importante para um aplicativo, o aplicativo deverá ser atualizado para esperar o formato de nome de arquivo _log.ldf padrão.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Data.Objects.ObjectContext.CreateDatabase?displayProperty=nameWithType></li></ul>|
+- <xref:System.Data.Objects.ObjectContext.CreateDatabase?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Data.Objects.ObjectContext.CreateDatabase`
+
+-->

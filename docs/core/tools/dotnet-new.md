@@ -4,13 +4,13 @@ description: O comando dotnet new cria novos projetos .NET Core com base no mode
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 04/10/2020
-ms.openlocfilehash: ec41b3b79ed5eded7c9124d3e4d95c658ee39580
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.date: 09/01/2020
+ms.openlocfilehash: 70297cfe15732716b9ceacae091abe3c8957fb61
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86173114"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89495467"
 ---
 # <a name="dotnet-new"></a>dotnet new
 
@@ -58,27 +58,27 @@ O comando chama o [mecanismo de modelo](https://github.com/dotnet/templating) pa
 
   A tabela a seguir mostra os modelos que vêm pré-instalados com o SDK do .NET Core. O idioma padrão do modelo é mostrado entre parênteses. Clique no link nome curto para ver as opções de modelo específicas.
 
-| Modelos                                    | Nome curto                      | Linguagem     | Marcas                                  | Incluída |
+| Modelos                                    | Nome curto                      | Idioma     | Marcas                                  | Incluída |
 |----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
 | Aplicativo do Console                          | [MMC](#console)             | [C#], F#, VB | Comum/Console                        | 1.0        |
 | Biblioteca de classes                                | [classlib](#classlib)           | [C#], F#, VB | Comum/Library                        | 1.0        |
-| Aplicativo WPF                              | [WFP](#wpf)                     | [C#]         | Comum/WPF                            | 3.0        |
-| Biblioteca de classes do WPF                            | [wpflib](#wpf)                  | [C#]         | Comum/WPF                            | 3.0        |
-| Biblioteca de Controles Personalizados do WPF                   | [wpfcustomcontrollib](#wpf)     | [C#]         | Comum/WPF                            | 3.0        |
-| Biblioteca de controle de usuário WPF                     | [wpfusercontrollib](#wpf)       | [C#]         | Comum/WPF                            | 3.0        |
-| Aplicativo Windows Forms (WinForms)         | [WinForms](#winforms)           | [C#]         | Comum/WinForms                       | 3.0        |
-| Biblioteca de classes do Windows Forms (WinForms)       | [winformslib](#winforms)        | [C#]         | Comum/WinForms                       | 3.0        |
+| Aplicativo WPF                              | [WFP](#wpf)                     | [C#], VB     | Comum/WPF                            | 3,0 (5,0 para VB)|
+| Biblioteca de classes do WPF                            | [wpflib](#wpf)                  | [C#], VB     | Comum/WPF                            | 3,0 (5,0 para VB)|
+| Biblioteca de Controles Personalizados do WPF                   | [wpfcustomcontrollib](#wpf)     | [C#], VB     | Comum/WPF                            | 3,0 (5,0 para VB)|
+| Biblioteca de controle de usuário WPF                     | [wpfusercontrollib](#wpf)       | [C#], VB     | Comum/WPF                            | 3,0 (5,0 para VB)|
+| Aplicativo Windows Forms (WinForms)         | [WinForms](#winforms)           | [C#], VB     | Comum/WinForms                       | 3,0 (5,0 para VB)|
+| Biblioteca de classes do Windows Forms (WinForms)       | [winformslib](#winforms)        | [C#], VB     | Comum/WinForms                       | 3,0 (5,0 para VB)|
 | Serviço de trabalho                               | [funcionários](#web-others)           | [C#]         | Comum/de trabalho/Web                     | 3.0        |
 | Projeto de Teste de Unidade                            | [MSTest](#test)                 | [C#], F#, VB | Teste/MSTest                           | 1.0        |
-| Projeto de Teste do NUnit 3                         | [NUnit](#nunit)                  | [C#], F#, VB | Teste/NUnit                            | 2.1.400    |
+| Projeto de Teste do NUnit 3                         | [NUnit](#nunit)                 | [C#], F#, VB | Teste/NUnit                            | 2.1.400    |
 | Item de Teste do NUnit 3                            | `nunit-test`                    | [C#], F#, VB | Teste/NUnit                            | 2.2        |
 | Projeto de Teste xUnit                           | [xUnit](#test)                  | [C#], F#, VB | Teste/xUnit                            | 1.0        |
 | Componente Razor                              | `razorcomponent`                | [C#]         | Web/ASP.NET                           | 3.0        |
-| Página do Razor                                   | [Web](#page)                   | [C#]         | Web/ASP.NET                           | 2,0        |
+| Página do Razor                                   | [page](#page)                   | [C#]         | Web/ASP.NET                           | 2,0        |
 | Importações de Exibição do MVC                              | [viewimports](#namespace)       | [C#]         | Web/ASP.NET                           | 2,0        |
 | MVC ViewStart                                | `viewstart`                     | [C#]         | Web/ASP.NET                           | 2,0        |
-| BlazorAplicativo de servidor                            | [blazorserver](#blazorserver)   | [C#]         | SiteBlazor                            | 3.0        |
-| BlazorDo WebAssembly aplicativo                       | `blazorwasm`                    | [C#]         | SiteBlazor/WebAssembly                            | 3.1.300    |
+| Blazor Aplicativo de servidor                            | [blazorserver](#blazorserver)   | [C#]         | SiteBlazor                            | 3.0        |
+| BlazorDo WebAssembly aplicativo                       | `blazorwasm`                    | [C#]         | SiteBlazor/WebAssembly                | 3.1.300    |
 | ASP.NET Core Vazio                           | [site](#web)                     | [C#], F#     | Web/Vazio                             | 1.0        |
 | Aplicativo Web ASP.NET Core (Modelo-Exibição-Controlador) | [MVC](#web-options)             | [C#], F#     | Web/MVC                               | 1.0        |
 | Aplicativo Web ASP.NET Core                         | [webapp, Razor](#web-options)   | [C#]         | Web/MVC/Razor Pages                   | 2,2, 2,0   |
@@ -210,7 +210,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
 ***
 
-### <a name="wpf-wpflib-wpfcustomcontrollib-wpfusercontrollib"></a><a name="wpf"></a>WPF, wpflib, wpfcustomcontrollib, wpfusercontrollib
+### <a name="wpf-wpflib-wpfcustomcontrollib-wpfusercontrollib"></a><a name="wpf"></a> WPF, wpflib, wpfcustomcontrollib, wpfusercontrollib
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -228,7 +228,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
 ***
 
-### <a name="winforms-winformslib"></a><a name="winforms"></a>WinForms, winformslib
+### <a name="winforms-winformslib"></a><a name="winforms"></a> WinForms, winformslib
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -242,7 +242,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
 ***
 
-### <a name="worker-grpc"></a><a name="web-others"></a>trabalho, grpc
+### <a name="worker-grpc"></a><a name="web-others"></a> trabalho, grpc
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -258,7 +258,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
 ***
 
-### <a name="mstest-xunit"></a><a name="test"></a>MSTest, xUnit
+### <a name="mstest-xunit"></a><a name="test"></a> MSTest, xUnit
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -318,7 +318,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
 ***
 
-### <a name="viewimports-proto"></a><a name="namespace"></a>viewimports, proto
+### <a name="viewimports-proto"></a><a name="namespace"></a> viewimports, proto
 
 - **`-na|--namespace <NAMESPACE_NAME>`**
 
@@ -425,7 +425,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
 ***
 
-### <a name="mvc-webapp"></a><a name="web-options"></a>MVC, webapp
+### <a name="mvc-webapp"></a><a name="web-options"></a> MVC, webapp
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
@@ -515,7 +515,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
 ***
 
-### <a name="angular-react"></a><a name="spa"></a>angular, reagir
+### <a name="angular-react"></a><a name="spa"></a> angular, reagir
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 

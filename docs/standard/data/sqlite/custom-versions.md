@@ -1,27 +1,28 @@
 ---
 title: Versões personalizadas do SQLite
-ms.date: 05/14/2020
+ms.date: 09/04/2020
 description: Saiba como usar uma versão personalizada da biblioteca SQLite nativa.
-ms.openlocfilehash: 15db10db26bc7c5017313ca020a0e1e528ba207a
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: fbf4b4cd33e6e890ce0c0cfe0b7688487b94b4a3
+ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83440831"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89516132"
 ---
 # <a name="custom-sqlite-versions"></a>Versões personalizadas do SQLite
 
-`Microsoft.Data.Sqlite`é criado com base em `SQLitePCLRaw` . Você pode usar versões personalizadas da biblioteca SQLite nativa usando um pacote ou configurando um `SQLitePCLRaw` provedor.
+`Microsoft.Data.Sqlite` é criado com base em `SQLitePCLRaw` . Você pode usar versões personalizadas da biblioteca SQLite nativa usando um pacote ou configurando um `SQLitePCLRaw` provedor.
 
 ## <a name="bundles"></a>Pacotes
 
-`SQLitePCLRaw`fornece pacotes de pacote baseados em conveniência, que facilitam a tarefa de trazer as dependências certas entre diferentes plataformas. O `Microsoft.Data.Sqlite` pacote principal traz `SQLitePCLRaw.bundle_e_sqlite3` por padrão. Para usar um pacote diferente, instale o `Microsoft.Data.Sqlite.Core` pacote, juntamente com o pacote de pacotes que você deseja usar. Os grupos são inicializados automaticamente pelo `Microsoft.Data.Sqlite` .
+`SQLitePCLRaw` fornece pacotes de pacote baseados em conveniência, que facilitam a tarefa de trazer as dependências certas entre diferentes plataformas. O `Microsoft.Data.Sqlite` pacote principal traz `SQLitePCLRaw.bundle_e_sqlite3` por padrão. Para usar um pacote diferente, instale o `Microsoft.Data.Sqlite.Core` pacote, juntamente com o pacote de pacotes que você deseja usar. Os grupos são inicializados automaticamente pelo `Microsoft.Data.Sqlite` .
 
 | Pacote | Descrição |
 |--|--|
 | [SQLitePCLRaw. bundle_e_sqlite3](https://www.nuget.org/packages/SQLitePCLRaw.bundle_e_sqlite3) | Fornece uma versão consistente do SQLite em todas as plataformas. Inclui as extensões de árvore FTS4, FTS5, JSON1 e R *. Este é o padrão. |
 | [SQLitePCLRaw. bundle_e_sqlcipher](https://www.nuget.org/packages/SQLitePCLRaw.bundle_e_sqlcipher) | Fornece uma compilação não oficial de código aberto do `SQLCipher` . |
 | [SQLitePCLRaw. bundle_green](https://www.nuget.org/packages/SQLitePCLRaw.bundle_green) | O mesmo que `bundle_e_sqlite3` , exceto no Ios, em que ele usa a biblioteca SQLite do sistema. |
+| [SQLitePCLRaw. bundle_sqlite3](https://www.nuget.org/packages/SQLitePCLRaw.bundle_sqlite3) | Usa a biblioteca SQLite do sistema. |
 | [SQLitePCLRaw. bundle_winsqlite3](https://www.nuget.org/packages/SQLitePCLRaw.bundle_winsqlite3) | Usa `winsqlite3.dll` o, a biblioteca SQLite do sistema no Windows 10. |
 | [SQLitePCLRaw. bundle_zetetic](https://www.nuget.org/packages/SQLitePCLRaw.bundle_zetetic) | Usa as `SQLCipher` compilações oficiais do Zetetic (não incluído). |
 

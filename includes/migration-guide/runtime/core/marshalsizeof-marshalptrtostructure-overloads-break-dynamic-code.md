@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c462c7b4ec8423ce8fd331d3cd31154283cf1f1d
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 086dac69d085d070511fcfd5820bd2644ee4598e
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619786"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496599"
 ---
 ### <a name="marshalsizeof-and-marshalptrtostructure-overloads-break-dynamic-code"></a>As sobrecargas Marshal.SizeOf e Marshal.PtrToStructure interrompem o código dinâmico
 
@@ -16,8 +16,20 @@ A partir do .NET Framework 4.5.1, a associação dinâmica aos métodos <xref:Sy
 
 Atualize os scripts para indicar claramente qual sobrecarga deve ser usada. Normalmente, isso pode ser feito convertendo explicitamente os parâmetros de tipo dos métodos como <xref:System.Type>. Clique [neste link](https://support.microsoft.com/kb/2909958/) para obter mais detalhes e exemplos de como contornar o problema.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.5.1|
-|Type|Runtime|
+|Tipo|Runtime|
+
+#### <a name="affected-apis"></a>APIs afetadas
+
+Não detectável via análise de API.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

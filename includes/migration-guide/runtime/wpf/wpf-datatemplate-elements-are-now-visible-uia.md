@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 06c699281c8890ac65be1d282b72b54774acc280
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 4394e69dafeb6cce2d7719a67bbce396d3bc1086
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619896"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497909"
 ---
 ### <a name="wpf-datatemplate-elements-are-now-visible-to-uia"></a>Elementos DataTemplate do WPF agora são visíveis à UIA
 
@@ -16,12 +16,22 @@ Anteriormente, os elementos <xref:System.Windows.DataTemplate?displayProperty=fu
 
 Os testes de Automação da Interface do Usuário para esse aplicativo talvez precisem ser atualizados para contabilizar a árvore UIA agora, incluindo elementos <xref:System.Windows.DataTemplate?displayProperty=fullName> anteriormente invisíveis. Por exemplo, os testes que esperam que alguns elementos fiquem próximos uns dos outros agora podem precisar esperar elementos UIA anteriormente invisíveis entre eles. Ou os testes que dependem de determinadas contagens ou de índices para elementos UIA talvez precisem ser atualizados com novos valores.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Windows.DataTemplate.%23ctor></li><li><xref:System.Windows.DataTemplate.%23ctor(System.Object)></li></ul>|
+- <xref:System.Windows.DataTemplate.%23ctor>
+- <xref:System.Windows.DataTemplate.%23ctor(System.Object)>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.DataTemplate.#ctor`
+- `M:System.Windows.DataTemplate.#ctor(System.Object)`
+
+-->

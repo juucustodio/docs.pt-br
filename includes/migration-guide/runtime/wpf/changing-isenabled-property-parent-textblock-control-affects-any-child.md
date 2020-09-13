@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 395463225e3c1f1d168dd019ea75966ad54e5a8a
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 12a26030a9a336d887ae9d53994a9daf13356618
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621025"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497731"
 ---
 ### <a name="changing-the-isenabled-property-of-the-parent-of-a-textblock-control-affects-any-child-controls"></a>Alterar a propriedade IsEnabled do pai de um controle TextBlock afeta os controles filho
 
@@ -16,12 +16,20 @@ A partir do .NET Framework 4.6.2, alterar a propriedade <xref:System.Windows.UIE
 
 Nenhum. Essa alteração está em conformidade com o comportamento esperado para controles dentro de um controle <xref:System.Windows.Controls.TextBlock?displayProperty=fullName>.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.6.2|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Windows.UIElement.IsEnabled?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.UIElement.IsEnabled?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Windows.UIElement.IsEnabled`
+
+-->

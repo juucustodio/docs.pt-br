@@ -1,26 +1,28 @@
 ---
 title: Windows Forms alterações significativas
-description: Lista as alterações significativas no Windows Forms para .NET Core.
-ms.date: 01/08/2020
-ms.openlocfilehash: beb9a42e4b5007f03480cd74f57bbfbbfc3f48b1
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+description: Lista as alterações significativas em Windows Forms para .NET Core e .NET 5.
+ms.date: 09/08/2020
+ms.openlocfilehash: c3d2d23601d6a2d9d44761c4371fe34d3d5ed1f3
+ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87556127"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89656321"
 ---
 # <a name="breaking-changes-in-windows-forms"></a>Alterações recentes no Windows Forms
 
-Windows Forms suporte foi adicionado ao .NET Core na versão 3,0. Este artigo lista as alterações significativas para Windows Forms pela versão do .NET Core na qual elas foram introduzidas. Se você estiver atualizando um aplicativo Windows Forms de .NET Framework ou de uma versão anterior do .NET Core (3,0 ou posterior), este artigo será aplicável a você.
+Windows Forms suporte foi adicionado ao .NET Core na versão 3,0. Este artigo lista as alterações significativas para Windows Forms pela versão do .NET na qual elas foram introduzidas. Se você estiver atualizando um aplicativo Windows Forms de .NET Framework ou de uma versão anterior do .NET Core (3,0 ou posterior), este artigo se aplicará a você.
 
 As seguintes alterações significativas estão documentadas nesta página:
 
 | Alteração significativa | Versão introduzida |
 | - | :-: |
-| [Controles da barra de status removidos](#removed-status-bar-controls) | 5.0 |
-| [Os métodos WinForms agora lançam ArgumentException](#winforms-methods-now-throw-argumentexception) | 5.0 |
-| [Os métodos WinForms agora lançam ArgumentNullException](#winforms-methods-now-throw-argumentnullexception) | 5.0 |
-| [As propriedades do WinForms agora geram ArgumentOutOfRangeException](#winforms-properties-now-throw-argumentoutofrangeexception) | 5.0 |
+| [APIs relacionadas a DataGridView agora lança InvalidOperationException](#datagridview-related-apis-now-throw-invalidoperationexception) | 5,0 |
+| [Os aplicativos WinForms e WPF usam Microsoft. NET. Sdk](#winforms-and-wpf-apps-use-microsoftnetsdk) | 5,0 |
+| [Controles da barra de status removidos](#removed-status-bar-controls) | 5,0 |
+| [Os métodos WinForms agora lançam ArgumentException](#winforms-methods-now-throw-argumentexception) | 5,0 |
+| [Os métodos WinForms agora lançam ArgumentNullException](#winforms-methods-now-throw-argumentnullexception) | 5,0 |
+| [As propriedades do WinForms agora geram ArgumentOutOfRangeException](#winforms-properties-now-throw-argumentoutofrangeexception) | 5,0 |
 | [Controles removidos](#removed-controls) | 3.1 |
 | [Evento CellFormatting não gerado se ToolTip for mostrado](#cellformatting-event-not-raised-if-tooltip-is-shown) | 3.1 |
 | [Control. DefaultFont alterado para Segoe UI 9 pt](#default-control-font-changed-to-segoe-ui-9-pt) | 3.0 |
@@ -36,6 +38,14 @@ As seguintes alterações significativas estão documentadas nesta página:
 | [Não há suporte para a opção de compatibilidade UseLegacyImages](#uselegacyimages-compatibility-switch-not-supported) | 3.0 |
 
 ## <a name="net-50"></a>.NET 5,0
+
+[!INCLUDE [null-owner-causes-invalidoperationexception](../../../includes/core-changes/windowsforms/5.0/null-owner-causes-invalidoperationexception.md)]
+
+***
+
+[!INCLUDE [sdk-and-target-framework-change](../../../includes/core-changes/windowsforms/5.0/sdk-and-target-framework-change.md)]
+
+***
 
 [!INCLUDE [winforms-deprecated-controls](../../../includes/core-changes/windowsforms/5.0/winforms-deprecated-controls.md)]
 

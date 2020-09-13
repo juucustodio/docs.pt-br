@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: fbf3c0c8f1d11f9f5997a4d1027242c4710c7107
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: d23d7821e19b9d7f2db13a6bfdf868a8414cf721
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621766"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497672"
 ---
 ### <a name="item-scrolling-a-flat-list-with-items-of-different-pixel-height"></a>Rolagem de itens em uma lista simples de itens com diferentes alturas em pixels
 
@@ -16,12 +16,20 @@ Quando um <xref:System.Windows.Controls.ItemsControl?displayProperty=fullName> e
 
 Se a iteração ocorrer no .NET Framework 4.6.1, mas não nas versões anteriores, ou seja, se o <xref:System.Windows.Controls.ItemsControl?displayProperty=fullName> for uma lista plana de rolagem de item com itens de alturas em pixels diferentes, haverá duas soluções:<ol><li>Instalar o .NET Framework 4.6.2.</li><li>Instalar o hotfix HR 1605 para o .NET Framework 4.6.1.</li></ol>
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.6.1|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Windows.Controls.VirtualizingStackPanel?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.VirtualizingStackPanel?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Windows.Controls.VirtualizingStackPanel`
+
+-->

@@ -6,12 +6,12 @@ metadata:
   description: Aprenda sobre programação C# – para desenvolvedores iniciantes, novos em C# e experientes em C#/.NET
   ms.topic: landing-page
   ms.date: 11/19/2019
-  ms.openlocfilehash: a0de519e518cac70bac831cf689042e104cd1389
-  ms.sourcegitcommit: 09bad6ec0cbf18be7cd7f62e77286d305a18b607
+  ms.openlocfilehash: fd9a641d588ffd410ed2a6163505a81c69dae867
+  ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 08/05/2020
-  ms.locfileid: "82102717"
+  ms.lasthandoff: 09/05/2020
+  ms.locfileid: "89495311"
 landingContent:
 - title: Aprender a programar em C#
   linkLists:
@@ -63,6 +63,12 @@ landingContent:
       url: tutorials/string-interpolation.md
     - text: Navegar por todos os tutoriais
       url: tutorials/index.md
+- title: Novos recursos do C# 9.0
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Novidades do C# 9.0
+      url: whats-new/csharp-9.md
 - title: Novos recursos do C# 8.0
   linkLists:
   - linkListType: whats-new

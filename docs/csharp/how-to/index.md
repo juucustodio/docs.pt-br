@@ -2,12 +2,12 @@
 title: Artigos de instruções (Guia de C#)
 description: Uma coleção de dicas rápidas e exemplos de código curtos e focados
 ms.date: 12/20/2017
-ms.openlocfilehash: 81ef8106add757cf3c83aa7dc130f5474b936461
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 9dd069ff767d65002b78c18b398b700a1f26ebfa
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794696"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89465150"
 ---
 # <a name="how-to-c"></a>Instruções (C#)
 
@@ -21,7 +21,7 @@ Há várias dicas e truques que são práticas de desenvolvedor C# comuns:
 - [Aprenda as diferenças entre passar um struct e uma classe para um método](../programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md).
 - [Use a sobrecarga de operador](../language-reference/operators/operator-overloading.md).
 - [Implemente e chame um método de extensão personalizado](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
-- Até mesmo os programadores C# podem querer [usar `My` o namespace de Visual Basic](../programming-guide/namespaces/how-to-use-the-my-namespace.md).
+- Até mesmo os programadores C# podem querer [usar o `My` namespace de Visual Basic](../programming-guide/namespaces/how-to-use-the-my-namespace.md).
 - [Crie um novo método para um tipo `enum` usando métodos de extensão](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
 ### <a name="class-and-struct-members"></a>Membros de classe e struct
@@ -94,7 +94,7 @@ Os eventos fornecem um mecanismo para publicar ou assinar notificações.
 
 - [Assine e cancele a assinatura de eventos](../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 - [Implemente eventos declarados nas interfaces](../programming-guide/events/how-to-implement-interface-events.md).
-- [Esteja em conformidade com as diretrizes do .NET Framework quando seu código publicar eventos](../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).
+- [Conformidade com as diretrizes do .net quando seu código publica eventos](../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).
 - [Gere eventos definidos nas classes de base de classes derivadas](../programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md).
 - [Implemente acessadores de eventos personalizados](../programming-guide/events/how-to-implement-custom-event-accessors.md).
 

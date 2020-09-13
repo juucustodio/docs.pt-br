@@ -2,12 +2,12 @@
 title: Comando dotnet publish
 description: O comando dotnet publish publica um projeto do .NET Core ou uma solução em um diretório.
 ms.date: 02/24/2020
-ms.openlocfilehash: 45bf8504fd882286041794d27ecb56464fc8d13d
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: f171baaa0dbc070b6389ec0fa9895b2c5dcfafff
+ms.sourcegitcommit: f279a4488c48236793c04bf825ae6f9128790849
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656659"
+ms.lasthandoff: 09/06/2020
+ms.locfileid: "89501903"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
@@ -123,7 +123,7 @@ Para saber mais, consulte os recursos a seguir:
 
   Especifica o caminho para o diretório de saída.
   
-  Se não for especificado, o padrão é *[project_file_folder]./bin/[Configuration]/[Framework]/Publish/* para um executável dependente de estrutura e binários de plataforma cruzada. O padrão é *[project_file_folder]/bin/[Configuration]/[Framework]/[Runtime]/Publish/* para um executável independente.
+  Se não for especificado, o padrão é *[project_file_folder]/bin/[Configuration]/[Framework]/Publish/* para um executável dependente de estrutura e binários de plataforma cruzada. O padrão é *[project_file_folder]/bin/[Configuration]/[Framework]/[Runtime]/Publish/* para um executável independente.
 
   Em um projeto Web, se a pasta de saída estiver na pasta do projeto, os `dotnet publish` comandos sucessivos resultarão em pastas de saída aninhadas. Por exemplo, se a pasta do projeto *for MyProject*e a pasta de saída de publicação for *MyProject/Publish*e você `dotnet publish` executar duas vezes, a segunda execução colocará arquivos de conteúdo como arquivos *. config* e *. JSON* no *MyProject/publicar/Publish*. Para evitar o aninhamento de pastas de publicação, especifique uma pasta de publicação que não esteja **diretamente** sob a pasta do projeto ou exclua a pasta de publicação do projeto. Para excluir uma pasta de publicação chamada *publishoutput*, adicione o seguinte elemento a um `PropertyGroup` elemento no arquivo *. csproj* :
 
@@ -229,7 +229,7 @@ Para saber mais, consulte os recursos a seguir:
   dotnet publish --no-dependencies
   ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral da publicação de aplicativos do .NET Core](../deploying/index.md)
 - [Publicar aplicativos .NET Core com o CLI do .NET Core](../deploying/deploy-with-cli.md)

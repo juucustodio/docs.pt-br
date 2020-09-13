@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 75f176133697056bab9349ba1d18d7a0e1aa7da2
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 25ce391f917bd270d4d9a75f608e4a8ec763d15c
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619762"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497920"
 ---
 ### <a name="itemsclear-does-not-remove-duplicates-from-selecteditems"></a>Items.Clear não remove duplicatas de SelectedItems
 
@@ -16,12 +16,20 @@ Suponha que um Seletor (com seleção múltipla habilitada) tenha duplicatas em 
 
 Atualize se possível para o .NET Framework 4.6.2.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Secundária|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Windows.Controls.Primitives.MultiSelector.SelectedItems?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.Primitives.MultiSelector.SelectedItems?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Windows.Controls.Primitives.MultiSelector.SelectedItems`
+
+-->

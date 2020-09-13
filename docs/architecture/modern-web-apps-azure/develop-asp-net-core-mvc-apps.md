@@ -3,13 +3,16 @@ title: Desenvolvendo aplicativos ASP.NET Core MVC
 description: Projetar aplicativos Web modernos com o ASP.NET Core e o Azure | desenvolvendo aplicativos ASP.NET Core MVC
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/04/2019
-ms.openlocfilehash: be674f3292238b1983064408184777d379cf52a7
-ms.sourcegitcommit: 5280b2aef60a1ed99002dba44e4b9e7f6c830604
+ms.date: 08/12/2020
+no-loc:
+- Blazor
+- WebAssembly
+ms.openlocfilehash: 255a7f9b34752b3480ba5a8ffc5d506e6d7b05d3
+ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84307001"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89515964"
 ---
 # <a name="develop-aspnet-core-mvc-apps"></a>Desenvolver aplicativos ASP.NET Core MVC
 
@@ -20,7 +23,7 @@ O ASP.NET Core é uma estrutura multiplataforma de software livre para a criaç�
 
 ## <a name="mvc-and-razor-pages"></a>MVC e Razor Pages
 
-O ASP.NET Core MVC oferece diversos recursos úteis para a criação de APIs e aplicativos baseados na Web. O termo MVC significa "Model-View-Controller", um padrão de interface do usuário que divide a responsabilidade de responder às solicitações do usuário em várias partes. Além de seguir esse padrão, você também pode implementar recursos em seus aplicativos ASP.NET Core, como as Razor Pages. Os Razor Pages são incorporados ao ASP.NET Core MVC e usam os mesmos recursos para roteamento, associação de modelo, etc. No entanto, em vez de ter pastas e arquivos separados para controladores, exibições, etc. e usando roteamento baseado em atributo, os Razor Pages são colocados em uma única pasta ("/Pages"), roteiam-se com base em seu local relativo nessa pasta e lidam com as solicitações com manipuladores em vez de ações do controlador.
+O ASP.NET Core MVC oferece diversos recursos úteis para a criação de APIs e aplicativos baseados na Web. O termo MVC significa "Model-View-Controller", um padrão de interface do usuário que divide a responsabilidade de responder às solicitações do usuário em várias partes. Além de seguir esse padrão, você também pode implementar recursos em seus aplicativos ASP.NET Core, como as Razor Pages. Os Razor Pages são incorporados ao ASP.NET Core MVC e usam os mesmos recursos para roteamento, associação de modelo, filtros, autorização, etc. No entanto, em vez de ter pastas e arquivos separados para controladores, modelos, modos de exibição etc. e usar roteamento baseado em atributo, Razor Pages são colocados em uma única pasta ("/Pages"), roteia com base em seu local relativo nessa pasta e manipulam solicitações com manipuladores em vez de ações do controlador. Como resultado, ao trabalhar com Razor Pages, todos os arquivos e as classes de que você precisa são, normalmente, colocados, não espalhados por todo o projeto da Web.
 
 Ao criar um aplicativo ASP.NET Core, você deve ter um plano em mente para o tipo de aplicativo que deseja. No Visual Studio, você poderá escolher entre vários modelos. Os três modelos de projeto mais comuns são a API Web, o aplicativo Web e aplicativo Web (Model-View-Controller). Embora você só possa tomar essa decisão quando cria um projeto pela primeira vez, ela não é uma decisão irrevogável. O projeto de API Web usa controladores Model-View-Controller padrão. Ele apenas não tem Exibições por padrão. Da mesma forma, o modelo de Aplicativo Web padrão usa Razor Pages e, portanto, também não tem uma pasta de Exibições. Você poderá adicionar uma pasta de Exibições a esses projetos mais tarde para permitir o comportamento com base na exibição. Os projetos de API Web e Model-View-Controller não incluem uma pasta Pages por padrão, mas você poderá adicioná-la mais tarde para permitir o comportamento com base em Razor Pages. Considere esses três modelos como suportes a três tipos diferentes de interação do usuário padrão: dados (API Web), baseado em página e baseado em exibição. No entanto, você poderá combiná-los e usar um deles ou todos eles em um único projeto, se desejar.
 
@@ -97,6 +100,72 @@ Se você estiver usando a validação de modelos, sempre verifique se o modelo �
 Para APIs Web, o ASP.NET Core MVC é compatível com a [_negociação de conteúdo_](/aspnet/core/mvc/models/formatting), permitindo que as solicitações especifiquem como as respostas devem ser formatadas. Com base nos cabeçalhos fornecidos na solicitação, as ações que retornam dados formatarão a resposta em XML, JSON ou outro formato compatível. Esse recurso permite que a mesma API seja usada por vários clientes com diferentes requisitos de formato de dados.
 
 Os projetos de API Web devem considerar o uso do atributo `[ApiController]`, que pode ser aplicado aos controladores individuais, a uma classe base de controlador ou ao assembly inteiro. Esse atributo adiciona a verificação de validação automática de modelos, portanto, qualquer ação com um modelo inválido retornará um BadRequest com os detalhes dos erros de validação. O atributo também requer que todas as ações tenham uma rota de atributos, em vez de uma rota convencional, e retorna informações de ProblemDetails mais detalhadas em resposta aos erros.
+
+### <a name="keeping-controllers-under-control"></a>Mantendo os controladores sob controle
+
+Para aplicativos baseados em página, Razor Pages fazer um ótimo trabalho de manter os controladores ficando muito grandes. Cada página individual recebe seus próprios arquivos e classes dedicados apenas ao seu (s) manipulador (es). Antes da introdução do Razor Pages, muitos aplicativos centrados na exibição teriam classes de controlador grandes responsáveis por muitas ações e exibições diferentes. Essas classes crescem naturalmente para ter muitas responsabilidades e dependências, tornando-as mais difíceis de manter. Se você achar que os controladores baseados em exibição estão crescendo demais, considere refatorá-los para usar Razor Pages ou introduzir um padrão como mediador.
+
+O padrão de design mediador é usado para reduzir o acoplamento entre classes e, ao mesmo tempo, permitir a comunicação entre elas. Em aplicativos ASP.NET Core MVC, esse padrão é frequentemente empregado para dividir os controladores em partes menores usando *manipuladores* para realizar o trabalho dos métodos de ação. O [pacote NuGet popular do mediador](https://www.nuget.org/packages/MediatR/) geralmente é usado para fazer isso. Normalmente, os controladores incluem muitos métodos de ação diferentes, cada um deles podendo exigir determinadas dependências. O conjunto de todas as dependências exigidas por qualquer ação deve ser passado para o construtor do controlador. Ao usar mediador, a única dependência que um controlador tem está em uma instância do mediador. Em seguida, cada ação usa a instância mediador para enviar uma mensagem, que é processada por um manipulador. O manipulador é específico a uma única ação e, portanto, precisa apenas das dependências exigidas por essa ação. Um exemplo de um controlador que usa o mediador é mostrado aqui:
+
+```csharp
+public class OrderController : Controller
+{
+    private readonly IMediator _mediator;
+
+    public OrderController(IMediator mediator)
+    {
+        _mediator = mediator;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> MyOrders()
+    {
+        var viewModel = await _mediator.Send(new GetMyOrders(User.Identity.Name));
+
+        return View(viewModel);
+    }
+
+    // other actions implemented similarly
+}
+```
+
+Na `MyOrders` ação, a chamada para `Send` uma `GetMyOrders` mensagem é tratada por essa classe:
+
+```csharp
+public class GetMyOrdersHandler : IRequestHandler<GetMyOrders, IEnumerable<OrderViewModel>>
+{
+    private readonly IOrderRepository _orderRepository;
+
+    public GetMyOrdersHandler(IOrderRepository orderRepository)
+    {
+        _orderRepository = orderRepository;
+    }
+
+    public async Task<IEnumerable<OrderViewModel>> Handle(GetMyOrders request, CancellationToken cancellationToken)
+    {
+        var specification = new CustomerOrdersWithItemsSpecification(request.UserName);
+        var orders = await _orderRepository.ListAsync(specification);
+
+        return orders.Select(o => new OrderViewModel
+        {
+            OrderDate = o.OrderDate,
+            OrderItems = o.OrderItems?.Select(oi => new OrderItemViewModel()
+            {
+                PictureUrl = oi.ItemOrdered.PictureUri,
+                ProductId = oi.ItemOrdered.CatalogItemId,
+                ProductName = oi.ItemOrdered.ProductName,
+                UnitPrice = oi.UnitPrice,
+                Units = oi.Units
+            }).ToList(),
+            OrderNumber = o.Id,
+            ShippingAddress = o.ShipToAddress,
+            Total = o.Total()
+        });
+    }
+}
+```
+
+O resultado final dessa abordagem é que os controladores sejam muito menores e se concentram principalmente no roteamento e na associação de modelo, enquanto os manipuladores individuais são responsáveis pelas tarefas específicas necessárias para um determinado ponto de extremidade. Essa abordagem também pode ser obtida sem mediador usando o [pacote NuGet ApiEndpoints](https://www.nuget.org/packages/Ardalis.ApiEndpoints/), que tenta trazer para controladores de API os mesmos benefícios Razor Pages traz para os controladores baseados em exibição.
 
 > ### <a name="references--mapping-requests-to-responses"></a>Referências – Mapeando solicitações para respostas
 >
@@ -234,6 +303,18 @@ services.AddMvc(o => o.Conventions.Add(new FeatureConvention()));
 
 O ASP.NET Core MVC também usa uma convenção para localizar exibições. Você pode substituí-la por uma convenção personalizada, de modo que as exibições estejam localizadas nas pastas de recurso (usando o nome de recurso fornecido pela FeatureConvention, acima). Você pode aprender mais sobre essa abordagem e baixar um exemplo funcional do artigo da MSDN Magazine, [fatias de recursos para ASP.NET Core MVC](https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc).
 
+### <a name="apis-and-no-locblazor-applications"></a>APIs e Blazor aplicativos
+
+Se seu aplicativo incluir um conjunto de APIs da Web que deve ser protegido, isso deve ser ideal para ser configurado como um projeto separado de sua exibição ou Razor Pages aplicativo. Separar APIs, especialmente APIs públicas, do seu aplicativo Web do lado do servidor tem vários benefícios. Esses aplicativos geralmente terão características exclusivas de implantação e de carga. Também é muito provável que eles adotem mecanismos diferentes de segurança, com aplicativos baseados em formulários padrão que aproveitam a autenticação baseada em cookie e APIs com maior probabilidade de usar a autenticação baseada em token.
+
+Além disso, Blazor os aplicativos, seja usando Blazor o servidor ou Blazor WebAssembly , devem ser criados como projetos separados. Os aplicativos têm características de tempo de execução diferentes, bem como modelos de segurança. É provável que eles compartilhem tipos comuns com o aplicativo Web do lado do servidor (ou projeto de API), e esses tipos devem ser definidos em um projeto compartilhado comum.
+
+A adição de uma Blazor WebAssembly interface de administrador a eShopOnWeb exigiu a adição de vários novos projetos. O Blazor WebAssembly projeto em si, `BlazorAdmin` . Um novo conjunto de pontos de extremidade de API pública, usado pelo `BlazorAdmin` e configurado para usar a autenticação baseada em token, é definido no `PublicApi` projeto. E determinados tipos compartilhados usados por ambos os projetos são mantidos em um novo `BlazorShared` projeto.
+
+Alguém pode perguntar, por que adicionar um `BlazorShared` projeto separado quando já existe um `ApplicationCore` projeto comum que poderia ser usado para compartilhar qualquer tipo exigido por ambos `PublicApi` e `BlazorAdmin` ? A resposta é que esse projeto inclui toda a lógica de negócios do aplicativo e, portanto, é muito maior do que o necessário e também é muito mais provável que precise ser mantido seguro no servidor. Lembre-se de que qualquer biblioteca referenciada pelo `BlazorAdmin` será baixada nos navegadores dos usuários quando eles carregarem o Blazor aplicativo.
+
+Dependendo se um estiver usando o padrão de [back-ends (BFF)](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends), as APIs consumidas pelo Blazor WebAssembly aplicativo podem não compartilhar seus tipos de 100% com Blazor . Em particular, uma API pública que deve ser consumida por muitos clientes diferentes pode definir seus próprios tipos de solicitação e resultado, em vez de compartilhá-los em um projeto compartilhado específico do cliente. No exemplo de eShopOnWeb, pressupõe-se que o `PublicApi` projeto esteja, de fato, hospedando uma API pública, portanto, nem todos os seus tipos de solicitação e resposta vêm do `BlazorShared` projeto.
+
 ### <a name="cross-cutting-concerns"></a>Interesses paralelos
 
 Conforme os aplicativos crescem, fica cada vez mais importante excluir interesses paralelos para eliminar a duplicação e manter a consistência. Alguns exemplos de interesses paralelos em aplicativos ASP.NET Core são autenticação, regras de validação de modelos, cache de saída e tratamento de erro, embora haja muitos outros. Os [filtros](/aspnet/core/mvc/controllers/filters) do ASP.NET Core MVC permitem executar o código antes ou depois de determinadas etapas do pipeline de processamento de solicitações. Por exemplo, um filtro pode ser executado antes e após o model binding, antes e após uma ação ou antes e após o resultado de uma ação. Você também pode usar um filtro de autorização para controlar o acesso ao restante do pipeline. A Figura 7-2 mostra como solicitar fluxos de execução por meio de filtros, caso eles estejam configurados.
@@ -323,7 +404,7 @@ Você pode ler mais sobre como implementar filtros e baixar um exemplo funcional
 
 A proteção de aplicativos Web é um tópico extenso, com muitas considerações. Em seu nível mais básico, a segurança envolve a garantia de que você sabe de quem determinada solicitação é proveniente e, em seguida, a garantia de que essa solicitação tem acesso somente aos recursos que deveria. Autenticação é o processo de comparar as credenciais fornecidas com uma solicitação com aquelas em um armazenamento de dados confiável, para verificar se a solicitação deve ser tratada como proveniente de uma entidade conhecida. Autorização é o processo de restringir o acesso a determinados recursos com base na identidade do usuário. Uma terceira preocupação de segurança é proteger as solicitações contra interceptação por terceiros, para o qual você deve, pelo menos, [garantir que o SSL é usado pelo aplicativo](/aspnet/core/security/enforcing-ssl).
 
-### <a name="authentication"></a>Autenticação
+### <a name="identity"></a>Identidade
 
 O ASP.NET Core Identity é um sistema de associação que pode ser usado para dar suporte à funcionalidade de logon para o aplicativo. Ele tem suporte para contas de usuário local, bem como suporte para provedores de logon externo de provedores como a conta da Microsoft, Twitter, Facebook, Google e muito mais. Além do ASP.NET Core Identity, o aplicativo pode usar a autenticação do Windows ou um provedor de identidade de terceiros, como o [Identity Server](https://github.com/IdentityServer/IdentityServer4).
 
@@ -342,8 +423,8 @@ public void ConfigureServices(IServiceCollection services)
     services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
     services.AddIdentity<ApplicationUser, IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddDefaultTokenProviders();
+        .AddEntityFrameworkStores<ApplicationDbContext>()
+        .AddDefaultTokenProviders();
     services.AddMvc();
 }
 
@@ -362,7 +443,74 @@ public void Configure(IApplicationBuilder app)
 
 Saiba mais sobre como [configurar a autenticação de dois fatores](/aspnet/core/security/authentication/2fa) e [habilitar provedores de logon externo](/aspnet/core/security/authentication/social/) na documentação oficial do ASP.NET Core.
 
-### <a name="authorization"></a>Autorização
+### <a name="authentication"></a>Autenticação
+
+A autenticação é o processo de determinar quem está acessando o sistema. Se você estiver usando ASP.NET Core identidade e os métodos de configuração mostrados na seção anterior, ele configurará automaticamente alguns padrões de autenticação no aplicativo. No entanto, você também pode configurar esses padrões manualmente ou substituir aqueles definidos por addidentity. Se você estiver usando a identidade, ela configurará a autenticação baseada em cookie como o *esquema*padrão.
+
+Na autenticação baseada na Web, normalmente há até 5 ações que podem ser executadas no decorrer da autenticação de um cliente de um sistema. Eles são:
+
+- Autenticação. Use as informações fornecidas pelo cliente para criar uma identidade para uso dentro do aplicativo.
+- Desafio. Essa ação é usada para exigir que o cliente se identifique.
+- Proíba. Informe ao cliente que eles são proibidos de executar uma ação.
+- Entrar. Persista o cliente existente de alguma forma.
+- Sair. Remova o cliente da persistência.
+
+Há várias técnicas comuns para executar a autenticação em aplicativos Web. Eles são chamados de esquemas. Um determinado esquema definirá ações para algumas ou todas as opções acima. Alguns esquemas oferecem suporte apenas a um subconjunto de ações e podem exigir um esquema separado para executar os que não dão suporte. Por exemplo, o esquema OpenId-Connect (OIDC) não dá suporte à entrada ou saída, mas normalmente está configurado para usar a autenticação de cookie para essa persistência.
+
+Em seu aplicativo ASP.NET Core, você pode configurar um, `DefaultAuthenticateScheme` bem como esquemas específicos opcionais para cada uma das ações descritas acima. Por exemplo,,, `DefaultChallengeScheme` `DefaultForbidScheme` etc. [`AddIdentity<TUser,TRole>`](https://github.com/dotnet/aspnetcore/blob/release/3.1/src/Identity/Core/src/IdentityServiceCollectionExtensions.cs#L38-L102) A chamada configura vários aspectos do aplicativo e adiciona muitos serviços necessários. Ele também inclui essa chamada para configurar o esquema de autenticação:
+
+```csharp
+services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
+    options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
+    options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+});
+```
+
+Esses esquemas usam cookies para persistência e redirecionamento para páginas de logon para autenticação por padrão. Esses esquemas são apropriados para aplicativos Web que interagem com usuários por meio de navegadores da Web, mas não são recomendados para APIs. Em vez disso, as APIs normalmente usarão outra forma de autenticação, como tokens de portador JWT.
+
+As APIs da Web são consumidas pelo código, como `HttpClient` em aplicativos .net e tipos equivalentes em outras estruturas. Esses clientes esperam uma resposta utilizável de uma chamada à API ou um código de status que indica qual ocorreu o problema, se houver algum. Esses clientes não estão interagindo por meio de um navegador e não renderizam ou interagem com qualquer HTML que uma API possa retornar. Portanto, não é apropriado que os pontos de extremidade da API redirecionem seus clientes para páginas de logon se não forem autenticados. Outro esquema é mais apropriado.
+
+Para configurar a autenticação para APIs, você pode configurar a autenticação como a seguinte, usada pelo `PublicApi` projeto no aplicativo de referência eShopOnWeb:
+
+```csharp
+services.AddAuthentication(config =>
+{
+    config.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+    .AddJwtBearer(config =>
+    {
+        config.RequireHttpsMetadata = false;
+        config.SaveToken = true;
+        config.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateIssuer = false,
+            ValidateAudience = false
+        };
+    });
+```
+
+Embora seja possível configurar vários esquemas de autenticação diferentes em um único projeto, é muito mais simples configurar um único esquema padrão. Por esse motivo, entre outros, o aplicativo de referência eShopOnWeb separa suas APIs em seu próprio projeto, `PublicApi` separados do `Web` projeto principal que inclui as exibições e Razor pages do aplicativo.
+
+#### <a name="authentication-in-no-locblazor-apps"></a>Autenticação em Blazor aplicativos
+
+Blazor Os aplicativos de servidor podem aproveitar os mesmos recursos de autenticação que qualquer outro aplicativo ASP.NET Core. BlazorWebAssemblyno entanto, os aplicativos não podem usar a identidade interna e os provedores de autenticação, pois eles são executados no navegador. BlazorWebAssemblyos aplicativos podem armazenar o status de autenticação do usuário localmente e podem acessar declarações para determinar quais ações os usuários devem ser capazes de executar. No entanto, todas as verificações de autenticação e autorização devem ser executadas no servidor, independentemente de qualquer lógica implementada dentro do Blazor WebAssembly aplicativo, pois os usuários podem facilmente ignorar o aplicativo e interagir com as APIs diretamente.
+
+> ### <a name="references--authentication"></a>Referências – autenticação
+>
+> - **Ações de autenticação e padrões**  
+>   <https://stackoverflow.com/a/52493428>
+> - **Autenticação e autorização para SPAs**
+>   <https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization>
+> - **BlazorAutenticação e autorização do ASP.NET Core**
+>   <https://docs.microsoft.com/aspnet/core/blazor/security/>
+> - **Segurança: autenticação e autorização no ASP.NET Web Forms e Blazor**
+>   <https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization>
+
+### <a name="authorization"></a>Authorization
 
 A forma mais simples de autorização envolve a restrição do acesso a usuários anônimos. Para fazer isso, basta aplicar o atributo \[Authorize\] a determinados controladores ou ações. Se funções estiverem sendo usadas, o atributo poderá ser estendido ainda mais para restringir o acesso a usuários que pertencem a determinadas funções, conforme mostrado:
 
@@ -376,7 +524,7 @@ public class SalaryController : Controller
 
 Nesse caso, os usuários que pertencem as funções HRManager ou Finance (ou ambas) terão acesso ao SalaryController. Para exigir que um usuário pertença a várias funções (não apenas a uma de várias), aplique o atributo várias vezes, especificando uma função obrigatória por vez.
 
-A especificação de determinados conjuntos de funções como cadeias de caracteres em muitos controladores e ações diferentes pode levar à repetição indesejável. Você pode configurar políticas de autorização, que encapsulam regras de autorização e, em seguida, especificar a política, em vez de funções individuais ao aplicar o atributo \[Authorize\]:
+A especificação de determinados conjuntos de funções como cadeias de caracteres em muitos controladores e ações diferentes pode levar à repetição indesejável. No mínimo, defina constantes para esses literais de cadeia de caracteres e use as constantes em qualquer lugar em que você precise especificar a cadeia de caracteres. Você também pode configurar políticas de autorização, que encapsulam regras de autorização e, em seguida, especificar a política em vez de funções individuais ao aplicar o \[ atributo Authorize \] :
 
 ```csharp
 [Authorize(Policy = "CanViewPrivateReport")]
@@ -407,13 +555,28 @@ Essa política pode então ser usada com o atributo \[Authorize\] para proteger 
 
 #### <a name="securing-web-apis"></a>Proteger APIs Web
 
-A maioria das APIs Web deve implementar um sistema de autenticação baseada em token. A autenticação de token é sem estado e foi projetada para ser escalonável. Em um sistema de autenticação baseada em token, o cliente deve primeiro ser autenticado no provedor de autenticação. Se ele for bem-sucedido, o cliente receberá um token, que é apenas uma cadeia de caracteres criptograficamente significativa. Em seguida, quando o cliente precisar emitir uma solicitação para uma API, ele adicionará esse token como um cabeçalho na solicitação. O servidor então validará o token encontrado no cabeçalho da solicitação antes de concluir a solicitação. A Figura 7-4 demonstra esse processo.
+A maioria das APIs Web deve implementar um sistema de autenticação baseada em token. A autenticação de token é sem estado e foi projetada para ser escalonável. Em um sistema de autenticação baseada em token, o cliente deve primeiro ser autenticado no provedor de autenticação. Se ele for bem-sucedido, o cliente receberá um token, que é apenas uma cadeia de caracteres criptograficamente significativa. O formato mais comum para tokens é token Web JSON, ou JWT (geralmente pronuncia-se "jot"). Em seguida, quando o cliente precisar emitir uma solicitação para uma API, ele adicionará esse token como um cabeçalho na solicitação. O servidor então validará o token encontrado no cabeçalho da solicitação antes de concluir a solicitação. A Figura 7-4 demonstra esse processo.
 
 ![TokenAuth](./media/image7-4.png)
 
 **Figura 7-4.** Autenticação baseada em token para APIs Web.
 
 Você pode criar seu próprio serviço de autenticação, integrá-lo ao Azure AD e ao OAuth ou implementar um serviço usando uma ferramenta de código-fonte aberto como [IdentityServer](https://github.com/IdentityServer).
+
+Os tokens JWT podem inserir declarações sobre o usuário, que podem ser lidas no cliente ou no servidor. Você pode usar uma ferramenta como [JWT.Io](https://jwt.io/) para exibir o conteúdo de um token JWT. Não armazene dados confidenciais, como senhas ou chaves em tokens JTW, já que seu conteúdo é facilmente lido.
+
+Ao usar tokens JWT com SPA ou Blazor WebAssembly aplicativos, você deve armazenar o token em algum lugar no cliente e, em seguida, adicioná-lo a cada chamada à API. Isso normalmente é feito como um cabeçalho, como demonstra o código a seguir:
+
+```csharp
+// AuthService.cs in BlazorAdmin project of eShopOnWeb
+private async Task SetAuthorizationHeader()
+{
+    var token = await GetToken();
+    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+}
+```
+
+Depois de chamar o método acima, as solicitações feitas com o `_httpClient` terão o token inserido nos cabeçalhos da solicitação, permitindo que a API do lado do servidor autentique e autorize a solicitação.
 
 #### <a name="custom-security"></a>Segurança personalizada
 
@@ -438,7 +601,7 @@ Tenha um cuidado especial ao "distribuir sua própria" implementação de cripto
 
 Além de fornecer páginas e responder a solicitações de dados por meio de APIs Web, os aplicativos ASP.NET Core podem se comunicar diretamente com os clientes conectados. Essa comunicação de saída pode usar uma variedade de tecnologias de transporte, sendo a mais comum o WebSockets. O SignalR do ASP.NET Core é uma biblioteca que simplifica o acréscimo da funcionalidade de comunicação de servidor para cliente em tempo real aos aplicativos. O SignalR é compatível com uma variedade de tecnologias de transporte, incluindo o WebSockets, e abstrai muitos dos detalhes de implementação do desenvolvedor.
 
-A comunicação do cliente em tempo real, seja ela por meio do WebSockets diretamente ou por outras técnicas, é útil em uma variedade de cenários de aplicativos. Veja a seguir alguns exemplos:
+A comunicação do cliente em tempo real, seja ela por meio do WebSockets diretamente ou por outras técnicas, é útil em uma variedade de cenários de aplicativos. Alguns exemplos incluem:
 
 - Aplicativos de sala de chat ao vivo
 
@@ -518,8 +681,6 @@ Além desses tipos de modelo, o DDD normalmente emprega uma variedade de padrõe
 - [Repositório](https://deviq.com/repository-pattern/), para abstrair os detalhes de persistência.
 
 - [Alocador](https://en.wikipedia.org/wiki/Factory_method_pattern), para encapsular a criação de objetos complexos.
-
-- Eventos de domínio, para desacoplar um comportamento dependente do comportamento de gatilho.
 
 - [Serviços](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/), para encapsular um comportamento complexo e/ou detalhes de implementação de infraestrutura.
 

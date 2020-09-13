@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0fe07ac21effacffc56d37ccb46a121f443acd20
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 76425ca03c98cd6a23b8366257f9e0d53b486edb
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619770"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497773"
 ---
 ### <a name="sharing-session-state-with-aspnet-stateserver-requires-all-servers-in-the-web-farm-to-use-the-same-net-framework-version"></a>Compartilhamento de estado de sessão com StateServer Asp.Net exige que todos os servidores no web farm usem a mesma versão do .NET Framework
 
@@ -16,12 +16,20 @@ Ao habilitar o estado de sessão <xref:System.Web.SessionState.SessionStateMode.
 
 Certifique-se de atualizar as versões do .NET Framework em servidores Web que compartilham o estado ao mesmo tempo.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Web.SessionState.SessionStateMode.StateServer?displayProperty=nameWithType></li></ul>|
+- <xref:System.Web.SessionState.SessionStateMode.StateServer?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `F:System.Web.SessionState.SessionStateMode.StateServer`
+
+-->

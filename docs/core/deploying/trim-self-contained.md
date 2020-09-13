@@ -4,12 +4,12 @@ description: Saiba como cortar aplicativos independentes para reduzir seu tamanh
 author: jamshedd
 ms.author: jamshedd
 ms.date: 04/03/2020
-ms.openlocfilehash: 7a4731e2cbaa3835e6aa6ba558dfa8cd03828e01
-ms.sourcegitcommit: 2560a355c76b0a04cba0d34da870df9ad94ceca3
+ms.openlocfilehash: 9c2994c98a2ebe6f45b056256c2bda28db017fbf
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89053101"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89465475"
 ---
 # <a name="trim-self-contained-deployments-and-executables"></a>Cortar implantações e executáveis autossuficientes
 
@@ -19,7 +19,7 @@ O modelo de implantação de preparo – autocontido é uma versão especializad
 
 No entanto, há um risco de que a análise de tempo de compilação do aplicativo possa causar falhas em tempo de execução, devido ao fato de não poder analisar de maneira confiável vários padrões de código problemáticos (amplamente centrados no uso de reflexão). Como a confiabilidade não pode ser garantida, esse modelo de implantação é oferecido como um recurso de visualização.
 
-O mecanismo de análise de tempo de compilação fornece avisos para o desenvolvedor de padrões de código que são problemmatic para detectar qual outro código é necessário. O código pode ser anotado com atributos para informar ao corte o que mais incluir. Muitos padrões de reflexão podem ser substituídos com geração de código em tempo de compilação usando [geradores de origem](https://github.com/dotnet/roslyn/blob/master/docs/features/source-generators.md).
+O mecanismo de análise de tempo de compilação fornece avisos ao desenvolvedor de padrões de código que são problemáticos para detectar qual outro código é necessário. O código pode ser anotado com atributos para informar ao corte o que mais incluir. Muitos padrões de reflexão podem ser substituídos com geração de código em tempo de compilação usando [geradores de origem](https://github.com/dotnet/roslyn/blob/master/docs/features/source-generators.md).
 
 O modo de corte para os aplicativos é configurado com a `TrimMode` configuração. O valor padrão é `copyused` e agrupa os assemblies referenciados com o aplicativo. O `link` valor é usado com aplicativos Webassembly mais podestas e corta código não utilizado em assemblies. Avisos de análise de corte fornecem informações sobre padrões de código em que uma análise de dependência completa não era possível. Esses avisos são suprimidos por padrão e podem ser ativados definindo o sinalizador `SuppressTrimAnalysisWarnings` como `false` . Para obter mais informações sobre as opções de corte disponíveis, consulte [Opções de corte](trimming-options.md).
 
@@ -99,7 +99,7 @@ Para obter mais informações, consulte [publicar aplicativos .NET Core com o Vi
 
 Visual Studio para Mac não fornece opções para cortar seu aplicativo durante a publicação. Você precisará publicar manualmente seguindo as instruções da seção [cortar sua app-CLI](#trim-your-app---cli) . Para obter mais informações, consulte [publicar aplicativos .NET Core com CLI do .NET Core](deploy-with-cli.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Implantação de aplicativo .NET Core](index.md).
 - [Publicar aplicativos .NET Core com CLI do .NET Core](deploy-with-cli.md).

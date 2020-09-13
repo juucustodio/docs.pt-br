@@ -31,12 +31,12 @@ helpviewer_keywords:
 - ^ operator [C#]
 - bitwise logical OR operator [C#]
 - '| operator [C#]'
-ms.openlocfilehash: 99181855fdf8e937676e44e8b347510f9405aa3d
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: 061abc8bc37d166a3683be1d2ad920a083a8ea3b
+ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916911"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89515937"
 ---
 # <a name="bitwise-and-shift-operators-c-reference"></a>Operadores bit a bit e de deslocamento (referência do C#)
 
@@ -94,9 +94,9 @@ As posições vazias de bit de ordem superior são definidas com base no tipo do
 
 Para saber mais sobre como o operando à direita do operador `>>` define a contagem de deslocamento, veja a seção [Contagem de deslocamento dos operadores de deslocamento](#shift-count-of-the-shift-operators).
 
-## <a name="logical-and-operator-amp"></a><a name="logical-and-operator-"></a>Operador AND lógico&amp;
+## <a name="logical-and-operator-amp"></a><a name="logical-and-operator-"></a> Operador AND lógico &amp;
 
-O operador `&` computa o AND lógico bit a bit de seus operandos:
+O `&` operador computa os operandos lógicos e de seus integrantes de bit que se encontram:
 
 [!code-csharp-interactive[bitwise AND](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseAnd)]
 
@@ -104,7 +104,7 @@ Para `bool` operandos, o `&` operador computa a [lógica e](boolean-logical-oper
 
 ## <a name="logical-exclusive-or-operator-"></a>Operador OR exclusivo lógico ^
 
-O operador `^` computa o OR exclusivo lógico bit a bit, também conhecido como o XOR lógico bit a bit, de seus operandos:
+O `^` operador computa a lógica or exclusiva de bits de bit, também conhecida como o XOR lógico de bit-a, de seus operandos integrantes:
 
 [!code-csharp-interactive[bitwise XOR](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseXor)]
 
@@ -112,7 +112,7 @@ Para `bool` operandos, o `^` operador computa o [exclusivo lógico ou](boolean-l
 
 ## <a name="logical-or-operator-"></a>Operador OR lógico |
 
-O operador `|` computa o OR lógico bit a bit de seus operandos:
+O `|` operador computa o OR lógico de bits de bit ou de seus operandos inteiros:
 
 [!code-csharp-interactive[bitwise OR](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseOr)]
 
@@ -187,7 +187,7 @@ Um tipo definido pelo usuário pode [sobrecarregar](operator-overloading.md) os 
 
 Se um tipo definido pelo usuário `T` sobrecarregar o operador `<<` ou `>>`, o tipo do operando à esquerda deverá ser `T` e o tipo do operando à direita deverá ser `int`.
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 Para obter mais informações, confira as seguintes seções da [especificação da linguagem C#](~/_csharplang/spec/introduction.md):
 
@@ -197,7 +197,7 @@ Para obter mais informações, confira as seguintes seções da [especificação
 - [Atribuição composta](~/_csharplang/spec/expressions.md#compound-assignment)
 - [Promoções numéricas](~/_csharplang/spec/expressions.md#numeric-promotions)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência de C#](../index.md)
 - [Operadores e expressões C#](index.md)

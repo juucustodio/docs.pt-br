@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3e8601ba76dfb05e3d70b3af7440bd7e228768d0
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 1047f4028697a73741470d1aac8b3aeed37be217
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621010"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497837"
 ---
 ### <a name="allow-unicode-in-uris-that-resemble-unc-shares"></a>Permitir Unicode em URIs semelhantes a compartilhamentos UNC
 
@@ -16,12 +16,20 @@ No <xref:System.Uri?displayProperty=fullName>, a criação de um URI de arquivo 
 
 Os aplicativos que funcionam com URIs que contêm Unicode de forma consistente podem ter aceitado o uso desse comportamento para não permitir referências a compartilhamentos UNC. Esses aplicativos devem usar <xref:System.Uri.IsUnc>.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.7.2|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Uri?displayProperty=nameWithType></li></ul>|
+- <xref:System.Uri?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Uri`
+
+-->

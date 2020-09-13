@@ -3,16 +3,16 @@ description: '! operador (NULL-tolerante)-referência C#'
 title: '! operador (NULL-tolerante)-referência C#'
 ms.date: 10/11/2019
 f1_keywords:
-- '!_CSharpKeyword'
+- nullForgiving_CSharpKeyword
 helpviewer_keywords:
 - null-forgiving operator [C#]
 - '! operator [C#]'
-ms.openlocfilehash: 7ae35f4741e1ef377b73a15066dddd243c94d8fe
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 5418f96a3b4515224c49a1c1aa38784c348a86db
+ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89118215"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89516145"
 ---
 # <a name="-null-forgiving-operator-c-reference"></a>! operador (NULL-tolerante) (referência C#)
 

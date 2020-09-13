@@ -13,12 +13,12 @@ helpviewer_keywords:
 - LoadWithPartialName method
 - load-from context
 ms.assetid: 68d1c539-6a47-4614-ab59-4b071c9d4b4c
-ms.openlocfilehash: 8ee5243258ea1b853b4690b79ec032c46d1b3777
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 03d2cacea4d2c0e7452240df30350d93ce79282d
+ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803488"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89656139"
 ---
 # <a name="best-practices-for-assembly-loading"></a>Práticas recomendadas para carregamento de assemblies
 Este artigo descreve maneiras de evitar problemas de identidade de tipo que podem levar a <xref:System.InvalidCastException>, <xref:System.MissingMethodException> e outros erros. O artigo aborda as seguintes recomendações:  
@@ -63,7 +63,7 @@ Este artigo descreve maneiras de evitar problemas de identidade de tipo que pode
   
  Carregar assemblies usando o método <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>, ou um dos outros métodos que carregam pelo caminho, tem as seguintes desvantagens:  
   
-- Se um assembly com a mesma identidade já estiver carregado, <xref:System.Reflection.Assembly.LoadFrom%2A> retornará o assembly carregado, mesmo se um caminho diferente foi especificado.  
+- Se um assembly com a mesma identidade já estiver carregado no contexto de carga, <xref:System.Reflection.Assembly.LoadFrom%2A> o retornará o assembly carregado mesmo que um caminho diferente tenha sido especificado.  
   
 - Se um assembly é carregado com <xref:System.Reflection.Assembly.LoadFrom%2A> e posteriormente um assembly no contexto de carregamento padrão tenta carregar o mesmo assembly por nome de exibição, a tentativa de carregamento falhará. Isso pode ocorrer quando um assembly é desserializado.  
   

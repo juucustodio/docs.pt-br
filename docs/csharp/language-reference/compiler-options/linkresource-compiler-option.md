@@ -12,15 +12,15 @@ helpviewer_keywords:
 - -linkresource compiler option [C#]
 - linkresource compiler option [C#]
 ms.assetid: 440c26c2-77c1-4811-a0a3-57cce3f5fc96
-ms.openlocfilehash: 162baad57397b6d992dcf8f03f0b3661e0105cb8
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: cd1150f3fa0dd0eca4e9352ce3809e73a15126c7
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125339"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89466099"
 ---
 # <a name="-linkresource-c-compiler-options"></a>-linkresource (opções do compilador C#)
-Cria um link para um recurso do .NET Framework no arquivo de saída. O arquivo de recurso não é adicionado ao arquivo de saída. Isso é diferente da opção [-resource](./resource-compiler-option.md) que insere um arquivo de recurso no arquivo de saída.  
+Cria um link para um recurso do .NET no arquivo de saída. O arquivo de recurso não é adicionado ao arquivo de saída. Isso é diferente da opção [-resource](./resource-compiler-option.md) que insere um arquivo de recurso no arquivo de saída.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -30,7 +30,7 @@ Cria um link para um recurso do .NET Framework no arquivo de saída. O arquivo d
   
 ## <a name="arguments"></a>Argumentos  
  `filename`  
- O arquivo de recurso do .NET Framework ao qual você deseja vincular do assembly.  
+ O arquivo de recurso do .NET para o qual você deseja vincular do assembly.  
   
  `identifier` (opcional)  
  O nome lógico do recurso; o nome usado para carregar o recurso. O padrão é o nome do arquivo.  
@@ -43,7 +43,7 @@ Cria um link para um recurso do .NET Framework no arquivo de saída. O arquivo d
   
  **-linkresource** requer uma das opções [-target](./target-compiler-option.md) diferentes de **-target:module**.  
   
- Se `filename` for um arquivo de recurso do .NET Framework criado, por exemplo, por [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) ou no ambiente de desenvolvimento, ele poderá ser acessado com membros no namespace <xref:System.Resources>. Para obter mais informações, consulte <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. Para todos os outros recursos, use os métodos `GetManifestResource` na classe <xref:System.Reflection.Assembly> para acessar o recurso em tempo de execução.  
+ Se `filename` for um arquivo de recurso .NET criado, por exemplo, por [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) ou no ambiente de desenvolvimento, ele poderá ser acessado com membros no <xref:System.Resources> namespace. Para obter mais informações, consulte <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. Para todos os outros recursos, use os métodos `GetManifestResource` na classe <xref:System.Reflection.Assembly> para acessar o recurso em tempo de execução.  
   
  O arquivo especificado em `filename` pode ter qualquer formato. Por exemplo, crie uma parte DLL nativa do assembly de maneira que possa ser instalada no cache de assembly global e acessado no código gerenciado no assembly. O segundo dos exemplos a seguir mostra como fazer isso. É possível fazer a mesma coisa no Assembly Linker. O terceiro dos exemplos a seguir mostra como fazer isso. Para obter mais informações, consulte [Al.exe (Assembly Linker)](../../../framework/tools/al-exe-assembly-linker.md) e [Trabalhando com assemblies e o cache de assembly global](../../../framework/app-domains/working-with-assemblies-and-the-gac.md).  
   
@@ -75,7 +75,7 @@ al -out:A.dll A.netmodule -link:N.dll
 gacutil -i A.dll  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Opções do compilador C#](./index.md)
 - [Al.exe (vinculador de assembly)](../../../framework/tools/al-exe-assembly-linker.md)

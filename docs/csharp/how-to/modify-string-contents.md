@@ -4,12 +4,12 @@ description: Examine exemplos de várias técnicas para modificar o conteúdo da
 ms.date: 02/26/2018
 helpviewer_keywords:
 - strings [C#], modifying
-ms.openlocfilehash: ecce8857befc66353deea341d81f8c6e4313b951
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: bae54757fdb6f02cdc0dc8fc15ad3f7583c230a7
+ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86473962"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89465046"
 ---
 # <a name="how-to-modify-string-contents-in-c"></a>Como modificar o conteúdo da cadeia de caracteres em C\#
 
@@ -71,7 +71,7 @@ Como as cadeias de caracteres são imutáveis, todos os exemplos anteriores cria
 
 Você pode modificar uma cadeia de caracteres em um bloco fixo com código não seguro, mas **não é** recomendável modificar o conteúdo da cadeia de caracteres depois que uma cadeia de caracteres é criada. Isso interromperá as coisas de maneiras imprevisíveis. Por exemplo, se alguém estagiárior uma cadeia de caracteres que tenha o mesmo conteúdo que o seu, ele obterá sua cópia e não esperará que você esteja modificando sua cadeia de caracteres.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [.NET Framework expressões regulares](../../standard/base-types/regular-expressions.md)
+- [Expressões regulares do .NET](../../standard/base-types/regular-expressions.md)
 - [Linguagem de expressão regular-referência rápida](../../standard/base-types/regular-expression-language-quick-reference.md)

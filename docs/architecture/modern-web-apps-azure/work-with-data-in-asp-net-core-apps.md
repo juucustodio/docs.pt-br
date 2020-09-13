@@ -3,13 +3,16 @@ title: Trabalhar com os dados em aplicativos ASP.NET Core
 description: Arquitetar aplicativos Web modernos com o ASP.NET Core e o Azure | Trabalhando com os dados em aplicativos ASP.NET Core
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/04/2019
-ms.openlocfilehash: b706332b28aec669a841f510046aa7b185be1373
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+ms.date: 08/12/2020
+no-loc:
+- Blazor
+- WebAssembly
+ms.openlocfilehash: f2f2a4706ea4deba39465d8697f78be58506a09c
+ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80987836"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89515859"
 ---
 # <a name="working-with-data-in-aspnet-core-apps"></a>Trabalhando com os dados em aplicativos ASP.NET Core
 
@@ -55,7 +58,7 @@ public class CatalogContext : DbContext
 }
 ```
 
-O DbContext deve ter um construtor que aceite DbContextOptions e passa esse argumento para o construtor DbContext base. Se você tiver apenas um DbContext em seu aplicativo, você pode passar uma instância do DbContextOptions,\<mas se você tiver mais de um, você deve usar o tipo genérico DbContextOptions T>, passando no seu tipo DbContext como parâmetro genérico.
+O DbContext deve ter um construtor que aceite DbContextOptions e passa esse argumento para o construtor DbContext base. Se você tiver apenas um DbContext em seu aplicativo, poderá passar uma instância de DbContextOptions, mas se você tiver mais de um, deverá usar o tipo DbContextOptions genérico \<T> , passando o tipo DbContext como o parâmetro genérico.
 
 ### <a name="configuring-ef-core"></a>Configurando o EF Core
 
@@ -76,9 +79,9 @@ Depois de instalar o EF Core, criar um tipo filho do DbContext e configurá-lo e
 
 Você pode ver as consultas executadas pelo EF Core configurando um agente e garantindo que seu nível está definido com, pelo menos, Informações, conforme mostrado na Figura 8-1.
 
-![Registrando consultas do EF Core no console](./media/image8-1.png)
+![Registrando EF Core consultas no console](./media/image8-1.png)
 
-**Figura 8-1**. Registrando consultas do EF Core no console
+**Figura 8-1**. Registrando EF Core consultas no console
 
 ### <a name="fetching-and-storing-data"></a>Buscando e armazenando dados
 
@@ -93,7 +96,7 @@ var brandItems = await _context.CatalogBrands
     .ToListAsync();
 ```
 
-É importante, no exemplo acima, adicionar a chamada a ToListAsync para executar a consulta imediatamente. Caso contrário, a instrução atribuirá um IQueryable\<SelectListItem> a brandItems, que não será executado enquanto não for enumerado. Há vantagens e desvantagens em retornar resultados IQueryable de métodos. Ele permite que a consulta construída pelo EF Core seja modificada ainda mais, mas também pode resultar em erros que ocorrem apenas em runtime, caso as operações sejam adicionadas à consulta que o EF Core não pode converter. Em geral, é mais seguro passar todos os filtros para o método que executa o acesso a dados e retornar uma coleção em memória (por exemplo, List\<T>) como o resultado.
+É importante, no exemplo acima, adicionar a chamada a ToListAsync para executar a consulta imediatamente. Caso contrário, a instrução atribuirá um IQueryable\<SelectListItem> a brandItems, que não será executado até que seja enumerado. Há vantagens e desvantagens em retornar resultados IQueryable de métodos. Ele permite que a consulta construída pelo EF Core seja modificada ainda mais, mas também pode resultar em erros que ocorrem apenas em runtime, caso as operações sejam adicionadas à consulta que o EF Core não pode converter. Em geral, é mais seguro passar todos os filtros para o método que executa o acesso a dados e retornar uma coleção em memória (por exemplo, List\<T>) como o resultado.
 
 O EF Core controla as alterações nas entidades que ele busca da persistência. Para salvar as alterações em uma entidade controlada, basta chamar o método SaveChanges no DbContext, verificando se ela é a mesma instância de DbContext que foi usada para buscar a entidade. A adição e remoção de entidades é feita diretamente na propriedade DbSet apropriada, novamente com uma chamada a SaveChanges para executar os comandos de banco de dados. O exemplo a seguir demonstra como adicionar, atualizar e remover entidades da persistência.
 
@@ -127,7 +130,7 @@ var brandsWithItems = await _context.CatalogBrands
     .ToListAsync();
 ```
 
-Você pode incluir vários relacionamentos e também pode incluir subrelacionamentos usando ThenInclude. O EF Core executará uma única consulta para recuperar o conjunto resultante de entidades. Como alternativa, você pode incluir propriedades de navegação de propriedades de navegação passando uma cadeia de caracteres separada por '.' para o método de extensão `.Include()`, da seguinte forma:
+Você pode incluir várias relações, e também pode incluir subrelaçãos usando ThenInclude. O EF Core executará uma única consulta para recuperar o conjunto resultante de entidades. Como alternativa, você pode incluir propriedades de navegação de propriedades de navegação passando uma cadeia de caracteres separada por '.' para o método de extensão `.Include()`, da seguinte forma:
 
 ```csharp
     .Include("Items.Products")
@@ -180,7 +183,7 @@ public class Basket : BaseEntity
 }
 ```
 
-Esse tipo de entidade não `List` `ICollection` expõe um público ou `IReadOnlyCollection` propriedade, mas expõe um tipo que envolve o tipo de Lista subjacente. Ao usar esse padrão, é possível indicar ao Entity Framework Core que ele deve usar o campo de suporte da seguinte forma:
+Esse tipo de entidade não expõe uma `List` propriedade ou pública `ICollection` , mas, em vez disso, expõe um `IReadOnlyCollection` tipo que encapsula o tipo de lista subjacente. Ao usar esse padrão, é possível indicar ao Entity Framework Core que ele deve usar o campo de suporte da seguinte forma:
 
 ```csharp
 private void ConfigureBasket(EntityTypeBuilder<Basket> builder)
@@ -200,9 +203,9 @@ private void ConfigureOrder(EntityTypeBuilder<Order> builder)
 }
 ```
 
-Neste exemplo, a propriedade `ShipToAddress` é do tipo `Address`. `Address` é um objeto de valor com várias propriedades, como `Street` e `City`. O EF Core mapeia o objeto `Order` à tabela dele com uma coluna por propriedade `Address`, prefixando cada nome de coluna com o nome da propriedade. Neste exemplo, a tabela `Order` incluiria colunas, como `ShipToAddress_Street` e `ShipToAddress_City`. Também é possível armazenar tipos próprios em tabelas separadas, se desejar.
+Neste exemplo, a propriedade `ShipToAddress` é do tipo `Address`. `Address` é um objeto de valor com várias propriedades, como `Street` e `City`. O EF Core mapeia o objeto `Order` à tabela dele com uma coluna por propriedade `Address`, prefixando cada nome de coluna com o nome da propriedade. Neste exemplo, a tabela `Order` incluiria colunas, como `ShipToAddress_Street` e `ShipToAddress_City`. Também é possível armazenar tipos de propriedade em tabelas separadas, se desejado.
 
-Saiba mais sobre o suporte de entidades próprias [no EF Core](/ef/core/modeling/owned-entities).
+Saiba mais sobre o [suporte a entidades pertencentes no EF Core](/ef/core/modeling/owned-entities).
 
 ### <a name="resilient-connections"></a>Conexões resilientes
 
@@ -240,7 +243,7 @@ Quando as repetições estão habilitadas nas conexões do EF Core, cada operaç
 
 No entanto, se o código iniciar uma transação usando BeginTransaction, você estará definindo seu próprio grupo de operações que precisam ser tratadas como uma unidade: tudo dentro da transação precisará ser revertido caso ocorra uma falha. Você verá uma exceção como a mostrada a seguir se tentar executar essa transação ao usar uma estratégia de execução do EF (política de repetição) e incluir várias chamadas SaveChanges de diversos DbContexts na transação.
 
-System.InvalidOperationException: a estratégia de execução configurada 'SqlServerRetryingExecutionStrategy' não dá suporte a transações iniciadas pelo usuário. Use a estratégia de execução retornada por 'DbContext.Database.CreateExecutionStrategy()' para executar todas as operações na transação como uma unidade retável.
+System.InvalidOperationException: a estratégia de execução configurada 'SqlServerRetryingExecutionStrategy' não dá suporte a transações iniciadas pelo usuário. Use a estratégia de execução retornada por ' DbContext. Database. CreateExecutionStrategy () ' para executar todas as operações na transação como uma unidade com nova tentativa.
 
 A solução é invocar manualmente a estratégia de execução do EF com um delegado que representa tudo que precisa ser executado. Se ocorrer uma falha transitória, a estratégia de execução invocará o representante novamente. O seguinte código mostra como implementar essa abordagem:
 
@@ -271,16 +274,16 @@ O primeiro DbContext é o \_catalogContext e o segundo DbContext está dentro do
 
 > ### <a name="references--entity-framework-core"></a>Referências – Entity Framework Core
 >
-> - **EF Core Docs**
+> - **EF Core docs**
 >   <https://docs.microsoft.com/ef/>
-> - **Núcleo EF: Dados Relacionados**
+> - **EF Core: dados relacionados**
 >   <https://docs.microsoft.com/ef/core/querying/related-data>
-> - **Evite entidades de carregamento preguiçosas em aplicativos ASPNET**
+> - **Evite carregar entidades lentas em aplicativos ASPNET**
 >   <https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications>
 
 ## <a name="ef-core-or-micro-orm"></a>EF Core ou micro-ORM?
 
-Embora o EF Core seja uma ótima escolha para gerenciar a persistência, e na maioria das vezes encapsula detalhes do banco de dados dos desenvolvedores de aplicativos, não é a única escolha. Outra alternativa popular de código aberto é [o Dapper](https://github.com/StackExchange/Dapper), o chamado micro-ORM. Um micro-ORM é uma ferramenta leve e menos completa para o mapeamento de objetos para estruturas de dados. No caso do Dapper, seu design visa o foco no desempenho, em vez do encapsulamento total das consultas subjacentes usadas por ele para recuperar e atualizar os dados. Como ele não abstrai o SQL do desenvolvedor, o Dapper fica "mais próximo do metal" e permite aos desenvolvedores escreverem as consultas exatas que desejam usar para determinada operação de acesso a dados.
+Embora EF Core seja uma ótima opção para gerenciar a persistência, e para a maior parte encapsula os detalhes do banco de dados de desenvolvedores de aplicativos, não é a única opção. Outra alternativa popular de software livre é [Dapper](https://github.com/StackExchange/Dapper), uma chamada de micro ORM. Um micro-ORM é uma ferramenta leve e menos completa para o mapeamento de objetos para estruturas de dados. No caso do Dapper, seu design visa o foco no desempenho, em vez do encapsulamento total das consultas subjacentes usadas por ele para recuperar e atualizar os dados. Como ele não abstrai o SQL do desenvolvedor, o Dapper fica "mais próximo do metal" e permite aos desenvolvedores escreverem as consultas exatas que desejam usar para determinada operação de acesso a dados.
 
 O EF Core tem dois recursos significativos que os separam do Dapper, mas também contribuem com a sobrecarga de desempenho. O primeiro é a conversão de expressões LINQ em SQL. Essas conversões são armazenadas em cache, mas ainda assim há sobrecarga na execução na primeira vez. O segundo é o controle de alterações em entidades (de forma que instruções de atualização eficientes possam ser geradas). Esse comportamento pode ser desativado para consultas específicas com a extensão AsNotTracking. O EF Core também gera consultas SQL que geralmente são muito eficientes e, de qualquer modo, perfeitamente aceitáveis do ponto de vista de desempenho. No entanto, caso precise ter um controle refinado sobre a consulta precisa a ser executada, passe um SQL personalizado (ou execute um procedimento armazenado) usando o EF Core também. Nesse caso, o Dapper ainda supera o EF Core, mas somente um pouco. Julie Lerman apresenta alguns dados de desempenho em seu artigo do MSDN de maio de 2016 [Dapper, Entity Framework e aplicativos híbridos](https://docs.microsoft.com/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps). Encontre dados de parâmetro de comparação de desempenho adicionais para uma variedade de métodos de acesso a dados [no site do Dapper](https://github.com/StackExchange/Dapper).
 
@@ -326,13 +329,13 @@ var data = connection.Query<Post, User, Post>(sql,
 (post, user) => { post.Owner = user; return post;});
 ```
 
-Como ele oferece menos encapsulamento, o Dapper exige que os desenvolvedores saibam mais sobre como seus dados são armazenados, como consultá-los de forma eficiente e codificar mais para buscá-los. Quando o modelo é alterado, em vez de simplesmente criar uma nova migração (outro recurso do EF Core) e/ou atualizar as informações de mapeamento em um local em um DbContext, cada consulta afetada deve ser atualizada. Essas consultas não têm garantias de tempo de compilação, por isso podem quebrar em tempo de execução em resposta a alterações no modelo ou banco de dados, tornando os erros mais difíceis de detectar rapidamente. Em compensação por essa vantagem, o Dapper oferece um desempenho extremamente rápido.
+Como ele oferece menos encapsulamento, o Dapper exige que os desenvolvedores saibam mais sobre como seus dados são armazenados, como consultá-los de forma eficiente e codificar mais para buscá-los. Quando o modelo é alterado, em vez de simplesmente criar uma nova migração (outro recurso do EF Core) e/ou atualizar as informações de mapeamento em um local em um DbContext, cada consulta afetada deve ser atualizada. Essas consultas não têm garantias de tempo de compilação, portanto, elas podem ser interrompidas em tempo de execução em resposta a alterações no modelo ou banco de dados, tornando os erros mais difíceis de detectar rapidamente. Em compensação por essa vantagem, o Dapper oferece um desempenho extremamente rápido.
 
 Para a maioria dos aplicativos e a maioria das partes de quase todos os aplicativos, o EF Core oferece um desempenho aceitável. Portanto, seus benefícios de produtividade do desenvolvedor provavelmente superam a sobrecarga de desempenho. Para consultas que podem se beneficiar com o cache, a consulta real pode ser executada apenas em um pequeno percentual do tempo, tornando irrelevantes as pequenas diferenças no desempenho da consulta.
 
 ## <a name="sql-or-nosql"></a>SQL ou NoSQL
 
-Tradicionalmente, bancos de dados relacionais como o SQL Server dominaram o marketplace em armazenamento de dados persistente, mas não são a única solução disponível. Bancos de dados NoSQL, como o [MongoDB](https://www.mongodb.com/what-is-mongodb), oferecem uma abordagem diferente para armazenar objetos. Em vez de mapear objetos para tabelas e linhas, outra opção é serializar o grafo de objeto inteiro e armazenar o resultado. Os benefícios dessa abordagem são, pelo menos inicialmente, simplicidade e desempenho. É mais simples armazenar um único objeto serializado com uma chave do que decompor o objeto em muitas tabelas com relacionamentos e atualizações e linhas que podem ter mudado desde que o objeto foi recuperado pela última vez do banco de dados. Da mesma forma, a busca e a desserialização de um único objeto de um repositório baseado em chaves geralmente são muito mais rápidas e mais fáceis do que junções complexas ou várias consultas de banco de dados necessárias para compor totalmente o mesmo objeto de um banco de dados relacional. A falta de bloqueios ou transações ou um esquema fixo também torna os bancos de dados NoSQL passíveis de dimensionar em muitas máquinas, suportando conjuntos de dados muito grandes.
+Tradicionalmente, bancos de dados relacionais como o SQL Server dominaram o marketplace em armazenamento de dados persistente, mas não são a única solução disponível. Bancos de dados NoSQL, como o [MongoDB](https://www.mongodb.com/what-is-mongodb), oferecem uma abordagem diferente para armazenar objetos. Em vez de mapear objetos para tabelas e linhas, outra opção é serializar o grafo de objeto inteiro e armazenar o resultado. Os benefícios dessa abordagem são, pelo menos inicialmente, simplicidade e desempenho. É mais simples armazenar um único objeto serializado com uma chave do que decompor o objeto em muitas tabelas com relações e atualizações e linhas que podem ter sido alteradas desde a última recuperação do objeto do banco de dados. Da mesma forma, a busca e a desserialização de um único objeto de um repositório baseado em chaves geralmente são muito mais rápidas e mais fáceis do que junções complexas ou várias consultas de banco de dados necessárias para compor totalmente o mesmo objeto de um banco de dados relacional. A falta de bloqueios ou de transações ou um esquema fixo também faz com que os bancos de dados NoSQL receptivosm o dimensionamento em vários computadores, dando suporte a conjuntos muito grandes.
 
 Por outro lado, os bancos de dados NoSQL (como são normalmente chamados) trazem algumas desvantagens. Os bancos de dados relacionais usam a normalização para impor a consistência e evitar a duplicação de dados. Isso reduz o tamanho total do banco de dados e garante que as atualizações nos dados compartilhados estejam disponíveis imediatamente em todo o banco de dados. Em um banco de dados relacional, uma tabela Address pode referenciar uma tabela Country por ID, de modo que, se o nome de um país/região for alterado, os registros de endereço se beneficiarão com a atualização sem que eles mesmos precisem ser atualizados. No entanto, em um banco de dados NoSQL, Address e seu Country associado podem ser serializados como parte de muitos objetos armazenados. Uma atualização em um nome de país/região exige que todos esses objetos sejam atualizados, em vez de uma única linha. Os bancos de dados relacionais também podem garantir a integridade relacional pela imposição de regras como chaves estrangeiras. Normalmente, os bancos de dados NoSQL não oferecem essas restrições em seus dados.
 
@@ -340,21 +343,21 @@ Outra complexidade com a qual os bancos de dados NoSQL precisar lidar é o contr
 
 Em bancos de dados NoSQL, é possível armazenar várias versões de objetos, algo para o qual os bancos de dados relacionais de esquema fixo normalmente não dão suporte. No entanto, nesse caso, o código do aplicativo precisará levar em conta a existência de versões anteriores de objetos, adicionando mais complexidade.
 
-Normalmente, os bancos de dados NoSQL não impõem o [ACID](https://en.wikipedia.org/wiki/ACID), o que significa que eles trazem vantagens de desempenho e escalabilidade comparado aos bancos de dados relacionais. Eles são adequados para conjuntos de dados extremamente grandes e objetos que não são adequados para armazenamento em estruturas de mesa normalizadas. Não há nenhum motivo pelo qual um único aplicativo não possa aproveitar ambos os bancos de dados relacional e NoSQL, usando cada um deles nos casos em que for mais adequado.
+Normalmente, os bancos de dados NoSQL não impõem o [ACID](https://en.wikipedia.org/wiki/ACID), o que significa que eles trazem vantagens de desempenho e escalabilidade comparado aos bancos de dados relacionais. Elas são adequadas a conjuntos de e objetos extremamente grandes que não são adequados para o armazenamento em estruturas de tabela normalizadas. Não há nenhum motivo pelo qual um único aplicativo não possa aproveitar ambos os bancos de dados relacional e NoSQL, usando cada um deles nos casos em que for mais adequado.
 
 ## <a name="azure-cosmos-db"></a>Azure Cosmos DB
 
-O Azure Cosmos DB é um serviço de banco de dados NoSQL totalmente gerenciado que oferece armazenamento de dados sem esquemas baseado em nuvem. O Azure Cosmos DB é construído para desempenho rápido e previsível, alta disponibilidade, escala elástica e distribuição global. Apesar de ser um banco de dados NoSQL, os desenvolvedores podem usar funcionalidades avançadas e conhecidas de consultas SQL em dados JSON. Todos os recursos no Azure Cosmos DB são armazenados como documentos JSON. Os recursos são gerenciados como _itens_, que são documentos que contém metadados, e _feeds_, que são coleções de itens. A Figura 8-2 mostra a relação entre diferentes recursos do Azure Cosmos DB.
+O Azure Cosmos DB é um serviço de banco de dados NoSQL totalmente gerenciado que oferece armazenamento baseado em nuvem sem esquemas. O Azure Cosmos DB é criado para desempenho rápido e previsível, alta disponibilidade, dimensionamento elástico e distribuição global. Apesar de ser um banco de dados NoSQL, os desenvolvedores podem usar funcionalidades avançadas e conhecidas de consultas SQL em dados JSON. Todos os recursos no Azure Cosmos DB são armazenados como documentos JSON. Os recursos são gerenciados como _itens_, que são documentos que contém metadados, e _feeds_, que são coleções de itens. A Figura 8-2 mostra a relação entre diferentes recursos de Azure Cosmos DB.
 
-![A relação hierárquica entre os recursos no Azure Cosmos DB, um banco de dados NoSQL JSON](./media/image8-2.png)
+![A relação hierárquica entre os recursos no Azure Cosmos DB, um banco de dados JSON NoSQL](./media/image8-2.png)
 
 **Figura 8-2.** Azure Cosmos DB organização de recursos.
 
-A linguagem de consulta Azure Cosmos DB é uma interface simples, mas poderosa para consultar documentos JSON. A linguagem suporta um subconjunto da gramática ANSI SQL e adiciona profunda integração do objeto JavaScript, matrizes, construção de objetos e invocação de funções.
+A linguagem de consulta Azure Cosmos DB é uma interface simples, mas poderosa, para consultar documentos JSON. A linguagem suporta um subconjunto da gramática ANSI SQL e adiciona profunda integração do objeto JavaScript, matrizes, construção de objetos e invocação de funções.
 
 **Referências – Azure Cosmos DB**
 
-- Introdução do Azure Cosmos DB<https://docs.microsoft.com/azure/cosmos-db/introduction>
+- Introdução Azure Cosmos DB <https://docs.microsoft.com/azure/cosmos-db/introduction>
 
 ## <a name="other-persistence-options"></a>Outras opções de persistência
 
@@ -370,7 +373,7 @@ Além das opções de armazenamento relacional e NoSQL, os aplicativos ASP.NET C
 
 **Referências – Armazenamento do Azure**
 
-- Introdução do armazenamento azure<https://docs.microsoft.com/azure/storage/storage-introduction>
+- Introdução ao armazenamento do Azure <https://docs.microsoft.com/azure/storage/storage-introduction>
 
 ## <a name="caching"></a>Cache
 
@@ -482,9 +485,9 @@ services.AddScoped<ICatalogService, CachedCatalogService>();
 services.AddScoped<CatalogService>();
 ```
 
-Com isso em vigor, as chamadas de banco de dados para buscar os dados de catálogo serão feitas apenas uma vez por minuto, em vez de a cada solicitação. Dependendo do tráfego para o site, isso pode ter um impacto significativo no número de consultas feitas ao banco de dados, e no tempo médio de carga da página inicial que atualmente depende de todas as três consultas expostas por este serviço.
+Com isso em vigor, as chamadas de banco de dados para buscar os dados de catálogo serão feitas apenas uma vez por minuto, em vez de a cada solicitação. Dependendo do tráfego para o site, isso pode ter um impacto significativo no número de consultas feitas no banco de dados e no tempo médio de carregamento da página para o home page que, no momento, depende de todas as três consultas expostas por esse serviço.
 
-Um problema que surge quando o cache é implementado são _dados obsoletos_ – ou seja, dados que mudaram na fonte, mas uma versão desatualizada permanece no cache. Uma maneira simples de atenuar esse problema é usar pequenas durações de cache, pois há benefícios adicionais limitados em estender a duração de armazenamento em cache dos dados para um aplicativo ocupado. Por exemplo, considere uma página que faz uma consulta de banco de dados individual e é solicitada 10 vezes por segundo. Se essa página for armazenada em cache por um minuto, isso resultará no número de consultas de banco de dados feitas por minuto para reduzir de 600 para 1, uma redução de 99,8%. Se, em vez disso, a duração do cache foi feita em uma hora, a redução geral é de 99,997%, mas agora, a probabilidade e a idade potencial dos dados obsoletos são aumentadas consideravelmente.
+Um problema que surge quando o Caching é implementado é _dados obsoletos_ – ou seja, dados que foram alterados na origem, mas uma versão desatualizada permanece no cache. Uma maneira simples de atenuar esse problema é usar pequenas durações de cache, pois há benefícios adicionais limitados em estender a duração de armazenamento em cache dos dados para um aplicativo ocupado. Por exemplo, considere uma página que faz uma consulta de banco de dados individual e é solicitada 10 vezes por segundo. Se essa página for armazenada em cache por um minuto, isso resultará no número de consultas de banco de dados feitas por minuto para reduzir de 600 para 1, uma redução de 99,8%. Se, em vez disso, a duração do cache foi feita em uma hora, a redução geral é de 99,997%, mas agora, a probabilidade e a idade potencial dos dados obsoletos são aumentadas consideravelmente.
 
 Outra abordagem é remover as entradas de cache de forma proativa quando os dados que elas contêm são atualizados. As entradas individuais podem ser removidas se sua chave é conhecida:
 
@@ -492,7 +495,7 @@ Outra abordagem é remover as entradas de cache de forma proativa quando os dado
 _cache.Remove(cacheKey);
 ```
 
-Se o aplicativo expõe a funcionalidade para atualizar as entradas que ele armazena em cache, você pode remover as entradas de cache correspondentes no código que executa as atualizações. Às vezes, pode haver muitas entradas diferentes que dependem de determinado conjunto de dados. Nesse caso, pode ser útil criar dependências entre as entradas de cache, usando um CancellationChangeToken. Com um CancelamentoChangeToken, você pode expirar várias entradas de cache de uma só vez cancelando o token.
+Se o aplicativo expõe a funcionalidade para atualizar as entradas que ele armazena em cache, você pode remover as entradas de cache correspondentes no código que executa as atualizações. Às vezes, pode haver muitas entradas diferentes que dependem de determinado conjunto de dados. Nesse caso, pode ser útil criar dependências entre as entradas de cache, usando um CancellationChangeToken. Com um CancellationChangeToken, você pode expirar várias entradas de cache de uma vez, cancelando o token.
 
 ```csharp
 // configure CancellationToken and add entry to cache
@@ -506,8 +509,54 @@ new CancellationChangeToken(cts.Token));
 _cache.Get<CancellationTokenSource>("cts").Cancel();
 ```
 
-O cache pode melhorar consideravelmente o desempenho das páginas da Web que solicitam repetidamente os mesmos valores do banco de dados. Meça o desempenho da página e o acesso a dados antes de aplicar o cache e somente aplique o cache quando houver necessidade de melhoria. O cache consome recursos de memória do servidor web e aumenta a complexidade do aplicativo, por isso é importante que você não otimize prematuramente usando essa técnica.
+O cache pode melhorar consideravelmente o desempenho das páginas da Web que solicitam repetidamente os mesmos valores do banco de dados. Meça o desempenho da página e o acesso a dados antes de aplicar o cache e somente aplique o cache quando houver necessidade de melhoria. O Caching consome recursos de memória do servidor Web e aumenta a complexidade do aplicativo, portanto, é importante que você não Otimize prematuramente usando essa técnica.
+
+## <a name="getting-data-to-no-locblazor-no-locwebassembly-apps"></a>Obtendo dados para Blazor WebAssembly aplicativos
+
+Se você estiver criando aplicativos que usam o Blazor servidor, poderá usar Entity Framework e outras tecnologias de acesso a dados diretos, já que eles foram discutidos até o momento neste capítulo. No entanto, ao criar Blazor WebAssembly aplicativos, como outras estruturas de spa, você precisará de uma estratégia diferente para o acesso a dados. Normalmente, esses aplicativos acessam dados e interagem com o servidor por meio de pontos de extremidade da API Web.
+
+Se os dados ou as operações que estão sendo executadas forem confidenciais, certifique-se de examinar a seção sobre segurança no [capítulo anterior](develop-asp-net-core-mvc-apps.md) e proteger suas APIs contra acesso não autorizado.
+
+Você encontrará um exemplo de um Blazor WebAssembly aplicativo no [aplicativo de referência do eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb), no Blazor projeto de administração. Esse projeto é hospedado no projeto Web eShopOnWeb e permite que os usuários no grupo administradores gerenciem os itens na loja. Você pode ver uma captura de tela do aplicativo na Figura 8-3.
+
+![Captura de tela do administrador do catálogo eShopOnWeb](./media/image8-3.jpg)
+
+**Figura 8-3.** Captura de tela do administrador do catálogo eShopOnWeb.
+
+Ao buscar dados de APIs Web em um Blazor WebAssembly aplicativo, basta usar uma instância do `HttpClient` como faria em qualquer aplicativo .net. As etapas básicas envolvidas são criar a solicitação para enviar (se necessário, geralmente para solicitações POST ou PUT), aguardar a solicitação em si, verificar o código de status e desserializar a resposta. Se você pretende fazer muitas solicitações para um determinado conjunto de APIs, é uma boa ideia encapsular suas APIs e configurar o `HttpClient` endereço base centralmente. Dessa forma, se você precisar ajustar qualquer uma dessas configurações entre ambientes, poderá fazer as alterações em apenas um lugar. Você deve adicionar suporte para este serviço em seu `Program.Main` :
+
+```csharp
+builder.Services.AddScoped(sp =>
+    new HttpClient
+    {
+        BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+    });
+```
+
+Se você precisar acessar os serviços com segurança, deverá acessar um token seguro e configurar o `HttpClient` para passar esse token como um cabeçalho de autenticação com cada solicitação:
+
+```csharp
+_httpClient.DefaultRequestHeaders.Authorization =
+    new AuthenticationHeaderValue("Bearer", token);
+```
+
+Isso pode ser feito a partir de qualquer componente que tenha o `HttpClient` injetado, desde que `HttpClient` não tenha sido adicionado aos serviços do aplicativo com um `Transient` tempo de vida. Cada referência a `HttpClient` no aplicativo faz referência à mesma instância, portanto, muda para ela em um fluxo de componente por todo o aplicativo. Um bom local para executar essa verificação de autenticação (seguido pela especificação do token) está em um componente compartilhado, como a navegação principal para o site. Saiba mais sobre essa abordagem no `BlazorAdmin` projeto no aplicativo de [referência do eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb).
+
+Um dos benefícios do Blazor WebAssembly spas JavaScript tradicional é que você não precisa manter cópias de seus DTOs (objetos de transferência de dados) sincronizados. Seu Blazor WebAssembly projeto e seu projeto de API Web podem compartilhar o mesmo DTOs em um projeto compartilhado comum. Isso elimina parte do conflito envolvido no desenvolvimento de SPAs.
+
+Para obter dados rapidamente de um ponto de extremidade de API, você pode usar o método auxiliar interno, `GetFromJsonAsync` . Há métodos semelhantes para POST, PUT, etc. O seguinte mostra como obter um CatalogItem de um ponto de extremidade de API usando um configurado `HttpClient` em um Blazor WebAssembly aplicativo:
+
+```csharp
+var item = await _httpClient.GetFromJsonAsync<CatalogItem>($"catalog-items/{id}");
+```
+
+Depois de obter os dados necessários, você normalmente controlará as alterações localmente. Quando desejar fazer atualizações no armazenamento de dados de back-end, você chamará APIs Web adicionais para essa finalidade.
+
+**Referências – Blazor dados**
+
+- Chamar uma API da Web de ASP.NET Core Blazor
+  <https://docs.microsoft.com/aspnet/core/blazor/call-web-api>
 
 >[!div class="step-by-step"]
->[Próximo](develop-asp-net-core-mvc-apps.md)
->[anterior](test-asp-net-core-mvc-apps.md)
+>[Anterior](develop-asp-net-core-mvc-apps.md) 
+> [Avançar](test-asp-net-core-mvc-apps.md)

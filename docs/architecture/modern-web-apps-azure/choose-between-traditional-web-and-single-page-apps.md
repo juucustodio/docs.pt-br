@@ -6,18 +6,18 @@ ms.author: wiwagn
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 12/04/2019
-ms.openlocfilehash: 4fe889fe86d96a5b2ffa5bd879d2ec1801a3cf20
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.date: 07/27/2020
+ms.openlocfilehash: f04de5c350dfead4dad8c37eece7f16c9a9e00bc
+ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174361"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89515813"
 ---
 # <a name="choose-between-traditional-web-apps-and-single-page-apps-spas"></a>Escolher entre aplicativos Web tradicionais e SPAs (aplicativos de página única)
 
 > "Lei de Atwood: qualquer aplicativo que pode ser escrito em JavaScript será, em última análise, escrito em JavaScript."  
-> _\-Jeff Atwood_
+> _\- Jeff Atwood_
 
 Há duas abordagens gerais para a criação de aplicativos Web hoje: os aplicativos Web tradicionais que executam a maior parte da lógica do aplicativo no servidor e os SPAs (aplicativos de página única) que executam a maior parte da lógica da interface do usuário em um navegador da Web, comunicando-se com o servidor Web principalmente por meio de APIs Web. Uma abordagem híbrida também é possível, o mais simples é hospedar um ou mais aplicativos avançados semelhantes ao SPA em um aplicativo Web tradicional mais amplo.
 
@@ -33,7 +33,7 @@ Use um SPA quando:
 
 - Seu aplicativo precisa expor uma interface do usuário avançada com muitos recursos.
 
-- Sua equipe está familiarizada com o desenvolvimento do JavaScript e/ou do TypeScript.
+- Sua equipe está familiarizada com JavaScript, TypeScript ou Blazor WebAssembly desenvolvimento.
 
 - Seu aplicativo já deve expor uma API para outros clientes (internos ou públicos).
 
@@ -43,17 +43,17 @@ Melhorias na experiência do usuário possibilitadas pela abordagem SPA devem se
 
 ## Blazor
 
-ASP.NET Core 3,0 apresenta um novo modelo para a criação de uma interface do usuário rica, interativa e combinável chamada Blazor . Blazoro lado do servidor permite que os desenvolvedores criem interface do usuário com C# e Razor no servidor e que a interface do usuário seja conectada interativamente ao navegador em tempo real usando uma conexão de sinalização persistente.
+ASP.NET Core inclui um modelo para a criação de interfaces de usuário avançadas, interativas e combináveis chamadas Blazor . Blazor o lado do servidor permite que os desenvolvedores criem interface do usuário com C# e Razor no servidor e que a interface do usuário seja conectada interativamente ao navegador em tempo real usando uma conexão de sinalização persistente. BlazorWebAssemblyapresenta outra opção para Blazor aplicativos, permitindo que eles sejam executados no navegador usando o WebAssembly . Como o .NET real está em execução WebAssembly , você pode usar novamente o código e as bibliotecas de partes do lado do servidor do seu aplicativo.
 
-BlazorWebAssemblyapresenta outra opção para Blazor aplicativos, permitindo que eles sejam executados no navegador usando o WebAssembly . Como o .NET real está em execução WebAssembly , você pode usar novamente o código e as bibliotecas de partes do lado do servidor do seu aplicativo.
-
-Blazorfornece uma nova opção a ser considerada ao avaliar se deve-se criar um aplicativo Web puramente renderizado no servidor ou um SPA. Você pode criar comportamentos avançados do lado do cliente, semelhantes ao SPA Blazor , usando, sem a necessidade de um desenvolvimento de JavaScript significativo. Blazoros aplicativos podem chamar APIs para solicitar dados ou executar operações do lado do servidor.
+Blazor fornece uma nova opção a ser considerada ao avaliar se deve-se criar um aplicativo Web puramente renderizado no servidor ou um SPA. Você pode criar comportamentos avançados do lado do cliente com SPA usando Blazor , sem a necessidade de um desenvolvimento de JavaScript significativo. Blazor os aplicativos podem chamar APIs para solicitar dados ou executar operações do lado do servidor. Eles podem interoperar com JavaScript, quando necessário, para aproveitar as estruturas e bibliotecas JavaScript.
 
 Considere criar seu aplicativo Web com Blazor quando:
 
 - Seu aplicativo deve expor uma interface do usuário rica
 
 - Sua equipe é mais confortável com o desenvolvimento do .NET do que o desenvolvimento de JavaScript ou TypeScript
+
+Se você tiver um aplicativo Web Forms existente que está considerando a migração para o .NET Core, talvez queira examinar o livro eletrônico gratuito, [ Blazor para que os desenvolvedores de Web Forms](../blazor-for-web-forms-developers/index.md) vejam se faz sentido considerar a migração para o Blazor .
 
 Para obter mais informações sobre o Blazor , consulte Introdução [ Blazor ao ](https://blazor.net/docs/get-started.html).
 
@@ -100,7 +100,7 @@ A configuração de SPAs exige familiaridade com o JavaScript e/ou o TypeScript 
 
 Caso você já esteja dando suporte a uma API Web para uso por outros clientes, poderá ser necessário menos esforço para criar uma implementação de SPA que utiliza essas APIs em vez de reproduzir a lógica no formulário do lado do servidor. Os SPAs fazem uso extensivo de APIs Web para consultar e atualizar os dados conforme os usuários interagem com o aplicativo.
 
-## <a name="when-to-choose-blazor"></a>Quando escolherBlazor
+## <a name="when-to-choose-no-locblazor"></a>Quando escolher Blazor
 
 Veja a seguir uma explicação mais detalhada de quando escolher Blazor para seu aplicativo Web.
 
@@ -116,9 +116,9 @@ Muitos desenvolvedores são mais produtivos com o .NET e o Razor do que com ling
 
 A tabela de decisão a seguir resume alguns dos fatores básicos a serem considerados ao escolher entre um aplicativo Web tradicional, um SPA ou um Blazor aplicativo.
 
-| **Fator**                                           | **Aplicativo Web tradicional** | **Aplicativo de página única** | **BlazorAplicação**  |
+| **Fator**                                           | **Aplicativo Web tradicional** | **Aplicativo de página única** | **Blazor Aplicação**  |
 | ---------------------------------------------------- | ----------------------- | --------------------------- | --------------- |
-| É necessária a familiaridade da equipe com JavaScript/TypeScript | **Mínimo**             | **Obrigatório**                | **Mínimo**     |
+| É necessária a familiaridade da equipe com JavaScript/TypeScript | **Mínimo**             | **Necessária**                | **Mínimo**     |
 | Suporte a navegadores sem scripts                   | **Com suporte**           | **Sem suporte**           | **Com suporte**   |
 | Comportamento mínimo do aplicativo do lado do cliente             | **Apropriado**         | **Exagero**                | **Viáveis**      |
 | Requisitos avançados e complexos de interface do usuário            | **Certo**             | **Apropriado**             | **Apropriado** |

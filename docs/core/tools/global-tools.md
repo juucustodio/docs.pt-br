@@ -4,12 +4,12 @@ description: Como instalar, usar, atualizar e remover as ferramentas do .NET Cor
 author: KathleenDollard
 ms.topic: how-to
 ms.date: 02/12/2020
-ms.openlocfilehash: 00c0317fcfc4da0e7205c23faa7b355c20882ec9
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 08277ed791036201d1dfa30c21799db1c21a924e
+ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062724"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89598127"
 ---
 # <a name="how-to-manage-net-core-tools"></a>Como gerenciar as ferramentas do .NET Core
 
@@ -42,7 +42,7 @@ Atualmente, o .NET Core não tem um recurso de pesquisa de ferramenta. Aqui est�
 * Consulte a lista de ferramentas no repositório GitHub [natemcmaster/dotnet-Tools](https://github.com/natemcmaster/dotnet-tools) .
 * Use [ToolGet](https://www.toolget.net/) para procurar ferramentas .net.
 * Consulte o código-fonte para as ferramentas criadas pela equipe de ASP.NET Core no [diretório de ferramentas do repositório do GitHub dotnet/aspnetcore](https://github.com/dotnet/aspnetcore/tree/master/src/Tools).
-* Saiba mais sobre as ferramentas de diagnóstico nas [ferramentas de diagnóstico do .NET Core dotnet](../diagnostics/index.md#net-core-dotnet-diagnostic-global-tools).
+* Saiba mais sobre as ferramentas de diagnóstico nas [ferramentas de diagnóstico do .NET Core dotnet](../diagnostics/index.md#net-core-diagnostic-global-tools).
 
 ## <a name="check-the-author-and-statistics"></a>Verificar o autor e as estatísticas
 
@@ -275,7 +275,7 @@ dotnet <command> --help
 
 Se uma ferramenta não for instalada ou executada, consulte [solucionar problemas de uso da ferramenta .NET Core](troubleshoot-usage-issues.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Tutorial: criar uma ferramenta do .NET Core usando o CLI do .NET Core](global-tools-how-to-create.md)
 - [Tutorial: instalar e usar uma ferramenta global do .NET Core usando o CLI do .NET Core](global-tools-how-to-use.md)

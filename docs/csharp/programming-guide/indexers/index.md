@@ -8,12 +8,12 @@ helpviewer_keywords:
 - indexers [C#]
 - C# language, indexers
 ms.assetid: 022cd27d-d5e0-4cfe-8b97-dc018cc3355d
-ms.openlocfilehash: 07e0ae4294373817e10bb79920c73ec1e275d169
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: ea95eef7bb9ba232e4d59e3f833b82e98398fc33
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87303108"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89495298"
 ---
 # <a name="indexers-c-programming-guide"></a>Indexadores (Guia de Programação em C#)
 
@@ -46,7 +46,7 @@ Começando do C# 7.0, os acessadores get e set podem ser implementados como memb
   
 - A palavra-chave [this](../../language-reference/keywords/this.md) é usada para definir o indexador.  
   
-- A palavra-chave [value](../../language-reference/keywords/value.md) é usada para definir o valor que está sendo atribuído pelo indexador `set`.  
+- A palavra-chave [value](../../language-reference/keywords/value.md) é usada para definir o valor que está sendo atribuído pelo acessador `set`.  
   
 - Os indexadores não precisam ser indexados por um valor inteiro. Você deve definir o mecanismo de pesquisa específico.  
   
@@ -54,7 +54,7 @@ Começando do C# 7.0, os acessadores get e set podem ser implementados como memb
   
 - Os indexadores podem ter mais de um parâmetro formal, por exemplo, ao acessar uma matriz bidimensional.  
   
-## <a name="related-sections"></a><a name="BKMK_RelatedSections"></a>Seções relacionadas  
+## <a name="related-sections"></a><a name="BKMK_RelatedSections"></a> Seções relacionadas  
   
 - [Usando indexadores](./using-indexers.md)  
   

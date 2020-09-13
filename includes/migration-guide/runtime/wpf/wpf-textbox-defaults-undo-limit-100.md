@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 13d3799aeede86b01aa81ce1cd69b3c4c22311ca
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 9d960774161fc44810f90ca30f56eb98f98de3ff
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619899"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89496109"
 ---
 ### <a name="wpf-textbox-defaults-to-undo-limit-of-100"></a>O padrão da Caixa de Texto do WPF é o limite de 100 na ação desfazer
 
@@ -16,12 +16,20 @@ No .NET Framework 4.5, o limite padrão de desfazer para uma caixa de texto do W
 
 Se um limite de 100 da ação desfazer for muito baixo, o limite poderá ser definido explicitamente com <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit>.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime|
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Windows.Controls.TextBox?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Windows.Controls.TextBox`
+
+-->

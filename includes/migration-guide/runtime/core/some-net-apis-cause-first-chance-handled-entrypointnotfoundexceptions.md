@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ed526095459a48aa37b585dfed79cc12b9fb9e56
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 6431f3b4d0983c44629e4fe760c75adcc277ddd4
+ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621922"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "89497651"
 ---
 ### <a name="some-net-apis-cause-first-chance-handled-entrypointnotfoundexceptions"></a>Algumas APIs .NET causam EntryPointNotFoundExceptions de primeira chance
 
@@ -16,12 +16,28 @@ No .NET Framework 4.5, um pequeno número de métodos .NET começou a gerar <xre
 
 Esse bug pode ser evitado com a o upgrade para o .NET Framework 4.5.1. Como alternativa, a automação de teste pode ser atualizada para não interromper <xref:System.EntryPointNotFoundException?displayProperty=fullName> de primeira chance.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   |Microsoft Edge|
 |Versão|4.5|
-|Type|Runtime
+|Tipo|Runtime
 
 #### <a name="affected-apis"></a>APIs afetadas
 
--<xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType></li><li><xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=nameWithType></li><li><xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)?displayProperty=nameWithType></li><li><xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String,System.Object[])?displayProperty=nameWithType></li><li><xref:System.Xml.Serialization.XmlSerializer.%23ctor(System.Type)></li></ul>|
+- <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String,System.Object[])?displayProperty=nameWithType>
+- <xref:System.Xml.Serialization.XmlSerializer.%23ctor(System.Type)>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Diagnostics.Debug.Assert(System.Boolean)`
+- `M:System.Diagnostics.Debug.Assert(System.Boolean,System.String)`
+- `M:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)`
+- `M:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String,System.Object[])`
+- `M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type)`
+
+-->

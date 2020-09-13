@@ -7,7 +7,7 @@ ms.openlocfilehash: 74fe4519e41a07bc78a4dc346f8d1b52b5c7d092
 ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
+ms.lasthandoff: 13/09/2020
 ms.locfileid: "84502763"
 ---
 # <a name="overview-of-porting-from-net-framework-to-net-core"></a>Visão geral da portabilidade do .NET Framework para o .NET Core
@@ -113,5 +113,5 @@ Recomendamos que você use o seguinte processo ao portar seu projeto para o .NET
 
 > [!div class="nextstepaction"]
 > [Analisar dependências](third-party-deps.md) 
->  Pacote [NuGet](../deploying/creating-nuget-packages.md) 
->  do pacote [ASP.net para migração de ASP.NET Core](/aspnet/core/migration/proper-to-2x)
+> [Pacote NuGet](../deploying/creating-nuget-packages.md) 
+> [ASP.net para migração de ASP.NET Core](/aspnet/core/migration/proper-to-2x)

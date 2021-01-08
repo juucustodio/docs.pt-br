@@ -37,6 +37,10 @@ items:
                 href: ../core/install/linux-rhel.md
               - name: SLES
                 href: ../core/install/linux-sles.md
+              - name: Instalar com o Ajustar
+                href: ../core/install/linux-snap.md
+              - name: Script e binários de instalação
+                href: ../core/install/linux-scripted-manual.md
           - name: Remover SDKs e runtimes desatualizados
             href: ../core/install/remove-runtime-sdk-versions.md
           - name: Gerenciar modelos .NET
@@ -1644,6 +1648,8 @@ items:
                     href: ../standard/serialization/system-text-json-polymorphism.md
               - name: Como migrar do Newtonsoft.Json
                 href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+              - name: Tipos de coleção compatíveis
+                href: ../standard/serialization/system-text-json-supported-collection-types.md
               - name: Avançado
                 items:
                   - name: Personalizar codificação de caracteres
@@ -2290,7 +2296,7 @@ items:
           - name: Organizar projetos para o .NET Core
             href: ../core/porting/project-structure.md
           - name: Tecnologias indisponíveis
-            href: ../core/porting/net-framework-tech-unavailable.md
+            href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Ferramentas
             href: ../core/porting/tools.md
           - name: Usar o Pacote de Compatibilidade do Windows

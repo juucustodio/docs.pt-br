@@ -12,7 +12,7 @@
         - name: Alterações da falha
           href: fx-core.md
         - name: Tecnologias indisponíveis
-          href: ../porting/net-framework-tech-unavailable.md?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: ../porting/net-framework-tech-unavailable.md
         - name: APIs que sempre geram
           href: unsupported-apis.md
     - name: Alterações da falha por versão

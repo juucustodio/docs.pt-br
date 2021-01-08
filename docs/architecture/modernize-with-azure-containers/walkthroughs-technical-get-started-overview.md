@@ -1,13 +1,13 @@
 ---
 title: Visão geral de tutoriais passo a passo e introduções técnicas
 description: Modernizar aplicativos .NET existentes com contêineres de nuvem e Windows do Azure | Visão geral de orientações técnicas e de introdução técnica
-ms.date: 04/28/2018
-ms.openlocfilehash: 98d33b13d2b28bfe1c35894df45e525cff0520c1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 12/21/2020
+ms.openlocfilehash: 6bfa25e3eeeecf5a936f378df3ae548d6fa37a30
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172138"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025271"
 ---
 # <a name="walkthroughs-and-technical-get-started-overview"></a>Visão geral de tutoriais passo a passo e introduções técnicas
 
@@ -89,7 +89,7 @@ Use contêineres do Windows para aprimorar a implantação de aplicativos .NET e
 
 ### <a name="goals"></a>Metas
 
-O objetivo deste passo a passo é mostrar várias opções para o contêiner de um aplicativo .NET Framework existente. Você pode:
+O objetivo deste passo a passo é mostrar várias opções para o contêiner de um aplicativo .NET Framework existente. Você poderá:
 
 - Colocar seu aplicativo em contêiner usando as [Ferramentas do visual studio 2017 para Docker](/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker) (visual Studio 2017 ou versões posteriores).
 
@@ -117,7 +117,7 @@ Há vantagens em executar seu aplicativo monolítico em um contêiner. Primeiro,
 
 Um benefício adicional é que os desenvolvedores podem executar o aplicativo no ambiente consistente fornecido pelos contêineres do Windows. Os problemas que aparecem apenas com determinadas versões podem ser exibidos imediatamente, em vez de identificando em um ambiente de preparo ou de produção. As diferenças em ambientes de desenvolvimento usados por membros da equipe de desenvolvimento importam menos quando os aplicativos são executados em contêineres.
 
-Os aplicativos em contêineres também têm uma curva de expansão Flatter. Os aplicativos em contêineres permitem que você tenha mais instâncias de aplicativo e de serviço (com base em contêineres) em uma VM ou máquina física em comparação com implantações regulares de aplicativos por máquina. Isso se traduz em maior densidade e menos recursos necessários, especialmente quando você usa orquestradores como kubernetes.
+Os aplicativos em contêineres também têm uma curva de expansão Flatter. Os aplicativos em contêineres permitem que você tenha mais instâncias de aplicativo e de serviço (com base em contêineres) em uma VM ou máquina física em comparação com implantações regulares de aplicativos por máquina. Essa abordagem se traduz em maior densidade e menos recursos necessários, especialmente quando você usa orquestradores como kubernetes.
 
 A criação de contêineres, nas situações ideais, não requer nenhuma alteração no código do aplicativo (C \# ). Na maioria dos cenários, você só precisa dos arquivos de metadados de implantação do Docker (arquivos Dockerfiles e Docker Compose).
 
@@ -210,7 +210,7 @@ As Instâncias de Contêiner do Azure facilitam criar e gerenciar contêineres d
 
 A implantação de contêineres do Windows com total .NET Framework/ASP.NET ou SQL Server nas instâncias de contêiner do Azure (ACI) não é tão rápida quanto a implantação em um host do Docker regular (como um Windows Server 2016 com contêineres do Windows) porque a imagem do Docker precisa ser baixada (extraída do registro do Docker) toda vez e os tamanhos de a imagem de contêiner SQL (15,1 GB) e a imagem de contêiner ASP.NET (13,9 GB) são significativamente grandes, no entanto, é muito mais barato do que manter seu próprio host do Docker (permanentemente online o Windows Server 2016 com a VM de contêineres do Windows no Azure) para não mencionar um orquestrador inteiro como kubernetes no Azure (AKS), que é, por outro lado, uma ótima opção para implantações de produção.
 
-Como conclusão principal, o uso de instâncias de contêiner do Azure é uma opção muito atraente para cenários de desenvolvimento/teste e para pipelines de CI/CD.
+Como a conclusão principal, usar as instâncias de contêiner do Azure é uma opção muito atraente para cenários de desenvolvimento/teste e para pipelines de CI/CD.
 
 ### <a name="next-steps"></a>Próximas etapas
 
@@ -228,7 +228,7 @@ A explicação técnica completa está disponível no wiki do repositório GitHu
 
 ### <a name="overview"></a>Visão geral
 
-Um aplicativo baseado em contêineres do Windows precisará usar rapidamente as plataformas, movendo-se ainda mais longe das VMs IaaS. Isso é necessário para obter alta escalabilidade e melhor escalabilidade automatizada, e para uma melhoria significativa em implantações e versões automatizadas. Você pode atingir essas metas usando o Orchestrator [kubernetes](https://kubernetes.io/), disponível nos [serviços de contêiner do Azure](https://azure.microsoft.com/services/container-service/).
+Um aplicativo baseado em contêineres do Windows precisará usar rapidamente as plataformas, movendo-se ainda mais longe das VMs IaaS. Essa abordagem é necessária para obter alta escalabilidade e melhor escalabilidade automatizada, e para uma melhoria significativa em implantações e versões automatizadas. Você pode atingir essas metas usando o Orchestrator [kubernetes](https://kubernetes.io/), disponível nos [serviços de contêiner do Azure](https://azure.microsoft.com/services/container-service/).
 
 ### <a name="goals"></a>Metas
 
@@ -288,7 +288,7 @@ A explicação técnica completa está disponível no wiki do repositório GitHu
 
 ### <a name="overview"></a>Visão geral
 
-Um aplicativo em contêineres simples usando contêineres do Windows pode ser facilmente implantado para Azure App serviço para contêineres. Essa é a abordagem recomendada para a maioria dos aplicativos baseados em contêiner do Windows.
+Um aplicativo em contêineres simples usando contêineres do Windows pode ser facilmente implantado para Azure App serviço para contêineres. Essa abordagem é a abordagem recomendada para a maioria dos aplicativos baseados em contêiner do Windows.
 
 ### <a name="goals"></a>Metas
 
@@ -300,7 +300,7 @@ O objetivo deste passo a passo é aprender como implantar um aplicativo baseado 
 
 ### <a name="benefits"></a>Benefícios
 
-A implantação no serviço de Azure App para contêineres oferece os benefícios dos contêineres emparelhados com os benefícios de PaaS do serviço Azure App. O serviço de aplicativo pode ser facilmente dimensionado vertical e horizontalmente e pode ser configurado para dimensionamento automático para atender às demandas em constante mudança. As atualizações podem ser executadas com zero tempo de inatividade e a configuração da implantação contínua de um registro também é facilmente configurada.
+A implantação no serviço de Azure App para contêineres oferece os benefícios dos contêineres emparelhados com os benefícios de PaaS do serviço Azure App. O serviço de aplicativo pode ser facilmente dimensionado vertical e horizontalmente e pode ser configurado para dimensionamento automático para atender às demandas em constante mudança. As atualizações podem ser executadas sem nenhum tempo de inatividade e a configuração da implantação contínua de um registro também é facilmente configurada.
 
 ### <a name="next-steps"></a>Próximas etapas
 

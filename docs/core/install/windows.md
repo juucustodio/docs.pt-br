@@ -4,12 +4,12 @@ description: Saiba mais sobre quais versões do Windows você pode instalar no .
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 9d39ec28ea2cea875ddd6da34b92eeb740ee6638
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: d8ca3eed3786a728002d8ffe80b774a0018eee82
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970740"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025447"
 ---
 # <a name="install-net-on-windows"></a>Instalar o .NET no Windows
 
@@ -180,30 +180,21 @@ Para obter mais informações sobre OS sistemas operacionais, as distribuições
 
 ### <a name="windows-7--vista--81--server-2008-r2--server-2012-r2"></a><a name="additional-deps"></a> Windows 7/Vista/8,1/servidor 2008 R2/Server 2012 R2
 
-Dependências adicionais serão necessárias se você estiver instalando o SDK do .NET ou o tempo de execução nas seguintes versões do Windows:
+Mais dependências serão necessárias se você estiver instalando o SDK do .NET ou o tempo de execução nas seguintes versões do Windows:
 
-- [ESU][esu] do Windows 7 SP1
-- Windows Vista SP 2
-- Windows 8.1
-- Windows Server 2008 R2
-- Windows Server 2012 R2
+| Sistema operacional         | Pré-requisitos                                                                    |
+|--------------------------|----------------------------------------------------------------------------------|
+| [ESU][esu] do Windows 7 SP1 | -Microsoft Visual C++ 2015-2019 redistribuível [64-bit][vcc64]  /  [32-bit][vcc32] <br> -KB3063858 [64][kb64]bits  /  [32-bit][kb32] <br> - [MicrosoftRootCertificateAuthority2011. cer](https://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409) (somente .net Core 2,1) |
+| Windows Vista SP 2       | Microsoft Visual C++ 2015-2019 redistribuível [64-bit][vcc64]  /  [32-bit][vcc32] |
+| Windows 8.1              | Microsoft Visual C++ 2015-2019 redistribuível [64-bit][vcc64]  /  [32-bit][vcc32] |
+| Windows Server 2008 R2   | Microsoft Visual C++ 2015-2019 redistribuível [64-bit][vcc64]  /  [32-bit][vcc32] |
+| Windows Server 2012 R2   | Microsoft Visual C++ 2015-2019 redistribuível [64-bit][vcc64]  /  [32-bit][vcc32] |
 
-Instale o seguinte:
+Os requisitos anteriores também serão necessários se você receber um erro relacionado a qualquer uma das seguintes DLLs:
 
-- [Microsoft Visual C++ 2015 redistribuível atualização 3](https://www.microsoft.com/download/details.aspx?id=52685).
-- [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot)
-
-Os requisitos anteriores também serão necessários se você vir entre um dos seguintes erros:
-
-> O programa não pode ser iniciado porque *api-ms-win-crt-runtime-l1-1-0.dll* está ausente do seu computador. Tente reinstalar o programa para corrigir esse problema.
->
-> \- ou –
->
-> O programa não pode ser iniciado porque *api-ms-win-cor-timezone-l1-1-0.dll* está ausente do seu computador. Tente reinstalar o programa para corrigir esse problema.
->
-> \- ou –
->
-> A biblioteca *hostfxr.dll* foi encontrada, mas o carregamento de *C: \\ \<path_to_app> \\hostfxr.dll* falhou.
+- *api-ms-win-crt-runtime-l1-1-0.dll*
+- *api-ms-win-cor-timezone-l1-1-0.dll*
+- *hostfxr.dll*
 
 ## <a name="install-with-powershell-automation"></a>Instalar com a automação do PowerShell
 
@@ -318,3 +309,7 @@ Para obter mais informações sobre como usar o .NET em um contêiner do Docker,
 - [Tutorial: colocar em contêiner um aplicativo .NET Core](../docker/build-container.md).
 
 [esu]: /troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq
+[vcc64]: https://aka.ms/vs/16/release/vc_redist.x64.exe
+[vcc32]: https://aka.ms/vs/16/release/vc_redist.x86.exe
+[kb64]: https://www.microsoft.com/en-us/download/details.aspx?id=47442
+[kb32]: https://www.microsoft.com/en-us/download/details.aspx?id=47409

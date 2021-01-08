@@ -1,21 +1,25 @@
 ---
-title: Modernizar aplicativos .NET existentes com contêineres do Windows e da nuvem do Azure (2ª edição)
+title: Modernizar os aplicativos existentes do .NET com a nuvem do Azure e Contêineres do Windows
 description: Aprenda a migrar aplicativos usando o método lift-and-shift e modernizar os existentes para a nuvem e contêineres do Azure com este livro eletrônico.
-ms.date: 04/28/2018
-ms.openlocfilehash: f4ae4e2d24d343b55811955fb43e929c0db6f01b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 01/07/2021
+ms.openlocfilehash: bf6e6dff75c939508947aabeda14955b880f5a89
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705326"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025460"
 ---
-# <a name="modernize-existing-net-applications-with-azure-cloud-and-windows-containers-2nd-edition"></a>Modernizar aplicativos .NET existentes com contêineres do Windows e da nuvem do Azure (2ª edição)
+# <a name="modernize-existing-net-applications-with-azure-cloud-and-windows-containers"></a>Modernizar aplicativos .NET existentes com contêineres do Windows e nuvem do Azure
 
 ![Imagem da capa do guia Modernizar aplicativos .NET.](./media/index/web-application-guide-cover-image.png)
 
+**Edição v 5.0**
+
+Consulte o [changelog](https://aka.ms/modernize-ebook-changelog) para obter as atualizações do livro e as contribuições da Comunidade.
+
 PUBLICADO pelas divisões da Microsoft Press e do Microsoft representante da Microsoft Corporation, One Microsoft Way Redmond, Washington 98052-6399
 
-Copyright © 2020 da Microsoft Corporation
+Copyright © 2021 da Microsoft Corporation
 
 Todos os direitos reservados. Nenhuma parte do conteúdo deste guia pode ser reproduzida de nenhuma forma, nem por nenhum meio, sem a permissão por escrito do distribuidor.
 
@@ -37,7 +41,7 @@ Participantes e revisores:
 
 ## <a name="introduction"></a>Introdução
 
-Quando você decidir modernizar seus serviços ou aplicativos Web e movê-los para a nuvem, você não precisará necessariamente recriar totalmente a arquitetura de seus aplicativos. Recriar a arquitetura de um aplicativo usando uma abordagem avançada como microsserviços nem sempre é uma opção devido a restrições de custo e tempo. Dependendo do tipo de aplicativo, recriar a arquitetura dele também pode não ser necessário. Para otimizar o custo-benefício da estratégia de migração de nuvem da sua organização, é importante considerar as necessidades do seu negócio e os requisitos dos seus aplicativos. Você precisará determinar:
+Quando você decidir modernizar seus serviços ou aplicativos Web e movê-los para a nuvem, você não precisará necessariamente recriar totalmente a arquitetura de seus aplicativos. Recriar a arquitetura de um aplicativo usando uma abordagem avançada como microsserviços nem sempre é uma opção devido a restrições de custo e tempo. Dependendo do tipo de aplicativo, recriar a arquitetura dele também pode não ser necessário. Para otimizar o custo-benefício da estratégia de migração na nuvem de sua organização, é importante considerar as necessidades de seus negócios e os requisitos de seus aplicativos. Você precisará determinar:
 
 - Quais aplicativos exigem uma transformação ou recriação da arquitetura.
 
@@ -47,7 +51,7 @@ Quando você decidir modernizar seus serviços ou aplicativos Web e movê-los pa
 
 ## <a name="about-this-guide"></a>Sobre este guia
 
-O foco principal deste guia é na modernização inicial de aplicativos existentes orientados para Web ou serviço do Microsoft .NET Framework, que consiste na ação de mover uma carga de trabalho para um ambiente mais recente ou mais moderno sem alterar significativamente o código e a arquitetura básica do aplicativo.
+Este guia se concentra principalmente na modernização inicial de aplicativos Web ou orientados a serviços existentes da estrutura de Microsoft .NET, o que significa a ação de mover uma carga de trabalho para um ambiente mais novo ou moderno sem alterar significativamente o código do aplicativo e a arquitetura básica.
 
 Este guia também destaca os benefícios de mover seus aplicativos para a nuvem e modernizar parcialmente os aplicativos usando um conjunto específico de novas tecnologias e abordagens, como Contêineres do Windows e plataformas de computação relacionadas nos Contêineres do Windows que dão suporte ao Azure.
 
@@ -69,10 +73,10 @@ Cada abordagem de migração traz diferentes vantagens e motivos para usá-la. V
 
 A definição e a breve explicação de cada nível de maturidade do aplicativo são as seguintes:
 
-**Nível 1: aplicativos prontos para a infraestrutura de nuvem** : nessa abordagem de migração, você simplesmente migra ou rehospeda seus aplicativos locais atuais para uma plataforma [IaaS](https://azure.microsoft.com/overview/what-is-iaas/)(infraestrutura como serviço). Os aplicativos têm quase a mesma composição de antes, mas agora você os implanta em VMs na nuvem.
+**Nível 1: aplicativos prontos para a infraestrutura de nuvem** : nesta abordagem de migração, você apenas migra ou rehospeda seus aplicativos locais atuais para uma plataforma [IaaS](https://azure.microsoft.com/overview/what-is-iaas/)(infraestrutura como serviço). Os aplicativos têm quase a mesma composição de antes, mas agora você os implanta em VMs na nuvem.
 Esse tipo simples de migração é normalmente conhecido no setor como "lift-and-shift".
 
-**Nível 2: aplicativos otimizados na nuvem** : nesse nível e ainda sem rearquitetar ou alterar código significativo, você pode obter benefícios adicionais na execução de seu aplicativo na nuvem com tecnologias modernas, como contêineres e serviços adicionais gerenciados na nuvem. Melhore a agilidade dos seus aplicativos para distribuição mais rápida refinando seus processos de DevOps (operações de desenvolvimento) corporativas. Faça isso usando tecnologias como Contêineres do Windows, que é baseada no Mecanismo do Docker. Contêineres removem a fricção que é causada pelas dependências de aplicativo ao implantar em vários estágios. Nesse modelo de maturidade, você pode implantar contêineres ou IaaS ou PaaS ao usar serviços gerenciados por nuvem adicionais relacionados a bancos de dados, cache como serviço, monitoramento e pipelines de CI/CD (integração contínua/implantação contínua).
+**Nível 2: aplicativos otimizados na nuvem** : nesse nível e ainda sem rearquitetar ou alterar código significativo, você pode obter benefícios adicionais na execução de seu aplicativo na nuvem com tecnologias modernas, como contêineres e serviços adicionais gerenciados na nuvem. Melhore a agilidade dos seus aplicativos para distribuição mais rápida refinando seus processos de DevOps (operações de desenvolvimento) corporativas. Você obtém essa funcionalidade usando tecnologias como contêineres do Windows, que se baseiam no mecanismo do Docker. Contêineres removem a fricção que é causada pelas dependências de aplicativo ao implantar em vários estágios. Nesse modelo de maturidade, você pode implantar contêineres ou IaaS ou PaaS ao usar serviços gerenciados por nuvem adicionais relacionados a bancos de dados, cache como serviço, monitoramento e pipelines de CI/CD (integração contínua/implantação contínua).
 
 O terceiro nível de maturidade é a meta final na nuvem, mas é opcional para muitos aplicativos e não é o foco principal deste guia:
 
@@ -80,7 +84,7 @@ O terceiro nível de maturidade é a meta final na nuvem, mas é opcional para m
 
 A Tabela 1-1 descreve as principais vantagens e motivos para escolher cada abordagem de migração ou modernização.
 
-| **Pronto para infraestrutura de nuvem** <br /> *Lift-and-shift* | **Otimizado para a nuvem** <br /> *Modernizar* | **Nativo de nuvem** <br /> *Modernizar, recriar a arquitetura e regenerar* |
+| **Pronto para infraestrutura de nuvem** <br /> *Lift-and-shift* | **Otimizado para a nuvem** <br /> *Modernizar* | **Nativo de nuvem** <br /> *Modernizar, rearquitetar e reescrever* |
 |---|---|---|
 | **Destino de computação do aplicativo** |
 | Aplicativos implantados em VMs no Azure | Aplicativos monolíticos ou de N camadas implantados no Serviço de Aplicativo do Azure, ACI (Instância de Contêiner do Azure), VMs com contêineres ou AKS (Serviço de Kubernetes do Azure) | Os microsserviços em contêineres no AKS (Serviço de Kubernetes do Azure) e/ou microsserviços sem servidor com base no Azure Functions. |
@@ -89,7 +93,7 @@ A Tabela 1-1 descreve as principais vantagens e motivos para escolher cada abord
 | **Vantagens**|
 | <li>Sem recriação da arquitetura, sem novo código <li> Mínimo de esforço para migração rápida <li> Mínimo denominador comum com suporte no Azure <li> Garantias básicas de disponibilidade <li> Depois de mudar para a nuvem, é mais fácil modernizar ainda mais | <li> Sem recriação da arquitetura <li> Alterações mínimas de código/configuração <li> Melhoria na implantação e agilidade de DevOps para liberação devido a contêineres <li> Aumento da densidade e redução dos custos de implantação <li> Portabilidade de aplicativos e dependências <li> Flexibilidade de destinos de host: abordagens de PaaS ou IaaS | <li> Arquiteto da nuvem, você obtém os melhores benefícios da nuvem, mas é necessário um novo código <li> Abordagens de microsserviços nativos de nuvem <li> Aplicativos críticos modernos, hiperescalonáveis e resilientes de nuvem <li> Serviços totalmente gerenciados <li> Otimizado para escala <li> Otimizado para agilidade autônoma por subsistema <li> Baseado em implantação e DevOps |
 | **Desafios** |
-| <li> Menor valor de nuvem, diferente da mudança no custo de operação ou o fechamento de datacenters <li> O pouco é gerenciado: sem aplicação de patch de so ou middleware; pode usar soluções de infraestrutura, como Terraform, Spinnaker ou Puppet | <li> O desenvolvimento de contêineres é uma etapa adicional na curva de aprendizado para desenvolvedores e Operações de TI <li> Os pipelines de DevOps e CI/CD geralmente são ' a ' a ' a para essa abordagem. Se não estiver presente no momento na cultura da organização, poderá ser um desafio adicional| <li> Requer a recriação da arquitetura para aplicativos nativos de nuvem e arquiteturas de microsserviço e geralmente requer refatoração ou regravação de código significativa durante a modernização (maiores tempo e orçamento)|
+| <li> Menor valor de nuvem, diferente da mudança em despesas operacionais ou data centers de fechamento <li> O pouco é gerenciado: sem aplicação de patch de so ou middleware; pode usar soluções de infraestrutura, como Terraform, Spinnaker ou Puppet | <li> O desenvolvimento de contêineres é uma etapa adicional na curva de aprendizado para desenvolvedores e Operações de TI <li> Os pipelines de DevOps e CI/CD geralmente são ' a ' a ' a para essa abordagem. Se não estiver presente no momento na cultura da organização, poderá ser um desafio adicional| <li> Requer a rearquitetura de aplicativos nativos de nuvem e arquiteturas de microserviço e geralmente requer refatoração significativa de código ou regravação ao modernizar (aumento de tempo e orçamento)|
 > **Tabela 1-1.** Benefícios e desafios de caminhos de modernização para serviços e aplicativos .NET existentes
 
 ### <a name="key-technologies-and-architectures-by-maturity-level"></a>Principais tecnologias e arquiteturas por nível de maturidade
@@ -145,11 +149,11 @@ Em seguida, como o cenário ideal para migração de muitos aplicativos .NET Fra
 
 **Figura 1-6.** Cenário de exemplo de aplicativos Otimizados para Nuvem, com Contêineres do Windows e serviços gerenciados
 
-Indo ainda mais além, você poderia estender o seu aplicativo Otimizado para a Nuvem existente adicionando alguns microsserviços para cenários específicos. Isso moveria você parcialmente para o nível do modelo Nativo da Nuvem, que não é o foco principal destas diretrizes.
+Indo ainda mais além, você poderia estender o seu aplicativo Otimizado para a Nuvem existente adicionando alguns microsserviços para cenários específicos. Essa abordagem o moveria parcialmente para o nível de Cloud-Native modelo, que não é o foco principal das diretrizes presentes.
 
 ## <a name="what-this-guide-does-not-cover"></a>O que este guia não cobre
 
-Este guia abrange um subconjunto específico de cenários de exemplo, conforme mostrado na Figura 1-7. Este guia se concentra apenas em cenários de lift-and-shift e, por fim, no modelo Otimizado para a Nuvem. No modelo Otimizado para a Nuvem, um aplicativo .NET Framework é modernizado usando os Contêineres do Windows, além de componentes adicionais como o monitoramento e pipelines de CI/CD. Cada componente é fundamental para implantar aplicativos na nuvem de maneira mais rápida e ágil.
+Este guia abrange um subconjunto específico de cenários de exemplo, conforme mostrado na Figura 1-7. Este guia se concentra apenas nos cenários de comparação de precisão e de deslocamento e, por fim, no modelo de Cloud-Optimized. No modelo Otimizado para a Nuvem, um aplicativo .NET Framework é modernizado usando os Contêineres do Windows, além de componentes adicionais como o monitoramento e pipelines de CI/CD. Cada componente é fundamental para implantar aplicativos na nuvem de maneira mais rápida e ágil.
 
 ![O modelo Nativo da Nuvem não é abordado neste guia](./media/image1-7.png)
 
@@ -184,7 +188,7 @@ O último capítulo deste guia apresenta vários tutoriais passo a passo que se 
 
 ## <a name="sample-apps-for-modernizing-legacy-apps-eshopmodernizing"></a>Aplicativos de exemplo para modernização de aplicativos herdados: eShopModernizing
 
-O repositório [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing) no GitHub oferece dois aplicativos de exemplo que simulam aplicativos Web monolíticos herdados. Um aplicativo Web é desenvolvido usando o ASP.NET MVC; o segundo aplicativo Web é desenvolvido usando o ASP.NET Web Forms e o terceiro aplicativo é um aplicativo de N camadas com um aplicativo da área de trabalho cliente do WinForms que consome um back-end do serviço WCF. Todos esses aplicativos são baseados no .NET Framework tradicional. Esses aplicativos de exemplo não usam o .NET Core ou o ASP.NET Core, pois eles se destinam a aplicativos do .NET Framework existentes/herdados que serão modernizados.
+O repositório [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing) no GitHub oferece dois aplicativos de exemplo que simulam aplicativos Web monolíticos herdados. Um aplicativo Web é desenvolvido usando o ASP.NET MVC; o segundo aplicativo Web é desenvolvido usando o ASP.NET Web Forms e o terceiro aplicativo é um aplicativo de N camadas com um aplicativo da área de trabalho cliente do WinForms que consome um back-end do serviço WCF. Todos esses aplicativos são baseados no .NET Framework tradicional. Esses aplicativos de exemplo não usam o .NET Core ou o .NET 5,0 ou ASP.NET Core, pois eles devem ser aplicativos .NET Framework existentes/herdados para serem modernizados.
 
 Esses aplicativos de exemplo têm uma segunda versão, com o código modernizado, e são bastante simples. A diferença mais importante entre as versões do aplicativo é que as segundas versões usam Contêineres do Windows como a opção de implantação. Também há algumas adições para as segundas versões, como Blobs de Armazenamento do Microsoft Azure para gerenciar imagens, Azure Active Directory para gerenciar a segurança e o Azure Application Insights para monitorar e auditar os aplicativos.
 

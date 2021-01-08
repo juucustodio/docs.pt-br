@@ -6,18 +6,18 @@ ms.topic: conceptual
 ms.custom: devx-track-dotnet
 ms.author: daberry
 author: daberry
-ms.openlocfilehash: 5d14bd0d9930d41a8c60b58b9f5b0522f0c0e398
-ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
+ms.openlocfilehash: b5766012b77da88ae9a696939b6e498ebc421522
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97700763"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025036"
 ---
 # <a name="introduction-to-azure-and-net"></a>Introdução ao Azure e ao .NET
 
 ## <a name="what-is-azure"></a>O que é o Azure?
 
-O Azure é uma plataforma de nuvem projetada para simplificar o processo de criação de aplicativos modernos.  Independentemente de você optar por hospedar aplicativos totalmente no Azure ou estender seus aplicativos locais com os serviços do Azure, o Azure ajuda a criar aplicativos escalonáveis, confiáveis e que podem ser mantidos.  Com amplo suporte para ferramentas que você já usa como o Visual Studio e Visual Studio Code e uma biblioteca SDK abrangente, o Azure foi projetado para tornar você o desenvolvedor do .NET tão produtivo desde o início.
+O Azure é uma plataforma de nuvem projetada para simplificar o processo de criação de aplicativos modernos.  Independentemente de você optar por hospedar aplicativos totalmente no Azure ou estender seus aplicativos locais com os serviços do Azure, o Azure ajuda a criar aplicativos escalonáveis, confiáveis e que podem ser mantidos.  Com amplo suporte em ferramentas que você já usa como o Visual Studio e Visual Studio Code e uma biblioteca SDK abrangente, o Azure foi projetado para tornar você o desenvolvedor do .NET tão produtivo desde o início.
 
 ## <a name="application-development-scenarios-on-azure"></a>Cenários de desenvolvimento de aplicativos no Azure
 

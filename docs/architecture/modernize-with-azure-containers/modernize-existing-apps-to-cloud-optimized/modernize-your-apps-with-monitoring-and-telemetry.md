@@ -1,13 +1,13 @@
 ---
 title: Modernizar seus aplicativos com o monitoramento e telemetria
 description: Modernizar aplicativos .NET existentes com contêineres de nuvem e Windows do Azure | Modernizar seus aplicativos com monitoramento e telemetria
-ms.date: 04/30/2018
-ms.openlocfilehash: a6094435eece661d99904876ac49b3ca85ec45a7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 12/21/2020
+ms.openlocfilehash: c79a16400ce9dadca50fabb6c7df2859e4519a41
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91171995"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025232"
 ---
 # <a name="modernize-your-apps-with-monitoring-and-telemetry"></a>Modernizar seus aplicativos com o monitoramento e telemetria
 
@@ -15,7 +15,7 @@ Quando você executa um aplicativo em produção, é essencial que você tenha i
 
 ## <a name="monitor-your-application-with-application-insights"></a>Monitore seu aplicativo com Application Insights
 
-O Application Insights é um serviço de gerenciamento de desempenho de aplicativos (APM) extensível para desenvolvedores da Web que trabalham em várias plataformas. Use-o para monitorar seu aplicativo Web online. Application Insights detecta automaticamente anomalias de desempenho. Ele inclui ferramentas de análise poderosas para ajudá-lo a diagnosticar problemas e para ajudá-lo a entender o que os usuários realmente fazem com seu aplicativo. O Application Insights foi projetado para ajudar você a aprimorar continuamente o desempenho e a usabilidade do seu aplicativo. Ele funciona para aplicativos em uma ampla variedade de plataformas, incluindo .NET, Node.js e J2EE, seja hospedado localmente ou na nuvem. O Application Insights integra-se aos seus processos do DevOps e tem pontos de conexão para uma variedade de ferramentas de desenvolvimento.
+O Application Insights é um serviço de gerenciamento de desempenho de aplicativos (APM) extensível para desenvolvedores da Web que trabalham em várias plataformas. Use-o para monitorar seu aplicativo Web online. Application Insights detecta automaticamente anomalias de desempenho. Ele inclui ferramentas de análise poderosas para ajudá-lo a diagnosticar problemas e para ajudá-lo a entender o que os usuários realmente fazem com seu aplicativo. O Application Insights foi projetado para ajudar você a aprimorar continuamente o desempenho e a usabilidade do seu aplicativo. Ele funciona para aplicativos em uma ampla variedade de plataformas, incluindo .NET, Node.js e J2EE, seja hospedado localmente ou na nuvem. O Application Insights integra-se aos seus processos do DevOps e tem pontos de conexão para várias ferramentas de desenvolvimento.
 
 A Figura 4-10 mostra um exemplo de como o Application Insights monitora o aplicativo e como ele o orienta a um painel.
 

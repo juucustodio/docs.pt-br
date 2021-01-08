@@ -1,13 +1,13 @@
 ---
 title: Migrar e deslocar aplicativos .NET existentes para IaaS do Azure (pronto para infraestrutura de nuvem)
 description: Modernizar aplicativos .NET existentes com contêineres de nuvem e Windows do Azure.
-ms.date: 04/28/2018
-ms.openlocfilehash: d610222aa6649c1b28e198c074794dd316f895ec
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 12/21/2020
+ms.openlocfilehash: fb875c38cac236826007bba217189238b7c00898
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172164"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025388"
 ---
 # <a name="lift-and-shift-existing-net-apps-to-azure-iaas-cloud-infrastructure-ready"></a>Migrar e deslocar aplicativos .NET existentes para IaaS do Azure (pronto para infraestrutura de nuvem)
 
@@ -17,11 +17,11 @@ Antes de entrar em *como* migrar seus aplicativos existentes para a plataforma I
 
 Outro ponto a ser analisado é *por que* você pode desejar migrar para a nuvem de IaaS pura em vez de apenas adicionar serviços gerenciados avançados no Azure. Determine quais casos podem exigir IaaS em primeiro lugar.
 
-A Figura 2-1 posiciona os aplicativos prontos para a infraestrutura de nuvem nos níveis de maturidade de modernização:
+A Figura 2-1 posiciona os aplicativos de Infrastructure-Ready de nuvem nos níveis de maturidade de modernização:
 
-![Posicionando aplicativos prontos para a infraestrutura de nuvem](./media/image2-1.png)
+![Posicionando aplicativos Infrastructure-Ready de nuvem](./media/image2-1.png)
 
-**Figura 2-1.** Posicionando aplicativos prontos para a infraestrutura de nuvem
+**Figura 2-1.** Posicionando aplicativos Infrastructure-Ready de nuvem
 
 ## <a name="why-migrate-existing-net-web-applications-to-azure-iaas"></a>Por que migrar aplicativos Web .NET existentes para IaaS do Azure
 
@@ -29,17 +29,17 @@ O principal motivo para migrar para a nuvem, mesmo em um nível de IaaS inicial,
 
 Depois de tomar a decisão de mover seus aplicativos para a nuvem, o principal motivo pelo qual você pode escolher IaaS em vez de opções mais avançadas, como PaaS, é simplesmente que o ambiente de IaaS será mais familiar. Mover para um ambiente semelhante ao seu ambiente local atual oferece uma curva de aprendizado mais baixa, o que o torna o caminho mais rápido para a nuvem.
 
-No entanto, usar o caminho mais rápido para a nuvem não significa que você obterá mais benefícios em ter seus aplicativos em execução na nuvem. Qualquer organização obterá os benefícios mais significativos de uma migração na nuvem nos níveis de maturidade já introduzidos e nativos da nuvem e otimizados para a nuvem.
+No entanto, usar o caminho mais rápido para a nuvem não significa que você obterá mais benefícios em ter seus aplicativos em execução na nuvem. Qualquer organização obterá os benefícios mais significativos de uma migração de nuvem nos níveis de maturidade já introduzidos Cloud-Optimized e Cloud-Native.
 
 Também se tornou evidente que os aplicativos são mais fáceis de modernizar e rearquitetar no futuro quando já estão em execução na nuvem, mesmo no IaaS. A migração de dados de aplicativos já foi atingida. Além disso, sua organização terá adquirido as habilidades necessárias para trabalhar na nuvem e fazer a mudança para operar em uma "cultura de nuvem".
 
 ## <a name="when-to-migrate-to-iaas-instead-of-to-paas"></a>Quando migrar para IaaS em vez de para PaaS
 
-As seções a seguir discutem aplicativos otimizados para a nuvem que são basicamente baseados em plataformas e serviços de PaaS. Esses aplicativos oferecem a você a maior vantagem de migrar para a nuvem.
+As próximas seções discutem Cloud-Optimized aplicativos que são basicamente baseados em plataformas e serviços de PaaS. Esses aplicativos oferecem a você a maior vantagem de migrar para a nuvem.
 
 Se sua meta é simplesmente mover os aplicativos existentes para a nuvem, primeiro, identifique os aplicativos existentes que não exigem modificação substancial para serem executados no serviço de Azure App. Esses aplicativos devem ser os primeiros candidatos para a otimização da nuvem.
 
-Em seguida, para os aplicativos que ainda não podem ser movidos para contêineres do Windows e PaaS, como serviço de aplicativo ou orquestradores como o serviço kubernetes do Azure, migre-os para VMs simples (IaaS).
+Em seguida, para os aplicativos que ainda não podem ser movidos para contêineres do Windows e PaaS, como serviço de aplicativo ou orquestradores, como o serviço kubernetes do Azure, migre esses aplicativos para IaaS (Simple simples VMs).
 
 Mas lembre-se de que configurar, proteger e manter corretamente as VMs requer muito mais tempo e experiência de ti em comparação com o uso de serviços de PaaS no Azure. Se você estiver considerando as máquinas virtuais do Azure, certifique-se de levar em conta o esforço de manutenção em andamento necessário para corrigir, atualizar e gerenciar seu ambiente de VM. As máquinas virtuais do Azure são IaaS.
 
@@ -63,9 +63,9 @@ As migrações para Azure dão a você confiança de que suas cargas de trabalho
 
 A Figura 2-2 mostra o mapeamento de dependência interno para todas as conexões de servidor e aplicativo executadas pelas migrações para Azure.
 
-![Posicionando aplicativos prontos para a infraestrutura de nuvem](./media/image2-2.png)
+![Posicionando aplicativos Infrastructure-Ready de nuvem](./media/image2-2.png)
 
-**Figura 2-2.** Posicionando aplicativos prontos para a infraestrutura de nuvem
+**Figura 2-2.** Posicionando aplicativos Infrastructure-Ready de nuvem
 
 ## <a name="use-azure-site-recovery-to-migrate-your-existing-vms-to-azure-vms"></a>Usar Azure Site Recovery para migrar suas VMs existentes para VMs do Azure
 
@@ -75,9 +75,9 @@ O Site Recovery também é feito especificamente para ambientes híbridos que s�
 
 A Figura 2-3 mostra a execução de várias migrações de VM usando Azure Site Recovery.
 
-![Posicionando aplicativos prontos para a infraestrutura de nuvem](./media/image2-3.png)
+![Posicionando aplicativos Infrastructure-Ready de nuvem](./media/image2-3.png)
 
-**Figura 2-3.** Posicionando aplicativos prontos para a infraestrutura de nuvem
+**Figura 2-3.** Posicionando aplicativos Infrastructure-Ready de nuvem
 
 ### <a name="additional-resources"></a>Recursos adicionais
 

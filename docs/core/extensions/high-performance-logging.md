@@ -3,13 +3,13 @@ title: Registro em log de alto desempenho no .NET
 author: IEvangelist
 description: Saiba como usar o LoggerMessage para criar representantes que podem ser armazenados em cache e exigem menos alocações de objeto para cenários de registro em log de alto desempenho.
 ms.author: dapine
-ms.date: 09/25/2020
-ms.openlocfilehash: 9111b9553c913cff2937b574250b65e633250f4f
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.date: 01/04/2021
+ms.openlocfilehash: 0031ff7a9f70cb0cf724fdf6dfa4fbe0a44af7c1
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91804757"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025440"
 ---
 # <a name="high-performance-logging-in-net"></a>Registro em log de alto desempenho no .NET
 
@@ -30,7 +30,7 @@ A cadeia de caracteres fornecida para o método <xref:Microsoft.Extensions.Loggi
 
 Cada mensagem de log é uma <xref:System.Action> mantida em um campo estático criado por [LoggerMessage.Define](xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A). Por exemplo, o aplicativo de exemplo cria um campo para descrever uma mensagem de log para o processamento de itens de trabalho:
 
-:::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkField":::
+:::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingField":::
 
 Para a <xref:System.Action>, especifique:
 
@@ -40,19 +40,15 @@ Para a <xref:System.Action>, especifique:
 
 À medida que os itens de trabalho são recolocados na fila para processamento, o aplicativo do serviço de trabalho define:
 
-- O nível de log como `Critical`.
+- O nível de log como <xref:Microsoft.Extensions.Logging.LogLevel.Critical?displayProperty=nameWithType>.
 - A ID do evento como `13` com o nome do método `FailedToProcessWorkItem`.
 - Modelo de mensagem (cadeia de caracteres de formato nomeada) como uma cadeia de caracteres.
 
-:::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkAssignment":::
+:::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="FailedProcessingAssignment":::
 
 Repositórios de log estruturado podem usar o nome do evento quando recebem a ID do evento para enriquecer o log. Por exemplo, [Serilog](https://github.com/serilog/serilog-extensions-logging) usa o nome do evento.
 
-A <xref:System.Action> é invocada por meio de um método de extensão fortemente tipado. O `FailedToProcessWorkItem` método registra uma mensagem toda vez que um item de trabalho está sendo processado:
-
-:::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkMethod":::
-
-`FailedToProcessWorkItem` é chamado no agente de log no `ExecuteAsync` método em *Worker.cs* quando ocorre um erro:
+A <xref:System.Action> é invocada por meio de um método de extensão fortemente tipado. O `PriorityItemProcessed` método registra uma mensagem toda vez que um item de trabalho está sendo processado. Enquanto, `FailedToProcessWorkItem` é chamado quando (e se) uma exceção ocorre:
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="18-39" highlight="15-18":::
 
@@ -70,7 +66,7 @@ Para passar parâmetros para uma mensagem de log, defina até seis tipos ao cria
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingItemField":::
 
-O modelo de mensagem de log do delegado recebe seus valores de espaço reservado dos tipos fornecidos. O aplicativo de exemplo define um delegado para adicionar aspas quando o parâmetro de aspas é uma `WorkItem`:
+O modelo de mensagem de log do delegado recebe seus valores de espaço reservado dos tipos fornecidos. O aplicativo de exemplo define um delegado para adicionar um item de trabalho em que o parâmetro item é um `WorkItem` :
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingItemAssignment":::
 
@@ -95,19 +91,15 @@ O método [DefineScope (String)](xref:Microsoft.Extensions.Logging.LoggerMessage
 
 Como é o caso com o método <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A>, a cadeia de caracteres fornecida ao método <xref:Microsoft.Extensions.Logging.LoggerMessage.DefineScope%2A> é um modelo e não uma cadeia de caracteres interpolada. Os espaços reservados são preenchidos na ordem em que os tipos são especificados. Os nomes do espaço reservado no modelo devem ser descritivos e consistentes em todos os modelos. Eles servem como nomes de propriedade em dados de log estruturado. Recomendamos o uso da [formatação Pascal Case](../../standard/design-guidelines/capitalization-conventions.md) para nomes de espaço reservado. Por exemplo, `{Item}`, `{DateTime}`.
 
-Defina um [escopo de log](logging.md#log-scopes) a ser aplicado a uma série de mensagens de log usando o método <xref:Microsoft.Extensions.Logging.LoggerMessage.DefineScope%2A>.
-
-O aplicativo de exemplo tem um botão **Limpar Tudo** para excluir todas as aspas no banco de dados. As aspas são excluídas com a remoção das aspas individualmente, uma por vez. Sempre que aspas são excluídas, o método `QuoteDeleted` é chamado no agente. Um escopo de log é adicionado a essas mensagens de log.
-
-Habilite `IncludeScopes` na seção de agente do console de *appSettings.json*:
+Defina um [escopo de log](logging.md#log-scopes) a ser aplicado a uma série de mensagens de log usando o método <xref:Microsoft.Extensions.Logging.LoggerMessage.DefineScope%2A>. Habilite `IncludeScopes` na seção de agente do console de *appSettings.json*:
 
 :::code language="json" source="snippets/configuration/worker-service-options/appsettings.json" highlight="3-5":::
 
-Para criar um escopo de log, adicione um campo para conter um delegado <xref:System.Func%601> para o escopo. O aplicativo de exemplo cria um campo chamado `_allQuotesDeletedScope` (*Internal/LoggerExtensions.cs*):
+Para criar um escopo de log, adicione um campo para conter um delegado <xref:System.Func%601> para o escopo. O aplicativo de exemplo cria um campo chamado `_processingWorkScope` (*Internal/LoggerExtensions.cs*):
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkField":::
 
-Use <xref:Microsoft.Extensions.Logging.LoggerMessage.DefineScope%2A> para criar o delegado. Até três tipos podem ser especificados para uso como argumentos de modelo quando o delegado é invocado. O aplicativo de exemplo usa um modelo de mensagem que inclui o número de aspas excluídas (um tipo `int`):
+Use <xref:Microsoft.Extensions.Logging.LoggerMessage.DefineScope%2A> para criar o delegado. Até três tipos podem ser especificados para uso como argumentos de modelo quando o delegado é invocado. O aplicativo de exemplo usa um modelo de mensagem que inclui a data e hora em que o processamento começou:
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Extensions/LoggerExtensions.cs" id="ProcessingWorkAssignment":::
 
@@ -119,7 +111,7 @@ O escopo encapsula as chamadas de extensão de log em um bloco [using](../../csh
 
 :::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="18-39" highlight="4":::
 
-Inspecione as mensagens de log na saída do console do aplicativo. O seguinte resultado mostra três aspas excluídas com a mensagem de escopo de log incluída:
+Inspecione as mensagens de log na saída do console do aplicativo. O resultado a seguir mostra a ordenação de prioridade de mensagens de log com a mensagem de escopo de log incluída:
 
 ```console
 info: WorkerServiceOptions.Example.Worker[1]
@@ -151,6 +143,6 @@ info: WorkerServiceOptions.Example.Worker[1]
       Processing priority item: Priority-Deferred (37bf736c-7a26-4a2a-9e56-e89bcf3b8f35): 'Set process state'
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Registro em log no .NET](logging.md)

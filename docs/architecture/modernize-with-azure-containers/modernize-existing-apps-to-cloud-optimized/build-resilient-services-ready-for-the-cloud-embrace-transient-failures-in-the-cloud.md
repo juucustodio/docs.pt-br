@@ -1,13 +1,13 @@
 ---
 title: Crie serviços resilientes prontos para a nuvem. adote as falhas transitórias na nuvem
 description: Modernizar aplicativos .NET existentes com contêineres de nuvem e Windows do Azure | Crie serviços resilientes prontos para a nuvem. adote as falhas transitórias na nuvem
-ms.date: 04/30/2018
-ms.openlocfilehash: 8e9f1eda71e4b98a56cbfc1c7a4ff34e67bee3f4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 12/21/2020
+ms.openlocfilehash: 4d592a5761cdf696f3e57516d747cbd770512053
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172151"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025323"
 ---
 # <a name="build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud"></a>Crie serviços resilientes prontos para a nuvem: adote as falhas transitórias na nuvem
 
@@ -35,7 +35,7 @@ Você pode usar essas técnicas tanto em recursos HTTP quanto em recursos de ban
 
 Ao implementar comunicações resilientes que acessam o banco de dados, dependendo da versão do .NET que você está usando, pode ser simples (por exemplo, [com o Entity Framework 6 ou posterior](/ef/ef6/fundamentals/connection-resiliency/retry-logic). É apenas uma questão de configurar a conexão de banco de dados. Ou talvez você precise usar bibliotecas adicionais, como o [bloco de aplicativo de tratamento de falhas transitórias](/previous-versions/msp-n-p/hh680934(v=pandp.50)) (para versões anteriores do .net), ou até mesmo implementar sua própria biblioteca.
 
-Ao implementar repetições de HTTP e disparadores de circuito, a recomendação para o .NET é usar a biblioteca [Polly](https://github.com/App-vNext/Polly) , que tem como alvo .NET Framework 4,0, .NET Framework 4,5 e .net Standard 1,1, que inclui o suporte do .NET Core.
+Ao implementar repetições de HTTP e disparadores de circuito, a recomendação para o .NET é usar a biblioteca [Polly](https://github.com/App-vNext/Polly) , que tem como alvo .net Standard 1,1 (cobertura: .net Core 1,0, mono, XAMARIN, UWP, wp 8.1 +) e .net Standard 2.0 + (cobertura: .NET Core 2.0 +, .net Core 3,0 e versões posteriores de mono, XAMARIN e UWP). O pacote NuGet também inclui destinos diretos para .NET Framework 4.6.1 e 4.7.2.
 
 Para saber como implementar estratégias para lidar com falhas parciais na nuvem, consulte as referências a seguir.
 

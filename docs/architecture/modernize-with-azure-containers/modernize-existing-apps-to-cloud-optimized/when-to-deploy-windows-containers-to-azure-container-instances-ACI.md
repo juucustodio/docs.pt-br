@@ -1,39 +1,39 @@
 ---
-title: Quando implantar os contêineres do Windows em ACI (ACI)
-description: Modernizar os aplicativos .NET existentes com contêineres Azure Cloud e Windows | Quando implantar os contêineres do Windows em ACI (ACI)
-ms.date: 04/29/2018
-ms.openlocfilehash: 6c889db6f0475f24a196144c7fb62faec4c173ed
-ms.sourcegitcommit: e3cbf26d67f7e9286c7108a2752804050762d02d
+title: Quando implantar contêineres do Windows em ACI (instâncias de contêiner do Azure)
+description: Modernizar aplicativos .NET existentes com contêineres de nuvem e Windows do Azure | Quando implantar contêineres do Windows em ACI (instâncias de contêiner do Azure)
+ms.date: 12/21/2020
+ms.openlocfilehash: 556fe7cbec7d259db9ec886b777feda9eed09116
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "80989149"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025127"
 ---
-# <a name="when-to-deploy-windows-containers-to-azure-container-instances-aci"></a>Quando implantar os contêineres do Windows em ACI (ACI)
+# <a name="when-to-deploy-windows-containers-to-azure-container-instances-aci"></a>Quando implantar contêineres do Windows em ACI (instâncias de contêiner do Azure)
 
-A principal proposta de valor do Azure Container Instances é que você pode implantar os contêineres imediatamente nele e não precisa manter esse ambiente, você não precisa atualizar/corrigir o sistema operacional ou VMs subjacentes, tudo isso é transparente e você simplesmente implanta contêineres em um ambiente pronto para uso.
+A principal proposta de valor das instâncias de contêiner do Azure é que você pode imediatamente implantar contêineres nela e não precisa manter esse ambiente, não é necessário atualizar/corrigir o sistema operacional ou as VMs subjacentes, tudo isso é transparente e apenas implantar contêineres em um ambiente pronto para uso.
 
-As razões e cenários em que você gostaria de usar a ACI são semelhantes aos principais cenários quando você usa VMs do Azure com contêineres, então, basicamente, os principais cenários para usar o Azure Container Instances são:
+Os motivos e cenários em que você desejaria usar o ACI são semelhantes aos principais cenários quando você usa VMs do Azure com contêineres, portanto, basicamente, os principais cenários para usar as instâncias de contêiner do Azure são:
 
-- **Cenários de dev/teste**
+- **Cenários de desenvolvimento/teste**
 - **Automação de tarefas**
 - **Agentes de CI/CD**
-- **Processamento de lotes em pequena escala**
-- **Aplicativos web simples**
+- **Processamento em lotes de pequena/escala**
+- **Aplicativos Web simples**
 
-O cenário simples de aplicativos web é um cenário justo para a ACI, mas leve em conta que, como na ACI você só pode ter uma única instância de contêiner por imagem de contêiner, você não terá alta disponibilidade e só terá escalabilidade limitada.
+O cenário de aplicativos Web simples é um cenário justo para ACI, mas leve em conta que, desde o ACI, você só pode ter uma única instância de contêiner por imagem de contêiner, não terá alta disponibilidade e terá apenas escalabilidade limitada.
 
-No entanto, mesmo quando a ACI é considerada infra-estrutura porque apenas fornece instâncias de contêiner únicos, há um enorme benefício em comparação com as VMs azure regulares com o Windows Server. Com a ACI, basta implantar os contêineres em um ambiente auto-conservado e você só paga por esses contêineres. Você não precisa manter/atualizar/patch VMs, por isso é uma plataforma muito melhor para a maioria dos cenários onde você pode estar usando VMs com contêineres. O uso da ACI é direto, basta implantar um contêiner, não há necessidade de criar um ambiente de VM que você apenas implanta contêineres.
+No entanto, mesmo quando o ACI é considerado uma infraestrutura porque ele apenas fornece instâncias de contêiner único, há um grande benefício em comparação com as VMs regulares do Azure com o Windows Server. Com o ACI, você apenas implanta os contêineres em um ambiente automantido e só paga por esses contêineres. Você não precisa manter/atualizar/corrigir VMs, portanto é uma plataforma muito melhor para a maioria dos cenários em que você pode estar usando VMs com contêineres. Usar o ACI é um avanço direto, você simplesmente implanta um contêiner, não há necessidade de criar um ambiente de VM que você apenas implante contêineres.
 
-Os principais benefícios da Azure Container Instances (ACI) são:
+Os principais benefícios das ACI (instâncias de contêiner do Azure) são:
 
 - Executar contêineres sem gerenciar servidores
-- Aumente a agilidade com contêineres sob demanda
-- Implante contêineres na nuvem com simplicidade e velocidade sem precedentes — com um único comando.
-- Aplicações seguras com isolamento de hipervisor
+- Aumentar a agilidade com contêineres sob demanda
+- Implante contêineres na nuvem com simplicidade e velocidade sem precedentes, com um único comando.
+- Proteger aplicativos com isolamento de hipervisor
 
-Em suma, com a ACI você pode desenvolver aplicativos rapidamente sem gerenciar máquinas virtuais ou ter que aprender novas ferramentas. É só sua aplicação, em um contêiner, correndo na nuvem.
+Em suma, com o ACI, você pode desenvolver aplicativos rapidamente sem gerenciar máquinas virtuais ou ter que aprender novas ferramentas. É apenas seu aplicativo, em um contêiner, em execução na nuvem.
 
 > [!div class="step-by-step"]
-> [Próximo](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)
-> [anterior](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)
+> [Anterior](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md) 
+>  [Avançar](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

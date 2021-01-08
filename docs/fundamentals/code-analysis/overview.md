@@ -8,12 +8,12 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: 2f59b97de6f92e5a9bf927e1318286e400017dad
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: 80815b5913ad72756de503209b52e8848dd708bf
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009840"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025075"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>Visão geral da análise de código-fonte do .NET
 
@@ -104,13 +104,16 @@ Por padrão, você obterá as regras de análise de código mais recentes e as s
 As regras de *análise de estilo de código* ("IDExxxx") permitem que você defina e mantenha o estilo de código consistente na codebase. As configurações de habilitação padrão são:
 
 - Compilação de linha de comando: a análise de estilo de código está desabilitada, por padrão, para todos os projetos .NET em compilações de linha de comando.
-- Visual Studio: a análise de estilo de código está habilitada, por padrão, para todos os projetos .NET dentro do Visual Studio como [ações rápidas de refatoração de código](/visualstudio/ide/code-generation-in-visual-studio).
 
-A partir do .NET 5,0, você pode habilitar a análise de estilo de código no Build, tanto na linha de comando quanto dentro do Visual Studio. Violações de estilo de código aparecem como avisos ou erros com um prefixo "IDE". Isso permite que você imponha estilos de código consistentes no momento da compilação.
+  A partir do .NET 5,0, você pode [habilitar a análise de estilo de código no Build](#enable-on-build), tanto na linha de comando quanto dentro do Visual Studio. Violações de estilo de código aparecem como avisos ou erros com um prefixo "IDE". Isso permite que você imponha estilos de código consistentes no momento da compilação.
+
+- Visual Studio: a análise de estilo de código está habilitada, por padrão, para todos os projetos .NET dentro do Visual Studio como [ações rápidas de refatoração de código](/visualstudio/ide/code-generation-in-visual-studio).
 
 Para obter uma lista completa de regras de análise de estilo de código, consulte [regras de estilo de código](style-rules/index.md).
 
 ### <a name="enable-on-build"></a>Habilitar no Build
+
+Com o SDK do .NET 5,0 e versões posteriores, você pode habilitar a análise de estilo de código ao criar a partir da linha de comando e no Visual Studio. (No entanto, por motivos de desempenho, [algumas regras de estilo de código](https://github.com/dotnet/roslyn/blob/9f87b444da9c48a4d492b19f8337339056bf2b95/src/Analyzers/Core/Analyzers/EnforceOnBuildValues.cs#L95) ainda serão aplicadas somente no IDE do Visual Studio.)
 
 Siga estas etapas para habilitar a análise de estilo de código na compilação:
 
@@ -155,7 +158,7 @@ Para obter mais informações sobre severidades de regra, consulte [Configurar a
 
 Além dos analisadores .NET oficiais, você também pode instalar analisadores de terceiros, como [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [analisadores de xUnit](https://www.nuget.org/packages/xunit.analyzers/)e o [analisador de sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência da regra de análise de qualidade de código](quality-rules/index.md)
 - [Referência da regra de análise de estilo de código](style-rules/index.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - struct type [C#]
 - structure type [C#]
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
-ms.openlocfilehash: 96a39609e9ae8b11e9872b049134136fe1ff3e2a
-ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+ms.openlocfilehash: 2ceac94c04dd8deb169e836f09928dfd9a38ac35
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96599096"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025427"
 ---
 # <a name="structure-types-c-reference"></a>Tipos de estrutura (referência C#)
 
@@ -30,11 +30,7 @@ Como os tipos de estrutura têm semântica de valor, recomendamos que você defi
 
 ## <a name="readonly-struct"></a>`readonly` struct
 
-A partir do C# 7,2, você usa o `readonly` modificador para declarar que um tipo de estrutura é imutável:
-
-[!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
-
-Todos os membros de dados de um `readonly` struct devem ser somente leitura da seguinte maneira:
+A partir do C# 7,2, você usa o `readonly` modificador para declarar que um tipo de estrutura é imutável. Todos os membros de dados de um `readonly` struct devem ser somente leitura da seguinte maneira:
 
 - Qualquer declaração de campo deve ter o [ `readonly` modificador](../keywords/readonly.md)
 - Qualquer propriedade, incluindo as implementadas automaticamente, deve ser somente leitura. No C# 9,0 e posterior, uma propriedade pode ter um [ `init` acessador](../../whats-new/csharp-9.md#init-only-setters).
@@ -43,6 +39,10 @@ Isso garante que nenhum membro de uma `readonly` struct modifique o estado da es
 
 > [!NOTE]
 > Em uma `readonly` struct, um membro de dados de um tipo de referência mutável ainda pode mutar seu próprio estado. Por exemplo, você não pode substituir uma <xref:System.Collections.Generic.List%601> instância, mas pode adicionar novos elementos a ela.
+
+O código a seguir define uma `readonly` struct com setters de propriedade somente init, disponível em C# 9,0 e posterior:
+
+[!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
 
 ## <a name="readonly-instance-members"></a>`readonly` Membros da instância
 
@@ -148,7 +148,7 @@ Para obter mais informações sobre os recursos introduzidos no C# 7,2 e posteri
 - [Membros da instância ReadOnly](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
 - [Segurança de tempo de compilação para tipos semelhantes a ref](~/_csharplang/proposals/csharp-7.2/span-safety.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de C#](../index.md)
 - [Diretrizes de design-escolhendo entre classe e estrutura](../../../standard/design-guidelines/choosing-between-class-and-struct.md)

@@ -2,12 +2,12 @@
 title: Documentação XML
 description: 'Saiba mais sobre o suporte no F # para gerar documentação de comentários.'
 ms.date: 09/15/2020
-ms.openlocfilehash: 24d9dbfb5e28d39e224ef9428f025298464fc7f4
-ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
+ms.openlocfilehash: 2f8788e79ea964143eecfaddbeb039474dd61f8e
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95099003"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025010"
 ---
 # <a name="document-your-code-with-xml-comments"></a>Documente seu código com comentários XML
 
@@ -53,7 +53,7 @@ Este é um comentário de documentação XML típico em um arquivo de assinatura
 
 Se você estiver usando marcas XML, a tabela a seguir descreve as marcas externas reconhecidas nos comentários de código XML F #.
 
-| Sintaxe de marca                                  | Description |
+| Sintaxe de marca                                  | Descrição |
 |---------------------------------------------|-----------|
 | `<summary>`**_texto_**`</summary>`           | Especifica que o *texto* é uma breve descrição do elemento Program. A descrição geralmente é uma ou duas frases.|
 | `<remarks>`**_texto_**`</remarks>`           | Especifica que o *texto* contém informações suplementares sobre o elemento Program.|
@@ -65,7 +65,7 @@ Se você estiver usando marcas XML, a tabela a seguir descreve as marcas externa
 
 A tabela a seguir descreve as marcas para uso nas seções de descrição:
 
-| Sintaxe de marca                                | Description |
+| Sintaxe de marca                                | Descrição |
 |-------------------------------------------|-------------|
 | `<para>`**_texto_**`</para>`               | Especifica um parágrafo de texto. Isso é usado para separar o texto dentro da marca de **comentários** .|
 | `<code>`**_texto_**`</code>`               | Especifica que o *texto* tem várias linhas de código. Essa marca pode ser usada por geradores de documentação para exibir texto em uma fonte apropriada para o código.|
@@ -101,7 +101,7 @@ type SomeType
 
 ## <a name="limitations"></a>Limitações
 
-Não há suporte para alguns recursos da documentação XML em C# e em outras linguagens .NET no C#.
+Não há suporte para alguns recursos da documentação XML em C# e em outras linguagens .NET no F #.
 
 - Em F #, as referências cruzadas devem usar a assinatura XML completa do símbolo correspondente, por exemplo `cref="T:System.Console"` .
   Referências cruzadas simples no estilo C#, como `cref="Console"` não são elaboradas para assinaturas XML completas, e esses elementos não são verificados pelo compilador F #. Algumas ferramentas de documentação podem permitir o uso dessas referências cruzadas por processamento posterior, mas as assinaturas completas devem ser usadas.
@@ -128,8 +128,8 @@ Documentar o código é recomendável por vários motivos. O que vem a seguir s�
 
 - O texto da documentação deve ser escrito usando frases terminadas com ponto final.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Comentários de documentação XML do C# &#40;guia de programação C&#35;&#41;](../../csharp/programming-guide/xmldoc/index.md).
 - [Referência de linguagem F #](index.md)
-- [Opções do compilador](compiler-options.md)
+- [Opção de compilador](compiler-options.md)

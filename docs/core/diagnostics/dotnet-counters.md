@@ -2,12 +2,12 @@
 title: dotnet – ferramenta de diagnóstico de contadores – CLI do .NET
 description: Saiba como instalar e usar a ferramenta dotnet-Counter CLI para monitoramento de integridade ad hoc e investigação de desempenho de primeiro nível.
 ms.date: 11/17/2020
-ms.openlocfilehash: 89695c77e7913d41f030890be7cc00947e42fa3a
-ms.sourcegitcommit: e395fabeeea5c705d243d246fa64446839ac85b6
+ms.openlocfilehash: 44d74cfaca7483b1506fe7ad762818e9b9ed7d63
+ms.sourcegitcommit: 0273f8845eb1ea8de64086bef2271b4f22182c91
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97856049"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "98058084"
 ---
 # <a name="investigate-performance-counters-dotnet-counters"></a>Investigar contadores de desempenho (dotNet-contadores)
 
@@ -220,7 +220,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > O uso dessa opção monitora o primeiro processo do .NET 5,0 que se comunica de volta à ferramenta, o que significa que, se o comando iniciar vários aplicativos .NET, ele só coletará o primeiro aplicativo. Portanto, é recomendável usar essa opção em aplicativos independentes ou usando a `dotnet exec <app.dll>` opção.
 
   > [!NOTE]
-  > Iniciar um executável .NET por meio de dotnet-Counters fará com que sua entrada/saída seja redirecionada e você não poderá interagir com seu STDIN/STDOUT. Sair da ferramenta por meio de CTRL + C ou SIGTERM irá encerrar com segurança a ferramenta e o processo filho. Se o processo filho for encerrado antes da ferramenta, a ferramenta também será encerrada e o rastreamento deverá ser visível com segurança. Se você precisar usar stdin/stdout, poderá usar a `--diagnostic-port` opção. Consulte [usando a porta de diagnóstico](#using-diagnostic-port) para obter mais informações.
+  > Iniciar um executável .NET por meio de dotnet-Counters fará com que sua entrada/saída seja redirecionada e você não poderá interagir com seu STDIN/STDOUT. Sair da ferramenta por meio de CTRL + C ou SIGTERM irá encerrar com segurança a ferramenta e o processo filho. Se o processo filho for encerrado antes da ferramenta, a ferramenta também será encerrada. Se você precisar usar stdin/stdout, poderá usar a `--diagnostic-port` opção. Consulte [usando a porta de diagnóstico](#using-diagnostic-port) para obter mais informações.
 
 ### <a name="examples"></a>Exemplos
 

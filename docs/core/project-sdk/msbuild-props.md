@@ -4,12 +4,12 @@ description: Referência para as propriedades e os itens do MSBuild que são com
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: e7deb8c32fd01452524122e41f758ab037020ee4
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: e35ccc3540756a4cb7905d5864caf65cded4362b
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970701"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189968"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Referência do MSBuild para projetos do SDK do .NET
 
@@ -79,15 +79,43 @@ Você pode especificar propriedades como `PackageId` ,, `PackageVersion` , `Pack
 </PropertyGroup>
 ```
 
-## <a name="publish-properties-and-items"></a>Publicar Propriedades e itens
+## <a name="publish-properties-items-and-metadata"></a>Publicar Propriedades, itens e metadados
 
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
+- [CopyToPublishDirectory](#copytopublishdirectory)
+- [LinkBase](#linkbase)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [UseAppHost](#useapphost)
+
+### <a name="copytopublishdirectory"></a>CopyToPublishDirectory
+
+Os `CopyToPublishDirectory` metadados em um item do MSBuild controlam quando o item é copiado para o diretório de publicação. Os valores permitidos são `PreserveNewest` , que só copia o item se ele tiver mudado, `Always` , que sempre copia o item e `Never` , que nunca copia o item. Do ponto de vista do desempenho, `PreserveNewest` é preferível porque permite uma compilação incremental.
+
+```xml
+<ItemGroup>
+  <None Update="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+</ItemGroup>
+```
+
+### <a name="linkbase"></a>LinkBase
+
+Para um item que está fora do diretório do projeto e seus subdiretórios, o destino de publicação usa os [metadados de link](/visualstudio/msbuild/common-msbuild-item-metadata) do item para determinar para onde copiar o item. `Link` também determina como os itens fora da árvore do projeto são exibidos na janela de Gerenciador de Soluções do Visual Studio.
+
+Se `Link` não for especificado para um item que está fora do cone do projeto, o padrão será `%(LinkBase)\%(RecursiveDir)%(Filename)%(Extension)` . `LinkBase` permite especificar uma pasta base sensata para itens fora do cone do projeto. A hierarquia de pastas sob a pasta base é preservada via `RecursiveDir` . Se `LinkBase` não for especificado, ele será omitido do `Link` caminho.
+
+```xml
+<ItemGroup>
+  <Content Include="..\Extras\**\*.cs" LinkBase="Shared"/>
+</ItemGroup>
+```
+
+A imagem a seguir mostra como um arquivo incluído por meio do item glob anterior é `Include` exibido em Gerenciador de soluções.
+
+:::image type="content" source="media/solution-explorer-linkbase.png" alt-text="Gerenciador de Soluções mostrando o item com metadados de LinkBase.":::
 
 ### <a name="appendtargetframeworktooutputpath"></a>AppendTargetFrameworkToOutputPath
 
@@ -478,7 +506,7 @@ A `TieredCompilationQuickJitForLoops` propriedade define se o compilador JIT usa
 
 ### <a name="assettargetfallback"></a>AssetTargetFallback
 
-A `AssetTargetFallback` propriedade permite que você especifique versões de estrutura compatíveis adicionais para referências de projeto e pacotes NuGet. Por exemplo, se você especificar uma dependência de pacote usando `PackageReference` , mas esse pacote não contiver ativos que são compatíveis com seus projetos `TargetFramework` , a `AssetTargetFallback` Propriedade entrará em cena. A compatibilidade do pacote referenciado é verificada novamente usando cada estrutura de destino especificada em `AssetTargetFallback` .
+A `AssetTargetFallback` propriedade permite que você especifique versões de estrutura compatíveis adicionais para referências de projeto e pacotes NuGet. Por exemplo, se você especificar uma dependência de pacote usando `PackageReference` , mas esse pacote não contiver ativos que são compatíveis com seus projetos `TargetFramework` , a `AssetTargetFallback` Propriedade entrará em cena. A compatibilidade do pacote referenciado é verificada novamente usando cada estrutura de destino especificada em `AssetTargetFallback` . Essa propriedade substitui a propriedade preterida `PackageTargetFallback` .
 
 Você pode definir a `AssetTargetFallback` propriedade para uma ou mais [versões da estrutura de destino](../../standard/frameworks.md#supported-target-frameworks).
 
@@ -504,7 +532,7 @@ Defina essa propriedade como `true` para Desabilitar itens implícitos `Framewor
 
 O `PackageReference` Item define uma referência a um pacote NuGet.
 
-O atributo `Include` especifica a ID do pacote. O `Version` atributo especifica a versão ou o intervalo de versão. Para obter informações sobre como especificar uma versão mínima, a versão máxima, o intervalo ou a correspondência exata, consulte [intervalos de versão](/nuget/concepts/package-versioning#version-ranges). Você também pode adicionar os seguintes metadados a uma referência de projeto: `IncludeAssets` , `ExcludeAssets` e `PrivateAssets` .
+O atributo `Include` especifica a ID do pacote. O `Version` atributo especifica a versão ou o intervalo de versão. Para obter informações sobre como especificar uma versão mínima, a versão máxima, o intervalo ou a correspondência exata, consulte [intervalos de versão](/nuget/concepts/package-versioning#version-ranges). Você também pode adicionar [atributos de ativo](#asset-attributes) a uma referência de pacote.
 
 O trecho do arquivo de projeto no exemplo a seguir faz referência ao pacote [System. Runtime](https://www.nuget.org/packages/System.Runtime/) .
 
@@ -515,6 +543,30 @@ O trecho do arquivo de projeto no exemplo a seguir faz referência ao pacote [Sy
 ```
 
 Para obter mais informações, consulte [referências de pacote em arquivos de projeto](/nuget/consume-packages/package-references-in-project-files).
+
+#### <a name="asset-attributes"></a>Atributos de ativo
+
+Os `IncludeAssets` `ExcludeAssets` metadados, e `PrivateAssets` podem ser adicionados a uma referência de pacote.
+
+| Atributo | Descrição |
+| - | - |
+| `IncludeAssets` | Especifica quais ativos pertencentes ao pacote especificado por `<PackageReference>` devem ser consumidos. Por padrão, todos os ativos de pacote estão incluídos. |
+| `ExcludeAssets`| Especifica quais ativos pertencentes ao pacote especificado por `<PackageReference>` não devem ser consumidos. |
+| `PrivateAssets` | Especifica quais ativos pertencentes ao pacote especificado por `<PackageReference>` devem ser consumidos, mas não fluir para o próximo projeto. Os `Analyzers` `Build` ativos, e `ContentFiles` são privados por padrão quando esse atributo não está presente. |
+
+Esses atributos podem conter um ou mais dos seguintes itens, separados por um ponto e vírgula, `;` se houver mais de um listado:
+
+- `Compile` – o conteúdo da pasta *lib* está disponível para a compilação.
+- `Runtime` – o conteúdo da pasta de *tempo de execução* é distribuído.
+- `ContentFiles` – o conteúdo da pasta *contentfiles* é usado.
+- `Build` – as props/destinos na pasta *Build* são usados.
+- `Native` – o conteúdo de ativos nativos é copiado para a pasta de *saída* para tempo de execução.
+- `Analyzers` – os analisadores são usados.
+
+Como alternativa, o atributo pode conter:
+
+- `None` – nenhum dos ativos é usado.
+- `All` – todos os ativos são usados.
 
 ### <a name="projectreference"></a>ProjectReference
 
@@ -615,7 +667,7 @@ A `EnableDynamicLoading` propriedade indica que um assembly é um componente car
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema do MSBuild](/visualstudio/msbuild/msbuild-project-file-schema-reference)
 - [Propriedades comuns do MSBuild](/visualstudio/msbuild/common-msbuild-project-properties)

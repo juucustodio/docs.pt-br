@@ -2,12 +2,12 @@
 title: Comando dotnet pack
 description: O comando dotnet Pack cria pacotes NuGet para seu projeto .NET.
 ms.date: 04/28/2020
-ms.openlocfilehash: 3ca7947b4ed9902b163f09a7b57696f304610cce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a9a634c358f5de4f28c3de06edc9a2b4d2eb8d57
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674795"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190072"
 ---
 # <a name="dotnet-pack"></a>dotnet pack
 
@@ -30,7 +30,7 @@ dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
 dotnet pack -h|--help
 ```
 
-## <a name="description"></a>DESCRIÇÃO
+## <a name="description"></a>Descrição
 
 O comando `dotnet pack` compila o projeto e cria pacotes NuGet. O resultado desse comando é um pacote NuGet (ou seja, um arquivo *. nupkg* ).
 
@@ -46,7 +46,7 @@ Por padrão, `dotnet pack` compila primeiro o projeto. Se você quiser evitar es
 > [!NOTE]
 > Em alguns casos, a compilação implícita não pode ser executada. Isso pode ocorrer quando `GeneratePackageOnBuild` é definido, para evitar uma dependência cíclica entre destinos de compilação e de pacote. A compilação também pode falhar se houver um arquivo bloqueado ou outro problema.
 
-Você pode fornecer as propriedades de MSBuild para o comando `dotnet pack` para o processo de empacotamento. Para obter mais informações, consulte [Propriedades de metadados do NuGet](csproj.md#nuget-metadata-properties) e a [Referência de linha de comando MSBuild](/visualstudio/msbuild/msbuild-command-line-reference). A seção [Exemplos](#examples) mostra como usar a opção -p do MSBuild para alguns cenários diferentes.
+Você pode fornecer as propriedades de MSBuild para o comando `dotnet pack` para o processo de empacotamento. Para obter mais informações, consulte [Propriedades de destino do NuGet Pack](/nuget/reference/msbuild-targets#pack-target) e a [referência de Command-Line do MSBuild](/visualstudio/msbuild/msbuild-command-line-reference). A seção de [exemplos](#examples) mostra como usar a `-p` opção MSBuild para alguns cenários diferentes.
 
 Projetos da Web não são empacotáveis por padrão. Para substituir o comportamento padrão, adicione a seguinte propriedade ao seu arquivo *.csproj*:
 
@@ -64,7 +64,7 @@ Projetos da Web não são empacotáveis por padrão. Para substituir o comportam
 
 `PROJECT | SOLUTION`
 
-  O projeto ou a solução a ser empacotada. É um caminho para um [arquivo csproj](csproj.md), arquivo vbproj, arquivo fsproj, um arquivo de solução ou para um diretório. Se não for especificado, o comando pesquisará o diretório atual em busca de um arquivo de projeto ou de solução.
+  O projeto ou a solução a ser empacotada. É um caminho para um arquivo csproj, vbproj ou fsproj, ou para um arquivo de solução ou diretório. Se não for especificado, o comando pesquisará o diretório atual em busca de um arquivo de projeto ou de solução.
 
 ## <a name="options"></a>Opções
 

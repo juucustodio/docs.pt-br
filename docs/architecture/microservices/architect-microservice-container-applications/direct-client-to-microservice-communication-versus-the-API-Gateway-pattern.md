@@ -1,13 +1,13 @@
 ---
 title: Padrão de gateway de API versus comunicação direta de cliente com microsserviço
 description: Entenda as diferenças e os usos do padrão de gateway de API e da comunicação direta de cliente com microsserviço.
-ms.date: 01/07/2019
-ms.openlocfilehash: 88cea3b7c2fdd09bec605431308df8783c343332
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.date: 01/13/2021
+ms.openlocfilehash: 86c975b7d739e62b8f0d465abdf36ad74047c56c
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96240596"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189571"
 ---
 # <a name="the-api-gateway-pattern-versus-the-direct-client-to-microservice-communication"></a>Padrão de gateway de API versus comunicação direta de cliente com microsserviço
 
@@ -25,7 +25,7 @@ Nessa abordagem, cada microsserviço tem um ponto de extremidade público, às v
 
 `http://eshoponcontainers.westus.cloudapp.azure.com:88/`
 
-Em um ambiente de produção com base em um cluster, essa URL mapearia para o balanceador de carga usado no cluster, que, por sua vez, distribui as solicitações entre os microsserviços. Em ambientes de produção, você pode ter um ADC (Controlador de Entrega de Aplicativo) como o [Gateway de Aplicativo do Azure](/azure/application-gateway/application-gateway-introduction) entre os microsserviços e a Internet. Isso funciona como uma camada transparente que não executa balanceamento de carga, mas protege seus serviços ao oferecer terminação SSL. Isso aumenta a carga de seus hosts descarregando terminação SSL com uso intensivo de CPU e outras tarefas de roteamento para o Gateway de Aplicativo do Azure. Em qualquer caso, um balanceador de carga e ADC são transparentes de um ponto de vista da arquitetura do aplicativo lógico.
+Em um ambiente de produção com base em um cluster, essa URL mapearia para o balanceador de carga usado no cluster, que, por sua vez, distribui as solicitações entre os microsserviços. Em ambientes de produção, você pode ter um ADC (Controlador de Entrega de Aplicativo) como o [Gateway de Aplicativo do Azure](/azure/application-gateway/application-gateway-introduction) entre os microsserviços e a Internet. Essa camada atua como uma camada transparente que não apenas executa o balanceamento de carga, mas protege seus serviços oferecendo terminação SSL. Essa abordagem melhora a carga de seus hosts descarregando a terminação de SSL com uso intensivo de CPU e outras tarefas de roteamento para o gateway de Aplicativo Azure. Em qualquer caso, um balanceador de carga e ADC são transparentes de um ponto de vista da arquitetura do aplicativo lógico.
 
 Uma arquitetura de comunicação direta de cliente com microsserviço pode ser boa o bastante para um aplicativo baseado em microsserviço pequeno, especialmente se o aplicativo cliente for um aplicativo Web do lado do servidor como um aplicativo ASP.NET MVC. No entanto, quando você cria aplicativos grandes e complexos baseados em microsserviço (por exemplo, ao lidar com dezenas de tipos de microsserviço), e especialmente quando os aplicativos cliente são aplicativos móveis remotos ou aplicativos Web do SPA, essa abordagem enfrenta alguns problemas.
 
@@ -33,7 +33,7 @@ Considere as seguintes questões ao desenvolver um aplicativo grande com base em
 
 - *Como os aplicativos cliente podem minimizar o número de solicitações para o back-end e reduzir a comunicação excessiva com vários microsserviços?*
 
-Interagir com vários microsserviços para criar uma única tela de interface do usuário aumenta o número de viagens de ida e volta pela Internet. Isso aumenta a latência e a complexidade do lado da interface do usuário. O ideal é que as respostas sejam agregadas com eficiência no lado do servidor. Isso reduz a latência, já que várias partes de dados voltam em paralelo e algumas interfaces do usuário podem mostrar dados assim que eles estão prontos.
+Interagir com vários microsserviços para criar uma única tela de interface do usuário aumenta o número de viagens de ida e volta pela Internet. Essa abordagem aumenta a latência e a complexidade no lado da interface do usuário. O ideal é que as respostas sejam agregadas com eficiência no lado do servidor. Essa abordagem reduz a latência, já que várias partes de dados retornam em paralelo e algumas interfaces do usuário podem mostrar os dados assim que estiverem prontos.
 
 - *Como você pode lidar com preocupações abrangentes, como autorização, transformações de dados e despacho de solicitação dinâmica?*
 
@@ -41,21 +41,21 @@ Implementar preocupações relativas a segurança e abrangentes, como segurança
 
 - *Como os aplicativos cliente podem se comunicar com serviços que usam protocolos não amigáveis para a Internet?*
 
-Protocolos usados no lado do servidor (como AMQP ou protocolos binários) geralmente não são compatíveis com aplicativos cliente. Portanto, as solicitações devem ser executadas por meio de protocolos como HTTP/HTTPS e convertidas em outros protocolos posteriormente. Uma abordagem *man-in-the-middle* pode ajudar nessa situação.
+Não há suporte para protocolos usados no lado do servidor (como AMQP ou protocolos binários) em aplicativos cliente. Portanto, as solicitações devem ser executadas por meio de protocolos como HTTP/HTTPS e convertidas em outros protocolos posteriormente. Uma abordagem *man-in-the-middle* pode ajudar nessa situação.
 
 - *Como é possível moldar uma fachada feita especialmente para aplicativos móveis?*
 
-A API de vários microsserviços podem não ser bem projetadas para as necessidades de diferentes aplicativos cliente. Por exemplo, as necessidades de um aplicativo móvel podem ser diferentes das necessidades de um aplicativo Web. Para aplicativos móveis, convém otimizar ainda mais para que as respostas de dados possam ser mais eficientes. Você pode fazer isso agregando dados de vários microsserviços e retornando um único conjunto de dados e, às vezes, eliminando os dados na resposta que não são necessários para o aplicativo móvel. E, claro, você pode compactar dados. Novamente, uma fachada ou uma API entre o aplicativo móvel e os microsserviços pode ser conveniente para esse cenário.
+A API de vários microsserviços podem não ser bem projetadas para as necessidades de diferentes aplicativos cliente. Por exemplo, as necessidades de um aplicativo móvel podem ser diferentes das necessidades de um aplicativo Web. Para aplicativos móveis, convém otimizar ainda mais para que as respostas de dados possam ser mais eficientes. Você pode fazer essa funcionalidade agregando dados de vários microserviços e retornando um único conjunto de dados e, às vezes, eliminando todos os dados na resposta que não são necessários para o aplicativo móvel. E, claro, você pode compactar dados. Novamente, uma fachada ou uma API entre o aplicativo móvel e os microsserviços pode ser conveniente para esse cenário.
 
 ## <a name="why-consider-api-gateways-instead-of-direct-client-to-microservice-communication"></a>Por que considerar o uso de Gateways de API em vez de comunicação direta de cliente com microsserviço
 
 Em uma arquitetura de microsserviços, os aplicativos cliente normalmente precisam consumir a funcionalidade de mais de um microsserviço. Se esse consumo for executado diretamente, o cliente precisará manipular várias chamadas para terminais de microsserviço. O que acontece quando o aplicativo evolui e novos microsserviços são introduzidos ou os microsserviços existentes são atualizados? Se o seu aplicativo tiver muitos microsserviços, lidar com tantos pontos de extremidade dos aplicativos cliente pode ser um pesadelo. Como o aplicativo cliente seria acoplado a esses pontos de extremidade internos, a evolução dos microsserviços no futuro pode causar alto impacto aos aplicativos cliente.
 
-Portanto, ter um nível intermediário ou indireto (Gateway) pode ser muito conveniente para aplicativos baseados em microsserviço. Se você não tiver Gateways de API, os aplicativos do cliente deverão enviar solicitações diretamente aos microsserviços, o que causará problemas como os seguintes:
+Portanto, ter um nível intermediário ou uma camada de indireção (gateway) pode ser conveniente para aplicativos baseados em microserviço. Se você não tiver Gateways de API, os aplicativos do cliente deverão enviar solicitações diretamente aos microsserviços, o que causará problemas como os seguintes:
 
 - **Acoplamento**: sem o padrão de Gateway de API, os aplicativos cliente são acoplados aos microsserviços internos. Os aplicativos clientes precisam saber como as várias áreas do aplicativo são decompostas em microsserviços. Ao evoluir e refatorar os microserviços internos, essas ações impactam a manutenção porque causam alterações significativas nos aplicativos cliente devido à referência direta aos microserviços internos dos aplicativos cliente. Os aplicativos clientes precisam ser atualizados com frequência,o que dificulta a evolução da solução.
 
-- **Muitas viagens de ida e volta**: uma única página/tela no aplicativo cliente pode exigir diversas chamadas para vários serviços. Isso pode resultar em várias viagem de ida e volta na rede entre o cliente e o servidor, adicionando latência significativa. A agregação manipulada em um nível intermediário pode melhorar o desempenho e a experiência do usuário para o aplicativo cliente.
+- **Muitas viagens de ida e volta**: uma única página/tela no aplicativo cliente pode exigir diversas chamadas para vários serviços. Essa abordagem pode resultar em várias viagens de ida e volta da rede entre o cliente e o servidor, adicionando uma latência significativa. A agregação manipulada em um nível intermediário pode melhorar o desempenho e a experiência do usuário para o aplicativo cliente.
 
 - **Problemas de segurança**: sem um gateway, todos os microsserviços precisam ser expostos ao "mundo externo", tornando a superfície de ataque maior do que se você ocultar microsserviços internos que não são usados ​​diretamente pelos aplicativos cliente. Quanto menor a superfície de ataque, mais segura sua aplicação pode ser.
 
@@ -63,9 +63,9 @@ Portanto, ter um nível intermediário ou indireto (Gateway) pode ser muito conv
 
 ## <a name="what-is-the-api-gateway-pattern"></a>Por que o padrão de Gateway de API?
 
-Quando você projeta e cria aplicativos grandes ou complexos baseado em microsserviço com vários aplicativos cliente, uma boa abordagem a considerar pode ser um [Gateway de API](https://microservices.io/patterns/apigateway.html). Esse é um serviço que fornece um único ponto de entrada para determinados grupos de microsserviços. É semelhante ao [padrão fachada](https://en.wikipedia.org/wiki/Facade_pattern) do design orientado a objeto, mas, nesse caso, faz parte de um sistema distribuído. O padrão de Gateway de API às vezes também é conhecido como [BFF](https://samnewman.io/patterns/architectural/bff/) ("back-end para front-end"), porque ele é criado pensando nas necessidades do aplicativo cliente.
+Quando você projeta e cria aplicativos grandes ou complexos baseado em microsserviço com vários aplicativos cliente, uma boa abordagem a considerar pode ser um [Gateway de API](https://microservices.io/patterns/apigateway.html). Esse padrão é um serviço que fornece um ponto de entrada única para determinados grupos de microserviços. É semelhante ao [padrão fachada](https://en.wikipedia.org/wiki/Facade_pattern) do design orientado a objeto, mas, nesse caso, faz parte de um sistema distribuído. O padrão de Gateway de API às vezes também é conhecido como [BFF](https://samnewman.io/patterns/architectural/bff/) ("back-end para front-end"), porque ele é criado pensando nas necessidades do aplicativo cliente.
 
-Portanto, o gateway da API fica entre os aplicativos cliente e os microsserviços. Ele atua como um proxy reverso, encaminhando as solicitações de clientes para serviços. Ele também pode fornecer outros recursos paralelos, como autenticação, terminação SSL e cache.
+Portanto, o gateway da API fica entre os aplicativos cliente e os microsserviços. Ele atua como um proxy reverso, encaminhando as solicitações de clientes para serviços. Ele também pode fornecer outros recursos de corte cruzado, como autenticação, terminação de SSL e cache.
 
 A Figura 4-13 mostra como um Gateway de API personalizado pode se encaixar em uma arquitetura simplificada baseada em microsserviço com apenas alguns microsserviços.
 
@@ -87,7 +87,7 @@ Ao dividir a camada do Gateway de API em vários Gateways de API, se o aplicativ
 
 **Figura 4-13.1**. Uso de mostrando vários Gateways de API personalizados
 
-Figura 4-13.1 mostra os gateways de API que são separados por tipo de cliente; um para clientes móveis e outro para clientes Web. Um aplicativo Web tradicional se conecta a um microsserviço MVC que usa o Gateway de API Web. O exemplo ilustra uma arquitetura simplificada com vários gateways de API refinados. Nesse caso, os limites identificados para cada Gateway de API são baseados puramente no padrão [BFF](https://samnewman.io/patterns/architectural/bff/) ("Back-end para Front-end"), portanto, baseados apenas na API necessária por aplicativo cliente. Porém, em aplicativos maiores, você deve ir além e criar Gateways de API adicionais com base nos limites de negócios como um segundo fator de design.
+Figura 4-13.1 mostra os gateways de API que são separados por tipo de cliente; um para clientes móveis e outro para clientes Web. Um aplicativo Web tradicional se conecta a um microsserviço MVC que usa o Gateway de API Web. O exemplo ilustra uma arquitetura simplificada com vários gateways de API refinados. Nesse caso, os limites identificados para cada Gateway de API são baseados puramente no padrão [BFF](https://samnewman.io/patterns/architectural/bff/) ("Back-end para Front-end"), portanto, baseados apenas na API necessária por aplicativo cliente. Mas, em aplicativos maiores, você também deve ir além e criar outros gateways de API com base nos limites de negócios como um segundo design pivot.
 
 ## <a name="main-features-in-the-api-gateway-pattern"></a>Principais recursos do padrão de Gateway de API
 
@@ -103,7 +103,7 @@ Dependendo do produto do Gateway de API usado, ele poderá executar essa agrega�
 
 Para saber mais, confira o [Padrão de agregação de Gateway](/azure/architecture/patterns/gateway-aggregation).
 
-**Interesses paralelos ou descarregamento de gateway.** Dependendo dos recursos oferecidos por cada produto do Gateway de API, você pode descarregar a funcionalidade de microsserviços individuais para o gateway, o que simplifica a implementação de cada microsserviço ao consolidar interesses paralelos em uma camada. Isso é especialmente conveniente para recursos especializados que podem ser complexos de implementar adequadamente em cada microsserviço interno, como as seguintes funcionalidades:
+**Interesses paralelos ou descarregamento de gateway.** Dependendo dos recursos oferecidos por cada produto do Gateway de API, você pode descarregar a funcionalidade de microsserviços individuais para o gateway, o que simplifica a implementação de cada microsserviço ao consolidar interesses paralelos em uma camada. Essa abordagem é especialmente conveniente para recursos especializados que podem ser complexos de implementar corretamente em todos os microserviços internos, como a seguinte funcionalidade:
 
 - Autenticação e autorização
 - Integração de serviços de descoberta
@@ -136,7 +136,7 @@ O gerenciamento de API do Azure resolve o gateway de API e as necessidades de ge
 
 Os produtos de Gateway de API costumam atuar como um proxy reverso para comunicação de entrada, em que você também pode filtrar as APIs dos microsserviços internos e aplicar a autorização para as APIs publicadas nessa camada única.
 
-As informações disponíveis do sistema Gerenciamento de API ajudam a entender como as suas APIs estão sendo usadas e como elas são executadas. Isso ocorre porque você pode exibir relatórios de análise quase em tempo real e identificar tendências que podem afetar seus negócios. Além disso, você pode ter logs sobre a atividade de solicitação e resposta para mais análises online e offline.
+As informações disponíveis do sistema Gerenciamento de API ajudam a entender como as suas APIs estão sendo usadas e como elas são executadas. Eles fazem essa atividade permitindo que você exiba relatórios de análise quase em tempo real e identifique tendências que possam afetar seus negócios. Além disso, você pode ter logs sobre a atividade de solicitação e resposta para mais análises online e offline.
 
 Com o Gerenciamento de API do Azure, você pode proteger suas APIs usando uma chave, um token e filtragem de IP. Esses recursos permitem que você imponha cotas flexíveis e refinadas e limites de taxa, modifique a forma e o comportamento de suas APIs usando políticas e melhore o desempenho com o cache de resposta.
 
@@ -146,7 +146,7 @@ Neste guia e no aplicativo de exemplo de referência (eShopOnContainers), a arqu
 
 O [Ocelot](https://github.com/ThreeMammals/Ocelot) é um Gateway de API leve, recomendado para abordagens mais simples. O Ocelot é um gateway de API baseado em .NET Core de software livre, especialmente feito para arquiteturas de microserviços que precisam de pontos unificados de entrada em seus sistemas. É leve, rápido e escalonável e fornece roteamento e autenticação entre muitos outros recursos.
 
-O principal motivo para escolher Ocelot para o [aplicativo de referência eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) é porque o Ocelot é um gateway de API leve do .NET Core que pode ser implantado no mesmo ambiente de implantação de aplicativos em que você está implantando seus microserviços/contêineres, como um host do Docker, kubernetes, etc. E, como ele é baseado no .NET Core, ele é multiplataforma que permite que você implante no Linux ou no Windows.
+O principal motivo para escolher Ocelot para o [aplicativo de referência eShopOnContainers 2,0](https://github.com/dotnet-architecture/eShopOnContainers/releases/tag/2.0) é porque o Ocelot é um gateway de API leve do .NET Core que pode ser implantado no mesmo ambiente de implantação de aplicativos em que você está implantando seus microserviços/contêineres, como um host do Docker, kubernetes, etc. E, como ele é baseado no .NET Core, ele é multiplataforma que permite que você implante no Linux ou no Windows.
 
 Os diagramas anteriores que mostram os Gateways de API personalizados em execução nos contêineres correspondem precisamente ao modo como você também pode executar o Ocelot em um contêiner e em um aplicativo baseado em microsserviço.
 
@@ -166,7 +166,7 @@ Após as seções iniciais de explicação sobre arquitetura e padrões, as pró
 
 - Um Gateway de API requer custos adicionais de desenvolvimento e manutenção futura se incluir lógica personalizada e agregação de dados. Os desenvolvedores precisam atualizar o Gateway de API para expor os pontos de extremidade de cada microsserviço. Além disso, as alterações de implementação nos microsserviços internos podem causar alterações de código no nível do Gateway da API. No entanto, se o Gateway de API estiver apenas aplicando segurança, logon e controle de versão (como ao usar o Gerenciamento de API do Azure), esse custo de desenvolvimento adicional poderá não se aplicar.
 
-- Se o Gateway de API for desenvolvido por uma única equipe, poderá haver um gargalo de desenvolvimento. Esse é outro motivo pelo qual uma abordagem melhor é ter vários Gateways de API refinados que respondam às diferentes necessidades do cliente. Você também pode separar o Gateway de API internamente em várias áreas ou camadas de propriedade de diferentes equipes trabalhando em microsserviços internos.
+- Se o Gateway de API for desenvolvido por uma única equipe, poderá haver um gargalo de desenvolvimento. Esse aspecto é outro motivo pelo qual uma abordagem melhor é ter vários gateways de API multas que respondem a diferentes necessidades do cliente. Você também pode separar o Gateway de API internamente em várias áreas ou camadas de propriedade de diferentes equipes trabalhando em microsserviços internos.
 
 ## <a name="additional-resources"></a>Recursos adicionais
 

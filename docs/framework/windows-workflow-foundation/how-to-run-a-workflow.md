@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f814ff82-fe2b-4614-aebb-b768c3e61179
-ms.openlocfilehash: 7f76ed5ad1a76a155489339a9febf12eefd64ae8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b92385fa169e03254abdf940f2964c1966cbc2ce
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279981"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190085"
 ---
 # <a name="how-to-run-a-workflow"></a>Como: executar um fluxo de trabalho
 
@@ -19,9 +19,6 @@ Este tópico é uma continuação do tutorial de Introdução Windows Workflow F
 
 > [!NOTE]
 > Cada tópico do tutorial de Introdução depende dos tópicos anteriores. Para concluir este tópico, você deve primeiro concluir [como: criar uma atividade](how-to-create-an-activity.md) e [como criar um fluxo de trabalho](how-to-create-a-workflow.md).
-
-> [!NOTE]
-> Para baixar uma versão completa do tutorial, consulte [Windows Workflow Foundation (WF45) – introdução tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ### <a name="to-create-the-workflow-host-project"></a>Para criar o projeto de host de fluxo de trabalho  
   
@@ -162,7 +159,7 @@ Este tópico é uma continuação do tutorial de Introdução Windows Workflow F
  [!code-csharp[CFX_WF_GettingStarted#12](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#12)]
  [!code-vb[CFX_WF_GettingStarted#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#12)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Activities.WorkflowApplication>
 - <xref:System.Activities.Bookmark>

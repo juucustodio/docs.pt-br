@@ -1,13 +1,13 @@
 ---
 title: Comunicação assíncrona baseada em mensagens
 description: Arquitetura de Microsserviços do .NET para Aplicativos .NET em Contêineres | A comunicação assíncrona baseada em mensagens é um conceito essencial na arquitetura de microsserviços, porque ela é a melhor maneira de manter microsserviços independentes uns dos outros, estando também simultaneamente sincronizados no fim das contas.
-ms.date: 09/20/2018
-ms.openlocfilehash: 17b3fb3fe3f94d5387359061e3297ebfa6e5be7a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: f9d92e2640721b12d47223902712c420b06a5618
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169239"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189584"
 ---
 # <a name="asynchronous-message-based-communication"></a>Comunicação assíncrona baseada em mensagens
 
@@ -45,9 +45,9 @@ Ao usar uma comunicação de publicação/assinatura, talvez você esteja usando
 
 ## <a name="asynchronous-event-driven-communication"></a>Comunicação controlada por evento assíncrono
 
-Ao usar comunicação controlada por evento assíncrono, um microsserviço publica um evento de integração quando acontece algo em seu domínio e outro microsserviço precisa estar ciente disso, como uma alteração de preço em um microsserviço do catálogo de produtos. Microsserviços adicionais assinam os eventos para que possam recebê-los de maneira assíncrona. Quando isso acontece, os receptores podem atualizar as próprias entidades de domínio, o que podem causar a publicação de mais eventos de integração. Este sistema de publicação/assinatura normalmente é executado por meio de uma implementação de um barramento de evento. O barramento de evento pode ser projetado como uma abstração ou interface, com a API que é necessária para assinar ou cancelar a assinatura de eventos e para publicar eventos. O barramento de evento também pode ter uma ou mais implementações com base em qualquer agente de mensagens e entre processos, como uma fila de mensagens ou barramento de serviço que seja compatível com a comunicação assíncrona e um modelo de publicação/assinatura.
+Ao usar comunicação controlada por evento assíncrono, um microsserviço publica um evento de integração quando acontece algo em seu domínio e outro microsserviço precisa estar ciente disso, como uma alteração de preço em um microsserviço do catálogo de produtos. Microsserviços adicionais assinam os eventos para que possam recebê-los de maneira assíncrona. Quando isso acontece, os receptores podem atualizar as próprias entidades de domínio, o que podem causar a publicação de mais eventos de integração. Esse sistema de publicação/assinatura é executado usando uma implementação de um barramento de evento. O barramento de evento pode ser projetado como uma abstração ou interface, com a API que é necessária para assinar ou cancelar a assinatura de eventos e para publicar eventos. O barramento de evento também pode ter uma ou mais implementações com base em qualquer agente de mensagens e entre processos, como uma fila de mensagens ou barramento de serviço que seja compatível com a comunicação assíncrona e um modelo de publicação/assinatura.
 
-Se um sistema usa consistência eventual orientada por eventos de integração, é recomendável que essa abordagem fique completamente clara para o usuário final. O sistema não deve usar uma abordagem que simule eventos de integração, como sistemas de sondagem ou SignalR do cliente. O usuário final e o proprietário da empresa precisam adotar explicitamente consistência eventual no sistema e observar que, em muitos casos, os negócios não têm nenhum problema com essa abordagem, desde que ela seja explícita. Isso é importante porque os usuários podem esperar ver alguns resultados imediatamente e isso pode não acontecer com a consistência eventual.
+Se um sistema usa consistência eventual controlada por eventos de integração, é recomendável que essa abordagem seja clara para o usuário final. O sistema não deve usar uma abordagem que simule eventos de integração, como sistemas de sondagem ou SignalR do cliente. O usuário final e o proprietário da empresa precisam adotar explicitamente consistência eventual no sistema e observar que, em muitos casos, os negócios não têm nenhum problema com essa abordagem, desde que ela seja explícita. Essa abordagem é importante porque os usuários podem esperar ver alguns resultados imediatamente e esse aspecto pode não acontecer com consistência eventual.
 
 Conforme observado anteriormente na seção [Desafios e soluções para o gerenciamento de dados distribuídos](distributed-data-management.md), você pode usar eventos de integração para implementar as tarefas de negócios que abrangem vários microsserviços. Assim, você terá consistência eventual entre esses serviços. Uma transação eventualmente consistente é composta por uma coleção de ações distribuídas. Em cada ação, o microsserviço relacionado atualiza uma entidade de domínio e publica outro evento de integração que gera a próxima ação dentro da mesma tarefa comercial de ponta a ponta.
 
@@ -69,11 +69,11 @@ No entanto, para sistemas críticos e de produção que precisam de hiperescalab
 
 ## <a name="resiliently-publishing-to-the-event-bus"></a>Publicação resiliente para o barramento de evento
 
-Um desafio ao implementar uma arquitetura orientada a eventos em vários microsserviços é como atualizar atomicamente o estado no microsserviço original enquanto publica de maneira resiliente o evento de integração relacionado no barramento de evento, de alguma maneira baseado em transações. A seguir estão algumas maneiras de fazer isso, embora haja outras abordagens também.
+Um desafio ao implementar uma arquitetura orientada a eventos em vários microsserviços é como atualizar atomicamente o estado no microsserviço original enquanto publica de maneira resiliente o evento de integração relacionado no barramento de evento, de alguma maneira baseado em transações. Veja a seguir algumas maneiras de realizar essa funcionalidade, embora também possa haver abordagens adicionais.
 
 - Usando uma fila transacional (baseada em DTC) como MSMQ. (No entanto, essa é uma abordagem herdada.)
 
-- Usando [mineração do log de transações](https://www.scoop.it/t/sql-server-transaction-log-mining).
+- Usando mineração do log de transações.
 
 - Usando o padrão [Event Sourcing](/azure/architecture/patterns/event-sourcing) completo.
 

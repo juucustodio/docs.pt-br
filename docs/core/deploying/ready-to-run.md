@@ -4,12 +4,12 @@ description: Saiba o que são implantações ReadyToRun e por que você deve con
 author: davidwr
 ms.author: davidwr
 ms.date: 09/21/2020
-ms.openlocfilehash: cd8eaebd05d79b11e90e255e702a52220fffda76
-ms.sourcegitcommit: ffd4d5e824db6c5f0c3521c0e802fd9e8f0edcbe
+ms.openlocfilehash: 3302e5e18a20965a1eff1f09737910e924ed6d08
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93342625"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188602"
 ---
 # <a name="readytorun-compilation"></a>Compilação ReadyToRun
 
@@ -17,7 +17,7 @@ A latência e o tempo de inicialização do aplicativo .NET podem ser aprimorado
 
 Os binários R2R melhoram o desempenho de inicialização reduzindo a quantidade de trabalho que o compilador just-in-time (JIT) precisa fazer à medida que seu aplicativo é carregado. Os binários contêm código nativo similar comparado ao que o JIT produziria. Entretanto, os binários R2R são maiores porque contêm código de IL (linguagem intermediária), que ainda é necessário para alguns cenários, e a versão nativa do mesmo código. O R2R só está disponível quando você publica um aplicativo destinado a ambientes de tempo de execução específicos (RID), como Linux x64 ou Windows x64.
 
-Para compilar seu projeto como ReadyToRun, o aplicativo deve ser publicado com a propriedade PublishReadyToRun definida como true.
+Para compilar seu projeto como ReadyToRun, o aplicativo deve ser publicado com a propriedade PublishReadyToRun definida como `true` .
 
 Há duas maneiras de publicar seu aplicativo como ReadyToRun:
 
@@ -27,7 +27,7 @@ Há duas maneiras de publicar seu aplicativo como ReadyToRun:
     dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true
     ```
 
-02. Especifique a propriedade no projeto
+02. Especifique a propriedade no projeto.
 
     - Adicione a `<PublishReadyToRun>` configuração ao seu projeto.
 
@@ -45,13 +45,13 @@ Há duas maneiras de publicar seu aplicativo como ReadyToRun:
 
 ## <a name="impact-of-using-the-readytorun-feature"></a>Impacto do uso do recurso ReadyToRun
 
-A compilação antecipada tem um impacto complexo no desempenho do aplicativo, o que pode ser difícil de prever. Em geral, o tamanho de um assembly aumentará entre dois a três vezes maior. Esse aumento no tamanho físico do arquivo pode reduzir o desempenho do carregamento do assembly do disco e aumentar o conjunto de trabalho do processo. No entanto, em retorno, o número de métodos compilados no tempo de execução normalmente é reduzido substancialmente. O resultado é que a maioria dos aplicativos que têm grandes quantidades de código recebem grandes benefícios de desempenho ao habilitar o ReadyToRun. Os aplicativos, que têm pequenas quantidades de código, provavelmente não terão uma melhoria significativa da habilitação de ReadyToRun, já que as bibliotecas de tempo de execução do .NET ainda foram pré-compiladas com o ReadyToRun.
+A compilação antecipada tem um impacto complexo no desempenho do aplicativo, o que pode ser difícil de prever. Em geral, o tamanho de um assembly aumentará entre dois a três vezes maior. Esse aumento no tamanho físico do arquivo pode reduzir o desempenho do carregamento do assembly do disco e aumentar o conjunto de trabalho do processo. No entanto, em retorno, o número de métodos compilados no tempo de execução normalmente é reduzido substancialmente. O resultado é que a maioria dos aplicativos que têm grandes quantidades de código recebem grandes benefícios de desempenho ao habilitar o ReadyToRun. Aplicativos que têm pequenas quantidades de código provavelmente não terão uma melhoria significativa da habilitação de ReadyToRun, já que as bibliotecas de tempo de execução do .NET ainda foram pré-compiladas com o ReadyToRun.
 
 A melhoria da inicialização discutida aqui se aplica não apenas à inicialização do aplicativo, mas também ao primeiro uso de qualquer código no aplicativo. Por exemplo, ReadyToRun pode ser usado para reduzir a latência de resposta do primeiro uso da API Web em um aplicativo ASP.NET.
 
 ### <a name="interaction-with-tiered-compilation"></a>Interação com compilação em camadas
 
-O antes do tempo gerado não é tão otimizado quanto o código produzido pelo JIT. Para resolver esse problema, a compilação em camadas substituirá os métodos ReadyToRun usados com métodos gerados por JIT.
+O código gerado antes do tempo não é tão otimizado quanto o código produzido pelo JIT. Para resolver esse problema, a compilação em camadas substituirá os métodos ReadyToRun usados com métodos gerados por JIT.
 
 ## <a name="how-is-the-set-of-precompiled-assemblies-chosen"></a>Como o conjunto de assemblies pré-compilados é escolhido?
 
@@ -59,15 +59,13 @@ O SDK irá pré-compilar os assemblies que são distribuídos com o aplicativo. 
 
 ## <a name="how-is-the-set-of-methods-to-precompile-chosen"></a>Como é escolhido o conjunto de métodos para pré-compilação?
 
-O compilador tentará pré-compilar previamente o máximo de métodos possível. No entanto, vários motivos pelos quais não se espera que o uso do recurso ReadyToRun resultarão em impedir a execução do JIT.
+O compilador tentará pré-compilar previamente o máximo de métodos possível. No entanto, por vários motivos, não se espera que o uso do recurso ReadyToRun impedirá que o JIT seja executado. Tais motivos podem incluir, mas não estão limitados a:
 
-Tais motivos podem incluir, mas não estão limitados a:
-
-- Uso de tipos genéricos definidos em assemblies separados
-- Interoperabilidade com código nativo
-- O uso de intrínsecos de hardware que o compilador não pode provar é seguro para uso em um computador de destino
-- Certos padrões de IL incomum
-- Criação dinâmica de métodos via reflexão ou LINQ
+- Uso de tipos genéricos definidos em assemblies separados.
+- Interoperabilidade com código nativo.
+- O uso de intrínsecos de hardware que o compilador não pode provar é seguro para uso em um computador de destino.
+- Determinados padrões de IL incomum.
+- Criação dinâmica de métodos via reflexão ou LINQ.
 
 ## <a name="cross-platformarchitecture-restrictions"></a>Restrições de plataforma cruzada/arquitetura
 

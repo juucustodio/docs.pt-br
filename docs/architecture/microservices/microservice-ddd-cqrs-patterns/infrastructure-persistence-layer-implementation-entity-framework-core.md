@@ -1,19 +1,19 @@
 ---
 title: Implementando a camada de persistência da infraestrutura com o Entity Framework Core
 description: Arquitetura de microserviços .NET para aplicativos .NET em contêineres | Explore os detalhes de implementação da camada de persistência de infraestrutura, usando Entity Framework Core.
-ms.date: 01/30/2020
-ms.openlocfilehash: 878d4d64e92ca92fd2393d60d496f1c5671e7029
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: 2c7b6dbe2f59a26d33a4842e74aed2b7588bd14d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172346"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188888"
 ---
 # <a name="implement-the-infrastructure-persistence-layer-with-entity-framework-core"></a>Implementar a camada de persistência de infraestrutura com o Entity Framework Core
 
 Ao usar bancos de dados relacionais, como o SQL Server, o Oracle ou o PostgreSQL, uma abordagem recomendada é implementar a camada de persistência com base no EF (Entity Framework). O EF é compatível com LINQ e fornece objetos fortemente tipados para o modelo, bem como uma persistência simplificada no banco de dados.
 
-O Entity Framework tem uma longa história de participação no .NET Framework. Ao usar o .NET Core, você também deve usar o Entity Framework Core, que é executado no Windows ou no Linux da mesma maneira que o .NET Core. EF Core é uma reescrita completa de Entity Framework implementada com uma superfície muito menor e melhorias importantes no desempenho.
+O Entity Framework tem uma longa história de participação no .NET Framework. Ao usar o .NET, você também deve usar Entity Framework Core, que é executado no Windows ou no Linux da mesma maneira que o .NET. EF Core é uma reescrita completa de Entity Framework implementada com uma superfície muito menor e melhorias importantes no desempenho.
 
 ## <a name="introduction-to-entity-framework-core"></a>Introdução ao Entity Framework Core
 

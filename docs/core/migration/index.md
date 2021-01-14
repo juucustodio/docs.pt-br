@@ -2,12 +2,12 @@
 title: Migração do .NET Core com project.json
 description: Saiba como migrar um projeto .NET Core mais antigo usando project.json
 ms.date: 07/19/2017
-ms.openlocfilehash: 73fbfed6943e3eb535e6eead3b3496edd3426c26
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 28da1723ed91d169305c2865c5346b8ce6e0b3d1
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970714"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189693"
 ---
 # <a name="migrating-net-core-projects-from-projectjson"></a>Migração de projetos do .NET Core com project.json
 
@@ -78,7 +78,7 @@ O formato csproj do .NET Core foi mudando e evoluindo com cada nova versão de p
 - Remova o namespace de XML (`xmlns`) do elemento `<Project>`.
 - Se ele não existir, adicione o atributo `Sdk` ao elemento `<Project>` e defina-o como `Microsoft.NET.Sdk` ou `Microsoft.NET.Sdk.Web`. Esse atributo especifica que o projeto usa o SDK que será utilizado. `Microsoft.NET.Sdk.Web` é usado em aplicativos Web.
 - Remova as instruções `<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />` e `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` da parte superior e inferior do projeto. Essas instruções estão implícitas no SDK. Portanto, não é necessário que elas estejam no projeto.
-- Se você tiver `Microsoft.NETCore.App` ou `NETStandard.Library` `<PackageReference>` itens em seu projeto, deverá removê-los. Essas referências do pacote estão [implícitas no SDK](../tools/csproj.md).
+- Se você tiver `Microsoft.NETCore.App` ou `NETStandard.Library` `<PackageReference>` itens em seu projeto, deverá removê-los. Essas referências do pacote estão [implícitas no SDK](../project-sdk/overview.md).
 - Remova o `Microsoft.NET.Sdk` `<PackageReference>` elemento, se ele existir. A referência do SDK é fornecida por meio do atributo `Sdk` no elemento `<Project>`.
 - Remova os [globs](https://en.wikipedia.org/wiki/Glob_(programming)) que são [implícitos pelo SDK](../project-sdk/overview.md#default-includes-and-excludes). Deixar esses globs em seu projeto causará um erro no build, uma vez que os itens de compilação serão duplicados.
 
@@ -86,6 +86,6 @@ Após essas etapas, seu projeto deverá estar totalmente compatível com o forma
 
 Para obter exemplos de antes e depois da migração do formato csproj antigo para o novo, consulte o artigo [Updating Visual Studio 2017 RC – .NET Core Tooling improvements](https://devblogs.microsoft.com/dotnet/updating-visual-studio-2017-rc-net-core-tooling-improvements/) (Atualizando o Visual Studio 2017 RC – melhorias na ferramenta .NET Core) no blog do .NET.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Portar, migrar e atualizar projetos do Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)

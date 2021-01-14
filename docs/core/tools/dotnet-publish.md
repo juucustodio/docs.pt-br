@@ -2,18 +2,18 @@
 title: Comando dotnet publish
 description: O comando dotnet publish publica um projeto ou uma solução .NET em um diretório.
 ms.date: 11/11/2020
-ms.openlocfilehash: 9b5d00816e2f4f9557280175e4b016fe79af0673
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 3918c0708e207157ac33dd1a8fdefb993a1d6741
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634423"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190059"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,1 e versões posteriores
 
-## <a name="name"></a>Name
+## <a name="name"></a>Nome
 
 `dotnet publish` – Publica o aplicativo e suas dependências em uma pasta para implantação em um sistema de hospedagem.
 
@@ -32,7 +32,7 @@ dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
 dotnet publish -h|--help
 ```
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 `dotnet publish` compila o aplicativo, lê suas dependências especificadas no arquivo de projeto e publica o conjunto de arquivos resultantes em um diretório. A saída inclui os seguintes ativos:
 
@@ -72,8 +72,8 @@ Para obter mais informações, consulte os seguintes recursos:
 - **`PROJECT|SOLUTION`**
 
   O projeto ou solução a ser publicada.
-  
-  * `PROJECT` é o caminho e o nome de arquivo de um Visual Basic de projeto em [c#](csproj.md), f # ou Visual Basic, ou o caminho para um diretório que contém um arquivo de projeto C#, f # ou. Se o diretório não for especificado, o padrão será o diretório atual.
+
+  * `PROJECT` é o caminho e o nome de arquivo de um Visual Basic de projeto em C#, F # ou Visual Basic, ou o caminho para um diretório que contém um arquivo de projeto C#, F # ou. Se o diretório não for especificado, o padrão será o diretório atual.
 
   * `SOLUTION` é o caminho e o nome de arquivo de uma solução (extensão *. sln* ) ou o caminho para um diretório que contém um arquivo de solução. Se o diretório não for especificado, o padrão será o diretório atual. Disponível desde o SDK do .NET Core 3.0.
 
@@ -125,23 +125,23 @@ Para obter mais informações, consulte os seguintes recursos:
   
   Se não for especificado, o padrão é *[project_file_folder]/bin/[Configuration]/[Framework]/Publish/* para um executável dependente de estrutura e binários de plataforma cruzada. O padrão é *[project_file_folder]/bin/[Configuration]/[Framework]/[Runtime]/Publish/* para um executável independente.
 
-  Em um projeto Web, se a pasta de saída estiver na pasta do projeto, os `dotnet publish` comandos sucessivos resultarão em pastas de saída aninhadas. Por exemplo, se a pasta do projeto *for MyProject* e a pasta de saída de publicação for *MyProject/Publish* e você `dotnet publish` executar duas vezes, a segunda execução colocará arquivos de conteúdo como arquivos *. config* e *. JSON* no *MyProject/publicar/Publish*. Para evitar o aninhamento de pastas de publicação, especifique uma pasta de publicação que não esteja **diretamente** sob a pasta do projeto ou exclua a pasta de publicação do projeto. Para excluir uma pasta de publicação chamada *publishoutput* , adicione o seguinte elemento a um `PropertyGroup` elemento no arquivo *. csproj* :
+  Em um projeto Web, se a pasta de saída estiver na pasta do projeto, os `dotnet publish` comandos sucessivos resultarão em pastas de saída aninhadas. Por exemplo, se a pasta do projeto *for MyProject* e a pasta de saída de publicação for *MyProject/Publish* e você `dotnet publish` executar duas vezes, a segunda execução colocará arquivos de conteúdo como arquivos *. config* e *. JSON* no *MyProject/publicar/Publish*. Para evitar o aninhamento de pastas de publicação, especifique uma pasta de publicação que não esteja **diretamente** sob a pasta do projeto ou exclua a pasta de publicação do projeto. Para excluir uma pasta de publicação chamada *publishoutput*, adicione o seguinte elemento a um `PropertyGroup` elemento no arquivo *. csproj* :
 
   ```xml
   <DefaultItemExcludes>$(DefaultItemExcludes);publishoutput**</DefaultItemExcludes>
   ```
 
   - SDK do .NET Core 3. x e posterior
-  
-    Se um caminho relativo for especificado durante a publicação de um projeto, o diretório de saída gerado será relativo ao diretório de trabalho atual, não ao local do arquivo do projeto.
 
-    Se um caminho relativo for especificado durante a publicação de uma solução, toda a saída de todos os projetos entrará na pasta especificada em relação ao diretório de trabalho atual. Para fazer com que a saída de publicação vá para pastas separadas para cada projeto, especifique um caminho relativo usando a `PublishDir` Propriedade MSBuild em vez da `--output` opção. Por exemplo, `dotnet publish -p:PublishDir=.\publish` envia a saída de publicação para cada projeto em uma `publish` pasta sob a pasta que contém o arquivo de projeto.
+    Se você especificar um caminho relativo ao publicar um projeto, o diretório de saída gerado será relativo ao diretório de trabalho atual, não ao local do arquivo do projeto.
+
+    Se você especificar um caminho relativo ao publicar uma solução, toda a saída de todos os projetos entrará na pasta especificada em relação ao diretório de trabalho atual. Para fazer com que a saída de publicação vá para pastas separadas para cada projeto, especifique um caminho relativo usando a `PublishDir` Propriedade MSBuild em vez da `--output` opção. Por exemplo, `dotnet publish -p:PublishDir=.\publish` envia a saída de publicação para cada projeto em uma `publish` pasta sob a pasta que contém o arquivo de projeto.
 
   - SDK do .NET Core 2. x
-  
-    Se um caminho relativo for especificado durante a publicação de um projeto, o diretório de saída gerado será relativo ao local do arquivo de projeto, não ao diretório de trabalho atual.
 
-    Se um caminho relativo for especificado durante a publicação de uma solução, a saída de cada projeto entrará em uma pasta separada relativa ao local do arquivo de projeto. Se um caminho absoluto for especificado durante a publicação de uma solução, toda a saída de publicação de todos os projetos vai para a pasta especificada.
+    Se você especificar um caminho relativo ao publicar um projeto, o diretório de saída gerado será relativo ao local do arquivo de projeto, não ao diretório de trabalho atual.
+
+    Se você especificar um caminho relativo ao publicar uma solução, a saída de cada projeto entrará em uma pasta separada relativa ao local do arquivo do projeto. Se você especificar um caminho absoluto ao publicar uma solução, toda a saída de publicação de todos os projetos vai para a pasta especificada.
 
 - **`-p:PublishReadyToRun=true`**
 
@@ -229,7 +229,7 @@ Para obter mais informações, consulte os seguintes recursos:
   dotnet publish --no-dependencies
   ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral da publicação de aplicativos .NET](../deploying/index.md)
 - [Publicar aplicativos .NET com a CLI do .NET](../deploying/deploy-with-cli.md)

@@ -2,12 +2,12 @@
 title: Despejos-.NET
 description: Uma introdução a despejos no .NET.
 ms.date: 10/12/2020
-ms.openlocfilehash: 7a4c7bf54b3e9ea43e685eafbd00b4a373326520
-ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
+ms.openlocfilehash: f68d9bd804350366625df014df4d9ca0641d5d4d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97764936"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188550"
 ---
 # <a name="dumps"></a>Despejos
 
@@ -19,7 +19,6 @@ Os despejos podem ser coletados de diversas maneiras, dependendo de em qual plat
 
 > [!NOTE]
 > A coleta de um despejo dentro de um contêiner requer o recurso PTRACE, que pode ser adicionado via `--cap-add=SYS_PTRACE` ou `--privileged` .
-
 > [!NOTE]
 > Os despejos podem conter informações confidenciais, pois podem conter a memória total do processo em execução. Lide com as restrições de segurança e as orientações em mente.
 
@@ -53,15 +52,14 @@ Para coletar o despejo em sua própria solicitação, você pode usar o `dotnet-
 
 ## <a name="analyze-dumps"></a>Analisar despejos
 
-Você pode anlayze despejos usando a [`dotnet-dump`](dotnet-dump.md) ferramenta CLI ou com o [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/using-dump-files).
+Você pode anlayze despejos usando a [`dotnet-dump`](dotnet-dump.md) ferramenta CLI ou com o [Visual Studio](/visualstudio/debugger/using-dump-files).
 
 > [!NOTE]
 > O Visual Studio versão 16,8 e posterior permite que você [abra despejos do Linux](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/) gerados no .NET Core 3.1.7 ou posterior.  
-
 > [!NOTE]
 > Se a depuração nativa for necessária, a [extensão do depurador SOS](sos-debugging-extension.md) poderá ser usada com [LLDB no Linux e no MacOS](debug-linux-dumps.md#analyze-dumps-on-linux). O SOS também tem suporte com o [windbg/CDB](/windows-hardware/drivers/debugger/debugger-download-tools) no Windows, embora o Visual Studio seja recomendado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 Saiba mais sobre como você pode aproveitar os despejos para ajudar a diagnosticar problemas em seu aplicativo .NET.
 

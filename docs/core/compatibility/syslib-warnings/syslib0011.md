@@ -3,12 +3,12 @@ title: Aviso de SYSLIB0011
 description: Saiba mais sobre o obsoletions que gera SYSLIB0011 de aviso de tempo de compilação.
 ms.topic: reference
 ms.date: 10/20/2020
-ms.openlocfilehash: 36292cc5314e2b7677d705780880b7e25ae0dfb6
-ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
+ms.openlocfilehash: 85b5e07b1ecd6852d8c8e93cc3e89ced4b021ef9
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97596439"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189851"
 ---
 # <a name="syslib0011-binaryformatter-serialization-is-obsolete"></a>SYSLIB0011: a serialização BinaryFormatter está obsoleta
 
@@ -25,11 +25,11 @@ Devido a [vulnerabilidades de segurança](../../../standard/serialization/binary
 
 Considere usar <xref:System.Text.Json.JsonSerializer> ou <xref:System.Xml.Serialization.XmlSerializer> em vez de <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> .
 
-Para obter mais informações sobre as ações recomendadas, consulte [Resolvendo erros de BinaryFormatter obsoletion e de desativação](https://aka.ms/binaryformatter).
+Para obter mais informações sobre as ações recomendadas, consulte [Resolvendo erros de BinaryFormatter obsoletion e de desativação](../../../standard/serialization/binaryformatter-security-guide.md).
 
 [!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
 
 ## <a name="see-also"></a>Confira também
 
-- [Resolvendo erros de desativação e BinaryFormatter obsoletion](https://aka.ms/binaryformatter)
+- [Resolvendo erros de desativação e BinaryFormatter obsoletion](../../../standard/serialization/binaryformatter-security-guide.md)
 - [Os métodos de serialização BinaryFormatter são obsoletos e proibidos em aplicativos ASP.NET](../core-libraries/5.0/binaryformatter-serialization-obsolete.md)

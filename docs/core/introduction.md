@@ -4,12 +4,12 @@ description: Saiba mais sobre o .NET, uma plataforma de desenvolvimento de softw
 author: tdykstra
 ms.date: 11/16/2020
 ms.custom: updateeachrelease
-ms.openlocfilehash: 0adc348c1fc340fe481d9987cdbe28c6cf8b065d
-ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
+ms.openlocfilehash: e0c86b377d4ea73bb275bc48c0f0cccb2db249dd
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97938670"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189994"
 ---
 # <a name="introduction-to-net"></a>Introdução ao .NET
 
@@ -24,10 +24,10 @@ O .NET é uma plataforma de desenvolvimento de software livre gratuita para a cr
   * [Windows Forms](/dotnet/desktop/winforms/)
   * [UWP (Plataforma Universal do Windows)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)
 * [Jogos](https://dotnet.microsoft.com/apps/games)
-* [Internet das coisas (IoT)](/dotnet/iot)
+* [Internet das coisas (IoT)](../iot/index.yml)
 * [Aprendizado de máquina](../machine-learning/index.yml)
 * [Aplicativos de console](tutorials/with-visual-studio-code.md)
-* [Serviços do Windows](/aspnet/core/host-and-deploy/windows-service)
+* [Serviços Windows](/aspnet/core/host-and-deploy/windows-service)
 
 Compartilhe a funcionalidade entre diferentes aplicativos e tipos de aplicativos usando [bibliotecas de classes](../standard/class-libraries.md).
 
@@ -335,7 +335,7 @@ Para obter mais informações, consulte [componentes arquitetônicos .net](../st
 
 Algumas das terminologias do .NET podem ser confusas porque a mesma palavra é usada de maneiras diferentes em diferentes contextos. Aqui estão algumas das instâncias mais proeminentes:
 
-* **runtime**
+* **appmodel**
 
   |Contexto  |"tempo de execução" significando |
   |---------|---------|

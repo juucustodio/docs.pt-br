@@ -2,12 +2,12 @@
 title: dotnet-ferramenta de diagnóstico do gcdump – CLI do .NET
 description: Saiba como instalar e usar a ferramenta de CLI do dotnet-gcdump para coletar despejos de GC (coletor de lixo) de processos do .NET em tempo real usando o .NET EventPipe.
 ms.date: 11/17/2020
-ms.openlocfilehash: 02e1a7c5d86b582289672a027464aefd67a6f490
-ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
+ms.openlocfilehash: fe7772eed642daadbd1754627751f58d0ab57b8e
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97593364"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188563"
 ---
 # <a name="heap-analysis-tool-dotnet-gcdump"></a>Ferramenta de análise de heap (dotNet-gcdump)
 
@@ -34,6 +34,9 @@ Há duas maneiras de baixar e instalar `dotnet-gcdump` :
   | Windows | [x86](https://aka.ms/dotnet-gcdump/win-x86) \| [x64](https://aka.ms/dotnet-gcdump/win-x64) \| [ARM](https://aka.ms/dotnet-gcdump/win-arm) \| [ARM-x64](https://aka.ms/dotnet-gcdump/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-gcdump/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-gcdump/linux-x64) \| [ARM](https://aka.ms/dotnet-gcdump/linux-arm) \| [arm64](https://aka.ms/dotnet-gcdump/linux-arm64) \| [MUSL-x64](https://aka.ms/dotnet-gcdump/linux-musl-x64) \| [MUSL-arm64](https://aka.ms/dotnet-gcdump/linux-musl-arm64) |
+
+> [!NOTE]
+> Para usar `dotnet-gcdump` o em um aplicativo x86, você precisa de uma versão x86 correspondente da ferramenta.
 
 ## <a name="synopsis"></a>Sinopse
 
@@ -104,6 +107,12 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 
   O nome do processo do qual coletar o despejo do GC.
 
+> [!NOTE]
+> No Linux e no macOS, esse comando espera o aplicativo de destino e `dotnet-gcdump` compartilha a mesma `TMPDIR` variável de ambiente. Caso contrário, o comando atingirá o tempo limite.
+
+> [!NOTE]
+> Para coletar um despejo de GC usando `dotnet-gcdump` o, ele precisa ser executado como o mesmo usuário que o usuário que está executando o processo de destino ou como raiz. Caso contrário, a ferramenta não conseguirá estabelecer uma conexão com o processo de destino.
+
 ## `dotnet-gcdump ps`
 
 Lista os processos dotnet para os quais os despejos de GC podem ser coletados.
@@ -138,7 +147,7 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
   O tipo de relatório a ser gerado. Opções disponíveis: heapstat (padrão).
 
-## <a name="troubleshoot"></a>Solucionar problemas
+## <a name="troubleshoot"></a>Solução de problemas
 
 - Não há nenhuma informação de tipo no gcdump.
 

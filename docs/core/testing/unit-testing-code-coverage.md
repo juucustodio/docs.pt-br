@@ -4,16 +4,16 @@ description: Saiba como usar os recursos de cobertura de código para testes de 
 author: IEvangelist
 ms.author: dapine
 ms.date: 07/01/2020
-ms.openlocfilehash: 4d2c8f3db26eaabcb973378a349ef57912e92bfa
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 98652de8e8b5c3765dfee8e1b511399bc5a0be25
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538141"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189649"
 ---
 # <a name="use-code-coverage-for-unit-testing"></a>Usar cobertura de código para teste de unidade
 
-Os testes de unidade ajudam a garantir a funcionalidade e fornecem um meio de verificação para esforços de refatoração. A cobertura de código é uma medida da quantidade de código que é executada por testes de unidade: ambas as linhas, ramificações ou métodos. Por exemplo, se você tiver um aplicativo simples com apenas duas ramificações condicionais de código (_Branch a_e _Branch b_), um teste de unidade que verifica _a ramificação_ condicional que relatará a cobertura de código de ramificação de 50%.
+Os testes de unidade ajudam a garantir a funcionalidade e fornecem um meio de verificação para esforços de refatoração. A cobertura de código é uma medida da quantidade de código que é executada por testes de unidade: ambas as linhas, ramificações ou métodos. Por exemplo, se você tiver um aplicativo simples com apenas duas ramificações condicionais de código (_Branch a_ e _Branch b_), um teste de unidade que verifica _a ramificação_ condicional que relatará a cobertura de código de ramificação de 50%.
 
 Este artigo aborda o uso da cobertura de código para testes de unidade com coverlet e geração de relatórios usando o ReportGenerator. Embora este artigo se concentre em C# e xUnit como a estrutura de teste, o MSTest e o NUnit também funcionariam. O coverlet é um projeto de software livre [no GitHub](https://github.com/coverlet-coverage/coverlet) que fornece uma estrutura de cobertura de código de plataforma cruzada para C#. O [coverlet](https://dotnetfoundation.org/projects/coverlet) faz parte do .net Foundation. O coverlet coleta dados de execução de teste de cobertura de cobertura, que são usados para geração de relatórios.
 
@@ -297,7 +297,7 @@ Depois de executar esse comando, um arquivo HTML representa o relatório gerado.
 
 ## <a name="see-also"></a>Confira também
 
-- [Cobertura da capa de teste de unidade do Visual Studio](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
+- [Cobertura de código de teste de unidade do Visual Studio](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
 - [Repositório GitHub-coverlet](https://github.com/coverlet-coverage/coverlet)
 - [Repositório GitHub-ReportGenerator](https://github.com/danielpalme/ReportGenerator)
 - [Site do projeto ReportGenerator](https://danielpalme.github.io/ReportGenerator)

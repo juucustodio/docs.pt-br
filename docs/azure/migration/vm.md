@@ -3,18 +3,18 @@ title: Migrar um aplicativo Web ASP.NET para uma VM do Azure
 description: Saiba como migrar um aplicativo Web ASP.NET do local para uma Máquina Virtual do Azure.
 ms.topic: how-to
 ms.date: 06/20/2020
-ms.openlocfilehash: 940243310c5e6ed13d2a42c8d9d87244200479f5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0bf591ce0bd02537414527c8f3ba22bd41cf51d6
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91171553"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189207"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Migrar um aplicativo Web ASP.NET para uma Máquina Virtual do Azure
 
 Este documento fornece uma visão geral de como migrar um aplicativo Web ASP.NET do local para uma Máquina Virtual do Azure.
 
-## <a name="quickstart"></a>Início Rápido
+## <a name="quickstart"></a>Guia de Início Rápido
 
 Saiba como criar uma máquina virtual e publicar o aplicativo nela: [Publicar em uma VM do Azure](https://tutorials.visualstudio.com/aspnet-vm/intro)
 
@@ -26,7 +26,7 @@ Esses tutoriais demonstram as etapas para criar (ou migrar) uma máquina virtual
   - [Criar uma nova máquina virtual para Aplicativos ASP.NET](https://go.microsoft.com/fwlink/?linkid=863237)
   - [Migrar uma máquina virtual VMWare local existente](/azure/migrate/tutorial-migrate-vmware)
   - [Migrar uma máquina virtual do Hyper-V local existente](/azure/migrate/tutorial-migrate-hyper-v)
-- [Publicar seu aplicativo usando o Visual Studio](https://go.microsoft.com/fwlink/?linkid=863240)
+- [Publicar seu aplicativo usando o Visual Studio](/azure/virtual-machines/windows/publish-web-app-from-visual-studio)
 - [Criar uma rede virtual segura para suas VMs](/azure/virtual-network/virtual-network-get-started-vnet-subnet)
 - [Criar um pipeline CI/CD para seu aplicativo](/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups)
 - [Mover para um conjunto de dimensionamento da VM para ter alta disponibilidade e escalabilidade](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app)

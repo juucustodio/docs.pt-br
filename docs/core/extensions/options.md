@@ -3,13 +3,13 @@ title: Padrão de opções no .NET
 author: IEvangelist
 description: Saiba como usar o padrão de opções para representar grupos de configurações relacionadas em aplicativos .NET.
 ms.author: dapine
-ms.date: 12/04/2020
-ms.openlocfilehash: 14a81608c41f63abfc562e1a845ca893ff7cdf25
-ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
+ms.date: 01/06/2021
+ms.openlocfilehash: 392b3abca01864349f8b1b25ffb3109132d2435a
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97764916"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189727"
 ---
 # <a name="options-pattern-in-net"></a>Padrão de opções no .NET
 
@@ -22,18 +22,20 @@ As opções também fornecem um mecanismo para validar os dados da configuraçã
 
 ## <a name="bind-hierarchical-configuration"></a>Associar configuração hierárquica
 
-A maneira preferida de ler valores de configuração relacionados é usar o padrão de opções. Por exemplo, para ler os seguintes valores de configuração:
+A maneira preferida de ler valores de configuração relacionados é usar o padrão de opções. O padrão de opções é possível por meio da <xref:Microsoft.Extensions.Options.IOptions%601> interface, onde o parâmetro de tipo genérico `TOptions` é restrito `class` . Posteriormente, o `IOptions<TOptions>` pode ser fornecido por meio de injeção de dependência. Para obter mais informações, consulte [injeção de dependência no .net](dependency-injection.md).
+
+Por exemplo, para ler os seguintes valores de configuração:
 
 :::code language="json" source="snippets/configuration/console-json/appsettings.json" range="3-6":::
 
 Crie a seguinte `TransientFaultHandlingOptions` classe:
 
-:::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs" range="5-6":::
+:::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs" range="5-9":::
 
-Uma classe de opções:
+<span id="options-class"></span> Ao usar o padrão de opções, uma classe de opções:
 
-* Deve ser não-abstrato com um construtor público sem parâmetros
-* Conter Propriedades de leitura/gravação públicas para associar (os campos são ***não** associados)
+- Deve ser não-abstrato com um construtor público sem parâmetros
+- Conter Propriedades de leitura/gravação públicas para associar (os campos são ***não** associados)
 
 O seguinte código:
 
@@ -51,13 +53,16 @@ IConfigurationRoot configurationRoot = configuration.Build();
 
 var options =
     configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
-        .Get<TransientFaultHandlingOptions>();
+                     .Get<TransientFaultHandlingOptions>();
 
 Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
 Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
 ```
 
 No código anterior, as alterações no arquivo de configuração JSON depois que o aplicativo é iniciado são lidas.
+
+> [!IMPORTANT]
+> A <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> classe expõe várias APIs, como `.Bind(object instance)` e `.Get<T>()` que são ***não** _ restritas `class` . Ao usar qualquer uma das [interfaces de opções](#options-interfaces), você deve seguir as [restrições de classe de opções](#options-class)mencionadas anteriormente.
 
 Uma abordagem alternativa ao usar o padrão de opções é associar a `"TransientFaultHandlingOptions"` seção e adicioná-la ao [contêiner de serviço de injeção de dependência](dependency-injection.md). No código a seguir, `TransientFaultHandlingOptions` é adicionado ao contêiner de serviço com <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> e associado à configuração:
 
@@ -68,7 +73,7 @@ services.Configure<TransientFaultHandlingOptions>(
 ```
 
 > [!TIP]
-> O `key` parâmetro é o nome da seção de configuração a ser pesquisada. Ele *não* precisa corresponder ao nome do tipo que o representa. Por exemplo, você poderia ter uma seção chamada `"FaultHandling"` e ela poderia ser representada pela `TransientFaultHandlingOptions` classe. Nessa instância, você passaria `"FaultHandling"` para a <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection%2A> função em vez disso. O `nameof` operador é usado como uma conveniência quando a seção nomeada corresponde ao tipo ao qual ela corresponde.
+> O `key` parâmetro é o nome da seção de configuração a ser pesquisada. Ele _not * precisa corresponder ao nome do tipo que o representa. Por exemplo, você poderia ter uma seção chamada `"FaultHandling"` e ela poderia ser representada pela `TransientFaultHandlingOptions` classe. Nessa instância, você passaria `"FaultHandling"` para a <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection%2A> função em vez disso. O `nameof` operador é usado como uma conveniência quando a seção nomeada corresponde ao tipo ao qual ela corresponde.
 
 Usando o código anterior, o código a seguir lê as opções de posição:
 
@@ -339,6 +344,6 @@ services.PostConfigureAll<CustomOptions>(customOptions =>
 });
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Configuração no .NET](configuration.md)

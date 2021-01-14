@@ -3,12 +3,12 @@ title: Porte do .NET Framework para o .NET Core
 description: Entenda o processo de compatibilidade e descubra ferramentas que podem ser úteis ao realizar a portabilidade de um projeto do .NET Framework para o .NET Core.
 author: cartermp
 ms.date: 10/22/2019
-ms.openlocfilehash: 764c615d250474573f873b1745b9f1469e637d29
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 247e709ac6898a6a89318626e3aa9a2a8e239a9a
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687406"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189929"
 ---
 # <a name="overview-of-porting-from-net-framework-to-net-core"></a>Visão geral da portabilidade do .NET Framework para o .NET Core
 
@@ -39,7 +39,7 @@ Para identificar a ordem em que os projetos devem ser migrados, você pode usar 
 
 - Os [diagramas de dependência no Visual Studio](/visualstudio/modeling/create-layer-diagrams-from-your-code) podem criar um grafo direcionado do código em uma solução.
 - Execute `msbuild _SolutionPath_ /t:GenerateRestoreGraphFile /p:RestoreGraphOutputPath=graph.dg.json` para gerar um documento JSON que inclui a lista de referências do projeto.
-- Execute o [analisador de portabilidade do .net](../../standard/analyzers/portability-analyzer.md) com a `-r DGML` opção para recuperar um diagrama de dependência dos assemblies. Para saber mais, clique [aqui](../../standard/analyzers/portability-analyzer.md#solution-wide-view).
+- Execute o [analisador de portabilidade do .net](../../standard/analyzers/portability-analyzer.md) com a `-r DGML` opção para recuperar um diagrama de dependência dos assemblies. Para mais informações, consulte [aqui](../../standard/analyzers/portability-analyzer.md#solution-wide-view).
 
 Depois que você tiver informações de dependência, poderá usar essas informações para começar nos nós folha e trabalhar com a árvore de dependência aplicando as etapas na próxima seção.
 
@@ -53,7 +53,7 @@ Recomendamos que você use o seguinte processo ao portar seu projeto para o .NET
 
 1. Converta o arquivo de projeto para a nova estrutura de arquivos em estilo SDK. Você pode criar novos projetos para o .NET Core e copiar sobre os arquivos de origem, ou tentar converter o arquivo de projeto existente com uma ferramenta.
 
-   O .NET Core usa um formato de arquivo de [projeto](../tools/csproj.md) simplificado (e diferente) do que o .NET Framework. Você precisará converter os arquivos de projeto nesse formato para continuar. Este estilo de projeto permite que você também direcione .NET Framework, que neste ponto você ainda desejará direcionar.
+   O .NET Core usa um formato de arquivo de [projeto](../project-sdk/overview.md) simplificado (e diferente) do que o .NET Framework. Você precisará converter os arquivos de projeto nesse formato para continuar. Este estilo de projeto permite que você também direcione .NET Framework, que neste ponto você ainda desejará direcionar.
 
    Você pode tentar portar soluções menores ou projetos individuais em uma operação para o formato de arquivo de projeto do .NET Core com a ferramenta [dotnet try-Convert](https://github.com/dotnet/try-convert) . `dotnet try-convert` Não tem garantia de funcionar para todos os seus projetos e pode causar alterações sutis no comportamento que você dependou. Use-o como um _ponto de partida_ que automatize as coisas básicas que podem ser automatizadas. Não é uma solução garantida para migrar um projeto, pois há muitas diferenças nos destinos usados pelos projetos de estilo do SDK em comparação com os arquivos de projeto de estilo antigo.
 
@@ -115,7 +115,7 @@ Recomendamos que você use o seguinte processo ao portar seu projeto para o .NET
 > [Analisar dependências](third-party-deps.md) 
 >  [Empacotar um pacote NuGet](../deploying/creating-nuget-packages.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [ASP.NET para migração de ASP.NET Core](/aspnet/core/migration/proper-to-2x)
 - [Migrar aplicativos do WPF para o .NET Core](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)

@@ -1,13 +1,13 @@
 ---
 title: Usar um servidor de banco de dados em execução como um contêiner
 description: Entenda a importância de usar um servidor de banco de dados executando como um contêiner somente para desenvolvimento. Nunca para produção.
-ms.date: 01/30/2020
-ms.openlocfilehash: 38f77e195b184d57dcad5904674a0025ef6c2bd8
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 01/13/2021
+ms.openlocfilehash: 1292bf37e3baaeb6284f6fba15b4bc7c9c17b4a7
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539393"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188732"
 ---
 # <a name="use-a-database-server-running-as-a-container"></a>Usar um servidor de banco de dados em execução como um contêiner
 
@@ -270,7 +270,7 @@ No eShopOnContainers, o `basket-api` Microservice usa um cache Redis em execuç�
       - "6379"
 ```
 
-Esse código no Docker-Compose. yml define um contêiner nomeado `basketdata` com base na imagem do Redis e publicando a porta 6379 internamente. Isso significa que ele só poderá ser acessado de outros contêineres em execução no host do Docker.
+Esse código no Docker-Compose. yml define um contêiner nomeado `basketdata` com base na imagem do Redis e publicando a porta 6379 internamente. Essa configuração significa que ela só poderá ser acessada de outros contêineres em execução no host do Docker.
 
 Por fim, no arquivo *Docker-Compose. Override. yml* , o `basket-api` Microservice para o exemplo eShopOnContainers define a cadeia de conexão a ser usada para esse contêiner Redis:
 

@@ -4,12 +4,12 @@ description: Saiba como criar um aplicativo do .NET Core compatível com plug-in
 author: jkoritzinsky
 ms.author: jekoritz
 ms.date: 10/16/2019
-ms.openlocfilehash: ce7ac826feaf4542307abefde6d40a319d78e423
-ms.sourcegitcommit: c04535ad05e374fb269fcfc6509217755fbc0d54
+ms.openlocfilehash: d3b532ae72a80eef9603fc6f3ada8c11cae966dd
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91247586"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98187893"
 ---
 # <a name="create-a-net-core-application-with-plugins"></a>Criar um aplicativo do .NET Core com plug-ins
 
@@ -22,7 +22,10 @@ Este tutorial mostra como criar um <xref:System.Runtime.Loader.AssemblyLoadConte
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Instale o [SDK do .NET Core 3,0](https://dotnet.microsoft.com/download) ou uma versão mais recente.
+- Instale o [SDK do .NET 5](https://dotnet.microsoft.com/download) ou uma versão mais recente.
+
+> [!NOTE]
+> O código de exemplo tem como alvo o .NET 5, mas todos os recursos que ele usa foram introduzidos no .NET Core 3,0 e estão disponíveis em todas as versões do .NET desde então.
 
 ## <a name="create-the-application"></a>Criar o aplicativo
 
@@ -239,7 +242,7 @@ Agora, abra o arquivo *HelloPlugin.csproj*. Ela deve parecer com o seguinte:
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net5</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -287,7 +290,7 @@ Isso impede que os assemblies `A.PluginBase` sejam copiados para o diretório de
 
 ## <a name="plugin-target-framework-recommendations"></a>Recomendações de estrutura de destino do plug-in
 
-Como o carregamento de dependência do plug-in usa o *.deps.jsno* arquivo, há uma pegadinha relacionada à estrutura de destino do plug-in. Especificamente, os plug-ins devem ser direcionados a um runtime como o .NET Core 3.0 e não a uma versão do .NET Standard. O arquivo *.deps.json* é gerado com base na estrutura de destino do projeto e, como muitos pacotes compatíveis com o .NET Standard enviam assemblies de referência para compilar no .NET Standard e assemblies de implementação para runtimes específicos, o *.deps.json* pode não reconhecer corretamente os assemblies de implementação ou obter a versão do .NET Standard de um assembly em vez da versão do .NET Core esperada.
+Como o carregamento de dependência do plug-in usa o *.deps.jsno* arquivo, há uma pegadinha relacionada à estrutura de destino do plug-in. Especificamente, os plug-ins devem ter como destino um tempo de execução, como o .NET 5, em vez de uma versão do .NET Standard. O arquivo *.deps.json* é gerado com base na estrutura de destino do projeto e, como muitos pacotes compatíveis com o .NET Standard enviam assemblies de referência para compilar no .NET Standard e assemblies de implementação para runtimes específicos, o *.deps.json* pode não reconhecer corretamente os assemblies de implementação ou obter a versão do .NET Standard de um assembly em vez da versão do .NET Core esperada.
 
 ## <a name="plugin-framework-references"></a>Referências da estrutura do plugin
 

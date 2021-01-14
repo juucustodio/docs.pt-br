@@ -1,13 +1,13 @@
 ---
 title: Implementando a camada de aplicativos de microsserviço usando a API Web
 description: Entenda a injeção de dependência e os padrões de mediador e seus detalhes de implementação na camada de aplicativo da API Web.
-ms.date: 08/17/2020
-ms.openlocfilehash: 45121026e06c55258a16f41aa801c06808a6919f
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.date: 01/13/2021
+ms.openlocfilehash: bf37b0bfc7d9438752673d1c617657822b2a48ad
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96437794"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188966"
 ---
 # <a name="implement-the-microservice-application-layer-using-the-web-api"></a>Implementar a camada de aplicativos de microsserviço usando a API Web
 
@@ -27,7 +27,7 @@ O ASP.NET Core inclui um [contêiner interno de IoC](/aspnet/core/fundamentals/d
 
 Normalmente, você deseja injetar dependências que implementam objetos de infraestrutura. Uma dependência típica para injetar é um repositório. Mas você poderá injetar qualquer outra dependência de infraestrutura que tiver. Para implementações mais simples, você injeta diretamente o objeto de padrão da Unidade de Trabalho (o objeto DbContext do EF), porque o DBContext também é a implementação dos objetos de persistência da sua infraestrutura.
 
-Veja no exemplo a seguir como o .NET Core está injetando os objetos de repositório necessários por meio do construtor. A classe é um manipulador de comando, que será abordado na próxima seção.
+No exemplo a seguir, você pode ver como o .NET está injetando os objetos de repositório necessários por meio do construtor. A classe é um manipulador de comando, que será abordado na próxima seção.
 
 ```csharp
 public class CreateOrderCommandHandler
@@ -111,7 +111,7 @@ O padrão mais comum ao registrar tipos em um contêiner de IoC é registrar um 
 
 #### <a name="use-the-scrutor-library-for-automatic-types-registration"></a>Usar a biblioteca Scrutor para registro automático de tipos
 
-Ao usar a DI no .NET Core, talvez seja interessante verificar um assembly e registrar automaticamente seus tipos por convenção. Este recurso não está disponível atualmente no ASP.NET Core. No entanto, você pode usar a biblioteca [Scrutor](https://github.com/khellang/Scrutor) para fazer isso. Essa abordagem é conveniente quando você tem muitos tipos que precisam ser registrados no contêiner de IoC.
+Ao usar DI no .NET, talvez você queira ser capaz de verificar um assembly e registrar automaticamente seus tipos por convenção. Este recurso não está disponível atualmente no ASP.NET Core. No entanto, você pode usar a biblioteca [Scrutor](https://github.com/khellang/Scrutor) para fazer isso. Essa abordagem é conveniente quando você tem muitos tipos que precisam ser registrados no contêiner de IoC.
 
 #### <a name="additional-resources"></a>Recursos adicionais
 
@@ -503,7 +503,7 @@ Em qualquer caso, isso deve ser uma decisão com base nos requisitos de negócio
 
 Como uma implementação de exemplo, este guia propõe o uso do pipeline em processo baseado no padrão Mediador para orientar a ingestão de comando e rotear comandos, na memória, para os manipuladores de comando corretos. O guia também propõe a aplicação de [comportamentos](https://github.com/jbogard/MediatR/wiki/Behaviors) para separar interesses transversais.
 
-Para a implementação no .NET Core, há várias bibliotecas de software livre disponíveis que implementam o padrão Mediador. A biblioteca usada neste guia é a [MediatR](https://github.com/jbogard/MediatR), biblioteca de software livre criada por Jimmy Bogard, mas você pode usar outra abordagem. A MediatR é uma biblioteca pequena e simples que permite que você processe mensagens na memória como um comando, aplicando, ao mesmo tempo, decoradores ou comportamentos.
+Para implementação no .NET, há várias bibliotecas de código-fonte aberto disponíveis que implementam o padrão mediador. A biblioteca usada neste guia é a [MediatR](https://github.com/jbogard/MediatR), biblioteca de software livre criada por Jimmy Bogard, mas você pode usar outra abordagem. A MediatR é uma biblioteca pequena e simples que permite que você processe mensagens na memória como um comando, aplicando, ao mesmo tempo, decoradores ou comportamentos.
 
 O uso do padrão Mediador ajuda a reduzir o acoplamento e isolar as preocupações com o trabalho solicitado, ao conectar-se automaticamente com manipulador que executa esse trabalho — nesse caso, os manipuladores de comando.
 

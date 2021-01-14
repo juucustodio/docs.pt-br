@@ -1,17 +1,17 @@
 ---
 title: Implementando leituras/consultas em um microsserviço CQRS
 description: Arquitetura de Microsserviços do .NET para aplicativos .NET em contêineres | Entenda a implementação do lado de consultas do CQRS no microsserviço de ordenação no eShopOnContainers usando o Dapper.
-ms.date: 10/08/2018
-ms.openlocfilehash: e6ea7b4b7b37df9ee972319f597ab045bf3bd215
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.date: 01/13/2021
+ms.openlocfilehash: 047fc3893dcaf72a17d29f5560c928879757d024
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90678797"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188914"
 ---
 # <a name="implement-readsqueries-in-a-cqrs-microservice"></a>Implementando leituras/consultas em um microsserviço CQRS
 
-Para leituras/consultas, o microsserviço de ordenação do aplicativo de referência eShopOnContainers implementa as consultas independentemente do modelo DDD e da área transacional. Isso foi feito principalmente porque as exigências para consultas e transações são totalmente diferentes. Grava transações de execução que devem estar em conformidade com a lógica do domínio. Consultas, por outro lado, são idempotentes e podem ser separadas das regras de domínio.
+Para leituras/consultas, o microsserviço de ordenação do aplicativo de referência eShopOnContainers implementa as consultas independentemente do modelo DDD e da área transacional. Essa implementação foi feita principalmente porque as demandas de consultas e de transações são drasticamente diferentes. Grava transações de execução que devem estar em conformidade com a lógica do domínio. Consultas, por outro lado, são idempotentes e podem ser separadas das regras de domínio.
 
 A abordagem é simples, conforme mostra a Figura 7-3. A interface de API é implementada pelos controladores de API da Web usando qualquer infraestrutura, como um micro ORM (Mapeador Relacional de Objeto) como Dapper e retornando ViewModels dinâmicos dependendo das necessidades dos aplicativos de interface do usuário.
 
@@ -21,7 +21,7 @@ A abordagem é simples, conforme mostra a Figura 7-3. A interface de API é impl
 
 A abordagem mais simples para as consultas no lado de uma abordagem de CQRS simplificada pode ser implementada consultando o banco de dados com um micro ORM como Dapper, retornando ViewModels dinâmicos. As definições de consulta consultam o banco de dados e retornam um ViewModel dinâmico criado dinamicamente para cada consulta. Uma vez que as consultas são idempotentes, elas não alteram os dados, não importa quantas vezes você execute uma consulta. Portanto, você não precisa estar restrito por nenhum padrão DDD usado no lado do transacional, como agregações e outros padrões, e é por isso que as consultas são separadas da área de trabalho transacional. Você consulta o banco de dados em busca de quais são as necessidades da interface do usuário e retorna um ViewModel dinâmico que não precisa ser definido estaticamente em qualquer lugar (nenhuma classe para ViewModels), exceto nas próprias instruções SQL.
 
-Como essa abordagem é simples, o código necessário para o lado das consultas (como código usando um micro ORM como [Dapper](https://github.com/StackExchange/Dapper)) pode ser implementado [dentro do mesmo projeto de API da Web](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Queries/OrderQueries.cs). A Figura 7-4 mostra isso. As consultas são definidas no projeto de microsserviço **Ordering.API** dentro da solução eShopOnContainers.
+Como essa abordagem é simples, o código necessário para o lado das consultas (como código usando um micro ORM como [Dapper](https://github.com/StackExchange/Dapper)) pode ser implementado [dentro do mesmo projeto de API da Web](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Queries/OrderQueries.cs). A Figura 7-4 mostra essa abordagem. As consultas são definidas no projeto de microsserviço **Ordering.API** dentro da solução eShopOnContainers.
 
 ![Captura de tela da pasta de consultas do projeto de classificação. API.](./media/cqrs-microservice-reads/ordering-api-queries-folder.png)
 
@@ -33,7 +33,7 @@ Uma vez que as consultas são executadas para obter os dados necessários para o
 
 Os dados retornados (ViewModel) podem ser o resultado da associação de dados de várias entidades ou tabelas no banco de dados, ou mesmo entre várias agregações definidas no modelo de domínio para a área transacional. Nesse caso, como você está criando consultas independentes do modelo de domínio, os limites e restrições de agregações são ignorados e você pode consultar qualquer tabela e coluna que você possa precisar. Essa abordagem fornece grande flexibilidade e produtividade para os desenvolvedores criarem ou atualizarem as consultas.
 
-Os ViewModels podem ser tipos estáticos definidos em classes (como é implementado no microserviço de ordenação). Ou podem ser criados dinamicamente com base nas consultas executadas, o que é muito ágil para os desenvolvedores.
+Os ViewModels podem ser tipos estáticos definidos em classes (como é implementado no microserviço de ordenação). Ou podem ser criados dinamicamente com base nas consultas executadas, o que é ágil para os desenvolvedores.
 
 ## <a name="use-dapper-as-a-micro-orm-to-perform-queries"></a>Usar o Dapper como um micro ORM para executar consultas
 
@@ -173,7 +173,7 @@ public class OrderSummary
 }
 ```
 
-Essa é outra razão pela qual tipos retornados explícitos são melhores que tipos dinâmicos no longo prazo. Ao usar o `ProducesResponseType` atributo, você também pode especificar qual é o resultado esperado em relação aos possíveis erros/códigos http, como 200, 400, etc.
+Essa é outra razão pela qual tipos retornados explícitos são melhores que tipos dinâmicos no longo prazo. Ao usar o `ProducesResponseType` atributo, você também pode especificar qual é o resultado esperado em relação a possíveis erros/códigos http, como 200, 400, etc.
 
 Na imagem a seguir, você pode ver como a interface do usuário Swagger mostra as informações de ResponseType.
 

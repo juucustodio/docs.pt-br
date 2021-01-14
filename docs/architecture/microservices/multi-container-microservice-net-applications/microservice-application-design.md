@@ -1,13 +1,13 @@
 ---
 title: Projetando um aplicativo orientado a microsserviços
 description: Arquitetura de Microsserviços .NET para aplicativos .NET em contêineres | Entenda os benefícios e as desvantagens de um aplicativo orientado a microsserviços, para que você possa tomar uma decisão informada.
-ms.date: 10/02/2018
-ms.openlocfilehash: 11aa6327a8d870a1ff6356b88695b693c27f99a9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: 568c55cd8524cd67c311214774391918212e95d8
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172333"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188173"
 ---
 # <a name="design-a-microservice-oriented-application"></a>Criar um aplicativo orientado por microatendimento
 
@@ -15,17 +15,17 @@ Esta seção se concentra no desenvolvimento de um aplicativo empresarial hipot�
 
 ## <a name="application-specifications"></a>Especificações do aplicativo
 
-O aplicativo hipotético lida com as solicitações por meio da execução de lógica de negócios, do acesso ao bancos de dados, retornando as respostas em HTML, JSON ou XML. Digamos que o aplicativo deve oferecer suporte a uma variedade de clientes, incluindo navegadores de área de trabalho que executam SPAs (aplicativos de página única), aplicativos Web tradicionais, aplicativos Web móveis e aplicativos móveis nativos. O aplicativo também deve expor uma API para ser consumida por terceiros. Ele também deve ser capaz de integrar seus microsserviços ou aplicativos externos de forma assíncrona, ajudando na resiliência dos microsserviços no caso de falhas parciais.
+O aplicativo hipotético lida com as solicitações por meio da execução de lógica de negócios, do acesso ao bancos de dados, retornando as respostas em HTML, JSON ou XML. Nós vamos dizer que o aplicativo deve dar suporte a vários clientes, incluindo navegadores de desktop que executam SPAs (aplicativos de página única), aplicativos Web tradicionais, aplicativos Web móveis e aplicativos móveis nativos. O aplicativo também deve expor uma API para ser consumida por terceiros. Ele também deve ser capaz de integrar seus microsserviços ou aplicativos externos de forma assíncrona, ajudando na resiliência dos microsserviços no caso de falhas parciais.
 
 O aplicativo consistirá nesses tipos de componentes:
 
-- Componentes de apresentação. Eles são responsáveis por gerenciar a interface do usuário e o consumo de serviços remotos.
+- Componentes de apresentação. Esses componentes são responsáveis por lidar com a interface do usuário e consumir serviços remotos.
 
-- Lógica de negócios ou domínio. Essa é a lógica de domínio do aplicativo.
+- Lógica de negócios ou domínio. Esse componente é a lógica de domínio do aplicativo.
 
-- Lógica de acesso a banco de dados. Consiste em componentes de acesso a dados responsáveis por acessar bancos de dados (SQL ou NoSQL).
+- Lógica de acesso a banco de dados. Esse componente consiste em componentes de acesso a dados responsáveis pelo acesso a bancos (SQL ou NoSQL).
 
-- Lógica de integração do aplicativo. Isso inclui um canal de mensagens, principalmente com base em agentes de mensagens.
+- Lógica de integração do aplicativo. Esse componente inclui um canal de mensagens, com base em agentes de mensagens.
 
 O aplicativo exigirá alta escalabilidade, permitindo que seus subsistemas verticais escalem horizontalmente de forma autônoma, pois alguns subsistemas exigirão maior escalabilidade que outros.
 
@@ -55,11 +55,11 @@ Nessa abordagem, cada serviço (contêiner) implementa um conjunto de funções 
 
 Os microsserviços se comunicam usando protocolos como HTTP (REST), mas também de forma assíncrona (usando AMQP, por exemplo) sempre que possível, especialmente ao propagar atualizações com eventos de integração.
 
-Os microsserviços são desenvolvidos e implantados como contêineres independentes uns dos outros. Isso significa que uma equipe de desenvolvimento pode desenvolver e implantar um determinado microsserviço sem afetar outros subsistemas.
+Os microsserviços são desenvolvidos e implantados como contêineres independentes uns dos outros. Essa abordagem significa que uma equipe de desenvolvimento pode desenvolver e implantar um determinado microserviço sem afetar outros subsistemas.
 
 Cada microsserviço tem seu próprio banco de dados, permitindo que ele seja totalmente separado dos outros microsserviços. Quando necessário, a consistência entre bancos de dados de diferentes microsserviços é obtida com o uso de eventos de integração no nível do aplicativo (por meio de um barramento de eventos lógico), conforme manipulados na CQRS (segregação de responsabilidade de comando e consulta). Por isso, as restrições de negócios devem adotar consistência eventual entre os vários microsserviços e bancos de dados relacionados.
 
-### <a name="eshoponcontainers-a-reference-application-for-net-core-and-microservices-deployed-using-containers"></a>eShopOnContainers: um aplicativo de referência para .NET Core e microsserviços implantados com o uso de contêineres
+### <a name="eshoponcontainers-a-reference-application-for-net-and-microservices-deployed-using-containers"></a>eShopOnContainers: um aplicativo de referência para .NET e microservices implantados usando contêineres
 
 Para que você possa se concentrar na arquitetura e nas tecnologias, em vez de pensar em um domínio corporativo hipotético desconhecido, selecionamos um domínio corporativo bem conhecido, ou seja, um aplicativo simplificado de comércio eletrônico (loja eletrônica) que apresenta um catálogo de produtos, recebe pedidos de clientes, verifica o estoque e executa outras funções de negócios. O código-fonte desse aplicativo baseado em contêineres está disponível no repositório [eShopOnContainers](https://aka.ms/MicroservicesArchitecture) do GitHub.
 
@@ -75,15 +75,15 @@ O diagrama acima mostra que os clientes móveis e SPA se comunicam com pontos de
 
 **Arquitetura de comunicação**. O aplicativo eShopOnContainers usa dois tipos de comunicação, dependendo do tipo de ação funcional (consultas versus atualizações e transações):
 
-- Comunicação entre cliente HTTP e microsserviço por meio de gateways de API. Isso é usado para consultas e ao aceitar comandos transacionais ou de atualização dos aplicativos cliente. A abordagem usando gateways de API é explicada em detalhes nas seções posteriores.
+- Comunicação entre cliente HTTP e microsserviço por meio de gateways de API. Essa abordagem é usada para consultas e ao aceitar comandos de atualização ou transacionais dos aplicativos cliente. A abordagem usando gateways de API é explicada em detalhes nas seções posteriores.
 
-- Comunicação baseada em evento assíncrono. Isso ocorre por meio de um barramento de eventos para propagar atualizações em microsserviços ou integrar com aplicativos externos. O barramento de eventos pode ser implementado com qualquer tecnologia de infraestrutura de agente de mensagens, como RabbitMQ, ou usando barramentos de serviços de nível mais alto (nível de abstração), como Barramento de Serviço do Azure, NServiceBus, MassTransit ou Brighter.
+- Comunicação baseada em evento assíncrono. Essa comunicação ocorre por meio de um barramento de evento para propagar atualizações em microserviços ou para integrar com aplicativos externos. O barramento de eventos pode ser implementado com qualquer tecnologia de infraestrutura de agente de mensagens, como RabbitMQ, ou usando barramentos de serviços de nível mais alto (nível de abstração), como Barramento de Serviço do Azure, NServiceBus, MassTransit ou Brighter.
 
 O aplicativo é implantado como um conjunto de microsserviços na forma de contêineres. Aplicativos cliente podem se comunicar com esses microsserviços em execução como contêineres por meio de URLs públicas publicadas pelos gateways de API.
 
 ### <a name="data-sovereignty-per-microservice"></a>Soberania de dados por microsserviço
 
-No aplicativo de exemplo, cada microsserviço tem seu próprio banco de dados ou fonte de dados, embora todos os bancos de dados do SQL Server sejam implantados em um único contêiner. Essa decisão de design foi tomada apenas para facilitar para um desenvolvedor ao obter o código do GitHub, cloná-lo e abri-lo no Visual Studio ou o Visual Studio Code. Ou, como alternativa, ele facilita a compilação das imagens personalizadas do Docker usando o CLI do .NET Core e a CLI do Docker e, em seguida, implantá-las e executá-las em um ambiente de desenvolvimento do Docker. De uma forma ou de outra, o uso de contêineres para fontes de dados permite que os desenvolvedores criem e implantem em questão de minutos, sem a necessidade de provisionar um banco de dados externo ou qualquer outra fonte de dados com dependências rígidas na infraestrutura (de nuvem ou local).
+No aplicativo de exemplo, cada microsserviço tem seu próprio banco de dados ou fonte de dados, embora todos os bancos de dados do SQL Server sejam implantados em um único contêiner. Essa decisão de design foi tomada apenas para facilitar para um desenvolvedor ao obter o código do GitHub, cloná-lo e abri-lo no Visual Studio ou o Visual Studio Code. Ou, como alternativa, é fácil compilar as imagens personalizadas do Docker usando a CLI do .NET e a CLI do Docker e, em seguida, implantá-las e executá-las em um ambiente de desenvolvimento do Docker. De uma forma ou de outra, o uso de contêineres para fontes de dados permite que os desenvolvedores criem e implantem em questão de minutos, sem a necessidade de provisionar um banco de dados externo ou qualquer outra fonte de dados com dependências rígidas na infraestrutura (de nuvem ou local).
 
 Em um ambiente de produção real, por questões de alta disponibilidade e escalabilidade, os bancos de dados devem ser baseados em servidores de banco de dados na nuvem ou locais, mas não em contêineres.
 
@@ -106,7 +106,7 @@ Uma solução baseada em microserviço como essa tem muitos benefícios:
 
 - Um IDE como Visual Studio pode carregar projetos menores rapidamente, fazendo com que os desenvolvedores sejam mais produtivos.
 
-- Cada microsserviço pode ser criado, desenvolvido e implantado independentemente de outros microsserviços. Isso proporciona agilidade, porque é mais fácil implantar novas versões dos microsserviços com frequência.
+- Cada microserviço pode ser projetado, desenvolvido e implantado independentemente de outros microserviços, que proporcionam agilidade porque é mais fácil implantar novas versões de microserviços com frequência.
 
 **É possível escalar horizontalmente áreas individuais do aplicativo**. Por exemplo, suponha que o serviço de catálogo ou do carrinho de compras tenha que ser expandido, mas não o processo de pedidos. Uma infraestrutura de microsserviços será muito mais eficiente do que uma arquitetura monolítica em relação aos recursos usados ao expandir.
 
@@ -114,7 +114,7 @@ Uma solução baseada em microserviço como essa tem muitos benefícios:
 
 **Os problemas são mais isolados**. Se houver um problema em um serviço, somente esse serviço será inicialmente afetado (exceto quando um design incorreto for usado, com dependências diretas entre microsserviços) e os outros serviços poderão continuar lidando com as solicitações. Por outro lado, um componente com defeito em uma arquitetura de implantação monolítica poderá derrubar todo o sistema, especialmente quando envolver recursos, como uma perda de memória. Além disso, quando um problema em um microsserviço for resolvido, você poderá implantar apenas o microsserviço afetado sem afetar o restante do aplicativo.
 
-**Você pode usar as tecnologias mais recentes**. Com a possibilidade de começar a desenvolver serviços de forma independente e executá-los lado a lado (graças aos contêineres e ao .NET Core), você pode usar as últimas tecnologias e estruturas de acordo com a conveniência, em vez de ficar preso a uma pilha ou estrutura mais antiga para todo o aplicativo.
+**Você pode usar as tecnologias mais recentes**. Como você pode começar a desenvolver serviços de forma independente e executá-los lado a lado (graças aos contêineres e ao .NET), você pode começar a usar as tecnologias e estruturas mais recentes de forma conveniente em vez de estar presa em uma pilha ou estrutura mais antiga para todo o aplicativo.
 
 ## <a name="downsides-of-a-microservice-based-solution"></a>Desvantagens de uma solução baseada em microsserviços
 
@@ -126,7 +126,7 @@ Uma solução baseada em microserviço como essa também tem algumas desvantagen
 
 **Transações atômicas**. Geralmente, as transações atômicas entre vários microsserviços não são possíveis. Os requisitos corporativos precisam adotar a consistência eventual entre vários microsserviços.
 
-**Maiores necessidades de recursos globais** (memória total, unidades e recursos de rede para todos os servidores ou hosts). Em muitos casos, ao substituir um aplicativo monolítico por uma abordagem de microsserviços, a quantidade de recursos globais iniciais necessários para o novo aplicativo baseado em microsserviços será maior do que as necessidades de infraestrutura do aplicativo monolítico original. Isso ocorre porque o maior grau de granularidade e serviços distribuídos exige mais recursos globais. No entanto, considerando o baixo custo de recursos em geral e o benefício de expandir apenas determinadas áreas do aplicativo, comparados aos custos de longo prazo relacionados aos desenvolvimento de aplicativos monolíticos, o aumento no uso de recursos geralmente compensa nas grandes aplicações de longo prazo.
+**Maiores necessidades de recursos globais** (memória total, unidades e recursos de rede para todos os servidores ou hosts). Em muitos casos, ao substituir um aplicativo monolítico por uma abordagem de microsserviços, a quantidade de recursos globais iniciais necessários para o novo aplicativo baseado em microsserviços será maior do que as necessidades de infraestrutura do aplicativo monolítico original. Essa abordagem é porque o maior grau de granularidade e serviços distribuídos exigem mais recursos globais. No entanto, considerando o baixo custo dos recursos em geral e o benefício de poder escalar horizontalmente determinadas áreas do aplicativo em comparação com os custos de longo prazo ao desenvolver aplicativos monolíticos, o maior uso dos recursos geralmente é uma boa desvantagem para aplicativos grandes e de longo prazo.
 
 **Problemas com a comunicação direta entre cliente e microsserviço**. Se o aplicativo for grande, com dezenas de microsserviços, haverá desafios e limitações se houver necessidade de comunicações diretas entre o cliente e o microsserviço. Um problema é uma potencial incompatibilidade entre as necessidades do cliente e as APIs expostas por cada um dos microsserviços. Em alguns casos, o aplicativo cliente precisará fazer muitas solicitações separadas para compor a interface do usuário, tornando-se ineficiente na Internet e impraticável em uma rede móvel. Portanto, as solicitações do aplicativo cliente ao sistema de back-end devem ser minimizadas.
 
@@ -136,7 +136,7 @@ Outra desvantagem dessa abordagem direta entre cliente e serviço é que ela dif
 
 Conforme mencionado na seção de arquitetura, ao projetar e criar um aplicativo complexo baseado em microsserviços, considere o uso de vários Gateways de API refinados em vez da abordagem mais simples de comunicação direta entre cliente e microsserviço.
 
-**Particionamento dos microsserviços**. Por fim, independentemente da abordagem escolhida para sua arquitetura de microsserviços, outro desafio é decidir como particionar um aplicativo de ponta a ponta em vários microsserviços. Conforme observado na seção de arquitetura do guia, há várias técnicas e abordagens que você pode escolher. Basicamente, você precisa identificar áreas do aplicativo que sejam separados de outras áreas e que tenham um número baixo de dependências rígidas. Em muitos casos, isso se alinha ao particionamento de serviços de acordo com o caso de uso. Por exemplo, em nosso aplicativo de loja eletrônica, temos um serviço de pedidos que é responsável por toda a lógica de negócios relacionada ao processo de pedido. Também temos o serviço de catálogo e o serviço de carrinho de compras, que implementam outros recursos. Idealmente, cada serviço deveria ter somente um pequeno conjunto de responsabilidades. Isso é semelhante ao princípio SRP (princípio de responsabilidade única) aplicado a classes, que declara que uma classe deve ter somente uma razão para ser alterada. Mas, nesse caso, estamos lidando com microsserviços, portanto o escopo será maior que o de uma única classe. Acima de tudo, um microsserviço deve ser completamente autônomo, de ponta a ponta, incluindo a responsabilidade por suas próprias fontes de dados.
+**Particionamento dos microsserviços**. Por fim, não importa, que abordagem você assume para sua arquitetura de microserviço, outro desafio é decidir como particionar um aplicativo de ponta a ponta em vários microserviços. Conforme observado na seção de arquitetura do guia, há várias técnicas e abordagens que você pode escolher. Basicamente, você precisa identificar áreas do aplicativo que sejam separados de outras áreas e que tenham um número baixo de dependências rígidas. Em muitos casos, essa abordagem é alinhada ao particionamento de serviços por caso de uso. Por exemplo, em nosso aplicativo de loja eletrônica, temos um serviço de pedidos que é responsável por toda a lógica de negócios relacionada ao processo de pedido. Também temos o serviço de catálogo e o serviço de carrinho de compras, que implementam outros recursos. Idealmente, cada serviço deveria ter somente um pequeno conjunto de responsabilidades. Essa abordagem é semelhante à SRP (princípio de responsabilidade única) aplicada às classes, o que declara que uma classe deve ter apenas um motivo para ser alterada. Mas, nesse caso, estamos lidando com microsserviços, portanto o escopo será maior que o de uma única classe. A maior parte de tudo, um microserviço deve ser autônomo, de ponta a ponta, incluindo a responsabilidade por suas próprias fontes de dados.
 
 ## <a name="external-versus-internal-architecture-and-design-patterns"></a>Padrões de arquitetura e design externos versus internos
 
@@ -168,7 +168,7 @@ Há muitos padrões de arquitetura usados por desenvolvedores e arquitetos de so
 
 - [EDA](https://en.wikipedia.org/wiki/Event-driven_architecture) (Arquitetura controlada por eventos).
 
-Você também pode criar microsserviços com várias tecnologias e linguagens, como APIs Web do ASP.NET Core, NancyFx, SignalR do ASP.NET Core (disponível no .NET Core 2), F\#, Node.js, Python, Java, C++, GoLang e muito mais.
+Você também pode criar microserviços com muitas tecnologias e linguagens, como ASP.NET Core APIs da Web, NancyFx, ASP.NET Core Signalr (disponível com o .NET Core 2 ou posterior), F \# , Node.js, Python, Java, C++, GoLang e muito mais.
 
 O ponto importante é que não há um padrão de arquitetura ou estilo específico nem qualquer tecnologia em particular que seja ideal para todas as situações. A figura 6-3 mostra algumas abordagens e tecnologias (embora não estejam em nenhuma ordem específica) que podem ser usadas em microsserviços diferentes.
 

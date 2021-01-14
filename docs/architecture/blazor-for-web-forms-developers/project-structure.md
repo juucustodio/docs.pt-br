@@ -7,12 +7,12 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 11/20/2020
-ms.openlocfilehash: d91430eb654ee16934408bf064803b34ca700640
-ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
+ms.openlocfilehash: ba7113c88db728f30812821deaf7c06a80663d1f
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509800"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189083"
 ---
 # <a name="project-structure-for-no-locblazor-apps"></a>Estrutura do projeto para Blazor aplicativos
 
@@ -132,7 +132,7 @@ Os arquivos *_Imports. Razor* não são arquivos de componente do Razor. Em vez 
 @using BlazorApp1.Shared
 ```
 
-## <a name="pages"></a>Páginas
+## <a name="pages"></a>Pages (Páginas)
 
 Onde estão as páginas nos Blazor aplicativos? Blazor não define uma extensão de arquivo separada para páginas endereçáveis, como os arquivos *. aspx* em ASP.NET Web Forms aplicativos. Em vez disso, as páginas são definidas por meio da atribuição de rotas a componentes. Uma rota é normalmente atribuída usando a `@page` diretiva Razor. Por exemplo, o `Counter` componente criado no arquivo *pages/Counter. Razor* define a seguinte rota:
 
@@ -223,7 +223,7 @@ No Blazor WebAssembly aplicativo, a página host é um arquivo HTML estático si
 
 ```
 
-O componente raiz a ser renderizado é configurado no método do aplicativo `Program.Main` com a flexibilidade para registrar diferentes serviços por meio da injeção de dependência. Você pode consultar adicionar serviços a um aplicativo no [ Blazor WebAssembly ](https://docs.microsoft.com/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-5.0#blazor-webassembly)
+O componente raiz a ser renderizado é especificado no método do aplicativo `Program.Main` com a flexibilidade de registrar serviços por meio de injeção de dependência. Para obter mais informações, consulte [ASP.NET Core Blazor injeção de dependência](/aspnet/core/blazor/fundamentals/dependency-injection?pivots=webassembly).
 
 ```csharp
 public class Program

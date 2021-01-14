@@ -4,12 +4,12 @@ titleSuffix: ''
 description: Saiba mais sobre os SDKs do projeto .NET.
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: 270735c9eef9f1930680687917317ac8bdf39e6d
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 2adb0713fabda142d071425a2affe66cc9d4c172
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970688"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189662"
 ---
 # <a name="net-project-sdks"></a>SDKs do projeto .NET
 
@@ -83,7 +83,7 @@ Se o projeto tiver várias estruturas de destino, concentre os resultados do com
 
 `dotnet msbuild -property:TargetFramework=netcoreapp2.0 -preprocess:output.xml`
 
-### <a name="default-includes-and-excludes"></a>Inclusões e exclusões padrão
+## <a name="default-includes-and-excludes"></a>Inclusões e exclusões padrão
 
 O padrão inclui e exclui [ `Compile` itens,](/visualstudio/msbuild/common-msbuild-project-items#compile) [recursos incorporados](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource)e [ `None` itens](/visualstudio/msbuild/common-msbuild-project-items#none) são definidos no SDK. Ao contrário dos projetos .NET Framework não SDK, você não precisa especificar esses itens no arquivo de projeto, pois os padrões abrangem os casos de uso mais comuns. Esse comportamento torna o arquivo de projeto menor e mais fácil de entender e editar manualmente, se necessário.
 
@@ -98,7 +98,7 @@ A tabela a seguir mostra quais elementos e quais [globs](https://en.wikipedia.or
 > [!NOTE]
 > As `./bin` `./obj` pastas e, que são representadas pelas `$(BaseOutputPath)` Propriedades do e do `$(BaseIntermediateOutputPath)` MSBuild, são excluídas do globs por padrão. As exclusões são representadas pela [Propriedade DefaultItemExcludes](msbuild-props.md#defaultitemexcludes).
 
-#### <a name="build-errors"></a>Erros de compilação
+### <a name="build-errors"></a>Erros de compilação
 
 Se você definir explicitamente qualquer um desses itens em seu arquivo de projeto, provavelmente receberá um erro de compilação "NETSDK1022" semelhante ao seguinte:
 
@@ -131,6 +131,31 @@ Para resolver os erros, siga um destes procedimentos:
   ```
 
   Se você desabilitar apenas `Compile` globs, Gerenciador de soluções no Visual Studio ainda mostrará \* itens. cs como parte do projeto, incluídos como `None` itens. Para desabilitar o `None` glob implícito, defina `EnableDefaultNoneItems` como `false` também.
+
+## <a name="build-events"></a>Eventos de build
+
+Em projetos em estilo SDK, use um destino do MSBuild chamado `PreBuild` ou `PostBuild` e defina a `BeforeTargets` propriedade para `PreBuild` ou a `AfterTargets` propriedade para `PostBuild` .
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
+</Target>
+```
+
+> [!NOTE]
+>
+> - Você pode usar qualquer nome para os destinos do MSBuild. No entanto, o IDE do Visual Studio reconhece `PreBuild` e `PostBuild` se destina, portanto, usando esses nomes, você pode editar os comandos no IDE.
+> - As propriedades `PreBuildEvent` e `PostBuildEvent` não são recomendadas em projetos em estilo SDK, pois macros como `$(ProjectDir)` não são resolvidas. Por exemplo, não há suporte para o seguinte código:
+>
+> ```xml
+> <PropertyGroup>
+>   <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"</PreBuildEvent>
+> </PropertyGroup>
+> ```
 
 ## <a name="customize-the-build"></a>Personalizar a compilação
 
@@ -168,7 +193,7 @@ O XML a seguir é um trecho de código de um arquivo *. csproj* que instrui o [`
     </ItemGroup>
   </Target>
   ...
-  
+
 </Project>
 ```
 
@@ -176,7 +201,7 @@ Para consumir um destino personalizado em seu projeto, adicione um `PackageRefer
 
 Você pode configurar como usar o destino personalizado. Como é um destino do MSBuild, ele pode depender de um determinado destino, executado após outro destino ou ser invocado manualmente usando o `dotnet msbuild -t:<target-name>` comando. No entanto, para proporcionar uma melhor experiência do usuário, você pode combinar ferramentas por projeto e destinos personalizados. Nesse cenário, a ferramenta por projeto aceita todos os parâmetros necessários e converte-os na [`dotnet msbuild`](../tools/dotnet-msbuild.md) invocação necessária que executa o destino. Veja um exemplo desse tipo de sinergia no repositório [Exemplos do MVP Summit 2016 Hackathon](https://github.com/dotnet/MVPSummitHackathon2016) do projeto [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar o .NET Core](../install/index.yml)
 - [Como usar SDKs de projeto do MSBuild](/visualstudio/msbuild/how-to-use-project-sdk)

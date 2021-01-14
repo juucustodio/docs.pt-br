@@ -1,19 +1,19 @@
 ---
 title: Use o IHttpClientFactory para implementar solicitações HTTP resilientes
 description: Saiba como usar o IHttpClientFactory, disponível desde o .NET Core 2,1, para criar `HttpClient` instâncias, facilitando seu uso em seus aplicativos.
-ms.date: 08/31/2020
-ms.openlocfilehash: 4ebb82395dd685d30846b3549b654abf7c41d43f
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.date: 01/13/2021
+ms.openlocfilehash: 056a8982fe4331e7e680b33cf1f43785b48da7d6
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91804803"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188992"
 ---
 # <a name="use-ihttpclientfactory-to-implement-resilient-http-requests"></a>Use o IHttpClientFactory para implementar solicitações HTTP resilientes
 
 <xref:System.Net.Http.IHttpClientFactory> é um contrato implementado pelo `DefaultHttpClientFactory` , uma fábrica conceituada, disponível desde o .NET Core 2,1, para <xref:System.Net.Http.HttpClient> a criação de instâncias a serem usadas em seus aplicativos.
 
-## <a name="issues-with-the-original-httpclient-class-available-in-net-core"></a>Problemas com a classe HttpClient original disponível no .NET Core
+## <a name="issues-with-the-original-httpclient-class-available-in-net"></a>Problemas com a classe HttpClient original disponível no .NET
 
 A classe original e conhecida <xref:System.Net.Http.HttpClient> pode ser facilmente usada, mas, em alguns casos, ela não está sendo usada corretamente por muitos desenvolvedores.
 
@@ -190,7 +190,7 @@ Até este ponto, o trecho de código acima só mostrou o exemplo de execução d
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-- **Usando HttpClientFactory no .NET Core**  
+- **Usando o HttpClientFactory no .NET**  
   [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
 - **HttpClientFactory o código-fonte no `dotnet/extensions` repositório github**  

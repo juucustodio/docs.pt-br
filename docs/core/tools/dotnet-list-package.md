@@ -2,18 +2,18 @@
 title: Comando dotnet list package
 description: O comando 'dotnet list package' fornece uma opção conveniente para listar as referências de pacote de um projeto ou solução.
 ms.date: 11/11/2020
-ms.openlocfilehash: ecb83e5485c9fb49a454a35091e1a7b753b1f291
-ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
+ms.openlocfilehash: 684b73dec553a424252e1368c265847622fb7850
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94556882"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189890"
 ---
 # <a name="dotnet-list-package"></a>dotnet list package
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,2 e versões posteriores
 
-## <a name="name"></a>Name
+## <a name="name"></a>Nome
 
 `dotnet list package` – Lista as referências de pacote para um projeto ou solução.
 
@@ -29,7 +29,7 @@ dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
 dotnet list package -h|--help
 ```
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 O comando `dotnet list package` fornece uma opção conveniente para listar todas as referências de pacotes do NuGet para um projeto específico ou uma solução. Primeiro, você precisa criar o projeto para ter os recursos necessários para que esse comando seja processado. O exemplo a seguir mostra a saída do comando `dotnet list package` para o projeto [SentimentAnalysis](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis):
 
@@ -43,7 +43,7 @@ Project 'SentimentAnalysis' has the following package references
 (A) : Auto-referenced package.
 ```
 
-A coluna **Requested** refere-se à versão do pacote especificada no arquivo de projeto e pode ser um intervalo. A coluna **Resolved** lista a versão que o projeto está usando atualmente e é sempre um valor único. Os pacotes que exibem um `(A)` ao lado de seus nomes representam [referências de pacotes implícitas](csproj.md#implicit-package-references) que são inferidas das configurações do seu projeto (tipo `Sdk`, propriedade `<TargetFramework>` ou `<TargetFrameworks>`, etc.)
+A coluna **Requested** refere-se à versão do pacote especificada no arquivo de projeto e pode ser um intervalo. A coluna **Resolved** lista a versão que o projeto está usando atualmente e é sempre um valor único. Os pacotes que exibem um `(A)` direito ao lado de seus nomes representam referências de pacote implícitas que são inferidas de suas configurações de projeto ( `Sdk` tipo, ou `<TargetFramework>` `<TargetFrameworks>` Propriedade).
 
 Use a opção `--outdated` para descobrir se existem versões mais recentes dos pacotes que você está usando em seus projetos. Por padrão, `--outdated` lista os pacotes estáveis mais recentes, a menos que a versão resolvida também seja uma versão de pré-lançamento. Para incluir versões de pré-lançamento ao listar versões mais recentes, especifique também a opção `--include-prerelease`. Os exemplos a seguir mostram a saída do comando `dotnet list package --outdated --include-prerelease` para o mesmo projeto do exemplo anterior:
 

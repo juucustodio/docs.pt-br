@@ -2,12 +2,12 @@
 title: dotnet – ferramenta de diagnóstico de despejo-CLI do .NET
 description: Saiba como instalar e usar a ferramenta de CLI de despejo de dotnet para coletar e analisar despejos do Windows e do Linux sem nenhum depurador nativo.
 ms.date: 11/17/2020
-ms.openlocfilehash: eaffbb1f2959dba5c25a603b6f785c7480e4a8c0
-ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
+ms.openlocfilehash: 84b3796f4ee92880e6d432df606a6addfd2471b0
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97765040"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189795"
 ---
 # <a name="dump-collection-and-analysis-utility-dotnet-dump"></a>Utilitário de coleta e análise de despejo (dotNet-dump)
 
@@ -37,6 +37,9 @@ Há duas maneiras de baixar e instalar `dotnet-dump` :
   | Windows | [x86](https://aka.ms/dotnet-dump/win-x86) \| [x64](https://aka.ms/dotnet-dump/win-x64) \| [ARM](https://aka.ms/dotnet-dump/win-arm) \| [ARM-x64](https://aka.ms/dotnet-dump/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-dump/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [ARM](https://aka.ms/dotnet-dump/linux-arm) \| [arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [MUSL-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [MUSL-arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
+
+> [!NOTE]
+> Para usar `dotnet-dump` o em um aplicativo x86, você precisa de uma versão x86 correspondente da ferramenta.
 
 ## <a name="synopsis"></a>Sinopse
 
@@ -113,6 +116,12 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 - **`--diag`**
 
   Habilita o log de diagnóstico de coleta de despejo.
+
+> [!NOTE]
+> No Linux e no macOS, esse comando espera o aplicativo de destino e `dotnet-dump` compartilha a mesma `TMPDIR` variável de ambiente. Caso contrário, o comando atingirá o tempo limite.
+
+> [!NOTE]
+> Para coletar um despejo usando o `dotnet-dump` , ele precisa ser executado como o mesmo usuário que o usuário que está executando o processo de destino ou como raiz. Caso contrário, a ferramenta não conseguirá estabelecer uma conexão com o processo de destino.
 
 ## <a name="dotnet-dump-analyze"></a>dotnet-análise de despejo
 
@@ -246,7 +255,7 @@ Em Microsoft .NET principais imagens do Docker do SDK do Linux, alguns `dotnet-d
 
 Para contornar esse problema, instale o pacote "libc6-dev".
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Blog sobre coleta e análise de despejos de memória](https://devblogs.microsoft.com/dotnet/collecting-and-analyzing-memory-dumps/)
 - [Ferramenta de análise de heap (dotNet-gcdump)](dotnet-gcdump.md)

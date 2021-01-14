@@ -2,12 +2,12 @@
 title: Exemplo de migração para o .NET Core 3.1
 description: Mostrando como migrar um aplicativo de exemplo destinado a .NET Framework para o .NET Core 3,1.
 ms.date: 05/12/2020
-ms.openlocfilehash: 6a0311e9aaeb25ac39f3394d3a62e17046fe03d8
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: dc0d3d825847bd72a38469615cfc5b2d793f1977
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656762"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188771"
 ---
 # <a name="example-of-migrating-to-net-core-31"></a>Exemplo de migração para o .NET Core 3.1
 
@@ -65,7 +65,7 @@ Um aspecto interessante dessa ferramenta é que ela só faz a superfície das di
 
 Na maioria dos casos, você desejará atualizar seu projeto existente para o novo formato .NET Core. No entanto, você também pode criar um novo projeto mantendo o antigo. A principal desvantagem de atualizar o projeto antigo é que você perde o suporte do designer, o que pode ser importante para você. Se você quiser continuar usando o designer, deverá criar um novo projeto do .NET Core em paralelo com o antigo e compartilhar os ativos. Se você precisar modificar elementos da interface do usuário no designer, poderá alternar para o projeto antigo para fazer isso. E, como os ativos são vinculados, eles também serão atualizados no projeto do .NET Core.
 
-O [projeto em estilo SDK](../../core/project-sdk/msbuild-props.md) para .NET Core é muito mais simples do que .NET Framework formato de projeto. E além das entradas mencionadas anteriormente `PackageReference` , você não precisará fazer muito mais. O novo formato de projeto inclui determinadas extensões de arquivo [por padrão](../../core/tools/csproj.md#default-compilation-includes-in-net-core-projects), `.cs` como `.xaml` arquivos e, sem a necessidade de incluí-los explicitamente no arquivo do projeto.
+O [projeto em estilo SDK](../../core/project-sdk/msbuild-props.md) para .NET Core é muito mais simples do que .NET Framework formato de projeto. Além das entradas mencionadas anteriormente `PackageReference` , você não precisará fazer muito mais. O novo formato de projeto [inclui arquivos com determinadas extensões por padrão](../../core/project-sdk/overview.md#default-includes-and-excludes), como `.cs` e `.xaml` arquivos, sem a necessidade de incluí-los explicitamente no arquivo do projeto.
 
 #### <a name="assemblyinfo-considerations"></a>Considerações sobre o Assembly.info
 
@@ -151,7 +151,7 @@ Se você abrir o arquivo de projeto *. csproj* , poderá ver algo assim:
 
 Como mencionado anteriormente, o projeto do .NET Core tem um estilo mais compacto e você precisa migrar a estrutura do projeto para o novo estilo de SDK do .NET Core.
 
-Na Gerenciador de soluções, clique com o botão direito do mouse no projeto Windows Forms e selecione **descarregar**  >  **edição**do projeto.
+Na Gerenciador de soluções, clique com o botão direito do mouse no projeto Windows Forms e selecione **descarregar**  >  **edição** do projeto.
 
 Agora você pode atualizar o arquivo. csproj. Você excluirá todo o conteúdo e o substituirá pelo código a seguir:
 
@@ -208,7 +208,7 @@ Se você compilar o projeto novamente e executá-lo, não verá as imagens do pr
 string image_name = Environment.CurrentDirectory + "\\..\\..\\Assets\\Images\\Catalog\\" + catalogItems.Picturefilename;
 ```
 
-como
+para
 
 ```csharp
 string image_name = Environment.CurrentDirectory + "\\..\\..\\..\\Assets\\Images\\Catalog\\" + catalogItems.Picturefilename;

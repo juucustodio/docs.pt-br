@@ -1,17 +1,17 @@
 ---
 title: Assinando eventos
 description: Arquitetura de microsserviços .NET para aplicativos .NET em contêineres | Entenda os detalhes de publicação e assinatura de eventos de integração.
-ms.date: 01/30/2020
-ms.openlocfilehash: 838aaebbd390a66142c2bcdfa2f3b0ee4c32b7f0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: c9146ddbdfbf00e743108c07af1f74d7690a17a8
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172203"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188719"
 ---
 # <a name="subscribing-to-events"></a>Assinando eventos
 
-A primeira etapa para usar o barramento de eventos é fazer com que os microsserviços assinem os eventos que eles desejam receber. Isso deve ser feito nos microsserviços destinatários.
+A primeira etapa para usar o barramento de eventos é fazer com que os microsserviços assinem os eventos que eles desejam receber. Essa funcionalidade deve ser feita nos microserviços do destinatário.
 
 O código simples a seguir mostra o que cada destinatário de microsserviço precisa implementar ao iniciar o serviço (ou seja, a classe `Startup`) para assinar os eventos que precisa. Nesse caso, o microsserviço `basket-api` precisa assinar as mensagens `ProductPriceChangedIntegrationEvent` e `OrderStartedIntegrationEvent`.
 
@@ -32,7 +32,7 @@ Depois que esse código for executado, o microsserviço assinante escutará por 
 
 ## <a name="publishing-events-through-the-event-bus"></a>Publicando eventos por meio do barramento de eventos
 
-Por fim, o remetente da mensagem (microsserviço de origem) publica os eventos de integração com um código semelhante ao exemplo a seguir. (Esse é um exemplo simplificado que não leva em conta a atomicidade.) Você implementaria um código semelhante sempre que um evento precisar ser propagado em vários microserviços, normalmente logo após a confirmação dos dados ou das transações do microserviço de origem.
+Por fim, o remetente da mensagem (microsserviço de origem) publica os eventos de integração com um código semelhante ao exemplo a seguir. (Essa abordagem é um exemplo simplificado que não leva em conta a atomicidade.) Você implementaria um código semelhante sempre que um evento precisar ser propagado em vários microserviços, normalmente logo após a confirmação dos dados ou das transações do microserviço de origem.
 
 Primeiro, o objeto de implementação do barramento de eventos (baseado no RabbitMQ ou em um barramento de serviço) seria injetado no construtor do controlador, como no código a seguir:
 
@@ -91,25 +91,25 @@ Em microsserviços mais avançados, como ao usar abordagens de CQRS, ele pode se
 
 ### <a name="designing-atomicity-and-resiliency-when-publishing-to-the-event-bus"></a>Criando atomicidade e resiliência ao publicar no barramento de eventos
 
-Ao publicar eventos de integração por meio de um sistema de mensagens distribuído como o barramento de eventos, surge o problema da atualização do banco de dados original e da publicação de um evento de forma atômica (ou seja, ambas as operações são concluídas ou nenhuma delas). Por exemplo, no exemplo simplificado mostrado anteriormente, o código confirma os dados no banco de dados quando o preço do produto é alterado e, em seguida, publica uma mensagem ProductPriceChangedIntegrationEvent. Inicialmente, pode parecer essencial que essas duas operações sejam executada atomicamente. No entanto, se você estivesse usando uma transação distribuída que envolvesse o banco de dados e o agente de mensagens, assim como faria em sistemas mais antigos, como o [MSMQ (Enfileiramento de Mensagens da Microsoft)](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)), isso não seria recomendado pelos motivos descritos pelo [Teorema CAP](https://www.quora.com/What-Is-CAP-Theorem-1).
+Ao publicar eventos de integração por meio de um sistema de mensagens distribuído como o barramento de eventos, surge o problema da atualização do banco de dados original e da publicação de um evento de forma atômica (ou seja, ambas as operações são concluídas ou nenhuma delas). Por exemplo, no exemplo simplificado mostrado anteriormente, o código confirma os dados no banco de dados quando o preço do produto é alterado e, em seguida, publica uma mensagem ProductPriceChangedIntegrationEvent. Inicialmente, pode parecer essencial que essas duas operações sejam executada atomicamente. No entanto, se você estiver usando uma transação distribuída envolvendo o banco de dados e o agente de mensagem, como você faz em sistemas mais antigos, como o [MSMQ (enfileiramento de mensagens da Microsoft)](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)), essa abordagem não é recomendada pelos motivos descritos pelo [teorema Cap](https://www.quora.com/What-Is-CAP-Theorem-1).
 
 Basicamente, você usa microsserviços para criar sistemas escalonáveis e altamente disponíveis. Simplificando um pouco, o teorema de extremidade diz que você não pode criar um banco de dados (distribuído) (ou um microserviço que possui seu modelo) que está continuamente disponível, consistente *e* tolerante a qualquer partição. Você deve escolher duas dessas três propriedades.
 
 Em arquiteturas baseadas em microserviços, você deve escolher disponibilidade e tolerância, além de realçar a consistência forte. Portanto, na maioria dos aplicativos modernos baseados em microsserviços, geralmente não é interessante usar transações distribuídas no sistema de mensagens, como ao implementar [transações distribuídas](/previous-versions/windows/desktop/ms681205(v=vs.85)) com base no DTC (Coordenador de Transações Distribuídas) do Windows com o [MSMQ](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)).
 
-Vamos voltar para o problema inicial e seu exemplo. Se o serviço falhar depois que o banco de dados for atualizado (nesse caso, logo após a linha de código com `_context.SaveChangesAsync()` ), mas antes de o evento de integração ser publicado, o sistema geral poderá se tornar inconsistente. Isso pode ser crítico, dependendo da operação de negócios específica com a qual você está lidando.
+Vamos voltar para o problema inicial e seu exemplo. Se o serviço falhar depois que o banco de dados for atualizado (nesse caso, logo após a linha de código com `_context.SaveChangesAsync()` ), mas antes de o evento de integração ser publicado, o sistema geral poderá se tornar inconsistente. Essa abordagem pode ser crítica para os negócios, dependendo da operação de negócios específica com a qual você está lidando.
 
 Como mencionado anteriormente na seção de arquitetura, você pode ter várias abordagens para lidar com esse problema:
 
 - Usando o padrão [Event Sourcing](/azure/architecture/patterns/event-sourcing) completo.
 
-- Usando [mineração do log de transações](https://www.scoop.it/t/sql-server-transaction-log-mining).
+- Usando mineração do log de transações.
 
 - Usando o [padrão Outbox](https://www.kamilgrzybek.com/design/the-outbox-pattern/). Essa é uma tabela transacional para armazenar os eventos de integração (estendendo a transação local).
 
 Neste cenário, o uso do padrão ES (Event Sourcing) completo é uma das melhores abordagens, se não for *a* melhor. No entanto, em muitos cenários de aplicativo, pode ser impossível implementar um sistema completo de ES. O ES significa o armazenamento somente dos eventos de domínio em seu banco de dados transacional, em vez de armazenar dados do estado atual. Armazenar apenas os eventos de domínio pode ter grandes benefícios, como ter o histórico do sistema disponível e poder determinar o estado do sistema em qualquer momento no passado. No entanto, implementar um sistema de ES completo exige que você refaça a arquitetura da maior parte do seu sistema e também pode apresentar muitas outras complexidades e requisitos. Por exemplo, vai ser interessante usar um banco de dados criado especificamente para fornecimento de eventos, como o [Event Store](https://eventstore.org/), ou um banco de dados orientado a documentos, como Azure Cosmos DB, MongoDB, Cassandra, CouchDB ou RavenDB. O ES é uma ótima abordagem para esse problema, mas não é a solução mais fácil, a menos que você já esteja familiarizado com fornecimento de eventos.
 
-A opção de usar a mineração de logs de transações inicialmente parece transparente. No entanto, para usar essa abordagem, o microsserviço deverá ser acoplado ao seu log de transações do RDBMS, como o log de transações do SQL Server. Isso provavelmente não é interessante. Outra desvantagem é que as atualizações de baixo nível registradas no log de transações podem não estar no mesmo nível que seus eventos de integração de alto nível. Nesse caso, o processo de engenharia reversa dessas operações do log de transações poderá ser difícil.
+A opção de usar a mineração de logs de transações inicialmente parece transparente. No entanto, para usar essa abordagem, o microsserviço deverá ser acoplado ao seu log de transações do RDBMS, como o log de transações do SQL Server. Essa abordagem provavelmente não é desejável. Outra desvantagem é que as atualizações de baixo nível registradas no log de transações podem não estar no mesmo nível que seus eventos de integração de alto nível. Nesse caso, o processo de engenharia reversa dessas operações do log de transações poderá ser difícil.
 
 Uma abordagem equilibrada é uma combinação de uma tabela de banco de dados transacional e um padrão de ES simplificado. Você pode usar um estado como "pronto para publicar o evento", que você definiu no evento original ao confirmá-lo na tabela de eventos de integração. Em seguida, você tenta publicar o evento no barramento de eventos. Se a ação de publicar evento for bem sucedido, você iniciará outra transação no serviço de origem e moverá o estado de "pronto para publicar o evento" para "evento já publicado".
 
@@ -355,7 +355,7 @@ Se o sinalizador "reentregue" for definido, o receptor deverá levar isso em con
 - **Banco de dados Event Store**. Site oficial. \
     <https://geteventstore.com/>
 
-- **Patrick Nommensen. Gerenciamento de Dados orientadas a eventos para microservices** \
+- **Patrick Nommensen. Event-Driven Gerenciamento de Dados para os microserviços** \
     <https://dzone.com/articles/event-driven-data-management-for-microservices-1>
 
 - **Teorema CAP** \

@@ -6,12 +6,12 @@ ms.author: wiwagn
 no-loc:
 - Blazor
 ms.date: 12/01/2020
-ms.openlocfilehash: a4549e48152b21af05c67f601c1db65029e346fa
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: 75c696d881ad0586b11cdbd264f3ff90ec3bce8d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851660"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98187958"
 ---
 # <a name="common-client-side-web-technologies"></a>Tecnologias da Web comuns do lado do cliente
 
@@ -169,7 +169,7 @@ A execução de código .NET dentro de navegadores da Web é possibilitada pelo 
 
 O código Webassembly pode acessar a funcionalidade completa do navegador via JavaScript, chamada de interoperabilidade de JavaScript, geralmente reduzida para interoperabilidade de JavaScript ou de JS. O código .NET executado por meio da WebAssembly no navegador é executado na área restrita do JavaScript do navegador com as proteções que a área restrita oferece contra ações mal intencionadas no computador cliente.
 
-Para obter mais detalhes, consulte [introdução ao Blazor ASP.NET Core](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-5.0)
+Para obter mais informações, consulte [introdução ao Blazor ASP.NET Core ](/aspnet/core/blazor/).
 
 ### <a name="choosing-a-spa-framework"></a>Escolhendo uma estrutura de SPA
 

@@ -23,4 +23,4 @@
     - name: Depuração
       href: debugging.md
 - name: Referência API
-  href: /dotnet/api?view=iot-dotnet-1.1
+  href: ../../api/index.md?view=iot-dotnet-1.1

@@ -2,12 +2,12 @@
 title: 'O que há de novo no guia F # 5,0-F #'
 description: 'Obtenha uma visão geral dos novos recursos disponíveis em F # 5,0.'
 ms.date: 11/06/2020
-ms.openlocfilehash: 2384f1a75f5e708dc6f170d82fa15c5e0f54c85d
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 9b138e4801a3e599db650990acd53c0f956b78b8
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96740179"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190722"
 ---
 # <a name="whats-new-in-f-50"></a>O que há de novo no F # 5,0
 
@@ -407,7 +407,7 @@ Esse recurso implementa o [F # RFC FS-1074](https://github.com/fsharp/fslang-des
 
 ## <a name="simplified-interop-with-nullable-value-types"></a>Interoperabilidade simplificada com tipos de valor anulável
 
-Os [tipos anuláveis (de valor)](https://docs.microsoft.com/dotnet/api/system.nullable-1) (chamados de tipos anuláveis historicamente) têm o suporte de F #, mas interagir com eles tem sido tradicionalmente um problema, pois você teria que construir um `Nullable` `Nullable<SomeType>` wrapper ou cada vez que quisesse passar um valor. Agora, o compilador converterá implicitamente um tipo de valor em um `Nullable<ThatValueType>` se o tipo de destino corresponder. O código a seguir agora é possível:
+Os [tipos anuláveis (de valor)](/dotnet/api/system.nullable-1) (chamados de tipos anuláveis historicamente) têm o suporte de F #, mas interagir com eles tem sido tradicionalmente um problema, pois você teria que construir um `Nullable` `Nullable<SomeType>` wrapper ou cada vez que quisesse passar um valor. Agora, o compilador converterá implicitamente um tipo de valor em um `Nullable<ThatValueType>` se o tipo de destino corresponder. O código a seguir agora é possível:
 
 ```fsharp
 #r "nuget: Microsoft.Data.Analysis"

@@ -5,19 +5,16 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 60887eed-df40-4412-b812-41e1dd329d15
-ms.openlocfilehash: 878e610bd1fe0b7e2496f251333a3ad21909788a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1505582e5ac7303a2df20539fdcf67435746b9d3
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245088"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190488"
 ---
 # <a name="side-by-side-versioning-in-workflowservicehost"></a>Controle de versão lado a lado no WorkflowServiceHost
 
 O <xref:System.ServiceModel.Activities.WorkflowServiceHost> controle de versão lado a lado introduzido no .NET Framework 4,5 fornece a capacidade de hospedar várias versões de um serviço de fluxo de trabalho em um único ponto de extremidade. A funcionalidade de lado a lado fornecida permite que um serviço de fluxo de trabalho seja configurado para que novas instâncias do serviço de fluxo de trabalho sejam criadas usando a nova definição de fluxo de trabalho, enquanto executa instâncias completas usando a definição existente. Este tópico fornece uma visão geral da execução lado a lado do serviço de fluxo de trabalho usando <xref:System.ServiceModel.Activities.WorkflowServiceHost>.  
-  
-> [!NOTE]
-> Para fazer o download de um exemplo e assistir a uma explicação em vídeo sobre o controle de versão lado a lado do serviço de fluxo de trabalho, consulte controle de versão lado a [lado com um serviço de fluxo de trabalho Web-Hosted xamlx](https://go.microsoft.com/fwlink/?LinkId=393746).  
   
 ## <a name="hosting-multiple-versions-in-a-workflow-service"></a>Hospedando várias versões em um serviço de fluxo de trabalho  
 

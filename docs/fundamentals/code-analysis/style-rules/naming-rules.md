@@ -16,12 +16,12 @@ helpviewer_keywords:
 - naming code style rules [EditorConfig]
 - naming rules
 - EditorConfig naming conventions
-ms.openlocfilehash: 8ce209e64ee7f9f9028c221daedef8fc6a993ef7
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 0eea5e89ac5055a45d9ead14363cc2f2fc574401
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96585650"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191073"
 ---
 # <a name="naming-rules"></a>Regras de nomenclatura
 
@@ -79,7 +79,7 @@ Todas as propriedades de regra de nomenclatura são necessárias para que uma re
 | -- | -- |
 | `symbols` | O título do grupo de símbolos, definindo os símbolos aos quais essa regra deve ser aplicada |
 | `style` | O título do estilo de nomenclatura que deve ser associado a esta regra |
-| `severity` |  Define a severidade com a qual impor a regra de nomenclatura. Defina o valor associado como um dos níveis de [severidade](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/configuration-options#severity-level)disponíveis. <sup>1</sup> |
+| `severity` |  Define a severidade com a qual impor a regra de nomenclatura. Defina o valor associado como um dos níveis de [severidade](../configuration-options.md#severity-level)disponíveis. <sup>1</sup> |
 
 **Observações:**
 

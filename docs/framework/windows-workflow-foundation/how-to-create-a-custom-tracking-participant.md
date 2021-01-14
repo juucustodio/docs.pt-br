@@ -5,19 +5,16 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1b612c7e-2381-4a7c-b07a-77030415f2a3
-ms.openlocfilehash: 5f00997b059d7ea6f6ac6fb6d7bd83e4515ac02a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6fc8584b979c606a32e70e971be30a4bed89bdc2
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275795"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190501"
 ---
 # <a name="how-to-create-a-custom-tracking-participant"></a>Como: criar um participante de acompanhamento personalizado
 
 O rastreamento de fluxo de trabalho fornece a visibilidade ao status da execução do fluxo de trabalho. O runtime de fluxo de trabalho emite os registros de rastreamento que descrevem os eventos de ciclo de vida do fluxo de trabalho, os eventos de ciclo de vida da atividade, os reinícios do indicador e as falhas. Esses registros de rastreamento são consumidos pelos participantes. Windows Workflow Foundation (WF) inclui um participante de rastreamento padrão que grava registros de rastreamento como eventos de ETW (rastreamento de eventos para Windows). Se isso não atender aos requisitos, você também poderá escrever um participante de rastreamento personalizado. Esta etapa do tutorial descreve como criar um participante de rastreamento personalizado e um perfil de rastreamento que captura a saída das atividades `WriteLine` de forma que elas possam ser exibidas para o usuário.  
-  
-> [!NOTE]
-> Cada tópico do tutorial de Introdução depende dos tópicos anteriores. Para concluir este tópico, primeiro você deve concluir os tópicos anteriores. Para fazer o download de uma versão completa ou exibir um vídeo com o tutorial, consulte [Windows Workflow Foundation (WF45) – introdução tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ## <a name="to-create-the-custom-tracking-participant"></a>Para criar o participante de rastreamento personalizado  
   

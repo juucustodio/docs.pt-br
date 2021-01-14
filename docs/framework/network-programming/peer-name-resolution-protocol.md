@@ -3,12 +3,12 @@ title: Protocolo PNRP
 description: Saiba mais sobre o PNRP (Peer Name Resolution Protocol), um protocolo de registro de nome seguro, escalonável e dinâmico e resolução de nomes.
 ms.date: 03/30/2017
 ms.assetid: 11940511-c124-4d91-ae31-d4ed6e81ee58
-ms.openlocfilehash: d50514569d066d04391ce65522df789ed421dbed
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9ab46566b3c0d6ceff694eca266bdb6e10441374
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239387"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191229"
 ---
 # <a name="peer-name-resolution-protocol"></a>Protocolo PNRP
 
@@ -48,12 +48,8 @@ O protocolo PNRP demonstra as seguintes propriedades:
   
 - <xref:System.Net.PeerToPeer.PeerNameResolver>: Define o processo de resolução de um nome de par para o respectivo ponto de extremidade da rede, incluindo métodos síncronos e assíncronos para a resolução.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.PeerResolvers>
 - <xref:System.Net.PeerToPeer>
 - [Amostras de programação de rede](network-programming-samples.md)
-
-<!-- to-do: review sample links
-- [PeerToPeer Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179571)
--->

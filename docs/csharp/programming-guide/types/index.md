@@ -12,12 +12,12 @@ helpviewer_keywords:
 - C# language, types
 - strong typing [C#]
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
-ms.openlocfilehash: c347dbc6af46d4c334445d606d7cedfdf17e43f6
-ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
+ms.openlocfilehash: 6a1a5b230e427a4991162a702245f1a87352784d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95098704"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190241"
 ---
 # <a name="types-c-programming-guide"></a>Tipos (Guia de Programação em C#)
 
@@ -74,8 +74,6 @@ Você usa os constructos [struct](../../language-reference/builtin-types/struct.
 - Cada tipo no CTS é definido como um *tipo de valor* ou um *tipo de referência*. Esses tipos incluem todos os tipos personalizados na biblioteca de classes do .NET e também seus próprios tipos definidos pelo usuário. Os tipos que você define usando a palavra-chave [struct](../../language-reference/builtin-types/struct.md) são tipos de valor. Todos os tipos numéricos internos são `structs`. Os tipos que você define usando a palavra-chave [class](../../language-reference/keywords/class.md) são tipos de referência. Os tipos de referência e os tipos de valor têm diferentes regras de tempo de compilação e comportamento de tempo de execução diferente.
 
 A ilustração a seguir mostra a relação entre tipos de referência e tipos de valor no CTS.
-
-A imagem a seguir mostra os tipos de valor e tipos de referência no CTS:
 
 ![Captura de tela que mostra de tipos de valor CTS e tipos de referência.](./media/index/value-reference-types-common-type-system.png)
 
@@ -173,7 +171,7 @@ Se os dois tipos forem diferentes para uma variável, é importante entender qua
 Para obter mais informações, consulte os seguintes artigos:
 
 - [Conversões cast e conversões de tipo](./casting-and-type-conversions.md)
-- [Conversão boxing e unboxing](./boxing-and-unboxing.md)
+- [Boxing e unboxing](./boxing-and-unboxing.md)
 - [Usando o tipo dynamic](./using-type-dynamic.md)
 - [Tipos de valor](../../language-reference/builtin-types/value-types.md)
 - [Tipos de referência](../../language-reference/keywords/reference-types.md)

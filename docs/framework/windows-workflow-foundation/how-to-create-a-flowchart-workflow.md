@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 185d7aea-68a6-4bd8-adde-45050f33170a
-ms.openlocfilehash: f8e0703591629a72e0a8f6eeb05dd9d19c8c4c91
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: eb30a3a21ffc4cffe64d2f5d0bc741728f1ea87d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275821"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190475"
 ---
 # <a name="how-to-create-a-flowchart-workflow"></a>Como: criar um fluxo de trabalho de fluxograma
 
@@ -19,9 +19,6 @@ Os fluxos de trabalho podem ser construídos a partir de atividades internas ass
   
 > [!NOTE]
 > Cada tópico do tutorial de Introdução depende dos tópicos anteriores. Para concluir este tópico, você deve primeiro concluir [como: criar uma atividade](how-to-create-an-activity.md).  
-  
-> [!NOTE]
-> Para baixar uma versão completa do tutorial, consulte [Windows Workflow Foundation (WF45) – introdução tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ### <a name="to-create-the-workflow"></a>Para criar o fluxo de trabalho  
   
@@ -152,7 +149,7 @@ Os fluxos de trabalho podem ser construídos a partir de atividades internas ass
   
      Para obter instruções sobre como executar o fluxo de trabalho, consulte o próximo tópico [como: executar um fluxo de trabalho](how-to-run-a-workflow.md). Se você já tiver concluído a etapa [como executar um fluxo de trabalho](how-to-run-a-workflow.md) com um estilo diferente de fluxo de trabalho e desejar executá-lo usando o fluxo de trabalho de fluxograma nesta etapa, pule para a seção [para criar e executar o aplicativo](how-to-run-a-workflow.md#BKMK_ToRunTheApplication) de [como executar um fluxo de trabalho](how-to-run-a-workflow.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Activities.Statements.Flowchart>
 - <xref:System.Activities.Statements.FlowDecision>

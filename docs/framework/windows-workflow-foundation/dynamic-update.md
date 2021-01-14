@@ -2,42 +2,42 @@
 title: Atualização dinâmica
 ms.date: 03/30/2017
 ms.assetid: 8b6ef19b-9691-4b4b-824c-3c651a9db96e
-ms.openlocfilehash: 2553e6a29f498a9b53752d6c191df21a391dee34
-ms.sourcegitcommit: 4735bb7741555bcb870d7b42964d3774f4897a6e
+ms.openlocfilehash: cb4b63a67aa6e9033b227198e2ecc2b1b80db927
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66378286"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190150"
 ---
 # <a name="dynamic-update"></a>Atualização dinâmica
 
-A atualização dinâmica fornece um mecanismo para que os desenvolvedores de aplicativos de fluxo de trabalho atualizem a definição de fluxo de trabalho de uma instância do fluxo de trabalho persistida. Isso pode ser implementar uma correção de bug, novos requisitos ou acomodar alterações inesperadas. Este tópico fornece uma visão geral da funcionalidade de atualização dinâmica introduzida no .NET Framework 4.5.
+A atualização dinâmica fornece um mecanismo para que os desenvolvedores de aplicativos de fluxo de trabalho atualizem a definição de fluxo de trabalho de uma instância do fluxo de trabalho persistida. Isso pode ser implementar uma correção de bug, novos requisitos ou acomodar alterações inesperadas. Este tópico fornece uma visão geral da funcionalidade de atualização dinâmica introduzida no .NET Framework 4,5.
 
 ## <a name="dynamic-update"></a>Atualização dinâmica
 
-Para aplicar as atualizações dinâmicas em uma instância fluxo de trabalho persistida, um <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> é criado que contém instruções para o tempo de execução que descreve como modificar a instância de fluxo de trabalho persistida para refletir as alterações desejadas. Assim que o mapa de atualização é criado, ele é aplicado às instâncias desejadas do fluxo de trabalho persistido. Assim que a atualização dinâmica é aplicada, a instância do fluxo de trabalho pode ser retomada usando a nova definição do fluxo de trabalho atualizado. Há quatro etapas necessárias para criar e aplicar um mapa de atualização.
+Para aplicar as atualizações dinâmicas em uma instância fluxo de trabalho persistida, um <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> é criado que contém instruções para o runtime que descreve como modificar a instância de fluxo de trabalho persistida para refletir as alterações desejadas. Assim que o mapa de atualização é criado, ele é aplicado às instâncias desejadas do fluxo de trabalho persistido. Assim que a atualização dinâmica é aplicada, a instância do fluxo de trabalho pode ser retomada usando a nova definição do fluxo de trabalho atualizado. Há quatro etapas necessárias para criar e aplicar um mapa de atualização.
 
 1. [Preparar a definição de fluxo de trabalho para atualização dinâmica](dynamic-update.md#Prepare)
 
-2. [Atualize a definição de fluxo de trabalho para refletir as alterações desejadas](dynamic-update.md#Update)
+2. [Atualizar a definição de fluxo de trabalho para refletir as alterações desejadas](dynamic-update.md#Update)
 
 3. [Criar o mapa de atualização](dynamic-update.md#Create)
 
-4. [Aplicar o mapa de atualização para as instâncias de fluxo de trabalho persistidas desejado](dynamic-update.md#Apply)
+4. [Aplicar o mapa de atualização às instâncias de fluxo de trabalho persistentes desejadas](dynamic-update.md#Apply)
 
 > [!NOTE]
-> Observe que as etapas de 1 a 3, que abrangem a criação do mapa de atualização, podem ser executadas de maneira independente de aplicar a atualização. Um cenário comum que o desenvolvedor de fluxo de trabalho criará o mapa de atualização offline e, em seguida, um administrador aplicará a atualização em um momento posterior.
+> Observe que as etapas de 1 a 3, que abrangem a criação do mapa de atualização, podem ser executadas de maneira independente de aplicar a atualização. Um cenário comum para o qual o desenvolvedor de fluxo de trabalho criará o mapa de atualização offline e, depois, um administrador aplicará a atualização posteriormente.
 
 Este tópico fornece uma visão geral do processo de atualização dinâmica de adicionar uma nova atividade a uma instância persistida de um fluxo de trabalho Xaml compilado.
 
-### <a name="Prepare"></a> Preparar a definição de fluxo de trabalho para atualização dinâmica
+### <a name="prepare-the-workflow-definition-for-dynamic-update"></a><a name="Prepare"></a> Preparar a definição de fluxo de trabalho para atualização dinâmica
 
 A primeira etapa do processo de atualização dinâmica é preparar a definição desejada do fluxo de trabalho para atualização. Isso é feito chamando o método <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=nameWithType> e transmitindo na definição de fluxo de trabalho para ser modificado. Esse método valida e percorre a árvore de fluxo de trabalho para identificar todos os objetos, como atividades públicas e variáveis que precisam ser marcadas para que possam ser comparadas posteriormente com a definição do fluxo de trabalho alterado. Quando isso estiver concluído, a árvore de fluxo de trabalho será clonada e anexada à definição original do fluxo de trabalho. Quando o mapa de atualização é criado, a versão atualizada da definição de fluxo de trabalho é comparada com a definição original de fluxo de trabalho e o mapa de atualização é gerado com base nas diferenças.
 
 Para preparar um fluxo de trabalho do Xaml para atualização dinâmica, ele pode ser carregado em um <xref:System.Activities.ActivityBuilder> e, em seguida, o <xref:System.Activities.ActivityBuilder> é passado em <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate%2A?displayProperty=nameWithType>.
 
 > [!NOTE]
-> Para obter mais informações sobre como trabalhar com fluxos de trabalho serializados e <xref:System.Activities.ActivityBuilder>, consulte [serializar fluxos de trabalho e atividades de XAML e](serializing-workflows-and-activities-to-and-from-xaml.md).
+> Para obter mais informações sobre como trabalhar com fluxos de trabalho serializados e o <xref:System.Activities.ActivityBuilder> , consulte [serializando fluxos de trabalho e atividades de e para XAML](serializing-workflows-and-activities-to-and-from-xaml.md).
 
 No exemplo a seguir, uma definição de `MortgageWorkflow` (que consiste em um <xref:System.Activities.Statements.Sequence> com várias atividades filhos) é carregada em um <xref:System.Activities.ActivityBuilder> e, em seguida, é preparada para atualização dinâmica. Depois que o método retorna, o <xref:System.Activities.ActivityBuilder> contém a definição original de fluxo de trabalho assim como uma cópia.
 
@@ -59,10 +59,7 @@ ActivityBuilder ab = XamlServices.Load(
 DynamicUpdateServices.PrepareForUpdate(ab);
 ```
 
-> [!NOTE]
-> Para baixar o código de exemplo que acompanha este tópico, consulte [código de exemplo de atualização dinâmica](https://go.microsoft.com/fwlink/?LinkId=227905).
-
-### <a name="Update"></a> Atualize a definição de fluxo de trabalho para refletir as alterações desejadas
+### <a name="update-the-workflow-definition-to-reflect-the-desired-changes"></a><a name="Update"></a> Atualizar a definição de fluxo de trabalho para refletir as alterações desejadas
 
 Quando a definição de fluxo de trabalho tiver sido preparada para atualização, as alterações desejadas poderão ser feitas. Você pode adicionar ou remover atividades, adicionar, mover ou excluir variáveis públicas, adicionar ou remover argumentos, e fazer alterações na assinatura de representantes da atividade. Você não pode remover uma atividade em execução ou modificar a assinatura de um representante em execução. Essas alterações podem ser feitas com o uso de código ou em um designer de fluxo de trabalho hospedado novamente. No exemplo a seguir, uma atividade `VerifyAppraisal` personalizada é adicionada à sequência que compõe o corpo do `MortgageWorkflow` do exemplo anterior.
 
@@ -81,9 +78,9 @@ Sequence s = ab.Implementation as Sequence;
 s.Activities.Insert(2, va);
 ```
 
-### <a name="Create"></a> Criar o mapa de atualização
+### <a name="create-the-update-map"></a><a name="Create"></a> Criar o mapa de atualização
 
-Assim que a definição de fluxo de trabalho que foi preparada para atualização tiver sido modificada, o mapa de atualização poderá ser criado. Para criar um mapa de atualização dinâmica, o método <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap%2A?displayProperty=nameWithType> será chamado. Isso retorna um <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> que contém as informações que o tempo de execução precisa para modificar uma instância do fluxo de trabalho persistido de forma que pode ser carregado e retomado com a nova definição de fluxo de trabalho. No exemplo a seguir, um mapa dinâmico é criado para a definição alterada de `MortgageWorkflow` do exemplo anterior.
+Assim que a definição de fluxo de trabalho que foi preparada para atualização tiver sido modificada, o mapa de atualização poderá ser criado. Para criar um mapa de atualização dinâmica, o método <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap%2A?displayProperty=nameWithType> será chamado. Isso retorna um <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> que contém as informações que o runtime precisa para modificar uma instância do fluxo de trabalho persistido de forma que pode ser carregado e retomado com a nova definição de fluxo de trabalho. No exemplo a seguir, um mapa dinâmico é criado para a definição alterada de `MortgageWorkflow` do exemplo anterior.
 
 ```csharp
 // Create the update map.
@@ -111,9 +108,9 @@ XamlServices.Save(xw, ab);
 sw.Close();
 ```
 
-### <a name="Apply"></a> Aplicar o mapa de atualização para as instâncias de fluxo de trabalho persistidas desejado
+### <a name="apply-the-update-map-to-the-desired-persisted-workflow-instances"></a><a name="Apply"></a> Aplicar o mapa de atualização às instâncias de fluxo de trabalho persistentes desejadas
 
-Aplicar o mapa da atualização pode ser feito a qualquer momento após criá-lo. Pode ser feito imediatamente usando a instância do <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> que foi retornada pelo <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap%2A?displayProperty=nameWithType> ou pode ser feito posteriormente usando uma cópia salva do mapa da atualização. Para atualizar uma instância de fluxo de trabalho, carregue-a em um <xref:System.Activities.WorkflowApplicationInstance> usando <xref:System.Activities.WorkflowApplication.GetInstance%2A?displayProperty=nameWithType>. Em seguida, crie uma <xref:System.Activities.WorkflowApplication> usando a definição de fluxo de trabalho atualizado e os detalhes desejados <xref:System.Activities.WorkflowIdentity>. Este <xref:System.Activities.WorkflowIdentity> pode ser diferente do que foi usado para persistir o fluxo de trabalho original, e é normalmente para refletir que a instância persistida foi modificada. Quando o <xref:System.Activities.WorkflowApplication> é criado, ele é carregado usando a sobrecarga de <xref:System.Activities.WorkflowApplication.Load%2A?displayProperty=nameWithType> que usa um <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> e, em seguida, descarregado com uma chamada para <xref:System.Activities.WorkflowApplication.Unload%2A?displayProperty=nameWithType>. Isso aplica a atualização dinâmica e persiste a instância atualizada do fluxo de trabalho.
+Aplicar o mapa da atualização pode ser feito a qualquer momento após criá-lo. Pode ser feito imediatamente usando a instância do <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> que foi retornada pelo <xref:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap%2A?displayProperty=nameWithType> ou pode ser feito posteriormente usando uma cópia salva do mapa da atualização. Para atualizar uma instância de fluxo de trabalho, carregue-a em um <xref:System.Activities.WorkflowApplicationInstance> usando <xref:System.Activities.WorkflowApplication.GetInstance%2A?displayProperty=nameWithType>. Em seguida, crie um <xref:System.Activities.WorkflowApplication> usando a definição de fluxo de trabalho atualizado e o desejado <xref:System.Activities.WorkflowIdentity> . Este <xref:System.Activities.WorkflowIdentity> pode ser diferente do que foi usado para persistir o fluxo de trabalho original, e é normalmente para refletir que a instância persistida foi modificada. Quando o <xref:System.Activities.WorkflowApplication> é criado, ele é carregado usando a sobrecarga de <xref:System.Activities.WorkflowApplication.Load%2A?displayProperty=nameWithType> que usa um <xref:System.Activities.DynamicUpdate.DynamicUpdateMap> e, em seguida, descarregado com uma chamada para <xref:System.Activities.WorkflowApplication.Unload%2A?displayProperty=nameWithType>. Isso aplica a atualização dinâmica e persiste a instância atualizada do fluxo de trabalho.
 
 ```csharp
 // Load the serialized update map.
@@ -171,7 +168,7 @@ foreach (Guid id in ids)
 Assim que a atualização dinâmica tiver sido aplicada, a instância do fluxo de trabalho poderá ser retomada. Observe que a nova definição atualizada e o <xref:System.Activities.WorkflowIdentity> devem ser usados.
 
 > [!NOTE]
-> Para obter mais informações sobre como trabalhar com <xref:System.Activities.WorkflowApplication> e <xref:System.Activities.WorkflowIdentity>, consulte [usando WorkflowIdentity e controle de versão](using-workflowidentity-and-versioning.md).
+> Para obter mais informações sobre como trabalhar com o <xref:System.Activities.WorkflowApplication> e o <xref:System.Activities.WorkflowIdentity> , consulte [usando a WorkflowIdentity e o controle de versão](using-workflowidentity-and-versioning.md).
 
 No exemplo a seguir, o fluxo de trabalho do `MortgageWorkflow_v1.1.xaml` do exemplo anterior foi compilado, e foi carregado e retomado usando a definição atualizada do fluxo de trabalho.
 
@@ -196,6 +193,3 @@ wfApp.Load(InstanceId);
 // Resume the workflow.
 // wfApp.ResumeBookmark(...);
 ```
-
-> [!NOTE]
-> Para baixar o código de exemplo que acompanha este tópico, consulte [código de exemplo de atualização dinâmica](https://go.microsoft.com/fwlink/?LinkId=227905).

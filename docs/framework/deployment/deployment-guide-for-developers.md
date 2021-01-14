@@ -6,12 +6,12 @@ helpviewer_keywords:
 - developer's guide, deploying .NET Framework
 - deployment [.NET Framework], developer's guide
 ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
-ms.openlocfilehash: 950ff048a918a52e6c64d8cc15e1ef0f80233b88
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dddd10846c5c57c88d23fef6d6851e288bd2d4b1
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238646"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191086"
 ---
 # <a name="net-framework-deployment-guide-for-developers"></a>Guia de implantação do .NET Framework para desenvolvedores
 
@@ -25,7 +25,7 @@ Você pode baixar os pacotes redistribuíveis e os pacotes de idiomas para .NET 
 - [.NET Framework 4.7](https://dotnet.microsoft.com/download/dotnet-framework/net47)
 - [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/net462)
 - [.NET Framework 4.6.1](https://dotnet.microsoft.com/download/dotnet-framework/net461)
-- [.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46)
+- [.NET Framework 4,6](https://dotnet.microsoft.com/download/dotnet-framework/net46)
 - [.NET Framework 4.5.2](https://dotnet.microsoft.com/download/dotnet-framework/net452)
 - [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/net451)
 - [.NET Framework 4.5](https://dotnet.microsoft.com/download/dotnet-framework/net45)
@@ -279,7 +279,7 @@ O .NET Framework oferece um conjunto de arquivos executáveis de pacotes de idio
 - [.NET Framework 4.7](https://dotnet.microsoft.com/download/dotnet-framework/net47)
 - [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/net462)
 - [.NET Framework 4.6.1](https://dotnet.microsoft.com/download/dotnet-framework/net461)
-- [.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46)
+- [.NET Framework 4,6](https://dotnet.microsoft.com/download/dotnet-framework/net46)
 - [.NET Framework 4.5.2](https://dotnet.microsoft.com/download/dotnet-framework/net452)
 - [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/net451)
 - [.NET Framework 4.5](https://dotnet.microsoft.com/download/dotnet-framework/net45)
@@ -316,19 +316,19 @@ A tabela a seguir lista os códigos de retorno mais comuns do instalador redistr
 
 Veja o conteúdo a seguir:
 
-- [Códigos de erro do BITS (Serviço de Transferência Inteligente em Segundo Plano)](https://go.microsoft.com/fwlink/?LinkId=180946)
+- [Códigos de erro do BITS (Serviço de Transferência Inteligente em Segundo Plano)](/windows/win32/bits/bits-return-values)
 
-- [Códigos de erro do moniker de URL](https://go.microsoft.com/fwlink/?LinkId=180947)
+- [Códigos de erro do moniker de URL](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775145(v=vs.85))
 
-- [Códigos de erro WinHttp](https://go.microsoft.com/fwlink/?LinkId=180948)
+- [Códigos de erro WinHttp](/windows/win32/winhttp/error-messages)
 
 #### <a name="other-error-codes"></a>Outros códigos de erro
 
 Veja o conteúdo a seguir:
 
-- [Códigos de erro do Windows Installer](https://go.microsoft.com/fwlink/?LinkId=180949)
+- [Códigos de erro do Windows Installer](/previous-versions/aa368542(v=vs.85))
 
-- [Códigos de resultado do Windows Update Agent](https://go.microsoft.com/fwlink/?LinkId=180951)
+- [Códigos de resultado do Windows Update Agent](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720442(v=ws.10))
 
 ## <a name="uninstalling-the-net-framework"></a>Desinstalando o .NET Framework
 
@@ -381,7 +381,7 @@ A tabela a seguir lista .NET Framework pacotes de idiomas que estão disponívei
 |1041|Japonês|ja|
 |1042|Coreano|ko|
 |1043|Holandês – Holanda|nl|
-|1044|Norueguês (Bokmål)|no|
+|1044|Norueguês (Bokmål)|não|
 |1045|Polonês|pl|
 |1046|Português – Brasil|pt-BR|
 |1049|Russo|ru|
@@ -391,7 +391,7 @@ A tabela a seguir lista .NET Framework pacotes de idiomas que estão disponívei
 |2070|Português – Portugal|pt-PT|
 |3082|Espanhol - Espanha (Moderno)|es|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guia de implantação para administradores](guide-for-administrators.md)
 - [Requisitos do sistema](../get-started/system-requirements.md)

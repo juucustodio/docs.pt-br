@@ -1,7 +1,7 @@
 ---
-title: ASP.NET Core alterações significativas
+title: Alterações interruptivas do ASP.NET Core
 titleSuffix: ''
-description: Lista as alterações significativas no ASP.NET Core 3,0 e 3,1.
+description: Lista as alterações interruptivas no ASP.NET Core 3.0 e 3.1.
 ms.date: 11/03/2020
 author: scottaddie
 ms.author: scaddie
@@ -12,16 +12,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/24/2020
 ms.locfileid: "96032223"
 ---
-# <a name="aspnet-core-breaking-changes-for-versions-30-and-31"></a>ASP.NET Core alterações recentes para as versões 3,0 e 3,1
+# <a name="aspnet-core-breaking-changes-for-versions-30-and-31"></a>Alterações interruptivas no ASP.NET Core para as versões 3.0 e 3.1
 
 ASP.NET Core fornece os recursos de desenvolvimento de aplicativo Web usados pelo .NET Core.
 
-Selecione um dos links a seguir para alterações significativas em uma versão específica:
+Selecione um dos seguintes links para alterações interruptivas em uma versão específica:
 
 * [ASP.NET Core 3,1](#aspnet-core-31)
 * [ASP.NET Core 3,0](#aspnet-core-30)
 
-As seguintes alterações significativas no ASP.NET Core 3,0 e 3,1 estão documentadas nesta página:
+As seguintes alterações interruptivas no ASP.NET Core 3.0 e 3.1 estão documentadas nesta página:
 
 - [APIs antifalsificação obsoletas, CORS, diagnóstico, MVC e roteamento removidas](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
 - [Autenticação: Google + substituição](#authentication-google-deprecated-and-replaced)

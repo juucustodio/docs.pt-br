@@ -190,7 +190,7 @@ Várias tecnologias disponíveis para .NET Framework bibliotecas não estão dis
 
 O [pacote de compatibilidade do Windows](../../core/porting/windows-compat-pack.md) fornece acesso a APIs que estavam disponíveis anteriormente apenas para .NET Framework. Ele pode ser usado em projetos .NET Core e .NET Standard.
 
-Para obter mais informações sobre a compatibilidade de API, você pode encontrar a documentação sobre alterações significativas e APIs preteridas/herdadas em <https://docs.microsoft.com/dotnet/core/compatibility/fx-core> .
+Para obter mais informações sobre a compatibilidade de API, você pode encontrar a documentação sobre alterações interruptivas e APIs preteridas/herdadas em <https://docs.microsoft.com/dotnet/core/compatibility/fx-core>.
 
 ### <a name="appdomains"></a>AppDomains
 

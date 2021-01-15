@@ -1,4 +1,4 @@
-- name: O que são alterações da falha?
+- name: O que são alterações interruptivas?
   href: index.md
 - name: Tipos de compatibilidade
   href: categories.md
@@ -9,13 +9,13 @@
       href: breaking-changes.md
     - name: Do .NET Framework
       items:
-        - name: Alterações da falha
+        - name: Alterações interruptivas
           href: fx-core.md
         - name: Tecnologias indisponíveis
           href: ../porting/net-framework-tech-unavailable.md
         - name: APIs que sempre geram
           href: unsupported-apis.md
-    - name: Alterações da falha por versão
+    - name: Alterações interruptivas por versão
       expanded: true
       items:
         - name: .NET 5.0
@@ -280,7 +280,7 @@
           href: 3.0.md
         - name: .NET Core 2.1
           href: 2.1.md
-    - name: Alterações da falha por área
+    - name: Alterações interruptivas por área
       items:
         - name: ASP.NET Core
           items:

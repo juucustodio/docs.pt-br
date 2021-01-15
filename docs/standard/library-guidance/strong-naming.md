@@ -62,7 +62,7 @@ Você deve dar um nome forte às suas bibliotecas do .NET de software livre. A n
 
 ❌ Não adicione, remova ou altere a chave de nomenclatura forte.
 
-> Modificar a chave de nome forte do assembly muda a identidade do assembly e interrompe o código compilado que a utiliza. Para obter mais informações, veja [alteração da falha de binário](./breaking-changes.md#binary-breaking-change).
+> Modificar a chave de nome forte do assembly muda a identidade do assembly e interrompe o código compilado que a utiliza. Para obter mais informações, veja [alterações interruptivas binárias](./breaking-changes.md#binary-breaking-change).
 
 ❌ Não publique versões de nome forte e não forte da sua biblioteca. Por exemplo, `Contoso.Api` e `Contoso.Api.StrongNamed`.
 

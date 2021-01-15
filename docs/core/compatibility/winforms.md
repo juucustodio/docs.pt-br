@@ -1,6 +1,6 @@
 ---
-title: Windows Forms alterações significativas
-description: Lista as alterações significativas em Windows Forms para .NET Core 3,0 e 3,1.
+title: Alterações interruptivas do Windows Forms
+description: Lista as alterações interruptivas no Windows Forms para o .NET Core 3.0 e 3.1.
 ms.date: 09/08/2020
 ms.openlocfilehash: b944f7eea89b61f41feb8eef99e949c2d6017960
 ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
@@ -9,13 +9,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/24/2020
 ms.locfileid: "95726425"
 ---
-# <a name="breaking-changes-in-windows-forms-for-net-core-30-and-31"></a>Alterações recentes em Windows Forms para .NET Core 3,0 e 3,1
+# <a name="breaking-changes-in-windows-forms-for-net-core-30-and-31"></a>Alterações interruptivas no Windows Forms para o .NET Core 3.0 e 3.1
 
-Windows Forms suporte foi adicionado ao .NET Core na versão 3,0. Este artigo lista as alterações significativas para Windows Forms pela versão do .NET na qual elas foram introduzidas. Se você estiver atualizando um aplicativo Windows Forms de .NET Framework ou de uma versão anterior do .NET Core (3,0 ou posterior), este artigo se aplicará a você.
+Windows Forms suporte foi adicionado ao .NET Core na versão 3,0. Este artigo lista as alterações interruptivas para Windows Forms segundo versão do .NET na qual elas foram introduzidas. Se você estiver atualizando um aplicativo Windows Forms de .NET Framework ou de uma versão anterior do .NET Core (3,0 ou posterior), este artigo se aplicará a você.
 
-As seguintes alterações significativas estão documentadas nesta página:
+As seguintes alterações interruptivas estão documentadas nesta página:
 
-| Alteração significativa | Versão introduzida |
+| Alteração interruptiva | Versão introduzida |
 | - | :-: |
 | [Controles removidos](#removed-controls) | 3.1 |
 | [Evento CellFormatting não gerado se ToolTip for mostrado](#cellformatting-event-not-raised-if-tooltip-is-shown) | 3.1 |

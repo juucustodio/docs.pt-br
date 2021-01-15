@@ -108,7 +108,7 @@ Para publicar um único arquivo executável, defina o `PublishSingleFile` em seu
 </PropertyGroup>
 ```
 
-- ou -
+- ou -
 
 ```dotnetcli
 dotnet publish -r win10-x64 -p:PublishSingleFile=true
@@ -573,5 +573,5 @@ Muitas vezes, quando você está desenvolvendo um aplicativo, quer usar uma cone
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Examine as alterações significativas entre o .NET Core 2,2 e 3,0.](../compatibility/3.0.md)
-- [Examine as alterações significativas no .NET Core 3,0 para aplicativos Windows Forms.](../compatibility/winforms.md#net-core-30)
+- [Examinar as alterações interruptivas entre o .NET Core 2.2 e o 3.0.](../compatibility/3.0.md)
+- [Examinar as alterações interruptivas no .NET Core 3.0 para aplicativos do Windows Forms.](../compatibility/winforms.md#net-core-30)

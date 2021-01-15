@@ -1,7 +1,7 @@
 ---
-title: Alterações recentes – .NET Framework para o .NET Core
+title: Alterações interruptivas – .NET Framework para o .NET Core
 titleSuffix: ''
-description: Lista as alterações significativas de .NET Framework para o .NET Core 1,0-3,1.
+description: Lista as alterações interruptivas do .NET Framework para o .NET Core 1.0 a 3.1.
 ms.date: 05/05/2020
 ms.openlocfilehash: 5904a359813b6d07bd2a27d882ade4395efe3256
 ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
@@ -10,12 +10,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/10/2020
 ms.locfileid: "89656360"
 ---
-# <a name="breaking-changes-for-migration-from-net-framework-to-net-core"></a>Alterações recentes de migração do .NET Framework para o .NET Core
+# <a name="breaking-changes-for-migration-from-net-framework-to-net-core"></a>Alterações interruptivas para migração do .NET Framework para o .NET Core
 
-Se você estiver migrando um aplicativo do .NET Framework para as versões 1,0 do .NET Core até 3,1, as alterações significativas listadas neste artigo poderão afetar você. As alterações significativas são agrupadas por categoria e dentro dessas categorias, pela versão do .NET Core na qual elas foram introduzidas.
+Se você estiver migrando um aplicativo do .NET Framework para as versões 1.0 a 3.1 do .NET Core, as alterações interruptivas listadas neste artigo poderão afetar você. As alterações interruptivas são agrupadas por categoria e, dentro dessas categorias, são agrupadas pela versão do .NET Core em que elas foram introduzidas.
 
 > [!NOTE]
-> Este artigo não é uma lista completa de alterações significativas entre o .NET Framework e o .NET Core. As alterações significativas mais importantes são adicionadas aqui, pois estamos cientes delas.
+> Este artigo não é uma lista completa das alterações interruptivas entre o .NET Framework e o .NET Core. As alterações interruptivas mais importantes são adicionadas aqui conforme ficamos cientes da existência delas.
 
 ## <a name="core-net-libraries"></a>Bibliotecas principais do .NET
 
@@ -81,7 +81,7 @@ Se você estiver migrando um aplicativo do .NET Framework para as versões 1,0 d
 
 ## <a name="windows-forms"></a>Windows Forms
 
-Windows Forms suporte foi adicionado ao .NET Core na versão 3,0. Se você estiver migrando um aplicativo Windows Forms do .NET Framework para o .NET Core, as alterações significativas listadas aqui podem afetar seu aplicativo.
+Windows Forms suporte foi adicionado ao .NET Core na versão 3,0. Se você estiver migrando um aplicativo do Windows Forms do .NET Framework para o .NET Core, as alterações interruptivas listadas neste artigo poderão afetar o aplicativo em questão.
 
 - [Controles removidos](#removed-controls)
 - [Evento CellFormatting não gerado se ToolTip for mostrado](#cellformatting-event-not-raised-if-tooltip-is-shown)

@@ -246,9 +246,9 @@ No Windows, você também pode escolher usar <xref:System.Net.Http.WinHttpHandle
 
 No Linux e no macOS, só é possível configurar <xref:System.Net.Http.HttpClient> por processo. No Linux, você precisa implantar [libcurl](https://curl.haxx.se/libcurl/) se quiser usar a implementação <xref:System.Net.Http.HttpClient> antiga. (Ele é instalado com .NET Core 2.0.)
 
-### <a name="breaking-changes"></a>Alterações de quebra
+### <a name="breaking-changes"></a>Alterações da falha
 
-Para obter informações sobre alterações significativas, consulte [alterações recentes de migração da versão 2,0 para 2,1](../compatibility/2.1.md).
+Para obter informações sobre alterações interruptivas, confira [Alterações interruptivas para a migração da versão 2.0 para a 2.1](../compatibility/2.1.md).
 
 ## <a name="see-also"></a>Confira também
 

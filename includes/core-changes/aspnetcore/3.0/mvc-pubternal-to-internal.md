@@ -12,7 +12,7 @@ No ASP.NET Core 3,0, todos os tipos "pubternal" no MVC foram atualizados para am
 
 #### <a name="change-description"></a>Descrição das alterações
 
-Em ASP.NET Core, os tipos "pubternal" são declarados como `public` , mas residem em um `.Internal` namespace com sufixo. Embora esses tipos sejam `public` , eles não têm nenhuma política de suporte e estão sujeitos a alterações significativas. Infelizmente, o uso acidental desses tipos foi comum, resultando em alterações significativas nesses projetos e limitando a capacidade de manter a estrutura.
+Em ASP.NET Core, os tipos "pubternal" são declarados como `public` , mas residem em um `.Internal` namespace com sufixo. Embora esses tipos sejam `public`, eles não têm nenhuma política de suporte e estão sujeitos a alterações interruptivas. O uso acidental desses tipos tem sido comum, resultando em alterações interruptivas nesses projetos e limitando a capacidade de manutenção da estrutura.
 
 #### <a name="version-introduced"></a>Versão introduzida
 
@@ -20,7 +20,7 @@ Em ASP.NET Core, os tipos "pubternal" são declarados como `public` , mas reside
 
 #### <a name="old-behavior"></a>Comportamento antigo
 
-Alguns tipos no MVC eram `public` , mas em um `.Internal` namespace. Esses tipos não tinham nenhuma política de suporte e estavam sujeitos a alterações significativas.
+Alguns tipos no MVC eram `public` , mas em um `.Internal` namespace. Esses tipos não tinham nenhuma política de suporte e estavam sujeitos a alterações interruptivas.
 
 #### <a name="new-behavior"></a>Novo comportamento
 
@@ -28,7 +28,7 @@ Todos esses tipos são atualizados para que estejam `public` em um namespace com
 
 #### <a name="reason-for-change"></a>Motivo da alteração
 
-O uso acidental dos tipos "pubternal" é comum, resultando em alterações significativas nesses projetos e limitando a capacidade de manter a estrutura.
+O uso acidental dos tipos "pubternal" tem sido comum, resultando em alterações interruptivas nesses projetos e limitando a capacidade de manutenção da estrutura.
 
 #### <a name="recommended-action"></a>Ação recomendada
 

@@ -83,8 +83,8 @@ Se `EmbeddedResourceUseDependentUponConvention` é definido como `false` no arqu
 > - Se `RootNamespace` não estiver definido, o padrão será o nome do projeto.
 > - Se `LogicalName` os `ManifestResourceName` metadados, ou `DependentUpon` forem especificados para um `EmbeddedResource` item no arquivo de projeto, essa regra de nomenclatura não se aplicará a esse arquivo de recurso.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como o nome do recurso de manifesto funciona](https://gist.github.com/BenVillalobos/041673b9a73bec60fdc3bf0f86fae62a)
 - [Propriedades do MSBuild para projetos SDK do .NET Core](../project-sdk/msbuild-props.md)
-- [Alterações significativas do MSBuild](../compatibility/msbuild.md)
+- [Alterações interruptivas no MSBuild](../compatibility/msbuild.md)

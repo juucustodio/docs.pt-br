@@ -209,7 +209,7 @@ Primeiro, é recomendável que você leia as [diretrizes de design de exceção]
 
 As principais construções disponíveis em F # para fins de geração de exceções devem ser consideradas na seguinte ordem de preferência:
 
-| Função | Syntax | Finalidade |
+| Função | Sintaxe | Finalidade |
 |----------|--------|---------|
 | `nullArg` | `nullArg "argumentName"` | Gera um `System.ArgumentNullException` com o nome do argumento especificado. |
 | `invalidArg` | `invalidArg "argumentName" "message"` | Gera um `System.ArgumentException` com um nome de argumento e uma mensagem especificados. |
@@ -414,7 +414,7 @@ A inferência de tipos pode evitar que você digite muita clichê. E a generaliz
 
 * Considere rotular nomes de argumentos com tipos explícitos em APIs públicas e não confie na inferência de tipos para isso.
 
-    O motivo disso é que **você** deve estar no controle da forma de sua API, não do compilador. Embora o compilador possa fazer um bom trabalho em tipos informativos, é possível que a forma da sua API seja alterada se os internos dos quais ele depende tiverem tipos alterados. Isso pode ser o que você deseja, mas certamente resultará em uma alteração de API de interrupção com a qual os consumidores de downstream terão que lidar. Em vez disso, se você controlar explicitamente a forma de sua API pública, poderá controlar essas alterações significativas. Em termos de DDD, isso pode ser considerado uma camada anticorrupção.
+    O motivo disso é que **você** deve estar no controle da forma de sua API, não do compilador. Embora o compilador possa fazer um bom trabalho em tipos informativos, é possível que a forma da sua API seja alterada se os internos dos quais ele depende tiverem tipos alterados. Isso pode ser o que você deseja, mas certamente resultará em uma alteração de API de interrupção com a qual os consumidores de downstream terão que lidar. Se, em vez disso, você controlar explicitamente a forma de sua API pública, poderá controlar essas alterações interruptivas. Em termos de DDD, isso pode ser considerado uma camada anticorrupção.
 
 * Considere fornecer um nome significativo para seus argumentos genéricos.
 

@@ -1,6 +1,6 @@
 ---
-title: 'Alteração significativa: segurança: versões de pacote do NuGet IdentityModel atualizadas'
-description: 'Saiba mais sobre a alteração significativa no ASP.NET Core 5,0 título segurança: versões do pacote NuGet do IdentityModel atualizadas'
+title: 'Alteração interruptiva: Segurança: versões do pacote NuGet do IdentityModel atualizadas'
+description: 'Saiba mais sobre a alteração interruptiva no ASP.NET Core 5.0 com título Segurança: versões do pacote NuGet do IdentityModel atualizadas'
 author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
@@ -38,7 +38,7 @@ Os pacotes foram atualizados para aproveitar os aprimoramentos nas bibliotecas s
 
 ## <a name="recommended-action"></a>Ação recomendada
 
-As atualizações de pacote não introduzem alterações da API pública para ASP.NET Core. No entanto, é possível que haja alterações significativas nos próprios pacotes.
+As atualizações de pacote não introduzem alterações da API pública para ASP.NET Core. No entanto, é possível que haja alterações interruptivas nos pacotes propriamente ditos.
 
 ## <a name="affected-apis"></a>APIs afetadas
 

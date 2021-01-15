@@ -1,6 +1,6 @@
 ---
-title: Alterações significativas de criptografia
-description: Lista alterações significativas relacionadas à criptografia no .NET Core 2.1-3.0.
+title: Alterações interruptivas relacionadas à criptografia
+description: Lista as alterações interruptivas relacionadas à criptografia no .NET Core 2.1 a 3.0.
 ms.date: 04/22/2020
 ms.openlocfilehash: a4801bb4d5a859e2c8c2b536ee0597cb4db2f65d
 ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
@@ -9,11 +9,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/24/2020
 ms.locfileid: "95682647"
 ---
-# <a name="cryptography-breaking-changes-for-net-core-21-30"></a>Alterações significativas de criptografia para o .NET Core 2.1-3.0
+# <a name="cryptography-breaking-changes-for-net-core-21-30"></a>Alterações interruptivas relacionadas à criptografia no .NET Core 2.1 a 3.0
 
-As seguintes alterações significativas estão documentadas nesta página:
+As seguintes alterações interruptivas estão documentadas nesta página:
 
-| Alteração significativa | Versão introduzida |
+| Alteração interruptiva | Versão introduzida |
 | - | :-: |
 | [A sintaxe de certificado confiável de início não é mais suportada no Linux](#begin-trusted-certificate-syntax-no-longer-supported-for-root-certificates-on-linux) | 3.0 |
 | [EnvelopedCms usa como padrão a criptografia AES-256](#envelopedcms-defaults-to-aes-256-encryption) | 3.0 |

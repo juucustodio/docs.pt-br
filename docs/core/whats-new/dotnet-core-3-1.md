@@ -70,7 +70,7 @@ Para obter mais informações sobre a `UseAppHost` configuração, consulte [Pro
 *Somente Windows*
 
 > [!WARNING]
-> Há alterações significativas no Windows Forms.
+> Há alterações interruptivas no Windows Forms.
 
 Os controles herdados foram incluídos em Windows Forms que não estão disponíveis na caixa de ferramentas do Visual Studio designer por algum tempo. Eles foram substituídos por novos controles de volta no .NET Framework 2,0. Elas foram removidas do SDK de desktop para .NET Core 3,1.
 
@@ -99,5 +99,5 @@ Para adicionar suporte para C++/CLI no Visual Studio 2019 versão 16,4, instale 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Examine as alterações significativas entre o .NET Core 3,0 e 3,1.](../compatibility/3.1.md)
-- [Examine as alterações significativas no .NET Core 3,1 para aplicativos Windows Forms.](../compatibility/winforms.md#net-core-31)
+- [Examinar as alterações interruptivas entre o .NET Core 3.0 e o 3.1.](../compatibility/3.1.md)
+- [Examinar as alterações interruptivas no .NET Core 3.1 para aplicativos do Windows Forms.](../compatibility/winforms.md#net-core-31)

@@ -24,8 +24,8 @@ No momento da compilação, o NuGet analisa todos os pacotes de que um projeto d
 A maioria das dependências de losangos é facilmente resolvida. No entanto, podem criar problemas em determinadas circunstâncias:
 
 - **Referências de pacote do NuGet conflitantes** impedem que uma versão seja resolvida durante a restauração de pacote.
-- **As alterações significativas entre as versões** causam bugs e exceções em tempo de execução.
-- **O assembly do pacote tem um nome forte** , a versão do assembly foi alterada e o aplicativo está sendo executado em .NET Framework. Redirecionamentos de associação de assembly são necessários.
+- **Alterações interruptivas entre as versões** causam erros e exceções em tempo de execução.
+- **O assembly do pacote tem um nome forte**, a versão do assembly foi alterada e o aplicativo está sendo executado em .NET Framework. Redirecionamentos de associação de assembly são necessários.
 
 Não é possível saber quais pacotes serão usados junto com o seu. Uma boa maneira de reduzir a probabilidade de uma dependência de losango provocar falha na sua biblioteca é minimizar o número de pacotes dos quais você depende.
 

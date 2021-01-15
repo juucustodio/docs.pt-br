@@ -28,11 +28,11 @@ Por exemplo:
 
 ### <a name="major-releases"></a>Versões principais
 
-As versões principais incluem novos recursos, nova área de superfície de API pública e correções de bugs. Os exemplos incluem o .NET Core 3,0 e o .NET 5,0.  Devido à natureza das alterações, espera-se que essas versões tenham alterações significativas. As versões principais são instaladas lado a lado com as versões principais anteriores.
+As versões principais incluem novos recursos, nova área de superfície de API pública e correções de bugs. Os exemplos incluem o .NET Core 3,0 e o .NET 5,0.  Devido à natureza das alterações, espera-se que essas versões tenham alterações interruptivas. As versões principais são instaladas lado a lado com as versões principais anteriores.
 
 ### <a name="minor-releases"></a>Versões secundárias
 
-As versões secundárias também incluem novos recursos, área de superfície de API pública e correções de bugs, e também podem ter alterações significativas. Os exemplos incluem o .NET Core 2,1 e o .NET Core 3,1. A diferença entre essas versões e as principais é que a magnitude das alterações é menor. Um aplicativo que atualiza do .NET Core 3,0 para 3,1 tem um salto menor para avançar. Versões secundárias são instaladas lado a lado com versões secundárias anteriores.
+As versões secundárias também incluem novos recursos, área de superfície de API pública e correções de bugs, além de também poderem ter alterações interruptivas. Os exemplos incluem o .NET Core 2,1 e o .NET Core 3,1. A diferença entre essas versões e as principais é que a magnitude das alterações é menor. Um aplicativo que atualiza do .NET Core 3,0 para 3,1 tem um salto menor para avançar. Versões secundárias são instaladas lado a lado com versões secundárias anteriores.
 
 ### <a name="servicing-updates"></a>Atualizações de serviço
 

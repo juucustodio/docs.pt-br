@@ -50,7 +50,7 @@ No entanto, ter como destino versões do .NET Standard inferiores introduz diver
 
 Há duas regras principais de controle de versão:
 
-- Aditivo: as versões do .NET Standard são círculos logicamente concêntricos: versões mais recentes incorporam todas as APIs das versões anteriores. Não há alterações significativas entre as versões.
+- Aditivo: as versões do .NET Standard são círculos logicamente concêntricos: versões mais recentes incorporam todas as APIs das versões anteriores. Não há alterações interruptivas entre as versões.
 - Imutável: após o envio, as versões do .NET Standard serão congeladas.
 
 Não haverá nenhuma nova versão do .NET Standard após 2,1. Para obter mais informações, consulte [.NET 5 e .net Standard](#net-5-and-net-standard) mais adiante neste artigo.
@@ -164,7 +164,7 @@ Aqui estão alguns problemas com .NET Standard que ajudam a explicar por que o .
 * Use `netstandard2.0` para compartilhar código entre .NET Framework e todas as outras implementações do .net.
 * Use `netstandard2.1` para compartilhar código entre o mono, o Xamarin e o .NET Core 3. x.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [.NET Standard versões (origem)](https://github.com/dotnet/standard/blob/master/docs/versions.md)
 - [Versões do .NET Standard (interface do usuário interativa)](https://dotnet.microsoft.com/platform/dotnet-standard#versions)

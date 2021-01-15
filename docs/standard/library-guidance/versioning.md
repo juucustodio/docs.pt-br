@@ -13,9 +13,9 @@ ms.locfileid: "84290117"
 
 Uma biblioteca de software raramente está completa na versão 1.0. As boas bibliotecas evoluem com o passar do tempo, adicionando recursos, corrigindo bugs e melhorando o desempenho. É importante que você possa liberar novas versões de uma biblioteca do .NET, fornecendo valor adicional a cada versão, sem interromper os usuários existentes.
 
-## <a name="breaking-changes"></a>Alterações da falha
+## <a name="breaking-changes"></a>Alterações interruptivas
 
-Para obter informações sobre como lidar com alterações da falha entre as versões, veja [Alterações da falha](./breaking-changes.md).
+Para obter informações sobre como lidar com alterações interruptivas entre as versões, veja [Alterações interruptivas](./breaking-changes.md).
 
 ## <a name="version-numbers"></a>Números de versão
 
@@ -31,7 +31,7 @@ A [Versão do pacote NuGet](/nuget/reference/package-versioning) é exibida em N
 
 O identificador de pacote do NuGet combinado com a versão do pacote NuGet é usado para identificar um pacote no NuGet. Por exemplo, `Newtonsoft.Json` + `11.0.2`. Um pacote com um sufixo é um pacote de pré-lançamento e tem um comportamento especial que o torna ideal para teste. Para obter mais informações, veja [Pacotes pré-lançamento](./nuget.md#pre-release-packages).
 
-Como a versão do pacote NuGet é a versão mais visível para os desenvolvedores, é uma boa ideia atualizá-la usando [SemVer (Controle de Versão de Semântica)](https://semver.org/). SemVer indica a importância das alterações entre as versões e ajuda os desenvolvedores a tomarem uma decisão bem informada ao escolherem qual versão usar. Por exemplo, ir de `1.0` para `2.0` indica que potencialmente há alterações significativas.
+Como a versão do pacote NuGet é a versão mais visível para os desenvolvedores, é uma boa ideia atualizá-la usando [SemVer (Controle de Versão de Semântica)](https://semver.org/). SemVer indica a importância das alterações entre as versões e ajuda os desenvolvedores a tomarem uma decisão bem informada ao escolherem qual versão usar. Por exemplo, ir de `1.0` para `2.0` indica que potencialmente há alterações interruptivas.
 
 ✔️ CONSIDERAR o uso do [SemVer 2.0.0](https://semver.org/) para criar a versão do seu pacote NuGet.
 
@@ -61,9 +61,9 @@ Nomenclatura forte combinada com a versão do assembly habilita [carregamento de
 
 > A versão do AssemblyVersion é incluída em algumas mensagens informativas exibidas ao usuário, por exemplo, o nome do assembly e os nomes de tipo qualificados do assembly em mensagens de exceção. Manter uma relação entre as versões fornece mais informações para desenvolvedores sobre qual versão eles estão usando.
 
-❌Não tem um AssemblyVersion fixo.
+❌ Não tem um AssemblyVersion fixo.
 
-> Embora um AssemblyVersion inalterável evite a necessidade de redirecionamentos de associação, isso significa que apenas uma única versão do assembly pode ser instalada no GAC (Cache de Assembly Global). Além disso, os aplicativos que fazem referência ao assembly no GAC serão interrompidos se outro aplicativo atualizar o assembly do GAC com alterações significativas.
+> Embora um AssemblyVersion inalterável evite a necessidade de redirecionamentos de associação, isso significa que apenas uma única versão do assembly pode ser instalada no GAC (Cache de Assembly Global). Além disso, os aplicativos que fazem referência ao assembly no GAC serão interrompidos se outro aplicativo atualizar o assembly do GAC com alterações interruptivas.
 
 ### <a name="assembly-file-version"></a>Versão do arquivo do assembly
 
@@ -94,7 +94,7 @@ A versão informativa do assembly é usada para registrar informações adiciona
 > [!NOTE]
 > As versões mais antigas do Visual Studio acionam um aviso de build caso essa versão não siga o formato `Major.Minor.Build.Revision`. O aviso pode ser ignorado com segurança.
 
-❌Evite definir a versão informativa do assembly por conta própria.
+❌ Evite definir a versão informativa do assembly por conta própria.
 
 > Permita a SourceLink gerar automaticamente a versão que contém metadados de controle do código-fonte e NuGet.
 

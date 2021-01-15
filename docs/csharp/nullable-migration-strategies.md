@@ -71,7 +71,7 @@ Qual dessas estratégias você escolhe depende de quanto o desenvolvimento ativo
 >
 > Os geradores podem optar por usar a [`#nullable`](language-reference/preprocessor-directives/preprocessor-nullable.md) diretiva de pré-processador.
 
-## <a name="should-nullable-warnings-introduce-breaking-changes"></a>Os avisos que permitem valor nulo apresentam alterações significativas?
+## <a name="should-nullable-warnings-introduce-breaking-changes"></a>Os avisos de anuláveis introduzem alterações interruptivas?
 
 Antes de habilitar tipos de referência anuláveis, as variáveis são consideradas *alheios anuláveis*. Depois de habilitar tipos de referência anuláveis, todas essas variáveis são *não anuláveis*. O compilador emitirá avisos se essas variáveis não forem inicializadas para valores não nulos.
 

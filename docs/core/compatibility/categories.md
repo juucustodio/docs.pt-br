@@ -52,6 +52,6 @@ Manter a compatibilidade com versões posteriores praticamente impede alteraçõ
 
 Manter a compatibilidade com versões futuras não é uma meta do .NET Core.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Avaliar alterações da falha no .NET Core](index.md)
+- [Avaliar alterações interruptivas no .NET Core](index.md)

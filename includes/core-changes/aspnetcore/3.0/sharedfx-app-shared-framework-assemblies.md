@@ -14,7 +14,7 @@ A partir do ASP.NET Core 3,0, a estrutura compartilhada ASP.NET Core ( `Microsof
 
 Imagine a alteração como a redefinição de limites para a ASP.NET Core "plataforma". A estrutura compartilhada será [criada de origem por qualquer pessoa por meio do GitHub](https://github.com/dotnet/source-build) e continuará a oferecer os benefícios existentes das estruturas compartilhadas do .NET Core para seus aplicativos. Alguns benefícios incluem tamanho de implantação menor, aplicação de patch centralizada e tempo de inicialização mais rápido.
 
-Como parte da alteração, algumas alterações significativas importantes são introduzidas no `Microsoft.AspNetCore.App` .
+Como parte da alteração, algumas alterações interruptivas importantes são introduzidas em `Microsoft.AspNetCore.App`.
 
 #### <a name="version-introduced"></a>Versão introduzida
 

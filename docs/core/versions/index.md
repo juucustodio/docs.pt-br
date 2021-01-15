@@ -52,7 +52,7 @@ As partes `PRERELEASE` e `BUILDNUMBER` opcionais nunca farão parte das versões
 `MAJOR` é incrementado quando:
 
 - Ocorrem alterações significativas no produto ou uma nova direção de produto.
-- Alterações da falha foram identificadas. Há um alto padrão para aceitar alterações da falha.
+- Alterações interruptivas foram identificadas. Há um alto padrão para aceitar alterações interruptivas.
 - Não há mais suporte para uma versão mais antiga.
 - Uma versão `MAJOR` mais nova de uma dependência existente é adotada.
 

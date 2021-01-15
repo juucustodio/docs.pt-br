@@ -9,7 +9,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/20/2020
 ms.locfileid: "92223325"
 ---
-# <a name="breaking-changes"></a>Alterações de quebra
+# <a name="breaking-changes"></a>Alterações da falha
 
 É importante que uma biblioteca .NET encontre um equilíbrio entre a estabilidade para usuários existentes e a inovação para o futuro. Autores de biblioteca tendem a refatorar e repensar o código até que ele fique perfeito, mas causar falhas para seus usuários existentes tem um impacto negativo, especialmente para bibliotecas de baixo nível.
 
@@ -27,7 +27,7 @@ O modo como uma biblioteca é usada pela comunidade do .NET altera o efeito das 
 
 ✔️ PENSE em como sua biblioteca será usada. Que efeito as alterações da falha terão sobre aplicativos e bibliotecas que a usam?
 
-✔️ MINIMIZE as alterações da falha ao desenvolver uma biblioteca do .NET de baixo nível.
+✔️ MINIMIZE as alterações interruptivas ao desenvolver uma biblioteca do .NET de baixo nível.
 
 ✔️ CONSIDERE a possibilidade de publicar uma nova versão significativamente diferente da biblioteca como um novo pacote do NuGet.
 
@@ -96,11 +96,11 @@ public class Document
 
 > Remover APIs é uma alteração da falha binária. Considere a possibilidade de manter métodos e tipos obsoletos se mantê-los tem baixo custo e não adiciona muitas dívidas técnicas à sua biblioteca. Não remover tipos e métodos pode ajudar a evitar os piores cenários mencionados acima.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Considerações sobre versão e atualização para os desenvolvedores de C#](../../csharp/whats-new/version-update-considerations.md)
 - [Um guia definitivo para as alterações da falha de API no .NET](https://stackoverflow.com/questions/1456785/a-definitive-guide-to-api-breaking-changes-in-net)
-- [Regras de alteração significativa do .NET](https://github.com/dotnet/runtime/blob/master/docs/coding-guidelines/breaking-change-rules.md)
+- [Regras de alteração interruptiva do .NET](https://github.com/dotnet/runtime/blob/master/docs/coding-guidelines/breaking-change-rules.md)
 
 >[!div class="step-by-step"]
 >[Anterior](versioning.md)

@@ -14,7 +14,7 @@ Além disso, as implementações padrão do `IResponseCachingPolicyProvider` e d
 
 #### <a name="change-description"></a>Descrição das alterações
 
-Em ASP.NET Core, os tipos "pubternal" são declarados como `public` , mas residem em um namespace com sufixo `.Internal` . Embora esses tipos sejam públicos, eles não têm nenhuma política de suporte e estão sujeitos a alterações significativas. Infelizmente, o uso acidental desses tipos foi comum, resultando em alterações significativas nesses projetos e limitando a capacidade de manter a estrutura.
+Em ASP.NET Core, os tipos "pubternal" são declarados como `public` , mas residem em um namespace com sufixo `.Internal` . Embora esses tipos sejam públicos, eles não têm nenhuma política de suporte e estão sujeitos a alterações interruptivas. O uso acidental desses tipos tem sido comum, resultando em alterações interruptivas nesses projetos e limitando a capacidade de manutenção da estrutura.
 
 #### <a name="version-introduced"></a>Versão introduzida
 

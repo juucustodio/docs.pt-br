@@ -18,7 +18,7 @@ ms.locfileid: "95734446"
 
 Um aspecto importante da criação de uma estrutura é garantir que a extensibilidade da estrutura tenha sido cuidadosamente considerada. Isso exige que você compreenda os custos e os benefícios associados a vários mecanismos de extensibilidade. Este capítulo ajuda você a decidir quais dos mecanismos de extensibilidade — a subclasse, os eventos, os membros virtuais, os retornos de chamada e assim por diante — pode atender melhor aos requisitos de sua estrutura.  
   
- Há várias maneiras de permitir a extensibilidade em estruturas. Elas variam de menos poderosas, mas menos dispendiosas a muito poderosas, mas caras. Para qualquer requisito de extensibilidade específico, você deve escolher o mecanismo de extensibilidade menos dispendioso que atenda aos requisitos. Tenha em mente que geralmente é possível adicionar mais extensibilidade posteriormente, mas você nunca pode descartar sem introduzir alterações significativas.  
+ Há várias maneiras de permitir a extensibilidade em estruturas. Elas variam de menos poderosas, mas menos dispendiosas a muito poderosas, mas caras. Para qualquer requisito de extensibilidade específico, você deve escolher o mecanismo de extensibilidade menos dispendioso que atenda aos requisitos. Tenha em mente que muitas vezes é possível adicionar mais extensibilidade posteriormente, mas você nunca pode retirá-la sem a introdução de alterações interruptivas.  
   
 ## <a name="in-this-section"></a>Nesta seção  
 

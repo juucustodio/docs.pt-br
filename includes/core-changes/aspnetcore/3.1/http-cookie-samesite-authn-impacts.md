@@ -8,7 +8,7 @@ ms.locfileid: "96032224"
 ---
 ### <a name="http-browser-samesite-changes-impact-authentication"></a>HTTP: navegador SameSite alterações de impacto na autenticação
 
-Alguns navegadores, como Chrome e Firefox, fizeram alterações significativas em suas implementações de `SameSite` cookies. As alterações afetam os cenários de autenticação remota, como OpenID Connect e WS-Federation, que devem ser recusadas enviando `SameSite=None` . No entanto, o `SameSite=None` interrompe o IOS 12 e algumas versões mais antigas de outros navegadores. O aplicativo precisa farejar essas versões e omitir `SameSite` .
+Alguns navegadores, como Chrome e Firefox, fizeram alterações interruptivas nas respectivas implementações de `SameSite` para cookies. As alterações afetam os cenários de autenticação remota, como OpenID Connect e WS-Federation, que devem ser recusadas enviando `SameSite=None` . No entanto, o `SameSite=None` interrompe o IOS 12 e algumas versões mais antigas de outros navegadores. O aplicativo precisa farejar essas versões e omitir `SameSite` .
 
 Para obter uma discussão sobre esse problema, consulte [dotnet/aspnetcore # 14996](https://github.com/dotnet/aspnetcore/issues/14996).
 

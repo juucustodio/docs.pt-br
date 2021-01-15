@@ -29,7 +29,7 @@ As APIs afetadas são marcadas com o modificador de acesso [interno](../../../..
 As diretrizes para essas :::no-loc text="\"pubternal\""::: APIs eram:
 
 * Pode ser alterado sem aviso prévio.
-* Não estavam sujeitos às políticas do .NET para evitar alterações significativas.
+* Não estavam sujeitas às políticas do .NET para evitar alterações interruptivas.
 
 Deixar as APIs `public` (mesmo nos `*.Internal` namespaces) era confusa para os clientes.
 

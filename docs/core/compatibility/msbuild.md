@@ -1,6 +1,6 @@
 ---
-title: Alterações significativas do MSBuild
-description: Lista as alterações significativas no MSBuild para .NET Core 3,0-3,1.
+title: Alterações interruptivas no MSBuild
+description: Lista as alterações interruptivas no MSBuild para o .NET Core 3.0 – 3.1.
 ms.date: 12/14/2020
 ms.openlocfilehash: 1ed5878845406fa7727c644f1e196d63a860646a
 ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
@@ -9,11 +9,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/16/2020
 ms.locfileid: "97593442"
 ---
-# <a name="msbuild-breaking-changes-in-net-core-30---31"></a>Alterações significativas do MSBuild no .NET Core 3,0-3,1
+# <a name="msbuild-breaking-changes-in-net-core-30---31"></a>Alterações interruptivas no MSBuild no .NET Core 3.0 – 3.1
 
-As seguintes alterações significativas estão documentadas nesta página:
+As seguintes alterações interruptivas estão documentadas nesta página:
 
-| Alteração significativa | Versão introduzida |
+| Alteração interruptiva | Versão introduzida |
 | - | - |
 | [As compilações de tempo de design retornam apenas referências de pacote de nível superior](#design-time-builds-only-return-top-level-package-references) | 3.1 |
 | [Alteração de nome de arquivo de manifesto de recurso](#resource-manifest-file-name-change) | 3.0 |

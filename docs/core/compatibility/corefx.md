@@ -1,6 +1,6 @@
 ---
-title: Alterações significativas na biblioteca do .NET
-description: Lista as alterações significativas nas principais bibliotecas do .NET para as versões 1.0-3.0 do .NET Core.
+title: Alterações interruptivas na biblioteca do .NET
+description: Lista as alterações interruptivas nas bibliotecas principais do .NET para as versões 1.0 a 3.0 do .NET Core.
 ms.date: 07/27/2020
 ms.openlocfilehash: 092ff36a5e07c9e226fe2a67d5e7cfd391e9d16b
 ms.sourcegitcommit: fcbe432482464b1639decad78cc4dc8387c6269e
@@ -9,13 +9,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "97366873"
 ---
-# <a name="core-net-libraries-breaking-changes-in-net-core-10-30"></a>Principais bibliotecas do .NET que violam as alterações no .NET Core 1.0-3.0
+# <a name="core-net-libraries-breaking-changes-in-net-core-10-30"></a>Alterações interruptivas nas bibliotecas principais do .NET Core 1.0 a 3.0
 
 As principais bibliotecas do .NET fornecem os primitivos e outros tipos gerais usados pelo .NET Core.
 
-As seguintes alterações significativas estão documentadas nesta página:
+As seguintes alterações interruptivas estão documentadas nesta página:
 
-| Alteração significativa | Versão introduzida |
+| Alteração interruptiva | Versão introduzida |
 | - | :-: |
 | [Passar GroupCollection para métodos de extensão assumindo IEnumerable \<T> requer ambiguidade](#passing-groupcollection-to-extension-methods-taking-ienumerablet-requires-disambiguation) | 3.0 |
 | [As APIs que relatam versão agora relatam produto e não versão de arquivo](#apis-that-report-version-now-report-product-and-not-file-version) | 3.0 |

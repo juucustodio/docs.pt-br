@@ -1,6 +1,6 @@
 ---
 title: Tipos de alterações da falha
-description: Saiba como o .NET Core tenta manter a compatibilidade para desenvolvedores em versões do .NET e que tipo de alteração é considerada uma alteração significativa.
+description: Saiba como o .NET Core tenta manter a compatibilidade para desenvolvedores entre versões do .NET e que tipo de alteração é considerada uma alteração interruptiva.
 ms.date: 06/10/2019
 ms.openlocfilehash: bc93316141ae99d8cfedc5e6d88a9e91216f9c6e
 ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
@@ -19,7 +19,7 @@ Ao longo de sua história, o .NET tentou manter um alto nível de compatibilidad
 
 Além da compatibilidade entre as implementações do .NET, os desenvolvedores esperam um alto nível de compatibilidade nas versões do .NET Core. Em particular, o código escrito para uma versão anterior do .NET Core precisam ser executado sem problemas em uma versão posterior do .NET Core. Na verdade, muitos desenvolvedores esperam que as novas APIs encontradas em versões recém-lançadas do .NET Core também sejam compatíveis com as versões de pré-lançamento em que essas APIs foram apresentadas.
 
-Este artigo descreve as alterações que afetam a compatibilidade e a maneira como a equipe do .NET avalia cada tipo de alteração. Entender como a equipe .NET se aproxima das possíveis alterações significativas é particularmente útil para desenvolvedores que abrem solicitações de pull que modificam o comportamento de [APIs existentes do .net](https://github.com/dotnet/runtime).
+Este artigo descreve as alterações que afetam a compatibilidade e a maneira como a equipe do .NET avalia cada tipo de alteração. Compreender como a equipe do .NET aborda as possíveis alterações de falha é particularmente útil para os desenvolvedores que abrem solicitações de pull que modificam o comportamento das [APIs .NET existentes](https://github.com/dotnet/runtime).
 
 As seções a seguir descrevem as categorias de alterações feitas nas APIs do .NET Core e seu impacto na compatibilidade de aplicativos. As alterações são permitidas ✔️, não permitido ❌ ou exigem julgamento e uma avaliação de como a previsibilidade, óbvia e consistente o comportamento anterior foi ❓.
 
@@ -76,7 +76,7 @@ Alterações nesta categoria modificam a área de superfície pública de um tip
 
   Há uma exceção à regra para remoção de interface: é possível adicionar a implementação de uma interface derivada da interface removida. Por exemplo, você pode remover <xref:System.IDisposable> se o tipo ou interface agora implementa <xref:System.ComponentModel.IComponent>, que implementa <xref:System.IDisposable>.
 
-- ❌Não **permitido: alteração de um `readonly struct` tipo para um tipo de [struct](../../csharp/language-reference/builtin-types/struct.md) **
+- ❌Não **permitido: alteração de um `readonly struct` tipo para um tipo de [struct](../../csharp/language-reference/builtin-types/struct.md)**
 
   `struct`No entanto, a alteração de um tipo para um `readonly struct` tipo é permitida.
 
@@ -88,13 +88,13 @@ Alterações nesta categoria modificam a área de superfície pública de um tip
 
 ### <a name="members"></a>Membros
 
-- ✔️ **permitido: expandindo a visibilidade de um membro que não é [virtual](../../csharp/language-reference/keywords/sealed.md) **
+- ✔️ **permitido: expandindo a visibilidade de um membro que não é [virtual](../../csharp/language-reference/keywords/sealed.md)**
 
-- ✔️ **permitido: adicionar um membro abstrato a um tipo público que não tem construtores (públicos ou protegidos) *acessíveis* ou o tipo é [lacrado](../../csharp/language-reference/keywords/sealed.md) **
+- ✔️ **permitido: adicionar um membro abstrato a um tipo público que não tem construtores (públicos ou protegidos) *acessíveis* ou o tipo é [lacrado](../../csharp/language-reference/keywords/sealed.md)**
 
   No entanto, adicionar um membro abstrato a um tipo que tenha construtores acessíveis (públicos ou protegidos) e não seja `sealed` não é permitido.
 
-- ✔️ **permitido: restringir a visibilidade de um membro [protegido](../../csharp/language-reference/keywords/protected.md) quando o tipo não tem construtores (públicos ou protegidos) acessíveis ou o tipo é [lacrado](../../csharp/language-reference/keywords/sealed.md) **
+- ✔️ **permitido: restringir a visibilidade de um membro [protegido](../../csharp/language-reference/keywords/protected.md) quando o tipo não tem construtores (públicos ou protegidos) acessíveis ou o tipo é [lacrado](../../csharp/language-reference/keywords/sealed.md)**
 
 - ✔️ **permitido: mover um membro para uma classe acima na hierarquia do que o tipo do qual ele foi removido**
 
@@ -106,7 +106,7 @@ Alterações nesta categoria modificam a área de superfície pública de um tip
 
    No entanto, não é permitido adicionar um construtor a uma classe que anteriormente não tinha construtores *sem* adicionar o construtor sem parâmetros.
 
-- ✔️ **permitido: alterar um membro de [abstract](../../csharp/language-reference/keywords/abstract.md) para [virtual](../../csharp/language-reference/keywords/virtual.md) **
+- ✔️ **permitido: alterar um membro de [abstract](../../csharp/language-reference/keywords/abstract.md) para [virtual](../../csharp/language-reference/keywords/virtual.md)**
 
 - ✔️ **permitido: alteração de um `ref readonly` para um `ref` valor de retorno (exceto para métodos ou interfaces virtuais)**
 
@@ -163,7 +163,7 @@ Alterações nesta categoria modificam a área de superfície pública de um tip
 
   Um [membro virtual](../../csharp/language-reference/keywords/virtual.md) fornece uma implementação de método que *pode ser* substituída por uma classe derivada. Um [membro abstrato](../../csharp/language-reference/keywords/abstract.md) não fornece nenhuma implementação e *precisa ser* substituído.
 
-- ❌Não **permitido: adicionar um membro abstrato a um tipo público que tenha construtores acessíveis (públicos ou protegidos) e que não esteja [lacrado](../../csharp/language-reference/keywords/sealed.md) **
+- ❌Não **permitido: adicionar um membro abstrato a um tipo público que tenha construtores acessíveis (públicos ou protegidos) e que não esteja [lacrado](../../csharp/language-reference/keywords/sealed.md)**
 
 - ❌Não **permitido: adicionando ou removendo a palavra-chave [static](../../csharp/language-reference/keywords/static.md) de um membro**
 
@@ -206,19 +206,19 @@ Alterações nesta categoria modificam a área de superfície pública de um tip
 
   Por exemplo, um método que retorna um tipo de <xref:System.Object> pode retornar uma instância <xref:System.String>. (No entanto, a assinatura do método não pode ser alterada.)
 
-- ✔️ **permitido: aumentar o intervalo de valores aceitos para uma propriedade ou parâmetro se o membro não for [virtual](../../csharp/language-reference/keywords/virtual.md) **
+- ✔️ **permitido: aumentar o intervalo de valores aceitos para uma propriedade ou parâmetro se o membro não for [virtual](../../csharp/language-reference/keywords/virtual.md)**
 
   Embora o intervalo de valores que pode ser passado para o método ou seja retornado pelo membro possa ser expandido, o parâmetro ou o tipo de membro não pode. Por exemplo, enquanto os valores passados ​​para um método podem ser expandidos de 0-124 para 0-255, o tipo de parâmetro não pode ser alterado de <xref:System.Byte> para <xref:System.Int32>.
 
-- ❌Não **permitido: aumentando o intervalo de valores aceitos para uma propriedade ou parâmetro se o membro for [virtual](../../csharp/language-reference/keywords/virtual.md) **
+- ❌Não **permitido: aumentando o intervalo de valores aceitos para uma propriedade ou parâmetro se o membro for [virtual](../../csharp/language-reference/keywords/virtual.md)**
 
    Essa alteração interrompe os membros substituídos existentes, que não funcionarão corretamente para o intervalo estendido de valores.
 
 - ❌Não **permitido: diminuindo o intervalo de valores aceitos para uma propriedade ou parâmetro**
 
-- ❌Não **permitido: aumentando o intervalo de valores retornados para uma propriedade, campo, valor de retorno ou parâmetro de [saída](../../csharp/language-reference/keywords/out-parameter-modifier.md) **
+- ❌Não **permitido: aumentando o intervalo de valores retornados para uma propriedade, campo, valor de retorno ou parâmetro de [saída](../../csharp/language-reference/keywords/out-parameter-modifier.md)**
 
-- ❌Não **permitido: alteração dos valores retornados para uma propriedade, campo, valor de retorno de método ou parâmetro de [saída](../../csharp/language-reference/keywords/out-parameter-modifier.md) **
+- ❌Não **permitido: alteração dos valores retornados para uma propriedade, campo, valor de retorno de método ou parâmetro de [saída](../../csharp/language-reference/keywords/out-parameter-modifier.md)**
 
 - ❌Não **permitido: alterando o valor padrão de uma propriedade, campo ou parâmetro**
 

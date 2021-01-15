@@ -33,7 +33,7 @@ public HubConnectionContext(ConnectionContext connectionContext, HubConnectionCo
 
 #### <a name="reason-for-change"></a>Motivo da alteração
 
-O novo construtor usa um novo objeto Options. Consequentemente, os recursos do `HubConnectionContext` podem ser expandidos no futuro sem fazer mais construtores e alterações significativas.
+O novo construtor usa um novo objeto Options. Consequentemente, os recursos do `HubConnectionContext` podem ser expandidos no futuro sem necessidade de mais construtores nem de alterações interruptivas.
 
 #### <a name="recommended-action"></a>Ação recomendada
 

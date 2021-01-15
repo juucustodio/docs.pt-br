@@ -25,13 +25,13 @@ Após a implantação inicial e, potencialmente, várias vezes durante o tempo d
   
 - Alterações de implementação: por exemplo, quando uma implementação de método interno é alterada.  
   
- Algumas dessas alterações são chamadas de "quebra" e outras são "não separáveis". Uma alteração será não *quebrada* se todas as mensagens que tiverem sido processadas com êxito na versão anterior forem processadas com êxito na nova versão. Qualquer alteração que não atenda a esse critério é uma alteração *significativa* .  
+ Algumas dessas alterações são chamadas de "quebra" e outras são "não separáveis". Uma alteração será não *quebrada* se todas as mensagens que tiverem sido processadas com êxito na versão anterior forem processadas com êxito na nova versão. Qualquer alteração que não atenda a esse critério é uma alteração *interruptiva*.  
   
 ## <a name="service-orientation-and-versioning"></a>Orientação do serviço e controle de versão  
 
  Uma das filosofias da orientação do serviço é que os serviços e os clientes são autônomos (ou independentes). Entre outras coisas, isso implica que os desenvolvedores de serviço não podem pressupor que eles controlam ou sequer conhecem todos os clientes de serviço. Isso elimina a opção de recompilar e reimplantar todos os clientes quando um serviço altera versões. Este tópico pressupõe que o serviço atende a essa filosofia e, portanto, deve ser alterado ou "com controle de versão" independente de seus clientes.  
   
- Nos casos em que uma alteração significativa é inesperada e não pode ser evitada, um aplicativo pode optar por ignorar essa filosofia e exigir que os clientes sejam recriados e reimplantados com uma nova versão do serviço.  
+ Nos casos em que uma alteração interruptiva é inesperada e não pode ser evitada, um aplicativo pode optar por ignorar essa filosofia e exigir que os clientes sejam recriados e reimplantados com uma nova versão do serviço.  
   
 ## <a name="contract-versioning"></a>Controle de versão de contrato  
 
@@ -39,7 +39,7 @@ Após a implantação inicial e, potencialmente, várias vezes durante o tempo d
   
  Para contratos de serviço, compatibilidade significa que novas operações expostas pelo serviço podem ser adicionadas, mas as operações existentes não podem ser removidas ou alteradas semanticamente.  
   
- Para contratos de dados, compatibilidade significa que novas definições de tipo de esquema podem ser adicionadas, mas as definições de tipo de esquema existentes não podem ser alteradas de maneiras significativas. Alterações significativas podem incluir a remoção de membros de dados ou a alteração de seu tipo de dados modificada. Esse recurso permite que o serviço de alguma latitude altere a versão de seus contratos sem quebrar clientes. As próximas duas seções explicam alterações não separáveis e de interrupção que podem ser feitas em contratos de dados e serviços do WCF.  
+ Para contratos de dados, compatibilidade significa que novas definições de tipo de esquema podem ser adicionadas, mas as definições de tipo de esquema existentes não podem ser alteradas de maneiras significativas. As alterações interruptivas podem incluir a remoção de membros de dados ou a alteração do tipo de dados deles de maneira incompatível. Esse recurso permite que o serviço de alguma latitude altere a versão de seus contratos sem quebrar clientes. As próximas duas seções explicam alterações não interruptivas e interruptivas que podem ser feitas em contratos de dados e de serviço do WCF.  
   
 ## <a name="data-contract-versioning"></a>Controle de versão de contrato de dados  
 
@@ -77,11 +77,11 @@ Após a implantação inicial e, potencialmente, várias vezes durante o tempo d
   
 ### <a name="changing-or-removing-members"></a>Alterando ou removendo membros  
 
- Alterar o nome ou o tipo de dados de um membro ou remover membros de dados é uma alteração significativa, mesmo que o controle de versão incerto seja permitido. Se isso for necessário, crie um novo contrato de dados.  
+ A alteração do nome ou do tipo de dados de um membro ou a remoção de membros de dados é uma alteração interruptiva, mesmo que o uso de um controle de versão flexível seja permitido. Se isso for necessário, crie um novo contrato de dados.  
   
  Se a compatibilidade de serviço for de alta importância, você pode considerar ignorar membros de dados não utilizados em seu código e deixá-los em vigor. Se estiver dividindo um membro de dados em vários membros, você pode considerar deixar o membro existente em vigor como uma propriedade que pode executar a divisão necessária e a reagregação para clientes de nível inferior (clientes que não são atualizados para a versão mais recente).  
   
- Da mesma forma, as alterações no nome ou namespace do contrato de dados são alterações significativas.  
+ Da mesma forma, as alterações no nome ou namespace do contrato de dados são alterações interruptivas.  
   
 ### <a name="round-trips-of-unknown-data"></a>Round-Trips de dados desconhecidos  
 
@@ -121,15 +121,15 @@ Após a implantação inicial e, potencialmente, várias vezes durante o tempo d
  A adição de operações de serviço expostas pelo serviço é uma alteração sem interrupção porque os clientes existentes não precisam se preocupar com essas novas operações.  
   
 > [!NOTE]
-> Adicionar operações a um contrato de retorno de chamada duplex é uma alteração significativa.  
+> A adição de operações a um contrato do retorno de chamada duplex é uma alteração interruptiva.  
   
 ### <a name="changing-operation-parameter-or-return-types"></a>Alterando o parâmetro de operação ou tipos de retorno  
 
- A alteração de parâmetros ou tipos de retorno geralmente é uma alteração significativa, a menos que o novo tipo implemente o mesmo contrato de dados implementado pelo tipo antigo. Para fazer essa alteração, adicione uma nova operação ao contrato de serviço ou defina um novo contrato de serviço.  
+ A alteração de parâmetros ou tipos de retorno geralmente é uma alteração interruptiva, a menos que o novo tipo implemente o mesmo contrato de dados implementado pelo tipo antigo. Para fazer essa alteração, adicione uma nova operação ao contrato de serviço ou defina um novo contrato de serviço.  
   
 ### <a name="removing-operations"></a>Removendo operações  
 
- A remoção de operações também é uma alteração significativa. Para fazer essa alteração, defina um novo contrato de serviço e expor-o em um novo ponto de extremidade.  
+ A remoção de operações também é uma alteração interruptiva. Para fazer essa alteração, defina um novo contrato de serviço e expor-o em um novo ponto de extremidade.  
   
 ### <a name="fault-contracts"></a>Contratos de falha  
 
@@ -143,11 +143,11 @@ Após a implantação inicial e, potencialmente, várias vezes durante o tempo d
   
 ## <a name="address-and-binding-versioning"></a>Controle de versão de endereço e ligação  
 
- As alterações no endereço de ponto de extremidade e na associação são alterações significativas, a menos que os clientes possam descobrir dinamicamente o novo endereço de ponto de extremidade ou associação. Um mecanismo para implementar esse recurso é usando um registro UDDI (descrição de descoberta universal) e o padrão de invocação de UDDI, em que um cliente tenta se comunicar com um ponto de extremidade e, após a falha, consulta um registro UDDI bem conhecido para os metadados do ponto de extremidade atual. Em seguida, o cliente usa o endereço e a associação desses metadados para se comunicar com o ponto de extremidade. Se essa comunicação for realizada com sucesso, o cliente armazenará em cache o endereço e as informações de associação para uso futuro.  
+ As alterações à associação e ao endereço do ponto de extremidade são alterações interruptivas, a menos que os clientes possam descobrir dinamicamente a nova associação ou o novo endereço do ponto de extremidade. Um mecanismo para implementar esse recurso é usando um registro UDDI (descrição de descoberta universal) e o padrão de invocação de UDDI, em que um cliente tenta se comunicar com um ponto de extremidade e, após a falha, consulta um registro UDDI bem conhecido para os metadados do ponto de extremidade atual. Em seguida, o cliente usa o endereço e a associação desses metadados para se comunicar com o ponto de extremidade. Se essa comunicação for realizada com sucesso, o cliente armazenará em cache o endereço e as informações de associação para uso futuro.  
   
 ## <a name="routing-service-and-versioning"></a>Serviço de roteamento e controle de versão  
 
- Se as alterações feitas em um serviço forem alterações significativas e você precisar ter duas ou mais versões diferentes de um serviço em execução simultaneamente, você poderá usar o serviço de roteamento do WCF para rotear mensagens para a instância de serviço apropriada. O serviço de roteamento do WCF usa o roteamento baseado em conteúdo, em outras palavras, ele usa informações dentro da mensagem para determinar onde rotear a mensagem. Para obter mais informações sobre o serviço de roteamento do WCF, consulte [serviço de roteamento](./feature-details/routing-service.md). Para obter um exemplo de como usar o serviço de roteamento do WCF para controle de versão de serviço, consulte [como: controle de versão de serviço](./feature-details/how-to-service-versioning.md).  
+ Se as alterações feitas a um serviço forem alterações interruptivas e você precisar ter duas ou mais versões diferentes de um serviço em execução simultaneamente, você poderá usar o WCF Routing Service para rotear mensagens para a instância de serviço apropriada. O serviço de roteamento do WCF usa o roteamento baseado em conteúdo, em outras palavras, ele usa informações dentro da mensagem para determinar onde rotear a mensagem. Para obter mais informações sobre o serviço de roteamento do WCF, consulte [serviço de roteamento](./feature-details/routing-service.md). Para obter um exemplo de como usar o serviço de roteamento do WCF para controle de versão de serviço, consulte [como: controle de versão de serviço](./feature-details/how-to-service-versioning.md).  
   
 ## <a name="appendix"></a>Apêndice  
 
@@ -198,7 +198,7 @@ public class PurchaseOrderV2 : IPurchaseOrderV1, IPurchaseOrderV2
   
  O contrato de serviço seria atualizado para incluir novas operações que são gravadas em termos de `PurchaseOrderV2` . A lógica de negócios existente escrita em termos de `IPurchaseOrderV1` continuaria a funcionar para `PurchaseOrderV2` e a nova lógica de negócios que precisa da `OrderDate` propriedade seria escrita em termos de `IPurchaseOrderV2` .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.DataContractAttribute>

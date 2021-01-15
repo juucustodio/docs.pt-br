@@ -1,6 +1,6 @@
 ---
-title: 'Alteração significativa: Azure: pacotes de integração do Azure prefixados da Microsoft removidos'
-description: 'Saiba mais sobre a alteração significativa no ASP.NET Core 5,0 intitulado Azure: pacotes de integração do Azure prefixados da Microsoft removidos'
+title: 'Alteração interruptiva: pacotes de integração do Azure prefixados com Microsoft removidos'
+description: 'Saiba mais sobre a alteração interruptiva no ASP.NET Core 5.0 intitulado Azure: pacotes de integração do Azure prefixados com Microsoft removidos'
 author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
@@ -37,7 +37,7 @@ Novos `Azure.*` pacotes integram os serviços do Azure com as APIs de configura�
 
 A alteração foi feita porque os `Microsoft.*` pacotes foram:
 
-* Usando versões desatualizadas do SDK do Azure. Atualizações simples não eram possíveis porque as novas versões do SDK do Azure incluíram alterações significativas.
+* Usando versões desatualizadas do SDK do Azure. Atualizações simples não eram possíveis porque as novas versões do SDK do Azure incluíam alterações interruptivas.
 * Vinculado à agenda de lançamento do .NET Core. A transferência da propriedade dos pacotes para a equipe do SDK do Azure habilita atualizações de pacote à medida que o SDK do Azure é atualizado.
 
 ## <a name="recommended-action"></a>Ação recomendada
@@ -50,7 +50,7 @@ Nos projetos ASP.NET Core 2,1 ou posteriores, substitua o antigo `Microsoft.*` p
 | `Microsoft.AspNetCore.DataProtection.AzureStorage` | [Azure. Extensions. AspNetCore. dataprotection. BLOBs](https://www.nuget.org/packages/Azure.Extensions.AspNetCore.DataProtection.Blobs) |
 | `Microsoft.Extensions.Configuration.AzureKeyVault` | [Azure.Extensions.AspNetCore.Configuração. Confidenciais](https://www.nuget.org/packages/Azure.Extensions.AspNetCore.Configuration.Secrets) |
 
-Os novos pacotes usam uma nova versão do SDK do Azure que inclui alterações significativas. Os padrões de uso geral não são alterados. Algumas sobrecargas e opções podem diferir para se adaptar às alterações nas APIs do SDK do Azure subjacentes.
+Os novos pacotes usam uma nova versão do SDK do Azure que inclui alterações interruptivas. Os padrões de uso geral não são alterados. Algumas sobrecargas e opções podem diferir para se adaptar às alterações nas APIs do SDK do Azure subjacentes.
 
 Os pacotes antigos vão:
 

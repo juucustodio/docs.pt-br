@@ -1,6 +1,6 @@
 ---
-title: Alterações de quebra de rede
-description: Lista as alterações significativas em rede no .NET Core 2,0 e 3,0.
+title: Alterações interruptivas relacionadas à rede
+description: Lista as alterações interruptivas relacionadas à rede no .NET Core 2.0 e 3.0.
 ms.date: 05/05/2020
 ms.openlocfilehash: 761c6481888bcb8e91f7b4212355aca067632495
 ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
@@ -9,11 +9,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/24/2020
 ms.locfileid: "95689206"
 ---
-# <a name="networking-breaking-changes-in-net-core-20-and-30"></a>Alterações de quebra de rede no .NET Core 2,0 e 3,0
+# <a name="networking-breaking-changes-in-net-core-20-and-30"></a>Alterações interruptivas relacionadas à rede no .NET Core 2.0 e 3.0
 
-As seguintes alterações significativas estão documentadas nesta página:
+As seguintes alterações interruptivas estão documentadas nesta página:
 
-| Alteração significativa | Versão introduzida |
+| Alteração interruptiva | Versão introduzida |
 | - | - |
 | [Valor padrão de HttpRequestMessage. Version alterado para 1,1](#default-value-of-httprequestmessageversion-changed-to-11) | 3.0 |
 | [WebClient. CancelAsync nem sempre cancela imediatamente](#webclientcancelasync-doesnt-always-cancel-immediately) | 2,0 |

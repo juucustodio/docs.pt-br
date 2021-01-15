@@ -15,7 +15,7 @@ O .NET 5,0 apresenta uma alteração comportamental de tempo de execução em qu
 
 ## <a name="reason-for-change"></a>Motivo da alteração
 
-Essa alteração foi introduzida para unificar. Comportamento de globalização da rede em todos os sistemas operacionais com suporte. Ele também fornece a capacidade de os aplicativos agruparem suas próprias bibliotecas de globalização em vez de depender das bibliotecas internas do sistema operacional. Para obter mais informações, consulte [a notificação de alteração significativa](../../core/compatibility/globalization/5.0/icu-globalization-api.md).
+Essa alteração foi introduzida para unificar. Comportamento de globalização da rede em todos os sistemas operacionais com suporte. Ele também fornece a capacidade de os aplicativos agruparem suas próprias bibliotecas de globalização em vez de depender das bibliotecas internas do sistema operacional. Para obter mais informações, confira [a notificação de alteração interruptiva](../../core/compatibility/globalization/5.0/icu-globalization-api.md).
 
 ## <a name="behavioral-differences"></a>Diferenças de comportamento
 
@@ -327,7 +327,7 @@ if (span.StartsWith("Hello", StringComparison.Ordinal)) { /* do something */ } /
 
 ## <a name="see-also"></a>Confira também
 
-- [Alterações significativas de globalização](../../core/compatibility/globalization.md)
+- [Alterações interruptivas de globalização](../../core/compatibility/globalization.md)
 - [Práticas recomendadas para comparar cadeias de caracteres no .NET](best-practices-strings.md)
 - [Como comparar cadeias de caracteres no C#](../../csharp/how-to/compare-strings.md)
 - [Globalização e ICU do .NET](../globalization-localization/globalization-icu.md)

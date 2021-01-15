@@ -52,7 +52,7 @@ Os construtores não devem fazer muito trabalho além de capturar os parâmetros
 
 Se você não declarar explicitamente nenhum construtor em um tipo, muitas linguagens (como C#) adicionarão automaticamente um construtor público sem parâmetros. (Classes abstratas obtêm um construtor protegido.)
 
-Adicionar um construtor com parâmetros a uma classe impede que o compilador adicione o construtor sem parâmetros. Isso geralmente causa alterações de interrupção acidentais.
+Adicionar um construtor com parâmetros a uma classe impede que o compilador adicione o construtor sem parâmetros. Isso geralmente causa alterações interruptivas acidentais.
 
 ❌ Evite definir construtores sem parâmetros explicitamente em structs.
 

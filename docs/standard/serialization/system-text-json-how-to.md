@@ -1,7 +1,7 @@
 ---
 title: Como serializar e desserializar JSON usando C#-.NET
 description: Saiba como usar o System.Text.Json namespace para serializar e desserializar do JSON no .net. Inclui o código de exemplo.
-ms.date: 01/04/2021
+ms.date: 01/12/2021
 ms.custom: contperf-fy21q2
 no-loc:
 - System.Text.Json
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: fd92c067fc76bea6bede1e5370e7ac168856fa9b
-ms.sourcegitcommit: 0273f8845eb1ea8de64086bef2271b4f22182c91
+ms.openlocfilehash: 6e7c9d9c87eb8407489939ec77ba4fbe9b20cc82
+ms.sourcegitcommit: 4f5f1855849cb02c3b610c7006ac21d7429f3348
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "98058093"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98235294"
 ---
 # <a name="how-to-serialize-and-deserialize-marshal-and-unmarshal-json-in-net"></a>Como serializar e desserializar (empacotar e desempacotar) JSON no .NET
 
@@ -32,7 +32,12 @@ Os exemplos de código referem-se à seguinte classe e variantes dela:
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
 
 > [!NOTE]
-> System.Text.Json usa [structs de referência](../../csharp/language-reference/builtin-types/struct.md#ref-struct), que não têm suporte do Visual Basic. Se você tentar usar System.Text.Json APIs com Visual Basic, obterá erros de compilação BC40000. A mensagem de erro indica que o problema é uma API obsoleta, mas o problema real é a falta de `ref struct` suporte no compilador.
+> Partes de System.Text.Json usar [structs de referência](../../csharp/language-reference/builtin-types/struct.md#ref-struct), que não têm suporte pelo Visual Basic. Se você tentar usar System.Text.Json APIs de struct de referência com Visual Basic você obtém erros de compilador BC40000. A mensagem de erro indica que o problema é uma API obsoleta, mas o problema real é a falta de suporte a struct de referência no compilador. As seguintes partes do System.Text.Json não podem ser usadas em Visual Basic:
+>
+> * A classe <xref:System.Text.Json.Utf8JsonReader>.
+> * Sobrecargas de outras APIs que incluem um <xref:System.Memory%601.Span> tipo. A maioria dos métodos inclui sobrecargas que usam `String` em vez de `Span` .
+>
+> Essas restrições estão em vigor porque as structs de referência não podem ser usadas com segurança sem o suporte de idioma, mesmo quando apenas "passar dados". A subversão desse erro resultará em Visual Basic código que pode corromper a memória e não deve ser feito.
 
 ## <a name="namespaces"></a>Namespaces
 
@@ -294,7 +299,7 @@ Também há métodos de extensão para System.Text.Json em [HttpContent](xref:Sy
 Métodos de extensão em `HttpClient` e `HttpContent` não estão disponíveis no System.Text.Json no .NET Core 3,1.
 ::: zone-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [System.Text.Json sobre](system-text-json-overview.md)
 * [Instanciar instâncias JsonSerializerOptions](system-text-json-configure-options.md)

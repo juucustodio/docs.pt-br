@@ -3,12 +3,12 @@ title: Ferramenta de desinstalação
 description: Uma visão geral da ferramenta de desinstalação do .NET Core, uma ferramenta guiada que permite a limpeza controlada de SDKs e tempos de execução do .NET Core.
 author: sfoslund
 ms.date: 05/27/2020
-ms.openlocfilehash: dcfa12a3ec5fe0e8a29c5897ee4c71bfc7352eda
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ed43b4ec8437ae0ccaf5f1234758dda9f16bd51e
+ms.sourcegitcommit: 4f5f1855849cb02c3b610c7006ac21d7429f3348
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84590793"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98235346"
 ---
 # <a name="net-core-uninstall-tool"></a>Ferramenta de Desinstalação do .NET Core
 
@@ -23,7 +23,7 @@ No Windows, a ferramenta só pode desinstalar SDKs e tempos de execução que fo
 
 No macOS, a ferramenta só pode desinstalar SDKs e tempos de execução localizados na pasta */usr/local/share/dotnet*
 
-Devido a essas limitações, a ferramenta pode não ser capaz de desinstalar todos os SDKs do .NET Core e os tempos de execução em seu computador. Você pode usar o `dotnet --info` comando para localizar todos os SDKs do .NET Core e os tempos de execução instalados, incluindo os SDKs e os tempos de execução que essa ferramenta não pode remover. O `dotnet-core-uninstall list` comando exibe quais SDKs podem ser desinstalados com a ferramenta.
+Devido a essas limitações, a ferramenta pode não ser capaz de desinstalar todos os SDKs do .NET Core e os tempos de execução em seu computador. Você pode usar o `dotnet --info` comando para localizar todos os SDKs do .NET Core e os tempos de execução instalados, incluindo os SDKs e os tempos de execução que essa ferramenta não pode remover. O `dotnet-core-uninstall list` comando exibe quais SDKs podem ser desinstalados com a ferramenta. As versões 1,2 e posteriores podem desinstalar SDKs e tempos de execução com a versão 5,0 ou anterior, e as versões anteriores da ferramenta podem desinstalar o 3,1 e versões anteriores.
 
 ## <a name="install-the-tool"></a>Instalar a ferramenta
 
@@ -171,7 +171,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 * **`--all-lower-patches`**
 
-  Remove os SDKs do .NET Core e os tempos de execução substituídos por patches mais altos. Essa opção protege global. JSON.
+  Remove os SDKs do .NET Core e os tempos de execução substituídos por patches mais altos. Essa opção protege global.jsno.
 
 * **`--all-previews`**
 
@@ -241,7 +241,7 @@ Observações:
 
 * **`--all-lower-patches`**
 
-  Remove os SDKs do .NET Core e os tempos de execução substituídos por patches mais altos. Essa opção protege global. JSON.
+  Remove os SDKs do .NET Core e os tempos de execução substituídos por patches mais altos. Essa opção protege global.jsno.
 
 * **`--all-previews`**
 
@@ -295,7 +295,7 @@ Observações:
 
 ### <a name="step-3---uninstall-net-core-sdks-and-runtimes"></a>Etapa 3-desinstalar SDKs e tempos de execução do .NET Core
 
-`dotnet-core-uninstall remove`desinstala SDKs e tempos de execução do .NET Core que são especificados por uma coleção de opções. A ferramenta não pode ser usada para desinstalar SDKs e tempos de execução com a versão 5,0 ou superior.
+`dotnet-core-uninstall remove` desinstala SDKs e tempos de execução do .NET Core que são especificados por uma coleção de opções. As versões 1,2 e posteriores podem desinstalar SDKs e tempos de execução com a versão 5,0 ou anterior, e as versões anteriores da ferramenta podem desinstalar o 3,1 e versões anteriores.
 
 Como essa ferramenta tem um comportamento destrutivo, é **altamente** recomendável que você execute uma simulação antes de executar o comando remover. A execução seca mostrará quais SDKs e tempos de execução do .NET Core serão removidos quando você usar o `remove` comando. Consulte devo [remover uma versão?](../install/remove-runtime-sdk-versions.md#should-i-remove-a-version) para saber quais SDKs e tempos de execução são seguros de remover.
 
@@ -351,7 +351,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 * **`--all-lower-patches`**
 
-  Remove os SDKs do .NET Core e os tempos de execução substituídos por patches mais altos. Essa opção protege global. JSON.
+  Remove os SDKs do .NET Core e os tempos de execução substituídos por patches mais altos. Essa opção protege global.jsno.
 
 * **`--all-previews`**
 
@@ -423,7 +423,7 @@ Observações:
 
 * **`--all-lower-patches`**
 
-  Remove os SDKs do .NET Core e os tempos de execução substituídos por patches mais altos. Essa opção protege global. JSON.
+  Remove os SDKs do .NET Core e os tempos de execução substituídos por patches mais altos. Essa opção protege global.jsno.
 
 * **`--all-previews`**
 
@@ -495,7 +495,7 @@ Observações:
   dotnet-core-uninstall remove --all --sdk --force
   ```
 
-* Remover todos os SDKs do .NET Core especificados no arquivo de resposta`versions.rsp`
+* Remover todos os SDKs do .NET Core especificados no arquivo de resposta `versions.rsp`
 
   ```console
   dotnet-core-uninstall remove --sdk @versions.rsp

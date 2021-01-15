@@ -1,7 +1,8 @@
 ---
 description: Referência de C#
 title: Referência de C#
-ms.date: 02/14/2017
+ms.date: 01/13/2021
+ms.custom: updateeachrelease
 f1_keywords:
 - _CSharpKeyword
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - C# language, reference
 - reference, C# language
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
-ms.openlocfilehash: 317f375c46eee3bb9c719afb68993cd4720e54fe
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 663d08921b1fb6c5013ce8dddb044ba12ead8409
+ms.sourcegitcommit: 4f5f1855849cb02c3b610c7006ac21d7429f3348
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89127185"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98235229"
 ---
 # <a name="c-reference"></a>Referência de C#
 
@@ -36,7 +37,7 @@ Esta seção fornece o material de referência sobre palavras-chave do C#, opera
  [Diretivas de pré-processador do C#](./preprocessor-directives/index.md)  
  Fornece links para informações sobre os comandos do compilador para inserir no código-fonte do C#.  
   
- [Opções do compilador C#](./compiler-options/index.md)  
+ [Opções do compilador de C#](./compiler-options/index.md)  
  Inclui informações sobre as opções do compilador e como usá-las.  
   
  [Erros do compilador C#](./compiler-messages/index.md)  
@@ -61,7 +62,10 @@ Os recursos que foram implementados nas versões do C# depois da 6.0 são repres
   
  [Propostas de especificação do C# 8,0](../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md)  
  O C# 8,0 está disponível com o .NET Core 3,0. Os recursos incluem tipos de referência anuláveis, correspondência de padrões recursivos, métodos de interface padrão, fluxos assíncronos, intervalos e índices, com base em padrões usando e usando declarações, atribuição de União nula e membros de instância ReadOnly.
-  
+
+ [Propostas de especificação do C# 9,0](../../../_csharplang/proposals/csharp-9.0/records.md)  
+ O C# 9,0 está disponível com o .NET 5,0. Os recursos incluem registros, instruções de nível superior, aprimoramentos de correspondência de padrões, init somente setters, novas expressões com tipo de destino, inicializadores de módulo, extensão de métodos parciais, funções anônimas estáticas, expressões condicionais de tipo de destino, tipos de retorno covariantes, extensão getenumerador em loops foreach, parâmetros de descarte de lambda, atributos em funções locais, inteiros de tamanho nativo, ponteiros de função, supressão de emissão de sinalizador localsinit
+
 ## <a name="related-sections"></a>Seções relacionadas  
 
  [Usando o ambiente de desenvolvimento do Visual Studio para C#](/visualstudio/get-started/csharp)  

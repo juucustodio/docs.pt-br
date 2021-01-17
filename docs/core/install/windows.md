@@ -4,12 +4,12 @@ description: Saiba mais sobre quais versões do Windows você pode instalar no .
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: d8ca3eed3786a728002d8ffe80b774a0018eee82
-ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
+ms.openlocfilehash: 57cebc562949627be70aabe24e75ad4567d072fd
+ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98025447"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536119"
 ---
 # <a name="install-net-on-windows"></a>Instalar o .NET no Windows
 
@@ -260,11 +260,31 @@ Embora Visual Studio Code não venha com um instalador .NET Core automatizado co
 
 A [página de download](https://dotnet.microsoft.com/download/dotnet-core) do .net fornece Windows Installer executáveis.
 
-Ao usar os arquivos MSI para instalar o .NET< você pode personalizar o caminho de instalação definindo os `DOTNETHOME_X64` `DOTNETHOME_X86` parâmetros e:
+Ao usar os instaladores do Windows para instalar o .NET, você pode personalizar o caminho de instalação definindo `DOTNETHOME_X64` os `DOTNETHOME_X86` parâmetros e:
 
 ```console
 dotnet-sdk-3.1.301-win-x64.exe DOTNETHOME_X64="F:\dotnet\x64" DOTNETHOME_X86="F:\dotnet\x86"
 ```
+
+Se você quiser instalar o .NET silenciosamente, como em um ambiente de produção ou para oferecer suporte à integração contínua, use as seguintes opções:
+
+- `/install`\
+Instala o .NET.
+
+- `/quiet`\
+Impede que qualquer interface do usuário e prompts sejam exibidos.
+
+- `norestart`\
+Suprime todas as tentativas de reinicialização.
+
+```console
+dotnet-sdk-3.1.301-win-x64.exe /install /quiet /norestart
+```
+
+Para obter mais informações, consulte [Opções do Command-Line do instalador padrão](/windows/win32/msi/standard-installer-command-line-options).
+
+> [!TIP]
+> O instalador retorna um código de saída 0 para êxito e um código de saída de 3010 para indicar que uma reinicialização é necessária. Qualquer outro valor é geralmente um código de erro.
 
 ## <a name="download-and-manually-install"></a>Baixar e instalar manualmente
 

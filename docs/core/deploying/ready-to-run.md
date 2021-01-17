@@ -1,15 +1,15 @@
 ---
 title: Visão geral da implantação do ReadyToRun
 description: Saiba o que são implantações ReadyToRun e por que você deve considerar usá-la como parte da publicação de seu aplicativo com o .NET 5 e o .NET Core 3,0 e posterior.
-author: davidwr
+author: davidwrighton
 ms.author: davidwr
 ms.date: 09/21/2020
-ms.openlocfilehash: 3302e5e18a20965a1eff1f09737910e924ed6d08
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 2d4aaac2534bbb1279eb88d8e24e1f5f022afe7d
+ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188602"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536093"
 ---
 # <a name="readytorun-compilation"></a>Compilação ReadyToRun
 

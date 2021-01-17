@@ -7,12 +7,12 @@ author: luisquintanilla
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc, how-to
-ms.openlocfilehash: cf19b4e4b7a7b9033fb97b2b2736ab0383c11f93
-ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+ms.openlocfilehash: 9c0e713731b5e2ad742bdd257a99f9029f244363
+ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96598927"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536106"
 ---
 # <a name="use-net-for-apache-spark-in-jupyter-notebooks"></a>Usar o .NET para Apache Spark em notebooks Jupyter
 
@@ -130,7 +130,7 @@ Você pode usar interfaces diferentes para interagir com o Jupyter. Para uma int
 1. Quando o notebook for aberto, instale o `Microsoft.Spark` pacote NuGet. Verifique se a versão instalada é a mesma do trabalho do .NET.
 
     ```text
-    #r "nuget:Microsoft.Spark, 0.12.1"
+    #r "nuget:Microsoft.Spark, 1.0.0"
     ```
 
 1. Adicione a seguinte instrução using ao bloco de anotações.

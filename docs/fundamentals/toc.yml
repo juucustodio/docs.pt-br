@@ -342,8 +342,6 @@ items:
                     href: /aspnet/core/razor-pages/sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Frameworks de destino
             href: ../standard/frameworks.md
-          - name: Adições ao formato csproj
-            href: ../core/tools/csproj.md
           - name: Gerenciamento de dependência
             href: ../core/tools/dependencies.md
       - name: Ferramentas globais e locais
@@ -397,8 +395,6 @@ items:
               - name: Visão geral
                 displayName: dumps
                 href: ../core/diagnostics/dumps.md
-              - name: Depurar um StackOverflow
-                href: ../core/diagnostics/debug-stackoverflow.md
               - name: Despejos do Linux
                 href: ../core/diagnostics/debug-linux-dumps.md
               - name: Extensão do depurador de SOS
@@ -467,6 +463,8 @@ items:
                 href: ../core/diagnostics/debug-highcpu.md
               - name: Depurar deadlock
                 href: ../core/diagnostics/debug-deadlock.md
+              - name: Depurar um StackOverflow
+                href: ../core/diagnostics/debug-stackoverflow.md
       - name: Análise de código
         items:
           - name: Visão geral
@@ -2281,6 +2279,8 @@ items:
             href: ../core/migration/index.md
           - name: Mapear entre project.json e csproj
             href: ../core/tools/project-json-to-csproj.md
+          - name: Mapear características do AssemblyInfo para propriedades
+            href: ../core/migration/assembly-info.md
           - name: Visão geral das alterações na CLI
             href: ../core/tools/cli-msbuild-architecture.md
           - name: Migrar do DNX

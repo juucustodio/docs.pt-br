@@ -1,13 +1,13 @@
 ---
 title: 'Alteração significativa: os métodos WinForms agora lançam ArgumentException'
-description: Saiba mais sobre a alteração significativa no .NET 5,0 em que os métodos de formulários sWindows agora geram argumentos inválidos.
+description: Saiba mais sobre a alteração significativa no .NET 5,0, em que alguns métodos de Windows Forms agora geram argumentos inválidos.
 ms.date: 07/18/2020
-ms.openlocfilehash: 46fe3f3b1208a5cd676e1b7546507bed36a850f2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 892f4d16b80f3e42187480a7fcfb24e81868d07c
+ms.sourcegitcommit: f8cd3ef517ee177c99feed944824c27d208cc0d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95760544"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98570210"
 ---
 # <a name="winforms-methods-now-throw-argumentexception"></a>Os métodos WinForms agora lançam ArgumentException
 
@@ -21,7 +21,7 @@ Lançar um <xref:System.ArgumentException> está em conformidade com o comportam
 
 ## <a name="version-introduced"></a>Versão introduzida
 
-.NET 5,0
+.NET 5.0
 
 ## <a name="recommended-action"></a>Ação recomendada
 

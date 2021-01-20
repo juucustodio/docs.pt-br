@@ -3,12 +3,12 @@ title: Processar tarefas assíncronas conforme elas são concluídas
 description: Este exemplo mostra como usar Task. WhenAny em C# para iniciar várias tarefas e processar seus resultados à medida que eles são concluídos, em vez de processá-los no pedido iniciado.
 ms.date: 08/19/2020
 ms.assetid: 25331850-35a7-43b3-ab76-3908e4346b9d
-ms.openlocfilehash: 860e94a9c3973ce56e7321741a1136f752aa3d18
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: 4cdd35af900863895911ea5c2c9772af362951ec
+ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805233"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615965"
 ---
 # <a name="process-asynchronous-tasks-as-they-complete-c"></a>Processar tarefas assíncronas conforme elas são concluídas (C#)
 
@@ -128,13 +128,13 @@ O `while` loop executa as seguintes etapas para cada tarefa na coleção:
 1. Aguarda uma chamada para `WhenAny` para identificar a primeira tarefa na coleção que concluiu seu download.
 
     ```csharp
-    Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);
+    Task<int> finishedTask = await Task.WhenAny(downloadTasks);
     ```
 
 1. Remove a tarefa da coleção.
 
     ```csharp
-    downloadTasks.Remove(firstFinishedTask);
+    downloadTasks.Remove(finishedTask);
     ```
 
 1. Espera `finishedTask`, que é retornado por uma chamada para `ProcessUrlAsync`. A variável `finishedTask` é uma <xref:System.Threading.Tasks.Task%601> em que `TResult` é um inteiro. A tarefa já foi concluída, mas você espera para recuperar o tamanho do site baixado, como mostra o exemplo a seguir. Se a tarefa tiver falhado, `await` o lançará a primeira exceção filha armazenada no `AggregateException` , ao contrário da leitura da <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> propriedade, que geraria o `AggregateException` .
@@ -170,7 +170,7 @@ O código a seguir é o texto completo do arquivo *Program.cs* para o exemplo.
 
 :::code language="csharp" source="snippets/multiple-tasks/Program.cs":::
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
 - [Programação assíncrona com async e await (C#)](index.md)

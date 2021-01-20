@@ -1,13 +1,13 @@
 ---
 title: Por que escolher aplicativos de área de trabalho modernos
 description: Saiba mais sobre as tecnologias de desktop, como Windows Forms, WPF e UWP no mundo moderno.
-ms.date: 09/16/2019
-ms.openlocfilehash: f8b70ba9e0ee97a6e0938e3219ecd0d2324248ae
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.date: 12/29/2020
+ms.openlocfilehash: 8489e41c973bb472a23bca38e9374c36e4cdd366
+ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83423274"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615887"
 ---
 # <a name="why-modern-desktop-applications"></a>Por que escolher aplicativos de área de trabalho modernos
 
@@ -25,9 +25,9 @@ Você pode se deparar no mesmo barco, em que você tem aplicativos de Windows Fo
 
 Antes do aumento da Internet, os aplicativos de área de trabalho eram a principal abordagem para a criação de sistemas de software. Os desenvolvedores podem escolher qualquer linguagem de programação, como COBOL, Fortran, VB6 ou C++. Mas onde eles desenvolveram pequenas ferramentas ou arquiteturas distribuídas complexas, foram todos os aplicativos da área de trabalho.
 
-Em seguida, as tecnologias da Internet começaram a chocanter o mundo de desenvolvimento e ganhar cada vez mais engenheiros com vantagens como fácil implantação e processos de distribuição simplificados. O fato de uma vez que um aplicativo Web foi implantado na produção, todos os usuários receberam que as atualizações automáticas fizeram um enorme impacto na agilidade do software.
+Em seguida, as tecnologias da Internet começaram a chocanter o mundo de desenvolvimento e ganhar mais engenheiros com vantagens como fácil implantação e processos de distribuição simplificados. O fato de uma vez que um aplicativo Web foi implantado na produção, todos os usuários receberam que as atualizações automáticas fizeram um enorme impacto na agilidade do software.
 
-No entanto, a infraestrutura de Internet, os protocolos subjacentes e os padrões como HTTP e HTML não foram projetados para a criação de aplicativos complexos. Na verdade, o esforço de desenvolvimento principal, em seguida, era objetivando apenas um objetivo: fornecer aos aplicativos da Web os mesmos recursos que os aplicativos da área de trabalho têm, como a entrada rápida de dados e o gerenciamento de estado.
+No entanto, a infraestrutura de Internet, os protocolos subjacentes e os padrões como HTTP e HTML não foram projetados para a criação de aplicativos complexos. Na verdade, o esforço de desenvolvimento principal, em seguida, era objetivando apenas um objetivo: fornecer aos aplicativos Web os mesmos recursos que os aplicativos da área de trabalho têm, como a entrada rápida de dados e o gerenciamento de estado.
 
 Mesmo que os aplicativos Web e móveis tenham crescido em um ritmo incrível, para determinadas tarefas, os aplicativos de área de trabalho ainda mantêm o número um em termos de eficiência e desempenho. Isso explica por que há milhões de desenvolvedores que estão criando seus projetos com o WPF e WinForms, e a quantidade desses aplicativos está crescendo constantemente.
 
@@ -37,7 +37,7 @@ Aqui estão alguns motivos para escolher aplicativos de área de trabalho em seu
 - O desempenho dos aplicativos da área de trabalho para cálculos complexos é muito maior do que o desempenho dos aplicativos Web.
 - A execução da lógica personalizada no lado do cliente é possível, mas muito mais difícil com um aplicativo Web.
 - O uso de multithreading é mais fácil e eficiente em um aplicativo de área de trabalho.
-- A curva de aprendizado para criar interfaces do usuário (UIs) não é acentuada. E para WinForms, ele é totalmente intuitivo com a experiência de arrastar e soltar do Windows Forms Designer.
+- A curva de aprendizado para criar interfaces do usuário (UIs) não é acentuada. E para WinForms, ele é intuitivo com a experiência de arrastar e soltar do Windows Forms Designer.
 - É fácil começar a codificar e testar seus algoritmos sem a necessidade de configurar uma infraestrutura de servidor ou de se preocupar com problemas de conectividade, firewalls e compatibilidade de navegadores.
 - A depuração é eficiente em comparação com a depuração da Web.
 - O acesso a dispositivos de hardware, como câmera, Bluetooth ou leitores de cartão, é fácil.
@@ -102,7 +102,7 @@ A UWP contém uma estrutura de apresentação baseada em XAML, como o WPF, mas t
 
 ## <a name="a-tale-of-two-platforms"></a>Uma história de duas plataformas
 
-Nos últimos 20 anos, embora as tecnologias de desktop da interface do usuário estivessem crescendo e seguindo o caminho de Windows Forms para UWP, o hardware também estava evoluindo de unidades de PC de peso pesada com pequenos monitores CRT para monitores de alto DPI e tablets leves e telefones com técnicas de entrada de dados diferentes, como toque e tinta. Essas alterações resultaram na criação de dois conceitos diferentes: um aplicativo de área de trabalho e um aplicativo moderno. Um aplicativo moderno é aquele que considera diferentes fatores forma de dispositivo, vários métodos de entrada e saída e aproveita os recursos modernos da área de trabalho durante a execução em um modelo de execução em área restrita. O aplicativo de desktop (tradicional), por outro lado, é um aplicativo que precisa de uma interface do usuário sólida com alta densidade de controles que é melhor operado com um mouse e um teclado.
+Nos últimos 20 anos, embora as tecnologias de desktop da interface do usuário estivessem crescendo e seguindo o caminho de Windows Forms para UWP, o hardware também estava evoluindo de unidades de PC de peso pesada com pequenos monitores CRT para monitores de alto DPI e tablets leves e telefones com técnicas de entrada de dados diferentes, como toque e tinta. Essas alterações resultaram na criação de dois conceitos diferentes: um aplicativo de área de trabalho e um aplicativo moderno. Um aplicativo moderno é aquele que considera diferentes fatores forma de dispositivo, vários métodos de entrada e saída e aproveita os recursos modernos da área de trabalho durante a execução em um modelo de execução em área restrita. O aplicativo de área de trabalho (tradicional), por outro lado, é um aplicativo que precisa de uma interface do usuário sólida com uma alta densidade de controles que é melhor operado com um mouse e um teclado.
 
 A tabela a seguir descreve as diferenças entre os dois conceitos:
 
@@ -111,7 +111,7 @@ A tabela a seguir descreve as diferenças entre os dois conceitos:
 | Segurança | A execução continha &amp; ótimos conceitos básicos. Criado desde o início para respeitar a privacidade do usuário, gerenciar a vida útil da bateria e se concentrar para manter o dispositivo seguro.  | &amp;Nível de segurança do administrador do usuário. Você tem acesso nativo ao registro e às pastas de disco rígido. |
 | Implantação | A instalação e as atualizações são gerenciadas pela plataforma.   | MSI, atualizações de instaladores personalizados &amp; . Tradicionalmente, uma fonte de dores de cabeça para desenvolvedores e gerentes de ti.  |
 | Distribuição | &amp;Pacotes assinados de distribuição confiável. A distribuição é realizada de uma fonte confiável e nunca da Web.  | Web, &amp; distribuição personalizada do SCCM. Nenhum controle sobre o que está instalado, afeta todo o computador.   |
-| UI | Interface do usuário moderna. Diferentes mecanismos de entrada, tinta, toque, gamepad, teclado, mouse, etc.  | Windows Forms, WPF, MFC. Projetado para o mouse e o teclado para uma interface do usuário densa e para obter a maior produtividade da área de trabalho.  |
+| Interface do usuário | Interface do usuário moderna. Diferentes mecanismos de entrada, tinta, toque, gamepad, teclado, mouse, etc.  | Windows Forms, WPF, MFC. Projetado para o mouse e o teclado para uma interface do usuário densa e para obter a maior produtividade da área de trabalho.  |
 | Dados | Dados da nuvem primeiro com insights. Fonte de verdade na nuvem. Informações para saber o que acontece com seu aplicativo e como ele está sendo executado.  | Dados locais. Normalmente, os aplicativos de área de trabalho tradicionais precisam de alguns dados locais.  |
 | Design | Projetado para reutilização. Reutilização em mente entre diferentes plataformas, front-end e back-end, executando ativos em muitos lugares o mais possível.  | Projetado somente para Windows Desktop  |
 
@@ -143,14 +143,14 @@ Esse caminho mostrará como você pode aproveitar os recursos modernos da área 
 
 Os ciclos de desenvolvimento modernos foram analisados para fornecer agilidade sobre como as novas versões dos aplicativos são implantadas em todos os usuários individuais. Como os aplicativos Windows Forms e WPF se baseiam em uma versão específica do .NET Framework que devem estar presentes no computador, eles não podem aproveitar os novos recursos de versão .NET Framework sem a intervenção das pessoas de ti com o risco de ter efeitos colaterais para outros aplicativos em execução no mesmo computador. Ele limitou o ritmo de inovação para os desenvolvedores forçá-los a se manterem em versões desatualizadas do .NET Framework.
 
-Desde o lançamento do .NET Core 3,0, você pode aproveitar uma nova abordagem de implantação de várias versões do .NET Core lado a lado e especificar qual versão do .NET Core cada aplicativo deve ter como destino. Dessa forma, você pode usar os recursos mais recentes em um aplicativo, enquanto tem certeza de que não vai interromper outros aplicativos.
+Desde o lançamento do .NET Core 3,0, você pode aproveitar uma nova abordagem de implantação de várias versões do .NET lado a lado e especificar qual versão do .NET cada aplicativo deve ter como destino. Dessa forma, você pode usar os recursos mais recentes em um aplicativo, enquanto tem certeza de que não vai interromper outros aplicativos.
 
 ### <a name="installation"></a>Instalação
 
-Os aplicativos de desktop sempre dependem de algum tipo de processo de instalação antes que o usuário possa começar a usá-los. Esse fato trouxe ao jogo um conjunto de tecnologias, do MSI e do ClickOnce para instaladores personalizados ou até mesmo implantação do XCOPY. Qualquer um desses métodos lida com problemas delicados porque os aplicativos precisam de uma maneira de acessar recursos compartilhados no computador. Às vezes, a instalação precisa acessar o registro para inserir ou atualizar novos valores de chave, às vezes, para atualizar DLLs compartilhadas referenciadas pelo aplicativo principal. Isso causa uma dor de cabeça contínua para os usuários, criando essa percepção de que, depois de instalar algum aplicativo, o computador nunca será o mesmo, mesmo se você desinstalá-lo posteriormente.
+Os aplicativos de desktop sempre dependem de algum tipo de processo de instalação antes que o usuário possa começar a usá-los. Esse fato trouxe ao jogo um conjunto de tecnologias, do MSI e do ClickOnce para instaladores personalizados ou até mesmo implantação do XCOPY. Qualquer um desses métodos lida com problemas delicados porque os aplicativos precisam de uma maneira de acessar recursos compartilhados no computador. Às vezes, a instalação precisa acessar o registro para inserir ou atualizar novos valores de chave, às vezes, para atualizar DLLs compartilhadas referenciadas pelo aplicativo principal. Esse comportamento causa uma dor de cabeça contínua para os usuários, criando essa percepção de que, depois de instalar algum aplicativo, o computador nunca será o mesmo, mesmo se você desinstalá-lo posteriormente.
 
-Neste livro, apresentaremos uma nova maneira de instalar aplicativos com MSIX que resolve o problema descrito anteriormente. Você aprenderá como é possível configurar facilmente um empacotamento, instalação e atualizações para seu aplicativo.
+Neste livro, apresentaremos uma nova maneira de instalar aplicativos com MSIX que resolve o problema descrito anteriormente. Você aprenderá como é possível configurar facilmente empacotamento, instalação e atualizações para seu aplicativo.
 
 >[!div class="step-by-step"]
 >[Anterior](index.md) 
-> [Avançar](whats-new-dotnet-core.md)
+> [Avançar](whats-new-dotnet.md)

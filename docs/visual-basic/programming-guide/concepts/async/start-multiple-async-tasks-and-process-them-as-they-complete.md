@@ -2,12 +2,12 @@
 title: Iniciar várias tarefas assíncronas e processá-las na conclusão
 ms.date: 07/20/2015
 ms.assetid: 57ffb748-af40-4794-bedd-bdb7fea062de
-ms.openlocfilehash: 52e4d786667a70730f311ca20a30acd7108107e3
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4eb4d15739da82cbfcc8dc5e03af4c1ae761d553
+ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090363"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615900"
 ---
 # <a name="start-multiple-async-tasks-and-process-them-as-they-complete-visual-basic"></a>Iniciar várias tarefas assíncronas e processá-las na conclusão (Visual Basic)
 
@@ -64,19 +64,19 @@ Dim downloadTasksQuery As IEnumerable(Of Task(Of Integer)) =
     1. Espera uma chamada para `WhenAny` para identificar a primeira tarefa na coleção a concluir o download.  
   
         ```vb  
-        Dim firstFinishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)  
+        Dim finishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)  
         ```  
   
     2. Remove a tarefa da coleção.  
   
         ```vb  
-        downloadTasks.Remove(firstFinishedTask)  
+        downloadTasks.Remove(finishedTask)  
         ```  
   
-    3. Espera `firstFinishedTask`, que é retornado por uma chamada para `ProcessURLAsync`. A variável `firstFinishedTask` é uma <xref:System.Threading.Tasks.Task%601> em que `TReturn` é um inteiro. A tarefa já foi concluída, mas você espera para recuperar o tamanho do site baixado, como mostra o exemplo a seguir.  
+    3. Espera `finishedTask`, que é retornado por uma chamada para `ProcessURLAsync`. A variável `finishedTask` é uma <xref:System.Threading.Tasks.Task%601> em que `TReturn` é um inteiro. A tarefa já foi concluída, mas você espera para recuperar o tamanho do site baixado, como mostra o exemplo a seguir.  
   
         ```vb  
-        Dim length = Await firstFinishedTask  
+        Dim length = Await finishedTask  
         resultsTextBox.Text &= String.Format(vbCrLf & "Length of the downloaded website:  {0}" & vbCrLf, length)  
         ```  
   
@@ -144,24 +144,24 @@ Class MainWindow
         ' Call SetUpURLList to make a list of web addresses.  
         Dim urlList As List(Of String) = SetUpURLList()  
   
-        ' ***Create a query that, when executed, returns a collection of tasks.  
+        ' **_Create a query that, when executed, returns a collection of tasks.  
         Dim downloadTasksQuery As IEnumerable(Of Task(Of Integer)) =  
             From url In urlList Select ProcessURLAsync(url, client, ct)  
   
-        ' ***Use ToList to execute the query and start the download tasks.
+        ' _*_Use ToList to execute the query and start the download tasks.
         Dim downloadTasks As List(Of Task(Of Integer)) = downloadTasksQuery.ToList()  
   
-        ' ***Add a loop to process the tasks one at a time until none remain.  
+        ' _*_Add a loop to process the tasks one at a time until none remain.  
         While downloadTasks.Count > 0  
-            ' ***Identify the first task that completes.  
-            Dim firstFinishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)  
+            ' _*_Identify the first task that completes.  
+            Dim finishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)  
   
-            ' ***Remove the selected task from the list so that you don't  
+            ' _*_Remove the selected task from the list so that you don't  
             ' process it more than once.  
-            downloadTasks.Remove(firstFinishedTask)  
+            downloadTasks.Remove(finishedTask)  
   
-            ' ***Await the first completed task and display the results.  
-            Dim length = Await firstFinishedTask  
+            ' _**Await the first completed task and display the results.  
+            Dim length = Await finishedTask  
             resultsTextBox.Text &= String.Format(vbCrLf & "Length of the downloaded website:  {0}" & vbCrLf, length)  
         End While  
   
@@ -209,7 +209,7 @@ End Class
 ' Downloads complete.  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
 - [Ajustando seu aplicativo assíncrono (Visual Basic)](fine-tuning-your-async-application.md)

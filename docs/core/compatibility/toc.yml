@@ -9,7 +9,7 @@
       href: breaking-changes.md
     - name: Do .NET Framework
       items:
-        - name: Alterações interruptivas
+        - name: Alterações da falha
           href: fx-core.md
         - name: Tecnologias indisponíveis
           href: ../porting/net-framework-tech-unavailable.md
@@ -18,6 +18,14 @@
     - name: Alterações interruptivas por versão
       expanded: true
       items:
+        - name: .NET 6.0
+          items:
+            - name: Visão geral
+              href: 6.0.md
+            - name: Windows Forms
+              items:
+                - name: As propriedades TableLayoutSettings geram InvalidEnumArgumentException
+                  href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
         - name: .NET 5.0
           items:
             - name: Visão geral
@@ -551,6 +559,10 @@
               href: visualbasic.md
         - name: Windows Forms
           items:
+            - name: .NET 6.0
+              items:
+                - name: As propriedades TableLayoutSettings geram InvalidEnumArgumentException
+                  href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
             - name: .NET 5.0
               items:
                 - name: OutputType definido como WinExe

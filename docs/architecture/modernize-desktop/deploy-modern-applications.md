@@ -2,12 +2,12 @@
 title: Implantar aplicativos modernos de área de trabalho
 description: Tudo o que você precisa saber sobre a implantação de aplicativos de área de trabalho modernos.
 ms.date: 05/12/2020
-ms.openlocfilehash: 4a4d93caf1c2f8f58d48ee3199bbe6983fa939f4
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: ba47f09b27adf270734bbfff285fe44dd4175d29
+ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83423253"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615848"
 ---
 # <a name="deploying-modern-desktop-applications"></a>Implantar aplicativos modernos de área de trabalho
 
@@ -113,9 +113,9 @@ Uma das coisas mais interessantes sobre o MSIX é que ele funciona para todo o c
 
 ### <a name="tools"></a>Ferramentas
 
-#### <a name="windows-application-packaging-project"></a>Projeto de Empacotamento de Aplicativos do Windows
+#### <a name="windows-application-packaging-project"></a>Projeto de Empacotamento de Aplicativo do Windows
 
-Você pode usar o projeto de **projeto de empacotamento de aplicativos do Windows**   no Visual Studio para gerar um pacote para seu aplicativo de área de trabalho. Em seguida, você pode publicar esse pacote no Microsoft Store ou Sideload-lo em um ou mais computadores.
+Você pode usar o projeto do **Projeto de Empacotamento de Aplicativo do Windows** no Visual Studio para gerar um pacote para o aplicativo de área de trabalho. Em seguida, você pode publicar esse pacote no Microsoft Store ou Sideload-lo em um ou mais computadores.
 
 #### <a name="msix-packaging-tool"></a>Ferramenta de Empacotamento MSIX
 
@@ -167,7 +167,7 @@ Defina o projeto de empacotamento como o projeto de inicialização para a solu�
 - Crie um pacote MSIX fora dos resultados da compilação.
 - Implante os pacotes.
 - Instale-o localmente no computador de desenvolvimento.
-- Inicie o aplicativo.
+- Iniciar o aplicativo.
 
 ![Nosso aplicativo instalado](./media/deploy-modern-applications/our-installed-application.png)
 
@@ -226,4 +226,4 @@ O MSIX cria uma interface do usuário para a instalação mostrando automaticame
 Depois de gerar o novo pacote MSIX e movê-lo para o servidor de implantação, basta editar o arquivo *. AppInstaller* para refletir essas alterações, principalmente a versão e o caminho para o novo arquivo MSIX. Na próxima vez que o usuário iniciar o aplicativo, o sistema irá detectar a alteração e baixar os arquivos para a nova versão em segundo plano. Quando isso for feito, a instalação será executada na inicialização do novo aplicativo de forma transparente para o usuário.
 
 >[!div class="step-by-step"]
->[Anterior](example-migration-core.md)
+>[Anterior](example-migration.md)

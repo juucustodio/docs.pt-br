@@ -1,15 +1,15 @@
-- name: Modernizar aplicativos de área de trabalho no Windows 10 com .NET Core 3.1
+- name: Modernizar aplicativos de área de trabalho no Windows 10 com o .NET 5
   href: index.md
   items:
     - name: Por que escolher aplicativos de área de trabalho modernos
       href: why-modern-applications.md
-    - name: Novidades do .NET Core para Área de Trabalho
-      href: whats-new-dotnet-core.md
+    - name: Novidades do .NET para área de trabalho
+      href: whats-new-dotnet.md
     - name: Migrar aplicativos modernos de área de trabalho
       href: migrate-modern-applications.md
     - name: Migração para o Windows 10
       href: windows-migration.md
-    - name: Exemplo de migração para o .NET Core 3.1
-      href: example-migration-core.md
+    - name: Exemplo de migração para o .NET 5
+      href: example-migration.md
     - name: Implantar aplicativos modernos de área de trabalho
       href: deploy-modern-applications.md

@@ -24,6 +24,8 @@
               href: 6.0.md
             - name: Windows Forms
               items:
+                - name: Tamanho máximo de texto aumentado para NotifyIcon.Text
+                  href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                 - name: As propriedades TableLayoutSettings geram InvalidEnumArgumentException
                   href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
         - name: .NET 5.0
@@ -508,7 +510,6 @@
                   href: msbuild/5.0/publishdepsfilepath-behavior-change.md
                 - name: Alteração de TargetFramework de netcoreapp para net
                   href: msbuild/5.0/targetframework-name-change.md
-            - name: (Esse arquivo eventualmente desaparecerá)
             - name: .NET 3.0
               href: msbuild.md
         - name: Rede
@@ -561,6 +562,8 @@
           items:
             - name: .NET 6.0
               items:
+                - name: Tamanho máximo de texto aumentado para NotifyIcon.Text
+                  href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                 - name: As propriedades TableLayoutSettings geram InvalidEnumArgumentException
                   href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
             - name: .NET 5.0

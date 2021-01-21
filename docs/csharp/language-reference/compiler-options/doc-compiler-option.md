@@ -13,12 +13,12 @@ helpviewer_keywords:
 - -doc compiler option [C#]
 - /doc compiler option [C#]
 ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
-ms.openlocfilehash: b1d7fbbe98aaad16454fdd71c161f2a17a2f4f2e
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: e55b86e5b028fb871f309d80217477cfd164c106
+ms.sourcegitcommit: f0eb7eeedf3ceec726499fa678786d03083214ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91173250"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98629248"
 ---
 # <a name="-doc-c-compiler-options"></a>-doc (opções do compilador C#)
 
@@ -54,17 +54,21 @@ A opção **-doc** permite colocar comentários de documentação em um arquivo 
   
  Consulte [Marcas recomendadas para comentários de documentação](../../programming-guide/xmldoc/recommended-tags-for-documentation-comments.md) para ver maneiras de gerar a documentação dos comentários em seu código.  
   
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Para definir esta opção do compilador no ambiente de desenvolvimento do Visual Studio  
-  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-2019-development-environment"></a>Para definir essa opção de compilador no ambiente de desenvolvimento do Visual Studio 2019  
+
 1. Abra a página **Propriedades** do projeto.  
+2. Clique na guia **Build**.
+3. Modifique a propriedade **Arquivo de documentação XML**.
   
-2. Clique na guia **Build**.  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-for-mac-development-environment"></a>Para definir essa opção de compilador no ambiente de desenvolvimento de Visual Studio para Mac  
   
-3. Modifique a propriedade **Arquivo de documentação XML**.  
+1. Abra a página **Opções** do projeto.
+2. Selecione a guia **compilador** .
+3. Selecione **gerar documentação XML** e insira o nome do arquivo na caixa de texto.
+
+Para obter informações sobre como definir essa opção do compilador programaticamente, consulte <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
   
- Para obter informações sobre como definir essa opção do compilador programaticamente, consulte <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
-  
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Opções do compilador de C#](./index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

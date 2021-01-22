@@ -1,6 +1,7 @@
 ---
 title: Expressões regulares do .NET
 description: Use expressões regulares para localizar padrões de caracteres específicos, validar texto, trabalhar com subcadeias de texto, & adicionar cadeias de caracteres extraídas a uma coleção no .NET.
+ms.topic: conceptual
 ms.date: 06/30/2020
 dev_langs:
 - csharp
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - .NET regular expressions
 - strings [.NET], regular expressions
 ms.assetid: 521b3f6d-f869-42e1-93e5-158c54a6895d
-ms.openlocfilehash: 6fa791005aa9fa9956a3169f8f9ddecfa201bcda
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: ea6b16909b79236245b35238ad43d778eec3051a
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831332"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692767"
 ---
 # <a name="net-regular-expressions"></a>Expressões regulares do .NET
 

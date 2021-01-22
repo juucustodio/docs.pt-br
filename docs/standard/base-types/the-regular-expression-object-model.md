@@ -1,6 +1,7 @@
 ---
 title: O modelo de objeto de expressão regular
 description: Examine o modelo de objeto de expressão regular no .NET. Trabalhe com o mecanismo de expressões regulares, & objetos & coleções relacionadas à correspondência, ao agrupamento & a captura.
+ms.topic: conceptual
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - pattern-matching with regular expressions, classes
 - GroupCollection class
 ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
-ms.openlocfilehash: 996a8cca8222e3de6517ee6fa7cef3c4f44fc5a9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 115955f48f0470adf584acf2c2e72680cef105cb
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734174"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692559"
 ---
 # <a name="the-regular-expression-object-model"></a>O modelo de objeto de expressão regular
 
@@ -371,7 +372,7 @@ ms.locfileid: "95734174"
 |`;`|Corresponder a um ponto e vírgula.|  
 |`((\w+(\s\w+)*),(\d+);)+`|Corresponder ao padrão de uma palavra seguida por qualquer palavra adicional seguida por uma vírgula, um ou mais dígitos e um ponto e vírgula, uma ou mais vezes. Este é o primeiro grupo de captura.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Text.RegularExpressions>
 - [Expressões regulares do .NET](regular-expressions.md)

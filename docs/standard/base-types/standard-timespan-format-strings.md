@@ -2,6 +2,7 @@
 title: Cadeias de caracteres de formato TimeSpan padrão
 description: Examine as cadeias de caracteres de formato TimeSpan padrão, que usam um único especificador de formato para definir a representação de texto de um valor TimeSpan no .NET.
 ms.date: 03/30/2017
+ms.topic: reference
 dev_langs:
 - csharp
 - vb
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - standard TimeSpan format strings
 - formatting [.NET], time intervals
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
-ms.openlocfilehash: 251f90e85d037d8cf4f3fd58bc27659c98d04b5e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d9872bab996244b630d1ca33c85b06dce6a315ef
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734238"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692598"
 ---
 # <a name="standard-timespan-format-strings"></a>Cadeias de caracteres de formato TimeSpan padrão
 
@@ -40,7 +41,7 @@ ms.locfileid: "95734238"
   
 A tabela a seguir lista os especificadores de formato de intervalo de tempo padrão.  
   
-|Especificador de formato|Nome|Descrição|Exemplos|  
+|Especificador de formato|Name|Descrição|Exemplos|  
 |----------------------|----------|-----------------|--------------|  
 |"c"|Formato de constante (invariável)|Esse especificador não é sensível à cultura. Ele assume o formato `[-][d'.']hh':'mm':'ss['.'fffffff]`.<br /><br /> (As sequências de formato "t" e "T" produzem os mesmos resultados).<br /><br /> Mais informações: [o especificador de formato de constante ("c")](#the-constant-c-format-specifier).|`TimeSpan.Zero` -> 00:00:00<br /><br /> `New TimeSpan(0, 0, 30, 0)` -> 00:30:00<br /><br /> `New TimeSpan(3, 17, 25, 30, 500)` -> 3.17:25:30.5000000|  
 |"g"|Formato curto geral|Esse especificador gera apenas o que é necessário. Ele é sensível à cultura e assume o formato `[-][d':']h':'mm':'ss[.FFFFFFF]`.<br /><br /> Mais informações: [o especificador de formato curto geral ("g")](#the-general-short-g-format-specifier).|`New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50.5 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50,5 (fr-FR)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50.599 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50,599 (fr-FR)|  
@@ -54,7 +55,7 @@ A tabela a seguir lista os especificadores de formato de intervalo de tempo padr
   
  Os elementos entre colchetes ([ e ]) são opcionais. O ponto (.) e os dois pontos (:) são símbolos literais. A tabela a seguir descreve os elementos restantes.  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |*-*|Um sinal negativo opcional, que indica um intervalo de tempo negativo.|  
 |*d*|O número opcional de dias, sem zeros à esquerda.|  
@@ -81,7 +82,7 @@ A tabela a seguir lista os especificadores de formato de intervalo de tempo padr
   
  Os elementos entre colchetes ([ e ]) são opcionais. Os dois pontos (:) são um símbolo literal. A tabela a seguir descreve os elementos restantes.  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |*-*|Um sinal negativo opcional, que indica um intervalo de tempo negativo.|  
 |*d*|O número opcional de dias, sem zeros à esquerda.|  
@@ -106,7 +107,7 @@ A tabela a seguir lista os especificadores de formato de intervalo de tempo padr
   
  Os elementos entre colchetes ([ e ]) são opcionais. Os dois pontos (:) são um símbolo literal. A tabela a seguir descreve os elementos restantes.  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |*-*|Um sinal negativo opcional, que indica um intervalo de tempo negativo.|  
 |*d*|O número de dias, sem zeros à esquerda.|  
@@ -123,8 +124,8 @@ A tabela a seguir lista os especificadores de formato de intervalo de tempo padr
  [!code-csharp[Conceptual.TimeSpan.Standard#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.standard/cs/standardlong1.cs#5)]
  [!code-vb[Conceptual.TimeSpan.Standard#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardlong1.vb#5)]
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Formatar tipos](formatting-types.md)
-- [Cadeias de caracteres de formato TimeSpan personalizado](custom-timespan-format-strings.md)
+- [Cadeias de caracteres de formato de TimeSpan personalizado](custom-timespan-format-strings.md)
 - [Analisando cadeias de caracteres](parsing-strings.md)

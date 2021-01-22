@@ -1,6 +1,7 @@
 ---
 title: Acesso thread-safe em expressões regulares
 ms.date: 03/30/2017
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET regular expressions, threads
 - regular expressions, threads
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - parsing text with regular expressions, threads
 - pattern-matching with regular expressions, threads
 ms.assetid: 7c4a167b-5236-4cde-a2ca-58646230730f
-ms.openlocfilehash: a10b5d01d308af3c808404608e6be1d77e6be8e0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4be73ba89ff7114c52394ab23a8de02adb35e0e2
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734160"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692546"
 ---
 # <a name="thread-safety-in-regular-expressions"></a>Acesso thread-safe em expressões regulares
 
@@ -25,6 +26,6 @@ A própria classe <xref:System.Text.RegularExpressions.Regex> é thread-safe e i
   
  Os enumeradores são a única exceção. Um aplicativo precisa serializar as chamadas a enumeradores de coleções. A regra é que se uma coleção pode ser enumerada em mais de um thread simultaneamente, você deve sincronizar os métodos do enumerador no objeto raiz da coleção percorrida pelo enumerador.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões regulares do .NET](regular-expressions.md)

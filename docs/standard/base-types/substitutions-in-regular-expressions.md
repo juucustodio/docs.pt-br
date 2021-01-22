@@ -1,6 +1,7 @@
 ---
 title: Substituições em expressões regulares
 description: Faça substituições para substituir o texto correspondente usando expressões regulares no .NET. Substituições são elementos de linguagem reconhecidos somente dentro de padrões de substituição.
+ms.topic: conceptual
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - constructs, substitutions
 - substitutions
 ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
-ms.openlocfilehash: f1cab01e7a6ee48bd01f65d4cc8a8a540fbabc61
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aa889f449f2e020b8a7d90a50eb7a9a14d70f4e6
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734199"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692650"
 ---
 # <a name="substitutions-in-regular-expressions"></a>Substituições em expressões regulares
 
@@ -28,7 +29,7 @@ As substituições são elementos de linguagem que são reconhecidos apenas em p
   
 |Substituição|Descrição|  
 |------------------|-----------------|  
-|$ *number*|Inclui a última subcadeia de caracteres correspondida pelo grupo de captura que é identificado por *number*, no qual *number* é um valor decimal na cadeia de caracteres de substituição. Para obter mais informações, consulte [substituindo um grupo numerado](#substituting-a-numbered-group).|  
+|$ *automática*|Inclui a última subcadeia de caracteres correspondida pelo grupo de captura que é identificado por *number*, no qual *number* é um valor decimal na cadeia de caracteres de substituição. Para obter mais informações, consulte [substituindo um grupo numerado](#substituting-a-numbered-group).|  
 |${ *name* }|Inclui a última subcadeia de caracteres correspondida pelo grupo nomeado designado pelo `(?<` *nome* `> )` na cadeia de caracteres de substituição. Para obter mais informações, consulte [substituindo um grupo nomeado](#substituting-a-named-group).|  
 |$$|Inclui um único literal “$” na cadeia de caracteres de substituição. Para obter mais informações, consulte [Substituindo um símbolo "$"](#substituting-a--character).|  
 |$&|Inclui uma cópia da correspondência inteira na cadeia de caracteres de substituição. Para obter mais informações, consulte [substituindo toda a correspondência](#substituting-the-entire-match).|  
@@ -207,6 +208,6 @@ As substituições são elementos de linguagem que são reconhecidos apenas em p
 |1|3|123|ABC **ABC123DEF456** DEF456|  
 |2|5|456|ABCABC123DEF456DEF **ABC123DEF456**|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Linguagem de expressões regulares – referência rápida](regular-expression-language-quick-reference.md)

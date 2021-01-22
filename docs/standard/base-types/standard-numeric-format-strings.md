@@ -2,6 +2,7 @@
 title: Cadeias de caracteres de formato numérico padrão
 description: Neste artigo, aprenda a usar cadeias de caracteres de formato numérico padrão para formatar tipos numéricos comuns em representações de texto no .NET.
 ms.date: 06/10/2018
+ms.topic: reference
 dev_langs:
 - csharp
 - vb
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - standard numeric format strings
 - formatting numbers [.NET]
 - format specifiers, standard numeric format strings
-ms.openlocfilehash: b8537e8dcfdd45ed8da18b8b82aae5e9fc0cd96e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: e104154d7ee6afb14d86c04307c6f4d9d039c04b
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818759"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692663"
 ---
 # <a name="standard-numeric-format-strings"></a>Cadeias de caracteres de formato numérico padrão
 
@@ -51,7 +52,7 @@ As cadeias de caractere de formato numérico padrão têm suporte de:
 
 <a name="table"></a> A tabela a seguir descreve os especificadores de formato numérico padrão e exibe a saída de exemplo produzida por cada especificador de formato. Consulte a seção [Notas](#NotesStandardFormatting) para obter informações adicionais sobre como usar cadeias de caracteres de formato numérico padrão e a seção [Exemplo](#example) para obter uma ilustração abrangente de seu uso.
 
-|Especificador de formato|Nome|Descrição|Exemplos|
+|Especificador de formato|Name|Descrição|Exemplos|
 |----------------------|----------|-----------------|--------------|
 |"C" ou "c"|Moeda|Resultado: um valor de moeda.<br /><br /> Compatível com: todos os tipos numéricos.<br /><br /> Especificador de precisão: número de casas decimais.<br /><br /> Especificador de precisão padrão: definido por <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A?displayProperty=nameWithType>.<br /><br /> Para saber mais: [especificador de formato de moeda ("C")](#CFormatString).|123,456 ("C", en-US)-> \\ $123.46<br /><br /> 123,456 ("C", fr-FR)-> 123, 46 &euro;<br /><br /> 123.456 ("C", ja-JP) -> ¥123<br /><br /> -123,456 ("C3", en-US)-> ( \\ $123.456)<br /><br /> -123,456 ("C3", fr-FR)->-123.456 &euro;<br /><br /> -123.456 ("C3", ja-JP) -> -¥123.456|
 |"D" ou "d"|Decimal|Resultado: dígitos inteiros com sinal negativo opcional.<br /><br /> Compatível com: somente tipos integrais.<br /><br /> Especificador de precisão: número mínimo de dígitos.<br /><br /> Especificador de precisão padrão: número mínimo de dígitos necessários.<br /><br /> Para saber mais: [especificador de formato decimal ("D")](#DFormatString).|1234 ("D") -> 1234<br /><br /> -1234 ("D6") -> -001234|
@@ -349,7 +350,7 @@ O exemplo a seguir formata valores <xref:System.Int32> com o especificador de fo
 
 <a name="NotesStandardFormatting"></a>
 
-## <a name="notes"></a>Observações
+## <a name="notes"></a>Anotações
 
 ### <a name="control-panel-settings"></a>Configurações do Painel de Controle
 
@@ -381,7 +382,7 @@ O exemplo a seguir formata um inteiro e um valor numérico de ponto flutuante us
 [!code-csharp[system.x.tostring-and-culture#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.X.ToString-and-Culture/cs/xts.cs#FinalExample)]
 [!code-vb[system.x.tostring-and-culture#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.X.ToString-and-Culture/vb/xts.vb#1)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Globalization.NumberFormatInfo>
 - [Cadeias de caracteres de formato numérico personalizado](custom-numeric-format-strings.md)

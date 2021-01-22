@@ -1,6 +1,7 @@
 ---
 title: Conversão de tipo no .NET
 description: Leia sobre conversão de tipo no .NET, que cria um valor em um novo tipo equivalente ao valor do tipo antigo, mas pode não manter a identidade original.
+ms.topic: conceptual
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - Implicit operator
 - data types [.NET], converting
 ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
-ms.openlocfilehash: 8e1ea153ccd65de967a34e79d4a26c96e678c4ad
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 9dcd1533312c259fd1e120c224c49efa4f829fee
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831020"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692637"
 ---
 # <a name="type-conversion-in-net"></a>Conversão de tipo no .NET
 
@@ -45,7 +46,7 @@ O .NET oferece suporte automaticamente às seguintes conversões:
   
 - Conversão de um objeto de interface de volta para o tipo original que implementa essa interface.  No C#, essa conversão exige um operador de conversão. No Visual Basic, ela exige o operador `CType` quando a `Option Strict` está ativada.  
   
-Além dessas conversões automáticas, o .NET fornece várias funcionalidades que oferecem suporte à conversão personalizada de tipo. Eles incluem o seguinte:  
+Além dessas conversões automáticas, o .NET fornece várias funcionalidades que oferecem suporte à conversão personalizada de tipo. Entre elas estão as seguintes:  
   
 - O operador `Implicit`, que define as conversões de ampliação disponíveis entre tipos. Para obter mais informações, consulte a seção [conversão implícita com o operador implícito](#implicit-conversion-with-the-implicit-operator) .  
   
@@ -88,7 +89,7 @@ As conversões de redução envolvem a criação de um novo valor com o valor de
   
  Por exemplo, os tipos de dados <xref:System.UInt32>, <xref:System.Int64> e <xref:System.UInt64> possuem intervalos que excedem o do tipo de dados <xref:System.Int32>, conforme mostrado na tabela a seguir.  
   
-|Type|Comparação com intervalo de Int32|  
+|Digite|Comparação com intervalo de Int32|  
 |----------|------------------------------------|  
 |<xref:System.Int64>|<xref:System.Int64.MaxValue?displayProperty=nameWithType> é maior que <xref:System.Int32.MaxValue?displayProperty=nameWithType>, e <xref:System.Int64.MinValue?displayProperty=nameWithType> é menor que (possui um intervalo negativo maior que) <xref:System.Int32.MinValue?displayProperty=nameWithType>.|  
 |<xref:System.UInt32>|<xref:System.UInt32.MaxValue?displayProperty=nameWithType> é maior que <xref:System.Int32.MaxValue?displayProperty=nameWithType>.|  
@@ -198,7 +199,7 @@ O .NET também permite que você defina um conversor de tipo para um tipo person
   
  Para obter mais informações sobre como usar conversores de tipo para executar conversões, consulte <xref:System.ComponentModel.TypeConverter?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Convert?displayProperty=nameWithType>
 - <xref:System.IConvertible>

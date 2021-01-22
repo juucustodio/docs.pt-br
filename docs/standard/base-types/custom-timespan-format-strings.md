@@ -2,6 +2,7 @@
 title: Cadeias de caracteres de formato TimeSpan personalizado
 description: Entender cadeias de caracteres de formato de TimeSpan personalizadas no .NET. Uma cadeia de caracteres de formato personalizado contém um ou mais especificadores de formato TimeSpan & qualquer número de caracteres literais.
 ms.date: 03/30/2017
+ms.topic: reference
 dev_langs:
 - csharp
 - vb
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - formatting [.NET], time
 - custom TimeSpan format strings
 ms.assetid: a63ebf55-7269-416b-b4f5-286f6c03bf0e
-ms.openlocfilehash: e8447e580ac85e1ebbc33f8c8334b7c5cfeb334b
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: dd6a27ee9454dce4e76e25af325f081e804f0599
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94824357"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692884"
 ---
 # <a name="custom-timespan-format-strings"></a>Cadeias de caracteres de formato TimeSpan personalizado
 
@@ -391,7 +392,7 @@ O exemplo a seguir usa o caractere de escape e a aspa simples para definir uma c
 
 [Voltar à tabela](#table)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Formatar tipos](formatting-types.md)
-- [Cadeias de caracteres de formato TimeSpan padrão](standard-timespan-format-strings.md)
+- [Cadeias de caracteres de formato standard TimeSpan](standard-timespan-format-strings.md)

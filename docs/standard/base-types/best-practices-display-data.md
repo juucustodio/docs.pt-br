@@ -2,15 +2,16 @@
 title: Práticas recomendadas para exibir e persistir dados formatados no .NET
 description: Saiba como exibir e manter dados numéricos e de data efetivamente em aplicativos .NET.
 ms.date: 05/01/2019
+ms.topic: conceptual
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 1748363089a80538a19e91b1955fe9257de39a4e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: dd2e85ed695072da24b6b25b187810a109b89b25
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94825137"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98693118"
 ---
 # <a name="best-practices-for-displaying-and-persisting-formatted-data"></a>Práticas recomendadas para exibir e manter dados formatados
 

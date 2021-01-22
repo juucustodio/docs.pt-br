@@ -2,17 +2,18 @@
 title: Operações básicas de cadeias de caracteres no .NET
 description: Saiba mais sobre as operações básicas que você pode executar em cadeias de caracteres.
 ms.date: 03/30/2017
+ms.topic: conceptual
 helpviewer_keywords:
 - strings [.NET], basic string operations
 - custom strings
 ms.assetid: 8133d357-90b5-4b62-9927-43323d99b6b6
 ms.custom: seadec18
-ms.openlocfilehash: 30f325a414e0912086b5d36630e77ea754db4956
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 92cdba893bee3d4c3e14c73fbf35bdd46da998fb
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94825124"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692905"
 ---
 # <a name="basic-string-operations-in-net"></a>Operações básicas de cadeia de caracteres no .NET
 

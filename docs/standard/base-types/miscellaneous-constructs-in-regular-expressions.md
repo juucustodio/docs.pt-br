@@ -1,6 +1,7 @@
 ---
 title: Construtores diversos em expressões regulares
 ms.date: 03/30/2017
+ms.topic: conceptual
 dev_langs:
 - csharp
 - vb
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - .NET regular expressions, miscellaneous constructs
 - regular expressions, miscellaneous constructs
 ms.assetid: 7d10d11f-680f-4721-b047-fb136316b4cd
-ms.openlocfilehash: ef8f126559b51aa9b918f04e27f5599fba519b43
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b37244ec218c4bfee9c14f4504ab1018cb12d35b
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683791"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692949"
 ---
 # <a name="miscellaneous-constructs-in-regular-expressions"></a>Construtores diversos em expressões regulares
 
@@ -28,7 +29,7 @@ As expressões regulares em .NET incluem três constructos diversos de linguagem
   
  Você lista as opções que deseja habilitar após o ponto de interrogação e as opções que deseja desabilitar após o sinal de subtração. A tabela a seguir descreve cada opção. Para obter mais informações sobre cada opção, consulte [Opções de expressão regular](regular-expression-options.md).  
   
-|Opção|DESCRIÇÃO|  
+|Opção|Descrição|  
 |------------|-----------------|  
 |`i`|Correspondência sem diferenciação entre maiúsculas e minúsculas.|  
 |`m`|Modo multilinha.|  
@@ -100,6 +101,6 @@ As expressões regulares em .NET incluem três constructos diversos de linguagem
   
  Observe que, em vez de fornecer o constructo `(?x)` na expressão regular, o comentário pode também poderia ter sido reconhecido chamando o método <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> e passando-o para o valor de enumeração <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Linguagem de expressões regulares – referência rápida](regular-expression-language-quick-reference.md)

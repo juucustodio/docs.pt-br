@@ -2,6 +2,7 @@
 title: Práticas recomendadas para expressões regulares no .NET
 description: Saiba como criar expressões regulares eficientes e eficazes no .NET.
 ms.date: 06/30/2020
+ms.topic: conceptual
 dev_langs:
 - csharp
 - vb
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - .NET regular expressions, best practices
 - regular expressions, best practices
 ms.assetid: 618e5afb-3a97-440d-831a-70e4c526a51c
-ms.openlocfilehash: ae74d263034de4d402520d751fe97af9e33a2a48
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 6a4c1ac5879447d829bcd162f764c33adcbea184
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820586"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98693144"
 ---
 # <a name="best-practices-for-regular-expressions-in-net"></a>Práticas recomendadas para expressões regulares no .NET
 
@@ -235,7 +236,7 @@ O exemplo a seguir define um método `GetWordData` que instancia uma expressão 
 
 ## <a name="capture-only-when-necessary"></a>Capture somente quando necessário
 
-As expressões regulares no .NET dão suporte a vários constructos de agrupamento, que permitem a você agrupar um padrão de expressão regular em uma ou mais subexpressões. As construções de agrupamento usadas com mais frequência na linguagem de expressão regular do .NET são `(` *subexpressão* `)` , que define um grupo de captura numerada e a `(?<` *name* `>` *subexpressão* de nome `)` , que define um grupo de captura nomeado. Os construtores de agrupamento são essenciais para criar referências reversas e definir uma subexpressão à qual um quantificador é aplicado.
+As expressões regulares no .NET dão suporte a vários constructos de agrupamento, que permitem a você agrupar um padrão de expressão regular em uma ou mais subexpressões. As construções de agrupamento usadas com mais frequência na linguagem de expressão regular do .NET são `(` *subexpressão* `)` , que define um grupo de captura numerada e a `(?<`  `>` *subexpressão* de nome `)` , que define um grupo de captura nomeado. Os construtores de agrupamento são essenciais para criar referências reversas e definir uma subexpressão à qual um quantificador é aplicado.
 
 No entanto, o uso desses elementos de linguagem tem um custo. Eles fazem com que o objeto <xref:System.Text.RegularExpressions.GroupCollection> retornado pela propriedade <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> seja preenchido com as capturas sem nome ou nomeadas mais recentes. Além disso, se uma única construção de agrupamento capturou várias subcadeias de caracteres na cadeia de caracteres de entrada, também preenchem o objeto <xref:System.Text.RegularExpressions.CaptureCollection> retornado pela propriedade <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> de um grupo de captura específico com vários objetos <xref:System.Text.RegularExpressions.Capture>.
 

@@ -1,6 +1,7 @@
 ---
 title: Comportamento de expressão regular
 ms.date: 03/30/2017
+ms.topic: conceptual
 dev_langs:
 - csharp
 - vb
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - regular expressions, behavior
 - .NET regular expressions, behavior
 ms.assetid: 0ee1a6b8-caac-41d2-917f-d35570021b10
-ms.openlocfilehash: 1e5d2d40f52220a8fff40eb19a24d8b2efd3cab5
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 4007813f2c40c78e3b5e426bed39ac6b6f3747bf
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829694"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692975"
 ---
 # <a name="details-of-regular-expression-behavior"></a>Detalhes do comportamento de expressões regulares
 
@@ -86,7 +87,7 @@ O mecanismo de expressões regulares do .NET é um correspondente de expressão 
 
      Para obter mais informações sobre as asserções de lookahead negativo, consulte [Constructos de agrupamento](grouping-constructs-in-regular-expressions.md).
 
-- Avaliação condicional: `(?(` *expressão* `)` *Sim* `|` *não* `)` e `(?(` *nome* `)` *Sim* `|` *não* `)` , em que *expressão* é uma subexpressão para corresponder, *nome* é o nome de um grupo de captura, *Sim* é a cadeia de caracteres a corresponder se *name* a *expressão* for correspondida ou se o nome for um grupo capturado válido, não vazio e *não* for a subexpressão a corresponder se a *expressão* não for correspondida ou o *nome* não for um grupo capturado válido Esse recurso permite que o mecanismo pesquise usando mais de um padrão alternativo, dependendo do resultado de uma correspondência de subexpressão anterior ou do resultado de uma asserção de largura zero. Isso possibilita uma forma mais potente de referência inversa que permite, por exemplo, corresponder a uma subexpressão com base no fato de uma subexpressão anterior ser correspondente. A expressão regular no exemplo a seguir corresponde a parágrafos que são destinados a uso público e interno. Os parágrafos destinados apenas a uso interno começam com uma marca `<PRIVATE>`. O padrão de expressão regular `^(?<Pvt>\<PRIVATE\>\s)?(?(Pvt)((\w+\p{P}?\s)+)|((\w+\p{P}?\s)+))\r?$` usa avaliação condicional para atribuir o conteúdo de parágrafos destinados a uso público e interno a grupos de captura separados. Esses parágrafos podem ser tratados de maneiras diferentes.
+- Avaliação condicional: `(?(` *expressão* `)` *Sim* `|` *não* `)` e `(?(` *nome* `)` *Sim* `|` *não* `)` , em que *expressão* é uma subexpressão para corresponder, *nome* é o nome de um grupo de captura, *Sim* é a cadeia de caracteres a corresponder se  a *expressão* for correspondida ou se o nome for um grupo capturado válido, não vazio e *não* for a subexpressão a corresponder se a *expressão* não for correspondida ou o *nome* não for um grupo capturado válido Esse recurso permite que o mecanismo pesquise usando mais de um padrão alternativo, dependendo do resultado de uma correspondência de subexpressão anterior ou do resultado de uma asserção de largura zero. Isso possibilita uma forma mais potente de referência inversa que permite, por exemplo, corresponder a uma subexpressão com base no fato de uma subexpressão anterior ser correspondente. A expressão regular no exemplo a seguir corresponde a parágrafos que são destinados a uso público e interno. Os parágrafos destinados apenas a uso interno começam com uma marca `<PRIVATE>`. O padrão de expressão regular `^(?<Pvt>\<PRIVATE\>\s)?(?(Pvt)((\w+\p{P}?\s)+)|((\w+\p{P}?\s)+))\r?$` usa avaliação condicional para atribuir o conteúdo de parágrafos destinados a uso público e interno a grupos de captura separados. Esses parágrafos podem ser tratados de maneiras diferentes.
 
      [!code-csharp[Conceptual.RegularExpressions.Design#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/conditional1.cs#4)]
      [!code-vb[Conceptual.RegularExpressions.Design#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/conditional1.vb#4)]
@@ -103,7 +104,7 @@ O mecanismo de expressões regulares do .NET é um correspondente de expressão 
 
      Para obter mais informações sobre a avaliação condicional, consulte [Constructos de alternância](alternation-constructs-in-regular-expressions.md).
 
-- Definições de grupo de `(?<` *balanceamento:* `-` *name2* `>` *subexpressão* nome2property `)` . Esse recurso permite que o mecanismo de expressões regulares controle constructos aninhados, como parênteses ou colchetes de abertura e fechamento. Para ver um exemplo, consulte [Constructos de agrupamento](grouping-constructs-in-regular-expressions.md).
+- Definições de grupo de `(?<` *balanceamento:* `-`  `>` *subexpressão* nome2property `)` . Esse recurso permite que o mecanismo de expressões regulares controle constructos aninhados, como parênteses ou colchetes de abertura e fechamento. Para ver um exemplo, consulte [Constructos de agrupamento](grouping-constructs-in-regular-expressions.md).
 
 - Grupos atômicos: `(?>` *subexpressão* `)` . Esse recurso permite que o mecanismo de retrocesso assegure que uma subexpressão corresponda apenas à primeira correspondência encontrada para ela, como se a expressão estivesse sendo executada independentemente da expressão que a contém. Se você não usar esse constructo, as pesquisas de retrocesso de expressões maiores poderão alterar o comportamento de uma subexpressão. Por exemplo, a expressão regular `(a+)\w` corresponde a um ou mais caracteres "a", juntamente com um caractere de palavra que segue a sequência de caracteres "a" e atribui a sequência de caracteres "a" para o primeiro grupo de captura. No entanto, se o caractere final da cadeia de caracteres de entrada também for um "a", ele será correspondido pelo `\w` elemento Language e não será incluído no grupo capturado.
 
@@ -147,7 +148,7 @@ O mecanismo de expressões regulares do .NET é um correspondente de expressão 
 |-----------|-----------------|
 |[Retrocesso](backtracking-in-regular-expressions.md)|Fornece informações sobre como o retrocesso de expressões regulares se ramifica para encontrar correspondências alternativas.|
 |[Compilação e reutilização](compilation-and-reuse-in-regular-expressions.md)|Fornece informações sobre a compilação e a reutilização de expressões regulares para aumentar o desempenho.|
-|[Acesso thread-safe](thread-safety-in-regular-expressions.md)|Fornece informações sobre a segurança de thread de expressões regulares e explica quando você deve sincronizar o acesso a objetos de expressão regular.|
+|[Segurança de thread](thread-safety-in-regular-expressions.md)|Fornece informações sobre a segurança de thread de expressões regulares e explica quando você deve sincronizar o acesso a objetos de expressão regular.|
 |[Expressões regulares do .NET](regular-expressions.md)|Fornece uma visão geral sobre o aspecto de linguagem de programação das expressões regulares.|
 |[O modelo de objeto de expressão regular](the-regular-expression-object-model.md)|Oferece informações e exemplos de código que mostram como usar as classes de expressão regular.|
 |[Linguagem de expressões regulares – referência rápida](regular-expression-language-quick-reference.md)|Oferece informações a respeito do conjunto de caracteres, operadores e constructos que você pode usar para definir expressões regulares.|

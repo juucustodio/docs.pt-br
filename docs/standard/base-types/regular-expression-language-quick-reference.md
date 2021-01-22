@@ -2,6 +2,7 @@
 title: Linguagem de expressões regulares – referência rápida
 description: Nesta referência rápida, aprenda a usar padrões de expressão regular para corresponder o texto de entrada. Um padrão tem um ou mais literais de caractere, operadores ou construções.
 ms.date: 03/30/2017
+ms.topic: reference
 f1_keywords:
 - VS.RegularExpressionBuilder
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - cheat sheet
 - .NET regular expressions, language elements
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
-ms.openlocfilehash: 1b261211997837e8664ea60e9210a7f0517f7a9f
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: f34d52bc2413aaf666c07ff511f3c1beb14519d4
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818798"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692819"
 ---
 # <a name="regular-expression-language---quick-reference"></a>Linguagem de expressões regulares – referência rápida
 
@@ -128,7 +129,7 @@ Um referência inversa permite que uma subexpressão correspondida anteriormente
 
 |Constructo de referência inversa|Descrição|Padrão|Corresponde a|
 |-----------------------------|-----------------|-------------|-------------|
-|`\`*número* de|Referência inversa. Corresponde ao valor de uma subexpressão numerada.|`(\w)\1`|`"ee"` em `"seek"`|
+|`\` *number*|Referência inversa. Corresponde ao valor de uma subexpressão numerada.|`(\w)\1`|`"ee"` em `"seek"`|
 |`\k<`*nome* do`>`|Referência inversa nomeada. Corresponde ao valor de uma expressão nomeada.|`(?<char>\w)\k<char>`|`"ee"` em `"seek"`|
 
 ## <a name="alternation-constructs"></a>Construtores de alternância
@@ -147,7 +148,7 @@ As substituições são elementos de linguagem de expressões regulares com supo
 
 |Caractere|Descrição|Padrão|Padrão de substituição|Cadeia de caracteres de entrada|Cadeia de caracteres de resultado|
 |---------------|-----------------|-------------|-------------------------|------------------|-------------------|
-|`$`*número* de|Substitui a subcadeia de caracteres correspondida pelo grupo *number*.|`\b(\w+)(\s)(\w+)\b`|`$3$2$1`|`"one two"`|`"two one"`|
+|`$` *number*|Substitui a subcadeia de caracteres correspondida pelo grupo *number*.|`\b(\w+)(\s)(\w+)\b`|`$3$2$1`|`"one two"`|`"two one"`|
 |`${`*nome* do`}`|Substitui a substring de caracteres correspondida pelo grupo chamado *nome*.|`\b(?<word1>\w+)(\s)(?<word2>\w+)\b`|`${word2} ${word1}`|`"one two"`|`"two one"`|
 |`$$`|Substitui um literal "$".|`\b(\d+)\s?USD`|`$$$1`|`"103 USD"`|`"$103"`|
 |`$&`|Substitui uma cópia da correspondência inteira.|`\$?\d*\.?\d+`|`**$&**`|`"$1.30"`|`"**$1.30**"`|
@@ -163,7 +164,7 @@ Você pode especificar opções que controlam como o mecanismo de expressões re
 É possível especificar uma opção embutida de duas formas:
 
 - Usando o [constructo diverso](miscellaneous-constructs-in-regular-expressions.md) `(?imnsx-imnsx)`, em que um sinal de subtração (-) antes de uma opção ou um conjunto de opções desativa essas opções. Por exemplo, `(?i-mn)` ativa a correspondência sem diferenciação de maiúsculas e minúsculas (`i`), desativa o modo de várias linhas (`m`) e desativa capturas de grupo sem nome (`n`). A opção se aplica ao padrão de expressão regular no ponto em que a opção é definida e entra em vigor no final do padrão ou no ponto em que outro constructo inverte a opção.
-- Usando a subexpressão de [construção de agrupamento](grouping-constructs-in-regular-expressions.md) `(?imnsx-imnsx:` *subexpression* `)` , que define as opções somente para o grupo especificado.
+- Usando a subexpressão de [construção de agrupamento](grouping-constructs-in-regular-expressions.md) `(?imnsx-imnsx:`  `)` , que define as opções somente para o grupo especificado.
 
 O mecanismo de expressões regulares do .NET oferece suporte às seguintes opções embutidas:
 
@@ -185,7 +186,7 @@ Os constructos diversos modificam um expressão regular padrão ou fornecem info
 |`(?#`*Comentário*`)`|Comentário embutido. O comentário é encerrado no primeiro caractere de fechar parênteses.|`\bA(?#Matches words starting with A)\w+\b`|
 |`#` [até o final da linha]|Comentário do modo X. O comentário começa em um `#` sem escape e continua até o final da linha.|`(?x)\bA\w+\b#Matches words starting with A`|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Text.RegularExpressions?displayProperty=nameWithType>
 - <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>

@@ -2,6 +2,7 @@
 title: Práticas recomendadas para comparar cadeias de caracteres no .NET
 description: Saiba como comparar cadeias de caracteres com eficiência em aplicativos .NET.
 ms.date: 05/01/2019
+ms.topic: conceptual
 dev_langs:
 - csharp
 - vb
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - comparing strings
 - strings [.NET],comparing
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
-ms.openlocfilehash: 840e5b0e6a523ac8e3f24586d4980958cd58f613
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 7e495edbf3cdfe5886a2dfbf06eee04d4f6a7567
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970883"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98693105"
 ---
 # <a name="best-practices-for-comparing-strings-in-net"></a>Práticas recomendadas para comparar cadeias de caracteres no .NET
 
@@ -299,6 +300,6 @@ O exemplo a seguir cria um objeto <xref:System.Collections.Hashtable> passando-o
 [!code-csharp[Conceptual.Strings.BestPractices#10](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/indirect2.cs#10)]
 [!code-vb[Conceptual.Strings.BestPractices#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/indirect2.vb#10)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Globalização em aplicativos .NET](../globalization-localization/globalization.md)

@@ -2,6 +2,7 @@
 title: Formatação de composição
 description: Saiba mais sobre a formatação composta do .NET, que usa como entrada uma lista de objetos e uma cadeia de caracteres de formato composto, contendo texto fixo com espaços reservados indexados.
 ms.date: 10/26/2018
+ms.topic: conceptual
 dev_langs:
 - csharp
 - vb
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - composite formatting
 - objects [.NET], formatting multiple objects
 ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
-ms.openlocfilehash: a0252d013ee6cf7cba7f953fc8a1e2c66c510ca7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3c5c1233ebdfc3ad624b2e4f2a8231969657eef1
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683947"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98693040"
 ---
 # <a name="composite-formatting"></a>Formatação de composição
 
@@ -92,11 +93,11 @@ O recurso de formatação de composição tem suporte de métodos como:
   
 |Tipo ou categoria de tipo|Consulte|  
 |---------------------------|---------|  
-|Tipos de data e hora (<xref:System.DateTime>, <xref:System.DateTimeOffset>)|[Cadeias de caracteres de formato de data e hora padrão](standard-date-and-time-format-strings.md)<br /><br /> [Cadeias de caracteres de formato de data e hora personalizado](custom-date-and-time-format-strings.md)|  
+|Tipos de data e hora (<xref:System.DateTime>, <xref:System.DateTimeOffset>)|[Cadeias de caracteres de formato de data e hora padrão](standard-date-and-time-format-strings.md)<br /><br /> [Cadeias de caracteres de formato de data e hora personalizadas](custom-date-and-time-format-strings.md)|  
 |Tipos de enumeração (todos os tipos derivados de <xref:System.Enum?displayProperty=nameWithType>)|[Cadeias de caracteres de formato de enumeração](enumeration-format-strings.md)|  
 |Tipos numéricos (<xref:System.Numerics.BigInteger>, <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>)|[Cadeias de Caracteres de Formato Numérico Padrão](standard-numeric-format-strings.md)<br /><br /> [Cadeias de caracteres de formato numérico personalizado](custom-numeric-format-strings.md)|  
 |<xref:System.Guid>|<xref:System.Guid.ToString%28System.String%29?displayProperty=nameWithType>|  
-|<xref:System.TimeSpan>|[Cadeias de caracteres de formato TimeSpan padrão](standard-timespan-format-strings.md)<br /><br /> [Cadeias de caracteres de formato TimeSpan personalizado](custom-timespan-format-strings.md)|  
+|<xref:System.TimeSpan>|[Cadeias de caracteres de formato standard TimeSpan](standard-timespan-format-strings.md)<br /><br /> [Cadeias de caracteres de formato de TimeSpan personalizado](custom-timespan-format-strings.md)|  
   
 ### <a name="escaping-braces"></a>Chaves de escape  
 
@@ -165,7 +166,7 @@ O recurso de formatação de composição tem suporte de métodos como:
  [!code-csharp[Formatting.Composite#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/Composite1.cs#6)]
  [!code-vb[Formatting.Composite#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Composite1.vb#6)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Console.WriteLine%2A>
 - <xref:System.String.Format%2A?displayProperty=nameWithType>
@@ -175,7 +176,7 @@ O recurso de formatação de composição tem suporte de métodos como:
 - [Cadeias de Caracteres de Formato Numérico Padrão](standard-numeric-format-strings.md)
 - [Cadeias de caracteres de formato numérico personalizado](custom-numeric-format-strings.md)
 - [Cadeias de caracteres de formato de data e hora padrão](standard-date-and-time-format-strings.md)
-- [Cadeias de caracteres de formato de data e hora personalizado](custom-date-and-time-format-strings.md)
-- [Cadeias de caracteres de formato TimeSpan padrão](standard-timespan-format-strings.md)
-- [Cadeias de caracteres de formato TimeSpan personalizado](custom-timespan-format-strings.md)
+- [Cadeias de caracteres de formato de data e hora personalizadas](custom-date-and-time-format-strings.md)
+- [Cadeias de caracteres de formato standard TimeSpan](standard-timespan-format-strings.md)
+- [Cadeias de caracteres de formato de TimeSpan personalizado](custom-timespan-format-strings.md)
 - [Cadeias de caracteres de formato de enumeração](enumeration-format-strings.md)

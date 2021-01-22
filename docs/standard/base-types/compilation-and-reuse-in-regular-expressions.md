@@ -1,5 +1,7 @@
 ---
 title: Compilação e reutilização em expressões regulares
+description: Saiba mais sobre a compilação e reutilização em expressões regulares.
+ms.topic: conceptual
 ms.date: 03/30/2017
 helpviewer_keywords:
 - parsing text with regular expressions, compilation
@@ -11,12 +13,12 @@ helpviewer_keywords:
 - pattern-matching with regular expressions, compilation
 - regular expressions, engines
 ms.assetid: 182ec76d-5a01-4d73-996c-0b0d14fcea18
-ms.openlocfilehash: b0d3ac619e8d9548fffcb41b23d2ebd6663915e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c834817856d799c5621359a28b8a4c54ea6000d4
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723201"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98693053"
 ---
 # <a name="compilation-and-reuse-in-regular-expressions"></a>Compilação e reutilização em expressões regulares
 
@@ -44,6 +46,6 @@ Você pode otimizar o desempenho de aplicativos que fazem uso intensivo de expre
   
  Devido à sobrecarga da instanciação de objetos e à compilação da expressão regular, criar e destruir rapidamente vários objetos <xref:System.Text.RegularExpressions.Regex> é um processo muito caro. Para aplicativos que usam um grande número de expressões regulares diferentes, você pode otimizar o desempenho usando chamadas para métodos `Regex` estáticos e, possivelmente, aumentando o tamanho do cache de expressão regular.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões regulares do .NET](regular-expressions.md)

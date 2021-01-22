@@ -2,6 +2,7 @@
 title: Introdução à char codificação acter no .net
 description: Saiba mais sobre char codificação e decodificação de acter no .net.
 ms.date: 03/09/2020
+ms.topic: conceptual
 no-loc:
 - Rune
 - char
@@ -10,12 +11,12 @@ dev_langs:
 - csharp
 helpviewer_keywords:
 - encoding, understanding
-ms.openlocfilehash: 572fcd289eea720873d94e7fc71f3b4a030d1d70
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 92710e2d223d1d765efc7e877cb16546ef372907
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282310"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98693131"
 ---
 # <a name="character-encoding-in-net"></a>Codificação de caracteres no .NET
 
@@ -46,7 +47,7 @@ s[3] = 'l' ('\u006c')
 s[4] = 'o' ('\u006f')
 ```
 
-Cada char acter é representado por um único `char` valor. Esse padrão é verdadeiro para a maioria dos idiomas do mundo. Por exemplo, aqui está a saída de dois char Acters chineses que parece *nǐ hǎo* e Mean *Hello* :
+Cada char acter é representado por um único `char` valor. Esse padrão é verdadeiro para a maioria dos idiomas do mundo. Por exemplo, aqui está a saída de dois char Acters chineses que parece *nǐ hǎo* e Mean *Hello*:
 
 ```csharp
 PrintChars("你好");
@@ -128,13 +129,13 @@ O diagrama a seguir ilustra a relação entre o BMP e os pontos de código suple
 
 ## <a name="utf-16-code-units"></a>Unidades de código UTF-16
 
-o formato de transformação Unicode de 16 bits ( [UTF-16](https://www.unicode.org/faq/utf_bom.html#UTF16)) é um char sistema de codificação acter que usa *unidades de código* de 16 bits para representar pontos de código Unicode. O .NET usa UTF-16 para codificar o texto em um `string` . Uma `char` instância representa uma unidade de código de 16 bits.
+o formato de transformação Unicode de 16 bits ([UTF-16](https://www.unicode.org/faq/utf_bom.html#UTF16)) é um char sistema de codificação acter que usa *unidades de código* de 16 bits para representar pontos de código Unicode. O .NET usa UTF-16 para codificar o texto em um `string` . Uma `char` instância representa uma unidade de código de 16 bits.
 
 Uma única unidade de código de 16 bits pode representar qualquer ponto de código no intervalo de 16 bits do plano multilíngüe básico. Mas, para um ponto de código no intervalo suplementar, `char` são necessárias duas instâncias.
 
 ## <a name="surrogate-pairs"></a>Pares substitutos
 
-A conversão de valores de 2 16 bits em um único valor de 21 bits é facilitada por um intervalo especial denominado *pontos de código substitutos* , de `U+D800` até `U+DFFF` (decimal 55.296 a 57.343), inclusive.
+A conversão de valores de 2 16 bits em um único valor de 21 bits é facilitada por um intervalo especial denominado *pontos de código substitutos*, de `U+D800` até `U+DFFF` (decimal 55.296 a 57.343), inclusive.
 
 O diagrama a seguir ilustra a relação entre o BMP e os pontos de código substitutos.
 
@@ -384,7 +385,7 @@ string asString = encoding.GetString(utf8Bytes); // will throw if 'utf8Bytes' is
 
 Para obter informações sobre como usar as `Encoding` classes internas, consulte [como usar char classes de codificação acter no .net](character-encoding.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.String>
 - <xref:System.Char>

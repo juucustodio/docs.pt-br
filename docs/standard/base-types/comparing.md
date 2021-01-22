@@ -2,6 +2,7 @@
 title: Comparando cadeias de caracteres em .NET
 description: Leia sobre métodos para comparar cadeias de caracteres no .NET. Saiba mais sobre os métodos Compare, CompareOrdinal, CompareTo, StartsWith, EndsWith, Equals, IndexOf, & LastIndexOf.
 ms.date: 03/30/2017
+ms.topic: conceptual
 dev_langs:
 - csharp
 - vb
@@ -18,18 +19,18 @@ helpviewer_keywords:
 - Equals method
 - StartsWith method
 ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
-ms.openlocfilehash: 08a92e314ad0900679d46cc759c80db89b43f0f0
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: ca2e89fa8c42807757f4ed004c8f8ddaaeafba3b
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823141"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98693066"
 ---
 # <a name="compare-strings-in-net"></a>Comparar cadeias de caracteres no .NET
 
 O .NET fornece vários métodos para comparar os valores de cadeias de caracteres. A tabela a seguir lista e descreve os métodos de comparação de valores.
 
-|Nome do método|Use|
+|Nome do método|Uso|
 |-----------------|---------|
 |<xref:System.String.Compare%2A?displayProperty=nameWithType>|Compara os valores das duas cadeias de caracteres. Retorna um valor inteiro.|
 |<xref:System.String.CompareOrdinal%2A?displayProperty=nameWithType>|Compara duas cadeias de caracteres sem considerar a cultura local. Retorna um valor inteiro.|
@@ -47,9 +48,9 @@ O método estático <xref:System.String.Compare%2A?displayProperty=nameWithType>
 
 |Valor retornado|Condição|
 |------------------|---------------|
-|Um inteiro negativo|A primeira cadeia de caracteres precede a segunda cadeia de caracteres na ordem de classificação.<br /><br /> - ou -<br /><br /> A primeira cadeia de caracteres é `null`.|
-|0|A primeira cadeia de caracteres e a segunda cadeia de caracteres são iguais.<br /><br /> - ou -<br /><br /> Ambas as cadeias de caracteres são `null`.|
-|Um inteiro positivo<br /><br /> - ou -<br /><br /> 1|A primeira cadeia de caracteres segue a segunda cadeia de caracteres na ordem de classificação.<br /><br /> - ou -<br /><br /> A segunda cadeia de caracteres é `null`.|
+|Um inteiro negativo|A primeira cadeia de caracteres precede a segunda cadeia de caracteres na ordem de classificação.<br /><br /> - ou -<br /><br /> A primeira cadeia de caracteres é `null`.|
+|0|A primeira cadeia de caracteres e a segunda cadeia de caracteres são iguais.<br /><br /> - ou -<br /><br /> Ambas as cadeias de caracteres são `null`.|
+|Um inteiro positivo<br /><br /> - ou -<br /><br /> 1|A primeira cadeia de caracteres segue a segunda cadeia de caracteres na ordem de classificação.<br /><br /> - ou -<br /><br /> A segunda cadeia de caracteres é `null`.|
 
 > [!IMPORTANT]
 > O método <xref:System.String.Compare%2A?displayProperty=nameWithType> destina-se principalmente para uso em ordenação ou classificação de cadeias de caracteres. Você não deve usar o método <xref:System.String.Compare%2A?displayProperty=nameWithType> para testar a igualdade (ou seja, para procurar explicitamente um valor retornado de 0 sem considerar se uma cadeia de caracteres é menor que ou maior que a outra). Em vez disso, para determinar se duas cadeias de caracteres são iguais, use o método <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType>.
@@ -156,7 +157,7 @@ O exemplo a seguir usa o método `IndexOf` para pesquisar a primeira ocorrência
 
  Ambos os métodos são úteis quando usados em conjunto com o <xref:System.String.Remove%2A?displayProperty=nameWithType> método. Você pode usar os `IndexOf` métodos ou `LastIndexOf` para recuperar a posição de um caractere e, em seguida, fornecer essa posição para o `Remove` método a fim de remover um caractere ou uma palavra que comece com esse caractere.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Práticas recomendadas para o uso de cadeias de caracteres no .NET](best-practices-strings.md)
 - [Operações básicas de cadeia de caracteres](basic-string-operations.md)

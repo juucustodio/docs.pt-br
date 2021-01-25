@@ -2,12 +2,12 @@
 title: Opções de configuração de tempo de execução
 description: Saiba como configurar aplicativos .NET Core usando as definições de configuração de tempo de execução.
 ms.date: 01/21/2020
-ms.openlocfilehash: 21673a221d0f21202febf4730b955da66132d5f7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 5e9f292476cf953c3e63bb8e89268f7cc06b3bfc
+ms.sourcegitcommit: 2b878d7011306b215dbf3d5dc9c1e78355a6dcd5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538192"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98757844"
 ---
 # <a name="net-core-run-time-configuration-settings"></a>Definições de configuração de tempo de execução do .NET Core
 
@@ -37,7 +37,7 @@ Os artigos nesta seção da documentação são organizados por categoria, por e
 
 ## <a name="runtimeconfigjson"></a>runtimeconfig.jsem
 
-Quando um projeto é [compilado](../tools/dotnet-build.md), um *[AppName] .runtimeconfig.jsno* arquivo é gerado no diretório de saída. Se uma *runtimeconfig.template.jsno* arquivo existir na mesma pasta que o arquivo de projeto, as opções de configuração contidas nela serão mescladas no arquivo *[AppName] .runtimeconfig.js* . Se você estiver criando o aplicativo por conta própria, coloque as opções de configuração na *runtimeconfig.template.jsno* arquivo. Se você estiver apenas executando o aplicativo, insira-os diretamente no *[AppName] .runtimeconfig.jsno* arquivo.
+Quando um projeto é [compilado](../tools/dotnet-build.md), um *[AppName] .runtimeconfig.jsno* arquivo é gerado no diretório de saída. Se uma *runtimeconfig.template.jsno* arquivo existir na mesma pasta que o arquivo de projeto, todas as opções de configuração contidas nela serão inseridas na *.runtimeconfig.js[AppName] no* arquivo. Se você estiver criando o aplicativo por conta própria, coloque as opções de configuração na *runtimeconfig.template.jsno* arquivo. Se você estiver apenas executando o aplicativo, insira-os diretamente no *[AppName] .runtimeconfig.jsno* arquivo.
 
 > [!NOTE]
 > O *[AppName] .runtimeconfig.jsno* arquivo será substituído em compilações subsequentes.
@@ -88,7 +88,7 @@ Se você estiver colocando as opções no arquivo JSON de modelo, omita a `runti
 
 ## <a name="msbuild-properties"></a>propriedades MSBuild
 
-Algumas opções de configuração de tempo de execução podem ser definidas usando as propriedades do MSBuild no arquivo *. csproj* ou *. vbproj* dos projetos do .NET Core do estilo SDK. As propriedades do MSBuild têm precedência sobre as opções definidas na *runtimeconfig.template.jsno* arquivo. Eles também substituem as opções definidas na *.runtimeconfig.js[AppName] no* arquivo no momento da compilação.
+Algumas opções de configuração de tempo de execução podem ser definidas usando as propriedades do MSBuild no arquivo *. csproj* ou *. vbproj* dos projetos do .NET Core do estilo SDK. As propriedades do MSBuild têm precedência sobre as opções definidas na *runtimeconfig.template.jsno* arquivo.
 
 Aqui está um exemplo de arquivo de projeto no estilo SDK com propriedades do MSBuild para configurar o comportamento de tempo de execução:
 

@@ -3,12 +3,12 @@ title: Telemetria do SDK do .NET
 description: Descubra os recursos de telemetria do SDK do .NET que coletam informações de uso para análise, quais dados são coletados e como desabilitá-lo.
 author: KathleenDollard
 ms.date: 08/27/2019
-ms.openlocfilehash: 4f137822c61e1a04eccd28ebd0cd56c04f4a85e2
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 137b703dc9369f09fb535af40edf057e4e02117a
+ms.sourcegitcommit: 2b878d7011306b215dbf3d5dc9c1e78355a6dcd5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94633863"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98757831"
 ---
 # <a name="net-sdk-telemetry"></a>Telemetria do SDK do .NET
 
@@ -33,6 +33,9 @@ A telemetria *é coletada* ao usar qualquer um dos [comandos da CLI do .net](ind
 O recurso telemetria do SDK do .NET é habilitado por padrão. Para recusar o recurso de telemetria, defina a variável de ambiente `DOTNET_CLI_TELEMETRY_OPTOUT` como `1` ou `true`.
 
 Uma única entrada de telemetria também é enviada pelo instalador do SDK do .NET quando ocorre uma instalação bem-sucedida. Para recusar, defina a `DOTNET_CLI_TELEMETRY_OPTOUT` variável de ambiente antes de instalar o SDK do .net.
+
+> [!IMPORTANT]
+> Para recusar depois de iniciar o instalador: Feche o instalador, defina a variável de ambiente e execute o instalador novamente com esse valor definido.
 
 ## <a name="disclosure"></a>Divulgação
 
@@ -136,7 +139,7 @@ Os colaboradores do .NET e qualquer outra pessoa que esteja executando uma vers�
 
 Por isso, as compilações personalizadas do SDK do .NET não devem estar localizadas em diretórios cujos nomes de caminho exponham informações pessoais ou confidenciais.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Dados de telemetria da CLI do .NET](https://dotnet.microsoft.com/platform/telemetry)
 - [Fonte de referência de telemetria (repositório dotnet/SDK)](https://github.com/dotnet/sdk/tree/master/src/Cli/dotnet/Telemetry)

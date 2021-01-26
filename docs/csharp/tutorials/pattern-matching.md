@@ -4,12 +4,12 @@ description: Este tutorial avançado demonstra como usar as técnicas de corresp
 ms.date: 10/06/2020
 ms.technology: csharp-whats-new
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: 730098bf599dfc855676c86ab7a6e7f3ef7658f1
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: be1c330973859df62cd4706e5f6f9ca4326fb221
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513218"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794815"
 ---
 # <a name="tutorial-use-pattern-matching-to-build-type-driven-and-data-driven-algorithms"></a>Tutorial: usar a correspondência de padrões para criar algoritmos orientados a dados e baseados em tipos.
 
@@ -152,7 +152,7 @@ A autoridade de pedágio deseja incentivar que os veículos viagem com a capacid
 - Os ônibus com menos de 50% da capacidade completa pagam uma taxa adicional de R$ 2,00.
 - Os ônibus com 90% da capacidade de passageiros completa, ganham um desconto de R$ 1,00.
 
-Essas regras podem ser implementadas usando o **padrão de propriedade** na mesma expressão switch. O padrão de propriedade examina as propriedades do objeto depois que o tipo foi determinado. O único caso de um `Car` se expande para quatro casos diferentes:
+Essas regras podem ser implementadas usando o **padrão de propriedade** na mesma expressão switch. Um padrão de propriedade é uma `when` cláusula que compara um valor de propriedade com um valor constante. O padrão de propriedade examina as propriedades do objeto depois que o tipo foi determinado. O único caso de um `Car` se expande para quatro casos diferentes:
 
 ```csharp
 vehicle switch

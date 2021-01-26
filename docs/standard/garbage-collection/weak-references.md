@@ -8,12 +8,12 @@ helpviewer_keywords:
 - weak references, long
 - garbage collection, weak references
 ms.assetid: 6a600fe5-3af3-4c64-82da-10a0a8e2d79b
-ms.openlocfilehash: 1eb5e57f5cc1065f1b8510e4fb0a980a85abca29
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a364435a5b0a480b0f6f70315e2d5465f61e6b5a
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714205"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794659"
 ---
 # <a name="weak-references"></a>Referências fracas
 
@@ -27,7 +27,7 @@ O coletor de lixo não pode coletar um objeto em uso por um aplicativo enquanto 
   
  Quando o usuário alterna para outra parte do aplicativo, você pode usar a classe <xref:System.WeakReference> para criar uma referência fraca para a árvore e destruir todas as referências fortes. Quando o usuário alterna de volta para a árvore, o aplicativo tenta obter uma referência forte para a árvore e, se tiver êxito, evita a reconstrução da árvore.  
   
- Para estabelecer uma referência fraca com um objeto, você cria uma <xref:System.WeakReference> usando a instância do objeto a ser rastreada. Em seguida, você deve define a propriedade <xref:System.WeakReference.Target%2A> para aquele objeto e define a referência original para o objeto como `null`. Para obter um exemplo de código, consulte <xref:System.WeakReference> na biblioteca de classes.  
+ Para estabelecer uma referência fraca com um objeto, você cria uma <xref:System.WeakReference> usando a instância do objeto a ser rastreada. Para obter um exemplo de código, consulte <xref:System.WeakReference> na biblioteca de classes.  
   
 ## <a name="short-and-long-weak-references"></a>Referências fracas curtas e longas  
 

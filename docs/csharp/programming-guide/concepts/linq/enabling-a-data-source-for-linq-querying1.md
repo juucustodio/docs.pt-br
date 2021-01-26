@@ -3,12 +3,12 @@ title: Habilitando uma fonte de dados para consulta LINQ
 description: Saiba como estender o LINQ em C# para permitir que qualquer fonte de dados seja consultada no padrão LINQ, o que torna mais fácil para os clientes consultar uma fonte de dados.
 ms.date: 07/20/2015
 ms.assetid: d2ef04a5-31a6-45cb-af9a-a5ce7732662c
-ms.openlocfilehash: d7d751c0584072e740b4e5292071e400a5020f82
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 84769e27e3f8b8d7ee30b79c219b180333337af9
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202607"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794838"
 ---
 # <a name="enabling-a-data-source-for-linq-querying"></a>Habilitando uma fonte de dados para consulta LINQ
 
@@ -32,7 +32,7 @@ Há várias maneiras de estender o LINQ para permitir que qualquer fonte de dado
   
 ### <a name="remote-data"></a>Dados remotos  
 
- A melhor opção para habilitar consultas LINQ de uma fonte de dados remota é implementar a <xref:System.Linq.IQueryable%601> interface. No entanto, isso é diferente de estender um provedor como o [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] para uma fonte de dados. Nenhum modelo de provedor para estender as tecnologias LINQ existentes, como [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] , para outros tipos de fonte de dados, está disponível no Visual Studio 2008.
+ A melhor opção para habilitar consultas LINQ de uma fonte de dados remota é implementar a <xref:System.Linq.IQueryable%601> interface. No entanto, isso é diferente de estender um provedor como o [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] para uma fonte de dados.
   
 ## <a name="iqueryable-linq-providers"></a>Provedores IQueryable de LINQ  
 
@@ -44,7 +44,7 @@ Há várias maneiras de estender o LINQ para permitir que qualquer fonte de dado
   
  Um `IQueryable` provedor complexo, como o [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] provedor, pode traduzir consultas completas do LINQ para uma linguagem de consulta expressiva, como SQL. Um provedor complexo é mais geral do que um provedor menos complexo porque pode manipular uma variedade mais ampla de perguntas na consulta. Ele também possui um sistema de tipos abertos e, consequentemente, deve conter uma infraestrutura extensiva para mapear tipos definidos pelo usuário. Desenvolver um provedor complexo requer uma quantidade significativa de esforço.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Linq.IQueryable%601>
 - <xref:System.Collections.Generic.IEnumerable%601>

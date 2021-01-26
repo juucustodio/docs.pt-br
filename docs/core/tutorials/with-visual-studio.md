@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: e395122e59f17ed66bbd9d83b01610993f663ce1
-ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
+ms.openlocfilehash: a3a27c1baaab135108ef475d77c35d607c45fa82
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94915902"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794795"
 ---
 # <a name="tutorial-create-a-net-console-application-using-visual-studio"></a>Tutorial: criar um aplicativo de console .NET usando o Visual Studio
 
@@ -29,7 +29,7 @@ Crie um projeto de aplicativo de console .NET chamado "HelloWorld".
 
 1. Inicie o Visual Studio 2019.
 
-1. Selecione **ferramentas**  >  **Opções**  >  **Environment**  >  **recursos de visualização** de ambiente e, em seguida, selecione **Mostrar todos os modelos do .NET Core no novo projeto (requer reinicialização)**.
+1. Selecione **ferramentas**  >  **Opções**  >    >  **recursos de visualização** de ambiente e, em seguida, selecione **Mostrar todos os modelos do .NET Core no novo projeto (requer reinicialização)**.
 
    :::image type="content" source="media/with-visual-studio/dotnet-options.png" alt-text="Opção Mostrar todos os modelos do .NET":::
 
@@ -87,7 +87,7 @@ End Module
 
 Se o idioma que você deseja usar não for mostrado, altere o seletor de idioma na parte superior da página.
 
-## <a name="run-the-app"></a>Executar o aplicativo
+## <a name="run-the-app"></a>Execute o aplicativo
 
 1. Pressione <kbd>Ctrl</kbd> + <kbd>F5</kbd> para executar o programa sem depuração.
 
@@ -108,7 +108,7 @@ Aprimore o aplicativo para solicitar ao usuário seu nome e exibi-lo junto com a
 
    Esse código exibe um prompt na janela do console e aguarda até que o usuário insira uma cadeia de caracteres seguida pela tecla <kbd>Enter</kbd> . Ele armazena essa cadeia de caracteres em uma variável chamada `name` . Ele também recupera o valor da <xref:System.DateTime.Now?displayProperty=nameWithType> propriedade, que contém a hora local atual e a atribui a uma variável chamada `date` ( `currentDate` em Visual Basic). E ele exibe esses valores na janela do console. Por fim, ele exibe um prompt na janela do console e chama o <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> método para aguardar a entrada do usuário.
 
-   O `\n` ( `vbCrLf` em Visual Basic) representa um caractere de nova linha.
+   O `\n` (ou `vbCrLf` no código de Visual Basic) representa um caractere de nova linha.
 
    O cifrão ( `$` ) na frente de uma cadeia de caracteres permite que você coloque expressões como nomes de variáveis entre chaves na cadeia de caracteres. O valor da expressão é inserido na cadeia de caracteres no lugar da expressão. Essa sintaxe é conhecida como [cadeias de caracteres interpoladas](../../csharp/language-reference/tokens/interpolated.md).
 

@@ -1,13 +1,13 @@
 ---
 title: Bibliotecas de controle de versão e .NET
 description: Recomendações de melhores práticas para controle de versão de bibliotecas do .NET.
-ms.date: 12/10/2018
-ms.openlocfilehash: ab15d56e40abedd842b681496b9e5ee737c8b1cd
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.date: 01/26/2021
+ms.openlocfilehash: 1f3a14a7c32091621dda30a2d86724915d629564
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290117"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794725"
 ---
 # <a name="versioning"></a>Controle de versão
 
@@ -88,7 +88,7 @@ A versão do arquivo de assembly é usada para exibir uma versão de arquivo no 
 A versão informativa do assembly é usada para registrar informações adicionais de versão e não tem nenhum efeito sobre o comportamento de runtime. Configurar esta versão é opcional. Se você estiver usando o Source Link, essa versão será definida no build com a versão do pacote NuGet, além de uma versão de controle do código-fonte. Por exemplo, `1.0.0-beta1+204ff0a` inclui o hash de confirmação do código-fonte do qual o assembly foi criado. Para obter mais informações, confira [Source Link](./sourcelink.md).
 
 ```xml
-<AssemblyInformationalVersion>The quick brown fox jumped over the lazy dog.</AssemblyInformationalVersion>
+<InformationalVersion>The quick brown fox jumped over the lazy dog.</InformationalVersion>
 ```
 
 > [!NOTE]

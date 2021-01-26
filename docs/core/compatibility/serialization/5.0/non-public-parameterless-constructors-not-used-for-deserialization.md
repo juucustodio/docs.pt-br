@@ -2,12 +2,12 @@
 title: 'Alteração significativa: construtores não públicos sem parâmetros não usados para desserialização'
 description: Saiba mais sobre a alteração significativa no .NET 5,0 em que construtores não públicos sem parâmetros não são mais usados para desserialização com JsonSerializer.
 ms.date: 10/18/2020
-ms.openlocfilehash: 6bdcc92c61008aa4ee27370bbac4dbf4ee3ef7c8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a2ea54b6a76692dae7d6e01b06b11218d66b1cd7
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95760510"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794700"
 ---
 # <a name="non-public-parameterless-constructors-not-used-for-deserialization"></a>Construtores não públicos sem parâmetros não usados para desserialização
 
@@ -37,7 +37,7 @@ Se nenhum desses construtores estiver disponível, um <xref:System.NotSupportedE
 ## <a name="recommended-action"></a>Ação recomendada
 
 - Se você possui o tipo e é viável, torne o construtor sem parâmetros público.
-- Caso contrário, implemente um `JsonConverter<T>` para o tipo e controle o comportamento de desserialização.
+- Caso contrário, implemente um <xref:System.Text.Json.Serialization.JsonConverter%601> para o tipo e controle o comportamento de desserialização. Você pode chamar um construtor não público de uma <xref:System.Text.Json.Serialization.JsonConverter%601> implementação se as regras de acessibilidade do C# para esse cenário permitirem.
 
 ## <a name="affected-apis"></a>APIs afetadas
 

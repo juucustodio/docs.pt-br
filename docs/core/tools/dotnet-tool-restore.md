@@ -2,12 +2,12 @@
 title: comando de restauração da ferramenta dotnet
 description: O comando dotnet ferramenta de restauração instala em seu computador as ferramentas locais do .NET que estão no escopo para o diretório atual.
 ms.date: 02/14/2020
-ms.openlocfilehash: 3425bc6b78fd53f578c209013f83b006305dbb81
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 87bdfb77cda361b800f107c565cbbed6ad75ec78
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242923"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794855"
 ---
 # <a name="dotnet-tool-restore"></a>dotnet tool restore
 
@@ -22,7 +22,7 @@ ms.locfileid: "96242923"
 ```dotnetcli
 dotnet tool restore
     [--configfile <FILE>] [--add-source <SOURCE>]
-    [tool-manifest <PATH_TO_MANIFEST_FILE>] [--disable-parallel]
+    [--tool-manifest <PATH_TO_MANIFEST_FILE>] [--disable-parallel]
     [--ignore-failed-sources] [--no-cache] [--interactive]
     [-v|--verbosity <LEVEL>]
 
@@ -77,7 +77,7 @@ O `dotnet tool restore` comando localiza o arquivo de manifesto da ferramenta qu
 
   Restaura as ferramentas locais para o diretório atual.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas .NET](global-tools.md)
 - [Tutorial: instalar e usar uma ferramenta local do .NET usando a CLI do .NET](local-tools-how-to-use.md)

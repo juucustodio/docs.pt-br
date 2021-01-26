@@ -2,12 +2,12 @@
 title: Programação orientada a objeto (C#)
 description: O C# fornece suporte completo para a programação orientada a objeto, incluindo abstração, encapsulamento, herança e polimorfismo.
 ms.date: 09/30/2020
-ms.openlocfilehash: 4ae31e18fcd88870f511e77bb0c555f35394fd1b
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: b778b7c42bbfb1f20bdd2d83b9cb10512ea3f41b
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687988"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794846"
 ---
 # <a name="object-oriented-programming-c"></a>Programação de Object-Oriented (C#)
 
@@ -99,7 +99,16 @@ A substituição aplica o conjunto de depósito mensal no construtor. Adicione o
 
 Verifique os resultados. Agora, adicione um conjunto semelhante de código de teste para o `LineOfCreditAccount` :
 
-:::code language="csharp" source="./snippets/object-oriented-programming/Program.cs" ID="TestLineOfCredit":::
+```
+    var lineOfCredit = new LineOfCreditAccount("line of credit", 0);
+    // How much is too much to borrow?
+    lineOfCredit.MakeWithdrawal(1000m, DateTime.Now, "Take out monthly advance");
+    lineOfCredit.MakeDeposit(50m, DateTime.Now, "Pay back small amount");
+    lineOfCredit.MakeWithdrawal(5000m, DateTime.Now, "Emergency funds for repairs");
+    lineOfCredit.MakeDeposit(150m, DateTime.Now, "Partial restoration on repairs");
+    lineOfCredit.PerformMonthEndTransactions();
+    Console.WriteLine(lineOfCredit.GetAccountHistory());
+ ```
 
 Ao adicionar o código anterior e executar o programa, você verá algo semelhante ao seguinte erro:
 

@@ -1,7 +1,7 @@
 ---
 title: Cadeias de caracteres de formato de data e hora padrão
 description: Saiba como usar uma cadeia de caracteres de formato de data e hora padrão para definir a representação de texto de um valor de data e hora no .NET.
-ms.date: 12/07/2020
+ms.date: 01/25/2021
 dev_langs:
 - csharp
 - vb
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - date and time strings
 ms.topic: reference
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: a7a981562ed2410f2118d8d15b53f0ce8d751399
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: f445ee92345fa692e11fc60c658020fc92e55a2e
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97512431"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794749"
 ---
 # <a name="standard-date-and-time-format-strings"></a>Cadeias de caracteres de formato de data e hora padrão
 
@@ -86,7 +86,7 @@ Em alguns casos, a cadeia de caracteres de formato padrão funciona como uma abr
 
 |Cadeias de caracteres de formato padrão|Definidas pela propriedade DateTimeFormatInfo.InvariantInfo|Cadeia de caracteres de formato personalizado|
 |----------------------------|----------------------------------------------------------|--------------------------|
-|"O" ou "o"|Nenhum|yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffzz|
+|"O" ou "o"|Nenhum|yyyy'-'MM'-'dd'T'HH ': ' mm ': ' ss '. ' fffffffK|
 |"R" ou "r"|<xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A>|ddd, dd MMM yyyy HH':'mm':'ss 'GMT'|
 |"s"|<xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern%2A>|yyyy'-'MM'-'dd'T'HH':'mm':'ss|
 |"u"|<xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A>|yyyy'-'MM'-'dd HH':'mm':'ss'Z'|
@@ -480,7 +480,7 @@ Além disso, se o constructo <xref:System.Globalization.CultureInfo.%23ctor%28Sy
 
 A formatação é influenciada pelas propriedades do objeto <xref:System.Globalization.DateTimeFormatInfo> atual, que é fornecido implicitamente pela cultura de thread atual ou explicitamente pelo parâmetro <xref:System.IFormatProvider> do método que invoca a formatação. Para o parâmetro <xref:System.IFormatProvider>, seu aplicativo deve especificar um objeto <xref:System.Globalization.CultureInfo>, que representa uma cultura, ou um objeto <xref:System.Globalization.DateTimeFormatInfo>, que representa as convenções de formatação de data e hora de uma determinada cultura. Muitos dos especificadores de formato padrão de data e hora são aliases para padrões de formatação definidos pelas propriedades do objeto <xref:System.Globalization.DateTimeFormatInfo> atual. Seu aplicativo pode alterar o resultado produzido por alguns especificadores de formato padrão de data e hora alterando os padrões de formatação de data e hora correspondentes da propriedade <xref:System.Globalization.DateTimeFormatInfo>.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.DateTime?displayProperty=nameWithType>
 - <xref:System.DateTimeOffset?displayProperty=nameWithType>

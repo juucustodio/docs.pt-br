@@ -6,18 +6,18 @@ helpviewer_keywords:
 - C# language, private constructors
 - private constructors [C#]
 ms.assetid: 29eeaa7d-8d81-453c-94b9-0e2800172621
-ms.openlocfilehash: c6048424128b462bfc56d9c7c3cf8f75cca9298d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 980a638fbe6250b3d47a3effc7cbad5ec57fbcad
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91159339"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899393"
 ---
 # <a name="private-constructors-c-programming-guide"></a>Construtores particulares (Guia de Programação em C#)
 
 Um construtor particular é um construtor de instância especial. Normalmente, ele é usado em classes que contêm apenas membros estáticos. Se uma classe tiver um ou mais construtores particulares e nenhum construtor público, outras classes (exceto as classes aninhadas) não poderão criar instâncias dessa classe. Por exemplo:  
   
- [!code-csharp[csProgGuideObjects#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#11)]  
+ [!code-csharp[ClassWithPrivateConstructorExample#1](snippets/private-constructors/Program.cs#1)]
   
  A declaração do construtor vazio impede a geração automática de um construtor sem parâmetro. Observe que, se você não usar um modificador de acesso com o construtor, ele ainda será privado por padrão. No entanto, o modificador [private](../../language-reference/keywords/private.md) geralmente é usado explicitamente para deixar claro que a classe não pode ser instanciada.  
   
@@ -27,11 +27,11 @@ Um construtor particular é um construtor de instância especial. Normalmente, e
 
  A seguir, temos um exemplo de uma classe usando um construtor particular.  
   
- [!code-csharp[csProgGuideObjects#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#12)]  
+ [!code-csharp[CounterClassWithPrivateConstructor#2](snippets/private-constructors/Program.cs#2)]
   
  Observe que se você remover a marca de comentário da seguinte instrução do exemplo, ela gerará um erro porque o construtor está inacessível devido a seu nível de proteção:  
   
- [!code-csharp[csProgGuideObjects#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#13)]  
+ [!code-csharp[ErrorInstantiatingUsingPrivateConstructor#13](snippets/private-constructors/Program.cs#3)]
   
 ## <a name="c-language-specification"></a>Especificação da Linguagem C#  
 
@@ -43,5 +43,5 @@ Para obter mais informações, veja [Construtores privados](~/_csharplang/spec/c
 - [Classes e structs](./index.md)
 - [Construtores](./constructors.md)
 - [Finalizadores](./destructors.md)
-- [particulares](../../language-reference/keywords/private.md)
-- [public](../../language-reference/keywords/public.md)
+- [pessoal](../../language-reference/keywords/private.md)
+- [público](../../language-reference/keywords/public.md)

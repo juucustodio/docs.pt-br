@@ -15,12 +15,12 @@ helpviewer_keywords:
 - formatting [.NET], time
 - date and time strings
 ms.assetid: 98b374e3-0cc2-4c78-ab44-efb671d71984
-ms.openlocfilehash: 70e68de3ce736bc4935dea80e37cc805068b0bc5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 296c69e5238bca9a13aa28197926c67b6ac5c5ef
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722460"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898886"
 ---
 # <a name="custom-date-and-time-format-strings"></a>Cadeias de caracteres de formato de data e hora personalizado
 
@@ -221,7 +221,7 @@ Embora seja possível exibir os décimos de milionésimos de um componente de se
 
 ### <a name="the-f-custom-format-specifier"></a><a name="F_Specifier"></a> O especificador de formato personalizado "F"
 
-O especificador de formato personalizado "F" representa o dígito mais significativo da fração de segundos, ou seja, representa os décimos de segundo em um valor de data e hora. Nada será exibido se o dígito for zero.
+O especificador de formato personalizado "F" representa o dígito mais significativo da fração de segundos, ou seja, representa os décimos de segundo em um valor de data e hora. Nada será exibido se o dígito for zero e o ponto decimal que segue o número de segundos também não for exibido.
 
 Se o especificador de formato "F" for usado sem outros especificadores de formato, ele será interpretado como o especificador padrão de formato de data e hora "F". Para saber mais sobre como usar um especificador de formato único, confira [Usar especificadores de formato único personalizados](#UsingSingleSpecifiers) posteriormente nesse artigo.
 
@@ -236,7 +236,7 @@ O exemplo a seguir inclui o especificador de formato personalizado "F" em uma ca
 
 ### <a name="the-ff-custom-format-specifier"></a><a name="FF_Specifier"></a> O especificador de formato personalizado "FF"
 
-O especificador de formato personalizado "FF" representa os dois dígitos mais significativos da fração de segundos, ou seja, ele representa os centésimos de segundo em um valor de data e hora. No entanto, zeros à direita ou dois dígitos zero não são exibidos.
+O especificador de formato personalizado "FF" representa os dois dígitos mais significativos da fração de segundos, ou seja, ele representa os centésimos de segundo em um valor de data e hora. Zeros à direita não são exibidos. Nada será exibido se os dois dígitos significativos forem zero e, nesse caso, o ponto decimal que segue o número de segundos também não será exibido.
 
 O exemplo a seguir inclui o especificador de formato personalizado "FF" em uma cadeia de caracteres de formato personalizado.
 
@@ -247,7 +247,7 @@ O exemplo a seguir inclui o especificador de formato personalizado "FF" em uma c
 
 ### <a name="the-fff-custom-format-specifier"></a><a name="FFF_Specifier"></a> O especificador de formato personalizado "FFF"
 
-O especificador de formato personalizado "FFF" representa os três dígitos mais significativos da fração de segundos, ou seja, ele representa os milissegundos em um valor de data e hora. No entanto, zeros à direita ou três dígitos zero não são exibidos.
+O especificador de formato personalizado "FFF" representa os três dígitos mais significativos da fração de segundos, ou seja, ele representa os milissegundos em um valor de data e hora. Zeros à direita não são exibidos. Nada será exibido se os três dígitos significativos forem zero e, nesse caso, o ponto decimal que segue o número de segundos também não será exibido.
 
 O exemplo a seguir inclui o especificador de formato personalizado "FFF" em uma cadeia de caracteres de formato personalizado.
 
@@ -258,7 +258,7 @@ O exemplo a seguir inclui o especificador de formato personalizado "FFF" em uma 
 
 ### <a name="the-ffff-custom-format-specifier"></a><a name="FFFF_Specifier"></a> O especificador de formato personalizado "FFFF"
 
-O especificador de formato personalizado "FFFF" representa os quatro dígitos mais significativos da fração de segundos, ou seja, ele representa os décimos de milésimos de um segundo em um valor de data e hora. No entanto, zeros à direita ou quatro dígitos zero não são exibidos.
+O especificador de formato personalizado "FFFF" representa os quatro dígitos mais significativos da fração de segundos, ou seja, ele representa os décimos de milésimos de um segundo em um valor de data e hora. Zeros à direita não são exibidos. Nada será exibido se os quatro dígitos significativos forem zero e, nesse caso, o ponto decimal que segue o número de segundos também não será exibido.
 
 Embora seja possível exibir os décimos de milésimos de um componente de segundos de um valor temporal, esse valor pode não ser significativo. A precisão dos valores de data e hora depende da resolução do relação ao relógio do sistema. Nos sistemas operacionais Windows NT 3.5 (e posterior) e Windows Vista, a resolução do relógio é de aproximadamente 10 a 15 milissegundos.
 
@@ -266,7 +266,7 @@ Embora seja possível exibir os décimos de milésimos de um componente de segun
 
 ### <a name="the-fffff-custom-format-specifier"></a><a name="FFFFF_Specifier"></a> O especificador de formato personalizado "FFFFF"
 
-O especificador de formato personalizado "FFFFF" representa os cinco dígitos mais significativos da fração de segundos, ou seja, ele representa os centésimos de milésimos de um segundo em um valor de data e hora. No entanto, zeros à direita ou cinco dígitos zero não são exibidos.
+O especificador de formato personalizado "FFFFF" representa os cinco dígitos mais significativos da fração de segundos, ou seja, ele representa os centésimos de milésimos de um segundo em um valor de data e hora. Zeros à direita não são exibidos. Nada será exibido se os cinco dígitos significativos forem zero e, nesse caso, o ponto decimal que segue o número de segundos também não será exibido.
 
 Embora seja possível exibir os centésimos de milésimos de um componente de segundos de um valor temporal, esse valor pode não ser significativo. A precisão dos valores de data e hora depende da resolução do relação ao relógio do sistema. Nos sistemas operacionais Windows NT 3.5 (e posterior) e Windows Vista, a resolução do relógio é de aproximadamente 10 a 15 milissegundos.
 
@@ -274,7 +274,7 @@ Embora seja possível exibir os centésimos de milésimos de um componente de se
 
 ### <a name="the-ffffff-custom-format-specifier"></a><a name="FFFFFF_Specifier"></a> O especificador de formato personalizado "FFFFFF"
 
-O especificador de formato personalizado "FFFFFF" representa os seis dígitos mais significativos da fração de segundos, ou seja, ele representa os milionésimos de um segundo em um valor de data e hora. No entanto, zeros à direita ou seis dígitos zero não são exibidos.
+O especificador de formato personalizado "FFFFFF" representa os seis dígitos mais significativos da fração de segundos, ou seja, ele representa os milionésimos de um segundo em um valor de data e hora. Zeros à direita não são exibidos. Nada será exibido se os seis dígitos significativos forem zero e, nesse caso, o ponto decimal que segue o número de segundos também não será exibido.
 
 Embora seja possível exibir os milionésimos de um componente de segundos de um valor temporal, esse valor pode não ser significativo. A precisão dos valores de data e hora depende da resolução do relação ao relógio do sistema. Nos sistemas operacionais Windows NT 3.5 (e posterior) e Windows Vista, a resolução do relógio é de aproximadamente 10 a 15 milissegundos.
 
@@ -282,7 +282,7 @@ Embora seja possível exibir os milionésimos de um componente de segundos de um
 
 ### <a name="the-fffffff-custom-format-specifier"></a><a name="FFFFFFF_Specifier"></a> O especificador de formato personalizado "FFFFFFF"
 
-O especificador de formato personalizado "FFFFFFF" representa os sete dígitos mais significativos da fração de segundos; ou seja, representa os décimos de milionésimos de segundo em um valor de data e hora. No entanto, zeros à direita ou sete dígitos zero não são exibidos.
+O especificador de formato personalizado "FFFFFFF" representa os sete dígitos mais significativos da fração de segundos; ou seja, representa os décimos de milionésimos de segundo em um valor de data e hora. Zeros à direita não são exibidos. Nada será exibido se os sete dígitos significativos forem zero e, nesse caso, o ponto decimal que segue o número de segundos também não será exibido.
 
 Embora seja possível exibir os décimos de milionésimos de um componente de segundos de um valor temporal, esse valor pode não ser significativo. A precisão dos valores de data e hora depende da resolução do relação ao relógio do sistema. Nos sistemas operacionais Windows NT 3.5 (e posterior) e Windows Vista, a resolução do relógio é de aproximadamente 10 a 15 milissegundos.
 

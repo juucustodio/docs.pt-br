@@ -5,14 +5,18 @@ helpviewer_keywords:
 - WCF Data Services
 - WCF Data Services, about
 ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
-ms.openlocfilehash: a1844ab3449b6bce526276eba693a1f2da0ebf6b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6f085f87286aa5af4a3c2aaf2b74c9bf19023356
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202169"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899432"
 ---
 # <a name="wcf-data-services-overview"></a>Visão geral do WCF Data Services
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+## <a name="overview"></a>Visão geral
 
 WCF Data Services habilita a criação e o consumo de serviços de dados para a Web ou uma intranet usando o Protocolo Open Data (OData). O OData permite que você exponha seus dados como recursos que são endereçáveis por URIs. Isso permite que você acesse e altere dados usando a semântica da REST (transferência de estado de reapresentação), especificamente os verbos HTTP padrão de GET, PUT, POST e DELETE. Este tópico fornece uma visão geral dos padrões e das práticas definidas pelo OData e também dos recursos fornecidos pelo WCF Data Services para aproveitar o OData em aplicativos baseados em .NET Framework.  
   
@@ -62,7 +66,7 @@ O OData define um conjunto de extensões para o protocolo de publicação Atom (
   
  ![Captura de tela mostrando um diagrama de arquitetura de WCF Data Services.](./media/wcf-data-services-overview/windows-communication-foundation-data-services-architecture.gif)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [WCF Data Services 4.5](index.md)
 - [Introdução](getting-started-with-wcf-data-services.md)

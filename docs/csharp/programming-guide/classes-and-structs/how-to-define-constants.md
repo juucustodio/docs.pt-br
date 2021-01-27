@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.topic: how-to
 ms.custom: contperf-fy21q2
 ms.assetid: 43f511be-346c-4b8a-995e-aded94542ece
-ms.openlocfilehash: 972deaa4616c15c00e83e26891c4473eae7bfcf8
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: 4ee1b04cf30b7602ae563cb02daed49f82c04de7
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513049"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898990"
 ---
 # <a name="how-to-define-constants-in-c"></a>Como definir constantes em C\#
 
@@ -28,10 +28,10 @@ As constantes são campos cujos valores são definidos em tempo de compilação 
   
 ## <a name="example"></a>Exemplo  
 
- [!code-csharp[csProgGuideObjects#89](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#89)]  
+ [!code-csharp[constants](snippets/how-to-define-constants/Program.cs)]  
   
  O uso do qualificador de nome de classe ajuda a garantir que você e outras pessoas que usam a constante entendam que ele é constante e não pode ser modificado.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Classes e structs](./index.md)

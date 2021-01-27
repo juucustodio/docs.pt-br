@@ -4,12 +4,12 @@ description: Saiba mais sobre quais versões do Windows você pode instalar no .
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 57cebc562949627be70aabe24e75ad4567d072fd
-ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
+ms.openlocfilehash: 33492cc6fa6c64ec3a1d745a4fa0c6cc418f87bd
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98536119"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898782"
 ---
 # <a name="install-net-on-windows"></a>Instalar o .NET no Windows
 
@@ -56,7 +56,7 @@ As datas de fim de serviço das versões do Windows 10 são segmentadas por edi�
 
 ## <a name="unsupported-releases"></a>Versões sem suporte
 
-Não há mais suporte para as seguintes versões do .NET ❌ . Os downloads para eles ainda permanecem publicados:
+Não há mais suporte para as seguintes versões do .NET ❌ . Os downloads para essas versões ainda permanecem publicados:
 
 - 3.0
 - 2.2
@@ -158,7 +158,7 @@ As seguintes versões do Windows têm suporte com o .NET Core 2,2:
 
 Para obter mais informações sobre OS sistemas operacionais, as distribuições e a política de ciclo de vida com suporte do .NET Core 2,2, consulte [versões do sistema operacional .net core 2,2 com suporte](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
 
-# <a name="net-core-21"></a>[.NET Core 2.1](#tab/netcore21)
+# <a name="net-core-21"></a>[.NET Core 2,1](#tab/netcore21)
 
 As seguintes versões do Windows têm suporte com o .NET Core 2,1:
 
@@ -174,6 +174,18 @@ As seguintes versões do Windows têm suporte com o .NET Core 2,1:
 
 Para obter mais informações sobre OS sistemas operacionais, as distribuições e a política de ciclo de vida com suporte do .NET Core 2,1, consulte [versões do sistema operacional .net core 2,1 com suporte](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
 
+### <a name="offline-install-for-windows-7"></a>Instalação offline do Windows 7
+
+Ao fazer uma instalação offline para o .NET Core 2,1 no Windows 7, primeiro você precisará certificar-se de que a mais recente [autoridade de certificação raiz da Microsoft 2011](https://www.microsoft.com/pkiops/Docs/Repository.htm) foi instalada no computador de destino.
+
+A ferramenta de _certmgr.exe_ pode automatizar a instalação de um certificado e é obtida no Visual Studio ou no SDK do Windows. O comando a seguir é usado para instalar o certificado antes de executar o instalador do .NET Core 2,1:
+
+```console
+certmgr.exe /add MicRooCerAut2011_2011_03_22.crt /s /r localMachine root
+```
+
+Certifique-se de examinar as dependências necessárias para o [Windows 7 abaixo](#additional-deps).
+
 ---
 
 <!-- markdownlint-disable MD001 -->
@@ -184,7 +196,7 @@ Mais dependências serão necessárias se você estiver instalando o SDK do .NET
 
 | Sistema operacional         | Pré-requisitos                                                                    |
 |--------------------------|----------------------------------------------------------------------------------|
-| [ESU][esu] do Windows 7 SP1 | -Microsoft Visual C++ 2015-2019 redistribuível [64-bit][vcc64]  /  [32-bit][vcc32] <br> -KB3063858 [64][kb64]bits  /  [32-bit][kb32] <br> - [MicrosoftRootCertificateAuthority2011. cer](https://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409) (somente .net Core 2,1) |
+| [ESU][esu] do Windows 7 SP1 | -Microsoft Visual C++ 2015-2019 redistribuível [64-bit][vcc64]  /  [32-bit][vcc32] <br> -KB3063858 [64][kb64]bits  /  [32-bit][kb32] <br> - [Microsoft Root Certification Authority 2011](https://www.microsoft.com/pkiops/Docs/Repository.htm) (somente instalador offline do .net Core 2,1) |
 | Windows Vista SP 2       | Microsoft Visual C++ 2015-2019 redistribuível [64-bit][vcc64]  /  [32-bit][vcc32] |
 | Windows 8.1              | Microsoft Visual C++ 2015-2019 redistribuível [64-bit][vcc64]  /  [32-bit][vcc32] |
 | Windows Server 2008 R2   | Microsoft Visual C++ 2015-2019 redistribuível [64-bit][vcc64]  /  [32-bit][vcc32] |
@@ -288,7 +300,7 @@ Para obter mais informações, consulte [Opções do Command-Line do instalador 
 
 ## <a name="download-and-manually-install"></a>Baixar e instalar manualmente
 
-Como alternativa para os instaladores do Windows para .NET, você pode baixar e instalar manualmente o SDK ou o tempo de execução. A instalação manual geralmente é executada como parte do teste de integração contínua. Para um desenvolvedor ou usuário, geralmente é melhor usar um [instalador](https://dotnet.microsoft.com/download/dotnet-core).
+Como alternativa para os instaladores do Windows para .NET, você pode baixar e instalar manualmente o SDK ou o tempo de execução. A instalação manual normalmente é feita como parte do teste de integração contínua. Para um desenvolvedor ou usuário, geralmente é melhor usar um [instalador](https://dotnet.microsoft.com/download/dotnet-core).
 
 Tanto o SDK do .NET quanto o tempo de execução do .NET podem ser instalados manualmente após terem sido baixados. Se você instalar o SDK do .NET, não precisará instalar o tempo de execução correspondente. Primeiro, Baixe uma versão binária para o SDK ou o tempo de execução de um dos seguintes sites:
 
@@ -331,5 +343,5 @@ Para obter mais informações sobre como usar o .NET em um contêiner do Docker,
 [esu]: /troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq
 [vcc64]: https://aka.ms/vs/16/release/vc_redist.x64.exe
 [vcc32]: https://aka.ms/vs/16/release/vc_redist.x86.exe
-[kb64]: https://www.microsoft.com/en-us/download/details.aspx?id=47442
-[kb32]: https://www.microsoft.com/en-us/download/details.aspx?id=47409
+[kb64]: https://www.microsoft.com/download/details.aspx?id=47442
+[kb32]: https://www.microsoft.com/download/details.aspx?id=47409

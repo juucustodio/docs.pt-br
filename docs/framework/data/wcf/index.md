@@ -6,14 +6,18 @@ helpviewer_keywords:
 - Astoria
 - WCF Data Services, getting started
 ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
-ms.openlocfilehash: c36967236c40efbf432d554c3f551aea22cfb148
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 2d3da2ca9cd958fc70d3b91362dde71d68dc9d8a
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90549673"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898744"
 ---
 # <a name="wcf-data-services-45"></a>WCF Data Services 4.5
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+## <a name="overview"></a>Visão geral
 
 WCF Data Services (anteriormente conhecido como "ADO.NET Data Services") é um componente da .NET Framework que permite criar serviços que usam o Protocolo Open Data (OData) para expor e consumir dados pela Web ou intranet usando a semântica da [REST (transferência de estado de reapresentação)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm). OData expõem dados como recursos que são endereçáveis por URIs. Os dados são acessados e alterados usando os verbos HTTP padrão GET, PUT, POST e DELETE. O OData usa as convenções de relacionamento de entidade do [modelo de dados de entidade](../adonet/entity-data-model.md) para expor recursos como conjuntos de entidades relacionadas por associações.
 
@@ -64,7 +68,7 @@ O que posso fazer com ele?
 
 - [Visão geral](wcf-data-services-overview.md)
 
-- [Cenários de aplicativos](application-scenarios-wcf-data-services.md)
+- [Cenários de aplicativo](application-scenarios-wcf-data-services.md)
 
 Quero usar LINQ...
 

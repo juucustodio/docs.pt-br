@@ -3,20 +3,19 @@ title: .NET Framework tecnologias não disponíveis no .NET Core e no .NET 5 +
 titleSuffix: ''
 description: Saiba mais sobre as tecnologias .NET Framework que não estão disponíveis no .NET Core e no .NET 5,0 e versões posteriores.
 author: cartermp
-ms.date: 10/13/2020
-ms.openlocfilehash: 492aace9db3dc3acef18e995f10b7b5fbe251558
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.date: 01/26/2021
+ms.openlocfilehash: d5926d2c0cfe6d2073ac6ad74046ca48b9cb18f1
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161030"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898769"
 ---
 # <a name="net-framework-technologies-unavailable-on-net-core-and-net-5"></a>.NET Framework tecnologias não disponíveis no .NET Core e no .NET 5 +
 
-Várias tecnologias disponíveis para .NET Framework bibliotecas não estão disponíveis para uso com o .NET Core e o .NET 5,0 e versões posteriores, como domínios de aplicativo, comunicação remota, CAS (segurança de acesso a código), transparência de segurança e <xref:System.EnterpriseServices?displayProperty=fullName> . Se suas bibliotecas dependerem de uma ou mais dessas tecnologias, considere as abordagens alternativas descritas aqui. Para obter mais informações sobre compatibilidade de API, consulte [alterações significativas no .net](../compatibility/breaking-changes.md).
+Várias tecnologias disponíveis para .NET Framework bibliotecas não estão disponíveis para uso com o .NET Core e o .NET 5,0 e versões posteriores, como domínios de aplicativo, comunicação remota e CAS (segurança de acesso a código). Se suas bibliotecas dependem de uma ou mais das tecnologias listadas nesta página, considere as abordagens alternativas que são mencionadas.
 
-> [!TIP]
-> Só porque uma API ou tecnologia não está implementada no momento, não significa que ela não tem suporte intencionalmente. Pesquise os repositórios GitHub do .NET para ver se um problema específico encontrado é por design. Se você não encontrar esse indicador, execute um problema no [repositório dotnet/tempo de execução](https://github.com/dotnet/runtime/issues) para solicitar APIs e tecnologias específicas.
+Para obter mais informações sobre compatibilidade de API, consulte [alterações significativas no .net](../compatibility/breaking-changes.md).
 
 ## <a name="application-domains"></a>Domínios de aplicativo
 
@@ -48,6 +47,10 @@ Use limites de segurança fornecidos pelo sistema operacional, como virtualizaç
 
 <xref:System.EnterpriseServices?displayProperty=fullName> (COM+) não tem suporte no .NET Core e no .NET 5 +.
 
-## <a name="see-also"></a>Veja também
+## <a name="workflow-foundation-and-wcf"></a>Workflow Foundation e WCF
+
+Não há suporte para Windows Workflow Foundation (WF) e Windows Communication Foundation (WCF) no .NET 5 + (incluindo o .NET Core). Para obter alternativas, consulte [CoreWF](https://github.com/UiPath/corewf) e [CoreWCF](https://github.com/CoreWCF/CoreWCF).
+
+## <a name="see-also"></a>Confira também
 
 - [Visão geral da portabilidade do .NET Framework para o .NET Core](index.md)

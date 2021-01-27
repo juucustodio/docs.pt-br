@@ -1,19 +1,19 @@
 ---
-title: Introdução ao armazenamento de Blobs do Azure usando F#
+title: 'Introdução ao armazenamento de BLOBs do Azure usando o F #'
 description: Armazene dados não estruturados na nuvem com o armazenamento de BLOBs do Azure.
 author: sylvanc
 ms.date: 09/20/2016
 ms.custom: devx-track-fsharp
-ms.openlocfilehash: 91aec8fc2b57c71ce4ba47d62619912af6c71e59
-ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
+ms.openlocfilehash: 58c120c26a1e99481b49ae3a0fb096a2188f359e
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91756241"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794806"
 ---
 # <a name="get-started-with-azure-blob-storage-using-f"></a>Introdução ao armazenamento de BLOBs do Azure usando o F\#
 
-O Armazenamento de Blobs do Azure é um serviço que armazena dados não estruturados na nuvem como objetos/blobs. O Armazenamento de Blobs pode conter qualquer tipo de texto ou de dados binários, como um documento, um arquivo de mídia ou um instalador de aplicativo. O Armazenamento de Blobs também é chamado de armazenamento de objeto.
+O armazenamento de BLOBs do Azure é um serviço que armazena dados não estruturados na nuvem como objetos/BLOBs. O Armazenamento de Blobs pode conter qualquer tipo de texto ou de dados binários, como um documento, um arquivo de mídia ou um instalador de aplicativo. O Armazenamento de Blobs também é chamado de armazenamento de objeto.
 
 Este artigo mostra como executar tarefas comuns usando o armazenamento de BLOBs. Os exemplos são escritos usando F # usando a biblioteca de cliente de armazenamento do Azure para .NET. As tarefas abordadas incluem como carregar, listar, baixar e excluir BLOBs.
 

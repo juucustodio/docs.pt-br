@@ -4,12 +4,12 @@ description: Um guia para diferentes maneiras como as arquiteturas empresariais 
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018
-ms.openlocfilehash: 7e91412600e8e4e5a0dca2a454f1cb0680c881b2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 89a8e6a52331b563be334a867f563e9ded8d8cc4
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173335"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957956"
 ---
 # <a name="architecture-deployment-approaches"></a>Abordagens de implantação de arquitetura
 
@@ -101,7 +101,7 @@ Para obter mais informações sobre contêineres do Docker, consulte [o que é o
 
 O gerenciamento de contêineres em hosts normalmente requer uma ferramenta de orquestração como kubernetes. Configurar e gerenciar soluções de orquestração pode adicionar sobrecarga e complexidade adicionais aos projetos. Felizmente, muitos provedores de nuvem fornecem serviços de orquestração por meio de soluções PaaS para simplificar o gerenciamento de contêineres.
 
-A imagem a seguir ilustra um exemplo de instalação do kubernetes. Nós no endereço de instalação scale out and failover. Eles executam instâncias de contêiner do Docker que são gerenciadas pelo servidor mestre. O *kubelet* é o cliente que retransmite comandos do kubernetes para o Docker.
+A imagem a seguir ilustra um exemplo de instalação do kubernetes. Nós no endereço de instalação scale out and failover. Eles executam instâncias de contêiner do Docker que são gerenciadas pelo servidor primário. O *kubelet* é o cliente que retransmite comandos do kubernetes para o Docker.
 
 ![Kubernetes](./media/kubernetes-example.png)
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules
 - EditorConfig language conventions
-ms.openlocfilehash: b77d9aa2a528a6cf540babd5e5acc148e48c489c
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 2aa2261534363f1da6a2109f092e08d210ebd915
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96585651"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957969"
 ---
 # <a name="language-rules"></a>Regras de linguagem
 
@@ -31,10 +31,21 @@ As regras de linguagem do estilo de código afetam como várias construções de
 
 As opções para regras de idioma podem ser especificadas em um arquivo EditorConfig com o seguinte formato:
 
+`option_name = value` (Visual Studio 2019 versão 16,9 Preview 2 e posterior)
+
+ou
+
 `option_name = value:severity`
 
-- **Valor**: para cada regra de idioma, você especifica um valor que define se ou quando preferir o estilo. Muitas regras aceitam um valor de `true` (prefira esse estilo) ou `false` (não prefiro esse estilo). Outras regras aceitam valores como `when_on_single_line` ou `never` .
-- **Severidade**: a segunda parte da regra especifica o [nível de severidade](../configuration-options.md#severity-level) para a regra. A especificação de gravidade como parte da sintaxe da opção acima só é respeitada dentro de IDEs de desenvolvimento, como o Visual Studio. Essa configuração não é compreendida pelos compiladores C# ou VB, portanto não é respeitada durante a compilação. Em vez disso, para impor regras de estilo de código no Build, você deve definir a severidade usando a sintaxe de configuração de severidade baseada em ID de regra para analisadores. A sintaxe assume a forma `dotnet_diagnostic.<rule ID>.severity = <severity>` , por exemplo, `dotnet_diagnostic.IDE0040.severity = silent` . Para saber mais, confira este [problema do GitHub](https://github.com/dotnet/roslyn/issues/44201).
+- **Valor**
+
+  Para cada regra de idioma, você especifica um valor que define se ou quando preferir o estilo. Muitas regras aceitam um valor de `true` (prefira esse estilo) ou `false` (não prefiro esse estilo). Outras regras aceitam valores como `when_on_single_line` ou `never` .
+
+- **Severidade** (opcional no Visual Studio 2019 versão 16,9 Preview 2 e versões posteriores)
+
+  A segunda parte da regra especifica o [nível de severidade](../configuration-options.md#severity-level) para a regra. Quando especificado dessa forma, a configuração de gravidade só é respeitada dentro de IDEs de desenvolvimento, como o Visual Studio. Ele *não* é respeitado durante a compilação.
+
+  Para impor regras de estilo de código no momento da compilação, defina a severidade usando a sintaxe de configuração de severidade baseada em ID de regra para analisadores em vez disso. A sintaxe assume a forma `dotnet_diagnostic.<rule ID>.severity = <severity>` , por exemplo, `dotnet_diagnostic.IDE0040.severity = silent` . Para obter mais informações, consulte [nível de severidade](../configuration-options.md#severity-level).
 
 > [!TIP]
 >

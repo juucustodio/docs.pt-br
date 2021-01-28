@@ -6,20 +6,20 @@ author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 945e494e8a027d438bf4659d989da6033a13f6f0
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 3889088ce32046f72a9a3392e28a5a36cda4745e
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687597"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957839"
 ---
 # <a name="connect-net-for-apache-spark-to-mongodb"></a>Conectar o .NET para Apache Spark ao MongoDB
 
 Neste artigo, você aprenderá a se conectar a uma instância do MongoDB de seu aplicativo .NET para Apache Spark.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
-1. Ter um servidor MongoDB em funcionamento com um [banco de dados e alguma coleção](https://docs.mongodb.com/manual/core/databases-and-collections/) adicionada a ele (Baixe [este servidor da Comunidade](https://www.mongodb.com/try/download/community) para um servidor local ou experimente o [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) para um serviço MongoDB na nuvem).
+- Ter um servidor MongoDB em funcionamento com um [banco de dados e alguma coleção](https://docs.mongodb.com/manual/core/databases-and-collections/) adicionada a ele (Baixe [este servidor da Comunidade](https://www.mongodb.com/try/download/community) para um servidor local ou experimente o [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) para um serviço MongoDB na nuvem).
 
 ## <a name="set-up-your-mongodb-instance"></a>Configurar sua instância do MongoDB
 
@@ -38,7 +38,7 @@ Para obter o .NET para Apache Spark se comunicar com sua instância do MongoDB, 
     )
     ```
 
-2. Verifique se o endereço IP do computador no qual seu .NET para Apache Spark aplicativo está em execução está na lista de permissões para o servidor MongoDB ser capaz de se conectar. Você pode consultar [este guia](https://docs.atlas.mongodb.com/security/add-ip-address-to-list/) para saber como fazer isso.
+2. Verifique se o endereço IP do computador no qual seu .NET para Apache Spark aplicativo está em execução é allowlisted para o servidor MongoDB ser capaz de se conectar. Você pode consultar [este guia](https://docs.atlas.mongodb.com/security/add-ip-address-to-list/) para saber como fazer isso.
 
 ## <a name="configure-your-net-for-apache-spark-application"></a>Configurar seu .NET para Apache Spark aplicativo
 
@@ -77,9 +77,9 @@ Para obter o .NET para Apache Spark se comunicar com sua instância do MongoDB, 
     }
     ```
 
-## <a name="run-your-application"></a>Executar seu aplicativo
+## <a name="run-your-application"></a>Execute seu aplicativo.
 
-Para executar seu .NET para Apache Spark aplicativo, você deve definir o `mongo-spark-connector` módulo como parte da definição de compilação em seu projeto do Spark, usando o `libraryDependency` no `build.sbt` para projetos SBT. Para ambientes Spark como `spark-submit` (ou `spark-shell` ), você deve usar a `--packages` opção de linha de comando da seguinte forma:
+Para executar seu .NET para Apache Spark aplicativo, você deve definir o `mongo-spark-connector` módulo como parte da definição de compilação em seu projeto do Spark, usando o `libraryDependency` no `build.sbt` para projetos SBT. Para ambientes do Spark, como `spark-submit` (ou `spark-shell` ), use a `--packages` opção de linha de comando da seguinte forma:
 
 ```bash
 spark-submit --master local --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.0 --class org.apache.spark.deploy.dotnet.DotnetRunner microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar yourApp.exe
@@ -88,7 +88,7 @@ spark-submit --master local --packages org.mongodb.spark:mongo-spark-connector_2
 > [!NOTE]
 > Certifique-se de incluir a versão do pacote de acordo com a versão do Spark em execução.
 
-O resultado, conforme exibido, é o dataframe ( `df` ), conforme mostrado abaixo:
+O resultado, conforme exibido, é o dataframe ( `df` ) mostrado aqui:
 
 ```text
 +--------------------+----+-------+

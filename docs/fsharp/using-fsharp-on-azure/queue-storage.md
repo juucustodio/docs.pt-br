@@ -1,19 +1,19 @@
 ---
-title: Introdução ao armazenamento de Filas do Azure usando F#
+title: 'Introdução ao armazenamento de filas do Azure usando F #'
 description: As filas do Azure fornecem uma mensagem assíncrona e confiável entre os componentes do aplicativo. A mensagem na nuvem permite que os componentes do aplicativo se dimensionem de modo independente.
 author: sylvanc
 ms.date: 09/20/2016
 ms.custom: devx-track-fsharp
-ms.openlocfilehash: daa5372b7903f10c0d966c5c92e35c8bf9d362d8
-ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
+ms.openlocfilehash: 0ab131647e37985d45073966ffc01b9a7f379e2f
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91756215"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899289"
 ---
 # <a name="get-started-with-azure-queue-storage-using-f"></a>Introdução ao armazenamento de filas do Azure usando F\#
 
-O armazenamento de filas do Azure fornece mensagens na nuvem entre os componentes do aplicativo. Na criação de aplicativos para escala, os componentes do aplicativo geralmente são desassociados, para que possam ser redimensionados independentemente. O armazenamento de filas fornece mensagens assíncronas para a comunicação entre os componentes do aplicativo, estando eles em execução na nuvem, na área de trabalho, em um servidor local ou em um dispositivo móvel. O armazenamento de Fila também dá suporte ao gerenciamento de tarefas assíncronas e à criação de fluxos de trabalho do processo.
+O armazenamento de filas do Azure fornece mensagens de nuvem entre componentes do aplicativo. Na criação de aplicativos para escala, os componentes do aplicativo geralmente são desassociados, para que possam ser redimensionados independentemente. O armazenamento de filas fornece mensagens assíncronas para a comunicação entre os componentes do aplicativo, estando eles em execução na nuvem, na área de trabalho, em um servidor local ou em um dispositivo móvel. O armazenamento de Fila também dá suporte ao gerenciamento de tarefas assíncronas e à criação de fluxos de trabalho do processo.
 
 ### <a name="about-this-tutorial"></a>Sobre este tutorial
 

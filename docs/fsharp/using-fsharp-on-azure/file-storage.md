@@ -1,19 +1,19 @@
 ---
-title: Introdução ao armazenamento de Arquivos do Azure usando F#
-description: Armazene dados de arquivos na nuvem com o armazenamento de Arquivos do Azure e monte seu compartilhamento de arquivos na nuvem de uma VM (máquina virtual) do Azure ou de um aplicativo local que executa o Windows.
+title: 'Introdução ao armazenamento de arquivos do Azure usando o F #'
+description: Armazene dados de arquivo na nuvem com o armazenamento de arquivos do Azure e monte o compartilhamento de arquivos de nuvem de uma VM (máquina virtual) do Azure ou de um aplicativo local que executa o Windows.
 author: sylvanc
 ms.date: 09/20/2016
 ms.custom: devx-track-fsharp
-ms.openlocfilehash: dd19b156e73774f4eca63afd3f4c10a4a7b8d46c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: bcea58b4bf756fc9d696cd5a1010b0feffb127a7
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100120"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899417"
 ---
 # <a name="get-started-with-azure-file-storage-using-f"></a>Introdução ao armazenamento de arquivos do Azure usando o F\#
 
-O armazenamento de arquivos do Azure é um serviço que oferece compartilhamentos de arquivos na nuvem usando o [protocolo SMB (Server Message Block)](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview)padrão. Há suporte ao SMB 2.1 e ao 3.0 SMB. Com o armazenamento de Arquivos do Azure, você pode migrar aplicativos herdados que dependem de compartilhamentos de arquivos para o Azure rapidamente e sem regravações caras. Os aplicativos executados em máquinas virtuais do Azure ou serviços de nuvem ou em clientes locais podem montar um compartilhamento de arquivos na nuvem, exatamente como um aplicativo de desktop monta um compartilhamento SMB típico. Qualquer quantidade de componentes de aplicativos pode montar e acessar o compartilhamento de armazenamento de arquivos simultaneamente.
+O armazenamento de arquivos do Azure é um serviço que oferece compartilhamentos de arquivos na nuvem usando o [protocolo SMB (Server Message Block)](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview)padrão. Há suporte ao SMB 2.1 e ao 3.0 SMB. Com o armazenamento de arquivos do Azure, você pode migrar aplicativos herdados que dependem de compartilhamentos de arquivos para o Azure rapidamente e sem regravações dispendiosas. Os aplicativos executados em máquinas virtuais do Azure ou serviços de nuvem ou em clientes locais podem montar um compartilhamento de arquivos na nuvem, exatamente como um aplicativo de desktop monta um compartilhamento SMB típico. Qualquer quantidade de componentes de aplicativos pode montar e acessar o compartilhamento de armazenamento de arquivos simultaneamente.
 
 Para obter uma visão geral conceitual do armazenamento de arquivos, consulte [o guia .net para armazenamento de arquivos](/azure/storage/storage-dotnet-how-to-use-files).
 
@@ -66,7 +66,7 @@ O `CloudFileClient` tipo permite que você use programaticamente arquivos armaze
 
 Agora você está pronto para escrever código que lê e grava dados no armazenamento de arquivos.
 
-## <a name="create-a-file-share"></a>Criar um compartilhamento de arquivos
+## <a name="create-a-file-share"></a>Criar um compartilhamento de arquivo
 
 Este exemplo mostra como criar um compartilhamento de arquivos se ele ainda não existir:
 
@@ -154,7 +154,7 @@ Para obter mais informações sobre o armazenamento de arquivos do Azure, consul
 
 ### <a name="blog-posts"></a>Postagens no blog
 
-- [O Armazenamento de arquivos do Azure agora está disponível ao público geral](https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/)
+- [O armazenamento de arquivos do Azure já está disponível para o público geral](https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/)
 - [Dentro do armazenamento de arquivos do Azure](https://azure.microsoft.com/blog/inside-azure-file-storage/)
 - [Apresentando o serviço de arquivo do Microsoft Azure](/archive/blogs/windowsazurestorage/introducing-microsoft-azure-file-service)
 - [Persistindo conexões para arquivos do Microsoft Azure](/archive/blogs/windowsazurestorage/persisting-connections-to-microsoft-azure-files)

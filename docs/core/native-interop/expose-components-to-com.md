@@ -1,6 +1,6 @@
 ---
 title: Expondo componentes do .NET Core ao COM
-description: Este tutorial mostra como expor uma classe para COM do .NET Core. Você gera um servidor COM e um manifesto de servidor lado a lado para COM sem registro.
+description: Este tutorial mostra como expor uma classe para COM do .NET Core. Você gera um servidor COM e um manifesto de servidor lado a lado para Registry-Free COM.
 ms.date: 07/12/2019
 helpviewer_keywords:
 - exposing .NET Core components to COM
@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 21271167-fe7f-46ba-a81f-a6812ea649d4
 author: jkoritzinsky
 ms.author: jekoritz
-ms.openlocfilehash: 346776ebae3a6077fd39f26d5bd19d599d163db2
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: 13c91e5cb6728c5669642d1b5f7bb461efdd44f8
+ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608337"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99065045"
 ---
 # <a name="exposing-net-core-components-to-com"></a>Expondo componentes do .NET Core ao COM
 
@@ -38,7 +38,7 @@ A primeira etapa é criar a biblioteca.
     dotnet new classlib
     ```
 
-2. Abra o `Class1.cs`.
+2. Abra `Class1.cs`.
 3. Adicione `using System.Runtime.InteropServices;` ao topo do arquivo.
 4. Crie uma interface chamada `IServer`. Por exemplo:
 
@@ -92,6 +92,9 @@ Há um [exemplo de servidor COM](https://github.com/dotnet/samples/tree/master/c
 ## <a name="additional-notes"></a>Observações adicionais
 
 Ao contrário do .NET Framework, não há suporte no .NET Core para gerar um TLB (Biblioteca de Tipos) COM com base em um assembly .NET Core. A orientação é gravar manualmente um arquivo IDL ou um cabeçalho C/C++ para as declarações nativas das interfaces COM.
+
+> [!IMPORTANT]
+> No .NET Framework, um assembly "qualquer CPU" pode ser consumido por clientes de 32 bits e de 64 bits. Por padrão, no .NET Core, no .NET 5 e em versões posteriores, os assemblies de "qualquer CPU" são acompanhados por um *\*.comhost.dll* de 64 bits. Por isso, eles só podem ser consumidos por clientes de 64 bits. Esse é o padrão porque é o que o SDK representa. Esse comportamento é idêntico ao modo como o recurso "autônomo" é publicado: por padrão, ele usa o que o SDK fornece. A `NETCoreSdkRuntimeIdentifier` Propriedade MSBuild determina o bit de bits de *\*.comhost.dll*. A parte gerenciada é realmente independente de bit de bits, como esperado, mas o ativo nativo que o acompanha é padronizado para o SDK de destino.
 
 Não há suporte para [implantações independentes](../deploying/index.md#publish-self-contained) de componentes com. Somente as [implantações dependentes da estrutura](../deploying/index.md#publish-framework-dependent) de componentes com têm suporte.
 

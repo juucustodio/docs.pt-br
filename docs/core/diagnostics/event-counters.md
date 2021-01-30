@@ -2,12 +2,12 @@
 title: EventCounters no .NET Core
 description: Neste artigo, você aprenderá o que é o EventCounters, como implementá-los e como consumi-los.
 ms.date: 08/07/2020
-ms.openlocfilehash: 08180b5580d2e7fe782fbd531a26872715825cdf
-ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
+ms.openlocfilehash: 843f1ec645bf7f52fd4f85e30d183e6e21fee5c6
+ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97678205"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99065058"
 ---
 # <a name="eventcounters-in-net-core"></a>EventCounters no .NET Core
 
@@ -195,17 +195,17 @@ Você pode consumir os valores do contador por meio da <xref:System.Diagnostics.
 
 Primeiro, o <xref:System.Diagnostics.Tracing.EventSource> que produz o valor do contador precisa ser habilitado. Substitua o <xref:System.Diagnostics.Tracing.EventListener.OnEventSourceCreated%2A?displayProperty=nameWithType> método para obter uma notificação quando um <xref:System.Diagnostics.Tracing.EventSource> for criado e, se esse for o correto <xref:System.Diagnostics.Tracing.EventSource> com seu EventCounters, você poderá chamá <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A?displayProperty=nameWithType> -lo. Aqui está um exemplo de substituição:
 
-:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="16-27":::
+:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="11-22":::
 
 #### <a name="sample-code"></a>Código de exemplo
 
-Aqui está uma classe de exemplo <xref:System.Diagnostics.Tracing.EventListener> que imprime todos os nomes de contadores e valores de tempo de execução do .NET <xref:System.Diagnostics.Tracing.EventSource> , para publicar seus contadores internos ( `System.Runtime` ) em algum intervalo.
+Aqui está uma classe de exemplo <xref:System.Diagnostics.Tracing.EventListener> que imprime todos os nomes de contadores e valores de tempo de execução do .NET <xref:System.Diagnostics.Tracing.EventSource> , para publicar seus contadores internos ( `System.Runtime` ) a cada segundo.
 
 :::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs":::
 
 Como mostrado acima, você _deve_ verificar se o `"EventCounterIntervalSec"` argumento está definido no `filterPayload` argumento ao chamar <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A> . Caso contrário, os contadores não poderão liberar valores, já que ele não sabe em qual intervalo ele deve ser liberado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [dotnet-counters](dotnet-counters.md)
 - [dotnet-trace](dotnet-trace.md)

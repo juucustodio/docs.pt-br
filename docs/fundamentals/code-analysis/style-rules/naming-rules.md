@@ -16,42 +16,40 @@ helpviewer_keywords:
 - naming code style rules [EditorConfig]
 - naming rules
 - EditorConfig naming conventions
-ms.openlocfilehash: 0eea5e89ac5055a45d9ead14363cc2f2fc574401
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 1fce275204b729b4d23729ca432e06a5a249620d
+ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98191073"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99065129"
 ---
 # <a name="naming-rules"></a>Regras de nomenclatura
 
-As regras de nomenclatura referem-se à nomenclatura de elementos de código de linguagem de programação .NET, como classes, propriedades e métodos. Por exemplo, você pode especificar que os membros públicos devem estar em letras maiúsculas ou que os campos particulares devem começar com `_` .
+Em seu `.editorconfig` arquivo, você pode definir **regras de nomenclatura** para como elementos de código de linguagem de programação .net, como &mdash; classes, propriedades e métodos, &mdash; devem ser nomeados. Por exemplo, você pode especificar que os membros públicos devem estar em letras maiúsculas ou que os campos particulares devem começar com `_` .
 
-Uma regra de nomenclatura tem três partes:
+Uma regra de nomenclatura tem três componentes:
 
-* O grupo de símbolos ao qual se aplica.
-* O estilo de nomenclatura a ser associado à regra.
+* O **grupo** &mdash; de símbolos ao qual se aplica a regra.
+* O **estilo de nomenclatura** a ser associado à regra.
 * A severidade para impor a Convenção.
-
-Você define regras de nomenclatura em um arquivo EditorConfig.
 
 ## <a name="general-syntax"></a>Sintaxe geral
 
 Para definir uma regra de nomenclatura, um grupo de símbolos ou um estilo de nomenclatura, defina uma ou mais propriedades usando a seguinte sintaxe:
 
 ```ini
-<prefix>.<title>.<propertyName> = <propertyValue>
+<kind>.<title>.<propertyName> = <propertyValue>
 ```
 
 Cada propriedade só deve ser definida uma vez, mas algumas configurações permitem vários valores separados por vírgula.
 
 A ordem das propriedades não é importante.
 
-### \<prefix>
+### \<kind>
 
-**\<prefix>** Especifica qual tipo de elemento está sendo definido como &mdash; regra de nomenclatura, grupo de símbolos ou estilo de nomenclatura &mdash; e deve ser um dos seguintes:
+**\<kind>** Especifica qual tipo de elemento está sendo definido como &mdash; regra de nomenclatura, grupo de símbolos ou estilo de nomenclatura &mdash; e deve ser um dos seguintes:
 
-| Para definir uma propriedade para | Usar o prefixo | Exemplo |
+| Para definir uma propriedade para | Usar o \<kind> valor | Exemplo |
 | --- | --- | -- |
 | Regra de nomenclatura | `dotnet_naming_rule` | `dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion` |
 | Grupo de símbolos | `dotnet_naming_symbols` | `dotnet_naming_symbols.interface.applicable_kinds = interface` |
@@ -77,31 +75,23 @@ Todas as propriedades de regra de nomenclatura são necessárias para que uma re
 
 | Propriedade | Descrição |
 | -- | -- |
-| `symbols` | O título do grupo de símbolos, definindo os símbolos aos quais essa regra deve ser aplicada |
+| `symbols` | O título de um grupo de símbolos; a regra de nomenclatura será aplicada aos símbolos neste grupo |
 | `style` | O título do estilo de nomenclatura que deve ser associado a esta regra |
 | `severity` |  Define a severidade com a qual impor a regra de nomenclatura. Defina o valor associado como um dos níveis de [severidade](../configuration-options.md#severity-level)disponíveis. <sup>1</sup> |
 
 **Observações:**
 
-1. A especificação de severidade dentro de uma regra de nomenclatura só é respeitada dentro de IDEs de desenvolvimento, como o Visual Studio. Essa configuração não é compreendida pelos compiladores C# ou VB, portanto não é respeitada durante a compilação. Em vez disso, para impor regras de estilo de nomenclatura na compilação, você deve definir a gravidade usando a configuração de severidade baseada em ID de regra, conforme explicado nesta [seção](#rule-id-ide1006-naming-rule-violation). Para saber mais, confira este [problema do GitHub](https://github.com/dotnet/roslyn/issues/44201).
-
-## <a name="rule-order"></a>Ordem das regras
-
-A ordem na qual as regras de nomenclatura são definidas em um arquivo EditorConfig não importa. As regras de nomenclatura são ordenadas automaticamente de acordo com a definição das próprias regras. A [extensão de serviço de linguagem EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) pode analisar um arquivo EditorConfig e casos de relatório em que a ordenação de regra no arquivo é diferente do que o compilador usará em tempo de execução.
-
-> [!NOTE]
->
-> Se você estiver usando uma versão do Visual Studio anterior à versão 16,2 do Visual Studio 2019, as regras de nomenclatura deverão ser ordenadas da mais específica para a menos específica no arquivo EditorConfig. A primeira regra encontrada que pode ser aplicada é a única regra que é aplicada. No entanto, se houver várias *propriedades* de regras com o mesmo nome, a propriedade mais recente encontrada com esse nome terá precedência. Confira mais informações em [Precedência e hierarquia de arquivos](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence).
+1. A especificação de severidade dentro de uma regra de nomenclatura só é respeitada dentro de IDEs de desenvolvimento, como o Visual Studio. Essa configuração não é compreendida pelos compiladores C# ou VB, portanto não é respeitada durante a compilação. Para impor regras de estilo de nomenclatura na compilação, você deve definir a severidade usando a [configuração de severidade de regra de código](#rule-id-ide1006-naming-rule-violation). Para saber mais, confira este [problema do GitHub](https://github.com/dotnet/roslyn/issues/44201).
 
 ## <a name="symbol-group-properties"></a>Propriedades do grupo de símbolos
 
-Você pode definir as seguintes propriedades para grupos de símbolos, para limitar quais símbolos estão incluídos no grupo. Para especificar vários valores em uma única configuração de propriedade, separe-os com uma vírgula.
+Você pode definir as seguintes propriedades para grupos de símbolos, para limitar quais símbolos estão incluídos no grupo. Para especificar vários valores para uma única propriedade, separe os valores com uma vírgula.
 
 | Propriedade | Descrição | Valores permitidos | Obrigatório |
 | -- | -- | -- | -- |
-| `applicable_kinds` | Tipos de símbolos no grupo <sup>1</sup> | `*` (use este valor para especificar todos os símbolos)<br/>`namespace`<br/>`class`<br/>`struct`<br/>`interface`<br/>`enum`<br/>`property`<br/>`method`<br/>`field`<br/>`event`<br/>`delegate`<br/>`parameter`<br/>`type_parameter`<br/>`local`<br/>`local_function` | Sim |
-| `applicable_accessibilities` | Níveis de acessibilidade dos símbolos no grupo | `*` (use este valor para especificar todos os níveis de acessibilidade)<br/>`public`<br/>`internal` ou `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` ou `protected_friend`<br/>`private_protected`<br/>`local` (para símbolos definidos dentro de um método) | Sim |
-| `required_modifiers` | Corresponder apenas símbolos com _todos_ os modificadores especificados <sup>2</sup> | `abstract` ou `must_inherit`<br/>`async`<br/>`const`<br/>`readonly`<br/>`static` ou `shared` <sup>3</sup> | Não |
+| `applicable_kinds` | Tipos de símbolos no grupo <sup>1</sup> | `*` (use este valor para especificar todos os símbolos)<br/>`namespace`<br/>`class`<br/>`struct`<br/>`interface`<br/>`enum`<br/>`property`<br/>`method`<br/>`field`<br/>`event`<br/>`delegate`<br/>`parameter`<br/>`type_parameter`<br/>`local`<br/>`local_function` | Yes |
+| `applicable_accessibilities` | Níveis de acessibilidade dos símbolos no grupo | `*` (use este valor para especificar todos os níveis de acessibilidade)<br/>`public`<br/>`internal` ou `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` ou `protected_friend`<br/>`private_protected`<br/>`local` (para símbolos definidos dentro de um método) | Yes |
+| `required_modifiers` | Corresponder apenas símbolos com _todos_ os modificadores especificados <sup>2</sup> | `abstract` ou `must_inherit`<br/>`async`<br/>`const`<br/>`readonly`<br/>`static` ou `shared` <sup>3</sup> | No |
 
 **Observações:**
 
@@ -123,13 +113,21 @@ Você pode definir as seguintes propriedades para um estilo de nomenclatura:
 | Propriedade | Descrição | Valores permitidos | Obrigatório |
 | -- | -- | -- | -- |
 | `capitalization` | Estilo de capitalização de palavras dentro do símbolo | `pascal_case`<br/>`camel_case`<br/>`first_word_upper`<br/>`all_upper`<br/>`all_lower` | Sim<sup>1</sup> |
-| `required_prefix` | Deve começar com estes caracteres | | Não |
-| `required_suffix` | Deve terminar com estes caracteres | | Não |
-| `word_separator` | As palavras dentro do símbolo precisam ser separadas com este caractere | | Não |
+| `required_prefix` | Deve começar com estes caracteres | | No |
+| `required_suffix` | Deve terminar com estes caracteres | | No |
+| `word_separator` | As palavras dentro do símbolo precisam ser separadas com este caractere | | No |
 
 **Observações:**
 
 1. É necessário especificar um estilo de uso de maiúsculas como parte do seu estilo de nomenclatura; caso contrário, o estilo de nomenclatura poderá ser ignorado.
+
+## <a name="rule-order"></a>Ordem das regras
+
+A ordem na qual as regras de nomenclatura são definidas em um arquivo EditorConfig não importa. As regras de nomenclatura são ordenadas automaticamente de acordo com a definição das próprias regras. A [extensão de serviço de linguagem EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) pode analisar um arquivo EditorConfig e casos de relatório em que a ordenação de regra no arquivo é diferente do que o compilador usará em tempo de execução.
+
+> [!NOTE]
+>
+> Se você estiver usando uma versão do Visual Studio anterior à versão 16,2 do Visual Studio 2019, as regras de nomenclatura deverão ser ordenadas da mais específica para a menos específica no arquivo EditorConfig. A primeira regra encontrada que pode ser aplicada é a única regra que é aplicada. No entanto, se houver várias *propriedades* de regras com o mesmo nome, a propriedade mais recente encontrada com esse nome terá precedência. Confira mais informações em [Precedência e hierarquia de arquivos](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence).
 
 ## <a name="default-naming-styles"></a>Estilos de nomenclatura padrão
 
@@ -138,6 +136,16 @@ Se você não especificar nenhuma regra de nomenclatura personalizada, os seguin
 - Para classes, estruturas, enumerações, propriedades e eventos com acessibilidade `public`, `private`, `internal`, `protected` ou `protected_internal`, o estilo de nomenclatura padrão é Pascal case.
 
 - Para interfaces com acessibilidade `public`, `private`, `internal`, `protected` ou `protected_internal`, o estilo de nomenclatura padrão é Pascal case com o prefixo necessário **I**.
+
+## <a name="code-rule-id-ide1006-naming-rule-violation"></a><a name="rule-id-ide1006-naming-rule-violation"></a>ID da regra de código: `IDE1006 (Naming rule violation)`
+
+Todas as opções de nomenclatura têm ID `IDE1006` de regra e título `Naming rule violation` . Você pode configurar a severidade de violações de nomenclatura globalmente em um arquivo EditorConfig com a seguinte sintaxe:
+
+```ini
+dotnet_diagnostic.IDE1006.severity = <severity value>
+```
+
+O valor de severidade deve ser `warning` ou `error` ser [imposto na compilação](../overview.md#code-style-analysis). Para todos os valores de severidade possíveis, consulte [nível de severidade](../configuration-options.md#severity-level).
 
 ## <a name="example"></a>Exemplo
 
@@ -161,16 +169,6 @@ dotnet_naming_rule.public_members_must_be_capitalized.style    = first_word_uppe
 # and setting the severity.
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
-
-## <a name="rule-id-ide1006-naming-rule-violation"></a><a name="rule-id-ide1006-naming-rule-violation"></a>ID da regra: "IDE1006" (violação da regra de nomenclatura)
-
-Todas as opções de nomenclatura têm ID `IDE1006` de regra e título `Naming rule violation` . Você pode configurar a severidade de violações de nomenclatura globalmente em um arquivo EditorConfig com a seguinte sintaxe:
-
-```ini
-dotnet_diagnostic.IDE1006.severity = <severity value>
-```
-
-O valor de severidade deve ser `warning` ou `error` ser [imposto na compilação](../overview.md#code-style-analysis). Para todos os valores de severidade possíveis, consulte [nível de severidade](../configuration-options.md#severity-level).
 
 ## <a name="see-also"></a>Confira também
 

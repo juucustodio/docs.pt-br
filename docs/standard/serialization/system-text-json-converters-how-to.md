@@ -1,7 +1,7 @@
 ---
 title: Como escrever conversores personalizados para serialização JSON-.NET
 description: Saiba como criar conversores personalizados para as classes de serialização JSON que são fornecidas no System.Text.Json namespace.
-ms.date: 12/14/2020
+ms.date: 01/22/2021
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - serialization
 - objects, serializing
 - converters
-ms.openlocfilehash: 390438e3dca7a5d40dd9957090f498b495996e05
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: 5406f862eeec83b619f660716e68b85f3d90b28f
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97513192"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216350"
 ---
 # <a name="how-to-write-custom-converters-for-json-serialization-marshalling-in-net"></a>Como escrever conversores personalizados para serialização JSON (Marshalling) no .NET
 
@@ -243,6 +243,18 @@ Para cenários que exigem a inferência de tipos, o código a seguir mostra um c
 * Cadeias de caracteres para `string`
 * Tudo o mais a `JsonElement`
 
+::: zone pivot="dotnet-5-0"
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterInferredTypesToObject.cs":::
+
+O exemplo mostra o código do conversor e uma `WeatherForecast` classe com `object` Propriedades. O `Main` método desserializa uma cadeia de caracteres JSON em uma `WeatherForecast` instância, primeiro sem usar o conversor e, em seguida, usando o conversor. A saída do console mostra que, sem o conversor, o tipo de tempo de execução da `Date` propriedade é `JsonElement` ; com o conversor, o tipo de tempo de execução é `DateTime` .
+
+A [pasta de testes de unidade](https://github.com/dotnet/runtime/tree/c72b54243ade2e1118ab24476220a2eba6057466/src/libraries/System.Text.Json/tests/Serialization/) no `System.Text.Json.Serialization` namespace tem mais exemplos de conversores personalizados que manipulam a desserialização para `object` Propriedades.
+
+:::zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/ObjectToInferredTypesConverter.cs":::
 
 O código a seguir registra o conversor:
@@ -266,6 +278,8 @@ O exemplo a seguir de JSON para desserializar contém valores que serão desseri
 Sem o conversor personalizado, a desserialização coloca um `JsonElement` em cada propriedade.
 
 A [pasta de testes de unidade](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) no `System.Text.Json.Serialization` namespace tem mais exemplos de conversores personalizados que manipulam a desserialização para `object` Propriedades.
+
+:::zone-end
 
 ::: zone pivot="dotnet-core-3-1"
 

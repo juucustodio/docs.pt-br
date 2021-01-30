@@ -2,12 +2,12 @@
 title: Os blocos de construção de programas em C# "
 description: Saiba mais sobre membros, expressões e instruções C#. Os tipos contêm membros que você escreve. Esses membros são criados a partir de instruções e expressões.
 ms.date: 08/06/2020
-ms.openlocfilehash: e4350f2c2b6005fb59dd868f0f7f628bd07b0053
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: 0ac45eee180b60062a328fca9ab5c63a1537debe
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "93342690"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216610"
 ---
 # <a name="program-building-blocks"></a>Blocos de construção de programas
 
@@ -189,7 +189,7 @@ Ao contrário de outros membros, os construtores de instância não são herdado
 
 As *propriedades* são uma extensão natural dos campos. Elas são denominadas membros com tipos associados, e a sintaxe para acessar os campos e as propriedades é a mesma. No entanto, ao contrário dos campos, as propriedades não denotam locais de armazenamento. Em vez disso, as propriedades têm *acessadores* que especificam as instruções executadas quando seus valores são lidos ou gravados.
 
-Uma propriedade é declarada como um campo, exceto que a declaração termina com um acessador get ou um acessador set gravado entre os delimitadores `{` e `}` em vez de terminar em um ponto e vírgula. Uma propriedade que tem um acessador get e um acessador set é uma *propriedade de leitura-gravação*. Uma propriedade que tem apenas um acessador get é uma *propriedade somente leitura*, e uma propriedade que tem apenas um acessador set é uma *propriedade somente gravação*.
+Uma propriedade é declarada como um campo, exceto que a declaração termina com um acessador get ou um acessador set gravado entre os delimitadores `{` e `}` em vez de terminar em um ponto e vírgula. Uma propriedade que tem um acessador get e um acessador set é uma *propriedade de leitura/gravação*. Uma propriedade que tem apenas um acessador get é uma *propriedade somente leitura*. Uma propriedade que tem apenas um acessador set é uma *propriedade somente gravação*.
 
 Um acessador get corresponde a um método sem parâmetros com um valor retornado do tipo de propriedade. Um acessador set corresponde a um método com um parâmetro único chamado valor e nenhum tipo de retorno. O acessador get computa o valor da propriedade. O acessador set fornece um novo valor para a propriedade. Quando a propriedade é o destino de uma atribuição, ou o operando de `++` ou `--` , o acessador set é invocado. Em outros casos em que a propriedade é referenciada, o acessador get é invocado.
 

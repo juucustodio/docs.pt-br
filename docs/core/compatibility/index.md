@@ -1,27 +1,27 @@
 ---
 title: Tipos de alterações da falha
-description: Saiba como o .NET Core tenta manter a compatibilidade para desenvolvedores entre versões do .NET e que tipo de alteração é considerada uma alteração interruptiva.
-ms.date: 06/10/2019
-ms.openlocfilehash: bc93316141ae99d8cfedc5e6d88a9e91216f9c6e
-ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
+description: Saiba como o .NET tenta manter a compatibilidade para desenvolvedores em versões do .NET e que tipo de alteração é considerada uma alteração significativa.
+ms.date: 01/28/2021
+ms.openlocfilehash: d539a82b21abc4df8d726673ef728020f36551bf
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415739"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216032"
 ---
 # <a name="changes-that-affect-compatibility"></a>Alterações que afetam a compatibilidade
 
-Ao longo de sua história, o .NET tentou manter um alto nível de compatibilidade de versão para versão e em todos os tipos de .NET. Isso também ocorre no .NET Core. Embora o .NET Core possa ser considerado uma nova tecnologia independente do .NET Framework, dois fatores principais limitam a capacidade do .NET Core de divergir do .NET Framework:
+Ao longo de seu histórico, o .NET tentou manter um alto nível de compatibilidade de versão para versão e entre implementações do .NET. Embora o .NET 5 (e o .NET Core) e versões posteriores possam ser considerados como uma nova tecnologia em comparação com .NET Framework, dois fatores principais limitam a capacidade dessa implementação do .NET de divergência de .NET Framework:
 
 - Um grande número de desenvolvedores originalmente desenvolveu ou continua a desenvolver aplicativos .NET Framework. Eles esperam um comportamento consistente nas implementações do .NET.
 
-- Os projetos da biblioteca .NET Standard permitem que os desenvolvedores criem bibliotecas voltadas a APIs comuns compartilhadas pelo .NET Core e pelo .NET Framework. Os desenvolvedores esperam que uma biblioteca usada em um aplicativo .NET Core se comporte de maneira idêntica à mesma biblioteca usada em um aplicativo .NET Framework.
+- .NET Standard projetos de biblioteca permitem que os desenvolvedores criem bibliotecas que se destinam a APIs comuns compartilhadas por .NET Framework e .NET 5 (e .NET Core) e versões posteriores. Os desenvolvedores esperam que uma biblioteca usada em um aplicativo do .NET 5 deve se comportar de forma idêntica à mesma biblioteca usada em um aplicativo .NET Framework.
 
-Além da compatibilidade entre as implementações do .NET, os desenvolvedores esperam um alto nível de compatibilidade nas versões do .NET Core. Em particular, o código escrito para uma versão anterior do .NET Core precisam ser executado sem problemas em uma versão posterior do .NET Core. Na verdade, muitos desenvolvedores esperam que as novas APIs encontradas em versões recém-lançadas do .NET Core também sejam compatíveis com as versões de pré-lançamento em que essas APIs foram apresentadas.
+Juntamente com a compatibilidade entre implementações do .NET, os desenvolvedores esperam um alto nível de compatibilidade entre versões de uma determinada implementação do .NET. Em particular, o código escrito para uma versão anterior do .NET Core deve ser executado diretamente no .NET 5 ou em uma versão posterior. Na verdade, muitos desenvolvedores esperam que as novas APIs encontradas nas versões lançadas recentemente do .NET também devem ser compatíveis com as versões de pré-lançamento nas quais essas APIs foram introduzidas.
 
 Este artigo descreve as alterações que afetam a compatibilidade e a maneira como a equipe do .NET avalia cada tipo de alteração. Compreender como a equipe do .NET aborda as possíveis alterações de falha é particularmente útil para os desenvolvedores que abrem solicitações de pull que modificam o comportamento das [APIs .NET existentes](https://github.com/dotnet/runtime).
 
-As seções a seguir descrevem as categorias de alterações feitas nas APIs do .NET Core e seu impacto na compatibilidade de aplicativos. As alterações são permitidas ✔️, não permitido ❌ ou exigem julgamento e uma avaliação de como a previsibilidade, óbvia e consistente o comportamento anterior foi ❓.
+As seções a seguir descrevem as categorias de alterações feitas nas APIs do .NET e seu impacto na compatibilidade de aplicativos. As alterações são permitidas ✔️, não permitido ❌ ou exigem julgamento e uma avaliação de como a previsibilidade, óbvia e consistente o comportamento anterior foi ❓.
 
 > [!NOTE]
 >

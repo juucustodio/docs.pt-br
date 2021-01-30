@@ -5,19 +5,19 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 0d64df42ffb1763afed3e883c4f043755e158489
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: b98fdd48f2373bd23fcd3273834860a60c682969
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633982"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216376"
 ---
 # <a name="configuration-files-for-code-analysis-rules"></a>Arquivos de configuração para regras de análise de código
 
 As regras de análise de código têm várias [Opções de configuração](configuration-options.md). Você especifica essas opções como pares de chave-valor em um dos seguintes arquivos de configuração do analisador:
 
 - [EditorConfig](#editorconfig) arquivo: opções de configuração baseadas em arquivo ou em pasta.
-- Arquivo [AnalyzerConfig global](#global-analyzerconfig) : opções de configuração no nível do projeto.
+- Arquivo [AnalyzerConfig global](#global-analyzerconfig) : opções de configuração no nível do projeto. Útil quando alguns arquivos de projeto residem fora da pasta do projeto.
 
 ## EditorConfig
 
@@ -58,7 +58,7 @@ tab_width = 4
 #### .NET Coding Conventions ####
 
 # this. and Me. preferences
-dotnet_style_qualification_for_method = true:warning
+dotnet_style_qualification_for_method = true
 
 #### Diagnostic configuration ####
 
@@ -68,7 +68,7 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## <a name="global-analyzerconfig"></a>AnalyzerConfig global
 
-A partir do SDK do .NET 5 (que tem suporte no Visual Studio 2019 versão 16,8 e versões posteriores), você também pode configurar opções do analisador com arquivos _AnalyzerConfig_ globais. Esses arquivos são usados para fornecer **opções que se aplicam a todos os arquivos de origem em um projeto**, independentemente de seus nomes de arquivo ou caminhos de arquivo.
+A partir do SDK do .NET 5 (que tem suporte no Visual Studio 2019 versão 16,8 e posterior), você também pode configurar opções do analisador com arquivos _AnalyzerConfig_ globais. Esses arquivos são usados para fornecer **opções que se aplicam a todos os arquivos de origem em um projeto**, independentemente de seus nomes de arquivo ou caminhos de arquivo.
 
 Ao contrário dos [EditorConfig](#editorconfig) arquivos, os arquivos de configuração global não podem ser usados para definir as configurações de estilo do editor para ides, como recuar tamanho ou se deseja aparar o espaço em branco à direita. Em vez disso, eles são projetados puramente para especificar opções de configuração do analisador de nível de projeto.
 

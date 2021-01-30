@@ -1,23 +1,37 @@
 ---
 title: Um tour pelo C# – Guia do C#
-description: Novato em C#? Conheça os fundamentos da linguagem.
-ms.date: 08/06/2020
-ms.openlocfilehash: 84775a436deb0958d3c05ec7d0207e76be28f27c
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+description: Novato em C#? Conheça os fundamentos da linguagem. Comece com esta visão geral.
+ms.date: 01/28/2021
+ms.openlocfilehash: 016edf331d8cbdca2902cb033963b6aea11df513
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89464994"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216636"
 ---
 # <a name="a-tour-of-the-c-language"></a>Um tour pela linguagem C#
 
-O C# (pronuncia-se "Veja nítido") é uma linguagem de programação moderna, orientada a objeto e de tipo seguro. O C# tem suas raízes na família de linguagens C e os programadores em C, C++, Java e JavaScript a reconhecerão imediatamente. Este tour fornece uma visão geral dos principais componentes do idioma no C# 8 e versões anteriores. Se você quiser explorar a linguagem por meio de exemplos interativos, experimente a [introdução aos](../tutorials/intro-to-csharp/index.md) tutoriais do C#.
+O C# (pronuncia-se "Veja nítido") é uma linguagem de programação moderna, orientada a objeto e de tipo seguro. O C# permite que os desenvolvedores criem muitos tipos de aplicativos seguros e robustos que são executados no ecossistema do .NET. O C# tem suas raízes na família de linguagens C e os programadores em C, C++, Java e JavaScript a reconhecerão imediatamente. Este tour fornece uma visão geral dos principais componentes do idioma no C# 8 e versões anteriores. Se você quiser explorar a linguagem por meio de exemplos interativos, experimente a [introdução aos](../tutorials/intro-to-csharp/index.md) tutoriais do C#.
 
-O C# é uma linguagem de programação ***orientada*** a objetos e orientada a componentes. O c# fornece construções de linguagem para dar suporte direto a esses conceitos, tornando o C# uma linguagem natural para criar e usar componentes de software. Desde sua origem, o C# adicionou recursos para dar suporte a novas cargas de trabalho e práticas de design de software emergentes.
+O C# é uma linguagem de programação _ orientada a objeto, ***Component-oriented**. O c# fornece construções de linguagem para dar suporte direto a esses conceitos, tornando o C# uma linguagem natural para criar e usar componentes de software. Desde sua origem, o C# adicionou recursos para dar suporte a novas cargas de trabalho e práticas de design de software emergentes.
 
-Vários recursos do C# auxiliam na construção de aplicativos robustos e duráveis. A [***coleta de lixo***](../../standard/garbage-collection/index.md) recupera automaticamente a memória ocupada por objetos não utilizados inacessíveis. A [***manipulação de exceção***](../programming-guide/exceptions/index.md) fornece uma abordagem estruturada e extensível para detecção e recuperação de erros. As [***expressões lambda***](../language-reference/operators/lambda-expressions.md) dão suporte a técnicas de programação funcional. A [***sintaxe de consulta***](../linq/index.md) cria um padrão comum para trabalhar com dados de qualquer fonte. O suporte a idiomas para [***operações assíncronas***](../programming-guide/concepts/async/index.md) fornece a sintaxe para a criação de sistemas distribuídos. A [***correspondência de padrões***](..//pattern-matching.md) fornece sintaxe para separar facilmente os dados de algoritmos em sistemas distribuídos modernos. O C# tem um [***sistema de tipos unificado***](../programming-guide/types/index.md). Todos os tipos do C#, incluindo tipos primitivos, como `int` e `double`, herdam de um único tipo de `object` raiz. Todos os tipos compartilham um conjunto de operações comuns. Os valores de qualquer tipo podem ser armazenados, transportados e operados de maneira consistente. Além disso, o C# dá suporte a tipos de referência definidos pelo usuário e tipos de valor. O C# permite a alocação dinâmica de objetos e o armazenamento em linha de estruturas leves.
+Vários recursos do C# ajudam a criar aplicativos robustos e duráveis. A [_*_coleta de lixo_*_](../../standard/garbage-collection/index.md) recupera automaticamente a memória ocupada por objetos não utilizados inacessíveis. Os [_*_tipos anuláveis_*_](../nullable-references.md) protegem contra variáveis que não se referem a objetos alocados. A [_*_manipulação de exceção_*_](../programming-guide/exceptions/index.md) fornece uma abordagem estruturada e extensível para detecção e recuperação de erros. As [_*_expressões lambda_*_](../language-reference/operators/lambda-expressions.md) dão suporte a técnicas de programação funcional. A sintaxe [_*_de linguagem de consulta integrada (LINQ)_*_](../linq/index.md) cria um padrão comum para trabalhar com dados de qualquer fonte. O suporte a idiomas para [_*_operações assíncronas_*_](../programming-guide/concepts/async/index.md) fornece a sintaxe para a criação de sistemas distribuídos. O C# tem um [_*_sistema de tipos unificado_*_](../programming-guide/types/index.md). Todos os tipos do C#, incluindo tipos primitivos, como `int` e `double`, herdam de um único tipo de `object` raiz. Todos os tipos compartilham um conjunto de operações comuns. Os valores de qualquer tipo podem ser armazenados, transportados e operados de maneira consistente. Além disso, o C# dá suporte a [tipos de referência](../language-reference/builtin-types/reference-types.md) definidos pelo usuário e [tipos de valor](../language-reference/builtin-types/value-types.md). O C# permite a alocação dinâmica de objetos e o armazenamento em linha de estruturas leves. O C# oferece suporte a tipos e métodos genéricos, que fornecem aumento na segurança e no desempenho do tipo. O C# fornece iteradores, que habilitam implementadores de classes de coleção para definir comportamentos personalizados para o código do cliente.
 
-O C# enfatiza o ***controle de versão*** para garantir que programas e bibliotecas possam evoluir ao longo do tempo de maneira compatível. Aspectos do design do C# que foram influenciados diretamente pelas considerações de controle de versão incluem os `virtual` `override` modificadores and separados, as regras para resolução de sobrecarga de método e suporte para declarações de membro de interface explícitas.
+O C# enfatiza o _*_controle de versão_*_ para garantir que programas e bibliotecas possam evoluir ao longo do tempo de maneira compatível. Aspectos do design do C# que foram influenciados diretamente pelas considerações de controle de versão incluem os `virtual` `override` modificadores and separados, as regras para resolução de sobrecarga de método e suporte para declarações de membro de interface explícitas.
+
+## <a name="net-architecture"></a>Arquitetura do .NET
+
+Os programas em C# são executados no .NET, um sistema de execução virtual chamado Common Language Runtime (CLR) e um conjunto de bibliotecas de classes. O CLR é a implementação da Microsoft da CLI (Common Language Infrastructure), um padrão internacional. A CLI é a base para a criação de ambientes de execução e desenvolvimento nos quais as linguagens e bibliotecas funcionam em conjunto diretamente.
+
+O código-fonte escrito em C# é compilado em uma [Il (linguagem intermediária)](../../standard/managed-code.md) que está de acordo com a especificação da CLI. O código de IL e os recursos, como bitmaps e cadeias de caracteres, são armazenados em um assembly, normalmente com uma extensão de _.dll *. Um assembly contém um manifesto que fornece informações sobre os tipos, a versão e a cultura do assembly.
+
+Quando o programa C# é executado, o assembly é carregado no CLR. O CLR executa a compilação JIT (just-in-time) para converter o código IL em instruções de máquina nativa. O CLR fornece outros serviços relacionados à coleta de lixo, manipulação de exceções e gerenciamento de recursos automáticos. O código executado pelo CLR, às vezes, é chamado de "código gerenciado", em oposição ao "código não gerenciado", que é compilado em linguagem de máquina nativa direcionada a uma plataforma específica.
+
+A interoperabilidade de linguagem é um recurso fundamental do .NET. O código de IL produzido pelo compilador C# está de acordo com a CTS (especificação de tipo comum). O código IL gerado do C# pode interagir com o código gerado nas versões do .NET do F #, Visual Basic, C++ ou em qualquer um dos mais de 20 outros idiomas compatíveis com CTS. Um único assembly pode conter vários módulos escritos em diferentes linguagens .NET, e os tipos podem referenciar um ao outro como se fossem escritos no mesmo idioma.
+
+Além dos serviços de tempo de execução, o .NET também inclui bibliotecas extensivas. Essas bibliotecas dão suporte a várias cargas de trabalho diferentes. Elas são organizadas em namespaces que fornecem uma ampla variedade de funcionalidades úteis para tudo, desde entrada e saída de arquivos até a manipulação de cadeia de caracteres até a análise XML até estruturas de aplicativos Web para Windows Forms controles. O aplicativo C# típico usa a biblioteca de classes .NET extensivamente para lidar com tarefas comuns de "encanamento".
+
+Para obter mais informações sobre o .NET, consulte [visão geral do .net](../../core/introduction.md).
 
 ## <a name="hello-world"></a>Hello world
 
@@ -33,11 +47,11 @@ A saída do programa é produzida pelo método `WriteLine` da classe `Console` n
 
 ## <a name="types-and-variables"></a>Tipos e variáveis
 
-Há dois tipos em C#: *tipos de referência* e *tipos de valor*. As variáveis de tipos de valor contêm diretamente seus dados enquanto variáveis de tipos de referência armazenam referências a seus dados, o último sendo conhecido como objetos. Com os tipos de referência, é possível que duas variáveis referenciem o mesmo objeto e possíveis operações em uma variável afetem o objeto referenciado pela outra variável. Com os tipos de valor, as variáveis têm sua própria cópia dos dados, e não é possível que as operações em um afetem a outra (exceto `ref` para `out` variáveis de parâmetro e).
+Há dois tipos em C#: *tipos de referência* e *tipos de valor*. Variáveis de tipos de valor contêm diretamente seus dados. Variáveis de tipos de referência armazenam referências a seus dados, o último é conhecido como objetos. Com os tipos de referência, é possível que duas variáveis referenciem o mesmo objeto e possíveis operações em uma variável afetem o objeto referenciado pela outra variável. Com os tipos de valor, as variáveis têm sua própria cópia dos dados, e não é possível que as operações em um afetem a outra (exceto `ref` para `out` variáveis de parâmetro e).
 
-Um ***identificador*** é um nome de variável. Um identificador é uma sequência de caracteres Unicode sem qualquer espaço em branco. Um identificador pode ser uma palavra reservada em C#, se for prefixada pelo `@` . Isso pode ser útil ao interagir com outras linguagens.
+Um ***identificador** _ é um nome de variável. Um identificador é uma sequência de caracteres Unicode sem qualquer espaço em branco. Um identificador pode ser uma palavra reservada em C#, se for prefixada por `@` . Usar uma palavra reservada como um identificador pode ser útil ao interagir com outras linguagens.
 
-Os tipos de valor do C# são divididos em *tipos simples*, *tipos de enumeração*, *tipos de struct*, *tipos de valor anulável* e *tipos de valor de tupla*. Os tipos de referência do C# são divididos em *tipos de classe*, *tipos de interface*, *tipos de matriz*e *tipos delegados*.
+Os tipos de valor do C# são divididos em _simple tipos *, *tipos de enumeração*, *tipos de struct*, *tipos de valor anulável* e *tipos de valor de tupla*. Os tipos de referência do C# são divididos em *tipos de classe*, *tipos de interface*, *tipos de matriz* e *tipos delegados*.
 
 A seguinte estrutura de tópicos fornece uma visão geral do sistema de tipos do C#.
 
@@ -109,13 +123,13 @@ Existem vários tipos de *variáveis* no C#, incluindo campos, elementos de matr
 
 ## <a name="program-structure"></a>Estrutura do programa
 
-Os principais conceitos organizacionais do C# são [***programas***](../programming-guide/inside-a-program/index.md), [***namespaces***](../programming-guide/namespaces/index.md), [***tipos***](../programming-guide/types/index.md), [***Membros***](../programming-guide/classes-and-structs/members.md)e [***assemblies***](../../standard/assembly/index.md). Os programas declaram tipos que contêm membros e podem ser organizados em namespaces. Classes, estruturas e interfaces são exemplos de tipos. Campos, métodos, propriedades e eventos são exemplos de membros. Quando programas C# são compilados, eles são fisicamente empacotados em assemblies. Os assemblies normalmente têm a extensão de arquivo `.exe` ou `.dll`, dependendo se eles implementam ***aplicativos*** ou ***bibliotecas***, respectivamente.
+Os principais conceitos organizacionais do C# são os [ * **programas** _](../programming-guide/inside-a-program/index.md), [_*_namespaces_*_](../programming-guide/namespaces/index.md), [_*_tipos_*_](../programming-guide/types/index.md), [_*_Membros_*_](../programming-guide/classes-and-structs/members.md)e [_*_assemblies_*_](../../standard/assembly/index.md). Os programas declaram tipos que contêm membros e podem ser organizados em namespaces. Classes, estruturas e interfaces são exemplos de tipos. Campos, métodos, propriedades e eventos são exemplos de membros. Quando programas C# são compilados, eles são fisicamente empacotados em assemblies. Normalmente, os assemblies têm a extensão de arquivo `.exe` ou `.dll` , dependendo se eles implementam _*_aplicativos_*_ ou _*_bibliotecas_*_, respectivamente.
 
 Como um pequeno exemplo, considere um assembly que contém o código a seguir:
 
 :::code language="csharp" source="./snippets/shared/AcmeStack.cs":::
 
-O nome totalmente qualificado dessa classe é `Acme.Collections.Stack`. A classe contém vários membros: um campo chamado `top`, dois métodos chamados `Push` e `Pop` e uma classe aninhada chamada `Entry`. A classe `Entry` ainda contém três membros: um campo chamado `next`, um campo chamado `data`e um construtor. O `Stack` é uma classe *genérica* . Ele tem um parâmetro de tipo, `T` que é substituído por um tipo concreto quando usado.
+O nome totalmente qualificado dessa classe é `Acme.Collections.Stack`. A classe contém vários membros: um campo chamado `top`, dois métodos chamados `Push` e `Pop` e uma classe aninhada chamada `Entry`. A classe `Entry` ainda contém três membros: um campo chamado `next`, um campo chamado `data`e um construtor. A `Stack` é uma classe _generic *. Ele tem um parâmetro de tipo, `T` que é substituído por um tipo concreto quando usado.
 
 > [!NOTE]
 > Uma *pilha* é uma coleção de "primeiro a entrar no final" (filo). Novos elementos são adicionados à parte superior da pilha. Quando um elemento é removido, ele é removido da parte superior da pilha.

@@ -3,12 +3,12 @@ title: Tutoriais para introdução ao .NET
 description: Escolha um tutorial para aprender sobre o desenvolvimento de aplicativos .NET ou uma das linguagens de programação .NET.
 author: tdykstra
 ms.date: 09/30/2020
-ms.openlocfilehash: 3002b23dcae44b38c9e4dbc2679a2919f1a8d1ce
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: e41a6ce0ae3e1c58b9d83eb644b2e68362cc04ed
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827172"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99215901"
 ---
 # <a name="tutorials-for-getting-started-with-net"></a>Tutoriais para introdução ao .NET
 
@@ -16,7 +16,7 @@ Os tutoriais passo a passo a seguir são executados no Windows, Linux ou macOS, 
 
 ## <a name="tutorials-for-creating-apps"></a>Tutoriais para a criação de aplicativos
 
-* Criar um aplicativo do console
+* Criar um aplicativo de console
   * [usando Visual Studio Code](../core/tutorials/with-visual-studio-code.md)
   * [usando o Visual Studio](../core/tutorials/with-visual-studio.md) (Windows)
   * [usando o Visual Studio para Mac](../core/tutorials/with-visual-studio-mac.md) (MacOS)
@@ -44,7 +44,7 @@ Os tutoriais passo a passo a seguir são executados no Windows, Linux ou macOS, 
 
 ## <a name="resources-for-learning-net-languages"></a>Recursos para o aprendizado de linguagens .NET
 
-* [Introdução ao C#](../csharp/getting-started/index.md)
+* [Introdução ao C#](../csharp/tour-of-csharp/index.md)
 * [Get started with F#](../fsharp/get-started/index.md) (Introdução ao F#)
 * [Introdução ao Visual Basic](../visual-basic/getting-started/index.md)
 
@@ -52,7 +52,7 @@ Os tutoriais passo a passo a seguir são executados no Windows, Linux ou macOS, 
 
 Os recursos a seguir são para introdução ao desenvolvimento de aplicativos .NET, mas não são tutoriais passo a passo:
 
-* [Internet das Coisas (IoT)](https://dotnet.microsoft.com/apps/iot)
+* [Internet das coisas (IoT)](https://dotnet.microsoft.com/apps/iot)
 * [Aprendizado de máquina](../machine-learning/index.yml)
 
 ## <a name="next-steps"></a>Próximas etapas

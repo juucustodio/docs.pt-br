@@ -1,20 +1,20 @@
 ---
-title: Gerenciar dependências no .NET Core
-description: Explica como gerenciar dependências de projeto para um aplicativo .NET Core.
+title: Gerenciar dependências no .NET
+description: Explica como gerenciar dependências de projeto para um aplicativo .NET.
 no-loc:
 - dotnet add package
 - dotnet remove package
 - dotnet list package
 ms.topic: how-to
-ms.date: 02/25/2020
-ms.openlocfilehash: 2aeedb56f774b51076764c2772eb02b2fa095d92
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.date: 01/28/2021
+ms.openlocfilehash: 9f5f814d0b4dc7aa3ff1a938c172475169a55bf2
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062854"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216122"
 ---
-# <a name="manage-dependencies-in-net-core-applications"></a>Gerenciar dependências em aplicativos .NET Core
+# <a name="manage-dependencies-in-net-applications"></a>Gerenciar dependências em aplicativos .NET
 
 Este artigo explica como adicionar e remover dependências editando o arquivo de projeto ou usando a CLI.
 
@@ -37,7 +37,7 @@ Use condições para adicionar uma dependência que está disponível somente em
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
 ```
 
-A dependência no exemplo anterior só será válida se a compilação estiver acontecendo para o destino fornecido. O `$(TargetFramework)` na condição é uma propriedade do MSBuild que está sendo definida no projeto. Para aplicativos .NET Core mais comuns, você não precisa fazer isso.
+A dependência no exemplo anterior só será válida se a compilação estiver acontecendo para o destino fornecido. O `$(TargetFramework)` na condição é uma propriedade do MSBuild que está sendo definida no projeto. Para aplicativos .NET mais comuns, você não precisa fazer isso.
 
 ## <a name="add-a-dependency-by-editing-the-project-file"></a>Adicionar uma dependência editando o arquivo de projeto
 
@@ -77,7 +77,7 @@ Para remover uma dependência, execute o [dotnet remove package](dotnet-remove-p
 dotnet remove package Microsoft.EntityFrameworkCore
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Referências de pacotes em arquivos de projeto](../project-sdk/msbuild-props.md#reference-properties-and-items)
-* [dotnet list packagelinha](dotnet-list-package.md)
+* [dotnet list package linha](dotnet-list-package.md)

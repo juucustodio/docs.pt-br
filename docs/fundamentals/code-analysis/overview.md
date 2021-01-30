@@ -8,12 +8,12 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: 80815b5913ad72756de503209b52e8848dd708bf
-ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
+ms.openlocfilehash: efc440adb59da1ef9838ec5445d9c55544c14380
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98025075"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216467"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>Visão geral da análise de código-fonte do .NET
 
@@ -40,7 +40,7 @@ As regras de *análise de qualidade de código* ("CAxxxx") inspecionam seu códi
 
 As regras a seguir estão habilitadas, por padrão, no .NET 5,0.
 
-| ID do diagnóstico | Categoria | Severidade | Descrição |
+| ID do diagnóstico | Categoria | Gravidade | Descrição |
 | - | - | - | - |
 | [CA1416](/visualstudio/code-quality/ca1416) | Interoperabilidade | Aviso | Analisador de compatibilidade de plataforma |
 | [CA1417](/visualstudio/code-quality/ca1417) | Interoperabilidade | Aviso | Não usar `OutAttribute` em parâmetros de cadeia de caracteres para P/Invokes |
@@ -127,7 +127,7 @@ Siga estas etapas para habilitar a análise de estilo de código na compilação
    dotnet_diagnostic.IDE0040.severity = warning
    ```
 
-   Como alternativa, você pode configurar a categoria "estilo" inteira para ser um aviso ou erro, por padrão, e, em seguida, desativar seletivamente as regras que você não deseja executar na compilação. Por exemplo:
+   Como alternativa, você pode configurar uma categoria inteira para ser um aviso ou erro, por padrão, e, em seguida, desativar seletivamente as regras nessa categoria que você não deseja executar na compilação. Por exemplo:
 
    ```ini
    [*.{cs,vb}]
@@ -158,7 +158,7 @@ Para obter mais informações sobre severidades de regra, consulte [Configurar a
 
 Além dos analisadores .NET oficiais, você também pode instalar analisadores de terceiros, como [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [analisadores de xUnit](https://www.nuget.org/packages/xunit.analyzers/)e o [analisador de sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência da regra de análise de qualidade de código](quality-rules/index.md)
 - [Referência da regra de análise de estilo de código](style-rules/index.md)

@@ -5,12 +5,12 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 4f7b392a2b066023fec75c5295bd94651654d645
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: 0687bcb16cae6a0a2dde6c7864a1af1d0027e122
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851784"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216454"
 ---
 # <a name="configuration-options-for-code-analysis"></a>Opções de configuração para análise de código
 
@@ -60,7 +60,7 @@ As opções específicas de regra podem ser aplicadas a uma única regra, a um c
 
 A tabela a seguir mostra as diferentes severidades de regra que você pode configurar para todas as regras do analisador, incluindo a [qualidade de código](quality-rules/index.md) e as regras de [estilo de código](style-rules/index.md) .
 
-| Severity | Comportamento de tempo de compilação |
+| Gravidade | Comportamento de tempo de compilação |
 |-|-|
 | `error` | As violações aparecem como *erros* de compilação e causam a falha das compilações.|
 | `warning` | As violações aparecem como *avisos* de compilação, mas não causam a falha das compilações (a menos que você tenha uma opção definida para tratar avisos como erros). |
@@ -80,7 +80,7 @@ Para definir a severidade da regra para uma única regra, use a sintaxe a seguir
 dotnet_diagnostic.<rule ID>.severity = <severity value>
 ```
 
-Para definir a severidade da regra padrão para uma categoria de regras do analisador, use a sintaxe a seguir.
+Para definir a severidade da regra padrão para uma categoria de regras do analisador, use a sintaxe a seguir. A categoria de cada regra é fornecida nas páginas de referência de regra individuais, por exemplo, [CA1000](quality-rules/ca1000.md).
 
 ```ini
 dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>

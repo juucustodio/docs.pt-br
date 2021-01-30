@@ -10,12 +10,12 @@ metadata:
   ms.technology: azure
   ms.service: multiple
   ms.prod: azure-dotnet
-  ms.openlocfilehash: 8d1fb12e3edeb75db7e11316db1063c0bcd63a8e
-  ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+  ms.openlocfilehash: 3f84758863561be809078b888f18308d5cbcfb82
+  ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/15/2020
-  ms.locfileid: "90539093"
+  ms.lasthandoff: 01/30/2021
+  ms.locfileid: "99216058"
 landingContent:
 - title: Introdução ao .NET no Azure
   linkLists:
@@ -141,7 +141,7 @@ landingContent:
       url: /learn/modules/develop-app-that-queries-azure-sql/
     - text: Criar um aplicativo .NET Core para o Azure Cosmos DB no Visual Studio Code
       url: /learn/modules/build-cosmos-db-app-with-vscode/
-    - text: Armazenar dados do aplicativo com o Armazenamento de Blobs do Azure
+    - text: Armazenar dados de aplicativos com o armazenamento de BLOBs do Azure
       url: /learn/modules/store-app-data-with-azure-blob-storage/
     - text: Persistir e recuperar dados relacionais com o Entity Framework Core
       url: /learn/modules/persist-data-ef-core/

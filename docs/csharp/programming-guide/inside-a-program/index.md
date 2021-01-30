@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, about C# program
 - Visual C#, program structure
 ms.assetid: 9551354b-33f0-4e11-bbf0-1a35e3702b22
-ms.openlocfilehash: ecf526d77fcf9df83fa832c57de0e1921d27e3f3
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 05b0d6542e5a786d0aa36a034c08b07acea26e74
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87303342"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216818"
 ---
 # <a name="inside-a-c-program"></a>Por dentro de um programa em C#
 
@@ -29,7 +29,7 @@ A seção discute a estrutura geral de um programa em C# e inclui o exemplo padr
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-- [Introdução ao C#](../../getting-started/index.md)
+- [Introdução ao C #](../../tour-of-csharp/index.md)
 
 - [Guia de programação C#](../index.md)
 
@@ -37,10 +37,10 @@ A seção discute a estrutura geral de um programa em C# e inclui o exemplo padr
 
 - [Exemplos e tutoriais](../../../samples-and-tutorials/index.md)
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guia de programação C#](../index.md)

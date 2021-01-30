@@ -2,14 +2,16 @@
 title: 'Definir tipos e seus membros-um tour de C #'
 description: Os blocos de construção de programas são tipos. Saiba como criar classes, estruturas, interfaces e muito mais em C#.
 ms.date: 08/06/2020
-ms.openlocfilehash: efd353fe8c1e6a57952bcb2586a05ad38ecd52b9
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: b1ce24611fec6fdf01d5ecb8d6ae974e147c78c5
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88559109"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216597"
 ---
 # <a name="types-and-members"></a>Tipos e membros
+
+Por ser uma linguagem orientada a objeto, o C# oferece suporte aos conceitos de encapsulamento, herança e polimorfismo. Uma classe pode herdar diretamente de uma classe pai e pode implementar qualquer número de interfaces. Métodos que substituem métodos virtuais em uma classe pai exigem a palavra-chave `override` como uma forma de evitar uma redefinição acidental. Em C#, um struct é como uma classe leve; é um tipo de pilha alocada que pode implementar interfaces, mas não dá suporte à herança. O C# também fornece registros, que são tipos de classe cuja finalidade é armazenar os valores de dados principalmente.
 
 ## <a name="classes-and-objects"></a>Classes e objetos
 
@@ -32,7 +34,7 @@ Instâncias de classes são criadas usando o operador `new`, que aloca memória 
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="CreatePoints":::
 
-A memória ocupada por um objeto é recuperada automaticamente quando o objeto não está mais acessível. Não é necessário nem possível desalocar explicitamente objetos em C#.
+A memória ocupada por um objeto é recuperada automaticamente quando o objeto não está mais acessível. Não é necessário ou é possível desalocar explicitamente objetos em C#.
 
 ### <a name="type-parameters"></a>Parâmetros de tipo
 
@@ -77,7 +79,7 @@ Classes e structs podem implementar várias interfaces. No exemplo a seguir, a c
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="ImplementInterfaces":::
 
-Quando uma classe ou struct implementa uma interface específica, as instâncias dessa classe ou struct podem ser convertidas implicitamente para esse tipo de interface. Por exemplo
+Quando uma classe ou struct implementa uma interface específica, as instâncias dessa classe ou struct podem ser convertidas implicitamente para esse tipo de interface. Por exemplo,
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="UseInterfaces":::
 

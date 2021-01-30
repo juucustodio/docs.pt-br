@@ -1,7 +1,7 @@
 ---
 title: Como personalizar a codificação de caracteres com System.Text.Json
 description: Saiba como personalizar a codificação de caracteres ao serializar e desserializar do JSON no .NET.
-ms.date: 11/30/2020
+ms.date: 01/22/2021
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: cfb83af0c58e0c9dfb73ecb8e2177d255e403fae
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: 136a75ab73767fd79f99caa1d1387706ab655473
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009619"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99215973"
 ---
 # <a name="how-to-customize-character-encoding-with-no-locsystemtextjson"></a>Como personalizar a codificação de caracteres com System.Text.Json
 
@@ -47,6 +47,8 @@ Este código não sai de escape de caracteres cirílico ou grego. Se a `Summary`
 }
 ```
 
+Por padrão, o codificador é inicializado com o <xref:System.Text.Unicode.UnicodeRanges.BasicLatin> intervalo.
+
 Para serializar todos os conjuntos de idiomas sem saída, use <xref:System.Text.Unicode.UnicodeRanges.All?displayProperty=nameWithType> .
 
 ## <a name="serialize-specific-characters"></a>Serializar caracteres específicos
@@ -66,6 +68,20 @@ Aqui está um exemplo de JSON produzido pelo código anterior:
   "Summary": "жа\u0440\u043A\u043E"
 }
 ```
+
+## <a name="block-lists"></a>Listas de bloqueios
+
+As seções anteriores mostram como especificar as listas de permissões de pontos de código ou intervalos para os quais você não deseja ter escape. No entanto, há listas de blocos globais e específicas do codificador que podem substituir determinados pontos de código na lista de permissões. Pontos de código em uma lista de blocos são sempre de escape, mesmo que estejam incluídos na sua lista de permissões.
+
+### <a name="global-block-list"></a>Lista de blocos globais
+
+A lista de blocos globais inclui itens como caracteres de uso particular, caracteres de controle, pontos de código indefinidos e determinadas categorias Unicode, como a [Space_Separator categoria](https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B:General_Category=Space_Separator:%5D), exceto `U+0020 SPACE` . Por exemplo, `U+3000 IDEOGRAPHIC SPACE` é escapado mesmo se você especificar [símbolos CJK do intervalo Unicode e pontuação (U +3000-u + 303F)](xref:System.Text.Unicode.UnicodeRanges.CjkSymbolsandPunctuation) como sua lista de permissões.
+
+A lista de blocos global é um detalhe de implementação que foi alterado em todas as versões do .NET Core e no .NET 5. Não use uma dependência de um caractere que seja membro (ou não seja membro) da lista de blocos global.
+
+### <a name="encoder-specific-block-lists"></a>Listas de blocos específicos do codificador
+
+Exemplos de pontos de código bloqueados específicos do codificador incluem `'<'` e `'&'` para o [codificador HTML](xref:System.Text.Encodings.Web.HtmlEncoder), `'\'` para o [codificador JSON](xref:System.Text.Encodings.Web.JavaScriptEncoder)e `'%'` para o [codificador de URL](xref:System.Text.Encodings.Web.UrlEncoder). Por exemplo, o codificador HTML sempre escapa e comercial ( `'&'` ), mesmo que o e comercial esteja no `BasicLatin` intervalo e todos os codificadores sejam inicializados com `BasicLatin` por padrão.
 
 ## <a name="serialize-all-characters"></a>Serializar todos os caracteres
 
@@ -101,4 +117,4 @@ Para minimizar a saída, você pode usar <xref:System.Text.Encodings.Web.JavaScr
 * [Gravar conversores personalizados para serialização JSON](system-text-json-converters-how-to.md)
 * [Suporte a DateTime e DateTimeOffset](../datetime/system-text-json-support.md)
 * [System.Text.Json Referência de API](xref:System.Text.Json)
-* [System.Text.Json. Referência da API de serialização](xref:System.Text.Json.Serialization)
+* [System.Text.Json. Referência de API de serialização](xref:System.Text.Json.Serialization)

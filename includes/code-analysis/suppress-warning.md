@@ -1,20 +1,11 @@
 ---
-ms.openlocfilehash: b26e346f7076a57aef8ae7587ab1222b4100a323
-ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
+ms.openlocfilehash: 8ce8b233169ec2854f6f92b166ff9a367f562553
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98957930"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99217621"
 ---
 ## <a name="suppress-a-warning"></a>Suprimir um aviso
 
-Para suprimir uma violação de regra, defina a opção severidade para a ID de regra específica como `none` em um arquivo EditorConfig. Por exemplo:
-
-```ini
-[*.{cs,vb}]
-dotnet_diagnostic.CA1822.severity = none
-```
-
-O Visual Studio fornece maneiras adicionais de suprimir avisos das regras de análise de código. Para obter mais informações, consulte [suprimir violações](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).
-
-Para obter mais informações sobre severidades de regra, consulte [Configurar a severidade da regra](~/docs/fundamentals/code-analysis/configuration-options.md#severity-level).
+Há várias maneiras de suprimir um aviso de análise de código, incluindo a desabilitação da regra para o projeto, o uso de uma diretiva de pré-processador para desabilitá-la em uma linha de código específica ou ao aplicar o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo. Para obter mais informações, consulte [como suprimir avisos de análise de código](../../docs/fundamentals/code-analysis/suppress-warnings.md).

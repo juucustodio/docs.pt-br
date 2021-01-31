@@ -197,7 +197,7 @@ items:
                 href: ../core/tools/sdk-errors/netsdk1079.md
               - name: NETSDK1145
                 href: ../core/tools/sdk-errors/netsdk1145.md
-      - name: CLI do .NET Core
+      - name: CLI do .NET
         items:
           - name: Visão geral
             displayName: '.net cli,command-line interface,cli,tool'
@@ -439,7 +439,7 @@ items:
                 href: ../fundamentals/diagnostics/runtime-type-events.md
           - name: Coletar diagnósticos em contêineres
             href: ../core/diagnostics/diagnostics-in-containers.md
-          - name: Ferramentas globais da CLI do .NET Core
+          - name: Ferramentas globais da CLI do .NET
             items:
               - name: dotnet-counters
                 href: ../core/diagnostics/dotnet-counters.md
@@ -453,7 +453,7 @@ items:
                 href: ../core/diagnostics/dotnet-symbol.md
               - name: dotnet-sos
                 href: ../core/diagnostics/dotnet-sos.md
-          - name: Tutoriais de diagnóstico do .NET Core
+          - name: Tutoriais de diagnóstico do .NET
             items:
               - name: Coletar rastreamento de desempenho no Linux com PerfCollect
                 href: ../core/diagnostics/trace-perfcollect-lttng.md
@@ -478,6 +478,8 @@ items:
                 href: code-analysis/configuration-options.md
               - name: Arquivos de configuração
                 href: code-analysis/configuration-files.md
+              - name: Como suprimir avisos
+                href: code-analysis/suppress-warnings.md
               - name: Regras de qualidade de código
                 items:
                   - name: Opções de regra
@@ -1296,15 +1298,15 @@ items:
                 href: ../core/dependency-loading/loading-unmanaged.md
           - name: Tutoriais
             items:
-              - name: Criar um aplicativo do .NET Core com plug-ins
+              - name: Criar um aplicativo .NET com plug-ins
                 href: ../core/tutorials/creating-app-with-plugin-support.md
-              - name: Como usar e depurar a capacidade de descarregamento de assembly no .NET Core
+              - name: Como usar e depurar a descargabilidade do assembly no .NET
                 href: ../core/../standard/assembly/unloadability.md
       - name: Controle de versão
         items:
           - name: Visão geral
             href: ../core/versions/index.md
-          - name: Seleção de versão do .NET Core
+          - name: Seleção de versão do .NET
             href: ../core/versions/selection.md
       - name: Configuração do runtime
         items:
@@ -1354,7 +1356,7 @@ items:
         items:
           - name: Introdução ao .NET e ao Docker
             href: ../core/docker/introduction.md
-          - name: Colocar em contêiner um aplicativo .NET Core
+          - name: Colocar um aplicativo .NET em contêiner
             href: ../core/docker/build-container.md
           - name: Ferramentas de contêiner no Visual Studio
             href: /visualstudio/containers/overview
@@ -1836,6 +1838,8 @@ items:
             displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
           - name: Padrão de opções
             href: ../core/extensions/options.md
+          - name: Diretrizes de padrão de opções para autores de biblioteca
+            href: ../core/extensions/options-library-authors.md
       - name: Registrando em log
         items:
           - name: Visão geral
@@ -2054,7 +2058,7 @@ items:
         href: ../core/testing/unit-testing-code-coverage.md
       - name: Saída publicada de teste de unidade
         href: ../core/testing/unit-testing-published-output.md
-      - name: Teste de unidade ao vivo de projetos do .NET Core com o Visual Studio
+      - name: Projetos .NET de teste de unidade ao vivo com o Visual Studio
         href: /visualstudio/test/live-unit-testing-start
   - name: Segurança
     href: ../standard/security/
@@ -2133,9 +2137,9 @@ items:
             href: ../standard/native-interop/best-practices.md
           - name: Conjuntos de caracteres e marshaling
             href: ../standard/native-interop/charset.md
-          - name: Expor componentes do .NET Core ao COM
+          - name: Expor componentes .NET ao COM
             href: ../core/native-interop/expose-components-to-com.md
-          - name: Como hospedar o .NET Core por meio de código nativo
+          - name: Hospedar .NET a partir de código nativo
             href: ../core/tutorials/netcore-hosting.md
           - name: interoperabilidade COM
             items:
@@ -2157,7 +2161,7 @@ items:
             href: ../standard/native-interop/apply-interop-attributes.md
           - name: Exceções
             href: ../standard/native-interop/exceptions-interoperability.md
-      - name: Pacote de distribuição do .NET Core
+      - name: Empacotamento de distribuição do .NET
         href: ../core/distribution-packaging.md
       - name: Globalização e localização
         href: ../standard/globalization-localization/
@@ -2295,7 +2299,7 @@ items:
             href: ../core/porting/third-party-deps.md
           - name: Portar bibliotecas
             href: ../core/porting/libraries.md
-          - name: Organizar projetos para o .NET Core
+          - name: Organizar projetos para .NET
             href: ../core/porting/project-structure.md
           - name: Tecnologias indisponíveis
             href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json

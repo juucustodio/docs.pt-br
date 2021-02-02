@@ -6,12 +6,12 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
 author: luisquintanilla
-ms.openlocfilehash: 16ccc8f40f290c4bc10f03d1f4d1b296b17f6b11
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 52d37f3c6b4907361bf0933942d8f1757669be24
+ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687812"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99426782"
 ---
 # <a name="tutorial-get-started-with-net-for-apache-spark"></a>Tutorial: introdução ao .NET para Apache Spark
 
@@ -80,7 +80,7 @@ Execute os comandos a seguir para definir as variáveis de ambiente usadas para 
 ```console
 setx /M HADOOP_HOME C:\bin\spark-3.0.1-bin-hadoop2.7\
 setx /M SPARK_HOME C:\bin\spark-3.0.1-bin-hadoop2.7\
-setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%\bin"
+setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%\bin" # Warning: Don't run this if your path is already long as it will truncate your path to 1024 characters and potentially remove entries!
 ```
 
 #### <a name="maclinux"></a>[Mac/Linux](#tab/linux)

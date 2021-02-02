@@ -12,12 +12,12 @@ helpviewer_keywords:
 - application development [.NET], globalization
 - culture, globalization
 ms.assetid: 4e919934-6b19-42f2-b770-275a4fae87c9
-ms.openlocfilehash: 055bdfa82ea0e1721a6125ba14d7b6340dc254b9
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 6ed1f6fa41b7a8b8ea8ecc89fa603836d72dfa8c
+ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829863"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99426965"
 ---
 # <a name="globalization"></a>Globalização
 
@@ -35,7 +35,7 @@ A manipulação de caracteres e cadeias de caracteres é um foco central da glob
 
 Por padrão, o .NET usa cadeias de caracteres Unicode. Uma cadeia de caracteres do Unicode consiste em zero e um ou mais objetos <xref:System.Char>, cada um dos quais representa uma unidade de código UTF-16. Há uma representação Unicode para quase todos os caracteres em cada conjunto de caracteres no uso em todo o mundo.
 
-Muitos aplicativos e sistemas operacionais, incluindo o sistema operacional Windows, também podem usar as páginas de código para representar conjuntos de caracteres. Páginas de código geralmente contêm valores ASCII padrão de 0x00 a 0x7F e mapeiam outros caracteres para os valores restantes de 0x80 a 0xFF. A interpretação dos valores de 0x80 a 0xFF depende da página de código específica. Por isso, se possível, evite usar as páginas de código em um aplicativo globalizado.
+Muitos aplicativos e sistemas operacionais, incluindo o sistema operacional Windows, também podem usar páginas de código para representar conjuntos de caracteres. Páginas de código geralmente contêm valores ASCII padrão de 0x00 a 0x7F e mapeiam outros caracteres para os valores restantes de 0x80 a 0xFF. A interpretação dos valores de 0x80 a 0xFF depende da página de código específica. Por isso, se possível, evite usar as páginas de código em um aplicativo globalizado.
 
 O exemplo a seguir ilustra os perigos da interpretação de dados de página de código quando a página de código padrão em um sistema é diferente da página de código no qual os dados foram salvos. (Para simular esse cenário, o exemplo especifica explicitamente páginas de código diferentes.) Primeiro, o exemplo define uma matriz que consiste nos caracteres maiúsculos do alfabeto grego. Ele os codifica em uma matriz de bytes usando a página de código 737 (também conhecida como MS-DOS grego) e salva a matriz de bytes em um arquivo. Se o arquivo é recuperado e sua matriz de bytes é decodificada usando a página de código 737, os caracteres originais são restaurados. No entanto, se o arquivo é recuperado e sua matriz de bytes é decodificada usando a página de código 1252 (ou Windows-1252, que representa os caracteres do alfabeto latino), os caracteres originais são perdidos.
 

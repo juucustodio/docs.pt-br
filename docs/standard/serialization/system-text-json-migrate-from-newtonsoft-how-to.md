@@ -13,14 +13,14 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 8c2d4baa9b9a3b19b8f1bde09bea0ab718092e24
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: 3c9383aed97ed3b22f8fccdd55a9fa5664edef2d
+ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97512639"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99426925"
 ---
-# <a name="how-to-migrate-from-no-locnewtonsoftjson-to-no-locsystemtextjson"></a>Como migrar do Newtonsoft.Json para o System.Text.Json
+# <a name="how-to-migrate-from-newtonsoftjson-to-systemtextjson"></a>Como migrar do Newtonsoft.Json para o System.Text.Json
 
 Este artigo mostra como migrar do [Newtonsoft.Json](https://www.newtonsoft.com/json) para o <xref:System.Text.Json> .
 
@@ -34,7 +34,7 @@ O `System.Text.Json` namespace fornece a funcionalidade para serializar e desser
 
 A maior parte deste artigo é sobre como usar a <xref:System.Text.Json.JsonSerializer> API, mas também inclui orientação sobre como usar o <xref:System.Text.Json.JsonDocument> (que representa os tipos modelo de objeto do documento ou dom), <xref:System.Text.Json.Utf8JsonReader> e <xref:System.Text.Json.Utf8JsonWriter> .
 
-## <a name="table-of-differences-between-no-locnewtonsoftjson-and-no-locsystemtextjson"></a>Tabela de diferenças entre Newtonsoft.Json e System.Text.Json
+## <a name="table-of-differences-between-newtonsoftjson-and-systemtextjson"></a>Tabela de diferenças entre Newtonsoft.Json e System.Text.Json
 
 A tabela a seguir lista os `Newtonsoft.Json` recursos e `System.Text.Json` equivalentes. Os equivalentes se enquadram nas seguintes categorias:
 
@@ -128,7 +128,7 @@ A tabela a seguir lista os `Newtonsoft.Json` recursos e `System.Text.Json` equiv
 
 Esta não é uma lista completa de `Newtonsoft.Json` recursos. A lista inclui muitos dos cenários que foram solicitados em [problemas do GitHub](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) ou postagens do [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) . Se você implementar uma solução alternativa para um dos cenários listados aqui que não tem um código de exemplo, e se você quiser compartilhar sua solução, selecione **esta página** na seção de **comentários** na parte inferior desta página. Isso cria um problema no repositório GitHub da documentação e o lista na seção de **comentários** nesta página também.
 
-## <a name="differences-in-default-jsonserializer-behavior-compared-to-no-locnewtonsoftjson"></a>Diferenças no comportamento padrão de JsonSerializer em comparação com Newtonsoft.Json
+## <a name="differences-in-default-jsonserializer-behavior-compared-to-newtonsoftjson"></a>Diferenças no comportamento padrão de JsonSerializer em comparação com Newtonsoft.Json
 
 <xref:System.Text.Json> é estrito por padrão e evita qualquer adivinhação ou interpretação em nome do chamador, enfatizando o comportamento determinístico. A biblioteca foi projetada intencionalmente dessa forma para desempenho e segurança. `Newtonsoft.Json` é flexível por padrão. Essa diferença fundamental no design está por trás de muitas das diferenças específicas a seguir no comportamento padrão.
 
@@ -388,7 +388,12 @@ Para dar suporte a um dicionário com um inteiro ou algum outro tipo como a chav
 <xref:System.Text.Json> o não fornece suporte interno para os seguintes tipos:
 
 * <xref:System.Data.DataTable> e tipos relacionados
+::: zone pivot="dotnet-5-0"
+* Tipos F #, como [uniões discriminadas](../../fsharp/language-reference/discriminated-unions.md). [Tipos de registro](../../fsharp/language-reference/records.md) e [tipos de registros anônimos](../../fsharp/language-reference/anonymous-records.md) são tratados como imutáveis POCOs e, portanto, têm suporte.
+::: zone-end
+::: zone pivot="dotnet-core-3-1"
 * Tipos F #, como [uniões discriminadas](../../fsharp/language-reference/discriminated-unions.md), [tipos de registro](../../fsharp/language-reference/records.md)e [tipos de registros anônimos](../../fsharp/language-reference/anonymous-records.md).
+::: zone-end
 * <xref:System.Dynamic.ExpandoObject>
 * <xref:System.TimeZoneInfo>
 * <xref:System.Numerics.BigInteger>

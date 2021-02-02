@@ -7,12 +7,12 @@ helpviewer_keywords:
 - platform invoke, attribute fields
 - attribute fields in platform invoke, EntryPoint
 ms.assetid: d1247f08-0965-416a-b978-e0b50652dfe3
-ms.openlocfilehash: d5c6b651b3b5f19eea8e61bc17da92158be87957
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a8a45513469c5ee1ec24aae12b02877c9a431513
+ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266357"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99426938"
 ---
 # <a name="specifying-an-entry-point"></a>Especificando um ponto de entrada
 
@@ -77,7 +77,7 @@ using System.Runtime.InteropServices;
 internal static class NativeMethods
 {
     [DllImport("user32.dll", EntryPoint = "MessageBoxA")]
-    internal static extern int MessageBox(
+    internal static extern int MsgBox(
         IntPtr hWnd, string lpText, string lpCaption, uint uType);
 }
 ```
@@ -92,7 +92,7 @@ extern "C" int MsgBox(
     HWND hWnd, String* lpText, String* lpCaption, unsigned int uType);
 ```
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - [Criando protótipos em código gerenciado](creating-prototypes-in-managed-code.md)

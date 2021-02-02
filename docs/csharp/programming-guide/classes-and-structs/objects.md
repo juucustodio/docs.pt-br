@@ -6,12 +6,12 @@ helpviewer_keywords:
 - objects [C#], about objects
 - variables [C#]
 ms.assetid: af4a5230-fbf3-4eea-95e1-8b883c2f845c
-ms.openlocfilehash: 61d79f5647fa05edade9aef90653544b08c20c83
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e49bfaf573c317523b739796c29d807e5369ada4
+ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181824"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99427068"
 ---
 # <a name="objects-c-programming-guide"></a>Objetos (Guia de Programação em C#)
 
@@ -24,7 +24,7 @@ Uma definição de classe ou struct é como um esquema que especifica o que o ti
 
  Como as classes são tipos de referência, uma variável de um objeto de classe contém uma referência ao endereço do objeto no heap gerenciado. Se um segundo objeto do mesmo tipo for atribuído ao primeiro objeto, as duas variáveis farão referência ao objeto nesse endereço. Esse ponto é abordado com mais detalhes posteriormente neste tópico.  
   
- Instâncias de classes são criadas usando o [operador new](../../language-reference/operators/new-operator.md). No exemplo a seguir, `Person` é o tipo e `person1` e `person 2` são instâncias ou objetos desse tipo.  
+ Instâncias de classes são criadas usando o [operador new](../../language-reference/operators/new-operator.md). No exemplo a seguir, `Person` é o tipo e `person1` e `person2` são instâncias ou objetos desse tipo.  
   
  [!code-csharp[csProgGuideStatements#30](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#30)]  
   
@@ -63,7 +63,7 @@ Uma definição de classe ou struct é como um esquema que especifica o que o ti
   
 - [Eventos](../events/index.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guia de programação C#](../index.md)
 - [object](../../language-reference/builtin-types/reference-types.md)

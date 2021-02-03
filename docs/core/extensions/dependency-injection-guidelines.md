@@ -5,12 +5,12 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 10/29/2020
 ms.topic: guide
-ms.openlocfilehash: 6b12d0d607dc0aed8f281943cecf3afa69b0575a
-ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
+ms.openlocfilehash: 105536df873829dc79dcca1b86d080360e71303f
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97899436"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505400"
 ---
 # <a name="dependency-injection-guidelines"></a>Diretrizes de injeção de dependência
 
@@ -176,7 +176,7 @@ Além das diretrizes neste artigo, há vários antipadrões *que você **deve** 
 
 ### <a name="disposable-transient-services-captured-by-container"></a>Serviços transitórios descartáveis capturados pelo contêiner
 
-Quando você registra serviços *transitórios* que implementam <xref:System.IDisposable> , por padrão, o contêiner di manterá essas referências e não delas <xref:System.IDisposable.Dispose> até que o aplicativo pare. Isso pode transformar em um vazamento de memória se resolvido no contêiner de nível.
+Quando você registra serviços *transitórios* que implementam <xref:System.IDisposable> , por padrão, o contêiner di manterá essas referências e não delas <xref:System.IDisposable.Dispose> até que o contêiner seja Descartado quando o aplicativo for interrompido se ele for resolvido no contêiner ou até que o escopo seja Descartado se eles forem resolvidos a partir de um escopo. Isso pode transformar em um vazamento de memória se resolvido do nível de contêiner.
 
 :::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" range="18-30":::
 
@@ -220,7 +220,7 @@ Ao usar serviços com escopo, se você não estiver criando um escopo ou dentro 
 
 No código anterior, `Bar` é recuperado em um <xref:Microsoft.Extensions.DependencyInjection.IServiceScope> , que está correto. O antipadrão é a recuperação de `Bar` fora do escopo, e a variável é nomeada `avoid` para mostrar qual exemplo de recuperação está incorreto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Injeção de dependência no .NET](dependency-injection.md)
 - [Tutorial: usar injeção de dependência no .NET](dependency-injection-usage.md)

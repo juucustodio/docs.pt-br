@@ -4,12 +4,12 @@ description: Saiba mais sobre quais versões do macOS você pode instalar o .NET
 author: adegeo
 ms.author: adegeo
 ms.date: 11/10/2020
-ms.openlocfilehash: b1434938a8e8e81da81e495a6b99e6c99467aae1
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: 871263b820aaf4cc04e573dd4aa3022caa401857
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009352"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506299"
 ---
 # <a name="install-net-on-macos"></a>Instalar o .NET no macOS
 
@@ -53,13 +53,13 @@ Não há mais suporte para as seguintes versões do .NET ❌ . Os downloads para
 
 O tempo de execução é usado para executar aplicativos criados com o .NET. Quando um autor de aplicativo publica um aplicativo, ele pode incluir o tempo de execução com seu aplicativo. Se eles não incluírem o tempo de execução, cabe ao usuário instalar o tempo de execução.
 
-Há três tempos de execução diferentes que você pode instalar no macOS:
+Há dois tempos de execução diferentes que você pode instalar no macOS:
 
-*Tempo de execução ASP.NET Core*\
-Executa ASP.NET Core aplicativos. Inclui o tempo de execução do .NET.
+- *Tempo de execução ASP.NET Core*\
+  Executa ASP.NET Core aplicativos. Inclui o tempo de execução do .NET.
 
-*Tempo de execução do .NET*\
-Esse tempo de execução é o tempo de execução mais simples e não inclui nenhum outro tempo de execução. É altamente recomendável que você instale *ASP.NET Core tempo de execução* para obter a melhor compatibilidade com aplicativos .net.
+- *Tempo de execução do .NET*\
+  Esse tempo de execução é o tempo de execução mais simples e não inclui nenhum outro tempo de execução. É altamente recomendável que você instale *ASP.NET Core tempo de execução* para obter a melhor compatibilidade com aplicativos .net.
 
 > [!div class="button"]
 > [Baixar o tempo de execução do .NET](https://dotnet.microsoft.com/download/dotnet-core)
@@ -125,20 +125,15 @@ Em seguida, extraia o arquivo baixado e use o `export` comando para definir as v
 
 Para extrair o tempo de execução e tornar os comandos da CLI do .NET disponíveis no terminal, primeiro Baixe uma versão binária do .NET. Em seguida, abra um terminal e execute os seguintes comandos no diretório em que o arquivo foi salvo. O nome do arquivo morto pode ser diferente dependendo do que você baixou.
 
-**Use o seguinte comando para extrair o tempo de execução**:
+**Use os comandos a seguir para extrair o tempo de execução ou o SDK que você baixou.** Lembre-se de alterar o `DOTNET_FILE` valor para o nome do arquivo:
 
 ```bash
-mkdir -p "$HOME/dotnet" && tar zxf aspnetcore-runtime-5.0.0-osx-x64.tar.gz -C "$HOME/dotnet"
+DOTNET_FILE=dotnet-sdk-5.0.102-linux-x64.tar.gz
 export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
-```
 
-**Use o seguinte comando para extrair o SDK**:
+mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 
-```bash
-mkdir -p "$HOME/dotnet" && tar zxf dotnet-sdk-5.0.100-osx-x64.tar.gz -C "$HOME/dotnet"
-export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
+export PATH=$PATH:$DOTNET_ROOT
 ```
 
 > [!TIP]

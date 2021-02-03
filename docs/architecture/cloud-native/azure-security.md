@@ -1,13 +1,13 @@
 ---
 title: Segurança do Azure para aplicativos nativos de nuvem
 description: Arquitetando aplicativos .NET nativos da nuvem para o Azure | Segurança do Azure para aplicativos nativos de nuvem
-ms.date: 12/01/2020
-ms.openlocfilehash: 5e541606c762ea192ab8767e78e9b7346b3ec9c1
-ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
+ms.date: 01/19/2021
+ms.openlocfilehash: 1e2dce97a43479d49aecf220893efcc19bb00a8c
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509813"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505876"
 ---
 # <a name="azure-security-for-cloud-native-apps"></a>Segurança do Azure para aplicativos nativos de nuvem
 
@@ -117,7 +117,7 @@ O primeiro componente no RBAC é uma entidade de segurança. Uma entidade de seg
 - Entidade de serviço-uma identidade de segurança na qual os serviços ou aplicativos são executados.
 - Identidade gerenciada-uma identidade de Azure Active Directory gerenciada pelo Azure. Identidades gerenciadas são normalmente usadas ao desenvolver aplicativos de nuvem que gerenciam as credenciais para autenticação nos serviços do Azure.
 
-A entidade de segurança pode ser aplicada à maioria dos recursos. Isso significa que é possível atribuir uma entidade de segurança a um contêiner em execução no Azure kubernetes, permitindo que ele acesse os segredos armazenados no Key Vault. Uma função do Azure pode assumir uma permissão que permite que ele se comunique com uma instância de Active Directory para validar um JWT para um usuário de chamada. Depois que os serviços são habilitados com uma entidade de serviço, suas permissões podem ser gerenciadas de maneira granular usando funções e escopos.
+A entidade de segurança pode ser aplicada à maioria dos recursos. Esse aspecto significa que é possível atribuir uma entidade de segurança a um contêiner em execução no Azure kubernetes, permitindo que ele acesse os segredos armazenados no Key Vault. Uma função do Azure pode assumir uma permissão que permite que ele se comunique com uma instância de Active Directory para validar um JWT para um usuário de chamada. Depois que os serviços são habilitados com uma entidade de serviço, suas permissões podem ser gerenciadas de maneira granular usando funções e escopos.
 
 ## <a name="roles"></a>Funções
 
@@ -159,7 +159,7 @@ Senhas e certificados são um vetor de ataque comum para invasores. O hardware d
 
 Muitos especialistas em segurança [sugerem](https://www.troyhunt.com/password-managers-dont-have-to-be-perfect-they-just-have-to-be-better-than-not-having-one/) que usar um Gerenciador de senhas para manter suas próprias senhas é a melhor abordagem. Embora centralize suas senhas em um único local, ela também permite o uso de senhas altamente complexas e a garantia de que são exclusivas para cada conta. O mesmo sistema existe no Azure: um repositório central para segredos.
 
-## <a name="azure-key-vault"></a>Azure Key Vault
+## <a name="azure-key-vault"></a>Cofre de Chave do Azure
 
 Azure Key Vault fornece um local centralizado para armazenar senhas para coisas como bancos de dados, chaves de API e certificados. Depois que um segredo é inserido no cofre, ele nunca é mostrado novamente e os comandos para extraí-los e exibi-los são propositadamente complicados. As informações no seguro são protegidas usando os módulos de segurança de hardware validados por criptografia de software ou FIPS 140-2 nível 2.
 

@@ -1,19 +1,19 @@
 ---
 title: Configuração centralizada
 description: Centralizando a configuração para aplicativos nativos de nuvem usando o Azure App Configuration e o cofre AzureKey.
-ms.date: 05/13/2020
-ms.openlocfilehash: 0d40c5b2d70f30beb17489dfd55900f7c5fc1a75
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 770c0c19a6de01250c59a586badb6a4afa2e9ae5
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91160873"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505707"
 ---
 # <a name="centralized-configuration"></a>Configuração centralizada
 
 Ao contrário de um aplicativo monolítico no qual tudo é executado em uma única instância, um aplicativo nativo de nuvem consiste em serviços independentes distribuídos entre máquinas virtuais, contêineres e regiões geográficas. O gerenciamento de definições de configuração para dezenas de serviços interdependentes pode ser desafiador. Cópias duplicadas de definições de configuração em locais diferentes são propensas a erros e são difíceis de gerenciar. A configuração centralizada é um requisito crítico para aplicativos nativos de nuvem distribuída.
 
-Conforme discutido no [capítulo 1](introduction.md), as recomendações do aplicativo de doze fatores exigem uma separação estrita entre o código e a configuração. A configuração deve ser armazenada externamente do aplicativo e de leitura, conforme necessário. O armazenamento de valores de configuração como constantes ou valores literais no código é uma violação. Os mesmos valores de configuração geralmente são usados por muitos serviços no mesmo aplicativo. Além disso, devemos dar suporte aos mesmos valores em vários ambientes, como desenvolvimento, teste e produção. A prática recomendada é armazená-los em um repositório de configurações centralizado.
+Conforme discutido no [capítulo 1](introduction.md), as recomendações de aplicativo Twelve-Factor exigem uma separação estrita entre código e configuração. A configuração deve ser armazenada externamente do aplicativo e de leitura, conforme necessário. O armazenamento de valores de configuração como constantes ou valores literais no código é uma violação. Os mesmos valores de configuração geralmente são usados por muitos serviços no mesmo aplicativo. Além disso, devemos dar suporte aos mesmos valores em vários ambientes, como desenvolvimento, teste e produção. A prática recomendada é armazená-los em um repositório de configurações centralizado.
 
 A nuvem do Azure apresenta várias ótimas opções.
 

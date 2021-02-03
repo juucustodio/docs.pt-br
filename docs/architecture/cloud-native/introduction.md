@@ -2,13 +2,13 @@
 title: Introdução aos aplicativos nativos de nuvem
 description: Saiba mais sobre a computação nativa na nuvem
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: 6ec02a1388d6e0f26cdaa1f728f23a22ba52d735
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.date: 01/19/2021
+ms.openlocfilehash: 852eed27d4cfcaefdfa89a73c54414a6306ed28d
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83613935"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506091"
 ---
 # <a name="introduction-to-cloud-native-applications"></a>Introdução aos aplicativos nativos de nuvem
 
@@ -42,7 +42,7 @@ Nem todos são ruins. Os monolíticos oferecem algumas vantagens distintas. Por 
 - solucionar problemas
 - scale
 
-Muitos aplicativos bem-sucedidos que existem hoje foram criados como monolíticos. O aplicativo é um problema e continua a evoluir, iterar após a iteração, adicionar cada vez mais funcionalidade.
+Muitos aplicativos bem-sucedidos que existem hoje foram criados como monolíticos. O aplicativo é um problema e continua a evoluir, iteração após a iteração, adicionando mais funcionalidade.
 
 Em algum momento, no entanto, você começa a se sentir desconfortável. Você se encontra perdendo o controle do aplicativo. Com o passar do tempo, a sensação se torna mais intensa e, eventualmente, você insere um estado conhecido como `Fear Cycle` .
 
@@ -58,7 +58,7 @@ Em algum momento, no entanto, você começa a se sentir desconfortável. Você s
 
 Muitas organizações solucionaram o ciclo de medo monolítico adotando uma abordagem nativa de nuvem para a criação de sistemas. A Figura 1-2 mostra o mesmo sistema criado para aplicar técnicas e práticas nativas de nuvem.
 
-![Design nativo de nuvem](./media/cloud-native-design.png)
+![Design de Cloud-Native](./media/cloud-native-design.png)
 
 **Figura 1-2**. Design nativo de nuvem
 

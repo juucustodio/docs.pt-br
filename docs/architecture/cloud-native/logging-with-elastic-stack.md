@@ -1,13 +1,13 @@
 ---
 title: Como registrar em log com a pilha elástica
 description: Registro em log usando Stack elástico, Logstash e Kibana
-ms.date: 05/13/2020
-ms.openlocfilehash: 3f10b0d06c87b7bed6d3e302742b1dc52e2c9d3b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: ebe7eef16d3b1a73d0fd3a010a509bbaf7be3fd5
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155335"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505811"
 ---
 # <a name="logging-with-elastic-stack"></a>Como registrar em log com a pilha elástica
 
@@ -26,7 +26,7 @@ KUBE_ENABLE_NODE_LOGGING=true
 
 **Figura 7-5**. Variáveis de configuração para kubernetes
 
-Isso instalará o Elasticsearch no cluster e o destino enviando todos os logs de cluster para ele.
+Esta etapa instalará o Elasticsearch no cluster e o destino enviando todos os logs de cluster para ele.
 
 ![Um exemplo de um painel de Kibana mostrando os resultados de uma consulta em relação a logs ingeridos da ](./media/kibana-dashboard.png)
  **figura kubernetes 7-6**. Um exemplo de um painel de Kibana que mostra os resultados de uma consulta em relação aos logs que são ingeridos do kubernetes
@@ -39,7 +39,7 @@ A pilha elástica fornece registro em log centralizado de maneira econômica, es
 
 O primeiro componente é [Logstash](https://www.elastic.co/products/logstash). Essa ferramenta é usada para coletar informações de log de uma grande variedade de fontes diferentes. Por exemplo, Logstash pode ler logs do disco e também receber mensagens de bibliotecas de log, como [Serilog](https://serilog.net/). O Logstash pode fazer alguma filtragem básica e expansão nos logs à medida que eles chegam. Por exemplo, se os logs contiverem endereços IP, Logstash poderá ser configurado para fazer uma pesquisa geográfica e obter um país ou até mesmo uma cidade de origem para essa mensagem.
 
-Serilog é uma biblioteca de registro em log para linguagens .NET, que permite o registro em log com parâmetros. Em vez de gerar uma mensagem de log textual que incorpore campos, os parâmetros são mantidos separados. Isso permite a filtragem e a pesquisa mais inteligentes. Uma configuração de Serilog de exemplo para gravação em Logstash aparece na Figura 7-7.
+Serilog é uma biblioteca de registro em log para linguagens .NET, que permite o registro em log com parâmetros. Em vez de gerar uma mensagem de log textual que incorpore campos, os parâmetros são mantidos separados. Essa biblioteca permite a filtragem e a pesquisa mais inteligentes. Uma configuração de Serilog de exemplo para gravação em Logstash aparece na Figura 7-7.
 
 ```csharp
 var log = new LoggerConfiguration()

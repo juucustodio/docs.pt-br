@@ -4,12 +4,12 @@ author: IEvangelist
 description: Saiba como usar a estrutura de registro em log fornecida pelo pacote do NuGet Microsoft.Extensions.Logging.
 ms.author: dapine
 ms.date: 09/30/2020
-ms.openlocfilehash: 73c16c80e7e000533b880e908b38109d2b1e88fd
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: 80695558cabb741bc25e7fe2650d4a99f9c25c1f
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851725"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505622"
 ---
 # <a name="logging-in-net"></a>Registro em log no .NET
 
@@ -64,7 +64,7 @@ O nível de log mínimo pode ser especificado para qualquer um dos:
 - Categorias específicas: por exemplo, `Logging:LogLevel:Microsoft:Warning`
 - Todos os provedores e todas as categorias: `Logging:LogLevel:Default:Warning`
 
-Todos os logs abaixo do nível mínimo são ***não** _:
+Todos os logs abaixo do nível mínimo ***não*** são:
 
 - Passado para o provedor.
 - Registrado ou exibido.
@@ -73,7 +73,7 @@ Para suprimir todos os logs, especifique [LogLevel. None](xref:Microsoft.Extensi
 
 Se um provedor oferecer suporte a [escopos de log](#log-scopes), `IncludeScopes` indica se eles estão habilitados. Para obter mais informações, consulte [escopos de log](#log-scopes)
 
-O seguinte _appsettings.jsem * arquivo contém configurações para todos os provedores internos:
+O seguinte *appsettings.jsno* arquivo contém configurações para todos os provedores internos:
 
 :::code language="json" source="snippets/configuration/worker-service/appsettings.Production.json":::
 
@@ -169,7 +169,7 @@ namespace Example
 }
 ```
 
-Chamar `CreateLogger` com um nome fixo pode ser útil quando usado em vários métodos para que os eventos possam ser organizados por categoria.
+Chamar `CreateLogger` com um nome fixo pode ser útil quando usado em várias classes/tipos para que os eventos possam ser organizados por categoria.
 
 `ILogger<T>` é equivalente a chamar `CreateLogger` com o nome de tipo totalmente qualificado de `T`.
 
@@ -179,13 +179,13 @@ A tabela a seguir lista os <xref:Microsoft.Extensions.Logging.LogLevel> valores,
 
 | LogLevel | Valor | Método | Descrição |
 |--|--|--|--|
-| [Trace](xref:Microsoft.Extensions.Logging.LogLevel) | 0 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace%2A> | Conter as mensagens mais detalhadas. Essas mensagens podem conter dados confidenciais do aplicativo. Essas mensagens são desabilitadas por padrão e devem ***não** ser habilitadas na produção. |
+| [Trace](xref:Microsoft.Extensions.Logging.LogLevel) | 0 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace%2A> | Conter as mensagens mais detalhadas. Essas mensagens podem conter dados confidenciais do aplicativo. Essas mensagens são desabilitadas por padrão e ***não*** devem ser habilitadas na produção. |
 | [Depurar](xref:Microsoft.Extensions.Logging.LogLevel) | 1 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug%2A> | Para depuração e desenvolvimento. Use com cuidado na produção devido ao alto volume. |
 | [Informações](xref:Microsoft.Extensions.Logging.LogLevel) | 2 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> | Rastreia o fluxo geral do aplicativo. Pode ter um valor de longo prazo. |
 | [Aviso](xref:Microsoft.Extensions.Logging.LogLevel) | 3 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> | Para eventos anormais ou inesperados. Normalmente inclui erros ou condições que não fazem com que o aplicativo falhe. |
 | [Erro](xref:Microsoft.Extensions.Logging.LogLevel) | 4 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError%2A> | Para erros e exceções que não podem ser manipulados. Essas mensagens indicam uma falha na operação ou solicitação atual, não uma falha em todo o aplicativo. |
 | [Crítico](xref:Microsoft.Extensions.Logging.LogLevel) | 5 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogCritical%2A> | Para falhas que exigem atenção imediata. Exemplos: cenários de perda de dados, espaço em disco insuficiente. |
-| [Nenhum](xref:Microsoft.Extensions.Logging.LogLevel) | 6 |  | Especifica que nenhuma mensagem deve ser gravada. |
+| [Nenhuma](xref:Microsoft.Extensions.Logging.LogLevel) | 6 |  | Especifica que nenhuma mensagem deve ser gravada. |
 
 Na tabela anterior, o `LogLevel` é listado da severidade mais baixa para a mais alta.
 
@@ -239,7 +239,7 @@ Os seguintes conjuntos JSON `Logging:Console:LogLevel:Microsoft:Information` :
 
 ## <a name="log-event-id"></a>ID de evento de log
 
-Cada log pode especificar um _event um identificador *, o <xref:Microsoft.Extensions.Logging.EventId> é uma estrutura com `Id` `Name` as propriedades ReadOnly opcionais. O código-fonte de exemplo usa a `AppLogEvents` classe para definir IDs de evento:
+Cada log pode especificar um *identificador de evento*, o <xref:Microsoft.Extensions.Logging.EventId> é uma estrutura com `Id` `Name` as propriedades ReadOnly opcionais. O código-fonte de exemplo usa a `AppLogEvents` classe para definir IDs de evento:
 
 ```csharp
 internal static class AppLogEvents
@@ -526,7 +526,7 @@ class Program
 - Nível `Information` de log e superior.
 - Todas as categorias que começam com `"Microsoft"` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Provedores de log no .NET](logging-providers.md)
 - [Implementar um provedor de log personalizado no .NET](custom-logging-provider.md)

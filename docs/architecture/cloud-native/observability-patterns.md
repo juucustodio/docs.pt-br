@@ -1,17 +1,17 @@
 ---
 title: Padrões de observabilidade
 description: Padrões de observação para aplicativos nativos de nuvem
-ms.date: 08/10/2020
-ms.openlocfilehash: 2a6ef0e58f1e20667167042614768b099f640858
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 01/19/2021
+ms.openlocfilehash: acb1dc5c62787e9487c0e95c7e86a8f9a1967951
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539847"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506013"
 ---
 # <a name="observability-patterns"></a>Padrões de observabilidade
 
-Assim como os padrões foram desenvolvidos para auxiliar no layout do código em aplicativos, há padrões para aplicativos operacionais de maneira confiável. Três padrões úteis na manutenção de aplicativos surgiram: **log**, **monitoramento**e **alertas**.
+Assim como os padrões foram desenvolvidos para auxiliar no layout do código em aplicativos, há padrões para aplicativos operacionais de maneira confiável. Três padrões úteis na manutenção de aplicativos surgiram: **log**, **monitoramento** e **alertas**.
 
 ## <a name="when-to-use-logging"></a>Quando usar o registro em log
 
@@ -44,7 +44,7 @@ Cada linguagem de programação tem ferramentas que permitem a gravação de log
 * Depurar
 * Informações
 * Aviso
-* Erro
+* Erro do
 * Fatais
 
 Esses diferentes níveis de log fornecem granularidade no registro em log. Quando o aplicativo está funcionando corretamente na produção, ele pode ser configurado para registrar apenas mensagens importantes. Quando o aplicativo está com comportamento inadequado, o nível de log pode ser aumentado para que logs mais detalhados sejam coletados. Isso equilibra o desempenho contra a facilidade de depuração.
@@ -74,7 +74,7 @@ Implementado corretamente, o monitoramento pode informá-lo sobre condições qu
 
 Alguns sistemas de registro em log centralizados assumem uma função adicional de coleta de telemetria fora de logs puros. Eles podem coletar métricas, como tempo para executar uma consulta de banco de dados, tempo médio de resposta de um servidor Web e até mesmo médias de carga de CPU e pressão de memória, conforme relatado pelo sistema operacional. Em conjunto com os logs, esses sistemas podem fornecer uma visão holística da integridade dos nós no sistema e do aplicativo como um todo.
 
-Os recursos de coleta de métrica das ferramentas de monitoramento também podem ser alimentados manualmente de dentro do aplicativo. Os fluxos de negócios que são de interesse particular, como novos usuários se inscrevendo ou encomendando, podem ser instrumentados de forma que eles incrementam um contador no sistema de monitoramento central. Isso desbloqueia as ferramentas de monitoramento para não apenas monitorar a integridade do aplicativo, mas a integridade dos negócios.
+Os recursos de coleta de métrica das ferramentas de monitoramento também podem ser alimentados manualmente de dentro do aplicativo. Os fluxos de negócios que são de interesse particular, como novos usuários se inscrevendo ou encomendando, podem ser instrumentados de forma que eles incrementam um contador no sistema de monitoramento central. Esse aspecto desbloqueia as ferramentas de monitoramento para não apenas monitorar a integridade do aplicativo, mas a integridade dos negócios.
 
 As consultas podem ser construídas nas ferramentas de agregação de log para procurar determinadas estatísticas ou padrões, que podem ser exibidas em formato gráfico, em painéis personalizados. Frequentemente, as equipes investirão em grandes exibições com montagem de parede que giram pelas estatísticas relacionadas a um aplicativo. Dessa forma, é simples Ver os problemas conforme eles ocorrem.
 

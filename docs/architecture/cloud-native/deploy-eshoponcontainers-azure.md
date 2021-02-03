@@ -1,23 +1,23 @@
 ---
 title: Como implantar o eShopOnContainers no Azure
 description: Implantando o aplicativo eShopOnContainers usando o serviço kubernetes do Azure, o Helm e o DevSpaces.
-ms.date: 05/13/2020
-ms.openlocfilehash: b3871dae2b414709bfe24b6f7bdbf06de1689d12
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 8fc1343eac7f03c984c3a279d5a8c7908e37f0d1
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91160717"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505785"
 ---
 # <a name="deploying-eshoponcontainers-to-azure"></a>Como implantar o eShopOnContainers no Azure
 
-O aplicativo eShopOnContainers pode ser implantado em uma variedade de plataformas do Azure. A abordagem recomendada é implantar o aplicativo nos AKS (serviços Kubernetess do Azure). O Helm, uma ferramenta de implantação do kubernetes, está disponível para reduzir a complexidade da implantação. Opcionalmente, os desenvolvedores podem implementar Azure Dev Spaces para kubernetes para simplificar seu processo de desenvolvimento.
+O aplicativo eShopOnContainers pode ser implantado em várias plataformas do Azure. A abordagem recomendada é implantar o aplicativo nos AKS (serviços Kubernetess do Azure). O Helm, uma ferramenta de implantação do kubernetes, está disponível para reduzir a complexidade da implantação. Opcionalmente, os desenvolvedores podem implementar Azure Dev Spaces para kubernetes para simplificar seu processo de desenvolvimento.
 
 ## <a name="azure-kubernetes-service"></a>Serviço de Kubernetes do Azure
 
-Para hospedar eShop em AKS, a primeira etapa é criar um cluster AKS. Para fazer isso, você pode usar o portal do Azure, que irá orientá-lo pelas etapas necessárias. Você também pode criar um cluster do CLI do Azure, tomando cuidado para habilitar o controle de acesso baseado em função (RBAC) e o roteamento de aplicativos. A documentação do eShopOnContainers ' fornece detalhes sobre as etapas para criar seu próprio cluster AKS. Depois de criado, você pode acessar e gerenciar o cluster no painel do kubernetes.
+Para hospedar eShop em AKS, a primeira etapa é criar um cluster AKS. Para fazer isso, você pode usar o portal do Azure, que irá orientá-lo pelas etapas necessárias. Você também pode criar um cluster do CLI do Azure, tomando cuidado para habilitar o controle de acesso Role-Based (RBAC) e o roteamento de aplicativos. A documentação do eShopOnContainers ' fornece detalhes sobre as etapas para criar seu próprio cluster AKS. Depois de criado, você pode acessar e gerenciar o cluster no painel do kubernetes.
 
-Agora você pode implantar o aplicativo eShop no cluster, aproveitando o Helm e o Gavetar.
+Agora você pode implantar o aplicativo eShop no cluster usando o Helm.
 
 ## <a name="deploying-to-azure-kubernetes-service-using-helm"></a>Implantando no serviço kubernetes do Azure usando o Helm
 

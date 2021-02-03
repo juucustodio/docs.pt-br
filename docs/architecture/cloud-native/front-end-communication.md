@@ -2,13 +2,13 @@
 title: Comunicação front-end de cliente
 description: Saiba como os clientes front-end se comunicam com sistemas nativos de nuvem
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: 147adb3d0375f8bf5dadf14e1237aa93e9e42908
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 089f55f8f6b9320fe552602eb40bb83be28f119b
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158104"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506234"
 ---
 # <a name="front-end-client-communication"></a>Comunicação front-end de cliente
 
@@ -55,7 +55,7 @@ Para começar, você pode criar seu próprio serviço de gateway de API. Uma pes
 
 Para aplicativos nativos .NET de nuvem simples, você pode considerar o [Gateway Ocelot](https://github.com/ThreeMammals/Ocelot). Ocelot é um gateway de API de software livre criado para os microserviços .NET que exigem um ponto de entrada unificado em seu sistema. É leve, rápido e escalonável.
 
-Como qualquer gateway de API, sua principal funcionalidade é encaminhar solicitações HTTP de entrada para serviços downstream. Além disso, ele dá suporte a uma ampla variedade de recursos que podem ser configurados em um pipeline de middleware do .NET Core. Seu conjunto de recursos é apresentado na tabela a seguir.
+Como qualquer gateway de API, sua principal funcionalidade é encaminhar solicitações HTTP de entrada para serviços downstream. Além disso, ele dá suporte a uma ampla variedade de recursos que podem ser configurados em um pipeline de middleware do .NET. Seu conjunto de recursos é apresentado na tabela a seguir.
 
 |Recursos do Ocelot  | |
 | :-------- | :-------- |
@@ -64,7 +64,7 @@ Como qualquer gateway de API, sua principal funcionalidade é encaminhar solicit
 | Descoberta de serviço (com Consul e Eureka) | Limitação |
 | Balanceamento de carga | Registro em log, rastreamento |
 | Cache | Cabeçalhos/transformação de cadeia de consulta |
-| Passagem de correlação | Middleware personalizado |
+| Pass-Through de correlação | Middleware personalizado |
 | Qualidade de Serviço | Políticas de repetição |
 
 Cada gateway Ocelot especifica os endereços upstream e downstream e os recursos configuráveis em um arquivo de configuração JSON. O cliente envia uma solicitação HTTP para o gateway Ocelot. Depois de recebido, Ocelot passa o objeto HttpRequest por meio de seu pipeline manipulando-o para o estado especificado por sua configuração. No final do pipeline, o Ocelot cria um novo HTTPResponseobject e o passa para o serviço downstream. Para a resposta, o Ocelot reverte o pipeline, enviando a resposta de volta para o cliente.
@@ -128,7 +128,7 @@ Ele habilita recursos de gateway de API para os seguintes casos de uso:
 
 - Os microserviços implementados usando tecnologias sem servidor, como [Azure Functions](/azure/azure-functions/functions-overview) e [aplicativos lógicos do Azure](https://azure.microsoft.com/services/logic-apps/).
 - Recursos de serviço de backup do Azure, como filas e tópicos do barramento de serviço, armazenamento do Azure e outros.
-- Microserviços em que o tráfego tem picos ocasionais grandes, mas permanece com pouca maior parte do tempo.
+- Microserviços em que o tráfego tem picos ocasionais grandes, mas permanece o mais baixo possível.
 
 O nível de consumo usa os mesmos componentes subjacentes de gerenciamento de API de serviço, mas emprega uma arquitetura totalmente diferente com base em recursos alocados dinamicamente. Ele se alinha perfeitamente com o modelo de computação sem servidor:
 
@@ -148,7 +148,7 @@ Os sistemas em tempo real geralmente são caracterizados por fluxos de dados de 
 
 O [serviço de signaler do Azure](https://azure.microsoft.com/services/signalr-service/) é um serviço do Azure totalmente gerenciado que simplifica a comunicação em tempo real para seus aplicativos nativos de nuvem. Detalhes de implementação técnica, como provisionamento de capacidade, dimensionamento e conexões persistentes, são dissociados. Eles são tratados para você com um contrato de nível de serviço de 99,9%. Você se concentra nos recursos do aplicativo, não no direcionamento da infraestrutura.
 
-Uma vez habilitado, um serviço HTTP baseado em nuvem pode enviar atualizações de conteúdo diretamente a clientes conectados, incluindo aplicativos de navegador, móveis e de área de trabalho. Os clientes são atualizados sem a necessidade de sondar o servidor. O Azure Signalr abstrai as tecnologias de transporte que criam conectividade em tempo real, incluindo WebSockets, eventos do lado do servidor e sondagem longa. Os desenvolvedores se concentram em enviar mensagens para todos ou subconjuntos específicos de clientes conectados.
+Uma vez habilitado, um serviço HTTP baseado em nuvem pode enviar atualizações de conteúdo diretamente a clientes conectados, incluindo aplicativos de navegador, móveis e de área de trabalho. Os clientes são atualizados sem a necessidade de sondar o servidor. O Azure Signalr abstrai as tecnologias de transporte que criam conectividade em tempo real, incluindo WebSockets, Server-Side eventos e sondagem longa. Os desenvolvedores se concentram em enviar mensagens para todos ou subconjuntos específicos de clientes conectados.
 
 A Figura 4-7 mostra um conjunto de clientes HTTP que se conectam a um aplicativo nativo de nuvem com o Signaler do Azure habilitado.
 

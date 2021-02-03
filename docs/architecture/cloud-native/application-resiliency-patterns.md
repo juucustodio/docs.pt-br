@@ -2,23 +2,23 @@
 title: Padrões de resiliência de aplicativo
 description: Arquitetando aplicativos .NET nativos da nuvem para o Azure | Padrões de resiliência do aplicativo
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: e81d6e1d6b95cf0053de3ba557068ff458a59dc9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 9a59a7d93b61b0dea11680f6caf0bd3b68a0f853
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161146"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505915"
 ---
 # <a name="application-resiliency-patterns"></a>Padrões de resiliência de aplicativo
 
 A primeira linha de defesa é a resiliência do aplicativo.
 
-Embora você possa investir um tempo considerável escrevendo sua própria estrutura de resiliência, esses produtos já existem. O [Polly](http://www.thepollyproject.org/) é uma biblioteca abrangente de resiliência do .net e tratamento transitório de falhas que permite aos desenvolvedores expressar políticas de resiliência de uma maneira fluente e thread-safe. O Polly tem como alvo aplicativos criados com o .NET Framework ou o .NET Core. A tabela a seguir descreve os recursos de resiliência, chamados `policies` , disponíveis na biblioteca Polly. Eles podem ser aplicados individualmente ou agrupados juntos.
+Embora você possa investir um tempo considerável escrevendo sua própria estrutura de resiliência, esses produtos já existem. O [Polly](http://www.thepollyproject.org/) é uma biblioteca abrangente de resiliência do .net e tratamento transitório de falhas que permite aos desenvolvedores expressar políticas de resiliência de uma maneira fluente e thread-safe. O Polly tem como alvo aplicativos criados com o .NET Framework ou o .NET 5. A tabela a seguir descreve os recursos de resiliência, chamados `policies` , disponíveis na biblioteca Polly. Eles podem ser aplicados individualmente ou agrupados juntos.
 
 | Política | Experiência |
 | :-------- | :-------- |
-| Tentar novamente | Configura operações de repetição em operações designadas. |
+| Repetir | Configura operações de repetição em operações designadas. |
 | Disjuntor | Bloqueia as operações solicitadas por um período predefinido quando as falhas excedem um limite configurado |
 | Tempo limite | Limita o limite da duração para a qual um chamador pode aguardar uma resposta. |
 | Bulkhead | Restringe ações ao pool de recursos de tamanho fixo para evitar chamadas com falha de um recurso congestionamento. |
@@ -38,7 +38,7 @@ Observe como, na figura anterior, as políticas de resiliência se aplicam a men
 
 Pergunta: você tentaria novamente um código de status HTTP de 403-Proibido? Não. Aqui, o sistema está funcionando corretamente, mas informando ao chamador que eles não estão autorizados a executar a operação solicitada. Deve-se ter cuidado para repetir apenas as operações causadas por falhas.
 
-Como recomendado no capítulo 1, os desenvolvedores da Microsoft que constroem aplicativos nativos de nuvem devem visar a plataforma .NET Core. A versão 2,1 introduziu a biblioteca [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) para criar instâncias de cliente http para interagir com recursos baseados em URL. Substituindo a classe HTTPClient original, a classe Factory dá suporte a muitos recursos avançados, um dos quais é uma [integração total](../microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) com a biblioteca de resiliência Polly. Com ele, você pode definir facilmente políticas de resiliência na classe de inicialização do aplicativo para lidar com falhas parciais e problemas de conectividade.
+Como recomendado no capítulo 1, os desenvolvedores da Microsoft que constroem aplicativos nativos de nuvem devem visar a plataforma .NET. A versão 2,1 introduziu a biblioteca [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) para criar instâncias de cliente http para interagir com recursos baseados em URL. Substituindo a classe HTTPClient original, a classe Factory dá suporte a muitos recursos avançados, um dos quais é uma [integração total](../microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) com a biblioteca de resiliência Polly. Com ele, você pode definir facilmente políticas de resiliência na classe de inicialização do aplicativo para lidar com falhas parciais e problemas de conectividade.
 
 Em seguida, vamos expandir em padrões de repetição e de disjuntor.
 
@@ -82,7 +82,7 @@ Tenha em mente que a intenção do padrão de disjuntor é *diferente* daquela d
 
 ## <a name="testing-for-resiliency"></a>Teste de resiliência
 
-O teste de resiliência nem sempre pode ser feito da mesma maneira que você testa a funcionalidade do aplicativo (executando testes de unidade, testes de integração e assim por diante). Em vez disso, deve-se testar a execução da carga de trabalho de ponta a ponta sob condições de falha intermitentes. Por exemplo: injetar falhas ao travar processos, certificados expirados, tornar os serviços dependentes indisponíveis etc. Estruturas como o [caos – o macaco](https://github.com/Netflix/chaosmonkey) pode ser usado para esses testes de caos.
+O teste de resiliência nem sempre pode ser feito da mesma maneira que você testa a funcionalidade do aplicativo (executando testes de unidade, testes de integração e assim por diante). Em vez disso, você deve testar como a carga de trabalho de ponta a ponta é executada sob condições de falha, o que ocorre apenas intermitentemente. Por exemplo: injetar falhas ao travar processos, certificados expirados, tornar os serviços dependentes indisponíveis etc. Estruturas como o [caos – o macaco](https://github.com/Netflix/chaosmonkey) pode ser usado para esses testes de caos.
 
 A resiliência do aplicativo é necessária para lidar com operações solicitadas problemáticas. Mas, é apenas metade da história. Em seguida, abordamos os recursos de resiliência disponíveis na nuvem do Azure.
 

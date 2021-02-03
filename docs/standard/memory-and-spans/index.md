@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Span<T>
 - buffers"
 - pipeline processing
-ms.openlocfilehash: 4b0464cc81cf0908a907f8305ea4e35b716c18fb
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: b81531d77bae1dce9d6cf58fe1b5439bf79f9e9c
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830656"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506364"
 ---
 # <a name="memory--and-span-related-types"></a>Tipos relacionados a memória e extensão
 
@@ -21,7 +21,7 @@ A partir do .NET Core 2,1, o .NET inclui vários tipos inter-relacionados que re
 
 - <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, uma versão imutável da estrutura <xref:System.Span%601>.
 
-- <xref:System.Memory%601?displayProperty=nameWithType>, uma região contígua da memória alocada no heap gerenciado, em vez da pilha. Uma instância <xref:System.Memory%601> pode ser sustentada por uma matriz do tipo `T` ou uma <xref:System.String>. Como ela pode ser armazenada no heap gerenciado, <xref:System.Memory%601> não tem nenhuma das limitações de <xref:System.Span%601>.
+- <xref:System.Memory%601?displayProperty=nameWithType>, um wrapper em uma região contígua de memória. Uma <xref:System.Memory%601> instância pode ser apoiada por uma matriz do tipo `T` ou um <xref:System.String> Gerenciador de memória ou um. Como pode ser armazenado no heap gerenciado, o não <xref:System.Memory%601> tem nenhuma das limitações do <xref:System.Span%601> .
 
 - <xref:System.ReadOnlyMemory%601?displayProperty=nameWithType>, uma versão imutável da estrutura <xref:System.Memory%601>.
 
@@ -34,6 +34,8 @@ A partir do .NET Core 2,1, o .NET inclui vários tipos inter-relacionados que re
 - <xref:System.ArraySegment%601>, um wrapper para determinado número de elementos de matriz, começando em um índice específico.
 
 - <xref:System.MemoryExtensions?displayProperty=nameWithType>, uma coleção de métodos de extensão para converter cadeias de caracteres, matrizes e segmentos de matriz para blocos <xref:System.Memory%601>.
+
+<xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Memory%601?displayProperty=nameWithType> , e suas contrapartes ReadOnly são projetadas para permitir a criação de algoritmos que evitam a cópia da memória ou a alocação no heap gerenciado mais do que o necessário. Criá-los (via `Slice` ou seus construtores) não envolve duplicar os buffers subjacentes: somente as referências e os deslocamentos relevantes, que representam a "exibição" da memória encapsulada, são atualizados.
 
 > [!NOTE]
 > Para estruturas anteriores, <xref:System.Span%601> e <xref:System.Memory%601> estão disponíveis no [pacote do System.Memory NuGet](https://www.nuget.org/packages/System.Memory/).

@@ -4,12 +4,12 @@ description: Saiba mais sobre quais versões do Windows você pode instalar no .
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 33492cc6fa6c64ec3a1d745a4fa0c6cc418f87bd
-ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
+ms.openlocfilehash: 55746b29b579a6d3aacb7d11c5604dc601440ab5
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98898782"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506286"
 ---
 # <a name="install-net-on-windows"></a>Instalar o .NET no Windows
 
@@ -37,26 +37,24 @@ As datas de fim de serviço das versões do Windows 10 são segmentadas por edi�
 
 | Sistema operacional            | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |-----------------------------|---------------|---------------|--------|
-| Windows 10, versão 20H2    | ✔️           | ✔️            | ✔️    |
-| Windows 10, versão 2004    | ✔️           | ✔️            | ✔️    |
-| Windows 10, versão 1909    | ✔️           | ✔️            | ✔️    |
-| Windows 10, versão 1903    | ✔️           | ✔️            | ✔️    |
+| Windows 10/Windows Server, versão 20H2    | ✔️           | ✔️            | ✔️    |
+| Windows 10/Windows Server, versão 2004    | ✔️           | ✔️            | ✔️    |
+| Windows 10/Windows Server, versão 1909    | ✔️           | ✔️            | ✔️    |
+| Windows 10/Windows Server, versão 1903    | ✔️           | ✔️            | ✔️    |
 | Windows 10, versão 1809    | ✔️           | ✔️            | ✔️    |
 | Windows 10, versão 1803    | ✔️           | ✔️            | ✔️    |
 | Windows 10, versão 1709    | ✔️           | ✔️            | ✔️    |
 | Windows 10, versão 1607    | ✔️           | ✔️            | ✔️    |
 | Windows 8.1                 | ✔️           | ✔️            | ✔️    |
 | [ESU][esu] do Windows 7 SP1    | ✔️           | ✔️            | ✔️    |
-| Windows 10, versão 1607    | ✔️           | ✔️            | ✔️    |
-| Windows 10, versão 1607    | ✔️           | ✔️            | ✔️    |
-| Windows Server 2012 R2      | ✔️           | ✔️            | ✔️    |
+| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>      | ✔️           | ✔️            | ✔️    |
 | Windows Server Core 2012 R2 | ✔️           | ✔️            | ✔️    |
 | Nano Server, versão 1809 +  | ✔️           | ✔️            | ✔️    |
 | Nano Server, versão 1803   | ✔️           | ✔️            | ❌    |
 
 ## <a name="unsupported-releases"></a>Versões sem suporte
 
-Não há mais suporte para as seguintes versões do .NET ❌ . Os downloads para essas versões ainda permanecem publicados:
+As seguintes versões do .NET ❌ não são mais suportadas:
 
 - 3.0
 - 2.2
@@ -68,14 +66,14 @@ O tempo de execução é usado para executar aplicativos criados com o .NET. Qua
 
 Há três tempos de execução diferentes que você pode instalar no Windows:
 
-*Tempo de execução ASP.NET Core*\
-Executa ASP.NET Core aplicativos. Inclui o tempo de execução do .NET.
+- *Tempo de execução ASP.NET Core*\
+  Executa ASP.NET Core aplicativos. Inclui o tempo de execução do .NET.
 
-*Tempo de execução do desktop*\
-Executa o .NET WPF e Windows Forms aplicativos de área de trabalho para Windows. Inclui o tempo de execução do .NET.
+- *Tempo de execução do desktop*\
+  Executa o .NET WPF e Windows Forms aplicativos de área de trabalho para Windows. Inclui o tempo de execução do .NET.
 
-*Tempo de execução do .NET*\
-Esse tempo de execução é o tempo de execução mais simples e não inclui nenhum outro tempo de execução. É altamente recomendável que você instale o *tempo de execução do ASP.NET Core* e o *tempo de execução da área de trabalho* para obter a melhor compatibilidade com aplicativos .net.
+- *Tempo de execução do .NET*\
+  Esse tempo de execução é o tempo de execução mais simples e não inclui nenhum outro tempo de execução. É altamente recomendável que você instale o *tempo de execução do ASP.NET Core* e o *tempo de execução da área de trabalho* para obter a melhor compatibilidade com aplicativos .net.
 
 > [!div class="button"]
 > [Baixar o tempo de execução do .NET](https://dotnet.microsoft.com/download/dotnet-core)

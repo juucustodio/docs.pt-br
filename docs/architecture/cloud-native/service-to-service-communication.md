@@ -2,13 +2,13 @@
 title: Comunicação entre serviços
 description: Saiba como os microserviços nativos de nuvem de back-end se comunicam com outros microserviços de back-end.
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: 9761b99cd9ad076eb82a23a00ec3099e8913168b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 63c80b38e2fa42dccebefc772c969266fa9d79ca
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166073"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506260"
 ---
 # <a name="service-to-service-communication"></a>Comunicação entre serviços
 
@@ -30,7 +30,7 @@ Os sistemas de microserviço normalmente usam uma combinação desses tipos de i
 
 ## <a name="queries"></a>Consultas
 
-Muitas vezes, um microserviço pode precisar *consultar* outro, exigindo uma resposta imediata para concluir uma operação. Um microserviço da cesta de compras pode precisar de informações do produto e um preço para adicionar um item à sua cesta. Há várias abordagens para implementar operações de consulta.
+Muitas vezes, um microserviço pode precisar *consultar* outro, exigindo uma resposta imediata para concluir uma operação. Um microserviço da cesta de compras pode precisar de informações do produto e um preço para adicionar um item à sua cesta. Há muitas abordagens para implementar operações de consulta.
 
 ### <a name="requestresponse-messaging"></a>Mensagens de solicitação/resposta
 
@@ -152,9 +152,9 @@ O evento é um processo de duas etapas. Para uma determinada alteração de esta
 
 A Figura 4-15 mostra um microserviço de cesta de compras publicando um evento com dois outros microservices assinando-o.
 
-![Mensagens controladas por eventos](./media/event-driven-messaging.png)
+![Event-Driven mensagens](./media/event-driven-messaging.png)
 
-**Figura 4-15**. Mensagens controladas por eventos
+**Figura 4-15**. Event-Driven mensagens
 
 Observe o componente de *barramento de evento* que fica no meio do canal de comunicação. É uma classe personalizada que encapsula o agente de mensagem e o dissocia do aplicativo subjacente. Os microserviços de pedidos e de inventário operam de forma independente o evento sem nenhum conhecimento um do outro, nem o microserviço da cesta de compras. Quando o evento registrado é publicado no barramento de evento, eles agem sobre ele.
 
@@ -178,13 +178,13 @@ A [entrega de mensagem agendada](/azure/service-bus-messaging/message-sequencing
 
 Os tópicos do barramento de serviço são uma tecnologia robusta e comprovada para habilitar a comunicação de publicação/assinatura em seus sistemas nativos de nuvem.
 
-### <a name="azure-event-grid"></a>A Grade de Eventos do Azure
+### <a name="azure-event-grid"></a>Grade de Eventos do Azure
 
 Embora o barramento de serviço do Azure seja um agente de mensagens testado por batalha com um conjunto completo de recursos corporativos, a [grade de eventos do Azure](/azure/event-grid/overview) é a nova criança no bloco.
 
 À primeira vista, a grade de eventos pode parecer apenas com outro sistema de mensagens baseado em tópico. No entanto, ele é diferente de várias maneiras. Focado em cargas de trabalho controladas por eventos, ele permite o processamento de eventos em tempo real, a profunda integração do Azure e uma plataforma aberta em uma infraestrutura sem servidor. Ele foi projetado para aplicativos contemporâneos de nuvem e nativas para servidores
 
-Como um *replano de evento*centralizado, ou pipe, a grade de eventos reage a eventos dentro dos recursos do Azure e de seus próprios serviços.
+Como um *replano de evento* centralizado, ou pipe, a grade de eventos reage a eventos dentro dos recursos do Azure e de seus próprios serviços.
 
 As notificações de eventos são publicadas em um tópico da grade de eventos que, por sua vez, roteia cada evento para uma assinatura. Os assinantes mapeiam para assinaturas e consomem os eventos. Assim como o barramento de serviço, a grade de eventos dá suporte a um *modelo de assinante filtrado* em que uma assinatura define a regra para os eventos que deseja receber. A grade de eventos fornece uma taxa de transferência rápida com uma garantia de 10 milhões eventos por segundo, permitindo entrega quase em tempo real – muito mais do que o barramento de serviço do Azure pode gerar.
 
@@ -196,7 +196,7 @@ Ao publicar e assinar eventos nativos de recursos do Azure, nenhuma codificaçã
 
 **Figura 4-17**. Anatomia da grade de eventos
 
-Uma grande diferença entre o EventGrid e o barramento de serviço é o *padrão de troca de mensagens*subjacente.
+Uma grande diferença entre o EventGrid e o barramento de serviço é o *padrão de troca de mensagens* subjacente.
 
 O barramento de serviço implementa um *modelo de pull* de estilo mais antigo no qual o assinante downstream sonda ativamente a assinatura do tópico em busca de novas mensagens. Na cabeça, essa abordagem dá ao Assinante controle total do ritmo no qual ele processa as mensagens. Ele controla quando e quantas mensagens são processadas em um determinado momento. As mensagens não lidas permanecem na assinatura até que sejam processadas. Uma deficiência significativa é a latência entre a hora em que o evento é gerado e a operação de sondagem que efetua pull dessa mensagem para o Assinante para processamento. Além disso, a sobrecarga de sondagem constante para o próximo evento consome recursos e dinheiro.
 
@@ -218,7 +218,7 @@ O Hub de eventos dá suporte à baixa latência e à retenção de tempo configu
 
 O Hub de eventos dá suporte a protocolos comuns de publicação de eventos, incluindo HTTPS e AMQP. Ele também dá suporte a Kafka 1,0. Os [aplicativos Kafka existentes podem se comunicar com o Hub de eventos](/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview) usando o protocolo Kafka, fornecendo uma alternativa ao gerenciamento de clusters grandes do Kafka. Muitos sistemas de código aberto em nuvem nativas adotam o Kafka.
 
-Os hubs de eventos implementam o streaming de mensagens por meio de um [modelo de consumidor particionado](/azure/event-hubs/event-hubs-features) no qual cada consumidor lê apenas um subconjunto específico, ou partição, do fluxo de mensagens. Esse padrão permite a enorme escala horizontal para processamento de eventos e fornece outros recursos centrados no fluxo que não estão disponíveis em filas e tópicos. Uma partição é uma sequência ordenada de eventos que é mantida em um hub de eventos. À medida que novos eventos chegam, eles são adicionados ao final dessa sequência.A Figura 4-19 mostra o particionamento em um hub de eventos.
+Os hubs de eventos implementam o streaming de mensagens por meio de um [modelo de consumidor particionado](/azure/event-hubs/event-hubs-features) no qual cada consumidor lê apenas um subconjunto específico, ou partição, do fluxo de mensagens. Esse padrão permite a enorme escala horizontal para processamento de eventos e fornece outros recursos centrados no fluxo que não estão disponíveis em filas e tópicos. Uma partição é uma sequência ordenada de eventos que é mantida em um hub de eventos. À medida que novos eventos chegam, eles são adicionados ao final dessa sequência. A Figura 4-19 mostra o particionamento em um hub de eventos.
 
 ![Particionamento do hub de eventos](./media/event-hub-partitioning.png)
 

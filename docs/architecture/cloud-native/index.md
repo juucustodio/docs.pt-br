@@ -2,19 +2,19 @@
 title: Arquitetando aplicativos .NET nativos de nuvem para o Azure
 description: Um guia para a criação de aplicativos nativos de nuvem que aproveitam contêineres, microservices e recursos sem servidor do Azure.
 author: ardalis
-ms.date: 11/10/2020
-ms.openlocfilehash: 673bfef27c3767f68b1c30d4383cee010ba377f0
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+ms.date: 01/19/2021
+ms.openlocfilehash: ad641517f9dc24aed9180cf6a092f4754739bceb
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94506643"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506117"
 ---
 # <a name="architecting-cloud-native-net-applications-for-azure"></a>Arquitetando aplicativos .NET nativos de nuvem para o Azure
 
 ![imagem da capa](./media/cover.png)
 
-**Edição v 1.0**
+**Edição v 1.0.2**
 
 Consulte o [changelog](https://aka.ms/cn-ebook-changelog) para obter as atualizações do livro e as contribuições da Comunidade.
 
@@ -28,7 +28,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2020 da Microsoft Corporation
+Copyright &copy; 2021 da Microsoft Corporation
 
 Todos os direitos reservados. Nenhuma parte do conteúdo deste guia pode ser reproduzida ou transmitida de nenhuma forma nem por nenhum meio sem a permissão por escrito do publicador.
 
@@ -46,27 +46,31 @@ Todas as outras marcas e logotipos são propriedade de seus respectivos propriet
 
 Autores:
 
-> **Rob Vettor** , arquiteto de sistema de nuvem principal/arquiteto de IP- [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
+> **Rob Vettor**, arquiteto de sistema de nuvem principal/arquiteto de IP- [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
 >
-> **Steve "ardalis" Smith** , arquiteto de software e instrutor- [Ardalis.com](https://ardalis.com)
+> **Steve "ardalis" Smith**, arquiteto de software e instrutor- [Ardalis.com](https://ardalis.com)
 
 Participantes e revisores:
 
-> **Cesar de la Torre** , gerente de programa principal, equipe do .net, Microsoft
+> **Cesar de la Torre**, gerente de programa principal, equipe do .net, Microsoft
 >
-> **Nish Anil** , gerente de programas sênior, equipe do .net, Microsoft
+> **Nish Anil**, gerente de programas sênior, equipe do .net, Microsoft
 >
-> **Jeremy Likness** , gerente de programas sênior, equipe do .net, Microsoft
+> **Jeremy Likness**, gerente de programas sênior, equipe do .net, Microsoft
 >
-> **Cecil Phillip** , defensora da nuvem sênior, Microsoft
+> **Cecil Phillip**, defensora da nuvem sênior, Microsoft
+>
+> **Pedro Ghosh**, consultor principal da Neudesic
 
 Editores:
 
-> **Maira Wenzel** , gerente de programas, equipe do .net, Microsoft
+> **Maira Wenzel**, gerente de programas, equipe do .net, Microsoft
+
+> **David Pinheiro**, desenvolvedor de conteúdo sênior, documentos do .net, Microsoft
 
 ## <a name="version"></a>Versão
 
-Este guia foi escrito para abranger a versão **3,1 do .NET Core** junto com muitas atualizações adicionais relacionadas à mesma "onda" de tecnologias (isto é, Azure e tecnologias de terceiros adicionais) que coincidem no tempo com a versão 3,1 do .NET Core.
+Este guia foi escrito para abranger a versão do **.NET 5** junto com muitas atualizações adicionais relacionadas à mesma "onda" de tecnologias (isto é, Azure e tecnologias de terceiros adicionais) que coincidem no tempo com a versão do .NET 5.
 
 ## <a name="who-should-use-this-guide"></a>Quem deve usar este guia
 

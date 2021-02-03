@@ -1,13 +1,13 @@
 ---
 title: DevOps
 description: Considerações sobre o DevOps para aplicativos nativos de nuvem
-ms.date: 05/13/2020
-ms.openlocfilehash: 1a04f5178877f3fdde707753e94718ce0f0bb49d
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.date: 01/19/2021
+ms.openlocfilehash: 089f6ac82f3ce0613c7b8e0b9527f3fa9cf7b50c
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633709"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506195"
 ---
 # <a name="devops"></a>DevOps
 
@@ -47,7 +47,7 @@ O Azure DevOps é dividido em cinco componentes principais:
 
 **Azure boards** -fornece um problema e uma ferramenta de acompanhamento de itens de trabalho que se esforça para permitir que os usuários escolham os fluxos que funcionam melhor para eles. Ele vem com vários modelos pré-configurados, incluindo aqueles para oferecer suporte a estilos de desenvolvimento e do SCRUM.
 
-**Azure pipelines** -um sistema de gerenciamento de versão e compilação que dá suporte à integração rígida com o Azure. As compilações podem ser executadas em uma variedade de plataformas do Windows para Linux para MacOS. Os agentes de compilação podem ser provisionados na nuvem ou localmente.
+**Azure pipelines** -um sistema de gerenciamento de versão e compilação que dá suporte à integração rígida com o Azure. As compilações podem ser executadas em várias plataformas do Windows para Linux para macOS. Os agentes de compilação podem ser provisionados na nuvem ou localmente.
 
 **Azure Test Plans** -nenhuma pessoa de QA será deixada com o suporte de teste de gerenciamento de teste e exploratório oferecido pelo recurso de Test Plans.
 
@@ -79,7 +79,7 @@ Dividir o código para os microserviços no projeto DevOps do Azure pode ser um 
 
 ### <a name="repository-per-microservice"></a>Repositório por microserviço
 
-À primeira vista, isso parece a abordagem mais lógica para dividir o código-fonte para os microservices. Cada repositório pode conter o código necessário para criar um microserviço. As vantagens dessa abordagem estão prontamente visíveis:
+À primeira vista, essa abordagem parece a abordagem mais lógica para dividir o código-fonte para os microserviços. Cada repositório pode conter o código necessário para criar um microserviço. As vantagens dessa abordagem estão prontamente visíveis:
 
 1. As instruções para criar e manter o aplicativo podem ser adicionadas a um arquivo LEIAme na raiz de cada repositório. Ao inverter os repositórios, é fácil encontrar essas instruções, reduzindo o tempo de rotação para os desenvolvedores.
 2. Cada serviço está localizado em um local lógico, facilmente encontrado sabendo o nome do serviço.
@@ -100,19 +100,19 @@ Outra desvantagem se apresenta ao mover o código entre os serviços. Embora sej
 
 A desvantagem final e mais importante é coordenar alterações. Em um aplicativo de microserviços verdadeiro, não deve haver nenhuma dependência de implantação entre os serviços. Deve ser possível implantar os serviços A, B e C em qualquer ordem, pois eles têm acoplamento flexível. Na realidade, no entanto, há ocasiões em que é desejável fazer uma alteração que cruze vários repositórios ao mesmo tempo. Alguns exemplos incluem a atualização de uma biblioteca para fechar uma brecha de segurança ou alterar um protocolo de comunicação usado por todos os serviços.
 
-Para fazer uma alteração entre repositórios, é necessário que uma confirmação para cada repositório seja feita sucessivamente. Cada alteração em cada repositório precisará ser solicitada por pull e revisada separadamente. Isso pode ser difícil de coordenar.
+Para fazer uma alteração entre repositórios, é necessário que uma confirmação para cada repositório seja feita sucessivamente. Cada alteração em cada repositório precisará ser solicitada por pull e revisada separadamente. Essa atividade pode ser difícil de coordenar.
 
 Uma alternativa ao uso de muitos repositórios é colocar todo o código-fonte em um gigante, sabendo, único repositório.
 
 ### <a name="single-repository"></a>Repositório único
 
-Nessa abordagem, às vezes conhecida como um [monorepository](https://danluu.com/monorepo/), todo o código-fonte de cada serviço é colocado no mesmo repositório. A princípio, parece que uma terrível é uma boa ideia tornar difícil lidar com o código-fonte. No entanto, há algumas vantagens marcadas para trabalhar dessa forma.
+Nessa abordagem, às vezes conhecida como um [monorepository](https://danluu.com/monorepo/), todo o código-fonte de cada serviço é colocado no mesmo repositório. A princípio, essa abordagem parece ser uma boa ideia, o que provavelmente tornaria o difícil de lidar com o código-fonte. No entanto, há algumas vantagens marcadas para trabalhar dessa forma.
 
 A primeira vantagem é que é mais fácil gerenciar dependências entre projetos. Em vez de contar com um feed de artefatos externo, os projetos podem importar diretamente um do outro. Isso significa que as atualizações são instantâneas e as versões conflitantes provavelmente serão encontradas no momento da compilação na estação de trabalho do desenvolvedor. Em vigor, deslocar parte do teste de integração para a esquerda.
 
 Ao mover o código entre projetos, agora é mais fácil preservar o histórico à medida que os arquivos forem detectados como tendo sido movidos em vez de serem reescritos.
 
-Outra vantagem é que a ampla gama de alterações que cruzam limites de serviço pode ser feita em uma única confirmação. Isso reduz a sobrecarga de ter potencialmente dezenas de alterações a serem examinadas individualmente.
+Outra vantagem é que a ampla gama de alterações que cruzam limites de serviço pode ser feita em uma única confirmação. Essa atividade reduz a sobrecarga de ter potencialmente dezenas de alterações a serem examinadas individualmente.
 
 Há muitas ferramentas que podem executar a análise estática de código para detectar práticas de programação inseguras ou uso problemático de APIs. Em um mundo de vários repositórios, cada repositório precisará ser iterado para localizar os problemas neles. O repositório único permite executar a análise em um só lugar.
 

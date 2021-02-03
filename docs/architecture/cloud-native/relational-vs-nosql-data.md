@@ -2,13 +2,13 @@
 title: Relacional versus Dados NoSQL
 description: Saiba mais sobre dados relacionais e NoSQL em aplicativos nativos de nuvem
 author: robvet
-ms.date: 05/17/2020
-ms.openlocfilehash: 11db5cdca06b9c2c8ce12598456c4b147ac379ba
-ms.sourcegitcommit: 98d20cb038669dca4a195eb39af37d22ea9d008e
+ms.date: 01/19/2021
+ms.openlocfilehash: 1148778b68c90586187d927eccd9b733403ede44
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434861"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505505"
 ---
 # <a name="relational-vs-nosql-data"></a>Relacional versus Dados NoSQL
 
@@ -26,7 +26,7 @@ Os bancos de dados NoSQL incluem vários modelos diferentes para o acesso e o ge
 
 **Figura 5-9**: modelos de dados para bancos de dados NoSQL
 
-| Modelo | Características |
+| Modelar | Características |
 | :-------- | :-------- |
 | Repositório de documentos | Os dados e os metadados são armazenados hierarquicamente em documentos baseados em JSON no banco de dados. |
 | Repositório de valor de chave | A maneira mais simples dos bancos de dados NoSQL, que são representados como uma coleção de pares chave-valor. |
@@ -207,7 +207,7 @@ Na tabela anterior, observe a opção [API de tabela](/azure/cosmos-db/table-int
 |  | Armazenamento de Tabelas do Azure  | Azure Cosmos DB  |
 | :-------- | :-------- |:-------- |
 | Latency | Rápido | Latência de milissegundo de dígito único para leituras e gravações em qualquer lugar do mundo |
-| Taxa de transferência | Limite de 20.000 operações por tabela | 10 milhões operações por tabela |
+| Produtividade | Limite de 20.000 operações por tabela | 10 milhões operações por tabela |
 | Distribuição Global | Região única com uma única região de leitura secundária opcional | Distribuições completas para todas as regiões com failover automático |
 | Indexação | Disponível somente para propriedades de chave de partição e de linha | Indexação automática de todas as propriedades |
 | Preços | Com base no armazenamento | Com base na taxa de transferência |
@@ -269,7 +269,7 @@ A CNCF (nuvem Native Computing Foundation) apresenta vários projetos de banco d
 | YugabyteDB | Um banco de dados SQL distribuído de código aberto, de alto desempenho. Ele dá suporte à baixa latência de consulta, resiliência contra falhas e distribuição de dados global. YugabyteDB é compatível com PostgressSQL e manipula as cargas de trabalho OLTP de expansão e dimensionamento da Internet. O produto também dá suporte a NoSQL e é compatível com Cassandra. |
 |Vitess | Vitess é uma solução de banco de dados para implantação, dimensionamento e gerenciamento de clusters grandes de instâncias do MySQL. Ele pode ser executado em uma arquitetura de nuvem pública ou privada. O Vitess combina e estende vários recursos importantes do MySQL e recursos que dão suporte a fragmentação vertical e horizontal. Originado pelo YouTube, o Vitess tem disponibilizado todo o tráfego de banco de dados do YouTube desde 2011. |
 
-Os projetos de código-fonte aberto na figura anterior estão disponíveis na base computação nativa de nuvem. Três das ofertas são produtos de banco de dados completos, que incluem o suporte do .NET Core. O outro, Vitess, é um sistema de clustering de banco de dados que dimensiona horizontalmente grandes clusters de instâncias do MySQL.
+Os projetos de código-fonte aberto na figura anterior estão disponíveis na base computação nativa de nuvem. Três das ofertas são produtos de banco de dados completos, que incluem o suporte do .NET. O outro, Vitess, é um sistema de clustering de banco de dados que dimensiona horizontalmente grandes clusters de instâncias do MySQL.
 
 Um dos principais objetivos de design dos bancos de dados NewSQL é trabalhar nativamente no kubernetes, aproveitando a resiliência e a escalabilidade da plataforma.
 

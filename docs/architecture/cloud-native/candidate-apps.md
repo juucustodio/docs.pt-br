@@ -2,13 +2,13 @@
 title: Aplicativos candidatos para nuvem nativa
 description: Saiba quais tipos de aplicativos se beneficiam de uma abordagem nativa de nuvem
 author: robvet
-ms.date: 05/14/2020
-ms.openlocfilehash: 8f00633a575dad12b0bc1d5adb83acac03db0659
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 443a7c1a1aaef078b33f352f597b33b768d989a3
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91160938"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506182"
 ---
 # <a name="candidate-apps-for-cloud-native"></a>Aplicativos candidatos para nuvem nativa
 
@@ -74,11 +74,11 @@ Com a introdução por trás, agora nos aprofundamos em uma visão muito mais de
 
 - [Microserviços .NET: arquitetura para aplicativos .NET em contêineres](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
 
-- [Modernizar aplicativos .NET existentes com contêineres de nuvem e Windows do Azure](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
+- [Modernizar aplicativos .NET existentes com contêineres do Windows e nuvem do Azure](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
 
 - [Padrões de nuvem nativa por Cornelia Davis](https://www.manning.com/books/cloud-native-patterns)
 
-- [Além do aplicativo de doze fatores](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
+- [Além do aplicativo Twelve-Factor](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
 
 - [O que é infraestrutura como código](/azure/devops/learn/what-is-infrastructure-as-code)
 

@@ -2,13 +2,13 @@
 title: Dados distribuídos
 description: Contraste o armazenamento de dados em aplicativos monolíticos e nativos de nuvem.
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: b7c8c43b16f2f70f9009c4fe4a8d19c52fa7ea2a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: c83ac5dc973ff4c7a4626746472a74cfc6bf54bb
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163928"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505863"
 ---
 # <a name="distributed-data"></a>Dados distribuídos
 
@@ -61,7 +61,7 @@ Embora os microserviço sejam independentes e se concentrem em recursos funciona
 
 **Figura 5-3**. Consultando em microserviços
 
-Na figura anterior, vemos um microserviço de cesta de compras que adiciona um item à cesta de compras de um usuário. Embora o armazenamento de dados para este microserviço contenha dados de item de linha e cesta, ele não mantém os dados de produtos ou preços. Em vez disso, esses itens de dados pertencem aos microserviços de catálogo e de preços. Isso apresenta um problema. Como o microserviço da cesta de compras pode adicionar um produto à cesta de compras do usuário quando ele não tem dados de produto nem de preço em seu banco de dado?
+Na figura anterior, vemos um microserviço de cesta de compras que adiciona um item à cesta de compras de um usuário. Embora o armazenamento de dados para este microserviço contenha dados de item de linha e cesta, ele não mantém os dados de produtos ou preços. Em vez disso, esses itens de dados pertencem aos microserviços de catálogo e de preços. Esse aspecto apresenta um problema. Como o microserviço da cesta de compras pode adicionar um produto à cesta de compras do usuário quando ele não tem dados de produto nem de preço em seu banco de dado?
 
 Uma opção discutida no capítulo 4 é uma [chamada http direta](service-to-service-communication.md#queries) da cesta de compras para os microserviços de catálogo e preço. No entanto, no capítulo 4, dissemos que *chamadas http síncronas agrupam* os microserviços, reduzindo sua autonomia e diminuindo seus benefícios arquitetônicos.
 

@@ -4,12 +4,12 @@ titleSuffix: ''
 description: Saiba mais sobre os SDKs do projeto .NET.
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: 2adb0713fabda142d071425a2affe66cc9d4c172
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: d0eb4291f4def9263f37d2d09f09ef43d40dfbac
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189662"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506390"
 ---
 # <a name="net-project-sdks"></a>SDKs do projeto .NET
 
@@ -132,6 +132,30 @@ Para resolver os erros, siga um destes procedimentos:
 
   Se você desabilitar apenas `Compile` globs, Gerenciador de soluções no Visual Studio ainda mostrará \* itens. cs como parte do projeto, incluídos como `None` itens. Para desabilitar o `None` glob implícito, defina `EnableDefaultNoneItems` como `false` também.
 
+## <a name="implicit-package-references"></a>Referências de pacote implícitas
+
+Ao direcionar o .NET Core 1,0-2,2 ou .NET Standard 1,0-2,0, o SDK do .NET adiciona referências implícitas a determinados *metapacotes*. Um metapacote é um pacote baseado em estrutura que consiste apenas em dependências em outros pacotes. Os metapacotes são referenciados implicitamente com base nas estruturas de destino especificadas na propriedade [TargetFramework](msbuild-props.md#targetframework) ou [TargetFrameworks](msbuild-props.md#targetframeworks) do seu arquivo de projeto.
+
+```xml
+<PropertyGroup>
+  <TargetFramework>netcoreapp2.1</TargetFramework>
+</PropertyGroup>
+```
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netcoreapp2.1;net462</TargetFrameworks>
+</PropertyGroup>
+```
+
+Se necessário, você pode desabilitar as referências implícitas de pacote usando a propriedade [DisableImplicitFrameworkReferences](msbuild-props.md#disableimplicitframeworkreferences) e adicionar referências explícitas apenas às estruturas ou pacotes necessários.
+
+Recomendações:
+
+- Ao direcionar .NET Framework, .NET Core 1,0-2,2 ou .NET Standard 1,0-2,0, não adicione uma referência explícita aos `Microsoft.NETCore.App` `NETStandard.Library` metapacotes ou por meio de um `<PackageReference>` item em seu arquivo de projeto. Para projetos do .NET Core 1,0-2,2 e .NET Standard 1,0-2,0, esses metapacotes são referenciados implicitamente. Para projetos .NET Framework, se qualquer versão do `NETStandard.Library` for necessária ao usar um pacote NuGet baseado em .net Standard, o NuGet instalará essa versão automaticamente.
+- Se você precisar de uma versão específica do tempo de execução ao direcionar o .NET Core 1,0-2,2, use a `<RuntimeFrameworkVersion>` propriedade em seu projeto (por exemplo, `1.0.4` ) em vez de fazer referência ao metapacote. Por exemplo, talvez seja necessário uma versão de patch específica do 1.0.0 LTS Runtime se você estiver usando [implantações](../deploying/index.md#publish-self-contained)independentes.
+- Se precisar de uma versão específica do `NETStandard.Library` metapacote ao direcionar .NET Standard 1,0-2,0, você poderá usar a `<NetStandardImplicitPackageVersion>` propriedade e definir a versão necessária.
+
 ## <a name="build-events"></a>Eventos de build
 
 Em projetos em estilo SDK, use um destino do MSBuild chamado `PreBuild` ou `PostBuild` e defina a `BeforeTargets` propriedade para `PreBuild` ou a `AfterTargets` propriedade para `PostBuild` .
@@ -201,7 +225,7 @@ Para consumir um destino personalizado em seu projeto, adicione um `PackageRefer
 
 Você pode configurar como usar o destino personalizado. Como é um destino do MSBuild, ele pode depender de um determinado destino, executado após outro destino ou ser invocado manualmente usando o `dotnet msbuild -t:<target-name>` comando. No entanto, para proporcionar uma melhor experiência do usuário, você pode combinar ferramentas por projeto e destinos personalizados. Nesse cenário, a ferramenta por projeto aceita todos os parâmetros necessários e converte-os na [`dotnet msbuild`](../tools/dotnet-msbuild.md) invocação necessária que executa o destino. Veja um exemplo desse tipo de sinergia no repositório [Exemplos do MVP Summit 2016 Hackathon](https://github.com/dotnet/MVPSummitHackathon2016) do projeto [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instalar o .NET Core](../install/index.yml)
 - [Como usar SDKs de projeto do MSBuild](/visualstudio/msbuild/how-to-use-project-sdk)

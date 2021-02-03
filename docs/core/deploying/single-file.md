@@ -4,12 +4,12 @@ description: Saiba o que é um aplicativo de arquivo único e por que você deve
 author: lakshanf
 ms.author: lakshanf
 ms.date: 12/17/2020
-ms.openlocfilehash: 10ffc947f6a3adcf2889a03edd2616007ce236f3
-ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
+ms.openlocfilehash: fb768fa6fe390fbe8390e441f4eb71c3172ad395
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98536132"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505420"
 ---
 # <a name="single-file-deployment-and-executable"></a>Implantação de arquivo único e executável
 
@@ -168,8 +168,8 @@ O Visual Studio cria perfis de publicação reutilizáveis que controlam como se
 
 01. Na caixa de diálogo **configurações de perfil** , defina as seguintes opções:
 
-    - Defina o **modo de implantação** **como autônomo**.
-    - Defina o **tempo de execução de destino** para a plataforma na qual você deseja publicar.
+    - Defina o **modo de implantação** **como independente** ou **dependente de estrutura**.
+    - Defina o **tempo de execução de destino** para a plataforma na qual você deseja publicar. (Deve ser algo diferente de **portátil**).
     - Selecione **produzir arquivo único**.
 
     Escolha **salvar** para salvar as configurações e retornar para a caixa de diálogo de **publicação** .
@@ -184,7 +184,7 @@ Para obter mais informações, consulte [publicar aplicativos .NET Core com o Vi
 
 Visual Studio para Mac não fornece opções para publicar seu aplicativo como um único arquivo. Você precisará publicar manualmente seguindo as instruções da seção [publicar um único arquivo app-CLI](#publish-a-single-file-app---cli) . Para obter mais informações, consulte [publicar aplicativos .NET Core com CLI do .NET Core](deploy-with-cli.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Implantação de aplicativo .NET Core](index.md).
 - [Publicar aplicativos .NET Core com CLI do .NET Core](deploy-with-cli.md).

@@ -1,13 +1,13 @@
 ---
 title: Como aproveitar contêineres e orquestradores
 description: Aproveitando contêineres do Docker e orquestradores kubernetes no Azure
-ms.date: 05/31/2020
-ms.openlocfilehash: 0ca69b71aa7d414a7bc55253b123020d49468dee
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 01/19/2021
+ms.openlocfilehash: 63ac91b05a88dc13b7c62e6e04eecb0550cd4652
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672507"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505733"
 ---
 # <a name="leveraging-containers-and-orchestrators"></a>Como aproveitar contêineres e orquestradores
 
@@ -27,7 +27,7 @@ Embora eles tenham o benefício da simplicidade, as arquiteturas monolíticos en
 
 Além disso, eles exigem uma reinicialização do aplicativo, o que pode afetar temporariamente a disponibilidade se nenhuma técnica de tempo de inatividade for aplicada durante a implantação.
 
-### <a name="scaling"></a>Scaling
+### <a name="scaling"></a>Dimensionamento
 
 Um aplicativo monolítico é totalmente hospedado em uma única instância de computador, muitas vezes exigindo hardware de alta capacidade. Se qualquer parte do monolítica exigir o dimensionamento, outra cópia do aplicativo inteiro deverá ser implantada em outro computador. Com um monolítico, você não pode dimensionar componentes de aplicativos individualmente – é tudo ou nada. O dimensionamento de componentes que não exigem dimensionamento resulta em um uso de recursos ineficiente e dispendioso.
 
@@ -184,12 +184,12 @@ O Visual Studio dá suporte ao desenvolvimento do Docker para aplicativos basead
 Quando essa opção é selecionada, o projeto é criado com um `Dockerfile` em sua raiz, que pode ser usado para criar e hospedar o aplicativo em um contêiner do Docker. Um exemplo de Dockerfile é mostrado na Figura 3 -6. git
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:3.1-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
 COPY ["eShopWeb/eShopWeb.csproj", "eShopWeb/"]
 RUN dotnet restore "eShopWeb/eShopWeb.csproj"

@@ -1,13 +1,13 @@
 ---
 title: Como monitorar nos Serviços de Kubernetes do Azure
 description: Como monitorar nos Serviços de Kubernetes do Azure
-ms.date: 05/13/2020
-ms.openlocfilehash: 3900f169b9be4f807e72392da38a1224d6ce28e3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: d044337150edddac9e24218ccaeaace1f413e654
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163694"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506026"
 ---
 # <a name="monitoring-in-azure-kubernetes-services"></a>Como monitorar nos Serviços de Kubernetes do Azure
 
@@ -26,10 +26,10 @@ As informações de log e métricas são coletadas não apenas dos contêineres 
 
 A instalação dos coletores de logs difere nos clusters do [Windows](/azure/azure-monitor/insights/containers#configure-a-log-analytics-windows-agent-for-kubernetes) e do [Linux](/azure/azure-monitor/insights/containers#configure-a-log-analytics-linux-agent-for-kubernetes) . Mas, em ambos os casos, a coleção de log é implementada como um [daemonset](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)kubernetes, o que significa que o coletor de logs é executado como um contêiner em cada um dos nós.
 
-Não importa qual orquestrador ou sistema operacional está executando o daemon de Azure Monitor, as informações de log são encaminhadas para as mesmas ferramentas de Azure Monitor com as quais os usuários estão familiarizados. Isso garante uma experiência paralela em ambientes que misturam diferentes fontes de log, como um ambiente híbrido de kubernetes/Azure Functions.
+Não importa qual orquestrador ou sistema operacional está executando o daemon de Azure Monitor, as informações de log são encaminhadas para as mesmas ferramentas de Azure Monitor com as quais os usuários estão familiarizados. Essa abordagem garante uma experiência paralela em ambientes que combinam diferentes fontes de log, como um ambiente híbrido de kubernetes/Azure Functions.
 
 ![Um painel de exemplo mostrando informações de log e métrica de vários contêineres em execução. ](./media/containers-dashboard.png)
- **Figura 7-11**. Um painel de exemplo mostrando informações de log e métrica de vários contêineres em execução.
+ **Figura 7-11**. Um painel de exemplo mostrando informações de log e métrica de muitos contêineres em execução.
 
 ## <a name="logfinalize"></a>Log. Finalize ()
 

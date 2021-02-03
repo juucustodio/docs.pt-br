@@ -2,13 +2,13 @@
 title: Como definir o que é nativo de nuvem
 description: Saiba mais sobre os pilares básicos que fornecem o Fundação para sistemas nativos de nuvem
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: 1f0d842a2369ae04ffc1c634f9de60398a88e86f
-ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
+ms.date: 01/19/2021
+ms.openlocfilehash: 180b32d753fea5071174830be4ff3b8a81527a75
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91654686"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506208"
 ---
 # <a name="defining-cloud-native"></a>Definindo a nuvem nativa
 
@@ -66,13 +66,13 @@ A plataforma de nuvem do Azure dá suporte a esse tipo de infraestrutura altamen
 
 Como você criaria um aplicativo nativo de nuvem? Como seria a aparência de sua arquitetura? Para quais princípios, padrões e práticas recomendadas você deve aderir? Quais questões operacionais e de infraestrutura seriam importantes?
 
-### <a name="the-twelve-factor-application"></a>O aplicativo de doze fatores
+### <a name="the-twelve-factor-application"></a>O aplicativo Twelve-Factor
 
 Uma metodologia amplamente aceita para construir aplicativos baseados em nuvem é o [aplicativo de doze fatores](https://12factor.net/). Ele descreve um conjunto de princípios e práticas que os desenvolvedores seguem para construir aplicativos otimizados para ambientes de nuvem modernos. A atenção especial é dada à portabilidade entre ambientes e automação declarativa.
 
-Embora seja aplicável a qualquer aplicativo baseado na Web, muitos profissionais consideram doze fatores como uma base sólida para a criação de aplicativos nativos de nuvem. Os sistemas criados com base nesses princípios podem implantar e dimensionar rapidamente e adicionar recursos para reagir rapidamente às mudanças no mercado.
+Embora seja aplicável a qualquer aplicativo baseado na Web, muitos profissionais consideram Twelve-Factor como uma base sólida para a criação de aplicativos nativos de nuvem. Os sistemas criados com base nesses princípios podem implantar e dimensionar rapidamente e adicionar recursos para reagir rapidamente às mudanças no mercado.
 
-A tabela a seguir destaca a metodologia de doze fatores:
+A tabela a seguir destaca a metodologia Twelve-Factor:
 
 |    |  Fator | Explicação  |
 | :-------- | :-------- | :-------- |
@@ -86,10 +86,10 @@ A tabela a seguir destaca a metodologia de doze fatores:
 | 8 | Simultaneidade | Os serviços são expandidos em um grande número de pequenos processos idênticos (cópias), em oposição à expansão de uma única instância grande no computador mais potente disponível. |
 | 9 | Disposability | As instâncias de serviço devem ser descartáveis, favorecer as inicializações rápidas para aumentar as oportunidades de escalabilidade e os desligamentos normais para deixar o sistema em um estado correto. Os contêineres do Docker junto com um orquestrador atendem inerentemente a esse requisito. |
 | 10 | Paridade de desenvolvimento/prod | Mantenha os ambientes em todo o ciclo de vida do aplicativo o mais semelhante possível, evitando atalhos dispendiosos. Aqui, a adoção de contêineres pode contribuir muito promovendo o mesmo ambiente de execução. |
-| 11 | Registrando em log | Tratar logs gerados por microservices como fluxos de eventos. Processe-os com um agregador de eventos e propague os dados para ferramentas de gerenciamento de log/mineração de dados como Azure Monitor ou Splunk e eventualmente arquivamento de longo prazo. |
+| 11 | Registro em log | Tratar logs gerados por microservices como fluxos de eventos. Processe-os com um agregador de eventos e propague os dados para ferramentas de gerenciamento de log/mineração de dados como Azure Monitor ou Splunk e eventualmente arquivamento de longo prazo. |
 | 12 | Processos de administração | Execute tarefas administrativas/de gerenciamento como processos únicos. As tarefas podem incluir a limpeza de dados e a obtenção de análises para um relatório. As ferramentas que executam essas tarefas devem ser invocadas no ambiente de produção, mas separadamente do aplicativo. |
 
-No livro, [além do aplicativo de doze fatores](https://content.pivotal.io/blog/beyond-the-twelve-factor-app), o autor Kevin Hoffman detalha cada um dos 12 fatores originais (escritos em 2011). Além disso, ele aborda três fatores adicionais que refletem o design de aplicativos de nuvem moderno de hoje.
+No livro, [além do Twelve-Factor aplicativo, o](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)autor de Kevin Hoffman detalha cada um dos 12 fatores originais (escritos em 2011). Além disso, ele aborda três fatores adicionais que refletem o design de aplicativos de nuvem moderno de hoje.
 
 |    |  Novo fator | Explicação  |
 | :-------- | :-------- | :-------- |
@@ -171,11 +171,11 @@ Um excelente guia de referência para entender os microserviços é o [.net micr
 
 Os microserviços podem ser criados com qualquer plataforma de desenvolvimento moderna.
 
-A plataforma Microsoft .NET Core é uma excelente opção. Gratuito e de código aberto, ele tem muitos recursos internos para simplificar o desenvolvimento de microserviço. O .NET Core é uma plataforma cruzada. Os aplicativos podem ser criados e executados no Windows, no macOS e na maioria dos tipos de Linux.
+A plataforma Microsoft .NET é uma excelente opção. Gratuito e de código aberto, ele tem muitos recursos internos para simplificar o desenvolvimento de microserviço. O .NET é uma plataforma cruzada. Os aplicativos podem ser criados e executados no Windows, no macOS e na maioria dos tipos de Linux.
 
-O .NET Core é altamente funcional e tem um bom desempenho em comparação com Node.js e outras plataformas concorrentes. Curiosamente, a [TechEmpower](https://www.techempower.com/) realizou um amplo conjunto de [benchmarks de desempenho](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) em várias plataformas e estruturas de aplicativos Web. O .NET Core foi pontuado nos 10 principais, bem acima Node.js e em outras plataformas concorrentes.
+O .NET é altamente funcional e tem um bom desempenho em comparação com Node.js e outras plataformas concorrentes. Curiosamente, a [TechEmpower](https://www.techempower.com/) realizou um amplo conjunto de [benchmarks de desempenho](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) em várias plataformas e estruturas de aplicativos Web. O .NET foi pontuado nos 10 principais, bem acima Node.js e em outras plataformas concorrentes.
 
-O .NET Core é mantido pela Microsoft e pela Comunidade do .NET no GitHub.
+O .NET é mantido pela Microsoft e pela Comunidade do .NET no GitHub.
 
 ## <a name="containers"></a>Contêineres
 
@@ -225,9 +225,9 @@ A tabela a seguir descreve as tarefas de orquestração comuns.
 | :-------- | :-------- |
 | Agendamento | Provisione automaticamente instâncias de contêiner.|
 | Afinidade/antiafinidade | Provisione contêineres próximos ou distantes uns dos outros, ajudando a disponibilidade e o desempenho. |
-| Monitoramento da integridade | Detectar e corrigir automaticamente as falhas.|
+| Monitoramento de integridade | Detectar e corrigir automaticamente as falhas.|
 | Failover | Reprovisionar automaticamente a instância com falha para computadores íntegros.|
-| Scaling | Adicione ou remova automaticamente a instância de contêiner para atender à demanda.|
+| Dimensionamento | Adicione ou remova automaticamente a instância de contêiner para atender à demanda.|
 | Rede | Gerenciar uma sobreposição de rede para comunicação de contêiner.|
 | Descoberta de Serviços | Habilite os contêineres para localizar um ao outro.|
 | Atualizações sem interrupção | Coordene atualizações incrementais com uma implantação sem tempo de inatividade. Reverter alterações problemáticas automaticamente.|
@@ -242,7 +242,7 @@ Embora existam vários orquestradores de contêiner, [kubernetes](https://kubern
 
 Você pode hospedar sua própria instância do kubernetes, mas seria responsável por provisionar e gerenciar seus recursos, o que pode ser complexo. Os recursos de nuvem do Azure kubernetes como um serviço gerenciado, o [AKs (serviço kubernetes do Azure)](https://azure.microsoft.com/services/kubernetes-service/). Um serviço gerenciado permite que você aproveite totalmente seus recursos, sem precisar instalá-lo e mantê-lo.
 
-Os serviços Kubernetess do Azure são abordados no capítulo 2 de detalhes, *Dimensionando aplicativos nativos de nuvem*.
+Os serviços Kubernetess do Azure são abordados no capítulo 2 de detalhes, *dimensionando Cloud-Native aplicativos*.
 
 ## <a name="backing-services"></a>Serviços de backup
 
@@ -274,7 +274,7 @@ Com esse padrão, um serviço de backup pode ser anexado e desanexado sem altera
 
 Os fornecedores de nuvem fornecem APIs para que você se comunique com seus serviços de apoio proprietários. Essas bibliotecas encapsulam o encanamento e a complexidade. A comunicação direta com essas APIs irá acoplar rigidamente seu código ao serviço de backup. É uma prática melhor isolar os detalhes de implementação da API do fornecedor. Introduza uma camada de intermediação ou uma API intermediária, expondo operações genéricas ao seu código de serviço. Esse acoplamento flexível permite que você troque um serviço de backup por outro ou mova seu código para uma nuvem pública diferente sem precisar fazer alterações no código de serviço principal.
 
-Os serviços de backup são discutidos em detalhes capítulo 5, *padrões de dados nativos de nuvem*e capítulo 4, *padrões de comunicação nativas de nuvem*.
+Os serviços de backup são discutidos em detalhes capítulo 5, *padrões de dados nativos de nuvem* e capítulo 4, *padrões de comunicação nativas de nuvem*.
 
 ## <a name="automation"></a>Automação
 

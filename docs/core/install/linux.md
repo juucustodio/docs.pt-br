@@ -4,12 +4,12 @@ description: Saiba mais sobre o que as distribuições do Linux dão suporte à 
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 3834bd7d977bb13e9543d511bee7170161a755ac
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 27be7151d95810d8cc607564d5c0ce8dfe5b9ed8
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970727"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506273"
 ---
 # <a name="install-net-on-linux"></a>Instalar o .NET no Linux
 
@@ -34,6 +34,16 @@ Não há mais suporte para as seguintes versões do .NET ❌ . Os downloads para
 - 2,0
 
 Essas versões sem suporte não são detalhadas nas seções abaixo e sua quilometragem pode variar se você tentar instalá-las.
+
+## <a name="manual-installation"></a>Instalação manual
+
+Se você não quiser usar um Gerenciador de pacotes para instalar o .NET no Linux, poderá instalar o .NET de uma das seguintes maneiras:
+
+- [Ajustar pacote](linux-snap.md)
+- [Instalação com script com _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
+- [Extração binária manual](linux-scripted-manual.md#manual-install)
+
+Certifique-se de verificar a página de distribuição apropriada para obter mais informações sobre as dependências necessárias que podem estar ausentes ao fazer uma instalação manual.
 
 ## <a name="alpine"></a>Alpine
 
@@ -172,7 +182,7 @@ A tabela a seguir representa o status de suporte do Ubuntu e do .NET.
 | ✔️ [18, 4 (LTS)](linux-ubuntu.md#1804-) | ✔️ 2,1        | ✔️ 3,1        | ✔️ 5,0 |
 | ❌ [17.10](linux-ubuntu.md#1710-)       | ✔️ 2,1        | ❌ 3,1        | ❌ 5,0 |
 | ❌ [17.04](linux-ubuntu.md#1704-)       | ✔️ 2,1        | ❌ 3,1        | ❌ 5,0 |
-| ❌ [16.10](linux-ubuntu.md#1610-)       | ❌ 2,1        | ❌ 3,1        | ❌ 5,0 |
+| ❌[16,10](linux-ubuntu.md#1610-)       | ❌ 2,1        | ❌ 3,1        | ❌ 5,0 |
 | ✔️ [16, 4 (LTS)](linux-ubuntu.md#1604-) | ✔️ 2,1        | ✔️ 3,1        | ✔️ 5,0 |
 
 Para obter mais informações, consulte [instalar o .net no Ubuntu](linux-ubuntu.md).

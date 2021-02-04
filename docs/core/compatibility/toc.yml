@@ -28,6 +28,8 @@
                   href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                 - name: As propriedades TableLayoutSettings geram InvalidEnumArgumentException
                   href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+                - name: TreeNodecollection. Item gera uma exceção se o nó for atribuído em outro lugar
+                  href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
         - name: .NET 5.0
           items:
             - name: Visão geral
@@ -260,6 +262,8 @@
                   href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
             - name: Windows Forms
               items:
+                - name: O código nativo não pode acessar objetos Windows Forms
+                  href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
                 - name: OutputType definido como WinExe
                   href: windows-forms/5.0/automatically-infer-winexe-output-type.md
                 - name: DataGridView não redefine fontes personalizadas
@@ -566,8 +570,12 @@
                   href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
                 - name: As propriedades TableLayoutSettings geram InvalidEnumArgumentException
                   href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+                - name: TreeNodecollection. Item gera uma exceção se o nó for atribuído em outro lugar
+                  href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
             - name: .NET 5.0
               items:
+                - name: O código nativo não pode acessar objetos Windows Forms
+                  href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
                 - name: OutputType definido como WinExe
                   href: windows-forms/5.0/automatically-infer-winexe-output-type.md
                 - name: DataGridView não redefine fontes personalizadas

@@ -1,14 +1,15 @@
 ---
-ms.openlocfilehash: 72b371dc2a6475efa2e0353f87dbdfa96c4c7c0e
-ms.sourcegitcommit: 39b1d5f2978be15409c189a66ab30781d9082cd8
+ms.openlocfilehash: 15786e6c659a29c5089eee9c8ac365c55b22f7fb
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92050384"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99531815"
 ---
-| .NET Standard              | [1.0]  | [1.1]  | [1,2] | [1,3] | [1.4] | [1.5]              | [1,6]              | [2.0]               | [2.1] |
+| .NET Standard              | [1,0]  | [1.1]  | [1.2] | [1,3] | [1.4] | [1.5]              | [1.6]              | [2.0]               | [2.1] |
 |----------------------------|--------|--------|-------|-------|-------|--------------------|--------------------|---------------------|---------------------
-| .NET Core e .NET 5       | 1.0    | 1.0    | 1.0   | 1.0   | 1.0   | 1.0                | 1.0                | 2.0                 | 3.0 |
+| .NET                       | 5.0    | 5.0    | 5.0   | 5.0   | 5.0   | 5.0                | 5.0                | 5.0                 | 5.0 |
+| .NET Core                  | 1.0    | 1.0    | 1.0   | 1.0   | 1.0   | 1.0                | 1.0                | 2.0                 | 3.0 |
 | .NET Framework <sup>1</sup>| 4.5    | 4.5    | 4.5.1 | 4.6   | 4.6.1 | 4.6.1 <sup>2</sup> | 4.6.1 <sup>2</sup> | 4.6.1 <sup>2</sup>  | N/A<sup>3</sup> |
 | Mono                       | 4.6    | 4.6    | 4.6   | 4.6   | 4.6   | 4.6                | 4.6                | 5.4                 | 6.4 |
 | Xamarin.iOS                | 10.0   | 10.0   | 10.0  | 10.0  | 10.0  | 10.0               | 10.0               | 10.14               | 12.16 |
@@ -28,12 +29,12 @@ ms.locfileid: "92050384"
 - O número de versão em cada célula indica a versão *mínima* da implementação de que você precisará para direcionar essa versão do .NET Standard.
 - Para obter uma tabela interativa, consulte [Versões do .NET Standard](https://dotnet.microsoft.com/platform/dotnet-standard#versions).
 
-[1.0]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.0.md
+[1,0]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.0.md
 [1.1]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.1.md
-[1,2]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.2.md
+[1.2]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.2.md
 [1,3]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.3.md
 [1.4]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.4.md
 [1.5]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.5.md
-[1,6]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.6.md
+[1.6]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.6.md
 [2.0]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md
 [2.1]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.1.md

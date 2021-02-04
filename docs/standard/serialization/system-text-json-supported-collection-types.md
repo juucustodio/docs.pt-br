@@ -1,7 +1,7 @@
 ---
 title: Tipos de coleção com suporte no System.Text.Json
 description: Saiba quais tipos de coleção têm suporte para serialização pelas APIs no System.Text.Json namespace.
-ms.date: 01/06/2021
+ms.date: 02/01/2021
 no-loc:
 - System.Text.Json
 ms.topic: reference
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 48033689e844dd29c999395255b5a1565fa2996e
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 5a5016c70e86124510a4778aafb9fb14b1890add
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970986"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99547649"
 ---
-# <a name="supported-collection-types-in-no-locsystemtextjson"></a>Tipos de coleção com suporte no System.Text.Json
+# <a name="supported-collection-types-in-systemtextjson"></a>Tipos de coleção com suporte no System.Text.Json
 
 Este artigo fornece uma visão geral de quais coleções têm suporte para serialização e desserialização. <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> oferece suporte a um tipo de coleção para serialização se:
 
@@ -30,6 +30,14 @@ O serializador chama o <xref:System.Collections.IEnumerable.GetEnumerator> méto
 A desserialização é mais complicada e não tem suporte para alguns tipos de coleção.
 
 As seções a seguir são organizadas por namespace e mostram quais tipos têm suporte para serialização e desserialização.
+
+## <a name="systemarray-namespace"></a>Namespace System. array
+
+| Tipo                                                                                            | Serialização | Desserialização |
+|-------------------------------------------------------------------------------------------------|---------------|-----------------|
+| [Matrizes unidimensionais](../../csharp/programming-guide/arrays/single-dimensional-arrays.md) | ✔️           | ✔️              |
+| [Matrizes multidimensionais](../../csharp/programming-guide/arrays/multidimensional-arrays.md)    | ❌           | ❌              |
+| [Matrizes denteadas](../../csharp/programming-guide/arrays/jagged-arrays.md)                         | ✔️           | ✔️              |
 
 ## <a name="systemcollections-namespace"></a>Namespace System.Collections
 
@@ -326,7 +334,7 @@ Os tipos com suporte para as chaves de `Dictionary` e `SortedList` tipos incluem
 
 ::: zone-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [System.Text.Json sobre](system-text-json-overview.md)
 * [Instanciar instâncias JsonSerializerOptions](system-text-json-configure-options.md)

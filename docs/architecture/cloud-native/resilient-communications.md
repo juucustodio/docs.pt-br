@@ -3,12 +3,12 @@ title: Comunicação resiliente
 description: Arquitetando aplicativos .NET nativos da nuvem para o Azure | Comunicação resiliente
 author: robvet
 ms.date: 05/13/2020
-ms.openlocfilehash: 18b26223634efc5c05f680d0cbb7c8cbc2490a59
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 52f08c066767175c699f5a058267cb42d2b1d4aa
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166034"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99547688"
 ---
 # <a name="resilient-communications"></a>Comunicações resilientes
 
@@ -79,7 +79,7 @@ A nuvem do Azure adota o İSTİO e fornece suporte direto para ele nos serviços
 
 ### <a name="references"></a>Referências
 
-- [Polly](http://www.thepollyproject.org/)
+- [Polly](https://dotnetfoundation.org/projects/polly)
 
 - [Padrão de repetição](/azure/architecture/patterns/retry)
 
@@ -97,7 +97,7 @@ A nuvem do Azure adota o İSTİO e fornece suporte direto para ele nos serviços
 
 - [Diretrizes de dimensionamento automático](/azure/architecture/best-practices/auto-scaling)
 
-- [İSTİO](https://istio.io/docs/concepts/what-is-istio/)
+- [Istio](https://istio.io/docs/concepts/what-is-istio/)
 
 - [Proxy Envoy](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy)
 

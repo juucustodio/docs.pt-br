@@ -3,22 +3,22 @@ title: Padrões de resiliência de aplicativo
 description: Arquitetando aplicativos .NET nativos da nuvem para o Azure | Padrões de resiliência do aplicativo
 author: robvet
 ms.date: 01/19/2021
-ms.openlocfilehash: 9a59a7d93b61b0dea11680f6caf0bd3b68a0f853
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: 655df16ef58f1deb2d2f4d0487c47658499f2108
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99505915"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99547714"
 ---
 # <a name="application-resiliency-patterns"></a>Padrões de resiliência de aplicativo
 
 A primeira linha de defesa é a resiliência do aplicativo.
 
-Embora você possa investir um tempo considerável escrevendo sua própria estrutura de resiliência, esses produtos já existem. O [Polly](http://www.thepollyproject.org/) é uma biblioteca abrangente de resiliência do .net e tratamento transitório de falhas que permite aos desenvolvedores expressar políticas de resiliência de uma maneira fluente e thread-safe. O Polly tem como alvo aplicativos criados com o .NET Framework ou o .NET 5. A tabela a seguir descreve os recursos de resiliência, chamados `policies` , disponíveis na biblioteca Polly. Eles podem ser aplicados individualmente ou agrupados juntos.
+Embora você possa investir um tempo considerável escrevendo sua própria estrutura de resiliência, esses produtos já existem. O [Polly](https://dotnetfoundation.org/projects/polly) é uma biblioteca abrangente de resiliência do .net e tratamento transitório de falhas que permite aos desenvolvedores expressar políticas de resiliência de uma maneira fluente e thread-safe. O Polly tem como alvo aplicativos criados com o .NET Framework ou o .NET 5. A tabela a seguir descreve os recursos de resiliência, chamados `policies` , disponíveis na biblioteca Polly. Eles podem ser aplicados individualmente ou agrupados juntos.
 
 | Política | Experiência |
 | :-------- | :-------- |
-| Repetir | Configura operações de repetição em operações designadas. |
+| Tentar novamente | Configura operações de repetição em operações designadas. |
 | Disjuntor | Bloqueia as operações solicitadas por um período predefinido quando as falhas excedem um limite configurado |
 | Tempo limite | Limita o limite da duração para a qual um chamador pode aguardar uma resposta. |
 | Bulkhead | Restringe ações ao pool de recursos de tamanho fixo para evitar chamadas com falha de um recurso congestionamento. |

@@ -2,12 +2,12 @@
 title: 'Alteração significativa: Propriedades obsoletas em ConsoleLoggerOptions'
 description: Saiba mais sobre a alteração significativa do .NET 5,0 em bibliotecas principais do .NET em que o tipo ConsoleLoggerFormat e algumas propriedades em ConsoleLoggerOptions agora são obsoletos.
 ms.date: 11/01/2020
-ms.openlocfilehash: e38ba3bda371c713a8b2cb4cda8b4c585dac29f5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bd039dfa84ae3399d7fb36f992010a9a3c9f6ddf
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95760496"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548377"
 ---
 # <a name="obsolete-properties-on-consoleloggeroptions"></a>Propriedades obsoletas em ConsoleLoggerOptions
 
@@ -53,12 +53,23 @@ As propriedades restantes foram definidas <xref:Microsoft.Extensions.Logging.Con
   - `"Format": "Systemd"` mapeia para `"FormatterName": "Systemd"` .
   - `"Format": "Default"` mapeia para `"FormatterName": "Simple"` .
 
-- Para as <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors> <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes> Propriedades,, e <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat> <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.UseUtcTimestamp> , use a propriedade correspondente nos <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> tipos novo, <xref:Microsoft.Extensions.Logging.Console.JsonConsoleFormatterOptions> ou <xref:Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions> . Por exemplo:
+- Para as <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors> <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes> Propriedades,, e <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat> <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.UseUtcTimestamp> , use a propriedade correspondente nos <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions> tipos novo, <xref:Microsoft.Extensions.Logging.Console.JsonConsoleFormatterOptions> ou <xref:Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions> . Por exemplo, a configuração correspondente para <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors?displayProperty=nameWithType> é <xref:Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions.ColorBehavior?displayProperty=nameWithType> .
+
+  Código anterior:
+
+  ```csharp
+  loggingBuilder.AddConsole(options =>
+  {
+      options.DisableColors = true;
+  });
+  ```
+
+  Novo código:
 
   ```csharp
   loggingBuilder.AddSimpleConsole(options =>
   {
-      options.DisableColors = true;
+      options.ColorBehavior = LoggerColorBehavior.Disabled;
   });
   ```
 

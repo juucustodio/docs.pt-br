@@ -2,12 +2,12 @@
 title: Registro em log e rastreamento – .NET Core
 description: Uma introdução ao rastreamento e registro em log do .NET Core.
 ms.date: 10/12/2020
-ms.openlocfilehash: fac8eeed63e8737ad42699d81b421747b207c69a
-ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
+ms.openlocfilehash: a8c6d82ddb7bc3f8b4cc9eae9dd7aaf65732a0b8
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753621"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548389"
 ---
 # <a name="net-core-logging-and-tracing"></a>Log e rastreamento do .NET Core
 
@@ -72,6 +72,10 @@ As APIs a seguir são mais orientadas a eventos. Em vez de registrar cadeias de 
   - Somente Windows.
   - Grava mensagens no log de eventos do Windows.
   - Os administradores do sistema esperam que as mensagens de erro fatais do aplicativo apareçam no log de eventos do Windows.
+
+## <a name="distributed-tracing"></a>Rastreamento distribuído
+
+O [rastreamento distribuído](./distributed-tracing.md) é a maneira de publicar e observar os dados de rastreamento em um sistema distribuído.
 
 ## <a name="ilogger-and-logging-frameworks"></a>ILogger e estruturas de registro em log
 

@@ -4,12 +4,12 @@ description: Saiba como criar bibliotecas do .NET usando a CLI do .NET. Você cr
 author: cartermp
 ms.topic: how-to
 ms.date: 12/14/2020
-ms.openlocfilehash: 6f4c1feac7630a6a0250e4b0b39ef01152f5a400
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: 76d08007e191fe9090f3f14c906a40e84e37bd19
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633670"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548403"
 ---
 # <a name="develop-libraries-with-the-net-cli"></a>Desenvolver bibliotecas com a CLI do .NET
 
@@ -17,11 +17,11 @@ Este artigo aborda como gravar bibliotecas para .NET usando a CLI do .NET. A CLI
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Você precisa [do SDK do .net e da CLI](https://dotnet.microsoft.com/download) instalados em seu computador.
+Você precisa do [SDK do .net](https://dotnet.microsoft.com/download) instalado em seu computador.
 
-Para as seções deste documento que tratam de versões do .NET Framework, é necessário ter o [.NET Framework](https://dotnet.microsoft.com) instalado em um computador Windows.
+Para as seções deste documento que tratam de versões do .NET Framework, é necessário ter o [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) instalado em um computador Windows.
 
-Além disso, se você quiser dar suporte a destinos de .NET Framework mais antigos, será necessário instalar pacotes de direcionamento ou pacotes de desenvolvedor na [página de arquivos de download do .net](https://dotnet.microsoft.com/download/archives). Consulte esta tabela:
+Além disso, se você quiser dar suporte a destinos de .NET Framework mais antigos, será necessário instalar pacotes de direcionamento ou pacotes de desenvolvedor na [página de downloads de .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework). Consulte esta tabela:
 
 | Versão do .NET Framework | O que baixar                                       |
 | ---------------------- | ------------------------------------------------------ |

@@ -1,7 +1,7 @@
 ---
 title: Gerenciando conexões
 description: Saiba como os aplicativos que usam HTTP para recursos de dados podem usar as classes .NET Framework do ServicePointManager e do ponto de extremidade para gerenciar conexões.
-ms.date: 03/30/2017
+ms.date: 01/25/2021
 dev_langs:
 - csharp
 - vb
@@ -18,16 +18,19 @@ helpviewer_keywords:
 - downloading Internet resources, connections
 - ServicePointManager class, about ServicePointManager class
 ms.assetid: 9b3d3de7-189f-4f7d-81ae-9c29c441aaaa
-ms.openlocfilehash: 00db05c99cf232a31b10bbd0356e6d43d3bc3e28
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9ea93c3a9c484fd2a3de58b4d484b1e8445da155
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96282854"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548052"
 ---
 # <a name="managing-connections"></a>Gerenciando conexões
 
 Aplicativos que usam HTTP para se conectar aos recursos de dados podem usar as classes <xref:System.Net.ServicePoint> e <xref:System.Net.ServicePointManager> do .NET Framework para gerenciar conexões com a Internet e para ajudá-las a obter a melhor escala e desempenho.  
+
+> [!NOTE]
+> `ServicePoint` e `ServicePointManager` são considerados herdados no .NET Core, no .NET 5 e em versões posteriores. A maioria de suas propriedades e métodos não são implementados nessas versões. Quando eles são implementados, eles não afetam nem rastreiam nada sobre `HttpClient` APIs de rede.
   
  A classe **ServicePoint** fornece um aplicativo com um ponto de extremidade ao qual o aplicativo pode se conectar para acessar recursos da Internet. Cada **ServicePoint** contém informações que ajudam a otimizar a conexões com um servidor de Internet compartilhando informações de otimização entre as conexões para melhorar o desempenho.  
   
@@ -66,7 +69,7 @@ Dim sp As ServicePoint = ServicePointManager.FindServicePoint(uri)
 sp.ConnectionLimit = newLimit  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Agrupamento de conexão](connection-grouping.md)
 - [Usando protocolos de aplicativo](using-application-protocols.md)

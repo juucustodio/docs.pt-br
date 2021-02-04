@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - load balancing [WCF]
 ms.assetid: 148e0168-c08d-4886-8769-776d0953b80f
-ms.openlocfilehash: ccafce51cadba588dc6c4e8fc8b476f3cd8ee699
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ccb915c33be217d2a8d00a54c5bd57384286140f
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262704"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548091"
 ---
 # <a name="load-balancing"></a>Balanceamento de carga
 
@@ -85,7 +85,9 @@ Uma maneira de aumentar a capacidade dos aplicativos de Windows Communication Fo
 
  Tanto o <xref:System.ServiceModel.WSHttpBinding> quanto o <xref:System.ServiceModel.WSDualHttpBinding> podem ter balanceamento de carga usando técnicas de balanceamento de carga de http, desde que várias modificações sejam feitas na configuração de associação padrão.  
   
-- Desativar o estabelecimento do contexto de segurança: isso pode ser feito pela configuração da <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> propriedade no <xref:System.ServiceModel.WSHttpBinding> para `false` . Como alternativa, se as sessões de segurança forem necessárias, será possível usar sessões de segurança com estado conforme descrito no tópico [sessões seguras](./feature-details/secure-sessions.md) . As sessões de segurança com estado permitem que o serviço permaneça sem estado, pois todo o estado da sessão de segurança é transmitido com cada solicitação como parte do token de segurança de proteção. Observe que, para habilitar uma sessão de segurança com estado, é necessário usar um <xref:System.ServiceModel.Channels.CustomBinding> ou definido pelo usuário, <xref:System.ServiceModel.Channels.Binding> já que as definições de configuração necessárias não são expostas <xref:System.ServiceModel.WSHttpBinding> e <xref:System.ServiceModel.WSDualHttpBinding> fornecidas pelo sistema.  
+- Desative o estabelecimento do contexto de segurança ou use sessões de segurança com estado. O estabelecimento do contexto de segurança pode ser desativado com a definição da <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> propriedade no <xref:System.ServiceModel.WSHttpBinding> para `false` . Se você estiver usando <xref:System.ServiceModel.WSDualHttpBinding> ou as sessões de segurança forem necessárias, será possível usar sessões de segurança com estado conforme descrito em [sessões seguras](./feature-details/secure-sessions.md). As sessões de segurança com estado permitem que o serviço permaneça sem estado, pois todo o estado da sessão de segurança é transmitido a cada solicitação como parte do token de segurança de proteção. Para habilitar uma sessão de segurança com estado, você deve usar um <xref:System.ServiceModel.Channels.CustomBinding> ou definido pelo usuário, uma vez que as <xref:System.ServiceModel.Channels.Binding> definições de configuração necessárias não são expostas no sistema fornecido <xref:System.ServiceModel.WSHttpBinding> e no <xref:System.ServiceModel.WSDualHttpBinding> .
+
+- Se você desativar o estabelecimento do contexto de segurança, também precisará desativar a negociação de credencial de serviço. Para desativá-lo, defina a <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential> propriedade no <xref:System.ServiceModel.WSHttpBinding> para `false` . Para desabilitar a negociação de credencial de serviço, talvez seja necessário especificar explicitamente a identidade do ponto de extremidade no cliente.
   
 - Não use sessões confiáveis. Esse recurso está desativado por padrão.  
   
@@ -95,6 +97,6 @@ Uma maneira de aumentar a capacidade dos aplicativos de Windows Communication Fo
   
  Para obter o melhor desempenho em cenários com balanceamento de carga, considere <xref:System.ServiceModel.NetTcpSecurity> o uso do ( <xref:System.ServiceModel.SecurityMode.Transport> ou <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential> ).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Práticas recomendadas de hospedagem dos Serviços de Informações da Internet](./feature-details/internet-information-services-hosting-best-practices.md)

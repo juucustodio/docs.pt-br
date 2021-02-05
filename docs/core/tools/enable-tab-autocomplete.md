@@ -1,24 +1,24 @@
 ---
 title: Ativar o recurso auto-completar com TAB
-description: Este artigo ensina como habilitar o preenchimento com Tab para a CLI do .NET para PowerShell, bash e Zsh.
+description: Este artigo ensina como habilitar o preenchimento com Tab para a CLI do .NET para PowerShell, Bash, zsh e peixes.
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
 ms.date: 11/03/2019
-ms.openlocfilehash: 31bf5e74644680fc30ca5b79972fbed6367363e1
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: b5b63166faa1762d9fa82a93aa70aebb33167630
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634006"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585553"
 ---
 # <a name="how-to-enable-tab-completion-for-the-net-cli"></a>Como habilitar o preenchimento com TAB para a CLI do .NET
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,1 e versões posteriores
 
-Este artigo descreve como configurar o preenchimento com TAB para três shells: PowerShell, Bash e zsh. Para outros shells, consulte a documentação sobre como configurar a conclusão da guia.
+Este artigo descreve como configurar o preenchimento com Tab para quatro shells, PowerShell, Bash, zsh e peixe. Para outros shells, consulte a documentação sobre como configurar a conclusão da guia.
 
-Uma vez configurado, o preenchimento com Tab para a CLI do .NET é disparado digitando um `dotnet` comando no Shell e, em seguida, pressionando a tecla Tab. A linha de comando atual é enviada para o comando `dotnet complete`, e os resultados são processados pelo shell. Teste os resultados sem habilitar o preenchimento com TAB enviando algo diretamente para o comando `dotnet complete`. Por exemplo:
+Uma vez configurado, o preenchimento com Tab para a CLI do .NET é disparado digitando um `dotnet` comando no Shell e, em seguida, pressionando a tecla Tab. A linha de comando atual é enviada para o comando `dotnet complete`, e os resultados são processados pelo shell. Teste os resultados sem habilitar o preenchimento com TAB enviando algo diretamente para o comando `dotnet complete`. Por exemplo: 
 
 ```console
 > dotnet complete "dotnet a"
@@ -97,4 +97,12 @@ _dotnet_zsh_complete()
 }
 
 compctl -K _dotnet_zsh_complete dotnet
+```
+
+## <a name="fish"></a>pedir
+
+Para adicionar o preenchimento com Tab ao seu shell de **peixe** para a CLI do .net, adicione o seguinte código ao seu `config.fish` arquivo:
+
+```fish
+complete -f -c dotnet -a "(dotnet complete)"
 ```

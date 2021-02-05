@@ -1,7 +1,7 @@
 ---
 title: Tipos numéricos de ponto flutuante – Referência de C#
 description: 'Saiba mais sobre os tipos de ponto flutuante C# internos: float, Double e decimal'
-ms.date: 02/10/2020
+ms.date: 02/04/2021
 f1_keywords:
 - float
 - float_CSharpKeyword
@@ -18,12 +18,12 @@ helpviewer_keywords:
 - floating-point numbers [C#], float keyword
 - double data type [C#]
 - decimal keyword [C#]
-ms.openlocfilehash: a1142d1aa04003ae1942902672cfc7a05edc99c0
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: a086e8de60bbb63408c3f2cd557feb36c4baa0f8
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662661"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585748"
 ---
 # <a name="floating-point-numeric-types-c-reference"></a>Tipos numéricos de ponto flutuante (Referência de C#)
 
@@ -48,7 +48,7 @@ System.Double b = 12.3;
 
 O valor padrão de cada tipo de ponto flutuante é zero, `0`. Cada um dos tipos de ponto flutuante possui as constantes `MinValue` e `MaxValue` que fornecem o valor mínimo e máximo desse tipo. Os tipos `float` e `double` também fornecem constantes que representam valores não numéricos e infinitos. Por exemplo, o tipo `double` fornece as seguintes constantes: <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType> e <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.
 
-Como o tipo `decimal` tem mais precisão e um intervalo menor que `float` e `double`, ele é apropriado para cálculos financeiros e monetários.
+O `decimal` tipo é apropriado quando o grau necessário de precisão é determinado pelo número de dígitos à direita do ponto decimal. Esses números são comumente usados em aplicativos financeiros, para valores de moeda (por exemplo, $1), tarifas de juros (por exemplo, 2,625%) e assim por diante. Os números que são precisos para apenas um dígito decimal são tratados com mais precisão pelo `decimal` tipo: 0,1, por exemplo, podem ser exatamente representados por uma `decimal` instância, enquanto não há `double` uma `float` instância ou que represente exatamente 0,1. Devido a essa diferença em tipos numéricos, erros de arredondamento inesperados podem ocorrer em cálculos aritméticos quando você usa `double` ou `float` para dados decimais. Você pode usar `double` em vez de `decimal` ao otimizar o desempenho é mais importante do que garantir a precisão. No entanto, qualquer diferença no desempenho passaria despercebida por todos, exceto os aplicativos com uso intensivo de cálculo. Outro motivo possível para evitar `decimal` é minimizar os requisitos de armazenamento. Por exemplo, [ml.net](../../../machine-learning/how-does-mldotnet-work.md) usa `float` porque a diferença entre 4 bytes e 16 bytes se soma a conjuntos de dados muito grandes. Para obter mais informações, consulte <xref:System.Decimal?displayProperty=nameWithType>.
 
 Você pode misturar tipos [integrais](integral-numeric-types.md) e `float` os `double` tipos e em uma expressão. Nesse caso, os tipos integrais são implicitamente convertidos em um dos tipos de ponto flutuante e, se necessário, o `float` tipo é convertido implicitamente em `double` . A expressão é avaliada como segue:
 
@@ -72,9 +72,9 @@ Console.WriteLine((decimal)a + b);
 
 O tipo de um literal real é determinado pelo seu sufixo da seguinte maneira:
 
-- O literal sem sufixo ou com o `d` `D` sufixo or é do tipo`double`
-- O literal com o `f` `F` sufixo or é do tipo`float`
-- O literal com o `m` `M` sufixo or é do tipo`decimal`
+- O literal sem sufixo ou com o `d` `D` sufixo or é do tipo `double`
+- O literal com o `f` `F` sufixo or é do tipo `float`
+- O literal com o `m` `M` sufixo or é do tipo `decimal`
 
 O código a seguir demonstra um exemplo de cada um:
 
@@ -109,7 +109,7 @@ Console.WriteLine(m);  // output: 1500000
 
 Há apenas uma conversão implícita entre os tipos numéricos de ponto flutuante: de `float` para `double` . No entanto, você pode converter qualquer tipo de ponto flutuante para qualquer outro tipo de ponto flutuante com a [conversão explícita](../operators/type-testing-and-cast.md#cast-expression). Para obter mais informações, consulte [conversões numéricas internas](numeric-conversions.md).
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 Para obter mais informações, confira as seguintes seções da [especificação da linguagem C#](~/_csharplang/spec/introduction.md):
 
@@ -117,7 +117,7 @@ Para obter mais informações, confira as seguintes seções da [especificação
 - [O tipo decimal](~/_csharplang/spec/types.md#the-decimal-type)
 - [Literais reais](~/_csharplang/spec/lexical-structure.md#real-literals)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de C#](../index.md)
 - [Tipos de valor](value-types.md)

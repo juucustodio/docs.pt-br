@@ -1,17 +1,17 @@
 ---
 title: Objetos – Guia de Programação em C#
 description: O C# usa uma definição de classe ou estrutura para definir tipos de objetos. Em uma linguagem orientada a objeto, como C#, um programa consiste em objetos que interagem dinamicamente.
-ms.date: 07/20/2015
+ms.date: 02/03/2021
 helpviewer_keywords:
 - objects [C#], about objects
 - variables [C#]
 ms.assetid: af4a5230-fbf3-4eea-95e1-8b883c2f845c
-ms.openlocfilehash: e49bfaf573c317523b739796c29d807e5369ada4
-ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
+ms.openlocfilehash: df549b76c5bd49fa91424915928527ec14d7689c
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99427068"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585698"
 ---
 # <a name="objects-c-programming-guide"></a>Objetos (Guia de Programação em C#)
 
@@ -47,8 +47,8 @@ Uma definição de classe ou struct é como um esquema que especifica o que o ti
   
  [!code-csharp[csProgGuideStatements#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#32)]  
   
- A implementação de <xref:System.ValueType?displayProperty=nameWithType> de `Equals` usa reflexão porque ela precisa ser capaz de determinar quais são os campos em qualquer struct. Ao criar seus próprios structs, substitua o método `Equals` para fornecer um algoritmo de igualdade eficiente que é específico ao seu tipo.  
-  
+ A <xref:System.ValueType?displayProperty=nameWithType> implementação de `Equals` usa boxing e Reflection em alguns casos. Para obter informações sobre como fornecer um algoritmo de igualdade eficiente que é específico para seu tipo, consulte [como definir a igualdade de valor para um tipo](../statements-expressions-operators/how-to-define-value-equality-for-a-type.md)
+
 - Para determinar se os valores dos campos em duas instâncias de classe são iguais, você pode usar o método <xref:System.Object.Equals%2A> ou o [Operador ==](../../language-reference/operators/equality-operators.md#equality-operator-). No entanto, use-os apenas se a classe os tiver substituído ou sobrecarregado para fornecer uma definição personalizada do que "igualdade" significa para objetos desse tipo. A classe também pode implementar a interface <xref:System.IEquatable%601> ou a interface <xref:System.Collections.Generic.IEqualityComparer%601>. As duas interfaces fornecem métodos que podem ser usados para testar a igualdade de valores. Ao criar suas próprias classes que substituem `Equals` , certifique-se de seguir as diretrizes declaradas em [como definir a igualdade de valor para um tipo](../statements-expressions-operators/how-to-define-value-equality-for-a-type.md) e <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> .
   
 ## <a name="related-sections"></a>Seções relacionadas  
@@ -63,7 +63,7 @@ Uma definição de classe ou struct é como um esquema que especifica o que o ti
   
 - [Eventos](../events/index.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Guia de programação C#](../index.md)
 - [object](../../language-reference/builtin-types/reference-types.md)

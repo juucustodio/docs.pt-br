@@ -4,12 +4,12 @@ description: Este tutorial avançado ensina a explorar dados usando índices e i
 ms.date: 09/11/2020
 ms.technology: csharp-fundamentals
 ms.custom: mvc
-ms.openlocfilehash: cf6c83484332ed517b2326b3fd9d7458f191227e
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: c0484a42233466e3a2a70a673aee81fce91fe31b
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "90738860"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585397"
 ---
 # <a name="indices-and-ranges"></a>Índices e intervalos
 
@@ -93,7 +93,7 @@ Um tipo pode ser **contabilizado** se tiver uma propriedade chamada `Length` ou 
 
 Por exemplo, os seguintes tipos .NET oferecem suporte a índices e intervalos: <xref:System.String> , <xref:System.Span%601> e <xref:System.ReadOnlySpan%601> . O <xref:System.Collections.Generic.List%601> dá suporte a índices, mas não dá suporte a intervalos.
 
-<xref:System.Array> tem um comportamento mais nuancedo. Matrizes de dimensão única dão suporte a índices e intervalos. Matrizes multidimensionais não. O indexador de uma matriz multidimensional tem vários parâmetros, não um único parâmetro. Matrizes denteadas, também chamadas de matriz de matrizes, oferecem suporte a intervalos e indexadores. O exemplo a seguir mostra como iterar uma subseção retangular de uma matriz denteada. Ele itera a seção no centro, excluindo as primeiras e últimas três linhas, e a primeira e a última duas colunas de cada linha selecionada:
+<xref:System.Array> tem um comportamento mais nuancedo. Matrizes de dimensão única dão suporte a índices e intervalos. Matrizes multidimensionais não dão suporte a indexadores ou intervalos. O indexador de uma matriz multidimensional tem vários parâmetros, não um único parâmetro. Matrizes denteadas, também chamadas de matriz de matrizes, oferecem suporte a intervalos e indexadores. O exemplo a seguir mostra como iterar uma subseção retangular de uma matriz denteada. Ele itera a seção no centro, excluindo as primeiras e últimas três linhas, e a primeira e a última duas colunas de cada linha selecionada:
 
 [!code-csharp[JaggedArrays](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_JaggedArrays)]
 

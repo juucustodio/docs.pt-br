@@ -1,15 +1,15 @@
 ---
 title: Cancelar tarefas assíncronas após um período de tempo (C#) "
 description: Saiba como agendar o cancelamento de todas as tarefas associadas que não foram concluídas em um período de tempo.
-ms.date: 08/19/2020
+ms.date: 02/03/2021
 ms.topic: tutorial
 ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
-ms.openlocfilehash: ad9064f8f45a737982ffc35ab4ea2395ddae9016
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 98c42a2df6153d668b99b6dec49ffe380293b205
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811412"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585371"
 ---
 # <a name="cancel-async-tasks-after-a-period-of-time-c"></a>Cancelar tarefas assíncronas após um período (C#)
 
@@ -52,12 +52,16 @@ static async Task Main()
     {
         Console.WriteLine("\nTasks cancelled: timed out.\n");
     }
+    finally
+    {
+        s_cts.Dispose();
+    }
 
     Console.WriteLine("Application ending.");
 }
 ```
 
-O `Main` método atualizado grava algumas mensagens instrutivas no console do. Dentro de [try catch](../../../language-reference/keywords/try-catch.md), uma chamada para <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> para agendar um cancelamento. Isso sinalizará o cancelamento após um período de tempo.
+O `Main` método atualizado grava algumas mensagens instrutivas no console do. Dentro de [try catch](../../../language-reference/keywords/try-catch.md), uma chamada para <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> agendar um cancelamento. Isso sinalizará o cancelamento após um período de tempo.
 
 Em seguida, o `SumPageSizesAsync` método é aguardado. Se o processamento de todas as URLs ocorrer mais rápido do que o cancelamento agendado, o aplicativo será encerrado. No entanto, se o cancelamento agendado for disparado antes que todas as URLs sejam processadas, um <xref:System.Threading.Tasks.TaskCanceledException> será lançado.
 
@@ -82,7 +86,7 @@ O código a seguir é o texto completo do arquivo *Program.cs* para o exemplo.
 
 :::code language="csharp" source="snippets/cancel-tasks/cancel-task-after-period-of-time/Program.cs":::
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.CancellationToken>
 - <xref:System.Threading.CancellationTokenSource>

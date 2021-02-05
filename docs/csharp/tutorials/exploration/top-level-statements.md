@@ -2,12 +2,12 @@
 title: Instruções de nível superior – tutorial em C#
 description: Este tutorial mostra como você pode usar as instruções de nível superior para testar e provar os conceitos enquanto explora suas ideias
 ms.date: 10/28/2020
-ms.openlocfilehash: 5e5dc6cec382baa69ac8cb4625684315bb2cd5e0
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: c56a40e7a9715ff0265a897c494b457a32e52df2
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282258"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585618"
 ---
 # <a name="tutorial-explore-ideas-using-top-level-statements-to-build-code-as-you-learn"></a>Tutorial: explorar ideias usando instruções de nível superior para criar código conforme você aprende
 
@@ -84,7 +84,7 @@ System.String[]
 
 Para gravar a pergunta no console, você precisará enumerar os argumentos e separá-los com um espaço. Substitua a `WriteLine` chamada pelo código a seguir:
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="EchoInput":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="EchoInput":::
 
 Agora, quando você executar o programa, ele exibirá corretamente a pergunta como uma cadeia de caracteres de argumentos.
 
@@ -92,11 +92,11 @@ Agora, quando você executar o programa, ele exibirá corretamente a pergunta co
 
 Depois de ecoar a pergunta, você pode adicionar o código para gerar a resposta aleatória. Comece adicionando uma matriz de possíveis respostas:
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="Answers":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="Answers":::
 
 Essa matriz tem 12 respostas que são afirmativo, seis que não são confirmadas e seis que são negativas. Em seguida, adicione o seguinte código para gerar e exibir uma resposta aleatória da matriz:
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="GenerateAnswer":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="GenerateAnswer":::
 
 Você pode executar o aplicativo novamente para ver os resultados. Você deverá ver algo semelhante à seguinte saída:
 
@@ -212,7 +212,11 @@ Por fim, você pode limpar o código de animação para remover alguma duplicaç
 
 :::code language="csharp" source="snippets/top-level-statements/Utilities.cs" ID="Animation":::
 
-Agora você tem um aplicativo completo e refatorou as partes reutilizáveis para uso posterior.
+Agora você tem um aplicativo completo e refatorou as partes reutilizáveis para uso posterior. Você pode chamar o novo método de utilitário de suas instruções de nível superior, conforme mostrado abaixo na versão concluída do programa principal:
+
+:::code language="csharp" source="snippets/top-level-statements/Program.cs":::
+
+Isso adiciona a chamada para `Utilities.ShowConsoleAnimation` e adiciona uma instrução adicional `using` .
 
 ## <a name="summary"></a>Resumo
 

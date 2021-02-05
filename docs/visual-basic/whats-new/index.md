@@ -8,12 +8,12 @@ helpviewer_keywords:
 - what's new [Visual Basic]
 - Visual Basic, what's new
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-ms.openlocfilehash: ada336ee5fce317315bb5f3974e0366f7bca3985
-ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
+ms.openlocfilehash: 111430bf32debfcb80ea12aa9eb89c52f695d3cb
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94557097"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585683"
 ---
 # <a name="whats-new-for-visual-basic"></a>Novidades do Visual Basic
 
@@ -21,12 +21,15 @@ Este tópico lista os nomes dos principais recursos para cada versão do Visual 
 
 ## <a name="current-version"></a>Versão atual
 
-Visual Basic 16,0/Visual Studio 2019 versão 16,0 \
-Para obter novos recursos, consulte [Visual Basic 16,0](#visual-basic-160).
+Visual Basic 16,9/Visual Studio 2019 versão 16,9 \
+Para obter novos recursos, consulte [Visual Basic 16,9](#visual-basic-169).
 
 Você pode baixar o SDK do .NET mais recente na [página de downloads do .net](https://dotnet.microsoft.com/download).
 
 ## <a name="previous-versions"></a>Versões anteriores
+
+Visual Basic 16,0/Visual Studio 2019 versão 16,0 \
+Para obter novos recursos, consulte [Visual Basic 16,0](#visual-basic-160).
 
 Visual Basic 15,8/Visual Studio 2017 versão 15,8 \
 Para obter novos recursos, consulte [Visual Basic 15,8](#visual-basic-158).
@@ -63,6 +66,10 @@ Operadores bit shift, declaração de variável de loop
 
 Visual Basic/Visual Studio .NET 2002 \
 A primeira versão do Visual Basic .NET
+
+## <a name="visual-basic-169"></a>Visual Basic 16,9
+
+Visual Basic 16,9 habilita o consumo de propriedades somente de inicialização.
 
 ## <a name="visual-basic-160"></a>Visual Basic 16,0
 
@@ -291,7 +298,7 @@ End Interface
 
 Agora, o compilador usará regras de resolução de sobrecarga normais para escolher o `GetDetails` mais apropriado a ser chamado e você pode declarar relações de interface no Visual Basic, como aquelas mostradas no exemplo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [O que há de novo no Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017)
-- [O que há de novo no Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019)
+- [Novidades no Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019)

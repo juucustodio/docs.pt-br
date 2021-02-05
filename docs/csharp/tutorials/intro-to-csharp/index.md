@@ -1,14 +1,14 @@
 ---
 title: Introdução ao C# – tutoriais interativos
 description: Aprenda C# em seu navegador e comece a trabalhar com seu próprio ambiente de desenvolvimento
-ms.date: 08/22/2019
+ms.date: 02/02/2021
 ms.custom: mvc
-ms.openlocfilehash: 6037862c52fd59ba540e1f65297d787f0a964762
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 62856206c30afac04346d150560c458c6795077d
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162148"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585644"
 ---
 # <a name="introduction-to-c"></a>Introdução ao C\#
 
@@ -59,7 +59,7 @@ Este tutorial pressupõe a conclusão dos tutoriais de introdução online e a i
 
 ## <a name="object-oriented-programming"></a>[Programação orientada a objeto](object-oriented-programming.md)
 
-Este tutorial ensina os conceitos usados na programação orientada a objeto. Você aprenderá os conceitos de *abstração*, *encapsulamento*, *herança*e *polimorfismo* usando exemplos de C#.
+Este tutorial ensina os conceitos usados na programação orientada a objeto. Você aprenderá os conceitos de *abstração*, *encapsulamento*, *herança* e *polimorfismo* usando exemplos de C#.
 
 Este tutorial pressupõe que você concluiu os tutoriais de introdução online e instalou [SDK do .NET Core](https://dotnet.microsoft.com/download) e [Visual Studio Code](https://code.visualstudio.com/) ou o [Visual Studio](https://visualstudio.com) em seu computador de desenvolvimento.
 

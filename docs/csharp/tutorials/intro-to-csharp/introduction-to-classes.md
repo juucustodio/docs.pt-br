@@ -3,18 +3,22 @@ title: Tutorial Classes e objetos – introdução ao C#
 description: Crie seu primeiro programa em C# e explore os conceitos de orientado a objeto
 ms.date: 10/11/2017
 ms.custom: mvc
-ms.openlocfilehash: 0955b0ac33b346b9880c8af70bd73cb458120f35
-ms.sourcegitcommit: 98d20cb038669dca4a195eb39af37d22ea9d008e
+ms.openlocfilehash: a48e5790d2872ca3074bd7ce06c23412086b00f3
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434892"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585358"
 ---
 # <a name="explore-object-oriented-programming-with-classes-and-objects"></a>Explorar programação orientada a objeto com classes e objetos
 
-Este tutorial espera que você tenha um computador que possa usar para desenvolvimento. O tutorial do .NET [Olá, mundo em 10 minutos](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) tem instruções para configurar seu ambiente de desenvolvimento local no Windows, Linux ou MacOS. Uma visão geral dos comandos que você usará está em [Familiarize-se com as ferramentas de desenvolvimento](local-environment.md), com links para obter mais detalhes.
+Neste tutorial, você criará um aplicativo de console e verá os recursos básicos orientados a objeto que fazem parte da linguagem C#.
 
-## <a name="create-your-application"></a>Criar seu aplicativo
+## <a name="prerequisites"></a>Pré-requisitos
+
+O tutorial espera que você tenha uma máquina configurada para desenvolvimento local. No Windows, Linux ou macOS, você pode usar a CLI do .NET para criar, compilar e executar aplicativos. No Windows, você pode usar o Visual Studio 2019. Para obter instruções de instalação, consulte [configurar seu ambiente local](local-environment.md).
+
+## <a name="create-your-application"></a>Criar o aplicativo
 
 Usando uma janela de terminal, crie um diretório chamado *classes*. Você compilará o aplicativo nesse diretório. Altere para esse diretório e digite `dotnet new console` na janela do console. Esse comando cria o aplicativo. Abra *Program.cs*. Ele deverá ser parecido com:
 
@@ -35,7 +39,7 @@ namespace classes
 
 Neste tutorial, você criará novos tipos que representam uma conta bancária. Normalmente, os desenvolvedores definem cada classe em um arquivo de texto diferente. Isso facilita o gerenciamento à medida que o tamanho do programa aumenta. Crie um novo arquivo chamado *BankAccount.cs* no diretório *classes*.
 
-Esse arquivo conterá a definição de uma ***conta bancária**_. A programação orientada a objeto organiza o código criando tipos na forma de _*_classes_*_. Essas classes contêm o código que representa uma entidade específica. A classe `BankAccount` representa uma conta bancária. O código implementa operações específicas por meio de métodos e propriedades. Neste tutorial, a conta bancária dá suporte a este comportamento:
+Esse arquivo conterá a definição de uma ***conta bancária** _. A programação orientada a objeto organiza o código criando tipos na forma de _ *_classes_* *. Essas classes contêm o código que representa uma entidade específica. A classe `BankAccount` representa uma conta bancária. O código implementa operações específicas por meio de métodos e propriedades. Neste tutorial, a conta bancária dá suporte a este comportamento:
 
 1. Ela tem um número com 10 dígitos que identifica exclusivamente a conta bancária.
 1. Ela tem uma cadeia de caracteres que armazena o nome ou os nomes dos proprietários.
@@ -47,7 +51,7 @@ Esse arquivo conterá a definição de uma ***conta bancária**_. A programaçã
 
 ## <a name="define-the-bank-account-type"></a>Definir o tipo de conta bancária
 
-Você pode começar criando as noções básicas de uma classe que define esse comportamento. Crie um novo arquivo usando o comando _*file: New**. Nomeie-o como *BankAccount.cs*. Adicione o seguinte código ao arquivo *BankAccount.cs* :
+Você pode começar criando as noções básicas de uma classe que define esse comportamento. Crie um novo arquivo usando o comando **file: New** . Nomeie-o como *BankAccount.cs*. Adicione o seguinte código ao arquivo *BankAccount.cs* :
 
 ```csharp
 using System;
@@ -73,13 +77,13 @@ namespace classes
 
 Antes de continuar, vamos dar uma olhada no que você compilou.  A declaração `namespace` fornece uma maneira de organizar logicamente seu código. Este tutorial é relativamente pequeno, portanto, você colocará todo o código em um namespace.
 
-`public class BankAccount` define a classe ou o tipo que você está criando. Tudo dentro do `{` e `}` que segue a declaração de classe define o estado e o comportamento da classe. Há cinco ***Membros**_ da `BankAccount` classe. As três primeiras são _*_Propriedades_*_. Propriedades são elementos de dados que podem ter um código que impõe a validação ou outras regras. Os dois últimos são _*_métodos_*_. Os métodos são blocos de código que executam uma única função. A leitura dos nomes de cada um dos membros deve fornecer informações suficientes para você, ou outro desenvolvedor, entender o que a classe faz.
+`public class BankAccount` define a classe ou o tipo que você está criando. Tudo dentro do `{` e `}` que segue a declaração de classe define o estado e o comportamento da classe. Há cinco ***Membros** _ da `BankAccount` classe. As três primeiras são _*_Propriedades_*_. Propriedades são elementos de dados que podem ter um código que impõe a validação ou outras regras. Os dois últimos são _ *_métodos_* *. Os métodos são blocos de código que executam uma única função. A leitura dos nomes de cada um dos membros deve fornecer informações suficientes para você, ou outro desenvolvedor, entender o que a classe faz.
 
 ## <a name="open-a-new-account"></a>Abrir uma nova conta
 
 O primeiro recurso a ser implementado serve para abrir uma conta bancária. Quando um cliente abre uma conta, ele deve fornecer um saldo inicial e informações sobre o proprietário, ou proprietários, dessa conta.
 
-Criar um novo objeto do `BankAccount` tipo significa definir um _*_Construtor_*_ que atribua esses valores. Um _*_Construtor_*_ é um membro que tem o mesmo nome que a classe. Ele é usado para inicializar objetos desse tipo de classe. Adicione o seguinte construtor ao `BankAccount` tipo. Coloque o seguinte código acima da declaração de `MakeDeposit` :
+A criação de um novo objeto do `BankAccount` tipo significa definir um **Construtor*** _ que atribui esses valores. Um _ *_Construtor_** é um membro que tem o mesmo nome que a classe. Ele é usado para inicializar objetos desse tipo de classe. Adicione o seguinte construtor ao `BankAccount` tipo. Coloque o seguinte código acima da declaração de `MakeDeposit` :
 
 ```csharp
 public BankAccount(string name, decimal initialBalance)
@@ -89,7 +93,7 @@ public BankAccount(string name, decimal initialBalance)
 }
 ```
 
-Os construtores são chamados quando você cria um objeto usando [`new`](../../language-reference/operators/new-operator.md) . Substitua a linha `Console.WriteLine("Hello World!");` em _Program. cs * pelo código a seguir (substitua `<name>` pelo seu nome):
+Os construtores são chamados quando você cria um objeto usando [`new`](../../language-reference/operators/new-operator.md) . Substitua a linha `Console.WriteLine("Hello World!");` em *Program.cs* pelo código a seguir (substitua `<name>` pelo seu nome):
 
 ```csharp
 var account = new BankAccount("<name>", 1000);
@@ -137,15 +141,15 @@ Agora, vamos calcular corretamente o `Balance` . O saldo atual pode ser encontra
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="BalanceComputation":::
 
-Este exemplo mostra um aspecto importante de ***Properties**_. Agora, você está calculando o saldo quando outro programador solicita o valor. Seu cálculo enumera todas as transações e fornece a soma como o saldo atual.
+Este exemplo mostra um aspecto importante das ***propriedades***. Agora, você está calculando o saldo quando outro programador solicita o valor. Seu cálculo enumera todas as transações e fornece a soma como o saldo atual.
 
 Depois, implemente os métodos `MakeDeposit` e `MakeWithdrawal`. Esses métodos aplicarão as duas últimas regras: que o saldo inicial deve ser positivo, e que qualquer saque não pode criar um saldo negativo.
 
-Isso introduz o conceito de _*_exceções_*_. A forma padrão de indicar que um método não pode concluir seu trabalho com êxito é lançar uma exceção. O tipo de exceção e a mensagem associada a ele descrevem o erro. Aqui, o método `MakeDeposit` lançará uma exceção se o valor do depósito for negativo. O `MakeWithdrawal` método lançará uma exceção se a quantidade de retirada for negativa ou se a aplicação da retirada resultar em um saldo negativo. Adicione o seguinte código após a declaração da `allTransactions` lista:
+Isso introduz o conceito de ***exceções***. A forma padrão de indicar que um método não pode concluir seu trabalho com êxito é lançar uma exceção. O tipo de exceção e a mensagem associada a ele descrevem o erro. Aqui, o método `MakeDeposit` lançará uma exceção se o valor do depósito for negativo. O `MakeWithdrawal` método lançará uma exceção se a quantidade de retirada for negativa ou se a aplicação da retirada resultar em um saldo negativo. Adicione o seguinte código após a declaração da `allTransactions` lista:
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="DepositAndWithdrawal":::
 
-A [`throw`](../../language-reference/keywords/throw.md) instrução _*gera** uma exceção. A execução do bloco atual é encerrada e o controle transferido para o bloco `catch` da primeira correspondência encontrado na pilha de chamadas. Você adicionará um bloco `catch` para testar esse código um pouco mais tarde.
+A [`throw`](../../language-reference/keywords/throw.md) instrução **gera** uma exceção. A execução do bloco atual é encerrada e o controle transferido para o bloco `catch` da primeira correspondência encontrado na pilha de chamadas. Você adicionará um bloco `catch` para testar esse código um pouco mais tarde.
 
 O construtor deve receber uma alteração para que adicione uma transação inicial, em vez de atualizar o saldo diretamente. Como você já escreveu o método `MakeDeposit`, chame-o de seu construtor. O construtor concluído deve ter esta aparência:
 

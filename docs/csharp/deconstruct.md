@@ -4,12 +4,12 @@ description: Saiba como desconstruir tuplas e outros tipos.
 ms.technology: csharp-fundamentals
 ms.date: 11/23/2017
 ms.assetid: 0b0c4b0f-4a47-4f66-9b8e-f5c63b195960
-ms.openlocfilehash: 96168b729ae3ec11d7a38444b8c100bdbff4efbf
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 5aaf7157b87de4f67f6e4beba18794a6dd13b6d0
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94439697"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585345"
 ---
 # <a name="deconstructing-tuples-and-other-types"></a>Desconstruindo tuplas e outros tipos
 
@@ -57,7 +57,7 @@ Observe que não é possível combinar declarações e as atribuições com as v
 
 ## <a name="deconstructing-tuple-elements-with-discards"></a>Desconstruir elementos de tupla com descartes
 
-Geralmente, ao desconstruir uma tupla, você está interessado nos valores de apenas alguns elementos. Começando com o C# 7.0, você pode aproveitar o suporte do C# para *descartes* , que são variáveis somente gravação cujos valores você opta por ignorar. Um descarte é designado por um caractere de sublinhado ("\_") em uma atribuição. Você pode descartar tantos valores quantos desejar; todos são representados pelo descarte único, `_`.
+Geralmente, ao desconstruir uma tupla, você está interessado nos valores de apenas alguns elementos. Começando com o C# 7.0, você pode aproveitar o suporte do C# para *descartes*, que são variáveis somente gravação cujos valores você opta por ignorar. Um descarte é designado por um caractere de sublinhado ("\_") em uma atribuição. Você pode descartar tantos valores quantos desejar; todos são representados pelo descarte único, `_`.
 
 O exemplo a seguir ilustra o uso de tuplas com descartes. O método `QueryCityDataForYears` a seguir retorna uma tupla de 6 com o nome de uma cidade, sua área, um ano, a população da cidade nesse ano, um segundo ano e população da cidade nesse segundo ano. O exemplo mostra a alteração na população entre esses dois anos. Entre os dados disponíveis da tupla, não estamos preocupados com a área da cidade e sabemos o nome da cidade e as duas datas em tempo de design. Como resultado, estamos interessados apenas nos dois valores de população armazenados na tupla e podemos lidar com seus valores restantes como descartes.  
 
@@ -81,11 +81,7 @@ O exemplo a seguir sobrecarrega o método `Deconstruct` para retornar várias co
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class2.cs)]
 
-Já que você pode sobrecarregar o método `Deconstruct` para refletir os grupos de dados que geralmente são extraídos de um objeto, você deve ter cuidado ao definir métodos `Deconstruct` com assinaturas que são diferentes e não ambíguas. Vários métodos `Deconstruct` que têm o mesmo número de parâmetros `out` ou com o mesmo número e tipo de parâmetros `out` em uma ordem diferente podem causar confusão.
-
-O método `Deconstruct` sobrecarregado no exemplo a seguir ilustra uma possível fonte de confusão. A primeira sobrecarga retorna o primeiro nome, o segundo nome, o sobrenome e idade de um objeto `Person`, nessa ordem. A segunda sobrecarga retorna informações de nome apenas junto com a renda anual, mas o nome, o segundo nome e o sobrenome estão em uma ordem diferente. Isso torna fácil confundir a ordem dos argumentos ao desconstruir uma instância de `Person`.
-
-[!code-csharp[Deconstruct-ambiguity](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-ambiguous.cs)]
+Vários `Deconstruct` métodos com o mesmo número de parâmetros são ambíguos. Você deve ter cuidado para definir `Deconstruct` métodos com diferentes números de parâmetros ou "aridade". `Deconstruct` métodos com o mesmo número de parâmetros não podem ser diferenciados durante a resolução de sobrecarga.
 
 ## <a name="deconstructing-a-user-defined-type-with-discards"></a>Desconstruir um tipo definido pelo usuário com descartes
 
@@ -103,7 +99,7 @@ O exemplo a seguir define dois métodos de extensão `Deconstruct` para a classe
 
 [!code-csharp[Extension-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-extension1.cs)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Descartes](discards.md)
 - [Tipos de tupla](language-reference/builtin-types/value-tuples.md)

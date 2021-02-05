@@ -1,13 +1,13 @@
 ---
 title: Comando dotnet publish
 description: O comando dotnet publish publica um projeto ou uma solução .NET em um diretório.
-ms.date: 11/11/2020
-ms.openlocfilehash: 3918c0708e207157ac33dd1a8fdefb993a1d6741
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.date: 02/03/2021
+ms.openlocfilehash: 5391e56a88f782294c3a71c523d0fc27a09e0dd8
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98190059"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585670"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
@@ -53,7 +53,7 @@ O comando `dotnet publish` chama MSBuild, que invoca o destino `Publish`. Quaisq
 
 O `dotnet publish` comando aceita opções do MSBuild, como `-p` para configurar propriedades e `-l` definir um agente de log. Por exemplo, você pode definir uma propriedade do MSBuild usando o formato: `-p:<NAME>=<VALUE>` .
 
-Você também pode definir propriedades relacionadas à publicação fazendo referência a um arquivo *. pubxml* (disponível desde o SDK do .net Core 3,1). Por exemplo:
+Você também pode definir propriedades relacionadas à publicação fazendo referência a um arquivo *. pubxml* (disponível desde o SDK do .net Core 3,1). Por exemplo: 
 
 ```dotnetcli
 dotnet publish -p:PublishProfile=FolderProfile
@@ -147,6 +147,8 @@ Para obter mais informações, consulte os seguintes recursos:
 
   Compila assemblies de aplicativo como o formato ReadyToRun (R2R). R2R é uma forma de compilação antecipada (AOT). Para obter mais informações, consulte [ReadyToRun images](../deploying/ready-to-run.md). Disponível desde o SDK do .NET Core 3.0.
 
+  Para ver avisos sobre dependências ausentes que poderiam causar falhas de tempo de execução, use `-p:PublishReadyToRunShowWarnings=true` .
+
   Recomendamos que você especifique essa opção em um perfil de publicação em vez de na linha de comando. Para mais informações, consulte [MSBuild](#msbuild).
 
 - **`-p:PublishSingleFile=true`**
@@ -229,7 +231,7 @@ Para obter mais informações, consulte os seguintes recursos:
   dotnet publish --no-dependencies
   ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral da publicação de aplicativos .NET](../deploying/index.md)
 - [Publicar aplicativos .NET com a CLI do .NET](../deploying/deploy-with-cli.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: resolvedor de indicadores para WorkflowHostingEndpoint'
 title: Resolução do indexador para WorkflowHostingEndpoint
 ms.date: 03/30/2017
 ms.assetid: 97fd5816-935e-4625-ad04-e6f6befa07de
-ms.openlocfilehash: 6bcf1c1ac7c0ac9e385c4259ba085ab63afd7cfa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fc2a21a33560452b141069e88b4d7ff816712d96
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274602"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653804"
 ---
 # <a name="bookmark-resolver-for-workflowhostingendpoint"></a>Resolução do indexador para WorkflowHostingEndpoint
 

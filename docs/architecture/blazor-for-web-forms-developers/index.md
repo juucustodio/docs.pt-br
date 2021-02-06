@@ -6,15 +6,15 @@ ms.author: daroth
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 12/01/2020
-ms.openlocfilehash: 47f684e1b48ca95b8d999e6f1429840eb5f541de
-ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
+ms.date: 02/02/2021
+ms.openlocfilehash: 267f7222865c5a92d20faaae41b052da08c284a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96509761"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653466"
 ---
-# <a name="no-locblazor-for-aspnet-web-forms-developers"></a>Blazor para desenvolvedores de Web Forms ASP.NET
+# <a name="blazor-for-aspnet-web-forms-developers"></a>Blazor para desenvolvedores de Web Forms ASP.NET
 
 ![Captura de tela que mostra a capa do livro eletrônico de aplicativos sem servidor.](./media/index/blazor-for-aspnet-web-forms-developers.png)
 
@@ -34,7 +34,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2020 da Microsoft Corporation
+Copyright © 2021 da Microsoft Corporation
 
 Todos os direitos reservados. Nenhuma parte do conteúdo deste guia pode ser reproduzida ou transmitida de nenhuma forma nem por nenhum meio sem a permissão por escrito do publicador.
 

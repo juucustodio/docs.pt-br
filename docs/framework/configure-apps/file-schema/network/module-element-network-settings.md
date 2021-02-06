@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <module> elemento (configurações de rede)'
 title: Elemento <module> (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - module element
 - <module> element
 ms.assetid: 10318725-9666-4d65-ab61-b94c64e59f13
-ms.openlocfilehash: ad641f93e93f627dae1c7d0bda4620093c4567b2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d498b79ae6046367bc81add5ea387e178ab6c29d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91205042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652829"
 ---
 # <a name="module-element-network-settings"></a>Elemento \<module> (Configurações de Rede)
 
@@ -24,7 +25,7 @@ Adiciona um novo módulo de proxy ao aplicativo.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<module>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <module
@@ -78,7 +79,7 @@ Adiciona um novo módulo de proxy ao aplicativo.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.IWebProxy?displayProperty=nameWithType>
 - [Esquema de configurações de rede](index.md)

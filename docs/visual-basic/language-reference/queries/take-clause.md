@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: cláusula Take (Visual Basic)'
 title: Cláusula Take
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - queries [Visual Basic], Take
 - Take clause [Visual Basic]
 ms.assetid: 77bf87b2-1476-4456-957f-fee922fbad8c
-ms.openlocfilehash: f2377d8d1635912885a310b2b0429a6a00083b47
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6542d262490d9d4acff893b2a99ffb60dd1446a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869678"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653531"
 ---
 # <a name="take-clause-visual-basic"></a>Cláusula Take (Visual Basic)
 
 Retorna um número especificado de elementos contíguos do início de uma coleção.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Take count  
@@ -28,7 +29,7 @@ Take count
 ## <a name="parts"></a>Partes  
 
  `count`  
- Necessário. Um valor ou uma expressão que é avaliada como o número de elementos da sequência a ser retornado.  
+ Obrigatório. Um valor ou uma expressão que é avaliada como o número de elementos da sequência a ser retornado.  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -46,7 +47,7 @@ Take count
   
  [!code-vb[VbSimpleQuerySamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a LINQ no Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [Consultas](index.md)

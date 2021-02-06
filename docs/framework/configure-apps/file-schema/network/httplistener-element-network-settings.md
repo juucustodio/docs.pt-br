@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <httpListener> elemento (configurações de rede)'
 title: Elemento <httpListener> (Configurações de Rede)
 ms.date: 03/30/2017
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
-ms.openlocfilehash: 78526559164939667eab8848bc5fd2af6749d474
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 18c139ad7767370ecd3a4116e352b7614914d199
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652855"
 ---
 # <a name="httplistener-element-network-settings"></a>Elemento \<httpListener> (Configurações de Rede)
 
@@ -18,7 +19,7 @@ Personaliza os parâmetros usados pela <xref:System.Net.HttpListener> classe.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<httpListener>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <httpListener  
@@ -142,7 +143,7 @@ Personaliza os parâmetros usados pela <xref:System.Net.HttpListener> classe.
 |Arquivo de validação||  
 |Pode estar vazio||  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.Configuration.HttpListenerElement>
 - <xref:System.Net.HttpListener>

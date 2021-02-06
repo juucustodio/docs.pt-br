@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: elemento GCLOHThreshold'
 title: Elemento GCLOHThreshold
 ms.date: 11/20/2019
 helpviewer_keywords:
 - GCLOHThreshold element
 - <GCLOHThreshold> element
-ms.openlocfilehash: d72dc9d27984f60dfb6296217263ce8b176093c6
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5d4ef4e6aaf44642c2307dc27ac2e99e966d3ad0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74451216"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652803"
 ---
 # <a name="gclohthreshold-element"></a>Elemento GCLOHThreshold
 
@@ -19,7 +20,7 @@ Especifica o tamanho do limite, em bytes, que faz com que o coletor de lixo colo
 &nbsp;&nbsp;[\<runtime>](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;\<GCLOHThreshold>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <GCLOHThreshold
@@ -53,7 +54,7 @@ Nenhum.
 
 Essa configuração foi introduzida no .NET Framework 4,8.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações de tempo de execução](index.md)
 - [Esquema do arquivo de configuração](../index.md)

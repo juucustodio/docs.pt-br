@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: esquema de configurações de aplicativo'
 title: Esquema de configurações do aplicativo
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Windows Forms, application settings schema
 - configuration schema [.NET Framework], application settings
 ms.assetid: 5797fcff-6081-4e8c-bebf-63d9c70cf14b
-ms.openlocfilehash: fc9cd8ac3819c6a02019c871e7bd45ceb4c2cef7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 24c5771e9d98d07bbdc8dab5fce0f1535bc9b582
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90552304"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652894"
 ---
 # <a name="application-settings-schema"></a>Esquema de configurações do aplicativo
 
@@ -44,7 +45,7 @@ Esse elemento define uma configuração. Ele tem os atributos a seguir.
 | Atributo        | Descrição |
 | ---------------- | ----------- |
 | **name**         | Obrigatórios. A ID exclusiva da configuração. As configurações criadas por meio do Visual Studio são salvas com o nome `ProjectName.Properties.Settings` . |
-| **serializeAs** | Obrigatórios. O formato a ser usado para serializar o valor para texto. Os valores válidos são:<br><br>- `string`. O valor é serializado como uma cadeia de caracteres usando um <xref:System.ComponentModel.TypeConverter> .<br>- `xml`. O valor é serializado usando a serialização XML.<br>- `binary`. O valor é serializado como binário codificado por texto usando serialização binária.<br />- `custom`. O provedor de configurações tem um conhecimento inerente dessa configuração e a serializa e a desserializa. |
+| **serializeAs** | Obrigatório. O formato a ser usado para serializar o valor para texto. Os valores válidos são:<br><br>- `string`. O valor é serializado como uma cadeia de caracteres usando um <xref:System.ComponentModel.TypeConverter> .<br>- `xml`. O valor é serializado usando a serialização XML.<br>- `binary`. O valor é serializado como binário codificado por texto usando serialização binária.<br />- `custom`. O provedor de configurações tem um conhecimento inerente dessa configuração e a serializa e a desserializa. |
 
 ## <a name="value-element"></a>Elemento \<value>
 
@@ -88,7 +89,7 @@ O exemplo a seguir mostra um arquivo de configurações do aplicativo que define
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral sobre configurações do aplicativo](/dotnet/desktop/winforms/advanced/application-settings-overview)
 - [Arquitetura das configurações do aplicativo](/dotnet/desktop/winforms/advanced/application-settings-architecture)

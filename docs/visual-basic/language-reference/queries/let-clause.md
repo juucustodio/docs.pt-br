@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: cláusula Let (Visual Basic)'
 title: Cláusula Let
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - Let clause [Visual Basic]
 - Let statement [Visual Basic]
 ms.assetid: 981aa516-16eb-4c53-b1f1-5aa3e82f316e
-ms.openlocfilehash: a6ff3fc80a2b6752c61a8b8f7d4ce62b5a46baad
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 88a7d96bb790a1e6ec5adfa4337c51f807930168
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869879"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653635"
 ---
 # <a name="let-clause-visual-basic"></a>Cláusula Let (Visual Basic)
 
 Computa um valor e o atribui a uma nova variável dentro da consulta.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Let variable = expression [, ...]  
@@ -29,8 +30,8 @@ Let variable = expression [, ...]
   
 |Termo|Definição|  
 |---|---|  
-|`variable`|Necessário. Um alias que pode ser usado para referenciar os resultados da expressão fornecida.|  
-|`expression`|Necessário. Uma expressão que será avaliada e atribuída à variável especificada.|  
+|`variable`|Obrigatório. Um alias que pode ser usado para referenciar os resultados da expressão fornecida.|  
+|`expression`|Obrigatório. Uma expressão que será avaliada e atribuída à variável especificada.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -44,7 +45,7 @@ Let variable = expression [, ...]
   
  [!code-vb[VbSimpleQuerySamples#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#16)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a LINQ no Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [Consultas](index.md)

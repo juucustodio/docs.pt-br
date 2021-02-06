@@ -1,15 +1,15 @@
 ---
 title: Quando escolher o .NET 5 para contêineres do Docker
 description: Arquitetura de microserviços .NET para aplicativos .NET em contêineres | Quando escolher o .NET para contêineres do Docker
-ms.date: 01/13/2021
-ms.openlocfilehash: 61909c91d795582af499456c65ae0d7b4f2911e2
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.date: 02/02/2021
+ms.openlocfilehash: d0480ac43c0090b72185bd23bbd11ac7e26001e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189272"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653414"
 ---
-# <a name="when-to-choose-net-for-docker-containers"></a>Quando escolher o .NET para contêineres do Docker
+# <a name="when-to-choose-net-for-docker-containers"></a>Quando escolher o .NET para os contêineres do Docker
 
 A modularidade e a natureza leve do .NET 5 tornam-as perfeitos para contêineres. Quando você implanta e inicia um contêiner, sua imagem é muito menor com o .NET 5 do que com .NET Framework. Por outro lado, para usar .NET Framework para um contêiner, você deve basear sua imagem na imagem do Windows Server Core, que é muito mais pesada do que as imagens do Windows nano Server ou do Linux que você usa para o .NET 5.
 
@@ -33,7 +33,7 @@ Além dos IDEs e editores, você pode usar a CLI do [.net](../../../core/tools/i
 
 ## <a name="using-containers-for-new-green-field-projects"></a>Usando contêineres para novos projetos ("campo verde")
 
-Contêineres são comumente usados em conjunto com uma arquitetura de microsserviços, embora também possam ser usados para colocar em contêineres aplicativos Web ou serviços que sigam qualquer padrão de arquitetura. Você pode usar .NET Framework em contêineres do Windows, mas a modularidade e a natureza leve do .NET 5 tornam-o perfeita para as arquiteturas de contêineres e de microserviços. Quando você cria e implanta um contêiner, sua imagem é muito menor com o .NET Core do que com o .NET Framework.
+Contêineres são comumente usados em conjunto com uma arquitetura de microsserviços, embora também possam ser usados para colocar em contêineres aplicativos Web ou serviços que sigam qualquer padrão de arquitetura. Você pode usar .NET Framework em contêineres do Windows, mas a modularidade e a natureza leve do .NET 5 tornam-o perfeita para as arquiteturas de contêineres e de microserviços. Quando você cria e implanta um contêiner, sua imagem é muito menor com o .NET 5 do que com .NET Framework.
 
 ## <a name="create-and-deploy-microservices-on-containers"></a>Criar e implantar microserviços em contêineres
 

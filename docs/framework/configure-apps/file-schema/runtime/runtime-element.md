@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <runtime> elemento'
 title: Elemento <runtime>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - runtime element
 - container tags, <runtime> element
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
-ms.openlocfilehash: 3825ae7c3e35193cb835981600fe1ef83097cd2d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: eeffc8de4eeb6fb53ef3829b8c5b078be4cee83a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74430463"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652764"
 ---
 # <a name="runtime-element"></a>Elemento \<runtime>
 
@@ -23,7 +24,7 @@ Fornece informações usadas pelo Common Language Runtime para configurar aplica
 [\<configuration>](../configuration-element.md)\
 &nbsp;&nbsp;\<runtime>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <runtime>
@@ -97,7 +98,7 @@ Os elementos filho na [\<runtime>](runtime-element.md) seção de um arquivo de 
 
 Os elementos na [\<runtime>](runtime-element.md) seção são lidos automaticamente pelo Common Language Runtime na inicialização do aplicativo. Você também pode definir o arquivo de configuração para um domínio de aplicativo não padrão fornecendo seu nome à <xref:System.AppDomainSetup.ConfigurationFile%2A?displayProperty=nameWithType> Propriedade; suas configurações são lidas automaticamente quando o domínio do aplicativo é carregado. Você deve, raramente, ter a necessidade de ler diretamente as configurações na [\<runtime>](runtime-element.md) seção no arquivo de configuração do aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

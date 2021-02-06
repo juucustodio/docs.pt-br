@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <add> elemento para <appSettings>'
 title: Elemento <add> para <appSettings>
 ms.date: 05/01/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - add Element
 - <add> Element
 ms.assetid: 8734efdc-00f6-4a65-bba6-084c5bc65246
-ms.openlocfilehash: 5c7de79ec626966e71d461dd3865b294a8979db2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f10ffe517b3b25543bc7baed0c7d2af13f48ab02
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77214806"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652881"
 ---
 # <a name="add-element-for-appsettings"></a>Elemento \<add> para \<appSettings>
 
@@ -22,7 +23,7 @@ Adiciona uma configuração de aplicativo personalizada.
 &nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <appSettings>
@@ -66,6 +67,6 @@ O exemplo a seguir usa o `<add>` elemento para definir duas configurações de c
 </appSettings>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema do arquivo de configuração para o .NET Framework](../index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1423-NegotiateTokenAuthenticatorStateCacheRatio'
 title: 1423 - NegotiateTokenAuthenticatorStateCacheRatio
 ms.date: 03/30/2017
 ms.assetid: 6301db99-bb23-40d1-b8df-f0ae1793ce68
-ms.openlocfilehash: 4895b2d8438821a446848aaee89189d47c67822d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 968bd40b08e031a3cac2a7f3400acdfa9ebd50f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241181"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99645523"
 ---
 # <a name="1423---negotiatetokenauthenticatorstatecacheratio"></a>1423 - NegotiateTokenAuthenticatorStateCacheRatio
 

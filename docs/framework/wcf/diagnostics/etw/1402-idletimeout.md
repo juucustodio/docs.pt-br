@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1402-IdleTimeout'
 title: 1402 - IdleTimeout
 ms.date: 03/30/2017
 ms.assetid: 581233aa-ce1a-49b6-9497-8bff88664036
-ms.openlocfilehash: c0e45a19da2f5ea1a0eea398dc910046b2597602
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 87b93ea98b22f9ba4eb91d4ab8921cd1ff3a2b2a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241441"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99645822"
 ---
 # <a name="1402---idletimeout"></a>1402 - IdleTimeout
 
@@ -17,7 +18,7 @@ ms.locfileid: "96241441"
 |-|-|  
 |ID|1402|  
 |Palavras-chave|ServiceModel|  
-|Nível|Erro do|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

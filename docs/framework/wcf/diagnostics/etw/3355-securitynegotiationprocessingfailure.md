@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3355-SecurityNegotiationProcessingFailure'
 title: 3355 - SecurityNegotiationProcessingFailure
 ms.date: 03/30/2017
 ms.assetid: 504f85f0-d11d-4de0-a0ab-ea580a476d18
-ms.openlocfilehash: 8e7156ecf2f25b4736873a69ac8e3ed6a249bb19
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e1984d975052484fb05122659840e6af6da39921
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96282574"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644951"
 ---
 # <a name="3355---securitynegotiationprocessingfailure"></a>3355 - SecurityNegotiationProcessingFailure
 
@@ -17,7 +18,7 @@ ms.locfileid: "96282574"
 |-|-|  
 |ID|3355|  
 |Palavras-chave|Segurança|  
-|Nível|Erro do|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

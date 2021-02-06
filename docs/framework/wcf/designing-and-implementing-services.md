@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: projetando e implementando serviços'
 title: Serviços de implantação e projeção
 ms.date: 03/30/2017
 helpviewer_keywords:
 - defining service contracts [WCF]
 ms.assetid: 036fae20-7c55-4002-b71d-ac4466e167a3
-ms.openlocfilehash: ea32855a3a512b8e96b8d6d72f101523b5d16107
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fde63fb6d1256b3c9e1fdd69932e378de95d508b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646069"
 ---
 # <a name="designing-and-implementing-services"></a>Serviços de implantação e projeção
 
@@ -71,7 +72,7 @@ Esta seção mostra como definir e implementar contratos do WCF. Um contrato de 
   
  Esse processo de requisito aditivo é importante para ter em mente ao projetar, implementar, configurar e hospedar um aplicativo de serviço de Windows Communication Foundation (WCF). Por exemplo, o contrato pode especificar que ele precisa oferecer suporte a uma sessão. Nesse caso, você deve configurar a associação para dar suporte a esse requisito contratual ou a implementação do serviço não funcionará. Ou se o serviço exigir autenticação integrada do Windows e estiver hospedado no Serviços de Informações da Internet (IIS), o aplicativo Web no qual o serviço reside deve ter a autenticação integrada do Windows ativada e o suporte anônimo desativado. Para obter mais informações sobre os recursos e o impacto dos diferentes tipos de aplicativo de host de serviço, consulte [serviços de hospedagem](hosting-services.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Criando contratos de serviço](designing-service-contracts.md)
 - [Implementando contratos de serviço](implementing-service-contracts.md)

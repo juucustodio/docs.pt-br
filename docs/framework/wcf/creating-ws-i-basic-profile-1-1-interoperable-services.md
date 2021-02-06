@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: criação de serviços interoperáveis 1,1 do WS-I Basic Profile'
 title: Criando serviços interoperáveis de perfil básico de WS-I 1.1
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - configuration [WCF], interoperable services
 ms.assetid: 91b70a21-8f5c-4679-808c-2ed5fa6b2013
-ms.openlocfilehash: b5d262c3e0443503ccbf49a1a468c82843799a61
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 46e2d925dfe431957198b1d53b40d28adf6fb1c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255046"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646173"
 ---
 # <a name="creating-ws-i-basic-profile-11-interoperable-services"></a>Criando serviços interoperáveis de perfil básico de WS-I 1.1
 
@@ -44,6 +45,6 @@ Para disponibilizar os metadados de um serviço WCF para o ASP.NET, use a ferram
  [!code-vb[C_HowTo-WCFServiceAndASMXClient#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto-wcfserviceandasmxclient/vb/program.vb#0)]  
  [!code-xml[C_HowTo-WCFServiceAndASMXClient#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto-wcfserviceandasmxclient/common/app.config#1)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interoperabilidade com serviços Web do ASP.NET](./feature-details/interop-with-aspnet-web-services.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Configurando seu aplicativo'
 title: Configurando seu aplicativo
 ms.date: 03/30/2017
 ms.assetid: a2f995b0-669d-4721-b00f-4561ec7eb6a4
-ms.openlocfilehash: e08e474be02ee11a6727df8b908b53ab1403f7f3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d28876068f23a67ea1ff005d7d217e09b2854783
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294814"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646056"
 ---
 # <a name="configuring-your-application"></a>Configurando seu aplicativo
 
@@ -32,7 +33,7 @@ O Windows Communication Foundation (WCF) usa o sistema de configuração do .NET
 > [!NOTE]
 > Se você editar o arquivo de configuração de um projeto de serviço Web WCF no Visual Studio, clicando com o botão direito do mouse no **Gerenciador de soluções**, observe que o item de menu Editar contexto de **configuração do WCF** está ausente. Para solucionar esse problema, clique no menu **ferramentas** e escolha **Editor de configuração do serviço WCF**. Depois disso, você pode clicar com o botão direito do mouse em um arquivo de configuração e usar o item de menu de contexto **Editar configuração do WCF** .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramenta Configuration Editor (SvcConfigEditor.exe)](../configuration-editor-tool-svcconfigeditor-exe.md)
 - [Configurando serviços](../configuring-services.md)

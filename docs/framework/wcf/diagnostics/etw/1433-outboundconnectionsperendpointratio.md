@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1433-OutboundConnectionsPerEndpointRatio'
 title: 1433 - OutboundConnectionsPerEndpointRatio
 ms.date: 03/30/2017
 ms.assetid: 5f17f20d-7035-45f7-85a6-a6743f77fe70
-ms.openlocfilehash: df23ce662ceb7a0bc2dca1ed4f602ae648b3e93b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e86828dd762b193f086399ae117817089233b3aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96271051"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99645367"
 ---
 # <a name="1433---outboundconnectionsperendpointratio"></a>1433 - OutboundConnectionsPerEndpointRatio
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1416-MaxReceivedMessageSizeExceeded'
 title: 1416 - MaxReceivedMessageSizeExceeded
 ms.date: 03/30/2017
 ms.assetid: ee5562dd-29e1-432d-9c78-0bdc3ae365c4
-ms.openlocfilehash: 86cf8a8104d21d961e4eb5b13fb93c53c84d9ea1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b1cba8033e7ce00bce423b4d50d5231b08106234
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274784"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99645692"
 ---
 # <a name="1416---maxreceivedmessagesizeexceeded"></a>1416 - MaxReceivedMessageSizeExceeded
 
@@ -17,7 +18,7 @@ ms.locfileid: "96274784"
 |-|-|  
 |ID|1416|  
 |Palavras-chave|Quota|  
-|Nível|Erro do|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

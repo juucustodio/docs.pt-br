@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 205-OperationInvoked'
 title: 205 - OperationInvoked
 ms.date: 03/30/2017
 ms.assetid: 9c8d6c90-dfa5-4ae0-a589-96679a8fb3ba
-ms.openlocfilehash: c36294a4a430c3e372e8213246e85dba45ce03c8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 09afe4c29c5f56b06bbf524dd13d88ddf2319063
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286013"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644964"
 ---
 # <a name="205---operationinvoked"></a>205 - OperationInvoked
 
@@ -17,7 +18,7 @@ ms.locfileid: "96286013"
 |-|-|  
 |ID|205|  
 |Palavras-chave|Solução de problemas, ServiceModel|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

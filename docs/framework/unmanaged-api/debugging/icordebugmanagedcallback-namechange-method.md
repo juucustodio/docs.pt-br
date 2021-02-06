@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugManagedCallback:: NameChange'
 title: Método ICorDebugManagedCallback::NameChange
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a7018a0e-880e-4b68-b52a-1cd22c7aad62
 topic_type:
 - apiref
-ms.openlocfilehash: 0307ad5794d641833c2da1a1674e455ebff24861
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5f337f5e05b80c97e8b8e48f8b7bc76b3232b2c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726516"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660395"
 ---
 # <a name="icordebugmanagedcallbacknamechange-method"></a>Método ICorDebugManagedCallback::NameChange
 
@@ -53,6 +54,6 @@ HRESULT NameChange (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

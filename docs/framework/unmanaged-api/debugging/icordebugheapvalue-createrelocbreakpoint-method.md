@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugHeapValue:: CreateRelocBreakpoint'
 title: Método ICorDebugHeapValue::CreateRelocBreakpoint
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 54d31e7b-b1e2-4f2b-8a4f-867b8759fe41
 topic_type:
 - apiref
-ms.openlocfilehash: ac99985295bc428e3e8c271b4db0b881ea26638e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9202c7fdd751b60c529a0363e88c8eb89484ff28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733328"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660850"
 ---
 # <a name="icordebugheapvaluecreaterelocbreakpoint-method"></a>Método ICorDebugHeapValue::CreateRelocBreakpoint
 
 Este método não está implementado na versão atual do .NET Framework.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT CreateRelocBreakpoint (  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugModule2:: método ApplyChanges'
 title: Método ICorDebugModule2::ApplyChanges
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 96fa3406-6a6f-41a1-88c6-d9bc5d1a16d1
 topic_type:
 - apiref
-ms.openlocfilehash: a6b1a7c9be821890a3f15d8c3297273607f5bedd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 09cbc395c8d656d1dc27de86305432b26308c885
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709694"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660070"
 ---
 # <a name="icordebugmodule2applychanges-method"></a>Método ICorDebugModule2::ApplyChanges
 

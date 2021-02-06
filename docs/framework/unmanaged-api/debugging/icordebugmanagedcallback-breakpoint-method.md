@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugManagedCallback:: Breakpoint'
 title: Método ICorDebugManagedCallback::Breakpoint
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 60b279b0-a726-46d2-8c53-76986a007ebb
 topic_type:
 - apiref
-ms.openlocfilehash: d7cf966f407572cc681f641b63791906a5c015f3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: dd4339294d8c4061c89bbb0ba7023b313e06102f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731859"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660590"
 ---
 # <a name="icordebugmanagedcallbackbreakpoint-method"></a>Método ICorDebugManagedCallback::Breakpoint
 
@@ -57,6 +58,6 @@ HRESULT Breakpoint (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

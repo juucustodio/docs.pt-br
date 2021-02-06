@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugHeapSegmentEnum'
 title: Interface ICorDebugHeapSegmentEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 20fc1b9d-e228-4107-bd76-53934c1724b9
 topic_type:
 - apiref
-ms.openlocfilehash: 42126d15c64175f35bba89a1ab6abacc64128012
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 614bae0ea5e3eb7816fdeec23a0dc7aa6e44801d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704624"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660876"
 ---
 # <a name="icordebugheapsegmentenum-interface"></a>Interface ICorDebugHeapSegmentEnum
 
@@ -27,7 +28,7 @@ Fornece um enumerador para regiões de memória do heap gerenciado. Essa interfa
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Next](icordebugheapsegmentenum-next-method.md)|Obtém o número especificado de instâncias de [COR_SEGMENT](cor-segment-structure.md) que contêm informações sobre regiões do heap gerenciado.|  
   
@@ -49,6 +50,6 @@ Fornece um enumerador para regiões de memória do heap gerenciado. Essa interfa
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

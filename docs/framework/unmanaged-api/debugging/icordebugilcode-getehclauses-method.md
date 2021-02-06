@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugILCode:: GetEHClauses'
 title: ICorDebugILCode::Método GetEHClauses
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: cf7a0e00-06ae-47a5-8037-598b26196802
 topic_type:
 - apiref
-ms.openlocfilehash: 38936a57944e9a0920c374f473c4cbe8e8d70abb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e790f0f1f69a38d3a1be9e98eacfc5e37be0fd05
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728661"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660655"
 ---
 # <a name="icordebugilcodegetehclauses-method"></a>ICorDebugILCode::Método GetEHClauses
 
@@ -59,7 +60,7 @@ HRESULT GetEHClauses(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugILCode](icordebugilcode-interface.md)
 - [Estrutura CorDebugEHClause](cordebugehclause-structure.md)

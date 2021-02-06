@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugHeapEnum'
 title: Interface ICorDebugHeapEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 99cbc1eb-d539-4f76-a0d8-b93348112f14
 topic_type:
 - apiref
-ms.openlocfilehash: 312052fcd683acbccb9ca616992bd635490aa2a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c8a2f46bf412e2c4b2fe43d3eb50169191f40445
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724358"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660889"
 ---
 # <a name="icordebugheapenum-interface"></a>Interface ICorDebugHeapEnum
 
@@ -27,7 +28,7 @@ Fornece um enumerador para objetos no heap gerenciado. Essa interface é uma sub
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Next](icordebugheapenum-next-method.md)|Obtém o número especificado de instâncias de [COR_HEAPOBJECT](cor-heapobject-structure.md) que contêm informações sobre objetos no heap gerenciado.|  
   
@@ -47,6 +48,6 @@ Fornece um enumerador para objetos no heap gerenciado. Essa interface é uma sub
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugManagedCallback:: StepComplete'
 title: Método ICorDebugManagedCallback::StepComplete
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5e1f2c47-81df-4530-826d-96489cd68719
 topic_type:
 - apiref
-ms.openlocfilehash: 8de0858abe7db9ae1225f449083e417e13507b3d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 653abee26f09ac8877be9fa4183763739845666a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703028"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660356"
 ---
 # <a name="icordebugmanagedcallbackstepcomplete-method"></a>Método ICorDebugManagedCallback::StepComplete
 
@@ -65,6 +66,6 @@ HRESULT StepComplete (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

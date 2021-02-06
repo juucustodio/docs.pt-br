@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugManagedCallback:: LoadModule'
 title: Método ICorDebugManagedCallback::LoadModule
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 66ec04e9-87cb-42ce-9720-81522abb5d5a
 topic_type:
 - apiref
-ms.openlocfilehash: 698a5cb88884febc4dfb3b916c00df20c1a77819
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9a547d384b3f450054ebc70072664c6dcfb5992f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679644"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660486"
 ---
 # <a name="icordebugmanagedcallbackloadmodule-method"></a>Método ICorDebugManagedCallback::LoadModule
 
@@ -57,7 +58,7 @@ HRESULT LoadModule (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método UnloadModule](icordebugmanagedcallback-unloadmodule-method.md)
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

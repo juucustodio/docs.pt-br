@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: serviços de Request-Reply'
 title: Serviços de resposta por solicitação
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - WCF [WCF], request-reply services
 - request-reply contracts [WCF]
 ms.assetid: 2fa710f1-47f4-4598-b063-3ab3bd22ebba
-ms.openlocfilehash: 10b82e859369dae4f57e0e13782e2375a304ab02
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 804441d91577623b2a5fac9292f183628f9e542e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295516"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632822"
 ---
 # <a name="request-reply-services"></a>Serviços de resposta por solicitação
 
@@ -31,7 +32,7 @@ public interface IRequestReplyCalculator
   
  Você não precisa definir a  <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> propriedade como, `false` pois esse é o comportamento padrão.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços unidirecionais](one-way-services.md)
 - [Serviços de duplex](duplex-services.md)

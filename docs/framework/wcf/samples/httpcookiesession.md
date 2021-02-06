@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: HttpCookieSession'
 title: HttpCookieSession
 ms.date: 03/30/2017
 ms.assetid: 101cb624-8303-448a-a3af-933247c1e109
-ms.openlocfilehash: df29ae84537cdb7cea40abcdb848ffbb8bbd6b9f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b5b5a94cd6c019e39d95c1581ce88dbca4460ba6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631951"
 ---
 # <a name="httpcookiesession"></a>HttpCookieSession
 

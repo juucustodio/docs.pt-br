@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral de sessões confiáveis'
 title: Visão geral de sessões confiáveis
 ms.date: 03/30/2017
 ms.assetid: a7fc4146-ee2c-444c-82d4-ef6faffccc2d
-ms.openlocfilehash: a85a34c5e2ec7928c01586e4b01cdf5e90e896a7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 51de6012245b4fc0a367069d02fe69ee031f2b30
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601082"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632887"
 ---
 # <a name="reliable-sessions-overview"></a>Visão geral de sessões confiáveis
 
@@ -17,7 +18,7 @@ Este tópico descreve as sessões confiáveis, como e quando usá-las e como pro
 
 ## <a name="wcf-reliable-sessions"></a>Sessões confiáveis do WCF
 
-As sessões confiáveis do WCF são uma implementação de mensagens confiáveis do SOAP, conforme definido pelo protocolo WS-ReliableMessaging.
+As sessões confiáveis do WCF são uma implementação de mensagens confiáveis SOAP, conforme definido pelo protocolo WS-ReliableMessaging.
 
 O WCF SOAP Reliable Messaging fornece uma sessão confiável de ponta a ponta entre dois pontos de extremidade, independentemente do número ou tipo de intermediários que separam os pontos de extremidade de mensagens. Isso inclui os intermediários de transporte que não usam SOAP (por exemplo, proxies HTTP) ou intermediários que usam SOAP (por exemplo, roteadores ou pontes baseados em SOAP) que são necessários para que as mensagens fluam entre os pontos de extremidade. Um canal de sessão confiável dá suporte à comunicação *interativa* para que os serviços conectados por tal canal sejam executados simultaneamente e troquem e processem mensagens em condições de baixa latência, ou seja, dentro de intervalos de tempo relativamente curtos. Esse acoplamento significa que esses componentes fazem o progresso juntos ou que falham juntos, portanto, não há isolamento fornecido entre eles.
 
@@ -27,7 +28,7 @@ Uma sessão confiável mascara dois tipos de falhas:
 
 - Falhas de transporte.
 
-Uma sessão confiável implementa o protocolo WS-ReliableMessaging e uma janela de transferência na memória para mascarar falhas de nível de mensagem SOAP e restabelece conexões no caso de falhas de transporte.
+Uma sessão confiável implementa o protocolo de WS-ReliableMessaging e uma janela de transferência na memória para mascarar falhas de nível de mensagem SOAP e restabelece conexões no caso de falhas de transporte.
 
 Uma sessão confiável fornece mensagens SOAP que o TCP fornece para pacotes IP. Uma conexão de soquete TCP fornece uma transferência em ordem singular de pacotes IP entre nós. O canal confiável fornece o mesmo tipo de transferência confiável, mas difere da confiabilidade do soquete TCP das seguintes maneiras:
 
@@ -47,17 +48,17 @@ Use uma sessão confiável nos pontos de extremidade que usam:
 
 - Associações padrão de transporte baseadas em HTTP:
 
-  - `WsHttpBinding`e expõem contratos de solicitação-resposta ou unidirecionais.
+  - `WsHttpBinding` e expõem contratos de solicitação-resposta ou unidirecionais.
 
   - Ao usar uma sessão confiável em uma solicitação-resposta ou um contrato de serviço unidirecional simples.
 
-  - `WsDualHttpBinding`e expõem os contratos duplex, solicitação-resposta ou unidirecional.
+  - `WsDualHttpBinding` e expõem os contratos duplex, solicitação-resposta ou unidirecional.
 
-  - `WsFederationHttpBinding`e expõem contratos de solicitação-resposta ou unidirecionais.
+  - `WsFederationHttpBinding` e expõem contratos de solicitação-resposta ou unidirecionais.
 
 - Associações padrão de transporte baseadas em TCP:
 
-  - `NetTcpBinding`e expõem duplex, resposta de solicitação ou contratos unidirecionais.
+  - `NetTcpBinding` e expõem duplex, resposta de solicitação ou contratos unidirecionais.
 
 Use uma sessão confiável em qualquer outra associação criando uma associação personalizada, como HTTPS (para obter mais informações sobre problemas, consulte <a href="#reliable-sessions-and-security">segurança e sessões confiáveis</a>) ou uma associação de pipe nomeado.
 

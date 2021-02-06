@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos de isolamento'
 title: Tipos de isolamento
 ms.date: 03/30/2017
 dev_langs:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - isolated storage, types
 - user authentication, isolated storage
 ms.assetid: 14812988-473f-44ae-b75f-fd5c2f21fb7b
-ms.openlocfilehash: 4e2ba53a285649f8081c4836661ad3d70739aa64
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ad66ae19693a8924f44864c5eb051722a0df41c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725320"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99629585"
 ---
 # <a name="types-of-isolation"></a>Tipos de isolamento
 
@@ -109,7 +110,7 @@ O acesso ao armazenamento isolado é sempre restrito ao usuário que o criou. Pa
  [!code-csharp[Conceptual.IsolatedStorage#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source9.cs#12)]
  [!code-vb[Conceptual.IsolatedStorage#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source9.vb#12)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageScope>
 - [Armazenamentos isolado](isolated-storage.md)

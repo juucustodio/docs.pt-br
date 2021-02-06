@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando um resolvedor de contrato de dados'
 title: Utilizando um resolvedor de contrato de dados
 ms.date: 03/30/2017
 ms.assetid: 2e68a16c-36f0-4df4-b763-32021bff2b89
-ms.openlocfilehash: a86ad21a5846feec37f8b4b48843eab2d6c161da
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 89571c63b9135f164e0b687251798e3b67153b8e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632289"
 ---
 # <a name="using-a-data-contract-resolver"></a>Utilizando um resolvedor de contrato de dados
 
@@ -89,7 +90,7 @@ SerializerBehavior.DataContractResolver = new MyCustomerResolver();
   
  Você pode especificar declarativamente um resolvedor de contrato de dados implementando um atributo que pode ser aplicado a um serviço.  Para obter mais informações, consulte o exemplo [KnownAssemblyAttribute](../samples/knownassemblyattribute.md) . Este exemplo implementa um atributo chamado "KnownAssembly" que adiciona um resolvedor de contrato de dados personalizado ao comportamento do serviço.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de contratos de dados conhecidos](data-contract-known-types.md)
 - [Exemplo de DataContractSerializer](../samples/datacontractserializer-sample.md)

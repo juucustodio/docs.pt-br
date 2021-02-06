@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: considerações de segurança para dados'
 title: Considerações de segurança para dados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a7eb98da-4a93-4692-8b59-9d670c79ffb2
-ms.openlocfilehash: b9b033f779b083be8bcec195caf8e55607f14d31
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: 6e0bf681ad8dd141ad030ef850c3e50c1d6e65c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93188309"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632614"
 ---
 # <a name="security-considerations-for-data"></a>Considerações de segurança para dados
 
@@ -175,7 +176,7 @@ Essa cota limita o tamanho máximo de uma matriz de primitivas que o leitor de X
 
 A codificação XML binária que o WCF dá suporte inclui um recurso de *cadeias de caracteres de dicionário* . Uma cadeia de caracteres grande pode ser codificada usando apenas alguns bytes. Isso permite ganhos de desempenho significativos, mas apresenta novas ameaças de negação de serviço que devem ser atenuadas.
 
-Há dois tipos de dicionários: *estáticos* e *dinâmicos* . O dicionário estático é uma lista interna de cadeias de caracteres longas que podem ser representadas usando um código curto na codificação binária. Essa lista de cadeias de caracteres é fixada quando o leitor é criado e não pode ser modificada. Nenhuma das cadeias de caracteres no dicionário estático que o WCF usa por padrão é suficientemente grande para representar uma séria ameaça de negação de serviço, embora elas ainda possam ser usadas em um ataque de expansão de dicionário. Em cenários avançados em que você fornece seu próprio dicionário estático, tenha cuidado ao introduzir grandes cadeias de caracteres de dicionário.
+Há dois tipos de dicionários: *estáticos* e *dinâmicos*. O dicionário estático é uma lista interna de cadeias de caracteres longas que podem ser representadas usando um código curto na codificação binária. Essa lista de cadeias de caracteres é fixada quando o leitor é criado e não pode ser modificada. Nenhuma das cadeias de caracteres no dicionário estático que o WCF usa por padrão é suficientemente grande para representar uma séria ameaça de negação de serviço, embora elas ainda possam ser usadas em um ataque de expansão de dicionário. Em cenários avançados em que você fornece seu próprio dicionário estático, tenha cuidado ao introduzir grandes cadeias de caracteres de dicionário.
 
 O recurso de dicionários dinâmicos permite que as mensagens definam suas próprias cadeias de caracteres e as associe com códigos curtos. Esses mapeamentos de cadeia de caracteres para código são mantidos na memória durante toda a sessão de comunicação, de modo que as mensagens subsequentes não precisam reenviar as cadeias de caracteres e podem utilizar códigos já definidos. Essas cadeias de caracteres podem ser de comprimento arbitrário e, portanto, representam uma ameaça mais séria do que aquelas no dicionário estático.
 
@@ -388,7 +389,7 @@ O WCF é um sistema flexível e personalizável. A maior parte do conteúdo dest
 
 - Em geral, ao usar qualquer componente que aceite uma cota, entenda suas implicações de segurança e defina-a como um valor seguro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Xml.XmlDictionaryReader>

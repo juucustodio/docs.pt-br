@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: considerações de segurança no WCF'
 title: Considerações de segurança no WCF
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Windows Communication Foundation, security
 - WCF, security
 ms.assetid: 42055ee0-6d0c-443d-9d89-788dfc345d6d
-ms.openlocfilehash: 796098258601ec5fa208fd8a8060b28c3eeeb4d6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d75ff0d6eede4a46a5b795873e83445a04532993
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632471"
 ---
 # <a name="security-considerations-in-wcf"></a>Considerações de segurança no WCF
 
@@ -54,6 +55,6 @@ Os tópicos nesta seção listam vários itens relacionados à segurança a sere
 
  [Orientação de segurança e práticas recomendadas](security-guidance-and-best-practices.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança](security.md)

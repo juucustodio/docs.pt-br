@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Olá, Mundo com o serviço de roteamento'
 title: Olá Mundo com o serviço de roteamento
 ms.date: 03/30/2017
 ms.assetid: 0f4b0d5b-6522-4ad5-9f3a-baa78316d7d1
-ms.openlocfilehash: 3d91634d72481427f04e958f6dc2734829b6158b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1741c7d1f1e474864d66220fd160633997744876
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253850"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631964"
 ---
 # <a name="hello-world-with-the-routing-service"></a>Olá Mundo com o serviço de roteamento
 
@@ -61,6 +62,6 @@ Este exemplo demonstra o serviço de roteamento do Windows Communication Foundat
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\RoutingServices\HelloRoutingService`  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedagem de AppFabric e persistência Exemplos](/previous-versions/appfabric/ff383418(v=azure.10))

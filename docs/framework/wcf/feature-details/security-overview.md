@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: visão geral da segurança do Windows Communication Foundation'
 title: Visão geral de segurança
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Communication Foundation, security
 - WCF, security
 ms.assetid: f478c80d-792d-4e7a-96bd-a2ff0b6f65f9
-ms.openlocfilehash: c14ccb88d12622308f2474844f86b5f73c1f34b2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e2fba11e71b3e30c1dae6cd889f710455d840b59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293696"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632419"
 ---
 # <a name="windows-communication-foundation-security-overview"></a>Visão geral da segurança do Windows Communication Foundation
 
@@ -107,7 +108,7 @@ O Windows Communication Foundation (WCF) é uma plataforma de programação dist
 
  A *auditoria* é o log de eventos de segurança no log de eventos do Windows. Você pode registrar eventos relacionados à segurança, como falhas de autenticação (ou êxitos). Para obter mais informações, consulte [auditoria](auditing-security-events.md). Para obter detalhes de programação, consulte [como: auditar eventos de segurança](how-to-audit-wcf-security-events.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
 - [Serviços de segurança](../securing-services.md)

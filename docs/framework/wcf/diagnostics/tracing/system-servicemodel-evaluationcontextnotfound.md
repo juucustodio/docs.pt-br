@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. EvaluationContextNotFound'
 title: System.ServiceModel.EvaluationContextNotFound
 ms.date: 03/30/2017
 ms.assetid: ff801204-1fc9-4bb2-9de1-be751073eb34
-ms.openlocfilehash: 9e659e9f6c0d1a0769b45189b1f1d2423c112477
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a2539c4ff827ec1929acd045d2e7f12bf035dc82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295633"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99633732"
 ---
 # <a name="systemservicemodelevaluationcontextnotfound"></a>System.ServiceModel.EvaluationContextNotFound
 
@@ -17,8 +18,8 @@ System.ServiceModel.EvaluationContextNotFound
 
  O contexto de avaliação de configuração não foi encontrado.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. ComIntegration. ComIntegrationDllHostInitializerStarting'
 title: System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStarting
 ms.date: 03/30/2017
 ms.assetid: affa55c6-03b5-4664-bb9c-2b9d15620df3
-ms.openlocfilehash: c04c77fb22834d099b4a1f075cd2e4318f3c7692
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 113676b051ed35ecbbbcb4e64a58849bc700d5de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246674"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99634226"
 ---
 # <a name="systemservicemodelcomintegrationcomintegrationdllhostinitializerstarting"></a>System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStarting
 
@@ -17,8 +18,8 @@ System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStarting
 
  O ServiceModelInitializer está iniciando.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

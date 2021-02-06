@@ -1,23 +1,24 @@
 ---
+description: 'Saiba mais sobre: protocolo de mensagens confiáveis versão 1,1'
 title: Protocolo de mensagem confiável versão 1.1
 ms.date: 03/30/2017
 ms.assetid: 0da47b82-f8eb-42da-8bfe-e56ce7ba6f59
-ms.openlocfilehash: ad0a77842c10965749eab4e76bb123938e07e9d5
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 07d1ffb4347c7481944bc5d1c2ccef0940f18071
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144715"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632900"
 ---
 # <a name="reliable-messaging-protocol-version-11"></a>Protocolo de mensagem confiável versão 1.1
 
-Este tópico aborda os detalhes de implementação do Windows Communication Foundation (WCF) para o protocolo WS-ReliableMessaging de fevereiro de 2007 (versão 1,1) necessário para interoperação usando o transporte HTTP. O WCF segue a especificação WS-ReliableMessaging com as restrições e esclarecimentos explicados neste tópico. Observe que o protocolo WS-ReliableMessaging versão 1,1 é implementado a partir do .NET Framework 3,5.
+Este tópico aborda os detalhes de implementação do Windows Communication Foundation (WCF) para o protocolo WS-ReliableMessaging de fevereiro de 2007 (versão 1,1) necessário para interoperação usando o transporte HTTP. O WCF segue a especificação de WS-ReliableMessaging com as restrições e esclarecimentos explicados neste tópico. Observe que o protocolo WS-ReliableMessaging versão 1,1 é implementado a partir de .NET Framework 3,5.
 
 O protocolo WS-ReliableMessaging de fevereiro de 2007 é implementado no WCF pelo <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> .
 
 Para sua conveniência, o tópico usa as seguintes funções:
 
-- Iniciador: o cliente que inicia a criação da sequência de mensagens WS-Reliable.
+- Iniciador: o cliente que inicia WS-Reliable a criação da sequência de mensagens.
 
 - Respondente: o serviço que recebe as solicitações do iniciador.
 
@@ -60,7 +61,7 @@ O WCF implementa `CreateSequence` e `CreateSequenceResponse` mensagens para esta
 
 - B1108: o WCF usa apenas `DiscardFollowingFirstGap` os `NoDiscard` valores e no `IncompleteSequenceBehavior` elemento.
 
-  - O WS-ReliableMessaging utiliza o `Offer` mecanismo para estabelecer as duas sequências correlacionadas que formam uma sessão.
+  - WS-ReliableMessaging utiliza o `Offer` mecanismo para estabelecer as duas sequências correlacionadas que formam uma sessão.
 
 - B1109: se `CreateSequence` contiver um `Offer` elemento, o respondente do WCF unidirecional rejeita a sequência oferecida respondendo com um `CreateSequenceResponse` sem `Accept` elemento.
 
@@ -72,7 +73,7 @@ O WCF implementa `CreateSequence` e `CreateSequenceResponse` mensagens para esta
 
 - R1113: quando duas seqüências de converso são estabelecidas usando o `Offer` mecanismo, todas as mensagens em ambas as sequências que fluem do iniciador para o respondente devem ser enviadas para a mesma referência de ponto de extremidade.
 
-O WCF usa o WS-ReliableMessaging para estabelecer sessões confiáveis entre o iniciador e o respondente. A implementação do WS-ReliableMessaging do WCF fornece uma sessão confiável para os padrões unidirecional, resposta de solicitação e mensagens em full duplex. O mecanismo WS-ReliableMessaging `Offer` no `CreateSequence` e `CreateSequenceResponse` permite que você estabeleça duas sequências de contraverse correlacionadas e fornece um protocolo de sessão que é adequado para todos os pontos de extremidade da mensagem. Como o WCF fornece uma garantia de segurança para tal sessão, incluindo proteção de ponta a ponta para integridade da sessão, é prático garantir que as mensagens destinadas à mesma parte cheguem ao mesmo destino. Isso também permite "transportado" de confirmações de sequência em mensagens de aplicativo. Portanto, as restrições R1102, R1112 e R1113 se aplicam ao WCF.
+O WCF usa WS-ReliableMessaging para estabelecer sessões confiáveis entre o iniciador e o respondente. A implementação de WS-ReliableMessaging do WCF fornece uma sessão confiável para padrões unidirecionais, de solicitação-resposta e de mensagens duplex completos. O mecanismo de WS-ReliableMessaging `Offer` no `CreateSequence` e `CreateSequenceResponse` permite que você estabeleça duas sequências de contraverse correlacionadas e fornece um protocolo de sessão que é adequado para todos os pontos de extremidade da mensagem. Como o WCF fornece uma garantia de segurança para tal sessão, incluindo proteção de ponta a ponta para integridade da sessão, é prático garantir que as mensagens destinadas à mesma parte cheguem ao mesmo destino. Isso também permite "transportado" de confirmações de sequência em mensagens de aplicativo. Portanto, as restrições R1102, R1112 e R1113 se aplicam ao WCF.
 
 Um exemplo de uma `CreateSequence` mensagem.
 
@@ -269,7 +270,7 @@ Um exemplo de um `AckRequested` cabeçalho.
 
 ### <a name="sequenceacknowledgement"></a>SequenceAcknowledgement
 
-O WCF usa um mecanismo de "transportado" para confirmações de sequência fornecidas em mensagens WS-Reliable. As seguintes restrições se aplicam:
+O WCF usa um mecanismo de "transportado" para confirmações de sequência fornecidas em WS-Reliable mensagens. As seguintes restrições se aplicam:
 
 - R1601: quando duas sequências de conversos são estabelecidas usando o `Offer` mecanismo, o `SequenceAcknowledgement` cabeçalho pode ser incluído em qualquer mensagem de aplicativo transmitida para o destinatário pretendido. O ponto de extremidade remoto deve ser capaz de acessar um `SequenceAcknowledgement` cabeçalho acumulado.
 
@@ -286,7 +287,7 @@ O WCF usa um mecanismo de "transportado" para confirmações de sequência forne
 
 ### <a name="ws-reliablemessaging-faults"></a>Falhas de WS-ReliableMessaging
 
-Veja a seguir uma lista de restrições que se aplicam à implementação do WCF de falhas WS-ReliableMessaging. As seguintes restrições se aplicam:
+Veja a seguir uma lista de restrições que se aplicam à implementação do WCF de falhas de WS-ReliableMessaging. As seguintes restrições se aplicam:
 
 - B1701: o WCF não gera `MessageNumberRollover` falhas.
 
@@ -316,9 +317,9 @@ Veja a seguir uma lista de restrições que se aplicam à implementação do WCF
 </s:Envelope>
 ```
 
-### <a name="ws-addressing-faults"></a>Falhas no WS-Addressing
+### <a name="ws-addressing-faults"></a>Falhas de WS-Addressing
 
-Como o WS-ReliableMessaging usa o WS-Addressing, a implementação do WS-ReliableMessaging do WCF pode gerar e transmitir falhas de WS-Addressing. Esta seção aborda as falhas do WS-Addressing que o WCF gera e transmite explicitamente na camada WS-ReliableMessaging:
+Como WS-ReliableMessaging usa o WS-Addressing, a implementação do WCF WS-ReliableMessaging pode gerar e transmitir WS-Addressing falhas. Esta seção aborda as WS-Addressing falhas que o WCF gera e transmite explicitamente na camada de WS-ReliableMessaging:
 
 - B1801: o WCF gera e transmite a `Message Addressing Header Required` falha quando uma das seguintes opções é verdadeira:
 
@@ -334,31 +335,31 @@ Como o WS-ReliableMessaging usa o WS-Addressing, a implementação do WS-Reliabl
 
 ### <a name="composition-with-ws-addressing"></a>Composição com WS-Addressing
 
-O WCF dá suporte a duas versões do WS-Addressing: WS-Addressing 2004/08 [WS-ADDR] e W3C WS-Addressing 1,0 Recommendations [WS-ADDR-CORE] e [WS-ADDR-SOAP].
+O WCF dá suporte a duas versões do WS-Addressing: WS-Addressing 2004/08 [WS-ADDR] e às recomendações do W3C WS-Addressing 1,0 [WS-ADDR-CORE] e [WS-ADDR-SOAP].
 
-Embora a especificação WS-ReliableMessaging mencione apenas o WS-Addressing 2004/08, ela não restringe a versão do WS-Addressing a ser usada. Veja a seguir uma lista de restrições que se aplicam ao WCF:
+Embora a especificação de WS-ReliableMessaging mencione apenas WS-Addressing 2004/08, ela não restringe a versão do WS-Addressing a ser usada. Veja a seguir uma lista de restrições que se aplicam ao WCF:
 
-- R2101: o WS-Addressing 2004/08 e o WS-Addressing 1,0 podem ser usados com o sistema de mensagens WS-Reliable.
+- R2101: os WS-Addressing 2004/08 e WS-Addressing 1,0 podem ser usados com WS-Reliable mensagens.
 
-- R2102: uma única versão do WS-Addressing deve ser usada em uma determinada sequência WS-ReliableMessaging ou um par de sequências inversas correlacionadas usando o `Offer` mecanismo.
+- R2102: uma única versão de WS-Addressing deve ser usada em uma determinada sequência de WS-ReliableMessaging ou um par de sequências de inverso correlacionadas usando o `Offer` mecanismo.
 
 ### <a name="composition-with-soap"></a>Composição com SOAP
 
-O WCF dá suporte ao uso de SOAP 1,1 e SOAP 1,2 com o sistema de mensagens WS-Reliable.
+O WCF dá suporte ao uso de SOAP 1,1 e SOAP 1,2 com WS-Reliable Messaging.
 
 ### <a name="composition-with-ws-security-and-ws-secureconversation"></a>Composição com WS-Security e WS-SecureConversation
 
-O WCF fornece proteção para sequências WS-ReliableMessaging usando transporte seguro (HTTPS), composição com WS-Security e composição com a conversa WS-Secure. O protocolo WS-ReliableMessaging 1,1, o WS-Security 1,1 e o WS-Secure Conversation protocolo 1,3 devem ser usados juntos. Veja a seguir uma lista de restrições que se aplicam ao WCF:
+O WCF fornece proteção para WS-ReliableMessaging sequências usando transporte seguro (HTTPS), composição com WS-Security e composição com WS-Secure conversa. O protocolo WS-ReliableMessaging 1,1, WS-Security 1,1 e WS-Secure protocolo 1,3 de conversa devem ser usados juntos. Veja a seguir uma lista de restrições que se aplicam ao WCF:
 
-- R2301: para proteger a integridade de uma sequência WS-ReliableMessaging, além da integridade e da confidencialidade de mensagens individuais, o WCF requer que a conversa WS-Secure deva ser usada.
+- R2301: para proteger a integridade de uma sequência de WS-ReliableMessaging além da integridade e confidencialidade de mensagens individuais, o WCF requer que WS-Secure conversa deva ser usada.
 
-- R2302: AWS-a sessão de conversa segura deve ser estabelecida antes de estabelecer a (s) sequência (ões) WS-ReliableMessaging.
+- R2302: AWS-a sessão de conversa segura deve ser estabelecida antes de estabelecer WS-ReliableMessaging sequência (s).
 
-- R2303: se o tempo de vida da sequência WS-ReliableMessaging exceder o tempo de vida da sessão de conversa do WS-Secure, o `SecurityContextToken` estabelecido usando a conversa do WS-Secure deverá ser renovado usando a associação de renovação de conversa WS-Secure correspondente.
+- R2303: se o tempo de vida da sequência de WS-ReliableMessaging exceder o tempo de vida da sessão de conversa do WS-Secure, o `SecurityContextToken` estabelecido usando WS-Secure conversa deve ser renovado usando a associação de renovação de conversa WS-Secure correspondente.
 
-- B2304: a sequência WS-ReliableMessaging ou um par de sequências correlacionadas correlatas são sempre associados a uma única sessão WS-SecureConversation.
+- B2304: a sequência WS-ReliableMessaging ou um par de sequências correlacionadas correlatas são sempre associados a uma única sessão de WS-SecureConversation.
 
-- R2305: quando composto com a conversa WS-Secure, o respondente do WCF requer que a `CreateSequence` mensagem contenha o `wsse:SecurityTokenReference` elemento e o `wsrm:UsesSequenceSTR` cabeçalho.
+- R2305: quando composto com WS-Secure conversa, o respondente do WCF requer que a `CreateSequence` mensagem contenha o `wsse:SecurityTokenReference` elemento e o `wsrm:UsesSequenceSTR` cabeçalho.
 
  Um exemplo de um `UsesSequenceSTR` cabeçalho.
 
@@ -376,13 +377,13 @@ O WCF não dá suporte à composição com sessões SSL/TLS:
 
 ### <a name="composition-with-ws-policy"></a>Composição com WS-Policy
 
-O WCF dá suporte a duas versões de WS-Policy: WS-Policy 1,2 e WS-Policy 1,5.
+O WCF dá suporte a duas versões do WS-Policy: WS-Policy 1,2 e WS-Policy 1,5.
 
-## <a name="ws-reliablemessaging-ws-policy-assertion"></a>Declaração de WS-Policy de WS-ReliableMessaging
+## <a name="ws-reliablemessaging-ws-policy-assertion"></a>Asserção de WS-Policy de WS-ReliableMessaging
 
-O WCF usa o WS-ReliableMessaging asserção WS-Policy `wsrm:RMAssertion` para descrever os recursos de pontos de extremidade. Veja a seguir uma lista de restrições que se aplicam ao WCF:
+O WCF usa WS-ReliableMessaging WS-Policy asserção `wsrm:RMAssertion` para descrever os recursos de pontos de extremidade. Veja a seguir uma lista de restrições que se aplicam ao WCF:
 
-- B3001: o WCF anexa `wsrmn:RMAssertion` a asserção de WS-Policy a `wsdl:binding` elementos. O WCF dá suporte tanto a anexos `wsdl:binding` quanto a `wsdl:port` elementos.
+- B3001: o WCF anexa `wsrmn:RMAssertion` WS-Policy asserção a `wsdl:binding` elementos. O WCF dá suporte tanto a anexos `wsdl:binding` quanto a `wsdl:port` elementos.
 
 - B3002: o WCF nunca gera a `wsp:Optional` marca.
 
@@ -394,7 +395,7 @@ O WCF usa o WS-ReliableMessaging asserção WS-Policy `wsrm:RMAssertion` para de
 
 - B3006: o WCF sempre especifica a `wsrmp:ExactlyOnce` garantia de entrega.
 
-- B3007: o WCF gera e lê as seguintes propriedades da declaração WS-ReliableMessaging e fornece controle sobre elas no WCF `ReliableSessionBindingElement` :
+- B3007: o WCF gera e lê as seguintes propriedades da declaração de WS-ReliableMessaging e fornece controle sobre elas no WCF `ReliableSessionBindingElement` :
 
   - `netrmp:InactivityTimeout`
 
@@ -418,9 +419,9 @@ O WCF usa o WS-ReliableMessaging asserção WS-Policy `wsrm:RMAssertion` para de
   </wsrmp:RMAssertion>
   ```
 
-## <a name="flow-control-ws-reliablemessaging-extension"></a>Extensão WS-ReliableMessaging de controle de fluxo
+## <a name="flow-control-ws-reliablemessaging-extension"></a>Extensão de WS-ReliableMessaging de controle de fluxo
 
-O WCF usa a extensibilidade WS-ReliableMessaging para fornecer um controle mais rígido adicional opcional sobre o fluxo de mensagens de sequência.
+O WCF usa WS-ReliableMessaging extensibilidade para fornecer um controle mais rígido adicional opcional sobre o fluxo de mensagens de sequência.
 
 O controle de fluxo é habilitado definindo a <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled?displayProperty=nameWithType> propriedade como `true` . Veja a seguir uma lista de restrições que se aplicam ao WCF:
 
@@ -444,7 +445,7 @@ O controle de fluxo é habilitado definindo a <xref:System.ServiceModel.Channels
 
 ## <a name="message-exchange-patterns"></a>Padrões de troca de mensagens
 
-Esta seção descreve o comportamento do WCF quando o WS-ReliableMessaging é usado para diferentes padrões de troca de mensagens. Para cada padrão de troca de mensagens, os seguintes dois cenários de implantações são considerados:
+Esta seção descreve o comportamento do WCF quando WS-ReliableMessaging é usada para diferentes padrões de troca de mensagens. Para cada padrão de troca de mensagens, os seguintes dois cenários de implantações são considerados:
 
 - Iniciador não endereçável: o iniciador está protegido por um firewall; O respondente pode entregar mensagens ao iniciador somente em respostas HTTP.
 
@@ -500,7 +501,7 @@ Ao gerar uma falha que apresenta uma sequência, o WCF espera que o ponto de ext
 
 O WCF pode fechar sua sequência de saída e continuar a processar mensagens em sua sequência de entrada. Por outro lado, o WCF pode processar o fechamento da sequência de entrada e continuar a enviar mensagens em sua sequência de saída.
 
-### <a name="request-reply-and-one-way-non-addressable-initiator"></a>Solicitação-resposta e iniciador unidirecional, não endereçável
+### <a name="request-reply-and-one-way-non-addressable-initiator"></a>Request-Reply e um iniciador não endereçável unidirecional
 
 #### <a name="binding"></a>Associação
 

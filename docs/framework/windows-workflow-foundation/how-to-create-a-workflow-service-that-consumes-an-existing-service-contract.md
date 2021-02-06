@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como criar um serviço de fluxo de trabalho que consome um contrato de serviço existente'
 title: 'Como: criar um serviço de fluxo de trabalho que consome um contrato de serviço existente'
 ms.date: 03/30/2017
 ms.assetid: 11d11b59-acc4-48bf-8e4b-e97b516aa0a9
-ms.openlocfilehash: 05c59bde424049eb5bef8f8bd09c472b58eaa9ef
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0a31f0f4e205c72b857b59726437e896a7c68231
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248819"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631249"
 ---
 # <a name="how-to-create-a-workflow-service-that-consumes-an-existing-service-contract"></a>Como: criar um serviço de fluxo de trabalho que consome um contrato de serviço existente
 

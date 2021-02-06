@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: contrato de mensagem padrão'
 title: Contrato padrão de mensagem
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Message Contract
 ms.assetid: 5a200b78-1a46-4104-b7fb-da6dbab33893
-ms.openlocfilehash: 0a70fb519f3b3e8d9ce109c3b7bef0313e22eb50
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3587f6ce81e085a4915af8162f8d76aed30bf8df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632081"
 ---
 # <a name="default-message-contract"></a>Contrato padrão de mensagem
 

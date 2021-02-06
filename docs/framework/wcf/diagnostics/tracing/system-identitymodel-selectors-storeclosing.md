@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. IdentityModel. seletores. StoreClosing'
 title: System.IdentityModel.Selectors.StoreClosing
 ms.date: 03/30/2017
 ms.assetid: cf3b99a2-df29-4737-bc1f-a1e9f7983bfa
-ms.openlocfilehash: dfd4e258b8b0318a4d8741f1db6ef6a968ceec04
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b32a2c737fa9961f135d0a14b1985791a028254b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96270973"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635282"
 ---
 # <a name="systemidentitymodelselectorsstoreclosing"></a>System.IdentityModel.Selectors.StoreClosing
 
@@ -17,8 +18,8 @@ System.IdentityModel.Selectors.StoreClosing
 
  Fechando o repositório especificado.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

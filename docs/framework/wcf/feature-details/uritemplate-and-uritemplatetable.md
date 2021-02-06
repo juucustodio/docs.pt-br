@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: UriTemplate e UriTemplateTable'
 title: UriTemplate and UriTemplateTable
 ms.date: 03/30/2017
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
-ms.openlocfilehash: 212cc0a7f90ac2e74837118a905519148ddc089d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7abcf0125108e4f48e392e8bb817dda77dfedd38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289666"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632406"
 ---
 # <a name="uritemplate-and-uritemplatetable"></a>UriTemplate and UriTemplateTable
 
@@ -336,7 +337,7 @@ Quando uma variável recebe um valor padrão, `null` há algumas restrições ad
 > [!NOTE]
 > Os caracteres á e Á são considerados caracteres diferentes quando aparecem como parte de um caminho de URI ou um <xref:System.UriTemplate> literal de segmento de caminho (mas os caracteres a e a são considerados iguais). Os caracteres á e Á são considerados os mesmos caracteres quando aparecem como parte de um <xref:System.UriTemplate> {VariableName} ou uma cadeia de caracteres de consulta (e um e um também são considerados os mesmos caracteres).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de modelo de programação HTTP Web do WCF](wcf-web-http-programming-model-overview.md)
 - [Modelo de objeto de programação HTTP Web do WCF](wcf-web-http-programming-object-model.md)

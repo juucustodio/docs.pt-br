@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: NetTcpbinding padrão'
 title: NetTcpBinding padrão
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Net profile TCP
 ms.assetid: e8475fe6-0ecd-407a-8e7e-45860561bb74
-ms.openlocfilehash: 7a1af17ef3c2176371a394ae8b63d9cc207d5b6f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 055cc33138e6e04469b2eec14dbd93ef63924218
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632042"
 ---
 # <a name="default-nettcpbinding"></a>NetTcpBinding padrão
 

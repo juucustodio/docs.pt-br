@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando uma associação personalizada com o canal do cliente de descoberta'
 title: Utilizando uma associação personalizada com o canal cliente Discovery
 ms.date: 03/30/2017
 ms.assetid: 36f95e75-04f7-44f3-a995-a0d623624d7f
-ms.openlocfilehash: d84739a0021262826c541ab3ff9df663adabf44a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a4dd823aed01785aab4127e4323cdc0a0a6d952a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289653"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632367"
 ---
 # <a name="using-a-custom-binding-with-the-discovery-client-channel"></a>Utilizando uma associação personalizada com o canal cliente Discovery
 
@@ -47,7 +48,7 @@ customBinding.Elements.Insert(0, discoveryBindingElement);
   
  Para obter mais informações sobre como usar o canal do cliente de descoberta, consulte [usando o canal do cliente de descoberta](using-the-discovery-client-channel.md).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de descoberta do WCF](wcf-discovery-overview.md)
 - [Usando o canal cliente Discovery](using-the-discovery-client-channel.md)

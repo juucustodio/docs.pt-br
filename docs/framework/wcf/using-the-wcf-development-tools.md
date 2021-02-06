@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando as ferramentas de desenvolvimento do WCF'
 title: Utilizando as ferramentas de desenvolvimento do WCF
 ms.date: 03/30/2017
 ms.assetid: 054adb87-c244-4d5a-83d1-0b2b44bd454b
-ms.openlocfilehash: 48733d27a72e864760c371e8b90e0af7b74273a0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c96644fb66006447f6a05f6c08ea84fe2ed99ce8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631691"
 ---
 # <a name="using-the-wcf-development-tools"></a>Utilizando as ferramentas de desenvolvimento do WCF
 
@@ -48,7 +49,7 @@ netsh http add urlacl url=http://+:8001/MyService user=<domain>\<user>
   
  Para obter mais informações sobre Netsh.exe, consulte [como usar a ferramenta de Netsh.exe e Command-Line opções](/previous-versions/tn-archive/bb490939(v=technet.10)).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Modelos do Visual Studio do WCF](wcf-vs-templates.md)
 - [Host de serviço do WCF (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md)

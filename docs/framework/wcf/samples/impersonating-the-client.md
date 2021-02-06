@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: representando o cliente'
 title: Representando o cliente
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Impersonating the Client Sample [Windows Communication Foundation]
 - impersonation, Windows Communication Foundation sample
 ms.assetid: 8bd974e1-90db-4152-95a3-1d4b1a7734f8
-ms.openlocfilehash: bc4ff2d4b53b679266978ae5ffdea97e4606a351
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cab6f342a572d357f6987f60218ef2682bedd447
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631756"
 ---
 # <a name="impersonating-the-client"></a>Representando o cliente
 

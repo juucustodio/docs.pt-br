@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Como desvincular blocos de fluxo de informações'
 title: 'Como: desvincular blocos de fluxo de dados'
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - TPL dataflow library, unlinking dataflow blocks
 ms.assetid: 40f0208d-4618-47f7-85cf-4913d07d2d7d
-ms.openlocfilehash: e981d1b9b3adc638a84de1c119ad849ec533d16e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d3bea3887553397c902345e9dcc39ca0cdfe68d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722356"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99629494"
 ---
 # <a name="how-to-unlink-dataflow-blocks"></a>Como: desvincular blocos de fluxo de dados
 
@@ -33,6 +34,6 @@ Este documento descreve como desvincular um bloco de fluxo de dados de destino d
   
  Para permitir que as chamadas restantes para `TrySolution` terminem após uma delas computar um valor, o método `TrySolution` usa um objeto <xref:System.Threading.CancellationToken>, que é cancelado após o retorno da chamada a `ReceiveFromAny(T)`. O método <xref:System.Threading.SpinWait.SpinUntil%2A> retorna quando esse objeto <xref:System.Threading.CancellationToken> é cancelado.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Fluxo de dados](dataflow-task-parallel-library.md)

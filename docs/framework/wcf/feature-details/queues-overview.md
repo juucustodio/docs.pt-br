@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: visão geral das filas'
 title: Visão geral de filas
 ms.date: 03/30/2017
 helpviewer_keywords:
 - queues [WCF], MSMQ integration
 ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1
-ms.openlocfilehash: 464b82c41fe1268d53d77f7bf3cb9463cf235072
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8414a8f9121c30a97f5fef5e1f26dfe57abc7956
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244633"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99633017"
 ---
 # <a name="queues-overview"></a>Visão geral das filas
 
@@ -79,7 +80,7 @@ Esta seção apresenta os conceitos gerais e principais por trás da comunicaç�
 
  Depois que uma mensagem é transformada na fila de destino, o serviço pode falhar repetidamente ao processar a mensagem. Por exemplo, um aplicativo que lê uma mensagem da fila em uma transação e a atualização de um banco de dados pode encontrar o banco de dados temporariamente desconectado. Nesse caso, a transação é revertida, uma nova transação é criada e a mensagem é relida da fila. Uma segunda tentativa pode ser bem-sucedida ou falhar. Em alguns casos, dependendo da causa do erro, a mensagem pode falhar repetidamente com a entrega para o aplicativo. Nesse caso, a mensagem é considerada "suspeita". Essas mensagens são movidas para uma fila suspeita que pode ser lida por um aplicativo de tratamento de envenenamento.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Enfileiramento no WCF](queuing-in-wcf.md)
 - [Sessões e filas](../samples/sessions-and-queues.md)

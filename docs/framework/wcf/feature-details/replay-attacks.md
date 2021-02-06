@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ataques de repetição'
 title: Ataques por repetição
 ms.date: 03/30/2017
 ms.assetid: 7a17e040-93cd-4432-81b9-9f62fec78c8f
-ms.openlocfilehash: 4325b3747074f13cf02752f99b25fa02e4117b4c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b367bd6238f85471871c59b393a8f28a40c4ddba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239075"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632848"
 ---
 # <a name="replay-attacks"></a>Ataques por repetição
 
@@ -39,7 +40,7 @@ Um *ataque de reprodução* ocorre quando um invasor copia um fluxo de mensagens
   
 - Configure o serviço para usar a segurança em nível de transporte.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Considerações sobre segurança](security-considerations-in-wcf.md)
 - [Divulgação de Informações Confidenciais](information-disclosure.md)

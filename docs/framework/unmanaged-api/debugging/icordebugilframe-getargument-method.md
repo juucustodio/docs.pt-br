@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugILFrame:: GetArgument'
 title: Método ICorDebugILFrame::GetArgument
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4e2fd423-f643-4c27-ba5f-41b5ebc3b416
 topic_type:
 - apiref
-ms.openlocfilehash: d17179dbeb9564b16c0c95a43502a53a67d3b9b8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c845f3c07502f3b1ce564833ee6ef98e3305463f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650502"
 ---
 # <a name="icordebugilframegetargument-method"></a>Método ICorDebugILFrame::GetArgument
 

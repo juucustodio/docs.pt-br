@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: consultando entre relações (Visual Basic)'
 title: 'Passo a passo: consultar entre relações (Visual Basic)'
 ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: a7da43e3-769f-4e07-bcd6-552b8bde66f4
-ms.openlocfilehash: ce5323b4ecd7bd0c4337d4632eff209e4d0ebd42
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 002ec53c5a56d988dcd71af658a546d199473425
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163980"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650567"
 ---
 # <a name="walkthrough-querying-across-relationships-visual-basic"></a>Passo a passo: consultar entre relações (Visual Basic)
 
@@ -99,6 +100,6 @@ Este tutorial demonstra o uso de [!INCLUDE[vbtecdlinq](../../../../../../include
 
  A próxima instrução ([Walkthrough: Manipulando dados (Visual Basic)](walkthrough-manipulating-data-visual-basic.md)) demonstra como manipular dados. Esse passo a passo não requer que você salve os dois tutoriais passo a passo desta série que você já concluiu.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Aprendendo com explicações passo a passo](learning-by-walkthroughs.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: publicando e Recuperando metadados em uma associação personalizada'
 title: Publicando e recuperando metadados através de uma associação personalizada
 ms.date: 03/30/2017
 ms.assetid: 904e11b4-d90e-45c6-9ee5-c3472c90008c
-ms.openlocfilehash: 2c88ab92bb9cbe2fc07240d0934d246fa4de5cc0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 26532c3478d8250e9f6ec7dbb9431be5052239b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262756"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644119"
 ---
 # <a name="publishing-and-retrieving-metadata-over-a-custom-binding"></a>Publicando e recuperando metadados através de uma associação personalizada
 
@@ -31,7 +32,7 @@ O <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=
 
  Ao publicar metadados em uma associação personalizada, verifique se a associação fornece o suporte de segurança que seus metadados exigem. Por exemplo, para evitar a divulgação de informações e garantir que o cliente tenha o direito de obter os metadados, você pode tornar seus metadados e seu aplicativo mais seguros configurando seu <xref:System.ServiceModel.Description.IMetadataExchange> ponto de extremidade para exigir autenticação e criptografia. O [ponto de extremidade de metadados seguro personalizado](../samples/custom-secure-metadata-endpoint.md) de exemplo demonstra esse cenário.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de segurança](../securing-services.md)
 - [WS-MetadataExchange Bindings](ws-metadataexchange-bindings.md)

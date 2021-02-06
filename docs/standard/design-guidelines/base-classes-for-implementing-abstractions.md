@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: classes base para implementar abstrações'
 title: Classes base para implementar abstrações
 ms.date: 10/22/2008
 helpviewer_keywords:
 - abstractions [.NET Framework]
 - base classes, abstractions
 ms.assetid: 37a2d9a4-9721-482a-a40f-eee2c1d97875
-ms.openlocfilehash: 9e49b79609a2d16a79a80727295d53bb36ec5943
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 255891695583e36977663153b0ccac98b7fff4c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701309"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642338"
 ---
 # <a name="base-classes-for-implementing-abstractions"></a>Classes base para implementar abstrações
 

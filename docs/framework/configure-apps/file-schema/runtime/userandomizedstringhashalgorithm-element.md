@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <UseRandomizedStringHashAlgorithm> elemento'
 title: Elemento <UseRandomizedStringHashAlgorithm>
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - UseRandomizedStringHashAlgorithm element
 - <UseRandomizedStringHashAlgorithm> element
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
-ms.openlocfilehash: 148d55c8b8a63737867c4bfdf3ab118dfdefd6f9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bb651fc9c9f6f3df448ed5ce19e81c1ae092838c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174089"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639972"
 ---
 # <a name="userandomizedstringhashalgorithm-element"></a>Elemento \<UseRandomizedStringHashAlgorithm>
 
@@ -23,7 +24,7 @@ Determina se o Common Language Runtime calcula códigos de hash para cadeias de 
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<UseRandomizedStringHashAlgorithm>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <UseRandomizedStringHashAlgorithm
@@ -44,7 +45,7 @@ Determina se o Common Language Runtime calcula códigos de hash para cadeias de 
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|`0`|O Common Language Runtime não computa códigos hash para cadeias de caracteres por aplicativo; um único algoritmo é usado para calcular códigos de hash de cadeia de caracteres. Esse é o padrão.|  
+|`0`|O Common Language Runtime não computa códigos hash para cadeias de caracteres por aplicativo; um único algoritmo é usado para calcular códigos de hash de cadeia de caracteres. Este é o padrão.|  
 |`1`|O Common Language Runtime computa códigos de hash para cadeias de caracteres por aplicativo. Cadeias de caracteres idênticas em domínios de aplicativo diferentes e em processos diferentes terão códigos de hash diferentes.|  
   
 ### <a name="child-elements"></a>Elementos filho  

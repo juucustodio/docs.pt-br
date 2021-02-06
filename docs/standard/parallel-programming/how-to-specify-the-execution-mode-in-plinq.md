@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como especificar o modo de execução no PLINQ'
 title: 'Como: Especificar o modo de execução em PLINQ'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - PLINQ queries, how to use execution mode
 ms.assetid: e52ff26c-c5d3-4fab-9fec-c937fb387963
-ms.openlocfilehash: 725f232337952449cd8569b12f65da75569996df
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f897a7a2f60da1747b4cec253a98fd5608eb0f61
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722362"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641571"
 ---
 # <a name="how-to-specify-the-execution-mode-in-plinq"></a>Como: Especificar o modo de execução em PLINQ
 
@@ -32,7 +33,7 @@ Este exemplo mostra como forçar o PLINQ a ignorar a heurística padrão e paral
 
  Recorte e cole este código para o [Exemplo de Dados do PLINQ](plinq-data-sample.md) e chame o método `Main`.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq.ParallelEnumerable.AsSequential%2A>
 - [LINQ paralelo (PLINQ)](introduction-to-plinq.md)

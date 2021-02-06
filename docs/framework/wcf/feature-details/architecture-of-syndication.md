@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: arquitetura de distribuição'
 title: Arquitetura de sindicalização
 ms.date: 03/30/2017
 ms.assetid: ed4ca86e-e3d8-4acb-87aa-1921fbc353be
-ms.openlocfilehash: bc8c9cfbdc4f5d8ee01dfcf5098cfbc74afc2467
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 274ec121629bcb4e596401ad989309d3ef02c128
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234798"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643729"
 ---
 # <a name="architecture-of-syndication"></a>Arquitetura de sindicalização
 
@@ -79,7 +80,7 @@ A API de distribuição foi projetada para fornecer um modelo de programação d
   
 - Um recurso importante dos protocolos de distribuição é A extensibilidade. O Atom 1,0 e o RSS 2,0 permitem que você adicione atributos e elementos a feeds de distribuição que não estão definidos nas especificações. O modelo de programação de agregação do WCF fornece duas maneiras de trabalhar com atributos e extensões personalizados: derivar uma nova classe e acesso com rigidez de tipos. Para obter mais informações, consulte [extensibilidade de distribuição](syndication-extensibility.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de sindicalização do WCF](wcf-syndication-overview.md)
 - [Como o modelo de objeto de sindicalização do WCF mapeia para Atom e RSS](how-the-wcf-syndication-object-model-maps-to-atom-and-rss.md)

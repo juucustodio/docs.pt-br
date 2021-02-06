@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: design de Construtor'
 title: Design do construtor
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - parameterless constructors
 - static constructors
 ms.assetid: b4496afe-5fa7-4bb0-85ca-70b0ef21e6fc
-ms.openlocfilehash: 27fb73aa01adf31117d1b82724873db3a03fd269
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 2a5c85e1dea3349f897c24fa5d40d73c6e1f9d7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821392"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642312"
 ---
 # <a name="constructor-design"></a>Design do construtor
 

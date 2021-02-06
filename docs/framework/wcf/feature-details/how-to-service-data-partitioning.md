@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como: serviço de particionamento de dados'
 title: 'Como: fornecer particionamento de dados'
 ms.date: 03/30/2017
 ms.assetid: 1ccff72e-d76b-4e36-93a2-e51f7b32dc83
-ms.openlocfilehash: 7bb5eb6bda8bb2be3dfaaa88eb4b5ad787f47aa7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fd40ee37a80a8d5039231c6efe6369006022afad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268918"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643235"
 ---
 # <a name="how-to-service-data-partitioning"></a>Como: fornecer particionamento de dados
 
@@ -175,6 +176,6 @@ Este tópico descreve as etapas básicas necessárias para particionar mensagens
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de roteamento](../samples/routing-services.md)

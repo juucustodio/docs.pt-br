@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Criando um aplicativo de canal par'
 title: Compilando um aplicativo de canal par
 ms.date: 03/30/2017
 ms.assetid: a69a1b8f-8e15-45c5-87b8-bdb71e1c7ab8
-ms.openlocfilehash: 4213f8049c5bd6a82ef814c3f152d52491fe2a8a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dc55efab2e60db96589a8d014ce28b927ad39309
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96256866"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643547"
 ---
 # <a name="building-a-peer-channel-application"></a>Compilando um aplicativo de canal par
 
@@ -27,6 +28,6 @@ As seções a seguir fornecem orientação sobre como desenvolver aplicativos de
  [Protegendo aplicativos de canal par](securing-peer-channel-applications.md)  
  Discute a segurança baseada em transporte e a mensagem e as práticas recomendadas para proteger os aplicativos de canal de emparelhamento.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos de canal par](peer-channel-concepts.md)

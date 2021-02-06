@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: lançamento de exceção'
 title: Gerar exceções
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - explicitly throwing exceptions
 - throwing exceptions, design guidelines
 ms.assetid: 5388e02b-52f5-460e-a2b5-eeafe60eeebe
-ms.openlocfilehash: d41467b971e43ca9b22c59e3b64bdd45d16c740b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b1cf7a4eecc32a9f76ea06c47dd6c16d3afe5470
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734394"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642130"
 ---
 # <a name="exception-throwing"></a>Gerar exceções
 

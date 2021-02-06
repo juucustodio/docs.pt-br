@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: programação de Channel-Level de serviço'
 title: Programação de nível por canal de serviço
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8d8dcd85-0a05-4c44-8861-4a0b3b90cca9
-ms.openlocfilehash: db50d385bd396ba4de74e08fc1c6d93a67f320b7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9d89b073430ccdf80bdcbdfc50fd1e002fc807ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290212"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644054"
 ---
 # <a name="service-channel-level-programming"></a>Programação de nível por canal de serviço
 

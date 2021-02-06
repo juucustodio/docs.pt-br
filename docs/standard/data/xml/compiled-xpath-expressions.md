@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: expressões XPath compiladas'
 title: Expressões XPath compilados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e25dd95f-b64c-4d8b-a3a4-379e1aa0ad55
-ms.openlocfilehash: 99f06db3c6f1e634e9c4a677c01d1b0849afe43f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 77df46fd63a3337ced81c2910acd95d17c5c0f45
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701504"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642585"
 ---
 # <a name="compiled-xpath-expressions"></a>Expressões XPath compilados
 
@@ -120,7 +121,7 @@ Console.WriteLine(nodes.Current.Value);
   
  Para saber mais sobre os métodos de navegação de conjunto de nós da classe <xref:System.Xml.XPath.XPathNavigator>, confira [Navegação de conjunto de nós usando XPathNavigator](node-set-navigation-using-xpathnavigator.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

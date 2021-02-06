@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: acessando atributos no DOM'
 title: Acessando atributos no DOM
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ce2df341-a1a4-4e97-8e1b-cd45b8e3e71e
-ms.openlocfilehash: b7a1e64c8661e97966b8d0bb84e2d330c1e06b86
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 6bb8370b101001c46bf10bceb3b9a935d0647293
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822861"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642702"
 ---
 # <a name="accessing-attributes-in-the-dom"></a>Acessando atributos no DOM
 
@@ -257,6 +258,6 @@ Você também pode fazer como mostrado no exemplo anterior, onde um único nó d
 XmlAttribute attr = doc.DocumentElement.Attributes[0];
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

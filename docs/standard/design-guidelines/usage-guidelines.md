@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: diretrizes de uso'
 title: Diretrizes de uso
 ms.date: 10/22/2008
 helpviewer_keywords:
 - class library design guidelines [.NET Framework], usage guidelines
 ms.assetid: 42215ffa-a099-4a26-b14e-fb2bdb6f95b7
-ms.openlocfilehash: d6ea7c7b9ada95e3d0c425aaea18be6cdbb4ce35
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: a435fab2adb00f671dfde1619a3c1f8db719d9df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94828498"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641792"
 ---
 # <a name="usage-guidelines"></a>Diretrizes de uso
 
@@ -25,7 +26,7 @@ A <xref:System.IDisposable?displayProperty=nameWithType> interface não é abord
 [matrizes](arrays.md)  
 [Atributos](attributes.md)  
 [Coleções](guidelines-for-collections.md)  
-[Serialização](serialization.md)  
+[Série](serialization.md)  
 [ Uso deSystem.Xml](system-xml-usage.md)  
 [Operadores de igualdade](equality-operators.md)  
 

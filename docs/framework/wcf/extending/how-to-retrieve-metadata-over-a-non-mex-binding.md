@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como recuperar metadados em uma associação não-MEX'
 title: 'Como: recuperar metadados através de uma associação não MEX'
 ms.date: 03/30/2017
 ms.assetid: 2292e124-81b2-4317-b881-ce9c1ec66ecb
-ms.openlocfilehash: db4bad81241295e168685c8b80546f2305021066
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 521e48d90e9dbed2e0ded61c60af59d063d2b3dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644210"
 ---
 # <a name="how-to-retrieve-metadata-over-a-non-mex-binding"></a>Como: recuperar metadados através de uma associação não MEX
 
@@ -124,6 +125,6 @@ Este tópico descreve como recuperar metadados de um ponto de extremidade MEX em
   
 5. Neste ponto, você tem uma coleção de pontos de extremidade de serviço. Para obter mais informações sobre como importar metadados, consulte [como importar metadados em pontos de extremidade de serviço](../feature-details/how-to-import-metadata-into-service-endpoints.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Metadados](../feature-details/metadata.md)

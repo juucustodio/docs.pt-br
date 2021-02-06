@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <returns> (Visual Basic)'
 title: <returns>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - returns XML tag
 - <returns> XML tag
 ms.assetid: a03a6469-d907-425d-882f-083187950e7e
-ms.openlocfilehash: 37b110cc6e12f11196d2a1c5cc6026d87b453626
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ba5f1e231502a67e86ffbb92cf8868c3aecb05d2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866393"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640375"
 ---
 # <a name="returns-visual-basic"></a>\<returns> (Visual Basic)
 
@@ -39,6 +40,6 @@ Especifica o valor de retorno da propriedade ou função.
   
  [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <seealso> (Visual Basic)'
 title: <seealso>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - <seealso> XML tag
 - seealso XML tag
 ms.assetid: 36050c95-1af2-4284-b9b6-1a70691ed978
-ms.openlocfilehash: f435fa2ab86d81053cd185f5d90ec22996a1458d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 0bf6fa69ad63db016b42e31f717f521f82bbe20e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869409"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640310"
 ---
 # <a name="seealso-visual-basic"></a>\<seealso> (Visual Basic)
 
@@ -39,6 +40,6 @@ Especifica um link que aparece na seção Consulte também.
   
  [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

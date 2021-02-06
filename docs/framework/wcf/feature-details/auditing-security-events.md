@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: auditoria de eventos de segurança'
 title: Auditoria de eventos de segurança
 ms.date: 03/30/2017
 helpviewer_keywords:
 - auditing security events [WCF]
 ms.assetid: 5633f61c-a3c9-40dd-8070-1c373b66a716
-ms.openlocfilehash: 985004313c7d9843f2e9960805a6c0623d43a41f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 84eebeec5ebeec047d840e9902d52b4ae409599f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643716"
 ---
 # <a name="auditing-security-events"></a>Auditoria de eventos de segurança
 
@@ -108,7 +109,7 @@ Os aplicativos criados com o Windows Communication Foundation (WCF) podem regist
 |Gerenciamento de política de auditoria|Não aplicável.|Juntamente com a configuração, o log de segurança também é controlado pela política da autoridade de segurança local (LSA). A categoria "acesso ao objeto de auditoria" também deve ser habilitada.|  
 |Experiência do usuário padrão|Todos os usuários autenticados podem gravar no log do aplicativo, portanto, nenhuma etapa de permissão adicional é necessária para processos de aplicativo.|O processo (contexto) do aplicativo deve ter `SeAuditPrivilege` .|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
 - <xref:System.ServiceModel.AuditLogLocation>

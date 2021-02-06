@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como gravar uma extensão para o ServiceContractGenerator'
 title: 'Como: escrever uma extensão para o ServiceContractGenerator'
 ms.date: 03/30/2017
 ms.assetid: 876ca823-bd16-4bdf-9e0f-02092df90e51
-ms.openlocfilehash: 3a81204ca470b9b94d9e8f048ecccbade74b2e10
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 29d6d65cc3f9d29009f72b9a0c81b6cb1f472ac9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254630"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644197"
 ---
 # <a name="how-to-write-an-extension-for-the-servicecontractgenerator"></a>Como: escrever uma extensão para o ServiceContractGenerator
 
@@ -100,7 +101,7 @@ Este tópico descreve como gravar uma extensão para o <xref:System.ServiceModel
   
 7. <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> é chamado automaticamente para cada comportamento de contrato em um determinado contrato que implementa <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> . Esse método pode, então, modificar o <xref:System.ServiceModel.Description.ServiceContractGenerationContext> passado. Neste exemplo, comentários são adicionados.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Metadados](../feature-details/metadata.md)
 - [Como: importar o WSDL personalizado](how-to-import-custom-wsdl.md)

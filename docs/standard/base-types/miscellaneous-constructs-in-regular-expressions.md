@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: constructos diversos em expressões regulares'
 title: Construtores diversos em expressões regulares
 ms.date: 03/30/2017
 ms.topic: conceptual
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - .NET regular expressions, miscellaneous constructs
 - regular expressions, miscellaneous constructs
 ms.assetid: 7d10d11f-680f-4721-b047-fb136316b4cd
-ms.openlocfilehash: b37244ec218c4bfee9c14f4504ab1018cb12d35b
-ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
+ms.openlocfilehash: 68e17e406ea22a52cd7b121c60595667cf054290
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98692949"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642749"
 ---
 # <a name="miscellaneous-constructs-in-regular-expressions"></a>Construtores diversos em expressões regulares
 

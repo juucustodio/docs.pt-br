@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como especificar credenciais de segurança de canal'
 title: 'Como: especificar credenciais de segurança de canal'
 ms.date: 03/30/2017
 ms.assetid: f8e03f47-9c4f-4dd5-8f85-429e6d876119
-ms.openlocfilehash: 9236985ef461044e480847003d9d249b7e232783
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 18cbb1ea1113e5b31f5adb43556db03d91c618ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266760"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643144"
 ---
 # <a name="how-to-specify-channel-security-credentials"></a>Como: especificar credenciais de segurança de canal
 
@@ -132,7 +133,7 @@ O moniker do serviço Windows Communication Foundation (WCF) permite que aplicat
   
      Para obter mais informações sobre os parâmetros para esse método, consulte <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetIssuedToken%28System.String%2CSystem.String%2CSystem.String%29> .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Federação](federation.md)
 - [Como: configurar credenciais em um serviço de federação](how-to-configure-credentials-on-a-federation-service.md)

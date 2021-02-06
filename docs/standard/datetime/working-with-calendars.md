@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: trabalhar com calendários'
 title: Trabalhar com calendários
 ms.date: 04/01/2019
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - international applications [.NET], calendars
 - culture, calendars
 ms.assetid: 0c1534e5-979b-4c8a-a588-1c24301aefb3
-ms.openlocfilehash: c30af36b3426c4abbdf9c55f6c9062a5d8fc8c23
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 978b084906573a18e19cca20db0740ba2a1276cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94824246"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642468"
 ---
 # <a name="work-with-calendars"></a>Trabalhar com calendários
 
@@ -240,10 +241,10 @@ Se as verificações de intervalo relaxadas não forem indesejáveis, você pode
 
    |  |  |
    |--|--|
-   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . NETFramework\AppContext** |
+   | **Chave** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . NETFramework\AppContext** |
    | **Nome** | Switch.System. Globalization. EnforceJapaneseEraYearRanges |
    | **Tipo** | REG_SZ |
-   | **Valor** | verdadeiro |
+   | **Valor** | true |
 
 Com as verificações de intervalo estrita habilitadas, o exemplo anterior gera um <xref:System.ArgumentOutOfRangeException> e exibe a seguinte saída:
 
@@ -315,10 +316,10 @@ Se esse comportamento for indesejável em operações de formatação, você pod
 
    |  |  |
    |--|--|
-   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . NETFramework\AppContext** |
+   | **Chave** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . NETFramework\AppContext** |
    | **Nome** | Switch.System. Globalization. FormatJapaneseFirstYearAsANumber |
    | **Tipo** | REG_SZ |
-   | **Valor** | verdadeiro |
+   | **Valor** | true |
 
 Com o suporte do Gannen nas operações de formatação desabilitadas, o exemplo anterior exibe a seguinte saída:
 
@@ -353,12 +354,12 @@ O .NET também foi atualizado para que as operações de análise de data e hora
 
    |  |  |
    |--|--|
-   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . NETFramework\AppContext** |
+   | **Chave** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . NETFramework\AppContext** |
    | **Nome** | Switch.System. Globalization. EnforceLegacyJapaneseDateParsing |
    | **Tipo** | REG_SZ |
-   | **Valor** | verdadeiro |
+   | **Valor** | true |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: exibir datas em calendários não gregorianos](../base-types/how-to-display-dates-in-non-gregorian-calendars.md)
 - [Exemplo: utilitário de intervalo da semana do calendário](https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a)

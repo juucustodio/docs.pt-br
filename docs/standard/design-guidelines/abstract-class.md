@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: design de classe abstrata'
 title: Design de classe abstrata
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - classes [.NET Framework], design guidelines
 - type design guidelines, classes
 ms.assetid: d3646e6d-5c1f-4922-8fb0-ec5effb30d60
-ms.openlocfilehash: 6903e10c8695376d8ac5961461796c5413307f90
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 5b1cd833bf43e5bf5731176243809393187e84d4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821639"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642455"
 ---
 # <a name="abstract-class-design"></a>Design de classe abstrata
 

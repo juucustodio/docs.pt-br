@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: design de struct'
 title: Design de Struct
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - type design guidelines, structures
 - structures [.NET Framework], design guidelines
 ms.assetid: 1f48b2d8-608c-4be6-9ba4-d8f203ed9f9f
-ms.openlocfilehash: 7bb7e63004df2eb7541ba8d4f1118ea2272db126
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a28dd3e452d22e61d95ec521fdbde6539e38ed78
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641896"
 ---
 # <a name="struct-design"></a>Design de Struct
 

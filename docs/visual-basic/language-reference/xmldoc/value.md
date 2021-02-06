@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <value> (Visual Basic)'
 title: <value>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - <value> XML tag
 - value XML tag
 ms.assetid: 0b84b02e-9e6d-41b5-a926-0d5dc76dacb5
-ms.openlocfilehash: 550f8b63928f80878ba316bfaf09077e14091305
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 80a3ef875eea4418d28d60dac1818f3390c361ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875174"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640245"
 ---
 # <a name="value-visual-basic"></a>\<value> (Visual Basic)
 
@@ -39,6 +40,6 @@ Especifica a descrição de uma propriedade.
   
  [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

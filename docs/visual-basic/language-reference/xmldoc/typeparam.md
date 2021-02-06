@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <typeparam> (Visual Basic)'
 title: <typeparam>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - typeparam XML tag
 - <typeparam> XML tag
 ms.assetid: 1bb5ba78-f060-478c-905c-77a2e43639af
-ms.openlocfilehash: 0a68cf0a495c2809961e8ec99effa459b0647fec
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: efb4394ee2badcf52bac75d7d9e317c732789746
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866387"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640258"
 ---
 # <a name="typeparam-visual-basic"></a>\<typeparam> (Visual Basic)
 
@@ -42,6 +43,6 @@ Define um nome de parâmetro de tipo e uma descrição.
   
  [!code-vb[VbVbcnXmlDocComments#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#8)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

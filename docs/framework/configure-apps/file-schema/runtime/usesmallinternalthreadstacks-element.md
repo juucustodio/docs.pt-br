@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <UseSmallInternalThreadStacks> elemento'
 title: Elemento <UseSmallInternalThreadStacks>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - UseSmallInternalThreadStacks element
 - <UseSmallInternalThreadStacks> element
 ms.assetid: 1e3f6ec0-1cac-4e1c-9c81-17d948ae5874
-ms.openlocfilehash: 4917b47e9e8196eabe691f74531d12308ef80311
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: eeb253025b32f862926c7315004b1854b8eef928
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174076"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639959"
 ---
 # <a name="usesmallinternalthreadstacks-element"></a>Elemento \<UseSmallInternalThreadStacks>
 
@@ -20,7 +21,7 @@ Solicita que o Common Language Runtime (CLR) reduza o uso de memória especifica
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<UseSmallInternalThreadStacks>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <UseSmallInternalThreadStacks enabled="true|false" />  
@@ -75,7 +76,7 @@ Solicita que o Common Language Runtime (CLR) reduza o uso de memória especifica
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

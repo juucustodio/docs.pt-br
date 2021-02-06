@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: classes sem lacre'
 title: Classes não seladas
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - unsealed classes
 - inheritance, classes
 ms.assetid: 9a3bd505-90f5-4053-9f0d-3cf5fa3d3ebf
-ms.openlocfilehash: 9e380f533cfc290e952281c6a04f19978fa92aa3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6fe30c3a2ef8df6b983d857b9502805e90ab83dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677499"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641818"
 ---
 # <a name="unsealed-classes"></a>Classes não seladas
 

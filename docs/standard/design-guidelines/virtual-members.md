@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Membros virtuais'
 title: Membros virtuais
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - virtual members
 - members [.NET Framework], virtual
 ms.assetid: 8ff4eb97-0364-43ec-8a02-934b5cd94d19
-ms.openlocfilehash: 7727ea7fcfdbbecf2e53ddd7a44b4cf907211f80
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7618686764fb3a24ef53e5168b871366b7ffb5bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734342"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641779"
 ---
 # <a name="virtual-members"></a>Membros virtuais
 

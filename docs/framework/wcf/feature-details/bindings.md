@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: associações de Windows Communication Foundation'
 title: Associações do Windows Communication Foundation
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], bindings
 - bindings [WCF]
 ms.assetid: 83639133-89f7-43f0-b4ef-8d9e57c08d25
-ms.openlocfilehash: 50c430489144589f6deb0930aeb3006bcb7efe8c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0104a33acbef7738607865b135561860f395dd71
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262093"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643625"
 ---
 # <a name="windows-communication-foundation-bindings"></a>Associações do Windows Communication Foundation
 

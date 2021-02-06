@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operadores de igualdade'
 title: Operadores de igualdade
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Equals method
 - == operator (equality) [.NET Framework]
 ms.assetid: bc496a91-fefb-4ce0-ab4c-61f09964119a
-ms.openlocfilehash: 2331a852adb4dd254af85060a5077f454bcfe0eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8678ed1b4bc320f685cf7ae172f064b3dededd04
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734420"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642234"
 ---
 # <a name="equality-operators"></a>Operadores de igualdade
 

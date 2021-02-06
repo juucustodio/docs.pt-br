@@ -8,12 +8,12 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: efc440adb59da1ef9838ec5445d9c55544c14380
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 2cda5a23bbc90ca5dc2305b5d7023e8ea6120b79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216467"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643066"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>Visão geral da análise de código-fonte do .NET
 
@@ -40,7 +40,7 @@ As regras de *análise de qualidade de código* ("CAxxxx") inspecionam seu códi
 
 As regras a seguir estão habilitadas, por padrão, no .NET 5,0.
 
-| ID do diagnóstico | Categoria | Gravidade | Descrição |
+| ID do diagnóstico | Categoria | Severidade | Descrição |
 | - | - | - | - |
 | [CA1416](/visualstudio/code-quality/ca1416) | Interoperabilidade | Aviso | Analisador de compatibilidade de plataforma |
 | [CA1417](/visualstudio/code-quality/ca1417) | Interoperabilidade | Aviso | Não usar `OutAttribute` em parâmetros de cadeia de caracteres para P/Invokes |
@@ -144,21 +144,19 @@ Siga estas etapas para habilitar a análise de estilo de código na compilação
 
 ## <a name="suppress-a-warning"></a>Suprimir um aviso
 
-Para suprimir uma violação de regra, defina a opção de severidade para essa ID de regra como `none` em um arquivo EditorConfig. Por exemplo:
+Uma maneira de suprimir uma violação de regra é definir a opção de gravidade para essa ID de regra como `none` em um arquivo EditorConfig. Por exemplo:
 
 ```ini
 dotnet_diagnostic.CA1822.severity = none
 ```
 
-O Visual Studio fornece maneiras adicionais de suprimir avisos das regras de análise de código. Para obter mais informações, consulte [suprimir violações](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).
-
-Para obter mais informações sobre severidades de regra, consulte [Configurar a severidade da regra](configuration-options.md#severity-level).
+Para obter mais informações e outras maneiras de suprimir avisos, consulte [como suprimir avisos de análise de código](suppress-warnings.md).
 
 ## <a name="third-party-analyzers"></a>Analisadores de terceiros
 
 Além dos analisadores .NET oficiais, você também pode instalar analisadores de terceiros, como [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [analisadores de xUnit](https://www.nuget.org/packages/xunit.analyzers/)e o [analisador de sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência da regra de análise de qualidade de código](quality-rules/index.md)
 - [Referência da regra de análise de estilo de código](style-rules/index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <behavior> de <serviceBehaviors>'
 title: <behavior> de <serviceBehaviors>
 ms.date: 03/30/2017
 ms.assetid: 78fc0a08-55de-416a-ac12-a5e6ffc9a987
-ms.openlocfilehash: 739f95f527fd73062c8cec43efc6777efeb077f3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e34254661026ad6dcb3429ad1b381cc3e6718f27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639530"
 ---
 # <a name="behavior-of-servicebehaviors"></a>\<behavior> de \<serviceBehaviors>
 
@@ -22,7 +23,7 @@ O `behavior` elemento contém uma coleção de configurações para o comportame
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<behavior>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.ServiceModel>

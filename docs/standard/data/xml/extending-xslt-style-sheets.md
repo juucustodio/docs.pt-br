@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: estendendo folhas de estilo XSLT'
 title: Estendendo folhas de estilos XSLT
 ms.date: 03/30/2017
 ms.assetid: df4ba2bf-a99e-4d22-bbf3-04fc67669dbc
-ms.openlocfilehash: c685ba862281e1b102341838b53a4fdc96a57541
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 570e2a5b546f6541f551977d7cab9a43b255201c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721512"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642533"
 ---
 # <a name="extending-xslt-style-sheets"></a>Estendendo folhas de estilos XSLT
 

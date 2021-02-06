@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30002: o tipo ' <typename> ' não está definido"
 title: O tipo '<typename>' não está definido
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30002
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
-ms.openlocfilehash: 195e749e29494d438dbd052e8e308250f4cce1ca
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 48ee0c38492769aea8c1be2e9d54eaa537e35766
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161888"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641116"
 ---
 # <a name="bc30002-type-typename-is-not-defined"></a>BC30002: tipo " \<typename> " não está definido
 
@@ -32,7 +33,7 @@ A instrução fez referência a um tipo que não foi definido. Você pode defini
 
 - Verifique se o tipo está em um assembly que faz parte do perfil de .NET Framework de destino. Para obter mais informações, consulte [Solução de problemas de erros de definição de destino do .NET Framework](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Namespaces no Visual Basic](../../programming-guide/program-structure/namespaces.md)
 - [Instrução Enum](../statements/enum-statement.md)

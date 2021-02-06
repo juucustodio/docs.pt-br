@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <bindingExtensions>'
 title: <bindingExtensions>
 ms.date: 03/30/2017
 ms.assetid: 8373f94d-d095-486f-8f1e-4ac2f72b58c7
-ms.openlocfilehash: bd6aeb32e0994bceb9e56bcb1c6267f4cb64a5a4
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e568c7dd2da509709e5c85d3181d1808b1c636df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73039138"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639400"
 ---
 # \<bindingExtensions>
 
@@ -42,6 +43,6 @@ Depois que o elemento e seu tipo de configuração são definidos, a extensão p
 </services>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estendendo associações](../../../wcf/extending/extending-bindings.md)

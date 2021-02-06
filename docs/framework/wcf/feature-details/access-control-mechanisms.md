@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: mecanismos de controle de acesso'
 title: Mecanismos de controle de acesso
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF security
 - access control [WCF]
 ms.assetid: 9d576122-3f55-4425-9acf-b23d0781e966
-ms.openlocfilehash: daa16c0d4a0450a3a7fcaae0f7660e0092aa7ea5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1863e91d67d55bbe9a4dc814d5475d271ea51686
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293969"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643924"
 ---
 # <a name="access-control-mechanisms"></a>Mecanismos de controle de acesso
 
@@ -63,7 +64,7 @@ Você pode controlar o acesso de várias maneiras com o Windows Communication Fo
   
  Para obter mais informações sobre o modelo de identidade, consulte [Gerenciando declarações e autorização com o modelo de identidade](managing-claims-and-authorization-with-the-identity-model.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
 - [Como: restringir o acesso com a classe PrincipalPermissionAttribute](../how-to-restrict-access-with-the-principalpermissionattribute-class.md)

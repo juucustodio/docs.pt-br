@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: importando metadados personalizados para uma extensão WCF'
 title: Importando metadados personalizados para uma extensão do WCF
 ms.date: 03/30/2017
 ms.assetid: 78beb28f-408a-4c75-9c3c-caefe9595b1a
-ms.openlocfilehash: b231ff676ffc81666713987a24605b8ae98bb6d6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f8fc0517298a7170941e7d3ed34b3ddfd9834c7c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254617"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644184"
 ---
 # <a name="importing-custom-metadata-for-a-wcf-extension"></a>Importando metadados personalizados para uma extensão do WCF
 
@@ -52,7 +53,7 @@ No Windows Communication Foundation (WCF), a importação de metadados é o proc
 > [!IMPORTANT]
 > Metadados inválidos ou inadequados podem ser passados para o importador. Certifique-se de que importadores personalizados sejam robustos para todas as formas de XML.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: importar o WSDL personalizado](how-to-import-custom-wsdl.md)
 - [Como: importar declarações de política personalizadas](how-to-import-custom-policy-assertions.md)

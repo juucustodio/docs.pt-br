@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estendendo o WCF'
 title: Estendendo o WCF
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - extensibility [WCF]
 - Windows Communication Foundation, extensibility
 ms.assetid: c145e2f6-f402-41f5-8b5a-eee03978737b
-ms.openlocfilehash: b82dd4fb6a5b41a0160df8680fb1ba65d9a5bd33
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e243e03a72e6530716959499c311bfe37a39b054
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254591"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644145"
 ---
 # <a name="extending-wcf"></a>Estendendo o WCF
 
@@ -57,6 +58,6 @@ O Windows Communication Foundation (WCF) permite que você modifique e estenda o
 
  [Programação de WCF básica](../basic-wcf-programming.md)  
   
- [Detalhes do recurso WCF](../feature-details/index.md)  
+ [Detalhes de funcionalidades do WCF](../feature-details/index.md)  
   
  [Diretrizes e práticas recomendadas](../guidelines-and-best-practices.md)

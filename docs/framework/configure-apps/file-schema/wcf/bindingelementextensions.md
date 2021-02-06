@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <bindingElementExtensions>'
 title: <bindingElementExtensions>
 ms.date: 03/30/2017
 ms.assetid: bb597fc0-c947-451c-afda-bf23d42f4f4d
-ms.openlocfilehash: 6ba97adfa696e00b4d6b75faf104c31436e25447
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4c1b4b924906b1a6dc143588a057129ca5ce8f40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151122"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639413"
 ---
 # \<bindingElementExtensions>
 
@@ -44,7 +45,7 @@ Esta seção habilita o uso de um elemento de associação personalizado de um c
 </customBinding>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>
 - [Estendendo associações](../../../wcf/extending/extending-bindings.md)

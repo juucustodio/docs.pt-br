@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: rastrear e depurar o esquema de configurações'
 title: Esquema de configurações de rastreamento e depuração
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - configuration sections [.NET Framework]
 - elements [.NET Framework], trace and debug settings
 ms.assetid: 277ca5f6-e1c4-41b6-a47f-3a67ce5b94ac
-ms.openlocfilehash: ae089e941d75df7ba1cd87b5b92a514a33bfbf85
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2429585c44952d2ee12547dab8f51662295bf02f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195188"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639640"
 ---
 # <a name="trace-and-debug-settings-schema"></a>Esquema de configurações de rastreamento e depuração
 
@@ -48,7 +49,7 @@ As configurações de rastreamento e depuração especificam ouvintes de rastrea
 |[\<system.diagnostics>](system-diagnostics-element.md)|Especifica os ouvintes de rastreamento que coletam, armazenam e roteiam mensagens e o nível em que uma opção de rastreamento é definida.|  
 |[\<trace>](trace-element.md)|Contém os ouvintes que coletam, armazenam e roteiam mensagens de rastreamento.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.TraceSource>

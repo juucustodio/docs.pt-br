@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Diretrizes para coleções'
 title: Diretrizes para coleções
 ms.date: 10/22/2008
 ms.assetid: 297b8f1d-b11f-4dc6-960a-8e990817304e
-ms.openlocfilehash: a143e88be01bf2c8f45e25f26498d2d3ccbd98da
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fa189068e9f3e06b3e88999bd4b0ea0998cd16e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706665"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642026"
 ---
 # <a name="guidelines-for-collections"></a>Diretrizes para coleções
 

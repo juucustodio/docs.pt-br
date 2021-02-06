@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: eventos e retornos de chamada'
 title: Eventos e retornos de chamada
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - callback methods
 - callbacks
 ms.assetid: 48b55c60-495f-4089-9396-97f9122bba7c
-ms.openlocfilehash: c63a88cb4e500504f993352a03478f40cad58400
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8a9049808ec0f7a490889ab1f17c4d8b8e8bd2b3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734720"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642142"
 ---
 # <a name="events-and-callbacks"></a>Eventos e retornos de chamada
 

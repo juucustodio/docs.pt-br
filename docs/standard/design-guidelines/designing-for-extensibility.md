@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: design para extensibilidade'
 title: Designer voltado para extensibilidade
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - class library design guidelines [.NET Framework], extensibility
 - class library extensibility [.NET Framework]
 ms.assetid: 1cdb8740-871a-456c-9bd9-db96ca8d79b3
-ms.openlocfilehash: 7b7b1bcfc907612be12e7f8ca7114183f7e830ef
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 148ae25380698a5a1161fb9fbdd3cc60102e865d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734446"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642260"
 ---
 # <a name="designing-for-extensibility"></a>Designer voltado para extensibilidade
 

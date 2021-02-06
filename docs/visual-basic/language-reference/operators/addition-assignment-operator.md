@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador + = (Visual Basic)'
 title: Operador +=
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - += operator [Visual Basic], appending strings
 - compound assignment statements [Visual Basic]
 ms.assetid: d3e959f4-85d4-4e47-87c4-77b62335a5b3
-ms.openlocfilehash: a3a37798a3ddb480ac5322c4b2d3e9396e739aa6
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e5a6b8fcc75e44c00ee18fec9cd57e68b1218de7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873489"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640466"
 ---
 # <a name="-operator-visual-basic"></a>Operador += (Visual Basic)
 
 Adiciona o valor de uma expressão numérica ao valor de uma variável numérica ou propriedade e atribui o resultado à variável ou à propriedade. Também pode ser usado para concatenar uma `String` expressão a uma `String` variável ou propriedade e atribuir o resultado à variável ou à propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 variableorproperty += expression  
@@ -30,10 +31,10 @@ variableorproperty += expression
 ## <a name="parts"></a>Partes  
 
  `variableorproperty`  
- Necessário. Qualquer propriedade ou numérico ou `String` variável.  
+ Obrigatório. Qualquer propriedade ou numérico ou `String` variável.  
   
  `expression`  
- Necessário. Qualquer expressão ou numérica `String` .  
+ Obrigatório. Qualquer expressão ou numérica `String` .  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -62,7 +63,7 @@ variableorproperty += expression
   
  O valor de `num1` é agora 13, e o valor de `str1` é agora "103".  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operador +](addition-operator.md)
 - [Operadores de atribuição](assignment-operators.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: associações de WS-MetadataExchange'
 title: WS-MetadataExchange Bindings
 ms.date: 03/30/2017
 ms.assetid: 10f8de5d-b81d-4ea7-b37e-7f2c00c39714
-ms.openlocfilehash: 94f0ba602cd1f58f5491a44a64e24be8ea52895b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3bcea573ad436a85285fab5657e58defa9113d9c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293982"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643937"
 ---
 # <a name="ws-metadataexchange-bindings"></a>WS-MetadataExchange Bindings
 

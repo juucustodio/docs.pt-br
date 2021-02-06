@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como especificar o grau de paralelismo em um bloco de Dataflow'
 title: 'Como: especificar o grau de paralelismo em um bloco de fluxo de dados'
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - TPL dataflow library, specifying parallelism
 ms.assetid: e4088541-ee05-40db-95f5-147cfe62fde7
-ms.openlocfilehash: 76ab17750edb6aac72a6c74da67ecbc14a4edcdc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7d2a6d93e4f167975f3ec55a7472f7e81d2f6697
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722447"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641623"
 ---
 # <a name="how-to-specify-the-degree-of-parallelism-in-a-dataflow-block"></a>Como: especificar o grau de paralelismo em um bloco de fluxo de dados
 
@@ -35,6 +36,6 @@ Este documento descreve como definir a propriedade <xref:System.Threading.Tasks.
   
  Como a propriedade <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism%2A> representa o grau máximo de paralelismo, o bloco de fluxo de dados pode executar com um menor grau de paralelismo do que o especificado. O bloco de fluxo de dados pode usar um menor grau de paralelismo para atender aos requisitos funcionais ou para explicar a falta de recursos do sistema disponíveis. Um bloco de fluxo de dados nunca escolhe um maior grau de paralelismo do que o especificado por você.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Fluxo de dados](dataflow-task-parallel-library.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: matrizes'
 title: Matrizes
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - arrays [.NET Framework], usage guidelines
 - empty arrays
 ms.assetid: 66a1b3d8-6f3f-4715-b235-e1ff95e32d8e
-ms.openlocfilehash: 11c1d23af4cf599ba632144634947520a1647ae7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2d919d5e13a03ed1c5d090339f8f0fd9c1a79190
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701387"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642429"
 ---
 # <a name="arrays"></a>Matrizes
 

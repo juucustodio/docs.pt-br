@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: objeto My. WebServices'
 title: Objeto My.WebServices
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.WebServices object
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2
-ms.openlocfilehash: 0b63b44c2cd9d55094fb83fed6c04e4de528a25c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e8d7ef8b349fef6d69b92d9df4a23222bd3c912e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867200"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640531"
 ---
 # <a name="mywebservices-object"></a>Objeto My.WebServices
 
@@ -31,7 +32,7 @@ Fornece propriedades para criar e acessar uma única instância de cada serviço
  Cada propriedade do `My.WebServices` objeto fornece acesso a uma instância de um serviço Web referenciado pelo projeto atual. O nome da propriedade é o mesmo que o nome do serviço Web que a propriedade acessa, e o tipo de propriedade é o mesmo que o tipo do serviço Web.  
   
 > [!NOTE]
-> Se houver uma colisão de nomes, o nome da propriedade para acessar um serviço Web será *RootNamespace*_*namespace* \_ *ServiceName*. Por exemplo, considere dois serviços Web denominados `Service1` . Se um desses serviços estiver no namespace raiz `WindowsApplication1` e no namespace `Namespace1` , você acessaria esse serviço usando o `My.WebServices.WindowsApplication1_Namespace1_Service1` .  
+> Se houver uma colisão de nomes, o nome da propriedade para acessar um serviço Web será *RootNamespace* _ *namespace* \_ *ServiceName*. Por exemplo, considere dois serviços Web denominados `Service1` . Se um desses serviços estiver no namespace raiz `WindowsApplication1` e no namespace `Namespace1` , você acessaria esse serviço usando o `My.WebServices.WindowsApplication1_Namespace1_Service1` .  
   
  Quando você acessa pela primeira vez uma das `My.WebServices` Propriedades do objeto, ele cria uma nova instância do serviço Web e a armazena. Os acessos subsequentes dessa propriedade retornam essa instância do serviço Web.  
   

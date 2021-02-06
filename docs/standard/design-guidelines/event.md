@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: design de eventos'
 title: Design de eventos
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - post-events
 - signatures, event handling
 ms.assetid: 67b3c6e2-6a8f-480d-a78f-ebeeaca1b95a
-ms.openlocfilehash: d04ffd2cab21177f1342a13259a81df22b65723a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d64bfb13792aa9d646560de844acddd9b7e188c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734407"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642195"
 ---
 # <a name="event-design"></a>Design de eventos
 

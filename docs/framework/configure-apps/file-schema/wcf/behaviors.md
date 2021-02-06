@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <behaviors>'
 title: <behaviors>
 ms.date: 03/30/2017
 ms.assetid: 0e5da4e6-1aa5-466c-924e-f10efee57f0b
-ms.openlocfilehash: 914fa04c9aff0c287913104cd9bedc570c473330
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3cb8edea76f6e7af3c3b387e5b04b89e58a28305
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201480"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639504"
 ---
 # \<behaviors>
 
@@ -17,7 +18,7 @@ Esse elemento define duas coleções filho chamadas `endpointBehaviors` e `servi
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<behaviors>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <behaviors>
@@ -53,7 +54,7 @@ Esse elemento define duas coleções filho chamadas `endpointBehaviors` e `servi
 
  Você pode usar o `<remove>` elemento para remover um comportamento específico da coleção. Para fazer isso, basta fornecer o nome do comportamento a ser removido no `name` atributo do `<remove>` elemento.  Você também pode usar o `<clear>` elemento para garantir que uma coleção de comportamentos comece vazia limpando todo o conteúdo da coleção.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.BehaviorsSection>
 - <xref:System.ServiceModel.Configuration.EndpointBehaviorElementCollection>

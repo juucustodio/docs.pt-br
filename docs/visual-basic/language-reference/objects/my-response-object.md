@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: meu objeto. Response'
 title: Objeto My.Response
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Response object
 ms.assetid: 626359bc-3165-40b4-bfaf-2c610e26eb5b
-ms.openlocfilehash: 53e8012e762c46e6efbd8e9d2191aa62d58aa42b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 551528356040539994251cb66a905d0249f482da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90870042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640609"
 ---
 # <a name="myresponse-object"></a>Objeto My.Response
 
@@ -30,7 +31,7 @@ Obtém o <xref:System.Web.HttpResponse> objeto associado ao <xref:System.Web.UI.
   
  [!code-aspx-vb[VbVbalrMyWeb#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyWeb/VB/Default.aspx#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Web.HttpResponse>
 - [Objeto My.Request](my-request-object.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: diretrizes de design de tipo'
 title: Diretrizes de Design de tipo
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - class library design guidelines [.NET Framework], type design guidelines
 - types [.NET Framework], design guidelines
 ms.assetid: 6b49314e-8bba-43ea-97ca-4e0255812f95
-ms.openlocfilehash: a20744f76433ff12456967e4d41d9a13b6f5d46c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d2c193d41dda118558cc5e7541f7e2dfbaf1a369
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677525"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641831"
 ---
 # <a name="type-design-guidelines"></a>Diretrizes de Design de tipo
 

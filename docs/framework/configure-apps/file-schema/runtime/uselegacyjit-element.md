@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <useLegacyJit> elemento'
 title: Elemento <useLegacyJit>
 ms.date: 04/26/2017
 ms.assetid: c2cf97f0-9262-4f1f-a754-5568b51110ad
-ms.openlocfilehash: a126b8c0050a8d1fd96a3d090f9b018a9faa07a7
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a1449cbc69f0aa1b91cc427fbfc5b984bf605169
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73968853"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639998"
 ---
 # <a name="uselegacyjit-element"></a>Elemento \<useLegacyJit>
 
@@ -17,7 +18,7 @@ Determina se o Common Language Runtime usa o compilador JIT de 64 bits herdado p
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<useLegacyJit>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml
 <useLegacyJit enabled=0|1 />
@@ -91,8 +92,8 @@ O arquivo de configuração a seguir desabilita a compilação com o novo compil
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [\<runtime>Elementos](runtime-element.md)
-- [\<configuration>Elementos](../configuration-element.md)
+- [\<runtime> Elementos](runtime-element.md)
+- [\<configuration> Elementos](../configuration-element.md)
 - [Mitigação: novo compilador JIT de 64 bits](../../../migration-guide/mitigation-new-64-bit-jit-compiler.md)

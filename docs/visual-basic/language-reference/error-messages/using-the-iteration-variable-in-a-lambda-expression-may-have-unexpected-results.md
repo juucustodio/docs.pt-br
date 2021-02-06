@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC42324: usar a variável de iteração em uma expressão lambda pode ter resultados inesperados'
 title: O uso de uma variável de iteração em uma expressão lambda pode ter resultados inesperados
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42324
 ms.assetid: b5c2c4bd-3b2a-4a73-aaeb-55728eb03b68
-ms.openlocfilehash: d0deea94084565ea91debe2b6db30def4cd9e00e
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: a21e33c9a8737642d4d0764e92b1fbb2213f9602
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161485"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640869"
 ---
 # <a name="bc42324-using-the-iteration-variable-in-a-lambda-expression-may-have-unexpected-results"></a>BC42324: usar a variável de iteração em uma expressão lambda pode ter resultados inesperados
 
@@ -84,6 +85,6 @@ Module Module1
 End Module
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões lambda](../../programming-guide/language-features/procedures/lambda-expressions.md)

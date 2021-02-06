@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <summary> (Visual Basic)'
 title: <summary>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - <summary> XML tag
 - summary XML tag
 ms.assetid: 861c847d-dd94-478a-aa23-bf4899cdc848
-ms.openlocfilehash: 471d3ddb5cf5a234cb77de6d1d93309faf754359
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 4d4b1ecf0fa054eb625c1a3cf09c1cab4e661ef2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90865836"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640284"
 ---
 # <a name="summary-visual-basic"></a>\<summary> (Visual Basic)
 
@@ -41,6 +42,6 @@ Especifica o resumo do membro.
   
  [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

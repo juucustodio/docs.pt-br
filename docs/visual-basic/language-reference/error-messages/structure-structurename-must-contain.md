@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30941: a estrutura ' <structurename> ' deve conter pelo menos uma variável de membro de instância ou pelo menos uma declaração de evento de instância não marcada como ' personalizada '"
 title: A estrutura '<structurename>' deve conter pelos menos uma variável membro da instância ou pelo menos uma declaração de evento da instância não marcada como 'Personalizada'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30941
 ms.assetid: 7054cc1e-bac3-4c3d-82f3-35772bd8dd3b
-ms.openlocfilehash: 4e7ef82659c43be08ee444eaf3f4df663f7aaa53
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 08596997decd9d739ac95ad3e4191cb126b3efb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92159645"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641441"
 ---
 # <a name="bc30941-structure-structurename-must-contain-at-least-one-instance-member-variable-or-at-least-one-instance-event-declaration-not-marked-custom"></a>BC30941: a estrutura ' \<structurename> ' deve conter pelo menos uma variável de membro de instância ou pelo menos uma declaração de evento de instância não marcada como ' Custom '
 
@@ -26,7 +27,7 @@ Uma definição de estrutura não inclui nenhuma variável não compartilhada ou
 
 - Defina pelo menos uma variável ou evento que não seja `Shared` . Se você definir apenas um evento, ele deverá ser não personalizado, bem como não compartilhado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas](../../programming-guide/language-features/data-types/structures.md)
 - [Como: Declarar uma estrutura](../../programming-guide/language-features/data-types/how-to-declare-a-structure.md)

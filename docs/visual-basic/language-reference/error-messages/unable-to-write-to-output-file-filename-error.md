@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC31019: não é possível gravar no arquivo de saída ' <filename> ': <error>"
 title: "Não é possível gravar no arquivo de saída '<filename>': <error>"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC31019
 ms.assetid: 0845b245-11bb-46fd-95ca-f6cef3c318ef
-ms.openlocfilehash: 5f4add95da7c996513ffb291a7794ea0e345ac94
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 4a1feff6429a5b82968d3a87e4c9c9ef80e6612a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161537"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640895"
 ---
 # <a name="bc31019-unable-to-write-to-output-file-filename-error"></a>BC31019: não é possível gravar no arquivo de saída ' \<filename> ': \<error>
 
@@ -58,6 +59,6 @@ Ocorreu um problema na criação do arquivo.
 
 3. Pressione **OK**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Fale conosco](/visualstudio/ide/feedback-options)

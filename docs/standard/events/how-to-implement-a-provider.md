@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como implementar um provedor'
 title: Como implementar um provedor
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - providers [.NET], in observer design pattern
 - observables [.NET], in observer design pattern
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
-ms.openlocfilehash: b63666a581959f7a6c6a30ca8763f9c22067f32a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 09c2e5127a241bc1d522e19ae71df420131c3d4d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641766"
 ---
 # <a name="how-to-implement-a-provider"></a>Como implementar um provedor
 
@@ -59,7 +60,7 @@ O padrão de design do observador requer uma divisão entre um provedor, que mon
  [!code-csharp[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#7)]
  [!code-vb[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#7)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IObservable%601>
 - [Padrão de design do observador](observer-design-pattern.md)

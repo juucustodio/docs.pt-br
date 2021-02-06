@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como: valores de data e hora de viagem de ida e volta'
 title: Como aplicar uma viagem de ida e volta a valores de data e hora
 ms.date: 03/30/2017
 dev_langs:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - time [.NET], round-trip values
 - formatting strings [.NET], round-trip values
 ms.assetid: b609b277-edc6-4c74-b03e-ea73324ecbdb
-ms.openlocfilehash: 243ed98972f834c207331770f9d0202ddb60d4e6
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 66f1ac2e8b51d7117f771a966a3c01cff24b78a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642741"
 ---
 # <a name="how-to-round-trip-date-and-time-values"></a>Como aplicar uma viagem de ida e volta a valores de data e hora
 
@@ -96,7 +97,7 @@ Estes exemplos exigem que:
 
 - Cada exemplo de código, diferente da `DateInTimeZone` classe, ser incluído em uma classe ou Visual Basic módulo, encapsulado em métodos e chamado a partir do `Main` método.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Escolhendo entre DateTime, DateTimeOffset, TimeSpan e TimeZoneInfo](../datetime/choosing-between-datetime.md)
 - [Cadeias de caracteres de formato de data e hora padrão](standard-date-and-time-format-strings.md)

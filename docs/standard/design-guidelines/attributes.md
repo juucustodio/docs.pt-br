@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: atributos'
 title: Atributos
 ms.date: 10/22/2008
 helpviewer_keywords:
 - attributes [.NET Framework], about
 - class library design guidelines [.NET Framework], attributes
 ms.assetid: ee0038ef-b247-4747-a650-3c5c5cd58d8b
-ms.openlocfilehash: c02c41244fa74b686277c2f3c3940405fe2d95ba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1557ba0945da0c8498c67f70ba4a01dd0bbe432e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701361"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642416"
 ---
 # <a name="attributes"></a>Atributos
 

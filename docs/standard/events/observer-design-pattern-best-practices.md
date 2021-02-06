@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: práticas recomendadas do padrão de design do observador'
 title: Práticas recomendadas para o padrão de design do observador
 ms.date: 03/30/2017
 helpviewer_keywords:
 - observer design pattern [.NET], best practices
 - best practices [.NET], observer design pattern
 ms.assetid: c834760f-ddd4-417f-abb7-a059679d5b8c
-ms.openlocfilehash: d88b092e681258566da685e3bb130b3d6131be08
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0c7e739081516776efbabb77ef88dbc3598d7fb9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697578"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641715"
 ---
 # <a name="observer-design-pattern-best-practices"></a>Práticas recomendadas para o padrão de design do observador
 
@@ -56,7 +57,7 @@ No .NET, o padrão de design do observador é implementado como um conjunto de i
   
  Embora seja possível anexar um observador para vários provedores, o padrão recomendado é anexar uma <xref:System.IObserver%601> instância a uma única instância <xref:System.IObservable%601>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Padrão de design do observador](observer-design-pattern.md)
 - [Como: implementar um observador](how-to-implement-an-observer.md)

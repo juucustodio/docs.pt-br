@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC42110: o tipo da variável ' <variablename> ' não será inferido porque está associado a um campo em um escopo delimitador"
 title: O tipo da variável '<variablename>' não será inferido porque está associado a um campo em um escopo delimitador
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42110
 ms.assetid: ef4442eb-08d1-434f-a03b-4aa2ed4e4414
-ms.openlocfilehash: 3e76ffea283de2843fc5586179074c01a053ece8
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: db31f1a6e87a2fd133f095e2fbdde7bc6bded97e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161277"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641233"
 ---
 # <a name="bc42110-the-type-for-variable-variablename-will-not-be-inferred-because-it-is-bound-to-a-field-in-an-enclosing-scope"></a>BC42110: o tipo para a variável ' \<variablename> ' não será inferido porque está associado a um campo em um escopo delimitador
 
@@ -83,7 +84,7 @@ Class Customer
 End Class
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Option Infer](../statements/option-infer-statement.md)
 - [Instrução For Each...Next](../statements/for-each-next-statement.md)

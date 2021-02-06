@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: prevendo a adoção do Windows Communication Foundation: facilitar a migração futura'
 title: 'Antecipar a adoção do Windows Communication Foundation: facilitar a migração futura'
 ms.date: 03/30/2017
 ms.assetid: f49664d9-e9e0-425c-a259-93f0a569d01b
-ms.openlocfilehash: bf3155f19e42787746d59ce7b593273522e2840a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6ea81b1dd01ed45ff62fa50c1b17442f88fc05af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245049"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643807"
 ---
 # <a name="anticipating-adopting-the-windows-communication-foundation-easing-future-migration"></a>Antecipar a adoção do Windows Communication Foundation: facilitar a migração futura
 
@@ -64,7 +65,7 @@ Para garantir uma migração futura mais fácil de novos aplicativos ASP.NET par
 
  Evite ter de manter o estado em serviços. Não apenas manter o Estado tende a comprometer a escalabilidade de um aplicativo, mas os mecanismos de gerenciamento de estado do ASP.NET e do WCF são muito diferentes, embora o WCF ofereça suporte aos mecanismos ASP.NET no modo de compatibilidade ASP.NET.  
   
-## <a name="exception-handling"></a>Tratamento de Exceção  
+## <a name="exception-handling"></a>Tratamento de exceção  
 
  Ao criar as estruturas dos tipos de dados a serem enviados e recebidos por um serviço, também crie estruturas para representar os vários tipos de exceções que podem ocorrer dentro de um serviço que talvez queira transmitir a um cliente.  
   
@@ -130,6 +131,6 @@ throw new SoapException(
   
 - Considere o uso de provedores de função do ASP.NET 2,0 para autorizar o acesso aos recursos de um serviço.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Antecipar a adoção do Windows Communication Foundation: facilitar a integração futura](anticipating-adopting-the-wcf-easing-future-integration.md)

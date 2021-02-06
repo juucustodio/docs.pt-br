@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: diretrizes de design para exceções'
 title: Diretrizes de design para exceções
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - errors [.NET Framework], exceptions
 - reporting errors
 ms.assetid: bc177b2f-7528-4ae4-83db-aacfb04b86d0
-ms.openlocfilehash: 28a3e40443c9f1be14243816b347da773705ff02
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0845f06dca0ee83d7315c3b0b4b6ae090b24a875
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734719"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642104"
 ---
 # <a name="design-guidelines-for-exceptions"></a>Diretrizes de design para exceções
 

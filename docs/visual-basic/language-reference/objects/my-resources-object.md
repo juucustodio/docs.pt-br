@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: objeto My. Resources'
 title: Objeto My.Resources
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Resources object
 ms.assetid: 34c3f2dc-7b87-432c-9d5f-17ea666bb266
-ms.openlocfilehash: 3d12524706f680434d5b6d8da39c89042bea3281
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ecd8e79aacea85080dc341ae36b362a595893034
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867332"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640622"
 ---
 # <a name="myresources-object"></a>Objeto My.Resources
 
@@ -48,7 +49,7 @@ Fornece propriedades e classes para acessar os recursos do aplicativo.
 |**Ícones**|<xref:System.Drawing.Icon>|  
 |**Áudio**|<xref:System.IO.UnmanagedMemoryStream><br /><br /> A <xref:System.IO.UnmanagedMemoryStream> classe deriva da <xref:System.IO.Stream> classe, portanto, ela pode ser usada com métodos que usam fluxos, como o <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A> método.|  
 |**Arquivos**|-   [Cadeia de caracteres](../data-types/string-data-type.md) para arquivos de texto.<br />-   <xref:System.Drawing.Bitmap> para arquivos de imagem.<br />-   <xref:System.Drawing.Icon> para arquivos de ícone.<br />-   <xref:System.IO.UnmanagedMemoryStream> para arquivos de som.|  
-|**Outras**|Determinado pelas informações na coluna **Type** do designer.|  
+|**Outros**|Determinado pelas informações na coluna **Type** do designer.|  
   
 ## <a name="classes"></a>Classes  
 
@@ -86,7 +87,7 @@ Fornece propriedades e classes para acessar os recursos do aplicativo.
   
  [!code-vb[VbVbalrMyResources#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#10)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciando recursos de aplicativo (.NET)](/visualstudio/ide/managing-application-resources-dotnet)
-- [Recursos em aplicativos de área de trabalho](../../../framework/resources/index.md)
+- [Recursos em aplicativos da área de trabalho](../../../framework/resources/index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: design de interface'
 title: Design de interface
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - type design guidelines, interfaces
 - class library design guidelines [.NET Framework], interfaces
 ms.assetid: a016bd18-6710-4358-9438-9f190a295392
-ms.openlocfilehash: 6f8cbb757ffb42f63903b212fee33cdcbba7ecb2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 387f921f8bdbe6c6d398aa31dcc8a22c7da455f7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727673"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641974"
 ---
 # <a name="interface-design"></a>Design de interface
 

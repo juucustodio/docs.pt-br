@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: muitos arquivos'
 title: Muitos arquivos
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID67
 ms.assetid: 2ff203e2-bba6-43ae-b72f-8e92a881c98f
-ms.openlocfilehash: cd168ce86569d2d7558e21a5b4cc5ef385b28313
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 85d246c49f765cf618bf889d75dcc9c10b780280
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641219"
 ---
 # <a name="too-many-files"></a>Muitos arquivos
 
@@ -21,6 +22,6 @@ Mais arquivos foram criados no diretório raiz do que o sistema operacional perm
   
 2. Aumente o número de arquivos especificados na configuração **files =** no arquivo CONFIG.SYS e reinicie o computador.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de erro](../../programming-guide/language-features/error-types.md)

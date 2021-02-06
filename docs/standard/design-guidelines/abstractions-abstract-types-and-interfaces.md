@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: abstrações (tipos abstratos e interfaces)'
 title: Abstrações (tipos e interfaces abstratos)
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - abstract types [.NET Framework]
 - types [.NET Framework], abstract
 ms.assetid: 0a632bc7-9b03-44ee-8842-c82f88672a45
-ms.openlocfilehash: f5169cf730dc987526765c9538978901d424814b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8dc82f004d655429e842c63fab4defff0fd74ab2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701400"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642430"
 ---
 # <a name="abstractions-abstract-types-and-interfaces"></a>Abstrações (tipos e interfaces abstratos)
 

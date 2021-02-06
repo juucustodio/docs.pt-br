@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: chave (Visual Basic)'
 title: Chave
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Key [Visual Basic]
 - Key keyword [Visual Basic]
 ms.assetid: 7697a928-7d14-4430-a72a-c9e96e8d6c11
-ms.openlocfilehash: 582ed5bb67b9c7504e736710aa4649cffb12ef45
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5ec918da661144053824ca2a734cdec11873b0e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90868001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640791"
 ---
 # <a name="key-visual-basic"></a>Chave (Visual Basic)
 
@@ -51,13 +52,13 @@ A `Key` palavra-chave permite que você especifique o comportamento das propried
   
  [!code-vb[VbVbalrAnonymousTypes#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#39)]  
   
-## <a name="read-only-values"></a>Valores somente leitura  
+## <a name="read-only-values"></a>Read-Only valores  
 
  Os valores das propriedades de chave não podem ser alterados. Por exemplo, no `flight1` nos exemplos anteriores, os `Airline` campos e `FlightNo` são somente leitura, mas `Gate` podem ser alterados.  
   
  [!code-vb[VbVbalrAnonymousTypes#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#28)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Definição do Tipo Anônimo](../../programming-guide/language-features/objects-and-classes/anonymous-type-definition.md)
 - [Como inferir nomes e tipos de propriedade na declaração de tipo anônimo](../../programming-guide/language-features/objects-and-classes/how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)

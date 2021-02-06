@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: prevendo a adoção do Windows Communication Foundation: facilitar a integração futura'
 title: 'Antecipar a adoção do Windows Communication Foundation: facilitar a integração futura'
 ms.date: 03/30/2017
 ms.assetid: 3028bba8-6355-4ee0-9ecd-c56e614cb474
-ms.openlocfilehash: ead28354a3687bcca22a1a0eb5ccc9f15f0c69d2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 512e35e8a4cd6057c96e96a1474f393c3f006525
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266565"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643871"
 ---
 # <a name="anticipating-adopting-the-windows-communication-foundation-easing-future-integration"></a>Antecipar a adoção do Windows Communication Foundation: facilitar a integração futura
 
@@ -49,6 +50,6 @@ public interface IEcho
 
  Evite usar as opções de autenticação fornecidas pelo Serviços de Informações da Internet (IIS). Os clientes WCF não dão suporte a eles. Se um serviço precisar ser protegido, use as opções fornecidas pelo WCF, pois essas opções são mais ricas e são baseadas em protocolos padrão.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Antecipar a adoção do Windows Communication Foundation: facilitar a migração futura](anticipating-adopting-wcf-migration.md)

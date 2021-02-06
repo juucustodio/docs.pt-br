@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como testar o proxy de descoberta'
 title: 'Como: testar o proxy de descoberta'
 ms.date: 03/30/2017
 ms.assetid: d96e3fa2-3c42-4e5d-8244-2694081bdc32
-ms.openlocfilehash: b08e8561ceff9f0a427a9ea9acb2309772579853
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 32360fd1f3724f2a557182ce2e11d346ba5c959d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643105"
 ---
 # <a name="how-to-test-the-discovery-proxy"></a>Como: testar o proxy de descoberta
 
@@ -51,7 +52,7 @@ Este é o quarto de quatro tópicos que mostra como implementar um proxy de desc
   
 3. Desligue o proxy de descoberta.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de descoberta do WCF](wcf-discovery-overview.md)
 - [Como: implementar um proxy de descoberta](how-to-implement-a-discovery-proxy.md)

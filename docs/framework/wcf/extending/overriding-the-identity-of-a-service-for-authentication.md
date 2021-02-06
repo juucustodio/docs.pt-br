@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: substituir a identidade de um serviço para autenticação'
 title: Substituindo a identidade de um serviço pela autenticação
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d613a22b-07d7-41a4-bada-1adc653b9b5d
-ms.openlocfilehash: a02e5a2f69ad1819e6ab98b0454dd64599382cd0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f83c10d75c4ea71170a76a7fd10efb33958f5b52
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644158"
 ---
 # <a name="override-the-identity-of-a-service-for-authentication"></a>Substituir a identidade de um serviço para autenticação
 
@@ -62,7 +63,7 @@ Normalmente, você não precisa definir a identidade em um serviço porque a sel
  [!code-csharp[C_Identity#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_identity/cs/source.cs#5)]
  [!code-vb[C_Identity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_identity/vb/source.vb#5)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: criar um verificador de identidade de cliente personalizado](how-to-create-a-custom-client-identity-verifier.md)
 - [Identidade e autenticação de serviço](../feature-details/service-identity-and-authentication.md)

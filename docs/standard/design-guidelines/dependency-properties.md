@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Propriedades de dependência'
 title: Propriedades de Dependência
 ms.date: 10/22/2008
 ms.assetid: 212cfb1e-cec4-4047-94a6-47209b387f6f
-ms.openlocfilehash: ab30da59670c146874defe86b1d048f97eebf449
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 78b141d6e8d1bb6bd5cf050a89aa67705111bae3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734758"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642299"
 ---
 # <a name="dependency-properties"></a>Propriedades de Dependência
 

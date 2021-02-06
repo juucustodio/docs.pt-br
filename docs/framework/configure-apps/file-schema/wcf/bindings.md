@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <bindings>'
 title: <bindings>
 ms.date: 01/22/2018
 ms.assetid: b62cd369-5409-4030-8490-9759a462dd3a
-ms.openlocfilehash: fe8f620668e35183890b8bba1f254a74c962f8d3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 2cf5b42b8478e34a528cd36435023cac62bf0c1e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74139667"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639374"
 ---
 # \<bindings>
 
@@ -41,7 +42,7 @@ A ordem na qual os elementos aparecem na pilha é importante, pois é a ordem na
 
  As associações personalizadas são identificadas por seu `name` atributo. Para obter mais informações sobre associações personalizadas, consulte [associações personalizadas](../../../wcf/extending/custom-bindings.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.BindingsSection?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Channels.Binding?displayProperty=nameWithType>

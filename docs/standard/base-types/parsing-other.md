@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: análise de outras cadeias de caracteres no .NET'
 title: Analisando outras cadeias de caracteres no .NET
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - parsing strings, other strings
 - Boolean data type, parsing strings
 ms.assetid: d139bc00-3c4e-4d78-ac9a-5c951b258d28
-ms.openlocfilehash: 352bd426c889996daa5f420ccc384947896dc118
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 10d8d9686c451334929471d06e4e3136fca80c68
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683739"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642715"
 ---
 # <a name="parsing-other-strings-in-net"></a>Analisando outras cadeias de caracteres no .NET
 
@@ -51,7 +52,7 @@ Além das cadeias de caracteres numéricas e <xref:System.DateTime>, também é 
  [!code-csharp[Conceptual.String.Parse#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.parse/cs/parse.cs#4)]
  [!code-vb[Conceptual.String.Parse#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.parse/vb/parse.vb#4)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Analisando cadeias de caracteres](parsing-strings.md)
 - [Formatar tipos](formatting-types.md)

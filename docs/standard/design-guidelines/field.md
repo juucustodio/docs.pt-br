@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: design de campo'
 title: Design de campo
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - read-only fields
 - member design guidelines, fields
 ms.assetid: 7cb4b0f3-7a10-4c93-b84d-733f7134fcf8
-ms.openlocfilehash: 4329ca9e74fa02411bd39755a432fc7d4858597d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 88df60c3050035221dc65429bbd543c71d5d69b3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642039"
 ---
 # <a name="field-design"></a>Design de campo
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <add> elemento para <listeners> para <trace>'
 title: <add> Elemento para <listeners> para <trace>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <add> element for <listeners>
 - add element for <listeners>
 ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
-ms.openlocfilehash: da5c0ccae08a32c324a1633b5a7ff7592efa6e2d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ffc0823e0c0ce1dcd9d9f19853929496b3248177
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174037"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639777"
 ---
 # <a name="add-element-for-listeners-for-trace"></a>\<add> Elemento para \<listeners> para \<trace>
 
@@ -25,7 +26,7 @@ Adiciona um ouvinte à coleção de **ouvintes** .
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-trace.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <add name="name"
@@ -105,7 +106,7 @@ Adiciona um ouvinte à coleção de **ouvintes** .
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.Debug>

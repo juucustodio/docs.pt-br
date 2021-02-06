@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como importar declarações de política personalizada'
 title: 'Como: importar declarações de política personalizadas'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1f41d787-accb-4a10-bfc6-a807671d1581
-ms.openlocfilehash: fb5e3ba5faca1b32eef63ac174bcd7731ee50771
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e9190a97ed7d2d369b8f9ddc3d7fec71daf1e54f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249144"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644327"
 ---
 # <a name="how-to-import-custom-policy-assertions"></a>Como: importar declarações de política personalizadas
 
@@ -64,7 +65,7 @@ As declarações de política descrevem os recursos e os requisitos de um ponto 
   
 1. Adicione o importador à <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A?displayProperty=nameWithType> Propriedade (por exemplo, se você estiver usando o <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> ) antes de importar os metadados.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>

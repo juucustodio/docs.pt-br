@@ -2,16 +2,16 @@
 title: Rastreamento distribuído-.NET
 description: Uma introdução ao rastreamento distribuído do .NET.
 ms.date: 02/02/2021
-ms.openlocfilehash: 573f749d7c3253499b6d01f5ba927dfa015e66a8
-ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
+ms.openlocfilehash: d21d2a978cfe58d89db689dec07107f089363912
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99551556"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640115"
 ---
 # <a name="net-distributed-tracing"></a>Rastreamento distribuído do .NET
 
-O rastreamento distribuído é a maneira de publicar e observar os dados de rastreamento em um sistema distribuído.
+O rastreamento distribuído é a maneira de publicar e observar dados de rastreamento em um sistema distribuído.
 O .NET Framework e o .NET Core têm suporte para rastreamento por meio de <xref:System.Diagnostics> APIs.
 
 - <xref:System.Diagnostics.Activity?displayProperty=nameWithType> classe que permite armazenar e acessar o contexto de diagnóstico e consumi-lo com o sistema de registro em log.
@@ -65,14 +65,14 @@ Aqui está um exemplo de como escutar os eventos de atividade:
     }
 ```
 
-O .NET 5,0 ampliou a capacidade do rastreamento distribuído para permitir os cenários de rastreamento de [OpenTelemetry](https://opentelemetry.io/) , adicionou funcionalidades de amostragem, simplificou o padrão de codificação de rastreamento e tornou a escuta dos eventos de atividade mais fácil e flexível.
+O .NET 5,0 ampliou a capacidade do rastreamento distribuído para permitir os cenários de rastreamento de [OpenTelemetry](https://opentelemetry.io/) , adicionou funcionalidades de amostragem, simplificou o padrão de codificação de rastreamento e tornou mais fácil e flexível a escuta dos eventos de atividade.
 
 > [!NOTE]
-> Para acessar todos os recursos do .NET 5,0 adicionados, certifique-se de fazer referência ao pacote NuGet [System. Diagnostics. diagnosticname](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/) versão 5,0 ou posterior. Esse pacote pode ser usado em bibliotecas e aplicativos destinados a qualquer versão com suporte do .NET Framework, .NET Core e .NET Standard. Se estiver direcionando o .NET 5,0 ou posterior, não será necessário fazer referência ao pacote manualmente, pois ele está incluído na biblioteca compartilhada instalada com o SDK do .NET.
+> Para acessar todos os recursos do .NET 5,0 adicionados, verifique se o seu projeto faz referência à versão 5,0 ou posterior do pacote NuGet [System. Diagnostics. Diagnostics](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/) . Esse pacote pode ser usado em bibliotecas e aplicativos destinados a qualquer versão com suporte do .NET Framework, .NET Core e .NET Standard. Se estiver direcionando o .NET 5,0 ou posterior, não será necessário fazer referência ao pacote manualmente, pois ele está incluído na biblioteca compartilhada instalada com o tempo de execução do .NET.
 
 ## <a name="getting-started-with-tracing"></a>Introdução com rastreamento
 
-Os aplicativos e as bibliotecas podem facilmente publicar dados de rastreamento simplesmente usando as <xref:System.Diagnostics.ActivitySource?displayProperty=nameWithType> classes e <xref:System.Diagnostics.Activity?displayProperty=nameWithType> .
+Aplicativos e bibliotecas podem facilmente publicar dados de rastreamento simplesmente usando as <xref:System.Diagnostics.ActivitySource?displayProperty=nameWithType> classes e <xref:System.Diagnostics.Activity?displayProperty=nameWithType> .
 
 ### <a name="activitysource"></a>Atividade
 
@@ -86,13 +86,13 @@ A primeira etapa para publicar dados de rastreamento é criar uma instância da 
 
 - Crie a ActivityName uma vez e armazene-a em uma variável estática e use essa instância desde que seja necessário.
 
-- O nome de origem passado para o construtor deve ser exclusivo para evitar conflitos com outras fontes. É recomendável usar o nome hierárquico contém as partes, o nome da empresa, o nome do componente e o nome da origem. Por exemplo, `Microsoft.System.HttpClient.HttpInOutRequests`.
+- O nome de origem passado para o construtor deve ser exclusivo para evitar conflitos com outras fontes. É recomendável usar um nome hierárquico que contenha o nome da empresa, o nome do componente e o nome da origem. Por exemplo, `Microsoft.System.HttpClient.HttpInOutRequests`.
 
-- O parâmetro version é opcional. É recomendável fornecer a versão no plano de caso para liberar várias versões da biblioteca ou do aplicativo e desejar distinguir entre as fontes de versões diferentes.
+- O parâmetro version é opcional. É recomendável fornecer a versão caso você planeje lançar várias versões da biblioteca ou do aplicativo e desejar distinguir entre as fontes de versões diferentes.
 
 ### <a name="activity-creation"></a>Criação de atividade
 
-Agora, o objeto Activityprovider criado pode ser usado para criar e iniciar objetos de atividade que usaram o log de quaisquer dados de rastreamento em qualquer lugar desejado no código.
+Agora, o objeto Activityprovider criado pode ser usado para criar e iniciar objetos de atividade que são usados para registrar quaisquer dados de rastreamento em qualquer lugar desejado no código.
 
 ```csharp
         using (Activity activity = source.StartActivity("OperationName"))
@@ -103,18 +103,18 @@ Agora, o objeto Activityprovider criado pode ser usado para criar e iniciar obje
         }
 ```
 
-Este código de exemplo tenta criar o objeto de atividade e, em seguida, registrar em log uma marca `key` de rastreamento e `value` .
+Este código de exemplo tenta criar o objeto de atividade e, em seguida, registra em log alguma marca `key` de rastreamento e `value` .
 
-#### <a name="notes"></a>Anotações
+#### <a name="notes"></a>Observações
 
-- `ActivitySource.StartActivity` tenta criar e iniciar a atividade ao mesmo tempo. O padrão de código listado está usando o `using` bloco que descarta automaticamente o objeto de atividade criado após a execução do bloco. Descartar o objeto de atividade interromperá essa atividade iniciada e o código não precisa parar explicitamente o te Activity. Que simplificam o padrão de codificação
+- `ActivitySource.StartActivity` tenta criar e iniciar a atividade ao mesmo tempo. O padrão de código listado está usando o `using` bloco que descarta automaticamente o objeto de atividade criado após a execução do bloco. Descartar o objeto de atividade interromperá essa atividade iniciada e o código não precisará parar explicitamente a atividade. Isso simplifica o padrão de codificação.
 
-- `ActivitySource.StartActivity` Descubra internamente se há algum ouvinte para esses eventos. Se não houver ouvintes registrados ou se houver ouvintes que não estejam interessados nesse evento, `ActivitySource.StartActivity` simplesmente retornará `null` Object e evitará criar o objeto de atividade. É por isso que o código usou o operador Nullable `?`  na instrução `activity?.AddTag` . Em geral, dentro do `using` bloco, sempre use o operador Nullable `?` após o nome do objeto de atividade.
+- `ActivitySource.StartActivity` descobre internamente se há algum ouvinte para esses eventos. Se não houver ouvintes registrados ou se houver ouvintes que não estejam interessados nesse evento, `ActivitySource.StartActivity` simplesmente retornará `null` e evitará a criação do objeto de atividade. É por isso que o código usou o operador Nullable `?`  na instrução `activity?.AddTag` . Em geral, dentro do `using` bloco, sempre use o operador Nullable `?` após o nome do objeto de atividade.
 
 ## <a name="listening-to-the-activity-events"></a>Ouvindo os eventos de atividade
 
-O .NET fornece a classe <xref:System.Diagnostics.ActivityListener?displayProperty=nameWithType> que pode ser usada para escutar os eventos de atividade disparados de uma ou mais ActivityName.
-O ouvinte pode ser usado para coletar dados de rastreamento, amostragem ou forçação da criação do objeto de atividade.
+O .NET fornece a classe <xref:System.Diagnostics.ActivityListener?displayProperty=nameWithType> que pode ser usada para escutar os eventos de atividade disparados a partir de um ou mais ActivitySources.
+O ouvinte pode ser usado para coletar dados de rastreamento, exemplo ou forçar a criação do objeto de atividade.
 
 A `ActivityListener` classe fornece um retorno de chamada diferente para lidar com eventos diferentes.
 
@@ -134,23 +134,23 @@ ActivitySource.AddActivityListener(listener);
 
 - `ShouldListenTo` habilita a escuta de `ActivitySource` objetos específicos. No exemplo, ele permite ouvir o objeto que criamos `ActivitySource` anteriormente. Há mais flexibilidade para escutar quaisquer outros `ActivitySource` objetos, verificando o `Name` e `Version` da entrada `ActivitySource` .
 
-- `ActivityStarted` e `ActivityStopped` habilitar a obtenção dos `Activity` eventos Start e Stop para todos os `Activity` objetos criados pelos `ActivitySource` objetos que foram habilitados para escutar por `ShouldListenTo` retorno de chamada.
+- `ActivityStarted` e `ActivityStopped` habilitar a obtenção dos `Activity` eventos Start e Stop para todos os `Activity` objetos criados pelos `ActivitySource` objetos que foram habilitados pelo `ShouldListenTo` retorno de chamada.
 
-- `Sample` e `SampleUsingParentId` são os principais retornos de chamada que se destinam à amostragem. Esses dois retornos de chamada retornam o `ActivitySamplingResult` valor de enumeração que pode indicar a amostra ou saída da `Activity` solicitação de criação atual. Se o retorno de chamada retornar `ActivitySamplingResult.None` e nenhum outro ouvinte habilitado retornar um valor diferente, a atividade colocará não será criada e `ActivitySource.StartActivity` retornará `null` . Caso contrário, o `Activity` objeto será criado.
+- `Sample` e `SampleUsingParentId` são os principais retornos de chamada que se destinam à amostragem. Esses dois retornos de chamada retornam o `ActivitySamplingResult` valor de enumeração que pode indicar a amostra ou saída da `Activity` solicitação de criação atual. Se o retorno de chamada retornar `ActivitySamplingResult.None` e nenhum outro ouvinte habilitado retornar um valor diferente, a atividade não será criada e `ActivitySource.StartActivity` retornará `null` . Caso contrário, o `Activity` objeto será criado.
 
 ## <a name="net-50-new-features"></a>Novos recursos do .NET 5,0
 
-Para uma classe de tempo, há `Activity` suporte para cenários principais de rastreamento. Ele permitia a marcação de marcas que são pares chave-valor dos dados de rastreamento. Ele tem sido compatível com baggages, que é uma marca de chave-valor destinada a ser propagada pela conexão.
+Por algum tempo, a `Activity` classe tem suporte a cenários de rastreamento. Ele permitia a adição de marcas que são pares chave-valor dos dados de rastreamento. Ele tem sido compatível com bagagem, que são pares chave-valor destinados a serem propagados pela conexão.
 
 O .NET 5,0 dá suporte a mais recursos principalmente para habilitar cenários OpenTelemetry.
 
 ### <a name="activitycontext"></a>ActivityContext
 
-<xref:System.Diagnostics.ActivityContext?displayProperty=nameWithType> é o struct que possui o contexto das operações de rastreamento (por exemplo, a ID de rastreamento, a ID de extensão, os sinalizadores de rastreamento e o estado de rastreamento). Agora é possível criar um novo `Activity` com o fornecimento do contexto de rastreamento pai. Além disso, é fácil extrair o contexto de rastreamento de qualquer `Activity` objeto chamando a `Activity.Context` propriedade.
+<xref:System.Diagnostics.ActivityContext?displayProperty=nameWithType> é o struct que possui o contexto das operações de rastreamento (por exemplo, a ID de rastreamento, a ID de extensão, os sinalizadores de rastreamento e o estado de rastreamento). Agora é possível criar um novo `Activity` fornecendo o contexto de rastreamento pai. Além disso, é fácil extrair o contexto de rastreamento de qualquer `Activity` objeto chamando a `Activity.Context` propriedade.
 
 ### <a name="activitylink"></a>ActivityLink
 
-<xref:System.Diagnostics.ActivityLink?displayProperty=nameWithType> é o struct que contém a instância de contexto de rastreamento que pode ser vinculada ao objeto relacionado casualmente `Activity` . Os links podem ser adicionados ao `Activity` objeto passando a lista de links para o `ActivitySource.StartActivity` método ao criar o `Activity` . Os `Activity` links inteiros anexados ao objeto podem ser recuperados usando a propriedade `Activity.Links` .
+<xref:System.Diagnostics.ActivityLink?displayProperty=nameWithType> é o struct que contém a instância de contexto de rastreamento que pode ser vinculada a objetos eventualmente relacionados `Activity` . Os links podem ser adicionados ao `Activity` objeto passando a lista de links para o `ActivitySource.StartActivity` método ao criar o `Activity` . Os `Activity` links anexados ao objeto podem ser recuperados usando a propriedade `Activity.Links` .
 
 ### <a name="activityevent"></a>ActivityEvent
 
@@ -174,19 +174,19 @@ O .NET 5,0 dá suporte a mais recursos principalmente para habilitar cenários O
 
 ### <a name="activitytagobjects"></a>Activity. TagObjects
 
-`Activity` a classe tem a propriedade `Activity.Tags` que retorna uma lista de pares chave-valor das marcas do tipo cadeia de caracteres para a chave e o valor. Essas marcas podem ser adicionadas ao `Activity` usando o método `AddTag(string, string)` . `Activity` ampliou o suporte de marcas fornecendo o método sobrecarregado, `AddTag(string, object)` permitindo ter valores de qualquer tipo.  A lista completa dessas marcas pode ser recuperada usando <xref:System.Diagnostics.Activity.TagObjects?displayProperty=nameWithType> .
+`Activity` a classe tem a propriedade `Activity.Tags` que retorna uma lista de pares chave-valor das marcas do tipo cadeia de caracteres para a chave e o valor. Essas marcas podem ser adicionadas ao `Activity` usando o método `AddTag(string, string)` . `Activity` ampliou o suporte de marcas fornecendo o método sobrecarregado, `AddTag(string, object)` permitindo valores de qualquer tipo.  A lista completa dessas marcas pode ser recuperada usando <xref:System.Diagnostics.Activity.TagObjects?displayProperty=nameWithType> .
 
 ## <a name="sampling"></a>amostragem
 
-A amostragem é um mecanismo para controlar o ruído e a sobrecarga, reduzindo o número de amostras de rastreamentos coletados e enviados ao back-end. A amostragem é um cenário de OpenTelemetry importante. No .NET 5,0, é fácil permitir a amostragem. Uma prática recomendada é criar os novos `Activity` objetos usando `ActivitySource.StartActivity` e tentar fornecer todos os dados disponíveis possíveis (por exemplo, marcas, tipos, links,... etc.) ao chamar esse método. Fornecer os dados permitirá que os exemplos que são implementados usando o `ActivityListener` para tenham uma decisão de amostragem adequada. Se o desempenho for crítico para evitar a criação dos dados antes da criação do `Activity` objeto, a propriedade `ActivitySource.HasListeners` será útil para verificar se há ouvintes antes de criar os dados necessários.
+A amostragem é um mecanismo para controlar o ruído e a sobrecarga, reduzindo o número de amostras de rastreamentos coletados e enviados ao back-end. A amostragem é um cenário de OpenTelemetry importante. No .NET 5,0, é fácil permitir a amostragem. Uma prática recomendada é criar os novos `Activity` objetos usando `ActivitySource.StartActivity` e tentar fornecer todos os dados disponíveis possíveis (por exemplo, marcas, tipos, links,... etc.) ao chamar esse método. Fornecer os dados permitirá que os exemplos implementados usando o `ActivityListener` para tenham uma decisão de amostragem adequada. Se o desempenho for crítico para evitar a criação dos dados antes da criação do `Activity` objeto, a propriedade será `ActivitySource.HasListeners` útil para verificar se há ouvintes antes de criar os dados necessários.
 
 ## <a name="opentelemetry"></a>OpenTelemetry
 
-O SDK do OpenTelemetry vem com muitos recursos que dão suporte a cenários de rastreamento distribuído de ponta a ponta. Ele fornece vários classificadores e exportadores que podem escolher. Ele também permite criar uma amostra e exportadores personalizados.
+O SDK do OpenTelemetry vem com muitos recursos que dão suporte a cenários de rastreamento distribuído de ponta a ponta. Ele fornece vários exemplos e exportadores dos quais você pode escolher. Ele também permite criar uma amostra e exportadores personalizados.
 
-O OpenTelemetry dá suporte à exportação dos dados de rastreamento coletados para back-ends diferentes (por exemplo, Jaeger, Zipkin, New Relic,... etc.). Consulte [OpenTelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet/) para obter mais detalhes e Pesquisar NuGet.org para pacotes começa com `OpenTelemetry.Exporter.` para obter a lista de pacotes exportadores.
+O OpenTelemetry dá suporte à exportação dos dados de rastreamento coletados para back-ends diferentes (por exemplo, Jaeger, Zipkin, New Relic,... etc.). Consulte [OpenTelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet/) para obter mais detalhes e Pesquisar NuGet.org para pacotes começando com `OpenTelemetry.Exporter.` para obter a lista de pacotes exportadores.
 
-Aqui está um código de exemplo portado de [introdução OpenTelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/trace/getting-started) que mostra como é fácil fazer amostras e exportar dados de rastreamento para o console.
+Aqui está o código de exemplo portado de [introdução OpenTelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/trace/getting-started) que mostra como é fácil criar amostras e exportar dados de rastreamento para o console.
 
 ```csharp
 // <copyright file="Program.cs" company="OpenTelemetry Authors">

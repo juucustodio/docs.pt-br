@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ativação de instância'
 title: Ativação de instância
 ms.date: 03/30/2017
 ms.assetid: 134c3f70-5d4e-46d0-9d49-469a6643edd8
-ms.openlocfilehash: 1fd30d9d440c06c03e726ed1f1ddbebb0d5f7e8c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a301f49fb79e7c74cd3a64e891526e5b89fdd1c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279929"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631197"
 ---
 # <a name="instance-activation"></a>Ativação de instância
 

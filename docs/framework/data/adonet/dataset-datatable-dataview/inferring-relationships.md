@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: relações de referência'
 title: Inferir relações
 ms.date: 03/30/2017
 ms.assetid: 8fa86a9d-6545-4a9d-b1f5-58d9742179c7
-ms.openlocfilehash: ee691eee95c34afdb6374cdd7448d4b44ece3055
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a117581d512c1427c638ea862169ab3c7623d783
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177560"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652140"
 ---
 # <a name="inferring-relationships"></a>Inferir relações
 
@@ -70,7 +71,7 @@ Se um elemento que é inferido como uma tabela tiver um elemento filho que tamb�
   
  **AcceptRejectRule:** None  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Inferir a estrutura relacional do DataSet do esquema XML](inferring-dataset-relational-structure-from-xml.md)
 - [Carregando um DataSet a partir de XML](loading-a-dataset-from-xml.md)

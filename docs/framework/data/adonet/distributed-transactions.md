@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: transações distribuídas'
 title: Transações distribuídas
 ms.date: 03/30/2017
 ms.assetid: 718b257c-bcb2-408e-b004-a7b0adb1c176
-ms.openlocfilehash: b6553d50039ca0f4888f0610b187c6b419a462b5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 611fe4e2139e69e9501a3ea04a6aa62425e06728
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153190"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651113"
 ---
 # <a name="distributed-transactions"></a>Transações distribuídas
 
@@ -18,9 +19,9 @@ Uma transação é um conjunto de tarefas relacionadas que é bem-sucedida (conf
   
 ## <a name="working-with-systemtransactions"></a>Trabalhando com System.Transactions  
 
- No .NET Framework, as transações distribuídas são gerenciadas por meio da API no namespace <xref:System.Transactions>. A API <xref:System.Transactions> delegará a manipulação da transação distribuída para um monitor de transação como o Coordenador de transações distribuídas da Microsoft (DTC) quando vários gerentes de recurso persistentes estão envolvidos. Para obter mais informações, consulte [conceitos básicos de transação](../transactions/transaction-fundamentals.md).  
+ No .NET Framework, as transações distribuídas são gerenciadas por meio da API no namespace <xref:System.Transactions>. A API <xref:System.Transactions> delegará a manipulação da transação distribuída para um monitor de transação como o Coordenador de transações distribuídas da Microsoft (DTC) quando vários gerentes de recurso persistentes estão envolvidos. Para obter mais informações, confira os [Conceitos básicos da transação](../transactions/transaction-fundamentals.md).  
   
- O ADO.NET 2.0 introduziu o suporte para inscrição em uma transação distribuída usando o método `EnlistTransaction`, que inscreve uma conexão em uma instância <xref:System.Transactions.Transaction>. Em versões anteriores do ADO.NET, a inscrição explícita em transações distribuídas foi realizada usando o método `EnlistDistributedTransaction` de uma conexão para inscrever uma conexão em uma instância <xref:System.EnterpriseServices.ITransaction>, que não tem suporte para compatibilidade com versões anteriores. Para obter mais informações sobre as transações de serviços corporativos, consulte [interoperabilidade com os serviços corporativos e as transações com+](../transactions/interoperability-with-enterprise-services-and-com-transactions.md).  
+ O ADO.NET 2.0 introduziu o suporte para inscrição em uma transação distribuída usando o método `EnlistTransaction`, que inscreve uma conexão em uma instância <xref:System.Transactions.Transaction>. Em versões anteriores do ADO.NET, a inscrição explícita em transações distribuídas foi realizada usando o método `EnlistDistributedTransaction` de uma conexão para inscrever uma conexão em uma instância <xref:System.EnterpriseServices.ITransaction>, que não tem suporte para compatibilidade com versões anteriores. Para obter mais informações sobre as transações de serviços corporativos, confira [Interoperabilidade com os serviços corporativos e as transações COM+](../transactions/interoperability-with-enterprise-services-and-com-transactions.md).  
   
  Ao usar uma transação <xref:System.Transactions> com o provedor do .NET Framework para SQL Server em um banco de dados do SQL Server, um <xref:System.Transactions.Transaction> leve será usado automaticamente. A transação pode então ser promovida a uma transação distribuída completa conforme o necessário. Para obter mais informações, consulte [integração de System. Transactions com o SQL Server](system-transactions-integration-with-sql-server.md).  
   
@@ -29,7 +30,7 @@ Uma transação é um conjunto de tarefas relacionadas que é bem-sucedida (conf
   
 ## <a name="automatically-enlisting-in-a-distributed-transaction"></a>Automaticamente inscrevendo em uma transação distribuída  
 
- A inscrição automática é a maneira padrão (e preferida) de integrar conexões ADO.NET com `System.Transactions`. Um objeto de conexão será inscrito automaticamente em uma transação distribuída existente se determinar que uma transação está ativa, o que, em `System.Transaction` termos, significa que `Transaction.Current` não é nulo. A inscrição automática de transação ocorre quando a conexão é aberta. Isso não ocorrerá depois disso, mesmo que um comando seja executado dentro de um escopo de transação. Você pode desativar a inscrição automática em transações existentes especificando `Enlist=false` como um parâmetro de cadeia de conexão para um <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A?displayProperty=nameWithType> ou `OLE DB Services=-7` como um parâmetro de cadeia de conexão para um <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A?displayProperty=nameWithType>. Para obter mais informações sobre Oracle e os parâmetros da cadeia de conexão ODBC, consulte <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A?displayProperty=nameWithType> e <xref:System.Data.Odbc.OdbcConnection.ConnectionString%2A?displayProperty=nameWithType>.  
+ A inscrição automática é a maneira padrão (e preferida) de integrar conexões ADO.NET com `System.Transactions`. Um objeto de conexão será inscrito automaticamente em uma transação distribuída existente se ele determinar que uma transação está ativa, o que, nos termos do `System.Transaction`, significa que `Transaction.Current` não é nulo. A inscrição automática de transação ocorre quando a conexão é aberta. Isso não ocorrerá depois disso, mesmo que um comando seja executado dentro de um escopo de transação. Você pode desativar a inscrição automática em transações existentes especificando `Enlist=false` como um parâmetro de cadeia de conexão para um <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A?displayProperty=nameWithType> ou `OLE DB Services=-7` como um parâmetro de cadeia de conexão para um <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A?displayProperty=nameWithType>. Para obter mais informações sobre Oracle e os parâmetros da cadeia de conexão ODBC, consulte <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A?displayProperty=nameWithType> e <xref:System.Data.Odbc.OdbcConnection.ConnectionString%2A?displayProperty=nameWithType>.  
   
 ## <a name="manually-enlisting-in-a-distributed-transaction"></a>Inscrevendo manualmente em uma transação distribuída  
 
@@ -37,7 +38,7 @@ Uma transação é um conjunto de tarefas relacionadas que é bem-sucedida (conf
   
  Inscrever-se em transações distribuídas é aplicável principalmente ao agrupar objetos de negócios. Se um objeto de negócios é agrupado com uma conexão aberta, a inscrição automática da transação ocorre somente quando essa conexão está aberta. Se várias transações são executadas usando o objeto comercial agrupado, a conexão aberta para esse objeto não se inscreverá automaticamente em transações iniciadas recentemente. Nesse caso, você pode desabilitar a inscrição automática de transação para a conexão e inscrever a conexão nas transações usando `EnlistTransaction`.  
   
- `EnlistTransaction` usa um único argumento do tipo <xref:System.Transactions.Transaction> que é uma referência à transação existente. Após chamar o método `EnlistTransaction` da conexão, as modificações feitas na fonte de dados usando a conexão serão incluídas na transação. Passar um valor nulo cancela a inscrição da conexão de sua inscrição de transação distribuída atual. Observe que a conexão deve ser aberta antes de chamar `EnlistTransaction`.  
+ `EnlistTransaction` usa um só argumento do tipo <xref:System.Transactions.Transaction> que é uma referência para a transação existente. Após chamar o método `EnlistTransaction` da conexão, as modificações feitas na fonte de dados usando a conexão serão incluídas na transação. Passar um valor nulo cancela a inscrição da conexão de sua inscrição de transação distribuída atual. Observe que a conexão deve ser aberta antes de chamar `EnlistTransaction`.  
   
 > [!NOTE]
 > Assim que uma conexão é inscrita explicitamente em uma transação, ela não pode ter a inscrição cancelada nem ser inscrita em outra transação até a primeira transação terminar.  
@@ -53,7 +54,7 @@ Uma transação é um conjunto de tarefas relacionadas que é bem-sucedida (conf
 
  Você talvez precise habilitar o MS DTC na rede para usar transações distribuídas. Se tiver o Firewall do Windows habilitado, você deverá permitir que o serviço do MS DTC use a rede ou abra a porta do MS DTC.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Transações e simultaneidade](transactions-and-concurrency.md)
 - [Integração de System.Transactions com o SQL Server](system-transactions-integration-with-sql-server.md)

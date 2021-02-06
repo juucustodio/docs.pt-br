@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: inferir texto de elemento'
 title: Inferir o texto do elemento
 ms.date: 03/30/2017
 ms.assetid: 789799e5-716f-459f-a168-76c5cf22178b
-ms.openlocfilehash: 7389e24f39902edf041c3cd3502303b17fd008ba
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5d0d9b1b3bb6164cd3cf26b429a4c7d658ee4128
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164682"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652205"
 ---
 # <a name="inferring-element-text"></a>Inferir o texto do elemento
 
@@ -51,7 +52,7 @@ Se um elemento contiver texto e não tiver nenhum elemento filho a ser inferido 
 |-------------------|  
 |Text2|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Inferir a estrutura relacional do DataSet do esquema XML](inferring-dataset-relational-structure-from-xml.md)
 - [Carregando um DataSet a partir de XML](loading-a-dataset-from-xml.md)

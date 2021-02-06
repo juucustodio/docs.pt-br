@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como executar uma consulta de Entity SQL parametrizada usando EntityCommand'
 title: 'Como: executar uma consulta Entity SQL parametrizada usando EntityCommand'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e93fea43-7e03-4d7d-9fee-2517b8b88cba
-ms.openlocfilehash: d66b77553e677c42ccedf7e66bf4f5763db92fa4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c3eb9fdfbad986d54104e94aa719a57edfa14b19
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192224"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650775"
 ---
 # <a name="how-to-execute-a-parameterized-entity-sql-query-using-entitycommand"></a>Como: executar uma consulta Entity SQL parametrizada usando EntityCommand
 
@@ -32,7 +33,7 @@ Este tópico mostra como executar uma [!INCLUDE[esql](../../../../../includes/es
  [!code-csharp[DP EntityServices Concepts#ParameterizedQueryWithEntityCommand](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#parameterizedquerywithentitycommand)]
  [!code-vb[DP EntityServices Concepts#ParameterizedQueryWithEntityCommand](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#parameterizedquerywithentitycommand)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como executar uma consulta parametrizada](/previous-versions/dotnet/netframework-4.0/bb738521(v=vs.100))
 - [Linguagem Entity SQL](./language-reference/entity-sql-language.md)

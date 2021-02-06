@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: DbProviderFactories'
 title: DbProviderFactories
 ms.date: 03/30/2017
 ms.assetid: 2a8e2640-3a49-42a1-a3a9-b43026907ae1
-ms.openlocfilehash: b5f2dbb687348afac98247cb21bae831dea26bfe
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 735c78a846fc8df31a922acf90e587c6d96f4995
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183306"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651256"
 ---
 # <a name="dbproviderfactories"></a>DbProviderFactories
 
@@ -29,7 +30,7 @@ O namespace <xref:System.Data.Common> fornece classes para criar instâncias <xr
  [Modificar dados com um DbDataAdapter](modifying-data-with-a-dbdataadapter.md)  
  Demonstra como usar um <xref:System.Data.Common.DbCommandBuilder> com um <xref:System.Data.Common.DbDataAdapter> para recuperar e modificar dados.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Recuperando e modificando dados no ADO.NET](retrieving-and-modifying-data.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

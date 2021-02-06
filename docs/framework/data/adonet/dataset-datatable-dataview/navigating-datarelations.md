@@ -1,20 +1,21 @@
 ---
+description: 'Saiba mais sobre: navegando em DataRelations'
 title: Navegando em DataRelations
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e5e673f4-9b44-45ae-aaea-c504d1cc5d3e
-ms.openlocfilehash: 5eb2ee16712be5ccd5e9aa0af4dde22dcaaeea09
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 72d5bbb282b3b43434e528390769e1203519e8e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148380"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651802"
 ---
 # <a name="navigating-datarelations"></a>Navegando em DataRelations
 
-Uma das principais funções de um <xref:System.Data.DataRelation> é permitir a navegação de um <xref:System.Data.DataTable> para outro em um <xref:System.Data.DataSet>. Isso permite que você recupere todos os <xref:System.Data.DataRow> objetos relacionados em uma **DataTable** quando recebe uma única **DataRow** de uma **DataTable**relacionada. Por exemplo, depois de estabelecer uma **DataRelation** entre uma tabela de clientes e uma tabela de pedidos, você pode recuperar todas as linhas de ordem de uma linha de cliente específica usando **GetChildRows**.  
+Uma das principais funções de um <xref:System.Data.DataRelation> é permitir a navegação de um <xref:System.Data.DataTable> para outro em um <xref:System.Data.DataSet>. Isso permite que você recupere todos os <xref:System.Data.DataRow> objetos relacionados em uma **DataTable** quando recebe uma única **DataRow** de uma **DataTable** relacionada. Por exemplo, depois de estabelecer uma **DataRelation** entre uma tabela de clientes e uma tabela de pedidos, você pode recuperar todas as linhas de ordem de uma linha de cliente específica usando **GetChildRows**.  
   
  O exemplo de código a seguir cria uma **DataRelation** entre a tabela **Customers** e a tabela **Orders** de um **DataSet** e retorna todos os pedidos para cada cliente.  
   
@@ -50,7 +51,7 @@ Customer ID: NORTS
  [!code-csharp[DataWorks Data.DataTableNavigation#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks Data.DataTableNavigation/CS/source.cs#1)]
  [!code-vb[DataWorks Data.DataTableNavigation#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.DataTableNavigation/VB/source.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [DataSets, DataTables e DataViews](index.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

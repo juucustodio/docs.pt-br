@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: definição de esquema de DataTable'
 title: Definição do esquema de DataTable
 ms.date: 03/30/2017
 ms.assetid: efbcdda4-f5a9-421d-8be2-4c194c74552f
-ms.openlocfilehash: 0c14c6012c65039e1e2e7e2d2d8c38c4202b45a7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b1a48c8a129607dc8d683aa4735ea0e86ed32cc2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153242"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652608"
 ---
 # <a name="datatable-schema-definition"></a>Definição do esquema de DataTable
 
@@ -37,7 +38,7 @@ O esquema, ou a estrutura, de uma tabela é representado por colunas e restriç�
  [Restrições de DataTable](datatable-constraints.md)  
  Descreve como definir a chave estrangeira e restrições exclusivas para colunas em uma tabela.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [DataTables](datatables.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

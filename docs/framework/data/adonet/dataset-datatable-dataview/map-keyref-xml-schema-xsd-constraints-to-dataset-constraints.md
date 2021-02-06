@@ -1,27 +1,28 @@
 ---
+description: 'Saiba mais sobre: mapear restrições XSD (esquema XML keyref) para restrições de conjunto de informações'
 title: Mapear restrições de esquema XML (XSD) keyref para restrições de DataSet
 ms.date: 03/30/2017
 ms.assetid: 5b634fea-cc1e-4f6b-9454-10858105b1c8
-ms.openlocfilehash: fe53232b6818b5bb28b433c4a473b6381b8e9083
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f9925cf68e0c8fd1258eeeb509664e0527e58526
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198555"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651971"
 ---
 # <a name="map-keyref-xml-schema-xsd-constraints-to-dataset-constraints"></a>Mapear restrições de esquema XML (XSD) keyref para restrições de DataSet
 
-O elemento **keyref** permite que você estabeleça links entre elementos dentro de um documento. Isso é semelhante a uma relação de chave estrangeira em um banco de dados relacional. Se um esquema especificar o elemento **keyref** , o elemento será convertido durante o processo de mapeamento de esquema para uma restrição de chave estrangeira correspondente nas colunas nas tabelas do <xref:System.Data.DataSet> . Por padrão, o elemento **keyref** também gera uma relação, com as **Propriedades parentID**, **ChildTable**, **ParentColumn**e **ChildColumn** especificadas na relação.  
+O elemento **keyref** permite que você estabeleça links entre elementos dentro de um documento. Isso é semelhante a uma relação de chave estrangeira em um banco de dados relacional. Se um esquema especificar o elemento **keyref** , o elemento será convertido durante o processo de mapeamento de esquema para uma restrição de chave estrangeira correspondente nas colunas nas tabelas do <xref:System.Data.DataSet> . Por padrão, o elemento **keyref** também gera uma relação, com as **Propriedades parentID**, **ChildTable**, **ParentColumn** e **ChildColumn** especificadas na relação.  
   
  A tabela a seguir descreve os atributos **MSDATA** que você pode especificar no elemento **keyref** .  
   
 |Nome do atributo|Descrição|  
 |--------------------|-----------------|  
-|**msdata:ConstraintOnly**|Se **ConstraintOnly = "true"** for especificado no elemento **keyref** no esquema, uma restrição será criada, mas nenhuma relação será criada. Se esse atributo não for especificado (ou estiver definido como **false**), a restrição e a relação serão criadas no **conjunto**de um.|  
+|**msdata:ConstraintOnly**|Se **ConstraintOnly = "true"** for especificado no elemento **keyref** no esquema, uma restrição será criada, mas nenhuma relação será criada. Se esse atributo não for especificado (ou estiver definido como **false**), a restrição e a relação serão criadas no **conjunto** de um.|  
 |**MSDATA: ConstraintName**|Se o atributo **ConstraintName** for especificado, seu valor será usado como o nome da restrição. Caso contrário, o atributo **Name** do elemento **keyref** no esquema fornecerá o nome da restrição no **DataSet**.|  
-|**MSDATA: UpdateRule**|Se o atributo **UpdateRule** for especificado no elemento **keyref** no esquema, seu valor será atribuído à propriedade de restrição **UpdateRule** no **conjunto**de valores. Caso contrário, a propriedade **UpdateRule** será definida como **Cascade**.|  
-|**MSDATA: DeleteRule**|Se o atributo **DeleteRule** for especificado no elemento **keyref** no esquema, seu valor será atribuído à propriedade de restrição **DeleteRule** no **conjunto**de valores. Caso contrário, a propriedade **DeleteRule** será definida como **Cascade**.|  
-|**msdata:AcceptRejectRule**|Se o atributo **AcceptRejectRule** for especificado no elemento **keyref** no esquema, seu valor será atribuído à propriedade de restrição **AcceptRejectRule** no **conjunto**de valores. Caso contrário, a propriedade **AcceptRejectRule** será definida como **None**.|  
+|**MSDATA: UpdateRule**|Se o atributo **UpdateRule** for especificado no elemento **keyref** no esquema, seu valor será atribuído à propriedade de restrição **UpdateRule** no **conjunto** de valores. Caso contrário, a propriedade **UpdateRule** será definida como **Cascade**.|  
+|**MSDATA: DeleteRule**|Se o atributo **DeleteRule** for especificado no elemento **keyref** no esquema, seu valor será atribuído à propriedade de restrição **DeleteRule** no **conjunto** de valores. Caso contrário, a propriedade **DeleteRule** será definida como **Cascade**.|  
+|**msdata:AcceptRejectRule**|Se o atributo **AcceptRejectRule** for especificado no elemento **keyref** no esquema, seu valor será atribuído à propriedade de restrição **AcceptRejectRule** no **conjunto** de valores. Caso contrário, a propriedade **AcceptRejectRule** será definida como **None**.|  
   
  O exemplo a seguir contém um esquema que especifica as relações de **chave** e **keyref** entre o elemento filho **OrderNumber** do elemento **Order** e o elemento filho **orderno** do elemento **OrderDetail** .  
   
@@ -110,7 +111,7 @@ Order(OrderNumber, EmpNumber)
     RelatedColumns: OrderNumber
     ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Mapeamento de restrições de esquema XML (XSD) para restrições de DataSet](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)
 - [Gerar relações de DataSet do esquema XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)

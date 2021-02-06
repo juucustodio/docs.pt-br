@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: restrições e relações de esquema XML'
 title: Relações e restrições de esquema XML
 ms.date: 03/30/2017
 ms.assetid: 165bc2bc-60a1-40e0-9b89-7c68ef979079
-ms.openlocfilehash: 5861386e42defa189aaa50a3af0bd95d7e9257fd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c7847691537c4b754abcbacdeb367b1d92365ef3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173699"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651308"
 ---
 # <a name="xml-schema-constraints-and-relationships"></a>Relações e restrições de esquema XML
 
 Em um esquema XSD (linguagem de definição de esquema XML), você pode especificar restrições (restrições UNIQUE, Key e keyref) e relações (usando a anotação **MSDATA: relationship** ). Este tópico explica como as restrições e as relações especificadas em um esquema XML são interpretadas para gerar o <xref:System.Data.DataSet> .  
   
- Em geral, em um esquema XML, você especifica a anotação **MSDATA: relationship** se você quiser gerar somente relações no **conjunto**de uma. Para obter mais informações, consulte [gerando relações de conjunto de dados do esquema XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md). Você especifica restrições (Unique, Key e keyref) se desejar gerar restrições no **conjunto**de testes. Observe que as restrições Key e keyref também são usadas para gerar relações, conforme explicado posteriormente neste tópico.  
+ Em geral, em um esquema XML, você especifica a anotação **MSDATA: relationship** se você quiser gerar somente relações no **conjunto** de uma. Para obter mais informações, consulte [gerando relações de conjunto de dados do esquema XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md). Você especifica restrições (Unique, Key e keyref) se desejar gerar restrições no **conjunto** de testes. Observe que as restrições Key e keyref também são usadas para gerar relações, conforme explicado posteriormente neste tópico.  
   
 ## <a name="generating-a-relationship-from-key-and-keyref-constraints"></a>Gerando uma relação de restrições de chave e keyref  
 
@@ -188,7 +189,7 @@ OrderDetail(OrderNumber, ItemNumber, Order_Id)
   
  Se uma restrição keyref que faz referência a uma tabela aninhada contiver a anotação **MSDATA: Isnestd = "true"** , o **conjunto** de um criará uma única relação aninhada com base na restrição keyref e a restrição UNIQUE/KEY relacionada.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Derivando a estrutura relacional do DataSet do esquema XML (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

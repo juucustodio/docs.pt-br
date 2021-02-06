@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Manipulando eventos de conjunto de informações'
 title: Manipular eventos do DataSet
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 54edefe0-bc38-419b-b486-3d8a0c356f13
-ms.openlocfilehash: cc425f3217409a154fd319acb8b1555895cbda54
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a0000396c7c1e2762a5a2937f7979d917257facc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183358"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652361"
 ---
 # <a name="handling-dataset-events"></a>Manipular eventos do DataSet
 
@@ -59,7 +60,7 @@ private static void DataSetMergeFailed(
   
  Para obter informações sobre outros eventos disponíveis ao trabalhar com um `DataSet` , consulte [manipulando eventos de DataTable](handling-datatable-events.md) e [manipulando eventos de DataAdapter](../handling-dataadapter-events.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [DataSets, DataTables e DataViews](index.md)
 - [Validando dados](/previous-versions/visualstudio/visual-studio-2013/t3b36awf(v=vs.120))

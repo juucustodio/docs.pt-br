@@ -1,17 +1,18 @@
 ---
+description: 'Saiba mais sobre: mapeando restrições XSD (esquema XML) para restrições de conjunto de informações'
 title: Mapeamento de restrições de esquema XML (XSD) para restrições de DataSet
 ms.date: 03/30/2017
 ms.assetid: 3d0d1a4b-9104-434f-ac04-6c01ab5716b5
-ms.openlocfilehash: a2b28b0dcb2e2858c7328854650667f51e83166a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b1a958029e541b6ac95b5c509665005c9006adfa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185282"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651880"
 ---
 # <a name="mapping-xml-schema-xsd-constraints-to-dataset-constraints"></a>Mapeamento de restrições de esquema XML (XSD) para restrições de DataSet
 
-A linguagem de definição de esquema XML (XSD) permite que as restrições sejam especificadas nos elementos e atributos que ele define. Ao mapear um esquema XML para o esquema relacional em um <xref:System.Data.DataSet> , as restrições de esquema XML são mapeadas para as restrições relacionais apropriadas nas tabelas e colunas dentro do **conjunto**de um.  
+A linguagem de definição de esquema XML (XSD) permite que as restrições sejam especificadas nos elementos e atributos que ele define. Ao mapear um esquema XML para o esquema relacional em um <xref:System.Data.DataSet> , as restrições de esquema XML são mapeadas para as restrições relacionais apropriadas nas tabelas e colunas dentro do **conjunto** de um.  
   
  Esta seção discute o mapeamento das seguintes restrições de esquema XML:  
   
@@ -25,7 +26,7 @@ A linguagem de definição de esquema XML (XSD) permite que as restrições seja
   
  As restrições também podem ser especificadas entre elementos e atributos em um documento, a fim de estabelecer uma relação dentro do documento. As restrições Key e keyref são usadas no esquema para especificar as restrições dentro do documento, resultando em uma relação entre elementos de documento e atributos.  
   
- O processo de mapeamento converte essas restrições de esquema em restrições apropriadas nas tabelas criadas no **conjunto**de um.  
+ O processo de mapeamento converte essas restrições de esquema em restrições apropriadas nas tabelas criadas no **conjunto** de um.  
   
 ## <a name="in-this-section"></a>Nesta seção  
 
@@ -44,8 +45,8 @@ A linguagem de definição de esquema XML (XSD) permite que as restrições seja
  Descreve a estrutura relacional, ou esquema, de um **conjunto** de dados que é criado a partir do esquema XSD.  
   
  [Gerar relações de DataSet do esquema XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)  
- Descreve os elementos de esquema XML usados para criar relações entre colunas de tabela em um **conjunto**de uma.  
+ Descreve os elementos de esquema XML usados para criar relações entre colunas de tabela em um **conjunto** de uma.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do ADO.NET](../ado-net-overview.md)

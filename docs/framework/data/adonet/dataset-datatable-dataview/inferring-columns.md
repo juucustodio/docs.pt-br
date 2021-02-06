@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: inferindo colunas'
 title: Inferir colunas
 ms.date: 03/30/2017
 ms.assetid: 0e022699-c922-454c-93e2-957dd7e7247a
-ms.openlocfilehash: 45d27b78b5d83d333c16192e172e7b7e3dd88c10
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 528d4ea20260b5f1fbf30536eafcaec8c5f9215a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652244"
 ---
 # <a name="inferring-columns"></a>Inferir colunas
 
@@ -69,7 +70,7 @@ Depois que ADO.NET foi determinado de um documento XML que elementos são inferi
 |-------------------|-------------------|  
 |Text1|Text2|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Inferir a estrutura relacional do DataSet do esquema XML](inferring-dataset-relational-structure-from-xml.md)
 - [Carregando um DataSet a partir de XML](loading-a-dataset-from-xml.md)

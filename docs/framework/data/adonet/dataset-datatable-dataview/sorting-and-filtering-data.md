@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: classificando e Filtrando dados'
 title: Classificando e filtrando dados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fdd9c753-39df-48cd-9822-2781afe76200
-ms.openlocfilehash: 89e2fdf656fb06ee545ba936f033646ad86182d4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a8b74dc13e88f8d5e70bb27291e0e6e34817f0ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183371"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651607"
 ---
 # <a name="sorting-and-filtering-data"></a>Classificando e filtrando dados
 
@@ -30,13 +31,13 @@ O <xref:System.Data.DataView> fornece várias maneiras de classificar e filtrar 
   
     |Opções de DataViewRowState|Descrição|  
     |------------------------------|-----------------|  
-    |**CurrentRows**|A versão de linha **atual** de todas as linhas **inalteradas**, **adicionadas**e **modificadas** . Esse é o padrão.|  
+    |**CurrentRows**|A versão de linha **atual** de todas as linhas **inalteradas**, **adicionadas** e **modificadas** . Este é o padrão.|  
     |**Adicionado**|A versão de linha **atual** de todas as linhas **adicionadas** .|  
     |**Excluída**|A versão de linha **original** de todas as linhas **excluídas** .|  
     |**ModifiedCurrent**|A versão da linha **atual** de todas as linhas **modificadas** .|  
     |**ModifiedOriginal**|A versão de linha **original** de todas as linhas **modificadas** .|  
-    |**Nenhuma**|Nenhuma linha.|  
-    |**OriginalRows**|A versão de linha **original** de todas as linhas **inalteradas**, **modificadas**e **excluídas** .|  
+    |**Nenhum**|Nenhuma linha.|  
+    |**OriginalRows**|A versão de linha **original** de todas as linhas **inalteradas**, **modificadas** e **excluídas** .|  
     |**Inalterado**|A versão de linha **atual** de todas as linhas **inalteradas** .|  
   
  Para obter mais informações sobre Estados de linha e versões de linha, consulte [Estados de linha e versões de linha](row-states-and-row-versions.md).  
@@ -57,7 +58,7 @@ DataView prodView = new DataView(prodDS.Tables["Products"],
    DataViewRowState.CurrentRows);  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Data.DataViewRowState>
 - <xref:System.Data.DataColumn.Expression%2A?displayProperty=nameWithType>

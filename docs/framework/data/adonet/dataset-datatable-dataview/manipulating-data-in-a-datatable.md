@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Manipulando dados em uma DataTable'
 title: Manipulando dados em uma DataTable
 ms.date: 03/30/2017
 ms.assetid: 5cb86d48-a987-4af4-80e0-8cc2c8373d62
-ms.openlocfilehash: 3f98832b4aa9361346d06830f2f004fa374222ee
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 41f70bd15a023f8d92733bdce142666a08245d9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201324"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652062"
 ---
 # <a name="manipulating-data-in-a-datatable"></a>Manipulando dados em uma DataTable
 
@@ -39,7 +40,7 @@ Após criar i, <xref:System.Data.DataTable> em um <xref:System.Data.DataSet>, vo
  [AcceptChanges e RejectChanges](acceptchanges-and-rejectchanges.md)  
  Explica como aceitar ou rejeitar alterações feitas em uma linha.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [DataTables](datatables.md)
 - [Manipulação de eventos de DataTable](handling-datatable-events.md)

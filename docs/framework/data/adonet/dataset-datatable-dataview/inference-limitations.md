@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: limitações de inferência'
 title: Limitações de inferência
 ms.date: 03/30/2017
 ms.assetid: 78517994-5d57-44f8-9d20-38812977de09
-ms.openlocfilehash: 9d8191be137661200e1a6b84d68328c1202880ca
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 926e456acfc5eac2598be40490b72523facfd058
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652257"
 ---
 # <a name="inference-limitations"></a>Limitações de inferência
 
@@ -53,9 +54,9 @@ O processo de inferir um <xref:System.Data.DataSet> esquema do XML pode resultar
   
  Esses dois documentos XML podem ter sido destinados a produzir o mesmo esquema, mas o processo de inferência produz resultados muito diferentes com base nos elementos contidos em cada documento.  
   
- Para evitar as discrepâncias que podem ocorrer ao gerar o esquema a partir de um documento XML, é recomendável especificar explicitamente um esquema usando XSD (linguagem de definição de esquema XML) ou XDR (XML-Data Reduced) ao carregar um **conjunto** de dados de XML. Para obter mais informações sobre como especificar explicitamente um esquema de **conjunto** de dados com esquema XML, consulte [derivando a estrutura relacional do conjunto de dados do esquema XML (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md).  
+ Para evitar as discrepâncias que podem ocorrer ao gerar o esquema a partir de um documento XML, recomendamos que você especifique explicitamente um esquema usando XSD (linguagem de definição de esquema XML) ou XDR (XML-Data reduzido) ao carregar um conjunto de um **DataSet** de XML. Para obter mais informações sobre como especificar explicitamente um esquema de **conjunto** de dados com esquema XML, consulte [derivando a estrutura relacional do conjunto de dados do esquema XML (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Inferir a estrutura relacional do DataSet do esquema XML](inferring-dataset-relational-structure-from-xml.md)
 - [Carregando um DataSet a partir de XML](loading-a-dataset-from-xml.md)

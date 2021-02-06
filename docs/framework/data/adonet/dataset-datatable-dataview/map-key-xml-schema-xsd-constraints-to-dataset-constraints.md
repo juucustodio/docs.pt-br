@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: mapear restrições XSD (esquema XML de chave de mapa) para restrições de conjunto de informações'
 title: Mapear restrições de esquema XML (XSD) chave para restrições de DataSet
 ms.date: 03/30/2017
 ms.assetid: 22664196-f270-4ebc-a169-70e16a83dfa1
-ms.openlocfilehash: b55b232faa01bf36788276caaf8bc2e97dddf697
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0c07b53e06dc6b80395764b2bdd76045ee80bffd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172782"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651984"
 ---
 # <a name="map-key-xml-schema-xsd-constraints-to-dataset-constraints"></a>Mapear restrições de esquema XML (XSD) chave para restrições de DataSet
 
@@ -79,7 +80,7 @@ TableName: customers
   
  O valor da propriedade **ConstraintName** do **UniqueConstraint** no **conjunto** de valores é o valor do atributo **MSDATA: ConstraintName** especificado no elemento **Key** no esquema.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Mapeamento de restrições de esquema XML (XSD) para restrições de DataSet](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)
 - [Gerar relações de DataSet do esquema XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)

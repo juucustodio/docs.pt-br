@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como executar uma consulta polimórfica'
 title: 'Como: executar uma consulta polimorfo'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2f05da1e-845b-4f14-83e4-c6353a850553
-ms.openlocfilehash: ad6fd7bf6a23f4cd1591a17b25042fd76ff1d08d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 02074fb0ad60e5ba8d62094e25f35db40f8a2dbb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90545331"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650723"
 ---
 # <a name="how-to-execute-a-polymorphic-query"></a>Como: executar uma consulta polimorfo
 
@@ -34,7 +35,7 @@ O seguinte exemplo usa um operador de OFTYPE para obter e exibir uma coleção s
 [!code-csharp[DP EntityServices Concepts#PolymorphicQuery](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#polymorphicquery)]
 [!code-vb[DP EntityServices Concepts#PolymorphicQuery](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#polymorphicquery)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Provedor EntityClient para Entity Framework](entityclient-provider-for-the-entity-framework.md)
-- [Entity SQL Language](./language-reference/entity-sql-language.md) (Linguagem SQL de entidade)
+- [Linguagem Entity SQL](./language-reference/entity-sql-language.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: sincronização de um conjunto de informações com um XmlDataDocument'
 title: Sincronizar um DataSet com um XmlDataDocument
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fbc96fa9-b5d1-4f97-b099-c89b0e14ce2c
-ms.openlocfilehash: 95f1d21805dde86cd4eb59147f2fd012279b6dc1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5b5d95ef78746bb5b78146557a6ebd307895db13
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173738"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651542"
 ---
 # <a name="synchronizing-a-dataset-with-an-xmldatadocument"></a>Sincronizar um DataSet com um XmlDataDocument
 
@@ -158,7 +159,7 @@ Esta seção demonstra uma etapa no processamento de uma ordem de compra, usando
 </xs:schema>  
 ```  
   
- Observe que apenas as informações dos elementos **OrderDetails** e **Products** do documento XML original são incluídas no esquema para o **conjunto**de dados. Sincronizar o **conjunto** de um com um **XmlDataDocument** garante que os elementos não incluídos no **conjunto** de um persistirão com o documento XML.  
+ Observe que apenas as informações dos elementos **OrderDetails** e **Products** do documento XML original são incluídas no esquema para o **conjunto** de dados. Sincronizar o **conjunto** de um com um **XmlDataDocument** garante que os elementos não incluídos no **conjunto** de um persistirão com o documento XML.  
   
  Com o **conjunto** de tipos fortemente tipado gerado a partir do esquema XML (com um namespace de **Northwind. FillOrder**), uma parte do documento XML original pode ser exposta pela sincronização do **conjunto** de um com o **XmlDataDocument** carregado a partir do documento XML de origem. Observe que o **conjunto** de dados gerado a partir do esquema contém estrutura, mas nenhum dado. Os dados são preenchidos quando você carrega o XML no **XmlDataDocument**. Se você tentar carregar um **XmlDataDocument** que foi sincronizado com um **DataSet** que já contém dados, uma exceção será lançada.  
   
@@ -232,7 +233,7 @@ public class Sample
 }  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Sincronização de DataSet e XmlDataDocument](dataset-and-xmldatadocument-synchronization.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

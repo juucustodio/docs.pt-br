@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: gerador EDM (EdmGen.exe)'
 title: Gerador de EDM (EdmGen.exe)
 ms.date: 03/30/2017
 ms.assetid: fe8297a1-1fc3-48ce-8eeb-f70f63f857aa
-ms.openlocfilehash: da5b87fa76cbc8e44f6ed60b047e5a185c2aa603
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 853e579ff3859a543819d9785766535d9bb865af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90542549"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650918"
 ---
 # <a name="edm-generator-edmgenexe"></a>Gerador de EDM (EdmGen.exe)
 
@@ -17,11 +18,11 @@ EdmGen.exe é uma ferramenta de linha de comando usada para trabalhar com Entity
 
 - Validar um modelo existente. Para obter mais informações, consulte [como: usar EdmGen.exe para validar arquivos de modelo e de mapeamento](how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md).
 
-- Gerar um arquivo C# ou de código Visual Basic que contém as classes de objeto geradas a partir de um arquivo de modelo conceitual (.csdl). Para obter mais informações, consulte [como: usar EdmGen.exe para gerar código de camada de objeto](how-to-use-edmgen-exe-to-generate-object-layer-code.md).
+- Gerar um arquivo C# ou de código Visual Basic que contém as classes de objeto geradas a partir de um arquivo de modelo conceitual (.csdl). Para obter mais informações, consulte [como: usar EdmGen.exe para gerar Object-Layer código](how-to-use-edmgen-exe-to-generate-object-layer-code.md).
 
 - Gerar um arquivo C# ou de código Visual Basic que contém as exibições pré-geradas para um modelo existente. Para obter mais informações, [como: gerar previamente modos de exibição para melhorar o desempenho da consulta](/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100)).
 
-A ferramenta de EdmGen.exe é instalada no diretório .NET Framework. Muitas vezes, está localizada em C:\windows\Microsoft.NET\Framework\v4.0. Para sistemas de 64 bits, está localizada em C:\windows\Microsoft.NET\Framework64\v4.0. Você também pode acessar a ferramenta de EdmGen.exe no prompt de comando do Visual Studio (clique em **Iniciar**, aponte para **todos os programas**, aponte para **Microsoft Visual Studio 2010**, aponte para **Ferramentas do Visual Studio**e clique em **prompt de comando do Visual Studio 2010**).
+A ferramenta de EdmGen.exe é instalada no diretório .NET Framework. Muitas vezes, está localizada em C:\windows\Microsoft.NET\Framework\v4.0. Para sistemas de 64 bits, está localizada em C:\windows\Microsoft.NET\Framework64\v4.0. Você também pode acessar a ferramenta de EdmGen.exe no prompt de comando do Visual Studio (clique em **Iniciar**, aponte para **todos os programas**, aponte para **Microsoft Visual Studio 2010**, aponte para **Ferramentas do Visual Studio** e clique em **prompt de comando do Visual Studio 2010**).
 
 ## <a name="syntax"></a>Syntax
 
@@ -74,7 +75,7 @@ Ao usar a ferramenta EdmGen.exe, você deve especificar um dos modos a seguir.
 
 [Como: usar EdmGen.exe para validar o modelo e arquivos de mapeamento](how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramentas de Modelo de Dados de Entidade de ADO.NET](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
 - [Modelo de Dados de Entidade](../entity-data-model.md)

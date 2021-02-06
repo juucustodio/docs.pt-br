@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Depurando consultas LINQ to DataSet'
 title: Consultas LINQ to DataSet de depuração
 ms.date: 03/30/2017
 ms.assetid: f4c54015-8ce2-4c5c-8d18-7038144cc66d
-ms.openlocfilehash: 638198ef4c78b84dd12c3d39f83bf8a015e566c1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f1293ba195c96d6868fdd5bfee50e8734f9cecc4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183189"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651217"
 ---
 # <a name="debugging-linq-to-dataset-queries"></a>Consultas LINQ to DataSet de depuração
 
@@ -29,7 +30,7 @@ O Visual Studio dá suporte à depuração de código de LINQ to DataSet. No ent
   
  Em Visual Basic no Visual Studio, você pode usar editar e continuar em código não LINQ to DataSet, mesmo em um método que contém uma consulta LINQ to DataSet. Você pode adicionar ou remover o código antes da instrução LINQ to DataSet, mesmo que as alterações afetem o número de linha da consulta LINQ to DataSet. Sua experiência de depuração de Visual Basic para código que não é de LINQ to DataSet permanece a mesma que antes LINQ to DataSet foi introduzida. Você não pode alterar, adicionar ou remover uma consulta LINQ to DataSet, no entanto, a menos que você interrompa a depuração para aplicar as alterações.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando código gerenciado](/visualstudio/debugger/debugging-managed-code)
 - [Guia de programação](programming-guide-linq-to-dataset.md)

@@ -1,36 +1,37 @@
 ---
+description: 'Saiba mais sobre: Exibindo dados em uma DataTable'
 title: Exibindo dados em uma DataTable
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1d26e0fb-f6e0-4afa-9a9c-b8d55b8f20dc
-ms.openlocfilehash: c13f0b802b2714a17ea4014625a65ebd1b0011f4
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: ffaa8283da17c98fc58486af8dad741a61bbafc8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70785858"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651373"
 ---
 # <a name="viewing-data-in-a-datatable"></a>Exibindo dados em uma DataTable
 
-Você pode acessar o conteúdo de um <xref:System.Data.DataTable> usando as coleções **Rows** e **Columns** da **DataTable**. Você também pode usar o <xref:System.Data.DataTable.Select%2A> método para retornar subconjuntos de dados em uma **DataTable** de acordo com os critérios, incluindo critérios de pesquisa, ordem de classificação e estado de linha. Além disso, você pode usar <xref:System.Data.DataRowCollection.Find%2A> o método de **DataRowCollection** ao pesquisar uma linha específica usando um valor de chave primária.
+Você pode acessar o conteúdo de um <xref:System.Data.DataTable> usando as coleções **Rows** e **Columns** da **DataTable**. Você também pode usar o <xref:System.Data.DataTable.Select%2A> método para retornar subconjuntos de dados em uma **DataTable** de acordo com os critérios, incluindo critérios de pesquisa, ordem de classificação e estado de linha. Além disso, você pode usar o <xref:System.Data.DataRowCollection.Find%2A> método de **DataRowCollection** ao pesquisar uma linha específica usando um valor de chave primária.
 
-O método **Select** do objeto **DataTable** retorna um conjunto de <xref:System.Data.DataRow> objetos que correspondem aos critérios especificados. **Select** usa argumentos opcionais de uma expressão de filtro, expressão de classificação e **DataViewRowState**. A expressão de filtro identifica quais linhas retornar com base nos valores de **DataColumn** , `LastName = 'Smith'`como. A expressão de classificação segue as convenções padrão de SQL para ordenar colunas, por exemplo `LastName ASC, FirstName ASC`. Para regras sobre como escrever expressões, consulte <xref:System.Data.DataColumn.Expression%2A> a propriedade da classe **DataColumn** .
+O método **Select** do objeto **DataTable** retorna um conjunto de <xref:System.Data.DataRow> objetos que correspondem aos critérios especificados. **Select** usa argumentos opcionais de uma expressão de filtro, expressão de classificação e **DataViewRowState**. A expressão de filtro identifica quais linhas retornar com base nos valores de **DataColumn** , como `LastName = 'Smith'` . A expressão de classificação segue as convenções padrão de SQL para ordenar colunas, por exemplo `LastName ASC, FirstName ASC`. Para regras sobre como escrever expressões, consulte a <xref:System.Data.DataColumn.Expression%2A> propriedade da classe **DataColumn** .
 
 > [!TIP]
 > Se você estiver executando várias chamadas para o método **Select** de uma **DataTable**, poderá aumentar o desempenho criando primeiro um <xref:System.Data.DataView> para a **DataTable**. A criação do **DataView** indexa as linhas da tabela. Em seguida, o método **Select** usa esse índice, reduzindo significativamente o tempo para gerar o resultado da consulta. Para obter informações sobre como criar um **DataView** para uma **DataTable**, consulte [DataViews](dataviews.md).
 
-O método **Select** determina qual versão das linhas exibir ou manipular com base em um <xref:System.Data.DataViewRowState>. A tabela a seguir descreve os valores de enumeração **DataViewRowState** possíveis.
+O método **Select** determina qual versão das linhas exibir ou manipular com base em um <xref:System.Data.DataViewRowState> . A tabela a seguir descreve os valores de enumeração **DataViewRowState** possíveis.
 
 |Valor de DataViewRowState|Descrição|
 |----------------------------|-----------------|
 |**CurrentRows**|Linhas atuais, incluindo inalteradas, adicionadas e modificadas.|
-|**Excluí**|Uma linha excluída.|
+|**Excluída**|Uma linha excluída.|
 |**ModifiedCurrent**|A versão atual, que é uma versão modificada dos dados originais. (Consulte **ModifiedOriginal**.)|
 |**ModifiedOriginal**|A versão original de todas as linhas alteradas. A versão atual está disponível usando **ModifiedCurrent**.|
-|**Mais**|Uma nova linha.|
-|**Nenhum**|nenhuma.|
+|**Adicionado**|Uma nova linha.|
+|**Nenhum**|Nenhum.|
 |**OriginalRows**|Linhas originais, incluindo linhas inalteradas e excluídas.|
 |**Inalterado**|Uma linha inalterada.|
 
@@ -113,6 +114,6 @@ DataRow[] custRows = workTable.Select("CustID > 5", "CustLName ASC");
 - <xref:System.Data.DataSet>
 - <xref:System.Data.DataTable>
 - <xref:System.Data.DataViewRowState>
-- [Manipulação de dados em uma DataTable](manipulating-data-in-a-datatable.md)
-- [Estados e versões de linha](row-states-and-row-versions.md)
-- [ADO.NET Overview](../ado-net-overview.md) (Visão geral do ADO.NET)
+- [Manipulando dados em uma DataTable](manipulating-data-in-a-datatable.md)
+- [Estados de linha e versões de linha](row-states-and-row-versions.md)
+- [Visão geral do ADO.NET](../ado-net-overview.md)

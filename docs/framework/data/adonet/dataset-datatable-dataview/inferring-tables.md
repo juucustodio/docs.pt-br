@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tabelas de referência'
 title: Inferir tabelas
 ms.date: 03/30/2017
 ms.assetid: 74a288d4-b8e9-4f1a-b2cd-10df92c1ed1f
-ms.openlocfilehash: 4a3d7b239dbc405cf2acae967b5be401dc772e38
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 00a24cbfc44aea4279b0a115214ec26d3eac59ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652153"
 ---
 # <a name="inferring-tables"></a>Inferir tabelas
 
@@ -122,7 +123,7 @@ Ao inferir um esquema para um <xref:System.Data.DataSet> de um documento XML, o 
 |Text1|  
 |Text2|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Inferir a estrutura relacional do DataSet do esquema XML](inferring-dataset-relational-structure-from-xml.md)
 - [Carregando um DataSet a partir de XML](loading-a-dataset-from-xml.md)

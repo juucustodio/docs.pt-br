@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: gerando relações de conjunto de informações do esquema XML (XSD)'
 title: Gerar relações de DataSet do esquema XML (XSD)
 ms.date: 03/30/2017
 ms.assetid: 1c9a1413-c0d2-4447-88ba-9a2b0cbc0aa8
-ms.openlocfilehash: 2673280ebb94dcc10c130f3969f3e3250d3706a2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e18ae451085f536e7fe35053fadab35e30dbc225
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652452"
 ---
 # <a name="generating-dataset-relations-from-xml-schema-xsd"></a>Gerar relações de DataSet do esquema XML (XSD)
 
@@ -100,8 +101,8 @@ msdata:childkey="" />
  Descreve a estrutura relacional, ou esquema, de um **conjunto** de dados criado a partir do esquema XSD (XML Schema Definition Language).  
   
  [Mapeamento de restrições de esquema XML (XSD) para restrições de DataSet](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
- Descreve os elementos de esquema XML usados para criar restrições de chave estrangeira e exclusivas em um **conjunto**de uma.  
+ Descreve os elementos de esquema XML usados para criar restrições de chave estrangeira e exclusivas em um **conjunto** de uma.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do ADO.NET](../ado-net-overview.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: provedor EntityClient para o Entity Framework'
 title: Provedor EntityClient para Entity Framework
 ms.date: 03/30/2017
 ms.assetid: 8c5db787-78e6-4a34-8dc1-188bca0aca5e
-ms.openlocfilehash: 9b3194e4a85eda6f405a3ab85723ac2cb9d00090
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 96c060f3e0b21484e90fcbc2483693abd528dcfb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181070"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650866"
 ---
 # <a name="entityclient-provider-for-the-entity-framework"></a>Provedor EntityClient para Entity Framework
 
@@ -68,7 +69,7 @@ cmd.CommandText = @"SELECT VALUE p
   
  [Como: navegar em relações com o operador navegar](how-to-navigate-relationships-with-the-navigate-operator.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciando conexões e transações](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
 - [ADO.NET Entity Framework](index.md)

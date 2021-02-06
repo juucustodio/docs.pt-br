@@ -1,18 +1,19 @@
 ---
+description: 'Saiba mais sobre: diretrizes de segurança do conjunto de informações e do DataTable'
 title: Diretrizes de segurança do conjunto de tabela e DataTable
 ms.date: 07/14/2020
 dev_langs:
 - csharp
-ms.openlocfilehash: 8798c4542acc578c8f7f00c9b26cd01a0db20c42
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ec0130d5b5ad106cc3a0a26b45ebff34f73e31d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726061"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651633"
 ---
 # <a name="dataset-and-datatable-security-guidance"></a>Diretrizes de segurança do conjunto de tabela e DataTable
 
-Este artigo aplica-se a:
+Este artigo se aplica ao:
 
 * .NET Framework (todas as versões)
 * .NET Core e posterior
@@ -274,12 +275,12 @@ Se `AppContext` não estiver disponível, as verificações de limitação de ti
 * Um administrador deve configurar o registro.
 * O uso do registro é uma alteração em todo o computador e afetará _todos os_ aplicativos em execução no computador.
 
-| Type  |  Valor |
+| Tipo  |  Valor |
 |---|---|
 | **Chave do Registro** | `HKLM\SOFTWARE\Microsoft\.NETFramework\AppContext` |
 | **Nome do valor** | `Switch.System.Data.AllowArbitraryDataSetTypeInstantiation` |
 | **Tipo de valor** | `REG_SZ` |
-| **Dados do valor** | `true` |
+| **os dados de Valor** | `true` |
 
 Em um sistema operacional de 64 bits, esse valor deve ser adicionado para a chave de 64 bits (mostrada acima) e a chave 32 bits. A chave de 32 bits está localizada em `HKLM\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\AppContext` .
 
@@ -475,9 +476,9 @@ A desserialização de uma `DataSet` ou `DataTable` dessa maneira de um blob JSO
 
 ## <a name="deserialize-a-dataset-or-datatable-via-binaryformatter"></a>Desserializar um DataSet ou DataTable via BinaryFormatter
 
-Os desenvolvedores nunca devem usar os `BinaryFormatter` `NetDataContractSerializer` `SoapFormatter` formatadores ***inseguros**,, ou relacionados, para desserializar uma `DataSet` `DataTable` instância do ou de uma carga não confiável:
+Os desenvolvedores nunca devem usar os `BinaryFormatter` `NetDataContractSerializer` `SoapFormatter` formatadores ***inseguros*** ,, ou relacionados para desserializar uma `DataSet` `DataTable` instância do ou de uma carga não confiável:
 
-_ Isso é suscetível a um ataque de execução de código remoto completo.
+* Isso é suscetível a um ataque de execução de código remoto completo.
 * O uso de um personalizado `SerializationBinder` não é suficiente para evitar esse tipo de ataque.
 
 ## <a name="safe-replacements"></a>Substituições seguras

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: gravando conteúdo do conjunto de dados como XML'
 title: Gravando o conteúdo do DataSet como dados XML
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fd15f8a5-3b4c-46d0-a561-4559ab2a4705
-ms.openlocfilehash: c8a5c747e4ec60fcb97edf631aa3a0ae184ffec5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0ad232f744f69f822d09c0af6c4374b6e5f0147d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173712"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651360"
 ---
 # <a name="writing-dataset-contents-as-xml-data"></a>Gravando o conteúdo do DataSet como dados XML
 
@@ -18,7 +19,7 @@ No ADO.NET, você pode gravar a representação XML de um <xref:System.Data.Data
   
  Quando um <xref:System.Data.DataSet> é gravado como dados XML, as linhas do <xref:System.Data.DataSet> são gravadas nas suas versões atuais. No entanto, o <xref:System.Data.DataSet> também pode ser gravado como um DiffGram de modo que os valores atuais e originais das linhas sejam incluídos.  
   
- A representação XML do <xref:System.Data.DataSet> pode ser gravada em um arquivo, um fluxo, um **XmlWriter**ou uma cadeia de caracteres. Essas opções proporcionam excelente flexibilidade para o transporte da representação XML do <xref:System.Data.DataSet>. Para obter a representação XML do <xref:System.Data.DataSet> como uma cadeia de caracteres, use o método **GetXml** , conforme mostrado no exemplo a seguir.  
+ A representação XML do <xref:System.Data.DataSet> pode ser gravada em um arquivo, um fluxo, um **XmlWriter** ou uma cadeia de caracteres. Essas opções proporcionam excelente flexibilidade para o transporte da representação XML do <xref:System.Data.DataSet>. Para obter a representação XML do <xref:System.Data.DataSet> como uma cadeia de caracteres, use o método **GetXml** , conforme mostrado no exemplo a seguir.  
   
 ```vb  
 Dim xmlDS As String = custDS.GetXml()  
@@ -36,7 +37,7 @@ string xmlDS = custDS.GetXml();
   
 |Opção de XmlWriteMode|Descrição|  
 |-------------------------|-----------------|  
-|**IgnoreSchema**|Grava o conteúdo atual do <xref:System.Data.DataSet> como dados XML, sem um esquema XML. Esse é o padrão.|  
+|**IgnoreSchema**|Grava o conteúdo atual do <xref:System.Data.DataSet> como dados XML, sem um esquema XML. Este é o padrão.|  
 |**WriteSchema**|Grava o conteúdo atual do <xref:System.Data.DataSet> como dados XML com a estrutura relacional como um esquema XML embutido.|  
 |**DiffGram**|Grava todo o <xref:System.Data.DataSet> como um DiffGram, incluindo valores originais e atuais. Para obter mais informações, consulte [DiffGrams](diffgrams.md).|  
   
@@ -70,12 +71,12 @@ xmlSW.Close();
   
 |Valor de MappingType|Descrição|  
 |-----------------------|-----------------|  
-|**Element**|Esse é o padrão. A coluna é gravada como um elemento XML, em que ColumnName é o nome do elemento e o conteúdo da coluna é gravado como texto do elemento. Por exemplo:<br /><br /> `<ColumnName>Column Contents</ColumnName>`|  
+|**Element**|Este é o padrão. A coluna é gravada como um elemento XML, em que ColumnName é o nome do elemento e o conteúdo da coluna é gravado como texto do elemento. Por exemplo:<br /><br /> `<ColumnName>Column Contents</ColumnName>`|  
 |**Atributo**|A coluna é gravada como um atributo XML do elemento XML da linha atual, em que ColumnName é o nome do atributo e o conteúdo da coluna é gravado como valor do atributo. Por exemplo:<br /><br /> `<RowElement ColumnName="Column Contents" />`|  
 |**SimpleContent**|O conteúdo de coluna é gravado como texto no elemento XML da linha atual. Por exemplo:<br /><br /> `<RowElement>Column Contents</RowElement>`<br /><br /> Observe que **simpleContent** não pode ser definido para uma coluna de uma tabela que tenha colunas de **elementos** ou relações aninhadas.|  
 |**Oculto**|A coluna não é gravada na saída XML.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Usando XML em um DataSet](using-xml-in-a-dataset.md)
 - [DiffGrams](diffgrams.md)

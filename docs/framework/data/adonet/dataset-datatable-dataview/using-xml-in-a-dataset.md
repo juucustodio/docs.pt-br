@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando XML em um conjunto de informações'
 title: Usando XML em um DataSet
 ms.date: 03/30/2017
 ms.assetid: 35138159-e199-49ec-baf7-1ec6777e171e
-ms.openlocfilehash: e133da727887271af3bc5330a5779df4af58a37e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5c4216fce9c1512c95da8e27a622ba228411b641
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201181"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651412"
 ---
 # <a name="using-xml-in-a-dataset"></a>Usando XML em um DataSet
 
@@ -49,7 +50,7 @@ Com o ADO.NET, você pode preencher um <xref:System.Data.DataSet> de um fluxo XM
  [Visão geral do ADO.NET](../ado-net-overview.md)  
  Descreve a arquitetura e os componentes do ADO.NET, e como usá-los para acessar fontes de dados existentes assim como para gerenciar dados de aplicativo.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [DataSets, DataTables e DataViews](index.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

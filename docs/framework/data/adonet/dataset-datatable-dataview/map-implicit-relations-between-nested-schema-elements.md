@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: mapear relações implícitas entre elementos de esquema aninhados'
 title: Mapear relações implícitas entre elementos de esquema aninhados
 ms.date: 03/30/2017
 ms.assetid: 6b25002a-352e-4d9b-bae3-15129458a355
-ms.openlocfilehash: 32f8bf67242143098717b47c3b7aa175317ba274
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 418dd1210674b2c592cf96c6d369bc43f8dcab9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201311"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652010"
 ---
 # <a name="map-implicit-relations-between-nested-schema-elements"></a>Mapear relações implícitas entre elementos de esquema aninhados
 
@@ -15,7 +16,7 @@ Um esquema XSD (linguagem de definição de esquema XML) pode ter tipos complexo
   
 - Uma tabela para cada um dos tipos complexos (pai e filho).  
   
-- Se não existir nenhuma restrição exclusiva no pai, uma coluna de chave primária adicional por definição de tabela denominada *tablename*_Id em que *TableName* é o nome da tabela pai.  
+- Se não existir nenhuma restrição exclusiva no pai, uma coluna de chave primária adicional por definição de tabela denominada *tablename* _Id em que *TableName* é o nome da tabela pai.  
   
 - Uma restrição PRIMARY KEY na tabela pai que identifica a coluna adicional como a chave primária (definindo a propriedade **IsPrimaryKey** como **true**). A restrição é chamada de restrição, \# em que \# é 1, 2, 3 e assim por diante. Por exemplo, o nome padrão para a primeira restrição é Constraint1.  
   
@@ -98,7 +99,7 @@ Um esquema XSD (linguagem de definição de esquema XML) pode ter tipos complexo
     Nested: True  
     ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Gerar relações de DataSet do esquema XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)
 - [Mapeamento de restrições de esquema XML (XSD) para restrições de DataSet](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)

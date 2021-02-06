@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: o método Load'
 title: O método Load
 ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: e22e5812-89c6-41f0-9302-bb899a46dbff
-ms.openlocfilehash: ea437d1f8ed567934acafbd8db1f8dba8eb22bcc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a14008597d88ad4af93c3646998244d94b5561d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177534"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651516"
 ---
 # <a name="the-load-method"></a>O método Load
 
@@ -69,7 +70,7 @@ Private Sub LoadBirthdays(ByVal connectionString As String)
 End Sub  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Manipulando dados em uma DataTable](manipulating-data-in-a-datatable.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

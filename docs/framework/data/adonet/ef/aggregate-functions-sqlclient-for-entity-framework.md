@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: funções de agregação (SqlClient para Entity Framework)'
 title: Funções agregadas (SqlClient para Entity Framework)
 ms.date: 03/30/2017
 ms.assetid: 03303f01-b591-4efc-9875-f9c608edff0b
-ms.openlocfilehash: 1c32ccfe18c67c9baeb7df0f981c9129b3bbc8bb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b9f1ff8c75fc09de7532b459090b0b5cd1d47262
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204509"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651074"
 ---
 # <a name="aggregate-functions-sqlclient-for-entity-framework"></a>Funções agregadas (SqlClient para Entity Framework)
 
@@ -23,7 +24,7 @@ Retorna a média dos valores em uma coleção. Valores nulos são ignorados.
 
 Um `Int32` , `Int64` , `Double` e `Decimal` .
 
-**Valor Retornado**
+**Valor retornado**
 
 O tipo de `expression`.
 
@@ -39,7 +40,7 @@ O tipo de `expression`.
 
  Uma coleção ( `Int32` ).
 
- **Valor Retornado**
+ **Valor retornado**
 
  Um `Int32`.
 
@@ -60,7 +61,7 @@ Uma coleção \<T> , em que T é um dos seguintes tipos:
 |`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
 |`Time`|`String`|`Binary`|`Guid` (não retornado em SQL Server 2000)|
 
-**Valor Retornado**
+**Valor retornado**
 
 Um `Int32`.
 
@@ -81,7 +82,7 @@ Retorna o número de itens em uma coleção como `bigint`.
 |`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
 |`Time`|`String`|`Binary`|`Guid` (não retornado em SQL Server 2000)|
 
-**Valor Retornado**
+**Valor retornado**
 
 Um `Int64`.
 
@@ -102,7 +103,7 @@ Uma coleção (T), em que T é um dos seguintes tipos:
 |`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
 |`Time`|`String`|`Binary`||
 
-**Valor Retornado**
+**Valor retornado**
 
 O tipo de `expression`.
 
@@ -123,7 +124,7 @@ Uma coleção (T), em que T é um dos seguintes tipos:
 |`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
 |`Time`|`String`|`Binary`||
 
-**Valor Retornado**
+**Valor retornado**
 
 O tipo de `expression`.
 
@@ -139,7 +140,7 @@ Retorna o desvio padrão estatístico de todos os valores da expressão especifi
 
 Uma coleção ( `Double` ).
 
-**Valor Retornado**
+**Valor retornado**
 
 Um `Double`.
 
@@ -155,7 +156,7 @@ Retorna o desvio padrão estatístico para a população de todos os valores na 
 
 Uma coleção ( `Double` ).
 
-**Valor Retornado**
+**Valor retornado**
 
 Um `Double`.
 
@@ -171,7 +172,7 @@ Retorna a soma de todos os valores na coleção.
 
 Uma coleção (T), em que T é um dos seguintes tipos: `Int32` ,, `Int64` `Double` , `Decimal` .
 
-**Valor Retornado**
+**Valor retornado**
 
 O tipo de `expression`.
 
@@ -187,7 +188,7 @@ Retorna a variância estatística de todos os valores da expressão especificada
 
 Uma coleção ( `Double` ).
 
-**Valor Retornado**
+**Valor retornado**
 
 Um `Double`.
 
@@ -203,7 +204,7 @@ Retorna a variância estatística para o preenchimento de todos os valores da ex
 
 Uma coleção ( `Double` ).
 
-**Valor Retornado**
+**Valor retornado**
 
 Um `Double`.
 
@@ -211,7 +212,7 @@ Um `Double`.
 
 [!code-sql[DP EntityServices Concepts#SQLSERVER_VARP](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_varp)]
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de agregação (Transact-SQL)](/sql/t-sql/functions/aggregate-functions-transact-sql)
 - [Linguagem Entity SQL](./language-reference/entity-sql-language.md)

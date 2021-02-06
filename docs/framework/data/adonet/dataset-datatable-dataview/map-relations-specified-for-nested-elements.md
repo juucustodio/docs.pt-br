@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: mapear relações especificadas para elementos aninhados'
 title: Mapear relações especificadas para elementos aninhados
 ms.date: 03/30/2017
 ms.assetid: 24a2d3e5-4af7-4f9a-ab7a-fe6684c9e4fe
-ms.openlocfilehash: f758e1ef2c3786a102dc6bb5f6dd217b20dc5b55
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a625ad5bfd590794d0362a991dc22f756f043f2a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198542"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651932"
 ---
 # <a name="map-relations-specified-for-nested-elements"></a>Mapear relações especificadas para elementos aninhados
 
@@ -75,7 +76,7 @@ Um esquema pode incluir uma anotação **MSDATA: relationship** para especificar
   
  O processo de mapeamento não cria nenhuma restrição.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Gerar relações de DataSet do esquema XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)
 - [Mapeamento de restrições de esquema XML (XSD) para restrições de DataSet](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)

@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <cancelRequestedQuery>'
 title: <cancelRequestedQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 8da9b1c4-338a-4f23-9830-6d257772d340
-ms.openlocfilehash: a50e9965a595fce64c383313091334e883dcfbfa
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: efd908fb52d2bc32bf05fce9099c7105abdc9b1a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189481"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652634"
 ---
 # \<cancelRequestedQuery>
 
@@ -24,7 +25,7 @@ Representa uma consulta que é usada para controlar solicitações cancelar uma 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cancelRequestedQueries>**](cancelrequestedqueries.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<cancelRequestedQuery>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <tracking>
@@ -60,7 +61,7 @@ Representa uma consulta que é usada para controlar solicitações cancelar uma 
 |-------------|-----------------|  
 |[\<faultPropagationQuery>](faultpropagationquery.md)|Representa uma lista de elementos de configuração que são usados para controlar solicitações cancelar uma atividade filho pela atividade pai. A consulta é necessária para um participante de rastreamento inscrever-se para Cancelar solicitação objetos de registro.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.CancelRequestedQuery?displayProperty=nameWithType>

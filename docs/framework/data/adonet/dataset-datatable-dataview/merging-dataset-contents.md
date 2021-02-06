@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: mesclando conteúdo do conjunto de informações'
 title: Mesclando conteúdo do DataSet
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e5e9309a-3ebb-4a9c-9d78-21c4e2bafc5b
-ms.openlocfilehash: abc9183666602a7ef369e690e3ae499f8c7b8b11
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: bdd7184d2b3a46f8ee59a052239dcd472db5e404
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70784403"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651867"
 ---
 # <a name="merging-dataset-contents"></a>Mesclando conteúdo do DataSet
 
@@ -57,7 +58,7 @@ A tabela a seguir descreve as opções de `MissingSchemaAction`.
 
 |Opção MissingSchemaAction|Descrição|
 |--------------------------------|-----------------|
-|<xref:System.Data.MissingSchemaAction.Add>|Adicionar as novas informações de esquema ao `DataSet` e preencher as novas colunas com os valores de entrada. Esse é o padrão.|
+|<xref:System.Data.MissingSchemaAction.Add>|Adicionar as novas informações de esquema ao `DataSet` e preencher as novas colunas com os valores de entrada. Este é o padrão.|
 |<xref:System.Data.MissingSchemaAction.AddWithKey>|Adicionar as novas informações de esquema e de chave primária ao `DataSet` e preencher as novas colunas com os valores de entrada.|
 |<xref:System.Data.MissingSchemaAction.Error>|Gere uma exceção se forem encontradas informações de esquema incompatíveis.|
 |<xref:System.Data.MissingSchemaAction.Ignore>|Ignorar as novas informações do esquema.|
@@ -71,7 +72,7 @@ Considere um caso onde uma linha existente em um `DataSet` seja uma linha `Uncha
 > [!NOTE]
 > Quando linhas são inseridas em uma tabela de banco de dados contendo uma coluna de incremento automático, como uma coluna de identidade, o valor da coluna de identidade retornado pela inserção talvez não corresponda ao valor no `DataSet`, causando as linhas retornados a serem adicionadas, e não mescladas. Para obter mais informações, consulte [recuperando identidade ou valores de numeração automática](../retrieving-identity-or-autonumber-values.md).
 
-O exemplo de código a seguir mescla `DataSet` dois objetos com esquemas diferentes em um `DataSet` com os esquemas combinados dos dois objetos de entrada `DataSet` .
+O exemplo de código a seguir mescla dois `DataSet` objetos com esquemas diferentes em um `DataSet` com os esquemas combinados dos dois objetos de entrada `DataSet` .
 
 [!code-csharp[DataWorks DataSet.Merge#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataSet.Merge/CS/source.cs#1)]
 [!code-vb[DataWorks DataSet.Merge#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataSet.Merge/VB/source.vb#1)]
@@ -86,9 +87,9 @@ O exemplo de código a seguir usa um `DataSet` existente com atualizações e pa
 
 ## <a name="see-also"></a>Consulte também
 
-- [DataSets, DataTables, and DataViews](index.md) (DataSets, DataTables e DataViews)
-- [Estados e versões de linha](row-states-and-row-versions.md)
+- [DataSets, DataTables e DataViews](index.md)
+- [Estados de linha e versões de linha](row-states-and-row-versions.md)
 - [DataAdapters e DataReaders](../dataadapters-and-datareaders.md)
-- [Retrieving and Modifying Data in ADO.NET](../retrieving-and-modifying-data.md) (Recuperando e modificando dados no ADO.NET)
+- [Recuperando e modificando dados no ADO.NET](../retrieving-and-modifying-data.md)
 - [Recuperando identidade ou valores de Autonumber](../retrieving-identity-or-autonumber-values.md)
-- [ADO.NET Overview](../ado-net-overview.md) (Visão geral do ADO.NET)
+- [Visão geral do ADO.NET](../ado-net-overview.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugSymbolProvider:: GetMethodLocalSymbols'
 title: 'Método ICorDebugSymbolProvider:: GetMethodLocalSymbols'
 ms.date: 03/30/2017
 ms.assetid: 8b989e38-e779-49d1-9e90-f1f920484b08
-ms.openlocfilehash: c5a21436c939ddfca0219618efe64d9e0e40aef4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f4eaac208d98b25ae4a53acfd977d354c6f6ac1b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730845"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659810"
 ---
 # <a name="icordebugsymbolprovidergetmethodlocalsymbols-method"></a>Método ICorDebugSymbolProvider:: GetMethodLocalSymbols
 
@@ -53,7 +54,7 @@ HRESULT GetMethodLocalSymbols(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetMethodParameterSymbols](icordebugsymbolprovider-getmethodparametersymbols-method.md)
 - [Interface ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md)

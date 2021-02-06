@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugThread'
 title: Interface ICorDebugThread
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3930fd9b-2bc3-4b72-80a0-b6eeb94d60c6
 topic_type:
 - apiref
-ms.openlocfilehash: 5165ef081aad849c11747807d8cc76b2df0a6c74
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7e16fa2a82a004a5c85d60a278cdd14df6ab2300
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729311"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658822"
 ---
 # <a name="icordebugthread-interface"></a>Interface ICorDebugThread
 
@@ -27,7 +28,7 @@ Representa um thread em um processo. O tempo de vida de uma instância `ICorDebu
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método ClearCurrentException](icordebugthread-clearcurrentexception-method.md)|Este método não está implementado. Não o use.|  
 |[Método CreateEval](icordebugthread-createeval-method.md)|Cria um objeto ICorDebugEval que opera sobre isso `ICorDebugThread` .|  
@@ -61,6 +62,6 @@ Representa um thread em um processo. O tempo de vida de uma instância `ICorDebu
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

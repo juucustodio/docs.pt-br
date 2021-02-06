@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugThread2:: GetVolatileOSThreadID'
 title: Método ICorDebugThread2::GetVolatileOSThreadID
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f0922545-c2cf-40c8-9ef6-ca033563e682
 topic_type:
 - apiref
-ms.openlocfilehash: 177c6057432912c402c379c70a22506d9bde261e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2c198577195c9b1e4a3a74fae686e405b22120eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678604"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658575"
 ---
 # <a name="icordebugthread2getvolatileosthreadid-method"></a>Método ICorDebugThread2::GetVolatileOSThreadID
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugSymbolProvider2:: GetGenericDictionaryInfo'
 title: 'Método ICorDebugSymbolProvider2:: GetGenericDictionaryInfo'
 ms.date: 03/30/2017
 ms.assetid: ba28fe4e-5491-4670-bff7-7fde572d7593
-ms.openlocfilehash: a6c32b72c5924399aeb13d56ddf9242fe7990f35
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 3488cab9ee21ea027e16089f066369ab8c6c69d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379317"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659537"
 ---
 # <a name="icordebugsymbolprovider2getgenericdictionaryinfo-method"></a>Método ICorDebugSymbolProvider2:: GetGenericDictionaryInfo
 
@@ -24,7 +25,7 @@ HRESULT GetGenericDictionaryInfo(
 ## <a name="parameters"></a>Parâmetros
 
 `ppMemoryBuffer`\
-fora Um ponteiro para o endereço de um objeto [ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md) que contém o mapa de dicionário genérico. Para obter mais informações, consulte a seção Comentários.
+fora Um ponteiro para o endereço de um objeto [ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md) que contém o mapa de dicionário genérico. Consulte a seção Comentários para obter mais informações.
 
 ## <a name="remarks"></a>Comentários
 
@@ -47,7 +48,7 @@ A parte do diretório do mapa de dicionário genérico tem a seguinte estrutura:
 
 - Os quatro primeiros bytes contêm o número de entradas de dicionário (ou seja, o número de endereços virtuais relativos no dicionário). Iremos nos referir a esse valor como *N*. Se o bit alto for definido, as entradas serão classificadas por endereço virtual relativo em ordem crescente.
 
-- As entradas *N* diretório seguem. Cada entrada consiste em 8 bytes, em dois segmentos de 4 bytes:
+- As entradas *N* diretório seguem. Cada entrada consiste em 8 bytes, em segmentos de 2 4 bytes:
 
   - Bytes 0-3: RVA; o endereço virtual relativo do dicionário.
 
@@ -85,7 +86,7 @@ A inclusão do comprimento de cada elemento de heap permite a classificação si
 
 **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugSymbolProvider2](icordebugsymbolprovider2-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

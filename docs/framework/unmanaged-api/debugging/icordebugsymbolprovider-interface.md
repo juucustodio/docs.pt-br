@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugSymbolProvider'
 title: Interface ICorDebugSymbolProvider
 ms.date: 03/30/2017
 ms.assetid: 85b24196-b6c6-4bda-9de3-47180bd6ff96
-ms.openlocfilehash: ff1f39be3d3db43f70cfa4a0711a3f42c180bc1a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bd47f294092ee87fc1f34bc68fe744b447e21f20
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672078"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659564"
 ---
 # <a name="icordebugsymbolprovider-interface"></a>Interface ICorDebugSymbolProvider
 
@@ -15,7 +16,7 @@ Fornece métodos que podem ser usados para recuperar informações de símbolo d
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetAssemblyImageBytes](icordebugsymbolprovider-getassemblyimagebytes-method.md)|Lê dados de um assembly mesclado, dado um endereço virtual relativo (RVA) no assembly mesclado.|  
 |[Método GetAssemblyImageMetadata](icordebugsymbolprovider-getassemblyimagemetadata-method.md)|Retorna os metadados de um assembly mesclado.|  
@@ -44,7 +45,7 @@ Fornece métodos que podem ser usados para recuperar informações de símbolo d
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

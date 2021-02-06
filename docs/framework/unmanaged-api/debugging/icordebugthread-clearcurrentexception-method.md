@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugThread:: ClearCurrentException'
 title: Método ICorDebugThread::ClearCurrentException
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 31b8e65b-95e7-4748-ab93-8074cd5556b4
 topic_type:
 - apiref
-ms.openlocfilehash: ea9363cad93cf5daf3cdf8dea0129abde9c3b159
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 65b4b1cf6910e9b50c42aac96807c615e390e177
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688309"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659459"
 ---
 # <a name="icordebugthreadclearcurrentexception-method"></a>Método ICorDebugThread::ClearCurrentException
 
 Este método não está implementado. Não o use.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT ClearCurrentException();  

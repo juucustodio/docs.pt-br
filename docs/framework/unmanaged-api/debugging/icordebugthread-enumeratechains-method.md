@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugThread:: EnumerateChains'
 title: Método ICorDebugThread::EnumerateChains
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ec00bc21-117e-4acd-9301-2cfafd5be8d3
 topic_type:
 - apiref
-ms.openlocfilehash: 76b231f00651186518d3bccfafa5780f258c4f75
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b9184a1b298e1d29970c5e56ceca76715b0ed096
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688179"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659290"
 ---
 # <a name="icordebugthreadenumeratechains-method"></a>Método ICorDebugThread::EnumerateChains
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: operações transacionadas confirmadas por segundo'
 title: Operações Transacionadas Confirmadas por Segundo
 ms.date: 03/30/2017
 ms.assetid: 7318921b-47c4-4c8c-9fdd-41a92061c53f
-ms.openlocfilehash: deb29820aab09adad8825a299145772892117948
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 019906cccc527a032d91eb20328eddbb6d9aada8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250002"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99655078"
 ---
 # <a name="transacted-operations-committed-per-second"></a>Operações Transacionadas Confirmadas por Segundo
 

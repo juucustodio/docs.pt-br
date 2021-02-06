@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. IdentityModel. seletores. StoreDeleting'
 title: System.IdentityModel.Selectors.StoreDeleting
 ms.date: 03/30/2017
 ms.assetid: c894b84d-aac9-46ca-b578-ff8e43a461de
-ms.openlocfilehash: 3baa95ab2c97b7c0468776565580323627470373
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d993078670407214c5758ea0d032cfbe3d153157
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96270960"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99654974"
 ---
 # <a name="systemidentitymodelselectorsstoredeleting"></a>System.IdentityModel.Selectors.StoreDeleting
 
@@ -17,8 +18,8 @@ System.IdentityModel.Selectors.StoreDeleting
 
  Excluindo o repositório especificado.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

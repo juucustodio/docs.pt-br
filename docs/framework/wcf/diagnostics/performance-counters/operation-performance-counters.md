@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: contadores de desempenho de operação'
 title: Contadores de desempenho de operação
 ms.date: 03/30/2017
 ms.assetid: 333a51e0-f56e-4e1a-b359-5c91ff390568
-ms.openlocfilehash: 01f3ed7b2722f7ff4bdbb50e352920bdc277330f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e0a503d4d8b178d5d3f4ef240bf84c4b02a581ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99655195"
 ---
 # <a name="operation-performance-counters"></a>Contadores de desempenho de operação
 
@@ -20,6 +21,6 @@ Os contadores de desempenho de operação são encontrados no `ServiceModelOpera
 > [!CAUTION]
 > Há um limite no comprimento do nome de uma instância do contador de desempenho. Quando um nome de instância de contador de Windows Communication Foundation (WCF) excede o comprimento máximo, o WCF substitui uma parte do nome da instância por um valor de hash.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Contadores de desempenho](index.md)

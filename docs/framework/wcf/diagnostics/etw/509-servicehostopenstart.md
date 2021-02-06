@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 509-ServiceHostOpenStart'
 title: 509 - ServiceHostOpenStart
 ms.date: 03/30/2017
 ms.assetid: e53683f9-b2c4-4a61-bd66-3956b1914d8f
-ms.openlocfilehash: af4821b9783716cba3eb2c1d32a6146fcd202f50
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 89d195c9d86aee1f4ddd638802b48281f2836c69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287170"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99656209"
 ---
 # <a name="509---servicehostopenstart"></a>509 - ServiceHostOpenStart
 
@@ -17,7 +18,7 @@ ms.locfileid: "96287170"
 |-|-|  
 |ID|509|  
 |Palavras-chave|ServiceHost|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

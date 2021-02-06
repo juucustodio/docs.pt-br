@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo2:: GetFunctionInfo2'
 title: Método ICorProfilerInfo2::GetFunctionInfo2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0aa60f24-8bbd-4c83-83c5-86ad191b1d82
 topic_type:
 - apiref
-ms.openlocfilehash: e44b8afe22fdb10077048dc7bc2ccb1f605edd75
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f0534a2e8cc8a9ce24f2c2b3deaade6215e15b5a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727088"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657067"
 ---
 # <a name="icorprofilerinfo2getfunctioninfo2-method"></a>Método ICorProfilerInfo2::GetFunctionInfo2
 
@@ -72,7 +73,7 @@ HRESULT GetFunctionInfo2(
   
  Os argumentos ID de classe e tipo retornados por meio dos `pClassId` `typeArgs` parâmetros e dependem do valor que é passado no `frameInfo` parâmetro, conforme mostrado na tabela a seguir.  
   
-|Valor do `frameInfo` parâmetro|Resultado|  
+|Valor do `frameInfo` parâmetro|Result|  
 |----------------------------------------|------------|  
 |Um `COR_PRF_FRAME_INFO` valor que foi obtido de um `FunctionEnter2` retorno de chamada|O `ClassID` , retornado no local referenciado por `pClassId` , e todos os argumentos de tipo, retornados na `typeArgs` matriz, será exato.|  
 |Um `COR_PRF_FRAME_INFO` que foi obtido de uma fonte diferente de um `FunctionEnter2` retorno de chamada|Os `ClassID` argumentos exato e de tipo não podem ser determinados. Ou seja, o `ClassID` pode ser nulo e alguns argumentos de tipo podem retornar como <xref:System.Object> .|  
@@ -92,7 +93,7 @@ HRESULT GetFunctionInfo2(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Interface ICorProfilerInfo2](icorprofilerinfo2-interface.md)

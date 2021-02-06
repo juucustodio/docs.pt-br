@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerFunctionEnum:: Skip'
 title: Método ICorProfilerFunctionEnum::Skip
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 051465b9-e479-494a-804b-c880323b4cbe
 topic_type:
 - apiref
-ms.openlocfilehash: da578e02db0744b1f64c1d392844aa020721e784
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6d176c51788135952127008f2f43545ead1e2369
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95669244"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657054"
 ---
 # <a name="icorprofilerfunctionenumskip-method"></a>Método ICorProfilerFunctionEnum::Skip
 
@@ -37,7 +38,7 @@ HRESULT Skip([in] ULONG celt);
  `celt`  
  no O número de elementos a serem ignorados.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -60,7 +61,7 @@ HRESULT Skip([in] ULONG celt);
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerFunctionEnum](icorprofilerfunctionenum-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

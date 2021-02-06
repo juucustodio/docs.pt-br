@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback2:: HandleCreated'
 title: Método ICorProfilerCallback2::HandleCreated
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6bbb7786-7c38-490f-9834-91aa2795c355
 topic_type:
 - apiref
-ms.openlocfilehash: 6cd931f6c680a07327915ab4680702af298ca1ef
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 17f4ed83646907a229dcc6a30dcce1b52fa608d5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717300"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657080"
 ---
 # <a name="icorprofilercallback2handlecreated-method"></a>Método ICorProfilerCallback2::HandleCreated
 
@@ -52,7 +53,7 @@ HRESULT HandleCreated(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Interface ICorProfilerCallback2](icorprofilercallback2-interface.md)

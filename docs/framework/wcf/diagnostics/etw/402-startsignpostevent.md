@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 402-StartSignpostEvent'
 title: 402 - StartSignpostEvent
 ms.date: 03/30/2017
 ms.assetid: 5e5be126-765d-4ac9-88e7-008e9ef4f0e5
-ms.openlocfilehash: ff32c900f4e357b7f1eca669a0ea60f80ea24b19
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e77cac50be2a2e96fabe1301aaeab7ff74142e5a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99656677"
 ---
 # <a name="402---startsignpostevent"></a>402 - StartSignpostEvent
 
@@ -17,7 +18,7 @@ ms.locfileid: "96258316"
 |-|-|  
 |ID|402|  
 |Palavras-chave|Solução de problemas|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

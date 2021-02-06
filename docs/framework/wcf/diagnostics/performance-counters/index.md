@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: contadores de desempenho do WCF'
 title: Contadores de desempenho do WCF
 ms.date: 03/30/2017
 helpviewer_keywords:
 - performance counters [WCF]
 ms.assetid: f559b2bd-ed83-4988-97a1-e88f06646609
-ms.openlocfilehash: a5b00980cb8c2b06b224630e766e49bafe343c76
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c6572ece289fb550dd4974a8f8e957f7d3ef51b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266097"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99655338"
 ---
 # <a name="wcf-performance-counters"></a>Contadores de desempenho do WCF
 
@@ -137,6 +138,6 @@ Vários arquivos são instalados na pasta de instalação do SDK para que você 
   
 Para obter mais informações sobre como acessar os contadores programaticamente, consulte [arquitetura de programação de contador de desempenho](/previous-versions/visualstudio/visual-studio-2008/5f9bkxzf(v=vs.90)).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 4019-MessageQueueDuplicatedSocketComplete'
 title: 4019 - MessageQueueDuplicatedSocketComplete
 ms.date: 03/30/2017
 ms.assetid: 2dc5bde8-4f98-45ac-a768-50d417e8b65e
-ms.openlocfilehash: 50a9a059544e5a062350279e4eaa1b890acf25c1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7603b4d22a0d94bb72ed60a1088aacd9be01d868
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295256"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99656703"
 ---
 # <a name="4019---messagequeueduplicatedsocketcomplete"></a>4019 - MessageQueueDuplicatedSocketComplete
 

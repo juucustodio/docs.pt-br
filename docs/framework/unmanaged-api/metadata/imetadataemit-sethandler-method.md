@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método IMetaDataEmit:: sethandlers'
 title: Método IMetaDataEmit::SetHandler
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c6c1aaaf-e2cd-407c-b73e-fbe6ffd83bb3
 topic_type:
 - apiref
-ms.openlocfilehash: 9b03dc5460875af3bb3e5e20799a4d26eb74da05
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 07ebf8eef816d373e92a82fc84adacfe5a8599fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730364"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657860"
 ---
 # <a name="imetadataemitsethandler-method"></a>Método IMetaDataEmit::SetHandler
 
@@ -55,7 +56,7 @@ HRESULT SetHandler (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

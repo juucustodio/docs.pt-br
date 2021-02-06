@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: ClassUnloadFinished'
 title: Método ICorProfilerCallback::ClassUnloadFinished
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55674b68-678a-4747-ae06-4e91519c7305
 topic_type:
 - apiref
-ms.openlocfilehash: 114d5d58d0d9098944299aefd0cb99a70c5da09d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ae1ef56a1eb3b9b45c2165ecceb0af826cc7a2ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700256"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657730"
 ---
 # <a name="icorprofilercallbackclassunloadfinished-method"></a>Método ICorProfilerCallback::ClassUnloadFinished
 
@@ -58,7 +59,7 @@ HRESULT ClassUnloadFinished(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Método ClassUnloadStarted](icorprofilercallback-classunloadstarted-method.md)

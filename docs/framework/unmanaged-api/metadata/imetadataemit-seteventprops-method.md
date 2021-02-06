@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit:: SetEventProps'
 title: Método IMetaDataEmit::SetEventProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3b039e50-63ec-4730-99ff-2327408de477
 topic_type:
 - apiref
-ms.openlocfilehash: 5c2880ac07f0317bc36ff4bbde68cd3a25febf52
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 888999bc0f80e82e0d139eecac7152a94104ed7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721979"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658120"
 ---
 # <a name="imetadataemitseteventprops-method"></a>Método IMetaDataEmit::SetEventProps
 
@@ -73,7 +74,7 @@ HRESULT SetEventProps (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

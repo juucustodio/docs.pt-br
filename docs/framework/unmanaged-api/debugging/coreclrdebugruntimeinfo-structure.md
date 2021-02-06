@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura CoreClrDebugRuntimeInfo'
 title: Estrutura CoreClrDebugRuntimeInfo
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: bd01c30f-b7a8-4179-9497-622b6599b1a6
 topic_type:
 - apiref
-ms.openlocfilehash: 3cc9a1cfb26a784c32d66168bb01d41f91dd5f66
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 588e8bd1598996d1676e2df5517bd9a52eb59df4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722358"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661708"
 ---
 # <a name="coreclrdebugruntimeinfo-structure"></a>Estrutura CoreClrDebugRuntimeInfo
 

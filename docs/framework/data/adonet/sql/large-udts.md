@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: UDTs grandes'
 title: UDTs grandes
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 420ae24e-762b-4e09-b4c3-2112c470ee49
-ms.openlocfilehash: 032093244f51893cd3b0cf50ad81c79413aaa32e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e1a40330bb48d6320dc96533e764f1b856e0f410
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194538"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663177"
 ---
 # <a name="large-udts"></a>UDTs grandes
 
@@ -25,7 +26,7 @@ Os UDTs (tipos definidos pelo usuário) permitem que os desenvolvedores estendam
   
  **Documentação do SQL Server**  
   
-1. [Tipos definidos pelo usuário de CLR](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
+1. [Tipos definido pelo usuário CLR](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
   
 ## <a name="retrieving-udt-schemas-using-getschema"></a>Recuperando esquemas de UDT usando GetSchema  
 
@@ -137,10 +138,10 @@ Using connection As New SqlConnection( _
 End Using  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Configurar parâmetros e tipos de dados de parâmetro](../configuring-parameters-and-parameter-data-types.md)
-- [Recuperando informações de esquema de banco de dados](../retrieving-database-schema-information.md)
+- [Como recuperar informações de esquema de banco de dados](../retrieving-database-schema-information.md)
 - [Mapeamentos de tipos de dados do SQL Server](../sql-server-data-type-mappings.md)
-- [SQL Server dados binários e de valor grande](sql-server-binary-and-large-value-data.md)
+- [Dados binários e de valor grande do SQL Server](sql-server-binary-and-large-value-data.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

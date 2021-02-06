@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método LinkResource'
 title: Método LinkResource
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c404acb3-4c59-4100-9a4c-483cbdb1d736
 topic_type:
 - apiref
-ms.openlocfilehash: 4f2f13976dfd4e5601bf8b54bed7b851884fbb9d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff12138433577eccbb313b8e64a329be1358ba70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690441"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662540"
 ---
 # <a name="linkresource-method"></a>Método LinkResource
 
@@ -54,7 +55,7 @@ HRESULT LinkResource(
  `dwFlags`  
  Sinalizadores de acessibilidade, como `mrPublic` e `mrPrivate` . Esse parâmetro pode ser passado para o [método DefineManifestResource](../metadata/imetadataassemblyemit-definemanifestresource-method.md).  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Retorna S_OK se o método tiver sucesso.  
   
@@ -62,7 +63,7 @@ HRESULT LinkResource(
 
  Requer ALink. h.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IALink](ialink-interface.md)
 - [Interface IALink2](ialink2-interface.md)

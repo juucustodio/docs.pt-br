@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método SetPEKind'
 title: Método SetPEKind
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 050e77ee-3014-45c0-9e29-2ebe29347b0d
 topic_type:
 - apiref
-ms.openlocfilehash: be8a11cbf70e2c6f19ace67648b124515c1fb3c3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4154e9e80b7f88b6951c9aa8da5fc23d340c96dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680034"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662293"
 ---
 # <a name="setpekind-method"></a>Método SetPEKind
 
@@ -50,7 +51,7 @@ HRESULT SetPEKind(
  `dwMachine`  
  A arquitetura do computador de destino, conforme indicado no cabeçalho do NT.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Retorna S_OK se o método tiver sucesso.  
   
@@ -58,7 +59,7 @@ HRESULT SetPEKind(
 
  Requer ALink. h.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetPEKind](../metadata/imetadataimport2-getpekind-method.md)
 - [Interface IALink2](ialink2-interface.md)

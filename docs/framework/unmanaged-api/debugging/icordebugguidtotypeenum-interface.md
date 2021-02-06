@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugGuidToTypeEnum'
 title: Interface ICorDebugGuidToTypeEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aa32b12b-05fc-4ea8-a904-adae25034269
 topic_type:
 - apiref
-ms.openlocfilehash: 149c5b09639c8809e736ade09566e7b1b530e3eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: abcdc9537f6f6ff2e0ac9b2be86734efbf303493
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705703"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660980"
 ---
 # <a name="icordebugguidtotypeenum-interface"></a>Interface ICorDebugGuidToTypeEnum
 
@@ -27,7 +28,7 @@ Fornece um enumerador que define o mapeamento entre um conjunto de GUIDs e seus 
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[ICorDebugGuidToTypeEnum:: Next](icordebugguidtotypeenum-next-method.md)|Obtém o número especificado de instâncias de [CorDebugGuidToTypeMapping](cordebugguidtotypemapping-structure.md) que MAPEIAm GUIDs para informações de tipo.|  
   
@@ -45,6 +46,6 @@ Fornece um enumerador que define o mapeamento entre um conjunto de GUIDs e seus 
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

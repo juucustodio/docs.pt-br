@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura DacpGetModuleAddress'
 title: Estrutura DacpGetModuleAddress
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: a65fa9974165fa36e59a7fb83dca6dd902f7d8dc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3de76cc4f15bffd35d7a43ae25a313eb2fe59b82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724387"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661591"
 ---
 # <a name="dacpgetmoduleaddress-structure"></a>Estrutura DacpGetModuleAddress
 
@@ -45,7 +46,7 @@ struct DacpGetModuleAddress
 
 ## <a name="methods"></a>Métodos
 
-| Método                                                                                               | DESCRIÇÃO                                                                    |
+| Método                                                                                               | Descrição                                                                    |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | [Solicitação](dacpgetmoduleaddress-request-method.md) | Executa uma solicitação para popular a estrutura da estrutura de tempo de execução fornecida. |
 
@@ -60,7 +61,7 @@ Essa estrutura reside dentro do tempo de execução e não é exposta por nenhum
 **Biblioteca:** None  
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Estruturas de depuração](debugging-structures.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugJITCompilerFlagsDeprecated'
 title: Enumeração CorDebugJITCompilerFlagsDeprecated
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: af15e2ca-6be1-472b-bd36-03644a1e3ddd
 topic_type:
 - apiref
-ms.openlocfilehash: 8797f77388bf4992dfb69191ce8a844a9b7fdb8a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ac607766c484a63a757d726826c81d16edd48aae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696434"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661903"
 ---
 # <a name="cordebugjitcompilerflagsdeprecated-enumeration"></a>Enumeração CorDebugJITCompilerFlagsDeprecated
 
@@ -49,6 +50,6 @@ typedef enum CorDebugJITCompilerFlagsDeprecated {
   
  **Versões do .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)

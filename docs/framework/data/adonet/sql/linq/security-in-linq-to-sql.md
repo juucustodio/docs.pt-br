@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: segurança em LINQ to SQL'
 title: Segurança em LINQ to SQL
 ms.date: 03/30/2017
 ms.assetid: d49787f7-414e-4c71-aa33-80a5895536b1
-ms.openlocfilehash: 6260f0c565a25764c8fabd2770d4f06a987aa9bb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3d53def25aed83d96e0d32dfc964d9b49458fad7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173387"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662930"
 ---
 # <a name="security-in-linq-to-sql"></a>Segurança em LINQ to SQL
 
@@ -21,7 +22,7 @@ Os riscos de segurança são sempre presentes em que você se conecta a um base 
 
  O mapeamento de tipo de SQL-CLR e informações do esquema de base de dados no seu modelo de objeto ou arquivos de mapeamento externo estão disponíveis para todos com acesso 2 esses arquivos no sistema de arquivos. Suponha que as informações de esquema estarão disponíveis para todos que possam acessar o modelo de objeto ou o arquivo de mapeamento externo. Para evitar o acesso mais difundido às informações de esquema, use mecanismos de segurança de arquivo para proteger arquivos de origem e arquivos de mapeamento.  
   
-## <a name="connection-strings"></a>Cadeias de Conexão  
+## <a name="connection-strings"></a>Cadeias de caracteres de conexão  
 
  Usar senhas em cadeias de conexão deve ser impedida sempre que possível. Não é apenas uma cadeia de conexão um risco para a segurança em próprio, mas a cadeia de conexão também pode ser adicionada em texto não criptografado para o modelo de objeto ou arquivo de mapeamento externo ao usar a ferramenta de linha de comando Object Relational Designer ou de SQLMetal. Qualquer pessoa com acesso ao modelo de objeto ou arquivo de mapeamento externo através do sistema de arquivos pode ver a senha de conexão (se é incluído na cadeia de conexão).  
   
@@ -37,7 +38,7 @@ Os riscos de segurança são sempre presentes em que você se conecta a um base 
   
 - Minimize o tempo de vida e toque em pontos para todas as cadeias de conexão.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Informações gerais](background-information.md)
 - [Perguntas frequentes](frequently-asked-questions.md)

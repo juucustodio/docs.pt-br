@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como definir uma política de cache de Location-Based para um aplicativo'
 title: 'Como: Definir uma política de cache baseada na localização para um aplicativo'
 ms.date: 03/30/2017
 dev_langs:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - request cache policies
 - cache [.NET Framework], location-based policies
 ms.assetid: 683bb88e-3411-4f46-9686-3411b6ba511c
-ms.openlocfilehash: 7331845c391265d72d3025fd9bf7856d83c783e9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d86e40e24eacb6ce3107e50213941c1169191943
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253486"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662774"
 ---
 # <a name="how-to-set-a-location-based-cache-policy-for-an-application"></a>Como: Definir uma política de cache baseada na localização para um aplicativo
 
@@ -154,7 +155,7 @@ Políticas de cache com base no local permitem que um aplicativo defina explicit
     End Sub  
     ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciamento de cache para aplicativos de rede](cache-management-for-network-applications.md)
 - [Política de cache](cache-policy.md)

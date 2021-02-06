@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: depuração de funções estáticas globais'
 title: Depurando funções estáticas globais
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - debugging global static functions [.NET Framework]
 - unmanaged global static functions [.NET Framework], debugging
 ms.assetid: efc64414-77c3-48d0-881a-8594ed416aad
-ms.openlocfilehash: 04906322e311b580abddeca7744cf3e75d471e05
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: efee1bfb6eb61ae2311320a4c12bf08ec0f9534b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722980"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661448"
 ---
 # <a name="debugging-global-static-functions"></a>Depurando funções estáticas globais
 

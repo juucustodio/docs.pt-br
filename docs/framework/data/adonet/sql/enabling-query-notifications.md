@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: habilitando notificações de consulta'
 title: Habilitando notificações de consulta
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a5333e19-8e55-4aa9-82dc-ca8745e516ed
-ms.openlocfilehash: 4e9b3a2e1f176a9d01e983bc469cc4032fa5d730
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e0ff405477a9faa141ce81c5ac8ba2d1ace95501
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156167"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663333"
 ---
 # <a name="enabling-query-notifications"></a>Habilitando notificações de consulta
 
@@ -91,7 +92,7 @@ CREATE SERVICE ContactChangeNotifications
 
  Por outro lado, o <xref:System.Data.Sql.SqlNotificationRequest> exige que você implemente toda a infraestrutura de escuta por conta própria. Além disso, todos os objetos do Service Broker de suporte, como os tipos de fila, serviço e mensagem compatíveis com a fila, devem ser definidos. Essa abordagem manual será útil se o aplicativo exigir mensagens de notificação especiais ou comportamentos de notificação ou se o aplicativo fizer parte de um aplicativo de Service Broker maior.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Notificações de consulta no SQL Server](query-notifications-in-sql-server.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugChain:: GetNext'
 title: Método ICorDebugChain::GetNext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8d9744a5-e08b-4ab2-9855-5c22711cc1e6
 topic_type:
 - apiref
-ms.openlocfilehash: 75b97f4333f3e81533b1f10b8c3c7ba6197ac94a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ced7032feffa4c14c07341242b854c08b8c897a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730078"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661318"
 ---
 # <a name="icordebugchaingetnext-method"></a>Método ICorDebugChain::GetNext
 

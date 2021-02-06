@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: retornar o primeiro elemento em uma sequência'
 title: Retornar o primeiro elemento em uma sequência
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ccdc3777-b2c2-44e3-a627-abef8d79a555
-ms.openlocfilehash: 4506ef1a79c8f7e77160df4d55d0f93ee79f5a41
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 004e9a1f03677f6ba49916404b1c44408df40dfa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200336"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663008"
 ---
 # <a name="return-the-first-element-in-a-sequence"></a>Retornar o primeiro elemento em uma sequência
 
@@ -39,7 +40,7 @@ Use o operador de <xref:System.Linq.Enumerable.First%2A> para retornar o primeir
  [!code-csharp[DLinqQueryExamples#15](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#15)]
  [!code-vb[DLinqQueryExamples#15](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#15)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Exemplos de consulta](query-examples.md)
 - [Baixar bancos de dados de amostra](downloading-sample-databases.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: concedendo permissões de Row-Level no SQL Server'
 title: Conceder permissões de nível de linha no SQL Server
 ms.date: 03/30/2017
 ms.assetid: a55aaa12-34ab-41cd-9dec-fd255b29258c
-ms.openlocfilehash: 0b34eaee4b66a2be82049816f0a98b9f53012303
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: fe69a023b5befbdb53473881647fff8bdf0e9795
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554847"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663294"
 ---
 # <a name="granting-row-level-permissions-in-sql-server"></a>Conceder permissões de nível de linha no SQL Server
 
@@ -61,7 +62,7 @@ O exemplo a seguir descreve como configurar a filtragem em nível de linha com b
 
 - Conceda EXECUTE nos procedimentos armazenados para funções de banco de dados. Os usuários só podem acessar dados por meio dos procedimentos armazenados fornecidos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança em nível de linha](/sql/relational-databases/security/row-level-security)
 - [Protegendo aplicativos ADO.NET](../securing-ado-net-applications.md)

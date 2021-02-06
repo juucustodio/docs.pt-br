@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugChainEnum'
 title: Interface ICorDebugChainEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6639335c-48e1-4e74-a4f3-70a6a0f54af1
 topic_type:
 - apiref
-ms.openlocfilehash: dd2507bb66e036dfbb1f4e8cc262f01d926adca1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 948bca1e01a49e7cd2e3fbadca7e3957e5ce38c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728219"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661149"
 ---
 # <a name="icordebugchainenum-interface"></a>Interface ICorDebugChainEnum
 
@@ -27,7 +28,7 @@ Implementa métodos ICorDebugEnum e enumera matrizes ICorDebugChain.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Next](icordebugchainenum-next-method.md)|Obtém o número especificado de `ICorDebugChain` instâncias da enumeração, começando na posição atual.|  
   
@@ -46,6 +47,6 @@ Implementa métodos ICorDebugEnum e enumera matrizes ICorDebugChain.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

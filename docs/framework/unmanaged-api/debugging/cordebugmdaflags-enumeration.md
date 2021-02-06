@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugMDAFlags'
 title: Enumeração CorDebugMDAFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7c0c92fe-8bd2-477f-b307-aca0143732ca
 topic_type:
 - apiref
-ms.openlocfilehash: 1bb99503481d917d41ae00a5ef73c8fa59e2a999
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d7e9178d76286b112035729e997b1f68e2a93fb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696447"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661929"
 ---
 # <a name="cordebugmdaflags-enumeration"></a>Enumeração CorDebugMDAFlags
 
@@ -53,6 +54,6 @@ typedef enum CorDebugMDAFlags {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)

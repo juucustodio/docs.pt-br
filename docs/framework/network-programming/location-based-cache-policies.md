@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Location-Based políticas de cache'
 title: Políticas de cache baseadas na localização
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Cache Or Next Cache Only policy
 - Refresh policy
 ms.assetid: e41d7f1a-0a6a-4dee-97d1-c6a8b6a07fc2
-ms.openlocfilehash: 22d99111cd22ef24603f3cdd213c9c9afac5a974
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ef770b45f173fee66c80d721766a0be6244bbeb9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242195"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662709"
 ---
 # <a name="location-based-cache-policies"></a>Políticas de cache baseadas na localização
 
@@ -54,7 +55,7 @@ Uma política de cache baseada na localização define a atualização das entra
 
  Compara a cópia do recurso no cache com a cópia no servidor. Se a cópia no servidor for mais recente, ela será usada para atender à solicitação e substituirá a cópia em cache. Se a cópia em cache for igual à cópia do servidor, a cópia armazenada em cache será usada. No protocolo de cache HTTP, isso é feito usando uma solicitação condicional.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciamento de cache para aplicativos de rede](cache-management-for-network-applications.md)
 - [Política de cache](cache-policy.md)

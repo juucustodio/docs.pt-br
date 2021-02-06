@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugChain'
 title: Interface ICorDebugChain
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f671f519-1cb3-4ae5-b9f1-abc5e783459f
 topic_type:
 - apiref
-ms.openlocfilehash: a0285970a8a42c078aa663579e1d5998d0d1c037
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 391c9a3e54d06d303728da5ab7f105bc8e2558ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724449"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661188"
 ---
 # <a name="icordebugchain-interface"></a>Interface ICorDebugChain
 
@@ -59,6 +60,6 @@ Representa um segmento de uma pilha de chamadas física ou lógica.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

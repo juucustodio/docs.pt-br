@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugGenerationTypes'
 title: Enumeração CorDebugGenerationTypes
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9f25b64f-eedd-4ae5-8b0e-cfdfb9b6c5d8
 topic_type:
 - apiref
-ms.openlocfilehash: 189a276b4228038ab1d70620ce3a4a0f4342b245
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f86b2bc9bf947c6b285c50678f46494005bb5537
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712515"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662124"
 ---
 # <a name="cordebuggenerationtypes-enumeration"></a>Enumeração CorDebugGenerationTypes
 
@@ -38,7 +39,7 @@ typedef enum CorDebugGenerationTypes {
   
 ## <a name="members"></a>Membros  
   
-|Nome do membro|DESCRIÇÃO|  
+|Nome do membro|Descrição|  
 |-----------------|-----------------|  
 |`CorDebug_Gen0`|Geração 0.|  
 |`CorDebug_Gen1`|Geração 1.|  
@@ -57,6 +58,6 @@ typedef enum CorDebugGenerationTypes {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)

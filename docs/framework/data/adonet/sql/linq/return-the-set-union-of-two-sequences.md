@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: retornar a União de conjunto de duas sequências'
 title: Retornar a união de sequências de duas
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8b8bd3cb-86d4-4a3b-9906-61f68726dd1f
-ms.openlocfilehash: 0fe32d8c3c37e99a50ca03262dc6184337b4450e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5541316560c05712e22c54f706b02d868fadb381
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200193"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662956"
 ---
 # <a name="return-the-set-union-of-two-sequences"></a>Retornar a união de sequências de duas
 
@@ -27,7 +28,7 @@ Use o operador de <xref:System.Linq.Queryable.Union%2A> para retornar a união a
 
 Para obter mais informações e exemplos, consulte <xref:System.Linq.Queryable.Union%2A?displayProperty=nameWithType> .
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Exemplos de consulta](query-examples.md)
 - [Conversão padrão de operador de consulta](standard-query-operator-translation.md)

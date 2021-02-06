@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: depuração de coclasses'
 title: Depurando coclasses
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - debugging coclasses [.NET Framework]
 - coclasses [.NET Framework debugging]
 ms.assetid: 94f94159-108e-436c-99e7-dff3beeb2503
-ms.openlocfilehash: b33f4a906bfe719ac81537325b3509e94196403a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c9248cdb305b1d5198d4410be774c47f31b09f82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723006"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661513"
 ---
 # <a name="debugging-coclasses"></a>Depurando coclasses
 

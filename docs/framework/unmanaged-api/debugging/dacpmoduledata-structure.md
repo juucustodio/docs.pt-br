@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura DacpModuleData'
 title: Estrutura DacpModuleData
 ms.date: 02/01/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: 5d27ba2de9ff6ed184b6ddf50a517d0dae7715f5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 376a49ab78db08e5906e8d33389cdc45fe76e81e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723045"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661565"
 ---
 # <a name="dacpmoduledata-structure"></a>Estrutura DacpModuleData
 
@@ -60,7 +61,7 @@ Essa estrutura reside dentro do tempo de execução e não é exposta por nenhum
 **Biblioteca:** None  
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Estruturas de depuração](debugging-structures.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método init'
 title: Método Init
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e48b5c64-049f-4f93-ad87-d07ae9cd5845
 topic_type:
 - apiref
-ms.openlocfilehash: 25a1c29ab94a785304b83d5b1bcb2d7176742a68
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 531e05a09cbecbfb67c8c004d1e4ba1deb7e59a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662553"
 ---
 # <a name="init-method"></a>Método Init
 
@@ -42,7 +43,7 @@ HRESULT Init(
  `pErrorHandler`  
  Ponteiro de [interface IMetaDataError](../metadata/imetadataerror-interface.md) para uma interface de tratamento de erro opcional.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Retorna S_OK se o método tiver sucesso.  
   
@@ -50,7 +51,7 @@ HRESULT Init(
 
  Requer ALink. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IALink](ialink-interface.md)
 - [Interface IALink2](ialink2-interface.md)

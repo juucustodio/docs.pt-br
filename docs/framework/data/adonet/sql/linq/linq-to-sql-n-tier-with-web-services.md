@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: LINQ to SQL N camadas com serviços Web'
 title: LINQ to SQL de n camadas com serviços da Web
 ms.date: 03/30/2017
 ms.assetid: 9cb10eb8-957f-4beb-a271-5f682016fed2
-ms.openlocfilehash: dd1f756fae99fbae591b27aaefc7cc4ad7501bd6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7c97cc80f071ae964f329265f5c3d0e68e12b84f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175285"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663099"
 ---
 # <a name="linq-to-sql-n-tier-with-web-services"></a>LINQ to SQL de n camadas com serviços da Web
 
@@ -41,7 +42,7 @@ ms.locfileid: "91175285"
   
  Para obter mais informações, consulte [operações de recuperação de dados e cud em aplicativos de N camadas (LINQ to SQL)](data-retrieval-and-cud-operations-in-n-tier-applications.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Aplicativos de n camadas e remoto com LINQ to SQL](n-tier-and-remote-applications-with-linq-to-sql.md)
 - [Visão geral do controle de servidor Web LinqDataSource](/previous-versions/aspnet/bb547113(v=vs.100))

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ImportTypes2'
 title: Método ImportTypes2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 32f3ba58-9695-41e9-ba58-fd19e45ed396
 topic_type:
 - apiref
-ms.openlocfilehash: 2ec7708edd86b9f2656d0eee434992c3b73200ca
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ca0d174061608f9b4abf524c43023e867e9a9646
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662605"
 ---
 # <a name="importtypes2-method"></a>Método ImportTypes2
 
@@ -58,7 +59,7 @@ HRESULT ImportTypes2(
  `pdwCountOfTypes`  
  Opcionalmente, recebe a contagem de tipos no escopo especificado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Retorna S_OK se o método tiver sucesso.  
   
@@ -66,7 +67,7 @@ HRESULT ImportTypes2(
 
  Requer ALink. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IALink2](ialink2-interface.md)
 - [Interface IALink](ialink-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método SetAssemblyProps'
 title: Método SetAssemblyProps
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a3d7cf29-1414-49e6-8aae-9b3283c4f5f0
 topic_type:
 - apiref
-ms.openlocfilehash: 4b0de5f9759491f1303edc978b1548e91214daf8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 212d8aad22ac1cb231db46f20ff65de2339a21aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662345"
 ---
 # <a name="setassemblyprops-method"></a>Método SetAssemblyProps
 
@@ -50,7 +51,7 @@ HRESULT SetAssemblyProps(
  `Value`  
  Novo valor da opção.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Retorna S_OK se o método tiver sucesso.  
   
@@ -58,7 +59,7 @@ HRESULT SetAssemblyProps(
 
  Requer ALink. h.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IALink](ialink-interface.md)
 - [Interface IALink2](ialink2-interface.md)

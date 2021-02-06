@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugChain:: GetCallee'
 title: Método ICorDebugChain::GetCallee
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 19560c79-abdc-4bdf-a5fe-eb362a59edc0
 topic_type:
 - apiref
-ms.openlocfilehash: a28da34cd3080826f346b8957aa6ba38258b924f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4787893c86804c648dae14bf2e6f7425808104b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730117"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661383"
 ---
 # <a name="icordebugchaingetcallee-method"></a>Método ICorDebugChain::GetCallee
 

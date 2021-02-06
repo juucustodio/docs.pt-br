@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: AppDomainShutdownStarted'
 title: Método ICorProfilerCallback::AppDomainShutdownStarted
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d23a3408-b525-4aec-a186-2ac7ca65d7a4
 topic_type:
 - apiref
-ms.openlocfilehash: cb0b763059c787b8f3e93e6c46b0e7fb2f8f8b2c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 16545142a512ca1c5f4167f61b81ea949e3d14e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648110"
 ---
 # <a name="icorprofilercallbackappdomainshutdownstarted-method"></a>Método ICorProfilerCallback::AppDomainShutdownStarted
 
@@ -53,6 +54,6 @@ HRESULT AppDomainShutdownStarted(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)

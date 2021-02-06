@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: criação de perfil de funções estáticas globais'
 title: Criando perfil de funções estáticas globais
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - profiling global static functions [.NET Framework]
 - unmanaged global static functions [.NET Framework], profiling
 ms.assetid: 08a13a57-dc49-488d-b937-31e3051fda97
-ms.openlocfilehash: 1b0ad42e6b34e99212e112f6a594b0a36b6715e1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 86e4b6bda73b0783f5f95e4e7dbc24f1ccccb130
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723071"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646368"
 ---
 # <a name="profiling-global-static-functions"></a>Criando perfil de funções estáticas globais
 

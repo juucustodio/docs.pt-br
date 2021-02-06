@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo8:: IsFunctionDynamic'
 title: ICorProfilerInfo8::IsFunctionDynamic
 ms.date: 08/06/2019
 dev_langs:
@@ -11,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: c88279d361ea78a2e910c4621e92c500902d9124
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8ab942e6919f8029ef0d1c20336917622a1d22ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84495119"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646524"
 ---
 # <a name="icorprofilerinfo8isfunctiondynamic-method"></a>Método ICorProfilerInfo8:: IsFunctionDynamic
 
@@ -53,6 +54,6 @@ Uma função será considerada dinâmica se não tiver metadados. Determinados m
 
 **.NET Framework versões:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo8](icorprofilerinfo8-interface.md)

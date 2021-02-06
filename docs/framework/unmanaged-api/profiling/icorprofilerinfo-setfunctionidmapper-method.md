@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo:: SetFunctionIDMapper'
 title: Método ICorProfilerInfo::SetFunctionIDMapper
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1a6e5dae-d366-4497-9c02-7b5b1f43f9ec
 topic_type:
 - apiref
-ms.openlocfilehash: 3a9ab64730feaa372f9b5d9ad7cefcb86580ca5e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c03c225db3b4126c3ac46ef6e5d36a5f72e529f7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671168"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647196"
 ---
 # <a name="icorprofilerinfosetfunctionidmapper-method"></a>Método ICorProfilerInfo::SetFunctionIDMapper
 
@@ -54,6 +55,6 @@ HRESULT SetFunctionIDMapper (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

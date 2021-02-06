@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função StrongNameErrorInfo'
 title: Função StrongNameErrorInfo
 ms.date: 03/30/2017
 api_name:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: e91bf8c3-7c26-4732-938e-2e5b04abfc99
 topic_type:
 - apiref
-ms.openlocfilehash: 90abfcd573795ae529714e21b13f90d6e15c7dad
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a02e5f3d101a34c8ed13cb0f70fd2e95d945cb4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732262"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646394"
 ---
 # <a name="strongnameerrorinfo-function"></a>Função StrongNameErrorInfo
 

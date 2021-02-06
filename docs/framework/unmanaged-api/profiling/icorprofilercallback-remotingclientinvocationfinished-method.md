@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: RemotingClientInvocationFinished'
 title: Método ICorProfilerCallback::RemotingClientInvocationFinished
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea4b283b-1210-4f41-a7a2-c398b1adde4e
 topic_type:
 - apiref
-ms.openlocfilehash: d41ccd30707eba269bbac7231e06792363615544
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bc15139e10b7634c50604d9a05ba290566145c21
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647993"
 ---
 # <a name="icorprofilercallbackremotingclientinvocationfinished-method"></a>Método ICorProfilerCallback::RemotingClientInvocationFinished
 
@@ -60,6 +61,6 @@ HRESULT RemotingClientInvocationFinished();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)

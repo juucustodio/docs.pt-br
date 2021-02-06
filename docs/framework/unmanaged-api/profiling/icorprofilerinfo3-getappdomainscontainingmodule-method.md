@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo3:: GetAppDomainsContainingModule'
 title: Método ICorProfilerInfo3::GetAppDomainsContainingModule
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 603b3881-ea94-4dca-95cd-91eebac873a0
 topic_type:
 - apiref
-ms.openlocfilehash: 5cc3436716bcfc2ed0f9fd7ff7982bac7a48de9a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0f0fea5b01b80b110d7ab041574dc195162cb508
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731196"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646823"
 ---
 # <a name="icorprofilerinfo3getappdomainscontainingmodule-method"></a>Método ICorProfilerInfo3::GetAppDomainsContainingModule
 
@@ -65,7 +66,7 @@ HRESULT GetAppDomainsContainingModule(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerFunctionEnum](icorprofilerfunctionenum-interface.md)
 - [Interface ICorProfilerInfo3](icorprofilerinfo3-interface.md)

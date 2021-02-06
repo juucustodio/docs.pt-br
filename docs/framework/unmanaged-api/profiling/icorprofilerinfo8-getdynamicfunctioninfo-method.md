@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo8:: GetDynamicFunctionInfo'
 title: ICorProfilerInfo8::GetDynamicFunctionInfo
 ms.date: 08/06/2019
 dev_langs:
@@ -11,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: eaf33f3b0de7a18e400cd16d29c046784e2e190f
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 48c8dbe20ccafb3fb23e9e289f728d5e3370613a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84495314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646576"
 ---
 # <a name="icorprofilerinfo8getdynamicfunctioninfo-method"></a>Método ICorProfilerInfo8:: GetDynamicFunctionInfo
 
@@ -80,6 +81,6 @@ Essa API pode ser usada para recuperar informações sobre métodos dinâmicos, 
 
 **.NET Framework versões:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo8](icorprofilerinfo8-interface.md)

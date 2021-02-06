@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo9:: GetILToNativeMapping3'
 title: ICorProfilerInfo9::GetILToNativeMapping3
 ms.date: 08/06/2019
 dev_langs:
@@ -11,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 14391a0fe046b44aedca1da2bc42c7d962e1a5e7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 867375d57f9d166ed08bf68ada81fb5cdbb8afe3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90541272"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646511"
 ---
 # <a name="icorprofilerinfo9getiltonativemapping3-method"></a>Método ICorProfilerInfo9:: GetILToNativeMapping3
 
@@ -63,6 +64,6 @@ Quando a compilação em camadas está habilitada, um método pode ter mais de u
 
 **.NET Framework versões:**[!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo9](icorprofilerinfo9-interface.md)

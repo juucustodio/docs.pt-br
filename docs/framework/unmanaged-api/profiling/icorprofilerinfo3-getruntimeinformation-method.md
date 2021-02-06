@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo3:: GetRuntimeInformation'
 title: Método ICorProfilerInfo3::GetRuntimeInformation
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4400fb8c-0407-4791-8557-f011fd2aee51
 topic_type:
 - apiref
-ms.openlocfilehash: fdb2b1601e0164de19bcc1e8f60856346aeaacb1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f615cc54e12b6f2f6eaa7335353f2f5f6a8ecfce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698007"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646706"
 ---
 # <a name="icorprofilerinfo3getruntimeinformation-method"></a>Método ICorProfilerInfo3::GetRuntimeInformation
 
@@ -85,7 +86,7 @@ HRESULT GetRuntimeInformation(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo3](icorprofilerinfo3-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerInfo8'
 title: Interface ICorProfilerInfo8
 ms.date: 08/06/2019
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: eedd16006781de517587e5138543b9b9eca3ff90
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4538c9d314283c67ab0bfe6af3f3768062cffda4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646537"
 ---
 # <a name="icorprofilerinfo8-interface"></a>Interface ICorProfilerInfo8
 
@@ -16,7 +17,7 @@ Uma subclasse de [ICorProfilerInfo7](icorprofilerinfo7-interface.md) que fornece
 
 ## <a name="methods"></a>Métodos  
 
-| Método|DESCRIÇÃO|  
+| Método|Descrição|  
 | ------------|-----------------|  
 |[Método IsFunctionDynamic](icorprofilerinfo8-isfunctiondynamic-method.md)| Determina se uma função não tem metadados associados.|
 |[Método GetFunctionFromIP3](icorprofilerinfo8-getfunctionfromip3-method.md)| Mapeia um ponteiro de instrução de código gerenciado para uma FunctionID. Esse método funciona para métodos dinâmicos e não dinâmicos. |
@@ -28,6 +29,6 @@ Uma subclasse de [ICorProfilerInfo7](icorprofilerinfo7-interface.md) que fornece
 **Cabeçalho:** CorProf. idl, CorProf. h  
 **.NET Framework versões:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)

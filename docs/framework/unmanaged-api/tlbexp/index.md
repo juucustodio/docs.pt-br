@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: funções auxiliar de TlbExp (referência de API não gerenciada)'
 title: Funções auxiliares Tlbexp (referência de API não gerenciada)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Tlbexp.exe
 - Type Library Exporter
 ms.assetid: 5c0a3d14-5f26-4267-94a9-82c30f8db09a
-ms.openlocfilehash: 9386918f3574720d90bda7e8da592fa0c91160e5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8d5aacbe63d111b0b53f6bc76357a37ee4660d0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708238"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646251"
 ---
 # <a name="tlbexp-helper-functions-unmanaged-api-reference"></a>Funções auxiliares Tlbexp (referência de API não gerenciada)
 

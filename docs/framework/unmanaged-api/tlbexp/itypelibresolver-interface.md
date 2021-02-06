@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ITypeLibResolver'
 title: Interface ITypeLibResolver
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: edaaed1d-0d26-40f0-83f1-48efc0ded1c6
 topic_type:
 - apiref
-ms.openlocfilehash: 1398da1ef6f7f62ecd9c9e58f7b6010916bf9c57
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0d80d9b83d0f36fb84837db7b95687fea6a0c0f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646225"
 ---
 # <a name="itypelibresolver-interface"></a>Interface ITypeLibResolver
 
@@ -27,7 +28,7 @@ Fornece o [Método ResolveTypeLib](resolvetypelib-method.md), que resolve o cami
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método ResolveTypeLib](resolvetypelib-method.md)|Resolve o nome simples de uma biblioteca de tipos retornando seu caminho totalmente qualificado.|  
   
@@ -41,7 +42,7 @@ Fornece o [Método ResolveTypeLib](resolvetypelib-method.md), que resolve o cami
   
  **Versão do .NET Framework:** 4, 3,5, 3,0, 2,0  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Funções auxiliares Tlbexp](index.md)
+- [Funções auxiliares do Tlbexp](index.md)
 - [Função LoadTypeLibEx](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

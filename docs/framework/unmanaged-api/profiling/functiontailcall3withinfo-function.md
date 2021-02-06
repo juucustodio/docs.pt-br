@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função FunctionTailcall3WithInfo'
 title: Função FunctionTailcall3WithInfo
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 46380fcc-0198-43ae-a1f5-2d4939425886
 topic_type:
 - apiref
-ms.openlocfilehash: c23c791197c9925038f71e70409e4ca3ebabb23e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: efa8b2e965ba4a365bbd72db4c5af69db006f6d5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722850"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648487"
 ---
 # <a name="functiontailcall3withinfo-function"></a>Função FunctionTailcall3WithInfo
 
@@ -69,7 +70,7 @@ void __stdcall FunctionTailcall3WithInfo(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [FunctionEnter3](functionenter3-function.md)
 - [FunctionLeave3](functionleave3-function.md)

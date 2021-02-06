@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerInfo2'
 title: Interface ICorProfilerInfo2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 91bd49b6-4d12-494f-a8f1-2f251e8c65e3
 topic_type:
 - apiref
-ms.openlocfilehash: 6c146f3deed31601411bef39ab12b52dfec8cd39
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 07828c6f55b72068e9021991600ed17eb6ffe6ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681568"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647005"
 ---
 # <a name="icorprofilerinfo2-interface"></a>Interface ICorProfilerInfo2
 
@@ -27,7 +28,7 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md)|Percorre a pilha do thread especificado para relatar os quadros de chamada gerenciados ao criador de perfil.|  
 |[Método EnumModuleFrozenObjects](icorprofilerinfo2-enummodulefrozenobjects-method.md)|Obtém um enumerador que permite a iteração sobre os objetos congelados no módulo especificado.|  
@@ -69,7 +70,7 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

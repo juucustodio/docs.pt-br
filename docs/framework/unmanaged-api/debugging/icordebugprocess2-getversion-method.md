@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess2:: GetVersion'
 title: Método ICorDebugProcess2::GetVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e11d5a75-61d9-4548-aedf-79c26079bd17
 topic_type:
 - apiref
-ms.openlocfilehash: 391b848d3b3f66f6af6bf3adbefb6e94d526e748
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 8472e811ea4df1f99fb4e27b55f3561fae0c8a21
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213498"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650074"
 ---
 # <a name="icordebugprocess2getversion-method"></a>Método ICorDebugProcess2::GetVersion
 

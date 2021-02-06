@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugProcess5:: GetTypeId método'
 title: Método ICorDebugProcess5::GetTypeID
 ms.date: 03/30/2017
 dev_langs:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 47dbaea4-8857-462e-93ba-fff880fc9e50
 topic_type:
 - apiref
-ms.openlocfilehash: 3a9ef06f312126319875544caf272903b9f7c716
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 564fc2819c9c370844111cf497d62e6d89cb28b0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649696"
 ---
 # <a name="icordebugprocess5gettypeid-method"></a>Método ICorDebugProcess5::GetTypeID
 
@@ -57,7 +58,7 @@ HRESULT GetTypeID(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugProcess5](icordebugprocess5-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

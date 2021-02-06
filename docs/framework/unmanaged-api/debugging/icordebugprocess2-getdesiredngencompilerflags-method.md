@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess2:: GetDesiredNGENCompilerFlags'
 title: Método ICorDebugProcess2::GetDesiredNGENCompilerFlags
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fc834580-3a90-4315-95d2-349b6bb7d059
 topic_type:
 - apiref
-ms.openlocfilehash: 223f66639ae24f2a54f1bc936f4a0765573356eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ddc1c3a958ef42ab51d0ae06fd7ff29b13829c3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673885"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650192"
 ---
 # <a name="icordebugprocess2getdesiredngencompilerflags-method"></a>Método ICorDebugProcess2::GetDesiredNGENCompilerFlags
 

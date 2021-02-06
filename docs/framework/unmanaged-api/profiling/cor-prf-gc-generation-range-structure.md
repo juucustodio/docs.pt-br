@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_PRF_GC_GENERATION_RANGE'
 title: Estrutura COR_PRF_GC_GENERATION_RANGE
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e7e07273-8d10-4a68-807e-59634e3f8c5e
 topic_type:
 - apiref
-ms.openlocfilehash: a0ee2c9ce38272caef4960bfe5949c11083c12dd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ea67a6e6b972b9406b84ad331e8af6189327c5ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674925"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648890"
 ---
 # <a name="cor_prf_gc_generation_range-structure"></a>Estrutura COR_PRF_GC_GENERATION_RANGE
 
@@ -59,6 +60,6 @@ typedef struct COR_PRF_GC_GENERATION_RANGE {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de criação de perfil](profiling-structures.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função FunctionIDMapper2'
 title: Função FunctionIDMapper2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 466ad51b-8f0c-41d9-81f7-371aac3374cb
 topic_type:
 - apiref
-ms.openlocfilehash: 7aa90b92d129f1269d901f1cbb5c6a0750de9a90
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1fd6680ffaa7b28e679dc3eaeb9840981ead5c45
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648565"
 ---
 # <a name="functionidmapper2-function"></a>Função FunctionIDMapper2
 
@@ -49,7 +50,7 @@ UINT_PTR __stdcall FunctionIDMapper2 (
 
   \[out] um ponteiro para um valor que o criador de perfil define `true` se deseja receber `FunctionEnter3` , `FunctionLeave3` , e `FunctionTailcall3` , ou `FunctionEnter3WithInfo` , `FunctionLeave3WithInfo` e `FunctionTailcall3WithInfo` retornos de chamada; caso contrário, ele define esse valor como `false` .
 
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  O criador de perfil retorna um valor que o mecanismo de execução usa como um identificador de função alternativo. O valor de retorno não pode ser nulo, a menos que `false` seja retornado em `pbHookFunction` . Caso contrário, um valor de retorno nulo produz resultados imprevisíveis, incluindo possivelmente interromper o processo.  
   
@@ -67,7 +68,7 @@ UINT_PTR __stdcall FunctionIDMapper2 (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ICorProfilerInfo::SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md)
 - [ICorProfilerInfo3::SetFunctionIDMapper2](icorprofilerinfo3-setfunctionidmapper2-method.md)

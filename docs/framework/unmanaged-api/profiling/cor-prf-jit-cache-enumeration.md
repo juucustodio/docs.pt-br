@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de COR_PRF_JIT_CACHE'
 title: Enumeração COR_PRF_JIT_CACHE
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e7b8f6b4-95bc-4ba5-b9eb-f5590a7326a4
 topic_type:
 - apiref
-ms.openlocfilehash: 0bf17e7c9d8ff16dc8f07e4a386f599284828f40
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94b04b42504760be826f78cee0da3066f1936f32
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682231"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648747"
 ---
 # <a name="cor_prf_jit_cache-enumeration"></a>Enumeração COR_PRF_JIT_CACHE
 
@@ -54,6 +55,6 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando perfil de enumerações](profiling-enumerations.md)

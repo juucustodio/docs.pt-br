@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess5:: GetTypeFields'
 title: Método ICorDebugProcess5::GetTypeFields
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6a0ad3ee-dacb-47e9-abae-4536bcc4804b
 topic_type:
 - apiref
-ms.openlocfilehash: e4eba37487ca2ee0a88caf5a59f86949a6521e40
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bdbb0be76400262d83876b9fc37cc4f00eb34e43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95670934"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649810"
 ---
 # <a name="icordebugprocess5gettypefields-method"></a>Método ICorDebugProcess5::GetTypeFields
 
@@ -65,7 +66,7 @@ HRESULT GetTypeFields(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugProcess5](icordebugprocess5-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

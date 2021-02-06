@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_PRF_ASSEMBLY_REFERENCE_INFO'
 title: Estrutura COR_PRF_ASSEMBLY_REFERENCE_INFO
 ms.date: 03/30/2017
 dev_langs:
 - cpp
 ms.assetid: c8c1d916-8d1a-4f82-8128-9fd3732383fc
-ms.openlocfilehash: 7c7d447afcb5a8617aa92212f3325719d5f43bf5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fc384e0a302c83af510deefc6f9f3b9cd5a2f77f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718612"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649215"
 ---
 # <a name="cor_prf_assembly_reference_info-structure"></a>Estrutura COR_PRF_ASSEMBLY_REFERENCE_INFO
 
@@ -59,7 +60,7 @@ typedef struct _COR_PRF_ASSEMBLY_REFERENCE_INFO {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de criação de perfil](profiling-structures.md)
 - [Método GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md)

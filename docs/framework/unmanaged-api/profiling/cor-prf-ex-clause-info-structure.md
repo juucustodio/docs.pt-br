@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_PRF_EX_CLAUSE_INFO'
 title: Estrutura COR_PRF_EX_CLAUSE_INFO
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7d0d6fb7-bc9d-40f0-8163-c0d162eaba7d
 topic_type:
 - apiref
-ms.openlocfilehash: e8dd9f21803021975f4651ba3e6e5f4d3da0ea82
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: af8d404e55a8996abc69923924e87c95e3c5eae8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674990"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649185"
 ---
 # <a name="cor_prf_ex_clause_info-structure"></a>Estrutura COR_PRF_EX_CLAUSE_INFO
 
@@ -73,6 +74,6 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de criação de perfil](profiling-structures.md)

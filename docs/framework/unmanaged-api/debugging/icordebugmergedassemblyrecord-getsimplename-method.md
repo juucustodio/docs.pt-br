@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugMergedAssemblyRecord:: getsimplesname'
 title: 'Método ICorDebugMergedAssemblyRecord:: getsimplesname'
 ms.date: 03/30/2017
 ms.assetid: bc3410f6-ebca-4bca-9b45-fc38c74fa9cb
-ms.openlocfilehash: 11e43846f7b119933fb53bdf21423e28bbb792ac
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e77a5cc7df009a5bc55a7eb952ead80e5f81f271
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710539"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650385"
 ---
 # <a name="icordebugmergedassemblyrecordgetsimplename-method"></a>Método ICorDebugMergedAssemblyRecord:: getsimplesname
 
@@ -51,7 +52,7 @@ HRESULT GetSimpleName(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMergedAssemblyRecord](icordebugmergedassemblyrecord-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

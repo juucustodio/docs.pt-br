@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugProcess5'
 title: Interface ICorDebugProcess5
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 30a39d79-1f10-4328-9c5d-094ed824e2ba
 topic_type:
 - apiref
-ms.openlocfilehash: cef69ac7e3572b67dd676ce8408e4210d93accf0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 880c305c1d9786f87d9727836a973696aa686ecf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717572"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649761"
 ---
 # <a name="icordebugprocess5-interface"></a>Interface ICorDebugProcess5
 
@@ -27,7 +28,7 @@ Estende a interface ICorDebugProcess para dar suporte ao acesso ao heap gerencia
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método EnableNGenPolicy](icordebugprocess5-enablengenpolicy-method.md)|Define um valor que determina como um aplicativo carrega imagens nativas durante a execução em um depurador gerenciado.|  
 |[Método EnumerateGCReferences](icordebugprocess5-enumerategcreferences-method.md)|Obtém um enumerador para todos os objetos que devem ser coletados pelo lixo em um processo.|  
@@ -59,7 +60,7 @@ Estende a interface ICorDebugProcess para dar suporte ao acesso ao heap gerencia
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

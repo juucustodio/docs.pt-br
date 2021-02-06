@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugProcess4'
 title: Interface ICorDebugProcess4
 ms.date: 02/07/2019
 api_name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: fcf725ea98fa4351e72cf592f92968ee2233ecb0
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 16c7f3fbd1a79b1406fe0c19a9d922964667a2a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213576"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649982"
 ---
 # <a name="icordebugprocess4-interface"></a>Interface ICorDebugProcess4
 
@@ -46,7 +47,7 @@ Essa interface reside dentro do tempo de execução e não é exposta por nenhum
 
 **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v20plus-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

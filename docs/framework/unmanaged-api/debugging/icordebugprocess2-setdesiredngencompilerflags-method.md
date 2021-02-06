@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess2:: SetDesiredNGENCompilerFlags'
 title: Método ICorDebugProcess2::SetDesiredNGENCompilerFlags
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 98320175-7c5e-4dbb-8683-86fa82e2641f
 topic_type:
 - apiref
-ms.openlocfilehash: 40b944f6a1204bfe506ed64408be30f68adf3170
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3a4749ad26e88d1a602876f28a52754323093fce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675250"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650060"
 ---
 # <a name="icordebugprocess2setdesiredngencompilerflags-method"></a>Método ICorDebugProcess2::SetDesiredNGENCompilerFlags
 
@@ -57,7 +58,7 @@ HRESULT SetDesiredNGENCompilerFlags (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebug](icordebug-interface.md)
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

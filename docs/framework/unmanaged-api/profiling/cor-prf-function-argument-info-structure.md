@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_PRF_FUNCTION_ARGUMENT_INFO'
 title: Estrutura COR_PRF_FUNCTION_ARGUMENT_INFO
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 07cf3bab-e193-4991-8205-3f41cf2d67b3
 topic_type:
 - apiref
-ms.openlocfilehash: 5feda2ce6dc97576d0b1d4f16ca2b9dd5f3fb05e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c40c9b20dad79fa36a1ed4471106a54f2c55b422
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718535"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649059"
 ---
 # <a name="cor_prf_function_argument_info-structure"></a>Estrutura COR_PRF_FUNCTION_ARGUMENT_INFO
 
@@ -61,6 +62,6 @@ typedef struct _COR_PRF_FUNCTION_ARGUMENT_INFO {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de criação de perfil](profiling-structures.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRAssemblyIdentityManager:: GetCLRAssemblyReferenceList'
 title: Método ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cb5ffae5-287b-4a87-9ca8-7ce3ae0601b7
 topic_type:
 - apiref
-ms.openlocfilehash: cfc384a71ac7e91181bdec09f0d385bacbe31753
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 91f7b9eaacee559c5e404b5dda0f8b4201f91a66
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716662"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649540"
 ---
 # <a name="iclrassemblyidentitymanagergetclrassemblyreferencelist-method"></a>Método ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList
 
@@ -47,7 +48,7 @@ HRESULT  GetCLRAssemblyReferenceList (
  `ppReferenceList`  
  fora Um ponteiro de interface para um `ICLRAssemblyReferenceList` objeto que contém os dados de identidade do assembly para a lista de assemblies especificados em `ppwzAssemblyReferences` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -68,7 +69,7 @@ HRESULT  GetCLRAssemblyReferenceList (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Interface ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)

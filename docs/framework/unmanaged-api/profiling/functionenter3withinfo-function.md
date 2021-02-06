@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função FunctionEnter3WithInfo'
 title: Função FunctionEnter3WithInfo
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 277c3344-d0cb-431e-beae-eb1eeeba8eea
 topic_type:
 - apiref
-ms.openlocfilehash: b511c5abe10ab6c0ec856a5686b082132ed4a5d9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 573326c05275192a7b324377237ba057fb54bffb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722851"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648708"
 ---
 # <a name="functionenter3withinfo-function"></a>Função FunctionEnter3WithInfo
 
@@ -69,7 +70,7 @@ void __stdcall FunctionEnter3WithInfo(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [GetFunctionEnter3Info](icorprofilerinfo3-getfunctionenter3info-method.md)
 - [FunctionEnter3](functionenter3-function.md)

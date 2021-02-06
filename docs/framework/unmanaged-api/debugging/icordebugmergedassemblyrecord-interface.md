@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugMergedAssemblyRecord'
 title: Interface ICorDebugMergedAssemblyRecord
 ms.date: 03/30/2017
 ms.assetid: fe280b11-9479-4e34-a07c-0d1ea8088422
-ms.openlocfilehash: a26702c6b21e4bfe352d861387a80b976a8dc556
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e64c0ee30a8e8956dd336a30e6c81962c75f04e9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650281"
 ---
 # <a name="icordebugmergedassemblyrecord-interface"></a>Interface ICorDebugMergedAssemblyRecord
 
@@ -15,7 +16,7 @@ Fornece informações sobre um assembly mesclado.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetCulture](icordebugmergedassemblyrecord-getculture-method.md)|Obtém a cadeia de caracteres do nome da cultura do assembly.|  
 |[Método GetIndex](icordebugmergedassemblyrecord-getindex-method.md)|Obtém o índice de prefixo do assembly.|  
@@ -39,7 +40,7 @@ Fornece informações sobre um assembly mesclado.
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

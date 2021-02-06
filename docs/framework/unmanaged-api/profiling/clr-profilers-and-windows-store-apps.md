@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: os infilers CLR e os aplicativos da Windows Store'
 title: Criadores de perfil CLR e aplicativos da Windows Store
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - profiling managed code
 - profiling managed code [Windows Store Apps]
 ms.assetid: 1c8eb2e7-f20a-42f9-a795-71503486a0f5
-ms.openlocfilehash: 04b4b529a5a1adaa40e804988dee506942c863c4
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: e864f67aff106659194b91814bc2509d50cbf701
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440074"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649270"
 ---
 # <a name="clr-profilers-and-windows-store-apps"></a>Criadores de perfil CLR e aplicativos da Windows Store
 

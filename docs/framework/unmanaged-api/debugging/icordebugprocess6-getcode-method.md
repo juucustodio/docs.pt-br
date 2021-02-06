@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugProcess6:: GetCode'
 title: Método ICorDebugProcess6::GetCode
 ms.date: 03/30/2017
 ms.assetid: faa538c2-60c9-4064-b996-1b4c24ebd751
-ms.openlocfilehash: cee1556fd7d803765b09a7cbd86ce2ff7be91cc9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a7cb71ddb1e65cda37d762a0fba958d413145138
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732626"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649657"
 ---
 # <a name="icordebugprocess6getcode-method"></a>Método ICorDebugProcess6::GetCode
 
@@ -44,7 +45,7 @@ HRESULT GetCode(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugProcess6](icordebugprocess6-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

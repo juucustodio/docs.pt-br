@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de COR_PRF_GC_REASON'
 title: Enumeração COR_PRF_GC_REASON
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 72822b95-a7fb-485e-9d55-1cb016d9a458
 topic_type:
 - apiref
-ms.openlocfilehash: f41f00a9699d6fc135ca3b9c0b4b470ca0359279
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f5c8201f2023e07f9bb9d540f6d5f8fca1c19419
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682374"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648786"
 ---
 # <a name="cor_prf_gc_reason-enumeration"></a>Enumeração COR_PRF_GC_REASON
 
@@ -51,6 +52,6 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando perfil de enumerações](profiling-enumerations.md)

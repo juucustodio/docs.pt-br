@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de COR_PRF_GC_GENERATION'
 title: Enumeração COR_PRF_GC_GENERATION
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d6ece160-26ad-4d39-abd7-05acd6f78c48
 topic_type:
 - apiref
-ms.openlocfilehash: 1d7489e997868a9486f77d176580cee18213a99d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 108bb4b2b4cba57235d354efe3b815a0e0df17ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718534"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648929"
 ---
 # <a name="cor_prf_gc_generation-enumeration"></a>Enumeração COR_PRF_GC_GENERATION
 
@@ -67,6 +68,6 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando perfil de enumerações](profiling-enumerations.md)

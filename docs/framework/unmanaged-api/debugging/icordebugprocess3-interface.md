@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugProcess3'
 title: Interface ICorDebugProcess3
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ced9c82e-d7b0-4806-a151-98b6611d3097
 topic_type:
 - apiref
-ms.openlocfilehash: ef8dbd5253c02355f85fba626fa7e68ed62df4bd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 28b588bb4718f841e78b89ce44821971800b1f6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686437"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649969"
 ---
 # <a name="icordebugprocess3-interface"></a>Interface ICorDebugProcess3
 
@@ -27,7 +28,7 @@ Controla as notificações personalizadas do depurador.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método SetEnableCustomNotification](icordebugprocess3-setenablecustomnotification-method.md)|Habilita e desabilita as notificações do depurador personalizado do tipo especificado.|  
   
@@ -48,7 +49,7 @@ Controla as notificações personalizadas do depurador.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

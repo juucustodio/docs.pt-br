@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: atividade de política externa no .NET Framework 4,5'
 title: Atividade exteriorizada de política no .NET Framework 4.5
 ms.date: 03/30/2017
 ms.assetid: 92fd6f92-23a1-4adf-b96a-2754ea93ad3e
-ms.openlocfilehash: 00b671f169696728610e8ee32f874b44fbff9e33
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 52dad208aacf2993acffa605b896c14c0a906d4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556909"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631210"
 ---
 # <a name="externalized-policy-activity-in-net-framework-45"></a>Atividade exteriorizada de política no .NET Framework 4.5
 
@@ -15,7 +16,7 @@ Este exemplo demonstra como a atividade ExternalizedPolicy4 permite a execução
 
 ## <a name="projects-in-this-sample"></a>Projetos nisso exemplo
 
-|Nome do projeto|Description|Arquivos de chave|
+|Nome do projeto|Descrição|Arquivos de chave|
 |-|-|-|
 |ExternalizedPolicy4|Contém a atividade ExternalizedPolicy4 e o designer de WF 4,5.|**ExternalizedPolicy4.cs**: definição da atividade.<br /><br /> **ExternalizedPolicy4Designer. XAML**: designer personalizado para atividade ExternalizedPolicy4. Usar o editor das regras (<xref:System.Workflow.Activities.Rules.Design.RuleSetDialog>) do mecanismo de regras WF 3,5.|
 |ImperativeCodeClientSample|Aplicativo cliente de exemplo que configura e executa um fluxo de trabalho usando um aplicativo ExternalizedPolicy4 usando o código em c obrigatório (nenhum designer usado).|**ApplyDiscount. Rules**: file com [!INCLUDE[wf1](../../../../includes/wf1-md.md)] definições de regra.<br /><br /> **Order.cs**: tipo que representa uma ordem de cliente. As regras são aplicadas a objetos desse tipo.<br /><br /> **Program.cs**: configura e executa um fluxo de trabalho que tem uma atividade Policy4 para aplicar regras definidas em ApplyDiscount. Rules a instâncias de objetos Order.<br /><br /> App.config: O arquivo de configuração com o caminho do arquivo de regras.|

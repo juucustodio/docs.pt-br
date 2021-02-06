@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: repositórios de instância'
 title: Armazenamentos de instância
 ms.date: 03/30/2017
 ms.assetid: f2629668-0923-4987-b943-67477131c1e0
-ms.openlocfilehash: 0e3cc0c6c635d9c42b4242581ce039b186116113
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4d2f7c72d744d2de87a8c2af7b89090b4261de83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279864"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631171"
 ---
 # <a name="instance-stores"></a>Armazenamentos de instância
 

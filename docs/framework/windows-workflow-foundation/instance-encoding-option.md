@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: opção de codificação de instância'
 title: Padrão de codificação de instância
 ms.date: 03/30/2017
 ms.assetid: 89e4b029-4f68-438c-8117-9b21fe094ef4
-ms.openlocfilehash: 416394eb346a7c82385da32a89bd54179b255cd4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8cca7fd536673ca99b1014173e172508e3d97b7c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279890"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631158"
 ---
 # <a name="instance-encoding-option"></a>Padrão de codificação de instância
 

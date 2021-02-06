@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: comunicações principais: canais de transporte HTTP/HTTPS'
 title: 'Comunicações de núcleo: canais de transporte HTTP-HTTPS'
 ms.date: 03/30/2017
 ms.assetid: 6c0a23c9-a663-461c-bdab-58b4d3e23642
-ms.openlocfilehash: 5d33d153c6c527398b035ad9d027593a0fefd0e8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 585e7511a8c3291c09b40f5895bd700534e6faad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96277407"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635898"
 ---
 # <a name="core-communications-httphttps-transport-channels"></a>Comunicações principais: Canais de transporte HTTP/HTTPS
 

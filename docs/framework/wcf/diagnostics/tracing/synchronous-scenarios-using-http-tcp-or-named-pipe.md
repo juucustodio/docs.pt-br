@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cenários síncronos usando HTTP, TCP ou Named-Pipe'
 title: Cenários síncronos utilizando HTTP, TCP ou pipe nomeado
 ms.date: 03/30/2017
 ms.assetid: 7e90af1b-f8f6-41b9-a63a-8490ada502b1
-ms.openlocfilehash: 906bceadf56d82570b41cfbb2c96e4b89d595d02
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fd6605be99a9419de27f000b378720adf0ae1a14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635409"
 ---
 # <a name="synchronous-scenarios-using-http-tcp-or-named-pipe"></a>Cenários síncronos utilizando HTTP, TCP ou pipe nomeado
 

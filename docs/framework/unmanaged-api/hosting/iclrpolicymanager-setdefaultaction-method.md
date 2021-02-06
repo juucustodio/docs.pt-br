@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICLRPolicyManager:: setpadrãoaction'
 title: Método ICLRPolicyManager::SetDefaultAction
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f9411e7a-27df-451f-9f6c-d643d6a7a7ce
 topic_type:
 - apiref
-ms.openlocfilehash: 93070690ea6b30b22949953f1ed0b8c5b1e92764
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cedf29f6217660493b151e06220158e931385d79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732470"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637359"
 ---
 # <a name="iclrpolicymanagersetdefaultaction-method"></a>Método ICLRPolicyManager::SetDefaultAction
 
@@ -43,7 +44,7 @@ HRESULT SetDefaultAction (
  `action`  
  no Um dos valores de [EPolicyAction](epolicyaction-enumeration.md) , indicando a ação de política que o CLR deve executar quando `operation` ocorre.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -78,7 +79,7 @@ HRESULT SetDefaultAction (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrOperation](eclroperation-enumeration.md)
 - [Enumeração EPolicyAction](epolicyaction-enumeration.md)

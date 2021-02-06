@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função StrongNameTokenFromAssemblyEx'
 title: Função StrongNameTokenFromAssemblyEx
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 67a8a9f2-dee3-44b2-a1c0-f307a3bdf90f
 topic_type:
 - apiref
-ms.openlocfilehash: 566bba09f6bfac2f7616dc5caf32ef431f2e1e67
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4ca08c8cfa90415723fc2632e32aa8f45c334db3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719795"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636249"
 ---
 # <a name="strongnametokenfromassemblyex-function"></a>Função StrongNameTokenFromAssemblyEx
 
@@ -56,7 +57,7 @@ BOOLEAN StrongNameTokenFromAssemblyEx (
  `pcbPublicKeyBlob`  
  fora O tamanho, em bytes, da chave pública.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` após a conclusão bem-sucedida; caso contrário, `false` .  
   
@@ -78,7 +79,7 @@ BOOLEAN StrongNameTokenFromAssemblyEx (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameTokenFromAssemblyEx](../hosting/iclrstrongname-strongnametokenfromassemblyex-method.md)
 - [Método StrongNameTokenFromAssembly](../hosting/iclrstrongname-strongnametokenfromassembly-method.md)

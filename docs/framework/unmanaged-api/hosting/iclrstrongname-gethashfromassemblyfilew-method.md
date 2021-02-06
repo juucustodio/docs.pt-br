@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRStrongName:: GetHashFromAssemblyFileW'
 title: Método ICLRStrongName::GetHashFromAssemblyFileW
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5d0b44a2-5a14-44a2-9a0e-e8682fd4e106
 topic_type:
 - apiref
-ms.openlocfilehash: e94bfe6151ed42886355423a838f21e13748ec61
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 27123ed8217d49765fe3fd7c19efc92f4e770722
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637073"
 ---
 # <a name="iclrstrongnamegethashfromassemblyfilew-method"></a>Método ICLRStrongName::GetHashFromAssemblyFileW
 
@@ -55,7 +56,7 @@ HRESULT GetHashFromAssemblyFileW (
  `pchHash`  
  fora O tamanho retornado, em bytes, de `pbHash` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` Se o método foi concluído com êxito; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
   
@@ -69,7 +70,7 @@ HRESULT GetHashFromAssemblyFileW (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetHashFromAssemblyFile](iclrstrongname-gethashfromassemblyfile-method.md)
 - [Interface ICLRStrongName](iclrstrongname-interface.md)

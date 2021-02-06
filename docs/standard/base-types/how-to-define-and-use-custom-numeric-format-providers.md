@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como definir e usar provedores de formato numérico personalizado'
 title: 'Como: definir e usar provedores de formatos numéricos personalizados'
 ms.date: 03/30/2017
 dev_langs:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - format providers [.NET]
 - custom format strings
 ms.assetid: a281bfbf-6596-45ed-a2d6-3782d535ada2
-ms.openlocfilehash: 9676e43582afb550152d2694f9548e9f1f0d326e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 64671d2d2ebe19c04ca7168aa093937b0cb07ebe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99629806"
 ---
 # <a name="how-to-define-and-use-custom-numeric-format-providers"></a>Como: definir e usar provedores de formatos numéricos personalizados
 

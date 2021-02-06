@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função StrongNameGetBlobFromImage'
 title: Função StrongNameGetBlobFromImage
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1de658e6-da32-4d01-9097-6f43c92222e1
 topic_type:
 - apiref
-ms.openlocfilehash: 3a84221f94bad76d69f0dc67fe695ada3f3862f4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c68d6914d47fbb711c49c1e8432cae1bf33e771f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732236"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636319"
 ---
 # <a name="strongnamegetblobfromimage-function"></a>Função StrongNameGetBlobFromImage
 
@@ -52,7 +53,7 @@ BOOLEAN StrongNameGetBlobFromImage (
  `pcbBlob`  
  [entrada, saída] O tamanho máximo solicitado, em bytes, de `pbBlob` . No retorno, o tamanho real, em bytes, de `pbBlob` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` após a conclusão bem-sucedida; caso contrário, `false` .  
   
@@ -70,7 +71,7 @@ BOOLEAN StrongNameGetBlobFromImage (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameGetBlobFromImage](../hosting/iclrstrongname-strongnamegetblobfromimage-method.md)
 - [Método StrongNameGetBlob](../hosting/iclrstrongname-strongnamegetblob-method.md)

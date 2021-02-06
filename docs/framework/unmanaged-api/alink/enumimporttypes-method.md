@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método EnumImportTypes'
 title: Método EnumImportTypes
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 83a0e4e7-ec06-40cb-9b63-700b9695bb04
 topic_type:
 - apiref
-ms.openlocfilehash: ca7c7570aff63aa328dddc0626648fa74397addc
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 39570740f3560f5bfef8ba80b95c0eb2aca41f59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74448740"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638113"
 ---
 # <a name="enumimporttypes-method"></a>Método EnumImportTypes
 
@@ -46,10 +47,10 @@ Identificador para o enumerador.
 Número máximo de tipos a serem recuperados.
 
 `aTypeDefs`\
-Recebe tokens de tipo, sem exceder `dwMax`.
+Recebe tokens de tipo, sem exceder `dwMax` .
 
 `pdwCount`\
-Recebe o número real do tipo em `aTypeDefs`.
+Recebe o número real do tipo em `aTypeDefs` .
 
 ## <a name="return-value"></a>Valor retornado
 

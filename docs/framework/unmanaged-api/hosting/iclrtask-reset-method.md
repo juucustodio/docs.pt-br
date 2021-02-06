@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRTask:: Reset'
 title: Método ICLRTask::Reset
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1bfb5d3a-0ffd-4bb4-9bf6-aec00cb675b7
 topic_type:
 - apiref
-ms.openlocfilehash: b87bc026a2cac2d0b913128c43142d56aee03025
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d30738b98003e0543c1a2a31c7471b15811efe5f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725190"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636982"
 ---
 # <a name="iclrtaskreset-method"></a>Método ICLRTask::Reset
 
@@ -41,7 +42,7 @@ HRESULT Reset (
   
  Se o valor for `true` , o tempo de execução redefinirá os dados que foram armazenados usando o <xref:System.Threading.Thread.AllocateDataSlot%2A> ou o <xref:System.Threading.Thread.AllocateNamedDataSlot%2A> .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -80,7 +81,7 @@ HRESULT Reset (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

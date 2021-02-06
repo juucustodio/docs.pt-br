@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <client>'
 title: <client>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.ServiceModel/client
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#client
 ms.assetid: bf0f7031-76c8-4e7e-a6c6-9ad9119134be
-ms.openlocfilehash: b3234bfa60cd1e3c88778951fc27301c615c84ba
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9765460602738f49963ea521b3f00ed7c63cc568
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148952"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638854"
 ---
 # \<client>
 
@@ -77,7 +78,7 @@ O `client` elemento define uma lista de pontos de extremidade aos quais um clien
 </client>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ClientSection>
 - <xref:System.ServiceModel.Configuration.MetadataElement>

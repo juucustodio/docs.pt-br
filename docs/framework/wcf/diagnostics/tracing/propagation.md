@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: propagação'
 title: Propagação
 ms.date: 03/30/2017
 ms.assetid: f8181e75-d693-48d1-b333-a776ad3b382a
-ms.openlocfilehash: be010178d8f0face8f6c7e986107e4ea90d91953
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 43ecbf7b8db66f26accc058501730300a2891284
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96240128"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635591"
 ---
 # <a name="propagation"></a>Propagação
 
@@ -81,7 +82,7 @@ Este tópico descreve a propagação de atividade no modelo de rastreamento Wind
 
  Para sincronizar eventos entre pontos de extremidade que são executados em computadores diferentes, uma CorrelationId é adicionada ao cabeçalho ActivityId que é propagado nas mensagens. As ferramentas podem usar essa ID para sincronizar eventos entre máquinas com discrepância de relógio. Especificamente, a ferramenta do Visualizador de rastreamento de serviço usa essa ID para mostrar fluxos de mensagens entre pontos de extremidade.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Configurando o rastreamento](configuring-tracing.md)
 - [Utilizando o visualizador de rastreamento de serviço para visualização de rastreamento correlacionados e soluções de problemas](using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: AssemblyAttributesGoHereS'
 title: AssemblyAttributesGoHereS
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4e817f35-a2bc-4403-9e6f-f731e6b9fe23
 topic_type:
 - apiref
-ms.openlocfilehash: 128268bab77c8be5dc809eaa6d2548fc34f13cbd
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 7dad672a91375ee223ebb521b9e26ee280cf0531
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446610"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638555"
 ---
 # <a name="assemblyattributesgoheres"></a>AssemblyAttributesGoHereS
 
@@ -38,7 +39,7 @@ As referências a esse tipo podem ser inseridas dentro de netmodules cujas fonte
 
 Referências a este tipo indicam atributos personalizados que são relacionados à segurança e não são de uso múltiplo.
 
-Esses tipos são marcados como "internos" dentro do .NET Framework e estão localizados no namespace <xref:System.Runtime.CompilerServices>.
+Esses tipos são marcados como "internos" dentro do .NET Framework e estão localizados no <xref:System.Runtime.CompilerServices> namespace.
 
 ## <a name="requirements"></a>Requisitos
 

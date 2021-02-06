@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRMetaHostPolicy'
 title: Interface ICLRMetaHostPolicy
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1bdeccb6-0698-4c97-ad69-eae2b69e59f1
 topic_type:
 - apiref
-ms.openlocfilehash: 515b73b019c683bd3e5aa3b895ee5623e75e4ad0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b14ad417617c32242f8a59844f7c1f1a8d05c78d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637411"
 ---
 # <a name="iclrmetahostpolicy-interface"></a>Interface ICLRMetaHostPolicy
 
@@ -27,7 +28,7 @@ Fornece o método [GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-m
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md)|Fornece uma interface CLR preferida com base em critérios de política, assembly gerenciado, versão e arquivo de configuração.|  
   
@@ -56,8 +57,8 @@ HRESULT hr = CLRCreateInstance(CLSID_CLRMetaHostPolicy,
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem CLR adicionadas no .NET Framework 4 e 4.5](clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

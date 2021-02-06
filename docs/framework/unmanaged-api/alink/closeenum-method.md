@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método CloseEnum'
 title: Método CloseEnum
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: aa4a091e-13fe-4264-91de-e12f1c767c87
 topic_type:
 - apiref
-ms.openlocfilehash: 59b1ec3f9ca382ef13680e3aad4d0c0c0e175f1c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 700c54de5af2e5c0be6940d4045019092655d46f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638373"
 ---
 # <a name="closeenum-method"></a>Método CloseEnum
 
@@ -39,7 +40,7 @@ HRESULT CloseEnum(
  `hEnum`  
  Identificador da enumeração a ser fechada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Retorna S_OK se o método tiver sucesso.  
   
@@ -47,7 +48,7 @@ HRESULT CloseEnum(
 
  Requer ALink. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IALink](ialink-interface.md)
 - [Interface IALink2](ialink2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRRuntimeHost:: UnloadAppDomain'
 title: Método ICLRRuntimeHost::UnloadAppDomain
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 571912bc-3429-4ff8-8eb2-ea993ffbd901
 topic_type:
 - apiref
-ms.openlocfilehash: cc5d0d65d213d952c0897a72d8ec38ea6b8b22db
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2a47c6250434c3ee4122f8eeae75f25ee4c08a34
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700659"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637281"
 ---
 # <a name="iclrruntimehostunloadappdomain-method"></a>Método ICLRRuntimeHost::UnloadAppDomain
 
@@ -43,7 +44,7 @@ HRESULT UnloadAppDomain(
  `fWaitUntilDone`  
  [in] `true` para indicar que o Common Language Runtime (CLR) deve aguardar até concluir a execução do thread atual do aplicativo antes de tentar descarregar o domínio do aplicativo.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -68,6 +69,6 @@ HRESULT UnloadAppDomain(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRRuntimeHost](iclrruntimehost-interface.md)

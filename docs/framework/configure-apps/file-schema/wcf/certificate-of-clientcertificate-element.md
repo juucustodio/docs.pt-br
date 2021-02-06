@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <certificate> do <clientCertificate> elemento'
 title: <certificate> do <clientCertificate> elemento
 ms.date: 03/30/2017
 ms.assetid: 00297efb-a7f2-4e03-bc2b-943d545610fc
-ms.openlocfilehash: 35ea3814e208921abaf44e6ef431c4e1b44cde60
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a677c04055016c77794dd99a8c237b5eb6c13f5f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151123"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639088"
 ---
 # <a name="certificate-of-clientcertificate-element"></a>\<certificate> do \<clientCertificate> elemento
 
@@ -80,7 +81,7 @@ Especifica um certificado X. 509 usado para assinar e criptografar mensagens.
 </serviceBehaviors>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Certificate%2A>
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Certificate%2A>

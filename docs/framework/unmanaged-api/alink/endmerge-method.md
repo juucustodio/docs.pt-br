@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método endmerge'
 title: Método EndMerge
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1d03bb15-a2c8-4a04-8fc6-b126c89c3778
 topic_type:
 - apiref
-ms.openlocfilehash: ed4ac7b12caa0dd78b79554258de62b8752553e0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aac23d6d87f3fe74c1094bdd4a7f9c9f7f3fa7cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684922"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638152"
 ---
 # <a name="endmerge-method"></a>Método EndMerge
 
@@ -39,7 +40,7 @@ HRESULT EndMerge(
  `AssemblyID`  
  ID do assembly.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Retorna S_OK se o método tiver sucesso.  
   
@@ -47,7 +48,7 @@ HRESULT EndMerge(
 
  Requer ALink. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IALink](ialink-interface.md)
 - [Interface IALink2](ialink2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRValidator:: FormatEventInfo'
 title: Método ICLRValidator::FormatEventInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 808e1f1d-52f4-47c4-83cc-dcf47d075219
 topic_type:
 - apiref
-ms.openlocfilehash: a3f52deab4d0c8ca56fae2e65912217e51abe58a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3d8d1eff8c638517e201905d0313ee824490acf4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715856"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636761"
 ---
 # <a name="iclrvalidatorformateventinfo-method"></a>Método ICLRValidator::FormatEventInfo
 
@@ -55,7 +56,7 @@ HRESULT FormatEventInfo (
  `psa`  
  no Uma matriz segura de parâmetros adicionais a serem usados na mensagem.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -76,7 +77,7 @@ HRESULT FormatEventInfo (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRErrorReportingManager](iclrerrorreportingmanager-interface.md)
 - [Interface ICLRValidator](iclrvalidator-interface.md)

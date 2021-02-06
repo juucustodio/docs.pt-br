@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRValidator:: Validate'
 title: Método ICLRValidator::Validate
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0b1b432a-d234-4002-839b-81366c3a8bdc
 topic_type:
 - apiref
-ms.openlocfilehash: 4ce50f7706583f291d2e6a141d40ab6dd3e4b3e2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a188315d44021fc8bf40be9bb9aecac436351467
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674379"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636735"
 ---
 # <a name="iclrvalidatorvalidate-method"></a>Método ICLRValidator::Validate
 
@@ -67,7 +68,7 @@ HRESULT Validate (
  `ulSize`  
  no O tamanho, em bytes, do arquivo a ser validado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -88,6 +89,6 @@ HRESULT Validate (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRValidator](iclrvalidator-interface.md)

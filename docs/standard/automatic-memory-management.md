@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: gerenciamento automático de memória'
 title: Gerenciamento automático de memória
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - managed heap
 - runtime, automatic memory management
 ms.assetid: d4850de5-fa63-4936-a250-5678d118acba
-ms.openlocfilehash: a38a95073759fa95d19a2baf4add191103f9264a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1897167faecb112ffa4aa7b0dd0c8bb55b8d9459
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682010"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99629962"
 ---
 # <a name="automatic-memory-management"></a>Gerenciamento automático de memória
 
@@ -54,7 +55,7 @@ O gerenciamento automático de memória é um dos serviços que o Common Languag
 
  Para a maioria dos objetos que seu aplicativo cria, você pode confiar no coletor de lixo para executar automaticamente as tarefas de gerenciamento de memória necessárias. Entretanto, recursos não gerenciados requerem limpeza explícita. O tipo mais comum de recursos não gerenciados é um objeto que encapsula um recurso do sistema operacional, como um identificador de arquivo, um identificador de janela ou uma conexão de rede. Embora o coletor de lixo seja capaz de acompanhar o tempo de vida de um objeto gerenciado que encapsule um recurso não gerenciado, ele não tem conhecimento específico sobre como limpar o recurso. Quando você cria um objeto que encapsula um recurso não gerenciado, é recomendável fornecer o código necessário para limpar o recurso não gerenciado em um método público **Dispose**. Ao fornecer um método **Dispose**, você permite que usuários do seu objeto liberem, explicitamente, sua memória quando terminarem com o objeto. Quando usa um objeto que encapsula um recurso não gerenciado, você deve estar ciente de **Dispose** e chamá-lo conforme necessário. Para obter mais informações sobre a limpeza de recursos não gerenciados e um exemplo de um padrão de design para implementar **Dispose**, consulte [Coleta de lixo](garbage-collection/index.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.GC>
 - [Coleta de lixo](garbage-collection/index.md)

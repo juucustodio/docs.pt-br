@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLROnEventManager:: RegisterActionOnEvent'
 title: Método ICLROnEventManager::RegisterActionOnEvent
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b944cf49-918d-4c4e-993b-77d097a52550
 topic_type:
 - apiref
-ms.openlocfilehash: 7f0770585e977f5299a40517c28dfb776b2ab898
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b13209aed6a169185b42c6b9520f21f59f6be3bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725606"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637424"
 ---
 # <a name="iclroneventmanagerregisteractiononevent-method"></a>Método ICLROnEventManager::RegisterActionOnEvent
 
@@ -43,7 +44,7 @@ HRESULT RegisterActionOnEvent (
  `pAction`  
  no Um ponteiro para um objeto [IActionOnCLREvent](iactiononclrevent-interface.md) que é chamado quando o evento registrado é acionado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -71,7 +72,7 @@ HRESULT RegisterActionOnEvent (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrEvent](eclrevent-enumeration.md)
 - [Interface IActionOnCLREvent](iactiononclrevent-interface.md)

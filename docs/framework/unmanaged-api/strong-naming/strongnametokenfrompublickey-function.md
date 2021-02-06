@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função StrongNameTokenFromPublicKey'
 title: Função StrongNameTokenFromPublicKey
 ms.date: 03/30/2017
 api_name:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 997e9e57-abb2-4217-bf20-1df621a75add
 topic_type:
 - apiref
-ms.openlocfilehash: 89556cf0e1ef65c35278a526e10fc791063ea2c6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f978c9b2727db4b293b9c92a8789fbf9ba749d41
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708342"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636248"
 ---
 # <a name="strongnametokenfrompublickey-function"></a>Função StrongNameTokenFromPublicKey
 
@@ -34,7 +35,7 @@ Obtém um token que representa uma chave pública. Um token de nome forte é a f
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-BOOLEANStrongNameTokenFromPublicKey (
+BOOLEAN StrongNameTokenFromPublicKey (
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  
     [out] BYTE    **ppbStrongNameToken,  
@@ -56,7 +57,7 @@ BOOLEANStrongNameTokenFromPublicKey (
  `pcbStrongNameToken`  
  fora O tamanho, em bytes, do token de nome forte retornado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` após a conclusão bem-sucedida; caso contrário, `false` .  
   
@@ -76,7 +77,7 @@ BOOLEANStrongNameTokenFromPublicKey (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameTokenFromPublicKey](../hosting/iclrstrongname-strongnametokenfrompublickey-method.md)
 - [Método StrongNameGetPublicKey](../hosting/iclrstrongname-strongnamegetpublickey-method.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <clientCertificate> de <serviceCredentials>'
 title: <clientCertificate> de <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: 90ad03aa-2317-43dd-8a72-6d24cdcad15c
-ms.openlocfilehash: 9df49777efc80f425cad3b353f95db523a027214
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c3e6378f9646ec30188e2de3d1c832f363904ad0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148911"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638815"
 ---
 # <a name="clientcertificate-of-servicecredentials"></a>\<clientCertificate> de \<serviceCredentials>
 
@@ -57,7 +58,7 @@ Define um certificado X. 509 usado para assinar e criptografar mensagens para um
   
  O conjunto de certificados neste elemento é usado para criptografar mensagens para o cliente somente para associações que são configuradas com o `MutualCertificateDuplex` modo de autenticação de segurança de mensagem.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ClientCertificate%2A>

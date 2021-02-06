@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugRegisterSet:: SetThreadContext'
 title: Método ICorDebugRegisterSet::SetThreadContext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 73afa930-32cb-4c40-81f8-83e8e6fbe213
 topic_type:
 - apiref
-ms.openlocfilehash: 66e8cf3f73e92f58765b1fa98b3eef11b976094c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8d874b1864e85e477260632ad6012dbbf10aefb2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712268"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637684"
 ---
 # <a name="icordebugregistersetsetthreadcontext-method"></a>Método ICorDebugRegisterSet::SetThreadContext
 
@@ -29,7 +30,7 @@ ms.locfileid: "95712268"
 > [!NOTE]
 > Use a operação de nível superior [ICorDebugNativeFrame:: SetIP](icordebugnativeframe-setip-method.md) para definir o contexto de um thread.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT SetThreadContext (  
@@ -49,7 +50,7 @@ HRESULT SetThreadContext (
   
  **Versões do .NET Framework:** 1,1, 1,0  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRegisterSet](icordebugregisterset-interface.md)
 - [Interface ICorDebugRegisterSet2](icordebugregisterset2-interface.md)

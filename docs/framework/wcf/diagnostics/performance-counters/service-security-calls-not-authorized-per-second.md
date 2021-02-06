@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serviço: chamadas de segurança não autorizadas por segundo'
 title: 'Serviço: chamadas de segurança não autorizadas por segundo'
 ms.date: 03/30/2017
 ms.assetid: 1eeade5a-ea62-4757-b1f9-1b1b1746abd1
-ms.openlocfilehash: db9e333f740f19e4f82ea0f1306a11e6c21ba996
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7203b62a1dd2f01aabd8502c992d357742ddc4e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236917"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635695"
 ---
 # <a name="service-security-calls-not-authorized-per-second"></a>Serviço: chamadas de segurança não autorizadas por segundo
 

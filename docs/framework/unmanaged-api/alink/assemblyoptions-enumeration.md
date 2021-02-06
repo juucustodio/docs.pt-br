@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de AssemblyOptions'
 title: Enumeração AssemblyOptions
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 84f83921-64cb-49e3-ac8b-22a0b77b18a8
 topic_type:
 - apiref
-ms.openlocfilehash: 352e1acd1fdd8297754e18b2e8c6448ea723a557
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aba9ecb3176f533e2d53e2e45fef3d1dc4e55077
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638412"
 ---
 # <a name="assemblyoptions-enumeration"></a>Enumeração AssemblyOptions
 
 Enumera as opções de assembly.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 typedef enum _AssemblyOptions {  
@@ -84,6 +85,6 @@ typedef enum _AssemblyOptions {
   
  **Biblioteca**: alink.dll  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Al.exe (vinculador de assembly)](../../tools/al-exe-assembly-linker.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRMetaHost:: RequestRuntimeLoadedNotification'
 title: Método ICLRMetaHost::RequestRuntimeLoadedNotification
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0d5ccc4d-0193-41f5-af54-45d7b70d5321
 topic_type:
 - apiref
-ms.openlocfilehash: ac40e203cf7d32c1fe30c9915bac3171139403e0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c385d2d845642605ad47944794f6274e8d472071
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723274"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637489"
 ---
 # <a name="iclrmetahostrequestruntimeloadednotification-method"></a>Método ICLRMetaHost::RequestRuntimeLoadedNotification
 
@@ -38,7 +39,7 @@ HRESULT RequestRuntimeLoadedNotification (
  `pCallbackFunction`  
  no A função de retorno de chamada que é invocada quando um novo tempo de execução é carregado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -101,7 +102,7 @@ typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRMetaHost](iclrmetahost-interface.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

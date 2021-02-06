@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ThumbPrintNotValidated'
 title: ThumbPrintNotValidated
 ms.date: 03/30/2017
 ms.assetid: e3e110f5-2853-4150-99c9-18236df320e2
-ms.openlocfilehash: e4ba7d3ccb30c54bfe033986dcca545e3fa9f92a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b5f8835124c37b06498900c5fd4d17244dafaf1a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242130"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635890"
 ---
 # <a name="thumbprintnotvalidated"></a>ThumbPrintNotValidated
 
@@ -21,7 +22,7 @@ ID: 153
 
  Esse evento indica que um certificado de identidade com a impressão digital especificada não pôde ser validado. O evento lista o nome do processo e a ID do processo.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Log de eventos](index.md)
 - [Referência geral de eventos](events-general-reference.md)

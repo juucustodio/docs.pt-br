@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <certificate> elemento'
 title: Elemento <certificate>
 ms.date: 03/30/2017
 ms.assetid: 9b3d9233-ef35-477a-bf5d-efd1e80a52f4
-ms.openlocfilehash: 8cc0404a5896dd23cffce6f1f77b91a2f01f23d2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3f67435d86f19f81c1f6fe1fe2a9a8afbef69e53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151084"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639127"
 ---
 # <a name="certificate-element"></a>Elemento \<certificate>
 
@@ -80,7 +81,7 @@ Especifica um certificado X. 509 a ser usado para assinar e criptografar mensage
 </behaviors>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement.Certificate%2A>

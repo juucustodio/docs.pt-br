@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <clear> do <claimTypeRequirements> elemento'
 title: <clear> do <claimTypeRequirements> elemento
 ms.date: 03/30/2017
 ms.assetid: ef42fde7-f292-4610-9111-9fea382c3b5f
-ms.openlocfilehash: aa94a012da11bcec6fb5fe270ad9f3574f88e6d7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d25dad5afcec352f040ea4f8c08e5ffa2bc16d19
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172899"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638880"
 ---
 # <a name="clear-of-claimtyperequirements-element"></a>\<clear> do \<claimTypeRequirements> elemento
 
@@ -23,7 +24,7 @@ Especifica que todos os tipos de declaração sejam removidos na credencial fede
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<claimTypeRequirements>**](claimtyperequirements-for-message.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <claimTypeRequirements>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <comContract>'
 title: <comContract>
 ms.date: 03/30/2017
 ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
-ms.openlocfilehash: 35596f32bf0e0de9081bc0d4c33fb370c7ab708b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fde1188a087f13da6629460bcebcea16ceefc0e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173777"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638659"
 ---
 # \<comContract>
 
@@ -18,7 +19,7 @@ Especifica um contrato de serviço de integração COM+.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<comContracts>**](comcontracts.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<comContract>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <comContracts>
@@ -93,7 +94,7 @@ Especifica um contrato de serviço de integração COM+.
   
  Quando o serviço é inicializado, os namespaces e os nomes de contrato especificados são aplicados às descrições de serviço geradas.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ComContractElementCollection>
 - <xref:System.ServiceModel.Configuration.ComContractElement>

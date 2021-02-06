@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Interface ICLRControl'
 title: Interface ICLRControl
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a24fd905-1fa6-45a0-ad65-e9e2ee58861e
 topic_type:
 - apiref
-ms.openlocfilehash: acf449014f5bf5683d5488f8ed2ead963676fe6b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e108506d06b746d631f4c15c37d467399de30aba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728323"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637658"
 ---
 # <a name="iclrcontrol-interface"></a>Interface ICLRControl
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem que um host obtenha referências e configure aspec
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetCLRManager](iclrcontrol-getclrmanager-method.md)|Obtém um ponteiro de interface para uma instância de qualquer um dos tipos de Gerenciador que o host pode usar para configurar o CLR.|  
 |[Método SetAppDomainManagerType](iclrcontrol-setappdomainmanagertype-method.md)|Define um tipo derivado de <xref:System.AppDomainManager> como o tipo para gerenciadores de domínio de aplicativo.|  
@@ -42,7 +43,7 @@ Fornece métodos que permitem que um host obtenha referências e configure aspec
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Interface ICLRDebugManager](iclrdebugmanager-interface.md)

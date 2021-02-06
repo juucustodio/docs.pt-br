@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: questões de segurança e dicas úteis para rastreamento'
 title: Preocupações de segurança e dicas úteis para rastreamento
 ms.date: 03/30/2017
 ms.assetid: 88bc2880-ecb9-47cd-9816-39016a07076f
-ms.openlocfilehash: 415b27f5ac40d097c5bdf7b09d63ce901003f83f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 112ce91278e948f9b1ef540e12af7d14b34cd698
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243871"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635565"
 ---
 # <a name="security-concerns-and-useful-tips-for-tracing"></a>Preocupações de segurança e dicas úteis para rastreamento
 
@@ -93,6 +94,6 @@ Este tópico descreve como você pode proteger informações confidenciais de se
   
  Além disso, o endereço IP do remetente da mensagem é registrado uma vez por conexão para transportes orientados por conexão e uma vez por mensagem enviada de outra forma. Isso é feito sem o consentimento do remetente. No entanto, esse log só ocorre nas informações ou níveis de rastreamento detalhados, que não são os níveis de rastreamento padrão ou recomendados na produção, exceto para a depuração dinâmica.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)

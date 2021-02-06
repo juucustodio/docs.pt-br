@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <certificate> de <peer>'
 title: <certificate> de <peer>
 ms.date: 03/30/2017
 ms.assetid: 48b69142-c957-4305-a042-c9d0c9a55c0e
-ms.openlocfilehash: 8ec839df02af4a01d31192eebc96e4c5e58313e9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e48a96a3f1fa486b19289584ae0c059eb5b7048d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151110"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639049"
 ---
 # <a name="certificate-of-peer"></a>\<certificate> de \<peer>
 
@@ -60,7 +61,7 @@ Especifica um certificado usado por um par.
   
  Para obter mais informações sobre a programação ponto a ponto, consulte [rede ponto a ponto](../../../wcf/feature-details/peer-to-peer-networking.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement.Certificate%2A>

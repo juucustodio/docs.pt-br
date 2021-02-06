@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugMutableDataTarget:: WriteVirtual'
 title: 'Método ICorDebugMutableDataTarget:: WriteVirtual'
 ms.date: 03/30/2017
 ms.assetid: 80833648-58a7-491a-8dc8-9a48e9bb3adc
-ms.openlocfilehash: 453ab23e292c5eab4a8300c32bf76743b787750d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3f3400456b7af51f4b24d7e14e35d641f03a8bfd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709330"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637814"
 ---
 # <a name="icordebugmutabledatatargetwritevirtual-method"></a>Método ICorDebugMutableDataTarget:: WriteVirtual
 
@@ -33,7 +34,7 @@ HRESULT WriteVirtual(
  `address`  
  no O número de bytes em `pBuffer` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` em caso de sucesso ou qualquer outro `HRESULT` em caso de falha.  
   
@@ -51,7 +52,7 @@ HRESULT WriteVirtual(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMutableDataTarget](icordebugmutabledatatarget-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

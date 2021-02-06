@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRMetaHost:: GetRuntime'
 title: Método ICLRMetaHost::GetRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a10749f1-ab91-47cf-982f-d8ccd2e81bd2
 topic_type:
 - apiref
-ms.openlocfilehash: 093fa64a7d51e0c2fdc304d2bb4f1c9f7b03e2ec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8a2ada652dbb139337150cb8ed20986ebf8ae7f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730403"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637515"
 ---
 # <a name="iclrmetahostgetruntime-method"></a>Método ICLRMetaHost::GetRuntime
 
@@ -52,7 +53,7 @@ HRESULT GetRuntime (
  `ppRuntime`  
  fora Um ponteiro para a interface [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) que corresponde ao tempo de execução solicitado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -75,10 +76,10 @@ HRESULT GetRuntime (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRMetaHost](iclrmetahost-interface.md)
 - [Interfaces e coclasse de hospedagem CLR reprovadas](deprecated-clr-hosting-interfaces-and-coclasses.md)
 - [Interfaces de hospedagem CLR](clr-hosting-interfaces.md)
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ExportTypeForwarder'
 title: Método ExportTypeForwarder
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 55989fa9-ab43-4f08-8eb6-2eb56fa7ca76
 topic_type:
 - apiref
-ms.openlocfilehash: 4e6ceabf37056bfc25247266be2c7801cb0e13e1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 59fb74c83f6d30dda87d908353795fb218190022
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684766"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637983"
 ---
 # <a name="exporttypeforwarder-method"></a>Método ExportTypeForwarder
 
@@ -50,7 +51,7 @@ HRESULT ExportTypeForwarder(
  `pType`  
  Recebe o token do tipo exportado. Isso é necessário apenas para emitir tipos aninhados.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Retorna S_OK se o método tiver sucesso.  
   
@@ -58,7 +59,7 @@ HRESULT ExportTypeForwarder(
 
  Requer ALink. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IALink](ialink-interface.md)
 - [Interface IALink2](ialink2-interface.md)

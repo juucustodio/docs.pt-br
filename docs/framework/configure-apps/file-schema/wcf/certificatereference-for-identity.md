@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <certificateReference> para <identity>'
 title: <certificateReference> para <identity>
 ms.date: 03/30/2017
 ms.assetid: ac359c65-c22d-42d2-97de-db53b77cebdb
-ms.openlocfilehash: f3daa2dcdf9b464b51cfb9c883cbb828bccb42df
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2c30e7ad035b560d766f3b5592af18210df53aad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639036"
 ---
 # <a name="certificatereference-for-identity"></a>\<certificateReference> para \<identity>
 

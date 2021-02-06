@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICLRReferenceAssemblyEnum:: Get'
 title: Método ICLRReferenceAssemblyEnum::Get
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f21c1612-9c5d-4abc-a337-577086d29c17
 topic_type:
 - apiref
-ms.openlocfilehash: 3968adf418fcea847ee2be5a412385d041a53544
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ea4e71631a9ebb381f721b78f17507603891a032
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728895"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637294"
 ---
 # <a name="iclrreferenceassemblyenumget-method"></a>Método ICLRReferenceAssemblyEnum::Get
 
@@ -47,7 +48,7 @@ HRESULT Get (
  `pcchBufferSize`  
  [entrada, saída] O tamanho do `pwzBuffer` buffer.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -74,7 +75,7 @@ HRESULT Get (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Interface ICLRReferenceAssemblyEnum](iclrreferenceassemblyenum-interface.md)

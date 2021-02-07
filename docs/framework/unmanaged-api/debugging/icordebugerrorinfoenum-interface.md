@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugErrorInfoEnum'
 title: Interface ICorDebugErrorInfoEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: a5ff40b0-d04e-40d5-a007-cc6ee7c3a9ae
 topic_type:
 - apiref
-ms.openlocfilehash: 8c5e00f7d6ebaba8ec680febf447775f3d045a64
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 32e58fbed5b3741dfeb8e7d6fcaa9b77361ce475
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76793502"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694299"
 ---
 # <a name="icordebugerrorinfoenum-interface"></a>Interface ICorDebugErrorInfoEnum
 
 `ICorDebugErrorInfoEnum` é obsoleto. Não use essa interface.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

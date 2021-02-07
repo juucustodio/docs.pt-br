@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEditAndContinueSnapshot:: SetILMap'
 title: Método ICorDebugEditAndContinueSnapshot::SetILMap
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 26c1bf4b-75ff-4c32-872c-3078ccdde04f
 topic_type:
 - apiref
-ms.openlocfilehash: a58d309c3bc19c09a9a46bff019d04cf7ba2082d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0d44ddd40ddbddbfddb7ba05dd4e3313d9f5a936
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722967"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694566"
 ---
 # <a name="icordebugeditandcontinuesnapshotsetilmap-method"></a>Método ICorDebugEditAndContinueSnapshot::SetILMap
 
 `SetILMap` é obsoleto. Não chame esse método.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

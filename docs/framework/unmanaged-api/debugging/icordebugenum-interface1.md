@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugEnum'
 title: Interface ICorDebugEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 80be7efe-2c32-4b9f-8c52-40c6f6268219
 topic_type:
 - apiref
-ms.openlocfilehash: b208444de3b427329988f27b9d252b54143b7240
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 20d2bb14bddcaf40802567ec78a8e318ac1db380
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698787"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694468"
 ---
 # <a name="icordebugenum-interface"></a>Interface ICorDebugEnum
 
@@ -27,7 +28,7 @@ Serve como a interface base abstrata para os enumeradores que são usados por um
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Clone](icordebugenum-clone-method.md)|Cria uma cópia deste objeto `ICorDebugEnum`.|  
 |[Método GetCount](icordebugenum-getcount-method.md)|Obtém o número de itens na enumeração.|  
@@ -93,6 +94,6 @@ Serve como a interface base abstrata para os enumeradores que são usados por um
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

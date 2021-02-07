@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEnum:: clone'
 title: Método ICorDebugEnum::Clone
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 57eefaf3-75cf-4496-bc94-88c0706861b7
 topic_type:
 - apiref
-ms.openlocfilehash: 28e0cded33b49e3aadc0564bae3a60bee76c4396
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 18219757980870dcf9663477d195068a76814de1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677369"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694550"
 ---
 # <a name="icordebugenumclone-method"></a>Método ICorDebugEnum::Clone
 

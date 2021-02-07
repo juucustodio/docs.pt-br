@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugChain:: GetThread'
 title: Método ICorDebugChain::GetThread
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b3390319-6366-418c-ba80-b552ac4dfc1e
 topic_type:
 - apiref
-ms.openlocfilehash: ad220289b45078130a0a41e67373fd3384ae9682
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 090cb40c3681792ce4a30cd342e65dc02ac3f381
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724410"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694911"
 ---
 # <a name="icordebugchaingetthread-method"></a>Método ICorDebugChain::GetThread
 

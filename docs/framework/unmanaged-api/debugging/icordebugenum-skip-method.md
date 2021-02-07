@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEnum:: Skip'
 title: Método ICorDebugEnum::Skip
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e925d88a-67a5-4f76-88b8-09cedeed0232
 topic_type:
 - apiref
-ms.openlocfilehash: ae88336b9640b68b97522d252b3e8334c20ed9bc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f72e400b3c2c911f609aca19f1b7d6a3a4e785cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705859"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694351"
 ---
 # <a name="icordebugenumskip-method"></a>Método ICorDebugEnum::Skip
 
@@ -49,6 +50,6 @@ HRESULT Skip (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugEnum](icordebugenum-interface1.md)

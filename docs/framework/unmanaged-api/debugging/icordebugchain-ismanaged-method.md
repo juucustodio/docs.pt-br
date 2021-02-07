@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugChain:: método IsManaged'
 title: Método ICorDebugChain::IsManaged
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 17b389a0-1a4d-4e8a-8613-9bc1769930f9
 topic_type:
 - apiref
-ms.openlocfilehash: cfe884c3d26e7a52618eb9945f0af9a167132f05
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 200b76350d474645a40f8ee35859c2db5420ea0a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724371"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694846"
 ---
 # <a name="icordebugchainismanaged-method"></a>Método ICorDebugChain::IsManaged
 

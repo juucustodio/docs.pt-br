@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugChain:: GetReason'
 title: Método ICorDebugChain::GetReason
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9f9f62b9-113a-4a98-8f9b-b593cef27b03
 topic_type:
 - apiref
-ms.openlocfilehash: 58e40995012d98c1af6a41eb12d898c6b9b1d47b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0952d09db6d43f7970ba9e8c46c409fb2cd4b131
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719665"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694963"
 ---
 # <a name="icordebugchaingetreason-method"></a>Método ICorDebugChain::GetReason
 

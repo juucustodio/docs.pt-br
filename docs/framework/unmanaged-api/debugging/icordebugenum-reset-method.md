@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEnum:: Reset'
 title: Método ICorDebugEnum::Reset
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: ab03dcb8-ceed-4f7a-abf8-9d31604bf90c
 topic_type:
 - apiref
-ms.openlocfilehash: 39c6371791e90e97cca9357c825f13fe45e6c211
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c1308611f05bbf190f9675b611a77e0c1077f52f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705885"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694481"
 ---
 # <a name="icordebugenumreset-method"></a>Método ICorDebugEnum::Reset
 
 Move o cursor para o início da enumeração.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT Reset ();  
@@ -42,6 +43,6 @@ HRESULT Reset ();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugEnum](icordebugenum-interface1.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serviço: falhas de validação e autenticação de segurança'
 title: 'Serviço: falhas de autenticação e validação de segurança'
 ms.date: 03/30/2017
 ms.assetid: 55c98268-b1ad-459d-851b-25ef52248187
-ms.openlocfilehash: d89419d7d579d29a1c57370d61eefb8b26333a40
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8938c74e706526a02bf2ea5885951d067d6ebae9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236852"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759478"
 ---
 # <a name="service-security-validation-and-authentication-failures"></a>Serviço: falhas de autenticação e validação de segurança
 

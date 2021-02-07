@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: comunicações principais: estrutura de canal'
 title: 'Comunicações principais: Estrutura de canal'
 ms.date: 03/30/2017
 ms.assetid: 8caeb496-8d4c-477e-a476-994ece685a68
-ms.openlocfilehash: 2be3fa056c95a45d16f50442ee86ffb92f97cb74
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e6bbe1b53a6584e8d77b766884caff1cce94e921
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96277589"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759764"
 ---
 # <a name="core-communications-channel-framework"></a>Comunicações principais: Estrutura de canal
 

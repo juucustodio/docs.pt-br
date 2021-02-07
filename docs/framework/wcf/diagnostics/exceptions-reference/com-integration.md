@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: integração COM+'
 title: Integração de COM+
 ms.date: 03/30/2017
 ms.assetid: 6a687c1b-d0be-42fb-8f9b-20fea1317411
-ms.openlocfilehash: 9447d54ebc5f21ae330b2feaa32bfab7ef6c2005
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 80883dbaef59bb18f649f0339cb302a296e4bbbd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96277640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759805"
 ---
 # <a name="com-integration"></a>Integração de COM+
 

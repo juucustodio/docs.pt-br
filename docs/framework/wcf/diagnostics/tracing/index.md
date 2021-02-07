@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: rastreamento'
 title: Rastreamento
 ms.date: 03/30/2017
 ms.assetid: 2649eae2-dbf8-421c-9cfb-cfa9e01de87f
-ms.openlocfilehash: 10b9be028710cdda378aeef0ca235a00aa451e08
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 373e308357016f128c2eacfc34111d4b4e72b6fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243905"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759413"
 ---
 # <a name="tracing"></a>Rastreamento
 
@@ -41,6 +42,6 @@ O Windows Communication Foundation (WCF) fornece dados de diagnóstico e instrum
   
  Este tópico lista todos os rastreamentos gerados pelo WCF.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramenta Visualizador de Rastreamento de Serviço (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)

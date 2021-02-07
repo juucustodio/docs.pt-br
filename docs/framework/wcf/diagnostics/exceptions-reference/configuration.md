@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: configuração'
 title: Configuração
 ms.date: 03/30/2017
 ms.assetid: 86a6e12f-73b5-450e-8725-f4ca5fe0702c
-ms.openlocfilehash: 2b14b9e66db7d3548022a728ec27137a14bf3e55
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a0eaafc9f2b33441e80a35d103f6e13bd562dd70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96277615"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759777"
 ---
 # <a name="configuration"></a>Configuração
 

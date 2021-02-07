@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 5017-GenXmlSerializableStop'
 title: 5017 - GenXmlSerializableStop
 ms.date: 03/30/2017
 ms.assetid: 41f0d433-487a-4e48-b397-d8d7b6b64b50
-ms.openlocfilehash: 42ed95a099f05d9dc25fa0ed5ed63f8a75347a08
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2d66543081f10394f29326e30a5dc314012815e1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96235379"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760024"
 ---
 # <a name="5017---genxmlserializablestop"></a>5017 - GenXmlSerializableStop
 

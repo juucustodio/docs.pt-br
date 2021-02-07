@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. Security. SecuritySessionClosedResponseReceived'
 title: System.ServiceModel.Security.SecuritySessionClosedResponseReceived
 ms.date: 03/30/2017
 ms.assetid: aab624cb-30c6-4ac4-9dea-5ea03b5a4917
-ms.openlocfilehash: 0ec1b76a8f24b17a8ded76782118e83e2a6fdcac
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9dc1c434976911bc25803cc2fdf62459772e968e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758646"
 ---
 # <a name="systemservicemodelsecuritysecuritysessionclosedresponsereceived"></a>System.ServiceModel.Security.SecuritySessionClosedResponseReceived
 
@@ -17,8 +18,8 @@ System.ServiceModel.Security.SecuritySessionClosedResponseReceived
 
  A sessão do Client Security recebeu uma resposta fechada do servidor.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

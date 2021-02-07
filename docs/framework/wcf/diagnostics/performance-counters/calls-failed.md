@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: falha em chamadas'
 title: Chamadas com falha
 ms.date: 03/30/2017
 ms.assetid: 52afeff8-333c-44a5-96ce-1f3c418523fc
-ms.openlocfilehash: 35a2441839ab2ad4e744159e33ed157a4680788d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bde38e095e53b977337406846433fdce887d7362
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96278252"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759699"
 ---
 # <a name="calls-failed"></a>Chamadas com falha
 
@@ -17,6 +18,6 @@ Nome do contador: chamadas com falha
 
  Número de chamadas com exceções sem tratamento nesta operação. Esse contador é incrementado toda vez que há uma exceção sem tratamento nesta operação.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Especificando e lidando com falhas em contratos e serviços](../../specifying-and-handling-faults-in-contracts-and-services.md)

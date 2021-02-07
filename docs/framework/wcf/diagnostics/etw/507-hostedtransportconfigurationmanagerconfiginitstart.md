@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 507-HostedTransportConfigurationManagerConfigInitStart'
 title: 507 - HostedTransportConfigurationManagerConfigInitStart
 ms.date: 03/30/2017
 ms.assetid: cf8956cd-2f97-4536-af17-1f42618b4f11
-ms.openlocfilehash: dabc50b801ad2b062a0b2c9d2d2afe75c885ee5a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 95548ad8c08f97f0b6fee4051532dd4a33544060
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759945"
 ---
 # <a name="507---hostedtransportconfigurationmanagerconfiginitstart"></a>507 - HostedTransportConfigurationManagerConfigInitStart
 
@@ -17,7 +18,7 @@ ms.locfileid: "96292435"
 |-|-|  
 |ID|507|  
 |Palavras-chave|WebHost|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

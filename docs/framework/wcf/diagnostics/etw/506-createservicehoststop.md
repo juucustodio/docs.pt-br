@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 506-CreateServiceHostStop'
 title: 506 - CreateServiceHostStop
 ms.date: 03/30/2017
 ms.assetid: f51e4903-1162-47bd-bf8a-f4177c48768a
-ms.openlocfilehash: 9f9ac15dc59fc3e7370a338f1864913c23f0bd70
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3527214eef4771239618e7b64753b852747eb38f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254643"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759959"
 ---
 # <a name="506---createservicehoststop"></a>506 - CreateServiceHostStop
 
@@ -17,7 +18,7 @@ ms.locfileid: "96254643"
 |-|-|  
 |ID|506|  
 |Palavras-chave|WebHost|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

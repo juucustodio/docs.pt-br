@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: mensagens ignoradas da fila por segundo'
 title: Mensagens da fila ignoradas por segundo
 ms.date: 03/30/2017
 ms.assetid: 74540f52-8762-4147-b5ba-e171180515a3
-ms.openlocfilehash: 81ba15965676ba7ffe5ca2aaac5e1d0e94e27962
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e5959b76795514dec03d6ae4d08ac248994777fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266032"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759543"
 ---
 # <a name="queue-dropped-messages-per-second"></a>Mensagens da fila ignoradas por segundo
 

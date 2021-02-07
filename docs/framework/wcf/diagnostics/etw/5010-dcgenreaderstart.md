@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 5010-DCGenReaderStart'
 title: 5010 - DCGenReaderStart
 ms.date: 03/30/2017
 ms.assetid: 199ff3ce-b811-4151-a9c2-e726c109e87b
-ms.openlocfilehash: 93dcb83d88cfb14754aaeb7a6aef8b638aaaeeb1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fe400686245406a7a01e3bfd08adbfe04f214747
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254721"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760102"
 ---
 # <a name="5010---dcgenreaderstart"></a>5010 - DCGenReaderStart
 

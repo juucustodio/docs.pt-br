@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: referência de rastreamentos'
 title: Referência de rastreamentos
 ms.date: 03/30/2017
 ms.assetid: bd960851-162d-4dcc-8c0c-0ec8f455d56d
-ms.openlocfilehash: ea3759d67d546eb916ec7f5413ce41fa3419d174
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 576e64e82c5108749da0533b00ce576c517d9eec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293410"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758171"
 ---
 # <a name="traces-reference"></a>Referência de rastreamentos
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: obter WorkflowInstanceid'
 title: Obter WorkflowInstanceId
 ms.date: 03/30/2017
 ms.assetid: bd7eea3b-1c28-4b84-9a67-003bc553aa81
-ms.openlocfilehash: db06b30f24a2d620406b3e6a35bba3a1fca70a9c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3be6c36e6a6996a11ad1e26414fa25f1e32399e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251536"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755311"
 ---
 # <a name="get-workflowinstanceid"></a>Obter WorkflowInstanceId
 

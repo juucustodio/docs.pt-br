@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 4202-StartSqlCommandExecute'
 title: 4202 - StartSqlCommandExecute
 ms.date: 03/30/2017
 ms.assetid: 4559f64f-c824-4075-9e7e-4710bf30f805
-ms.openlocfilehash: d3f27c6ed28efe9d099dcedfc676b839ae9b1dee
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1282f275933eff0effbda75851e33531c55adb36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275834"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755328"
 ---
 # <a name="4202---startsqlcommandexecute"></a>4202 - StartSqlCommandExecute
 

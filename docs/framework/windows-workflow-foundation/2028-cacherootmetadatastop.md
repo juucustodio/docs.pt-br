@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 2028-CacheRootMetadataStop'
 title: 2028 - CacheRootMetadataStop
 ms.date: 03/30/2017
 ms.assetid: d799b707-ee16-4b04-8b6d-b87c0d60e71d
-ms.openlocfilehash: a59c645fb02d0676781f15ccdd253a1d3c13d4d5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 863941d18cb30a0cd7544366727889bcd595bc94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294515"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755389"
 ---
 # <a name="2028---cacherootmetadatastop"></a>2028 - CacheRootMetadataStop
 

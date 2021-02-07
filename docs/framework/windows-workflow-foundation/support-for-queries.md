@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: suporte para consultas'
 title: Suporte para consultas
 ms.date: 03/30/2017
 ms.assetid: 093c22f5-3294-4642-857a-5252233d6796
-ms.openlocfilehash: 350644de4a5deb7b8dcb5133c9cc2edb477fd355
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 418e511e8b845653b9f3ec86d90c6cbfb25d5671
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755207"
 ---
 # <a name="support-for-queries"></a>Suporte para consultas
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: correlação de consulta de mensagem LINQ'
 title: Correlação de consulta de mensagem LINQ
 ms.date: 03/30/2017
 ms.assetid: b746872e-57b1-4514-b337-53398a0e0deb
-ms.openlocfilehash: 83ffc80bd1944681da29e9058de454636aa7405b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7b979e3bdc2c0ede8f4f9d4595957f90581a0ecc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291096"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755272"
 ---
 # <a name="linq-message-query-correlation"></a>Correlação de consulta de mensagem LINQ
 

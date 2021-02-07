@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: armazenar extensibilidade'
 title: Extensibilidade de Store
 ms.date: 03/30/2017
 ms.assetid: 7c3f4a46-4bac-4138-ae6a-a7c7ee0d28f5
-ms.openlocfilehash: 46c1ea40925a5c79180171da9a705d7e6b7c8b89
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f04c466224aacd1c8f755e7aa60b18846d0c7180
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61641600"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755220"
 ---
 # <a name="store-extensibility"></a>Extensibilidade de Store
 
@@ -36,9 +37,9 @@ A classe de <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 
     application.Extensions.Add(documentStatusExtension);
     ```
 
-     Para obter mais detalhes sobre como adicionar um participante de persistência personalizado, consulte a [participantes de persistência](persistence-participants.md) exemplo.
+     Para obter mais detalhes sobre como adicionar um participante de persistência personalizado, consulte o exemplo [participantes de persistência](persistence-participants.md) .
 
-3. As atividades personalizadas no aplicativo de DP preencher vários campos de status na **Execute** método.
+3. As atividades personalizadas no aplicativo DP populam vários campos de status no método **Execute** .
 
     ```csharp
     public override void Execute(CodeActivityContext context)
@@ -52,7 +53,7 @@ A classe de <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 
     }
     ```
 
-4. Quando uma instância de fluxo de trabalho atinge um ponto de persistência, o **CollectValues** método o **DocumentStatusExtension** participante de persistência salva essas propriedades para os dados de persistência coleção.
+4. Quando uma instância de fluxo de trabalho atinge um ponto de persistência, o método **CollectValues** do participante de persistência **DocumentStatusExtension** salva essas propriedades na coleção de dados de persistência.
 
     ```csharp
     class DocumentStatusExtension : PersistenceParticipant
@@ -74,9 +75,9 @@ A classe de <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 
     ```
 
     > [!NOTE]
-    > Todas essas propriedades são passadas para **SqlWorkflowInstanceStore** pela estrutura de persistência por meio de **Saveworkflowcommand** coleção.
+    > Todas essas propriedades são passadas para **SqlWorkflowInstanceStore** pela estrutura de persistência por meio da coleção **SaveWorkflowCommand. InstanceData** .
 
-5. O aplicativo de DP inicializa o Store de instância de fluxo de trabalho do SQL e invoca o **promover** método para elevar esses dados.
+5. O aplicativo de DP Inicializa o repositório da instância do fluxo de trabalho SQL e invoca o método **Promote** para promover esses dados.
 
     ```csharp
     SqlWorkflowInstanceStore store = new SqlWorkflowInstanceStore(connectionString);
@@ -92,7 +93,7 @@ A classe de <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 
     store.Promote("DocumentStatus", variantProperties, null);
     ```
 
-    Com base nessas informações de promoção, **SqlWorkflowInstanceStore** coloca as propriedades de dados nas colunas da [InstancePromotedProperties](#InstancePromotedProperties) exibição.
+    Com base nessas informações de promoção, **SqlWorkflowInstanceStore** coloca as propriedades de dados nas colunas da exibição [InstancePromotedProperties](#InstancePromotedProperties) .
 
 6. Para ver um subconjunto dos dados da tabela da promoção, o aplicativo de DP adiciona um modo de exibição personalizado no modo da promoção.
 
@@ -109,11 +110,11 @@ A classe de <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> 
     go
     ```
 
-## <a name="InstancePromotedProperties"></a> [System.Activities.DurableInstancing.InstancePromotedProperties] view
+## <a name="systemactivitiesdurableinstancinginstancepromotedproperties-view"></a><a name="InstancePromotedProperties"></a> [System. Activities. DurableInstancing. InstancePromotedProperties] exibição
 
 |Nome da coluna|Tipo de coluna|Descrição|
 |-----------------|-----------------|-----------------|
 |InstanceId|GUID|A instância de fluxo de trabalho que essa promoção pertence.|
-|PromotionName|nvarchar(400)|O nome da promoção próprio.|
+|PromotionName|nvarchar (400)|O nome da promoção próprio.|
 |Valor1, valor2, Value3. , Value32|sql_variant|O valor da propriedade promovida próprio. A maioria dos tipos de dados primitivos SQL exceto gotas binários e cadeias de caracteres sobre 8000 bytes de comprimento podem caber em sql_variant.|
-|Value33, Value34, Value35,…, Value64|varbinary (máximo)|O valor das propriedades elevadas que são explicitamente declaradas como varbinary (máximo).|
+|Value33, Value34, Value35,…, Value64|varbinary(max)|O valor das propriedades elevadas que são explicitamente declaradas como varbinary (máximo).|

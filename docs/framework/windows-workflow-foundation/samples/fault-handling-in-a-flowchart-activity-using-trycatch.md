@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tratamento de falhas em uma atividade de fluxograma usando TryCatch'
 title: Tratamento de falha em uma atividade do fluxograma usando TryCatch
 ms.date: 03/30/2017
 ms.assetid: 50922964-bfe0-4ba8-9422-0e7220d514fd
-ms.openlocfilehash: 8e3ca59bc9743300a230877a6fbcbed5468a1589
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: 9ab323117e5b26696a07624117e8acc8c0beacff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74710832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755324"
 ---
 # <a name="fault-handling-in-a-flowchart-activity-using-trycatch"></a>Tratamento de falha em uma atividade do fluxograma usando TryCatch
 
@@ -26,9 +27,9 @@ A atividade de `CreateFlowchartWithFaults` usa uma atividade de <xref:System.Act
 
 |Valor de `promoCode`|Desconto (%)|
 |--------------------------|--------------------|
-|Simples|10|
+|Único|10|
 |MNK|15|
-|MWK|15 + (1 – 1/`numberOfKids`)\*10 **Observação:** potencialmente, esse cálculo pode lançar uma <xref:System.DivideByZeroException>. Assim, o cálculo de desconto é empacotado em uma atividade de <xref:System.Activities.Statements.TryCatch> que captura a exceção de <xref:System.DivideByZeroException> e defina o desconto a zero.|
+|MWK|15 + (1 – 1/ `numberOfKids` ) \* 10 **Observação:**  potencialmente, esse cálculo pode lançar um <xref:System.DivideByZeroException> . Assim, o cálculo de desconto é empacotado em uma atividade de <xref:System.Activities.Statements.TryCatch> que captura a exceção de <xref:System.DivideByZeroException> e defina o desconto a zero.|
 
 #### <a name="to-use-this-sample"></a>Para usar este exemplo
 
@@ -43,11 +44,11 @@ A atividade de `CreateFlowchartWithFaults` usa uma atividade de <xref:System.Act
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todas as Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] amostras. Este exemplo está localizado no seguinte diretório.
+> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Built-InActivities\FlowChartWithFaultHandling`
 
 ## <a name="see-also"></a>Consulte também
 
-- [Fluxos de trabalho de fluxograma](../flowchart-workflows.md)
+- [Fluxos de trabalho do fluxograma](../flowchart-workflows.md)
 - [Exceções](../exceptions.md)

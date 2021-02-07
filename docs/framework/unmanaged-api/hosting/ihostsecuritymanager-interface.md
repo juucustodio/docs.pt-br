@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostSecurityManager'
 title: Interface IHostSecurityManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c3be2cbd-2d93-438b-9888-9a0251b63c03
 topic_type:
 - apiref
-ms.openlocfilehash: 37f606a67bef79936c81b2a36f12a00d24bd82f1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 76ba26443fa2a4e65459dd073eb6d22031548112
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680528"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671523"
 ---
 # <a name="ihostsecuritymanager-interface"></a>Interface IHostSecurityManager
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem o acesso e o controle sobre o contexto de seguran�
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetSecurityContext](ihostsecuritymanager-getsecuritycontext-method.md)|Obtém o [IHostSecurityContext](ihostsecuritycontext-interface.md) solicitado do host.|  
 |[Método ImpersonateLoggedOnUser](ihostsecuritymanager-impersonateloggedonuser-method.md)|Solicita que o código seja executado usando as credenciais da identidade do usuário atual.|  
@@ -60,7 +61,7 @@ Fornece métodos que permitem o acesso e o controle sobre o contexto de seguran�
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostSecurityContext](ihostsecuritycontext-interface.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)

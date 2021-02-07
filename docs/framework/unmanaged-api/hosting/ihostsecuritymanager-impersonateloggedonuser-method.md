@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostSecurityManager:: ImpersonateLoggedOnUser'
 title: Método IHostSecurityManager::ImpersonateLoggedOnUser
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: acc49ba0-f1d9-45ad-871f-9d053a89dcbe
 topic_type:
 - apiref
-ms.openlocfilehash: dd1d1af8072ac11e37bd2eb1a47d76b12685cb31
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7b77e0a163551a48629898b1311fc19ba815aaf4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724774"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671575"
 ---
 # <a name="ihostsecuritymanagerimpersonateloggedonuser-method"></a>Método IHostSecurityManager::ImpersonateLoggedOnUser
 
@@ -39,7 +40,7 @@ HRESULT ImpersonateLoggedOnUser (
  `hToken`  
  no Um token que representa as credenciais do usuário a ser representado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -66,7 +67,7 @@ HRESULT ImpersonateLoggedOnUser (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostSecurityContext](ihostsecuritycontext-interface.md)
 - [Interface IHostSecurityManager](ihostsecuritymanager-interface.md)

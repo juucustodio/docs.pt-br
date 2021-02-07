@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método IHostSecurityContext:: Capture'
 title: Método IHostSecurityContext::Capture
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ae0836d0-1170-4494-bac5-d0e809df51a2
 topic_type:
 - apiref
-ms.openlocfilehash: 7760e178984798fac5cde2e8c0143a9c8716a212
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d46bbae7b94dcad6d1356243c938c9d3690f26a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671705"
 ---
 # <a name="ihostsecuritycontextcapture-method"></a>Método IHostSecurityContext::Capture
 
@@ -39,7 +40,7 @@ HRESULT Capture (
  `ppClonedContext`  
  fora Um ponteiro para o endereço de um clone do `IHostSecurityContext` objeto a ser capturado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT Capture (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostSecurityContext](ihostsecuritycontext-interface.md)
 - [Interface IHostSecurityManager](ihostsecuritymanager-interface.md)

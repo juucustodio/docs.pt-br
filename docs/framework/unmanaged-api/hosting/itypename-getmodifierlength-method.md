@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ITypeName:: GetModifierLength'
 title: Método ITypeName::GetModifierLength
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: ac45f261-03f9-4728-b5d7-dd7cbb05f9e6
 topic_type:
 - apiref
-ms.openlocfilehash: 324e14d38bdb5ad57b3504f4bd2729409d5e1349
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0e7cf336c35b129d9f49896cdfa7e08082dc99b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95669179"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671120"
 ---
 # <a name="itypenamegetmodifierlength-method"></a>Método ITypeName::GetModifierLength
 
 Esse método oferece suporte a infraestrutura do .NET Framework e não se destina a ser usado diretamente do seu código.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetModifierLength (  
@@ -44,6 +45,6 @@ HRESULT GetModifierLength (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)

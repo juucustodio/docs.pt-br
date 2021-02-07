@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: EnumMethodImpls'
 title: Método IMetaDataImport::EnumMethodImpls
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4e0f865d-88b5-44bd-be35-492622e5e08e
 topic_type:
 - apiref
-ms.openlocfilehash: 40ab610110e96018b1c598d04b24a762ecb50717
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3ae5795bdde36ad07c447370553e24e1ceacf493
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690480"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670688"
 ---
 # <a name="imetadataimportenummethodimpls-method"></a>Método IMetaDataImport::EnumMethodImpls
 
@@ -59,9 +60,9 @@ HRESULT EnumMethodImpls (
  `pcTokens`  
  no O número real de métodos retornados em `rMethodBody` e `rMethodDecl` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
-|HRESULT|DESCRIÇÃO|  
+|HRESULT|Descrição|  
 |-------------|-----------------|  
 |`S_OK`|`EnumMethodImpls` retornado com êxito.|  
 |`S_FALSE`|Não há tokens de método para enumerar. Nesse caso, `pcTokens` é zero.|  
@@ -76,7 +77,7 @@ HRESULT EnumMethodImpls (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

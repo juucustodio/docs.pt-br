@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função StrongNameSignatureSize'
 title: Função StrongNameSignatureSize
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4fde4cd0-f53e-4411-a2fe-fc5c54472f95
 topic_type:
 - apiref
-ms.openlocfilehash: 6a2b3afe66f1eaa358c5f80de50f14ceb730048b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b3f22a6a4d5455af4dd17cb75edfd18befed7de3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670509"
 ---
 # <a name="strongnamesignaturesize-function"></a>Função StrongNameSignatureSize
 
@@ -48,7 +49,7 @@ BOOLEAN StrongNameSignatureSize (
  `pcbSize`  
  no O número de bytes necessários para armazenar a assinatura de nome forte.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` após a conclusão bem-sucedida; caso contrário, `false` .  
   
@@ -66,7 +67,7 @@ BOOLEAN StrongNameSignatureSize (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameSignatureSize](../hosting/iclrstrongname-strongnamesignaturesize-method.md)
 - [Interface ICLRStrongName](../hosting/iclrstrongname-interface.md)

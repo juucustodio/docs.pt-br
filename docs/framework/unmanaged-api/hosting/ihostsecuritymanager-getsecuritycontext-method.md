@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método IHostSecurityManager:: GetSecurityContext'
 title: Método IHostSecurityManager::GetSecurityContext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 958970d6-f6a2-4b84-b32a-f555cbaf8f61
 topic_type:
 - apiref
-ms.openlocfilehash: dfb96de02549e6d0f178c099793741f7fbd61d55
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0dc9e0380d2fb218b68f6beb85fa1ccba8826d85
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724787"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671554"
 ---
 # <a name="ihostsecuritymanagergetsecuritycontext-method"></a>Método IHostSecurityManager::GetSecurityContext
 
@@ -43,7 +44,7 @@ HRESULT GetSecurityContext (
  `ppSecurityContext`  
  fora O endereço de um ponteiro de interface para o `IHostSecurityContext` de `eContextType` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -68,7 +69,7 @@ HRESULT GetSecurityContext (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EContextType](econtexttype-enumeration.md)
 - [Interface IHostSecurityContext](ihostsecuritycontext-interface.md)

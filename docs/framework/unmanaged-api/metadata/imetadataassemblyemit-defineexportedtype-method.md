@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataAssemblyEmit: método efineExportedType de:D'
 title: Método IMetaDataAssemblyEmit::DefineExportedType
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fad01d7a-3178-4c8c-9f0a-4641e3701c9b
 topic_type:
 - apiref
-ms.openlocfilehash: 6b30218cc7373494870ec54a3196857fcc5c08a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0da1b1eb0880b0ba9df0ba9ad70b460163dffc39
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689388"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671094"
 ---
 # <a name="imetadataassemblyemitdefineexportedtype-method"></a>Método IMetaDataAssemblyEmit::DefineExportedType
 
@@ -77,6 +78,6 @@ HRESULT DefineExportedType (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

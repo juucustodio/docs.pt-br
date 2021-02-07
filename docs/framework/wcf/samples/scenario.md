@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cenário'
 title: Cenário2
 ms.date: 03/30/2017
 ms.assetid: 816557e0-f676-4731-95c5-b02cbef3d8d7
-ms.openlocfilehash: 31d12152530b57f84c55df79c40fdead1ce53924
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 69c526c012e097c28ac8e883aaaa7309ea378630
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262639"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703673"
 ---
 # <a name="scenario"></a>Cenário
 

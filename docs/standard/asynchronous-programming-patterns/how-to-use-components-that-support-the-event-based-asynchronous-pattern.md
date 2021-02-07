@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como: usar componentes que dão suporte ao padrão assíncrono baseado em evento'
 title: 'Como: Usar componentes compatíveis com o padrão assíncrono baseado em evento'
 ms.date: 03/30/2017
 dev_langs:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - threading [Windows Forms], asynchronous features
 - AsyncCompletedEventArgs class
 ms.assetid: 35e9549c-1568-4768-ad07-17cc6dff11e1
-ms.openlocfilehash: 36fe8015187833e03c4cc3fc1609ec647daf7278
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 78c5df143e687333689e7805dfc89b4cf0f5e98a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677993"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702958"
 ---
 # <a name="how-to-use-components-that-support-the-event-based-asynchronous-pattern"></a>Como: Usar componentes compatíveis com o padrão assíncrono baseado em evento
 
@@ -60,7 +61,7 @@ Muitos componentes oferecem a opção de executar seu trabalho de forma assíncr
   
      Conforme o download da imagem prossegue, você pode mover o formulário livremente, minimizá-lo e maximizá-lo.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: Executar uma operação em segundo plano](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background)
 - [Visão geral do padrão assíncrono baseado em evento](event-based-asynchronous-pattern-overview.md)

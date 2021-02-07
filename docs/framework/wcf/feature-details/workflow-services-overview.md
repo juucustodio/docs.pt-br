@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral dos serviços de fluxo de trabalho'
 title: Visão geral dos serviços de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: e536dda3-e286-441e-99a7-49ddc004b646
-ms.openlocfilehash: 7055ea6e6b6d6a5d7bef8d5ff465d2eb0c838bf6
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 688966714faedc3469f084aaa945f58350dfcd5a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88812179"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704323"
 ---
 # <a name="workflow-services-overview"></a>Visão geral dos serviços de fluxo de trabalho
 

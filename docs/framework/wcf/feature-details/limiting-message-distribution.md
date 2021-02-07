@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: limitar a distribuição de mensagens'
 title: Limitando a distribuição de mensagens
 ms.date: 03/30/2017
 ms.assetid: 8b5ec4b8-1ce9-45ef-bb90-2c840456bcc1
-ms.openlocfilehash: e736aba60d7d2b39d1b8eb958a8c72e6e8d55e13
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ea6123b64bf5bfae37dcd704e222e085c76e761c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555010"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704479"
 ---
 # <a name="limiting-message-distribution"></a>Limitando a distribuição de mensagens
 
@@ -69,6 +70,6 @@ As respostas para essas perguntas podem ajudá-lo a determinar se deve usar a co
 
   - *Baixa*: any, a conexão direta provavelmente não é necessária.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilando um aplicativo de canal par](building-a-peer-channel-application.md)

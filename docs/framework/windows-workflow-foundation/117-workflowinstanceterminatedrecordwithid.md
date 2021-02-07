@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 117-WorkflowInstanceTerminatedRecordWithId'
 title: 117 - WorkflowInstanceTerminatedRecordWithId
 ms.date: 03/30/2017
 ms.assetid: e68539d0-5338-468a-9f75-7e5b09d39a3c
-ms.openlocfilehash: 5e16eff8e8ce9815cac604be110e899a29b4af3d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d57940801cd9850136355a9ad4f91ba7c44fd5b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281723"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703231"
 ---
 # <a name="117---workflowinstanceterminatedrecordwithid"></a>117 - WorkflowInstanceTerminatedRecordWithId
 
@@ -17,7 +18,7 @@ ms.locfileid: "96281723"
 |-|-|  
 |ID|117|  
 |Palavras-chave|HealthMonitoring, WFTracking|  
-|Nível|Erro do|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

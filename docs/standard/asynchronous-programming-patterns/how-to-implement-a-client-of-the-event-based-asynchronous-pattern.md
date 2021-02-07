@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como implementar um cliente do padrão assíncrono baseado em evento'
 title: 'Como: Implementar um cliente do padrão assíncrono baseado em evento'
 ms.date: 03/30/2017
 dev_langs:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - threading [Windows Forms], asynchronous features
 - AsyncCompletedEventArgs class
 ms.assetid: 21a858c1-3c99-4904-86ee-0d17b49804fa
-ms.openlocfilehash: 44bcc831ddf6fa292fd96d8e79ad54f7be2f65c6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 819f756c9d2b4250bc64d97810ac8c40e52d3bbf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678084"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703075"
 ---
 # <a name="how-to-implement-a-client-of-the-event-based-asynchronous-pattern"></a>Como: Implementar um cliente do padrão assíncrono baseado em evento
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: criptografia de assinaturas digitais'
 title: Criptografia de assinaturas digitais
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - digital signatures [WCF], encryption
 - digital signatures [WCF]
 ms.assetid: 0868866d-40b4-4341-8e42-eee3b7f15b69
-ms.openlocfilehash: dece961ac70dbcf310e5e4a9dcb05c303c787ad4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a68cea324fd5c2619f501eaf42bc518c17b89a6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251432"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704843"
 ---
 # <a name="encryption-of-digital-signatures"></a>Criptografia de assinaturas digitais
 
@@ -29,7 +30,7 @@ Por padrão, uma mensagem é assinada e criptografada e a assinatura é criptogr
   
  Para obter mais informações sobre como criar associações personalizadas, consulte [Criando associações de User-Defined](../extending/creating-user-defined-bindings.md). Para obter mais informações sobre como criar uma associação personalizada para um modo de autenticação específico, consulte [como: criar um SecurityBindingElement para um modo de autenticação especificado](how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.MessageProtectionOrder>
 - <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>

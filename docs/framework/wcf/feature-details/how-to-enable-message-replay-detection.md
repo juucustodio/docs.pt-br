@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como habilitar a detecção de reprodução de mensagem'
 title: 'Como: habilitar a detecção de reprodução de mensagem'
 ms.date: 03/30/2017
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - WCF, custom bindings
 - WCF, security
 ms.assetid: 8b847e91-69a3-49e1-9e5f-0c455e50d804
-ms.openlocfilehash: 4a4d304a1316fe534e09f02ac1cd2900bf798011
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 743452195d5bf78360909a22ea81997c2712dd06
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265525"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704661"
 ---
 # <a name="how-to-enable-message-replay-detection"></a>Como: habilitar a detecção de reprodução de mensagem
 
@@ -106,7 +107,7 @@ Um ataque de reprodução ocorre quando um invasor copia um fluxo de mensagens e
   
 - <xref:System.ServiceModel.Channels>  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>

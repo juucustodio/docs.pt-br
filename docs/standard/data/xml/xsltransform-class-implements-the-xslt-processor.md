@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: a classe XslTransform implementa o processador XSLT'
 title: A classe XslTransform implementa do processador XSLT
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 88373fe2-4a6b-44f9-8a62-8a3e348e3a46
-ms.openlocfilehash: 57632321edf086b644da7ea4fca893edb589834f
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 16173b0fe9261643dd497284a2e4d3dc583adee0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702802"
 ---
 # <a name="xsltransform-class-implements-the-xslt-processor"></a>A classe XslTransform implementa do processador XSLT
 
@@ -234,7 +235,7 @@ A tabela a seguir mostra os métodos obsoletos e novos para o método de <xref:S
 
 A propriedade <xref:System.Xml.Xsl.XslTransform.XmlResolver%2A?displayProperty=nameWithType> está obsoleta no .NET Framework versão 1.1. Em vez disso, use as novas sobrecargas <xref:System.Xml.Xsl.XslTransform.Transform%2A> que usam um objeto <xref:System.Xml.XmlResolver>.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Xsl.XslTransform>
 - [Transformações XSLT com a classe XslTransform](xslt-transformations-with-the-xsltransform-class.md)

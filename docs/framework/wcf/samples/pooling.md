@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: pooling'
 title: Agrupamento
 ms.date: 03/30/2017
 ms.assetid: 688dfb30-b79a-4cad-a687-8302f8a9ad6a
-ms.openlocfilehash: 6b266dafa945fa44d6c857810df42eb5439f157d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cb770b60a3011f95df5a2fdecea6cdc66b64710f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255423"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703842"
 ---
 # <a name="pooling"></a>Agrupamento
 

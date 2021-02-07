@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: segurança de thread em expressões regulares'
 title: Acesso thread-safe em expressões regulares
 ms.date: 03/30/2017
 ms.topic: conceptual
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - parsing text with regular expressions, threads
 - pattern-matching with regular expressions, threads
 ms.assetid: 7c4a167b-5236-4cde-a2ca-58646230730f
-ms.openlocfilehash: 4be73ba89ff7114c52394ab23a8de02adb35e0e2
-ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
+ms.openlocfilehash: 93aaed60179c043e414ac0d296722bc397b7e771
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98692546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702880"
 ---
 # <a name="thread-safety-in-regular-expressions"></a>Acesso thread-safe em expressões regulares
 

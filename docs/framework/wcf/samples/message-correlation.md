@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: correlação de mensagens'
 title: Correlação de mensagem
 ms.date: 03/30/2017
 ms.assetid: 3f62babd-c991-421f-bcd8-391655c82a1f
-ms.openlocfilehash: c6c68ec36ecee294aa217f77f462dcea31f1e211
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e38e2e8d6936132e165fd3372ac57fef27240d1a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704024"
 ---
 # <a name="message-correlation"></a>Correlação de mensagem
 
@@ -280,7 +281,7 @@ static void DisplayOrderStatus()
 
     2. Expanda a guia **recursos** .
 
-    3. Clique com o botão direito do mouse em **filas de mensagens particulares**e selecione **nova** **fila privada**.
+    3. Clique com o botão direito do mouse em **filas de mensagens particulares** e selecione **nova** **fila privada**.
 
     4. Marque a caixa **transacional** .
 
@@ -313,7 +314,7 @@ static void DisplayOrderStatus()
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MessageCorrelation`
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enfileiramento no WCF](../feature-details/queuing-in-wcf.md)
 - [Enfileiramento de Mensagens](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: instruções de Set-Up'
 title: Instruções de configuração
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Samples [WCF], setup
 - Windows Communication Foundation Samples [WCF], setup
 ms.assetid: 0be7d232-485b-4f6d-9ed0-b4243c907376
-ms.openlocfilehash: 92e0924143b42309b98fb967dfea0502bae29203
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f84e3b7b9dd7b26973f757f3456d6ce9bba5a8ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289900"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703491"
 ---
 # <a name="set-up-instructions"></a>Instruções de configuração
 

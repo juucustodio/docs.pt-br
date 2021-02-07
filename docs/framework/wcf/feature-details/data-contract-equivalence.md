@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: equivalência de contrato de dados'
 title: Equivalência de contrato de dados
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - data contracts [WCF], equivalence
 ms.assetid: f06f3c7e-c235-4ec1-b200-68142edf1ed1
-ms.openlocfilehash: 2a8c186c839be5008bbc5315c7c9fae638680714
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d47107cfaeea5093977a919df1a5edb226cb4ebc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293917"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704986"
 ---
 # <a name="data-contract-equivalence"></a>Equivalência de contrato de dados
 
@@ -63,7 +64,7 @@ Para um cliente enviar com êxito dados de um determinado tipo para um serviço,
   
  Ao passar parâmetros e retornar valores entre aplicativos, se o tipo esperado for uma interface, ele será equivalente ao tipo esperado sendo do tipo <xref:System.Object> . Como todos os tipos derivam de <xref:System.Object> , todos os contratos de dados derivam do contrato de dados para o <xref:System.Object> . Assim, qualquer tipo de contrato de dados pode ser passado quando uma interface é esperada. Etapas adicionais são necessárias para trabalhar com êxito com interfaces; para obter mais informações, consulte [tipos conhecidos de contrato de dados](data-contract-known-types.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>

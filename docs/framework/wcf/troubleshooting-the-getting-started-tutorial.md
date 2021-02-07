@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: solucionar os tutoriais de introdução aos Windows Communication Foundation'
 title: Solucionar problemas dos tutoriais de introdução aos Windows Communication Foundation
 ms.date: 01/25/2019
 ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
-ms.openlocfilehash: 4d471372419996c5bc490c2d0fdd83927428a41e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c57598da80beb7b95d324359f6f9cf7cab9a4879
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281333"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703387"
 ---
 # <a name="troubleshoot-the-get-started-with-windows-communication-foundation-tutorials"></a>Solucionar problemas dos tutoriais de introdução aos Windows Communication Foundation
 
@@ -98,7 +99,7 @@ Para desativar a segurança:
     </binding
     ```  
 
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte também  
 
  [Introdução aos aplicativos WCF](getting-started-tutorial.md)  
  [Início rápido da solução de problemas do WCF](wcf-troubleshooting-quickstart.md)  

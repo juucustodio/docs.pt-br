@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Enfileiramento de mensagens para Windows Communication Foundation'
 title: Enfileiramento de mensagens para o Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: 6d718eb0-9f61-4653-8a75-d2dac8fb3520
-ms.openlocfilehash: 5132e0380aebd595e79429fab9df8a7fb94574a0
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 53c535379584bcb8fa50d1b550f87ea7acc15175
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558687"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703998"
 ---
 # <a name="message-queuing-to-windows-communication-foundation"></a>Enfileiramento de mensagens para o Windows Communication Foundation
 
@@ -123,7 +124,7 @@ Console.ReadLine();
 
     2. Expanda a guia **recursos** .
 
-    3. Clique com o botão direito do mouse em **filas de mensagens particulares**e selecione **nova** **fila privada**.
+    3. Clique com o botão direito do mouse em **filas de mensagens particulares** e selecione **nova** **fila privada**.
 
     4. Marque a caixa **transacional** .
 
@@ -154,7 +155,7 @@ Console.ReadLine();
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MsmqToWcf`
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Filas no WCF](../feature-details/queues-in-wcf.md)
 - [Como: fazer intercâmbio de mensagens com pontos de extremidade do WCF e aplicativos de enfileiramento de mensagens](../feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)

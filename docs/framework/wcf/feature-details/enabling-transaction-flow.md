@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Habilitando o fluxo de transações'
 title: Ativando o fluxo de transações
 ms.date: 03/30/2017
 helpviewer_keywords:
 - transactions [WCF], enabling flow
 ms.assetid: a03f5041-5049-43f4-897c-e0292d4718f7
-ms.openlocfilehash: 206cbecc35c6b517ddfc3b14f4a1d139cf72fc34
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: abf8875c870894f6c1b0a08138356950a646e4d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704921"
 ---
 # <a name="enabling-transaction-flow"></a>Ativando o fluxo de transações
 
@@ -49,13 +50,13 @@ O Windows Communication Foundation (WCF) fornece opções altamente flexíveis p
   
 |Mensagem de entrada|Configuração de TransactionFlow|Cabeçalho da transação|Resultado do processamento de mensagens|  
 |----------------------|-----------------------------|------------------------|-------------------------------|  
-|A transação corresponde ao formato de protocolo esperado|Permitido ou obrigatório|`MustUnderstand` é igual a `true`.|Processo|  
+|A transação corresponde ao formato de protocolo esperado|Permitido ou obrigatório|`MustUnderstand` é igual a `true`.|Processar|  
 |A transação não corresponde ao formato de protocolo esperado|Obrigatório|`MustUnderstand` é igual a `false`.|Rejeitado porque uma transação é necessária|  
 |A transação não corresponde ao formato de protocolo esperado|Permitido|`MustUnderstand` é igual a `false`.|Rejeitado porque o cabeçalho não é compreendido|  
 |Transação usando qualquer formato de protocolo|NotAllowed|`MustUnderstand` é igual a `false`.|Rejeitado porque o cabeçalho não é compreendido|  
 |Nenhuma transação|Obrigatório|N/D|Rejeitado porque uma transação é necessária|  
-|Nenhuma transação|Permitido|N/D|Processo|  
-|Nenhuma transação|NotAllowed|N/D|Processo|  
+|Nenhuma transação|Permitido|N/D|Processar|  
+|Nenhuma transação|NotAllowed|N/D|Processar|  
   
  Embora cada método em um contrato possa ter diferentes requisitos de fluxo de transações, a configuração do protocolo de fluxo de transações é delimitada no nível da associação. Isso significa que todos os métodos que compartilham o mesmo ponto de extremidade (e, portanto, a mesma associação) também compartilham a mesma política, permitindo ou exigindo o fluxo de transações, bem como o mesmo protocolo de transação, se aplicável.  
   

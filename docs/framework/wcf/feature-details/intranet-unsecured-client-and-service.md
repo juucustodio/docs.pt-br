@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: cliente e serviço sem segurança na intranet'
 title: Cliente e serviço sem segurança na Intranet
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f450f5d4-3547-47ec-9320-2809e6a12634
-ms.openlocfilehash: f9cd297b479a07f2330eabbaaf81605a3874ec25
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a03abc5b8eb0317c4d5d19347b3974d615570069
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257215"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704518"
 ---
 # <a name="intranet-unsecured-client-and-service"></a>Cliente e serviço sem segurança na Intranet
 
@@ -30,7 +31,7 @@ A ilustração a seguir descreve um serviço de Windows Communication Foundation
   
 ## <a name="service"></a>Serviço  
 
- O código e a configuração a seguir devem ser executados de forma independente. Realize uma destas ações:  
+ O código e a configuração a seguir devem ser executados de forma independente. Realize um dos seguintes procedimentos:  
   
 - Crie um serviço autônomo usando o código sem configuração.  
   
@@ -76,7 +77,7 @@ A ilustração a seguir descreve um serviço de Windows Communication Foundation
   
 ## <a name="client"></a>Cliente  
 
- O código e a configuração a seguir devem ser executados de forma independente. Realize uma destas ações:  
+ O código e a configuração a seguir devem ser executados de forma independente. Realize um dos seguintes procedimentos:  
   
 - Crie um cliente autônomo usando o código (e o código do cliente).  
   
@@ -119,7 +120,7 @@ A ilustração a seguir descreve um serviço de Windows Communication Foundation
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.NetTcpBinding>
 - [Visão geral de segurança](security-overview.md)

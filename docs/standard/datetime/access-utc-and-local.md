@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como acessar os objetos de fuso horário local e UTC predefinidos'
 title: 'Como: acessar os objetos de fuso horário predefinidos UTC e local'
 ms.date: 04/10/2017
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - time zones [.NET], retrieving
 - time zones [.NET], UTC
 ms.assetid: 961fb70b-83f0-4dab-a042-cb5fcd817cf5
-ms.openlocfilehash: b92ac812ed0bd0e80bb3a6ab03b52746eb15db97
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 74e3ca601ac0b3a6a684569b0931f8566b5d5d26
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818102"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702750"
 ---
 # <a name="how-to-access-the-predefined-utc-and-local-time-zone-objects"></a>Como: acessar os objetos de fuso horário predefinidos UTC e local
 
@@ -50,8 +51,8 @@ Este exemplo requer:
 
 - Que o <xref:System> namespace seja importado com a `using` instrução (necessária no código C#).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)
 - [Encontrando os fusos horários definidos em um sistema local](finding-the-time-zones-on-local-system.md)
-- [Como criar uma instância de um objeto TimeZoneInfo](instantiate-time-zone-info.md)
+- [Como: criar uma instância de um objeto TimeZoneInfo](instantiate-time-zone-info.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: extensibilidade de segurança'
 title: Extensibilidade de segurança
 ms.date: 03/30/2017
 ms.assetid: 2afe044d-df4a-49a4-9865-38700474c3dd
-ms.openlocfilehash: 967fde21f599835a06af4c502f3b8a4c8555b77c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0b973f39f97cd26b6eff3748ccc88e91788c57b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262626"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703634"
 ---
 # <a name="security-extensibility"></a>Extensibilidade de segurança
 

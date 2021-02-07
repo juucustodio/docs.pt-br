@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: fábrica de canais e cache'
 title: Cache e fábrica de canal
 ms.date: 03/30/2017
 ms.assetid: 954f030e-091c-4c0e-a7a2-10f9a6b1f529
-ms.openlocfilehash: 5b8348a98b484ca08e3dbeba141dc49825c8c071
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 6922191c2b99dea516d0e85aac9ed7bc12a67b81
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587359"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705194"
 ---
 # <a name="channel-factory-and-caching"></a>Cache e fábrica de canal
 
@@ -26,7 +27,7 @@ Para ajudar a minimizar a sobrecarga, o WCF pode armazenar em cache fábricas de
 > [!TIP]
 > Você tem controle direto sobre a criação de fábrica de canal quando usa a <xref:System.ServiceModel.ChannelFactory%601> classe diretamente.
 
-Os proxies de cliente do WCF gerados com a [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) são derivados de <xref:System.ServiceModel.ClientBase%601> . <xref:System.ServiceModel.ClientBase%601>define uma <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> propriedade estática que define o comportamento de cache da fábrica de canais. As configurações de cache são feitas para um tipo específico. Por exemplo, `ClientBase<ITest>.CacheSettings` a configuração para um dos valores definidos abaixo afetará somente o proxy/ClientBase do tipo `ITest` . A configuração de cache para um específico <xref:System.ServiceModel.ClientBase%601> é imutável assim que a primeira instância de proxy/ClientBase é criada.
+Os proxies de cliente do WCF gerados com a [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) são derivados de <xref:System.ServiceModel.ClientBase%601> . <xref:System.ServiceModel.ClientBase%601> define uma <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> propriedade estática que define o comportamento de cache da fábrica de canais. As configurações de cache são feitas para um tipo específico. Por exemplo,  `ClientBase<ITest>.CacheSettings` a configuração para um dos valores definidos abaixo afetará somente o proxy/ClientBase do tipo `ITest` . A configuração de cache para um específico <xref:System.ServiceModel.ClientBase%601> é imutável assim que a primeira instância de proxy/ClientBase é criada.
 
 ## <a name="specifying-caching-behavior"></a>Especificando o comportamento de cache
 
@@ -118,5 +119,5 @@ No exemplo acima, todas as instâncias de `TestClient` usariam fábricas de cana
 - <xref:System.ServiceModel.ClientBase%601>
 - [Compilando clientes](../building-clients.md)
 - [Clientes](clients.md)
-- [Usando um cliente do WCF para acessar serviços](../accessing-services-using-a-wcf-client.md)
-- [Como usar o ChannelFactory](how-to-use-the-channelfactory.md)
+- [Usando um cliente WCF para acessar um serviço](../accessing-services-using-a-wcf-client.md)
+- [Como: usar o ChannelFactory](how-to-use-the-channelfactory.md)

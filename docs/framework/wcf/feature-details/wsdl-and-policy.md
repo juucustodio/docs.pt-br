@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: WSDL e política'
 title: WSDL e política
 ms.date: 03/30/2017
 ms.assetid: cea87440-3519-4640-8494-b8a2b0e88c84
-ms.openlocfilehash: 123a878e90ee9099b009985a5e79155e8b1cd097
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e7d0ca81fbac1a746fa7c10efb8e8d32f1ee3240
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238334"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704141"
 ---
 # <a name="wsdl-and-policy"></a>WSDL e política
 
@@ -76,7 +77,7 @@ Este tópico aborda Windows Communication Foundation (WCF) WSDL 1,1, WS-Policy e
 |mssp:MustNotSendCancel|aninhado|Especifica um requisito de que as mensagens de solicitação de token de segurança (RST) de solicitação [WS-Trust] usando a associação de cancelamento [WS-Trust, WS-SC] não sejam enviadas ao emissor de um determinado SecurityContextToken. Se essa declaração estiver presente, essas mensagens de solicitação não deverão ser enviadas ao emissor. Se essa declaração não estiver presente, essas mensagens de solicitação poderão ser enviadas para o emissor.|  
 |mssp:RequireClientCertificate|aninhado|Esse elemento opcional especifica um requisito para que um certificado de cliente seja fornecido como parte do protocolo TLSNEGO. Se essa declaração estiver presente, um certificado de cliente deverá ser fornecido. Se essa declaração não estiver presente, um certificado de cliente não deverá ser fornecido. Esta asserção não deve ser usada fora de MSSP: SslContextToken.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Publicação personalizada de WSDL](../samples/custom-wsdl-publication.md)
 - [Como: exportar o WSDL personalizado](../extending/how-to-export-custom-wsdl.md)

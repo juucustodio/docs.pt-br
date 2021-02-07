@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Associação de segurança de mensagem'
 title: Associação de segurança de mensagem
 ms.date: 03/30/2017
 ms.assetid: a4570ce7-864e-461b-85d8-0f7bcc53c2c8
-ms.openlocfilehash: a4d13eabc0d086a9cfe58c95165b0405f60fcf14
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9392eb1955a4c142fc6cc5a693e14b7d765e4783
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294372"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703868"
 ---
 # <a name="message-security-binding"></a>Associação de segurança de mensagem
 

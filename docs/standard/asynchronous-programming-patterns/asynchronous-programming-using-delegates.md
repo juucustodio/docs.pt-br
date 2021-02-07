@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: programação assíncrona usando delegados'
 title: Programação assíncrona usando delegados
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - delegates [.NET], asynchronous
 - synchronous calling in asynchronous manner
 ms.assetid: 38a345ca-6963-4436-9608-5c9defef9c64
-ms.openlocfilehash: 01cdf5acf8f64472c218f35a0b8095aebf8f4571
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5315324fa79ce4658c255dbc09cd71a09afc614c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716259"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703101"
 ---
 # <a name="asynchronous-programming-using-delegates"></a>Programação assíncrona usando delegados
 

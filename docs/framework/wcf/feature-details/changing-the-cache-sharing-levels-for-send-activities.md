@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: alterando os níveis de compartilhamento de cache para atividades de envio'
 title: Alterando os níveis de compartilhamento de cache para enviar atividades
 ms.date: 03/30/2017
 ms.assetid: 03926a64-753d-460e-ac06-2a4ff8e1bbf5
-ms.openlocfilehash: cbb937ac47c93307db922b28e3df0ea694a77960
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7ced6a8a18779a0c0d5914e63fde658b6d0130ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262041"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705207"
 ---
 # <a name="changing-the-cache-sharing-levels-for-send-activities"></a>Alterando os níveis de compartilhamento de cache para enviar atividades
 
@@ -93,7 +94,7 @@ serviceHost.WorkflowExtensions.Add(() => new SendMessageChannelCache
 
  Você pode personalizar as configurações de cache para o cache de fábrica do canal e o cache do canal. As configurações de cache são definidas na <xref:System.ServiceModel.Activities.ChannelCacheSettings> classe. A <xref:System.ServiceModel.Activities.SendMessageChannelCache> classe define as configurações de cache padrão para o cache de fábrica de canais e o cache de canal em seu construtor sem parâmetros. A tabela a seguir lista os valores padrão dessas configurações de cache para cada tipo de cache.  
   
-|Configurações|LeaseTimeout (min)|IdleTimeout (min)|MaxItemsInCache|  
+|Settings|LeaseTimeout (min)|IdleTimeout (min)|MaxItemsInCache|  
 |-|-|-|-|  
 |Padrão de cache de fábrica|TimeSpan.MaxValue|2|16|  
 |Padrão de cache do canal|5|2|16|  

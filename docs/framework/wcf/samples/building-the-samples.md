@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Compilando os exemplos de Windows Communication Foundation'
 title: Compilando os exemplos do Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: 2899e7a5-9cb2-4e8d-b8d2-f31391549198
-ms.openlocfilehash: ee1c8101e31464fa203341d53137525433782c18
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a53073ac92369574b204dbce998bebb8844fce8d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253824"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704180"
 ---
 # <a name="building-the-windows-communication-foundation-samples"></a>Compilando os exemplos do Windows Communication Foundation
 
@@ -44,7 +45,7 @@ Os exemplos de Windows Communication Foundation (WCF) podem ser criados usando o
 
  Para evitar a divulgação não intencional de metadados de serviço potencialmente confidenciais, a configuração padrão para Windows Communication Foundation (WCF) Services desabilita a publicação de metadados. Esse comportamento é seguro por padrão, mas também significa que você não pode usar uma ferramenta de importação de metadados (como Svcutil.exe) para gerar o código do cliente necessário para chamar o serviço, a menos que o comportamento de publicação de metadados do serviço esteja explicitamente habilitado na configuração. Para facilitar a experiência com os exemplos, quase todos os exemplos expõem um ponto de extremidade de publicação de metadados não seguro. Esses pontos de extremidade estão potencialmente disponíveis para consumidores anônimos não autenticados e devem ser levados em vida antes da implantação desses pontos de extremidade para garantir que os metadados de um serviço sejam desmarcados publicamente. Para obter mais informações sobre como publicar metadados de serviço, consulte o exemplo de [comportamento de publicação de metadados](metadata-publishing-behavior.md) . Consulte o exemplo de [ponto de extremidade de metadados seguro personalizado](custom-secure-metadata-endpoint.md) para obter um exemplo de proteção de um ponto de extremidade de metadados.
 
-## <a name="exception-handling"></a>Tratamento de Exceção
+## <a name="exception-handling"></a>Tratamento de exceção
 
  Em geral, falar com esses exemplos não inclui tratamento de exceções para manter o código focado no assunto do exemplo. Para obter mais informações sobre manipulação de exceção, consulte o exemplo de [exceções esperadas](expected-exceptions.md) .
 
@@ -85,7 +86,7 @@ Os exemplos de Windows Communication Foundation (WCF) podem ser criados usando o
     > [!NOTE]
     > Para ignorar a geração de configuração de cliente, adicione a opção **/noconfig** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Executando os exemplos do Windows Communication Foundation](running-the-samples.md)
 - [Ferramenta Utilitário de Metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

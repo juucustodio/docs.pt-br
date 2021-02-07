@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: segurança de mensagem anônima'
 title: Segurança de mensagem anônima
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS Security
 ms.assetid: c321cbf9-8c05-4cce-b5a5-4bf7b230ee03
-ms.openlocfilehash: 4349b53ca86c0ed8bd7e0527ad1e903543f56631
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a49b3542d2b3dd0173b31c9f7b81645ec1098afb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294394"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703894"
 ---
 # <a name="message-security-anonymous"></a>Segurança de mensagem anônima
 

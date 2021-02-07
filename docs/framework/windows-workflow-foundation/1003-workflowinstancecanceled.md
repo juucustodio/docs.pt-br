@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1003-WorkflowInstanceCanceled'
 title: 1003 - WorkflowInstanceCanceled
 ms.date: 03/30/2017
 ms.assetid: 64754dc2-c160-4bf3-869a-13d56694e2dc
-ms.openlocfilehash: bd8abf173ab6588d4a35ba59c6cd14fb53445e9f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ef7b7c6849e96866204fe53deadce8302d18e0d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239894"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703361"
 ---
 # <a name="1003---workflowinstancecanceled"></a>1003 - WorkflowInstanceCanceled
 
@@ -17,7 +18,7 @@ ms.locfileid: "96239894"
 |-|-|  
 |ID|1003|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

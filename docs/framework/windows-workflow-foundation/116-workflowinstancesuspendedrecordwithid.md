@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 116-WorkflowInstanceSuspendedRecordWithId'
 title: 116 - WorkflowInstanceSuspendedRecordWithId
 ms.date: 03/30/2017
 ms.assetid: 38232c03-6139-4494-a020-79bc83eb9dce
-ms.openlocfilehash: affc8e889cba6ea02bddaa0a21d7311df624b087
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 32746777d32ed0c8320d53da9f73ddb8d55a5573
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703244"
 ---
 # <a name="116---workflowinstancesuspendedrecordwithid"></a>116 - WorkflowInstanceSuspendedRecordWithId
 
@@ -17,7 +18,7 @@ ms.locfileid: "96281749"
 |-|-|  
 |ID|116|  
 |Palavras-chave|HealthMonitoring, WFTracking|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

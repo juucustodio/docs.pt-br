@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: adicionando status online e offline'
 title: Adicionando status online e offline
 ms.date: 03/30/2017
 ms.assetid: 05e5f51d-81b6-4c17-b364-9dda447a5fce
-ms.openlocfilehash: 08ae4a20ced9626504c9fd2045416460e0878c5b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 33f7920954ed28ebc2c3d34cc54a2e294f5730c7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292916"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705233"
 ---
 # <a name="adding-online-and-offline-status"></a>Adicionando status online e offline
 
@@ -18,6 +19,6 @@ Em muitos casos, é importante que um aplicativo monitore detalhes específicos 
 > [!NOTE]
 > Um manipulador de eventos online deve primeiro garantir que o nó esteja aberto antes de enviar qualquer mensagem.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Compilando um aplicativo de canal par](building-a-peer-channel-application.md)

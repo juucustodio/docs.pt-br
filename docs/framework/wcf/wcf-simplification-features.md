@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: recursos de simplificação do WCF'
 title: funcionalidades de simplificação do WCF
 ms.date: 03/30/2017
 ms.assetid: 4535a511-6064-4da0-b361-80262a891663
-ms.openlocfilehash: 8a818ec0852cfae20ef23fede04b55b08a7449a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf89ff7775e2a162760c3c6c598a045ddccdf8d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732912"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703372"
 ---
 # <a name="wcf-simplification-features"></a>funcionalidades de simplificação do WCF
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: executando os exemplos de Windows Communication Foundation'
 title: Executando os exemplos do Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: db8a83da-95c1-4a21-a9d2-48caeb6398ea
-ms.openlocfilehash: 3a12128541739ba5c380be2efc291b9b419cab12
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4edbd7aef8eed42e4815666c15ff07aa2c2e82de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262665"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703725"
 ---
 # <a name="running-the-windows-communication-foundation-samples"></a>Executando os exemplos do Windows Communication Foundation
 
@@ -80,7 +81,7 @@ Os exemplos de Windows Communication Foundation (WCF) podem ser executados em um
   
 - Se o serviço estiver hospedado no IIS para fins de segurança, remova a definição de diretório virtual e as permissões concedidas nas etapas de instalação quando você tiver concluído os exemplos.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Compilando os exemplos do Windows Communication Foundation](building-the-samples.md)
 - [Dicas de solução de problemas para exemplos do WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

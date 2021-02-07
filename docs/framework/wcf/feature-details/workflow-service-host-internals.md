@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serviço de fluxo de trabalho interno do host'
 title: Internos do host de serviço de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250
-ms.openlocfilehash: 23ee0533d5386164dc95cb7fe2c61a626ea3f96e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fb33e7d6f4e9f78c06459f3d7c8b5c44e2a44a7d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295737"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704375"
 ---
 # <a name="workflow-service-host-internals"></a>Internos do host de serviço de fluxo de trabalho
 
@@ -52,7 +53,7 @@ A <xref:System.ServiceModel.WorkflowServiceHost> classe é usada para hospedar s
 > [!WARNING]
 > O host do serviço de fluxo de trabalho não será aberto se SQL Server estiver configurado para escutar somente no protocolo NamedPipe.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de fluxo de trabalho](workflow-services.md)
 - [Serviços de fluxo de trabalho de hospedagem](hosting-workflow-services.md)

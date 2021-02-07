@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: rotear por corpo'
 title: Rota por corpo
 ms.date: 03/30/2017
 ms.assetid: 07a6fc3b-c360-42e0-b663-3d0f22cf4502
-ms.openlocfilehash: af88d9938098c9aaa6b4b116c196e3b7f563a1e7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1c9505484c4af34c5e1f2f98524c01fb378c005f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703777"
 ---
 # <a name="route-by-body"></a>Rota por corpo
 

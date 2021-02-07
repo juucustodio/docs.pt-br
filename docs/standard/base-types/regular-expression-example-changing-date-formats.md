@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: exemplo de expressão regular: alterando formatos de data'
 title: 'Exemplo de expressão regular: Alterando formatos de data'
 ms.date: 06/30/2020
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - regular expressions [.NET], examples
 - pattern-matching with regular expressions, examples
 ms.assetid: 5fcc75a5-09d7-45ae-a4c0-9ad6085ac83d
-ms.openlocfilehash: 9e23a11bd6eac0a77ef04d95cfab8db5d5e26807
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4617188e958042dce9709f8baf32f5b4e2930789
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733562"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702932"
 ---
 # <a name="regular-expression-example-changing-date-formats"></a>Exemplo de expressão regular: Alterando formatos de data
 
@@ -59,6 +60,6 @@ O exemplo de código a seguir usa o <xref:System.Text.RegularExpressions.Regex.R
 |`-`|Adicionar um hífen.|  
 |`$(year)`|Adicionar a cadeia de caracteres capturada pelo grupo de captura `year`.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões regulares do .NET](regular-expressions.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: integração de enfileiramento de mensagens'
 title: Integração de enfileiramento de mensagem
 ms.date: 03/30/2017
 ms.assetid: 8d2b47a0-5d51-45b5-9633-b62e064e8ea4
-ms.openlocfilehash: 570fd73ec02c647d18753c0188075dde36759530
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2cab2b2caa654b3347ad8b9603509e921f867680
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96240635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703933"
 ---
 # <a name="message-queueing-integration"></a>Integração de enfileiramento de mensagem
 

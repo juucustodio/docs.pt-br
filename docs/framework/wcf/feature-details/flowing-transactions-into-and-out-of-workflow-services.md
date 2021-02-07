@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: transações de fluxo dentro e fora dos serviços de fluxo de trabalho'
 title: Transações de fluxo de entrada e saída de serviços de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: 03ced70e-b540-4dd9-86c8-87f7bd61f609
-ms.openlocfilehash: 8764f3c88fc978bc71ff993252b04fe58da4bbc9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f39740c45dd70fbc06963b8e842f9a01a0393f7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290342"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704960"
 ---
 # <a name="flowing-transactions-into-and-out-of-workflow-services"></a>Transações de fluxo de entrada e saída de serviços de fluxo de trabalho
 
@@ -312,7 +313,7 @@ Os serviços de fluxo de trabalho e os clientes podem participar de transações
     }  
     ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de fluxo de trabalho](workflow-services.md)
 - [Visão geral de transações do Windows Communication Foundation](transactions-overview.md)

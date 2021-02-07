@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: copiando nós existentes de um documento para outro'
 title: Copiando nós existentes de um documento para outro
 ms.date: 03/30/2017
 ms.assetid: 3caa78c1-3448-4b7b-b83c-228ee857635e
-ms.openlocfilehash: 2e66d6eb83692e8e6541ce869062e2ce67c3c1df
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e4640e1a20ca25d6bd7266209192cb5e9af7a998
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722200"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702854"
 ---
 # <a name="copying-existing-nodes-from-one-document-to-another"></a>Copiando nós existentes de um documento para outro
 
@@ -38,6 +39,6 @@ O método **ImportNode** é o mecanismo pelo qual um nó ou uma subárvore intei
 > [!NOTE]
 > Embora os nós de DocumentType possam ser importados, um documento pode ter apenas um DocumentType. Assim, uma vez que você importou o tipo de documento, antes de inseri-lo na árvore você precisará certificar-se que não há documento tipo no documento. Para saber mais sobre como remover nós, confira [Removendo nós, conteúdo e valores de um documento XML](removing-nodes-content-and-values-from-an-xml-document.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

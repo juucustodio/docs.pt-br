@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: extensibilidade do host do serviço de fluxo de trabalho'
 title: Extensibilidade de host de serviço do fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: c0e8f7bb-cb13-49ec-852f-b85d7c23972f
-ms.openlocfilehash: 67a7830c564cabafb9441e86eb0d87164d854ee5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7454d894823a67b3621828afdd70a28cf2e7506c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258446"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704336"
 ---
 # <a name="workflow-service-host-extensibility"></a>Extensibilidade de host de serviço do fluxo de trabalho
 
@@ -53,7 +54,7 @@ host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action =
 
  <xref:System.ServiceModel.Activities.WorkflowServiceHost> pode ser usado para hospedar fluxos de trabalho que não são de serviço ou fluxos de trabalho que não começam com uma <xref:System.ServiceModel.Activities.Receive> atividade ou fluxos de trabalho que não usam as atividades de mensagens. Os serviços de fluxo de trabalho normalmente começam com uma <xref:System.ServiceModel.Activities.Receive> atividade. Quando o <xref:System.ServiceModel.Activities.WorkflowServiceHost> recebe uma mensagem para um serviço de fluxo de trabalho, se ele ainda não estiver em execução (ou persistiu), uma nova instância de serviço de fluxo de trabalho será criada. Se um fluxo de trabalho não começar com uma atividade Receive, ele não poderá ser iniciado enviando uma mensagem porque não há nenhuma atividade para receber a mensagem. Para hospedar um fluxo de trabalho que não seja de serviço, derive uma classe de <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> e substitua <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId%2A> , <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetCreationContext%2A> e <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnResolveBookmark%2A> . Substitua <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId%2A> se você quiser fornecer uma ID de instância preferencial. Substitua <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetCreationContext%2A> para criar um contexto de criação de fluxo de trabalho personalizado ou preencha uma instância do existente <xref:System.ServiceModel.Activities.WorkflowCreationContext> . Substitua <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnResolveBookmark%2A> para extrair manualmente o indicador da mensagem de entrada. Se você substituir esse método, deverá invocar <xref:System.ServiceModel.Activities.WorkflowHostingResponseContext.SendResponse%2A> em seu corpo para responder à mensagem enviada para o WorkflowHostingEndpoint. Se você não fizer isso, um <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> limite pode ser eventualmente excedido. Em contratos bidirecionais, você poderá detectar sua falha para invocar devido à <xref:System.ServiceModel.Activities.WorkflowHostingResponseContext.SendResponse%2A> falha do cliente em receber uma resposta. Em contratos unidirecionais, você pode não reconhecer o erro de falha ao chamar <xref:System.ServiceModel.Activities.WorkflowHostingResponseContext.SendResponse%2A> até que seja tarde demais, depois que o <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> limite de limitação for excedido. Para obter mais informações, consulte o [indicador de retomada do WorkflowHostingEndpoint](../../windows-workflow-foundation/samples/workflowhostingendpoint-resume-bookmark.md)para criar uma nova instância de um fluxo de trabalho que não seja de serviço, declare um contrato de serviço que define uma operação que cria uma nova instância. A operação de criação deve levar um IDictionary \<string, object> para passar qualquer parâmetro de fluxo de trabalho necessário. Esse contrato é implementado implicitamente pela <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> classe derivada. Ao hospedar o fluxo de trabalho, adicione uma instância da <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> classe derivada ao host chamando <xref:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint%2A> e chamar <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> . Para criar uma instância do fluxo de trabalho, crie um <xref:System.ServiceModel.ChannelFactory%601> do seu tipo de contrato de serviço e chame <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A> . Em seguida, você pode chamar a operação de criação definida em seu contrato de serviço.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de fluxo de trabalho](workflow-services.md)
 - [Atividades de mensagem](messaging-activities.md)

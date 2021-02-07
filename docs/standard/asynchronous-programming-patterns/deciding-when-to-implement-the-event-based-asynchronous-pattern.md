@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: decidindo quando implementar o padrão assíncrono baseado em evento'
 title: Decidindo quando implementar o padrão assíncrono baseado em evento
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - AsyncOperation class
 - AsyncCompletedEventArgs class
 ms.assetid: a00046aa-785d-4f7f-a8e5-d06475ea50da
-ms.openlocfilehash: 096b3e9e5732989ff5e85a5b6df4ca413e29cbcd
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 463a39c398c9920d7873203f193898461171cdda
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830409"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703088"
 ---
 # <a name="deciding-when-to-implement-the-event-based-asynchronous-pattern"></a>Decidindo quando implementar o padrão assíncrono baseado em evento
 
@@ -83,7 +84,7 @@ A lista a seguir mostra algumas recomendações a serem seguidas se você decidi
 
 - Só exponha o padrão <xref:System.IAsyncResult> caso tiver requisitos de alto desempenho que você verificou não poderem ser atendidos pelo padrão baseado em evento, mas que podem ser atendidos pelo padrão <xref:System.IAsyncResult>.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: Implementar um componente compatível com o padrão assíncrono baseado em evento](component-that-supports-the-event-based-asynchronous-pattern.md)
 - [Padrão assíncrono baseado em evento (EAP)](event-based-asynchronous-pattern-eap.md)

@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: AsymmetricSecurityBindingElement'
 title: AsymmetricSecurityBindingElement
 ms.date: 03/30/2017
 ms.assetid: 7bd3b6be-8f77-4927-93ae-6fa371893cca
-ms.openlocfilehash: 00485ff80a0064e700d99203de3aa581d3761f30
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 25d0ac205491e9ce27c59d3a0670d1e4a3150e21
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255722"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757937"
 ---
 # <a name="asymmetricsecuritybindingelement"></a>AsymmetricSecurityBindingElement
 
 AsymmetricSecurityBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class AsymmetricSecurityBindingElement : SecurityBindingElement  

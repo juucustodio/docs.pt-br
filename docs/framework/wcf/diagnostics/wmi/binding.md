@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: Associação'
 title: Binding2
 ms.date: 03/30/2017
 ms.assetid: 09511c6c-5749-4bb0-874e-0f0be36bfe04
-ms.openlocfilehash: b72bd3903b7139c4adf2a8bd0ced6c34e7285640
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 36887a9296bfafd0790105e7f4d513efc3009bf8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274290"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757781"
 ---
 # <a name="binding"></a>Associação
 
 Associação WMI  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class Binding  

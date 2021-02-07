@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: ClientCredentials'
 title: ClientCredentials
 ms.date: 03/30/2017
 ms.assetid: 41dffd6b-8f14-4fed-aefb-2a1bb168efb3
-ms.openlocfilehash: c63e1b3de464b306f46e2f0935b1208d7262925a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7b0b5a05e5b61de717567de664079f2ed1e20f6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274186"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757654"
 ---
 # <a name="clientcredentials"></a>ClientCredentials
 
 ClientCredentials  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class ClientCredentials : Behavior  

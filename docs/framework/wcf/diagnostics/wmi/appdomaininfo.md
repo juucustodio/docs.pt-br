@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: AppDomainInfo'
 title: AppDomainInfo
 ms.date: 03/30/2017
 ms.assetid: 6610b7d8-81eb-4bec-a543-9b72ad7b6f73
-ms.openlocfilehash: c5c44f4d8f6d93443802d5e1950c4d850976c5b6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1e527f2a25c48a3bf35d974e3ac192d937a8a86e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291122"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757963"
 ---
 # <a name="appdomaininfo"></a>AppDomainInfo
 
 Informações de domínio do aplicativo  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class AppDomainInfo  

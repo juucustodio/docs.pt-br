@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: BinaryMessageEncodingBindingElement'
 title: BinaryMessageEncodingBindingElement
 ms.date: 03/30/2017
 ms.assetid: e2bb3cdd-3bbd-4bb5-85fe-570457500a66
-ms.openlocfilehash: eb174d12731d7f1bc78f4d709cf043daf2346bd2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e2bc711416c61ca29a93fbf75e4e734137f2b4be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96269789"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757872"
 ---
 # <a name="binarymessageencodingbindingelement"></a>BinaryMessageEncodingBindingElement
 
 BinaryMessageEncodingBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp  
 class BinaryMessageEncodingBindingElement : MessageEncodingBindingElement  

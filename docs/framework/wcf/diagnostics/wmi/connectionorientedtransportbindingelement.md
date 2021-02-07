@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: ConnectionOrientedTransportBindingElement'
 title: ConnectionOrientedTransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: c1308313-f0e2-49e6-977d-6b4ce9ad35d1
-ms.openlocfilehash: 3c69b73cc05a56a7556630de0f83675590442293
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bd0c05fc86ad7bc95837cee7e22ea83975369b62
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274147"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757573"
 ---
 # <a name="connectionorientedtransportbindingelement"></a>ConnectionOrientedTransportBindingElement
 
 ConnectionOrientedTransportBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class ConnectionOrientedTransportBindingElement : TransportBindingElement  

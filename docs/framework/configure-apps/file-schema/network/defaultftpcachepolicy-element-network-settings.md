@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <defaultFtpCachePolicy> elemento (configurações de rede)'
 title: Elemento <defaultFtpCachePolicy> (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <defaultFtpCachePolicy> element
 - defaultFtpCachePolicy element
 ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
-ms.openlocfilehash: e081882aa8df89c0a1bf5d4c60f1395a3319c417
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 77150ce0980e96dd949df4b5ad7e4557ed1b991a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190365"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740360"
 ---
 # <a name="defaultftpcachepolicy-element-network-settings"></a>Elemento \<defaultFtpCachePolicy> (Configurações de Rede)
 
@@ -24,7 +25,7 @@ Descreve se o cache FTP está ativo e descreve a política de cache padrão.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<requestCaching>**](requestcaching-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<defaultFtpCachePolicy>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <defaultFtpCachePolicy  
@@ -83,7 +84,7 @@ Descreve se o cache FTP está ativo e descreve a política de cache padrão.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.Cache>
 - <xref:System.Net.WebRequest>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <webProxyScript> elemento (configurações de rede)'
 title: Elemento <webProxyScript> (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <webProxyScript> element
 - webProxyScript element
 ms.assetid: a13c26db-6218-4af3-9696-38f24b23bfac
-ms.openlocfilehash: e36b470b1ec348085b13a58630b0ac6833e43946
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1627b6650582202f3f1a4c1fdebf2d183e4a894b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178301"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740100"
 ---
 # <a name="webproxyscript-element-network-settings"></a>Elemento \<webProxyScript> (Configurações de Rede)
 
@@ -24,7 +25,7 @@ Configura as características do script usado para descobrir proxies da Web.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webProxyScript>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <webProxyScript  
@@ -58,6 +59,6 @@ Configura as características do script usado para descobrir proxies da Web.
 
  Esse elemento pode ser usado no arquivo de configuração do aplicativo ou no arquivo de configuração do computador (Machine.config).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações de rede](index.md)

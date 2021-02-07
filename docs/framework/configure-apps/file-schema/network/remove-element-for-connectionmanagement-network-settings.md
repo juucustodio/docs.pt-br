@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <remove> elemento para ConnectionManagement (configurações de rede)'
 title: Elemento <remove> para connectionManagement (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - <connectionManagement>, remove element
 - remove element, connectionManagement
 ms.assetid: 94b81775-5a22-4975-8c47-8620c40c3f35
-ms.openlocfilehash: 46157482d7ceb42b352c68dc9b0eab4f7688bc5c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 98916846fb5de93ee93a7e25530e983cbd3719ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740243"
 ---
 # <a name="remove-element-for-connectionmanagement-network-settings"></a>Elemento \<remove> para connectionManagement (Configurações de Rede)
 
@@ -26,7 +27,7 @@ Remove um endereço IP ou nome DNS da lista de gerenciamento de conexão.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<connectionManagement>**](connectionmanagement-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <remove
@@ -80,7 +81,7 @@ Remove um endereço IP ou nome DNS da lista de gerenciamento de conexão.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.ServicePoint>
 - <xref:System.Net.ServicePointManager>

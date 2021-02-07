@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <uri> elemento (configurações de URI)'
 title: Elemento <uri> (Configurações de URI)
 ms.date: 03/30/2017
 ms.assetid: c22bab8b-477c-4ae4-8498-65ad409e0847
-ms.openlocfilehash: 2f22d70407d10dbb38f0cb8d3a8ac74ff3fe8763
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: dc30778fdf5babfb87da0e32829ed9a3ae412c2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190196"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740113"
 ---
 # <a name="uri-element-uri-settings"></a>Elemento \<uri> (Configurações de URI)
 
@@ -16,7 +17,7 @@ Contém configurações que especificam como o .NET Framework trata os endereço
 [**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;**\<uri>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <uri>  
@@ -70,6 +71,6 @@ Contém configurações que especificam como o .NET Framework trata os endereço
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações de rede](index.md)

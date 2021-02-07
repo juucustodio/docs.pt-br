@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tratar (Entity SQL)'
 title: TRATAR (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 5b77f156-55de-4cb4-8154-87f707d4c635
-ms.openlocfilehash: bb41c0fed944ce4db11878b9213a62c6f851418e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3f014cac631d246b35d145cdb80c9aa6ac401524
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201038"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673421"
 ---
 # <a name="treat-entity-sql"></a>TRATAR (Entity SQL)
 
@@ -33,7 +34,7 @@ TREAT ( expression as type)
 > [!NOTE]
 > A expressão especificada deve ser um subtipo do tipo de dados especificado, ou o tipo de dados deve ser um subtipo da expressão.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Um valor de tipo de dados especificado.  
   
@@ -71,7 +72,7 @@ WHERE p IS OF (NamespaceName.Employee)
   
  [!code-sql[DP EntityServices Concepts#TREAT_ISOF](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#treat_isof)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)
 - [Tipos estruturados que permitem valor nulo](nullable-structured-types-entity-sql.md)

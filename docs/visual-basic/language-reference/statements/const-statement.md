@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução const (Visual Basic)'
 title: Instrução Const
 ms.date: 05/12/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - Const statement [Visual Basic]
 ms.assetid: 495b318d-b7c5-4198-94f8-0790a541b07a
-ms.openlocfilehash: 3b05d4067ef99e03df07d2c316c982051180d961
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 61d898823c7697c91b207a502417b49cdeaf5eea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84382101"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673850"
 ---
 # <a name="const-statement-visual-basic"></a>Instrução Const (Visual Basic)
 
 Declara e define uma ou mais constantes.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 [ <attributelist> ] [ accessmodifier ] [ Shadows ]
@@ -36,7 +37,7 @@ Opcional. Use isso para especificar qual código pode acessar essas constantes. 
 Opcional. Use isso para redeclarar e ocultar um elemento de programação em uma classe base. Consulte [Shadows](../modifiers/shadows.md).
 
 `constantlist`  
-Obrigatórios. Lista de constantes que estão sendo declaradas nesta instrução.
+Obrigatório. Lista de constantes que estão sendo declaradas nesta instrução.
 
 `constant` `[ ,` `constant` `... ]`
 
@@ -48,7 +49,7 @@ Cada `constant` uma tem a seguinte sintaxe e partes:
 |----------|-----------------|
 |`constantname`|Obrigatórios. Nome da constante. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
 |`datatype`|Obrigatório se `Option Strict` for `On` . Tipo de dados da constante.|
-|`initializer`|Obrigatórios. Expressão que é avaliada em tempo de compilação e atribuída à constante.|
+|`initializer`|Obrigatório. Expressão que é avaliada em tempo de compilação e atribuída à constante.|
 
 ## <a name="remarks"></a>Comentários
 
@@ -80,7 +81,7 @@ As constantes locais (dentro de um procedimento) assumem o padrão de acesso pú
 
 - **Tipos diferentes.** Você pode especificar tipos de dados diferentes para constantes diferentes usando uma `As` cláusula separada para cada variável que declarar. No entanto, você não pode declarar várias constantes para serem do mesmo tipo usando uma `As` cláusula comum.
 
-- **Initialization.** Você deve inicializar o valor de cada constante no `constantlist` . Você usa `initializer` o para fornecer uma expressão a ser atribuída à constante. A expressão pode ser qualquer combinação de literais, outras constantes que já estão definidas e membros de enumeração que já estão definidos. Você pode usar operadores aritméticos e lógicos para combinar esses elementos.
+- **Inicialização.** Você deve inicializar o valor de cada constante no `constantlist` . Você usa `initializer` o para fornecer uma expressão a ser atribuída à constante. A expressão pode ser qualquer combinação de literais, outras constantes que já estão definidas e membros de enumeração que já estão definidos. Você pode usar operadores aritméticos e lógicos para combinar esses elementos.
 
   Você não pode usar variáveis ou funções no `initializer` . No entanto, você pode usar palavras-chave de conversão, como `CByte` e `CShort` . Você também pode usar `AscW` se chamá-lo com uma constante `String` ou um `Char` argumento, pois isso pode ser avaliado no momento da compilação.
 
@@ -104,7 +105,7 @@ Se você definir uma constante com o tipo `Object` de dados, o compilador Visual
 
 O exemplo anterior usa o <xref:System.Type.ToString%2A> método no <xref:System.Type> objeto retornado pelo [Operador GetType](../operators/gettype-operator.md), porque <xref:System.Type> não pode ser convertido em `String` using `CStr` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>

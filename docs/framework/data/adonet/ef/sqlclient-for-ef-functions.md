@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: SqlClient para funções de Entity Framework'
 title: SqlClient para funções de Entity Framework
 ms.date: 03/30/2017
 ms.assetid: 71a3613c-b94e-494c-8ad8-90cf86ae0b87
-ms.openlocfilehash: f8e8ce44c1516171926ec71227e316586d02cc14
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 16f9551ef9ead26ed62f1a9f904bffc4513973c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156648"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673252"
 ---
 # <a name="sqlclient-for-entity-framework-functions"></a>SqlClient para funções de Entity Framework
 
@@ -21,7 +22,7 @@ O provedor de dados. NET Framework para SQL Server (SqlClient) para Entity Frame
 
  [Modelo conceitual canônico a mapeamento de funções do SQL Server](conceptual-model-canonical-to-sql-server-functions-mapping.md)  
   
- [Funções de Agregação](aggregate-functions-sqlclient-for-entity-framework.md)  
+ [Funções de agregação](aggregate-functions-sqlclient-for-entity-framework.md)  
   
  [Funções de data e hora](date-and-time-functions.md)  
   
@@ -31,7 +32,7 @@ O provedor de dados. NET Framework para SQL Server (SqlClient) para Entity Frame
   
  [Funções do Sistema](system-functions.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](./language-reference/entity-sql-reference.md)
 - [Visão geral da Entity SQL](./language-reference/entity-sql-overview.md)

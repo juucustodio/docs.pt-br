@@ -1,12 +1,13 @@
 ---
+description: 'Saiba mais sobre: $ (referência de Visual Basic)'
 title: $
 ms.date: 10/31/2017
-ms.openlocfilehash: 007f64e3bee9ba7fa310d500eb8938d7e1633d58
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 2e2a28a20c2a7df6c53a969f44af4ecffeebde5e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74349593"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674135"
 ---
 # <a name="-visual-basic-reference"></a>$ (Referência de Visual Basic)
 

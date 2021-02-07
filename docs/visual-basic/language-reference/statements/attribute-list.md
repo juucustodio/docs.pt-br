@@ -1,22 +1,23 @@
 ---
+description: 'Saiba mais sobre: lista de atributos (Visual Basic)'
 title: Lista de Atributos
 ms.date: 07/20/2015
 helpviewer_keywords:
 - attribute list
 - attributes [Visual Basic], applying
 ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
-ms.openlocfilehash: e566239c56efa8ca8e83bff92486fec4c434e92b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: bde9387a48001a2696a6f69454edc311e7597bb6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674032"
 ---
 # <a name="attribute-list-visual-basic"></a>Lista de atributos (Visual Basic)
 
 Especifica os atributos a serem aplicados a um elemento de programação declarado. Vários atributos são separados por vírgulas. Veja a seguir a sintaxe de um atributo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 [ attributemodifier ] attributename [ ( attributearguments | attributeinitializer ) ]  
@@ -27,7 +28,7 @@ Especifica os atributos a serem aplicados a um elemento de programação declara
 |||
 |---|---|
 |`attributemodifier`|Necessário para atributos aplicados no início de um arquivo de origem. Pode ser [assembly](../modifiers/assembly.md) ou [módulo](../modifiers/module-keyword.md).|
-|`attributename`| Necessário. Nome do atributo.|
+|`attributename`| Obrigatório. Nome do atributo.|
 |`attributearguments`|Opcional. Lista de argumentos posicionais para este atributo. Vários argumentos são separados por vírgulas.|
 |`attributeinitializer`|Opcional. Lista de inicializadores de variável ou propriedade para este atributo. Vários inicializadores são separados por vírgulas.|
   
@@ -57,7 +58,7 @@ Especifica os atributos a serem aplicados a um elemento de programação declara
   
  <xref:System.Runtime.InteropServices.DllImportAttribute> indica que o procedimento atribuído representa um ponto de entrada em uma DLL (biblioteca de vínculo dinâmico) não gerenciada. O atributo fornece o nome da DLL como um argumento posicional e as outras informações como inicializadores de variável.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Assembly](../modifiers/assembly.md)
 - [Modulo \<keyword>](../modifiers/module-keyword.md)

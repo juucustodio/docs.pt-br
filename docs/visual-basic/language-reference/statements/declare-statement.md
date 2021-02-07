@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução Declare'
 title: Instrução Declare
 ms.date: 07/20/2015
 f1_keywords:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - Visual Basic code, Sub procedures
 - Function procedures [Visual Basic], declaring
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
-ms.openlocfilehash: 8a5802583db53bfd0444ec9df0de9a0b9346d424
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8ad8169515bbb2889c0adbed4df4e30a0215d47d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90545513"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673837"
 ---
 # <a name="declare-statement"></a>Instrução Declare
 
@@ -55,16 +56,16 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 |Termo|Definição|
 |---|---|
 |`attributelist`|Opcional. Consulte a [lista de atributos](attribute-list.md).|
-|`accessmodifier`|Opcional. Um dos seguintes pode ser feito:<br /><br /> -   [Publicada](../modifiers/public.md)<br />-   [Protected](../modifiers/protected.md)<br />-   [Público](../modifiers/friend.md)<br />-   [Pessoal](../modifiers/private.md)<br />- [Amigo protegido](../modifiers/protected-friend.md)<br />- [Particular protegido](../modifiers/private-protected.md)<br /><br /> Consulte [níveis de acesso em Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|
+|`accessmodifier`|Opcional. Pode ser um dos seguintes:<br /><br /> -   [Publicada](../modifiers/public.md)<br />-   [Protected](../modifiers/protected.md)<br />-   [Público](../modifiers/friend.md)<br />-   [Pessoal](../modifiers/private.md)<br />- [Amigo protegido](../modifiers/protected-friend.md)<br />- [Particular protegido](../modifiers/private-protected.md)<br /><br /> Consulte [níveis de acesso em Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|
 |`Shadows`|Opcional. Consulte [Shadows](../modifiers/shadows.md).|
-|`charsetmodifier`|Opcional. Especifica o conjunto de caracteres e as informações de pesquisa de arquivo. Um dos seguintes pode ser feito:<br /><br /> -   [ANSI](../modifiers/ansi.md) (padrão)<br />-   [Unicode](../modifiers/unicode.md)<br />-   [Automático](../modifiers/auto.md)|
+|`charsetmodifier`|Opcional. Especifica o conjunto de caracteres e as informações de pesquisa de arquivo. Pode ser um dos seguintes:<br /><br /> -   [ANSI](../modifiers/ansi.md) (padrão)<br />-   [Unicode](../modifiers/unicode.md)<br />-   [Automático](../modifiers/auto.md)|
 |`Sub`|Opcional, mas `Sub` ou `Function` deve aparecer. Indica que o procedimento externo não retorna um valor.|
 |`Function`|Opcional, mas `Sub` ou `Function` deve aparecer. Indica que o procedimento externo retorna um valor.|
-|`name`|Obrigatórios. Nome desta referência externa. Para obter mais informações, consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
-|`Lib`|Obrigatórios. Apresenta uma `Lib` cláusula, que identifica o arquivo externo (DLL ou recurso de código) que contém um procedimento externo.|
-|`libname`|Obrigatórios. Nome do arquivo que contém o procedimento declarado.|
+|`name`|Obrigatório. Nome desta referência externa. Para obter mais informações, consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
+|`Lib`|Obrigatório. Apresenta uma `Lib` cláusula, que identifica o arquivo externo (DLL ou recurso de código) que contém um procedimento externo.|
+|`libname`|Obrigatório. Nome do arquivo que contém o procedimento declarado.|
 |`Alias`|Opcional. Indica que o procedimento que está sendo declarado não pode ser identificado em seu arquivo pelo nome especificado em `name` . Você especifica sua identificação no `aliasname` .|
-|`aliasname`|Necessário se você usar a `Alias` palavra-chave. Cadeia de caracteres que identifica o procedimento de uma das duas maneiras:<br /><br /> O nome do ponto de entrada do procedimento dentro de seu arquivo, entre aspas ( `""` )<br /><br /> - ou -<br /><br /> Um sinal numérico ( `#` ) seguido por um inteiro especificando o número ordinal do ponto de entrada do procedimento dentro de seu arquivo|
+|`aliasname`|Necessário se você usar a `Alias` palavra-chave. Cadeia de caracteres que identifica o procedimento de uma das duas maneiras:<br /><br /> O nome do ponto de entrada do procedimento dentro de seu arquivo, entre aspas ( `""` )<br /><br /> -ou-<br /><br /> Um sinal numérico ( `#` ) seguido por um inteiro especificando o número ordinal do ponto de entrada do procedimento dentro de seu arquivo|
 |`parameterlist`|Obrigatório se o procedimento usa parâmetros. Consulte a [lista de parâmetros](parameter-list.md).|
 |`returntype`|Obrigatório se `Function` for especificado e `Option Strict` for `On` . Tipo de dados do valor retornado pelo procedimento.|
 
@@ -145,7 +146,7 @@ O <xref:System.Runtime.InteropServices.DllImportAttribute> fornece uma maneira a
 
 [!code-vb[VbVbalrStatements#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#1)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
 - [Instrução Imports (tipo e namespace .NET)](imports-statement-net-namespace-and-type.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre a cláusula: as (Visual Basic)'
 title: Cláusula As
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - As keyword [Visual Basic], statement syntax
 - As keyword [Visual Basic]
 ms.assetid: b4281ec8-2be5-49f7-aae8-ae0a96265b0d
-ms.openlocfilehash: 2f0b217fb299a9c7c05f211c17d10efd80168ab5
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: a8c7a3d9bcc43c817910aa330b81ffaf98980699
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873319"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674058"
 ---
 # <a name="as-clause-visual-basic"></a>Cláusula As (Visual Basic)
 
@@ -61,7 +62,7 @@ Apresenta uma `As` cláusula, que identifica um tipo de dados em uma instrução
   
  [Tentar... Capturar... Instruções finally](try-catch-finally-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como criar uma nova variável](../../programming-guide/language-features/variables/how-to-create-a-new-variable.md)
 - [Data Types](../../programming-guide/language-features/data-types/index.md)

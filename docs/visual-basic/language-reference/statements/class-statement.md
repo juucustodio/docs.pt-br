@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução de classe (Visual Basic)'
 title: Instrução Class
 ms.date: 05/12/2018
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - classes [Visual Basic], data members
 - data members [Visual Basic], of classes
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
-ms.openlocfilehash: 3b64597fcd7453c20ed295fe263eeaa8783b20ae
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: de4541addc9f4755d973586c7d1b4410e4bf12ed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866034"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673889"
 ---
 # <a name="class-statement-visual-basic"></a>Instrução Class (Visual Basic)
 
 Declara o nome de uma classe e apresenta a definição das variáveis, propriedades, eventos e procedimentos que a classe compõe.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 [ <attributelist> ] [ accessmodifier ] [ Shadows ] [ MustInherit | NotInheritable ] [ Partial ] _  
@@ -40,12 +41,12 @@ End Class
 |Termo|Definição|  
 |---|---|  
 |`attributelist`|Opcional. Consulte a [lista de atributos](attribute-list.md).|  
-|`accessmodifier`|Opcional. Um dos seguintes pode ser feito:<br /><br /> -   [Publicada](../modifiers/public.md)<br />-   [Protected](../modifiers/protected.md)<br />-   [Público](../modifiers/friend.md)<br />-   [Pessoal](../modifiers/private.md)<br />-   [Amigo protegido](../modifiers/protected-friend.md)<br />- [Particular protegido](../modifiers/private-protected.md)<br/><br/> Consulte [níveis de acesso em Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Opcional. Pode ser um dos seguintes:<br /><br /> -   [Publicada](../modifiers/public.md)<br />-   [Protected](../modifiers/protected.md)<br />-   [Público](../modifiers/friend.md)<br />-   [Pessoal](../modifiers/private.md)<br />-   [Amigo protegido](../modifiers/protected-friend.md)<br />- [Particular protegido](../modifiers/private-protected.md)<br/><br/> Consulte [níveis de acesso em Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Opcional. Consulte [Shadows](../modifiers/shadows.md).|  
 |`MustInherit`|Opcional. Consulte [MustInherit](../modifiers/mustinherit.md).|  
 |`NotInheritable`|Opcional. Consulte [NotInheritable](../modifiers/notinheritable.md).|  
 |`Partial`|Opcional. Indica uma definição parcial da classe. Consulte [parcial](../modifiers/partial.md).|  
-|`name`|Necessário. Nome desta classe. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
+|`name`|Obrigatório. Nome desta classe. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
 |`Of`|Opcional. Especifica que esta é uma classe genérica.|  
 |`typelist`|Necessário se você usar a palavra-chave [of](of-clause.md) . Lista de parâmetros de tipo para esta classe. Consulte [lista de tipos](type-list.md).|  
 |`Inherits`|Opcional. Indica que essa classe herda os membros de outra classe. Consulte a [instrução Inherits](inherits-statement.md).|  
@@ -53,7 +54,7 @@ End Class
 |`Implements`|Opcional. Indica que essa classe implementa os membros de uma ou mais interfaces. Consulte a [instrução Implements](implements-statement.md).|  
 |`interfacenames`|Necessário se você usar a `Implements` instrução. Os nomes das interfaces que essa classe implementa.|  
 |`statements`|Opcional. Instruções que definem os membros dessa classe.|  
-|`End Class`|Necessário. Encerra a `Class` definição.|  
+|`End Class`|Obrigatório. Encerra a `Class` definição.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -111,7 +112,7 @@ End Class
   
  [!code-vb[VbVbalrStatements#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#62)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objetos e classes](../../programming-guide/language-features/objects-and-classes/index.md)
 - [Estruturas e classes](../../programming-guide/language-features/data-types/structures-and-classes.md)

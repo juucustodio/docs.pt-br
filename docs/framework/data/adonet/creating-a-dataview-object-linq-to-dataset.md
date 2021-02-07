@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Criando um objeto DataView (LINQ to DataSet)'
 title: Criando um objeto de DataView (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 76057508-e12d-4779-a707-06a4c2568acf
-ms.openlocfilehash: f76574a912128918ed575cbf0eca892041dc354c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4261e4bf55616a56652cb111d3660210dc3f96f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148315"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663814"
 ---
 # <a name="creating-a-dataview-object-linq-to-dataset"></a>Criando um objeto de DataView (LINQ to DataSet)
 
@@ -73,7 +74,7 @@ Há duas maneiras de criar um <xref:System.Data.DataView> no contexto de LINQ to
   
  No entanto, há uma perda de desempenho proveniente com definir a propriedade de <xref:System.Data.DataView.RowFilter%2A> ou de <xref:System.Data.DataView.Sort%2A> após <xref:System.Data.DataView> foi criado de uma consulta, como <xref:System.Data.DataView> constrói um índice para oferecer suporte a operações de filtro e classificação. Definindo a propriedade de <xref:System.Data.DataView.RowFilter%2A> ou de <xref:System.Data.DataView.Sort%2A> reconstrói o índice para os dados, adicionando a sobrecarga ao seu aplicativo e a diminuir o desempenho. Quando possível, é melhor especificar informações de filtro e classificação quando você primeiro cria <xref:System.Data.DataView> e impede o alterar mais tarde.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Associação e LINQ to DataSet de dados](data-binding-and-linq-to-dataset.md)
 - [Filtrar com DataView](filtering-with-dataview-linq-to-dataset.md)

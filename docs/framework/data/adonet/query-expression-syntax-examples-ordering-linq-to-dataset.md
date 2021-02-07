@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplos de sintaxe de expressão de consulta: ordenação (LINQ to DataSet)'
 title: 'Exemplos de sintaxe da expressão de consulta: Ordenação (LINQ to DataSet)'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 653a4a97-1e4a-4b2d-8d24-7dbe1f2a5c84
-ms.openlocfilehash: e29ce3a1cf666057ae717f0717af73db7be87e30
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e47685e2aee8aae544a48c8e41eb99a1b76dd85a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189065"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663593"
 ---
 # <a name="query-expression-syntax-examples-ordering-linq-to-dataset"></a>Exemplos de sintaxe da expressão de consulta: Ordenação (LINQ to DataSet)
 
@@ -70,7 +71,7 @@ Os exemplos neste tópico demonstram como usar <xref:System.Linq.Enumerable.Orde
  [!code-csharp[DP LINQ to DataSet Examples#ThenByDescendingSimple](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#thenbydescendingsimple)]
  [!code-vb[DP LINQ to DataSet Examples#ThenByDescendingSimple](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#thenbydescendingsimple)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Carregando dados em um DataSet](loading-data-into-a-dataset.md)
 - [LINQ para exemplos de DataSet](linq-to-dataset-examples.md)

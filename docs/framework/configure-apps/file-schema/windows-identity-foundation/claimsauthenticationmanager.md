@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <claimsAuthenticationManager>'
 title: <claimsAuthenticationManager>
 ms.date: 03/30/2017
 ms.assetid: 6d30a450-6d13-4671-81a8-77e0204500c5
 author: BrucePerlerMS
-ms.openlocfilehash: 9e099b8de486631702548b8a035a46a7e0f4eb30
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5a94861d6b2684b9f66c7d5e14f72aa419a0c66f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158468"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664243"
 ---
 # \<claimsAuthenticationManager>
 

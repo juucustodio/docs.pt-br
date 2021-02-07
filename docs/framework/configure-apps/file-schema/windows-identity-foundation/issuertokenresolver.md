@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <issuerTokenResolver>'
 title: <issuerTokenResolver>
 ms.date: 03/30/2017
 ms.assetid: f74392f6-3f5b-4880-bd8a-3a9130d31e65
 author: BrucePerlerMS
-ms.openlocfilehash: 946ae8601e1e4563becd0b346b6c792724405a45
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 535b6f098e168a198eb0949d6baba6659e5140db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91165033"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664087"
 ---
 # \<issuerTokenResolver>
 
@@ -44,7 +45,7 @@ Registra o resolvedor de token do emissor que é usado por manipuladores na cole
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|type|Especifica o tipo do resolvedor de token emissor. Deve ser a <xref:System.IdentityModel.Tokens.IssuerTokenResolver> classe ou um tipo derivado da <xref:System.IdentityModel.Tokens.IssuerTokenResolver> classe. Necessário.|  
+|type|Especifica o tipo do resolvedor de token emissor. Deve ser a <xref:System.IdentityModel.Tokens.IssuerTokenResolver> classe ou um tipo derivado da <xref:System.IdentityModel.Tokens.IssuerTokenResolver> classe. Obrigatório.|  
   
 ### <a name="child-elements"></a>Elementos filho  
 

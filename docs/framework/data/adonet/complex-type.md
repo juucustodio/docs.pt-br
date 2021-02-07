@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tipo complexo'
 title: tipo complexo
 ms.date: 03/30/2017
 ms.assetid: 63efbd23-11d4-4871-bc88-ad01b9837553
-ms.openlocfilehash: ef20de6a9e72d3123d745ef5501ecdb7fa63967d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 06bb6f54f488e4c6038382707a2ad3e85f000bc2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203781"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663892"
 ---
 # <a name="complex-type"></a>tipo complexo
 
@@ -39,7 +40,7 @@ Um *tipo complexo* é um modelo para definir propriedades ricas e estruturadas e
   
  [!code-xml[EDM_Example_Model#EntityWithComplexType](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books3.edmx#entitywithcomplextype)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos chave do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
 - [Modelo de Dados de Entidade](entity-data-model.md)

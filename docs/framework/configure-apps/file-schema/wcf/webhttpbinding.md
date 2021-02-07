@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <webHttpBinding>'
 title: <webHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 84179d77-825d-44b9-895a-ab08e7aa044d
-ms.openlocfilehash: 26e0c707422518fbdaf289faa64bb73875f62a58
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6b1208ea962dd5cfab50c5bfabaffb3791a4cbfa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177989"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664334"
 ---
 # \<webHttpBinding>
 
@@ -18,7 +19,7 @@ Define um elemento de associação que é usado para configurar pontos de extrem
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webHttpBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <webHttpBinding>
@@ -94,7 +95,7 @@ Define um elemento de associação que é usado para configurar pontos de extrem
   
  Suporte no WCF para distribuição e ASP. A integração do AJAX é criada com base no modelo de programação da Web. Para obter mais informações sobre o modelo, consulte [modelo de programação do WCF Web http](../../../wcf/feature-details/wcf-web-http-programming-model.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.WebHttpBinding>
 - <xref:System.ServiceModel.Configuration.WebHttpBindingElement>

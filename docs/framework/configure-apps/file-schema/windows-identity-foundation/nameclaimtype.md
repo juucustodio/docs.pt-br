@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <nameClaimType>'
 title: <nameClaimType>
 ms.date: 03/30/2017
 ms.assetid: 17514d95-f0f5-4789-8e28-346640dc227c
 author: BrucePerlerMS
-ms.openlocfilehash: 4ffc19366d91e4a14ee0f931d7009ede390cc097
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d5bc2f96c2753febdb61c3495b7067c0e31e52d5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91165020"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664048"
 ---
 # \<nameClaimType>
 
@@ -47,7 +48,7 @@ Define o tipo de declaração que especifica a <xref:System.Security.Principal.I
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|value|Uma cadeia de caracteres que especifica o URI que representa o tipo de declaração da declaração a ser usada para a <xref:System.Security.Principal.IIdentity.Name%2A> propriedade. Necessário.|  
+|value|Uma cadeia de caracteres que especifica o URI que representa o tipo de declaração da declaração a ser usada para a <xref:System.Security.Principal.IIdentity.Name%2A> propriedade. Obrigatório.|  
   
 ### <a name="child-elements"></a>Elementos filho  
 

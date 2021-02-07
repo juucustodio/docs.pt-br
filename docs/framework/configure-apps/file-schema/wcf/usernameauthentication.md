@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <userNameAuthentication>'
 title: <userNameAuthentication>
 ms.date: 03/30/2017
 ms.assetid: 24d8b398-770f-418f-ba23-c4325419cfa6
-ms.openlocfilehash: 30fd78d6c56e8b22e0e744a38f18ac076dc70162
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0edd92ba343ec38207d60c99616058d0b28f045b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178028"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664438"
 ---
 # \<userNameAuthentication>
 
@@ -21,7 +22,7 @@ Especifica as credenciais de um serviço com base no nome de usuário e senha.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceCredentials>**](servicecredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<userNameAuthentication>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <userNameAuthentication cacheLogonTokenLifetime="TimeSpan"

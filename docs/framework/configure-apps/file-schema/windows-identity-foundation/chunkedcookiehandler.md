@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <chunkedCookieHandler>'
 title: <chunkedCookieHandler>
 ms.date: 03/30/2017
 ms.assetid: 7220de45-1d14-4aec-a29e-4a2ea8ac861f
 author: BrucePerlerMS
-ms.openlocfilehash: a321c10e04eca2c1a5204929966a1725e918cbdf
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b0090706d3d7a9f62e17ae63ec16e4b3a869a812
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158520"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664282"
 ---
 # \<chunkedCookieHandler>
 
@@ -41,7 +42,7 @@ Configura o <xref:System.IdentityModel.Services.ChunkedCookieHandler> . Esse ele
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|chunkSize|O tamanho máximo, em caracteres, dos dados do cookie HTTP para qualquer cookie HTTP. Você deve ter cuidado ao ajustar o tamanho da parte. Os navegadores da Web têm limites diferentes no tamanho dos cookies e do número permitido por domínio. Por exemplo, a especificação original do Netscape estipulava esses limites: 300 cookies totais, 4096 bytes por cabeçalho de cookie (incluindo metadados, não apenas o valor de cookie) e 20 cookies por domínio. O padrão é 2000. Necessário.|  
+|chunkSize|O tamanho máximo, em caracteres, dos dados do cookie HTTP para qualquer cookie HTTP. Você deve ter cuidado ao ajustar o tamanho da parte. Os navegadores da Web têm limites diferentes no tamanho dos cookies e do número permitido por domínio. Por exemplo, a especificação original do Netscape estipulava esses limites: 300 cookies totais, 4096 bytes por cabeçalho de cookie (incluindo metadados, não apenas o valor de cookie) e 20 cookies por domínio. O padrão é 2000. Obrigatório.|  
   
 ### <a name="child-elements"></a>Elementos filho  
 

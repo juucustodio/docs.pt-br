@@ -1,20 +1,21 @@
 ---
+description: 'Saiba mais sobre: comparação de DataRows (LINQ to DataSet)'
 title: Comparando DataRows (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8fe0eadf-297b-487c-8d4b-7816753c2883
-ms.openlocfilehash: 8cce52734c83e42312d71806d4151ef21e4df0ba
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: df410432ab31d5ee284cb1d7cd15661db65ca503
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203794"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663926"
 ---
 # <a name="comparing-datarows-linq-to-dataset"></a>Comparando DataRows (LINQ to DataSet)
 
-A consulta integrada à linguagem (LINQ) define vários operadores de conjunto para comparar elementos de origem para ver se eles são iguais. O LINQ fornece os seguintes operadores de conjunto:  
+A consulta de Language-Integrated (LINQ) define vários operadores de conjunto para comparar elementos de origem para ver se eles são iguais. O LINQ fornece os seguintes operadores de conjunto:  
   
 - <xref:System.Linq.Enumerable.Distinct%2A>  
   
@@ -41,7 +42,7 @@ A consulta integrada à linguagem (LINQ) define vários operadores de conjunto p
   
  [!code-vb[DP LINQ to DataSet Examples#CompareDifferentRows](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#comparedifferentrows)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Data.DataRowComparer>
 - [Carregando dados em um DataSet](loading-data-into-a-dataset.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedWriter:: SetUserEntryPoint'
 title: Método ISymUnmanagedWriter::SetUserEntryPoint
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d4dcc575-3ac8-4453-9be1-2b24f47363d7
 topic_type:
 - apiref
-ms.openlocfilehash: a1c3506758221c3a2b578d93488a4377c1b86a21
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a01d23a0462fabd7a2fc259722dcdf2a1c8e0a4c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683492"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761974"
 ---
 # <a name="isymunmanagedwritersetuserentrypoint-method"></a>Método ISymUnmanagedWriter::SetUserEntryPoint
 
@@ -38,7 +39,7 @@ HRESULT SetUserEntryPoint(
  `entryMethod`  
  no O token de metadados para o método que é o ponto de entrada do usuário.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -46,6 +47,6 @@ HRESULT SetUserEntryPoint(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

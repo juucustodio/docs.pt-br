@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedWriter:: Initialize2'
 title: Método ISymUnmanagedWriter::Initialize2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 93de56b6-4ae8-4cca-acdc-25a434623509
 topic_type:
 - apiref
-ms.openlocfilehash: 93a96a5da3342f4beff611de1d448dc199dd39dd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0d4c769c9f1b571296cbfe159057df083a6d5ca6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687124"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762273"
 ---
 # <a name="isymunmanagedwriterinitialize2-method"></a>Método ISymUnmanagedWriter::Initialize2
 
@@ -54,7 +55,7 @@ HRESULT Initialize2(
  `finalfilename`  
  no Um ponteiro para um `WCHAR` que é a cadeia de caracteres do caminho para o local final do arquivo PDB.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -62,7 +63,7 @@ HRESULT Initialize2(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
 - [Método Initialize](isymunmanagedwriter-initialize-method.md)

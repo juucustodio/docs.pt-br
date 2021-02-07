@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedWriter'
 title: Interface ISymUnmanagedWriter
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7d6733ec-f081-4166-bc17-de09e16dc304
 topic_type:
 - apiref
-ms.openlocfilehash: fddfd2a163f6e6513b648ee0b724c0b5bd54c81a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 20fc0fd9b76b1aae4090582fe48a8a8e77d77c9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722928"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762234"
 ---
 # <a name="isymunmanagedwriter-interface"></a>Interface ISymUnmanagedWriter
 
@@ -27,7 +28,7 @@ Representa um gravador de símbolo e fornece métodos para definir documentos, p
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Abort](isymunmanagedwriter-abort-method.md)|Fecha o gravador de símbolo sem confirmar os símbolos para o repositório de símbolos.|  
 |[Método Close](isymunmanagedwriter-close-method.md)|Fecha o gravador de símbolo depois de confirmar os símbolos para o repositório de símbolos.|  
@@ -58,7 +59,7 @@ Representa um gravador de símbolo e fornece métodos para definir documentos, p
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)
 - [Interface ISymUnmanagedWriter2](isymunmanagedwriter2-interface.md)

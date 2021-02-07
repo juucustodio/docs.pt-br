@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ISymUnmanagedSymbolSearchInfo:: gethresult'
 title: Método ISymUnmanagedSymbolSearchInfo::GetHRESULT
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6999dc3d-65d7-4bf6-bb0a-6efc0fc72588
 topic_type:
 - apiref
-ms.openlocfilehash: a931c15b1c4a9f099d11c43edd324cfcc2793090
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5d351d84ba4e91ccb9acb531e77407a2d1caceec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763105"
 ---
 # <a name="isymunmanagedsymbolsearchinfogethresult-method"></a>Método ISymUnmanagedSymbolSearchInfo::GetHRESULT
 
@@ -38,7 +39,7 @@ HRESULT GetHRESULT(
  `phr`  
  fora Um ponteiro para o HRESULT.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -46,6 +47,6 @@ HRESULT GetHRESULT(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedSymbolSearchInfo](isymunmanagedsymbolsearchinfo-interface.md)

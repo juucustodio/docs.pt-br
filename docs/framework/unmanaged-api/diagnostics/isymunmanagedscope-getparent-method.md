@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedScope:: GetParent'
 title: Método ISymUnmanagedScope::GetParent
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c7963c87-6ec5-49b3-a5cd-e0fe0c43f9b4
 topic_type:
 - apiref
-ms.openlocfilehash: db7fb5f2c1b5d1fa8be1328852ca4402538396f3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6a056c828bfaefd171ef3f0c546d93d30fb6863
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763326"
 ---
 # <a name="isymunmanagedscopegetparent-method"></a>Método ISymUnmanagedScope::GetParent
 
@@ -38,7 +39,7 @@ HRESULT GetParent(
  `pRetVal`  
  fora Um ponteiro para a interface [ISymUnmanagedScope](isymunmanagedscope-interface.md) retornada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -46,7 +47,7 @@ HRESULT GetParent(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedScope](isymunmanagedscope-interface.md)
 - [Método GetChildren](isymunmanagedscope-getchildren-method.md)

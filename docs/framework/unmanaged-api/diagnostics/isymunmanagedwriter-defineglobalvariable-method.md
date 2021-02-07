@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ISymUnmanagedWriter: método efineGlobalVariable de:D'
 title: Método ISymUnmanagedWriter::DefineGlobalVariable
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 843c904a-8176-4d8f-bd47-b4d4c29f4c5c
 topic_type:
 - apiref
-ms.openlocfilehash: bc389b7247a6b1d6ce16cb3cf350f1672213b2e2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 70dccfed054a9ac79baf3f28683edc9a14d3cdf7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716415"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762377"
 ---
 # <a name="isymunmanagedwriterdefineglobalvariable-method"></a>Método ISymUnmanagedWriter::DefineGlobalVariable
 
@@ -66,7 +67,7 @@ HRESULT DefineGlobalVariable(
  `addr3`  
  no O terceiro endereço para a especificação de parâmetro.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -74,7 +75,7 @@ HRESULT DefineGlobalVariable(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
 - [Método DefineLocalVariable](isymunmanagedwriter-definelocalvariable-method.md)

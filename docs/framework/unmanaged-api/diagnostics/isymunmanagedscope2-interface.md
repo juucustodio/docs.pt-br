@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedScope2'
 title: Interface ISymUnmanagedScope2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2ed6a387-ba45-483e-9a1e-b0c69f67998b
 topic_type:
 - apiref
-ms.openlocfilehash: 40c437e109eaa4352a83c5566185593cbc6b0eba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a15094da68b00dbec454b2f6a642ac333f9a34ed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725827"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763144"
 ---
 # <a name="isymunmanagedscope2-interface"></a>Interface ISymUnmanagedScope2
 
@@ -27,7 +28,7 @@ Representa um escopo léxico dentro de um método. Essa interface estende a inte
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetConstantCount](isymunmanagedscope2-getconstantcount-method.md)|Obtém uma contagem das constantes definidas neste escopo.|  
 |[Método GetConstants](isymunmanagedscope2-getconstants-method.md)|Obtém as constantes locais definidas neste escopo.|  
@@ -36,7 +37,7 @@ Representa um escopo léxico dentro de um método. Essa interface estende a inte
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)
 - [Interface ISymUnmanagedScope](isymunmanagedscope-interface.md)

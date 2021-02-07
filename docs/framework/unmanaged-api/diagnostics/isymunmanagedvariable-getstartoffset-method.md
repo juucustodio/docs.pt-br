@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedVariable:: GetStartOffset'
 title: Método ISymUnmanagedVariable::GetStartOffset
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 63021fc1-9c2d-4788-811f-fe8ca077206a
 topic_type:
 - apiref
-ms.openlocfilehash: 68d20c33c5ccd554554cae57ee55f6f51d5d980c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 96ff27cfaf53c7a63c819b1a423e62478cf74832
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733302"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762715"
 ---
 # <a name="isymunmanagedvariablegetstartoffset-method"></a>Método ISymUnmanagedVariable::GetStartOffset
 
@@ -38,7 +39,7 @@ HRESULT GetStartOffset(
  `pRetVal`  
  fora Um ponteiro para um `ULONG32` que recebe o deslocamento de início.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -46,7 +47,7 @@ HRESULT GetStartOffset(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedVariable](isymunmanagedvariable-interface.md)
 - [Método GetEndOffset](isymunmanagedvariable-getendoffset-method.md)

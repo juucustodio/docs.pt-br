@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedVariable:: GetAddressField1'
 title: Método ISymUnmanagedVariable::GetAddressField1
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 25788ed1-0ce3-4b97-96fc-88f8997812a3
 topic_type:
 - apiref
-ms.openlocfilehash: e3ea3c0fd65750d52c0cfb10edbe18b1512f724b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1ff6862cef52ef8fcb449563198c2df1de356530
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762988"
 ---
 # <a name="isymunmanagedvariablegetaddressfield1-method"></a>Método ISymUnmanagedVariable::GetAddressField1
 
@@ -38,7 +39,7 @@ HRESULT GetAddressField1(
  `pRetVal`  
  fora Um ponteiro para um `ULONG32` que recebe o primeiro campo de endereço.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -46,7 +47,7 @@ HRESULT GetAddressField1(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedVariable](isymunmanagedvariable-interface.md)
 - [Método GetAddressField2](isymunmanagedvariable-getaddressfield2-method.md)

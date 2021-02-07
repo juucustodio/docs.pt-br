@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedWriter:: Abort'
 title: Método ISymUnmanagedWriter::Abort
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 416b220f-38d4-48e0-bb49-d2faa7366702
 topic_type:
 - apiref
-ms.openlocfilehash: 2136eb32f147b8928e6ac90b99bbdf66804f244d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 312694bf2b667ea78bf5ddc993d0e2b71c85a8ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733263"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762676"
 ---
 # <a name="isymunmanagedwriterabort-method"></a>Método ISymUnmanagedWriter::Abort
 
@@ -40,6 +41,6 @@ HRESULT Abort();
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

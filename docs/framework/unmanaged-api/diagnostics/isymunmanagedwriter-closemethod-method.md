@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedWriter:: CloseMethod'
 title: Método ISymUnmanagedWriter::CloseMethod
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b8025e04-f0e5-40c8-849c-8cd51323420e
 topic_type:
 - apiref
-ms.openlocfilehash: fcf250f10baf4c65cd1c8c918655e4b9f4f5cc4b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8d19de0827f94d52c92852b0d1f2b5567e109c15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731729"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762572"
 ---
 # <a name="isymunmanagedwriterclosemethod-method"></a>Método ISymUnmanagedWriter::CloseMethod
 
@@ -40,7 +41,7 @@ HRESULT CloseMethod();
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
 - [Método OpenMethod](isymunmanagedwriter-openmethod-method.md)

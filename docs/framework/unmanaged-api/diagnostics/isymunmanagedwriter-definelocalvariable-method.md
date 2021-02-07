@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ISymUnmanagedWriter: método efineLocalVariable de:D'
 title: Método ISymUnmanagedWriter::DefineLocalVariable
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6fab8a58-3883-490f-8b27-64042c90f104
 topic_type:
 - apiref
-ms.openlocfilehash: b8b9f8e63a0b52dde0e814f53cfc75e6f6d48e78
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd817e3002c2a55fd8bbd7e565283752926f746b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723019"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762364"
 ---
 # <a name="isymunmanagedwriterdefinelocalvariable-method"></a>Método ISymUnmanagedWriter::DefineLocalVariable
 
@@ -74,7 +75,7 @@ HRESULT DefineLocalVariable(
  `endOffset`  
  no O deslocamento de fim da variável. Esse parâmetro é opcional. Se for 0, esse parâmetro será ignorado e a variável será definida em todo o escopo. Se for um valor diferente de zero, a variável se enquadrará dentro dos deslocamentos do escopo atual.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -82,7 +83,7 @@ HRESULT DefineLocalVariable(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
 - [Método DefineGlobalVariable](isymunmanagedwriter-defineglobalvariable-method.md)

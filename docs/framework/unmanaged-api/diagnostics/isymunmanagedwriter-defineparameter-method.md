@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ISymUnmanagedWriter: método efineParameter de:D'
 title: Método ISymUnmanagedWriter::DefineParameter
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a8e3dd32-6a44-4371-9a74-f417b11998c8
 topic_type:
 - apiref
-ms.openlocfilehash: c5e36443295395997303cb94202f534a83d086f4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1e42140e33a99b224ccf3eff7ea29b7aa3ff1b15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677863"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762351"
 ---
 # <a name="isymunmanagedwriterdefineparameter-method"></a>Método ISymUnmanagedWriter::DefineParameter
 
@@ -64,7 +65,7 @@ HRESULT DefineParameter(
  `addr3`  
  no O terceiro endereço para a especificação de parâmetro.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -72,6 +73,6 @@ HRESULT DefineParameter(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

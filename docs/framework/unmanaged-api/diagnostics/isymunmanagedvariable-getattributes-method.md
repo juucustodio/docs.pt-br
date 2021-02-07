@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedVariable:: GetAttributes'
 title: Método ISymUnmanagedVariable::GetAttributes
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 80f168af-a6a6-4c8f-b9e6-8a82dc834ed5
 topic_type:
 - apiref
-ms.openlocfilehash: 1142dbb83693f6104ba6e22e174ce02fb92997a6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0adaeaf512f129f92b7f15cdba375395a0a81855
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726893"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762832"
 ---
 # <a name="isymunmanagedvariablegetattributes-method"></a>Método ISymUnmanagedVariable::GetAttributes
 
@@ -38,7 +39,7 @@ HRESULT GetAttributes(
  `pRetVal`  
  fora Um ponteiro para um `ULONG32` que recebe os atributos. O valor retornado será um dos valores definidos na enumeração [CorSymVarFlag](corsymvarflag-enumeration.md) .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -46,6 +47,6 @@ HRESULT GetAttributes(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedVariable](isymunmanagedvariable-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: CloseEnum'
 title: Método IMetaDataImport::CloseEnum
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 727819d5-1dab-4ebb-ac25-950b4111dc72
 topic_type:
 - apiref
-ms.openlocfilehash: f418b48f1b62ae8093197d64ca44b2ef659990a3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b18b484cab0d9f4c0ecea21da78535c9a872bb1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701712"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677737"
 ---
 # <a name="imetadataimportcloseenum-method"></a>Método IMetaDataImport::CloseEnum
 
@@ -53,7 +54,7 @@ void CloseEnum (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método efineMethod de:D'
 title: Método IMetaDataEmit::DefineMethod
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3e2102c5-48b7-4c0e-b805-7e2b5e156e3d
 topic_type:
 - apiref
-ms.openlocfilehash: a32a1eb850943b84a0d368f883e44fd4ccf32ee9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b0ba2bb68f1d4387229767f6f2550d64b9008898
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719574"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677958"
 ---
 # <a name="imetadataemitdefinemethod-method"></a>Método IMetaDataEmit::DefineMethod
 
@@ -118,7 +119,7 @@ HRESULT DefineMethod (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataAssemblyImport:: FindExportedTypeByName'
 title: Método IMetaDataAssemblyImport::FindExportedTypeByName
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 46264b2c-574d-4dde-aafc-77187a104fdd
 topic_type:
 - apiref
-ms.openlocfilehash: b1672d98d76241e5af4b6b60a38785f1278e15a8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4a2dc2b65b7f7fe6d5f2e120c635214d457991bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731586"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677977"
 ---
 # <a name="imetadataassemblyimportfindexportedtypebyname-method"></a>Método IMetaDataAssemblyImport::FindExportedTypeByName
 
@@ -61,7 +62,7 @@ HRESULT FindExportedTypeByName (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)
 - [Como o runtime localiza assemblies](../../deployment/how-the-runtime-locates-assemblies.md)

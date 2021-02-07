@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Microsoft. Transactions. TransactionBridge. ProtocolStarted'
 title: Microsoft.Transactions.TransactionBridge.ProtocolStarted
 ms.date: 03/30/2017
 ms.assetid: ac770da2-218e-4708-aeb5-465369c94a8d
-ms.openlocfilehash: a253c7e63161d8cb0cb6fd4637531a707dbad559
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9c9f2ea65631c855ea438fd8fb4beef13424670d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258901"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677243"
 ---
 # <a name="microsofttransactionstransactionbridgeprotocolstarted"></a>Microsoft.Transactions.TransactionBridge.ProtocolStarted
 
@@ -17,8 +18,8 @@ O serviço de protocolo de transação WS-Atomic foi iniciado.
 
  Rastreado durante a inicialização do Gerenciador de transações para indicar qual protocolo foi iniciado com êxito.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

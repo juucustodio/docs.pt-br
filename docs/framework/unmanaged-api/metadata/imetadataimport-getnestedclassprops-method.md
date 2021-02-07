@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetNestedClassProps'
 title: Método IMetaDataImport::GetNestedClassProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 704d19f1-bdef-4745-af8c-6476eb246fb3
 topic_type:
 - apiref
-ms.openlocfilehash: 8c0496c34c43a71ec4f51ba66b3bb18790023a2f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5fd812bf9b7725d520b14284db400bb50e82c25b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722291"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677529"
 ---
 # <a name="imetadataimportgetnestedclassprops-method"></a>Método IMetaDataImport::GetNestedClassProps
 
@@ -53,7 +54,7 @@ HRESULT GetNestedClassProps (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

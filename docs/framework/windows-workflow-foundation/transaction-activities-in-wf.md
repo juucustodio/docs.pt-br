@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: atividades de transação no WF'
 title: Atividades de transação em WF
 ms.date: 03/30/2017
 ms.assetid: fb33378e-82c6-4ea0-870f-76dc77e7f0fe
-ms.openlocfilehash: c40799f7f0456a13ab975a766a36e9425a2144df
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f088c586998d3dbec8b94dcf0f02603a68b55a40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293332"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755129"
 ---
 # <a name="transaction-activities-in-wf"></a>Atividades de transação em WF
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando um editor de expressão personalizado'
 title: Usando um editor de expressão personalizado
 ms.date: 03/30/2017
 ms.assetid: 0901b58b-e037-44a8-8281-f6f54361cfca
-ms.openlocfilehash: e33e804d73239794a7f9cf9f3c28c3808f8b963e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0455088d879e51a31b0139f85f871be3fb87e7e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293306"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755090"
 ---
 # <a name="using-a-custom-expression-editor"></a>Usando um editor de expressão personalizado
 
@@ -282,7 +283,7 @@ namespace WpfApplication1
 
  Se você estiver usando um controle **ExpressionTextBox** em um designer de atividade personalizado, não será necessário criar e destruir editores de expressão usando os <xref:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor%2A> <xref:System.Activities.Presentation.View.IExpressionEditorService.CloseExpressionEditors%2A> métodos e da <xref:System.Activities.Presentation.View.IExpressionEditorService> interface. A classe de <xref:System.Activities.Presentation.View.ExpressionTextBox> gerencia essa para você.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Activities.Presentation.View.IExpressionEditorService>
 - <xref:System.Activities.Presentation.View.IExpressionEditorInstance>

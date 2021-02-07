@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorRegFlags'
 title: Enumeração CorRegFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8d3080ee-39fe-4c57-8950-51323632d045
 topic_type:
 - apiref
-ms.openlocfilehash: 5ea588194720394ad9f361fbba702f3fcdcbe110
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 534b7b4b170d1f586e967807c4cc8a9c82648e8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706093"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753647"
 ---
 # <a name="corregflags-enumeration"></a>Enumeração CorRegFlags
 
@@ -54,6 +55,6 @@ typedef enum
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

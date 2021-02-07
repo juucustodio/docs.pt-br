@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostThreadPoolManager:: QueueUserWorkItem'
 title: Método IHostThreadPoolManager::QueueUserWorkItem
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 41602053-8670-4827-9d61-cbfcba509b9c
 topic_type:
 - apiref
-ms.openlocfilehash: 4537d367518dd80b2559f8ca058684e234ff7a91
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: edfbf5cfb34473a5fd920307981237fd5deab9aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730741"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753777"
 ---
 # <a name="ihostthreadpoolmanagerqueueuserworkitem-method"></a>Método IHostThreadPoolManager::QueueUserWorkItem
 
@@ -47,7 +48,7 @@ HRESULT QueueUserWorkItem (
  `Flags`  
  no Um dos valores de flags, conforme definido para o `QueueUserWorkItem` método Win32, que controla a execução.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -72,7 +73,7 @@ HRESULT QueueUserWorkItem (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>
 - <xref:System.Threading.ThreadPool>

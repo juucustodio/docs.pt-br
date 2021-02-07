@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTaskManager:: GetCurrentTask'
 title: Método IHostTaskManager::GetCurrentTask
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f17bca49-90bd-4dee-a5e1-b9a57ea46f85
 topic_type:
 - apiref
-ms.openlocfilehash: 72b7f6e3a5a09bd06e8a7fbb94680ed3ea89b225
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7e7e516fe4a706fce8b0302f318cfbb164a86eea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727296"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753803"
 ---
 # <a name="ihosttaskmanagergetcurrenttask-method"></a>Método IHostTaskManager::GetCurrentTask
 
@@ -39,7 +40,7 @@ HRESULT GetCurrentTask (
  `pTask`  
  fora Um ponteiro para o endereço de uma instância de [IHostTask](ihosttask-interface.md) que representa a tarefa em execução no momento, ou NULL, se nenhuma tarefa estiver em execução no momento.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -65,7 +66,7 @@ HRESULT GetCurrentTask (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

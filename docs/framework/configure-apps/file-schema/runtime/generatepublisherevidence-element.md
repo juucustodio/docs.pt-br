@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <generatePublisherEvidence> elemento'
 title: Elemento <generatePublisherEvidence>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - generatePublisherEvidence element
 - <generatePublisherEvidence> element
 ms.assetid: 7d208f50-e8d5-4a42-bc1a-1cf3590706a8
-ms.openlocfilehash: 506e7873fab8e41fce121587c22d85600a8b1760
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2a949b52abe5ec10872d2cade49a0556063b2018
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754518"
 ---
 # <a name="generatepublisherevidence-element"></a>Elemento \<generatePublisherEvidence>
 
@@ -81,7 +82,7 @@ Especifica se o tempo de execução cria <xref:System.Security.Policy.Publisher>
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugAppDomain:: GetObject'
 title: Método ICorDebugAppDomain::GetObject
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 78232e6f-ae18-4cfa-a6cd-e79471cf9d76
 topic_type:
 - apiref
-ms.openlocfilehash: a163667ea7eca1ed817d642efdb8fc4efa2a0651
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 59389e2a4ca72f8dcdd7117213e968440d30aaa6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676056"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754204"
 ---
 # <a name="icordebugappdomaingetobject-method"></a>Método ICorDebugAppDomain::GetObject
 
@@ -39,7 +40,7 @@ HRESULT GetObject (
  `ppObject`  
  fora Um ponteiro para o endereço de um objeto de interface ICorDebugValue que representa o domínio do aplicativo CLR.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Se um objeto gerenciado não <xref:System.AppDomain?displayProperty=nameWithType> tiver sido construído para esse domínio de aplicativo, o método retornará `S_FALSE` e colocará `NULL` em `*ppObject` .  
   

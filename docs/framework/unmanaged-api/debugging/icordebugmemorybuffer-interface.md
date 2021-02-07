@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugMemoryBuffer'
 title: Interface ICorDebugMemoryBuffer
 ms.date: 03/30/2017
 ms.assetid: 85dc2d65-3657-4b93-9f23-9feaa95d37ff
-ms.openlocfilehash: 2765852309401d2aa30f91b506ba55156cd8a3e2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94eeb0f31c0e1c053fabbd556768fa65dda2d328
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710722"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754011"
 ---
 # <a name="icordebugmemorybuffer-interface"></a>Interface ICorDebugMemoryBuffer
 
@@ -15,7 +16,7 @@ Representa um buffer na memória.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetSize](icordebugmemorybuffer-getsize-method.md)|Obtém o tamanho do buffer de memória em bytes.|  
 |[Método GetStartAddress](icordebugmemorybuffer-getstartaddress-method.md)|Obtém o endereço inicial do buffer de memória.|  
@@ -35,7 +36,7 @@ Representa um buffer na memória.
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

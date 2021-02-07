@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRRuntimeHost:: GetCLRControl'
 title: Método ICLRRuntimeHost::GetCLRControl
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e47e3655-efd5-4572-a1dc-50c69bf2a468
 topic_type:
 - apiref
-ms.openlocfilehash: 928ac05fbd3a19a17e7f37674b2a75f8bc799fc6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 832ae03c0126f0c08afa9b5c0312a636ec1de294
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728860"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753920"
 ---
 # <a name="iclrruntimehostgetclrcontrol-method"></a>Método ICLRRuntimeHost::GetCLRControl
 
@@ -39,7 +40,7 @@ HRESULT GetCLRControl(
  `pCLRControl`  
  fora Um ponteiro de interface do tipo [interface ICLRControl](iclrcontrol-interface.md) que permite que os hosts configurem aspectos adicionais do CLR.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -65,7 +66,7 @@ HRESULT GetCLRControl(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRControl](iclrcontrol-interface.md)
 - [Interface ICLRRuntimeHost](iclrruntimehost-interface.md)

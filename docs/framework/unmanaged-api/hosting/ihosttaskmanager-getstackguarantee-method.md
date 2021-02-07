@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTaskManager:: GetStackGuarantee'
 title: Método IHostTaskManager::GetStackGuarantee
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8176d732-c25c-4520-811d-e3310f339947
 topic_type:
 - apiref
-ms.openlocfilehash: 718e6f3f19a5c368091c8a8aad3bd1f6598228df
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6c8bd9839ea0c1fdb72fbbd296061d1a2b6edfe1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727270"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753790"
 ---
 # <a name="ihosttaskmanagergetstackguarantee-method"></a>Método IHostTaskManager::GetStackGuarantee
 
@@ -49,6 +50,6 @@ HRESULT GetStackGuarantee(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostTaskManager](ihosttaskmanager-interface.md)

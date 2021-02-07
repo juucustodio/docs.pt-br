@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataDispenserEx:: FindAssemblyModule'
 title: Método IMetaDataDispenserEx::FindAssemblyModule
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d1fb65e1-7e19-4513-85b1-44f87c294d3e
 topic_type:
 - apiref
-ms.openlocfilehash: 5bc622c013e62fa9c03476cc5927133682020426
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 39ea13a2d8f2436e86db513aaa33f990f43d8132
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700594"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753569"
 ---
 # <a name="imetadatadispenserexfindassemblymodule-method"></a>Método IMetaDataDispenserEx::FindAssemblyModule
 
@@ -77,7 +78,7 @@ HRESULT FindAssemblyModule(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataDispenserEx](imetadatadispenserex-interface.md)
 - [Interface IMetaDataDispenser](imetadatadispenser-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugAppDomain:: EnumerateSteppers'
 title: Método ICorDebugAppDomain::EnumerateSteppers
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3f3c4503-570e-44c1-ae6a-a3c6b840c732
 topic_type:
 - apiref
-ms.openlocfilehash: fd9243d9e0c12b572613694538661fd553e8a487
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a9c7f8b1486522b4740ec18c575c9876512b7d8c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715921"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754245"
 ---
 # <a name="icordebugappdomainenumeratesteppers-method"></a>Método ICorDebugAppDomain::EnumerateSteppers
 

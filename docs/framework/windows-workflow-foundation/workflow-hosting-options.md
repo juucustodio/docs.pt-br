@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: opções de Hospedagem de fluxo de trabalho'
 title: Opções de hospedagem de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: 37bcd668-9c5c-4e7c-81da-a1f1b3a16514
-ms.openlocfilehash: 8ddb83f068eab8480bacc8b80bc5d44b7755fa59
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 64d02decd3a096b4c83555729826c5fc07b13cbf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293774"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754882"
 ---
 # <a name="workflow-hosting-options"></a>Opções de hospedagem de fluxo de trabalho
 

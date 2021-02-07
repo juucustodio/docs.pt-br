@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataDispenserEx:: GetCORSystemDirectory'
 title: Método IMetaDataDispenserEx::GetCORSystemDirectory
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d9e0f3b6-e106-4820-bada-5bfba34ce360
 topic_type:
 - apiref
-ms.openlocfilehash: ea0e6f96028afc201f498119976eb87aa762a6eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3ceda653e50ba5ad7de5548b78781f48cda41624
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681685"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753556"
 ---
 # <a name="imetadatadispenserexgetcorsystemdirectory-method"></a>Método IMetaDataDispenserEx::GetCORSystemDirectory
 
@@ -57,7 +58,7 @@ HRESULT GetCORSystemDirectory (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataDispenserEx](imetadatadispenserex-interface.md)
 - [Interface IMetaDataDispenser](imetadatadispenser-interface.md)

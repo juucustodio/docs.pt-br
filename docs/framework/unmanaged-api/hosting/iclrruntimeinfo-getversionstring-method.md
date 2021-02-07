@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRRuntimeInfo:: GetVersionString'
 title: Método ICLRRuntimeInfo::GetVersionString
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 98b097ef-2276-4dd9-8551-b03c972e8179
 topic_type:
 - apiref
-ms.openlocfilehash: 34f996f4efe9c0db4c3f0f5277e30f53e91ec47f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1c7603f4e9bb1142c415ba9da7a05a52d2d5e776
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696785"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753868"
 ---
 # <a name="iclrruntimeinfogetversionstring-method"></a>Método ICLRRuntimeInfo::GetVersionString
 
@@ -53,7 +54,7 @@ HRESULT GetVersionString(
  `pchBuffer`  
  [entrada, saída] Especifica o tamanho de `pwzBuffer` para evitar estouros de buffer. Se `pwzBuffer` for `null` , `pchBuffer` retorna o tamanho necessário de `pwzBuffer` para permitir a prealocação.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -72,9 +73,9 @@ HRESULT GetVersionString(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)
 - [Interfaces de hospedagem CLR adicionadas no .NET Framework 4 e 4.5](clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

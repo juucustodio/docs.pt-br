@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Method-Based exemplos de sintaxe de consulta: projeção (LINQ to DataSet)'
 title: 'Exemplos de sintaxe da consulta com base em método: Projeção (LINQ to DataSet)'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0fc2c8f0-1967-4f30-8b20-39b8dccfb82f
-ms.openlocfilehash: 2790ed3e7f8fc2fe6a5c920be8a79402692d6282
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 380c35962ed122f5d4bbe85ba3fbd87cf7d7a3bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147899"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754375"
 ---
 # <a name="method-based-query-syntax-examples-projection-linq-to-dataset"></a>Exemplos de sintaxe da consulta com base em método: Projeção (LINQ to DataSet)
 
@@ -52,7 +53,7 @@ Os exemplos neste tópico demonstram como usar os métodos de <xref:System.Linq.
  [!code-csharp[DP LINQ to DataSet Examples#SelectManyCompoundFrom2_MQ](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#selectmanycompoundfrom2_mq)]
  [!code-vb[DP LINQ to DataSet Examples#SelectManyCompoundFrom2_MQ](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#selectmanycompoundfrom2_mq)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Carregando dados em um DataSet](loading-data-into-a-dataset.md)
 - [LINQ para exemplos de DataSet](linq-to-dataset-examples.md)

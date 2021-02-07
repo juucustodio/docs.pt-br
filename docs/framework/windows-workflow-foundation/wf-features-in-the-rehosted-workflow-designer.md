@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: suporte para novos recursos do Workflow Foundation 4,5 no Designer de Fluxo de Trabalho rehospedado'
 title: Suporte para novos recursos do Workflow Foundation 4.5 no Designer de Fluxo de Trabalho hospedado novamente
 ms.date: 03/30/2017
 ms.assetid: 1a4a4038-d8e6-41dd-99ea-93bd76286772
-ms.openlocfilehash: 139215131afa38bc33539fa242a3584eb67d7941
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 948519265383e9fd3850c44304f7c02283b3f579
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293943"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754999"
 ---
 # <a name="support-for-new-workflow-foundation-45-features-in-the-rehosted-workflow-designer"></a>Suporte para novos recursos do Workflow Foundation 4.5 no Designer de Fluxo de Trabalho hospedado novamente
 
@@ -66,7 +67,7 @@ O Windows Workflow Foundation (WF) no .NET Framework 4,5 introduziu muitos recur
 
  O botão do meio do mouse ou a barra de espaço também podem ser usados para executar uma panorâmica do designer de fluxo de trabalho.
 
-### <a name="multi-select"></a>Multisseleção
+### <a name="multi-select"></a>Seleção múltipla
 
  Várias atividades podem ser selecionadas ao mesmo tempo, arrastando um retângulo ao redor delas (quando o modo panorâmico não está habilitado), ou mantendo pressionada a tecla CTRL e clicando nas atividades desejadas. Esse recurso tem suporte no designer hospedado novamente.
 

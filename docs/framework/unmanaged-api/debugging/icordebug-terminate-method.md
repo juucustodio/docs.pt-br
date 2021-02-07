@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebug:: Terminate'
 title: Método ICorDebug::Terminate
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fffe5616-0896-4426-ab5e-21869b514883
 topic_type:
 - apiref
-ms.openlocfilehash: cf9c9d11c4725908fcf7ff4a0c91882b70a80190
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c2de27a47bfd4c364a09180c75109679234f3cae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723370"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754284"
 ---
 # <a name="icordebugterminate-method"></a>Método ICorDebug::Terminate
 
@@ -49,6 +50,6 @@ HRESULT Terminate ();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebug](icordebug-interface.md)

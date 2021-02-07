@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ITypeName:: gettypearguments'
 title: Método ITypeName::GetTypeArguments
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 638d77df-ff9c-40d9-88ee-930f5f87ada1
 topic_type:
 - apiref
-ms.openlocfilehash: bcc1cb2755c4c0a2beb0829ce58b921f073f63d4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b88ffcfb856905bf891ebeafa1e6dbeda2563aaf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727777"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753648"
 ---
 # <a name="itypenamegettypearguments-method"></a>Método ITypeName::GetTypeArguments
 
 Esse método oferece suporte a infraestrutura do .NET Framework e não se destina a ser usado diretamente do seu código.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetTypeArguments (  
@@ -46,6 +47,6 @@ HRESULT GetTypeArguments (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)

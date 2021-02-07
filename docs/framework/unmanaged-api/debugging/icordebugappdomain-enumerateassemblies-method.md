@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugAppDomain:: EnumerateAssemblies'
 title: Método ICorDebugAppDomain::EnumerateAssemblies
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7add64f9-19a8-46a9-be62-905d5e7d1bd8
 topic_type:
 - apiref
-ms.openlocfilehash: 386913f8c81ff3c8b98bb0cab4ffc101a4f6085f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3ffa3180b80eac46e2d61019e4e4aa992f7c0e72
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723318"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754258"
 ---
 # <a name="icordebugappdomainenumerateassemblies-method"></a>Método ICorDebugAppDomain::EnumerateAssemblies
 

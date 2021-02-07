@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: criação de atividade de fluxo de trabalho usando a classe CodeActivity'
 title: Criação de atividade de fluxo de trabalho usando a classe de CodeActivity
 ms.date: 03/30/2017
 ms.assetid: cfe315c1-f86d-43ec-b9ce-2f8c469b1106
-ms.openlocfilehash: 714e0971a006db20d002b0f3a486533b1357fba7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 393b6c586a88e876484f6888441d5bb82b4c0dad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293813"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754908"
 ---
 # <a name="workflow-activity-authoring-using-the-codeactivity-class"></a>Criação de atividade de fluxo de trabalho usando a classe de CodeActivity
 

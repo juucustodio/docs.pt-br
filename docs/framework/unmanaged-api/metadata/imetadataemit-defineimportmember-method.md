@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método efineImportMember de:D'
 title: Método IMetaDataEmit::DefineImportMember
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c7dd94c6-335b-46ff-9dfe-505056db5673
 topic_type:
 - apiref
-ms.openlocfilehash: 60210bc8f93294c3c3380c36096f3e80e5b26643
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 91c6ea70d38b8d4f73570ed19d86bacca30ebae5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723253"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753449"
 ---
 # <a name="imetadataemitdefineimportmember-method"></a>Método IMetaDataEmit::DefineImportMember
 
@@ -89,7 +90,7 @@ HRESULT DefineImportMember (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

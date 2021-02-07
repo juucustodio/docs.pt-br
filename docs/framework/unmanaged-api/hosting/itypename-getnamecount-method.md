@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ITypeName:: GetNameCount'
 title: Método ITypeName::GetNameCount
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 0beb909a-5095-40e5-909d-9ecc280300b8
 topic_type:
 - apiref
-ms.openlocfilehash: ff8bb9cfdd863e237fde1627041bd766f7f2985d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7a7c050be84c2277cd6253c607fe610105896dce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727816"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753699"
 ---
 # <a name="itypenamegetnamecount-method"></a>Método ITypeName::GetNameCount
 
 Esse método oferece suporte a infraestrutura do .NET Framework e não se destina a ser usado diretamente do seu código.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetNameCount (  
@@ -44,6 +45,6 @@ HRESULT GetNameCount (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)

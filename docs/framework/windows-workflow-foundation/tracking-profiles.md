@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: perfis de rastreamento'
 title: Controlando perfis
 ms.date: 03/30/2017
 ms.assetid: 22682566-1cd9-4672-9791-fb3523638e18
-ms.openlocfilehash: ceeb0f5533bb4c637ea7df52249f5b00067d9b3d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 9748f0452a1699e08760372f826f2458d82f4b79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551381"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755142"
 ---
 # <a name="tracking-profiles"></a>Controlando perfis
 
@@ -386,7 +387,7 @@ Aqui estão alguns dos exemplos comuns de perfis de rastreamento.
   </trackingProfile>
   ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento de SQL](./samples/sql-tracking.md)
 - [Monitoramento do Windows Server app Fabric](/previous-versions/appfabric/ee677251(v=azure.10))

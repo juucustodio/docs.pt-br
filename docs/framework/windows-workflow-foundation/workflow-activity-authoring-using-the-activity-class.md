@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: criação de atividade de fluxo de trabalho usando a classe de atividade'
 title: Criação de atividade de fluxo de trabalho usando a classe de atividades
 ms.date: 03/30/2017
 ms.assetid: 7b7b1c66-f093-43c3-b4d1-7173b46516da
-ms.openlocfilehash: 21f1c8b1249d41029fa7a19360e96ad866c823a7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0d3ffc88bacfd941dfa0c853991bf72045468323
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293838"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754934"
 ---
 # <a name="workflow-activity-authoring-using-the-activity-class"></a>Criação de atividade de fluxo de trabalho usando a classe de atividades
 

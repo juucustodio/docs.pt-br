@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Interface ICLRRuntimeHost'
 title: Interface ICLRRuntimeHost
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cb0c5f65-3791-47bc-b833-2f84f4101ba5
 topic_type:
 - apiref
-ms.openlocfilehash: 8d88222215eb31e1c63f3b26079517c4b088e81b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 92bab42fa1cf2cca5caa0eb039c88fec3e65390c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728830"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753881"
 ---
 # <a name="iclrruntimehost-interface"></a>Interface ICLRRuntimeHost
 
@@ -31,7 +32,7 @@ Fornece uma funcionalidade semelhante à da interface [ICorRuntimeHost](icorrunt
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método ExecuteApplication](iclrruntimehost-executeapplication-method.md)|Usado em cenários de implantação ClickOnce baseados em manifesto para especificar o aplicativo a ser ativado em um novo domínio.|  
 |[Método ExecuteInAppDomain](iclrruntimehost-executeinappdomain-method.md)|Especifica o <xref:System.AppDomain> no qual executar o código gerenciado especificado.|  
@@ -39,7 +40,7 @@ Fornece uma funcionalidade semelhante à da interface [ICorRuntimeHost](icorrunt
 |[Método GetCLRControl](iclrruntimehost-getclrcontrol-method.md)|Obtém um ponteiro de interface do tipo [ICLRControl](iclrcontrol-interface.md) que os hosts podem usar para personalizar aspectos do Common Language Runtime (CLR).|  
 |[Método GetCurrentAppDomainId](iclrruntimehost-getcurrentappdomainid-method.md)|Obtém o identificador numérico do <xref:System.AppDomain> que está sendo executado no momento.|  
 |[Método SetHostControl](iclrruntimehost-sethostcontrol-method.md)|Define a interface de controle de host. Você deve chamar `SetHostControl` antes de chamar `Start` .|  
-|[Método de início](iclrruntimehost-start-method.md)|Inicializa o CLR em um processo.|  
+|[Método Start](iclrruntimehost-start-method.md)|Inicializa o CLR em um processo.|  
 |[Método Stop](iclrruntimehost-stop-method.md)|Interrompe a execução do código pelo tempo de execução.|  
 |[Método UnloadAppDomain](iclrruntimehost-unloadappdomain-method.md)|Descarrega o <xref:System.AppDomain> que corresponde ao identificador numérico especificado.|  
   
@@ -60,7 +61,7 @@ Fornece uma funcionalidade semelhante à da interface [ICorRuntimeHost](icorrunt
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Função CorBindToRuntimeEx](corbindtoruntimeex-function.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugAppDomain2'
 title: Interface ICorDebugAppDomain2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 314d29f3-feb0-4a92-9530-b569c280cc31
 topic_type:
 - apiref
-ms.openlocfilehash: f20ae6977504f958b7bfa8e2f073b7db6e8b822b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2f2fcc4166a0c825abaa04392f9905d17e286803
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731469"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754180"
 ---
 # <a name="icordebugappdomain2-interface"></a>Interface ICorDebugAppDomain2
 
@@ -27,7 +28,7 @@ Fornece métodos para trabalhar com matrizes, ponteiros, ponteiros de função e
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetArrayOrPointerType](icordebugappdomain2-getarrayorpointertype-method.md)|Obtém uma matriz do tipo especificado ou um ponteiro ou uma referência para o tipo especificado.|  
 |[GetFunctionPointerType](icordebugappdomain2-getfunctionpointertype-method.md)|Obtém um ponteiro para uma função que tem uma determinada assinatura.|  
@@ -47,6 +48,6 @@ Fornece métodos para trabalhar com matrizes, ponteiros, ponteiros de função e
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

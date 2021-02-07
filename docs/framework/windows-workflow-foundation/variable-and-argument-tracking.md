@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: rastreamento de variável e de argumentos'
 title: Rastreamento de variável e argumento
 ms.date: 03/30/2017
 ms.assetid: 8f3d9d30-d899-49aa-b7ce-a8d0d32c4ff0
-ms.openlocfilehash: 85cecbfaf1db224152d4582325326f1f80e08266
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f2663e585ca280739f9c4ec176c31cf1d7c30657
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754973"
 ---
 # <a name="variable-and-argument-tracking"></a>Rastreamento de variável e argumento
 
@@ -49,7 +50,7 @@ Para controlar a execução de um fluxo de trabalho, geralmente é útil extrair
   
 3. Para participantes personalizados de rastreamento certifique-se de que o código de WF não divulgue informações sigilosas que é armazenada em variáveis ou nos argumentos.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Monitoramento do Windows Server app Fabric](/previous-versions/appfabric/ee677251(v=azure.10))
 - [Monitorando aplicativos com o app Fabric](/previous-versions/appfabric/ee677276(v=azure.10))

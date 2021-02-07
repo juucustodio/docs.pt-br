@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICLRRuntimeInfo:: método IsStarted'
 title: Método ICLRRuntimeInfo::IsStarted
 ms.date: 03/30/2017
 api_name:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - IsStarted method [.NET Framework hosting]
 - ICLRRuntimeInfo::IsStarted method [.NET Framework hosting]
 ms.assetid: ef6f2662-323b-4534-aa82-6d1afb7b9309
-ms.openlocfilehash: 1dfeb6101a6b8e33ab2fe35f318087d7f1834b6a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 22059ecbded9eae9659cdaae8b9b92f2d7df0650
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714881"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753842"
 ---
 # <a name="iclrruntimeinfoisstarted-method"></a>Método ICLRRuntimeInfo::IsStarted
 
@@ -40,7 +41,7 @@ HRESULT IsStarted(
  `pdwStartupFlags`  
  fora Retorna os sinalizadores que foram usados para iniciar o tempo de execução.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -63,8 +64,8 @@ HRESULT IsStarted(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

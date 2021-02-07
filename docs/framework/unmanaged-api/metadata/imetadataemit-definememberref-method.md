@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método efineMemberRef de:D'
 title: Método IMetaDataEmit::DefineMemberRef
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 21b5bcb8-ea75-4962-8acc-ad17584061e5
 topic_type:
 - apiref
-ms.openlocfilehash: 597ba1884351ee6d8b7eb7e0f3f01ce3ad733304
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1d88294cea14369c8a8f16b6048f96472fbb9502
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716636"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753413"
 ---
 # <a name="imetadataemitdefinememberref-method"></a>Método IMetaDataEmit::DefineMemberRef
 
@@ -65,7 +66,7 @@ HRESULT DefineMemberRef (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

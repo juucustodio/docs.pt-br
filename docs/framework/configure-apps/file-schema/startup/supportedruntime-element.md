@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <supportedRuntime> elemento'
 title: <supportedRuntime> elemento de configuração-.NET
 ms.date: 04/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - supportedRuntime element
 - <supportedRuntime> element
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
-ms.openlocfilehash: 79b49cbc9b122e6591d07643a341841b262edff4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 04c2b3fec591e1b99757085afdddf26c529591b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201701"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754492"
 ---
 # <a name="supportedruntime-element"></a>Elemento \<supportedRuntime>
 
@@ -23,7 +24,7 @@ Especifica qual versão de Common Language Runtime e, opcionalmente, .NET Framew
 &nbsp;&nbsp;[\<startup>](startup-element.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<supportedRuntime>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <supportedRuntime version="runtime version" sku="sku id"/>
@@ -110,7 +111,7 @@ O exemplo a seguir mostra como especificar a versão de tempo de execução com 
 
 Este elemento pode ser usado no arquivo de configuração do aplicativo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações de inicialização](index.md)
 - [Esquema do arquivo de configuração](../index.md)

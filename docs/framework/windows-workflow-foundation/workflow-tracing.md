@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: rastreamento de fluxo de trabalho'
 title: Rastreamento de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: 18737989-0502-4367-b5f6-617ebfb77c96
-ms.openlocfilehash: b5a8f650edfdade4a18999c5e7af38ca72112122
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6d976cce1310a072f8d1c98db138696921b382c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273874"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754843"
 ---
 # <a name="workflow-tracing"></a>Rastreamento de fluxo de trabalho
 
@@ -72,7 +73,7 @@ Oferece de rastreamento de fluxo de trabalho uma maneira para capturar informaç
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Monitoramento do Windows Server app Fabric](/previous-versions/appfabric/ee677251(v=azure.10))
 - [Monitorando aplicativos com o app Fabric](/previous-versions/appfabric/ee677276(v=azure.10))

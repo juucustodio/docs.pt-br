@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataDispenserEx:: SetOption'
 title: Método IMetaDataDispenserEx::SetOption
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9f1c7ccd-7fb2-41d8-aa00-24b823376527
 topic_type:
 - apiref
-ms.openlocfilehash: 4216658eb562c5c57b75c3c257cd8e53a7a34221
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0fdaa280619eb750ea9357f590c3b91cf398608f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753504"
 ---
 # <a name="imetadatadispenserexsetoption-method"></a>Método IMetaDataDispenserEx::SetOption
 
@@ -47,7 +48,7 @@ HRESULT SetOption (
 
  A tabela a seguir lista os GUIDs disponíveis aos quais o `optionId` parâmetro pode apontar e os valores válidos correspondentes para o `pValue` parâmetro.  
   
-|GUID|DESCRIÇÃO|`pValue` Parâmetro|  
+|GUID|Descrição|`pValue` Parâmetro|  
 |----------|-----------------|------------------------|  
 |MetaDataCheckDuplicatesFor|Controla quais itens são verificados em busca de duplicatas. Sempre que você chamar um método [IMetaDataEmit](imetadataemit-interface.md) que cria um novo item, poderá pedir ao método para verificar se o item já existe no escopo atual. Por exemplo, você pode verificar a existência de `mdMethodDef` itens; nesse caso, ao chamar [IMetaDataEmit::D efinemethod](imetadataemit-definemethod-method.md), ele verificará se o método ainda não existe no escopo atual. Essa verificação usa a chave que identifica exclusivamente um determinado método: tipo de pai, nome e assinatura.|Deve ser uma variante do tipo UI4 e deve conter uma combinação dos valores da enumeração [CorCheckDuplicatesFor](corcheckduplicatesfor-enumeration.md) .|  
 |MetaDataRefToDefCheck|Controla quais itens referenciados são convertidos em definições. Por padrão, o mecanismo de metadados otimizará o código convertendo um item referenciado em sua definição se o item referenciado for realmente definido no escopo atual.|Deve ser uma variante do tipo UI4 e deve conter uma combinação dos valores da enumeração [CorRefToDefCheck](correftodefcheck-enumeration.md) .|  
@@ -73,7 +74,7 @@ HRESULT SetOption (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataDispenserEx](imetadatadispenserex-interface.md)
 - [Interface IMetaDataDispenser](imetadatadispenser-interface.md)

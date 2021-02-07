@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: segurança de fluxo de trabalho'
 title: Segurança de fluxo de trabalho
 ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], workflow security
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
-ms.openlocfilehash: 6253a0d76d8b1db938e789f19d2cdd5abba9b700
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: afaf5c9f5a8b0bcf707dae0e9e9669d63c5f8176
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273887"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754856"
 ---
 # <a name="workflow-security"></a>Segurança de fluxo de trabalho
 

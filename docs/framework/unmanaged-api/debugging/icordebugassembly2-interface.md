@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugAssembly2'
 title: Interface ICorDebugAssembly2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c0766e29-e573-4f9a-a928-167d1de5aa7e
 topic_type:
 - apiref
-ms.openlocfilehash: 5add8f18a91f2ea1a2833ffa2cf3dc4bf3b644bd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2a2d035329ba66153bfee83daa9501581f32842f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728463"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754115"
 ---
 # <a name="icordebugassembly2-interface"></a>Interface ICorDebugAssembly2
 
@@ -27,7 +28,7 @@ Representa um assembly. Essa interface é uma extensão da interface ICorDebugAs
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método IsFullyTrusted](icordebugassembly2-isfullytrusted-method.md)|Obtém um valor que indica se o assembly recebeu confiança total pelo sistema de segurança de tempo de execução.|  
   
@@ -46,6 +47,6 @@ Representa um assembly. Essa interface é uma extensão da interface ICorDebugAs
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

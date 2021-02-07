@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: usando e criando atividades'
 title: Criando e usando atividades
 ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], activities
 ms.assetid: 2a69f32e-007f-47d0-ab96-535311641428
-ms.openlocfilehash: 976c1dbf687f68da19a5984217fbfe0e319f3a4d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b0d8cf122f80a1a1a320ed577c43ca51a11cd621
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238711"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755051"
 ---
 # <a name="using-and-creating-activities"></a>Criando e usando atividades
 

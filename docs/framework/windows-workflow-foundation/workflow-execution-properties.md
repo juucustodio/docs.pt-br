@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Propriedades de execução do fluxo de trabalho'
 title: Propriedades de execução de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: a50e088e-3a45-4267-bd51-1a3e6c2d246d
-ms.openlocfilehash: be9ae5924786ea1e23cc649034d927789c64e405
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d6f83109da0a14382098322858a6e0493750a748
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293787"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754895"
 ---
 # <a name="workflow-execution-properties"></a>Propriedades de execução de fluxo de trabalho
 

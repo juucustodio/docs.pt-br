@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugMergedAssemblyRecord:: getculture'
 title: 'Método ICorDebugMergedAssemblyRecord:: getculture'
 ms.date: 03/30/2017
 ms.assetid: 030b2f8c-8c21-40b7-855d-3afa78975a17
-ms.openlocfilehash: 636d0fd25d345f513e00504b9eb5adb4f0c03b0f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f530bb68a1e7e4c4bff53b8f3046f6ae9ca42aab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710643"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753998"
 ---
 # <a name="icordebugmergedassemblyrecordgetculture-method"></a>Método ICorDebugMergedAssemblyRecord:: getculture
 
@@ -51,7 +52,7 @@ HRESULT GetCulture(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMergedAssemblyRecord](icordebugmergedassemblyrecord-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

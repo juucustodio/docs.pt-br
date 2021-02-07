@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugAssembly:: GetProcess'
 title: Método ICorDebugAssembly::GetProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea52be06-0a16-4f57-afca-4287d72e76c4
 topic_type:
 - apiref
-ms.openlocfilehash: e8662535fb6f1aa812130d96e67678baa3c41a52
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b121d7f892f6e2e2aa76290d4aee51767c72e9fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734030"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754141"
 ---
 # <a name="icordebugassemblygetprocess-method"></a>Método ICorDebugAssembly::GetProcess
 

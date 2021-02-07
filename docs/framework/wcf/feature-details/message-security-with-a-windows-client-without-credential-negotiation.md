@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: segurança de mensagem com um cliente Windows sem negociação de credencial'
 title: Segurança de mensagem com um cliente Windows sem negociação de credencial
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fc07a26c-cbee-41c5-8fb0-329085fef749
-ms.openlocfilehash: 3e5838c474a4f13136ed29baab440dc1559b95f5
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e9edd63c80d868024d8a4b664c42456bb454cb69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551087"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727008"
 ---
 # <a name="message-security-with-a-windows-client-without-credential-negotiation"></a>Segurança de mensagem com um cliente Windows sem negociação de credencial
 
@@ -29,7 +30,7 @@ O serviço e o cliente estão no mesmo domínio ou em domínios confiáveis.
 |Interoperabilidade|Sim, WS-Security com clientes compatíveis com o perfil de token Kerberos|
 |Autenticação (servidor)|Autenticação mútua do servidor e do cliente|
 |Autenticação (cliente)|Autenticação mútua do servidor e do cliente|
-|Integridade|Yes|
+|Integridade|Sim|
 |Confidencialidade|Yes|
 |Transport|HTTP|
 |Associação|<xref:System.ServiceModel.WSHttpBinding>|
@@ -153,7 +154,7 @@ O código a seguir configura o cliente. Observe que o [\<servicePrincipalName>](
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de segurança](security-overview.md)
 - [Identidade e autenticação de serviço](service-identity-and-authentication.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. Diagnostics. EventLog'
 title: System.ServiceModel.Diagnostics.EventLog
 ms.date: 03/30/2017
 ms.assetid: 5e8b517b-4f89-4067-8070-e86915b608c4
-ms.openlocfilehash: 4bf1cabcdf6249e1e52f4a8ab32437b0e16fe931
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a1c23c1658c776ad890e1e19916fe85e8d3566e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254318"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727398"
 ---
 # <a name="systemservicemodeldiagnosticseventlog"></a>System.ServiceModel.Diagnostics.EventLog
 
@@ -17,8 +18,8 @@ System.ServiceModel.Diagnostics.EventLog
 
  Gravado no log de eventos.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

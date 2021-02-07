@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRDataTarget2:: FreeVirtual'
 title: Método ICLRDataTarget2::FreeVirtual
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 26fb69f8-1467-4711-bd24-cb117c63938f
 topic_type:
 - apiref
-ms.openlocfilehash: 1fb701a40abe2dc6e51443837c07ee5ba05ddfbe
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ef4048f421fcdc7d284663036f8cc9f2614f4e13
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723643"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729239"
 ---
 # <a name="iclrdatatarget2freevirtual-method"></a>Método ICLRDataTarget2::FreeVirtual
 
@@ -63,7 +64,7 @@ HRESULT FreeVirtual(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRDataTarget2](iclrdatatarget2-interface.md)
 - [Método AllocVirtual](iclrdatatarget2-allocvirtual-method.md)

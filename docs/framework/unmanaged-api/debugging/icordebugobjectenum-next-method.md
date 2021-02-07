@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugObjectEnum:: Next Method'
 title: Método ICorDebugObjectEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 10093e3d-26b6-4ad7-8ef3-bbf66243fc02
 topic_type:
 - apiref
-ms.openlocfilehash: 8e188f304908a8029a57bb059046205c35346f3d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: dd7d4240827e14962edf7573b59b273f65231bcf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724683"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729036"
 ---
 # <a name="icordebugobjectenumnext-method"></a>Método ICorDebugObjectEnum::Next
 

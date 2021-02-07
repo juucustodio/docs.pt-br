@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: segurança de mensagem com um cliente anônimo'
 title: Mensagem de segurança com um cliente anônimo
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: cad53e1a-b7c9-4064-bc87-508c3d1dce49
-ms.openlocfilehash: aed56be359f094db483ab1d012bd77a1096433b6
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 921ddd9e8e7d2a860f3516c452870bc2bb150911
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553760"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726969"
 ---
 # <a name="message-security-with-an-anonymous-client"></a>Mensagem de segurança com um cliente anônimo
 
@@ -138,7 +139,7 @@ O código a seguir configura o cliente.
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de segurança](security-overview.md)
 - [Segurança de aplicativos distribuídos](distributed-application-security.md)

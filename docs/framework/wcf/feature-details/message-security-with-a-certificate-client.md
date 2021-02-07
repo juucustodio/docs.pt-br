@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: segurança de mensagem com um cliente de certificado'
 title: Segurança da mensagens com um cliente de certificado
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 99770573-c815-4428-a38c-e4335c8bd7ce
-ms.openlocfilehash: 4a1cb6d804d313f438fc8e7a92946d55f73b9ee5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f1924510c5860b377568da204bbd9154e4970c24
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288574"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727054"
 ---
 # <a name="message-security-with-a-certificate-client"></a>Segurança da mensagens com um cliente de certificado
 
@@ -33,7 +34,7 @@ O cenário a seguir mostra um cliente Windows Communication Foundation (WCF) e u
   
 ## <a name="service"></a>Serviço  
 
- O código e a configuração a seguir devem ser executados de forma independente. Realize uma destas ações:  
+ O código e a configuração a seguir devem ser executados de forma independente. Realize um dos seguintes procedimentos:  
   
 - Crie um serviço autônomo usando o código sem configuração.  
   
@@ -90,7 +91,7 @@ O cenário a seguir mostra um cliente Windows Communication Foundation (WCF) e u
   
 ## <a name="client"></a>Cliente  
 
- O código e a configuração a seguir devem ser executados de forma independente. Realize uma destas ações:  
+ O código e a configuração a seguir devem ser executados de forma independente. Realize um dos seguintes procedimentos:  
   
 - Crie um cliente autônomo usando o código (e o código do cliente).  
   
@@ -150,7 +151,7 @@ O cenário a seguir mostra um cliente Windows Communication Foundation (WCF) e u
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de segurança](security-overview.md)
 - [Identidade e autenticação de serviço](service-identity-and-authentication.md)

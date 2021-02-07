@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Windows Communication Foundation informações de privacidade'
 title: Informações de privacidade do Windows Communication Foundation
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF, privacy information
 - privacy information [WCF]
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
-ms.openlocfilehash: 5ecd1c39a4ad6a146c734aab8349c5caa4212662
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4f942e84a072d15a12b6db7cc2c310d629a59f6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249937"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726683"
 ---
 # <a name="windows-communication-foundation-privacy-information"></a>Informações de privacidade do Windows Communication Foundation
 
@@ -31,7 +32,7 @@ A Microsoft está comprometida em proteger a privacidade do usuário final. Quan
   
  A camada de mensagens do WCF não grava nenhuma informação pessoal no computador local. No entanto, ele poderá propagar informações pessoais no nível da rede se um desenvolvedor de serviço tiver criado um serviço que expõe essas informações (por exemplo, usando o nome de uma pessoa em um nome de ponto de extremidade ou incluindo informações pessoais na linguagem de descrição dos serviços Web do ponto de extremidade, mas não exigindo que os clientes usem HTTPS para acessar o WSDL). Além disso, se um desenvolvedor executar a ferramenta [Svcutil.exe (ferramenta de utilitário de metadados ServiceModel)](servicemodel-metadata-utility-tool-svcutil-exe.md) em um ponto de extremidade que expõe informações pessoais, a saída da ferramenta poderá conter essas informações e o arquivo de saída será gravado no disco rígido local.  
   
-## <a name="hosting"></a>Hosting  
+## <a name="hosting"></a>Hospedagem  
 
  O recurso de hospedagem no WCF permite que os aplicativos iniciem sob demanda ou habilitem o compartilhamento de porta entre vários aplicativos. Um aplicativo WCF pode ser hospedado em Serviços de Informações da Internet (IIS), semelhante ao ASP.NET.  
   
@@ -429,7 +430,7 @@ A Microsoft está comprometida em proteger a privacidade do usuário final. Quan
   
  O WSDL (Web Services Description Language) contém uma definição da porta. Cada porta tem um endereço de ponto de extremidade e uma associação que representa os serviços usados pelo aplicativo. Expor o WSDL pode ser desativado usando a configuração. Nenhuma informação é mantida no computador.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Windows Communication Foundation](index.md)
 - [Segurança](./feature-details/security.md)

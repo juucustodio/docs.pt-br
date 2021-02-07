@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRTaskManager:: GetCurrentTask'
 title: Método ICLRTaskManager::GetCurrentTask
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c0b82a9f-edc6-4878-9c81-48de53c02142
 topic_type:
 - apiref
-ms.openlocfilehash: af855e3ba47dc329a4fb722c3e13d5f1816beba4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d7435f9099d6a8ceb173afbf79c1d0f5d4005980
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723266"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728529"
 ---
 # <a name="iclrtaskmanagergetcurrenttask-method"></a>Método ICLRTaskManager::GetCurrentTask
 
@@ -39,7 +40,7 @@ HRESULT GetCurrentTask (
  `ppTask`  
  fora Um ponteiro para o endereço de uma `ICLRTask` instância que está atualmente em execução no thread do sistema operacional do qual a chamada foi originada, ou nula se nenhuma tarefa estiver em execução no momento nesse thread.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT GetCurrentTask (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

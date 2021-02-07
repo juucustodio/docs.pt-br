@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugObjectValue:: GetContext'
 title: Método ICorDebugObjectValue::GetContext
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 40594774-5105-4187-a06b-4e7f50bada3c
 topic_type:
 - apiref
-ms.openlocfilehash: 0ba3a1899abfea10393a57bbf6ed61bbfc483262
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f3536f3256fe6a4b91a0270382aebf9f5b999642
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724657"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728997"
 ---
 # <a name="icordebugobjectvaluegetcontext-method"></a>Método ICorDebugObjectValue::GetContext
 
 `GetContext` Não está implementado nesta versão do .NET Framework.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetContext (  

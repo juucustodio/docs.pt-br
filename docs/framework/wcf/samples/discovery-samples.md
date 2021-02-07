@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: descoberta (amostras)'
 title: Descoberta (exemplos)
 ms.date: 03/30/2017
 ms.assetid: 522a00b4-a789-4e8c-b8d7-a4c3d863a182
-ms.openlocfilehash: d5801452943a75e87d829e5d5004e3c259ce3afa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 304f4449ff4259d1d1f30ff93deff3c6edd2b1cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292604"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726638"
 ---
 # <a name="discovery-samples"></a>Descoberta (exemplos)
 

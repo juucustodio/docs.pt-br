@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICoreClrDebugTarget'
 title: Interface ICoreClrDebugTarget
 ms.date: 03/30/2017
 api_name:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 7cfaee76-e284-4a66-a431-8e33f0f60038
 topic_type:
 - apiref
-ms.openlocfilehash: 791bd2754a96b97a38e2509c0c61a644324857cb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f0ed4dd75cd1daca6e83617433b29bbaecb1dd36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716948"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728750"
 ---
 # <a name="icoreclrdebugtarget-interface"></a>Interface ICoreClrDebugTarget
 
 Fornece métodos que controlam contagens de referência, enumeram processos e liberam a memória associada a um depurador que é anexado a um destino do Silverlight do Macintosh remoto.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 class ICoreClrDebugTarget {  
@@ -70,7 +71,7 @@ class ICoreClrDebugTarget {
   
  **Versões do .NET Framework:** 3,5 SP1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRemoteTarget](icordebugremotetarget-interface.md)
 - [Interface ICorDebug](icordebug-interface.md)

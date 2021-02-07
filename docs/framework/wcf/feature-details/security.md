@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: segurança de Windows Communication Foundation'
 title: Segurança do Windows Communication Foundation
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - security [WCF]
 - Windows Communication Foundation, security
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
-ms.openlocfilehash: b92f1ad8bb00e9df8daf55da4d7a808420d909cf
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8cf748504c85844f82f8941be1b60bb29478f730
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253993"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726787"
 ---
 # <a name="windows-communication-foundation-security"></a>Segurança do Windows Communication Foundation
 
@@ -65,7 +66,7 @@ Os tópicos nesta seção descrevem os recursos de segurança do Windows Communi
   
 ## <a name="related-sections"></a>Seções relacionadas  
 
- [Detalhes do recurso WCF](index.md)  
+ [Detalhes de funcionalidades do WCF](index.md)  
   
  [Programação de WCF básica](../basic-wcf-programming.md)  
   
@@ -73,6 +74,6 @@ Os tópicos nesta seção descrevem os recursos de segurança do Windows Communi
   
  [Visão geral conceitual](../conceptual-overview.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Configurando seu aplicativo](../diagnostics/configuring-your-application.md)

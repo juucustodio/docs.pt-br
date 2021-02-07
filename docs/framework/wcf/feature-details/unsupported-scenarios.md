@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cenários sem suporte'
 title: Cenários sem suporte
 ms.date: 03/30/2017
 ms.assetid: 72027d0f-146d-40c5-9d72-e94392c8bb40
-ms.openlocfilehash: 2d779b49a8201b3ad53507af7710f7aef5e9321c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7547a1acc060a6611a4750e512501cd314bed702
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726748"
 ---
 # <a name="unsupported-scenarios"></a>Cenários sem suporte
 
@@ -123,7 +124,7 @@ O WCF perde o controle dos atributos em um `<wst:Claims>` elemento em um `RST` m
 
  A correção é modificar a associação diretamente no cliente depois de fazer a importação.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Considerações sobre segurança](security-considerations-in-wcf.md)
 - [Divulgação de Informações Confidenciais](information-disclosure.md)

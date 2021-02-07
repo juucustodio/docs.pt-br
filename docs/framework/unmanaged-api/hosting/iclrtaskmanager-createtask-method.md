@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRTaskManager:: CreateTask'
 title: Método ICLRTaskManager::CreateTask
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: eea570d9-2e53-4320-9ea0-eb777bf9dcf3
 topic_type:
 - apiref
-ms.openlocfilehash: c8d18b78cf0185271eae763892610d13f76e42ab
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 98a287f10a84b18579ebf2a4294cbb8a67cabc9c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728607"
 ---
 # <a name="iclrtaskmanagercreatetask-method"></a>Método ICLRTaskManager::CreateTask
 
@@ -39,7 +40,7 @@ HRESULT CreateTask (
  `pTask`  
  fora Um ponteiro para o endereço de um [ICLRTask](iclrtask-interface.md)recém-criado, ou NULL, se a tarefa não pôde ser criada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -70,7 +71,7 @@ HRESULT CreateTask (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

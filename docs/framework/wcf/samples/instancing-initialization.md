@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: inicialização de instanciação'
 title: Inicialização de instancialização
 ms.date: 03/30/2017
 ms.assetid: 154d049f-2140-4696-b494-c7e53f6775ef
-ms.openlocfilehash: 9681c091fe2a69024b000c5b93d003ec4d127a7b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 056f867012667abaf046827a7c6295f83d4794f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273354"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726514"
 ---
 # <a name="instancing-initialization"></a>Inicialização de instancialização
 

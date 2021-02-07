@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: filas e sessões confiáveis'
 title: Sessões confiáveis e filas
 ms.date: 03/30/2017
 ms.assetid: 7e794d03-141c-45ed-b6b1-6c0e104c1464
-ms.openlocfilehash: db47838db1608dac4e0fe22252795b6dd33a0b6e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 87c2d7cd65228f0218082d9126989db8c9275c70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244685"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726904"
 ---
 # <a name="queues-and-reliable-sessions"></a>Sessões confiáveis e filas
 
@@ -41,7 +42,7 @@ As filas e as sessões confiáveis são os recursos de Windows Communication Fou
   
  A separação, combinada com transferências de mensagens confiáveis entre filas, permite que os aplicativos que são livremente acoplados se comuniquem de forma confiável. Ao contrário de sessões confiáveis, a origem e o destino não precisam estar em execução ao mesmo tempo. Isso habilita implicitamente cenários em que as filas são, em vigor, usadas como um mecanismo de nivelamento de carga quando há uma incompatibilidade entre a taxa de produção de mensagem pela origem e a taxa de consumo de mensagem pelo destino. Para obter mais informações sobre filas, consulte [filas no WCF](queues-in-wcf.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Filas no WCF](queues-in-wcf.md)
 - [Enfileiramento no WCF](queuing-in-wcf.md)

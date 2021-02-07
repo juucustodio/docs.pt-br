@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRTask2'
 title: Interface ICLRTask2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b5a22ebc-0582-49de-91f9-97a3d9789290
 topic_type:
 - apiref
-ms.openlocfilehash: 9332b3462ba389783a113d173e32850d40427ce2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 835b01e1c808c071e9393c5117d5e38415ec8eba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720224"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728621"
 ---
 # <a name="iclrtask2-interface"></a>Interface ICLRTask2
 
@@ -27,7 +28,7 @@ Fornece toda a funcionalidade da interface [ICLRTask](iclrtask-interface.md) ; A
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método BeginPreventAsyncAbort](iclrtask2-beginpreventasyncabort-method.md)|Atrasa novas solicitações de anulação de thread no thread atual.|  
 |[Método EndPreventAsyncAbort](iclrtask2-endpreventasyncabort-method.md)|Permite solicitações de anulação de thread novas ou pendentes para resultar em anulações de thread no thread atual.|  
@@ -54,7 +55,7 @@ Fornece toda a funcionalidade da interface [ICLRTask](iclrtask-interface.md) ; A
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

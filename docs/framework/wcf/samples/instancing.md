@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: instanciação'
 title: Instanciação
 ms.date: 03/30/2017
 helpviewer_keywords:
 - service behaviors, instancing sample
 - Instancing Sample [Windows Communication Foundation]
 ms.assetid: c290fa54-f6ae-45a1-9186-d9504ebc6ee6
-ms.openlocfilehash: 55042af1e6eec1fe4b3e2cf07d03596e4793575f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 88cff6912e3285370a456d5d8575c995ff15ef57
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726449"
 ---
 # <a name="instancing"></a>Instanciação
 

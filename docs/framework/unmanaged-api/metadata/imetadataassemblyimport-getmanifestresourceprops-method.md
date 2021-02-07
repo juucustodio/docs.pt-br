@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataAssemblyImport:: GetManifestResourceProps'
 title: Método IMetaDataAssemblyImport::GetManifestResourceProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 00be4789-ac63-4397-b2ec-1629a5c5a585
 topic_type:
 - apiref
-ms.openlocfilehash: 585a9e39f529294841cd11389f03d763968a0f5e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d8f390f8eede5153df282cc30479ceff22fb552d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728250"
 ---
 # <a name="imetadataassemblyimportgetmanifestresourceprops-method"></a>Método IMetaDataAssemblyImport::GetManifestResourceProps
 
@@ -73,6 +74,6 @@ HRESULT GetManifestResourceProps (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

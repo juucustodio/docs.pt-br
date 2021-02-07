@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: segurança de mensagem com certificados mútuos'
 title: Segurança de mensagem com certificados mútuos
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 99d7a528-7ae4-4d39-a0f9-3066ea237de0
-ms.openlocfilehash: 521b2a887792d41dd28342ca4bfe7be71ceba4b7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c894f457dcd0fdc449c2f94eaee15004300df5fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237372"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726982"
 ---
 # <a name="message-security-with-mutual-certificates"></a>Segurança de mensagem com certificados mútuos
 
@@ -35,7 +36,7 @@ O cenário a seguir mostra um serviço de Windows Communication Foundation (WCF)
   
 ## <a name="service"></a>Serviço  
 
- O código e a configuração a seguir devem ser executados de forma independente. Realize uma destas ações:  
+ O código e a configuração a seguir devem ser executados de forma independente. Realize um dos seguintes procedimentos:  
   
 - Crie um serviço autônomo usando o código sem configuração.  
   
@@ -96,7 +97,7 @@ O cenário a seguir mostra um serviço de Windows Communication Foundation (WCF)
   
 ## <a name="client"></a>Cliente  
 
- O código e a configuração a seguir devem ser executados de forma independente. Realize uma destas ações:  
+ O código e a configuração a seguir devem ser executados de forma independente. Realize um dos seguintes procedimentos:  
   
 - Crie um cliente autônomo usando o código (e o código do cliente).  
   
@@ -165,7 +166,7 @@ O cenário a seguir mostra um serviço de Windows Communication Foundation (WCF)
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de segurança](security-overview.md)
 - [Modelo de segurança para o Windows Server app Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

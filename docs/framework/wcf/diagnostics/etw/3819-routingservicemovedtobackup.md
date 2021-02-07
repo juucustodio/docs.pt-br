@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3819-RoutingServiceMovedToBackup'
 title: 3819 - RoutingServiceMovedToBackup
 ms.date: 03/30/2017
 ms.assetid: bf4086de-efd4-413c-9bc3-32a85b6b6722
-ms.openlocfilehash: 2906d5f377f03c7b8a60789e476295d31903216f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3038121e5a04c891beb7f074e0ea7d78db94b4fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273432"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727736"
 ---
 # <a name="3819---routingservicemovedtobackup"></a>3819 - RoutingServiceMovedToBackup
 
@@ -17,7 +18,7 @@ ms.locfileid: "96273432"
 |-|-|  
 |ID|3819|  
 |Palavras-chave|Roteamentoservices|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

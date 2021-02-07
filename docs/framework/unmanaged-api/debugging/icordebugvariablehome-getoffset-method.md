@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugVariableHome:: método GetOffset'
 title: 'Método ICorDebugVariableHome:: GetOffset'
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f025c2e5-3f6c-4be8-9ffe-c8b214617dfe
 topic_type:
 - apiref
-ms.openlocfilehash: c5d491b66e4ec64dffa4e19dabff876c9c473036
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 48b57856d2825dd2ea9328064a28783b4b36029b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711787"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728763"
 ---
 # <a name="icordebugvariablehomegetoffset-method"></a>Método ICorDebugVariableHome:: GetOffset
 
@@ -39,11 +40,11 @@ HRESULT GetOffset(
  `pOffset`  
  fora O deslocamento do registro base.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  O método retorna os seguintes valores:  
   
-|Valor|DESCRIÇÃO|  
+|Valor|Descrição|  
 |-----------|-----------------|  
 |`S_OK`|A variável está em um local de memória relativa ao registro.|  
 |`E_FAIL`|A variável não está em um local de memória relativa ao registro.|  
@@ -58,6 +59,6 @@ HRESULT GetOffset(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugVariableHome](icordebugvariablehome-interface.md)

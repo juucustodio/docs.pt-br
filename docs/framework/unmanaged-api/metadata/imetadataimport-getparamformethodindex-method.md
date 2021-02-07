@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetParamForMethodIndex'
 title: Método IMetaDataImport::GetParamForMethodIndex
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ec3bfa95-1920-4511-932e-3ff23d76fcb8
 topic_type:
 - apiref
-ms.openlocfilehash: d4d3ba5713398876b55c072f0cda7eb5d599c4d5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d84b26f1239e548b6cf96d1e6b38791eb6ecddff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729272"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728139"
 ---
 # <a name="imetadataimportgetparamformethodindex-method"></a>Método IMetaDataImport::GetParamForMethodIndex
 
@@ -57,7 +58,7 @@ HRESULT GetParamForMethodIndex (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

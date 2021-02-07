@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugObjectValue:: IsValueClass'
 title: Método ICorDebugObjectValue::IsValueClass
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 13d89a4a-5d9d-4a79-9600-5e2a98c3d166
 topic_type:
 - apiref
-ms.openlocfilehash: 7b637889986425767fd7e1166c73df3301075422
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bf3ce94a06092209507fd1ff737e09a77b5d0c70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695264"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728919"
 ---
 # <a name="icordebugobjectvalueisvalueclass-method"></a>Método ICorDebugObjectValue::IsValueClass
 

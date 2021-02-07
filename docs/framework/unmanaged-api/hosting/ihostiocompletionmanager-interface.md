@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostIoCompletionManager'
 title: Interface IHostIoCompletionManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c28d1983-83f7-46e2-990f-dbb9dc07c818
 topic_type:
 - apiref
-ms.openlocfilehash: 75ad8670008242008aa344835143ff9b2add0a6c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 30cb0ecbfd9645bc0374e3570751832d6fa8eced
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708314"
 ---
 # <a name="ihostiocompletionmanager-interface"></a>Interface IHostIoCompletionManager
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) interaja com p
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Bind](ihostiocompletionmanager-bind-method.md)|Associa um identificador a uma porta de conclusão de e/s.|  
 |[Método CloseIoCompletionPort](ihostiocompletionmanager-closeiocompletionport-method.md)|Fecha uma porta que foi criada por meio de uma chamada anterior para `CreateIoCompletionPort` .|  
@@ -55,6 +56,6 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) interaja com p
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)

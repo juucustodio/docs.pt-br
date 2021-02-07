@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTaskManager:: LeaveRuntime'
 title: Método IHostTaskManager::LeaveRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 43689cc4-e48e-46e5-a22d-bafd768b8759
 topic_type:
 - apiref
-ms.openlocfilehash: 855f8a5d3582bbad59301a344d8a51198c40a051
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7b18bdc17b9cfd52b68309a07c6714fd1efa66cb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707418"
 ---
 # <a name="ihosttaskmanagerleaveruntime-method"></a>Método IHostTaskManager::LeaveRuntime
 
@@ -42,7 +43,7 @@ HRESULT LeaveRuntime (
  `target`  
  no O endereço dentro do arquivo executável portátil mapeado da função não gerenciada a ser chamada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -77,7 +78,7 @@ HRESULT LeaveRuntime (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit:: SaveToStream'
 title: Método IMetaDataEmit::SaveToStream
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e0290a49-3818-4a43-ad46-3014faa34f97
 topic_type:
 - apiref
-ms.openlocfilehash: 3f8da08b96c47c90ecccae28dd1662a7abffaf1d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 104aa0b0dfcd0f4f9e8b87b4633880f6423f92d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688556"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706650"
 ---
 # <a name="imetadataemitsavetostream-method"></a>Método IMetaDataEmit::SaveToStream
 
@@ -53,7 +54,7 @@ HRESULT SaveToStream (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

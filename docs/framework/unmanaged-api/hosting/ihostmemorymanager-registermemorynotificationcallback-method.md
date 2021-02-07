@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostMemoryManager:: RegisterMemoryNotificationCallback'
 title: Método IHostMemoryManager::RegisterMemoryNotificationCallback
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 65d301f6-4dbb-4b5f-8eff-82540e2b6465
 topic_type:
 - apiref
-ms.openlocfilehash: edb29378412583d7cdec804b08f8f622d642b02f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 26a7468aba4f473eebff78a8c67eeb5b3e866e9c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731300"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707755"
 ---
 # <a name="ihostmemorymanagerregistermemorynotificationcallback-method"></a>Método IHostMemoryManager::RegisterMemoryNotificationCallback
 
@@ -39,7 +40,7 @@ HRESULT RegisterMemoryNotificationCallback (
  `pCallback`  
  no Um ponteiro de interface para uma instância de [ICLRMemoryNotificationCallback](iclrmemorynotificationcallback-interface.md) que é implementada pelo CLR.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -67,7 +68,7 @@ HRESULT RegisterMemoryNotificationCallback (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRMemoryNotificationCallback](iclrmemorynotificationcallback-interface.md)
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostMalloc'
 title: Interface IHostMalloc
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e3c6643b-6fc7-4a99-959d-4b7b4e63fdee
 topic_type:
 - apiref
-ms.openlocfilehash: 2530c7fcd63f81b566d6623a533bd8e2af084047
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd04a0f71fd429ea10b9edcce02806f4afa57148
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708171"
 ---
 # <a name="ihostmalloc-interface"></a>Interface IHostMalloc
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) solicite aloca
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Alloc](ihostmalloc-alloc-method.md)|Solicita que o host aloque a quantidade solicitada de memória do heap.|  
 |[Método DebugAlloc](ihostmalloc-debugalloc-method.md)|Solicita que o host aloque a quantidade solicitada de memória do heap e rastreie também onde a memória foi alocada.|  
@@ -47,7 +48,7 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) solicite aloca
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)

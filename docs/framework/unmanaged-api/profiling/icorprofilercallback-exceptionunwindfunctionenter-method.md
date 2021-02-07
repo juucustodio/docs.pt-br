@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: ExceptionUnwindFunctionEnter'
 title: Método ICorProfilerCallback::ExceptionUnwindFunctionEnter
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea3dc625-5650-4bf4-8e67-01e42be065b1
 topic_type:
 - apiref
-ms.openlocfilehash: d3a09a6caf3febd04296fce518ade42e8676a4b8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3f0376e01263290596aa722b37f6a796ab919139
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706013"
 ---
 # <a name="icorprofilercallbackexceptionunwindfunctionenter-method"></a>Método ICorProfilerCallback::ExceptionUnwindFunctionEnter
 
@@ -55,7 +56,7 @@ HRESULT ExceptionUnwindFunctionEnter(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Método ExceptionUnwindFunctionLeave](icorprofilercallback-exceptionunwindfunctionleave-method.md)

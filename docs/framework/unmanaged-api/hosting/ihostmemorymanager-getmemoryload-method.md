@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostMemoryManager:: GetMemoryLoad'
 title: Método IHostMemoryManager::GetMemoryLoad
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e8138f6e-a0a4-48d4-8dae-9466b4dc6180
 topic_type:
 - apiref
-ms.openlocfilehash: 0611b82e22ec9d5d2cde2a7f46e65b5e25733610
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 82288e6a705b014c2768c75e15376f7e6a0af428
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731352"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707835"
 ---
 # <a name="ihostmemorymanagergetmemoryload-method"></a>Método IHostMemoryManager::GetMemoryLoad
 
@@ -43,7 +44,7 @@ HRESULT GetMemoryLoad (
  `pAvailableBytes`  
  fora Um ponteiro para o número de bytes disponíveis para o Common Language Runtime (CLR).  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -70,7 +71,7 @@ HRESULT GetMemoryLoad (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.GC?displayProperty=nameWithType>
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)

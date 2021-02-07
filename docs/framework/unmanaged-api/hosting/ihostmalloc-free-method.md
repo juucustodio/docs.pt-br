@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IHostMAlloc:: método gratuito'
 title: Método IHostMAlloc::Free
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c89abf5b-1120-4437-8b57-4a99fb3ae7f9
 topic_type:
 - apiref
-ms.openlocfilehash: d4c9048c89d55ed048a55a771572823905a056df
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 097e2e95b6dfb9d6a1bae68f9e0455a96383159e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687119"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708197"
 ---
 # <a name="ihostmallocfree-method"></a>Método IHostMAlloc::Free
 
@@ -39,7 +40,7 @@ HRESULT Free (
  `pMem`  
  no Um ponteiro para a memória a ser liberada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -65,7 +66,7 @@ HRESULT Free (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Interface IHostMalloc](ihostmalloc-interface.md)

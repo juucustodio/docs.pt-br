@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataAssemblyEmit: método efineAssembly de:D'
 title: Método IMetaDataAssemblyEmit::DefineAssembly
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0637d66-74bf-4f2d-8137-9ff838bccece
 topic_type:
 - apiref
-ms.openlocfilehash: 6d783e27c60db7381025f3b2382728e3996323ae
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd53a4398f49ca96072fc5f5b6dcac35a94bdc59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725723"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706737"
 ---
 # <a name="imetadataassemblyemitdefineassembly-method"></a>Método IMetaDataAssemblyEmit::DefineAssembly
 
@@ -77,6 +78,6 @@ HRESULT DefineAssembly (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

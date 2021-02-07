@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostMAlloc:: Alloc'
 title: Método IHostMAlloc::Alloc
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a3007f5e-d75d-4b37-842b-704e9edced5e
 topic_type:
 - apiref
-ms.openlocfilehash: 5858b03676db0839621b121131ded4da9950ce88
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e0349c273ef9e3194bb8bad167510dd8fefcab62
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675120"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708223"
 ---
 # <a name="ihostmallocalloc-method"></a>Método IHostMAlloc::Alloc
 
@@ -47,7 +48,7 @@ HRESULT Alloc (
  `ppMem`  
  fora Um ponteiro para a memória alocada ou NULL se a solicitação não puder ser concluída.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -73,7 +74,7 @@ HRESULT Alloc (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Interface IHostMalloc](ihostmalloc-interface.md)

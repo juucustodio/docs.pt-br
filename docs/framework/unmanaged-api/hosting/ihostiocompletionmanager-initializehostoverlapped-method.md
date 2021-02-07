@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostIoCompletionManager:: InitializeHostOverlapped'
 title: Método IHostIoCompletionManager::InitializeHostOverlapped
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c35199bf-bc47-4901-b467-4e8a37644bbb
 topic_type:
 - apiref
-ms.openlocfilehash: 397dbbeb0b85cb549a8b5917f977ecb13b3d6539
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 10be7edb67143937dec6efc6e35466466374d32d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720211"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708457"
 ---
 # <a name="ihostiocompletionmanagerinitializehostoverlapped-method"></a>Método IHostIoCompletionManager::InitializeHostOverlapped
 
@@ -39,7 +40,7 @@ HRESULT InitializeHostOverlapped (
  `pvOverlapped`  
  no Um ponteiro para a estrutura do Win32 `OVERLAPPED` a ser incluído na solicitação de e/s.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -70,7 +71,7 @@ HRESULT InitializeHostOverlapped (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
 - [Método GetHostOverlappedSize](ihostiocompletionmanager-gethostoverlappedsize-method.md)

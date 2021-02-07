@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICeeGen:: GetMethodBuffer'
 title: Método ICeeGen::GetMethodBuffer
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c7c5b39a-d4ac-41f1-9d1e-44163f563a49
 topic_type:
 - apiref
-ms.openlocfilehash: e9c2dab9f30be6e5eea8f6570b297f8df11b6fe6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 24811f231b1db6d985753d4f4695f432aa12edc2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715323"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706923"
 ---
 # <a name="iceegengetmethodbuffer-method"></a>Método ICeeGen::GetMethodBuffer
 
@@ -55,6 +56,6 @@ HRESULT GetMethodBuffer (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICeeGen](iceegen-interface.md)

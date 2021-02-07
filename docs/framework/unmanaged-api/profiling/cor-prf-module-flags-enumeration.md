@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de COR_PRF_MODULE_FLAGS'
 title: Enumeração COR_PRF_MODULE_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7bc3a938-0df1-4739-9ff1-89cff454b704
 topic_type:
 - apiref
-ms.openlocfilehash: 7d9e187d4aede772b7a002359cd3bdd350aaec77
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0be5d97bfb6bea069d039d175fc554e0ef59993d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706431"
 ---
 # <a name="cor_prf_module_flags-enumeration"></a>Enumeração COR_PRF_MODULE_FLAGS
 
@@ -66,6 +67,6 @@ typedef enum
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando perfil de enumerações](profiling-enumerations.md)

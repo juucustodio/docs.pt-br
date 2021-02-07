@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMapToken'
 title: Interface IMapToken
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4c5c4df0-43f3-4830-a01b-8d029806f2c4
 topic_type:
 - apiref
-ms.openlocfilehash: 2ecd3a5660b0672185cd1b13f5a41261631713e4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 30f8e2cc73fcb932dae7d35dbb4e68d2b1115603
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690636"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706793"
 ---
 # <a name="imaptoken-interface"></a>Interface IMapToken
 
@@ -30,7 +31,7 @@ Fornece recursos de mapeamento entre assemblies.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Map](imaptoken-map-method.md)|Mapeia uma relação entre dois assemblies usando assinaturas de metadados.|  
   
@@ -44,6 +45,6 @@ Fornece recursos de mapeamento entre assemblies.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)

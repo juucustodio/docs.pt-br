@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICeeGen:: AddSectionReloc'
 title: Método ICeeGen::AddSectionReloc
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b500a260-1d57-4953-95e1-c27063f7c8da
 topic_type:
 - apiref
-ms.openlocfilehash: 87a5224247c2d94613de482fbaa34bf978198bf0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 715c506f0bdcb3fcef33b3e9165d1f9ae47c6073
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707170"
 ---
 # <a name="iceegenaddsectionreloc-method"></a>Método ICeeGen::AddSectionReloc
 
@@ -63,6 +64,6 @@ HRESULT AddSectionReloc (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICeeGen](iceegen-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorProfilerCallback:: Initialize'
 title: Método ICorProfilerCallback::Initialize
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dc5fab2a-4b45-4b12-8727-b89c9915f23e
 topic_type:
 - apiref
-ms.openlocfilehash: 26df1599af247bd08d3702d4ef3c5aa2f648620c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b3ff579dee384b331450aa54aace39890febfe30
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720367"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705935"
 ---
 # <a name="icorprofilercallbackinitialize-method"></a>Método ICorProfilerCallback::Initialize
 
@@ -53,7 +54,7 @@ HRESULT Initialize(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Método Shutdown](icorprofilercallback-shutdown-method.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostIoCompletionManager:: SetMaxThreads'
 title: Método IHostIoCompletionManager::SetMaxThreads
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ebad4f40-d9f1-4dc6-9b27-a89c9eb3926f
 topic_type:
 - apiref
-ms.openlocfilehash: 3cb001db74587beb5417bf57738c5efb9a274591
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6b36523b0b0d6cefba383d324eb23debefd7c41b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724813"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708249"
 ---
 # <a name="ihostiocompletionmanagersetmaxthreads-method"></a>Método IHostIoCompletionManager::SetMaxThreads
 
@@ -39,7 +40,7 @@ HRESULT SetMaxThreads (
  `dwMaxIoCompletionThreads`  
  no O número máximo de threads a serem alocados para solicitações de e/s.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -65,7 +66,7 @@ HRESULT SetMaxThreads (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
 - [Interface IHostIoCompletionManager](ihostiocompletionmanager-interface.md)

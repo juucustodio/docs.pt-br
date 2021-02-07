@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICeeGen'
 title: Interface ICeeGen
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 383d20b0-efe9-4e71-8fb8-1186b2e7d0c0
 topic_type:
 - apiref
-ms.openlocfilehash: 2c180a135608350b0feec3f419be98f4f428b186
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 43e9e0696523346ffbcf0b8823a48ed2c9c359e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704507"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706806"
 ---
 # <a name="iceegen-interface"></a>Interface ICeeGen
 
@@ -29,7 +30,7 @@ Fornece métodos para a compilação dinâmica de código.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método AddSectionReloc](iceegen-addsectionreloc-method.md)|Obsoleto. Adiciona uma instrução. realocação à base de código.|  
 |[Método AllocateMethodBuffer](iceegen-allocatemethodbuffer-method.md)|Obsoleto. Cria um buffer do tamanho especificado para um método e Obtém o endereço virtual relativo do método.|  
@@ -57,6 +58,6 @@ Fornece métodos para a compilação dinâmica de código.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)

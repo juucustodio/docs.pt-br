@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICeeGen:: Emitstring'
 title: Método ICeeGen::EmitString
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ad2710a7-edb8-4493-8619-3fce235e3334
 topic_type:
 - apiref
-ms.openlocfilehash: b9c907868df31da8d995c6a6b86db258d395335d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fca388d044603f932bf90a176cada6e830284702
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715440"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707105"
 ---
 # <a name="iceegenemitstring-method"></a>Método ICeeGen::EmitString
 
@@ -55,6 +56,6 @@ HRESULT EmitString (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICeeGen](iceegen-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostTaskManager'
 title: Interface IHostTaskManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4a0b05b9-3ef1-4607-b7c8-bd4dd43647a0
 topic_type:
 - apiref
-ms.openlocfilehash: deb14d291bfd511e8f3534f3c5e32787c259c5e8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 67574550ba26970189ea53b8e6bdb867fea8549b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673105"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707443"
 ---
 # <a name="ihosttaskmanager-interface"></a>Interface IHostTaskManager
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) trabalhe com t
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método BeginDelayAbort](ihosttaskmanager-begindelayabort-method.md)|Notifica o host de que o código gerenciado está entrando em um período no qual a tarefa atual não deve ser anulada.|  
 |[Método BeginThreadAffinity](ihosttaskmanager-beginthreadaffinity-method.md)|Notifica o host de que o código gerenciado está entrando em um período no qual a tarefa atual não deve ser movida para outro thread do sistema operacional.|  
@@ -62,7 +63,7 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) trabalhe com t
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

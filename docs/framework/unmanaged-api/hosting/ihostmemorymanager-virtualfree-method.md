@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostMemoryManager:: VirtualFree'
 title: Método IHostMemoryManager::VirtualFree
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1a436e89-eb28-4d15-bcf1-a072f86dbd99
 topic_type:
 - apiref
-ms.openlocfilehash: be006afaf5966aa4e6d11c73b92004d676c97c7f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 987661ce1b7bfd08f757f53082313b8eb60ff282
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731261"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707461"
 ---
 # <a name="ihostmemorymanagervirtualfree-method"></a>Método IHostMemoryManager::VirtualFree
 
@@ -47,7 +48,7 @@ HRESULT VirtualFree (
  `dwFreeType`  
  no O tipo de operação de liberação.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -75,7 +76,7 @@ HRESULT VirtualFree (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Interface IHostMalloc](ihostmalloc-interface.md)

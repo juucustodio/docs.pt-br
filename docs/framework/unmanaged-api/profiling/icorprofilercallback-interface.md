@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerCallback'
 title: Interface ICorProfilerCallback
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4bae06f7-94d7-4ba8-b250-648b2da78674
 topic_type:
 - apiref
-ms.openlocfilehash: 8451f100f9e1b8d68045050d1b584ae44c29195d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5bc59839bfe352fb7d67688dcd7c8fe0d6c97eaf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684051"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705896"
 ---
 # <a name="icorprofilercallback-interface"></a>Interface ICorProfilerCallback
 
@@ -27,7 +28,7 @@ Fornece métodos que são usados pelo Common Language Runtime (CLR) para notific
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método AppDomainCreationFinished](icorprofilercallback-appdomaincreationfinished-method.md)|Notifica o criador de perfil de que um domínio de aplicativo foi criado.|  
 |[Método AppDomainCreationStarted](icorprofilercallback-appdomaincreationstarted-method.md)|Notifica o criador de perfil de que um domínio de aplicativo está sendo criado.|  
@@ -120,7 +121,7 @@ Fornece métodos que são usados pelo Common Language Runtime (CLR) para notific
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)
 - [Interface ICorProfilerCallback2](icorprofilercallback2-interface.md)

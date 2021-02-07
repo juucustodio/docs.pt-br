@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMapToken:: map'
 title: Método IMapToken::Map
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b9b4bf2f-1098-43d6-9619-a99b4bda1940
 topic_type:
 - apiref
-ms.openlocfilehash: 51cca1ab61027090b0d22781dfd740038bc9372d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: da78f22e944a0e4ec25adcd7cdf97b69131a6612
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718196"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706728"
 ---
 # <a name="imaptokenmap-method"></a>Método IMapToken::Map
 
@@ -57,6 +58,6 @@ HRESULT Map (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMapToken](imaptoken-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: ExceptionSearchFunctionLeave'
 title: Método ICorProfilerCallback::ExceptionSearchFunctionLeave
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 01de7ac6-0aad-42ef-bf93-50737667b0a4
 topic_type:
 - apiref
-ms.openlocfilehash: 064f87fe0cee8d0ad7efcba478e9cf1954a3f291
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1a30d7ef979f751596cdd723b76eefee3cc1db5a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706143"
 ---
 # <a name="icorprofilercallbackexceptionsearchfunctionleave-method"></a>Método ICorProfilerCallback::ExceptionSearchFunctionLeave
 
 Notifica o criador de perfil de que a fase de pesquisa do tratamento de exceções concluiu a pesquisa de uma função.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT ExceptionSearchFunctionLeave();  
@@ -42,7 +43,7 @@ HRESULT ExceptionSearchFunctionLeave();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Método ExceptionSearchFunctionEnter](icorprofilercallback-exceptionsearchfunctionenter-method.md)

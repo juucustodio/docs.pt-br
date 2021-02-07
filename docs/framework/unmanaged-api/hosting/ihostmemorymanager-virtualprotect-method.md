@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostMemoryManager:: usar VirtualProtect'
 title: Método IHostMemoryManager::VirtualProtect
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 13be0299-df0d-4951-aabf-0676a30b385f
 topic_type:
 - apiref
-ms.openlocfilehash: 9822e5a1fb09e9d3bce541ff63cf766ae8611789
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 66e1fb5afdc3aa5c400ed0ffa9cea569d300e6a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731241"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707417"
 ---
 # <a name="ihostmemorymanagervirtualprotect-method"></a>Método IHostMemoryManager::VirtualProtect
 
@@ -51,7 +52,7 @@ HRESULT VirtualProtect (
  `pflOldProtect`  
  fora Um ponteiro para o valor de proteção de memória anterior.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -76,6 +77,6 @@ HRESULT VirtualProtect (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)

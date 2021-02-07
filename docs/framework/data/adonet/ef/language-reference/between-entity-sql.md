@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: entre (Entity SQL)'
 title: ENTRE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 4dcdd754-ae01-4e78-bf28-8a117fb2b73e
-ms.openlocfilehash: 17e3fe97942b34232640b0326eca2c5729e86989
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 35ac16e94f2e55f6a0f76591daf0f91f9708aa53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201161"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697108"
 ---
 # <a name="between-entity-sql"></a>ENTRE (Entity SQL)
 
@@ -36,7 +37,7 @@ expression [ NOT ] BETWEEN begin_expression AND end_expression
  AND  
  Atua como um espaço reservado que indica que `expression` deve estar dentro do intervalo indicado por `begin_expression` e por `end_expression`.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` se `expression` está entre o intervalo indicado por `begin_expression` e `end_expression`; caso contrário, `false`. `null` será retornado se `expression` é `null` ou se `begin_expression` ou `end_expression` são `null`.  
   
@@ -54,6 +55,6 @@ expression [ NOT ] BETWEEN begin_expression AND end_expression
   
  [!code-csharp[DP EntityServices Concepts 2#BETWEEN](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#between)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

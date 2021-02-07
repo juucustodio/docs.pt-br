@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ANYELEMENT (Entity SQL)'
 title: QUALQUERELEMENTO (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 475a9ad6-8c8d-4f49-9970-af273e5360f1
-ms.openlocfilehash: e060956545ca924fa6fedb80b2f53ff312f307a2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3330c1b0bed69084bc83c5a689762ff529539d54
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201194"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697147"
 ---
 # <a name="anyelement-entity-sql"></a>QUALQUERELEMENTO (Entity SQL)
 
@@ -24,7 +25,7 @@ ANYELEMENT ( expression )
  `expression`  
  Qualquer expressão de consulta válida de que retornar uma coleção para extrair um elemento.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Um único elemento na coleção ou um elemento arbitrário se a coleção tem mais de uma; se a coleção estiver vazia, retorna `null`. Se `collection` for uma coleção do tipo `Collection<T>` , `ANYELEMENT(collection)` será uma expressão válida que produz uma instância do tipo `T` .  
   
@@ -46,7 +47,7 @@ ANYELEMENT(Customers)
   
  [!code-csharp[DP EntityServices Concepts 2#ANYELEMENT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#anyelement)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)
 - [Tipos estruturados que permitem valor nulo](nullable-structured-types-entity-sql.md)

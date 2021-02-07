@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <workflowUnhandledException>'
 title: <workflowUnhandledException>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 57adeab5-f06a-44b2-916b-0e177cf0f4a6
-ms.openlocfilehash: 6e3993e43aac746f380a30341fe4ebffcd257c5f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b9258c986ffa154e490f80bead1dc53d8f7ef44d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148510"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697771"
 ---
 # \<workflowUnhandledException>
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como: usar EdmGen.exe para gerar código de Object-Layer'
 title: 'Como: usar EdmGen.exe para gerar código de objetos camada'
 ms.date: 03/30/2017
 ms.assetid: c44d2ebe-f66f-42cb-9741-4a3f0c2dcffb
-ms.openlocfilehash: a243a588dcb6f7e7001de331cb9011a23ee2fdbe
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1c1f614247f10c8819709b9494fb1ec04271b634
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697459"
 ---
 # <a name="how-to-use-edmgenexe-to-generate-object-layer-code"></a>Como: usar EdmGen.exe para gerar código de objetos camada
 
@@ -39,7 +40,7 @@ Este tópico mostra como usar a ferramenta [gerador de EDM (EdmGen.exe)](edm-gen
     /incsdl:.\School.csdl /outobjectlayer:.\School.Objects.cs /language:CSharp  
     ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Modelando e mapeando](modeling-and-mapping.md)
 - [Como configurar manualmente um projeto de Entity Framework](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))

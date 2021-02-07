@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: problemas conhecidos no SqlClient para Entity Framework'
 title: Problemas conhecidos em SqlClient para Entity Framework
 ms.date: 03/30/2017
 ms.assetid: 48fe4912-4d0f-46b6-be96-3a42c54780f6
-ms.openlocfilehash: 707c749e4dff5d1bbc8d372632aae502092db060
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c1a82657f1b43cddb858692d055df3bf2dca47ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198100"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697329"
 ---
 # <a name="known-issues-in-sqlclient-for-entity-framework"></a>Problemas conhecidos em SqlClient para Entity Framework
 
@@ -67,7 +68,7 @@ SELECT c, (SELECT c, (SELECT c FROM AdventureWorksModel.Vendor AS c  ) As Inner2
 
  O Entity Framework dá suporte a valores de identidade de tipo GUID gerados pelo servidor, mas o provedor deve dar suporte ao retorno do valor de identidade gerado pelo servidor após a inserção de uma linha. A partir do SQL Server 2005, você pode retornar o tipo de GUID gerado pelo servidor em um banco de dados SQL Server por meio da [cláusula OUTPUT](/sql/t-sql/queries/output-clause-transact-sql).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [SqlClient para Entity Framework](sqlclient-for-the-entity-framework.md)
 - [Problemas conhecidos e considerações no LINQ to Entities](./language-reference/known-issues-and-considerations-in-linq-to-entities.md)

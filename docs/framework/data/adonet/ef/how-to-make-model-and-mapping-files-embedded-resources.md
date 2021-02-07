@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como criar modelo e arquivos de mapeamento de recursos inseridos'
 title: 'Como: tornar arquivos de modelo e mapeamento recursos inseridos'
 ms.date: 03/30/2017
 ms.assetid: 20dfae4d-e95a-4264-9540-f5ad23b462d3
-ms.openlocfilehash: 8496dcad5422d1a45af52e58325efd360768da34
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 373dfc2c93adfc510341ec0ea0487ad8962aa3e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198282"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697511"
 ---
 # <a name="how-to-make-model-and-mapping-files-embedded-resources"></a>Como: tornar arquivos de modelo e mapeamento recursos inseridos
 
@@ -38,7 +39,7 @@ O Entity Framework permite que você implante arquivos de modelo e de mapeamento
 
  A cadeia de conexão a seguir faz referência a arquivos de mapeamento e modelo inseridos para o [modelo de vendas AdventureWorks](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Esta cadeia de conexão é armazenada no arquivo App.config do projeto.  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Modelando e mapeando](modeling-and-mapping.md)
 - [Como: definir a cadeia de conexão](how-to-define-the-connection-string.md)

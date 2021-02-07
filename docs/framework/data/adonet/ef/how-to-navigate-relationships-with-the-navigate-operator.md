@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como navegar em relações com o operador Navigate'
 title: 'Como: navegar em relações com o operador navegar'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 79996d2d-9b03-4a9d-82cc-7c5e7c2ad93d
-ms.openlocfilehash: 7d0dbb590555f3e525cd328e4f4b0ad3584f108b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ff419a959c2ec895a238d37caeedcf1f06812050
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198243"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697524"
 ---
 # <a name="how-to-navigate-relationships-with-the-navigate-operator"></a>Como: navegar em relações com o operador navegar
 
@@ -32,7 +33,7 @@ Este tópico mostra como executar um comando em um modelo conceitual usando um o
  [!code-csharp[DP EntityServices Concepts#NavigateWithNavOperatorWithEntityCommand](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#navigatewithnavoperatorwithentitycommand)]
  [!code-vb[DP EntityServices Concepts#NavigateWithNavOperatorWithEntityCommand](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#navigatewithnavoperatorwithentitycommand)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Provedor EntityClient para Entity Framework](entityclient-provider-for-the-entity-framework.md)
 - [Linguagem Entity SQL](./language-reference/entity-sql-language.md)

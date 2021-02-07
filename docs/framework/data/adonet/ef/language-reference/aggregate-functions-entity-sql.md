@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: funções de agregação (Entity SQL)'
 title: Funções agregadas (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: acfd3149-f519-4c6e-8fe1-b21d243a0e58
-ms.openlocfilehash: 308670f04b9a04b1fff77ece08deb39c8c4081d1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 077f0f103e739fe893b8aabff38b03e3ef8ebd96
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198074"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697251"
 ---
 # <a name="aggregate-functions-entity-sql"></a>Funções agregadas (Entity SQL)
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <schemeSettings> elemento (configurações de URI)'
 title: Elemento <schemeSettings> (Configurações de URI)
 ms.date: 03/30/2017
 ms.assetid: 0ae45c6e-8c4c-4c0d-8b9f-a93824648890
-ms.openlocfilehash: 5a146b854239fd516125e66e05312e27b90c73ec
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 218676c10a8acaa79c2eb2146214e77beee9a972
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91187011"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698434"
 ---
 # <a name="schemesettings-element-uri-settings"></a>Elemento \<schemeSettings> (Configurações de URI)
 
@@ -17,7 +18,7 @@ Especifica como um <xref:System.Uri> será analisado quanto a esquemas específi
 &nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<schemeSettings>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <schemeSettings>
@@ -89,7 +90,7 @@ Especifica como um <xref:System.Uri> será analisado quanto a esquemas específi
 |Arquivo de validação||  
 |Pode estar vazio||  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <webRequestModules> elemento (configurações de rede)'
 title: Elemento <webRequestModules> (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - webRequestModules element
 - <webRequestModules> element
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
-ms.openlocfilehash: 9396ca393523dce5593531f332e5c07241987947
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 851aec2bf38910239874cb5792239a48de6efb70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91186998"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698421"
 ---
 # <a name="webrequestmodules-element-network-settings"></a>Elemento \<webRequestModules> (Configurações de Rede)
 
@@ -23,7 +24,7 @@ Especifica os módulos a serem usados para solicitar informações de hosts de r
 &nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;\<webRequestModules>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <webRequestModules>
@@ -79,7 +80,7 @@ Especifica os módulos a serem usados para solicitar informações de hosts de r
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.WebRequest>
 - <xref:System.Net.IWebRequestCreate>

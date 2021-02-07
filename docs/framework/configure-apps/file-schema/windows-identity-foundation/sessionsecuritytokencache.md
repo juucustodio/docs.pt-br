@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <sessionSecurityTokenCache>'
 title: <sessionSecurityTokenCache>
 ms.date: 03/30/2017
 ms.assetid: d43e676c-0153-485c-ab31-0257a2db7507
 author: BrucePerlerMS
-ms.openlocfilehash: 347d1a1cba95bbd4992de95d6617e8828f4fc374
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6fc0bb518f546ffd80c68df95a9c0fab145423b8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156895"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698278"
 ---
 # \<sessionSecurityTokenCache>
 

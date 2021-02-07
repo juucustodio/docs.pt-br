@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <behaviors> do fluxo de trabalho'
 title: <behaviors> do fluxo de trabalho
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 3c6017b6-0c4f-4192-bd67-9515f5d1ec82
-ms.openlocfilehash: 21974f77526f55a47c014a285efd3bbac6fc1f7b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5154a389aded34065cc7bdb11d1c73d71ca9f9f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189598"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698187"
 ---
 # <a name="behaviors-of-workflow"></a>\<behaviors> do fluxo de trabalho
 
@@ -18,7 +19,7 @@ Esse elemento contém a coleção de **Imcomportamentos** .  Cada elemento na co
 &nbsp;&nbsp;[**\<system.ServiceModel>**](system-servicemodel-of-workflow.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<behaviors>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <behaviors>  
@@ -47,7 +48,7 @@ Esse elemento contém a coleção de **Imcomportamentos** .  Cada elemento na co
 |-------------|-----------------|  
 |[\<system.serviceModel>](../wcf/system-servicemodel.md)|O elemento raiz de todos os elementos de configuração do fluxo de trabalho.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.BehaviorsSection>
 - <xref:System.ServiceModel.Configuration.ServiceBehaviorElementCollection>

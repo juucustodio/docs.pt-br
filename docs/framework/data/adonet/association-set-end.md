@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: fim do conjunto de associação'
 title: extremidade do conjunto de associação
 ms.date: 03/30/2017
 ms.assetid: fe4bf1d3-047a-4a37-98c5-a66e70811346
-ms.openlocfilehash: bd104ffb46cbd02a886ce87822ddc37159961174
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 12e01a3fb947f6fabd5e1a93ef475132418963df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198789"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697667"
 ---
 # <a name="association-set-end"></a>extremidade do conjunto de associação
 
@@ -33,7 +34,7 @@ Uma *extremidade de conjunto de associação* identifica o [tipo de entidade](en
   
  [!code-xml[EDM_Example_Model#EntityContainerExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entitycontainerexample)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos chave do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
 - [Modelo de Dados de Entidade](entity-data-model.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: expressões de comparação'
 title: Expressões de Comparação
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ec7637a9-01d5-4a95-8bb0-478311cd263b
-ms.openlocfilehash: d92020f353393eee683e578f4306cd4a2f214152
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 95d93597048b36e48227387e2135afab1486e1ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197840"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696991"
 ---
 # <a name="comparison-expressions"></a>Expressões de Comparação
 
@@ -54,6 +55,6 @@ Uma expressão de comparação verifica se um valor, um valor de propriedade, ou
  [!code-csharp[DP L2E Conceptual Examples#MethodAsConstantFails](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#methodasconstantfails)]
  [!code-vb[DP L2E Conceptual Examples#MethodAsConstantFails](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#methodasconstantfails)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões em consultas LINQ to Entities](expressions-in-linq-to-entities-queries.md)

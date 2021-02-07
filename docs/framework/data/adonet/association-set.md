@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: conjunto de associação'
 title: conjunto de associações
 ms.date: 03/30/2017
 ms.assetid: a65247b6-ce59-44ea-974c-14ae20a7995f
-ms.openlocfilehash: 58d8794a21cc37ab84386c820b192fb29946095c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: aeddf3e898aecc2b283a941e844a6dbe810357f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697576"
 ---
 # <a name="association-set"></a>conjunto de associações
 
@@ -41,7 +42,7 @@ Um *conjunto de associação* é um contêiner lógico para instâncias de [Asso
   
  [!code-xml[EDM_Example_Model#MultipleAssociationSets](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books3.edmx#multipleassociationsets)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos chave do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
 - [Modelo de Dados de Entidade](entity-data-model.md)

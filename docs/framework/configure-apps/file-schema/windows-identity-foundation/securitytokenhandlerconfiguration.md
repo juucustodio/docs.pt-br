@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <securityTokenHandlerConfiguration>'
 title: <securityTokenHandlerConfiguration>
 ms.date: 03/30/2017
 ms.assetid: 28724cc6-020c-4a06-9a1f-d7594f315019
 author: BrucePerlerMS
-ms.openlocfilehash: 4c6affbc24a58424158e466fb732e9a3b3d6f1ed
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8c014d971d3e8cc640a3b7042e3a0266d902de7d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698304"
 ---
 # \<securityTokenHandlerConfiguration>
 

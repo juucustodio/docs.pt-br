@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como executar uma consulta que retorna resultados de Estruturaistype'
 title: 'Como: executar uma consulta que retorna resultados de StructuralType'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2314f2a2-b1c3-40c4-95bb-cdf9b21a7b53
-ms.openlocfilehash: 4b3a63cb23851c6545f330ebd2371e1a34ff13e8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a5666fd84ed7253b58cc49babdfa5f5e4614146c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198308"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697537"
 ---
 # <a name="how-to-execute-a-query-that-returns-structuraltype-results"></a>Como: executar uma consulta que retorna resultados de StructuralType
 
@@ -38,7 +39,7 @@ Este tópico mostra como executar um comando em um modelo conceitual usando um o
  [!code-csharp[DP EntityServices Concepts#eSQLStructuralTypes](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#esqlstructuraltypes)]
  [!code-vb[DP EntityServices Concepts#eSQLStructuralTypes](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#esqlstructuraltypes)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](./language-reference/entity-sql-reference.md)
 - [Provedor EntityClient para Entity Framework](entityclient-provider-for-the-entity-framework.md)

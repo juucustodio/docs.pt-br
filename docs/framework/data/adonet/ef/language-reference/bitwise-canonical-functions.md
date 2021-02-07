@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: funções canônicas de bits'
 title: Funções canônicas bit a bit
 ms.date: 03/30/2017
 ms.assetid: 993868ca-16e3-47b6-9915-c29cd63b0a21
-ms.openlocfilehash: 67ae0302f6faf0fb7284bc0c4a53a90ba6d55e08
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a811c707749af2d2fa9472ae2d1444c3f076aeec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185256"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697095"
 ---
 # <a name="bitwise-canonical-functions"></a>Funções canônicas bit a bit
 
@@ -24,6 +25,6 @@ ms.locfileid: "91185256"
 |`BitWiseOr (` `value1` `,`  `value2` `)`|Retorna a disjução bit a bit de `value1` e de `value2` como o tipo de `value1` e de `value2`.<br /><br /> **Argumentos**<br /><br /> A `Byte` , `Int16` , `Int32` e `Int64` .<br /><br /> **Exemplo**<br /><br /> `-- The following example returns 3.`<br /><br /> `BitWiseOr(1,3)`|  
 |`BitWiseXor (` `value1` `,`  `value2` `)`|Retorna a disjunção bit a bit exclusiva de `value1` e de `value2` como o tipo de `value1` e de `value2`.<br /><br /> **Argumentos**<br /><br /> A `Byte` , `Int16` , `Int32` e `Int64` .<br /><br /> **Exemplo**<br /><br /> `-- The following example returns 2.`<br /><br /> `BitWiseXor (1,3)`|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Funções canônicas](canonical-functions.md)

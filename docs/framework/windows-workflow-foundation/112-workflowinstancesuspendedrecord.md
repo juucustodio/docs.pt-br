@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 112-WorkflowInstanceSuspendedRecord'
 title: 112 - WorkflowInstanceSuspendedRecord
 ms.date: 03/30/2017
 ms.assetid: bc825c7c-8c90-48f7-9336-9a978a8246c6
-ms.openlocfilehash: 697dfe18fdb4ae6c05ae758077c1c2d9198e053c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6d2088da6e395476bba05d5e2f4557ea527ecdd8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667389"
 ---
 # <a name="112---workflowinstancesuspendedrecord"></a>112 - WorkflowInstanceSuspendedRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96265811"
 |-|-|  
 |ID|112|  
 |Palavras-chave|EndToEndMonitoring, solução de problemas, HealthMonitoring, WFTracking|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

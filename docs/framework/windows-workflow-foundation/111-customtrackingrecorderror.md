@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 111-CustomTrackingRecordError'
 title: 111 - CustomTrackingRecordError
 ms.date: 03/30/2017
 ms.assetid: d469fb12-e094-4d6c-9b4d-abd7ce0d17da
-ms.openlocfilehash: 20c038fda6360c68a84397cde382489b83612536
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7e93d0c1e00e3120f647dda5690e84f758c3ee14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294216"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667467"
 ---
 # <a name="111---customtrackingrecorderror"></a>111 - CustomTrackingRecordError
 
@@ -17,7 +18,7 @@ ms.locfileid: "96294216"
 |-|-|  
 |ID|111|  
 |Palavras-chave|UserEvents, EndToEndMonitoring, solução de problemas, HealthMonitoring, WFTracking|  
-|Nível|Erro do|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

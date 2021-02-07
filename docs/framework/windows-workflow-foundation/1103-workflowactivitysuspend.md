@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1103-WorkflowActivitySuspend'
 title: 1103 - WorkflowActivitySuspend
 ms.date: 03/30/2017
 ms.assetid: b64e15c2-cb2c-4314-9074-ce2c6717232e
-ms.openlocfilehash: 2fede703d086ed9653734f626fc38f56e073e416
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2d46c31ee86dd39216294e6b7cd3785f2361f18b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243567"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667519"
 ---
 # <a name="1103---workflowactivitysuspend"></a>1103 - WorkflowActivitySuspend
 
@@ -17,7 +18,7 @@ ms.locfileid: "96243567"
 |-|-|  
 |ID|1103|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

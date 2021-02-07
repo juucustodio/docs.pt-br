@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1132-InvokeMethodDoesNotUseAsyncPattern'
 title: 1132 - InvokeMethodDoesNotUseAsyncPattern
 ms.date: 03/30/2017
 ms.assetid: 436b3767-4460-46b0-9ea3-fc2963260c11
-ms.openlocfilehash: 9249bdd0fe996ee7c1b04783ac8fef2c48063cc0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 05bbd1f6047ab4c6451d71a4f6007f3112f9630f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294151"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667272"
 ---
 # <a name="1132---invokemethoddoesnotuseasyncpattern"></a>1132 - InvokeMethodDoesNotUseAsyncPattern
 
@@ -17,7 +18,7 @@ ms.locfileid: "96294151"
 |-|-|  
 |ID|1132|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

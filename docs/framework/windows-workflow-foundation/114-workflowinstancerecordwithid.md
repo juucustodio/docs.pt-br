@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 114-WorkflowInstanceRecordWithId'
 title: 114 - WorkflowInstanceRecordWithId
 ms.date: 03/30/2017
 ms.assetid: 2bd8b4a1-b210-4c07-8156-f19392318c08
-ms.openlocfilehash: ebeff6af6d18d2794723250bceeecd682d0af6df
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 77d39cd91476d9de41bbb00b5df034fc79cdec08
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261846"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667246"
 ---
 # <a name="114---workflowinstancerecordwithid"></a>114 - WorkflowInstanceRecordWithId
 
@@ -17,7 +18,7 @@ ms.locfileid: "96261846"
 |-|-|  
 |ID|114|  
 |Palavras-chave|HealthMonitoring, WFTracking|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

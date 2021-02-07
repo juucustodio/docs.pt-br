@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 113-WorkflowInstanceTerminatedRecord'
 title: 113 - WorkflowInstanceTerminatedRecord
 ms.date: 03/30/2017
 ms.assetid: f53204ee-4ea2-45e1-8859-e86d07305efd
-ms.openlocfilehash: 780841e50763d313debbfea6b84f7c6f412b5590
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0e380aa557d8eddc7cb9ff1f62fa56fd1b9f5441
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294190"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667324"
 ---
 # <a name="113---workflowinstanceterminatedrecord"></a>113 - WorkflowInstanceTerminatedRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96294190"
 |-|-|  
 |ID|113|  
 |Palavras-chave|EndToEndMonitoring, solução de problemas, HealthMonitoring, WFTracking|  
-|Nível|Erro do|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

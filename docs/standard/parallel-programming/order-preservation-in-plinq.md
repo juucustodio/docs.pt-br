@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: preservação de pedidos no PLINQ'
 title: Preservação da ordem em PLINQ
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - PLINQ queries, order preservation
 ms.assetid: 10d202bc-19e1-4b5c-bbf1-9a977322a9ca
-ms.openlocfilehash: 997bb80b6e30d4769613c4a1df647e6cd475a8ed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ce267fc94ddedc7919e5ed258db94d47559b8eef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730598"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667038"
 ---
 # <a name="order-preservation-in-plinq"></a>Preservação da ordem em PLINQ
 
@@ -121,7 +122,7 @@ Em PLINQ, o objetivo é maximizar o desempenho mantendo a exatidão. Uma consult
   
  Os resultados não ordenados não são ativamente embaralhados. Eles simplesmente não têm qualquer lógica de ordenação especial aplicada a eles. Em alguns casos, uma consulta não ordenada pode manter a ordenação da sequência de origem. No caso das consultas que usam o operador Select indexado, o PLINQ garante que os elementos de saída serão apresentados na ordem de índices crescentes, mas não garante quais índices serão atribuídos a quais elementos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ paralelo (PLINQ)](introduction-to-plinq.md)
 - [Programação paralela](index.md)

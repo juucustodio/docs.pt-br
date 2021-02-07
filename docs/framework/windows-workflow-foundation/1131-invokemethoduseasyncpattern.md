@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1131-InvokeMethodUseAsyncPattern'
 title: 1131 - InvokeMethodUseAsyncPattern
 ms.date: 03/30/2017
 ms.assetid: eca50fa7-5276-4759-ad1c-e490b9bd1f82
-ms.openlocfilehash: 2192b63b8a08657b69f6e3984f898bd6baddbc5f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 59d8e5e1fe7c5b038df6fce3211fd01977abc4f9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294177"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667311"
 ---
 # <a name="1131---invokemethoduseasyncpattern"></a>1131 - InvokeMethodUseAsyncPattern
 
@@ -17,7 +18,7 @@ ms.locfileid: "96294177"
 |-|-|  
 |ID|1131|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

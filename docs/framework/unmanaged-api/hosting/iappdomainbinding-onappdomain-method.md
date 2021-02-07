@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAppDomainBinding:: onappdomain'
 title: Método IAppDomainBinding::OnAppDomain
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b419dcc9-e8aa-484b-af0d-0f40358edb99
 topic_type:
 - apiref
-ms.openlocfilehash: 65f6be8c12ce057422ad178c759affed170e44ba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: de7f37152261a6fe829026607cf135f3ea0b4a84
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721706"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760596"
 ---
 # <a name="iappdomainbindingonappdomain-method"></a>Método IAppDomainBinding::OnAppDomain
 
@@ -49,6 +50,6 @@ HRESULT OnAppDomain (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IAppDomainBinding](iappdomainbinding-interface.md)

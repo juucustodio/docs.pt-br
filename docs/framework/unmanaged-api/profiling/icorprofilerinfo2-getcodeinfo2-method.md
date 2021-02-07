@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo2:: GetCodeInfo2'
 title: Método ICorProfilerInfo2::GetCodeInfo2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 532da6ee-7f0a-401b-a61e-fc47ec235d2e
 topic_type:
 - apiref
-ms.openlocfilehash: e88fe1b3c93ca278d0e64a5eb3274c86bd8f0f6d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 69b877b2dfe3bf23cd2b13417386c45d51de44d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727127"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760460"
 ---
 # <a name="icorprofilerinfo2getcodeinfo2-method"></a>Método ICorProfilerInfo2::GetCodeInfo2
 
@@ -69,7 +70,7 @@ HRESULT GetCodeInfo2(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetCodeInfo3](icorprofilerinfo4-getcodeinfo3-method.md)
 - [Interface ICorProfilerInfo2](icorprofilerinfo2-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 4813-DuplicateDiscoveryMessage'
 title: 4813 - DuplicateDiscoveryMessage
 ms.date: 03/30/2017
 ms.assetid: c49417d1-1f21-4a85-88a5-cbfe108ac8a1
-ms.openlocfilehash: eda54f4ae6fcd1179019ad5130cb805a38ef47da
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ee3cd16739e1edb84e1817520dae7196238a5beb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285922"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760206"
 ---
 # <a name="4813---duplicatediscoverymessage"></a>4813 - DuplicateDiscoveryMessage
 
@@ -17,7 +18,7 @@ ms.locfileid: "96285922"
 |-|-|  
 |ID|4813|  
 |Palavras-chave|Descoberta|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

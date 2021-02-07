@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IDefinitionIdentity'
 title: Interface IDefinitionIdentity
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ce5ba888-5fbe-4efd-91cf-f0ff94d8428b
 topic_type:
 - apiref
-ms.openlocfilehash: 4f08fbbf9c8be16dff092327713e731c5aa14661
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3471879cc822b655b786dd9d8234950cb4b99c1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732856"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760646"
 ---
 # <a name="idefinitionidentity-interface"></a>Interface IDefinitionIdentity
 
@@ -27,7 +28,7 @@ Representa a assinatura exclusiva do código que define o aplicativo no escopo a
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |`IDefinitionIdentity::Clone`|Obtém um ponteiro de interface para um novo `IDefinitionIdentity` objeto que é idêntico a este `IDefinitionIdentity` , exceto para as alterações de atributo especificadas.|  
 |`IDefinitionIdentity::EnumAttributes`|Obtém um ponteiro de interface para um objeto [IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md) que contém os atributos associados a ele `IDefinitionIdentity` .|  
@@ -42,6 +43,6 @@ Representa a assinatura exclusiva do código que define o aplicativo no escopo a
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de fusão](fusion-interfaces.md)

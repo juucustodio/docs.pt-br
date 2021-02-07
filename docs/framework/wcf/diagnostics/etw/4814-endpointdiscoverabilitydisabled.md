@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 4814-EndpointDiscoverabilityDisabled'
 title: 4814 - EndpointDiscoverabilityDisabled
 ms.date: 03/30/2017
 ms.assetid: b3805218-4865-42d8-976a-cbbd4ff6fcc8
-ms.openlocfilehash: 59177cfbbf215fba78ec5b9b0549c4b283b32f18
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1bb787bd3e477e2874c70253fd46b2cbdd4e9579
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285935"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760219"
 ---
 # <a name="4814---endpointdiscoverabilitydisabled"></a>4814 - EndpointDiscoverabilityDisabled
 
@@ -17,7 +18,7 @@ ms.locfileid: "96285935"
 |-|-|  
 |ID|4814|  
 |Palavras-chave|Descoberta|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

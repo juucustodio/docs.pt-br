@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo:: GetThreadInfo'
 title: Método ICorProfilerInfo::GetThreadInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fc994fef-65c9-432a-84cb-66c8141147e7
 topic_type:
 - apiref
-ms.openlocfilehash: 516a12b7a4457a0f67da24294ad96fb79d1aa5aa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5514b1c4860067a07bf922e9d9a8bfab8c05e218
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707510"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760544"
 ---
 # <a name="icorprofilerinfogetthreadinfo-method"></a>Método ICorProfilerInfo::GetThreadInfo
 
@@ -52,6 +53,6 @@ HRESULT GetThreadInfo(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

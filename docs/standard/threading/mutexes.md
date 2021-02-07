@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: mutexes'
 title: Mutexes
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Mutex class, about Mutex class
 - threading [.NET], cross-process synchronization
 ms.assetid: 9dd06e25-12c0-4a9e-855a-452dc83803e2
-ms.openlocfilehash: aa5a13b5b1cfcd7305df39c1ff5005deb45eb4ed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a65e03dee69f33f7abc433e91ab4951a4d808347
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666609"
 ---
 # <a name="mutexes"></a>Mutexes
 
@@ -48,13 +49,13 @@ O .NET fornece a capacidade de consultar e definir a segurança de controle de a
   
  Para saber mais sobre segurança de controle de acesso para mutexes, confira as classes <xref:System.Security.AccessControl.MutexSecurity> e <xref:System.Security.AccessControl.MutexAccessRule>, a enumeração <xref:System.Security.AccessControl.MutexRights>, os métodos <xref:System.Threading.Mutex.GetAccessControl%2A>, <xref:System.Threading.Mutex.SetAccessControl%2A> e <xref:System.Threading.Mutex.OpenExisting%2A> da classe <xref:System.Threading.Mutex> e o construtor <xref:System.Threading.Mutex.%23ctor%28System.Boolean%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.MutexSecurity%29>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.Mutex?displayProperty=nameWithType>
 - <xref:System.Threading.Mutex.%23ctor%2A>
 - <xref:System.Security.AccessControl.MutexSecurity?displayProperty=nameWithType>
 - <xref:System.Security.AccessControl.MutexAccessRule?displayProperty=nameWithType>
 - <xref:System.Threading.Monitor?displayProperty=nameWithType>
-- [Objetos e recursos de Threading](threading-objects-and-features.md)
+- [Objetos e recursos de threading](threading-objects-and-features.md)
 - [Threads e threading](threads-and-threading.md)
 - [Threading](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador de  << (Visual Basic)'
 title: Operador <<
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - << operator [Visual Basic]
 - operator <<, Visual Basic left shift operator
 ms.assetid: fdb93d25-81ba-417f-b808-41207bfb8440
-ms.openlocfilehash: 77bf26d4e6bb068f9130deed5eb1ecbaee62afce
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 079af61e5c4ce3834db0877feace724c74c8169c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866785"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665621"
 ---
 # <a name="-operator-visual-basic"></a>\<\< Operador (Visual Basic)
 
 Executa um deslocamento aritmético para a esquerda em um padrão de bit.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 result = pattern << amount  
@@ -28,7 +29,7 @@ result = pattern << amount
 ## <a name="parts"></a>Partes  
 
  `result`  
- Necessário. Valor numérico integral. O resultado do deslocamento do padrão de bit. O tipo de dados é o mesmo que o de `pattern`.  
+ Obrigatório. Valor numérico integral. O resultado do deslocamento do padrão de bit. O tipo de dados é o mesmo que o de `pattern`.  
   
  `pattern`  
  Obrigatórios. Expressão numérica integral. O padrão de bit a ser deslocado. O tipo de dados deve ser um tipo integral (`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long` ou `ULong`).  
@@ -76,7 +77,7 @@ result = pattern << amount
   
  O valor de deslocamento para `result4` é calculado como 17 e 15, que é igual a 1.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores Bit Shift](bit-shift-operators.md)
 - [Operadores de atribuição](assignment-operators.md)

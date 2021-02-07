@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: acesso a arquivos com Visual Basic'
 title: Acesso a arquivos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - I/O [Visual Basic]
 - sequential access
 ms.assetid: 231533bf-d049-4345-befa-3fb78fe6517d
-ms.openlocfilehash: 3b2042862ae81a52d62374e35a456766ed47edc9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b3ea742185e7219ce7fdfb8eee987fd9c17e3a88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401726"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666309"
 ---
 # <a name="file-access-with-visual-basic"></a>Access de arquivo com o Visual Basic
 

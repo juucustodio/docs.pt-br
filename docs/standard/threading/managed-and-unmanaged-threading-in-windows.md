@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: threads gerenciados e não gerenciados no Windows'
 title: Threading gerenciado e não gerenciado no Windows
 ms.date: 10/24/2018
 elpviewer_keywords:
@@ -8,12 +9,12 @@ elpviewer_keywords:
 - threads and fibers [.NET]
 - managed threading
 ms.assetid: 4fb6452f-c071-420d-9e71-da16dee7a1eb
-ms.openlocfilehash: 67d8fdb5f2e49930b25328c1dfd30a6105fd636f
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 84d80174d5025995f52eb02701c54c79eb6a3db7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94826320"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666635"
 ---
 # <a name="managed-and-unmanaged-threading-in-windows"></a>Threading gerenciado e não gerenciado no Windows
 

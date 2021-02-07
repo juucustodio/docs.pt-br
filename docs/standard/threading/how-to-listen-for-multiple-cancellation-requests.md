@@ -1,5 +1,6 @@
 ---
-title: Como ouvir várias solicitações de cancelamento
+description: 'Saiba mais sobre: como escutar várias solicitações de cancelamento'
+title: 'Como: Como ouvir várias solicitações de cancelamento'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +9,14 @@ helpviewer_keywords:
 - cancellation tokens, joining
 - LinkedTokenSource, how to
 ms.assetid: 6f4f3804-2ed7-41b4-a97a-6e32b93f6e05
-ms.openlocfilehash: e5ec32d486dd5eafc8c456c5a4b0b3297f043499
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7b04a1451338544a35dbae22bbd2d1848b50c69e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728518"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666778"
 ---
-# <a name="how-to-listen-for-multiple-cancellation-requests"></a>Como ouvir várias solicitações de cancelamento
+# <a name="how-to-listen-for-multiple-cancellation-requests"></a>Como: Como ouvir várias solicitações de cancelamento
 
 Este exemplo mostra como detectar dois tokens de cancelamento simultaneamente para que você possa cancelar uma operação se um dos tokens assim o solicitar.  
   
@@ -33,6 +34,6 @@ Este exemplo mostra como detectar dois tokens de cancelamento simultaneamente pa
   
  Neste exemplo, <xref:System.AggregateException> nunca deverá ser lançado, mas é capturado aqui porque em cenários do mundo real todas as outras exceções além de <xref:System.OperationCanceledException> que são lançadas pelo delegado da tarefa são encapsuladas em um <xref:System.AggregateException>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Cancelamento em threads gerenciados](cancellation-in-managed-threads.md)

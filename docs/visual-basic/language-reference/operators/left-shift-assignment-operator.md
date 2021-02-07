@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre:  <<= Operator (Visual Basic)'
 title: Operador <<=
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - operator<<=
 - compound assignment statements [Visual Basic]
 ms.assetid: 8ad26613-faff-4e2f-89ee-63feee33bfda
-ms.openlocfilehash: 72fc842002586a4d5e48bc39b5c785fc6a9e9451
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 40d0b69c3af672383230db5beadbcd3f3391db7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866902"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665634"
 ---
 # <a name="-operator-visual-basic"></a>\<\<= Operador (Visual Basic)
 
 Executa um deslocamento aritmético para a esquerda no valor de uma variável ou propriedade e atribui o resultado de volta à variável ou à propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 variableorproperty <<= amount  
@@ -31,10 +32,10 @@ variableorproperty <<= amount
 ## <a name="parts"></a>Partes  
 
  `variableorproperty`  
- Necessário. Variável ou propriedade de um tipo integral ( `SByte` ,,,,, `Byte` `Short` `UShort` `Integer` `UInteger` , `Long` ou `ULong` ).  
+ Obrigatório. Variável ou propriedade de um tipo integral ( `SByte` ,,,,, `Byte` `Short` `UShort` `Integer` `UInteger` , `Long` ou `ULong` ).  
   
  `amount`  
- Necessário. Expressão numérica de um tipo de dados que amplia para `Integer` .  
+ Obrigatório. Expressão numérica de um tipo de dados que amplia para `Integer` .  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -46,7 +47,7 @@ variableorproperty <<= amount
   
 ## <a name="overloading"></a>Sobrecarga  
 
- O [ operador<< ](left-shift-operator.md) pode ser *sobrecarregado*, o que significa que uma classe ou estrutura pode redefinir seu comportamento quando um operando tem o tipo dessa classe ou estrutura. Sobrecarregar o `<<` operador afeta o comportamento do `<<=` operador. Se o seu código usa `<<=` em uma classe ou estrutura que sobrecarrega, certifique-se de `<<` entender seu comportamento redefinido. Para obter mais informações, consulte [procedimentos de operador](../../programming-guide/language-features/procedures/operator-procedures.md).  
+ O [ operador<<](left-shift-operator.md) pode ser *sobrecarregado*, o que significa que uma classe ou estrutura pode redefinir seu comportamento quando um operando tem o tipo dessa classe ou estrutura. Sobrecarregar o `<<` operador afeta o comportamento do `<<=` operador. Se o seu código usa `<<=` em uma classe ou estrutura que sobrecarrega, certifique-se de `<<` entender seu comportamento redefinido. Para obter mais informações, consulte [procedimentos de operador](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## <a name="example"></a>Exemplo  
 
@@ -54,7 +55,7 @@ variableorproperty <<= amount
   
  [!code-vb[VbVbalrOperators#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#13)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ Operador de<< ](left-shift-operator.md)
 - [Operadores de atribuição](assignment-operators.md)

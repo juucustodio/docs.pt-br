@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador NOT (Visual Basic)'
 title: Operador Not
 ms.date: 07/20/2015
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - logical negation
 - operators [Visual Basic], negation
 ms.assetid: 8f2ea83c-d2ed-480a-a474-3042a1cad9b5
-ms.openlocfilehash: 7d0beea16a2ac00be090c6a241f9790a0ba33390
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 91f3525b52d6f38081b8e5ba208c193f714a4045
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874792"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665348"
 ---
 # <a name="not-operator-visual-basic"></a>Operador Not (Visual Basic)
 
 Executa uma negação lógica em uma `Boolean` expressão ou uma negação de bits em uma expressão numérica.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 result = Not expression  
@@ -82,7 +83,7 @@ result = Not expression
   
  O exemplo anterior produz resultados de – 11, – 9 e – 7, respectivamente.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores lógicos/bit a bit (Visual Basic)](logical-bitwise-operators.md)
 - [Precedência do operador no Visual Basic](operator-precedence.md)

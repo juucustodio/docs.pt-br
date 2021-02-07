@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre o operador:/= (Visual Basic)
 title: Operador /=
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - operator /=
 - compound assignment statements [Visual Basic]
 ms.assetid: a1e22d0e-8380-4761-9da1-84fb51c34821
-ms.openlocfilehash: d47a69e454305ce9417a46b5bbfbbb55a1ad1dc3
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 3020372be18f554df18fa6dac539ab9d0b2f725e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867074"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666024"
 ---
 # <a name="-operator-visual-basic"></a>Operador /= (Visual Basic)
 
 Divide o valor de uma variável ou propriedade pelo valor de uma expressão e atribui o resultado de ponto flutuante à variável ou à propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 variableorproperty /= expression  
@@ -30,7 +31,7 @@ variableorproperty /= expression
 ## <a name="parts"></a>Partes  
 
  `variableorproperty`  
- Necessário. Qualquer variável numérica ou propriedade.  
+ Obrigatório. Qualquer variável numérica ou propriedade.  
   
  `expression`  
  Obrigatórios. Qualquer expressão numérica.  
@@ -53,7 +54,7 @@ variableorproperty /= expression
   
  [!code-vb[VbVbalrOperators#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#17)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operador/(Visual Basic)](floating-point-division-operator.md)
 - [\\= Operador](integer-division-assignment-operator.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: expressão de função (Visual Basic)'
 title: Expressão de Função
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - functions [Visual Basic], function expressions
 - lambda expressions [Visual Basic], function expression
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
-ms.openlocfilehash: 719969be23a6d94f22a1d86cb4ad3f37e4c3b254
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: bef5db7f167b615c2a0c20539521c186683da985
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873417"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666011"
 ---
 # <a name="function-expression-visual-basic"></a>Expressão de função (Visual Basic)
 
 Declara os parâmetros e o código que definem uma expressão lambda de função.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Function ( [ parameterlist ] ) expression  
@@ -32,8 +33,8 @@ End Function
 |Termo|Definição|  
 |---|---|  
 |`parameterlist`|Opcional. Uma lista de nomes de variáveis locais que representam os parâmetros deste procedimento. Os parênteses devem estar presentes mesmo quando a lista estiver vazia. Consulte a [lista de parâmetros](../statements/parameter-list.md).|  
-|`expression`|Necessário. Uma única expressão. O tipo da expressão é o tipo de retorno da função.|  
-|`statements`|Necessário. Uma lista de instruções que retorna um valor usando a `Return` instrução. (Consulte a [instrução return](../statements/return-statement.md).) O tipo do valor retornado é o tipo de retorno da função.|  
+|`expression`|Obrigatório. Uma única expressão. O tipo da expressão é o tipo de retorno da função.|  
+|`statements`|Obrigatório. Uma lista de instruções que retorna um valor usando a `Return` instrução. (Consulte a [instrução return](../statements/return-statement.md).) O tipo do valor retornado é o tipo de retorno da função.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -79,7 +80,7 @@ End Function
   
 ## <a name="example"></a>Exemplo  
 
- As expressões lambda são a base de muitos dos operadores de consulta em LINQ (consulta integrada à linguagem) e podem ser usadas explicitamente em consultas baseadas em método. O exemplo a seguir mostra uma consulta LINQ típica, seguida pela conversão da consulta em formato de método.  
+ As expressões lambda são a base de muitos dos operadores de consulta na consulta de Language-Integrated (LINQ) e podem ser usadas explicitamente em consultas baseadas em método. O exemplo a seguir mostra uma consulta LINQ típica, seguida pela conversão da consulta em formato de método.  
   
 ```vb  
 Dim londonCusts = From cust In db.Customers  
@@ -94,7 +95,7 @@ Dim londonCusts = db.Customers.
   
  Para obter mais informações sobre métodos de consulta, consulte [consultas](../queries/index.md). Para obter mais informações sobre operadores de consulta padrão, consulte [visão geral de operadores de consulta padrão](../../programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Function](../statements/function-statement.md)
 - [Expressões lambda](../../programming-guide/language-features/procedures/lambda-expressions.md)

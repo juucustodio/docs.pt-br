@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador IsNot (Visual Basic)'
 title: Operador IsNot
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - TypeOf...IsNot expression
 - IsNot operator [Visual Basic]
 ms.assetid: 8dd2bcdb-0166-48a2-9094-60dfb448f36c
-ms.openlocfilehash: ea978f8874cee20fb3a005189fd846f7564da777
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: ac3e127676dfa57d14e07838152022de62fc336b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811035"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665660"
 ---
 # <a name="isnot-operator-visual-basic"></a>Operador IsNot (Visual Basic)
 
 Compara duas variáveis de referência de objeto.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 result = object1 IsNot object2
@@ -29,15 +30,15 @@ result = object1 IsNot object2
 
 - `result`
 
-  Obrigatórios. Um valor `Boolean`.
+  Obrigatório. Um valor `Boolean`.
 
 - `object1`
 
-  Obrigatórios. Qualquer `Object` variável ou expressão.
+  Obrigatório. Qualquer `Object` variável ou expressão.
 
 - `object2`
 
-  Obrigatórios. Qualquer `Object` variável ou expressão.
+  Obrigatório. Qualquer `Object` variável ou expressão.
 
 ## <a name="remarks"></a>Comentários
 

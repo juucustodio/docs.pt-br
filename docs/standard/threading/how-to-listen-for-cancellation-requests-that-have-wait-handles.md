@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como escutar solicitações de cancelamento que têm identificadores de espera'
 title: 'Como: ouvir solicitações de cancelamento que têm identificadores de espera'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - cancellation, waiting with wait handles
 ms.assetid: 6e2aa49b-fc84-4bcf-962b-17db98b7edcb
-ms.openlocfilehash: 74b32144a1c49fe6adfc5aa1fbdcf5dc9c8a4dd7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d38e4892457873b3f918582bf154a6a596e9d361
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728492"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666791"
 ---
 # <a name="how-to-listen-for-cancellation-requests-that-have-wait-handles"></a>Como: ouvir solicitações de cancelamento que têm identificadores de espera
 
@@ -35,6 +36,6 @@ Se um método for bloqueado enquanto ele estiver aguardando que um evento seja s
  [!code-csharp[Cancellation#10](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex10.cs#10)]
  [!code-vb[Cancellation#10](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex10.vb#10)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Cancelamento em threads gerenciados](cancellation-in-managed-threads.md)

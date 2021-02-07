@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador Like (Visual Basic)'
 title: Operador Like
 ms.date: 07/20/2015
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - data [Visual Basic], string comparisons
 - string comparison [Visual Basic], Like operators
 ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
-ms.openlocfilehash: 49dfe5cf5dbcf8dc6f79f569a92e36aa81806913
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: f1be174010b7acae5bface4fc0a2d0e606a90fca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665582"
 ---
 # <a name="like-operator-visual-basic"></a>Operador Like (Visual Basic)
 
@@ -36,7 +37,7 @@ Compara uma cadeia de caracteres com um padrão.
 > [!IMPORTANT]
 > `Like`Atualmente, o operador não tem suporte no .NET Core e .net Standard projetos.
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 result = string Like pattern  
@@ -45,7 +46,7 @@ result = string Like pattern
 ## <a name="parts"></a>Partes  
 
  `result`  
- Necessário. Qualquer `Boolean` variável. O resultado é um `Boolean` valor que indica se o satisfaz ou não `string` o `pattern` .  
+ Obrigatório. Qualquer `Boolean` variável. O resultado é um `Boolean` valor que indica se o satisfaz ou não `string` o `pattern` .  
   
  `string`  
  Obrigatórios. Qualquer expressão de `String` .  
@@ -119,7 +120,7 @@ result = string Like pattern
   
  [!code-vb[VbVbalrOperators#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#30)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Strings.InStr%2A>
 - <xref:Microsoft.VisualBasic.Strings.StrComp%2A>

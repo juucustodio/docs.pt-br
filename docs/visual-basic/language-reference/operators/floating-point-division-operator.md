@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:/operador (Visual Basic)
 title: Operador /
 ms.date: 07/20/2015
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - / operator [Visual Basic]
 - math operators [Visual Basic]
 ms.assetid: 335e97f2-c434-439e-9064-76973a051101
-ms.openlocfilehash: 765a80d45908e0ecf17e4c21b748dbf6b2a4c0f5
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 717c8fdc6abae02de555040a3aadb92fed2bfbee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867030"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665998"
 ---
 # <a name="-operator-visual-basic"></a>Operador / (Visual Basic)
 
 Divide dois números e retorna um resultado de ponto flutuante.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 expression1 / expression2  
@@ -45,7 +46,7 @@ expression1 / expression2
 
  Todos os tipos numéricos, incluindo os tipos de ponto flutuante e não assinados e `Decimal` .  
   
-## <a name="result"></a>Resultado  
+## <a name="result"></a>Result  
 
  O resultado é o quociente completo de `expression1` dividido por `expression2` , incluindo qualquer restante.  
   
@@ -87,7 +88,7 @@ expression1 / expression2
   
  As expressões no exemplo anterior retornam valores de 2,5 e 3,333333. Observe que o resultado é sempre ponto flutuante ( `Double` ), embora ambos os operandos sejam constantes de inteiro.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operador/= (Visual Basic)](floating-point-division-assignment-operator.md)
 - [Operador \ (Visual Basic)](integer-division-operator.md)

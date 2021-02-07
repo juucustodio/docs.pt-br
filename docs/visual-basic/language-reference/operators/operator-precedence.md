@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: precedência de operador em Visual Basic'
 title: Precedência de operador
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - math operators [Visual Basic]
 - order of precedence
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
-ms.openlocfilehash: b5649cd2a58fd8d300df58c563aebeed8976c4f5
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 7aa4677549328d450834f3a1ecb047d405893f69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874788"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665283"
 ---
 # <a name="operator-precedence-in-visual-basic"></a>Precedência do operador no Visual Basic
 
@@ -87,7 +88,7 @@ Quando várias operações ocorrem em uma expressão, cada parte é avaliada e r
 
 ## <a name="associativity"></a>Capacidade de associação
 
- Quando os operadores de precedência igual aparecem juntos em uma expressão, por exemplo, multiplicação e divisão, o compilador avalia cada operação à medida que a encontra da esquerda para a direita. O exemplo a seguir ilustra isto.
+ Quando os operadores de precedência igual aparecem juntos em uma expressão, por exemplo, multiplicação e divisão, o compilador avalia cada operação à medida que a encontra da esquerda para a direita. O exemplo a seguir ilustra essa situação.
 
 ```vb
 Dim n1 As Integer = 96 / 8 / 4
@@ -101,7 +102,7 @@ Dim n3 As Integer = 96 / (8 / 4)
 
 ## <a name="overriding-precedence-and-associativity"></a>Substituindo precedência e Associação
 
- Você pode usar parênteses para forçar algumas partes de uma expressão a serem avaliadas antes de outras. Isso pode substituir a ordem de precedência e a associação à esquerda. Visual Basic sempre executa operações que são colocadas entre parênteses antes das externas. No entanto, entre parênteses, ele mantém precedência comum e associação, a menos que você use parênteses dentro dos parênteses. O exemplo a seguir ilustra isto.
+ Você pode usar parênteses para forçar algumas partes de uma expressão a serem avaliadas antes de outras. Isso pode substituir a ordem de precedência e a associação à esquerda. Visual Basic sempre executa operações que são colocadas entre parênteses antes das externas. No entanto, entre parênteses, ele mantém precedência comum e associação, a menos que você use parênteses dentro dos parênteses. O exemplo a seguir ilustra essa situação.
 
 ```vb
 Dim a, b, c, d, e, f, g As Double
@@ -121,7 +122,7 @@ g = (a - (b + c)) / (d * e)
 ' The preceding line sets g to 0.5.
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [= Operador](assignment-operator.md)
 - [Operador Is](is-operator.md)

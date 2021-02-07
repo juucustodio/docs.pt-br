@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC36564: argumentos de tipo não podem ser inferidos do delegado'
 title: Não foi possível inferir argumentos de tipo a partir do delegado
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC36564
 ms.assetid: 21312807-e1cd-4ac1-ae1c-c28a9c25164d
-ms.openlocfilehash: f7937a34ab425da684f892250884d21e020e4c57
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 1a83ee64df4523cee87d0d677ddafaeadfe5543d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161238"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666258"
 ---
 # <a name="bc36564-type-arguments-could-not-be-inferred-from-the-delegate"></a>BC36564: não foi possível inferir os argumentos de tipo a partir do delegado
 
@@ -26,7 +27,7 @@ Uma instrução de atribuição usa `AddressOf` para atribuir o endereço de um 
 
 - Especifique os argumentos de tipo para o procedimento genérico na `AddressOf` expressão.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos genéricos no Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
 - [Operador AddressOf](../operators/addressof-operator.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador (Visual Basic)'
 title: Operador \
 ms.date: 07/20/2015
 f1_keywords:
@@ -17,18 +18,18 @@ helpviewer_keywords:
 - quotients, integer
 - truncation [Visual Basic], integer division
 ms.assetid: 4b0ee347-950c-45c9-8e23-54bc85df208e
-ms.openlocfilehash: cf2dc66532925d56cea6fd141f44a245bc2dd8dd
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e15a630d37e423b7a7d0040e495f2543889f37b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873391"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665777"
 ---
 # <a name="-operator-visual-basic"></a>Operador \ (Visual Basic)
 
 Divide dois números e retorna um resultado de número inteiro.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 expression1 \ expression2  
@@ -46,7 +47,7 @@ expression1 \ expression2
 
  Todos os tipos numéricos, incluindo os tipos de ponto flutuante e não assinados e `Decimal` .  
   
-## <a name="result"></a>Resultado  
+## <a name="result"></a>Result  
 
  O resultado é o quociente inteiro de `expression1` dividido por `expression2` , que descarta qualquer restante e retém apenas a parte inteira. Isso é conhecido como *truncamento*.  
   
@@ -75,7 +76,7 @@ expression1 \ expression2
   
  As expressões no exemplo anterior retornam valores de 2, 3, 33 e-22, respectivamente.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [\\= Operador](integer-division-assignment-operator.md)
 - [Operador/(Visual Basic)](floating-point-division-operator.md)

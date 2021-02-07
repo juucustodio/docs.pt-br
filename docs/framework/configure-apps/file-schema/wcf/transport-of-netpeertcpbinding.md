@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <transport> de <netPeerTcpBinding>'
 title: <transport> de <netPeerTcpBinding>
 ms.date: 03/30/2017
 ms.assetid: c44d86d2-1160-44d7-9c7a-297b12eccc7f
-ms.openlocfilehash: 5df47b1bfc149b524fc9b90eacffa832817f653c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e93885234577e4f3c7a99be66e4798d33ffb5893
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172860"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664568"
 ---
 # <a name="transport-of-netpeertcpbinding"></a>\<transport> de \<netPeerTcpBinding>
 
@@ -21,7 +22,7 @@ Especifica as configurações de segurança de nível de transporte ao usar o [\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-netpeerbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <netPeerTcpBinding>
@@ -60,7 +61,7 @@ Especifica as configurações de segurança de nível de transporte ao usar o [\
 |-------------|-----------------|  
 |[\<security>](security-of-netpeerbinding.md)|Define as configurações de segurança para o [\<netPeerTcpBinding>](netpeertcpbinding.md) .|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>
 - <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>

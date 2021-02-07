@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador is (Visual Basic)'
 title: É operador
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - TypeOf...Is expression
 - Is operator [Visual Basic]
 ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
-ms.openlocfilehash: 1c2d87ef0a8202332c87af552f488d652c400213
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 0912ebd9bc9c33149568c6cea0197ef24c305ff2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88812257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665676"
 ---
 # <a name="is-operator-visual-basic"></a>Operador is (Visual Basic)
 
 Compara duas variáveis de referência de objeto.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 result = object1 Is object2
@@ -29,13 +30,13 @@ result = object1 Is object2
 ## <a name="parts"></a>Partes
 
  `result`  
- Obrigatórios. Qualquer `Boolean` valor.  
+ Obrigatório. Qualquer `Boolean` valor.  
   
  `object1`  
- Obrigatórios. Qualquer `Object` nome.  
+ Obrigatório. Qualquer `Object` nome.  
   
  `object2`  
- Obrigatórios. Qualquer `Object` nome.  
+ Obrigatório. Qualquer `Object` nome.  
   
 ## <a name="remarks"></a>Comentários
 

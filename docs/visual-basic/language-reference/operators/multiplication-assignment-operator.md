@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: * = operador (Visual Basic)'
 title: Operador *=
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - '*= operator [Visual Basic]'
 - compound assignment statements [Visual Basic]
 ms.assetid: 96c86509-6eb8-4682-8226-3852e049376f
-ms.openlocfilehash: 4e2f18fb2b8110d97390390b3934d3c1761baa35
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d5a88dc71a05c6375a09fe3f4b55eff704c13910
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866741"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665413"
 ---
 # <a name="-operator-visual-basic"></a>Operador *= (Visual Basic)
 
 Multiplica o valor de uma variável ou propriedade pelo valor de uma expressão e atribui o resultado à variável ou à propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 variableorproperty *= expression  
@@ -30,7 +31,7 @@ variableorproperty *= expression
 ## <a name="parts"></a>Partes  
 
  `variableorproperty`  
- Necessário. Qualquer variável numérica ou propriedade.  
+ Obrigatório. Qualquer variável numérica ou propriedade.  
   
  `expression`  
  Obrigatórios. Qualquer expressão numérica.  
@@ -51,7 +52,7 @@ variableorproperty *= expression
   
  [!code-vb[VbVbalrOperators#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#5)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [* Operador](multiplication-operator.md)
 - [Operadores de atribuição](assignment-operators.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRAssemblyIdentityManager:: GetBindingIdentityFromStream'
 title: Método ICLRAssemblyIdentityManager::GetBindingIdentityFromStream
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 40123b30-a589-46b3-95d3-af7b2b0baa05
 topic_type:
 - apiref
-ms.openlocfilehash: f1e6a47c0838782ae0610d49ca7fce3eb8554458
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aed5968a5f5c22a2f5cbea66a350dbe452368325
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716701"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716881"
 ---
 # <a name="iclrassemblyidentitymanagergetbindingidentityfromstream-method"></a>Método ICLRAssemblyIdentityManager::GetBindingIdentityFromStream
 
@@ -51,7 +52,7 @@ HRESULT GetBindingIdentityFromStream (
  `pcchBufferSize`  
  [entrada, saída] O tamanho de `pwzBuffer` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -74,7 +75,7 @@ HRESULT GetBindingIdentityFromStream (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Interface ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)

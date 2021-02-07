@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRPolicyManager:: SetTimeoutAndAction'
 title: Método ICLRPolicyManager::SetTimeoutAndAction
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 60454f91-d855-4ddf-bb6d-60a02f5eabab
 topic_type:
 - apiref
-ms.openlocfilehash: 41e13e20a1cf5a7000907b1cc7d8d2af5174ceba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c91d43cce381bef804b30e9e1dcb50574ddcd1b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716556"
 ---
 # <a name="iclrpolicymanagersettimeoutandaction-method"></a>Método ICLRPolicyManager::SetTimeoutAndAction
 
@@ -55,7 +56,7 @@ HRESULT SetTimeoutAndAction (
  `action`  
  no Um dos valores de [EPolicyAction](epolicyaction-enumeration.md) , indicando a ação de política que o CLR deve executar quando `operation` ocorre.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -84,7 +85,7 @@ HRESULT SetTimeoutAndAction (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrOperation](eclroperation-enumeration.md)
 - [Enumeração EPolicyAction](epolicyaction-enumeration.md)

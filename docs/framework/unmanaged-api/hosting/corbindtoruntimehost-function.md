@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função CorBindToRuntimeHost'
 title: Função CorBindToRuntimeHost
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5c826ba3-8258-49bc-a417-78807915fcaf
 topic_type:
 - apiref
-ms.openlocfilehash: 7ba35823ccb670ad0201d1950687dc83cc9ba64a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1921eece4c6fa7f1a8fc851f17ce8f9708bc49d1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673728"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717148"
 ---
 # <a name="corbindtoruntimehost-function"></a>Função CorBindToRuntimeHost
 
@@ -89,7 +90,7 @@ HRESULT CorBindToRuntimeHost (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Função CorBindToRuntime](corbindtoruntime-function.md)

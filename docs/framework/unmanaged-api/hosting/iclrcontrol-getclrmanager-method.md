@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRControl:: GetCLRManager'
 title: Método ICLRControl::GetCLRManager
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8a11bfa4-cbb0-4082-82b5-f9fba66c93f5
 topic_type:
 - apiref
-ms.openlocfilehash: d18b3a5c06ac0d3a86f7823f3b140c76c6c9a746
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fc24cbdfd4bebfff5c2f8d73a9cd6961a8c94e94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728349"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716712"
 ---
 # <a name="iclrcontrolgetclrmanager-method"></a>Método ICLRControl::GetCLRManager
 
@@ -57,7 +58,7 @@ HRESULT GetCLRManager (
  `ppObject`  
  fora Um ponteiro de interface para o Gerenciador solicitado, ou NULL, se um tipo de Gerenciador inválido foi solicitado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -79,7 +80,7 @@ HRESULT GetCLRManager (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRControl](iclrcontrol-interface.md)
 - [Interface IHostControl](ihostcontrol-interface.md)

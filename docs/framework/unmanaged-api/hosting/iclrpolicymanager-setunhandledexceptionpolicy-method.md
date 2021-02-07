@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRPolicyManager:: SetUnhandledExceptionPolicy'
 title: Método ICLRPolicyManager::SetUnhandledExceptionPolicy
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5268480e-280a-4931-b7a3-dc3ffdf7f78f
 topic_type:
 - apiref
-ms.openlocfilehash: 1088374c9df18ded38b44384be44de245f0bd403
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 489127bb00b2b65466460baa3cfd31439672cd1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728947"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716530"
 ---
 # <a name="iclrpolicymanagersetunhandledexceptionpolicy-method"></a>Método ICLRPolicyManager::SetUnhandledExceptionPolicy
 
@@ -39,7 +40,7 @@ HRESULT SetUnhandledExceptionPolicy (
  `policy`  
  no Um dos valores de [EClrUnhandledException](eclrunhandledexception-enumeration.md) , indicando se o comportamento é definido pelo CLR ou pelo host.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT SetUnhandledExceptionPolicy (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrUnhandledException](eclrunhandledexception-enumeration.md)
 - [Interface ICLRControl](iclrcontrol-interface.md)

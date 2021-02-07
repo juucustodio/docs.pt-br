@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como inspecionar e modificar mensagens no serviço'
 title: 'Como: inspecionar e modificar mensagens do serviço'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 9c5b1cc7-84f3-45f8-9226-d59c278e8c42
-ms.openlocfilehash: 8d1ce6ef00462adb38e3d59c3d9bd35694c4dbe9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5fd3a5e49bdd35a3095e5855b399533337e133a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249053"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668871"
 ---
 # <a name="how-to-inspect-and-modify-messages-on-the-service"></a>Como: inspecionar e modificar mensagens do serviço
 
@@ -42,7 +43,7 @@ Você pode inspecionar ou modificar as mensagens de entrada ou saída em um clie
   
  [!code-xml[Interceptors#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/hostapplication.exe.config#9)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>

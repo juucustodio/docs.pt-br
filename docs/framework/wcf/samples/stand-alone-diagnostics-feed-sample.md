@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exemplo de feed de diagnóstico de Stand-Alone'
 title: Exemplo de feed de diagnóstico independente
 ms.date: 03/30/2017
 ms.assetid: d31c6c1f-292c-4d95-8e23-ed8565970ea5
-ms.openlocfilehash: b4c3613656e0aec42c0d3f5cd7cde0af6540a69a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 98fd65a44f9f6f0183b879627bd8eb444152a8ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268242"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668858"
 ---
 # <a name="stand-alone-diagnostics-feed-sample"></a>Exemplo de feed de diagnóstico independente
 
@@ -94,7 +95,7 @@ foreach (SyndicationItem i in feed.Items)
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Syndication\DiagnosticsFeed`
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de programação WCF Web HTTP](../feature-details/wcf-web-http-programming-model.md)
 - [Sindicalização do WCF](../feature-details/wcf-syndication.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: SRMP'
 title: SRMP
 ms.date: 03/30/2017
 ms.assetid: cf37078c-dcb4-45e0-acaf-2f196521b226
-ms.openlocfilehash: 1cb0cd4e7300920afb900af0291b9e3d3dc778b2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e91bdd7fb4bb896942f1a08d348080ca9bcb8f83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268281"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668884"
 ---
 # <a name="srmp"></a>SRMP
 

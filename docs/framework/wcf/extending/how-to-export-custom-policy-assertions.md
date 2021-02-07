@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como exportar declarações de política personalizada'
 title: 'Como: exportar declarações de política personalizadas'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 99030386-43b0-4f7b-866d-17ea307f5cbd
-ms.openlocfilehash: 8bdc9948d6846631fde1d428c113682f40d15ec3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b49d5a88809039f59537d79f92e31711085e580a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249209"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668923"
 ---
 # <a name="how-to-export-custom-policy-assertions"></a>Como: exportar declarações de política personalizadas
 
@@ -50,7 +51,7 @@ As declarações de política descrevem os recursos e os requisitos de um ponto 
      [!code-csharp[s_imperative#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_imperative/cs/service.cs#1)]
      [!code-vb[s_imperative#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_imperative/vb/service.vb#1)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Description.IPolicyImportExtension>
 - <xref:System.ServiceModel.Description.IPolicyExportExtension>

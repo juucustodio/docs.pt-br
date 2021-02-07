@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 57404-HandledExceptionWarning'
 title: 57404 - HandledExceptionWarning
 ms.date: 03/30/2017
 ms.assetid: 81fc404c-6341-4fa0-a58e-c32875471c12
-ms.openlocfilehash: d799792ed6ff94f26b890f8e39d62ee2c394d9f6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 24f278a8413cdfcb1a14ffa80e8e2c74d9b379c7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247038"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99669118"
 ---
 # <a name="57404---handledexceptionwarning"></a>57404 - HandledExceptionWarning
 
@@ -17,7 +18,7 @@ ms.locfileid: "96247038"
 |-|-|  
 |ID|57404|  
 |Palavras-chave|Infraestrutura|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

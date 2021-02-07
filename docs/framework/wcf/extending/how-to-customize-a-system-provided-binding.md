@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como personalizar uma associação de System-Provided'
 title: 'Como: personalizar uma associação fornecida pelo sistema'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f8b97862-e8bb-470d-8b96-07733c21fe26
-ms.openlocfilehash: e3d7cb72bcbdd636530e7861071b73f8a5f38b31
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c0463a8e427e6503f0e68bc58eb488f9b0bad15a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249222"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668949"
 ---
 # <a name="how-to-customize-a-system-provided-binding"></a>Como: personalizar uma associação fornecida pelo sistema
 
@@ -51,7 +52,7 @@ O Windows Communication Foundation (WCF) inclui várias associações fornecidas
      [!code-csharp[C_HowTo_ChangeStandardBinding#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_changestandardbinding/cs/program.cs#3)]
      [!code-vb[C_HowTo_ChangeStandardBinding#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_changestandardbinding/vb/program.vb#3)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
 - <xref:System.ServiceModel.BasicHttpBinding>

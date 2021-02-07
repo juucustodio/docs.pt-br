@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como criar um serviço que empregue um validador de certificado personalizado'
 title: 'Como: criar um serviço que utiliza um validador de certificado personalizado'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - WCF, authentication
 ms.assetid: bb0190ff-0738-4e54-8d22-c97d343708bf
-ms.openlocfilehash: 31918ca2d96b63911130d22476a6e5a6d48999ee
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8ed5d23143b7b69768cc556d9fd5663e46fd7da7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668975"
 ---
 # <a name="how-to-create-a-service-that-employs-a-custom-certificate-validator"></a>Como: criar um serviço que utiliza um validador de certificado personalizado
 

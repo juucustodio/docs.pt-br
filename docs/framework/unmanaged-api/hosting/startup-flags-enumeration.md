@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de STARTUP_FLAGS'
 title: Enumeração STARTUP_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4f043594-0c45-4bc6-988e-a6793f0d8d06
 topic_type:
 - apiref
-ms.openlocfilehash: 3c3f4d644bd7073655d2d77fe7f65a3a46cfea24
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2136f1c43545342f2cdc7cde884999a2f2c11bdd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729896"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679310"
 ---
 # <a name="startup_flags-enumeration"></a>Enumeração STARTUP_FLAGS
 
@@ -83,6 +84,6 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando enumerações](hosting-enumerations.md)

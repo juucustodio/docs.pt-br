@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ITypeNameBuilder:: addbyref'
 title: Método ITypeNameBuilder::AddByRef
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 3f1b6bc4-6efb-4b90-8be0-b1ba8d856ca0
 topic_type:
 - apiref
-ms.openlocfilehash: 5afc38cb4406117a7ea59b436e84f7dfbace3887
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: d9aed20550ab7e8f890d69bcf67a4b79849ce74a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842069"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680757"
 ---
 # <a name="itypenamebuilderaddbyref-method"></a>Método ITypeNameBuilder::AddByRef
 
 Esse método oferece suporte a infraestrutura do .NET Framework e não se destina a ser usado diretamente do seu código.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT AddByRef ( );
@@ -38,7 +39,7 @@ HRESULT AddByRef ( );
 
 **Cabeçalho:** MSCorEE. h
 
-**Biblioteca:** Incluído como um recurso em MSCorEE. dll
+**Biblioteca:** Incluído como um recurso no MSCorEE.dll
 
 **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
 

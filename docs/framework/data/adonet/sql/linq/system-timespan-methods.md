@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: métodos System. TimeSpan'
 title: Métodos de System.TimeSpan
 ms.date: 03/30/2017
 ms.assetid: 9333fee8-1454-4374-855b-8c14c002f48f
-ms.openlocfilehash: 15b6c8bd5c9cce8e6d1bac030c6b7f6b40df6cd4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fa3192d18a59e589f2c7510776f8510b2c12cac4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155582"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681182"
 ---
 # <a name="systemtimespan-methods"></a>Métodos de System.TimeSpan
 
@@ -39,7 +40,7 @@ Suporte de membro para <xref:System.TimeSpan?displayProperty=nameWithType> depen
 
  Embora o tipo de CLR <xref:System.TimeSpan?displayProperty=nameWithType> suporte a adição e subtração, o tipo do SQL `TIME` não. Devido a isso, as consultas LINQ to SQL gerarão erros se tentam a adição e subtração quando eles são mapeadas para o tipo do SQL `TIME` . Você pode encontrar outras considerações para trabalhar com tipos de data e hora SQL no [mapeamento de tipo SQL-CLR](sql-clr-type-mapping.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Consulte conceitos](query-concepts.md)
 - [Criando o modelo de objeto](creating-the-object-model.md)

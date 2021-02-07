@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função LoadStringRCEx'
 title: Função LoadStringRCEx
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bc789636-ca14-4f07-8f77-9305874d7495
 topic_type:
 - apiref
-ms.openlocfilehash: 1aa5c9f5dd7dd63e69c2eed1f6dd8ad6f007f01f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d3fe4b97014e5093dd8d209a5e27bac4ed7b879f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727530"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679869"
 ---
 # <a name="loadstringrcex-function"></a>Função LoadStringRCEx
 
@@ -60,7 +61,7 @@ HRESULT LoadStringRCEx (
  `pcwchUsed`  
  fora Um ponteiro para o comprimento da mensagem de erro.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna códigos de erro COM padrão, conforme definido no WinError. h, além dos valores a seguir.  
   
@@ -83,7 +84,7 @@ HRESULT LoadStringRCEx (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType>
 - [Função LoadStringRC](loadstringrc-function.md)

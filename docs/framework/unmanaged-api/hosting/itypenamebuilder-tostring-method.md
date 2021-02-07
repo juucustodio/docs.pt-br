@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ITypeNameBuilder:: ToString'
 title: Método ITypeNameBuilder::ToString
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 6372aca7-869a-4af6-ba2b-0eb1047ef5c0
 topic_type:
 - apiref
-ms.openlocfilehash: 205fe679f6c75702dd0cfd87c4ce5fd35cfa39f2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7caa6fd12fe8cbcebeaa19a7ae6da9931eacce8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728752"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680350"
 ---
 # <a name="itypenamebuildertostring-method"></a>Método ITypeNameBuilder::ToString
 
 Esse método oferece suporte a infraestrutura do .NET Framework e não se destina a ser usado diretamente do seu código.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT ToString (  
@@ -44,6 +45,6 @@ HRESULT ToString (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)

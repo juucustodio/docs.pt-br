@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ponteiro de função LPOVERLAPPED_COMPLETION_ROUTINE'
 title: Ponteiro de função LPOVERLAPPED_COMPLETION_ROUTINE
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5fb645d9-b818-401c-8c2c-c30d86de58ba
 topic_type:
 - apiref
-ms.openlocfilehash: a3a45a13073cf422064d28554a274e068db6f517
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6645e6a9746404a4ae355a22cf16e6d164c63bed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727504"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679817"
 ---
 # <a name="lpoverlapped_completion_routine-function-pointer"></a>Ponteiro de função LPOVERLAPPED_COMPLETION_ROUTINE
 
@@ -64,6 +65,6 @@ typedef VOID (*LPOVERLAPPED_COMPLETION_ROUTINE) (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

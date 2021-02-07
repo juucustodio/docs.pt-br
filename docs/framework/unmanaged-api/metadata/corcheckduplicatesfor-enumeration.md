@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração CorCheckDuplicatesFor'
 title: Enumeração CorCheckDuplicatesFor
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d8ec8d3c-70f7-4cc6-9957-68068fd8f49c
 topic_type:
 - apiref
-ms.openlocfilehash: 4acdfd6df410f229a002fa191ef24766748a1262
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5649fc6bc66dd282b64fb5064e302a9f77420cd6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678413"
 ---
 # <a name="corcheckduplicatesfor-enumeration"></a>Enumeração CorCheckDuplicatesFor
 
@@ -105,6 +106,6 @@ typedef enum CorCheckDuplicatesFor {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

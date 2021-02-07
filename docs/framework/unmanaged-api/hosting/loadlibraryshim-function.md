@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função LoadLibraryShim'
 title: Função LoadLibraryShim
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 30931874-4d0e-4df1-b3d1-e425b50655d1
 topic_type:
 - apiref
-ms.openlocfilehash: d5e9ba0023b6516eb6190f32bc65b2b8b6af79f9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 829d64b5215fc21b2d8c8b753f5ad99212267b6a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727556"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679999"
 ---
 # <a name="loadlibraryshim-function"></a>Função LoadLibraryShim
 
@@ -53,7 +54,7 @@ HRESULT LoadLibraryShim (
  `phModDll`  
  fora Um ponteiro para o identificador do módulo.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna códigos de erro padrão de Component Object Model (COM), conforme definido no WinError. h, além dos valores a seguir.  
   
@@ -77,6 +78,6 @@ HRESULT LoadLibraryShim (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

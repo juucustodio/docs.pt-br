@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ITypeNameBuilder'
 title: Interface ITypeNameBuilder
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1f88e62e-2762-44d1-83b1-095f8734c0bc
 topic_type:
 - apiref
-ms.openlocfilehash: d564e333501464a1bffd42d08b2ce107597b0f47
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0850835f837fab92837a85d3d4464dd2df4d3aee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721017"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680391"
 ---
 # <a name="itypenamebuilder-interface"></a>Interface ITypeNameBuilder
 
@@ -37,6 +38,6 @@ Fornece métodos para criar um nome de tipo.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)

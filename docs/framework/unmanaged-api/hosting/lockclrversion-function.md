@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função LockClrVersion'
 title: Função LockClrVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1318ee37-c43b-40eb-bbe8-88fc46453d74
 topic_type:
 - apiref
-ms.openlocfilehash: 2ff08ec8f194ccc9e968b3a7ee017afe788f4b03
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 268c08cdd24a826ba92cc8865dfd036f544febcd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704923"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679870"
 ---
 # <a name="lockclrversion-function"></a>Função LockClrVersion
 
@@ -49,7 +50,7 @@ HRESULT LockClrVersion (
  `pEndHostSetup`  
  no A função a ser chamada pelo host para informar ao CLR que a inicialização foi concluída.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna códigos de erro COM padrão, conforme definido no WinError. h, além dos valores a seguir.  
   
@@ -96,6 +97,6 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

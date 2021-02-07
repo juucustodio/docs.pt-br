@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de METAHOST_POLICY_FLAGS'
 title: Enumeração METAHOST_POLICY_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3bb4b526-0118-42e2-ba59-c95648528ce9
 topic_type:
 - apiref
-ms.openlocfilehash: 16fb112cf5b209091001872567c95bb0b3a8ab61
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3a3ebe602c8f048b7f9fc907f5d4741722bd0ed3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729987"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679615"
 ---
 # <a name="metahost_policy_flags-enumeration"></a>Enumeração METAHOST_POLICY_FLAGS
 
@@ -64,7 +65,7 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando enumerações](hosting-enumerations.md)
 - [Método GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md)

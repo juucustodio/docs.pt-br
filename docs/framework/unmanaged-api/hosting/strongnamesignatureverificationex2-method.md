@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método StrongNameSignatureVerificationEx2'
 title: Método StrongNameSignatureVerificationEx2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dfd4133f-a074-4db3-a7ee-4f250fe9ad3a
 topic_type:
 - apiref
-ms.openlocfilehash: 423f6ee91d79a9e668de29d2e9e9a09a2bb779d4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d79491744ce1a930693d2901544ad80bf8049544
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729870"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679271"
 ---
 # <a name="strongnamesignatureverificationex2-method"></a>Método StrongNameSignatureVerificationEx2
 
@@ -54,7 +55,7 @@ HRESULT StrongNameSignatureVerificationEx (
  `pfWasVerified`  
  [fora] `true` se a assinatura de nome forte foi verificada; caso contrário, `false` . Esse parâmetro também será definido como `false` se a verificação tiver sido bem-sucedida devido a configurações do registro.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` se a verificação foi bem-sucedida; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
   
@@ -68,7 +69,7 @@ HRESULT StrongNameSignatureVerificationEx (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameSignatureVerification](iclrstrongname-strongnamesignatureverification-method.md)
 - [Método StrongNameSignatureVerificationEx](iclrstrongname-strongnamesignatureverificationex-method.md)

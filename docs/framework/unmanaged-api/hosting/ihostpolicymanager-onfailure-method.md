@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: O IHostPolicyManager:: OnFailure'
 title: Método IHostPolicyManager::OnFailure
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 77d3f31e-9a53-4349-9c02-610a71736d42
 topic_type:
 - apiref
-ms.openlocfilehash: efa7b9d49ea9807af2164bb6ee54422dd72b14e2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9fb359d4ba1b1b89e029a0772a0f67a49b2b380b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730416"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671835"
 ---
 # <a name="ihostpolicymanageronfailure-method"></a>Método IHostPolicyManager::OnFailure
 
@@ -43,7 +44,7 @@ HRESULT OnFailure(
  `action`  
  no Um dos valores de [EPolicyAction](epolicyaction-enumeration.md) , indicando a ação que o CLR está fazendo em resposta a `failure` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT OnFailure(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrFailure](eclrfailure-enumeration.md)
 - [Enumeração EPolicyAction](epolicyaction-enumeration.md)

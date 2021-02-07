@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC42319: a exceção de comentário XML deve ter um atributo ' cref '"
 title: A exceção de comentário XML deve ter um atributo 'cref'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42319
 ms.assetid: 62eeeba3-6811-48be-b1ef-c2e4feda3177
-ms.openlocfilehash: 18e7aa5f6905eaa9c509aa21fe6f5bfcd54d46f0
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: e602a2973d95f70d5ab532e6be319a9575d239a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163292"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701450"
 ---
 # <a name="bc42319-xml-comment-exception-must-have-a-cref-attribute"></a>BC42319: a exceção de comentário XML deve ter um atributo ' cref '
 
@@ -28,7 +29,7 @@ Adicione o `cref` atributo à exceção da seguinte maneira:
 <exception cref="member">description</exception>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [\<exception>](../xmldoc/exception.md)
 - [Como criar documentação XML](../../programming-guide/program-structure/how-to-create-xml-documentation.md)

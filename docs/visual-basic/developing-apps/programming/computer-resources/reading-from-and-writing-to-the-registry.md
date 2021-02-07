@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: leitura e gravação no registro (Visual Basic)'
 title: Ler e gravar no Registro
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - registry [Visual Basic], writing to
 - registry [Visual Basic], reading
 ms.assetid: a13da106-185b-41d7-b23c-416da65e21e4
-ms.openlocfilehash: fe0714f25cd41ca9ce4eabf135c82d1dbb1fe524
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 0a9e32480845e617f6e4fde2f31c58eea8da4ee7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282224"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701541"
 ---
 # <a name="reading-from-and-writing-to-the-registry-visual-basic"></a>Lendo e gravando a partir do Registro (Visual Basic)
 

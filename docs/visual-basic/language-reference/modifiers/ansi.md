@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ANSI (Visual Basic)'
 title: Ansi
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ANSI, Visual Basic
 - ANSI
 ms.assetid: 4f1fa6ff-5557-41ab-b6da-90baf4c15917
-ms.openlocfilehash: 8dfd830e4c7ed97c8813da4ad310ee59b26f44f8
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: c93472cbf6a8203f05353e0394b52c44686c0070
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90868800"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701190"
 ---
 # <a name="ansi-visual-basic"></a>Ansi (Visual Basic)
 
@@ -35,8 +36,8 @@ Especifica que Visual Basic deve realizar marshaling de todas as cadeias de cara
 
  Não há suporte para essa palavra-chave.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Automático](auto.md)
+- [Auto](auto.md)
 - [Unicode](unicode.md)
 - [Palavras-chave](../keywords/index.md)

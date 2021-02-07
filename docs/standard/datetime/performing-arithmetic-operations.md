@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: executando operações aritméticas com datas e horas'
 title: Executando operações aritméticas com datas e horários
 ms.date: 04/10/2017
 dev_langs:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - DateTime structure, arithmetic operations
 - DateTimeOffset structure, arithmetic operations
 ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0
-ms.openlocfilehash: af294c45359f6226c4189aabb34fdfc670bbd1c9
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7b39a6dec3abc2206c8eef7566f74aab6614aae6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702555"
 ---
 # <a name="performing-arithmetic-operations-with-dates-and-times"></a>Executando operações aritméticas com datas e horários
 
@@ -67,7 +68,7 @@ Para ilustrar, a transição para o horário de verão no fuso horário padrão 
 
 ## <a name="arithmetic-operations-with-times-in-time-zones"></a>Operações aritméticas com tempos em fusos horários
 
-A <xref:System.TimeZoneInfo> classe inclui vários métodos de conversão que aplicam ajustes automaticamente quando convertem horários de um fuso horário para outro. Eles incluem o seguinte:
+A <xref:System.TimeZoneInfo> classe inclui vários métodos de conversão que aplicam ajustes automaticamente quando convertem horários de um fuso horário para outro. Elas incluem o seguinte:
 
 - Os <xref:System.TimeZoneInfo.ConvertTime%2A> <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> métodos e, que convertem os horários entre dois fusos horários.
 
@@ -82,7 +83,7 @@ Por exemplo, o código a seguir é semelhante ao código anterior, que adicionou
 [!code-csharp[System.DateTimeOffset.Conceptual#5](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/cs/Conceptual5.cs#5)]
 [!code-vb[System.DateTimeOffset.Conceptual#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/vb/Conceptual5.vb#5)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)
 - [Como: usar fusos horários em aritmética de data e hora](use-time-zones-in-arithmetic.md)

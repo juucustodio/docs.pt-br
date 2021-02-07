@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como: impedir que uma tarefa filho seja anexada ao seu pai'
 title: 'Como: evitar que uma tarefa filha se anexe ao pai dela'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - tasks, preventing attachments
 ms.assetid: c0fb85d4-9e80-4905-9f65-29acc54201c4
-ms.openlocfilehash: 5874f07d48f99573af78c07a6ab6a0f386e6bc9a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 93c0b3c1e4ae3ded49b8e66f0e726708d63021d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701775"
 ---
 # <a name="how-to-prevent-a-child-task-from-attaching-to-its-parent"></a>Como: evitar que uma tarefa filha se anexe ao pai dela
 
@@ -27,6 +28,6 @@ Este documento demonstra como evitar que uma tarefa filho se anexe à tarefa pri
   
  Como a tarefa pai não termina até que todas as tarefas filho sejam concluídas, uma tarefa filho de longa duração pode fazer com que o aplicativo geral tenha um baixo desempenho. Neste exemplo, quando o aplicativo usa as opções padrão para criar a tarefa pai, a tarefa filho deve terminar antes da conclusão da tarefa pai. Quando o aplicativo usa a opção <xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach?displayProperty=nameWithType>, a tarefa filho não está anexada à tarefa pai. Portanto, o aplicativo pode executar trabalhos adicionais após a conclusão da tarefa pai e antes de aguardar a conclusão da tarefa filho.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Programação assíncrona baseada em tarefas](task-based-asynchronous-programming.md)

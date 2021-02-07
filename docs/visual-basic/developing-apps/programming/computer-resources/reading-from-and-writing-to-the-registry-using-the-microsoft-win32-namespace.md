@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: leitura e gravação no registro usando o namespace Microsoft. Win32 (Visual Basic)'
 title: Ler e gravar no Registro usando o namespace Microsoft.Win32
 ms.date: 07/20/2015
 helpviewer_keywords:
 - registry [Visual Basic]
 ms.assetid: 4a0dcce0-c27b-4199-baa8-ee4528da6a56
-ms.openlocfilehash: 58c3a92067cd0be5db02231c5fc1a13b429a60a0
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: beb81a6385043011a37eee82f2036aca91382240
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701580"
 ---
 # <a name="reading-from-and-writing-to-the-registry-using-the-microsoftwin32-namespace-visual-basic"></a>Lendo e gravando no Registro usando o namespace Microsoft.Win32 (Visual Basic)
 
@@ -42,7 +43,7 @@ Embora `My.Computer.Registry` o deva abranger suas necessidades básicas ao prog
   
  [!code-vb[VbResourceTasks#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#21)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.SystemException>
 - <xref:System.ApplicationException>

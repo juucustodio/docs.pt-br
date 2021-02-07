@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ReadOnly (Visual Basic)'
 title: ReadOnly
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - properties [Visual Basic], read-only
 - read-only variables
 ms.assetid: e868185d-6142-4359-a2fd-a7965cadfce8
-ms.openlocfilehash: 3ca322da4e5f0edcbe12bf29bded863daabffe3d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: f510271531f6e6604f2b542d8331d1a1d7f64d58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700904"
 ---
 # <a name="readonly-visual-basic"></a>ReadOnly (Visual Basic)
 
@@ -38,7 +39,7 @@ Especifica que uma variável ou propriedade pode ser lida, mas não gravada.
 Há situações em que você não pode usar uma [instrução const](../statements/const-statement.md) para declarar e atribuir um valor constante. Por exemplo, a `Const` instrução pode não aceitar o tipo de dados que você deseja atribuir, ou talvez você não consiga calcular o valor em tempo de compilação com uma expressão constante. Você pode nem mesmo saber o valor no momento da compilação. Nesses casos, você pode usar uma `ReadOnly` variável para conter um valor constante.
 
 > [!IMPORTANT]
-> Se o tipo de dados da variável for um tipo de referência, como uma matriz ou instância de classe, seus membros poderão ser alterados mesmo que a própria variável seja `ReadOnly` . O exemplo a seguir ilustra isto.
+> Se o tipo de dados da variável for um tipo de referência, como uma matriz ou instância de classe, seus membros poderão ser alterados mesmo que a própria variável seja `ReadOnly` . O exemplo a seguir ilustra essa situação.
 
 ```vb
 ReadOnly characterArray() As Char = {"x"c, "y"c, "z"c}
@@ -62,7 +63,7 @@ O `ReadOnly` modificador pode ser usado nesses contextos:
 - [Instrução Dim](../statements/dim-statement.md)
 - [Instrução Property](../statements/property-statement.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [WriteOnly](writeonly.md)
 - [Palavras-chave](../keywords/index.md)

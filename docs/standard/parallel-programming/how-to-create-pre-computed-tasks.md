@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como criar tarefas previamente computadas'
 title: 'Como: criar tarefas pré-computadas'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - tasks, creating pre-computed
 ms.assetid: a73eafa2-1f49-4106-a19e-997186029b58
-ms.openlocfilehash: e83b467e23013b5690db7cc63d061cab4d5d0e31
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 552ba7381504fa75f1879ee5252dbc748122c582
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734498"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702022"
 ---
 # <a name="how-to-create-pre-computed-tasks"></a>Como: criar tarefas pré-computadas
 
@@ -27,6 +28,6 @@ Esse documento descreve como usar o método <xref:System.Threading.Tasks.Task.Fr
   
  Esse exemplo calcula o tempo necessário para baixar várias cadeias de caracteres duas vezes. O segundo conjunto de operações de download deve levar menos tempo do que o primeiro conjunto porque os resultados são mantidos no cache. O método <xref:System.Threading.Tasks.Task.FromResult%2A> permite que o método `DownloadStringAsync` crie objetos <xref:System.Threading.Tasks.Task%601> que contêm esses resultados pré-computados.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Programação assíncrona baseada em tarefas](task-based-asynchronous-programming.md)

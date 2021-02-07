@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como combinar consultas LINQ paralelas e sequenciais'
 title: 'Como: combinar consultas LINQ paralelas e sequenciais'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - parallel queries, combine parallel and sequential
 ms.assetid: 1167cfe6-c8aa-4096-94ba-c66c3a4edf4c
-ms.openlocfilehash: dc7536aad46e2edcc5c20400ed872ee4e0ad836d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b3ff966b944516bed6cfb4cacd32cb550455fea9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713151"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702061"
 ---
 # <a name="how-to-combine-parallel-and-sequential-linq-queries"></a>Como: combinar consultas LINQ paralelas e sequenciais
 
@@ -32,6 +33,6 @@ Este exemplo mostra como usar o método <xref:System.Linq.ParallelEnumerable.AsS
 
  Para compilar e executar esse código, Cole-o no projeto de [exemplo de dados do PLINQ](plinq-data-sample.md) , adicione uma linha para chamar o método `Main` e pressione **F5**.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ paralelo (PLINQ)](introduction-to-plinq.md)

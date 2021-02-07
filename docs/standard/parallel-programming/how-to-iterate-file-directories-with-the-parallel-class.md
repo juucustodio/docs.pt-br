@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como iterar diretórios de arquivos com a classe Parallel'
 title: 'Como: fazer iterações de diretórios de arquivos com a Classe Paralela'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - parallel loops, how to iterate directories
 ms.assetid: 555e9f48-f53d-4774-9bcf-3e965c732ec5
-ms.openlocfilehash: 75097485c78e9ded67f41d9632f5399c081b3a16
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9e1eac634b1a8b50ea938a7de945265ab884895e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734459"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701853"
 ---
 # <a name="how-to-iterate-file-directories-with-the-parallel-class"></a>Como: fazer iterações de diretórios de arquivos com a Classe Paralela
 
@@ -31,6 +32,6 @@ Em muitos casos, a iteração de arquivo é uma operação que pode ser facilmen
   
  Observe que se uma exceção for lançada no thread principal, os threads iniciados pelo método <xref:System.Threading.Tasks.Parallel.ForEach%2A> poderão continuar a executar. Para interromper esses threads, você pode definir uma variável booliana em seus manipuladores de exceção, e verificar seu valor em cada iteração do loop paralelo. Se o valor indica que uma exceção foi lançada, use a variável <xref:System.Threading.Tasks.ParallelLoopState> para interromper ou sair do loop. Para saber mais, confira [Como parar ou sair de um loop Parallel.For](/previous-versions/dotnet/netframework-4.0/dd460721(v=vs.100)).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Paralelismo de dados](data-parallelism-task-parallel-library.md)

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: para leitura adicional (programação paralela)'
 title: Para leitura adicional (programação paralela)
 ms.date: 04/26/2018
 helpviewer_keywords:
 - tasks, further reading
 ms.assetid: 98aee307-dde6-4cad-bb58-078497b8064f
-ms.openlocfilehash: 583f4f0cc6a6b188f588403721a0dd4f2d0a852e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: c49fe2b7806b55d479f4e6f8ff7600f2ee97d254
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817426"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702190"
 ---
 # <a name="for-further-reading-parallel-programming"></a>Para leitura adicional (programação paralela)
 
@@ -23,7 +24,7 @@ Os recursos a seguir contêm informações adicionais sobre programação parale
 
 - Os [exemplos de programação paralela com a página de .net Standard de & do .NET Core](/samples/browse/?products=dotnet-core%2Cdotnet-standard&term=parallel) contêm muitos exemplos que demonstram técnicas de programação paralelas intermediárias e avançadas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Central de desenvolvedores de computação paralela](/previous-versions/bb964701(v=msdn.10))
 - [Programação em paralelo no Visual C++](/cpp/parallel/parallel-programming-in-visual-cpp)

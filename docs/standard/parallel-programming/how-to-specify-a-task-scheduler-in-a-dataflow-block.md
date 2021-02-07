@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como especificar um Agendador de Tarefas em um bloco de Dataflow'
 title: 'Como: especificar um agendador de tarefas em um bloco de fluxo de dados'
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - task scheduler, linking from TPL
 ms.assetid: 27ece374-ed5b-49ef-9cec-b20db34a65e8
-ms.openlocfilehash: b8c27c1ca61356b36183bb74b8360e41f5324d25
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e3a803bfa775d8272db5b0d6974b13648136c74e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722434"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701788"
 ---
 # <a name="how-to-specify-a-task-scheduler-in-a-dataflow-block"></a>Como: especificar um agendador de tarefas em um bloco de fluxo de dados
 
@@ -81,6 +82,6 @@ Este documento demonstra como associar um agendador de tarefas específico quand
  [!code-csharp[TPLDataflow_WriterReadersWinForms#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#100)]
  [!code-vb[TPLDataflow_WriterReadersWinForms#100](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#100)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Fluxo de dados](dataflow-task-parallel-library.md)

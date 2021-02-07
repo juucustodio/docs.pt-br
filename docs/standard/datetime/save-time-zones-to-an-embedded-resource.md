@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como: salvar fusos horários em um recurso inserido'
 title: 'Como: salvar fusos horários em um recurso inserido'
 ms.date: 04/10/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - time zone objects [.NET], serializing
 - time zone objects [.NET], saving
 ms.assetid: 3c96d83a-a057-4496-abb0-8f4b12712558
-ms.openlocfilehash: 23f86076b2858404f3dbc900d8c40a6509abe8db
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 4f1455ffa790652d2dad605a0eb71fb81a05326d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817595"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702464"
 ---
 # <a name="how-to-save-time-zones-to-an-embedded-resource"></a>Como: salvar fusos horários em um recurso inserido
 
@@ -22,7 +23,7 @@ Um aplicativo com reconhecimento de fuso horário geralmente requer a presença 
 
 Normalmente, a serialização de um <xref:System.TimeZoneInfo> objeto ocorre além do aplicativo com reconhecimento de fuso horário. Dependendo do armazenamento de dados usado para manter objetos serializados <xref:System.TimeZoneInfo> , os dados de fuso horário podem ser serializados como parte de uma rotina de instalação ou instalação (por exemplo, quando os dados são armazenados em uma chave de aplicativo do registro) ou como parte de uma rotina de utilitário que é executada antes de o aplicativo final ser compilado (por exemplo, quando os dados serializados são armazenados em um arquivo de recurso XML do .net (. resx)).
 
-Além de um arquivo de recurso que é compilado com o aplicativo, vários outros armazenamentos de dados podem ser usados para informações de fuso horário. Eles incluem o seguinte:
+Além de um arquivo de recurso que é compilado com o aplicativo, vários outros armazenamentos de dados podem ser usados para informações de fuso horário. Elas incluem o seguinte:
 
 - O registro. Observe que um aplicativo deve usar as subchaves de sua própria chave de aplicativo para armazenar dados de fuso horário personalizados em vez de usar as subchaves de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones.
 
@@ -80,7 +81,7 @@ Este exemplo requer:
   [!code-csharp[TimeZone2.Serialization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#2)]
   [!code-vb[TimeZone2.Serialization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#2)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)
 - [Visão geral do fuso horário](time-zone-overview.md)

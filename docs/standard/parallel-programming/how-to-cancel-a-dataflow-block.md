@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como cancelar um bloco de Dataflow'
 title: 'Como: cancelar um bloco de fluxo de dados'
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - dataflow blocks, canceling in TPL
 - TPL dataflow library,canceling dataflow blocks
 ms.assetid: fbddda0d-da3b-4ec8-a1d6-67ab8573fcd7
-ms.openlocfilehash: c0f184720849a0c21fdeda1de4543a2443d60674
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b3760ba81dcb5156e8ac8fe920133d12ce449631
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713347"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702152"
 ---
 # <a name="how-to-cancel-a-dataflow-block"></a>Como: cancelar um bloco de fluxo de dados
 
@@ -97,6 +98,6 @@ Este documento mostra como habilitar o cancelamento em seu aplicativo. Este exem
   
  ![O aplicativo Windows Forms](media/tpldataflow-cancellation.png "TPLDataflow_Cancellation")  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Fluxo de dados](dataflow-task-parallel-library.md)

@@ -1,5 +1,6 @@
 ---
-title: Particular
+description: 'Saiba mais sobre: privado (Visual Basic)'
+title: Privados
 ms.date: 07/20/2015
 f1_keywords:
 - vb.Private
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Private keyword [Visual Basic]
 - Private keyword [Visual Basic], syntax
 ms.assetid: aba74a2e-5824-4613-bf63-b9ec7787f4e6
-ms.openlocfilehash: 59f1c1666ce38923a2861244fb377007cd0fa992
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 20dcd943856e20ccb1b7cb5c0603fa5f313d2421
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874977"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700943"
 ---
 # <a name="private-visual-basic"></a>Particular (Visual Basic)
 
@@ -61,9 +62,9 @@ Especifica que um ou mais elementos de programação declarados são acessíveis
   
  [Instrução Sub](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Pública](public.md)
+- [Público](public.md)
 - [Protected](protected.md)
 - [Friend](friend.md)
 - [Particular protegido](./private-protected.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Salvando e restaurando fusos horários'
 title: Salvar e restaurar fusos horários
 ms.date: 04/10/2017
 dev_langs:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - time zone objects [.NET], serializing
 - time zone objects [.NET], saving
 ms.assetid: 4028b310-e7ce-49d4-a646-1e83bfaf6f9d
-ms.openlocfilehash: 0658bad6da078b6e44695a92b6cb2b22576f6424
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: bd888c2d9a1f02fa05fd1abf9d984022be03e192
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817569"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702438"
 ---
 # <a name="saving-and-restoring-time-zones"></a>Salvar e restaurar fusos horários
 
@@ -71,6 +72,6 @@ O armazenamento de uma cadeia de caracteres de fuso horário serializada dessa m
 
 Para obter um exemplo que usa um recurso incorporado para armazenar dados de fuso horário serializados, consulte [como: salvar fusos horários em um recurso incorporado](save-time-zones-to-an-embedded-resource.md) e [como restaurar fusos horários de um recurso inserido](restore-time-zones-from-an-embedded-resource.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)

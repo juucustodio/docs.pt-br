@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: modificadores (Visual Basic)'
 title: Modificadores
 ms.date: 07/20/2015
 ms.assetid: a49a0e51-d700-4705-9196-3e0eb582dda6
-ms.openlocfilehash: 6ee477e8d09ea7c8ea559ff8245784b2d0123141
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 581f484e81a7de2cb6c80061eb4730adc18f316b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875443"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701047"
 ---
 # <a name="modifiers-visual-basic"></a>Modificadores (Visual Basic)
 
@@ -21,7 +22,7 @@ Os tópicos nesta seção documentam modificadores de tempo de execução do Vis
   
  [Async](async.md)  
   
- [Automático](auto.md)  
+ [Auto](auto.md)  
   
  [ByRef](byref.md)  
   
@@ -71,7 +72,7 @@ Os tópicos nesta seção documentam modificadores de tempo de execução do Vis
 
  [Amigo Protegido](protected-friend.md)  
   
- [Pública](public.md)  
+ [Público](public.md)  
   
  [ReadOnly (somente-leitura)](readonly.md)  
   

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operações de cadeia de caracteres que não diferenciam culturas'
 title: Operações de cadeia de caracteres que não levam em conta a cultura
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - culture-sensitive string operations
 - culture-insensitive string operations
 ms.assetid: e6e2bb94-a95d-44e2-b68c-cfdd1db77784
-ms.openlocfilehash: 2cfd4bf3428832c204124637fbbe3de2edd554f9
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 40109f7b276b53605634dbb38c265eaee677b76a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827120"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702269"
 ---
 # <a name="culture-insensitive-string-operations"></a>Operações de cadeia de caracteres sem detecção de cultura
 
@@ -30,6 +31,6 @@ Os resultados das operações de cadeia de caracteres usados internamente devem,
 
 Independentemente de você estar desenvolvendo um aplicativo que inclui código para lidar com problemas de localização e globalização, você deve estar ciente dos métodos do .NET que recuperam resultados que fazem distinção de cultura por padrão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Globalização e localização](index.md)

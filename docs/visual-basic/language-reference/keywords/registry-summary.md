@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Resumo do registro (Visual Basic)'
 title: Resumo do Registro
 ms.date: 07/20/2015
 helpviewer_keywords:
 - registry [Visual Basic]
 ms.assetid: 6e90eb8a-1a4e-4387-8a68-9287dc7875e8
-ms.openlocfilehash: 2f3b97396a6da199b07aee51d146ccb7ddf0abcb
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 13036d7ccf7f0ac5278094bb19926a422e1178c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875550"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701203"
 ---
 # <a name="registry-summary-visual-basic"></a>Resumo do registro (Visual Basic)
 
@@ -23,7 +24,7 @@ As palavras-chave da linguagem do Visual Studio e os membros da biblioteca de te
 |Ler configurações do programa.|<xref:Microsoft.VisualBasic.Interaction.GetSetting%2A>, <xref:Microsoft.VisualBasic.Interaction.GetAllSettings%2A>|  
 |Salve as configurações do programa.|<xref:Microsoft.VisualBasic.Interaction.SaveSetting%2A>|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Palavras-chave](index.md)
 - [Membros da Biblioteca de Runtime do Visual Basic](../runtime-library-members.md)

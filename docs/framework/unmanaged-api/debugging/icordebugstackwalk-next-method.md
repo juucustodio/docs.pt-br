@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugStackWalk:: Next Method'
 title: Método ICorDebugStackWalk::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 189c36be-028c-4fba-a002-5edfb8fcd07f
 topic_type:
 - apiref
-ms.openlocfilehash: 497dda473e6510cfa31405b2066c63b1a70dd5e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 27a48ca40f6b43cae32511b71b73e68d88eb60c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677317"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717752"
 ---
 # <a name="icordebugstackwalknext-method"></a>Método ICorDebugStackWalk::Next
 
@@ -59,7 +60,7 @@ HRESULT Next();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugStackWalk](icordebugstackwalk-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

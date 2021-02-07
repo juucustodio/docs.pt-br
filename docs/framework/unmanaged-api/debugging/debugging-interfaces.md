@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces de depuração'
 title: Depurando interfaces
 ms.date: 02/07/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - debugging interfaces [.NET Framework]
 - interfaces [.NET Framework debugging]
 ms.assetid: b6297c26-7624-4431-8af4-14112d07bcd5
-ms.openlocfilehash: a3dd81ceaab2ba467d4c8ca091c1c2219040a273
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6e6cc07e200b9ecf6bf4039f4fd5fd69e27b6fda
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676290"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717960"
 ---
 # <a name="debugging-interfaces"></a>Depurando interfaces
 

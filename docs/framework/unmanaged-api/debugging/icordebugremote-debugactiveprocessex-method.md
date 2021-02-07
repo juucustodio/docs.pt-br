@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugRemote: método ebugActiveProcessEx de:D'
 title: Método ICorDebugRemote::DebugActiveProcessEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b0df5c5d-9a2e-47bf-894c-6f8a9fe24a1f
 topic_type:
 - apiref
-ms.openlocfilehash: c9847fd6122aa32c95aecd5643a62a6775ae38d3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ccbde152e59146bd852a5a0a2f991d10333fa9d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712112"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717895"
 ---
 # <a name="icordebugremotedebugactiveprocessex-method"></a>Método ICorDebugRemote::DebugActiveProcessEx
 
@@ -51,7 +52,7 @@ HRESULT DebugActiveProcessEx (
  `ppProcess`  
  fora Um ponteiro para o endereço de um objeto "ICorDebugProcess" que representa o processo ao qual o depurador foi anexado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK  
  Anexado com êxito ao processo no computador remoto.  
@@ -73,7 +74,7 @@ HRESULT DebugActiveProcessEx (
   
  **Versões do .NET Framework:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRemote](icordebugremote-interface.md)
 - [Interface ICorDebug](icordebug-interface.md)

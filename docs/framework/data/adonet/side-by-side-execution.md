@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: execução lado a lado em ADO.NET'
 title: Execução lado a lado
 ms.date: 03/30/2017
 ms.assetid: 9f9ba96d-9f89-4f65-bb2f-6860879f4393
-ms.openlocfilehash: 609fc7b7cefd92e38ecfff54e5ac1651e855e4b7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ab55430382f49c40a577d5cac8501c0136c9f0a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91188932"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718766"
 ---
 # <a name="side-by-side-execution-in-adonet"></a>Execução lado a lado no ADO.NET
 
@@ -27,7 +28,7 @@ A execução lado a lado no .NET Framework é a capacidade de executar um aplica
   
  Se você tiver um aplicativo desenvolvido para a versão 1,0 do .NET Framework que usa o provedor de dados ODBC para se conectar à sua fonte de dados e desejar executar esse aplicativo na versão 1,1 ou .NET Framework em uma versão posterior, atualize o namespace do provedor de dados ODBC para **System. Data. ODBC**. Em seguida, você deve recompilá-lo para a versão mais recente do .NET Framework.  
   
- Se você tiver um aplicativo desenvolvido para o .NET Framework versão 2,0 ou posterior que usa o provedor de dados ODBC para se conectar à fonte de dados e desejar executar esse aplicativo na versão 1,0 do .NET Framework, você deverá baixar o provedor de dados ODBC e instalá-lo no sistema .NET Framework versão 1,0. Em seguida, você deve alterar o namespace do provedor de dados ODBC para **Microsoft. Data. ODBC**e recompilar o aplicativo para o .NET Framework versão 1,0.  
+ Se você tiver um aplicativo desenvolvido para o .NET Framework versão 2,0 ou posterior que usa o provedor de dados ODBC para se conectar à fonte de dados e desejar executar esse aplicativo na versão 1,0 do .NET Framework, você deverá baixar o provedor de dados ODBC e instalá-lo no sistema .NET Framework versão 1,0. Em seguida, você deve alterar o namespace do provedor de dados ODBC para **Microsoft. Data. ODBC** e recompilar o aplicativo para o .NET Framework versão 1,0.  
   
 ## <a name="the-net-framework-data-provider-for-oracle"></a>O Provedor de Dados .NET Framework para Oracle  
 

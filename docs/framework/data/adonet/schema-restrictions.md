@@ -1,24 +1,25 @@
 ---
+description: 'Saiba mais sobre: restrições de esquema'
 title: Restrições de esquema
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 73d2980e-e73c-4987-913a-8ddc93d09144
-ms.openlocfilehash: c0a3cafef45341cd95fa0a4f65c818129e120e44
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 74ddfe5b8aaf9b8193e0c0b2a929ccde333eac26
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147818"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719039"
 ---
 # <a name="schema-restrictions"></a>Restrições de esquema
 
-O segundo parâmetro opcional do método **GetSchema** são as restrições que são usadas para limitar a quantidade de informações de esquema retornadas e é transmitida para o método **GetSchema** como uma matriz de cadeias de caracteres. A posição na matriz determina os valores que você pode passar, e isso é equivalente ao número de restrição.  
+O segundo parâmetro opcional do método **GetSchema** são as restrições usadas para limitar a quantidade de informações de esquema retornadas, e é transmitido para o método **GetSchema** como uma matriz de cadeias de caracteres. A posição na matriz determina os valores que podem se transmitidos, e isso é equivalente ao número da restrição.  
   
- Por exemplo, a tabela a seguir descreve as restrições suportadas pela coleção de esquema "Tables" usando o Provedor de Dados de .NET Framework para SQL Server. As restrições adicionais para as coleções de esquema SQL Server são listadas no final deste tópico.  
+ Por exemplo, a tabela a seguir descreve as restrições suportadas pela coleção de esquema "Tables" usando o Provedor de Dados de .NET Framework para SQL Server. As restrições adicionais para as coleções de esquemas do SQL Server são listadas ao final deste tópico.  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|TABLE_CATALOG|1|  
 |Proprietário|@Owner|TABLE_SCHEMA|2|  
@@ -27,15 +28,15 @@ O segundo parâmetro opcional do método **GetSchema** são as restrições que 
   
 ## <a name="specifying-restriction-values"></a>Especificando valores de restrição  
 
- Para usar uma das restrições da coleção de esquema "Tables", basta criar uma matriz de cadeias de caracteres com quatro elementos e, em seguida, inserir um valor no elemento que corresponde ao número de restrição. Por exemplo, para restringir as tabelas retornadas pelo método **GetSchema** apenas para as tabelas no esquema "Sales", defina o segundo elemento da matriz como "Sales" antes de passá-lo para o método **GetSchema** .  
+ Para usar uma das restrições da coleção de esquemas "Tables", basta criar uma matriz de cadeias de caracteres com quatro elementos e inserir um valor no elemento que corresponde ao número da restrição. Por exemplo, para restringir as tabelas retornadas pelo método **GetSchema** apenas às tabelas no esquema "Sales", defina o segundo elemento da matriz como "Sales" antes de transmiti-lo para o método **GetSchema**.  
   
 > [!NOTE]
 > As coleções de restrições para `SqlClient` e `OracleClient` têm uma `ParameterName` coluna adicional. A coluna padrão de restrição ainda está disponível para compatibilidade com versões anteriores, mas é ignorada no momento. Consultas parametrizadas em vez da substituição de cadeia de caracteres devem ser usadas para minimizar o risco de um ataque de injeção de SQL ao especificar valores de restrição.  
   
 > [!NOTE]
-> O número de elementos na matriz deve ser menor ou igual ao número de restrições com suporte para a coleção de esquemas especificada que um <xref:System.ArgumentException> será lançado. Pode haver menos do que o número máximo de restrições. As restrições ausentes são consideradas nulas (Irrestrito).  
+> O número de elementos na matriz precisa ser inferior ou igual ao número de restrições compatíveis com a coleção de esquemas especificada. Caso contrário, uma <xref:System.ArgumentException> será gerada. Pode haver menos do que o número máximo de restrições. As restrições ausentes são consideradas nulas (irrestrito).  
   
- Você pode consultar um provedor gerenciado .NET Framework para determinar a lista de restrições com suporte chamando o método **GetSchema** com o nome da coleção de esquemas de restrições, que é "restrições". Isso retornará um <xref:System.Data.DataTable> com uma lista de nomes de coleção, os nomes de restrição, os valores de restrição padrão e os números de restrição.  
+ Você pode consultar um provedor gerenciado .NET Framework para determinar a lista de restrições com suporte chamando o método **GetSchema** com o nome da coleção de esquemas de restrições, que é "restrições". Isso retornará uma <xref:System.Data.DataTable> com uma lista de nomes de coleção, os nomes de restrição, os valores de restrição padrão e os números de restrição.  
   
 ### <a name="example"></a>Exemplo  
 
@@ -135,23 +136,23 @@ class Program
   
 ## <a name="sql-server-schema-restrictions"></a>Restrições de esquema de SQL Server  
 
- As tabelas a seguir listam as restrições para SQL Server coleções de esquema.  
+ As tabelas a seguir listam as restrições para coleções de esquemas do SQL Server.  
   
 ### <a name="users"></a>Usuários  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |User_Name|@Name|name|1|  
   
 ### <a name="databases"></a>Bancos de dados  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
-|Name|@Name|Nome|1|  
+|Nome|@Name|Nome|1|  
   
 ### <a name="tables"></a>Tabelas  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|TABLE_CATALOG|1|  
 |Proprietário|@Owner|TABLE_SCHEMA|2|  
@@ -160,7 +161,7 @@ class Program
   
 ### <a name="columns"></a>Colunas  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|TABLE_CATALOG|1|  
 |Proprietário|@Owner|TABLE_SCHEMA|2|  
@@ -169,7 +170,7 @@ class Program
   
 ### <a name="structuredtypemembers"></a>StructuredTypeMembers  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|TABLE_CATALOG|1|  
 |Proprietário|@Owner|TABLE_SCHEMA|2|  
@@ -178,7 +179,7 @@ class Program
   
 ### <a name="views"></a>Exibições  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|TABLE_CATALOG|1|  
 |Proprietário|@Owner|TABLE_SCHEMA|2|  
@@ -186,64 +187,64 @@ class Program
   
 ### <a name="viewcolumns"></a>ViewColumns  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|VIEW_CATALOG|1|  
 |Proprietário|@Owner|VIEW_SCHEMA|2|  
 |Tabela|@Table|VIEW_NAME|3|  
 |Coluna|@Column|COLUMN_NAME|4|  
   
-### <a name="procedureparameters"></a>Procedimentoparameters  
+### <a name="procedureparameters"></a>ProcedureParameters  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|SPECIFIC_CATALOG|1|  
 |Proprietário|@Owner|SPECIFIC_SCHEMA|2|  
-|Name|@Name|SPECIFIC_NAME|3|  
+|Nome|@Name|SPECIFIC_NAME|3|  
 |Parâmetro|@Parameter|PARAMETER_NAME|4|  
   
 ### <a name="procedures"></a>Procedimentos  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|SPECIFIC_CATALOG|1|  
 |Proprietário|@Owner|SPECIFIC_SCHEMA|2|  
-|Name|@Name|SPECIFIC_NAME|3|  
+|Nome|@Name|SPECIFIC_NAME|3|  
 |Tipo|@Type|ROUTINE_TYPE|4|  
   
 ### <a name="indexcolumns"></a>IndexColumns  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
-|Catálogo|@Catalog|db_name ()|1|  
-|Proprietário|@Owner|user_name ()|2|  
+|Catálogo|@Catalog|db_name()|1|  
+|Proprietário|@Owner|user_name()|2|  
 |Tabela|@Table|o.name|3|  
 |ConstraintName|@ConstraintName|x.name|4|  
 |Coluna|@Column|c.name|5|  
   
 ### <a name="indexes"></a>Índices  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
-|Catálogo|@Catalog|db_name ()|1|  
-|Proprietário|@Owner|user_name ()|2|  
+|Catálogo|@Catalog|db_name()|1|  
+|Proprietário|@Owner|user_name()|2|  
 |Tabela|@Table|o.name|3|  
   
 ### <a name="userdefinedtypes"></a>UserDefinedTypes  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |assembly_name|@AssemblyName|assemblies.name|1|  
-|udt_name|@UDTName|tipos. assembly_class|2|  
+|udt_name|@UDTName|types.assembly_class|2|  
   
 ### <a name="foreignkeys"></a>ForeignKeys  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|CONSTRAINT_CATALOG|1|  
 |Proprietário|@Owner|CONSTRAINT_SCHEMA|2|  
 |Tabela|@Table|TABLE_NAME|3|  
-|Name|@Name|CONSTRAINT_NAME|4|  
+|Nome|@Name|CONSTRAINT_NAME|4|  
   
 ## <a name="sql-server-2008-schema-restrictions"></a>SQL Server restrições de esquema do 2008  
 
@@ -251,15 +252,15 @@ class Program
   
 ### <a name="columnsetcolumns"></a>ColumnSetColumns  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|TABLE_CATALOG|1|  
 |Proprietário|@Owner|TABLE_SCHEMA|2|  
 |Tabela|@Table|TABLE_NAME|3|  
   
-### <a name="allcolumns"></a>Colunas  
+### <a name="allcolumns"></a>AllColumns  
   
-|Nome da restrição|Nome do Parâmetro|Padrão de restrição|Número de restrição|  
+|Nome da restrição|Nome do Parâmetro|Padrão da restrição|Número da restrição|  
 |----------------------|--------------------|-------------------------|------------------------|  
 |Catálogo|@Catalog|TABLE_CATALOG|1|  
 |Proprietário|@Owner|TABLE_SCHEMA|2|  

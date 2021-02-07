@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <appDomainResourceMonitoring> elemento'
 title: Elemento <appDomainResourceMonitoring>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - appDomainResourceMonitoring element
 - <appDomainResourceMonitoring> element
 ms.assetid: 02119ab6-1e91-448e-97ad-e7b2e5c4bbbd
-ms.openlocfilehash: 9ecf2e382b5d483377df871835793219b3f74760
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: aee85386e6d0af2ca4fd30c0ad8fe69bae240315
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170266"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719286"
 ---
 # <a name="appdomainresourcemonitoring-element"></a>Elemento \<appDomainResourceMonitoring>
 
@@ -20,7 +21,7 @@ Instrui o runtime a coletar estatísticas sobre todos os domínios de aplicativo
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainResourceMonitoring>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <appDomainResourceMonitoring
@@ -75,7 +76,7 @@ Instrui o runtime a coletar estatísticas sobre todos os domínios de aplicativo
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
 - [Esquema de configurações do runtime](index.md)

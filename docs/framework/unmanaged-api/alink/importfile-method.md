@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Método ImportFile'
 title: Método ImportFile
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bcbe321f-b83a-4e9a-9f10-8d913e244dc9
 topic_type:
 - apiref
-ms.openlocfilehash: f30307884a268008fd4d1a8de31ec5a49b6ab92d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 82c9c7de7cd739ee205dc3695ea651643d01ea3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718155"
 ---
 # <a name="importfile-method"></a>Método ImportFile
 
@@ -58,7 +59,7 @@ HRESULT ImportFile(
  `pdwCountOfScopes`  
  Ponteiro para a contagem de arquivos e/ou escopos que foram importados.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Retorna S_OK se o método tiver sucesso.  
   
@@ -66,7 +67,7 @@ HRESULT ImportFile(
 
  Requer ALink. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IALink](ialink-interface.md)
 - [Interface IALink2](ialink2-interface.md)

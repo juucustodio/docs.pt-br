@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 57398-MaxInstancesExceeded'
 title: 57398 - MaxInstancesExceeded
 ms.date: 03/30/2017
 ms.assetid: f943d209-dfeb-43e5-b572-c9a06217936e
-ms.openlocfilehash: bd490aad24fba4550bc778799cd6f836dcfd466c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 104c466cb2e0ee8156e2b268caf5e757353dfb09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289172"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720222"
 ---
 # <a name="57398---maxinstancesexceeded"></a>57398 - MaxInstancesExceeded
 
@@ -17,7 +18,7 @@ ms.locfileid: "96289172"
 |-|-|  
 |ID|57398|  
 |Palavras-chave|WFServices|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

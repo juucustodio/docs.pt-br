@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: operações assíncronas'
 title: Operações assíncronas
 ms.date: 03/30/2017
 ms.assetid: e7d32c3c-bf78-4bfc-a357-c9e82e4a4b3c
-ms.openlocfilehash: f94a33b1ff06b5433f61687b8e28096ea37b412a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 415da1c8a9891bcca13ad26cbbc4c09bfd8909f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718558"
 ---
 # <a name="asynchronous-operations"></a>Operações assíncronas
 
@@ -22,16 +23,16 @@ Algumas operações de banco de dados, como execuções de comando, podem demora
   
 ## <a name="in-this-section"></a>Nesta seção  
 
- [Aplicativos do Windows usando retornos de chamada](windows-applications-using-callbacks.md)  
+ [Aplicativos do Windows que usam retornos de chamada](windows-applications-using-callbacks.md)  
  Fornece um exemplo que demonstra como executar um comando assíncrono com segurança, manipulando corretamente a interação com um formulário e seu conteúdo de um thread separado.  
   
- [Aplicativos ASP.NET usando identificadores de espera](aspnet-apps-using-wait-handles.md)  
+ [Aplicativos ASP.NET que usam identificadores de espera](aspnet-apps-using-wait-handles.md)  
  Fornece um exemplo que demonstra como executar vários comandos simultâneos de uma página do ASP.NET, usando os identificadores de espera para gerenciar a operação na conclusão de todos os comandos.  
   
  [Sondagem em aplicativos de console](polling-in-console-applications.md)  
  Fornece um exemplo que demonstra o uso de sondagem para aguardar a conclusão de uma execução de comando assíncrona de um aplicativo de console. Essa técnica também é válida em uma biblioteca de classes ou outro aplicativo sem uma interface do usuário.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [SQL Server e ADO.NET](index.md)
 - [Chamando métodos síncronos de forma assíncrona](../../../../standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)

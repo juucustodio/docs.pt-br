@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <AppContextSwitchOverrides> elemento'
 title: Elemento AppContextSwitchOverrides
 ms.date: 04/18/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - configuration switches
 - configuration
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
-ms.openlocfilehash: ab74886edcc86c900c56017867a3b81c9cb7886e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1c2e4ceaec83ee23990c2146960f602eb12361a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176143"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719325"
 ---
 # <a name="appcontextswitchoverrides-element"></a>Elemento \<AppContextSwitchOverrides>
 
@@ -22,7 +23,7 @@ Define uma ou mais opções usadas pela classe <xref:System.AppContext> para for
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<AppContextSwitchOverrides>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <AppContextSwitchOverrides value="name1=value1[[;name2=value2];...]" />
@@ -63,7 +64,7 @@ Define uma ou mais opções usadas pela classe <xref:System.AppContext> para for
 
 O .NET Framework dá suporte às seguintes opções:
 
-|Nome do comutador|Descrição|Incluída|
+|Nome do comutador|Descrição|Introduzida|
 |-----------------|-----------------|----------------|
 |`Switch.MS.Internal.`<br/>`DoNotApplyLayoutRoundingToMarginsAndBorderThickness`|Controla se Windows Presentation Foundation usa um algoritmo herdado para o layout de controle. Para saber mais, confira [Mitigação: layout de WPF](../../../migration-guide/mitigation-wpf-layout.md).|.NET Framework 4.6|
 |`Switch.MS.Internal.`<br/>`UseSha1AsDefaultHashAlgorithmForDigitalSignatures`|Controla se o algoritmo padrão usado para assinar partes de um pacote por PackageDigitalSignatureManager é SHA1 ou SHA256.<br>Em razão de problemas de colisão com SHA1, a Microsoft recomenda SHA256.|.NET Framework 4.7.1|
@@ -179,7 +180,7 @@ O exemplo a seguir usa o `<add>` elemento para adicionar duas configurações à
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Atenuar novos comportamentos no .NET Framework 4,6 e posterior](../../../migration-guide/mitigations.md)
 - <xref:System.AppContext?displayProperty=nameWithType>

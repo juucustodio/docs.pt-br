@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cenários de segurança de aplicativos no SQL Server'
 title: Cenários de segurança do aplicativo no SQL Server
 ms.date: 03/30/2017
 ms.assetid: 0164f3a4-406e-4693-bec3-03c8e18b46d7
-ms.openlocfilehash: 2d0e65f61939312bf29111e87c49366cd9e389be
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8a0e055c3afa1590a74516505d513992bca8b952
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197645"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718649"
 ---
 # <a name="application-security-scenarios-in-sql-server"></a>Cenários de segurança do aplicativo no SQL Server
 
@@ -64,9 +65,9 @@ Não há nenhuma maneira correta de criar um aplicativo cliente seguro do SQL Se
  [Habilitando o acesso entre bancos de dados no SQL Server](enabling-cross-database-access-in-sql-server.md)  
  Descreve como habilitar o acesso entre bancos de dados sem comprometer a segurança.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Segurança de SQL Server](sql-server-security.md)
+- [Segurança do SQL Server](sql-server-security.md)
 - [Visão geral de segurança do SQL Server](overview-of-sql-server-security.md)
 - [Protegendo aplicativos ADO.NET](../securing-ado-net-applications.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <bypassTrustedAppStrongNames> elemento'
 title: Elemento <bypassTrustedAppStrongNames>
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - strong-named assemblies, loading into trusted application domains
 - <bypassTrustedAppStrongNames> element
 ms.assetid: 71b2ebf6-3843-41e2-ad52-ffa5cd083a40
-ms.openlocfilehash: 96361a6742d1d2f76cb237344189d3277d7c8069
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d23b9efa19481027480f2a1c7dab22bc97a05e13
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73739088"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719156"
 ---
 # <a name="bypasstrustedappstrongnames-element"></a>Elemento \<bypassTrustedAppStrongNames>
 
@@ -22,7 +23,7 @@ Especifica se deve ignorar a validação de nomes fortes em assemblies de confia
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<bypassTrustedAppStrongNames>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <bypassTrustedAppStrongNames
@@ -72,7 +73,7 @@ O recurso de desvio se aplica a qualquer assembly que está assinado com um nome
 - Não assinado com atraso.
 
 > [!NOTE]
-> Se o recurso de bypass tiver sido desativado para todos os aplicativos no computador usando uma chave do registro, essa configuração do arquivo de configuração não terá nenhum efeito. Para obter mais informações, consulte [como: desabilitar o recurso de bypass de nome forte](../../../../standard/assembly/disable-strong-name-bypass-feature.md).
+> Se o recurso de bypass tiver sido desativado para todos os aplicativos no computador usando uma chave do registro, essa configuração do arquivo de configuração não terá nenhum efeito. Para obter mais informações, consulte [como: desabilitar o recurso de Strong-Name bypass](../../../../standard/assembly/disable-strong-name-bypass-feature.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -86,8 +87,8 @@ O exemplo a seguir mostra como especificar o comportamento que valida a assinatu
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [Como desabilitar o recurso de bypass de nome forte](../../../../standard/assembly/disable-strong-name-bypass-feature.md)

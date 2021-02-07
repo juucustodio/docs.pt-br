@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <clear> elemento para <namedCaches>'
 title: Elemento <clear> para <namedCaches>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <clear> element for <namedCaches>
 - clear element for <namedCaches>
 ms.assetid: ea01a858-65da-4348-800f-5e3df59d4d79
-ms.openlocfilehash: d65712f091c5fb9212167b4759c70db7e5d744c1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9d883c102fc76875ce155f353920f730bf9700c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149407"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719091"
 ---
 # <a name="clear-element-for-namedcaches"></a>Elemento \<clear> para \<namedCaches>
 
@@ -57,6 +58,6 @@ Limpa todas as `namedCache` entradas na `namedCaches` coleção para um cache de
 
  O `clear` elemento limpa todas as `namedCache` entradas na coleção de cache nomeado para um cache de memória. Você pode usar o `clear` elemento antes de usar o `add` elemento para adicionar uma nova entrada de cache nomeado a fim de ter certeza de que não há outros caches nomeados na coleção.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [\<namedCaches> Elemento (configurações de cache)](namedcaches-element-cache-settings.md)

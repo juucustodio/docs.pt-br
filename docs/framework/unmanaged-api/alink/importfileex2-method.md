@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ImportFileEx2'
 title: Método ImportFileEx2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 02c789fd-16fc-48c6-9619-56e87e2a37ca
 topic_type:
 - apiref
-ms.openlocfilehash: 59149e79e926a0b9a3e549e013bf178e54ddf6fa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0968318ab7e416e56b71f2f30f2745d538d0ff8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705170"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717999"
 ---
 # <a name="importfileex2-method"></a>Método ImportFileEx2
 
@@ -66,7 +67,7 @@ HRESULT ImportFileEx2(
  `pdwCountOfScopes`  
  Recebe o número de arquivos e/ou escopos importados.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Retorna S_OK se o método tiver sucesso.  
   
@@ -74,7 +75,7 @@ HRESULT ImportFileEx2(
 
  Requer ALink. h.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IALink2](ialink2-interface.md)
 - [Interface IALink](ialink-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 440-StartSignpostEvent1'
 title: 440 - StartSignpostEvent1
 ms.date: 03/30/2017
 ms.assetid: 27b551b5-ae76-49f8-bab8-6300009eb4c1
-ms.openlocfilehash: 1e0278d665a961afab21445ab8490e3e5a94987c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 462ad54c9dd8230632d76d88f2b779eaea3b43ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293449"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720365"
 ---
 # <a name="440---startsignpostevent1"></a>440 - StartSignpostEvent1
 
@@ -17,7 +18,7 @@ ms.locfileid: "96293449"
 |-|-|  
 |ID|440|  
 |Palavras-chave|Solução de problemas|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

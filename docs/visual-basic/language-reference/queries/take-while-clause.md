@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: cláusula Take While (Visual Basic)'
 title: Cláusula Take While
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - Take While clause [Visual Basic]
 - Take While statement [Visual Basic]
 ms.assetid: db8f9f2f-fc9f-4a6c-b0b8-1bf048147e11
-ms.openlocfilehash: 632e9e2195f21a3aa1d1ffd28e9838905c471156
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: a413223d4a85670c66f71e24addb92ae4d38a4a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869662"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719702"
 ---
 # <a name="take-while-clause-visual-basic"></a>Cláusula Take While (Visual Basic)
 
 Inclui elementos em uma coleção desde que uma condição especificada seja `true` e ignore os elementos restantes.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Take While expression  
@@ -29,7 +30,7 @@ Take While expression
   
 |Termo|Definição|  
 |---|---|  
-|`expression`|Necessário. Uma expressão que representa uma condição para os elementos de teste. A expressão deve retornar um `Boolean` valor ou um equivalente funcional, como um `Integer` a ser avaliado como um `Boolean` .|  
+|`expression`|Obrigatório. Uma expressão que representa uma condição para os elementos de teste. A expressão deve retornar um `Boolean` valor ou um equivalente funcional, como um `Integer` a ser avaliado como um `Boolean` .|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -43,7 +44,7 @@ Take While expression
   
  [!code-vb[VbSimpleQuerySamples#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#2)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a LINQ no Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [Consultas](index.md)

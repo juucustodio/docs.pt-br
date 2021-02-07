@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: argumentos necessários e grupos de sobrecarga'
 title: Argumentos necessários e grupos de sobrecarga
 ms.date: 03/30/2017
 ms.assetid: 4ca3ed06-b9af-4b85-8b70-88c2186aefa3
-ms.openlocfilehash: 452285b1f5b73ecf75fc50f59365aa2633f26e42
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1eea77276ad976c81d891e45cfbe5217b298b4fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245868"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720027"
 ---
 # <a name="required-arguments-and-overload-groups"></a>Argumentos necessários e grupos de sobrecarga
 

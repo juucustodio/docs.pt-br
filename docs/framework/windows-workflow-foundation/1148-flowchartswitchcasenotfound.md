@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1148-FlowchartSwitchCaseNotFound'
 title: 1148 - FlowchartSwitchCaseNotFound
 ms.date: 03/30/2017
 ms.assetid: 9ee7fcee-e040-4306-968e-ed840a1cb00c
-ms.openlocfilehash: fb9f4be3dba0f8632f1ae074ad9ddb726c5d84ab
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 067dff850a67f1b235bf9c1903757eefa912bd92
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241701"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720404"
 ---
 # <a name="1148---flowchartswitchcasenotfound"></a>1148 - FlowchartSwitchCaseNotFound
 
@@ -17,7 +18,7 @@ ms.locfileid: "96241701"
 |-|-|  
 |ID|1148|  
 |Palavras-chave|WFActivities|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

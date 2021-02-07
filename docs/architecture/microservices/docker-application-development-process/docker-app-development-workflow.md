@@ -1,13 +1,13 @@
 ---
 title: Fluxo de trabalho de desenvolvimento para aplicativos do Docker
 description: Entenda os detalhes do fluxo de trabalho para o desenvolvimento de aplicativos baseados no Docker. Comece o passo a passo e obtenha alguns detalhes para otimizar Dockerfiles e concluir com o fluxo de trabalho simplificado disponível ao usar o Visual Studio.
-ms.date: 01/13/2021
-ms.openlocfilehash: fff0a59bb6001eeb50c31c68bfeceeb71c439223
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.date: 02/02/2021
+ms.openlocfilehash: 678ff76575c70a253fbb06253fadb2f721f16831
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719962"
 ---
 # <a name="development-workflow-for-docker-apps"></a>Fluxo de trabalho de desenvolvimento para aplicativos do Docker
 
@@ -53,7 +53,7 @@ Para começar, instale o [Docker CE (Community Edition)](https://docs.docker.com
 
 [Introdução ao Docker CE for Windows](https://docs.docker.com/docker-for-windows/)
 
-Além disso, você precisa do Visual Studio 2019 versão 16,4 ou posterior, com a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** instalada, conforme mostrado na Figura 5-2.
+Além disso, você precisa do Visual Studio 2019 versão 16,8, com a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** instalada, como mostra a Figura 5-2.
 
 ![Captura de tela da seleção de desenvolvimento de plataforma cruzada do .NET Core.](./media/docker-app-development-workflow/dotnet-core-cross-platform-development.png)
 
@@ -132,7 +132,7 @@ Você pode especificar mais definições de configurações no Dockerfile, depen
 
 ### <a name="using-multi-arch-image-repositories"></a>Usando repositórios de imagens para várias arquiteturas
 
-Um único repositório pode conter variantes de plataforma, como uma imagem do Linux e uma imagem do Windows. Esse recurso permite que fornecedores, como a Microsoft (criadores de imagem base), criem um único repositório para abranger várias plataformas (ou seja, Linux e Windows). Por exemplo, o repositório [dotnet/core](https://hub.docker.com/_/microsoft-dotnet/), disponível no registro do Hub do Docker, é compatível com Linux e Windows Nano Server usando o mesmo nome de repositório.
+Um único repositório pode conter variantes de plataforma, como uma imagem do Linux e uma imagem do Windows. Esse recurso permite que fornecedores, como a Microsoft (criadores de imagem base), criem um único repositório para abranger várias plataformas (ou seja, Linux e Windows). Por exemplo, o repositório do [.net](https://hub.docker.com/_/microsoft-dotnet/) disponível no registro do Hub do Docker fornece suporte para Linux e Windows nano Server usando o mesmo nome de repositório.
 
 Ao especificar uma marcação, você direciona a uma plataforma que é explícita, como nos seguintes casos:
 
@@ -506,7 +506,7 @@ Os comandos docker-compose up e docker run (ou executar e depurar os contêinere
 
 ## <a name="step-6-test-your-docker-application-using-your-local-docker-host"></a>Etapa 6. Testar seu aplicativo do Docker usando o host local do Docker
 
-Esta etapa varia de acordo com o que seu aplicativo está fazendo. Em um aplicativo Web .NET Core simples implantado como um único contêiner ou serviço, você pode acessar o serviço abrindo um navegador no host do Docker e navegando até o site, conforme mostrado na Figura 5-13. (Se a configuração do Dockerfile mapear o contêiner para uma porta no host que seja diferente de 80, inclua a porta do host na URL).
+Esta etapa varia de acordo com o que seu aplicativo está fazendo. Em um aplicativo Web .NET simples que é implantado como um único contêiner ou serviço, você pode acessar o serviço abrindo um navegador no host do Docker e navegando até esse site, como mostra a Figura 5-13. (Se a configuração do Dockerfile mapear o contêiner para uma porta no host que seja diferente de 80, inclua a porta do host na URL).
 
 ![Captura de tela da resposta de localhost/API/Values.](./media/docker-app-development-workflow/test-docker-app-locally-localhost.png)
 

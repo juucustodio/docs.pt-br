@@ -12,12 +12,12 @@ helpviewer_keywords:
 - rules, security
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: e907905b065d786fc8b3c370fb2d2e2b19e62a2b
-ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
+ms.openlocfilehash: 861827662a771ec7cc1827cdd8125be6c05bf05c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "96585625"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719715"
 ---
 # <a name="security-rules"></a>Regras de segurança
 
@@ -30,7 +30,7 @@ As regras de segurança dão suporte a bibliotecas e aplicativos mais seguros. E
 |[CA2100: Examinar consultas SQL em busca de vulnerabilidades de segurança](ca2100.md)|Um método define a propriedade System.Data.IDbCommand.CommandText usando uma cadeia de caracteres criada com base em um argumento da cadeia de caracteres para o método. Esta regra pressupõe que o argumento da cadeia de caracteres contenha a entrada do usuário. Uma cadeia de caracteres de comando SQL criada com base na entrada do usuário é vulnerável a ataques de injeção SQL.|
 |[CA2109: Examinar manipuladores de eventos visíveis](ca2109.md)|Um método público ou protegido de tratamento de eventos foi detectado. Os métodos de tratamento de eventos não devem ser expostos, a menos que seja absolutamente necessário.|
 |[CA2119: Selar métodos que atendem a interfaces particulares](ca2119.md)|Um tipo público herdável fornece uma implementação de método substituível de uma interface (Friend no Visual Basic) interna. Para corrigir uma violação dessa regra, evite que o método seja substituído fora do assembly.|
-|[CA2153: Evite lidar com exceções de estado corrompido](ca2153.md)|As [exceções de estado corrompidas (CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) indicam que há corrupção de memória em seu processo. A captura deles, em vez de permitir que o processo falhe, pode levar a vulnerabilidades de segurança se um invasor puder fazer uma exploração na região de memória corrompida.|
+|[CA2153: Evitar tratamento de exceções de estado corrompido](ca2153.md)|As [exceções de estado corrompidas (CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) indicam que há corrupção de memória em seu processo. A captura deles, em vez de permitir que o processo falhe, pode levar a vulnerabilidades de segurança se um invasor puder fazer uma exploração na região de memória corrompida.|
 |[CA2300: Não usar o desserializador BinaryFormatter não seguro](ca2300.md)|Desserializadores inseguros são vulneráveis ao desserializar dados não confiáveis. Um invasor pode modificar os dados serializados para incluir tipos inesperados para injetar objetos com efeitos colaterais mal-intencionados.|
 |[CA2301: Não chamar BinaryFormatter.Deserialize sem antes definir BinaryFormatter.Binder](ca2301.md)|Desserializadores inseguros são vulneráveis ao desserializar dados não confiáveis. Um invasor pode modificar os dados serializados para incluir tipos inesperados para injetar objetos com efeitos colaterais mal-intencionados.|
 |[CA2302: Verificar se o BinaryFormatter.Binder está definido antes de chamar BinaryFormatter.Deserialize](ca2302.md)|Desserializadores inseguros são vulneráveis ao desserializar dados não confiáveis. Um invasor pode modificar os dados serializados para incluir tipos inesperados para injetar objetos com efeitos colaterais mal-intencionados.|
@@ -93,7 +93,7 @@ As regras de segurança dão suporte a bibliotecas e aplicativos mais seguros. E
 |[CA5375: Não usar a assinatura de acesso compartilhado da conta](ca5375.md)|Uma SAS de conta pode delegar acesso a operações de leitura, gravação e exclusão em contêineres de BLOB, tabelas, filas e compartilhamentos de arquivos que não são permitidos com uma SAS de serviço. No entanto, ele não dá suporte a políticas em nível de contêiner e tem menos flexibilidade e controle sobre as permissões concedidas. Depois que os usuários mal-intencionados o obtiverem, sua conta de armazenamento será comprometida facilmente.|
 |[CA5376: Usar SharedAccessProtocol HttpsOnly](ca5376.md)|SAS são dados confidenciais que não podem ser transportados em texto sem formatação em HTTP.|
 |[CA5377: Usar política de acesso no nível de contêiner](ca5377.md)|Uma política de acesso no nível de contêiner pode ser modificada ou revogada a qualquer momento. Ele fornece maior flexibilidade e controle sobre as permissões concedidas.|
-|[CA5378: Não desabilite ServicePointManagerSecurityProtocols](ca5378.md)|Configuração `Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols` para `true` limita as conexões de TLS (segurança de camada de transporte) do Windows Communication Framework (WCF) usando o TLS 1,0. Essa versão do TLS será preterida.|
+|[CA5378: Não desabilite ServicePointManagerSecurityProtocols](ca5378.md)|Configuração `DisableUsingServicePointManagerSecurityProtocols` para `true` limita as conexões de TLS (segurança de camada de transporte) do Windows Communication Framework (WCF) usando o TLS 1,0. Essa versão do TLS será preterida.|
 |[CA5379: Verifique se o algoritmo da função de derivação de chave é suficientemente forte](ca5379.md)|A <xref:System.Security.Cryptography.Rfc2898DeriveBytes> classe assume como padrão o uso do <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> algoritmo. Você deve especificar o algoritmo de hash a ser usado em algumas sobrecargas do construtor com <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> ou superior. Observe <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> que Property tem apenas um `get` acessador e não tem um `overriden` modificador.|
 |[CA5380: Não adicionar certificados ao repositório raiz](ca5380.md)|Essa regra detecta o código que adiciona um certificado ao repositório de certificados das autoridades de certificação raiz confiáveis. Por padrão, o repositório de certificados de autoridades de certificação raiz confiáveis é configurado com um conjunto de CAs públicas que atendem aos requisitos do programa de certificado raiz da Microsoft.|
 |[CA5381: Verificar que os certificados não sejam adicionados ao repositório raiz](ca5381.md)|Essa regra detecta o código que potencialmente adiciona um certificado ao repositório de certificados de autoridades de certificação raiz confiáveis. Por padrão, o repositório de certificados de autoridades de certificação raiz confiáveis é configurado com um conjunto de CAs (autoridades de certificação) públicas que atendem aos requisitos do Microsoft Root Certificate Program.|

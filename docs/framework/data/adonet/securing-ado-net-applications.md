@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: protegendo aplicativos ADO.NET'
 title: Protegendo aplicativos
 ms.date: 03/30/2017
 ms.assetid: 005a1d43-6ee5-471e-ad98-1d30a44d49d5
-ms.openlocfilehash: af184f64b43c2d3dc39f8c0add08940d3b002c24
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4e4d219d1f4249846943d019e174abd6d43687c7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90550749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718870"
 ---
 # <a name="securing-adonet-applications"></a>Protegendo aplicativos ADO.NET
 
@@ -39,7 +40,7 @@ Escrever código seguro não protege contra buracos na segurança autoinfligidos
  [Diretrizes de segurança do conjunto de tabela e DataTable](dataset-datatable-dataview/security-guidance.md)  
  Fornece diretrizes de segurança para o <xref:System.Data.DataSet> e o <xref:System.Data.DataTable> .
 
- [Segurança de SQL Server](./sql/sql-server-security.md)  
+ [Segurança do SQL Server](./sql/sql-server-security.md)  
  Descreve os recursos de segurança do SQL Server da perspectiva de um desenvolvedor.  
   
  [Considerações sobre segurança](./ef/security-considerations.md)  
@@ -57,7 +58,7 @@ Escrever código seguro não protege contra buracos na segurança autoinfligidos
  [Bibliografia de segurança](/visualstudio/ide/securing-applications)  
  Fornece links para recursos externos disponíveis online e em cópia impressa.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ADO.NET](index.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

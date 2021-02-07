@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <alwaysFlowImpersonationPolicy> elemento'
 title: Elemento <alwaysFlowImpersonationPolicy>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - alwaysFlowImpersonationPolicy element
 - <alwaysFlowImpersonationPolicy> element
 ms.assetid: ee622801-9e46-470b-85ab-88c4b1dd2ee1
-ms.openlocfilehash: 9316f026a807b6ad36014157061f67bdbd7d3d18
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5ee8e763eddb810143522ce9e6df780ee77c26c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719364"
 ---
 # <a name="alwaysflowimpersonationpolicy-element"></a>Elemento \<alwaysFlowImpersonationPolicy>
 
@@ -112,7 +113,7 @@ Especifica que a identidade do Windows sempre fluirá por pontos assíncronos, i
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

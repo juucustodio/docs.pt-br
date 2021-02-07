@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: classe base NativeActivity'
 title: Classe base de NativeActivity
 ms.date: 03/30/2017
 ms.assetid: 254a4c50-425b-426d-a32f-0f7234925bac
-ms.openlocfilehash: d875f62dacadb2baf6b5d7e93ddb2933aed9cdb0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 184001ad9ee83c238265764cda3bc007e4a1fc71
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274953"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720131"
 ---
 # <a name="nativeactivity-base-class"></a>Classe base de NativeActivity
 

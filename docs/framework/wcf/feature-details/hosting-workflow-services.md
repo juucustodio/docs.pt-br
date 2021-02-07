@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: hospedando serviços de fluxo de trabalho'
 title: Serviços de fluxo de trabalho de hospedagem
 ms.date: 03/30/2017
 ms.assetid: 2d55217e-8697-4113-94ce-10b60863342e
-ms.openlocfilehash: 3bd45575e06ba742b0e6c43766c5e80dff47c03b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8d7d5bbc8b084ac74e51fe3906fd5eef13b5ea09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255995"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742999"
 ---
 # <a name="hosting-workflow-services"></a>Serviços de fluxo de trabalho de hospedagem
 
@@ -59,7 +60,7 @@ Um serviço de fluxo de trabalho deve ser hospedado para que ele responda às me
 
  A ferramenta de implantação da Web foi criada para facilitar o trabalho de implantação. A ferramenta permite migrar aplicativos entre o IIS 6,0 e o IIS 7,0, sincronizar farms de servidores e empacotar, arquivar e implantar aplicativos Web. Para obter mais informações, consulte [ferramenta de implantação da MS](https://go.microsoft.com/fwlink/?LinkId=178690).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Internos do host de serviço de fluxo de trabalho](workflow-service-host-internals.md)
 - [Configurando WorkflowServiceHost](configuring-workflowservicehost.md)

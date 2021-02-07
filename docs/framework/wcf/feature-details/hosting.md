@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Hospedagem'
 title: Hosting2
 ms.date: 03/30/2017
 ms.assetid: 0820c7e5-0b50-4cde-80e7-74e346513002
-ms.openlocfilehash: a83cc0d12b1099bc77d62f108741de1dbf387686
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4371cbb3b65242235ad0bb26c2b99b8e35d729c7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255982"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742960"
 ---
-# <a name="hosting"></a>Hosting
+# <a name="hosting"></a>Hospedagem
 
 Os tópicos na seção descrevem a hospedagem de serviço. Um serviço pode ser hospedado pelo Serviços de Informações da Internet (IIS), pelo WAS (serviço de ativação de processos do Windows), pelo Windows Server AppFabric, por um serviço do Windows ou por um aplicativo gerenciado – essa opção é geralmente conhecida como *hospedagem própria*.  
   
@@ -35,7 +36,7 @@ Os tópicos na seção descrevem a hospedagem de serviço. Um serviço pode ser 
  [Suporte a ligações de site do IIS](supporting-multiple-iis-site-bindings.md)  
  Descreve como especificar vários endereços base para um serviço usando o mesmo esquema de URI em um único site.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de hospedagem](../hosting-services.md)
 - [Recursos de hospedagem do Windows Server AppFabric](/previous-versions/appfabric/ee677189(v=azure.10))

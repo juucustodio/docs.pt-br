@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como o modelo de objeto de distribuição do WCF é mapeado para Atom e RSS'
 title: Como o modelo de objeto de sindicalização do WCF mapeia para Atom e RSS
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0365eb37-98cc-4b13-80fb-f1e78847a748
-ms.openlocfilehash: 6fa390c8ae05035e589392c909ef340fb9c7948a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d66fb30acde18053e866b8986ebf71a6eed562ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257809"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742934"
 ---
 # <a name="how-the-wcf-syndication-object-model-maps-to-atom-and-rss"></a>Como o modelo de objeto de sindicalização do WCF mapeia para Atom e RSS
 
@@ -406,7 +407,7 @@ Ao desenvolver um serviço de distribuição do Windows Communication Foundation
   
  `</content>`  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de sindicalização do WCF](wcf-syndication-overview.md)
 - [Arquitetura de sindicalização](architecture-of-syndication.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: recuperação de dados e operações CUD em aplicativos de N camadas (LINQ to SQL)'
 title: Recuperação de dados e operações de COMIDA RUMINADA em aplicativos de n camadas (LINQ to SQL)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c3133d53-83ed-4a4d-af8b-82edcf3831db
-ms.openlocfilehash: 1bc97504b4dd053ce9ef747460a79865cbe836ee
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: dbad65e1bd29227f434166dca364946a68256177
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197411"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672160"
 ---
 # <a name="data-retrieval-and-cud-operations-in-n-tier-applications-linq-to-sql"></a>Recuperação de dados e operações de COMIDA RUMINADA em aplicativos de n camadas (LINQ to SQL)
 
@@ -416,7 +417,7 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
   
  Quando você anexa com `IEnumerable` conjunto de objetos, <xref:System.Data.Linq.DuplicateKeyException> é acionada quando uma chave já existente estiver presente. Os objetos restantes não estão conectados.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Aplicativos de n camadas e remoto com LINQ to SQL](n-tier-and-remote-applications-with-linq-to-sql.md)
 - [Informações gerais](background-information.md)

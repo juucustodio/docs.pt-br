@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Method-Based exemplos de sintaxe de consulta: ordenação (LINQ to DataSet)'
 title: 'Exemplos de sintaxe da consulta com base em método: Ordenação (LINQ to DataSet)'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8f9ce4fd-e84f-48c0-bb64-89e217236d3e
-ms.openlocfilehash: 635b7f6e498e27ef8ca2e133df639f1010184a93
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d655ff52fe30a9af15245a4c9989062107bb6842
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197866"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672654"
 ---
 # <a name="method-based-query-syntax-examples-ordering-linq-to-dataset"></a>Exemplos de sintaxe da consulta com base em método: Ordenação (LINQ to DataSet)
 
@@ -54,7 +55,7 @@ Os exemplos neste tópico demonstram como usar <xref:System.Linq.Enumerable.Orde
  [!code-csharp[DP LINQ to DataSet Examples#ThenByDescendingComparer_MQ](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#thenbydescendingcomparer_mq)]
  [!code-vb[DP LINQ to DataSet Examples#ThenByDescendingComparer_MQ](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#thenbydescendingcomparer_mq)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Carregando dados em um DataSet](loading-data-into-a-dataset.md)
 - [LINQ para exemplos de DataSet](linq-to-dataset-examples.md)

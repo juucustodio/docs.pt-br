@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: SqlClient para o Entity Framework'
 title: SqlClient para Entity Framework
 ms.date: 03/30/2017
 ms.assetid: 9a5d6d39-d955-43a5-a5c2-931c239398f1
-ms.openlocfilehash: 7f3a1d4bbd18977bbb1dc9ce65140428ea6fe2f8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: eba5602c13f66d1ee4404bbc27035304e34c1cd0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673122"
 ---
 # <a name="sqlclient-for-the-entity-framework"></a>SqlClient para Entity Framework
 
@@ -54,7 +55,7 @@ Esta seção descreve o provedor de dados. NET Framework para SQL Server (SqlCli
   
  [Problemas conhecidos em SqlClient para Entity Framework](known-issues-in-sqlclient-for-entity-framework.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Linguagem Entity SQL](./language-reference/entity-sql-language.md)
 - [Referência de linguagem](./language-reference/index.md)

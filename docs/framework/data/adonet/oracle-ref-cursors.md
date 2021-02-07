@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: CURSOres de referência do Oracle'
 title: REF CURSORs do Oracle
 ms.date: 03/30/2017
 ms.assetid: c6b25b8b-0bdd-41b2-9c7c-661f070c2247
-ms.openlocfilehash: cbf330ba381a825c2d16038c01d7bdc52bc8f482
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0a9c5e95a9f0d2da74fd6a3db19f15699a3e2787
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180875"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672446"
 ---
 # <a name="oracle-ref-cursors"></a>REF CURSORs do Oracle
 
@@ -44,7 +45,7 @@ O .NET Framework Provedor de Dados para Oracle dá suporte ao tipo de dados **cu
  [Preenchendo um DataSet usando um ou mais REF CURSORs](filling-a-dataset-using-one-or-more-ref-cursors.md)  
  Demonstra como executar um procedimento armazenado PL/SQL, que retorna dois parâmetros de REF CURSOR e preenche um <xref:System.Data.DataSet> com as linhas retornadas.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Oracle e ADO.NET](oracle-and-adonet.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

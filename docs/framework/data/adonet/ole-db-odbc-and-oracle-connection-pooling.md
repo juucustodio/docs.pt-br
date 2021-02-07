@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: OLE DB, ODBC e pool de conexões Oracle'
 title: OLE DB, ODBC e pool de conexões Oracle
 ms.date: 03/30/2017
 ms.assetid: 2bd83b1e-3ea9-43c4-bade-d9cdb9bbbb04
-ms.openlocfilehash: 0ff3cbd89482645ff8d52e3144f1a82fd05d8013
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: da30d70f88c8d109d50716347e7deaacdc65991a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150681"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672641"
 ---
 # <a name="ole-db-odbc-and-oracle-connection-pooling"></a>Pool de conexões OLE DB, ODBC e Oracle
 
@@ -25,7 +26,7 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
 
  Para obter mais informações sobre OLE DB pooling de sessão ou de recursos, além de como desabilitar o pooling substituindo os padrões de serviço do provedor de OLE DB, consulte o [Guia do programador do OLE DB](/previous-versions/windows/desktop/ms713643(v=vs.85)).
 
-## <a name="odbc"></a>ODBCODBC
+## <a name="odbc"></a>ODBC
 
  O pooling de conexões para o provedor de dados .NET Framework para ODBC é gerenciado pelo ODBC Driver Manager que é usado para a conexão, e não é afetado pelo provedor de dados .NET Framework para ODBC.
 
@@ -55,7 +56,7 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
 
  Se uma conexão com um servidor desapareceu, ela pode ser removida do pool se o pooler de conexões não tiver detectado a conexão interrompida e a marcado como inválida. Quando isso ocorrer, uma exceção será gerada. No entanto, você ainda deverá fechar a conexão para liberá-la de volta para o pool.
 
- Não chame `Close` nem `Dispose` em um objeto `Connection`, em um `DataReader` nem em nenhum outro objeto gerenciado no método `Finalize` de sua classe. Em um finalizador, libere somente recursos não gerenciados que sua classe possui diretamente. Se a classe não tiver nenhum recurso não gerenciado, não inclua um método `Finalize` em sua definição de classe. Para obter mais informações, consulte [coleta de lixo](../../../standard/garbage-collection/index.md).
+ Não chame `Close` nem `Dispose` em um objeto `Connection`, em um `DataReader` nem em nenhum outro objeto gerenciado no método `Finalize` de sua classe. Em um finalizador, libere somente recursos não gerenciados que sua classe possui diretamente. Se a classe não tiver nenhum recurso não gerenciado, não inclua um método `Finalize` em sua definição de classe. Para obter mais informações, confira [Coleta de lixo](../../../standard/garbage-collection/index.md).
 
 ### <a name="transaction-support"></a>Suporte a transações
 

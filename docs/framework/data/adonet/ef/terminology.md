@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: terminologia do Entity Framework'
 title: Terminologia do Entity Framework
 ms.date: 03/30/2017
 ms.assetid: fa2a1bd1-6118-487b-8673-eebc66b92945
-ms.openlocfilehash: dbe03de44b8ae2a857b923cd9dc74c42ea18f4e8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b2cdaa4fb71403915ae5df57f785efde8cf54d24
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200934"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673096"
 ---
 # <a name="entity-framework-terminology"></a>Terminologia do Entity Framework
 
@@ -43,7 +44,7 @@ Este tópico define os termos frequentemente referenciados na documentação Ent
 |associação de chave estrangeira|Uma associação entre entidades que é gerenciada por meio de propriedades de chave estrangeira.|  
 |relação de identificação|Uma relação onde a chave primária da entidade principal faz parte da chave primária da entidade dependente. Neste tipo de relação, a entidade dependente não pode existir sem a entidade principal.|  
 |associação independente|Uma associação entre entidades que é representada e rastreada por um objeto independente.|  
-|chave|O atributo de um tipo de entidade que especifica qual propriedade ou conjunto de propriedades será usado para identificar instâncias exclusivas do tipo de entidade. Representado na camada de objeto pela classe <xref:System.Data.EntityKey>.<br /><br /> Para obter mais informações, consulte chave [do elemento (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#key-element-csdl) e [chave de entidade](../entity-key.md).|  
+|key|O atributo de um tipo de entidade que especifica qual propriedade ou conjunto de propriedades será usado para identificar instâncias exclusivas do tipo de entidade. Representado na camada de objeto pela classe <xref:System.Data.EntityKey>.<br /><br /> Para obter mais informações, consulte chave [do elemento (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#key-element-csdl) e [chave de entidade](../entity-key.md).|  
 |carregamento preguiçoso|Quando os objetos são retornados por uma consulta, os objetos relacionados não são carregados ao mesmo tempo. Em vez disso, eles são carregados automaticamente quando a propriedade de navegação é acessada.|  
 |LINQ to Entities|Uma sintaxe de consulta que define um conjunto de operadores de consulta que permitem que as operações de passagem, filtro e projeção sejam expressas de maneira direta e declarativa no Visual C# e Visual Basic.<br /><br /> Para obter mais informações, consulte [LINQ to Entities](./language-reference/linq-to-entities.md).|  
 |mapping|Uma especificação das correspondências entre itens de um modelo conceitual e itens de um modelo de armazenamento.<br /><br /> Para obter mais informações, consulte [especificação do MSL](/ef/ef6/modeling/designer/advanced/edmx/msl-spec).|  
@@ -76,7 +77,7 @@ Este tópico define os termos frequentemente referenciados na documentação Ent
 |tabela por hierarquia|Um método de modelagem de uma hierarquia de tipo em um banco de dados que inclui os atributos de todos os tipos da hierarquia em uma tabela.|  
 |tabela por tipo|Um método de modelagem de uma hierarquia de tipo em um banco de dados que usa várias tabelas com relações um-para-um para modelar os vários tipos.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [ADO.NET Entity Framework](index.md)
 - [Visão geral do Entity Framework](overview.md)

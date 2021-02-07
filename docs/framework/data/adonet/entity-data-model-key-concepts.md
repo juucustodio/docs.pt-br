@@ -1,17 +1,18 @@
 ---
+description: 'Saiba mais sobre: Modelo de Dados de Entidade conceitos principais'
 title: Conceitos chave do Modelo de Dados de Entidade
 ms.date: 03/30/2017
 ms.assetid: c635a16d-6674-45aa-9344-dcb7df992bab
-ms.openlocfilehash: d020de65ff64d93c0ea925b71e5f1546eb4402aa
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4b97a39a5989689662db7be92b259b9a08d84cc7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191756"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672786"
 ---
 # <a name="entity-data-model-key-concepts"></a>Conceitos chave do Modelo de Dados de Entidade
 
-O Modelo de Dados de Entidade (EDM) usa três conceitos principais para descrever a estrutura de dados: *tipo de entidade*, *tipo de associação*e *Propriedade*. Esses são os conceitos mais importantes para descrever a estrutura dos dados em qualquer implementação do EDM.  
+O Modelo de Dados de Entidade (EDM) usa três conceitos principais para descrever a estrutura de dados: *tipo de entidade*, *tipo de associação* e *Propriedade*. Esses são os conceitos mais importantes para descrever a estrutura dos dados em qualquer implementação do EDM.  
   
 ## <a name="entity-type"></a>Tipo de entidade  
 
@@ -43,6 +44,6 @@ O Modelo de Dados de Entidade (EDM) usa três conceitos principais para descreve
   
  [!code-xml[EDM_Example_Model#EDMExampleCSDL](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#edmexamplecsdl)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de Dados de Entidade](entity-data-model.md)

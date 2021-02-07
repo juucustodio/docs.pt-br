@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: OracleTypes'
 title: OracleTypes
 ms.date: 03/30/2017
 ms.assetid: 18143304-d5c7-4c95-9995-678088d0c142
-ms.openlocfilehash: 37089649c66c964f8a912c5a227a5281f6c0dfb7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5444fd8e9eec6172394bdca68ada38cf02e7c2c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189143"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672394"
 ---
 # <a name="oracletypes"></a>OracleTypes
 
@@ -118,7 +119,7 @@ public void ReadOracleTypesExample(string connectionString)
 }  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Oracle e ADO.NET](oracle-and-adonet.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

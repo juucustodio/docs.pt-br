@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: OLE DB coleções de esquema'
 title: Coleções de esquema de OLE DB
 ms.date: 03/30/2017
 ms.assetid: 6380c36b-658e-4d67-91e8-7131ef4a7c2c
-ms.openlocfilehash: 90899a123b3dafcd47a50ef8f6eb003938b22a03
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d4d4bae5387575bdaeaf013ed690e95aa3259068
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91186933"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672615"
 ---
 # <a name="ole-db-schema-collections"></a>Coleções de esquema de OLE DB
 
@@ -23,7 +24,7 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
   
 - Procedimentos  
   
-- Procedimentoparameters  
+- ProcedureParameters  
   
 - Catálogo  
   
@@ -54,10 +55,10 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |COLUMN_GUID|Guid|  
 |COLUMN_PROPID|Int64|  
 |ORDINAL_POSITION|Int64|  
-|COLUMN_HASDEFAULT|Booliano|  
+|COLUMN_HASDEFAULT|Boolean|  
 |COLUMN_DEFAULT|String|  
 |COLUMN_FLAGS|Int64|  
-|IS_NULLABLE|Booliano|  
+|IS_NULLABLE|Boolean|  
 |DATA_TYPE|Int32|  
 |TYPE_GUID|Guid|  
 |CHARACTER_MAXIMUM_LENGTH|Int64|  
@@ -79,7 +80,7 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |COLUMN_COMPFLAGS|Int32|  
 |COLUMN_SORTID|Int32|  
 |COLUMN_TDSCOLLATION|Byte[]|  
-|IS_COMPUTED|Booliano|  
+|IS_COMPUTED|Boolean|  
   
 ### <a name="procedures"></a>Procedimentos  
   
@@ -94,7 +95,7 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |DATE_CREATED|Datetime|  
 |DATE_MODIFIED|Datetime|  
   
-### <a name="procedureparameters"></a>Procedimentoparameters  
+### <a name="procedureparameters"></a>ProcedureParameters  
   
 |ColumnName|Tipo de dados|  
 |----------------|--------------|  
@@ -104,9 +105,9 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |PARAMETER_NAME|String|  
 |ORDINAL_POSITION|Int32|  
 |PARAMETER_TYPE|Int32|  
-|PARAMETER_HASDEFAULT|Booliano|  
+|PARAMETER_HASDEFAULT|Boolean|  
 |PARAMETER_DEFAULT|String|  
-|IS_NULLABLE|Booliano|  
+|IS_NULLABLE|Boolean|  
 |DATA_TYPE|Int32|  
 |CHARACTER_MAXIMUM_LENGTH|Int64|  
 |CHARACTER_OCTET_LENGTH|Int64|  
@@ -133,15 +134,15 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |INDEX_CATALOG|String|  
 |INDEX_SCHEMA|String|  
 |INDEX_NAME|String|  
-|PRIMARY_KEY|Booliano|  
-|UNIQUE|Booliano|  
-|CLUSTERED|Booliano|  
+|PRIMARY_KEY|Boolean|  
+|UNIQUE|Boolean|  
+|CLUSTERED|Boolean|  
 |TYPE|Int32|  
 |FILL_FACTOR|Int32|  
 |INITIAL_SIZE|Int32|  
 |NULLS|Int32|  
-|SORT_BOOKMARKS|Booliano|  
-|AUTO_UPDATE|Booliano|  
+|SORT_BOOKMARKS|Boolean|  
+|AUTO_UPDATE|Boolean|  
 |NULL_COLLATION|Int32|  
 |ORDINAL_POSITION|Int64|  
 |COLUMN_NAME|String|  
@@ -151,7 +152,7 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |CARDINALITY|Decimal|  
 |PAGES|Int32|  
 |FILTER_CONDITION|String|  
-|INTEGRADA|Booliano|  
+|INTEGRADA|Boolean|  
   
 ## <a name="microsoft-oracle-ole-db-provider"></a>Provedor de OLE DB Microsoft Oracle  
 
@@ -165,7 +166,7 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
   
 - ProcedureColumns  
   
-- Procedimentoparameters  
+- ProcedureParameters  
   
 - Exibições  
   
@@ -196,10 +197,10 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |COLUMN_GUID|Guid|  
 |COLUMN_PROPID|Int64|  
 |ORDINAL_POSITION|Int64|  
-|COLUMN_HASDEFAULT|Booliano|  
+|COLUMN_HASDEFAULT|Boolean|  
 |COLUMN_DEFAULT|String|  
 |COLUMN_FLAGS|Int64|  
-|IS_NULLABLE|Booliano|  
+|IS_NULLABLE|Boolean|  
 |DATA_TYPE|Int32|  
 |TYPE_GUID|Guid|  
 |CHARACTER_MAXIMUM_LENGTH|Int64|  
@@ -243,7 +244,7 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |COLUMN_PROPID|Int64|  
 |ROWSET_NUMBER|Int64|  
 |ORDINAL_POSITION|Int64|  
-|IS_NULLABLE|Booliano|  
+|IS_NULLABLE|Boolean|  
 |DATA_TYPE|Int32|  
 |TYPE_GUID|Guid|  
 |CHARACTER_MAXIMUM_LENGTH|Int64|  
@@ -261,8 +262,8 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |TABLE_SCHEMA|String|  
 |TABLE_NAME|String|  
 |VIEW_DEFINITION|String|  
-|CHECK_OPTION|Booliano|  
-|IS_UPDATABLE|Booliano|  
+|CHECK_OPTION|Boolean|  
+|IS_UPDATABLE|Boolean|  
 |DESCRIPTION|String|  
 |DATE_CREATED|Datetime|  
 |DATE_MODIFIED|Datetime|  
@@ -277,15 +278,15 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |INDEX_CATALOG|String|  
 |INDEX_SCHEMA|String|  
 |INDEX_NAME|String|  
-|PRIMARY_KEY|Booliano|  
-|UNIQUE|Booliano|  
-|CLUSTERED|Booliano|  
+|PRIMARY_KEY|Boolean|  
+|UNIQUE|Boolean|  
+|CLUSTERED|Boolean|  
 |TYPE|Int32|  
 |FILL_FACTOR|Int32|  
 |INITIAL_SIZE|Int32|  
 |NULLS|Int32|  
-|SORT_BOOKMARKS|Booliano|  
-|AUTO_UPDATE|Booliano|  
+|SORT_BOOKMARKS|Boolean|  
+|AUTO_UPDATE|Boolean|  
 |NULL_COLLATION|Int32|  
 |ORDINAL_POSITION|Int64|  
 |COLUMN_NAME|String|  
@@ -295,7 +296,7 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |CARDINALITY|Decimal|  
 |PAGES|Int32|  
 |FILTER_CONDITION|String|  
-|INTEGRADA|Booliano|  
+|INTEGRADA|Boolean|  
   
 ## <a name="microsoft-jet-ole-db-provider"></a>Provedor de OLE DB do Microsoft Jet  
 
@@ -336,10 +337,10 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |COLUMN_GUID|Guid|  
 |COLUMN_PROPID|Int64|  
 |ORDINAL_POSITION|Int64|  
-|COLUMN_HASDEFAULT|Booliano|  
+|COLUMN_HASDEFAULT|Boolean|  
 |COLUMN_DEFAULT|String|  
 |COLUMN_FLAGS|Int64|  
-|IS_NULLABLE|Booliano|  
+|IS_NULLABLE|Boolean|  
 |DATA_TYPE|Int32|  
 |TYPE_GUID|Guid|  
 |CHARACTER_MAXIMUM_LENGTH|Int64|  
@@ -379,8 +380,8 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |TABLE_SCHEMA|String|  
 |TABLE_NAME|String|  
 |VIEW_DEFINITION|String|  
-|CHECK_OPTION|Booliano|  
-|IS_UPDATABLE|Booliano|  
+|CHECK_OPTION|Boolean|  
+|IS_UPDATABLE|Boolean|  
 |DESCRIPTION|String|  
 |DATE_CREATED|Datetime|  
 |DATE_MODIFIED|Datetime|  
@@ -395,15 +396,15 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |INDEX_CATALOG|String|  
 |INDEX_SCHEMA|String|  
 |INDEX_NAME|String|  
-|PRIMARY_KEY|Booliano|  
-|UNIQUE|Booliano|  
-|CLUSTERED|Booliano|  
+|PRIMARY_KEY|Boolean|  
+|UNIQUE|Boolean|  
+|CLUSTERED|Boolean|  
 |TYPE|Int32|  
 |FILL_FACTOR|Int32|  
 |INITIAL_SIZE|Int32|  
 |NULLS|Int32|  
-|SORT_BOOKMARKS|Booliano|  
-|AUTO_UPDATE|Booliano|  
+|SORT_BOOKMARKS|Boolean|  
+|AUTO_UPDATE|Boolean|  
 |NULL_COLLATION|Int32|  
 |ORDINAL_POSITION|Int64|  
 |COLUMN_NAME|String|  
@@ -413,8 +414,8 @@ Esta seção discute o suporte à coleta de esquemas para os provedores de OLE D
 |CARDINALITY|Decimal|  
 |PAGES|Int32|  
 |FILTER_CONDITION|String|  
-|INTEGRADA|Booliano|  
+|INTEGRADA|Boolean|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do ADO.NET](ado-net-overview.md)

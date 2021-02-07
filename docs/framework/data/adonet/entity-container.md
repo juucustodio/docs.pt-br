@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: contêiner de entidade'
 title: contêiner da entidade
 ms.date: 03/30/2017
 ms.assetid: 16e80405-2c75-42fc-b0e4-b1df53b1c584
-ms.openlocfilehash: 95fb59c86f951e75f0988f45219fd07cbb003c01
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1e90190e98ccf6bc6d48193adbe90a9ff31c4711
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200817"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672927"
 ---
 # <a name="entity-container"></a>contêiner da entidade
 
@@ -31,7 +32,7 @@ Um *contêiner de entidade* é um agrupamento lógico [de conjuntos de entidades
   
  [!code-xml[EDM_Example_Model#EntityContainerExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entitycontainerexample)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos chave do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
 - [Modelo de Dados de Entidade](entity-data-model.md)

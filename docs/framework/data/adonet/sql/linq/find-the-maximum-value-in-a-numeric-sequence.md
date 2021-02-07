@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: localizar o valor máximo em uma sequência numérica'
 title: Localizar o valor máximo em uma sequência numérica
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 70d7c058-0280-4815-a008-6f290093591a
-ms.openlocfilehash: b70b94338ca7bdbb600bac697d3a36ff117d757e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ab311f29d776c1ef4647967d391c7e4122ae7d38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155998"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672095"
 ---
 # <a name="find-the-maximum-value-in-a-numeric-sequence"></a>Localizar o valor máximo em uma sequência numérica
 
@@ -75,7 +76,7 @@ Use o operador de <xref:System.Linq.Enumerable.Max%2A> para localizar o valor ma
   
  `Carnarvon Tigers`  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Consultas de agregação](aggregate-queries.md)
 - [Baixar bancos de dados de amostra](downloading-sample-databases.md)

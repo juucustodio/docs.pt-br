@@ -1,22 +1,23 @@
 ---
+description: 'Saiba mais sobre: paginação por meio de um resultado de consulta'
 title: Paginação por um resultado de consulta
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fa360c46-e5f8-411e-a711-46997771133d
-ms.openlocfilehash: 065b509d8385ee37b2a86587f520b5fd3207ceff
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ead2c74e19cfb81c83c7bf1e73b0c0d7a0a7cc67
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91186946"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672355"
 ---
 # <a name="paging-through-a-query-result"></a>Paginação por um resultado de consulta
 
-A paginação por meio de um resultado de consulta é o processo de retornar os resultados de uma consulta em subconjuntos menores de dados ou páginas. Essa é uma prática comum para exibir os resultados para um usuário em partes pequenas e fáceis de gerenciar.  
+A paginação por meio de um resultado de consulta é o processo de retornar os resultados de uma consulta em subconjuntos menores de dados ou páginas. Essa é uma prática comum a fim de exibir os resultados para um usuário em partes pequenas e fáceis de gerenciar.  
   
- O **DataAdapter** fornece um recurso para retornar apenas uma página de dados, por meio de sobrecargas do método **Fill** . No entanto, essa pode não ser a melhor opção para paginar por meio de resultados de consulta grandes porque, embora o **DataAdapter** preencha o destino <xref:System.Data.DataTable> ou <xref:System.Data.DataSet> com apenas os registros solicitados, os recursos para retornar a consulta inteira ainda serão usados. Para retornar uma página de dados de uma fonte de dados sem usar os recursos para retornar a consulta inteira, especifique critérios adicionais para a consulta que reduzem as linhas retornadas apenas para as necessárias.  
+ O **DataAdapter** fornece um recurso para retornar apenas uma página de dados, por meio de sobrecargas do método **Fill** . No entanto, essa pode não ser a melhor opção para paginar grandes resultados de consulta porque, embora o **DataAdapter** preencha o <xref:System.Data.DataTable> de destino ou o <xref:System.Data.DataSet> apenas com os registros solicitados, ainda serão usados os recursos para retornar a consulta inteira. Para retornar uma página de dados de uma fonte de dados sem usar os recursos para retornar a consulta inteira, especifique critérios adicionais na consulta que reduzam as linhas retornadas para apenas aquelas necessárias.  
   
  Para usar o método **Fill** para retornar uma página de dados, especifique um parâmetro **startRecord** , para o primeiro registro na página de dados e um parâmetro **MaxRecords** , para o número de registros na página de dados.  
   
@@ -47,7 +48,7 @@ DataSet dataSet = new DataSet();
 adapter.Fill(dataSet, currentIndex, pageSize, "Orders");  
 ```  
   
- No exemplo anterior, o **conjunto** de recursos é preenchido apenas com cinco registros, mas a tabela **Orders** inteira é retornada. Para preencher o **conjunto** de um com os mesmos cinco registros, mas retornar apenas cinco registros, use as cláusulas Top e WHERE na sua instrução SQL, como no exemplo de código a seguir.  
+ No exemplo anterior, o **DataSet** é preenchido apenas com cinco registros, mas a tabela **Orders** inteira é retornada. Para preencher o **conjunto** de um com os mesmos cinco registros, mas retornar apenas cinco registros, use as cláusulas Top e WHERE na sua instrução SQL, como no exemplo de código a seguir.  
   
 ```vb  
 Dim pageSize As Integer = 5  
@@ -84,7 +85,7 @@ string lastRecord =
   dataSet.Tables["Orders"].Rows[pageSize - 1]["OrderID"].ToString();  
 ```  
   
- Para retornar a próxima página de registros usando a sobrecarga do método **Fill** que usa os parâmetros **startRecord** e **MaxRecords** , aumente o índice do registro atual pelo tamanho da página e preencha a tabela. Lembre-se de que o servidor de banco de dados retorna todos os resultados da consulta, mesmo que apenas uma página de registros seja adicionada ao **conjunto**. No exemplo de código a seguir, as linhas da tabela são limpas antes de serem preenchidas com a próxima página de dados. Talvez você queira preservar um determinado número de linhas retornadas em um cache local para reduzir as viagens para o servidor de banco de dados.  
+ Para retornar a próxima página de registros usando a sobrecarga do método **Fill** que usa os parâmetros **startRecord** e **MaxRecords** , aumente o índice do registro atual pelo tamanho da página e preencha a tabela. Lembre-se de que o servidor de banco de dados retorna todos os resultados da consulta, muito embora apenas uma página de registros seja adicionada ao **DataSet**. No exemplo de código a seguir, as linhas da tabela são limpas antes de serem preenchidas com a próxima página de dados. Talvez você queira preservar um determinado número de linhas retornadas em um cache local a fim de reduzir os acessos ao servidor de banco de dados.  
   
 ```vb  
 currentIndex = currentIndex + pageSize  
@@ -102,7 +103,7 @@ dataSet.Tables["Orders"].Rows.Clear();
 adapter.Fill(dataSet, currentIndex, pageSize, "Orders");  
 ```  
   
- Para retornar a próxima página de registros sem que o servidor de banco de dados retorne a consulta inteira, especifique critérios restritivos para a instrução SELECT. Como o exemplo anterior preservava o último registro retornado, você pode usá-lo na cláusula WHERE para especificar um ponto de partida para a consulta, conforme mostrado no exemplo de código a seguir.  
+ Para retornar a próxima página de registros sem que o servidor de banco de dados precise retornar a consulta inteira, especifique critérios restritivos na instrução SELECT. Como o exemplo anterior preservava o último registro retornado, você pode usá-lo na cláusula WHERE a fim de especificar um ponto de partida para a consulta, conforme mostrado no exemplo de código a seguir.  
   
 ```vb  
 orderSQL = "SELECT TOP " & pageSize & _  
@@ -124,7 +125,7 @@ dataSet.Tables["Orders"].Rows.Clear();
 adapter.Fill(dataSet, "Orders");  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [DataAdapters e DataReaders](dataadapters-and-datareaders.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

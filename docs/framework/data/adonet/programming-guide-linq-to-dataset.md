@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: guia de programação (LINQ to DataSet)'
 title: Guia de programação (LINQ to DataSet)
 ms.date: 03/30/2017
 ms.assetid: 977aedd7-0084-46a0-b56f-345787a55da1
-ms.openlocfilehash: 720d9a90583a0dcf3453689a362f6043157a326c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b7f14d902b7a2df9d6add151b8783aa6fc0dcffd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161553"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672316"
 ---
 # <a name="programming-guide-linq-to-dataset"></a>Guia de programação (LINQ to DataSet)
 
@@ -55,7 +56,7 @@ Esta seção fornece informações conceituais e exemplos de programação com L
   
  <xref:System.Data.DataView>  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ e o ADO.NET](linq-and-ado-net.md)
 - [LINQ (Consulta Integrada à Linguagem)](../../../csharp/programming-guide/concepts/linq/index.md)

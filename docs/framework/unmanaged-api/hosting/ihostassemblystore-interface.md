@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostAssemblyStore'
 title: Interface IHostAssemblyStore
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cccb650f-abe0-41e2-9fd1-b383788eb1f6
 topic_type:
 - apiref
-ms.openlocfilehash: 4b2fed963d2d0ebec54e5f7a4d95cba26c1bac1f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a05fee7916911687143d5953e26187162a2fa544
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680931"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709008"
 ---
 # <a name="ihostassemblystore-interface"></a>Interface IHostAssemblyStore
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem que um host carregue assemblies e módulos indepen
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método ProvideAssembly](ihostassemblystore-provideassembly-method.md)|Obtém uma referência a um assembly que não é referenciado pelo [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) retornado de uma chamada para [IHostAssemblyManager:: GetNonHostStoreAssemblies](ihostassemblymanager-getnonhoststoreassemblies-method.md).|  
 |[Método ProvideModule](ihostassemblystore-providemodule-method.md)|Resolve um módulo dentro de um assembly ou um arquivo de recurso vinculado (não incorporado).|  
@@ -54,7 +55,7 @@ Fornece métodos que permitem que um host carregue assemblies e módulos indepen
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Interface IHostAssemblyManager](ihostassemblymanager-interface.md)

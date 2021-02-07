@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostGCManager:: SuspensionStarting'
 title: Método IHostGCManager::SuspensionStarting
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c381f524-94cf-4fa2-9298-50f847a03431
 topic_type:
 - apiref
-ms.openlocfilehash: 7e610676e86dde3ab0bdea2ce2314f02b3da9976
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3a57d47fea735ab004fd0db293bed1ba4d3314e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729493"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708624"
 ---
 # <a name="ihostgcmanagersuspensionstarting-method"></a>Método IHostGCManager::SuspensionStarting
 
@@ -60,7 +61,7 @@ HRESULT SuspensionStarting ();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

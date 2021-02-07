@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IGCHost'
 title: Interface IGCHost
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9ad70ffd-6963-4ab2-8c84-3d86c3fb8deb
 topic_type:
 - apiref
-ms.openlocfilehash: 8965797321e68443c01d05f97d147f2320a76739
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 73b1125eb66a38373da85769ab80ddcaf0b955c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724286"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709588"
 ---
 # <a name="igchost-interface"></a>Interface IGCHost
 
@@ -33,7 +34,7 @@ Fornece métodos para obter informações sobre o sistema de coleta de lixo e pa
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Collect](igchost-collect-method.md)|Força a ocorrência de uma coleção para a geração determinada, independentemente do estado da coleta de lixo atual.|  
 |[Método GetStats](igchost-getstats-method.md)|Obtém as estatísticas do estado atual do sistema de coleta de lixo.|  
@@ -51,7 +52,7 @@ Fornece métodos para obter informações sobre o sistema de coleta de lixo e pa
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)
 - [Coclass CorRuntimeHost](corruntimehost-coclass.md)

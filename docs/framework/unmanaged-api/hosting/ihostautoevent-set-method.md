@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Método IHostAutoEvent:: Set'
 title: Método IHostAutoEvent::Set
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 46becf3e-bc0e-4338-85c0-9ab0df76a1d0
 topic_type:
 - apiref
-ms.openlocfilehash: facfbb85645f444b010cb1fe1c34bbe94011ac50
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e4ba63b5250a383431e410cd6e552f8344fedf5d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680818"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708903"
 ---
 # <a name="ihostautoeventset-method"></a>Método IHostAutoEvent::Set
 
@@ -53,7 +54,7 @@ HRESULT Set ();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostAutoEvent](ihostautoevent-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostIoCompletionManager:: GetMinThreads'
 title: Método IHostIoCompletionManager::GetMinThreads
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d7a7f733-677d-481c-b3d5-444fcc502b8e
 topic_type:
 - apiref
-ms.openlocfilehash: d321ce08edf4780fc5f26ac627849b9129c2f283
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 73b8d8cbff3777fe6aa956f282d3da5d4ac1b5c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673205"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708483"
 ---
 # <a name="ihostiocompletionmanagergetminthreads-method"></a>Método IHostIoCompletionManager::GetMinThreads
 
@@ -39,7 +40,7 @@ HRESULT GetMinThreads (
  `pdwMinIOCompletionThreads`  
  fora Um ponteiro para o número mínimo de threads que o host fornece para processar solicitações de e/s.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -65,7 +66,7 @@ HRESULT GetMinThreads (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
 - [Interface IHostIoCompletionManager](ihostiocompletionmanager-interface.md)

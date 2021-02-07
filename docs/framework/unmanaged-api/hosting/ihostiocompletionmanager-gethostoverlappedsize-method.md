@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostIoCompletionManager:: GetHostOverlappedSize'
 title: Método IHostIoCompletionManager::GetHostOverlappedSize
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2902578b-d5e2-4f8d-a103-0c7b6dceda9e
 topic_type:
 - apiref
-ms.openlocfilehash: 612a5f08982b1db5c940a7cca93166480b21e612
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2a2ebe1da82c5702269b634eadfe98b72739e3df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724852"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708536"
 ---
 # <a name="ihostiocompletionmanagergethostoverlappedsize-method"></a>Método IHostIoCompletionManager::GetHostOverlappedSize
 
@@ -39,7 +40,7 @@ HRESULT GetHostOverlappedSize (
  `pcbSize`  
  fora Um ponteiro para o número de bytes que o Common Language Runtime (CLR) deve alocar além do tamanho do objeto do Win32 `OVERLAPPED` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -74,7 +75,7 @@ HRESULT GetHostOverlappedSize (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.NativeOverlapped>
 - [Interface ICLRIoCompletionManager](iclriocompletionmanager-interface.md)

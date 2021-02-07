@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostAssemblyManager:: GetNonHostStoreAssemblies'
 title: Método IHostAssemblyManager::GetNonHostStoreAssemblies
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d2250b38-c76a-40ce-80c8-ba45149886e8
 topic_type:
 - apiref
-ms.openlocfilehash: a34b907514376927d8a1aa66b136916108b704d8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ef551db45428b2381dfeae8f722257241a4deaf0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681139"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709042"
 ---
 # <a name="ihostassemblymanagergetnonhoststoreassemblies-method"></a>Método IHostAssemblyManager::GetNonHostStoreAssemblies
 
@@ -39,7 +40,7 @@ HRESULT GetNonHostStoreAssemblies (
  `ppReferenceList`  
  fora Um ponteiro para o endereço de um `ICLRAssemblyReferenceList` que contém uma lista de referências a assemblies que o host espera que o CLR carregue.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -78,7 +79,7 @@ HRESULT GetNonHostStoreAssemblies (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Interface IHostAssemblyManager](ihostassemblymanager-interface.md)

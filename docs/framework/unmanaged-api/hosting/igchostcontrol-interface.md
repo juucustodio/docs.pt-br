@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IGCHostControl'
 title: Interface IGCHostControl
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2eb56ea9-8b7e-452b-a209-3d2be719fca6
 topic_type:
 - apiref
-ms.openlocfilehash: ca03883f2d33eda1c867933256141febaa4269ac
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8e8175c6b03e91ce2de6e4aabe71c16630eb3476
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687711"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709354"
 ---
 # <a name="igchostcontrol-interface"></a>Interface IGCHostControl
 
@@ -27,7 +28,7 @@ Fornece um método que permite que o coletor de lixo solicite o host para altera
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método RequestVirtualMemLimit](igchostcontrol-requestvirtualmemlimit-method.md)|Solicita que o host altere os limites de memória virtual.|  
   
@@ -41,6 +42,6 @@ Fornece um método que permite que o coletor de lixo solicite o host para altera
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)

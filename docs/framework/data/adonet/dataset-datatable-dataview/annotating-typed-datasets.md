@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: anotando conjuntos de linhas tipados'
 title: Anotando DataSets tipados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f82aaa62-321e-4c8a-b51b-9d1114700170
-ms.openlocfilehash: 79d3913827d5df6f0ac4e77bfdb8f37b553a86d2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6f5838e94d88fd6c9b3a1991d4c8023d5892b784
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739697"
 ---
 # <a name="annotating-typed-datasets"></a>Anotando DataSets tipados
 
@@ -44,7 +45,7 @@ As anotações permitem que você modifique os nomes dos elementos em seu <xref:
   
  A tabela a seguir mostra as anotações disponíveis para uso.  
   
-|Anotação|Descrição|  
+|Annotation|Descrição|  
 |----------------|-----------------|  
 |**typedName**|Nome do objeto.|  
 |**typedPlural**|Nome de uma coleção de objetos.|  
@@ -57,13 +58,13 @@ As anotações permitem que você modifique os nomes dos elementos em seu <xref:
 |Valor nullValue|Descrição|  
 |---------------------|-----------------|  
 |*Valor de substituição*|Especifique um valor a ser retornado. O valor retornado deve corresponder ao tipo de elemento. Por exemplo, use `nullValue="0"` para retornar 0 para campos de inteiro nulos.|  
-|**_throw**|Gera uma exceção. Esse é o padrão.|  
+|**_throw**|Gera uma exceção. Este é o padrão.|  
 |**_null**|Retorna uma referência nula ou gera uma exceção se um tipo primitivo for localizado.|  
 |**_empty**|Para cadeias de **caracteres, retorna String. Empty**; caso contrário, retorna um objeto criado a partir de um construtor vazio. Se um tipo primitivo for encontrado, gera uma exceção.|  
   
  A tabela a seguir mostra valores padrão para objetos em um **DataSet** tipado e as anotações disponíveis.  
   
-|Objeto/método/evento|Padrão|Anotação|  
+|Objeto/método/evento|Padrão|Annotation|  
 |---------------------------|-------------|----------------|  
 |**DataTable**|TableNameDataTable|typedPlural|  
 |**DataTable** Maneiras|NewTableNameRow<br /><br /> AddTableNameRow<br /><br /> DeleteTableNameRow|typedName|  
@@ -223,7 +224,7 @@ protected static void OnCustomerChanged(object sender, CustomerDataSet.CustomerC
     }  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Data.DataColumnCollection>
 - <xref:System.Data.DataSet>

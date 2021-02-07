@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: exclusão de DataRow'
 title: Exclusão de DataRow
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c34f531d-4b9b-4071-b2d7-342c402aa586
-ms.openlocfilehash: 2092d7319a398bbdeaef764d677818f78ddf9de9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fff3117256629c2fa0262e2aa163da09174390dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153346"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739567"
 ---
 # <a name="datarow-deletion"></a>Exclusão de DataRow
 
@@ -45,7 +46,7 @@ workRow.Delete();
 > [!NOTE]
 > Se o **RowState** de uma **DataRow** for **adicionado**, o que significa que acabou de ser adicionado à tabela e, em seguida, marcado como **excluído**, ele será removido da tabela.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Data.DataRow>
 - <xref:System.Data.DataRowCollection>

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: ChildViews e relações'
 title: ChildViews e relações
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d475d356-6abb-4701-8fd1-2906fb93dfba
-ms.openlocfilehash: 74b2de7a9ee62ae42a932c94261cf425d6a94808
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f27526ef0ad5bee70b0c67542e2611ff85b156f8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203729"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739710"
 ---
 # <a name="childviews-and-relations"></a>ChildViews e relações
 
@@ -74,7 +75,7 @@ foreach (DataRowView catDRV in catView)
 }  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Data.DataSet>
 - <xref:System.Data.DataView>

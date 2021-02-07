@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como retornar conjuntos de linhas'
 title: 'Como: retornar conjuntos de linhas'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 725718f5-da29-4841-9f53-aafef64ba977
-ms.openlocfilehash: be03107db73ed230a87c2518e7825461afc2bc7b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b799ce82542e6929f42485508b3a2c36cc42ee60
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155738"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723381"
 ---
 # <a name="how-to-return-rowsets"></a>Como: retornar conjuntos de linhas
 
@@ -38,7 +39,7 @@ END
  [!code-csharp[DLinqSprox#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSprox/cs/northwind-sprox.cs#1)]
  [!code-vb[DLinqSprox#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/northwind-sprox.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos armazenados](stored-procedures.md)
 - [Baixar bancos de dados de amostra](downloading-sample-databases.md)

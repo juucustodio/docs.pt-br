@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataTables:: GetColumn'
 title: Método IMetaDataTables::GetColumn
 ms.date: 02/25/2019
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1032055b-cabb-45c5-a50e-7e853201b175
 topic_type:
 - apiref
-ms.openlocfilehash: 270546f0270521e38cfdcae5e4d2137202c13cb1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4c4cec7216f93783b34b594330358d1e6036ed40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711060"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688254"
 ---
 # <a name="imetadatatablesgetcolumn-method"></a>Método IMetaDataTables::GetColumn
 
@@ -82,7 +83,7 @@ A interpretação do valor retornado `pVal` depende do tipo da coluna. O tipo de
   
  **Versões do .NET Framework**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataTables](imetadatatables-interface.md)
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo4:: GetILToNativeMapping2'
 title: Método ICorProfilerInfo4::GetILToNativeMapping2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 756c1c25-08a7-4060-9798-dbeaa2f3bee5
 topic_type:
 - apiref
-ms.openlocfilehash: 37d6b6d5112089df18fb138086db5e138a69629c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f548dbef3444c6e63e51cd5f3db79e567b2630b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697747"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686785"
 ---
 # <a name="icorprofilerinfo4getiltonativemapping2-method"></a>Método ICorProfilerInfo4::GetILToNativeMapping2
 
@@ -78,7 +79,7 @@ HRESULT GetILToNativeMapping(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md)
 - [Interface ICorProfilerInfo4](icorprofilerinfo4-interface.md)

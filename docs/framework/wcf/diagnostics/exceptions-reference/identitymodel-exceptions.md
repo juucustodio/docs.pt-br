@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exceções IdentityModel'
 title: Exceções de IdentityModel
 ms.date: 03/30/2017
 ms.assetid: 4ef34497-8ff5-4621-b773-7731cc721231
-ms.openlocfilehash: 08d81f4eb35d0f4bda3997d6ab4dfd0ec10407e1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 902403d5809bd75a3b370e9b435dbefce2e97d3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275031"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686421"
 ---
 # <a name="identitymodel-exceptions"></a>Exceções de IdentityModel
 

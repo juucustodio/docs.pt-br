@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: práticas recomendadas: controle de versão de contrato de dados'
 title: 'Melhores práticas: Controle de versão de contrato de dados'
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - best practices [WCF], data contract versioning
 - Windows Communication Foundation, data contracts
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
-ms.openlocfilehash: d6a1eef949e30a1a6d9a1c5971d33c788cc548b9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8f12c620b6916c7b513b3491cbbb91c4cfd1fbe5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96277901"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686746"
 ---
 # <a name="best-practices-data-contract-versioning"></a>Melhores práticas: Controle de versão de contrato de dados
 
@@ -94,7 +95,7 @@ Este tópico lista as práticas recomendadas para a criação de contratos de da
   
  Algumas das diretrizes listadas aqui podem ser ignoradas com segurança quando se aplicam circunstâncias especiais. Certifique-se de compreender totalmente os mecanismos de serialização, desserialização e esquema envolvidos antes de deviating das diretrizes.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>
 - <xref:System.Runtime.Serialization.DataContractAttribute>

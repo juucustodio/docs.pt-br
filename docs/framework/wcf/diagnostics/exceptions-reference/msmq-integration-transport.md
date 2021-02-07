@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: transporte de integração do MSMQ'
 title: Transporte de integração do MSMQ
 ms.date: 03/30/2017
 ms.assetid: 2bf9893a-fbd1-41fc-b6de-a41a44279936
-ms.openlocfilehash: 032b6886152fb73c382fed1572e8c184a822b44f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a9d47a3a15778bdeb52d2a9ab38610803448de4f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248741"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686395"
 ---
 # <a name="msmq-integration-transport"></a>Transporte de integração do MSMQ
 

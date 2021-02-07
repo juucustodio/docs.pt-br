@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataTables:: GetString'
 title: Método IMetaDataTables::GetString
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 895c35cf-b95d-4e3b-93b5-cfc1cf9044fc
 topic_type:
 - apiref
-ms.openlocfilehash: 8ecaa003084064be1071a85aa726c38d773ec0b4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2104e30657a152d1b9a2ace743da9b126fb15d60
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672572"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687786"
 ---
 # <a name="imetadatatablesgetstring-method"></a>Método IMetaDataTables::GetString
 
@@ -53,7 +54,7 @@ HRESULT GetString (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataTables](imetadatatables-interface.md)
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)

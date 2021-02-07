@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataTables:: GetTableIndex'
 title: Método IMetaDataTables::GetTableIndex
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c6ec3800-e0d9-4387-afb8-ddc0b818114c
 topic_type:
 - apiref
-ms.openlocfilehash: 52d70a76bdf8380d320edb6e8188443070a36b1b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d42a42a1a19a67fada17bbe1016f7e324cd1c287
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687721"
 ---
 # <a name="imetadatatablesgettableindex-method"></a>Método IMetaDataTables::GetTableIndex
 
@@ -57,7 +58,7 @@ HRESULT GetTableIndex (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataTables](imetadatatables-interface.md)
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)

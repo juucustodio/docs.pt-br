@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ferramentas'
 title: Ferramentas
 ms.date: 03/30/2017
 ms.assetid: 89c907f9-313f-408c-992a-631f1eadf1da
-ms.openlocfilehash: 2f7ef8b7f871dada676eb05713d6f624427d5395
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1400cee5c626f015d5b9a6efcd9c04411f0ba4f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285688"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686122"
 ---
 # <a name="tools"></a>Ferramentas
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: dados do Service Framework'
 title: Dados de estrutura de serviço
 ms.date: 03/30/2017
 ms.assetid: 2a2c8ddc-4e82-4e7f-a79f-97085c469517
-ms.openlocfilehash: 8bb6e9df6a77eda5875981a0bf7783f50671a589
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f2f4645e0a2473e565286a45e6d20e3d1ef7c2f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255774"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686187"
 ---
 # <a name="service-framework-data"></a>Dados de estrutura de serviço
 

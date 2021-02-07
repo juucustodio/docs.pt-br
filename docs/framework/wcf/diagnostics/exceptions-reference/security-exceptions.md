@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exceções de segurança'
 title: Exceções de segurança
 ms.date: 03/30/2017
 ms.assetid: 76d5e5cd-e4f4-404f-9a5a-ec3522494ad8
-ms.openlocfilehash: e96c317862867b9e461eb2d13dce6ede5b30cf13
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: efa3b7e132f3f3fdc8f2cb5b7dc09614ce584fdb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75348239"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686226"
 ---
 # <a name="security-exceptions"></a>Exceções de segurança
 
@@ -27,9 +28,9 @@ Este tópico lista todas as exceções de segurança.
 |BasicTokenCannotBeWrittenWithoutEncryption|O token básico não pode ser gravado sem criptografia.|
 |BindingDoesNotSupportProtectionForRst|A associação especificada para o contrato especificado está configurada com SecureConversation, mas o modo de autenticação não é capaz de fornecer a integridade e a confidencialidade com base em solicitação/resposta necessárias para a negociação.|
 |BindingDoesNotSupportWindowsIdenityForImpersonation|A operação de contrato especificada requer a identidade do Windows para representação automática. Uma identidade do Windows que representa o chamador não é fornecida pela associação especificada para o contrato especificado.|
-|CachedNegotiationStateQuotaReached|O serviço não pode armazenar em cache o estado de negociação, pois a capacidade especificada foi atingida. Repita a solicitação.|
+|CachedNegotiationStateQuotaReached|O serviço não pode armazenar em cache o estado de negociação, pois a capacidade especificada foi atingida. Tente novamente a solicitação.|
 |CacheQuotaReached|Não é possível adicionar o item. O tamanho máximo do cache é especificado.|
-|CannotDetermineSPNBasedOnAddress|O cliente não pode determinar o nome da entidade de serviço com base na identidade no endereço de destino especificado para a finalidade de SspiNegotiation/Kerberos. A identidade do endereço de destino deve ser uma identidade de UPN (como acmedomain\\\alice) ou a identidade de SPN (como host/bobs-Machine).|
+|CannotDetermineSPNBasedOnAddress|O cliente não pode determinar o nome da entidade de serviço com base na identidade no endereço de destino especificado para a finalidade de SspiNegotiation/Kerberos. A identidade do endereço de destino deve ser uma identidade de UPN (como acmedomain \\ \alice) ou a identidade do SPN (como host/bobs-Machine).|
 |CannotFindCert|Não é possível localizar o certificado X. 509 usando os critérios de pesquisa especificados: StoreName, StoreLocation, findType, Localizevalue.|
 |CannotFindCertForTarget|Não é possível localizar o certificado X. 509 usando os critérios de pesquisa especificados: StoreName, StoreLocation, findType, Localizevalue para o destino especificado.|
 |CannotFindCorrelationStateForApplyingSecurity|Não é possível encontrar o estado de correlação para aplicar a segurança a responder no respondente.|

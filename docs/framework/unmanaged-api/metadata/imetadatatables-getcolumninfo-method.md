@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataTables:: GetColumnInfo'
 title: Método IMetaDataTables::GetColumnInfo
 ms.date: 10/10/2019
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 68c160ea-ae7d-4750-985d-a038b2c8e7d9
 topic_type:
 - apiref
-ms.openlocfilehash: 227d9ab67ab3091508232be3018ca520a6b5dcc6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 21980567c5f9b364362f7e3ff02ee3a5e60b01ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711046"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688215"
 ---
 # <a name="imetadatatablesgetcolumninfo-method"></a>Método IMetaDataTables::GetColumnInfo
 
@@ -65,7 +66,7 @@ HRESULT GetColumnInfo (
 
 O tipo de coluna retornado cai dentro de um intervalo de valores:
 
-| pType                    | DESCRIÇÃO   | Função auxiliar                   |
+| pType                    | Descrição   | Função auxiliar                   |
 |--------------------------|---------------|-----------------------------------|
 | `0`..`iRidMax`<br>(0.. 63)   | Eliminá           | **IsRidType**<br>**IsRidOrToken** |
 | `iCodedToken`..`iCodedTokenMax`<br>(64.. 95) | Token codificado | **IsCodedTokenType** <br>**IsRidOrToken** |
@@ -97,7 +98,7 @@ Os valores que são armazenados no *heap* (ou seja, `IsHeapType == true` ) podem
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataTables](imetadatatables-interface.md)
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)

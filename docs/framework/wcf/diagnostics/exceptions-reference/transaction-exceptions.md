@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exceções de transação'
 title: Exceções de transações
 ms.date: 03/30/2017
 ms.assetid: 1d27ed51-7eda-477f-9eca-94fa129f3e07
-ms.openlocfilehash: dcdf825699368617335f2d59a05f8826884a8e9e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: edea932ca12fcd05994c979555e7eb9c0d00e969
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686057"
 ---
 # <a name="transaction-exceptions"></a>Exceções de transações
 

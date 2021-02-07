@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataTables:: GetGuid'
 title: Método IMetaDataTables::GetGuid
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a3546316-e24d-417f-9909-e45d42c9d471
 topic_type:
 - apiref
-ms.openlocfilehash: f776ac59ff9bd665dc3bfde74e8a8bb0f8acc89e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9c3b8b11bb2f6a1abc3c55d953e1cbfbd7ee8622
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702453"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688163"
 ---
 # <a name="imetadatatablesgetguid-method"></a>Método IMetaDataTables::GetGuid
 
@@ -57,7 +58,7 @@ HRESULT GetGuid (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataTables](imetadatatables-interface.md)
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)

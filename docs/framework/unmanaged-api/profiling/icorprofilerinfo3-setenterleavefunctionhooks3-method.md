@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo3:: SetEnterLeaveFunctionHooks3'
 title: Método ICorProfilerInfo3::SetEnterLeaveFunctionHooks3
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f0621465-b84f-40ab-a4e5-56a7abc776a7
 topic_type:
 - apiref
-ms.openlocfilehash: a7272d55771620db129125ce543d12d19a0b4dfb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c741054c50fb74afe79f10607e24424a07d2f8c5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697838"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687019"
 ---
 # <a name="icorprofilerinfo3setenterleavefunctionhooks3-method"></a>Método ICorProfilerInfo3::SetEnterLeaveFunctionHooks3
 
@@ -64,7 +65,7 @@ HRESULT SetEnterLeaveFunctionHooks3(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [SetEnterLeaveFunctionHooks3WithInfo](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md)
 - [FunctionEnter3](functionenter3-function.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataTables:: GetNextGuid'
 title: Método IMetaDataTables::GetNextGuid
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 68f6ea4d-9112-4d6b-93d9-e34f1e2f2496
 topic_type:
 - apiref
-ms.openlocfilehash: 71dce539941f78feff3d5f89028d654cade25feb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 86c248bf503410a07fc0b4cf622694c4da213c34
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688085"
 ---
 # <a name="imetadatatablesgetnextguid-method"></a>Método IMetaDataTables::GetNextGuid
 
@@ -57,7 +58,7 @@ HRESULT GetNextGuid (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataTables](imetadatatables-interface.md)
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)

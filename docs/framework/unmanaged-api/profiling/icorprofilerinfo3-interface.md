@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerInfo3'
 title: Interface ICorProfilerInfo3
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 044a262f-0fa7-485d-b0c1-64cdc359c654
 topic_type:
 - apiref
-ms.openlocfilehash: 9944234da1677608aec10066b61bfc6a6cb72bcb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 52b4c699a122c302e47cffb11d01e7829009e219
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697851"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687175"
 ---
 # <a name="icorprofilerinfo3-interface"></a>Interface ICorProfilerInfo3
 
@@ -27,7 +28,7 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método EnumJITedFunctions](icorprofilerinfo3-enumjitedfunctions-method.md)|Retorna um enumerador para todas as funções previamente compiladas por JIT.|  
 |[Método EnumModules](icorprofilerinfo3-enummodules-method.md)|Retorna um enumerador que fornece métodos para iterar em sequência por meio de uma coleção de módulos gerenciados que são carregados no aplicativo.|  
@@ -60,7 +61,7 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

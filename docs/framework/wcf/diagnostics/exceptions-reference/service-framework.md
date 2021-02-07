@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Service Framework'
 title: Estrutura de serviço
 ms.date: 03/30/2017
 ms.assetid: 75f60b87-f80e-4377-ba7c-8e6becaa2b28
-ms.openlocfilehash: 1fb39f2106e027cc5d4125cfb0bc89f3e5983cec
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aa53a6c0740c292c1f34920edabdb81f7c5a13ab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285714"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686130"
 ---
 # <a name="service-framework"></a>Estrutura de serviço
 

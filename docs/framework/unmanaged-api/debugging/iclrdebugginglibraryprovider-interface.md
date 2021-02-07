@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRDebuggingLibraryProvider'
 title: Interface ICLRDebuggingLibraryProvider
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 67739617-6add-41a9-9de5-a3200c3109ce
 topic_type:
 - apiref
-ms.openlocfilehash: cd17cbc808b7f8381ac320bb55999c6b0466c3d8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8aaec87e97d45c8b7b6f87aee64154ea3f48b133
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723526"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723277"
 ---
 # <a name="iclrdebugginglibraryprovider-interface"></a>Interface ICLRDebuggingLibraryProvider
 
@@ -27,7 +28,7 @@ Inclui o método de [método ProvideLibrary](iclrdebugginglibraryprovider-provid
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método ProvideLibrary](iclrdebugginglibraryprovider-providelibrary-method.md)|Permite que o depurador forneça um identificador para um módulo que pode ser usado para carregar uma biblioteca de depuração.|  
   
@@ -41,7 +42,7 @@ Inclui o método de [método ProvideLibrary](iclrdebugginglibraryprovider-provid
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

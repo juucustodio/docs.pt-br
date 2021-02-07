@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorPublishAppDomain'
 title: Interface ICorPublishAppDomain
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5e7885a6-d17a-4bfc-a4c6-23cbb7337ad5
 topic_type:
 - apiref
-ms.openlocfilehash: 62e3286c5f0c70d283e78dbb1e502dccd73a5a3a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 88c7a9e5ce0c92633be6968a16b69ec144b2747b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95694263"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721808"
 ---
 # <a name="icorpublishappdomain-interface"></a>Interface ICorPublishAppDomain
 
@@ -27,7 +28,7 @@ Representa e fornece informações sobre um domínio de aplicativo.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetID](icorpublishappdomain-getid-method.md)|Obtém o identificador exclusivo para isso `ICorPublishAppDomain` .|  
 |[Método GetName](icorpublishappdomain-getname-method.md)|Obtém o nome do domínio do aplicativo referenciado por este `ICorPublishAppDomain` .|  
@@ -42,7 +43,7 @@ Representa e fornece informações sobre um domínio de aplicativo.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Coclass CorpubPublish](corpubpublish-coclass.md)

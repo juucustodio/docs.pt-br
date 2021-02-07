@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugNativeFrame2:: IsChild'
 title: Método ICorDebugNativeFrame2::IsChild
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9e2aae09-49cb-4fbd-81e5-e29cd864a88b
 topic_type:
 - apiref
-ms.openlocfilehash: 0d65849aba08c7d143a6977e7dfb8cff85274a64
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7c698c5a49ee445b4ba9c591c96f700f86a86c32
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695563"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722289"
 ---
 # <a name="icordebugnativeframe2ischild-method"></a>Método ICorDebugNativeFrame2::IsChild
 
@@ -37,7 +38,7 @@ HRESULT IsChild([out] BOOL * pIsChild);
  `pIsChild`  
  fora Um valor booliano que especifica se o quadro atual é um quadro filho.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -63,7 +64,7 @@ HRESULT IsChild([out] BOOL * pIsChild);
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugNativeFrame2](icordebugnativeframe2-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

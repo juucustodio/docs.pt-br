@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedMethod:: GetSequencePoints'
 title: Método ISymUnmanagedMethod::GetSequencePoints
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f909ac48-3d8f-49fb-a369-e3d9959151cd
 topic_type:
 - apiref
-ms.openlocfilehash: 38763e687c66dcb038a874c9c17cb0d67e547816
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: acdfcb014648593065bd1ae252ef936898a1e8b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699346"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721288"
 ---
 # <a name="isymunmanagedmethodgetsequencepoints-method"></a>Método ISymUnmanagedMethod::GetSequencePoints
 
@@ -66,7 +67,7 @@ HRESULT GetSequencePoints(
  `endColumns`  
  no A matriz de colunas nos documentos em que os pontos de sequência terminam.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -74,6 +75,6 @@ HRESULT GetSequencePoints(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedMethod](isymunmanagedmethod-interface.md)

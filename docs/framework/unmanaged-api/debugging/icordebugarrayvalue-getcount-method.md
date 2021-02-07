@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugArrayValue:: GetCount'
 title: Método ICorDebugArrayValue::GetCount
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 44cd98cf-2127-4d46-8c6a-da4e857bb6b0
 topic_type:
 - apiref
-ms.openlocfilehash: cd45c6d515648819a83d4e9944eb20d5cd20dd86
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7b1422714ed9c6f89c65c310165b8cdaa6566360
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698215"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723108"
 ---
 # <a name="icordebugarrayvaluegetcount-method"></a>Método ICorDebugArrayValue::GetCount
 

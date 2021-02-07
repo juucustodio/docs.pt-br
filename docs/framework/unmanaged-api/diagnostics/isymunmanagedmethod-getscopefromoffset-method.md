@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedMethod:: GetScopeFromOffset'
 title: Método ISymUnmanagedMethod::GetScopeFromOffset
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d14cf210-81f8-46e1-8b19-6ddec0ba8b11
 topic_type:
 - apiref
-ms.openlocfilehash: cf2784ce0ac6e614e75a341660808b9fe03ada0e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 87dd1f1732ec5d7c8669dbc2bf73b0b6128aafa1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699437"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721314"
 ---
 # <a name="isymunmanagedmethodgetscopefromoffset-method"></a>Método ISymUnmanagedMethod::GetScopeFromOffset
 
@@ -42,7 +43,7 @@ HRESULT GetScopeFromOffset(
  `pRetVal`  
  fora Um ponteiro que é definido para a interface [ISymUnmanagedScope](isymunmanagedscope-interface.md) retornada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -50,6 +51,6 @@ HRESULT GetScopeFromOffset(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedMethod](isymunmanagedmethod-interface.md)

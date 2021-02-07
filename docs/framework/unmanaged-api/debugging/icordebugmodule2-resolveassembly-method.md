@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugModule2:: ResolveAssembly'
 title: Método ICorDebugModule2::ResolveAssembly
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ddf9085c-7161-44bd-9609-cd2732b9009f
 topic_type:
 - apiref
-ms.openlocfilehash: e64e39d10d20f63430ffe9d2c4df8643e286a677
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: fba53b8ff76e4d3deb1876d2a20a7a2edc20bd06
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722588"
 ---
 # <a name="icordebugmodule2resolveassembly-method"></a>Método ICorDebugModule2::ResolveAssembly
 

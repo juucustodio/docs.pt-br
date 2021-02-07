@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugNativeFrame:: getregisterset'
 title: Método ICorDebugNativeFrame::GetRegisterSet
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6f309b5f-5556-4f1e-b1dd-4fe97fc81d01
 topic_type:
 - apiref
-ms.openlocfilehash: 945a398d32b50efc81ba45e705ed9d4161ed1524
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8878c438ad76b1a87429e09b8a4a8bbffb90d00d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722406"
 ---
 # <a name="icordebugnativeframegetregisterset-method"></a>Método ICorDebugNativeFrame::GetRegisterSet
 

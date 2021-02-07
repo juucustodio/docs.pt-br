@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess5:: EnumerateHeap'
 title: Método ICorDebugProcess5::EnumerateHeap
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b0192104-6073-4089-a4df-dc29ee033074
 topic_type:
 - apiref
-ms.openlocfilehash: 22ab29f8a204a4b27dafdefcd3652cc3dcf9769c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b43e7993b114ed64d009f91746ea987198edde74
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671129"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722029"
 ---
 # <a name="icordebugprocess5enumerateheap-method"></a>Método ICorDebugProcess5::EnumerateHeap
 
@@ -55,7 +56,7 @@ HRESULT EnumerateHeap(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugProcess5](icordebugprocess5-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

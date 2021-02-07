@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugModule:: GetClassFromToken'
 title: Método ICorDebugModule::GetClassFromToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 622a4d3c-0425-4c54-a7e4-0735377cdad2
 topic_type:
 - apiref
-ms.openlocfilehash: 011d763ce244e18c7ba1203e18eb0700a8c8b13a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8184c6c1920a4397c4037160276b5b86033baf71
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710227"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722602"
 ---
 # <a name="icordebugmodulegetclassfromtoken-method"></a>Método ICorDebugModule::GetClassFromToken
 

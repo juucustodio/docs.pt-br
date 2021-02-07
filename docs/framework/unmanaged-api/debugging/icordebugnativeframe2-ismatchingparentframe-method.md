@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugNativeFrame2:: IsMatchingParentFrame'
 title: Método ICorDebugNativeFrame2::IsMatchingParentFrame
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d2ca20db-df22-4528-a0dd-a09ea62c8998
 topic_type:
 - apiref
-ms.openlocfilehash: 213bee96531fa0bbc9bf0ae76b2505019833abfc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6dff1cb7f5205ad742ac4b886f72938dd28bd88f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724696"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722198"
 ---
 # <a name="icordebugnativeframe2ismatchingparentframe-method"></a>Método ICorDebugNativeFrame2::IsMatchingParentFrame
 
@@ -42,7 +43,7 @@ HRESULT IsMatchingParentFrame([in] ICorDebugNativeFrame2
  `pIsParent`  
  [fora] `true` Se `pPotentialParentFrame` for o pai do quadro atual; caso contrário, `false` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -68,7 +69,7 @@ HRESULT IsMatchingParentFrame([in] ICorDebugNativeFrame2
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugNativeFrame2](icordebugnativeframe2-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMetaDataDispenser'
 title: Interface IMetaDataDispenser
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 989840b3-9822-4ce5-a6c5-b375d3340a7a
 topic_type:
 - apiref
-ms.openlocfilehash: c798aeba46adf91a8c13f8143c00f02173a0bb52
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5ba37fc05a4e1897b100967d32b268f91a0e4402
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726100"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721002"
 ---
 # <a name="imetadatadispenser-interface"></a>Interface IMetaDataDispenser
 
@@ -27,7 +28,7 @@ Fornece métodos para criar um novo escopo de metadados ou abrir um existente.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método DefineScope](imetadatadispenser-definescope-method.md)|Cria uma nova área na memória na qual você pode criar novos metadados.|  
 |[Método OpenScope](imetadatadispenser-openscope-method.md)|Abre um arquivo existente em disco e mapeia seus metadados na memória.|  
@@ -43,7 +44,7 @@ Fornece métodos para criar um novo escopo de metadados ou abrir um existente.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataDispenserEx](imetadatadispenserex-interface.md)
 - [Interfaces de metadados](metadata-interfaces.md)

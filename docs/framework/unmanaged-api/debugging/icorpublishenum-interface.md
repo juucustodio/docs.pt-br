@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorPublishEnum'
 title: Interface ICorPublishEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 76a136b5-e444-417a-8ade-f1596d597dc7
 topic_type:
 - apiref
-ms.openlocfilehash: 492d4b727ce507340fec47d30a791aa49d0cecb6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c0d50f67bd61eecbade0b226f2f569ac26712faf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95693340"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721589"
 ---
 # <a name="icorpublishenum-interface"></a>Interface ICorPublishEnum
 
@@ -27,7 +28,7 @@ Serve como a interface base abstrata para os enumeradores que são usados na pub
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Clone](icorpublishenum-clone-method.md)|Cria uma cópia deste objeto `ICorPublishEnum`.|  
 |[Método GetCount](icorpublishenum-getcount-method.md)|Obtém o número de itens na enumeração.|  
@@ -52,7 +53,7 @@ Serve como a interface base abstrata para os enumeradores que são usados na pub
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Coclass CorpubPublish](corpubpublish-coclass.md)
 - [Depurando interfaces](debugging-interfaces.md)

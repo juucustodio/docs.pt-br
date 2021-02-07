@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Configurando serviços WCF'
 title: Configurando serviços WCF
 ms.date: 03/30/2017
 helpviewer_keywords:
 - configuration [WCF]
 ms.assetid: beac771e-f28e-4f84-9ff1-ad9251c726d3
-ms.openlocfilehash: a5fe0cabb1a6be7f93bf5f4d753e9bb08a39cea3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1c0df8c7d9b4e2b1a032f02e74db2de4a8de020c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253330"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720833"
 ---
 # <a name="configuring-wcf-services"></a>Configurando serviços WCF
 
@@ -57,10 +58,10 @@ Depois de criar e implementar seu contrato de serviço, você estará pronto par
   
  [Introdução à extensibilidade](introduction-to-extensibility.md)  
   
- [Administração e diagnóstico](./diagnostics/index.md)  
+ [Administração e diagnósticos](./diagnostics/index.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Programação de WCF básica](basic-wcf-programming.md)
 - [Visão geral conceitual](conceptual-overview.md)
-- [Detalhes do recurso WCF](./feature-details/index.md)
+- [Detalhes de funcionalidades do WCF](./feature-details/index.md)

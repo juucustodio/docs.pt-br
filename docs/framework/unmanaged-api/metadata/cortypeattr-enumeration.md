@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorTypeAttr'
 title: Enumeração CorTypeAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9bede0ec-5fdf-42a2-b5b7-bee64056acb6
 topic_type:
 - apiref
-ms.openlocfilehash: 50ce4e5e6125eae493bb62032d5c6bd8887c1afb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d4f7d25ce8ead945790defae800b7a45dc88bc38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721158"
 ---
 # <a name="cortypeattr-enumeration"></a>Enumeração CorTypeAttr
 
@@ -120,6 +121,6 @@ typedef enum CorTypeAttr {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

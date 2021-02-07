@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugArrayValue:: HasBaseIndicies'
 title: Método ICorDebugArrayValue::HasBaseIndicies
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: aa26df07-e0a6-4608-bdef-d4afafec89aa
 topic_type:
 - apiref
-ms.openlocfilehash: a9d1faf5a834cb5d9be19f995aaa3eee1202171b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b251653004801ff2d312dfb34749c413774ddf40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727439"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722952"
 ---
 # <a name="icordebugarrayvaluehasbaseindicies-method"></a>Método ICorDebugArrayValue::HasBaseIndicies
 

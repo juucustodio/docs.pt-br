@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport2:: EnumGenericParams'
 title: Método IMetaDataImport2::EnumGenericParams
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b50488a5-3cf0-483c-82dc-2892a3ec61ac
 topic_type:
 - apiref
-ms.openlocfilehash: 6b1a8e66eea6caec9dfc8d99e343c987cefa1b0c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9d4e9d163da07ec4a3af1aa628b8b6ec4b2338fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702752"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720931"
 ---
 # <a name="imetadataimport2enumgenericparams-method"></a>Método IMetaDataImport2::EnumGenericParams
 
@@ -55,9 +56,9 @@ HRESULT EnumGenericParams (
  `pcGenericParams`  
  fora O número retornado de tokens colocados em `rGenericParams` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
-|HRESULT|DESCRIÇÃO|  
+|HRESULT|Descrição|  
 |-------------|-----------------|  
 |`S_OK`|`EnumGenericParams` retornado com êxito.|  
 |`S_FALSE`|`phEnum` Não tem elementos de membro. Nesse caso, `pcGenericParams` é definido como 0 (zero).|  
@@ -72,7 +73,7 @@ HRESULT EnumGenericParams (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)
 - [Interface IMetaDataImport](imetadataimport-interface.md)

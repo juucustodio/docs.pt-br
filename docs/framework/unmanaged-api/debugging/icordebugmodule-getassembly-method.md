@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugModule:: GetAssembly'
 title: Método ICorDebugModule::GetAssembly
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 989762c4-3d15-4485-b8ee-69e0fa8ec895
 topic_type:
 - apiref
-ms.openlocfilehash: e0ae11ee24a5e25fb439d5c502c4cda5bcb6a80e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 88bda923cd4c3ebfa5da6b3343e1cead4cebbad9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710253"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722601"
 ---
 # <a name="icordebugmodulegetassembly-method"></a>Método ICorDebugModule::GetAssembly
 

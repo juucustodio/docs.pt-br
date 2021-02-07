@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebug:: CanLaunchOrAttach'
 title: Método ICorDebug::CanLaunchOrAttach
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ca7723db-7c07-4cdd-bd92-fba34928b623
 topic_type:
 - apiref
-ms.openlocfilehash: 195c7e1e7c61fd6ac8a21226b52e3782d2f7e421
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cb813c4bae968941de731d9d5b74d8f804b3c8ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723225"
 ---
 # <a name="icordebugcanlaunchorattach-method"></a>Método ICorDebug::CanLaunchOrAttach
 
@@ -43,7 +44,7 @@ HRESULT CanLaunchOrAttach (
  `win32DebuggingEnabled`  
  no Passe `true` se você planeja iniciar com a depuração do Win32 habilitada ou para anexar com a depuração do Win32 habilitada; caso contrário, passe `false` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se os serviços de depuração determinarem que a inicialização de um novo processo ou a anexação ao processo fornecido é possível, dadas as informações sobre o computador atual e a configuração de tempo de execução. Os possíveis valores HRESULT são:  
   
@@ -71,6 +72,6 @@ HRESULT CanLaunchOrAttach (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebug](icordebug-interface.md)

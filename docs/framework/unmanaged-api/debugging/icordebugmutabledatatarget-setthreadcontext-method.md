@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugMutableDataTarget:: SetThreadContext'
 title: 'Método ICorDebugMutableDataTarget:: SetThreadContext'
 ms.date: 03/30/2017
 ms.assetid: 8c0d01d5-67e5-4522-9ccf-c8f3a78cb4fd
-ms.openlocfilehash: 558a1ee2eb0ac06213c2ebcebbd5595b69ecc43e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4674df92b72b44e19eff663c9a17dd8ca4b5a1b0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695704"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722471"
 ---
 # <a name="icordebugmutabledatatargetsetthreadcontext-method"></a>Método ICorDebugMutableDataTarget:: SetThreadContext
 
@@ -46,7 +47,7 @@ HRESULT SetThreadContext(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMutableDataTarget](icordebugmutabledatatarget-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

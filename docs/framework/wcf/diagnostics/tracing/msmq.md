@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: MSMQ'
 title: MSMQ
 ms.date: 03/30/2017
 ms.assetid: d9fca29f-fa44-4ec4-bb48-b10800694500
-ms.openlocfilehash: 7ef31a188e1564da47ea1e7323cdd4cd5ef5be60
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3d694fdab202cd2b3b03c377f72d93c22cbae263
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236670"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720573"
 ---
 # <a name="msmq"></a>MSMQ
 

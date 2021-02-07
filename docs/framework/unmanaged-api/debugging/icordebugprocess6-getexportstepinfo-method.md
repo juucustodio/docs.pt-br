@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess6:: GetExportStepInfo'
 title: Método ICorDebugProcess6::GetExportStepInfo
 ms.date: 03/30/2017
 ms.assetid: a927e0ac-f110-426d-bbec-9377a29c8f17
-ms.openlocfilehash: e2c04672e51ffb16043b14735cd5375073194c27
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e14b5e66d90fb2ece91991b3634fc2ad86fac895
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732613"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722003"
 ---
 # <a name="icordebugprocess6getexportstepinfo-method"></a>Método ICorDebugProcess6::GetExportStepInfo
 
@@ -33,7 +34,7 @@ HRESULT GetExportStepInfo(
  invokePurpose  
  fora Um ponteiro para um membro da enumeração [CorDebugCodeInvokePurpose](cordebugcodeinvokepurpose-enumeration.md) que descreve por que a função exportada chamará o código gerenciado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  O método pode retornar os valores listados na tabela a seguir.  
   
@@ -58,7 +59,7 @@ HRESULT GetExportStepInfo(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugProcess6](icordebugprocess6-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

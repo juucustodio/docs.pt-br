@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorPublish:: GetProcess'
 title: Método ICorPublish::GetProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c5143805-2eb7-45b8-85ed-c8fb34df1084
 topic_type:
 - apiref
-ms.openlocfilehash: a45f613b7547e2e80abdbd8ac85cb0b2b6a499e5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d288a772274618cc99b63a68b37e84e543957b44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716883"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721964"
 ---
 # <a name="icorpublishgetprocess-method"></a>Método ICorPublish::GetProcess
 
@@ -57,6 +58,6 @@ HRESULT GetProcess(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorPublish](icorpublish-interface.md)

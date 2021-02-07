@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugNativeFrame2:: GetStackParameterSize'
 title: Método ICorDebugNativeFrame2::GetStackParameterSize
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f6a449c8-a941-43ba-9a90-c98b29ae3c36
 topic_type:
 - apiref
-ms.openlocfilehash: 21af3980de9b5a768b6af9a8aca74b693c7ac528
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 08a17ced0be75737c1c49aa3f9bb42b13bbe8aa0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695485"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722302"
 ---
 # <a name="icordebugnativeframe2getstackparametersize-method"></a>Método ICorDebugNativeFrame2::GetStackParameterSize
 
@@ -37,7 +38,7 @@ HRESULT GetStackParameterSize([out] ULONG32 * pSize)
  `pSize`  
  fora Um ponteiro para o tamanho cumulativo dos parâmetros na pilha.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -64,7 +65,7 @@ HRESULT GetStackParameterSize([out] ULONG32 * pSize)
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugNativeFrame2](icordebugnativeframe2-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

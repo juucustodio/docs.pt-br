@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugMutableDataTarget:: ContinueStatusChanged'
 title: Método ICorDebugMutableDataTarget::ContinueStatusChanged
 ms.date: 03/30/2017
 ms.assetid: 5a66d3f4-dd16-4d62-9dcc-0eab7041d894
-ms.openlocfilehash: 4910b125c2344505128a6979dfe4c9fad2b72c19
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6655d6f1a115b4879c73e356faa8e8785a110078
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695784"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722497"
 ---
 # <a name="icordebugmutabledatatargetcontinuestatuschanged-method"></a>Método ICorDebugMutableDataTarget::ContinueStatusChanged
 
@@ -43,7 +44,7 @@ HRESULT ContinueStatusChanged(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMutableDataTarget](icordebugmutabledatatarget-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

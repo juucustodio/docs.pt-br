@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: classe MailAddressParser'
 title: Classe MailAddressParser (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
@@ -11,15 +12,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: ff83f6946539fa262ccde980052627f98c75601d
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 5ad534e731e283f5449b3b8cc8e87628716da9b0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051344"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699760"
 ---
 # <a name="mailaddressparser-class"></a>Classe MailAddressParser
 
-Analisa endereços de email conforme descrito em RFC 2822. Esta classe não pode ser herdada.
+Analisa endereços de email conforme descrito em RFC 2822. Essa classe não pode ser herdada.
 
 ```csharp
 internal static class MailAddressParser
@@ -44,7 +46,7 @@ internal static MailAddress ParseAddress(string data)
 
 A cadeia de caracteres que contém um endereço de email a ser analisado.
 
-### <a name="return-value"></a>Retornar valor
+### <a name="return-value"></a>Valor retornado
 
 <xref:System.Net.Mail.MailAddress>
 

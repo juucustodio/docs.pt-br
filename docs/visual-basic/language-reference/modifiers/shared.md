@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: compartilhado (Visual Basic)'
 title: Compartilhado
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - shared [elements VB]
 - elements [Visual Basic], shared
 ms.assetid: 2bf7cf2c-b0dd-485e-8749-b5d674dab4cd
-ms.openlocfilehash: b51c88e1af3a720912af8ba6aaf8ae4016af9cfa
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 0cc671c67486d01026f2283837448db7b00c1a0a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990194"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700748"
 ---
 # <a name="shared-visual-basic"></a>Compartilhado (Visual Basic)
 
@@ -32,7 +33,7 @@ O compartilhamento não altera o nível de acesso de um membro. Por exemplo, um 
 
 - **Contexto de declaração.** Você pode usar `Shared` somente no nível do módulo. Isso significa que o contexto de declaração de um `Shared` elemento deve ser uma classe ou estrutura e não pode ser um arquivo de origem, namespace ou procedimento.
 
-- **Modificadores combinados.** Você não pode especificar `Shared` junto com [Overrides](overrides.md), [Overridable, NotOverridable](overridable.md), [MustOverride](mustoverride.md)ou [static](static.md) na mesma declaração. [NotOverridable](notoverridable.md)
+- **Modificadores combinados.** Você não pode especificar `Shared` junto com [Overrides](overrides.md), [Overridable, NotOverridable](overridable.md), [MustOverride](mustoverride.md)ou [static](static.md) na mesma declaração. [](notoverridable.md)
 
 - **Acess.** Você acessa um elemento compartilhado qualificando-o com seu nome de classe ou estrutura, não com o nome da variável de uma instância específica de sua classe ou estrutura. Você não precisa nem criar uma instância de uma classe ou estrutura para acessar seus membros compartilhados.
 
@@ -93,7 +94,7 @@ O `Shared` modificador pode ser usado nesses contextos:
 - [Instrução Property](../statements/property-statement.md)
 - [Instrução Sub](../statements/sub-statement.md)
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Sombras](shadows.md)
 - [Estático](static.md)

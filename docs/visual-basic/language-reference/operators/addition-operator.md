@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador + (Visual Basic)'
 title: + Operador
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - strings [Visual Basic], concatenating
 - sum operator [Visual Basic]
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
-ms.openlocfilehash: bc31e4c66c64d891e3fffd809b7ae99b9c9a0520
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 9a6517847945cb2edcbd97adac6a013498dde174
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873454"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700683"
 ---
 # <a name="-operator-visual-basic"></a>Operador + (Visual Basic)
 
 Adiciona dois números ou retorna o valor positivo de uma expressão numérica. Também pode ser usado para concatenar duas expressões de cadeia de caracteres.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb
 expression1 + expression2
@@ -37,10 +38,10 @@ ou
   
 |Termo|Definição|  
 |---|---|  
-|`expression1`|Necessário. Qualquer expressão numérica ou de cadeia de caracteres.|  
+|`expression1`|Obrigatório. Qualquer expressão numérica ou de cadeia de caracteres.|  
 |`expression2`|Necessário, a menos que o `+` operador esteja calculando um valor negativo. Qualquer expressão numérica ou de cadeia de caracteres.|  
   
-## <a name="result"></a>Resultado  
+## <a name="result"></a>Result  
 
  Se `expression1` e `expression2` forem ambos numéricos, o resultado será sua soma aritmética.  
   
@@ -118,7 +119,7 @@ ou
   
  Para eliminar a ambiguidade, você deve usar o `&` operador em vez de `+` para concatenação.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ Operador de&](concatenation-operator.md)
 - [Operadores de concatenação](concatenation-operators.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <permission> (Visual Basic)'
 title: <permission>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - <permission> XML tag
 - permission XML tag
 ms.assetid: 0edf0500-5cd7-49c0-9255-64c48f972b77
-ms.openlocfilehash: ae6167f3582fe22cd10d9ef7a10873d6d9bdfa06
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 7a227e97051002c834c96297d3028f08e3ed07ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90872553"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700254"
 ---
 # <a name="permission-visual-basic"></a>\<permission> (Visual Basic)
 
@@ -42,6 +43,6 @@ Especifica uma permissão necessária para o membro.
   
  [!code-vb[VbVbcnXmlDocComments#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#7)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

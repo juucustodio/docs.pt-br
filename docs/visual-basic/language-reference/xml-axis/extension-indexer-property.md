@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Propriedade do indexador de extensão (Visual Basic)'
 title: Propriedade do Indexador de Extensão
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - extension indexer [Visual Basic]
 - XML [Visual Basic], accessing
 ms.assetid: a16a4b13-54be-432c-82b3-a87091464ada
-ms.openlocfilehash: 23417cd982c2ddf06afce69d9b120ae0737fb87d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ec165836f739db9a74ea266ebba32be5bb42cca6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866108"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700319"
 ---
 # <a name="extension-indexer-property-visual-basic"></a>Propriedade do indexador de extensão (Visual Basic)
 
 Fornece acesso aos elementos individuais em uma coleção.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 object(index)  
@@ -30,12 +31,12 @@ object(index)
   
 |Termo|Definição|  
 |---|---|  
-|`object`|Necessário. Uma coleção passível de consulta. Ou seja, uma coleção que implementa <xref:System.Collections.Generic.IEnumerable%601> ou <xref:System.Linq.IQueryable%601> .|  
-|(|Necessário. Denota o início da Propriedade do indexador.|  
-|`index`|Necessário. Uma expressão de inteiro que especifica a posição de base zero de um elemento da coleção.|  
-|)|Necessário. Denota o final da Propriedade do indexador.|  
+|`object`|Obrigatório. Uma coleção passível de consulta. Ou seja, uma coleção que implementa <xref:System.Collections.Generic.IEnumerable%601> ou <xref:System.Linq.IQueryable%601> .|  
+|(|Obrigatório. Denota o início da Propriedade do indexador.|  
+|`index`|Obrigatório. Uma expressão de inteiro que especifica a posição de base zero de um elemento da coleção.|  
+|)|Obrigatório. Denota o final da Propriedade do indexador.|  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  O objeto do local especificado na coleção ou `Nothing` se o índice está fora do intervalo.  
   
@@ -59,7 +60,7 @@ object(index)
   
  `Second phone number: 425-555-0145`  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XElement>
 - [Propriedades do eixo XML](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estático (Visual Basic)'
 title: Estático
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - static modifier
 - Static keyword [Visual Basic]
 ms.assetid: 19013910-4658-47b6-a22e-1744b527979e
-ms.openlocfilehash: 2b7113424969b0b18c981b0c8932aeef3795ca4a
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 03c2e3f64ac9052a0c604b8bc34782af16edbf34
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867674"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700735"
 ---
 # <a name="static-visual-basic"></a>Estático (Visual Basic)
 
@@ -50,7 +51,7 @@ Especifica que uma ou mais variáveis locais declaradas devem continuar a existi
   
  [Instrução Dim](../statements/dim-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Sombras](shadows.md)
 - [Compartilhado](shared.md)

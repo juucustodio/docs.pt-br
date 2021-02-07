@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: literal de documento XML (Visual Basic)'
 title: Literal de Documento XML
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - XML documents [Visual Basic], creating
 - document literal [Visual Basic]
 ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
-ms.openlocfilehash: bd1b2f43fce563af431d67b3817b05c7c1048314
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d268f205c9357598a631216879b424dd8155268a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866025"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700306"
 ---
 # <a name="xml-document-literal-visual-basic"></a>Literal de documento XML (Visual Basic)
 
 Um literal que representa um <xref:System.Xml.Linq.XDocument> objeto.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <?xml version="1.0" [encoding="encoding"] [standalone="standalone"] ?>  
@@ -36,9 +37,9 @@ rootElement
 |`encoding`|Opcional. Texto literal que declara a codificação usada pelo documento.|  
 |`standalone`|Opcional. Texto literal. Deve ser "Yes" ou "no".|  
 |`piCommentList`|Opcional. Lista de instruções de processamento XML e comentários XML. Usa o seguinte formato:<br /><br /> `piComment [` `piComment` `... ]`<br /><br /> Cada `piComment` um pode ser um dos seguintes:<br /><br /> -   [Literal de instrução de processamento XML](xml-processing-instruction-literal.md).<br />-   [Literal de comentário XML](xml-comment-literal.md).|  
-|`rootElement`|Necessário. Elemento raiz do documento. O formato é um dos seguintes:<br /><br /> <ul><li>[Literal de elemento XML](xml-element-literal.md).</li><li>Expressão inserida do formulário `<%=` `elementExp` `%>` . O `elementExp` retorna um dos seguintes:<br /><br /> <ul><li>Um objeto <xref:System.Xml.Linq.XElement>.</li><li>Uma coleção que contém um <xref:System.Xml.Linq.XElement> objeto e qualquer número de <xref:System.Xml.Linq.XProcessingInstruction> <xref:System.Xml.Linq.XComment> objetos e.</li></ul></li></ul><br /> Para obter mais informações, consulte [expressões inseridas em XML](../../programming-guide/language-features/xml/embedded-expressions-in-xml.md).|  
+|`rootElement`|Obrigatório. Elemento raiz do documento. O formato é um dos seguintes:<br /><br /> <ul><li>[Literal de elemento XML](xml-element-literal.md).</li><li>Expressão inserida do formulário `<%=` `elementExp` `%>` . O `elementExp` retorna um dos seguintes:<br /><br /> <ul><li>Um objeto <xref:System.Xml.Linq.XElement>.</li><li>Uma coleção que contém um <xref:System.Xml.Linq.XElement> objeto e qualquer número de <xref:System.Xml.Linq.XProcessingInstruction> <xref:System.Xml.Linq.XComment> objetos e.</li></ul></li></ul><br /> Para obter mais informações, consulte [expressões inseridas em XML](../../programming-guide/language-features/xml/embedded-expressions-in-xml.md).|  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Um objeto <xref:System.Xml.Linq.XDocument>.  
   
@@ -59,7 +60,7 @@ rootElement
   
  [!code-vb[VbXMLSamples#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#30)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XElement>
 - <xref:System.Xml.Linq.XProcessingInstruction>

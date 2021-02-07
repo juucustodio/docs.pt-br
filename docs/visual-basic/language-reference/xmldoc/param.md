@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <param> (Visual Basic)'
 title: <param>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - param XML tag
 - <param> XML tag
 ms.assetid: 4e32e86f-f6f3-4301-b7fc-2f321fb54368
-ms.openlocfilehash: 19300a928a59c7259f81b282bd28d9bdd447d76b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 94fe5e11d5846f7fa00eb73c1c4363990ae23b2f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90872631"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700286"
 ---
 # <a name="param-visual-basic"></a>\<param> (Visual Basic)
 
@@ -48,6 +49,6 @@ Define um nome de parâmetro e uma descrição.
   
  [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

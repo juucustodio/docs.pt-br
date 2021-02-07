@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: cláusula Group Join (Visual Basic)'
 title: Cláusula Group Join
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - Group Join statement [Visual Basic]
 - queries [Visual Basic], Group Join
 ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
-ms.openlocfilehash: 8d5f3ec80cb39825a3a283907d614b9be28e6e91
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 177dc2b41c923bc8c1ae0477c3905e8adad36fbe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869905"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700475"
 ---
 # <a name="group-join-clause-visual-basic"></a>Cláusula Join Group (Visual Basic)
 
 Combina duas coleções em uma única coleção hierárquica. A operação de junção é baseada em chaves correspondentes.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Group Join element [As type] In collection _  
@@ -34,11 +35,11 @@ Group Join element [As type] In collection _
   
 |Termo|Definição|  
 |---|---|  
-|`element`|Necessário. A variável de controle para a coleção que está sendo unida.|  
+|`element`|Obrigatório. A variável de controle para a coleção que está sendo unida.|  
 |`type`|Opcional. O tipo de `element`. Se não `type` for especificado, o tipo de `element` será inferido de `collection` .|  
-|`collection`|Necessário. A coleção a ser combinada com a coleção que está no lado esquerdo do `Group Join` operador. Uma `Group Join` cláusula pode ser aninhada em uma `Join` cláusula ou em outra `Group Join` cláusula.|  
-|`key1` `Equals` `key2`|Necessário. Identifica as chaves para as coleções que estão sendo Unidas. Você deve usar o `Equals` operador para comparar as chaves das coleções que estão sendo Unidas. Você pode combinar condições de junção usando o `And` operador para identificar várias chaves. O `key1` parâmetro deve ser da coleção no lado esquerdo do `Join` operador. O `key2` parâmetro deve ser da coleção no lado direito do `Join` operador.<br /><br /> As chaves usadas na condição de junção podem ser expressões que incluem mais de um item da coleção. No entanto, cada expressão de chave pode conter apenas itens de sua respectiva coleção.|  
-|`expressionList`|Necessário. Uma ou mais expressões que identificam como os grupos de elementos da coleção são agregados. Para identificar um nome de membro para os resultados agrupados, use a `Group` palavra-chave ( `<alias> = Group` ). Você também pode incluir funções de agregação para aplicar ao grupo.|  
+|`collection`|Obrigatório. A coleção a ser combinada com a coleção que está no lado esquerdo do `Group Join` operador. Uma `Group Join` cláusula pode ser aninhada em uma `Join` cláusula ou em outra `Group Join` cláusula.|  
+|`key1` `Equals` `key2`|Obrigatório. Identifica as chaves para as coleções que estão sendo Unidas. Você deve usar o `Equals` operador para comparar as chaves das coleções que estão sendo Unidas. Você pode combinar condições de junção usando o `And` operador para identificar várias chaves. O `key1` parâmetro deve ser da coleção no lado esquerdo do `Join` operador. O `key2` parâmetro deve ser da coleção no lado direito do `Join` operador.<br /><br /> As chaves usadas na condição de junção podem ser expressões que incluem mais de um item da coleção. No entanto, cada expressão de chave pode conter apenas itens de sua respectiva coleção.|  
+|`expressionList`|Obrigatório. Uma ou mais expressões que identificam como os grupos de elementos da coleção são agregados. Para identificar um nome de membro para os resultados agrupados, use a `Group` palavra-chave ( `<alias> = Group` ). Você também pode incluir funções de agregação para aplicar ao grupo.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -58,7 +59,7 @@ Group Join element [As type] In collection _
   
  [!code-vb[VbSimpleQuerySamples#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#14)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a LINQ no Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [Consultas](index.md)
@@ -66,4 +67,4 @@ Group Join element [As type] In collection _
 - [Cláusula from](from-clause.md)
 - [Cláusula JOIN](join-clause.md)
 - [Cláusula WHERE](where-clause.md)
-- [Cláusula Group By](group-by-clause.md)
+- [Cláusula Group by](group-by-clause.md)

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: estendendo expatchers'
 title: Estendendo distribuidores
 ms.date: 03/30/2017
 helpviewer_keywords:
 - dispatcher extensions [WCF]
 ms.assetid: d0ad15ac-fa12-4f27-80e8-7ac2271e5985
-ms.openlocfilehash: fa9d5c40c2ae813493b3643048fa7eaba00c431d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 22be85c57439a88746e3e87625472d02ab412c1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273224"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735277"
 ---
 # <a name="extending-dispatchers"></a>Estendendo distribuidores
 
@@ -134,7 +135,7 @@ As propriedades a seguir controlam a execução do tempo de execução no nível
 
 - A <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors%2A> propriedade permite que você insira um inspetor de parâmetro personalizado que você pode usar para inspecionar ou modificar parâmetros e retornar valores.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Dispatcher.DispatchRuntime>
 - <xref:System.ServiceModel.Dispatcher.DispatchOperation>

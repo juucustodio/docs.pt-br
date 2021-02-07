@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: tokens personalizados'
 title: Tokens personalizados
 ms.date: 03/30/2017
 helpviewer_keywords:
 - security [WCF], custom tokens
 ms.assetid: 8b2dbe29-dec2-4652-8e34-fb21bc1437b5
-ms.openlocfilehash: e23751ed9f67cf126bd1b55192c5121170495c69
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6694f807addd8a9fea24d363ffa2b68cd86c8eef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242273"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735212"
 ---
 # <a name="custom-tokens"></a>Tokens personalizados
 

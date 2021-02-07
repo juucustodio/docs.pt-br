@@ -1,20 +1,21 @@
 ---
+description: 'Saiba mais sobre: associações personalizadas'
 title: Associações personalizadas
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Communication Foundation, endpoints
 - Windows Communication Foundation, configuration
 ms.assetid: 58532b6d-4eea-4a4f-854f-a1c8c842564d
-ms.openlocfilehash: 062aba26227fedeea3e5f462ebf5d55cf0cba56c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ced0f9ada7238b43216a246d75dd391aa6eb3f2b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735342"
 ---
 # <a name="custom-bindings"></a>Associações personalizadas
 
-Você pode usar a <xref:System.ServiceModel.Channels.CustomBinding> classe quando uma das associações fornecidas pelo sistema não atender aos requisitos do seu serviço. Todas as associações são construídas a partir de um conjunto ordenado de elementos de associação. Associações personalizadas podem ser criadas a partir de um conjunto de elementos de associação fornecidos pelo sistema ou podem incluir elementos de associação personalizados definidos pelo usuário. Você pode usar elementos de associação personalizados, por exemplo, para habilitar o uso de novos transportes ou codificadores em um ponto de extremidade de serviço. Para obter exemplos de funcionamento, consulte [exemplos de associação personalizada](/previous-versions/dotnet/netframework-3.5/ms751479(v=vs.90)). Para obter mais informações, consulte [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md).
+Você pode usar a <xref:System.ServiceModel.Channels.CustomBinding> classe quando uma das associações fornecidas pelo sistema não atender aos requisitos do seu serviço. Todas as associações são construídas a partir de um conjunto ordenado de elementos de associação. Associações personalizadas podem ser criadas a partir de um conjunto de elementos de associação fornecidos pelo sistema ou podem incluir elementos de associação personalizados definidos pelo usuário. Você pode usar elementos de associação personalizados, por exemplo, para habilitar o uso de novos transportes ou codificadores em um ponto de extremidade de serviço. Para obter exemplos de funcionamento, consulte [exemplos de associação personalizada](/previous-versions/dotnet/netframework-3.5/ms751479(v=vs.90)). Para obter mais informações, confira [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md).
 
 ## <a name="construction-of-a-custom-binding"></a>Construção de uma associação personalizada
 
@@ -22,7 +23,7 @@ Uma associação personalizada é criada usando o <xref:System.ServiceModel.Chan
 
 - Na parte superior, há uma <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> classe opcional que permite transações de fluxo.
 
-- A seguir é uma <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> classe opcional que fornece um mecanismo de sessão e ordenação, conforme definido na especificação WS-ReliableMessaging. Uma sessão pode cruzar o SOAP e transportar intermediários.
+- A seguir é uma <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> classe opcional que fornece um mecanismo de sessão e ordenação, conforme definido na especificação de WS-ReliableMessaging. Uma sessão pode cruzar o SOAP e transportar intermediários.
 
 - A seguir é uma <xref:System.ServiceModel.Channels.SecurityBindingElement> classe opcional que fornece recursos de segurança como autorização, autenticação, proteção e confidencialidade.
 
@@ -66,15 +67,15 @@ A tabela a seguir resume as opções para cada camada.
 
 |Camada|Opções|Obrigatório|
 |-----------|-------------|--------------|
-|Transactions|<xref:System.ServiceModel.Channels.TransactionFlowBindingElement>|No|
-|Confiabilidade|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement>|No|
-|Segurança|<xref:System.ServiceModel.Channels.SecurityBindingElement>|No|
+|Transactions|<xref:System.ServiceModel.Channels.TransactionFlowBindingElement>|Não|
+|Confiabilidade|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement>|Não|
+|Segurança|<xref:System.ServiceModel.Channels.SecurityBindingElement>|Não|
 |Codificação|Texto, binário, mecanismo de otimização de transmissão de mensagens (MTOM), personalizado|Yes|
 |Transport|TCP, HTTP, HTTPS, pipes nomeados (também conhecido como IPC), ponto a ponto (P2P), Enfileiramento de mensagens (também conhecido como MSMQ), personalizado|Yes|
 
 Além disso, você pode definir seus próprios elementos de ligação e inseri-los entre as camadas definidas anteriormente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de criação de ponto de extremidade](../endpoint-creation-overview.md)
 - [Usando associações para configurar serviços e clientes](../using-bindings-to-configure-services-and-clients.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: codificadores personalizados'
 title: Decodificadores personalizados
 ms.date: 03/30/2017
 ms.assetid: fa0e1d7f-af36-4bf4-aac9-cd4eab95bc4f
-ms.openlocfilehash: c2ad0c947afd293d0923faa3e9d914b6911ce941
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 12c706daf025b6ab63bd5c4e2cbb426a2ea83af1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735290"
 ---
 # <a name="custom-encoders"></a>Decodificadores personalizados
 
@@ -99,7 +100,7 @@ Este tópico discute como criar codificadores personalizados.
   
  Há dois exemplos fornecidos com o WCF que ilustram esse processo com o código de exemplo: [codificador de mensagem personalizada:](../samples/custom-message-encoder-custom-text-encoder.md) codificador de texto personalizado e [codificador de mensagem personalizada: codificador de compactação](../samples/custom-message-encoder-compression-encoder.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
 - <xref:System.ServiceModel.Channels.MessageEncoderFactory>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: atualizações de fluxo personalizadas'
 title: Atualizações de fluxo personalizadas
 ms.date: 03/30/2017
 ms.assetid: e3da85c8-57f3-4e32-a4cb-50123f30fea6
-ms.openlocfilehash: 3ef0f59a5d63c24188b29cb7a38db2d6323d80ee
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fe52b99de382d5a5d5b41a0bff2c4a9a7698f6f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295569"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735238"
 ---
 # <a name="custom-stream-upgrades"></a>Atualizações de fluxo personalizadas
 

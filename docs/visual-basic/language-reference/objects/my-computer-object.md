@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: meu objeto My. Computer'
 title: Objeto My.Computer
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Computer object
 ms.assetid: cc814d79-6f7f-4e54-8b9d-5ecfdd77a0b8
-ms.openlocfilehash: 4e9019773c74aa570f52eb573677f687f2600419
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 524c742432b37345054ca76b046be921659dba82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867415"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674292"
 ---
 # <a name="mycomputer-object"></a>Objeto My.Computer
 
@@ -27,7 +28,7 @@ Fornece propriedades para manipular componentes do computador, como o áudio, o 
   
  **Assembly:** Visual Basic a biblioteca de tempo de execução (em Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objeto My.Computer.Audio](my-computer-audio-object.md)
 - [Objeto My.Computer.Clipboard](my-computer-clipboard-object.md)

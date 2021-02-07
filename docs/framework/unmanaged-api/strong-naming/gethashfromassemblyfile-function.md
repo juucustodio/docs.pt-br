@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função GetHashFromAssemblyFile'
 title: Função GetHashFromAssemblyFile
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 751ed69f-b7ab-4e07-80de-e17ca9319b0c
 topic_type:
 - apiref
-ms.openlocfilehash: caefc9773b0d208f8b20847b664f7bc017d2c076
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 79cc6289ebcf33f5a9ea8b4ef139c4b2a67e55e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730988"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736772"
 ---
 # <a name="gethashfromassemblyfile-function"></a>Função GetHashFromAssemblyFile
 
@@ -66,7 +67,7 @@ HRESULT GetHashFromAssemblyFile (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetHashFromAssemblyFile](../hosting/iclrstrongname-gethashfromassemblyfile-method.md)
 - [Método GetHashFromAssemblyFileW](../hosting/iclrstrongname-gethashfromassemblyfilew-method.md)

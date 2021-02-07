@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerModuleEnum:: clone'
 title: Método ICorProfilerModuleEnum::Clone
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7dec7e36-8d88-416d-b437-abf98b76c1df
 topic_type:
 - apiref
-ms.openlocfilehash: ae9f6b7865a80e3edc4cae8fd1298e5eed864377
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0d2a235def6d3b16d661e51979742426ebe1942f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722824"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736928"
 ---
 # <a name="icorprofilermoduleenumclone-method"></a>Método ICorProfilerModuleEnum::Clone
 
@@ -47,7 +48,7 @@ HRESULT Clone([out] ICorProfilerObjectEnum **ppEnum);
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerModuleEnum](icorprofilermoduleenum-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMethodMalloc:: Alloc'
 title: Método IMethodMalloc::Alloc
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8653bd4c-2290-43d2-a3e1-cbbd50033f4f
 topic_type:
 - apiref
-ms.openlocfilehash: 58809f12e4dd4419b754caafc3f8b883b8bc5089
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f8a41530e0e1a126fafa1816e6fed58d10df6587
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721160"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736930"
 ---
 # <a name="imethodmallocalloc-method"></a>Método IMethodMalloc::Alloc
 
@@ -55,6 +56,6 @@ no O número de bytes a serem alocados para o corpo do método.
 
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMethodMalloc](imethodmalloc-interface.md)

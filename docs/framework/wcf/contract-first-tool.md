@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Contract-First ferramenta'
 title: Ferramenta Contract-First
 ms.date: 03/30/2017
 ms.assetid: 0a880690-f460-4475-a5f4-9f91ce08fcc6
-ms.openlocfilehash: 1896a76892c76fb7277c3e36978604a4d290018e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6455fa866afd440e70062f8433356b13fe163a8c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255124"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736395"
 ---
 # <a name="contract-first-tool"></a>Ferramenta Contract-First
 

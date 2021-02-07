@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMethodMalloc'
 title: Interface IMethodMalloc
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8c8ab5dc-557c-473a-82f2-6e403eca7dac
 topic_type:
 - apiref
-ms.openlocfilehash: 8eccdba75b59df505ae72d74cfcd2bc83de2b45a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6b84ac0ddb49718d24b2cad174613bc311dc509b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688166"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736942"
 ---
 # <a name="imethodmalloc-interface"></a>Interface IMethodMalloc
 
@@ -30,7 +31,7 @@ Fornece um método para alocar memória para um novo corpo de função da MSIL (
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Alloc](imethodmalloc-alloc-method.md)|Tenta alocar uma quantidade especificada de memória para um novo corpo de função MSIL.|  
   
@@ -48,6 +49,6 @@ Fornece um método para alocar memória para um novo corpo de função da MSIL (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)

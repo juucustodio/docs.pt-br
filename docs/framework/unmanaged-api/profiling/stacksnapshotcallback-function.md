@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função StackSnapshotCallback'
 title: Função StackSnapshotCallback
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d0f235b2-91fe-4f82-b7d5-e5c64186eea8
 topic_type:
 - apiref
-ms.openlocfilehash: 2d6ca18ce48f69d8c94b465efac2b9fe0e10f070
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a49588bc3277956acad612afd0fcab3fa7edffbd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685299"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736837"
 ---
 # <a name="stacksnapshotcallback-function"></a>Função StackSnapshotCallback
 
@@ -76,7 +77,7 @@ HRESULT __stdcall StackSnapshotCallback (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md)
 - [Criando perfil de funções estáticas globais](profiling-global-static-functions.md)

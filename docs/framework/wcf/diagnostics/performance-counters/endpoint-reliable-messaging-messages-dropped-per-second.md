@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ponto de extremidade: mensagens de mensagens confiáveis eliminadas por segundo'
 title: 'Ponto de extremidade: mensagens confiáveis do sistema de mensagens descartadas por segundo'
 ms.date: 03/30/2017
 ms.assetid: ea3c4fc0-1e0f-4863-8879-57bc6c113018
-ms.openlocfilehash: b8c0f91b2de5d023232756159a50236574308954
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 257ea74aeb23ef8962ce8910dee635b83f76d960
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290836"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735875"
 ---
 # <a name="endpoint-reliable-messaging-messages-dropped-per-second"></a>Ponto de extremidade: mensagens confiáveis do sistema de mensagens descartadas por segundo
 

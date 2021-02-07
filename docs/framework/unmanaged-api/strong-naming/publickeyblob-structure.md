@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura PublicKeyBlob'
 title: Estrutura PublicKeyBlob
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b9240712-829c-4c8d-9a09-a6e7aa63f63a
 topic_type:
 - apiref
-ms.openlocfilehash: 42cd3cc22fbbb8eb3d5ac44544fce36650b6461f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94c1ea3d5a41bbb8941658e87f97cd6d6336187a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705924"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736473"
 ---
 # <a name="publickeyblob-structure"></a>Estrutura PublicKeyBlob
 
@@ -59,7 +60,7 @@ typedef struct {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função StrongNameGetPublicKey](strongnamegetpublickey-function.md)
 - [Função StrongNameSignatureGeneration](strongnamesignaturegeneration-function.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ponto de extremidade: mensagens de mensagens confiáveis eliminadas'
 title: 'Ponto de extremidade: mensagens descartadas na transmissão de mensagens confiáveis'
 ms.date: 03/30/2017
 ms.assetid: d0c5b842-3b75-4cd1-91c4-a702ae17bdcd
-ms.openlocfilehash: 689827beaaabc49dc77c930191e9a6c0e520f9b2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dcccabf729c85df15ad23f6e1e776b36efd46819
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290849"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735914"
 ---
 # <a name="endpoint-reliable-messaging-messages-dropped"></a>Ponto de extremidade: mensagens descartadas na transmissão de mensagens confiáveis
 

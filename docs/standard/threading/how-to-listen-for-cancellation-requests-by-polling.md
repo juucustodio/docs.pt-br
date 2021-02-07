@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como escutar solicitações de cancelamento por sondagem'
 title: 'Como: ouvir solicitações de cancelamento por meio de sondagem'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - cancellation, how to poll for requests
 ms.assetid: c7f2f022-d08e-4e00-b4eb-ae84844cb1bc
-ms.openlocfilehash: a527fb7f0f9e3c78b3161fdfed0f1d9f3d52798b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8d3895dfc9e99b57090178b3c75252323c1cb9ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723721"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666882"
 ---
 # <a name="how-to-listen-for-cancellation-requests-by-polling"></a>Como: ouvir solicitações de cancelamento por meio de sondagem
 
@@ -29,6 +30,6 @@ O exemplo a seguir mostra uma maneira de o código do usuário sondar um token d
   
  Se estiver chamando <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A>, basta verificar explicitamente a propriedade <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> se você tiver outro trabalho a fazer em resposta ao cancelamento, além de lançar a exceção. Neste exemplo, vemos que o código realmente acessa a propriedade duas vezes: uma no acesso explícito e novamente no método <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A>. Mas, como o ato de leitura da propriedade <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> envolve apenas uma instrução volátil de leitura por acesso, o acesso duplo não é significativo do ponto de vista do desempenho. Ainda assim é melhor chamar o método do que lançar manualmente a <xref:System.OperationCanceledException>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Cancelamento em threads gerenciados](cancellation-in-managed-threads.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: EventWaitHandle'
 title: EventWaitHandle
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - event wait handles [.NET]
 - threading [.NET], cross-process synchronization
 ms.assetid: 11ee0b38-d663-4617-b793-35eb6c64e9fc
-ms.openlocfilehash: 078bda2354a6f0aec2215b0c5da2a021f53ff922
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a1c5d9741cdcfa1313f0e7f1c0702954a93c6c09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723778"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666921"
 ---
 # <a name="eventwaithandle"></a>EventWaitHandle
 

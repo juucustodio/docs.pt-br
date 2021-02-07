@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IAppIdAuthority'
 title: Interface IAppIdAuthority
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ec354fa1-1efd-41b0-bc43-b90597b6e253
 topic_type:
 - apiref
-ms.openlocfilehash: a344f2ab5d9a7aa92018c47ee7a162cd1721aeb5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 238885c7f080571b414511c24f9772dbc19b4683
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732106"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760988"
 ---
 # <a name="iappidauthority-interface"></a>Interface IAppIdAuthority
 
@@ -27,7 +28,7 @@ Fornece métodos que geram e comparam chaves para identidades e referências de 
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |`IAppIdAuthority::AreDefinitionsEqual`|Obtém um valor que indica se as duas instâncias de [IDefinitionAppId](idefinitionappid-interface.md) especificadas são iguais. Você pode passar o valor do sinalizador IAPPIDAUTHORITY_ARE_DEFINITIONS_EQUAL_FLAG_IGNORE_VERSION para ignorar suas respectivas informações de versão.|  
 |`IAppIdAuthority::AreReferencesEqual`|Obtém um valor que indica se as duas instâncias de [IReferenceAppId](ireferenceappid-interface.md) especificadas são iguais. Você pode passar o valor do sinalizador IAPPIDAUTHORITY_ARE_REFERENCES_EQUAL_FLAG_IGNORE_VERSION para ignorar suas respectivas informações de versão.|  
@@ -54,6 +55,6 @@ Fornece métodos que geram e comparam chaves para identidades e referências de 
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de fusão](fusion-interfaces.md)

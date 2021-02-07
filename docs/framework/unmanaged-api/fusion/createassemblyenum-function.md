@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função CreateAssemblyEnum'
 title: Função CreateAssemblyEnum
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 3506df38-6cea-42f6-946e-4287863bcfb3
 topic_type:
 - apiref
-ms.openlocfilehash: b7e3696121475885f5061bd96eb6905d7ccae734
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 47177fcf0cd9e1b492fa89b9fb80c5cdaaced689
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683167"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761132"
 ---
 # <a name="createassemblyenum-function"></a>Função CreateAssemblyEnum
 
@@ -70,7 +71,7 @@ HRESULT CreateAssemblyEnum (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IAssemblyEnum](iassemblyenum-interface.md)
 - [Interface IAssemblyName](iassemblyname-interface.md)

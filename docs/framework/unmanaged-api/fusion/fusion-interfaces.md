@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces do Fusion'
 title: Interfaces de fusão
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - fusion interfaces [.NET Framework]
 - unmanaged interfaces [.NET Framework], fusion
 ms.assetid: e2cf98b7-40c1-4f74-86c7-8a76dd9da677
-ms.openlocfilehash: 59e34a39bada1dcf5e66a0c5b92a7fcbfb41d884
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3b6ca64b40ebc1a7b38129d897059ca628d3914c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711683"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761059"
 ---
 # <a name="fusion-interfaces"></a>Interfaces de fusão
 

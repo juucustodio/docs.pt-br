@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função CompareAssemblyIdentity'
 title: Função CompareAssemblyIdentity
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8b364ae1-8efa-4744-a7da-81fd093d84d6
 topic_type:
 - apiref
-ms.openlocfilehash: da32ce6a40378a6f88cf71bd7707be2079d71068
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aa55d1ea0b1968ec4e50106139e154e29e159ec7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761207"
 ---
 # <a name="compareassemblyidentity-function"></a>Função CompareAssemblyIdentity
 
@@ -59,7 +60,7 @@ STDAPI CompareAssemblyIdentity (
  `pResult`  
  fora Uma enumeração [AssemblyComparisonResult](assemblycomparisonresult-enumeration.md) que contém informações detalhadas sobre a comparação.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `pfEquivalent` Retorna um valor booliano que indica se os dois assemblies são equivalentes. `pResult` Retorna um dos `AssemblyComparisonResult` valores para fornecer um motivo mais detalhado para o valor de `pfEquivalent` .  
   
@@ -87,7 +88,7 @@ STDAPI CompareAssemblyIdentity (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções estáticas globais de fusão](fusion-global-static-functions.md)
 - [Enumeração AssemblyComparisonResult](assemblycomparisonresult-enumeration.md)

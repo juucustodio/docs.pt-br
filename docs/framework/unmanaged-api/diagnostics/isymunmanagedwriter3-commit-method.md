@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ISymUnmanagedWriter3:: Commit'
 title: Método ISymUnmanagedWriter3::Commit
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f6961922-46ec-4d2c-8369-85f880731f37
 topic_type:
 - apiref
-ms.openlocfilehash: 394832d6144509717d2f79a78afaff50ad81c01d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 308f5d3a16cf60a0e77a581a318d6fd6c398b3f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683297"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761753"
 ---
 # <a name="isymunmanagedwriter3commit-method"></a>Método ISymUnmanagedWriter3::Commit
 
@@ -40,6 +41,6 @@ HRESULT Commit();
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedWriter3](isymunmanagedwriter3-interface.md)

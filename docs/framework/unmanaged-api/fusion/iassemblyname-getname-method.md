@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAssemblyName:: GetName'
 title: Método IAssemblyName::GetName
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1dee9781-1cf3-48a9-a376-d18ea1f73280
 topic_type:
 - apiref
-ms.openlocfilehash: 58b8b83ce1db9338612cbaa01a0db0862cf1054e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 04cd6258c2fc60c9fc40e1e4b731e5c04a8d3112
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727894"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760736"
 ---
 # <a name="iassemblynamegetname-method"></a>Método IAssemblyName::GetName
 
@@ -51,6 +52,6 @@ HRESULT GetName (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IAssemblyName](iassemblyname-interface.md)

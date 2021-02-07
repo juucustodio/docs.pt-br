@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função CreateAssemblyNameObject'
 title: Função CreateAssemblyNameObject
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 55c8b41e-fbe4-4ae0-aa29-68fbb2311691
 topic_type:
 - apiref
-ms.openlocfilehash: 995f1064c2f40005c4a19ef034d7edfd668b5d51
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0eaa74bdb37a098ad58b81658229f8c04259b730
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704156"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761168"
 ---
 # <a name="createassemblynameobject-function"></a>Função CreateAssemblyNameObject
 
@@ -62,7 +63,7 @@ HRESULT CreateAssemblyNameObject (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IAssemblyName](iassemblyname-interface.md)
 - [Funções estáticas globais de fusão](fusion-global-static-functions.md)

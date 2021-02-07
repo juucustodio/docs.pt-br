@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função GetAppIdAuthority'
 title: Função GetAppIdAuthority
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9f968dad-0d09-47fb-bebc-94c39a0d16ad
 topic_type:
 - apiref
-ms.openlocfilehash: 5e731ac1c652b8b4505073a3a10463ae0ce21ac0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a0c2a7b754c2b014b189f96fd3c27347571cc0d1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724488"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761051"
 ---
 # <a name="getappidauthority-function"></a>Função GetAppIdAuthority
 
@@ -47,7 +48,7 @@ HRESULT GetAppIdAuthority (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IAppIdAuthority](iappidauthority-interface.md)
 - [Funções estáticas globais de fusão](fusion-global-static-functions.md)

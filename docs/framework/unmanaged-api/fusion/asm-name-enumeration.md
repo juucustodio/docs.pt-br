@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de ASM_NAME'
 title: Enumeração ASM_NAME
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: c8b65b19-d777-428f-bc0c-0d84c78a37bc
 topic_type:
 - apiref
-ms.openlocfilehash: 64a34cdf92df345041cb94e9069bcc4d489e3cf5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d4fc18b24e3de31e4c6679bb30a013f61346f4dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728622"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761304"
 ---
 # <a name="asm_name-enumeration"></a>Enumeração ASM_NAME
 
 Indica a versão, a compilação, a cultura, a assinatura e assim por diante, do assembly cujas propriedades serão recuperadas ou definidas pelos métodos [IAssemblyName](iassemblyname-interface.md) .  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 typedef enum {  
@@ -73,7 +74,7 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IAssemblyName](iassemblyname-interface.md)
 - [Enumerações Fusion](fusion-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função CreateInstallReferenceEnum'
 title: Função CreateInstallReferenceEnum
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 80dbbbf8-54fc-4894-b74a-0179d3201083
 topic_type:
 - apiref
-ms.openlocfilehash: 0f62b05ebbd8b27dba160c8281c1d40748c90fc9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cc7551707cb46bcf0c475a0095684dbc790836e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688829"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761129"
 ---
 # <a name="createinstallreferenceenum-function"></a>Função CreateInstallReferenceEnum
 
@@ -62,7 +63,7 @@ HRESULT CreateInstallReferenceEnum (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IInstallReferenceEnum](iinstallreferenceenum-interface.md)
 - [Interface IAssemblyName](iassemblyname-interface.md)

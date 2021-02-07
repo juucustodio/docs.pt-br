@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IAssemblyCache'
 title: Interface IAssemblyCache
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 71ea170f-872d-4fc5-81b6-27da1dec9b19
 topic_type:
 - apiref
-ms.openlocfilehash: df4f0ba018b55202c22cb90b22b927a9c426c4ed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 29c042fc101180085a697e02376b91b0e1ffd19f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696850"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760921"
 ---
 # <a name="iassemblycache-interface"></a>Interface IAssemblyCache
 
@@ -27,7 +28,7 @@ Representa o cache de assembly global para uso pela tecnologia Fusion.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CreateAssemblyCacheItem](iassemblycache-createassemblycacheitem-method.md)|Obtém uma referência a um novo [IAssemblyCacheItem](iassemblycacheitem-interface.md).|  
 |[Método CreateAssemblyScavenger](iassemblycache-createassemblyscavenger-method.md)|Reservado para uso interno pela tecnologia Fusion.|  
@@ -43,7 +44,7 @@ Representa o cache de assembly global para uso pela tecnologia Fusion.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de fusão](fusion-interfaces.md)
 - [Cache de assemblies global](../../app-domains/gac.md)

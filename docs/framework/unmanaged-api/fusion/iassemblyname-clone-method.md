@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAssemblyName:: clone'
 title: Método IAssemblyName::Clone
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7b345e08-5e16-4e3d-a044-4e19d0892943
 topic_type:
 - apiref
-ms.openlocfilehash: ca528bdbd9662db373d1beeece803d6c43728f2d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b1d8ba2aec73565e9f6acaa44a5ef3731baa3af9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698605"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760778"
 ---
 # <a name="iassemblynameclone-method"></a>Método IAssemblyName::Clone
 
@@ -47,6 +48,6 @@ HRESULT Clone (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IAssemblyName](iassemblyname-interface.md)

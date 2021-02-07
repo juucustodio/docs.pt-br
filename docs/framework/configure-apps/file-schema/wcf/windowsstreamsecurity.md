@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <windowsStreamSecurity>'
 title: <windowsStreamSecurity>
 ms.date: 03/30/2017
 ms.assetid: 926bea29-90c7-4a26-9cf0-fb4aa44f6f70
-ms.openlocfilehash: 3c82bd81bd0fabf10f2dd835188b346f62d038b5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c623dc23ca67d0341b66a2a4d97de564be77dcc5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167074"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682391"
 ---
 # \<windowsStreamSecurity>
 
@@ -20,7 +21,7 @@ Especifique as configurações de segurança de fluxo do Windows da associação
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<windowsStreamSecurity>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <windowsStreamSecurity protectionLevel="None/Sign/EncryptAndSign" />
@@ -50,7 +51,7 @@ Especifique as configurações de segurança de fluxo do Windows da associação
 
  Os transportes que usam um protocolo orientado a fluxo, como TCP e pipes nomeados, dão suporte a atualizações de transporte baseadas em fluxo. Especificamente, o WCF fornece atualizações de segurança. A configuração dessa segurança de transporte é encapsulada por esse elemento de configuração, bem como pelo [\<sslStreamSecurity>](sslstreamsecurity.md) , que pode ser configurado e adicionado a uma associação personalizada  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - <xref:System.ServiceModel.Configuration.WindowsStreamSecurityElement>

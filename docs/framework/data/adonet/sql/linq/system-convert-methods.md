@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: métodos System. Convert'
 title: Métodos de System.Convert
 ms.date: 03/30/2017
 ms.assetid: 3ca6c5b6-ea5d-4ab0-b675-f082135b342c
-ms.openlocfilehash: d0aa0b11223e23b874471962d727d8e16e152ceb
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: a323f8d0c3c4a8d1248409d2ec27565acdc58222
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70781051"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681403"
 ---
 # <a name="systemconvert-methods"></a>Métodos de System.Convert
 
@@ -27,7 +28,7 @@ ms.locfileid: "70781051"
 
 - Os seguintes métodos:
 
-  - `public static <Type2> To<Type2>(<Type1> value);` onde
+  - `public static <Type2> To<Type2>(<Type1> value);` em que
 
     `Type1` e `Type2` são cada um de `sbyte`, `uint`, `ulong`, ou `ushort`.
 
@@ -51,4 +52,4 @@ ms.locfileid: "70781051"
 
 ## <a name="see-also"></a>Consulte também
 
-- [Funções e tipos de dados](data-types-and-functions.md)
+- [Tipos de dados e funções](data-types-and-functions.md)

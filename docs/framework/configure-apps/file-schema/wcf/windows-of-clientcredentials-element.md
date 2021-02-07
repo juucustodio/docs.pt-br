@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <windows> do <clientCredentials> elemento'
 title: <windows> do <clientCredentials> elemento
 ms.date: 03/30/2017
 ms.assetid: 793e41c2-31ea-4159-abbc-2123bf097233
-ms.openlocfilehash: 115e1822659c04ee37a7364f7b25616b52dc5efe
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d693ad914dfa02ef12a7c8520ca84be3a9595e73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682417"
 ---
 # <a name="windows-of-clientcredentials-element"></a>\<windows> do \<clientCredentials> elemento
 
@@ -21,7 +22,7 @@ Especifica as configurações para uma credencial do Windows a ser usada para re
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCredentials>**](clientcredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<windows>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <windows allowedImpersonationLevel="Identification/Impersonation/Delegation/Anonymous/None"
@@ -49,7 +50,7 @@ Especifica as configurações para uma credencial do Windows a ser usada para re
 |-------------|-----------------|  
 |[\<clientCredentials>](clientcredentials.md)|Especifica as credenciais usadas para autenticar o cliente para o serviço.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.WindowsClientElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>

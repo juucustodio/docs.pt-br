@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <security> de <webHttpBinding>'
 title: <security> de <webHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83
-ms.openlocfilehash: 60b863a0a2a846a60dde2e4b323a305b5096b1cc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a80a919ef877f01503e5ceaeb4fe7432e46f288c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169889"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683041"
 ---
 # <a name="security-of-webhttpbinding"></a>\<security> de \<webHttpBinding>
 
@@ -20,7 +21,7 @@ Especifica os requisitos de segurança para um ponto de extremidade configurado 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.ServiceModel>
@@ -68,7 +69,7 @@ Especifica os requisitos de segurança para um ponto de extremidade configurado 
 |-------------|-----------------|  
 |[\<webHttpBinding>](webhttpbinding.md)|Um elemento de associação que é usado para configurar pontos de extremidade para serviços da Web Windows Communication Foundation (WCF) que respondem a solicitações HTTP em vez de mensagens SOAP.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.WebHttpBindingElement>
 - <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>

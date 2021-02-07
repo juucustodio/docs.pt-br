@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: LINQ to DataSet'
 title: LINQ to DataSet
 ms.date: 03/30/2017
 ms.assetid: 743e3755-3ecb-45a2-8d9b-9ed41f0dcf17
-ms.openlocfilehash: 1c03cca80de6003a4e49278871983ed7fcb3dc0b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 74b5f97d9fecb05b1fd13e986dd0cbcc10fa1456
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200660"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681663"
 ---
 # <a name="linq-to-dataset"></a>LINQ to DataSet
 
@@ -33,7 +34,7 @@ LINQ to DataSet torna mais fácil e rápido a consulta sobre dados armazenados e
   
  <xref:System.Data.DataRowComparer>  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ (consulta integrada à linguagem) – C#](../../../csharp/programming-guide/concepts/linq/index.md)
 - [LINQ (consulta integrada à linguagem) – Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)

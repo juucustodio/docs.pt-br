@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: métodos System. String'
 title: Métodos de System.String
 ms.date: 03/30/2017
 ms.assetid: ce307f14-87e6-4816-8694-8a4147f6b784
-ms.openlocfilehash: 44d32ed1000ca49d9fc29ffcde4506b44fc975b6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 68ade8c3d8f47749dcea9cdaad2a19d28c7032c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155660"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681299"
 ---
 # <a name="systemstring-methods"></a>Métodos de System.String
 
@@ -57,6 +58,6 @@ ms.locfileid: "91155660"
   
 - Porque muitos métodos, como `Replace`, `ToLower`, `ToUpper`, e o indexador de caracteres, não têm nenhuma conversão válido para `TEXT` ou colunas e XML de `NTEXT` , `SqlExceptions` ocorre se traduzido normalmente. Esse comportamento é considerado aceitável para esses tipos. No entanto, todas as operações de cadeia de caracteres devem corresponder a semântica do Common Language Runtime (CLR) para `VARCHAR`, `NVARCHAR`, `VARCHAR(max)`, e `NVARCHAR(max)`.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de dados e funções](data-types-and-functions.md)

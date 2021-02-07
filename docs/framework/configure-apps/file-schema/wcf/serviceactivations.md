@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <serviceActivations>'
 title: <serviceActivations>
 ms.date: 03/30/2017
 ms.assetid: 97e665b6-1c51-410b-928a-9bb42c954ddb
-ms.openlocfilehash: 64ae0bfd90ae941fc78515c7936c998201c87485
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 726514af4e42cc387daf61b688d528f690ec8ee8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683015"
 ---
 # \<serviceActivations>
 
@@ -18,7 +19,7 @@ Um elemento de configuração que permite adicionar configurações que definem 
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceHostingEnvironment>**](servicehostingenvironment.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceActivations>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <serviceHostingEnvironment>
@@ -51,7 +52,7 @@ Nenhum.
 
 ## <a name="remarks"></a>Comentários
 
-O exemplo a seguir mostra como definir as configurações de ativação no arquivo Web. config.
+O exemplo a seguir mostra como definir as configurações de ativação no arquivo de web.config.
 
 ```xml
 <configuration>

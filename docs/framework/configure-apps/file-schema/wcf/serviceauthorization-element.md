@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <serviceAuthorization> elemento'
 title: Elemento <serviceAuthorization>
 ms.date: 03/30/2017
 ms.assetid: 18cddad5-ddcb-4839-a0ac-1d6f6ab783ca
-ms.openlocfilehash: f476f754a340f52859be2986e42754cba0ef3771
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ee447f487027ed12f829dd0fd364556ce095d7d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "71834016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682924"
 ---
 # <a name="serviceauthorization-element"></a>Elemento \<serviceAuthorization>
 
@@ -20,7 +21,7 @@ Especifica as configurações que autorizam o acesso às operações de serviço
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceAuthorization>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <serviceAuthorization impersonateCallerForAllOperations="Boolean"
@@ -99,12 +100,12 @@ O código a seguir mostra o `roleProviderName` usado com o `principalPermissionM
 
 Para obter um exemplo detalhado de como usar esse elemento de configuração, consulte [autorizando o acesso às operações de serviço e à](../../../wcf/samples/authorizing-access-to-service-operations.md) [política de autorização](../../../wcf/samples/authorization-policy.md).
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>
 - <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>
 - [Comportamentos de segurança](../../../wcf/feature-details/security-behaviors-in-wcf.md)
 - [Autorizando o acesso às operações de serviço](../../../wcf/samples/authorizing-access-to-service-operations.md)
-- [Como criar gerenciador de autorização personalizado para um serviço](../../../wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
-- [Como restringir o acesso com a classe PrincipalPermissionAttribute](../../../wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)
+- [Como: criar gerenciador de autorização personalizado para um serviço](../../../wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
+- [Como: restringir o acesso com a classe PrincipalPermissionAttribute](../../../wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)
 - [Política de autorização](../../../wcf/samples/authorization-policy.md)

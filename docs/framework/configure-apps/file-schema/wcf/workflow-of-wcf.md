@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <workflow> do WCF'
 title: <workflow> do WCF
 ms.date: 03/30/2017
 ms.assetid: c0443eba-d3b4-4fae-886e-9878daf77691
-ms.openlocfilehash: cada3fca028562312be0272cb2a6021dfd1cf9cb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 44391017b98bdbe76981c695c22ae68b048c3050
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194876"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682378"
 ---
 # <a name="workflow-of-wcf"></a>\<workflow> do WCF
 
@@ -20,7 +21,7 @@ Configure um participante de rastreamento que escuta para registros de rastreame
 \<participants>  
 \<add>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <tracking>
@@ -42,7 +43,7 @@ Configure um participante de rastreamento que escuta para registros de rastreame
 |-------------|-----------------|  
 |name|Uma cadeia de caracteres que especifica o nome de um participante de rastreamento.|  
 |profileName|Uma cadeia de caracteres que especifica o nome do perfil de rastreamento que define os registros de rastreamento o participante de rastreamento tiver assinado.|  
-|tipo|Uma cadeia de caracteres que especifica o tipo de um participante de rastreamento.|  
+|type|Uma cadeia de caracteres que especifica o tipo de um participante de rastreamento.|  
   
 ### <a name="child-elements"></a>Elementos filho  
 
@@ -93,7 +94,7 @@ Configure um participante de rastreamento que escuta para registros de rastreame
 </configuration>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>
 - <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>

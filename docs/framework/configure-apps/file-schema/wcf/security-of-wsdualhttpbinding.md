@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <security> de <wsDualHttpBinding>'
 title: <security> de <wsDualHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 869c05e7-4ebe-467d-95ab-c8f8de4e6b9e
-ms.openlocfilehash: 7398cd538bb240e78413575f7c28abe7f797d05c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6d2e87912aef6114d7dcb99b82e4a7804317b28a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162199"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683028"
 ---
 # <a name="security-of-wsdualhttpbinding"></a>\<security> de \<wsDualHttpBinding>
 
@@ -63,7 +64,7 @@ Define os recursos de segurança do [\<wsDualHttpBinding>](wsdualhttpbinding.md)
 
  Uma associação dupla expõe o endereço IP do cliente para o serviço. O cliente deve usar a segurança para garantir que ele se conecte apenas aos serviços que confia.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.WSDualHttpSecurity>
 - <xref:System.ServiceModel.BasicHttpSecurity>

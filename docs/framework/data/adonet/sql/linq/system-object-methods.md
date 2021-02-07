@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: métodos System. Object'
 title: Métodos de System.Object
 ms.date: 03/30/2017
 ms.assetid: 5397fca0-689e-443e-802f-e1cbdc866427
-ms.openlocfilehash: d2b96ca9e7bedd0e0438b47698d4b963844c92f3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 88ba4cf7cfc7dc9bea565b4689f77d088d424c44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155634"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681312"
 ---
 # <a name="systemobject-methods"></a>Métodos de System.Object
 
@@ -30,6 +31,6 @@ ms.locfileid: "91155634"
 
  A saída de <xref:System.Object.ToString?displayProperty=nameWithType> for Double usa SQL `CONVERT` (nvarchar (30), @x , 2) no SQL. O SQL usa sempre 16 dígitos e notação científica nesse caso (por exemplo, “0.000000000000000e+000” para 0). Como resultado, a conversão de <xref:System.Object.ToString?displayProperty=nameWithType> não gerencia a mesma cadeia de caracteres que <xref:System.Convert.ToString%2A?displayProperty=nameWithType> no.NET Framework.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de dados e funções](data-types-and-functions.md)

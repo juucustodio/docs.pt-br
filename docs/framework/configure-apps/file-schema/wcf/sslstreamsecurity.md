@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <sslStreamSecurity>'
 title: <sslStreamSecurity>
 ms.date: 03/30/2017
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
-ms.openlocfilehash: aa6bc7f5a94afc8a190d3d9d2d71ea8b38d8c25b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 77e08deb5263e330ead5df21ed1ef2dddbba28ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153567"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682690"
 ---
 # \<sslStreamSecurity>
 
@@ -48,7 +49,7 @@ Representa um elemento de associação personalizado que suporta segurança de c
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Define todos os recursos de associação da associação personalizada.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.SslStreamSecurityElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

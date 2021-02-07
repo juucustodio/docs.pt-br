@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <add>'
 title: <add>
 ms.date: 03/30/2017
 ms.assetid: 4712a888-f154-4395-8887-ef14a88a6497
 author: BrucePerlerMS
-ms.openlocfilehash: 2f37019fa0787f5c5553dbd3debc173ec0a047ee
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c79fb66fb4e87f15c2bf7f2c02e57f473c7262a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189949"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681858"
 ---
 # \<add>
 
@@ -20,7 +21,7 @@ Adiciona o manipulador de token de segurança especificado à coleção de manip
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlers>**](securitytokenhandlers.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.identityModel>  

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: <wsDualHttpBinding>'
 title: <wsDualHttpBinding>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - wsDualHttpBinding Element
 ms.assetid: fd8ac4e2-5641-473b-9115-73f14ab1c065
-ms.openlocfilehash: 114543e43306e4195f92ca625e894a532084be6b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 14a575d867f2fcd3754d28616e8e2b9d3903f1fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177768"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682105"
 ---
 # \<wsDualHttpBinding>
 
@@ -20,7 +21,7 @@ Define uma associação segura, confiável e interoperável adequada para contra
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<wsDualHttpBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <wsDualHttpBinding>
@@ -135,7 +136,7 @@ Define uma associação segura, confiável e interoperável adequada para contra
 </configuration>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.WSDualHttpBinding>
 - <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement>

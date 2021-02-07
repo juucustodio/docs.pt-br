@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <workflowRuntime>'
 title: <workflowRuntime>
 ms.date: 03/30/2017
 ms.assetid: 304c70fa-78d1-4d0f-b89f-0ca23d734c6f
-ms.openlocfilehash: 4a450fb6f02bbf0f1681f7b2fabea9da7b65cbea
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9c234073bbbbfc8f1b5bb1579ff1dfa54a744ec1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183592"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682210"
 ---
 # \<workflowRuntime>
 
@@ -20,7 +21,7 @@ Especifica as configurações para uma instância do <xref:System.Workflow.Runti
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<workflowRuntime>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <workflowRuntime cachedInstanceExpiration="TimeSpan"
@@ -87,7 +88,7 @@ Especifica as configurações para uma instância do <xref:System.Workflow.Runti
 </serviceBehaviors>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>
 - <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>

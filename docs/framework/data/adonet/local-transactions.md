@@ -1,33 +1,34 @@
 ---
+description: 'Saiba mais sobre: transações locais'
 title: Transações locais
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8ae3712f-ef5e-41a1-9ea9-b3d0399439f1
-ms.openlocfilehash: a0b713ab0b81cb2f0661212dae22db34b7f9f3ae
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 998024a6b08ec9cb97c8bb8dbbe2c9d17f38f350
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175389"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681637"
 ---
 # <a name="local-transactions"></a>Transações locais
 
-As transações em ADO.NET são usadas quando você deseja associar várias tarefas para que elas sejam executadas como uma única unidade de trabalho. Por exemplo, imagine que um aplicativo executa duas tarefas. Primeiro, ele atualiza uma tabela com informações sobre pedidos. Em seguida, ele atualiza uma tabela que contém informações de inventário, debitando os itens pedidos. Se uma das tarefas falhar, as duas atualizações serão revertidas.  
+As transações do ADO.NET são usadas quando você deseja associar várias tarefas para que elas sejam executadas como uma só unidade de trabalho. Por exemplo, imagine que um aplicativo executa duas tarefas. Primeiro, ele atualiza uma tabela com informações sobre pedidos. Em seguida, ele atualiza uma tabela que contém informações de inventário, debitando os itens pedidos. Se uma das tarefas falhar, as duas atualizações serão revertidas.  
   
 ## <a name="determining-the-transaction-type"></a>Determinando o tipo de transação  
 
- Uma transação é considerada uma transação local quando é uma transação de fase única e é manipulada diretamente pelo banco de dados. Uma transação é considerada como uma transação distribuída quando é coordenada por um monitor de transação e usa mecanismos à prova de falhas (como confirmação em duas fases) para a resolução da transação.  
+ Uma transação é considerada local quando é monofásica e é tratada diretamente pelo banco de dados. Uma transação é considerada distribuída quando é coordenada por um monitor de transação e usa mecanismos à prova de falhas (como o protocolo 2PC) na resolução das transações.  
   
- Cada um dos provedores de dados de .NET Framework tem seu próprio `Transaction` objeto para executar transações locais. Se você precisar executar uma transação em um banco de dados do SQL Server, selecione uma transação <xref:System.Data.SqlClient>. Para uma transação Oracle, use o provedor <xref:System.Data.OracleClient>. Além disso, há uma <xref:System.Data.Common.DbTransaction> classe que está disponível para escrever código independente de provedor que requer transações.  
+ Cada um dos provedores de dados de .NET Framework tem seu próprio `Transaction` objeto para executar transações locais. Se você precisar executar uma transação em um banco de dados do SQL Server, selecione uma transação <xref:System.Data.SqlClient>. Para uma transação Oracle, use o provedor <xref:System.Data.OracleClient>. Além disso, há uma classe <xref:System.Data.Common.DbTransaction> que está disponível para a criação de um código independente de provedor que exige transações.  
   
 > [!NOTE]
 > As transações são mais eficientes quando são executadas no servidor. Se você estiver trabalhando com um banco de dados do SQL Server que faz uso extensivo de transações explícitas, considere criá-las como procedimentos armazenados usando a instrução Transact-SQL BEGIN TRANSACTION.
   
 ## <a name="performing-a-transaction-using-a-single-connection"></a>Executando uma transação com uma única conexão  
 
- No ADO.NET, você controla as transações com o `Connection` objeto. É possível iniciar uma transação local com o método `BeginTransaction`. Depois de iniciar uma transação, você pode inscrever um comando nessa transação com a propriedade `Transaction` de um objeto `Command`. Em seguida, você poderá confirmar ou reverter todas as modificações feitas na fonte de dados com base no êxito ou na falha dos componentes de transação.  
+ No ADO.NET, você controla as transações com o objeto `Connection`. É possível iniciar uma transação local com o método `BeginTransaction`. Depois de iniciar uma transação, você pode inscrever um comando nessa transação com a propriedade `Transaction` de um objeto `Command`. Em seguida, você poderá confirmar ou reverter todas as modificações feitas na fonte de dados com base no êxito ou na falha dos componentes de transação.  
   
 > [!NOTE]
 > O método `EnlistDistributedTransaction` não deve ser usado para uma transação local.  
@@ -51,7 +52,7 @@ As transações em ADO.NET são usadas quando você deseja associar várias tare
  [!code-csharp[DataWorks SqlTransaction.Local#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlTransaction.Local/CS/source.cs#1)]
  [!code-vb[DataWorks SqlTransaction.Local#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlTransaction.Local/VB/source.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Transações e simultaneidade](transactions-and-concurrency.md)
 - [Transações distribuídas](distributed-transactions.md)

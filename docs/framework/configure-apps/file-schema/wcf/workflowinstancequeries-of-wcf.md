@@ -1,15 +1,16 @@
 ---
-title: <workflowInstanceQueries>do WCF
+description: 'Saiba mais sobre: <workflowInstanceQueries> do WCF'
+title: <workflowInstanceQueries> do WCF
 ms.date: 03/30/2017
 ms.assetid: b0852f77-16e4-4d55-8eb7-a19feb0e8fc4
-ms.openlocfilehash: 8a58767745efab67fb7550de8770fec2c6226117
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d4dc4827cba5a1732070b5269350ca3dd9bf2c47
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70854779"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682326"
 ---
-# <a name="workflowinstancequeries-of-wcf"></a>\<workflowInstanceQueries>do WCF
+# <a name="workflowinstancequeries-of-wcf"></a>\<workflowInstanceQueries> do WCF
 
 Representa uma coleção de elementos de configuração que controlam alterações de ciclo de vida de instância de fluxo de trabalho como um evento iniciado ou concluído.  
   
@@ -23,7 +24,7 @@ Para obter mais informações sobre consultas de perfil de rastreamento, consult
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<workflow>**](workflow-of-wcf.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<workflowInstanceQueries>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <tracking>
@@ -91,9 +92,9 @@ A configuração a seguir assina o fluxo de trabalho em nível de instância reg
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
-- [Acompanhamento e rastreamento de fluxo de trabalho](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
-- [Acompanhando perfis](../../../windows-workflow-foundation/tracking-profiles.md)
+- [Rastreamento e rastreamento de fluxo de trabalho](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Controlando perfis](../../../windows-workflow-foundation/tracking-profiles.md)

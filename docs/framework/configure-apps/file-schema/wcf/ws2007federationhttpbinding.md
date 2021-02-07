@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <ws2007FederationHttpBinding>'
 title: <ws2007FederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 9af4ec79-cdef-457e-9dca-09d5eb821594
-ms.openlocfilehash: fe9ab2e19706a5d295b5916aeb818621d1132c11
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 90635805573e5bee64d8adf0f79de827733f178b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558765"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682183"
 ---
 # \<ws2007FederationHttpBinding>
 
@@ -98,7 +99,7 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ## <a name="remarks"></a>Comentários
 
-A Federação é a capacidade de compartilhar identidades em várias empresas ou domínios de confiança para autenticação e autorização. Ele usa o protocolo WS-Trust para mapear a representação de identidade de um domínio de confiança para outro. A associação HTTP federada dá suporte à segurança SOAP, bem como à segurança de modo misto, mas não dá suporte à segurança de transporte. Os serviços configurados com essa associação devem usar o transporte HTTP. Para obter mais informações, consulte [\<wsFederationHttpBinding>](wsfederationhttpbinding.md).
+A Federação é a capacidade de compartilhar identidades em várias empresas ou domínios de confiança para autenticação e autorização. Ele usa o protocolo WS-Trust para mapear a representação de identidade de um domínio de confiança para outro. A associação HTTP federada dá suporte à segurança SOAP, bem como à segurança de modo misto, mas não dá suporte à segurança de transporte. Os serviços configurados com essa associação devem usar o transporte HTTP. Para obter mais informações, confira [\<wsFederationHttpBinding>](wsfederationhttpbinding.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -133,7 +134,7 @@ A Federação é a capacidade de compartilhar identidades em várias empresas ou
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.WS2007FederationHttpBinding>
 - <xref:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement>

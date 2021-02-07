@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <wsHttpContextBinding>'
 title: <wsHttpContextBinding>
 ms.date: 03/30/2017
 ms.assetid: 1e40b5c9-0df2-4d66-afc5-a99d0e4ae7a4
-ms.openlocfilehash: 4b611443e836773ad615f919921c8e7ddb29cba9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b020bbcaaa8d7680aeda8dc1a72cbc70fb4f9ada
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181278"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682053"
 ---
 # \<wsHttpContextBinding>
 
@@ -18,7 +19,7 @@ Fornece um contexto para o <xref:System.ServiceModel.WSHttpBinding> que requer q
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<wsHttpContextBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <wsHttpContextBinding>
@@ -101,7 +102,7 @@ Fornece um contexto para o <xref:System.ServiceModel.WSHttpBinding> que requer q
 |-------------|-----------------|  
 |[\<bindings>](bindings.md)|Esse elemento contém uma coleção de associações padrão e personalizadas.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.WSHttpBinding>
 - <xref:System.ServiceModel.WSHttpContextBinding>

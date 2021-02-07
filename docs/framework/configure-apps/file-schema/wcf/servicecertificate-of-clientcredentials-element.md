@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <serviceCertificate> do <clientCredentials> elemento'
 title: <serviceCertificate> do <clientCredentials> elemento
 ms.date: 03/30/2017
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
-ms.openlocfilehash: 502452c664f2dcb0856f72e25ff8b1517f432919
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5503c1a60b2d37f4f9359a2f49c019c37df71619
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172886"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682898"
 ---
 # <a name="servicecertificate-of-clientcredentials-element"></a>\<serviceCertificate> do \<clientCredentials> elemento
 
@@ -21,7 +22,7 @@ Especifica um certificado a ser usado ao autenticar um serviço para o cliente.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCredentials>**](clientcredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceCertificate>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <serviceCertificate />
@@ -55,7 +56,7 @@ Especifica um certificado a ser usado ao autenticar um serviço para o cliente.
   
  Os atributos do `serviceCertificate` elemento são idênticos aos atributos do [\<clientCertificate>](clientcertificate-of-clientcredentials-element.md) .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ServiceCertificate%2A>

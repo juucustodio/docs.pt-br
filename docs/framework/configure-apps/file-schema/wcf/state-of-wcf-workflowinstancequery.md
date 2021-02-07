@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <state> do WCF, <workflowInstanceQuery>'
 title: <state> do WCF, <workflowInstanceQuery>
 ms.date: 03/30/2017
 ms.assetid: 40f21055-766c-4be9-86c4-d1d899007098
-ms.openlocfilehash: c323f7dba265e7fbcb09482115694088e761af0e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8dbf741473e5f3c15c1833868c2c17abdfba6643
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148887"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682638"
 ---
 # <a name="state-of-wcf-workflowinstancequery"></a>\<state> do WCF, \<workflowInstanceQuery>
 
@@ -102,7 +103,7 @@ A configuração a seguir assina o fluxo de trabalho em nível de instância reg
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=nameWithType>

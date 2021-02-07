@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <security> de <netTcpBinding>'
 title: <security> de <netTcpBinding>
 ms.date: 03/30/2017
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
-ms.openlocfilehash: d39e3e5e655817aa91c5301274a860a00a6ab7ef
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ad924f5a6ea9e003f6427ee76d3aef3afde9d083
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169980"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683067"
 ---
 # <a name="security-of-nettcpbinding"></a>\<security> de \<netTcpBinding>
 
@@ -20,7 +21,7 @@ Define as configurações de segurança para uma associação.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <security mode="Message/None/Transport/TransportWithCredential">
@@ -71,7 +72,7 @@ Define as configurações de segurança para uma associação.
   
  Este elemento de configuração fornece as especificações de segurança para o `netTcpBinding` . Essa é uma associação segura, confiável e otimizada adequada para comunicação entre computadores. Por padrão, ele gera uma pilha de comunicação de tempo de execução que dá suporte a TCP para entrega de mensagens e segurança do Windows para segurança e autenticação de mensagens, WS-ReliableMessaging para confiabilidade e codificação de mensagens binárias.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.NetTcpSecurity>
 - <xref:System.ServiceModel.NetTcpBinding.Security%2A>

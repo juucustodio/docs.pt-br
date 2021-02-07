@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <serviceMetadata>'
 title: <serviceMetadata>
 ms.date: 03/30/2017
 ms.assetid: 2b4c3b4c-31d4-4908-a9b7-5bb411c221f2
-ms.openlocfilehash: 2236361316254d065abd1fb62fd2e509be289a4c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b519de04c333f9ddc12de72757587c9b38f29dba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153853"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682820"
 ---
 # \<serviceMetadata>
 
@@ -122,7 +123,7 @@ Especifica a publicação de metadados de serviço e informações associadas.
 </configuration>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>

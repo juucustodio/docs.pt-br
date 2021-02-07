@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <elemento> System. Web (configurações da Web)'
 title: Elemento <system.web> (Configurações da Web)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ASP.NET configuration system
 - configuration files [ASP.NET]
 ms.assetid: 24c4cf4f-ad32-42b2-b040-8e4549e2855e
-ms.openlocfilehash: c8b01ec217fc1b6b91ccf36c8667922b57f26852
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2adcd3eba1eb6d67bcb4dc82243cd70d31d64fe9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681897"
 ---
 # <a name="systemweb-element-web-settings"></a>Elemento \<system.web> (configurações da Web)
 
@@ -22,7 +23,7 @@ Contém informações sobre como a camada de hospedagem ASP.NET gerencia o compo
 [**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;**\<system.web>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.web>  
@@ -77,6 +78,6 @@ O exemplo a seguir mostra como configurar o comportamento do ASP.NET em todo o p
 |Arquivo de validação||  
 |Pode estar vazio||  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [\<applicationPool> Elemento (configurações da Web)](applicationpool-element-web-settings.md)

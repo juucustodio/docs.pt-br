@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <windowsAuthentication> de <serviceCredentials>'
 title: <windowsAuthentication> de <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: e0709473-0997-4de3-8f49-783527309a48
-ms.openlocfilehash: bda375959b535ce5f2996d594f719893164b0bd4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 94f5804ac22a8c3ee1b8fc646ece8521ff639aec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194993"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682404"
 ---
 # <a name="windowsauthentication-of-servicecredentials"></a>\<windowsAuthentication> de \<serviceCredentials>
 
@@ -21,7 +22,7 @@ Especifica as configurações de uma credencial de serviço do Windows.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceCredentials>**](servicecredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<windowsAuthentication>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <windowsAuthentication allowAnonymousLogons="Boolean"

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: carregando dados em um DataSet'
 title: Carregando dados em um DataSet
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a53e5dc1-9669-49d4-828d-efa633237066
-ms.openlocfilehash: c870cabc875aa0152910ce916819fb1ff1c018f7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 167a399d17257008e884fbcccc96de17398b8f88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166702"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681676"
 ---
 # <a name="loading-data-into-a-dataset"></a>Carregando dados em um DataSet
 
@@ -25,7 +26,7 @@ Um <xref:System.Data.DataSet> objeto deve ser preenchido primeiro antes que voc�
  [!code-csharp[DP LINQ to DataSet Examples#FillDataSet](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#filldataset)]
  [!code-vb[DP LINQ to DataSet Examples#FillDataSet](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#filldataset)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ para visão geral do DataSet](linq-to-dataset-overview.md)
 - [Consultar DataSets](querying-datasets-linq-to-dataset.md)

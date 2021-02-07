@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <webScriptEndpoint>'
 title: <webScriptEndpoint>
 ms.date: 03/30/2017
 ms.assetid: 85cb5ecf-351b-45f3-aa29-aa2e4b64bcdd
-ms.openlocfilehash: 5e3ca9c4a43432d7f5da6d8816b6a2b984851050
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: eef4eb8e8e7345492f967c85b6245f733a4c824f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177833"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682495"
 ---
 # \<webScriptEndpoint>
 
@@ -18,7 +19,7 @@ Este elemento de configuração define um ponto de extremidade padrão com uma [
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webScriptEndpoint>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>

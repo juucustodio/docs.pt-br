@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1007-WorkflowApplicationPersisted'
 title: 1007 - WorkflowApplicationPersisted
 ms.date: 03/30/2017
 ms.assetid: f4ea4452-28e3-4e66-93c6-eb12ee29bcb1
-ms.openlocfilehash: aa4c7b2c98924eb43f78ab23a145b93906e302fc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6598f4490d20f84abfc95223f9d5a3f4231b4754
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239803"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755571"
 ---
 # <a name="1007---workflowapplicationpersisted"></a>1007 - WorkflowApplicationPersisted
 
@@ -17,7 +18,7 @@ ms.locfileid: "96239803"
 |-|-|  
 |ID|1007|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

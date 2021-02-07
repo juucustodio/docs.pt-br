@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1009-ActivityScheduled'
 title: 1009 - ActivityScheduled
 ms.date: 03/30/2017
 ms.assetid: 307e38b6-d47e-47a4-9708-e74d8314b1a1
-ms.openlocfilehash: 812531d4206dfee20f183b9461330e71263b0bf8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 80ee250955a03927fb9db2b1242d420be77a6df8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755545"
 ---
 # <a name="1009---activityscheduled"></a>1009 - ActivityScheduled
 
@@ -17,7 +18,7 @@ ms.locfileid: "96239764"
 |-|-|  
 |ID|1009|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

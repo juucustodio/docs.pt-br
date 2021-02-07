@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1010-ActivityCompleted'
 title: 1010 - ActivityCompleted
 ms.date: 03/30/2017
 ms.assetid: d256284e-3fd2-4c33-82f4-abb617575706
-ms.openlocfilehash: d0ebf32ec1d5fe5b34ffe650d5547891be0eb665
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c72339449b94b0ea5d6d8fa227b606cc25c29704
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239907"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755532"
 ---
 # <a name="1010---activitycompleted"></a>1010 - ActivityCompleted
 
@@ -17,7 +18,7 @@ ms.locfileid: "96239907"
 |-|-|  
 |ID|1010|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

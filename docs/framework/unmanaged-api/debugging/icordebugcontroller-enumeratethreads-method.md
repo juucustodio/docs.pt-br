@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugController:: EnumerateThreads'
 title: Método ICorDebugController::EnumerateThreads
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 73f536f6-4668-4a4a-b3e4-ac7df862d5be
 topic_type:
 - apiref
-ms.openlocfilehash: f98118f9206d9ccd7dc9dc9a943500c7b4cd676a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b53425de36be5a435ef0dac538c5165f41db63f2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732652"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710771"
 ---
 # <a name="icordebugcontrollerenumeratethreads-method"></a>Método ICorDebugController::EnumerateThreads
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedDocument'
 title: Interface ISymUnmanagedDocument
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5c26b366-6e81-467c-9dd0-02dd26fee0a3
 topic_type:
 - apiref
-ms.openlocfilehash: 83c683e1f60f13f7cee4ddc6fe5af5a94e36eb93
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd1907e570dd15ebcac3ee12aa09c626c9bb7787
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95692170"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710134"
 ---
 # <a name="isymunmanageddocument-interface"></a>Interface ISymUnmanagedDocument
 
@@ -27,7 +28,7 @@ Representa um documento referenciado por um repositório de símbolos. Um docume
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método FindClosestLine](isymunmanageddocument-findclosestline-method.md)|Retorna a linha mais próxima que é um ponto de sequência, dada uma linha neste documento que pode ou não ser um ponto de sequência.|  
 |[Método GetCheckSum](isymunmanageddocument-getchecksum-method.md)|Obtém a soma de verificação.|  
@@ -40,6 +41,6 @@ Representa um documento referenciado por um repositório de símbolos. Um docume
 |[Método GetURL](isymunmanageddocument-geturl-method.md)|Retorna a URL deste documento.|  
 |[Método HasEmbeddedSource](isymunmanageddocument-hasembeddedsource-method.md)|Retorna `true` se o documento tem origem inserida nos símbolos de depuração; caso contrário, retorna `false` .|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)

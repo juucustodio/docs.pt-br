@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedMethod'
 title: Interface ISymUnmanagedMethod
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f204d74c-cc79-4092-83bb-60654be95649
 topic_type:
 - apiref
-ms.openlocfilehash: b72a77fecd15a43efbddd9dfd4618897c3372f88
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 18f87784a959ddc62415592e51d1971ea10f90bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699268"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709952"
 ---
 # <a name="isymunmanagedmethod-interface"></a>Interface ISymUnmanagedMethod
 
@@ -27,7 +28,7 @@ Representa um método dentro do repositório de símbolos. Essa interface fornec
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetNamespace](isymunmanagedmethod-getnamespace-method.md)|Obtém o namespace no qual esse método é definido.|  
 |[Método GetOffset](isymunmanagedmethod-getoffset-method.md)|Retorna o deslocamento dentro desse método que corresponde a uma determinada posição dentro de um documento.|  
@@ -44,6 +45,6 @@ Representa um método dentro do repositório de símbolos. Essa interface fornec
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugDebugEvent:: GetThread'
 title: Método ICorDebugDebugEvent::GetThread
 ms.date: 03/30/2017
 ms.assetid: 4f2e9a2c-8369-4a07-a881-ad5422626353
-ms.openlocfilehash: ca6aba7897d9e97743d29db49bd058e140f84e6e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1d476603572f31882f481d414e483c6712f1b5fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710394"
 ---
 # <a name="icordebugdebugeventgetthread-method"></a>Método ICorDebugDebugEvent::GetThread
 
@@ -41,7 +42,7 @@ HRESULT GetThread(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugDebugEvent](icordebugdebugevent-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

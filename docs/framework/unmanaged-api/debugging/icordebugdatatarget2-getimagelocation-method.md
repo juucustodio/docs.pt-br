@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugDataTarget2:: GetImageLocation'
 title: Método ICorDebugDataTarget2::GetImageLocation
 ms.date: 03/30/2017
 ms.assetid: 696afe71-5852-478d-a33f-b2d2dbc4b91f
-ms.openlocfilehash: c909b46a9bb70d23d1cd3a769ac24fcf58479308
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f79ba89d3ba467c2e81224d64147c2b5dd5db079
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713789"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710485"
 ---
 # <a name="icordebugdatatarget2getimagelocation-method"></a>Método ICorDebugDataTarget2::GetImageLocation
 
@@ -52,7 +53,7 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugDataTarget2](icordebugdatatarget2-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

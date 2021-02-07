@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugCode:: GetCode'
 title: Método ICorDebugCode::GetCode
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7137e3d1-1dad-48d8-8c37-16ac816534d3
 topic_type:
 - apiref
-ms.openlocfilehash: 20eac75a1f1d13b6a30267d56ff66024725e6f33
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 329770fac4f2b375c01dd68e4ea7114e59c609b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711278"
 ---
 # <a name="icordebugcodegetcode-method"></a>Método ICorDebugCode::GetCode
 
@@ -70,6 +71,6 @@ HRESULT GetCode (
   
  **Versões do .NET Framework:** 1,1, 1,0  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetCodeChunks](icordebugcode2-getcodechunks-method.md)

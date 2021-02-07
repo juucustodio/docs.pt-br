@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugCode4:: EnumerateVariableHomes'
 title: 'Método ICorDebugCode4:: EnumerateVariableHomes'
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 802c01ff-8b80-4733-b6dd-03ab6ff7fa11
 topic_type:
 - apiref
-ms.openlocfilehash: 6d58efa5629bb02158a275dec61c0313bca821a1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 58f5f9063cd22356efd3a77ece9fb43b6b4c1062
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710953"
 ---
 # <a name="icordebugcode4enumeratevariablehomes-method"></a>Método ICorDebugCode4:: EnumerateVariableHomes
 
@@ -53,7 +54,7 @@ HRESULT EnumerateVariableHomes(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugCode4](icordebugcode4-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

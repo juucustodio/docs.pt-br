@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugComObjectValue'
 title: Interface ICorDebugComObjectValue
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 505a7f6c-d92b-42b4-b539-433f5102ea9b
 topic_type:
 - apiref
-ms.openlocfilehash: 40df1416e68c86efe6d404119cb37277fe21ac56
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3c071c371ae6e330431630cfb1934b538d62efe6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677538"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710810"
 ---
 # <a name="icordebugcomobjectvalue-interface"></a>Interface ICorDebugComObjectValue
 
@@ -27,7 +28,7 @@ Fornece métodos para recuperar informações associadas a um RCW (Runtime Calla
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetCachedInterfacePointers](icordebugcomobjectvalue-getcachedinterfacepointers-method.md)|Obtém os ponteiros de interface bruto armazenados em cache no RCW atual.|  
 |[Método GetCachedInterfaceTypes](icordebugcomobjectvalue-getcachedinterfacetypes-method.md)|Fornece um enumerador para os tipos de interface para os quais o objeto atual foi usado em maiúsculas ou usados.|  
@@ -46,7 +47,7 @@ Fornece métodos para recuperar informações associadas a um RCW (Runtime Calla
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedDocument:: GetLanguageVendor'
 title: Método ISymUnmanagedDocument::GetLanguageVendor
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1d4b702e-4922-441d-8b44-03804284f70b
 topic_type:
 - apiref
-ms.openlocfilehash: bac0f187409a191dda1ef635ec9b2da1aee25981
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 247c6c24f57211b3b46ad773d8e77d7e0f16fd01
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700945"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710238"
 ---
 # <a name="isymunmanageddocumentgetlanguagevendor-method"></a>Método ISymUnmanagedDocument::GetLanguageVendor
 
@@ -38,10 +39,10 @@ HRESULT GetLanguageVendor(
  `pRetVal`  
  fora Um ponteiro para uma variável que recebe o fornecedor do idioma.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedDocument](isymunmanageddocument-interface.md)

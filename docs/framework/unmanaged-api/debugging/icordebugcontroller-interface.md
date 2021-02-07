@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugController'
 title: Interface ICorDebugController
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dbb1c4dc-269a-459b-ab1d-6c70788782ce
 topic_type:
 - apiref
-ms.openlocfilehash: 1ca9e55a2183ca4293d30607496b588cbf21d6dd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 588c41b5b8d87589facd6085655ed0ad415ec3aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679939"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710745"
 ---
 # <a name="icordebugcontroller-interface"></a>Interface ICorDebugController
 
@@ -27,7 +28,7 @@ Representa um escopo, um <xref:System.Diagnostics.Process> ou um <xref:System.Ap
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |`ICorDebugController::CanCommitChanges`|Esse método é obsoleto.|  
 |`ICorDebugController::CommitChanges`|Esse método é obsoleto.|  
@@ -57,6 +58,6 @@ Representa um escopo, um <xref:System.Diagnostics.Process> ou um <xref:System.Ap
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

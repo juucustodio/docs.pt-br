@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugCode'
 title: Interface ICorDebugCode
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7bd14fb6-8b54-4484-a891-e3c21859c019
 topic_type:
 - apiref
-ms.openlocfilehash: 03cbc1a598ba6c0166f72ff404c239763956c996
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ce67c48501783bbe00152f0ba2c224e6e7dde6d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687600"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711135"
 ---
 # <a name="icordebugcode-interface"></a>Interface ICorDebugCode
 
@@ -27,7 +28,7 @@ Representa um segmento de código MSIL (Microsoft Intermediate Language) ou cód
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CreateBreakpoint](icordebugcode-createbreakpoint-method.md)|Cria um ponto de interrupção no deslocamento especificado.|  
 |[Método GetAddress](icordebugcode-getaddress-method.md)|Obtém o endereço virtual relativo (RVA) do segmento de código que isso `ICorDebugCode` representa.|  
@@ -56,7 +57,7 @@ Representa um segmento de código MSIL (Microsoft Intermediate Language) ou cód
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugCode3](icordebugcode3-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

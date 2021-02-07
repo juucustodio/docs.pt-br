@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Método ICorDebugController:: Terminate'
 title: Método ICorDebugController::Terminate
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4275af0c-b5a7-4e4c-97c9-7e41f36b2dd8
 topic_type:
 - apiref
-ms.openlocfilehash: 460aeeca9d62ce91a11a24d774c8e681ed4f00ca
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 15cc832205ebfe86e521d4a45124808e0f3fe128
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679800"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710706"
 ---
 # <a name="icordebugcontrollerterminate-method"></a>Método ICorDebugController::Terminate
 

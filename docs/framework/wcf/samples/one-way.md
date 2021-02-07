@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: One-Way'
 title: Unidirecional
 ms.date: 03/30/2017
 ms.assetid: 74e3e03d-cd15-4191-a6a5-1efa2dcb9e73
-ms.openlocfilehash: 7732b63cccb98ac54d99a0430dbaf0c8abfdaaa5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fef940f6e0787b7dc91f02442597625b8c4cca50
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726280"
 ---
 # <a name="one-way"></a>Unidirecional
 

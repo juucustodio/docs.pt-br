@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Entity SQL Language'
 title: Linguagem Entity SQL
 ms.date: 03/30/2017
 ms.assetid: 9e7d8837-28c5-429d-a824-7bafb59724cf
-ms.openlocfilehash: 721a4cd9d4e5618c083392bbe1ae203f285f8feb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c05e561e5da3f9ee8788a25f8ca97b22444e109f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148107"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724564"
 ---
 # <a name="entity-sql-language"></a>Linguagem Entity SQL
 
@@ -57,7 +58,7 @@ O Entity SQL é uma linguagem de consulta independente de armazenamento semelhan
   
  [Como navegar em relações usando propriedades de navegação](/previous-versions/dotnet/netframework-4.0/bb896321(v=vs.100))  
   
- [Como: chamar uma função definida pelo usuário](/previous-versions/dotnet/netframework-4.0/dd490951(v=vs.100))  
+ [Como: chamar uma função User-Defined](/previous-versions/dotnet/netframework-4.0/dd490951(v=vs.100))  
   
  [Como filtrar dados](/previous-versions/dotnet/netframework-4.0/cc716755(v=vs.100))  
   
@@ -83,7 +84,7 @@ O Entity SQL é uma linguagem de consulta independente de armazenamento semelhan
   
  [Referência de Entity SQL](entity-sql-reference.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ADO.NET Entity Framework](../index.md)
 - [Referência de linguagem](index.md)

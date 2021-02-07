@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <probing> elemento'
 title: Elemento <probing>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - container tags, <probing> element
 - probing element
 ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
-ms.openlocfilehash: 1435ee8ea887b5d7d3e785eef0f25ffed14b1b97
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 404e53f735ce02c2a3d7911216f834d38e309789
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195266"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726098"
 ---
 # <a name="probing-element"></a>Elemento \<probing>
 
@@ -25,7 +26,7 @@ Especifica subdiretórios base do aplicativo para a Common Language Runtime Pesq
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<probing>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <probing privatePath="paths"/>  
@@ -67,7 +68,7 @@ Nenhum.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações de tempo de execução](index.md)
 - [Esquema do arquivo de configuração](../index.md)

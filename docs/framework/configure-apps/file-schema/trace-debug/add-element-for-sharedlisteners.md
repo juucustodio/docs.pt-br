@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <add> elemento para <sharedListeners>'
 title: Elemento <add> para <sharedListeners>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <add> element for <sharedListeners>
 - add element for <sharedListeners>
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
-ms.openlocfilehash: f0ede5f9dc19e9589afc888e7fcd01785bc1840c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: df3348fa0cbb357b2ceeb5d9db940a1ae3ae102c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174024"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726072"
 ---
 # <a name="add-element-for-sharedlisteners"></a>Elemento \<add> para \<sharedListeners>
 
@@ -24,7 +25,7 @@ Adiciona um ouvinte na coleção `sharedListeners`. `sharedListeners` é uma col
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<sharedListeners>**](sharedlisteners-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <add name="name"
@@ -113,7 +114,7 @@ Adiciona um ouvinte na coleção `sharedListeners`. `sharedListeners` é uma col
 </configuration>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.TraceSource>
 - <xref:System.Diagnostics.TraceListener>

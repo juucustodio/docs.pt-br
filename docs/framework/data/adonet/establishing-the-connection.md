@@ -1,29 +1,30 @@
 ---
+description: 'Saiba mais sobre: estabelecendo a conexão'
 title: Estabelecendo a conexão
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 3af512f3-87d9-4005-9e2f-abb1060ff43f
-ms.openlocfilehash: bf38475711a193bc69176993154f87d455aefe7d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e7f8c837476a678f003eb0477934bb8bd08fd896
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156466"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724330"
 ---
 # <a name="establishing-the-connection"></a>Estabelecendo a conexão
 
-Para se conectar ao Microsoft SQL Server, use o objeto <xref:System.Data.SqlClient.SqlConnection> do provedor de dados .NET Framework para SQL Server. Para se conectar a uma fonte de dados OLE DB, use o objeto <xref:System.Data.OleDb.OleDbConnection> do provedor de dados .NET Framework para OLE DB. Para se conectar a uma fonte de dados ODBC, use o objeto <xref:System.Data.Odbc.OdbcConnection> do provedor de dados .NET Framework para ODBC. Para se conectar a uma fonte de dados Oracle, use o objeto <xref:System.Data.OracleClient.OracleConnection> do provedor de dados .NET Framework para Oracle. Para armazenar e recuperar cadeias de conexão com segurança, consulte [proteção de informações de conexão](protecting-connection-information.md).  
+Para se conectar ao Microsoft SQL Server, use o objeto <xref:System.Data.SqlClient.SqlConnection> do provedor de dados .NET Framework para SQL Server. Para se conectar a uma fonte de dados OLE DB, use o objeto <xref:System.Data.OleDb.OleDbConnection> do provedor de dados .NET Framework para OLE DB. Para se conectar a uma fonte de dados ODBC, use o objeto <xref:System.Data.Odbc.OdbcConnection> do provedor de dados .NET Framework para ODBC. Para se conectar a uma fonte de dados Oracle, use o objeto <xref:System.Data.OracleClient.OracleConnection> do provedor de dados .NET Framework para Oracle. Para armazenar e recuperar cadeias de conexão com segurança, confira [Proteger informações de conexão](protecting-connection-information.md).  
   
 ## <a name="closing-connections"></a>Fechando conexões  
 
- É recomendável sempre fechar a conexão quando você terminar de usá-la para que a conexão possa ser retornada ao pool. O bloco `Using` no Visual Basic ou C# automaticamente descarta a conexão quando o código sai do bloco, mesmo no caso de uma exceção sem tratamento. Consulte [usando a instrução](../../../csharp/language-reference/keywords/using-statement.md) e [usando a instrução](../../../visual-basic/language-reference/statements/using-statement.md) para obter mais informações.  
+ É recomendável sempre fechar a conexão quando você terminar de usá-la para que a conexão possa ser retornada ao pool. O bloco `Using` no Visual Basic ou C# automaticamente descarta a conexão quando o código sai do bloco, mesmo no caso de uma exceção sem tratamento. Confira [Instrução using](../../../csharp/language-reference/keywords/using-statement.md) e [Instrução Using](../../../visual-basic/language-reference/statements/using-statement.md) para obter mais informações.  
   
  Você também pode usar os métodos `Close` ou `Dispose` do objeto de conexão para o provedor que você está usando. As conexões que não são fechadas explicitamente não podem ser adicionadas nem retornadas ao pool. Por exemplo, uma conexão que sai de escopo, mas que não foi fechada explicitamente será retornada somente para o pool de conexões se o tamanho do máximo tiver sido atingido e a conexão ainda estiver válida. Para obter mais informações, consulte [OLE DB, ODBC e pool de conexões Oracle](ole-db-odbc-and-oracle-connection-pooling.md).  
   
 > [!NOTE]
-> Não chame `Close` ou `Dispose` em uma **conexão**, um **DataReader**ou qualquer outro objeto gerenciado no `Finalize` método da sua classe. Em um finalizador, libere somente recursos não gerenciados que sua classe possui diretamente. Se a classe não tiver nenhum recurso não gerenciado, não inclua um método `Finalize` em sua definição de classe. Para obter mais informações, consulte [coleta de lixo](../../../standard/garbage-collection/index.md).  
+> Não chame `Close` ou `Dispose` em um objeto **Connection**, um **DataReader** nem em nenhum outro objeto gerenciado no método `Finalize` de sua classe. Em um finalizador, libere somente recursos não gerenciados que sua classe possui diretamente. Se a classe não tiver nenhum recurso não gerenciado, não inclua um método `Finalize` em sua definição de classe. Para obter mais informações, confira [Coleta de lixo](../../../standard/garbage-collection/index.md).  
   
 > [!NOTE]
 > Eventos de logon e logout não serão gerados no servidor quando uma conexão for procurada de ou retornada para o pool de conexões, porque a conexão não é fechada realmente quando é retornada para o pool de conexões. Para obter mais informações, consulte [Pool de Conexões do SQL Server (ADO.NET)](sql-server-connection-pooling.md).  
@@ -55,7 +56,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 
  A segurança integrada do SQL Server (também conhecida como conexões confiáveis) ajuda a fornecer a proteção ao se conectar com o SQL Server porque ele não expõe uma identificação de usuário e uma senha na cadeia de conexão e é o método recomendado para autenticar uma conexão. A segurança integrada usa a identidade de segurança atual, ou símbolo, do processo em execução. Para aplicativos desktop, isso é geralmente a identidade do usuário conectado no momento.  
   
- A identidade de segurança para aplicativos ASP.NET pode ser definida para uma das várias opções diferentes. Para entender melhor a identidade de segurança que um aplicativo ASP.NET usa ao se conectar a SQL Server, consulte [personificação de ASP.net](/previous-versions/aspnet/xh507fc5(v=vs.100)), [autenticação ASP.net](/previous-versions/aspnet/eeyk640h(v=vs.100))e [como acessar SQL Server usando a segurança integrada do Windows](/previous-versions/aspnet/bsz5788z(v=vs.100)).  
+ A identidade de segurança para aplicativos ASP.NET pode ser definida para uma das várias opções diferentes. Para compreender melhor a identidade de segurança que um aplicativo ASP.NET usa ao se conectar com o SQL Server, confira [Representação do ASP.NET](/previous-versions/aspnet/xh507fc5(v=vs.100)), [Autenticação do ASP.NET](/previous-versions/aspnet/eeyk640h(v=vs.100)) e [Como acessar o SQL Server usando a Segurança integrada do Windows](/previous-versions/aspnet/bsz5788z(v=vs.100)).  
   
 ## <a name="connecting-to-an-ole-db-data-source"></a>Conectando-se a uma fonte de dados do OLE DB  
 
@@ -65,7 +66,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
   
 - A palavra-chave **Provider** é necessária.  
   
-- Não há suporte para a **URL**, o **provedor remoto**e as palavras-chave do **servidor remoto** .  
+- Não há suporte para a **URL**, o **provedor remoto** e as palavras-chave do **servidor remoto** .  
   
  Para obter mais informações sobre cadeias de conexão do OLE DB, consulte o tópico <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A>. Você também pode usar <xref:System.Data.OleDb.OleDbConnectionStringBuilder> para criar cadeias de conexão em tempo de execução.  
   

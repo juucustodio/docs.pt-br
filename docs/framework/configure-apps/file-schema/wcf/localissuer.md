@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <localIssuer>'
 title: <localIssuer>
 ms.date: 03/30/2017
 ms.assetid: 26bdd0df-0e7d-4b9e-bbeb-f28c53769385
-ms.openlocfilehash: e08d2c0b42cfd8e302223915f0256f8cb2d1468b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 38928f1bfd7740aa902de46958740a1e8fe63e5a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204951"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725474"
 ---
 # \<localIssuer>
 
@@ -22,7 +23,7 @@ Especifica o endereço e a associação do emissor local a ser usado para obter 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<issuedToken>**](issuedtoken.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<localIssuer>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <localIssuer address="String"
@@ -82,7 +83,7 @@ Especifica o endereço e a associação do emissor local a ser usado para obter 
 </system.serviceModel>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer%2A>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <assert> elemento'
 title: Elemento <assert>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <assert> element
 - assert element
 ms.assetid: ef4c3229-b151-4d85-8091-e6456af9b935
-ms.openlocfilehash: eb29701912a45a484b1716195b449e8a97d1d4b5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ce8000b30569d0e5ce47a77fbccd4bec833bb5be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149290"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725981"
 ---
 # <a name="assert-element"></a>Elemento \<assert>
 
@@ -74,7 +75,7 @@ Especifica se uma caixa de mensagem deve ser exibida ao chamar o método <xref:S
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.Debug>
 - [Esquema de configurações de rastreamento e depuração](index.md)

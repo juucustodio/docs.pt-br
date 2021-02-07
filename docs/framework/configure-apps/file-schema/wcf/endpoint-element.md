@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <endpoint> elemento'
 title: Elemento <endpoint>
 ms.date: 03/30/2017
 ms.assetid: 2fc8fedc-78d0-4e87-8142-fbfd26c15a4e
-ms.openlocfilehash: befebc090900576b1e0f7ca679e1f5f5cd15af9a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d5555ae895e6655d1ce6e3dcb026ddec3ff8cf44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183800"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725799"
 ---
 # <a name="endpoint-element"></a>Elemento \<endpoint>
 
@@ -19,7 +20,7 @@ Especifica a associação, o contrato e as propriedades de endereço para um pon
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<service>**](service.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endpoint>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <endpoint address="String"
@@ -89,7 +90,7 @@ Especifica a associação, o contrato e as propriedades de endereço para um pon
 </endpoint>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceEndpointElement>
 - <xref:System.ServiceModel.EndpointAddress>

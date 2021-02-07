@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral do modelo de fábrica'
 title: Visão geral do modelo de fábrica
 ms.date: 03/30/2017
 ms.assetid: b5dc81c4-7554-44b9-b513-769bd61e2e7b
-ms.openlocfilehash: 7cee3966ab3a37d2dbc6dd0ea9ab26b485ef63fd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 175b05a298eb260dfe8c59b380ab3b8b9dcba943
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156388"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724200"
 ---
 # <a name="factory-model-overview"></a>Visão geral do modelo de fábrica
 
@@ -21,7 +22,7 @@ O ADO.NET 2,0 introduziu novas classes base no <xref:System.Data.Common> namespa
   
  A partir do ADO.NET 2,0, a <xref:System.Data.Common.DbProviderFactories> classe fornece `static` (ou `Shared` em Visual Basic) métodos para criar uma <xref:System.Data.Common.DbProviderFactory> instância. Em seguida, a instância retorna um objeto com rigidez de tipos correto com base nas informações do provedor e na cadeia de conexão fornecida em tempo de execução.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Obtendo um DbProviderFactory](obtaining-a-dbproviderfactory.md)
 - [DbConnection, DbCommand e DbException](dbconnection-dbcommand-and-dbexception.md)

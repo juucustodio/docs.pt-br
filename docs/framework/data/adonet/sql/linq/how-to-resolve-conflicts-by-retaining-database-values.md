@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como resolver conflitos por meio da retenção de valores de banco de dados'
 title: 'Como: resolver conflitos mantendo valores de banco de dados'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b475cf72-9e64-4f6e-99c1-af7737bc85ef
-ms.openlocfilehash: b6f9b0308bcbf53a89ae0690ed44db0a364aef0c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ef47370768ce474ccb6d941bcec0e66807290599
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723485"
 ---
 # <a name="how-to-resolve-conflicts-by-retaining-database-values"></a>Como: resolver conflitos mantendo valores de banco de dados
 
@@ -42,6 +43,6 @@ Para reconciliar diferenças entre valores esperados e reais de base de dados an
  [!code-csharp[System.Data.Linq.RefreshMode#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.refreshmode/cs/program.cs#1)]
  [!code-vb[System.Data.Linq.RefreshMode#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.refreshmode/vb/module1.vb#1)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: gerenciar conflitos de alteração](how-to-manage-change-conflicts.md)

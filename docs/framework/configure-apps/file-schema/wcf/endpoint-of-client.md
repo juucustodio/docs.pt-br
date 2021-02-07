@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <endpoint> de <client>'
 title: <endpoint> de <client>
 ms.date: 03/30/2017
 ms.assetid: de6238ae-bbf8-48e9-a1b5-e24c0bea8afa
-ms.openlocfilehash: 79d827691ec3898ad94af9835077c61ea35990ab
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4ace6d49ba18524729925b20cf08e5d57bcc40c5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185841"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725773"
 ---
 # <a name="endpoint-of-client"></a>\<endpoint> de \<client>
 
@@ -18,7 +19,7 @@ Especifica o contrato, a associação e as propriedades de endereço do ponto de
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<client>**](client.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endpoint>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <endpoint address="String"
@@ -75,7 +76,7 @@ Especifica o contrato, a associação e as propriedades de endereço do ponto de
 </endpoint>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
 - <xref:System.ServiceModel.Configuration.ClientSection>

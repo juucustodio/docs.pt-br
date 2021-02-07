@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: compor consultas de Entity SQL aninhadas'
 title: Composta consultas aninhadas Entity SQL
 ms.date: 03/30/2017
 ms.assetid: 685d4cd3-2c1f-419f-bb46-c9d97a351eeb
-ms.openlocfilehash: 0c9a6a99ff49cfa847f4c1e7ea693fbb2611debd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 971625f0b1e82068192d4f8f74e2f1c55043d900
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153060"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724889"
 ---
 # <a name="composing-nested-entity-sql-queries"></a>Composta consultas aninhadas Entity SQL
 
@@ -79,6 +80,6 @@ SELECT C2.FirstName, C2.LastName
         ORDER BY C1.LastName) as C2  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral da Entity SQL](entity-sql-overview.md)

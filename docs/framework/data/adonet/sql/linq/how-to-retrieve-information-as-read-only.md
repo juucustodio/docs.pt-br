@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como recuperar informações como Read-Only'
 title: 'Como: recuperar informações como somente leitura'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fb09e298-0b53-47e5-97fb-ab318bcd4fad
-ms.openlocfilehash: 0a6853ef5d0b67e5efb95731adb5a106e8701e0f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7743e555bcc3f6371ca601d02313e30895e57961
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155829"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723446"
 ---
 # <a name="how-to-retrieve-information-as-read-only"></a>Como: recuperar informações como somente leitura
 
@@ -28,7 +29,7 @@ Quando você não pretende modificar os dados, você pode aumentar o desempenho 
  [!code-csharp[DLinqQuerying#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQuerying/cs/Program.cs#2)]
  [!code-vb[DLinqQuerying#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQuerying/vb/Module1.vb#2)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Consulte conceitos](query-concepts.md)
 - [Consultando o banco de dados](querying-the-database.md)

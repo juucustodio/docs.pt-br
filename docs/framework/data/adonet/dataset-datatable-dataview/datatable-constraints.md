@@ -1,22 +1,23 @@
 ---
+description: 'Saiba mais sobre: restrições de DataTable'
 title: Restrições de DataTable
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 27c9f2fd-f64d-4b4e-bbf6-1d24f47067cb
-ms.openlocfilehash: 1224518a9a16f48f770b6839317b9787da97377b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0c712115fd87fefae3578b2f3fc0adfc416f412e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153268"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724902"
 ---
 # <a name="datatable-constraints"></a>Restrições de DataTable
 
 Você pode usar restrições para impor restrições nos dados em um <xref:System.Data.DataTable>, para manter a integridade dos dados. Uma restrição é uma regra automática, aplicada a uma coluna ou colunas relacionadas, que determina o curso de ação quando o valor de uma linha é modificado de alguma maneira. As restrições são impostas quando a `System.Data.DataSet.EnforceConstraints` propriedade de <xref:System.Data.DataSet> é **verdadeira**. Para um exemplo de código que mostra como definir a propriedade `EnforceConstraints`, consulte o tópico de referência <xref:System.Data.DataSet.EnforceConstraints%2A>.  
   
- Há dois tipos de restrições no ADO.NET: o <xref:System.Data.ForeignKeyConstraint> e o <xref:System.Data.UniqueConstraint>. Por padrão, ambas as restrições são criadas automaticamente quando você cria uma relação entre duas ou mais tabelas adicionando um <xref:System.Data.DataRelation> ao **conjunto**de informações. No entanto, você pode desabilitar esse comportamento especificando **createConstraints**  =  **false** ao criar a relação.  
+ Há dois tipos de restrições no ADO.NET: o <xref:System.Data.ForeignKeyConstraint> e o <xref:System.Data.UniqueConstraint>. Por padrão, ambas as restrições são criadas automaticamente quando você cria uma relação entre duas ou mais tabelas adicionando um <xref:System.Data.DataRelation> ao **conjunto** de informações. No entanto, você pode desabilitar esse comportamento especificando **createConstraints**  =  **false** ao criar a relação.  
   
 ## <a name="foreignkeyconstraint"></a>ForeignKeyConstraint  
 
@@ -24,12 +25,12 @@ Você pode usar restrições para impor restrições nos dados em um <xref:Syste
   
  As <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> Propriedades e de **ForeignKeyConstraint** definem a ação a ser tomada quando o usuário tenta excluir ou atualizar uma linha em uma tabela relacionada. A tabela a seguir descreve as diferentes configurações disponíveis para as propriedades **DeleteRule** e **UpdateRule** do **ForeignKeyConstraint**.  
   
-|Configuração de regra|Description|  
+|Configuração de regra|Descrição|  
 |------------------|-----------------|  
 |**Cascade**|Excluir ou atualizar linhas relacionadas.|  
 |**SetNull**|Defina valores em linhas relacionadas como **DBNull**.|  
 |**SetDefault**|Definir valores em linhas relacionadas para o valor padrão.|  
-|**Nenhuma**|Nenhuma ação em linhas relacionadas. Este é o padrão.|  
+|**Nenhum**|Nenhuma ação em linhas relacionadas. Este é o padrão.|  
   
  Um **ForeignKeyConstraint** pode restringir, bem como propagar, alterações em colunas relacionadas. Dependendo das propriedades definidas para o **ForeignKeyConstraint** de uma coluna, se a propriedade **EnforceConstraints** do **conjunto** de dado for **true**, executar determinadas operações na linha pai resultará em uma exceção. Por exemplo, se a propriedade **DeleteRule** de **ForeignKeyConstraint** for **None**, uma linha pai não poderá ser excluída se tiver qualquer linha filho.  
   
@@ -57,14 +58,14 @@ custDS.Tables["OrdersTable"].Constraints.Add(custOrderFK);
   
 ### <a name="acceptrejectrule"></a>AcceptRejectRule  
 
- As alterações nas linhas podem ser aceitas usando o método **AcceptChanges** ou canceladas usando o método **RejectChanges** do **DataSet**, **DataTable**ou **DataRow**. Quando um **conjunto** de um DataSet contém **ForeignKeyConstraint**, invocar os métodos **AcceptChanges** ou **RejectChanges** impõe o **AcceptRejectRule**. A propriedade **AcceptRejectRule** de **ForeignKeyConstraint** determina qual ação será executada nas linhas filhas quando **AcceptChanges** ou **RejectChanges** for chamado na linha pai.  
+ As alterações nas linhas podem ser aceitas usando o método **AcceptChanges** ou canceladas usando o método **RejectChanges** do **DataSet**, **DataTable** ou **DataRow**. Quando um **conjunto** de um DataSet contém **ForeignKeyConstraint**, invocar os métodos **AcceptChanges** ou **RejectChanges** impõe o **AcceptRejectRule**. A propriedade **AcceptRejectRule** de **ForeignKeyConstraint** determina qual ação será executada nas linhas filhas quando **AcceptChanges** ou **RejectChanges** for chamado na linha pai.  
   
  A tabela a seguir lista as configurações disponíveis para o **AcceptRejectRule**.  
   
-|Configuração de regra|Description|  
+|Configuração de regra|Descrição|  
 |------------------|-----------------|  
 |**Cascade**|Aceitar ou rejeitar alterações em linhas filho.|  
-|**Nenhuma**|Nenhuma ação em linhas filho. Este é o padrão.|  
+|**Nenhum**|Nenhuma ação em linhas filho. Este é o padrão.|  
   
 ### <a name="example"></a>Exemplo  
 
@@ -97,7 +98,7 @@ UniqueConstraint custUnique = new UniqueConstraint(new DataColumn[]
 custDS.Tables["Customers"].Constraints.Add(custUnique);  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Data.DataRelation>
 - <xref:System.Data.DataTable>

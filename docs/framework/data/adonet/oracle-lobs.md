@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Oracle LOBs'
 title: Oracle LOBs
 ms.date: 03/30/2017
 ms.assetid: 272e8e1e-a31f-475a-8c2a-ae8e1286bdab
-ms.openlocfilehash: 072e3e3514c2dd32ddff0bac941da30788feae16
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f59e2326852233648b15cf6aa56ebed905fcb598
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147834"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723680"
 ---
 # <a name="oracle-lobs"></a>Oracle LOBs
 
@@ -25,7 +26,7 @@ O Provedor de Dados .NET Framework para Oracle inclui a <xref:System.Data.Oracle
   
 ## <a name="creating-retrieving-and-writing-to-a-lob"></a>Criar, recuperar e escrever em um LOB  
 
- O exemplo de C# a seguir demonstra como você pode criar LOBs em uma tabela do Oracle e, em seguida, recuperar e gravar nelas na forma de objetos **OracleLob** . O exemplo demonstra como usar o <xref:System.Data.OracleClient.OracleDataReader> objeto e os métodos de **leitura** e **gravação** de **OracleLob** . O exemplo usa os tipos de dados Oracle **blob**, **CLOB**e **NClob** .  
+ O exemplo de C# a seguir demonstra como você pode criar LOBs em uma tabela do Oracle e, em seguida, recuperar e gravar nelas na forma de objetos **OracleLob** . O exemplo demonstra como usar o <xref:System.Data.OracleClient.OracleDataReader> objeto e os métodos de **leitura** e **gravação** de **OracleLob** . O exemplo usa os tipos de dados Oracle **blob**, **CLOB** e **NClob** .  
   
 ```csharp  
 using System;  
@@ -250,7 +251,7 @@ cmd.ExecuteNonQuery();
 tx.Commit();  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Oracle e ADO.NET](oracle-and-adonet.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

@@ -1,13 +1,14 @@
 ---
+description: Saiba mais sobre:/(divisão) (Entity SQL)
 title: '- Dividir (Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: ef48c368-f3ed-4275-8ada-4e9649781262
-ms.openlocfilehash: d7d25d8c5b91850b21e36ba8f6f668af7a7d0045
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4ac487c636c460401eeb147dc7ce1a8d8ba7f7ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724629"
 ---
 # <a name="-divide-entity-sql"></a>/ (Divisão) (Entity SQL)
 
@@ -41,6 +42,6 @@ dividend / divisor
   
  [!code-sql[DP EntityServices Concepts#DIVIDE](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#divide)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

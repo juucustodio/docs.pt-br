@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: filtragem com DataView (LINQ to DataSet)'
 title: Filtrando com DataView (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 5632d74a-ff53-4ea7-9fe7-4a148eeb1c68
-ms.openlocfilehash: 9b4c8e9730dde7d19df9e6a11052ae4591465ea7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 152b2e1d82cd5cf0eac24fd952de26d83fbffe58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724135"
 ---
 # <a name="filtering-with-dataview-linq-to-dataset"></a>Filtrando com DataView (LINQ to DataSet)
 
@@ -102,7 +103,7 @@ A capacidade de filtrar dados usando critérios específicos e apresentá-los pa
  [!code-csharp[DP DataView Samples#LDVClearRowFilter](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS/Form1.cs#ldvclearrowfilter)]
  [!code-vb[DP DataView Samples#LDVClearRowFilter](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#ldvclearrowfilter)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Associação e LINQ to DataSet de dados](data-binding-and-linq-to-dataset.md)
 - [Classificar com DataView](sorting-with-dataview-linq-to-dataset.md)

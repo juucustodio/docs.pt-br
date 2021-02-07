@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <issuedTokenParameters>'
 title: <issuedTokenParameters>
 ms.date: 03/30/2017
 ms.assetid: 120b3f37-7331-4816-b712-d6aab39655a4
-ms.openlocfilehash: c90024a0629f39d160967ca00434e48f682d8933
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 92c8f5aa25ddb71561eb702ba3eb0396456008a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157311"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725656"
 ---
 # \<issuedTokenParameters>
 
@@ -74,7 +75,7 @@ Especifica os parâmetros para um token de segurança emitido em um cenário de 
 |[\<secureConversationBootstrap>](secureconversationbootstrap.md)|Especifica os valores padrão usados para iniciar um serviço de conversa segura.|  
 |[\<security>](security-of-custombinding.md)|Especifica as opções de segurança para uma associação personalizada.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>

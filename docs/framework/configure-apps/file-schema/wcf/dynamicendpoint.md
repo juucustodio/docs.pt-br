@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <dynamicEndpoint>'
 title: <dynamicEndpoint>
 ms.date: 03/30/2017
 ms.assetid: 929f223d-176d-4205-9505-234ddb6dbff4
-ms.openlocfilehash: 6f9cb127deb5651ed27a0ef5802512fb5b6c7b54
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0fe30492e1daeecca5e27aef844f5f6977396049
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190092"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725890"
 ---
 # \<dynamicEndpoint>
 
@@ -18,7 +19,7 @@ Este elemento de configuração define um ponto de extremidade padrão que cont�
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dynamicEndpoint>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <CompatSortNLSVersion> elemento'
 title: Elemento <CompatSortNLSVersion>
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <CompatSortNLSVersion> element
 - CompatSortNLSVersion element
 ms.assetid: 782cc82e-83f7-404a-80b7-6d3061a8b6e3
-ms.openlocfilehash: 27d532633f08a5a560da61e904917c1faa35126c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a064c849e53167c5f7cf16b934dfb377f3d07644
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726176"
 ---
 # <a name="compatsortnlsversion-element"></a>Elemento \<CompatSortNLSVersion>
 
@@ -96,7 +97,7 @@ sta equals a in the sort order.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

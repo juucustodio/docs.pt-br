@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: executando um comando'
 title: Executando um comando
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 40494916-c25a-4cb8-8f7c-fcb8d378464e
-ms.openlocfilehash: d7d290c1c149f9eab2449c25e8d32f2568eb0277
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7b5fe46bf4d82fcd4f24cc0eb19e85a2ee9aca7b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156453"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724317"
 ---
 # <a name="executing-a-command"></a>Executando um comando
 
@@ -25,7 +26,7 @@ Cada provedor de dados do .NET Framework incluído com o .NET Framework tem seu 
   
  Cada objeto de comando fortemente tipado também dá suporte a uma enumeração de <xref:System.Data.CommandType> que especifica como uma cadeia de caracteres de comando é interpretada, conforme descrito na tabela a seguir.  
   
-|CommandType|Description|  
+|CommandType|Descrição|  
 |-----------------|-----------------|  
 |`Text`|Um comando SQL que define as instruções a serem executado na fonte de dados.|  
 |`StoredProcedure`|O nome do procedimento armazenado. Você pode usar a propriedade `Parameters` de um comando para acessar os parâmetros de entrada e saída e os valores de retorno, independentemente do método `Execute` chamado. Ao usar `ExecuteReader`, os valores de retorno e os parâmetros de saída não estarão acessíveis até que o `DataReader` seja fechado.|  
@@ -42,7 +43,7 @@ Cada provedor de dados do .NET Framework incluído com o .NET Framework tem seu 
 
  O provedor de dados .NET Framework para SQL Server adiciona contadores de desempenho para permitir que você detecte os problemas intermitentes relacionados às execuções de comando com falha. Para obter mais informações, consulte [contadores de desempenho](performance-counters.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Comandos e parâmetros](commands-and-parameters.md)
 - [DataAdapters e DataReaders](dataadapters-and-datareaders.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Method-Based exemplos de sintaxe de consulta: particionamento (LINQ'
 title: 'Exemplos de sintaxe da consulta com base em método: Divisão (LINQ'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a582c53f-f203-44ae-a797-d7f169a4fbb5
-ms.openlocfilehash: 0ef7176ccffb7037a7d4496cc7d4da7991741d38
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1e045fb4f0b627bdb5a926de2272bbaa59abdcee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147925"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723771"
 ---
 # <a name="method-based-query-syntax-examples-partitioning-linq"></a>Exemplos de sintaxe da consulta com base em método: Divisão (LINQ
 
@@ -77,7 +78,7 @@ Os exemplos neste tópico demonstram como usar <xref:System.Linq.Enumerable.Skip
  [!code-csharp[DP LINQ to DataSet Examples#TakeWhileSimple_MQ](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#takewhilesimple_mq)]
  [!code-vb[DP LINQ to DataSet Examples#TakeWhileSimple_MQ](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#takewhilesimple_mq)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Carregando dados em um DataSet](loading-data-into-a-dataset.md)
 - [LINQ para exemplos de DataSet](linq-to-dataset-examples.md)

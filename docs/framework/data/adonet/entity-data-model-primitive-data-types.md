@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Modelo de Dados de Entidade: tipos de dados primitivos'
 title: 'Modelo de Dados de Entidade: Tipos de dados primitivos'
 ms.date: 03/30/2017
 ms.assetid: 7635168e-0566-4fdd-8391-7941b0d9f787
-ms.openlocfilehash: 4d52f50dec44c7d667dfedc10a2c9c25fcde8917
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bdc34f3232e78d29e6c2ce25d8f159d7f5238f2f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724460"
 ---
 # <a name="entity-data-model-primitive-data-types"></a>Modelo de Dados de Entidade: Tipos de dados primitivos
 
@@ -25,7 +26,7 @@ O Modelo de Dados de Entidade (EDM) dá suporte a um conjunto de tipos de dados 
 |Tipo de dados primitivo|Descrição|Facetas aplicáveis|  
 |-------------------------|-----------------|-----------------------|  
 |Binário|Contém dados binários.|MaxLength, FixedLength, anulável, opção|  
-|Booliano|Contém o valor `true` ou `false`.|Anulável, opção|  
+|Boolean|Contém o valor `true` ou `false`.|Anulável, opção|  
 |Byte|Contém um valor inteiro de 8 bits sem sinal.|Precisão, anulável, opção|  
 |Datetime|Representa uma data e hora.|Precisão, anulável, opção|  
 |DateTimeOffset|Contém uma data e hora como um deslocamento em minutos GMT.|Precisão, anulável, opção|  
@@ -40,7 +41,7 @@ O Modelo de Dados de Entidade (EDM) dá suporte a um conjunto de tipos de dados 
 |String|Contém dados de caractere.|Unicode, FixedLength, MaxLength, ordenação, precisão, anulável, opção|  
 |Hora|Contém uma hora.|Precisão, anulável, opção|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos chave do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
 - [Modelo de Dados de Entidade](entity-data-model.md)

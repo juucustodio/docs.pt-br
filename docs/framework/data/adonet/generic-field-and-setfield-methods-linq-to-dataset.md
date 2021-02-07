@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: métodos de campo genérico e SetField (LINQ to DataSet)'
 title: Campo genérico e métodos de SetField (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1883365f-9d6c-4ccb-9187-df309f47706d
-ms.openlocfilehash: 9deda11592389dd799477bdc027d59a0be0036da
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2dfbb7377d782525170d47f59a5577f96caadbb6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200648"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724005"
 ---
 # <a name="generic-field-and-setfield-methods-linq-to-dataset"></a>Campo genérico e métodos de SetField (LINQ to DataSet)
 

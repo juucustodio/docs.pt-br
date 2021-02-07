@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <issuedToken>'
 title: <issuedToken>
 ms.date: 03/30/2017
 ms.assetid: b6eae4b7-a6cd-4e1a-b0f6-f407022550b0
-ms.openlocfilehash: 9f3feb11fbe45cbb4b952c70feaa99f9c481dd2b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: aa7486a621d5a6e6900f67300792e29ce2538257
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157363"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725682"
 ---
 # \<issuedToken>
 
@@ -67,7 +68,7 @@ Especifica um token personalizado usado para autenticar um cliente para um servi
   
  Esta seção contém os elementos usados para configurar um emissor local de tokens ou os comportamentos usados com um serviço de token de segurança. Para obter instruções sobre como configurar um cliente para usar um emissor local, consulte [como: configurar um emissor local](../../../wcf/feature-details/how-to-configure-a-local-issuer.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>

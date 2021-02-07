@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Entity SQL visão geral'
 title: Visão geral da Entity SQL
 ms.date: 03/30/2017
 ms.assetid: f0bb8120-e709-40a3-ac1e-5520dc47477d
-ms.openlocfilehash: e9a5117984380938e48e0cd1113107c74389480f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: eb337ff3894b24d787d829838c9cf12c934a823c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148121"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724603"
 ---
 # <a name="entity-sql-overview"></a>Visão geral da Entity SQL
 
@@ -55,7 +56,7 @@ ms.locfileid: "91148121"
   
  [Precedência de operador](operator-precedence-entity-sql.md)  
   
- [Paginamento](paging-entity-sql.md)  
+ [Houver](paging-entity-sql.md)  
   
  [Semântica de comparação](comparison-semantics-entity-sql.md)  
   
@@ -63,7 +64,7 @@ ms.locfileid: "91148121"
   
  [Tipos estruturados que permitem valor nulo](nullable-structured-types-entity-sql.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)
 - [Linguagem Entity SQL](entity-sql-language.md)

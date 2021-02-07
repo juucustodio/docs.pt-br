@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: faceta'
 title: facet
 ms.date: 03/30/2017
 ms.assetid: 91c4e6aa-3e54-4b6c-a38a-abf27808cc85
-ms.openlocfilehash: b9ef2276f988923fe83cefce910e8c3685cb9da9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 195cb34b6de603859d592ee24140aec27a51418f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156440"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724304"
 ---
 # <a name="facet"></a>facet
 
@@ -18,7 +19,7 @@ Uma *faceta* é usada para adicionar detalhes a uma definição de propriedade d
 > [!NOTE]
 > Os valores precisos e os comportamentos de facetas são determinados pelo ambiente de tempo de execução usando uma implementação de EDM.  
   
-|Faceta|Description|Aplica-se a|  
+|Faceta|Descrição|Aplica-se a|  
 |-----------|-----------------|----------------|  
 |`Collation`|Especifica a sequência de agrupamento (ou sequência de classificação) a ser usadas para executar a comparação e em ordenação operações em valores de propriedade.|`String`|  
 |`ConcurrencyMode`|Indica que o valor da propriedade deve ser usado para verificação de simultaneidade otimista.|As propriedades do tipo primitivo|  
@@ -36,7 +37,7 @@ Uma *faceta* é usada para adicionar detalhes a uma definição de propriedade d
   
  [!code-xml[EDM_Example_Model#EntityExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos chave do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
 - [Modelo de Dados de Entidade](entity-data-model.md)

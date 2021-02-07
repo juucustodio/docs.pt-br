@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: JSONP'
 title: JSONP
 ms.date: 03/30/2017
 ms.assetid: c13b4d7b-dac7-4ffd-9f84-765c903511e1
-ms.openlocfilehash: 9e27d4e73f43f004ac1de078db6a73cd42b24bbc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 83236f3d40a9dfeaf2ab0e521a227fb6dfc461f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726332"
 ---
 # <a name="jsonp"></a>JSONP
 

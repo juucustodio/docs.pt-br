@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como implementar CopyToDataTable <T> em que o tipo genérico T não é uma DataRow'
 title: 'Como: implementar CopyToDataTable<T> no qual o tipo genérico T não é um DataRow'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b27b52cf-6172-485f-a75c-70ff9c5a2bd4
-ms.openlocfilehash: 776ff6062282d12b622ec89cfa9990513da64a07
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 742e4f0a4854cbb1a37a5401abc628cd4d239b26
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194590"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723797"
 ---
 # <a name="how-to-implement-copytodatatablet-where-the-generic-type-t-is-not-a-datarow"></a>Como: implementar CopyToDataTable\<T> no qual o tipo genérico T não é um DataRow
 
@@ -78,7 +79,7 @@ public class ObjectShredder<T>
 }  
 ```
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Criar um DataTable de uma consulta](creating-a-datatable-from-a-query-linq-to-dataset.md)
 - [Guia de programação](programming-guide-linq-to-dataset.md)

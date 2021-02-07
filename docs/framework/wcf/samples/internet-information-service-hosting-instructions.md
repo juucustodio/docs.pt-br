@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: instruções de hospedagem do serviço de informações da Internet'
 title: Instruções de hospedagem de serviço de informação de internet
 ms.date: 03/30/2017
 ms.assetid: 959a21c8-9d9d-4757-b255-4e57793ae9d6
-ms.openlocfilehash: 151c5ba8dd79e8554e7d79fb5b8182740b0be18e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 51f5230ecbb8eaf4a909c5c09366680b8c555165
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237684"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726371"
 ---
 # <a name="internet-information-service-hosting-instructions"></a>Instruções de hospedagem de serviço de informação de internet
 
@@ -37,7 +38,7 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 3. Em **programas e recursos**, clique em **Ativar ou desativar recursos do Windows**.  
   
-4. A caixa de diálogo **controle de conta de usuário** é exibida. Clique em **Continuar**.  
+4. A caixa de diálogo **controle de conta de usuário** é exibida. Clique em **Continue**.  
   
 5. A caixa de diálogo **recursos do Windows** é exibida. Expanda o item rotulado **serviços de informações da Internet**.  
   
@@ -95,7 +96,7 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 3. Em **programas e recursos**, clique em **Ativar ou desativar recursos do Windows**.  
   
-4. A caixa de diálogo **controle de conta de usuário** é exibida. Clique em **Continuar**.  
+4. A caixa de diálogo **controle de conta de usuário** é exibida. Clique em **Continue**.  
   
 5. A caixa de diálogo **recursos do Windows** é exibida. Expanda o item rotulado **serviços de informações da Internet**.  
   

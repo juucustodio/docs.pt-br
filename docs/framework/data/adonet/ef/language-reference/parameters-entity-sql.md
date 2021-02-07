@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: parâmetros (Entity SQL)'
 title: Parâmetros (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 8d618edd-0988-4ff2-8263-ce59448af7a5
-ms.openlocfilehash: 759452902461e1a460b69774bb33f92bbd532ed0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 77b1e6ee95b5d367fec8d99345bbb416c2b9787d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177508"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724525"
 ---
 # <a name="parameters-entity-sql"></a>Parâmetros (Entity SQL)
 
@@ -23,7 +24,7 @@ SELECT c
       WHERE c.Name = @name  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)
 - [Visão geral da Entity SQL](entity-sql-overview.md)

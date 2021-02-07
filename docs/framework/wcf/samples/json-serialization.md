@@ -1,18 +1,19 @@
 ---
+description: 'Saiba mais sobre: exemplo de DataContractJsonSerializer'
 title: Exemplo de DataContractJsonSerializer
 ms.date: 03/30/2017
 ms.assetid: 3c2c4747-7510-4bdf-b4fe-64f98428ef4a
-ms.openlocfilehash: 4aa0ee679ae424251000b14abfbacf0590a6ccd3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 258cd38f9ee532e5d750b4cabaa4214366835be7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84592015"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726345"
 ---
 # <a name="datacontractjsonserializer-sample"></a>Exemplo de DataContractJsonSerializer
 
 > [!NOTE]
-> Este exemplo é para <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> . Para a maioria dos cenários que envolvem a serialização e desserialização do JSON, recomendamos as APIs no [namespace System. Text. JSON](../../../standard/serialization/system-text-json-overview.md).
+> Este exemplo é para <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> . Para a maioria dos cenários que envolvem a serialização e desserialização do JSON, recomendamos as APIs na [System.Text.Jsno namespace](../../../standard/serialization/system-text-json-overview.md).
 
 O <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> dá suporte aos mesmos tipos que o <xref:System.Runtime.Serialization.DataContractSerializer>. O formato de dados JSON é especialmente útil ao escrever aplicativos Web de estilo AJAX (Asynchronous JavaScript and XML). O suporte ao AJAX no Windows Communication Foundation (WCF) é otimizado para uso com o ASP.NET AJAX por meio do controle ScriptManager. Para obter exemplos de como usar o Windows Communication Foundation (WCF) com o ASP.NET AJAX, consulte os [exemplos do AJAX](ajax.md).  
   

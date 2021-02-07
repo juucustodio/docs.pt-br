@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: função definida pelo modelo'
 title: função definida por modelo
 ms.date: 03/30/2017
 ms.assetid: 8bb2edc8-e8e7-44c2-adc7-f44e11bda4f0
-ms.openlocfilehash: 04d27387c30d5fe09d31c1b2cc94741f21ffe8e0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 146ef4a8ad8c38897b8e56b6bc1485e1e40754cb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150772"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723732"
 ---
 # <a name="model-defined-function"></a>função definida por modelo
 
@@ -38,7 +39,7 @@ Uma *função definida pelo modelo* é uma função que é definida em um modelo
   
  [!code-xml[EDM_Example_Model#ModelDefinedFunction](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books4.edmx#modeldefinedfunction)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos chave do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
 - [Modelo de Dados de Entidade](entity-data-model.md)

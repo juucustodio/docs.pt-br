@@ -1,13 +1,14 @@
 ---
+description: Saiba mais sobre:--(comentário) (Entity SQL)
 title: -- (Comentário) (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 5d9de735-2099-47f1-b7e7-60856f494924
-ms.openlocfilehash: 9ad6e38726d0802c3bc2090a4e6f11f008828ee5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 793649177d9e64bead7b8755f35bdb51f53f4dd8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724967"
 ---
 # <a name="---comment-entity-sql"></a>-- (Comentário) (Entity SQL)
 
@@ -34,7 +35,7 @@ ms.locfileid: "91197892"
   
  [!code-csharp[DP EntityServices Concepts 2#COMMENT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#comment)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral da Entity SQL](entity-sql-overview.md)
 - [Referência de Entity SQL](entity-sql-reference.md)

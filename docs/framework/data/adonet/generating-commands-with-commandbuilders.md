@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: gerando comandos com CommandBuilders'
 title: Gerando comandos com CommandBuilders
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 6e3fb8b5-373b-4f9e-ab03-a22693df8e91
-ms.openlocfilehash: d88f5772e038766d49baf8c758c547e6d5667904
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 495312f57d497421182384eff23b621130447940
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200713"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724096"
 ---
 # <a name="generating-commands-with-commandbuilders"></a>Gerando comandos com CommandBuilders
 
@@ -54,7 +55,7 @@ Quando a propriedade `SelectCommand` é especificada dinamicamente em tempo de e
   
 ### <a name="table-and-column-names"></a>Nomes de tabelas e colunas  
 
- A lógica da geração automática de comando poderá falhar se os nomes de colunas ou tabelas contiverem algum caractere especial, como espaços, pontos, aspas ou outros caracteres não alfanuméricos, mesmo se estiver limitado por colchetes. Dependendo do provedor, definir os parâmetros QuotePrefix e QuoteSuffix pode permitir que a lógica de geração processe os espaços, mas não será possível substituir caracteres especiais. Há suporte para nomes de tabela totalmente qualificados na forma de *Catalog. esquema. Table* .  
+ A lógica da geração automática de comando poderá falhar se os nomes de colunas ou tabelas contiverem algum caractere especial, como espaços, pontos, aspas ou outros caracteres não alfanuméricos, mesmo se estiver limitado por colchetes. Dependendo do provedor, definir os parâmetros QuotePrefix e QuoteSuffix pode permitir que a lógica de geração processe os espaços, mas não será possível substituir caracteres especiais. Os nomes de tabela totalmente qualificados na forma de *catalog.schema.table* têm suporte.  
   
 ## <a name="using-the-commandbuilder-to-automatically-generate-an-sql-statement"></a>Usando o CommandBuilder para gerar automaticamente uma instrução SQL  
 
@@ -98,7 +99,7 @@ Console.WriteLine(builder.GetUpdateCommand().CommandText)
 Console.WriteLine(builder.GetUpdateCommand().CommandText);
 ```
   
- O exemplo a seguir recria a tabela `Customers` no conjunto de dados do `custDS`. O método **RefreshSchema** é chamado para atualizar os comandos gerados automaticamente com essas novas informações de coluna.  
+ O exemplo a seguir recria a tabela `Customers` no conjunto de dados do `custDS`. O método **RefreshSchema** é chamado para atualizar os comandos gerados automaticamente com as informações dessa nova coluna.  
   
 ```vb  
 ' Assumes an open SqlConnection and SqlDataAdapter inside of a Using block.  
@@ -120,7 +121,7 @@ custDS.Tables.Remove(custDS.Tables["Customers"]);
 adapter.Fill(custDS, "Customers");  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Comandos e parâmetros](commands-and-parameters.md)
 - [Executando um comando](executing-a-command.md)

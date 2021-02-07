@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: referência rápida do Entity SQL'
 title: Referência rápida de Entity SQL
 ms.date: 03/30/2017
 ms.assetid: e53dad9e-5e83-426e-abb4-be3e78e3d6dc
-ms.openlocfilehash: 7ec3b6fc184b4f169d6f6489bda0ec8fa4abb4f5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ddac48bece1f0e9df737db295d4d028529ea290f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724551"
 ---
 # <a name="entity-sql-quick-reference"></a>Referência rápida de Entity SQL
 
@@ -70,7 +71,7 @@ DATETIME '2006-12-25 01:01'
 |2|  
 |3|  
   
-### <a name="other"></a>Outro  
+### <a name="other"></a>Outros  
 
  Outros literais com suporte do [!INCLUDE[esql](../../../../../../includes/esql-md.md)] são Guid, Binary, Float/Double, Decimal e `null`. Literais nulos em [!INCLUDE[esql](../../../../../../includes/esql-md.md)] são considerados compatíveis com cada outro tipo no modelo conceitual.  
   
@@ -344,7 +345,7 @@ SELECT VALUE p.Name FROM AdventureWorksEntities.Product AS p
   
  Saída:  
   
-|Name|  
+|Nome|  
 |----------|  
 |Adjustable Race|  
 |Suporte de bicicleta multifuncional|  
@@ -359,7 +360,7 @@ SELECT VALUE p.Name FROM AdventureWorksEntities.Product AS p
   
  SELECT p.Name, p.ProductID FROM AdventureWorksEntities.Product as p Output:  
   
-|Name|ProductID|  
+|Nome|ProductID|  
 |----------|---------------|  
 |Adjustable Race|1|  
 |Suporte de bicicleta multifuncional|879|  
@@ -382,7 +383,7 @@ CASE WHEN AVG({25,12,11}) < 100 THEN TRUE ELSE FALSE END
 |-----------|  
 |TRUE|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)
 - [Visão geral da Entity SQL](entity-sql-overview.md)

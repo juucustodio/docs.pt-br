@@ -1,13 +1,14 @@
 ---
+description: Saiba mais sobre:-(negativo) (Entity SQL)
 title: '- Seriamente (Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: 208e54ef-4741-4ec5-89d6-6ff700863cb0
-ms.openlocfilehash: 71749dab073fade854c2a494841e3f6b408ebd1d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f3d30ce36b95e44755d148dc06279f67f15b0664
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204405"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712877"
 ---
 # <a name="--negative-entity-sql"></a>- (Negativo) (Entity SQL)
 
@@ -42,6 +43,6 @@ Retorna o negativo o valor de uma expressão numérica.
   
  [!code-sql[DP EntityServices Concepts#NEGATIVE](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#negative)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

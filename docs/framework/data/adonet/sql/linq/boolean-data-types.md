@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tipos de dados boolianos'
 title: Tipos de dados booleanos
 ms.date: 03/30/2017
 ms.assetid: 57f7376b-4b11-4b35-98a9-780382053ceb
-ms.openlocfilehash: e2175afc24cfc7db38c1b8e1dbb11757f633960a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1adea2cefa94f4b58665c4cb9ac0a84bb66ba756
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156063"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712617"
 ---
 # <a name="boolean-data-types"></a>Tipos de dados booleanos
 
@@ -24,6 +25,6 @@ Os operadores boolianos funciona como esperado em Common Language Runtime (CLR),
 |[Operador Xor](../../../../../visual-basic/language-reference/operators/xor-operator.md)|[Operador ^](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-exclusive-or-operator-)|  
 |[Operador Not](../../../../../visual-basic/language-reference/operators/not-operator.md)|[\! Operador](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-negation-operator-)|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de dados e funções](data-types-and-functions.md)

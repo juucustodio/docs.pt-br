@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_HEAPINFO'
 title: Estrutura COR_HEAPINFO
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bfb2cd39-3e0b-4d51-ba0c-f009755c1456
 topic_type:
 - apiref
-ms.openlocfilehash: 5400350e1c489ec4c2ff3cddf83a4f1a8a0c7947
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0841739172b3eaf807813af28e0b20fbb54608b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726594"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712305"
 ---
 # <a name="cor_heapinfo-structure"></a>Estrutura COR_HEAPINFO
 
@@ -63,7 +64,7 @@ typedef struct _COR_HEAPINFO {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de depuração](debugging-structures.md)
 - [Depuração](index.md)

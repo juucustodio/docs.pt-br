@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como migrar seu código XslTransform'
 title: 'Como: Migrar o código de XslTransform'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 910beb2f-cfb3-4e8e-9936-f7e0c5f4064a
-ms.openlocfilehash: d1e13d2bcc7525f261df90c36aa4214f318cf3c0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d8a05f98df70009750f59c53a760f9da698dd38e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722707"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713878"
 ---
 # <a name="how-to-migrate-your-xsltransform-code"></a>Como: Migrar o código de XslTransform
 
@@ -91,7 +92,7 @@ As novas classes XSLT foram criadas para ser muito semelhantes às classes exist
      [!code-csharp[XML_Migration#18](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#18)]
      [!code-vb[XML_Migration#18](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#18)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Migrar da classe XslTransform](migrating-from-the-xsltransform-class.md)
 - [Usando a classe XslCompiledTransform](using-the-xslcompiledtransform-class.md)

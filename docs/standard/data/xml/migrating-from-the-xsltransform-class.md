@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: migrando da classe XslTransform'
 title: Migrar da classe XslTransform
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 9404d758-679f-4ffb-995d-3d07d817659e
-ms.openlocfilehash: b441e23b13983a0fdb54b7785e249a04bf1407c8
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 6f4a08d3448f5735b9bd9e4c418ec3613fdc6a37
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830201"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713618"
 ---
 # <a name="migrating-from-the-xsltransform-class"></a>Migrar da classe XslTransform
 
@@ -124,7 +125,7 @@ Suporte para funções adicionais de MSXML foi adicionado à classe de <xref:Sys
 
 - Funções de extensão Esquema- relacionados XPath: Essas funções não são suportadas nativamente por <xref:System.Xml.Xsl.XslCompiledTransform>. No entanto, podem ser implementados como funções de extensão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Transformações XSLT](xslt-transformations.md)
 - [Usando a classe XslCompiledTransform](using-the-xslcompiledtransform-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos aninhados'
 title: Tipos aninhados
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - members [.NET Framework], type
 - class library design guidelines [.NET Framework], nested types
 ms.assetid: 12feb7f0-b793-4d96-b090-42d6473bab8c
-ms.openlocfilehash: bc0aee32b5cc1d40afdd9cce8260d5b5341a687d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 07d81827d67e50351f442ec15ca6cb18a63160fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706392"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713371"
 ---
 # <a name="nested-types"></a>Tipos aninhados
 

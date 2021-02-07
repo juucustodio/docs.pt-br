@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <relativeBindForResources> elemento'
 title: Elemento <relativeBindForResources>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - RelativeBindForResources element
 - <relativeBindForResources> element
 ms.assetid: 846ffa47-7257-4ce3-8cac-7ff627e0e34f
-ms.openlocfilehash: daf576488e38bed28c7c0e5222bc053659372ff0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f08d8f8a8fc4bb14d28762254dca99788d44a858
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183995"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712916"
 ---
 # <a name="relativebindforresources-element"></a>Elemento \<relativeBindForResources>
 
@@ -20,7 +21,7 @@ Otimiza o teste para assemblies satélites.
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<relativeBindForResources>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml
 <relativeBindForResources
@@ -73,7 +74,7 @@ Otimiza o teste para assemblies satélites.
   
 - Ele não gera o <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> evento.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Empacotando e implantando recursos](../../../resources/packaging-and-deploying-resources-in-desktop-apps.md)
 - [Esquema de configurações do runtime](index.md)

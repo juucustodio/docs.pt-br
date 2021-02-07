@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: inferindo esquemas de documentos XML'
 title: Inferindo esquemas de documentos XML
 ms.date: 03/30/2017
 dev_langs:
@@ -6,12 +7,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: f3d97d53-614d-4a04-a174-87965b7405f6
-ms.openlocfilehash: 4540e1706cbd3dad9490f100d7e8fa58e80a9206
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b8a064e0612293ee2990ec8acc3cc4b5f0b32054
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733432"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713644"
 ---
 # <a name="inferring-schemas-from-xml-documents"></a>Inferindo esquemas de documentos XML
 
@@ -84,7 +85,7 @@ Este tópico descreve como usar a classe de <xref:System.Xml.Schema.XmlSchemaInf
 
  Há construções de Esquema XML do W3C que o processo de <xref:System.Xml.Schema.XmlSchemaInference> do idioma da definição de esquema XML (XSD) não pode manipular se um determinado tipo para refinar e causar uma exceção seja lançada. Como um tipo complexo cujo compositor de nível superior é algo diferente de uma sequência. No modelo de objeto (SOM) do esquema, isso corresponde a <xref:System.Xml.Schema.XmlSchemaComplexType> cuja propriedade de <xref:System.Xml.Schema.XmlSchemaComplexType.Particle%2A> não é uma instância de <xref:System.Xml.Schema.XmlSchemaSequence>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Schema.XmlSchemaInference>
 - [SOM (Schema Object Model) XML](xml-schema-object-model-som.md)

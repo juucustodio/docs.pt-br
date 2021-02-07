@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: incluindo ou Importando esquemas XML'
 title: Incluindo ou importando um esquema XML
 ms.date: 03/30/2017
 dev_langs:
@@ -6,12 +7,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: fe1b4a11-37f4-4e1a-93c9-239f4fe736c0
-ms.openlocfilehash: b2feb14e304c8ba7ecc19b2e79b943204044da05
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a55c518f4e7f772451652b352ff7bcf86b4de703
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722668"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713735"
 ---
 # <a name="including-or-importing-xml-schemas"></a>Incluindo ou importando um esquema XML
 
@@ -98,7 +99,7 @@ Um esquema XML pode conter os elementos `<xs:import />`, `<xs:include />` e `<xs
   
  Para obter mais informações sobre os elementos `<xs:import />`, `<xs:include />` e `<xs:redefine />` e as classes <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude> e <xref:System.Xml.Schema.XmlSchemaRedefine>, consulte o [Esquema XML do W3C](https://www.w3.org/XML/Schema) e a documentação de referência da classe do namespace <xref:System.Xml.Schema?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do modelo de objeto de esquema XML](xml-schema-object-model-overview.md)
 - [Lendo e gravando esquemas XML](reading-and-writing-xml-schemas.md)

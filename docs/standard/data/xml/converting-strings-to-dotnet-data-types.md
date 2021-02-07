@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: converter cadeias de caracteres em tipos de dados .NET'
 title: Convertendo cadeias de caracteres em tipos de dados .NET
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 65455ef3-9120-412c-819b-d0f59f88ac09
-ms.openlocfilehash: 0cee7481f9c002f860bff7f12b8be0bb763dadb1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2960657dc4d4a31eed85a9b8af04976692a4dc9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701465"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713930"
 ---
 # <a name="convert-strings-to-net-data-types"></a>Converter cadeias de caracteres em tipos de dados .NET
 
@@ -134,7 +135,7 @@ Double value = Double.PositiveInfinity;
 writer.WriteElementString("Infinity", XmlConvert.ToString(value));  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Conversão de tipos de dados XML](conversion-of-xml-data-types.md)
 - [Convertendo tipos .NET em cadeias de caracteres](converting-dotnet-types-to-strings.md)

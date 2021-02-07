@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ADO.NET e LINQ to SQL'
 title: O ADO.NET e LINQ to SQL
 titleSuffix: ''
 ms.date: 03/30/2017
@@ -6,12 +7,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 49ac6da0-f2e1-46fa-963e-1b6dcb63fef7
-ms.openlocfilehash: 5dc1796b7fb7036f68c2435325c6a29d381c59f1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1f3f4a50c13af857ecd9f3195c7f431dd46ed3ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161575"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712944"
 ---
 # <a name="adonet-and-linq-to-sql"></a>O ADO.NET e LINQ to SQL
 
@@ -63,7 +64,7 @@ ms.locfileid: "91161575"
 > [!NOTE]
 > Os parâmetros são expressos no texto da consulta usando a mesma notação encaracolado usada por `Console.WriteLine()` e por `String.Format()`. `String.Format()` leva a cadeia de caracteres de consulta que você fornece e substitui os parâmetros encaracolado- apoiados com nomes de parâmetro gerados como `@p0`, `@p1` …, `@p(n)`.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Informações gerais](background-information.md)
 - [Como: reutilizar uma conexão entre um comando ADO.NET e um DataContext](how-to-reuse-a-connection-between-an-ado-net-command-and-a-datacontext.md)

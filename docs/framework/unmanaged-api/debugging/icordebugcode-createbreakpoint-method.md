@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugCode:: CreateBreakpoint'
 title: Método ICorDebugCode::CreateBreakpoint
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 46842618-0fe4-480b-871c-82fba82d23d9
 topic_type:
 - apiref
-ms.openlocfilehash: ade428ce001a6b40e2fed67f4f23b12cef5ea30f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a9285d59da3e3f34ea303413fca67bc39aff9e32
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717637"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711369"
 ---
 # <a name="icordebugcodecreatebreakpoint-method"></a>Método ICorDebugCode::CreateBreakpoint
 

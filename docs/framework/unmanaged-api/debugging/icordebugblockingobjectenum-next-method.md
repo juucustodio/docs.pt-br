@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugBlockingObjectEnum:: Next Method'
 title: Método ICorDebugBlockingObjectEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0121753f-ebea-48d0-aeb2-ed7fda76dc60
 topic_type:
 - apiref
-ms.openlocfilehash: 232068a5fee8f7bd3dfbddf4d9452e80d6fd6170
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 66999ebf333c7115790b56afc1dc1d1ab7c47d69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719184"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711811"
 ---
 # <a name="icordebugblockingobjectenumnext-method"></a>Método ICorDebugBlockingObjectEnum::Next
 
@@ -46,7 +47,7 @@ HRESULT Next([in] ULONG  celt,
  `pceltFetched`  
  fora Um ponteiro para o número de objetos que foram recuperados.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir.  
   
@@ -74,7 +75,7 @@ HRESULT Next([in] ULONG  celt,
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugDataTarget](icordebugdatatarget-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

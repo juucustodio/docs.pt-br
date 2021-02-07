@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugAssembly'
 title: Interface ICorDebugAssembly
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9d657a28-6984-4c5e-8a54-89d20080baff
 topic_type:
 - apiref
-ms.openlocfilehash: 821eae8ea5b4147408e9fe60d1e5b70c7936959e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 746b5f4b2f26550788708d93bf0dd50f5f495041
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696239"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711941"
 ---
 # <a name="icordebugassembly-interface"></a>Interface ICorDebugAssembly
 
@@ -27,7 +28,7 @@ Representa um assembly.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método EnumerateModules](icordebugassembly-enumeratemodules-method.md)|Obtém um enumerador para os módulos contidos no assembly.|  
 |[Método GetAppDomain](icordebugassembly-getappdomain-method.md)|Obtém um ponteiro de interface para o domínio do aplicativo que contém essa `ICorDebugAssembly` instância.|  
@@ -50,6 +51,6 @@ Representa um assembly.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

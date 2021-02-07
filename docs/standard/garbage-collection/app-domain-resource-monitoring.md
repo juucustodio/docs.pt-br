@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: monitoramento de recursos de domínio de aplicativo'
 title: Monitoramento de recursos de domínio de aplicativo
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - memory use, monitoring
 - application domains, resource monitoring
 ms.assetid: 318bedf8-7f35-4f00-b34a-2b7b8e3fa315
-ms.openlocfilehash: c4644defa5a67d9d39c4faa89943a6aa5f763eae
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7d6054e439697cefa60a88c07b45984c6fd0c11c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827822"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713267"
 ---
 # <a name="application-domain-resource-monitoring"></a>Monitoramento de recursos de domínio de aplicativo
 
@@ -86,7 +87,7 @@ Como alternativa, você pode chamar o método <xref:System.GC.CollectionCount%2A
 
 Se você usar a API de hospedagem não gerenciada, o host deverá passar ao CLR uma implementação da interface [IHostGCManager](../../framework/unmanaged-api/hosting/ihostgcmanager-interface.md). O CLR chama o método [Ihostgcmanager](../../framework/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md) quando ele retoma a execução de threads que foram suspensos durante uma coleta. O CLR passa a geração da coleta concluída como um parâmetro do método, para que o host possa determinar se a coleta foi completa ou parcial. Sua implementação do método [Ihostgcmanager](../../framework/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md) pode consultar a existência de memória restante, a fim de certificar-se de que as contagens são recuperadas assim que forem atualizadas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
 - [Interface ICLRAppDomainResourceMonitor](../../framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)

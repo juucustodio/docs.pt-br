@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: analisando LINQ to SQL código-fonte'
 title: Para analisar o código-fonte LINQ to SQL
 ms.date: 03/30/2017
 ms.assetid: cba3eef8-e108-4478-b588-ad59580e133e
-ms.openlocfilehash: e39b1686269442044beb73bb7e572738832bec27
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: acf80b10c3bb817cf3fd87876da75a47e2fe271c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164578"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712786"
 ---
 # <a name="analyzing-linq-to-sql-source-code"></a>Para analisar o código-fonte LINQ to SQL
 
@@ -24,7 +25,7 @@ Usando as seguintes etapas, você pode produzir o código-fonte de [!INCLUDE[vbt
   
     - `sqlmetal /code:northwind.cs /language:csharp "c:\northwnd.mdf" /sprocs /functions /pluralize`  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência](reference.md)
 - [Informações gerais](background-information.md)

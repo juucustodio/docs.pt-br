@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: trabalhando com exceções de interoperabilidade em código não gerenciado'
 title: Interoperabilidade de exceções
 ms.date: 01/16/2020
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - exceptions, unmanaged code
 - interop, exceptions
 - exceptions, interop
-ms.openlocfilehash: db7c9943c298607aa91a4bd08ddc12bbafc872be
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 3062aea2632771605c5a3c942c8471309e043f60
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830617"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713189"
 ---
 # <a name="working-with-interop-exceptions-in-unmanaged-code"></a>Trabalhando com exceções de interoperabilidade em código não gerenciado
 
@@ -23,7 +24,7 @@ A interoperabilidade de exceção de código não gerenciado tem suporte apenas 
 
 Para obter mais informações, consulte a [documentação do longjmp](/cpp/c-runtime-library/reference/longjmp).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Exceções](index.md)
 - [Interoperabilidade com bibliotecas nativas](https://www.mono-project.com/docs/advanced/pinvoke/#runtime-exception-propagation)

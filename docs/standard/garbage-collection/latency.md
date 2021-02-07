@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: modos de latência'
 title: Modos de latência
 ms.date: 03/30/2017
 helpviewer_keywords:
 - garbage collection, intrusiveness
 - garbage collection, latency modes
 ms.assetid: 96278bb7-6eab-4612-8594-ceebfc887d81
-ms.openlocfilehash: 2e7b30a50e2513c567abf2116ab5495e717a8e22
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: f709fa023870939dc6bfd7f2bf6145ee7f7d8e40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831189"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713241"
 ---
 # <a name="latency-modes"></a>Modos de latência
 
@@ -61,8 +62,8 @@ Ao usar o modo [GCLatencyMode. LowLatency](xref:System.Runtime.GCLatencyMode.Low
 
 - Você pode forçar coletas da geração 2 durante um período de baixa latência ao chamar o método <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%29?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.GC?displayProperty=nameWithType>
-- [Coletas induzidas](induced.md)
+- [Coleções induzidas](induced.md)
 - [Coleta de lixo](index.md)

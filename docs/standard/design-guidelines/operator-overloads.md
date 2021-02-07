@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: sobrecargas de operador'
 title: Sobrecargas de operador
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - member design guidelines, operators
 - overloaded operators
 ms.assetid: 37585bf2-4c27-4dee-849a-af70e3338cc1
-ms.openlocfilehash: 7757e6cfdb9ae31f6e94c26a2684f8176174499a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e6552f35081afa542e4dc14239206a63c7c1bd59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734810"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713319"
 ---
 # <a name="operator-overloads"></a>Sobrecargas de operador
 

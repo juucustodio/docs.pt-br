@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como implementar um componente que dá suporte ao padrão assíncrono baseado em evento'
 title: 'Como: Implementar um componente compatível com o padrão assíncrono baseado em evento'
 ms.date: 03/30/2017
 dev_langs:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - threading [Windows Forms], asynchronous features
 - AsyncCompletedEventArgs class
 ms.assetid: 61f676b5-936f-40f6-83ce-f22805ec9c2f
-ms.openlocfilehash: ef7363cd1c5161217fa4cf74dbfae9dee86fa76f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ca25370bda7a1dd451ff9333fee546d4106914c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697734"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99714112"
 ---
 # <a name="how-to-implement-a-component-that-supports-the-event-based-asynchronous-pattern"></a>Como: Implementar um componente compatível com o padrão assíncrono baseado em evento
 
@@ -263,7 +264,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
   
  Você também pode melhorar este exemplo testando divisores triviais, como 2, 3 e 5.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: Executar uma operação em segundo plano](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background)
 - [Visão geral do padrão assíncrono baseado em evento](event-based-asynchronous-pattern-overview.md)

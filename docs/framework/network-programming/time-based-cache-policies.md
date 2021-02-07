@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Time-Based políticas de cache'
 title: Políticas de cache baseadas em tempo
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - minimum freshness policy
 - age of cached resources
 ms.assetid: 74f0bcaf-5c95-40c1-9967-f3bbf1d2360a
-ms.openlocfilehash: 372621ce55891cb87594e6d059c7bbeeb99f6468
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 42a76be0da664899295a583d72477de0698cc39e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239413"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712292"
 ---
 # <a name="time-based-cache-policies"></a>Políticas de cache baseadas em tempo
 
@@ -67,7 +68,7 @@ Uma política de cache baseada em tempo define a atualização das entradas arma
   
 - [Interação da política de cache – idade máxima e atualização mínima](cache-policy-interaction-maximum-age-and-minimum-freshness.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciamento de cache para aplicativos de rede](cache-management-for-network-applications.md)
 - [Política de cache](cache-policy.md)

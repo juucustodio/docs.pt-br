@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_IL_MAP'
 title: Estrutura COR_IL_MAP
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 534ebc17-963d-4b26-8375-8cd940281db3
 topic_type:
 - apiref
-ms.openlocfilehash: fb6b5d43e60b52c867535c42d59a098ef3c959bc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff3d636429f51119342baea5d71163eb9d764e03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726376"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712306"
 ---
 # <a name="cor_il_map-structure"></a>Estrutura COR_IL_MAP
 
@@ -91,7 +92,7 @@ typedef struct _COR_IL_MAP {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de depuração](debugging-structures.md)
 - [Depuração](index.md)

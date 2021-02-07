@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: coleções de nós em NamedNodeMaps e NodeLists'
 title: Coleções de nó em NamedNodeMaps e em NodeLists
 ms.date: 03/30/2017
 ms.assetid: 025954b8-7aa8-47c5-a1c1-f81064fb4d65
-ms.openlocfilehash: 7db70e6d81ca829cfb38ab9a01069782d8bfd69c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ae015d714eb57043b49416642f3850d49f9782b6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714348"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713414"
 ---
 # <a name="node-collections-in-namednodemaps-and-nodelists"></a>Coleções de nó em NamedNodeMaps e em NodeLists
 
@@ -15,6 +16,6 @@ Você pode recuperar um conjunto de nós e coloque-o em uma coleção ordenada o
   
  Para saber mais sobre a coleta não ordenada, confira [Recuperação não ordenada do nó por nome ou índice](unordered-node-retrieval-by-name-or-index.md). Para saber mais sobre a coleta ordenada, confira [Recuperação ordenada pelo índice do nó](ordered-node-retrieval-by-index.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

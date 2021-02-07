@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <settings> elemento (configurações de rede)'
 title: Elemento <settings> (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - settings element
 - <settings> element
 ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
-ms.openlocfilehash: c5fe0b9eccd1c429c0041fcfab06b0cc20a20aa2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e6ed242e68ac9a9e2c20067d66681bbcd51fcc50
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167269"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712968"
 ---
 # <a name="settings-element-network-settings"></a>Elemento \<settings> (Configurações de Rede)
 
@@ -23,7 +24,7 @@ Configura as opções de rede básicaspara o namespace <xref:System.Net?displayP
 &nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<settings>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <settings>  
@@ -69,7 +70,7 @@ Configura as opções de rede básicaspara o namespace <xref:System.Net?displayP
 
  Esse elemento pode ser usado no arquivo de configuração do aplicativo ou no arquivo de configuração do computador (Machine.config).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net?displayProperty=nameWithType>
 - [Esquema de configurações de rede](index.md)

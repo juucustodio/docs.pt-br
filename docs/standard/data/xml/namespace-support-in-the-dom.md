@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: suporte a namespace no DOM'
 title: Suporte do namespace em DOM
 ms.date: 03/30/2017
 ms.assetid: f0548ead-0fed-41ee-b33e-117ba900d3bc
-ms.openlocfilehash: b3214d77b069b672e8772ec78db51c9d8ee1bf50
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cb645be971cb8f9d8a3750360ca0d6bf68046d3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714400"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713457"
 ---
 # <a name="namespace-support-in-the-dom"></a>Suporte do namespace em DOM
 
@@ -23,6 +24,6 @@ O modelo de objeto (DOM) de documento XML é completamente URL ciente. Somente o
   
 - Se um dois-pontos é encontrado, o nome é dividido em duas partes com base na posição do primeiro caractere dois-pontos. O prefixo é definido para a cadeia de caracteres encontrada antes de pontos, e o nome local é definido para a cadeia de caracteres encontrada após os dois-pontos. Para os métodos que não têm um valor de NamespaceURI, o NamespaceURI não é resolvido e o não são definidas para a cadeia de caracteres vazia. Caso contrário, o NamespaceURI é definido para a cadeia de caracteres passada para o método. Se o prefixo for indefinido, o método **Save** e as propriedades **InnerXml** e **OuterXml** falharão.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

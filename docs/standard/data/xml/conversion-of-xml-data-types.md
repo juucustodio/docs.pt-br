@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: conversão de tipos de dados XML'
 title: Conversão de tipos de dados XML
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a2aa99ba-8239-4818-9281-f1d72ee40bde
-ms.openlocfilehash: 108cfbf1ee8ff3d6fbe088d6dd14d0354750cb0c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f7657f3ee290ff88dff1ef869a723c947cbce5f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701491"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713943"
 ---
 # <a name="conversion-of-xml-data-types"></a>Conversão de tipos de dados XML
 
@@ -66,7 +67,7 @@ Int32 vInt32=-2147483648;
 writer.WriteElementString("TestInt32",XmlConvert.ToString(vInt32));  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Convertendo cadeias de caracteres em tipos de dados do .NET Framework](converting-strings-to-dotnet-data-types.md)
 - [Convertendo tipos do .NET Framework para cadeias de caracteres](converting-dotnet-types-to-strings.md)

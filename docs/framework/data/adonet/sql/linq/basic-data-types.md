@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tipos de dados básicos'
 title: Tipos de dados básicos
 ms.date: 03/30/2017
 ms.assetid: eca2c472-9548-4800-bd31-5d8d9f11752b
-ms.openlocfilehash: ae561bad3315977ba12dd0e12abda1da163ca456
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d0236bc315c884d9e70c3c4a75755c3b66b1f2e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156011"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712604"
 ---
 # <a name="basic-data-types"></a>Tipos de dados básicos
 
@@ -25,7 +26,7 @@ Porque as consultas LINQ to SQL traduzem a Transact-SQL antes que elas sejam exe
   
 - O operador: O operador de `IS` tem uma translação suportado quando o mapeamento de herança está sendo usado. Pode ser usado em vez de diretamente testar a coluna de discriminador para determinar se um objeto é de um tipo específico de entidade, e é convertido para uma verificação na coluna de discriminador. Para obter mais informações sobre o Visual Basic e o C# são operadores, consulte [is Operator](../../../../../visual-basic/language-reference/operators/is-operator.md) and [is](../../../../../csharp/language-reference/operators/type-testing-and-cast.md#is-operator).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Mapeamento de tipo SQL-CLR](sql-clr-type-mapping.md)
 - [Tipos de dados e funções](data-types-and-functions.md)

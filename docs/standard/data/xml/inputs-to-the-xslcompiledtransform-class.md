@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: entradas para a classe XslCompiledTransform'
 title: Entradas para a classe de XslCompiledTransform
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 834049f1-ab41-449e-9f10-4a1d0701bc48
-ms.openlocfilehash: af529f1c6ccfe3abe761c7707772d6f9697c179d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 585882907b0bdf5514c3b2b744c304223ec2be1f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733419"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713631"
 ---
 # <a name="inputs-to-the-xslcompiledtransform-class"></a>Entradas para a classe de XslCompiledTransform
 
@@ -55,6 +56,6 @@ O método de <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> aceita trê
   
  Para saber mais, confira [Resolvendo recursos externos durante o processamento de XSLT](resolving-external-resources-during-xslt-processing.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Transformações XSLT](xslt-transformations.md)

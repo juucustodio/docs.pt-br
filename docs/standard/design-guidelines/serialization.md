@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serialização'
 title: Serialização
 ms.date: 10/22/2008
 ms.assetid: bebb27ac-9712-4196-9931-de19fc04dbac
-ms.openlocfilehash: 58ed937df5b60daf9fcbcb7610d6026c5e9805fc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a12163c01da2f9eed19de05b0434c02d05ca99b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730923"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713293"
 ---
 # <a name="serialization"></a>Serialização
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: manipulando exceções de interoperabilidade COM'
 title: Manipulando exceções de interoperabilidade COM
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - exceptions, COM interop
 - COM interop, exceptions
 ms.assetid: e6104aa8-8e5f-4069-b864-def85579c96c
-ms.openlocfilehash: 42efd1a5622bae7c476c92fb0864a6214c9bac9b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c7746f84d30dafcaf30c3d89d4319ca3fb2107d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726178"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713280"
 ---
 # <a name="handling-com-interop-exceptions"></a>Manipulando exceções de interoperabilidade COM
 
@@ -29,6 +30,6 @@ Os códigos gerenciado e não gerenciado podem trabalhar juntos para tratar de e
   
  Se um método falhar no código não gerenciado, uma exceção poderá ser passada para um segmento de código gerenciado. O tópico [HRESULTS e exceções](../../framework/interop/how-to-map-hresults-and-exceptions.md) contém uma tabela que mostra como HRESULTS mapeia para objetos de exceção de runtime.  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Exceções](index.md)

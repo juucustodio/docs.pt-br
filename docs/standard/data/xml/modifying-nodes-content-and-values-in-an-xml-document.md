@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: modificando nós, conteúdo e valores em um documento XML'
 title: Modificando nós, conteúdo e valores em documentos XML
 ms.date: 03/30/2017
 ms.assetid: 761773e0-db72-4986-b9f5-a522213d8397
-ms.openlocfilehash: c3f3f4a279f3bcb967e018abafbd2e1f7a0af473
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8bf67eb699605ccffdf8a4d2fb7120efa04576a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714465"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713488"
 ---
 # <a name="modifying-nodes-content-and-values-in-an-xml-document"></a>Modificando nós, conteúdo e valores em documentos XML
 
@@ -44,6 +45,6 @@ Existem várias maneiras de modificar os nós e o conteúdo de um documento. Voc
   
  É válido adicionar ou remover um filho somente leitura de um nó que pode ser editado. No entanto, tentativas de modificar o próprio nó somente leitura geram uma <xref:System.InvalidOperationException>. Um exemplo disso é modificar os filhos de um nó <xref:System.Xml.XmlEntityReference>. Os filhos são somente leitura e não podem ser modificados. Qualquer tentativa de modificá-los gera uma <xref:System.InvalidOperationException>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugBreakpoint'
 title: Interface ICorDebugBreakpoint
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aa5ad3d7-e1bb-42af-99bc-471224e3bcaa
 topic_type:
 - apiref
-ms.openlocfilehash: 0c84a91c7da553d0c84a4995b4744576d861dcb9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 63917512cceeccedea37acdf2ba7ab3b849d9fad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730195"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711798"
 ---
 # <a name="icordebugbreakpoint-interface"></a>Interface ICorDebugBreakpoint
 
@@ -27,7 +28,7 @@ Representa um ponto de interrupção em uma função ou um apontador em um valor
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Activate](icordebugbreakpoint-activate-method.md)|Define o estado ativo deste `ICorDebugBreakpoint` .|  
 |[Método IsActive](icordebugbreakpoint-isactive-method.md)|Obtém um valor que indica se ele `ICorDebugBreakpoint` está ativo.|  
@@ -51,6 +52,6 @@ Representa um ponto de interrupção em uma função ou um apontador em um valor
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

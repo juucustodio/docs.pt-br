@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: modificar dados XML usando XPathNavigator'
 title: Modificar dados XML usando XPathNavigator
 ms.date: 03/30/2017
 dev_langs:
@@ -6,12 +7,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: 03a7c5a1-b296-4af4-b209-043c958dc0a5
-ms.openlocfilehash: 10de24d97d15ed4b6de3effa21410fb22054ec68
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 609957cfad0ea6c9f14acd4b43b241f76167fae0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714452"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713605"
 ---
 # <a name="modify-xml-data-using-xpathnavigator"></a>Modificar dados XML usando XPathNavigator
 
@@ -256,7 +257,7 @@ Console.WriteLine(navigator.OuterXml);
 
  Salvar as alterações feitas em um objeto <xref:System.Xml.XmlDocument> como resultado dos métodos de edição descritos neste tópico é realizado usando os métodos da classe <xref:System.Xml.XmlDocument>. Para saber mais sobre como salvar as alterações feitas em um objeto <xref:System.Xml.XmlDocument>, confira [Salvar e gravar um documento](saving-and-writing-a-document.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

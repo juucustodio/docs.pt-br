@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugBreakpoint:: IsActive'
 title: Método ICorDebugBreakpoint::IsActive
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 06e583d6-d88a-4ff5-bb95-5c48618a461c
 topic_type:
 - apiref
-ms.openlocfilehash: 064f9727b221dd64a58f8cd5e103271e37020786
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 49e98ccc3722c37b3ff5968215ef3f658601ea10
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711785"
 ---
 # <a name="icordebugbreakpointisactive-method"></a>Método ICorDebugBreakpoint::IsActive
 

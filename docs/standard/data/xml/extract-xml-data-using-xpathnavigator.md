@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: extrair dados XML usando XPathNavigator'
 title: Extrair dados XML usando XPathNavigator
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 095b0987-ee4b-4595-a160-da1c956ad576
-ms.openlocfilehash: 0d327738f818c40d8baa9e0fb8bd0092b94c6e07
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f7a908a419bee9dcc9e4b2d384bb46c4794ef80b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721498"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713865"
 ---
 # <a name="extract-xml-data-using-xpathnavigator"></a>Extrair dados XML usando XPathNavigator
 
@@ -163,7 +164,7 @@ book.Close();
   
  O exemplo usa o arquivo `books.xml` localizado anteriormente neste tópico como entrada.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

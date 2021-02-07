@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: acessando dados XML fortemente tipados usando XPathNavigator'
 title: Acessando dados fortemente tipados XML usando XPathNavigator
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 898e0f52-8a7c-4d1f-afcd-6ffb28b050b4
-ms.openlocfilehash: 7051aeb8cdc25518f99fe093045e7e769ae7f6f5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 16c2d83f490b41a6e5789dc59588921e21acbbae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725411"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99714086"
 ---
 # <a name="accessing-strongly-typed-xml-data-using-xpathnavigator"></a>Acessando dados fortemente tipados XML usando XPathNavigator
 
@@ -34,7 +35,7 @@ Como uma instância do modelo de dados XPath 2,0, a <xref:System.Xml.XPath.XPath
 
  A tabela a seguir mostra as várias propriedades e métodos de <xref:System.Xml.XPath.XPathNavigator> classe que pode ser usado para acessar informações de tipo sobre um nó.  
   
-|Propriedade|DESCRIÇÃO|  
+|Propriedade|Descrição|  
 |--------------|-----------------|  
 |<xref:System.Xml.XPath.XPathNavigator.XmlType%2A>|Isso contém informações de tipo o esquema XML para o nó se é válido.|  
 |<xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A>|Isso contém a validação Infoset do esquema de postagem de nó que é adicionado após a validação. Isso inclui informações de tipo do esquema XML, bem como informações de validade.|  
@@ -187,7 +188,7 @@ Console.WriteLine("The price of the book has been dropped 20% from {0:C} to {1:C
   
  Para saber mais sobre o mapeamento de tipos internos de esquema para tipos de CLR, confira [Suporte a tipo nas classes System.Xml](type-support-in-the-system-xml-classes.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

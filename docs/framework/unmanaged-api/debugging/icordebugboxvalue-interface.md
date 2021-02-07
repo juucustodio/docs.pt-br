@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugBoxValue'
 title: Interface ICorDebugBoxValue
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3d3ae7e2-97d4-46de-a2c3-cb78f3490f9d
 topic_type:
 - apiref
-ms.openlocfilehash: 6d58ae048382a78c422703d5c6caeb3bbc739849
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 86a985d3cbb8330efdef1d6636f91b64c3f78bc6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723162"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711928"
 ---
 # <a name="icordebugboxvalue-interface"></a>Interface ICorDebugBoxValue
 
@@ -27,7 +28,7 @@ Uma subclasse de "ICorDebugHeapValue" que representa um objeto de classe de valo
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetObject](icordebugboxvalue-getobject-method.md)|Obtém um ponteiro de interface para a instância "ICorDebugObjectValue" do box.|  
   
@@ -46,6 +47,6 @@ Uma subclasse de "ICorDebugHeapValue" que representa um objeto de classe de valo
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

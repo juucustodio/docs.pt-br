@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: navegação de nó de namespace e atributo usando XPathNavigator'
 title: Navegação do nó de atributo e do namespace usando XPathNavigator
 ms.date: 03/30/2017
 ms.assetid: 23975f88-e0af-4b88-93de-9e20e11880ad
-ms.openlocfilehash: d561afdc477119a6d9d04eacfcd6a6bdb9d0e2d6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0924f7177485a87376e97501effa28e494be90b3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725385"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99714099"
 ---
 # <a name="attribute-and-namespace-node-navigation-using-xpathnavigator"></a>Navegação do nó de atributo e do namespace usando XPathNavigator
 
@@ -97,7 +98,7 @@ A classe <xref:System.Xml.XPath.XPathNavigator> fornece dois conjuntos de métod
 > [!NOTE]
 > Os nós de namespace de retornos de classe de <xref:System.Xml.XPath.XPathNavigator> na ordem inversa do documento. Portanto, <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> move essencialmente ao último nó do namespace no escopo atual.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

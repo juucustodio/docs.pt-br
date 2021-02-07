@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como transformar um fragmento de nó'
 title: 'Como: Transformar um fragmento de nó'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 73a6c582-b9d7-4fa7-9a05-6d931e1f3de8
-ms.openlocfilehash: f5eb8e7826dd132fd46f6f476335416e7dd03269
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9373491837fdfb176547aa7e01b8ebf72ae91bef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722681"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713761"
 ---
 # <a name="how-to-transform-a-node-fragment"></a>Como: Transformar um fragmento de nó
 
@@ -49,6 +50,6 @@ Quando você transforma os dados contidos em um objeto de <xref:System.Xml.XmlDo
 
  O título de livro é o homem de confiança.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Usando a classe XslCompiledTransform](using-the-xslcompiledtransform-class.md)

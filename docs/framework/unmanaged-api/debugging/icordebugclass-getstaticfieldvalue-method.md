@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugClass:: GetStaticFieldValue'
 title: Método ICorDebugClass::GetStaticFieldValue
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 56e718b4-fabd-418b-a5b3-3cc33c745683
 topic_type:
 - apiref
-ms.openlocfilehash: dd1608badf553650b05b7de98d9bbcd76b2f3edf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a5406e44491ce89030731c35752066e4943cebfc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728427"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711512"
 ---
 # <a name="icordebugclassgetstaticfieldvalue-method"></a>Método ICorDebugClass::GetStaticFieldValue
 

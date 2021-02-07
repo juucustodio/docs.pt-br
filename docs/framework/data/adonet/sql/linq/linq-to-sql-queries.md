@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: LINQ to SQL consultas'
 title: Consultas LINQ to SQL
 ms.date: 03/30/2017
 ms.assetid: f4897aaa-7f44-4c20-a471-b948c2971aae
-ms.openlocfilehash: c49644a866a6e245c6be1f9a8e8f95d003fd0191
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5b5df2095043b01eb426de86e4add91941bb74c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175220"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712474"
 ---
 # <a name="linq-to-sql-queries"></a>Consultas LINQ to SQL
 
@@ -32,7 +33,7 @@ Você define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]
 |Editando contra a execução local||Para obter mais informações, consulte [execução remota versus local](remote-vs-local-execution.md).|  
 |Passar contra consulte armazenado em cachê|Não aplicável em um cenário de memória local||  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a consultas LINQ (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
 - [Operações de consulta LINQ básicas](../../../../../csharp/programming-guide/concepts/linq/basic-linq-query-operations.md)

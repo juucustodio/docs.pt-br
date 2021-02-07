@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <transport> de <wsHttpBinding>'
 title: <transport> de <wsHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 21e38acf-450a-4bda-82b6-de305e1f7cd8
-ms.openlocfilehash: 1afeed62fcbf3b083d69a7cedb7eb80b81f5c17b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7801148d76aaa9c074eeb7a83c1dd2fa152d871c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73732742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749292"
 ---
 # <a name="transport-of-wshttpbinding"></a>\<transport> de \<wsHttpBinding>
 
@@ -21,7 +22,7 @@ Define as configurações de autenticação para o transporte HTTP.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-wshttpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transport>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <wsHttpBinding>
@@ -41,7 +42,7 @@ Define as configurações de autenticação para o transporte HTTP.
 </wsHttpBinding>
 ```
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
 
 <xref:System.ServiceModel.HttpTransportSecurity>
 
@@ -90,7 +91,7 @@ Nenhum.
 |-------------|-----------------|
 |[\<security>](security-of-wshttpbinding.md)|Representa os recursos de segurança do [\<wsHttpBinding>](wshttpbinding.md) .|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.HttpTransportSecurity>
 - <xref:System.ServiceModel.WSHttpSecurity.Transport%2A>

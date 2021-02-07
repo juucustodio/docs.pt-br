@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ISOF (Entity SQL)'
 title: ISOF (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 5b2b0d34-d0a7-4bcd-baf2-58aa8456d00b
-ms.openlocfilehash: 3cbbc9b6feda1bde104ed2c95d4dca274b090028
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4a44ddc74ef16ec16285132f6567ca2500e173a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202273"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748343"
 ---
 # <a name="isof-entity-sql"></a>ISOF (Entity SQL)
 
@@ -33,7 +34,7 @@ expression IS [ NOT ] OF ( [ ONLY ] type )
  `type`  
  O tipo para testar `expression` contra. O tipo URL deve ser qualificada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` se `expression` é do tipo T e T é um tipo base, ou um tipo derivado de `type`; se `expression` nulo é nulo em runtime; caso contrário, `false`.  
   
@@ -61,6 +62,6 @@ expression IS [ NOT ] OF ( [ ONLY ] type )
   
  [! Code-SQL [conceitos de entidade de DP # TREAT_ISOF] ~/Samples/Snippets/TSQL/VS_Snippets_Data/DP entityservices Concepts/TSQL/entitysql. SQL # treat_isof)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

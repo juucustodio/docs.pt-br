@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <elemento> System. Diagnostics'
 title: <elemento> System. Diagnostics
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <system.diagnostics> element
 - system.diagnostics element
 ms.assetid: 3f348f42-fa72-4ff2-aa1c-bb9eecad4bb2
-ms.openlocfilehash: aff324ac9952c95c78d7ca15572651dba23b79b7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ac5b1feaa6c8e7ab25a5210999040835322ac7a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195162"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750449"
 ---
 # <a name="systemdiagnostics-element"></a>Elemento \<system.diagnostics>
 
@@ -22,7 +23,7 @@ Especifica os ouvintes de rastreamento que coletam, armazenam e roteiam mensagen
 [**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;**\<system.diagnostics>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.diagnostics>
@@ -76,7 +77,7 @@ Especifica os ouvintes de rastreamento que coletam, armazenam e roteiam mensagen
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.Debug>

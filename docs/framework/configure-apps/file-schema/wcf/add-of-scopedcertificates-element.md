@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> do <scopedCertificates> elemento'
 title: <add> do <scopedCertificates> elemento
 ms.date: 03/30/2017
 ms.assetid: e21c1ef8-d6d6-4bca-ac5a-6fbf4bd77412
-ms.openlocfilehash: 28777ecac130295a8ba82a8e4d67cc519d088d8a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4c267164ccf065edee79a6aaaa9aaddc14d95909
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195136"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750267"
 ---
 # <a name="add-of-scopedcertificates-element"></a>\<add> do \<scopedCertificates> elemento
 
@@ -23,7 +24,7 @@ Adiciona um certificado X. 509 à coleção de certificados com escopo.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<scopedCertificates>**](scopedcertificates-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <add findValue="String"
@@ -41,8 +42,8 @@ Adiciona um certificado X. 509 à coleção de certificados com escopo.
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|targetUri|Cadeia. Especifica o URI do serviço associado ao certificado.|  
-|findValue|Cadeia. O valor a ser procurado.|  
+|targetUri|Cadeia de caracteres. Especifica o URI do serviço associado ao certificado.|  
+|findValue|Cadeia de caracteres. O valor a ser procurado.|  
 |x509FindType|Enumeração. Um dos campos de certificado a serem pesquisados.|  
 |storeLocation|Enumeração. Um dos dois locais de armazenamento para pesquisar.|  
 |storeName|Enumeração. Uma das lojas de sistema para pesquisa.|  
@@ -113,7 +114,7 @@ Adiciona um certificado X. 509 à coleção de certificados com escopo.
 </behaviors>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement.ScopedCertificates%2A>
 - <xref:System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection>

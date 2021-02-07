@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> de <serviceActivations>'
 title: <add> de <serviceActivations>
 ms.date: 03/30/2017
 ms.assetid: e5b01fc8-ee84-48b7-95fd-95ab54fa871f
-ms.openlocfilehash: a0f68717f765482f53e675458fae63d1a374d6fb
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 53c89321c8cde1966a04870c62fa0777610ff547
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850321"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750137"
 ---
 # <a name="add-of-serviceactivations"></a>\<add> de \<serviceActivations>
 
@@ -19,7 +20,7 @@ Um elemento de configuração que permite definir configurações de ativação 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceActivations>**](serviceactivations.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <serviceHostingEnvironment>
@@ -39,7 +40,7 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 |Atributo|Descrição|
 |---------------|-----------------|
 |fábrica|Uma cadeia de caracteres que especifica o nome do tipo CLR da fábrica que gera um elemento de ativação de serviço.|
-|serviço|O ServiceType que implementa o serviço (o TypeName totalmente qualificado ou o TypeName curto (quando é colocado na pasta App_Code).|
+|service|O ServiceType que implementa o serviço (o TypeName totalmente qualificado ou o TypeName curto (quando é colocado na pasta App_Code).|
 |relativeAddress|O endereço relativo no aplicativo IIS atual-por exemplo, "Service. svc". No WCF 4,0, esse endereço relativo deve conter uma das extensões de arquivo conhecidas (. svc,. xamlx,...). Nenhum arquivo físico deve existir para o relativeUrl|
 
 ### <a name="child-elements"></a>Elementos filho
@@ -54,7 +55,7 @@ Nenhum.
 
 ## <a name="remarks"></a>Comentários
 
-O exemplo a seguir mostra como definir as configurações de ativação no arquivo Web. config.
+O exemplo a seguir mostra como definir as configurações de ativação no arquivo de web.config.
 
 ```xml
 <configuration>

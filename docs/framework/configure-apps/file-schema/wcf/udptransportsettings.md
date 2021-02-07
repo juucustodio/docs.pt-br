@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <udpTransportSettings>'
 title: <udpTransportSettings>
 ms.date: 03/30/2017
 ms.assetid: 842d92e9-6199-4ec5-b2d1-58533054e1f0
-ms.openlocfilehash: ed59a139ac21e7cfb4400d17f1fc6a0fa3096641
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bfd862009401fef160939fb9acaa66fc9ca23ddb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183670"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749149"
 ---
 # \<udpTransportSettings>
 
@@ -19,7 +20,7 @@ Este elemento de configuração expõe as configurações de transporte UDP para
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<udpDiscoveryEndpoint>**](udpdiscoveryendpoint.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<updTransportSettings>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>

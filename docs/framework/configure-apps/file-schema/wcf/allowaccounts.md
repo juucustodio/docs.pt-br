@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <allowAccounts>'
 title: <allowAccounts>
 ms.date: 03/30/2017
 ms.assetid: 166923a9-a8ac-478f-92f9-529d9667f3a6
-ms.openlocfilehash: 3432d33c0cd65af03d2b1ac1302ca2c8ff3e0f43
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5211d694e5318faf0cfc31b404764acb405bd096
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201636"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749981"
 ---
 # \<allowAccounts>
 
@@ -18,7 +19,7 @@ Contém uma coleção de elementos de configuração que especificam contas de u
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<net.pipe>**](net-pipe.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<allowAccounts>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <allowAccounts>
@@ -44,7 +45,7 @@ Contém uma coleção de elementos de configuração que especificam contas de u
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[\<net.pipe>](net-pipe.md) or [\<net.tcp>](net-tcp.md)|Especifica as definições de configuração para o pipe de rede ou para os serviços de compartilhamento de TCP.|  
+|[\<net.pipe>](net-pipe.md) ou [\<net.tcp>](net-tcp.md)|Especifica as definições de configuração para o pipe de rede ou para os serviços de compartilhamento de TCP.|  
   
 ## <a name="see-also"></a>Confira também
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> de <transportConfigurationType>'
 title: <add> de <transportConfigurationType>
 ms.date: 03/30/2017
 ms.assetid: 03d79db9-571d-4534-acef-d05e5467b257
-ms.openlocfilehash: 9bef44ed39ee892080342058206f779b38fb460d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4a4a68e1f70bcb2ec7d55d5d6c3b530e71ddc55d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750007"
 ---
 # <a name="add-of-transportconfigurationtype"></a>\<add> de \<transportConfigurationType>
 
@@ -62,9 +63,9 @@ Esse elemento é um par chave/valor, que identifica o tipo de um transporte espe
 </serviceHostingEnvironment>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [Hosting](../../../wcf/feature-details/hosting.md)
+- [Hospedagem](../../../wcf/feature-details/hosting.md)

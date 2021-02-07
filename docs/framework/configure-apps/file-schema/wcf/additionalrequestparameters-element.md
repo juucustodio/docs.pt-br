@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: <additionalRequestParameters> elemento'
 title: Elemento <additionalRequestParameters>
 ms.date: 03/30/2017
 ms.assetid: da8109fb-581c-48f4-b718-3bbda1edc47d
-ms.openlocfilehash: e175e2b68610ea91f78a04d2c9a4ed202c1f2605
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d27a8f25f4b45509989e4a348a0aeed0c2c22f15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172912"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749994"
 ---
 # <a name="additionalrequestparameters-element"></a>Elemento \<additionalRequestParameters>
 
 Contém uma coleção de elementos de configuração que especificam parâmetros de solicitação adicionais.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.AdditionalRequestParameters%2A>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement.AdditionalRequestParameters%2A>

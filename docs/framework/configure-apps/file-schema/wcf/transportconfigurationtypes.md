@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <transportConfigurationTypes>'
 title: <transportConfigurationTypes>
 ms.date: 03/30/2017
 ms.assetid: 929c8b0a-5460-4f66-a098-2cb8d4e10b69
-ms.openlocfilehash: 6545e1f1be2695d165b89a38c7218e0acdc88bfc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d6ef92cf3bdd10fdc9b374f10aaa748cf4300529
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162017"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749266"
 ---
 # \<transportConfigurationTypes>
 
@@ -52,9 +53,9 @@ Representa uma coleção de elementos de configuração que identificam o tipo d
 |-------------|-----------------|  
 |[\<serviceHostingEnvironment>](servicehostingenvironment.md)|Define o tipo que o ambiente de Hospedagem de serviço instancia para um transporte específico.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection>
-- [Hosting](../../../wcf/feature-details/hosting.md)
+- [Hospedagem](../../../wcf/feature-details/hosting.md)

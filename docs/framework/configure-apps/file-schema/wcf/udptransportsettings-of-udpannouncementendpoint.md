@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <udpTransportSettings> de <udpAnnouncementEndpoint>'
 title: <udpTransportSettings> de <udpAnnouncementEndpoint>
 ms.date: 03/30/2017
 ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f
-ms.openlocfilehash: 9b2efe706777550f300f5b88710874342c51c5cc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2997004e162728b20daa4f137e1edf132cd33d52
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148849"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749201"
 ---
 # <a name="udptransportsettings-of-udpannouncementendpoint"></a>\<udpTransportSettings> de \<udpAnnouncementEndpoint>
 

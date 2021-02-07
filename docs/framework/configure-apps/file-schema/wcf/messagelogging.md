@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <messageLogging>'
 title: <messageLogging>
 ms.date: 03/30/2017
 ms.assetid: 1d06a7e6-9633-4a12-8c5d-123adbbc19c5
-ms.openlocfilehash: fd4d678b1e861a47762d8a64f85dcc052a30fe2b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e26a616bb7974a8fbad9a7f920a28e06422e09c1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204795"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749279"
 ---
 # \<messageLogging>
 
@@ -18,7 +19,7 @@ Esse elemento define as configurações para os recursos de log de mensagens do 
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<diagnostics>**](diagnostics.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<messageLogging>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>
@@ -125,7 +126,7 @@ Esse elemento define as configurações para os recursos de log de mensagens do 
 </messageLogging>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>

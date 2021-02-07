@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <add> de <participants>'
 title: <add> de <participants>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 3c730850-6f8e-4102-acb8-8effb4e09463
-ms.openlocfilehash: 84177f62e6f1ce0cb89bdf85e1ba5a2a1e82fa21
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 58e8fa9b0e9685421a044cf2f11473cb73d8ae6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189793"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748928"
 ---
 # <a name="add-of-participants"></a>\<add> de \<participants>
 
@@ -22,7 +23,7 @@ Configure um participante de rastreamento que escuta para registros de rastreame
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<participants>**](participants.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml
 <tracking>
@@ -42,7 +43,7 @@ Configure um participante de rastreamento que escuta para registros de rastreame
 |-------------|-----------------|  
 |name|Uma cadeia de caracteres que especifica o nome de um participante de rastreamento.|  
 |profileName|Uma cadeia de caracteres que especifica o nome do perfil de rastreamento que define os registros de rastreamento o participante de rastreamento tiver assinado.|  
-|tipo|Uma cadeia de caracteres que especifica o tipo de um participante de rastreamento.|  
+|type|Uma cadeia de caracteres que especifica o tipo de um participante de rastreamento.|  
   
 ### <a name="child-elements"></a>Elementos filho  
 
@@ -93,7 +94,7 @@ Configure um participante de rastreamento que escuta para registros de rastreame
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>
 - <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>

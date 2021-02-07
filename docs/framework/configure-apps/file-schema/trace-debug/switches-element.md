@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <switches> elemento'
 title: Elemento <switches>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - switches element
 - trace switches, <switches> element
 ms.assetid: 4cf36786-b89a-40e2-a0f1-86bb9b783343
-ms.openlocfilehash: bdd6efdec1e118075495002509c7367c1162baba
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d0ffdf2bdc4dacd157d09d34c40063b687595e3d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176091"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750514"
 ---
 # <a name="switches-element"></a>Elemento \<switches>
 
@@ -24,7 +25,7 @@ Contém opções de rastreamento e o nível em que as opções de rastreamento s
 &nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<switches>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
       <switches>
@@ -71,7 +72,7 @@ Contém opções de rastreamento e o nível em que as opções de rastreamento s
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.Switch>
 - <xref:System.Diagnostics.TraceSwitch>

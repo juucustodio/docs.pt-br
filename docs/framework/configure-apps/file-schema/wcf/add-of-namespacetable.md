@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> de <namespaceTable>'
 title: <add> de <namespaceTable>
 ms.date: 03/30/2017
 ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
-ms.openlocfilehash: 7d055d4933f1ad625d6842f91a140f668c05c64e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b7804bdec4a1fb2199c81ba0dde031b80b451d2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204990"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750254"
 ---
 # <a name="add-of-namespacetable"></a>\<add> de \<namespaceTable>
 
@@ -19,7 +20,7 @@ Representa um elemento de configuração que contém um namespace para mapeament
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<namespaceTable>**](namespacetable.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <routing>

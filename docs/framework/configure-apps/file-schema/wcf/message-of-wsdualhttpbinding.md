@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <message> de <wsDualHttpBinding>'
 title: <message> de <wsDualHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 75101744-eed8-4d61-91f4-5fc4473a21f2
-ms.openlocfilehash: 41cd555fb60cf42819b21a23456802acbe8dab1b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7924d29235b17fa9de61293d031ebb05d49a2cc1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204808"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749552"
 ---
 # <a name="message-of-wsdualhttpbinding"></a>\<message> de \<wsDualHttpBinding>
 
@@ -21,7 +22,7 @@ Define a segurança em nível de mensagem para o [\<wsDualHttpBinding>](wsdualht
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-wsdualhttpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
@@ -87,7 +88,7 @@ Define a segurança em nível de mensagem para o [\<wsDualHttpBinding>](wsdualht
 |-------------|-----------------|  
 |[\<security>](security-of-wsdualhttpbinding.md)|Define os recursos de segurança do [\<wsDualHttpBinding>](wsdualhttpbinding.md) .|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>
 - <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>

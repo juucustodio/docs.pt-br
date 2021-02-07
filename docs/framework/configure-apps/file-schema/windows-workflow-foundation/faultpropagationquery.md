@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <faultPropagationQuery>'
 title: <faultPropagationQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 4fb5c2b1-3dad-4eca-9c7f-3efb51899813
-ms.openlocfilehash: 6b43a570b4d4534adce1ef5ab394849651e3ac0e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 08786bfa66d74f5f29353c4d6a86a2abd34df8f9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398726"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748694"
 ---
 # \<faultPropagationQuery>
 
@@ -24,7 +25,7 @@ Representa uma consulta que é usada para rastrear a manipulação de falhas que
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<faultPropagationQueries>**](faultpropagationqueries.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<faultPropagationQuery>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <tracking>
@@ -60,9 +61,9 @@ Nenhum.
 |-------------|-----------------|
 |[\<faultPropagationQueries>](faultpropagationqueries.md)|Representa uma lista de elementos de configuração que são usados para rastrear a manipulação de falhas que ocorrem dentro de uma atividade.  Esse evento ocorre toda vez que um FaultHandler processa uma falha.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.FaultPropagationQuery?displayProperty=nameWithType>
-- [Acompanhamento e rastreamento de fluxo de trabalho](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
-- [Acompanhando perfis](../../../windows-workflow-foundation/tracking-profiles.md)
+- [Rastreamento e rastreamento de fluxo de trabalho](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Controlando perfis](../../../windows-workflow-foundation/tracking-profiles.md)

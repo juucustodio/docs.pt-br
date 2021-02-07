@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <baseAddressPrefixFilters>'
 title: <baseAddressPrefixFilters>
 ms.date: 03/30/2017
 ms.assetid: 8cab2a9a-c51f-4283-bb60-2ad0c274fd46
-ms.openlocfilehash: ce224a2a1d6d96f2bc72e9291e7256d264d86d50
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9212838393ead04bdcd475b314bb2707e6f899ce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149021"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749669"
 ---
 # \<baseAddressPrefixFilters>
 
@@ -86,9 +87,9 @@ http://test2.fabrikam.com/Service.svc
 > [!NOTE]
 > O filtro não oferece suporte a caracteres curinga. Além disso, os baseAddresss fornecidos pelo IIS podem ter endereços associados a outros esquemas que não estão presentes na `baseAddressPrefixFilters` lista. Esses endereços não são filtrados.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [Hosting](../../../wcf/feature-details/hosting.md)
+- [Hospedagem](../../../wcf/feature-details/hosting.md)

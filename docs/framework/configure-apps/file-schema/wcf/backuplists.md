@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <backupLists>'
 title: <backupLists>
 ms.date: 03/30/2017
 ms.assetid: 593b3390-f65b-4684-ad40-0596b62f0954
-ms.openlocfilehash: 940bf28958251e7257b2cc19a9c5ff0059411bcd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9647c507f85eba6bfd001b34dbf617bc881d3f2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201545"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749695"
 ---
 # \<backupLists>
 
@@ -18,7 +19,7 @@ Representa uma seção de configuração para definir um conjunto de serviços d
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<backupLists>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <routing>

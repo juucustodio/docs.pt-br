@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <sharedListeners> elemento'
 title: Elemento <sharedListeners>
 ms.date: 03/30/2017
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - trace listeners, <sharedListeners> element
 - sharedListeners element
 ms.assetid: de200534-19dd-4156-86cf-c50521802c4c
-ms.openlocfilehash: 7e249e59423740b36e42f59fae8854412d01a0cc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 904648754c99464e1109a04a5a19b52ec1a1cace
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173842"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750553"
 ---
 # <a name="sharedlisteners-element"></a>Elemento \<sharedListeners>
 
@@ -26,7 +27,7 @@ Contém os ouvintes que podem ser referenciados por qualquer elemento de origem 
 &nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<sharedListeners>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <sharedListeners>
@@ -93,7 +94,7 @@ Contém os ouvintes que podem ser referenciados por qualquer elemento de origem 
 </configuration>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.TraceListener>
 - [Esquema de configurações de rastreamento e depuração](index.md)

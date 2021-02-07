@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <messageSenderAuthentication> elemento'
 title: Elemento <messageSenderAuthentication>
 ms.date: 03/30/2017
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
-ms.openlocfilehash: e7e636571c0dbb1845438c22f7e7509dfc7987f9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 03c1cd626e7c3ad71026c076df3d757419810d74
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204782"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749331"
 ---
 # <a name="messagesenderauthentication-element"></a>Elemento \<messageSenderAuthentication>
 
@@ -24,7 +25,7 @@ Especifica opções de autenticação para remetentes de mensagens ponto a ponto
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<peer>**](peer-of-clientcredentials-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<messageSenderAuthentication>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <messageSenderAuthentication customCertificateValidatorType= "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
@@ -106,7 +107,7 @@ Especifica opções de autenticação para remetentes de mensagens ponto a ponto
 </behaviors>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>
 - <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>

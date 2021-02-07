@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <authentication> do <serviceCertificate> elemento'
 title: <authentication> do <serviceCertificate> elemento
 ms.date: 03/30/2017
 ms.assetid: 733b67b4-08a1-4d25-9741-10046f9357ef
-ms.openlocfilehash: c6f2578d85971740e5bd3d75151305a475187492
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 35a94f4f9c089f86aef38e7e9a1115a7cd22a325
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201584"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749877"
 ---
 # <a name="authentication-of-servicecertificate-element"></a>\<authentication> do \<serviceCertificate> elemento
 
@@ -22,7 +23,7 @@ Especifica as configurações usadas pelo proxy do cliente para autenticar certi
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceCertificate>**](servicecertificate-of-clientcredentials-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<authentication>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <authentication customCertificateValidatorType="String"
@@ -39,7 +40,7 @@ Especifica as configurações usadas pelo proxy do cliente para autenticar certi
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|customCertificateValidatorType|Cadeia. Um tipo e um assembly usados para validar um tipo personalizado.|  
+|customCertificateValidatorType|Cadeia de caracteres. Um tipo e um assembly usados para validar um tipo personalizado.|  
 |certificateValidationMode|Especifica um dos três modos usados para validar as credenciais. Se definido como `Custom` , um customCertificateValidator também deverá ser fornecido. O padrão é `ChainTrust`.|  
 |rerevocationmode|Um dos modos usados para verificar se há listas de certificados revogados (CRL). O padrão é `Online`.|  
 |trustedStoreLocation|Um dos dois locais de armazenamento do sistema: `LocalMachine` ou `CurrentUser` . Esse valor é usado quando um certificado de serviço é negociado para o cliente. A validação é executada no repositório de **pessoas confiáveis** no local de armazenamento especificado. O padrão é `CurrentUser`.|  
@@ -106,7 +107,7 @@ Especifica as configurações usadas pelo proxy do cliente para autenticar certi
 </serviceCertificate>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.X509RecipientCertificateClientElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>

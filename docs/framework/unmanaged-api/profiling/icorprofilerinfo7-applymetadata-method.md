@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo7:: ApplyMetaData'
 title: 'Método ICorProfilerInfo7:: ApplyMetaData'
 ms.date: 02/15/2019
 dev_langs:
@@ -10,12 +11,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: a1bfb649-4584-4d35-b3e6-8fe59b53992a
-ms.openlocfilehash: 2c71db25422740880d8b29576eff247d5eba5f1d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3a4554357ede85d936e8bf9c87c6b9c096dab188
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686105"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737123"
 ---
 # <a name="icorprofilerinfo7applymetadata-method"></a>Método ICorProfilerInfo7:: ApplyMetaData
 
@@ -70,6 +71,6 @@ A partir do .NET Core 3,0, `ApplyMetaData` o também oferece suporte aos seguint
   
  **.NET Framework versões:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo7](icorprofilerinfo7-interface.md)

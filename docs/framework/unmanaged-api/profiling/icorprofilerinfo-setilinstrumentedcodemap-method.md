@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo:: SetILInstrumentedCodeMap'
 title: Método ICorProfilerInfo::SetILInstrumentedCodeMap
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bce1dcf8-b4ec-4e73-a917-f2df1ad49c8a
 topic_type:
 - apiref
-ms.openlocfilehash: cac8e9570dab55af6b6e1fcf6f53b6a697727972
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0cf3b4ccf31076c2d1ea2df581003e3a07f0e795
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502906"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737344"
 ---
 # <a name="icorprofilerinfosetilinstrumentedcodemap-method"></a>Método ICorProfilerInfo::SetILInstrumentedCodeMap
 
@@ -55,7 +56,7 @@ no Uma matriz de estruturas COR_IL_MAP, cada uma delas especifica um deslocament
 
 ## <a name="remarks"></a>Comentários
 
-Um criador de perfil geralmente insere instruções no código-fonte de um método para instrumentar esse método (por exemplo, para notificar quando uma determinada linha de origem for atingida). `SetILInstrumentedCodeMap`permite que um criador de perfil Mapeie as instruções originais do MSIL para seus novos locais. Um criador de perfil pode usar o método [ICorProfilerInfo:: GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md) para obter o deslocamento de MSIL original para um determinado deslocamento nativo.
+Um criador de perfil geralmente insere instruções no código-fonte de um método para instrumentar esse método (por exemplo, para notificar quando uma determinada linha de origem for atingida). `SetILInstrumentedCodeMap` permite que um criador de perfil Mapeie as instruções originais do MSIL para seus novos locais. Um criador de perfil pode usar o método [ICorProfilerInfo:: GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md) para obter o deslocamento de MSIL original para um determinado deslocamento nativo.
 
 O depurador assumirá que cada deslocamento antigo se refere a um deslocamento MSIL dentro do código MSIL original e não modificado, e que cada deslocamento novo se refere ao deslocamento MSIL dentro do novo código instrumentado. O mapa deve ser classificado em ordem crescente. Para que a depuração funcione corretamente, siga estas diretrizes:
 
@@ -95,6 +96,6 @@ No .NET Framework 3,5 e versões anteriores, você aloca a `rgILMapEntries` matr
 
 **.NET Framework versões:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

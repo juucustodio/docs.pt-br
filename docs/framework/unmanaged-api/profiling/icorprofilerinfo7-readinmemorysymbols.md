@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorProfilerInfo7:: ReadInMemorySymbols'
 title: ICorProfilerInfo7::ReadInMemorySymbols
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901
-ms.openlocfilehash: 6917900b7494550992dfa82f45ed0140f95e68cb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f1a88d823e7cdfcc89aa140681f61cfbe3f63ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733614"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736980"
 ---
 # <a name="icorprofilerinfo7readinmemorysymbols"></a>ICorProfilerInfo7::ReadInMemorySymbols
 
@@ -52,7 +53,7 @@ HRESULT ReadInMemorySymbols(
  `pCountSymbolBytesRead`  
  fora Quando o método retorna, contém o número real de bytes lidos.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK`, se um número diferente de zero de bytes tiver sido lido.  
   
@@ -75,6 +76,6 @@ HRESULT ReadInMemorySymbols(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo7](icorprofilerinfo7-interface.md)

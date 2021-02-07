@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRDataTarget:: SetThreadContext'
 title: Método ICLRDataTarget::SetThreadContext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 103c8502-81fe-40d7-9c1e-9008d8fb19e1
 topic_type:
 - apiref
-ms.openlocfilehash: c135c051637858682c22db58d562e1d50eea562b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fc428bc887f7ba10f3096cdf17a757fb252418f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738181"
 ---
 # <a name="iclrdatatargetsetthreadcontext-method"></a>Método ICLRDataTarget::SetThreadContext
 
@@ -64,6 +65,6 @@ HRESULT SetThreadContext (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRDataTarget](iclrdatatarget-interface.md)

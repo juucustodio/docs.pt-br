@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugStackWalk'
 title: Interface ICorDebugStackWalk
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 16d695e8-975d-431b-8421-e9e6c3e3f476
 topic_type:
 - apiref
-ms.openlocfilehash: b37a89c0a86df49c894dc43676f8feafb80f5c95
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 27dcdfc90829a3a28d81ad28dce0cd4d1d674948
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687509"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738085"
 ---
 # <a name="icordebugstackwalk-interface"></a>Interface ICorDebugStackWalk
 
@@ -27,7 +28,7 @@ Fornece métodos para colocar os métodos gerenciados, ou quadros, em uma pilha 
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetContext](icordebugstackwalk-getcontext-method.md)|Retorna o contexto do quadro atual no `ICorDebugStackWalk` objeto.|  
 |[Método SetContext](icordebugstackwalk-setcontext-method.md)|Define o `ICorDebugStackWalk` contexto atual do objeto como um contexto válido para o thread.|  
@@ -49,7 +50,7 @@ Fornece métodos para colocar os métodos gerenciados, ou quadros, em uma pilha 
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

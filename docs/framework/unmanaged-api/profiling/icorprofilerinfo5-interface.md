@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerInfo5'
 title: Interface ICorProfilerInfo5
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: 7bd48c34-37ed-4230-9eec-39a17280f05d
 topic_type:
 - apiref
-ms.openlocfilehash: a6206e35280e073df2abfb7ae46aa84d34b30208
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c89faf3db08adeee3ffcfbb755a5da5ae44b3c7d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733796"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737266"
 ---
 # <a name="icorprofilerinfo5-interface"></a>Interface ICorProfilerInfo5
 
@@ -25,7 +26,7 @@ ms.locfileid: "95733796"
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetEventMask2](icorprofilerinfo5-geteventmask2-method.md)|Obtém as categorias de eventos atuais para os quais o criador de perfis deseja receber notificações do CLR.|  
 |[Método SetEventMask2](icorprofilerinfo5-seteventmask2-method.md)|Define um valor que especifica os tipos de eventos para os quais o criador de perfil deseja receber notificações de evento do CLR.|  
@@ -42,6 +43,6 @@ ms.locfileid: "95733796"
   
  **.NET Framework versões:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)

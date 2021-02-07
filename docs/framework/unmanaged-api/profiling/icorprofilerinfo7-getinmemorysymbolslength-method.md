@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo7:: GetInMemorySymbolsLength'
 title: 'Método ICorProfilerInfo7:: GetInMemorySymbolsLength'
 ms.date: 03/30/2017
 api_name:
@@ -9,12 +10,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: d62c4a4c-8a62-45aa-8f01-a8387cf36159
-ms.openlocfilehash: 46ffa5cb4fac6988240d32cb1939cc25bdf0a412
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5d96b17e8abbd023f2d050eff3f121a871a94754
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686066"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737110"
 ---
 # <a name="icorprofilerinfo7getinmemorysymbolslength-method"></a>Método ICorProfilerInfo7:: GetInMemorySymbolsLength
 
@@ -39,7 +40,7 @@ HRESULT GetInMemorySymbolsLength(
  pCountSymbolBytes  
  fora Um ponteiro para um `DWORD` valor que, quando o método retorna, contém o comprimento do fluxo em bytes.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  O método retorna `S_OK` se o comprimento do fluxo de memória pode ser determinado, mesmo se for zero (0).  
   
@@ -62,6 +63,6 @@ HRESULT GetInMemorySymbolsLength(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo7](icorprofilerinfo7-interface.md)

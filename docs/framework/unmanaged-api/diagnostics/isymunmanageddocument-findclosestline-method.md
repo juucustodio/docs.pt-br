@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedDocument:: FindClosestLine'
 title: Método ISymUnmanagedDocument::FindClosestLine
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 628f2a04-e529-407d-841e-3b3da219a9cb
 topic_type:
 - apiref
-ms.openlocfilehash: 5ec67758e3174493cbd5cec1de0dcce30013ac43
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0409a5cc29bf148a49a5267d34662f763fc302d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698579"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737825"
 ---
 # <a name="isymunmanageddocumentfindclosestline-method"></a>Método ISymUnmanagedDocument::FindClosestLine
 
@@ -42,10 +43,10 @@ HRESULT FindClosestLine(
  `pRetVal`  
  fora Um ponteiro para uma variável que recebe a linha.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, um código de erro.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedDocument](isymunmanageddocument-interface.md)

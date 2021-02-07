@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo4:: RequestRevert'
 title: Método ICorProfilerInfo4::RequestRevert
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 70261da5-5933-4e25-9de0-ddf51cba56cc
 topic_type:
 - apiref
-ms.openlocfilehash: b80de5e0e03f6b3a424ac59a099e361dd6c50c86
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 24a6a86f32bb9657e62a4433edcb5835e16b9754
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733809"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737292"
 ---
 # <a name="icorprofilerinfo4requestrevert-method"></a>Método ICorProfilerInfo4::RequestRevert
 
@@ -50,7 +51,7 @@ HRESULT RequestRevert (
  `status`  
  fora Uma matriz de HRESULTs listada na seção "status HRESULTs" mais adiante neste tópico. Cada HRESULT indica o êxito ou a falha ao tentar reverter cada função especificada nas matrizes paralelas `moduleIds` e `methodIds` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -87,7 +88,7 @@ HRESULT RequestRevert (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo4](icorprofilerinfo4-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerFunctionEnum'
 title: Interface ICorProfilerFunctionEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0a1d4a38-cd0b-4231-91df-13646218ae72
 topic_type:
 - apiref
-ms.openlocfilehash: 84c3b504dff8a04172dde903c1681c9f3fb2fcd2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0a9437ee1f5c481c2c2d1fd46361da6e938dd179
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95669220"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737591"
 ---
 # <a name="icorprofilerfunctionenum-interface"></a>Interface ICorProfilerFunctionEnum
 
@@ -27,7 +28,7 @@ Fornece métodos para iterar em sequência por meio de uma coleção de funçõe
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Clone](icorprofilerfunctionenum-clone-method.md)|Obtém um ponteiro de interface para uma cópia desta `ICorProfilerFunctionEnum` interface.|  
 |[Método GetCount](icorprofilerfunctionenum-getcount-method.md)|Obtém o número de funções que foram carregadas pelo aplicativo ou carregadas de modo forçado pelo criador de perfil.|  
@@ -51,7 +52,7 @@ Fornece métodos para iterar em sequência por meio de uma coleção de funçõe
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

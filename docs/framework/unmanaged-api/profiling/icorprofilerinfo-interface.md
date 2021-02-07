@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerInfo'
 title: Interface ICorProfilerInfo
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: eb4e4ce0-06e7-4469-bbc4-edc2eb5da4b1
 topic_type:
 - apiref
-ms.openlocfilehash: a029784a28036e531670ad373893b4256c5864c4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d1da0f41a7c7358b7f71c8d931fff723b3144cdd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671181"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737370"
 ---
 # <a name="icorprofilerinfo-interface"></a>Interface ICorProfilerInfo
 
@@ -30,7 +31,7 @@ Fornece métodos para uso por infilers de código para se comunicar com o Common
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método BeginInprocDebugging](icorprofilerinfo-begininprocdebugging-method.md)|Inicializa o suporte à depuração em processo. Esse método é obsoleto no .NET Framework versão 2,0.|  
 |[Método EndInprocDebugging](icorprofilerinfo-endinprocdebugging-method.md)|Desliga uma sessão de depuração em processo. Esse método é obsoleto no .NET Framework versão 2,0.|  
@@ -84,7 +85,7 @@ Fornece métodos para uso por infilers de código para se comunicar com o Common
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)
 - [Interface ICorProfilerInfo2](icorprofilerinfo2-interface.md)

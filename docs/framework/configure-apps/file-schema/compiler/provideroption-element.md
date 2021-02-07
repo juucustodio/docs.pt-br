@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <providerOption> elemento'
 title: Elemento <providerOption>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - providerOptions
 - provideroption element
 ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
-ms.openlocfilehash: 9374fbaf7ceb61e5b72335417d32a08525477e0d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1fdca58830e8563ef28cbca28857127252928fd4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699032"
 ---
 # <a name="provideroption-element"></a>Elemento \<providerOption>
 
@@ -94,7 +95,7 @@ Especifica os atributos de versão do compilador para um provedor de idioma.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>

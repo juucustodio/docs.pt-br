@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <authenticationModules> elemento (configurações de rede)'
 title: Elemento <authenticationModules> (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - authenticationModules element
 - <authenticationModules> element
 ms.assetid: 10fcfaad-82ef-4692-871a-0aec9dfbe75e
-ms.openlocfilehash: 154a73a5fe3fa9e2b6b1c9e5c462b76bdc1ba640
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2c2dc3c6a3d8fc064bb24c3d86a4441c269e43f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201740"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698603"
 ---
 # <a name="authenticationmodules-element-network-settings"></a>Elemento \<authenticationModules> (Configurações de Rede)
 
@@ -23,7 +24,7 @@ Especifica os módulos usados para autenticar solicitações de rede.
 &nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<authenticationModules>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <authenticationModules>
@@ -75,7 +76,7 @@ Especifica os módulos usados para autenticar solicitações de rede.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>

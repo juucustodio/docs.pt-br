@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: esquema de seções de configuração'
 title: Esquema de seções de configuração
 ms.date: 05/02/2017
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - configuration schema [.NET Framework], custom settings in configuration files
 - elements [.NET Framework], custom settings in configuration files
 ms.assetid: 6e4cc793-c526-4007-b4e9-37d56295f2cb
-ms.openlocfilehash: fc43a9c32ba33629b6e89120cf57f6d212ab3a56
-ms.sourcegitcommit: 2543a78be6e246aa010a01decf58889de53d1636
+ms.openlocfilehash: f16ca16417da0b3ee7a7d0a5ebdd1a446ec0714a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86441655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698954"
 ---
 # <a name="configuration-sections-schema"></a>Esquema de seções de configuração
 
@@ -28,8 +29,8 @@ O esquema de seções de configuração contém elementos que definem configura�
 |     | Descrição |
 | --- | ----------- |
 | [**\<configSections>**](configsections-element-for-configuration.md) | Contém as declarações de namespace e seção de configuração. |
-| [**\<section>** para **\<configSections>** e**\<sectionGroup>**](section-element.md) | Contém uma declaração de seção de configuração. |
-| [**\<sectionGroup>** fins**\<configSections>**](sectiongroup-element-for-configsections.md) | Define um namespace para seções de configuração. |
+| [**\<section>** para **\<configSections>** e **\<sectionGroup>**](section-element.md) | Contém uma declaração de seção de configuração. |
+| [**\<sectionGroup>** fins **\<configSections>**](sectiongroup-element-for-configsections.md) | Define um namespace para seções de configuração. |
 
 <a name="dep"></a>
 

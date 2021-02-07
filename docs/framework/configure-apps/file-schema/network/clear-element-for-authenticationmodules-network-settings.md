@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <clear> elemento para AuthenticationModules (configurações de rede)'
 title: Elemento <clear> para authenticationModules (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - <clear> element, authenticationModules
 - authenticationModules, clear element
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
-ms.openlocfilehash: 6ac2287ba9b17727835d43a3e3b8876f210fb5c7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ccfc9f53ef53268cdb1155673fc47a862a63419c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167321"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698564"
 ---
 # <a name="clear-element-for-authenticationmodules-network-settings"></a>Elemento \<clear> para authenticationModules (Configurações de Rede)
 
@@ -26,7 +27,7 @@ Limpa todos os módulos de autenticação do aplicativo.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <clear/>  
@@ -72,7 +73,7 @@ Limpa todos os módulos de autenticação do aplicativo.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>

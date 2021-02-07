@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: classe QuotedPairReader'
 title: Classe QuotedPairReader (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
@@ -11,15 +12,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 898c6e9d2d5dd02f3d5f9c096ad470b5dd445d1d
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 810a7b02948a1b7aa542a179563af9a6d79dd763
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051305"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699656"
 ---
 # <a name="quotedpairreader-class"></a>Classe QuotedPairReader
 
-Determina quais caracteres são colocados entre aspas (escape) em uma cadeia de caracteres entre aspas. Esta classe não pode ser herdada.
+Determina quais caracteres são colocados entre aspas (escape) em uma cadeia de caracteres entre aspas. Essa classe não pode ser herdada.
 
 ```csharp
 internal static class QuotedPairReader
@@ -50,13 +52,13 @@ internal static int CountQuotedChars(string data, int index, bool permitUnicodeE
 
 - `permitUnicodeEscaping` <xref:System.Boolean>
 
-  `true`para permitir que os caracteres Unicode sejam ignorados; caso contrário, `false` .
+  `true` para permitir que os caracteres Unicode sejam ignorados; caso contrário, `false` .
 
-### <a name="return-value"></a>Retornar valor
+### <a name="return-value"></a>Valor retornado
 
 <xref:System.Int32?displayProperty=nameWithType>
 
-`0`Se o caractere no índice especificado não for de escape; caso contrário, o número de caracteres entre aspas consecutivas até e incluindo o caractere em `index` .
+`0` Se o caractere no índice especificado não for de escape; caso contrário, o número de caracteres entre aspas consecutivas até e incluindo o caractere em `index` .
 
 ### <a name="exceptions"></a>Exceções
 

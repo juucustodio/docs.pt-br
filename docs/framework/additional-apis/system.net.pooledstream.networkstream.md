@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Propriedade PooledStream. NetworkStream'
 title: Propriedade PooledStream. NetworkStream (System.Net)
 ms.date: 10/21/2019
 ms.technology: dotnet-networking
@@ -12,18 +13,18 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 541b8c94b30675c1286b48a2291c3bd3e4aeea0b
-ms.sourcegitcommit: 337bdc5a463875daf2cc6883e5a2da97d56f5000
+ms.openlocfilehash: 8a4f1d6bd9297028e763ef73bf96f85cbbfdafd6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72847174"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699630"
 ---
 # <a name="pooledstreamnetworkstream-property"></a>Propriedade PooledStream. NetworkStream
 
-Obtém ou define o fluxo de rede para o soquete de `PooledStream`.
+Obtém ou define o fluxo de rede para o `PooledStream` soquete.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```csharp
 internal NetworkStream NetworkStream { get; set; }
@@ -32,12 +33,12 @@ internal NetworkStream NetworkStream { get; set; }
 ## <a name="property-value"></a>Valor da propriedade
 
 <xref:System.Net.Sockets.NetworkStream>  
-O fluxo de rede para o soquete de `PooledStream`.
+O fluxo de rede para o `PooledStream` soquete.
 
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> A propriedade `PooledStream.NetworkStream` é interna e não deve ser usada diretamente no seu código.
+> A `PooledStream.NetworkStream` propriedade é interna e não deve ser usada diretamente no seu código.
 >
 > A Microsoft não oferece suporte ao uso dessa propriedade em um aplicativo de produção em nenhuma circunstância.
 
@@ -45,6 +46,6 @@ O fluxo de rede para o soquete de `PooledStream`.
 
 **Namespace:** <xref:System.Net>
 
-**Assembly:** Sistema (em System. dll)
+**Assembly:** Sistema (em System.dll)
 
 **.NET Framework versões:** Disponível desde 2,0.

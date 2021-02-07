@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <cryptoNameMapping> elemento'
 title: Elemento <cryptoNameMapping>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <cryptoNameMapping> element
 - cryptoNameMapping element
 ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
-ms.openlocfilehash: 9ffae33a3c8a06d6cfcabf5a58b7d72baeda79c5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b7dac458fdda0aabf36df96b43dca1529ffe4743
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201792"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698902"
 ---
 # <a name="cryptonamemapping-element"></a>Elemento \<cryptoNameMapping>
 
@@ -24,7 +25,7 @@ Contém mapeamentos de classes para nomes amigáveis.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<cryptoNameMapping>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
       <cryptoNameMapping>
@@ -78,7 +79,7 @@ Contém mapeamentos de classes para nomes amigáveis.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema do arquivo de configuração](../index.md)
 - [Esquema de configurações de criptografia](index.md)

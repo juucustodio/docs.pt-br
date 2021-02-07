@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: elemento personalizado para NameValueSectionHandler e DictionarySectionHandler'
 title: Elemento personalizado para NameValueSectionHandler e DictionarySectionHandler
 ms.date: 05/01/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom element
 ms.assetid: 2303031f-4c1d-4df4-bca1-e9bd96ca40dc
-ms.openlocfilehash: e5c5c6cf5744aa385e6f6700cad623751a4d7427
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: c1bb5b2fb321e2cc9235e02be2158c0875d42032
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77215491"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698720"
 ---
 # <a name="custom-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>Elemento personalizado para NameValueSectionHandler e DictionarySectionHandler
 
@@ -34,9 +35,9 @@ Nenhum
 
 |     | Descrição |
 | --- | ----------- |
-| [**\<add>**](add-element-for-custom-2.md)para <xref:System.Configuration.NameValueSectionHandler> e<xref:System.Configuration.DictionarySectionHandler>  | Adiciona configurações de aplicativo personalizadas. |
-| [**\<remove>**](remove-element-for-custom-2.md)para <xref:System.Configuration.NameValueSectionHandler> e<xref:System.Configuration.DictionarySectionHandler> | Remove uma configuração definida anteriormente. |
-| [**\<clear>**](clear-element-for-custom-2.md)para <xref:System.Configuration.NameValueSectionHandler> e<xref:System.Configuration.DictionarySectionHandler> | Limpa todas as configurações definidas anteriormente em uma seção. |
+| [**\<add>**](add-element-for-custom-2.md) para <xref:System.Configuration.NameValueSectionHandler> e <xref:System.Configuration.DictionarySectionHandler>  | Adiciona configurações de aplicativo personalizadas. |
+| [**\<remove>**](remove-element-for-custom-2.md) para <xref:System.Configuration.NameValueSectionHandler> e <xref:System.Configuration.DictionarySectionHandler> | Remove uma configuração definida anteriormente. |
+| [**\<clear>**](clear-element-for-custom-2.md) para <xref:System.Configuration.NameValueSectionHandler> e <xref:System.Configuration.DictionarySectionHandler> | Limpa todas as configurações definidas anteriormente em uma seção. |
 
 ## <a name="remarks"></a>Comentários
 
@@ -76,8 +77,8 @@ O primeiro elemento personalizado é **\<dictionarySample>** , que contém as co
 
 ## <a name="configuration-file"></a>Arquivo de configuração
 
-Esse elemento pode ser usado no arquivo de configuração do aplicativo, no arquivo de configuração do computador (*Machine. config*) e nos arquivos *Web. config* que não estão no nível do diretório do aplicativo.
+Esse elemento pode ser usado no arquivo de configuração do aplicativo, no arquivo de configuração do computador (*Machine.config*) e *Web.config* arquivos que não estão no nível do diretório do aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema do arquivo de configuração para o .NET Framework](index.md)

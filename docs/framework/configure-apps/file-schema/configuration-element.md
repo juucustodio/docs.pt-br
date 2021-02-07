@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <configuration> elemento'
 title: Elemento <configuration>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - configuration element
 - container tags, <configuration> element
 ms.assetid: 2ec1c9dc-2e5c-4ef0-9958-81670ab88449
-ms.openlocfilehash: 8f79981a55d0bc9b1cd522e45f5606fda102c72c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ee48a45ddb987201e84213a0d7674da004951ab1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544682"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698985"
 ---
 # <a name="configuration-element"></a>Elemento \<configuration>
 
@@ -39,7 +40,7 @@ Nenhum
 
 ## <a name="child-elements"></a>Elementos filho
 
-|     | Description |
+|     | Descrição |
 | --- | ----------- |
 | [**\<assemblyBinding>**](assemblybinding-element-for-configuration.md) | Especifica a diretiva de ligação de assembly no nível de configuração.|
 | [**\<startup>** Esquema de configurações](./startup/index.md) | Todos os elementos no esquema de configurações de inicialização. |
@@ -57,6 +58,6 @@ Nenhum
 
 Cada arquivo de configuração deve conter exatamente um **\<configuration>** elemento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema do arquivo de configuração para o .NET Framework](index.md)

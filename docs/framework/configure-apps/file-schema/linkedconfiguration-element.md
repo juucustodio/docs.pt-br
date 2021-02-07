@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <linkedConfiguration> elemento'
 title: Elemento <linkedConfiguration>
 ms.date: 03/30/2017
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - linked configuration files
 - linkedConfiguration Element
 ms.assetid: 8eb34f3b-427e-4288-a7ff-c73f489deb45
-ms.openlocfilehash: 14ee2275ecf690ab16ffaabd71fbbe7e1a4897bc
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e4312cf788784241efc35304b632dfe1fdef1bc4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74087958"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698655"
 ---
 # <a name="linkedconfiguration-element"></a>Elemento \<linkedConfiguration>
 
@@ -26,7 +27,7 @@ Especifica um arquivo de configuração a ser incluído.
 &nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<linkedConfiguration>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <linkedConfiguration href="URL of linked configuration file" />
@@ -65,7 +66,7 @@ As regras a seguir regem o uso de arquivos de configuração vinculados:
 
 - Todos os arquivos de configuração vinculados são mesclados para formar um arquivo, semelhante ao comportamento da `#include` diretiva em C/C++.
 
-- O **\<linkedConfiguration>** elemento é permitido somente em arquivos de configuração de aplicativo; ele é ignorado em *Machine. config*.
+- O **\<linkedConfiguration>** elemento é permitido somente em arquivos de configuração de aplicativo; ele é ignorado em *Machine.config*.
 
 - Referências circulares são detectadas e terminadas. Ou seja, se os **\<linkedConfiguration>** elementos de uma série de arquivos de configuração formam um loop, o loop é detectado e interrompido.
 
@@ -81,7 +82,7 @@ O exemplo a seguir mostra como incluir o arquivo de configuração do disco ríg
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [**\<assemblyBinding>** Elementos](assemblybinding-element-for-configuration.md)
 - [Esquema do arquivo de configuração para o .NET Framework](index.md)

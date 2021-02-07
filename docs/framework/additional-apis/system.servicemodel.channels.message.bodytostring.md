@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método Message. BodyToString'
 title: Método Message. BodyToString (System. ServiceModel. Channels)
 ms.date: 11/01/2019
 topic_type:
@@ -9,22 +10,22 @@ api_location:
 - system.servicemodel.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 9f1f852c0bd82299fd40afe66a5f90cd7c0335cf
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: babcd881d191ff46b98e9999c4ff04166479a68d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77215502"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699370"
 ---
 # <a name="messagebodytostring-method"></a>Método Message. BodyToString
 
-Converte o corpo da mensagem em uma cadeia de caracteres chamando o método <xref:System.ServiceModel.Channels.Message.OnBodyToString%2A?displayProperty=nameWithType>.
+Converte o corpo da mensagem em uma cadeia de caracteres chamando o <xref:System.ServiceModel.Channels.Message.OnBodyToString%2A?displayProperty=nameWithType> método.
 
 ```csharp
 internal void BodyToString(XmlDictionaryWriter writer);
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 - `writer` <xref:System.Xml.XmlDictionaryWriter>\
   O gravador usado para converter o corpo da mensagem em uma cadeia de caracteres.
@@ -32,7 +33,7 @@ internal void BodyToString(XmlDictionaryWriter writer);
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> O método `Message.BodyToString` é interno e não deve ser usado diretamente no seu código.
+> O `Message.BodyToString` método é interno e não deve ser usado diretamente no seu código.
 >
 > A Microsoft não oferece suporte ao uso desse método em um aplicativo de produção em qualquer circunstância.
 
@@ -40,6 +41,6 @@ internal void BodyToString(XmlDictionaryWriter writer);
 
 **Namespace:** <xref:System.ServiceModel.Channels>
 
-**Assembly:** System. ServiceModel. dll
+**Assembly:** System.ServiceModel.dll
 
 **.NET Framework versões:** Disponível desde 3,0.

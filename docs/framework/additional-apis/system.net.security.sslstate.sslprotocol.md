@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Propriedade SslState. SslProtocol'
 title: Propriedade SslState. SslProtocol (System .net. Security)
 ms.date: 10/21/2019
 ms.technology: dotnet-networking
@@ -11,18 +12,18 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 6983ac071dad29b240308031ecd0a3562a6856e4
-ms.sourcegitcommit: 337bdc5a463875daf2cc6883e5a2da97d56f5000
+ms.openlocfilehash: b0b9bebf23fcd8d643d06f1cff10c260c77a7c08
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72847195"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699617"
 ---
 # <a name="sslstatesslprotocol-property"></a>Propriedade SslState. SslProtocol
 
 Obtém as versões do protocolo SSL.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```csharp
 internal SslProtocols SslProtocol { get; }
@@ -36,7 +37,7 @@ Uma combinação de bits de bit que especifica as versões de protocolo SSL.
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> A propriedade `SslState.SslProtocol` é interna e não deve ser usada diretamente no seu código.
+> A `SslState.SslProtocol` propriedade é interna e não deve ser usada diretamente no seu código.
 >
 > A Microsoft não oferece suporte ao uso dessa propriedade em um aplicativo de produção em nenhuma circunstância.
 
@@ -44,6 +45,6 @@ Uma combinação de bits de bit que especifica as versões de protocolo SSL.
 
 **Namespace:** <xref:System.Net.Security>
 
-**Assembly:** Sistema (em System. dll)
+**Assembly:** Sistema (em System.dll)
 
 **.NET Framework versões:** Disponível desde 2,0.

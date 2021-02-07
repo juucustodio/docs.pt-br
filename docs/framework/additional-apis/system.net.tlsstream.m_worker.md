@@ -1,5 +1,6 @@
 ---
-title: Campo TlsStream. m_Worker (System.Net)
+description: 'Saiba mais sobre: TlsStream.m_Worker campo'
+title: Campo de TlsStream.m_Worker (System.Net)
 ms.date: 10/21/2019
 ms.technology: dotnet-networking
 topic_type:
@@ -10,18 +11,18 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: d335820d13e1e15e054e824a284615cdbf6c2094
-ms.sourcegitcommit: 337bdc5a463875daf2cc6883e5a2da97d56f5000
+ms.openlocfilehash: d929b0b1949bc1902425c016bfd770d4c66a3257
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72847188"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699513"
 ---
-# <a name="tlsstreamm_worker-field"></a>Campo TlsStream. m_Worker
+# <a name="tlsstreamm_worker-field"></a>Campo de TlsStream.m_Worker
 
 Representa o estado do fluxo SSL.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```csharp
 private SslState m_Worker;
@@ -35,7 +36,7 @@ O estado do fluxo SSL.
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> O campo `TlsStream.m_Worker` é privado e não deve ser usado diretamente no seu código.
+> O `TlsStream.m_Worker` campo é privado e não deve ser usado diretamente no seu código.
 >
 > A Microsoft não oferece suporte ao uso deste campo em um aplicativo de produção em qualquer circunstância.
 
@@ -43,6 +44,6 @@ O estado do fluxo SSL.
 
 **Namespace:** <xref:System.Net>
 
-**Assembly:** Sistema (em System. dll)
+**Assembly:** Sistema (em System.dll)
 
 **.NET Framework versões:** Disponível desde 2,0.

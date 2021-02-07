@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMetaDataEmit2'
 title: Interface IMetaDataEmit2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 866dc96b-bbfc-4c0f-80c2-38ce93072106
 topic_type:
 - apiref
-ms.openlocfilehash: b8ad159dace734c343297b256092162f17ab829b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: db1880d64bf3b1e9084d6745251c174788a4afe7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726477"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745665"
 ---
 # <a name="imetadataemit2-interface"></a>Interface IMetaDataEmit2
 
@@ -27,7 +28,7 @@ Estende a interface [IMetaDataEmit](imetadataemit-interface.md) principalmente p
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método DefineGenericParam](imetadataemit2-definegenericparam-method.md)|Cria uma definição para um parâmetro de tipo genérico e Obtém um token para esse parâmetro de tipo genérico.|  
 |[Método DefineMethodSpec](imetadataemit2-definemethodspec-method.md)|Cria uma instância genérica de um método e Obtém um token para a definição.|  
@@ -48,7 +49,7 @@ Estende a interface [IMetaDataEmit](imetadataemit-interface.md) principalmente p
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)
 - [Interface IMetaDataEmit](imetadataemit-interface.md)

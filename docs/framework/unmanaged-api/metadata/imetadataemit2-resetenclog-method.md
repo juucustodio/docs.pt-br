@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit2:: ResetENCLog'
 title: Método IMetaDataEmit2::ResetENCLog
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 44b9fd76-a022-4e9a-aea3-dec5411a9c22
 topic_type:
 - apiref
-ms.openlocfilehash: 91f29c0f815221e2318a26e528a9fd3f7f80be31
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 77e7aff99cefa4f8f7dc9b1c4a63f6a9347901df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690584"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745613"
 ---
 # <a name="imetadataemit2resetenclog-method"></a>Método IMetaDataEmit2::ResetENCLog
 
@@ -46,7 +47,7 @@ HRESULT ResetENCLog ();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)
 - [Interface IMetaDataEmit](imetadataemit-interface.md)

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: WSHttpBinding'
 title: WSHttpBinding
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS Profile binding
 ms.assetid: 22d85b19-0135-4141-9179-a0e9c343ad73
-ms.openlocfilehash: 6e5946dd7d107c34eafe55a62c51d089931b5b77
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 91537fa4237e0966864b53c37cd42da545fbe26d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96252264"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668299"
 ---
 # <a name="wshttpbinding"></a>WSHttpBinding
 

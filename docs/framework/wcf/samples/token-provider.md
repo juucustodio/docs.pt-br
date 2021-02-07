@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: provedor de token'
 title: Fornecedor de token
 ms.date: 03/30/2017
 ms.assetid: 947986cf-9946-4987-84e5-a14678d96edb
-ms.openlocfilehash: e761f32ab26cf620b6ef1dddff2bcba53289af84
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 145d85eb0e0d8622c7cfb90ef4a6e24ccb7b9226
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262327"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668559"
 ---
 # <a name="token-provider"></a>Fornecedor de token
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1035-RuntimeTransactionSet'
 title: 1035 - RuntimeTransactionSet
 ms.date: 03/30/2017
 ms.assetid: 03b37de9-778c-4beb-b0e3-de73ece6088e
-ms.openlocfilehash: b8bf8431c4e2b82c6aac95820eb45de2a404e976
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 513ba49962a8f02ab47b8e5b762949cd09154a3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294268"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667896"
 ---
 # <a name="1035---runtimetransactionset"></a>1035 - RuntimeTransactionSet
 

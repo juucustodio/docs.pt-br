@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exemplo de integração do SystemWebRouting'
 title: Exemplo de integração de SystemWebRouting
 ms.date: 03/30/2017
 ms.assetid: f1c94802-95c4-49e4-b1e2-ee9dd126ff93
-ms.openlocfilehash: 04c3093097c5bf11e1d4dd5d3124c9fbae4b3665
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 84b442dfb7f0e5877f742fb055aea49a5625bb78
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293904"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668637"
 ---
 # <a name="systemwebrouting-integration-sample"></a>Exemplo de integração de SystemWebRouting
 
@@ -84,6 +85,6 @@ Este exemplo pode já estar instalado em seu computador. Verifique o seguinte di
 > [!NOTE]
 > Você deve atualizar a versão padrão do pool de aplicativos para .NET Framework 4 se ela estiver definida para a versão 2.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedagem de AppFabric e persistência Exemplos](/previous-versions/appfabric/ff383418(v=azure.10))

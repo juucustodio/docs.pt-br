@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 106-CancelRequestRecord'
 title: 106 - CancelRequestRecord
 ms.date: 03/30/2017
 ms.assetid: f72a59aa-8093-4a8e-94df-40acaffb1ffb
-ms.openlocfilehash: e7b736d78486b0de7c108e6212d2aa1857e01cc4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a5d65ef8606821dc8aa7b64b36498b343ff986e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238893"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667649"
 ---
 # <a name="106---cancelrequestrecord"></a>106 - CancelRequestRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96238893"
 |-|-|  
 |ID|106|  
 |Palavras-chave|EndToEndMonitoring, solução de problemas, HealthMonitoring, WFTracking|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

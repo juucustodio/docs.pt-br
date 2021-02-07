@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: autenticador de token'
 title: Autenticador de token
 ms.date: 03/30/2017
 ms.assetid: 84382f2c-f6b1-4c32-82fa-aebc8f6064db
-ms.openlocfilehash: ab3f8486229416465d7eca0b9413475d81318d32
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 086b2e8d8e9538710a315b79ad2d5be3969bb00e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96264628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668572"
 ---
 # <a name="token-authenticator"></a>Autenticador de token
 

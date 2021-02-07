@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 105-FaultPropagationRecord'
 title: 105 - FaultPropagationRecord
 ms.date: 03/30/2017
 ms.assetid: 168473b1-b1e5-4e9f-8a2a-35bbdb2ef531
-ms.openlocfilehash: 3390a77f16cc52e52ea1b3e4c1a34d0f44795abb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 95f82763606bf16219fa4234b5f6e7101c0954fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238906"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667675"
 ---
 # <a name="105---faultpropagationrecord"></a>105 - FaultPropagationRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96238906"
 |-|-|  
 |ID|105|  
 |Palavras-chave|EndToEndMonitoring, solução de problemas, HealthMonitoring, WFTracking|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

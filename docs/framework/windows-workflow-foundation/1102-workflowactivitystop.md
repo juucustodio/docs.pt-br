@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1102-WorkflowActivityStop'
 title: 1102 - WorkflowActivityStop
 ms.date: 03/30/2017
 ms.assetid: 285e5cb8-e90d-4914-ac06-e9b176ffefa2
-ms.openlocfilehash: 7b5c7874946ae494f41e73f3e7c90f3944a3521d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 726af6a79058e93a066e0f486d7cf5be1ef8e4be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238685"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667571"
 ---
 # <a name="1102---workflowactivitystop"></a>1102 - WorkflowActivityStop
 
@@ -17,7 +18,7 @@ ms.locfileid: "96238685"
 |-|-|  
 |ID|1102|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: distribuição'
 title: Sindicalização
 ms.date: 03/30/2017
 ms.assetid: 502c50b2-9982-46af-ac92-53ad9f61d486
-ms.openlocfilehash: df98ed9c722b46389690927818c62cadc5882b77
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0f1045aee59fc0e3d8fa9c8970778946d42abf5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668624"
 ---
 # <a name="syndication"></a>Sindicalização
 

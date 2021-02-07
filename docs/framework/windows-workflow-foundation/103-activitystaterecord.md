@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 103-ActivityStateRecord'
 title: 103 - ActivityStateRecord
 ms.date: 03/30/2017
 ms.assetid: 57636a9a-561e-44aa-aef9-1f1894aaa6dd
-ms.openlocfilehash: 02c33f02b7650c9f9b7527c319de3b58980fdd6c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 14afbfdb0869b6ee65e1482fa73aa36ccd58f307
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275070"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668117"
 ---
 # <a name="103---activitystaterecord"></a>103 - ActivityStateRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96275070"
 |-|-|  
 |ID|103|  
 |Palavras-chave|EndToEndMonitoring, solução de problemas, HealthMonitoring, WFTracking|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

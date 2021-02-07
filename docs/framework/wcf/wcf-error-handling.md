@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tratamento de erros do WCF'
 title: Tratamento de erros do WCF
 ms.date: 03/30/2017
 ms.assetid: 1e4b1e0f-9598-449d-9d73-90bda62305b8
-ms.openlocfilehash: 72db5db9f6b4a3cd2ba62fe938fcfeed2dfda1e5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 57f2c5078e0f73ff57eec79041cb7a2b2d42b498
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96240934"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668169"
 ---
 # <a name="wcf-error-handling"></a>Tratamento de erros do WCF
 

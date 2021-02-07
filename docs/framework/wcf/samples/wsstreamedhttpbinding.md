@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: WSStreamedHttpBinding'
 title: WSStreamedHttpBinding
 ms.date: 03/30/2017
 ms.assetid: 97ce4d3d-ca6f-45fa-b33b-2429bb84e65b
-ms.openlocfilehash: 619c7e793ff94efffcb72774cf3e367df377a3a3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ef5b3bf3501f64389005ea1542874ff32a42ad82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600887"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668273"
 ---
 # <a name="wsstreamedhttpbinding"></a>WSStreamedHttpBinding
 
@@ -29,7 +30,7 @@ O exemplo demonstra como criar uma associação que é projetada para dar suport
 
 1. Criar uma nova associação padrão
 
-    As associações padrão no Windows Communication Foundation (WCF), como basicHttpBinding, e netTcpbinding, configuram os transportes subjacentes e a pilha de canal para requisitos específicos. Neste exemplo, `WSStreamedHttpBinding` configura a pilha de canais para dar suporte ao streaming. Por padrão, o WS-Security e o sistema de mensagens confiável não são adicionados à pilha de canais porque não há suporte para os dois recursos pelo streaming. A nova associação é implementada na classe `WSStreamedHttpBinding` derivada de <xref:System.ServiceModel.Channels.Binding> . O `WSStreamedHttpBinding` contém os seguintes elementos de associação: <xref:System.ServiceModel.Channels.HttpTransportBindingElement> ,, <xref:System.ServiceModel.Channels.HttpsTransportBindingElement> <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> e <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> . A classe fornece um `CreateBindingElements()` método para configurar a pilha de associação resultante, conforme mostrado no código de exemplo a seguir.
+    As associações padrão no Windows Communication Foundation (WCF), como basicHttpBinding, e netTcpbinding, configuram os transportes subjacentes e a pilha de canal para requisitos específicos. Neste exemplo, `WSStreamedHttpBinding` configura a pilha de canais para dar suporte ao streaming. Por padrão, WS-Security e mensagens confiáveis não são adicionadas à pilha de canais porque os dois recursos não são suportados pelo streaming. A nova associação é implementada na classe `WSStreamedHttpBinding` derivada de <xref:System.ServiceModel.Channels.Binding> . O `WSStreamedHttpBinding` contém os seguintes elementos de associação: <xref:System.ServiceModel.Channels.HttpTransportBindingElement> ,, <xref:System.ServiceModel.Channels.HttpsTransportBindingElement> <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> e <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement> . A classe fornece um `CreateBindingElements()` método para configurar a pilha de associação resultante, conforme mostrado no código de exemplo a seguir.
 
     ```csharp
     public override BindingElementCollection CreateBindingElements()
@@ -101,7 +102,7 @@ O exemplo demonstra como criar uma associação que é projetada para dar suport
 
 5. Para executar o exemplo em uma configuração entre computadores, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).
 
-6. Quando a janela do cliente for exibida, digite "Sample. txt". Você deve encontrar uma "cópia de Sample. txt" em seu diretório.
+6. Quando a janela do cliente for exibida, digite "Sample.txt". Você deve encontrar uma "cópia de Sample.txt" em seu diretório.
 
 ## <a name="the-wsstreamedhttpbinding-sample-service"></a>O serviço de exemplo WSStreamedHttpBinding
 
@@ -137,7 +138,7 @@ public class StreamedEchoService : IStreamedEchoService
 
 ## <a name="the-wsstreamedhttpbinding-sample-client"></a>O cliente de exemplo WSStreamedHttpBinding
 
-O cliente usado para interagir com o serviço usando o `WSStreamedHttpBinding` está localizado no subdiretório do cliente. Como o certificado usado neste exemplo é um certificado de teste criado com MakeCert. exe, um alerta de segurança é exibido quando você tenta acessar um endereço HTTPS em seu navegador, como `https://localhost/servicemodelsamples/service.svc` . Para permitir que o cliente WCF trabalhe com um certificado de teste em vigor, algum código adicional foi adicionado ao cliente para suprimir o alerta de segurança. O código e a classe que o acompanha não são necessários ao usar certificados de produção.
+O cliente usado para interagir com o serviço usando o `WSStreamedHttpBinding` está localizado no subdiretório do cliente. Como o certificado usado neste exemplo é um certificado de teste criado com Makecert.exe, um alerta de segurança é exibido quando você tenta acessar um endereço HTTPS em seu navegador, como `https://localhost/servicemodelsamples/service.svc` . Para permitir que o cliente WCF trabalhe com um certificado de teste em vigor, algum código adicional foi adicionado ao cliente para suprimir o alerta de segurança. O código e a classe que o acompanha não são necessários ao usar certificados de produção.
 
 ```csharp
 // WARNING: This code is only required for test certificates such as those created by makecert. It is

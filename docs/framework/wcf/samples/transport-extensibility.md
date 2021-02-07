@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: extensibilidade de transporte'
 title: Extensibilidade de transporte
 ms.date: 03/30/2017
 ms.assetid: 3c9108be-f60f-4035-9f57-1da58c325420
-ms.openlocfilehash: 582253f1f7b8a4f77d3b72160a9d88ea654ce0a6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a55b182d792d5836c7b2721b938df44c2b2778a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668455"
 ---
 # <a name="transport-extensibility"></a>Extensibilidade de transporte
 

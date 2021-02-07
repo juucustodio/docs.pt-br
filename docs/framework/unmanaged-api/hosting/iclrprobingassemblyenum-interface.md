@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRProbingAssemblyEnum'
 title: Interface ICLRProbingAssemblyEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e7d3ccab-b0f0-4872-8935-0ed72920171b
 topic_type:
 - apiref
-ms.openlocfilehash: 6df08889af30542af5a128cbffc38a57ce640fde
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1fd11e237f02bab85ec2b41df49d7d8a2f27e1e1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728921"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716491"
 ---
 # <a name="iclrprobingassemblyenum-interface"></a>Interface ICLRProbingAssemblyEnum
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem ao host obter as identidades de investigação de 
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Get](iclrprobingassemblyenum-get-method.md)|Obtém a identidade do assembly no índice especificado.|  
   
@@ -45,7 +46,7 @@ Fornece métodos que permitem ao host obter as identidades de investigação de 
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Interface ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)

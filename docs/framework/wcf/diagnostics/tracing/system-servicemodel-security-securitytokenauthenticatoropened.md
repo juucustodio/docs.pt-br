@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. Security. SecurityTokenAuthenticatorOpened'
 title: System.ServiceModel.Security.SecurityTokenAuthenticatorOpened
 ms.date: 03/30/2017
 ms.assetid: c6cb0065-b4f6-40eb-89ac-5e8f0e05e0de
-ms.openlocfilehash: eef7c76836c6d8bc2b7964dedbe743bd8ca844c5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 168e4420c152214cccfb0e2949cbf4defc6beadf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96272209"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715880"
 ---
 # <a name="systemservicemodelsecuritysecuritytokenauthenticatoropened"></a>System.ServiceModel.Security.SecurityTokenAuthenticatorOpened
 
@@ -17,8 +18,8 @@ System.ServiceModel.Security.SecurityTokenAuthenticatorOpened
 
  Um autenticador de token de segurança foi aberto.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

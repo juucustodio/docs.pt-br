@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: SslStreamSecurityBindingElement'
 title: SslStreamSecurityBindingElement
 ms.date: 03/30/2017
 ms.assetid: 18130d50-8996-4257-9c60-bc457f8654d8
-ms.openlocfilehash: fcb6cb304c7435f8b954ed5aeea7179c7cb40be8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 32e21adedb533edbe2adf8a30ddaff64eb038936
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96282087"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715321"
 ---
 # <a name="sslstreamsecuritybindingelement"></a>SslStreamSecurityBindingElement
 
 SslStreamSecurityBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class SslStreamSecurityBindingElement : BindingElement  

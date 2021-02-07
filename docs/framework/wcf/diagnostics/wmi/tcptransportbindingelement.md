@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: TcpTransportBindingElement'
 title: TcpTransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: 33bbc1e5-44e4-4ee3-b7b5-801dc78956e4
-ms.openlocfilehash: 6af85d62fffada95537494692b8694f42d7a2932
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b52bb2eb4b40648808459f76e068a6f72f9476a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290082"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715139"
 ---
 # <a name="tcptransportbindingelement"></a>TcpTransportBindingElement
 
 TcpTransportBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class TcpTransportBindingElement : ConnectionOrientedTransportBindingElement  

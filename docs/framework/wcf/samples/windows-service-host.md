@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: host de serviço do Windows'
 title: Host de serviço do Windows
 ms.date: 03/30/2017
 helpviewer_keywords:
 - NT Service
 - NT Service Host Sample [Windows Communication Foundation]
 ms.assetid: 1b2f45c5-2bed-4979-b0ee-8f9efcfec028
-ms.openlocfilehash: 305cf7897483dbc8e57217cf8098f4e790e2a4c8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 529256675723e556879b8380f514ab1b0a5b7f8f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244958"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715126"
 ---
 # <a name="windows-service-host"></a>Host de serviço do Windows
 
@@ -64,6 +65,6 @@ Este exemplo demonstra um serviço de Windows Communication Foundation (WCF) hos
   
 4. Para executar o exemplo em uma configuração de computador único ou entre computadores, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedagem de AppFabric e persistência Exemplos](/previous-versions/appfabric/ff383418(v=azure.10))

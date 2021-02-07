@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: serviço'
 title: Serviço
 ms.date: 03/30/2017
 ms.assetid: 999806e1-6376-409e-b998-b0af391adfe7
-ms.openlocfilehash: aa4eecbcc8a2ef818cd99d777b0e3c2f1f222e46
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e66f9a23f8c182327899904c26ff6a6368b9bdc6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273276"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715620"
 ---
 # <a name="service"></a>Serviço
 
 Serviço  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class Service  

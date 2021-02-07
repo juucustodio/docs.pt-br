@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: MatchAllEndpointBehavior'
 title: MatchAllEndpointBehavior
 ms.date: 03/30/2017
 ms.assetid: 510977a7-ec38-40be-8cd8-4774dc4f75ec
-ms.openlocfilehash: 8c39fd255be0a6f7226baa61f4569ffc327d36bd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bd18c5f96b14b93de29cce476c710fad774b4bcc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267904"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715711"
 ---
 # <a name="matchallendpointbehavior"></a>MatchAllEndpointBehavior
 
 MatchAllEndpointBehavior  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class MatchAllEndpointBehavior : Behavior  

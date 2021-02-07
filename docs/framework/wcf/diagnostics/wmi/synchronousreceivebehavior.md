@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: SynchronousReceiveBehavior'
 title: SynchronousReceiveBehavior
 ms.date: 03/30/2017
 ms.assetid: b31a26a9-ae96-4df0-8406-e07d6f59087c
-ms.openlocfilehash: c00659b0ac464bbf328cf6808189c502b2ac770d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8971e1e367a535d7a4736244ea4e1e8a063bea79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273900"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715282"
 ---
 # <a name="synchronousreceivebehavior"></a>SynchronousReceiveBehavior
 
 SynchronousReceiveBehavior  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class SynchronousReceiveBehavior : Behavior  

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. Security. SpnegoClientNegotiationCompleted'
 title: System.ServiceModel.Security.SpnegoClientNegotiationCompleted
 ms.date: 03/30/2017
 ms.assetid: e80b1390-bb37-46aa-ab91-4ed187b2e09d
-ms.openlocfilehash: 13723666698d6717a5e1553a1393c6f718b0106f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c960a286d3fff9cc59d4ac2a2a0fd78372bca88e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262392"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715763"
 ---
 # <a name="systemservicemodelsecurityspnegoclientnegotiationcompleted"></a>System.ServiceModel.Security.SpnegoClientNegotiationCompleted
 
@@ -17,8 +18,8 @@ System.ServiceModel.Security.SpnegoClientNegotiationCompleted
 
  A negociação SSPI concluiu o SpnegoTokenProvider.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

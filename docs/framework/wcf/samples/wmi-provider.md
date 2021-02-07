@@ -1,15 +1,16 @@
 ---
-title: Provedor WMI
+description: 'Saiba mais sobre: provedor WMI'
+title: Provedor de WMI
 ms.date: 03/30/2017
 ms.assetid: 462f0db3-f4a4-4a4b-ac26-41fc25c670a4
-ms.openlocfilehash: 9d654527c6897e071f914d4015ba9a225974b0f1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 23d673f55781204fb4ce54d7d8ee0dab7933484f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96263763"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715087"
 ---
-# <a name="wmi-provider"></a>Provedor WMI
+# <a name="wmi-provider"></a>Provedor de WMI
 
 Este exemplo demonstra como coletar dados de serviços Windows Communication Foundation (WCF) em tempo de execução usando o provedor de Instrumentação de Gerenciamento do Windows (WMI) que é incorporado ao WCF. Além disso, este exemplo demonstra como adicionar um objeto WMI definido pelo usuário a um serviço. O exemplo ativa o provedor WMI para o [introdução](getting-started-sample.md) e demonstra como coletar dados do `ICalculator` serviço em tempo de execução.  
   
@@ -146,6 +147,6 @@ cscript EnumerateCustomObjects.js
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\WMIProvider`  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [AppFabric que monitora Exemplos](/previous-versions/appfabric/ff383407(v=azure.10))

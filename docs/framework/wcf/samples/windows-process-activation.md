@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ativação de processo do Windows'
 title: Ativação de processo do Windows
 ms.date: 03/30/2017
 ms.assetid: 37b79642-1e6f-44b3-9777-98af57443bfa
-ms.openlocfilehash: caac4a78f7f6903b330c346a476d159f0f84f3d0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2e80aaf6c2fa394854ea82442dbebcf8489addef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251341"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715113"
 ---
 # <a name="windows-process-activation"></a>Ativação de processo do Windows
 

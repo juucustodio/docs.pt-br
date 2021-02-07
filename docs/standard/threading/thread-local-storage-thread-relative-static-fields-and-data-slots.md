@@ -1,5 +1,6 @@
 ---
-title: 'Armazenamento local de thread: campos estáticos relativos a thread e slots de dados'
+description: 'Saiba mais sobre: armazenamento local de thread: Thread-Relative campos estáticos e slots de dados'
+title: 'Armazenamento local de thread: Campos estáticos relativos a thread e slots de dados'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - threading [.NET], local storage
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - local thread storage
 - TLS
 ms.assetid: c633a4dc-a790-4ed1-96b5-f72bd968b284
-ms.openlocfilehash: b45c83887d278589cc1704ec1398ec99e27550ad
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a7da615e805da6fdc54587829957cad61d17c7a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727517"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675436"
 ---
-# <a name="thread-local-storage-thread-relative-static-fields-and-data-slots"></a>Armazenamento local de thread: campos estáticos relativos a thread e slots de dados
+# <a name="thread-local-storage-thread-relative-static-fields-and-data-slots"></a>Armazenamento local de thread: Campos estáticos relativos a thread e slots de dados
 
 Você pode usar o armazenamento local de threads gerenciados (TLS) para armazenar dados exclusivos para um thread e um domínio de aplicativo. O .NET fornece duas maneiras de usar o TLS gerenciado: campos estáticos relativos a thread e slots de dados.  
   
@@ -58,7 +59,7 @@ O .NET fornece slots de dados dinâmicos que são exclusivos a uma combinação 
   
  Os slots nomeados podem ser convenientes, pois você pode recuperar o slot quando necessário, passando seu nome para o método <xref:System.Threading.Thread.GetNamedDataSlot%2A>, em vez de manter uma referência a um slot sem nome. No entanto, se outro componente usa o mesmo nome para seu armazenamento relativo ao thread e um thread executa o código do seu componente e do outro componente, os dois componentes podem corromper os dados uns dos outros. (Este cenário pressupõe que ambos os componentes estão sendo executados no mesmo domínio de aplicativo e que eles não foram projetados para compartilhar os mesmos dados).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ContextStaticAttribute>
 - <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: My. Computer. Clipboard Object'
 title: Objeto My.Computer.Clipboard
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Clipboard
 - My.Computer.Clipboard object
 ms.assetid: 05d4ede9-1f9a-4495-87f0-77350b8d2e5d
-ms.openlocfilehash: 8a89494a622989ffb9efb502cf2f6597d10dfffe
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 4373b9e5bfc1016881a8c411dd1afedd2ed0a5f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875342"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674513"
 ---
 # <a name="mycomputerclipboard-object"></a>Objeto My.Computer.Clipboard
 
@@ -33,7 +34,7 @@ Fornece métodos para manipular a Área de Transferência.
   
  **Assembly:** Visual Basic a biblioteca de tempo de execução (em Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Devices.Computer.Clipboard%2A>
 - [Objeto My.Computer](my-computer-object.md)

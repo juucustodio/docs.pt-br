@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: barreira'
 title: Barreira
 ms.date: 09/14/2018
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - synchronization primitives, Barrier
 ms.assetid: 613a8bc7-6a28-4795-bd6c-1abd9050478f
-ms.openlocfilehash: 4eab74ef07ac56a4d3ff65e67bb9fbd45dbfc9bc
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7fca89e12ffe4575029e62ce042875dac286c81d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819936"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675501"
 ---
 # <a name="barrier"></a>Barreira
 
@@ -51,7 +52,7 @@ Um <xref:System.Threading.Barrier?displayProperty=nameWithType> é um primitivo 
   
  Para obter mais informações, consulte [Encadeando tarefas com tarefas de continuação](../parallel-programming/chaining-tasks-by-using-continuation-tasks.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Objetos e recursos de Threading](threading-objects-and-features.md)
+- [Objetos e recursos de threading](threading-objects-and-features.md)
 - [Como: sincronizar operações simultâneas com uma barreira](how-to-synchronize-concurrent-operations-with-a-barrier.md)

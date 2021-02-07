@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30712: não é possível carregar informações para a classe '<classname>"
 title: Não é possível carregar informações da classe '<classname>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30712
 ms.assetid: c7ffbd6d-05c6-4261-b44b-1bcd521bb350
-ms.openlocfilehash: 05c3303db90a396479bc396c5c2395c3afbb59ae
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 5e96df57b83b32b70a2d0d6eca1578b5d15ec065
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161602"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674825"
 ---
 # <a name="bc30712-unable-to-load-information-for-class-classname"></a>BC30712: não é possível carregar informações para a classe ' \<classname> '
 
@@ -26,6 +27,6 @@ Foi feita uma referência a uma classe que não está disponível.
 
 2. Tente acessar um dos membros declarados no módulo. Em alguns casos, o ambiente de depuração não pode localizar membros porque os módulos em que eles estão declarados ainda não foram carregados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando no Visual Studio](/visualstudio/debugger/debugger-feature-tour)

@@ -1,22 +1,23 @@
 ---
+description: 'Saiba mais sobre: objetos e recursos de Threading'
 title: Objetos e recursos de threading
 ms.date: 10/01/2018
 helpviewer_keywords:
 - threading [.NET], features
 - managed threading
 ms.assetid: 239b2e8d-581b-4ca3-992b-0e8525b9321c
-ms.openlocfilehash: 8a66904a6db3fa45d8a42dec4e1e42883c1c3e98
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7e8167c42780ccc70c37a10bbb3a65483efabb24
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94826164"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675410"
 ---
 # <a name="threading-objects-and-features"></a>Objetos e recursos de threading
 
 Juntamente com a classe <xref:System.Threading.Thread?displayProperty=nameWithType>, o .NET fornece várias classes que ajudam você a desenvolver aplicativos multithread. Os artigos a seguir fornecem uma visão geral dessas classes:
 
-|Título|Descrição|  
+|Title|Descrição|  
 |-----------|-----------------|  
 |[O pool de threads gerenciados](the-managed-thread-pool.md)|Descreve a classe <xref:System.Threading.ThreadPool?displayProperty=nameWithType>, que fornece um pool de threads de trabalho que são gerenciados pelo .NET.|  
 |[Temporizadores](timers.md)|Descreve os temporizadores do .NET que podem ser usados em um ambiente multi-threaded.|
@@ -29,7 +30,7 @@ Juntamente com a classe <xref:System.Threading.Thread?displayProperty=nameWithTy
 |[SpinLock](spinlock.md)|Descreve a estrutura <xref:System.Threading.SpinLock?displayProperty=nameWithType>, que é uma alternativa leve à classe <xref:System.Threading.Monitor?displayProperty=nameWithType> para certos cenários de bloqueio de nível baixo.|
 |[SpinWait](spinwait.md)|Descreve a estrutura de <xref:System.Threading.SpinWait?displayProperty=nameWithType>, que fornece suporte para espera baseada em rotação.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.Monitor?displayProperty=nameWithType>
 - <xref:System.Threading.WaitHandle?displayProperty=nameWithType>

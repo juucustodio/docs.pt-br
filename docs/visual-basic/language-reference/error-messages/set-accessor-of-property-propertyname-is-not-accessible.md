@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC31102: o acessador ' Set ' da propriedade ' <propertyname> ' não está acessível"
 title: O acessador 'Set' da propriedade '<propertyname>' não está acessível
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC31102
 ms.assetid: 6f7b31b7-3656-4ae1-8851-90f5f4c6950a
-ms.openlocfilehash: 3cf828eb5f11090a74a65388e2b89a191046a456
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: da4d29933ca140bd9fa1a15758b64667013a8032
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162239"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675072"
 ---
 # <a name="bc31102-set-accessor-of-property-propertyname-is-not-accessible"></a>BC31102: o acessador ' Set ' da propriedade ' \<propertyname> ' não está acessível
 
@@ -34,7 +35,7 @@ Uma instrução tenta armazenar o valor de uma propriedade quando não tem acess
 
 - Se você não tem controle do código-fonte que define a propriedade ou deve restringir o nível de `Set` acesso do procedimento mais do que a propriedade em si, tente mover a instrução que define o valor da propriedade para uma região de código que tenha acesso melhor à propriedade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos de propriedade](../../programming-guide/language-features/procedures/property-procedures.md)
 - [Como declarar uma propriedade com níveis de acesso mistos](../../programming-guide/language-features/procedures/how-to-declare-a-property-with-mixed-access-levels.md)

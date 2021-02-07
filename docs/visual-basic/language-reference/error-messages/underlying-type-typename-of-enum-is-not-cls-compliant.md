@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC40032: o tipo subjacente <typename> de enum não tem conformidade com CLS'
 title: O tipo subjacente <typename> de Enum não é compatível com CLS
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40032
 ms.assetid: 32bf1949-fd73-456c-a323-bf1ffe1320ed
-ms.openlocfilehash: 42c2398945b97d68161af6fb3c3b69909f4aaf39
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: aebee5a9e0cd7f2e780d0171ad59dcfd4fd1d940
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161511"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674786"
 ---
 # <a name="bc40032-underlying-type-typename-of-enum-is-not-cls-compliant"></a>BC40032: o tipo subjacente \<typename> de enum não tem conformidade com CLS
 
@@ -42,7 +43,7 @@ O tipo de dados especificado para essa enumeração não faz parte da [independ�
 
 - Se você estiver fazendo a interface com automação ou objetos COM, tenha em mente que alguns tipos têm larguras de dados diferentes das .NET Framework. Por exemplo, `uint` geralmente é 16 bits em outros ambientes. Se você estiver passando um argumento de 16 bits para esse componente, declare-o como `UShort` em vez de `UInteger` em seu código de Visual Basic gerenciado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Reflexão (Visual Basic)](../../programming-guide/concepts/reflection.md)
 - [Reflexão](../../../framework/reflection-and-codedom/reflection.md)

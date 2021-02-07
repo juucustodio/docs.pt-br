@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: meu objeto. Application'
 title: Objeto My.Application
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Application object
 ms.assetid: a0ecfccf-acf7-49ec-a08b-72e6458c5c8d
-ms.openlocfilehash: 89ca6f9b3bac384a1155f236134f32e61c51a01e
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: fa9f91cf100c6008f2f3b8c85c9792fa6ffd4904
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674552"
 ---
 # <a name="myapplication-object"></a>Objeto My.Application
 
@@ -33,7 +34,7 @@ Fornece propriedades, métodos e eventos relacionados ao aplicativo atual.
   
  **Assembly:** Visual Basic a biblioteca de tempo de execução (em Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objeto My.Application.Info](my-application-info-object.md)
 - [Objeto My.Application.Log](my-application-log-object.md)

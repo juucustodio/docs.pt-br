@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: meu objeto. Computer. Clock'
 title: Objeto My.Computer.Clock
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Computer.Clock object
 ms.assetid: a362b270-8a1b-404a-95c8-516a60c607dd
-ms.openlocfilehash: 915a819d49acc3f8b88578b9c72f20f0c965a6c0
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e602ab3248fbc6d5bd5f57209595412cffe5119b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674487"
 ---
 # <a name="mycomputerclock-object"></a>Objeto My.Computer.Clock
 
@@ -27,6 +28,6 @@ Fornece propriedades para acessar a hora local atual e o Tempo Universal Coorden
   
  **Assembly:** Visual Basic a biblioteca de tempo de execução (em Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objeto My.Computer](my-computer-object.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: CountdownEvent'
 title: CountdownEvent
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - synchronization primitives, CountdownEvent
 ms.assetid: eec3812a-e20f-4ecd-bfef-6921d508b708
-ms.openlocfilehash: 15ff3ee8f4ea18b243f5c3070f1c59df4646a1a4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8b16666c6419b0b63a45182ee9f383476d6858cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675449"
 ---
 # <a name="countdownevent"></a>CountdownEvent
 

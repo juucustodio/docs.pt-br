@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Noções básicas de aplicativos do Windows Forms (Visual Basic)'
 title: Noções básicas de Aplicativo do Windows Forms
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Windows applications
 - Windows Forms, Visual Basic
 ms.assetid: 0b919d30-7fd6-42db-85c8-543d15312441
-ms.openlocfilehash: ef02662a5492f117b252e464e92ec46e7484ef66
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 04f360a0262e08fa018f19577b0e950c15a7253a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282174"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675319"
 ---
 # <a name="windows-forms-application-basics-visual-basic"></a>Noções básicas de Aplicativo do Windows Forms (Visual Basic)
 
@@ -67,7 +68,7 @@ A conexão a fontes de dados pela rede é uma tarefa simples com clientes inteli
 
 Você pode criar controles vinculados a dados facilmente usando a janela fontes de dados, que exibe fontes de dados, como bancos de dados, serviços Web e objetos em seu projeto. Você pode criar controles de associação de dados ao arrastar itens dessa janela para os formulários do seu projeto. Você também pode associar controles existentes a dados ao arrastar objetos da janela Fontes de Dados para eles.
 
-### <a name="settings"></a>Configurações
+### <a name="settings"></a>Settings
 
 Outro tipo de vinculação de dados que você pode gerenciar nos Windows Forms é chamado de configurações. A maioria dos aplicativos de cliente inteligente deve reter algumas informações sobre seu estado de tempo de execução, como o último tamanho de formulários conhecido e manter os dados de preferência do usuário, como locais padrão para arquivos salvos. O recurso de configurações de aplicativo resolve esses requisitos fornecendo uma maneira fácil de armazenar os dois tipos de configurações no computador cliente. Uma vez definido usando o Visual Studio ou um editor de código, essas configurações são mantidas como XML e são automaticamente lidas de volta na memória em tempo de execução.
 
@@ -106,7 +107,7 @@ Para obter informações passo a passo sobre como usar esses recursos, consulte 
 |Imprimir o conteúdo de um formulário|[Como: imprimir elementos gráficos no Windows Forms](/dotnet/desktop/winforms/advanced/how-to-print-graphics-in-windows-forms)<br /><br /> [Como: imprimir um arquivo de texto de várias páginas nos Windows Forms](/dotnet/desktop/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms)|
 |Saiba mais sobre a segurança dos Windows Forms|[Visão geral da Segurança do Windows Forms](/dotnet/desktop/winforms/security-in-windows-forms-overview)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>
 - [Visão geral dos Windows Forms](/dotnet/desktop/winforms/windows-forms-overview)

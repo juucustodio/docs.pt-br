@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <secureConversationAuthentication> de <serviceCredential>'
 title: <secureConversationAuthentication> de <serviceCredential>
 ms.date: 03/30/2017
 ms.assetid: 0bd3fac7-befd-4a45-ba51-c200b33be0fd
-ms.openlocfilehash: be2a9298a78de1503271f41076b9f5bb63c73f74
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8f95b4009111996d2a5c1133c9ef762375b4e3e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162226"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683314"
 ---
 # <a name="secureconversationauthentication-of-servicecredential"></a>\<secureConversationAuthentication> de \<serviceCredential>
 

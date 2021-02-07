@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <netHttpsBinding>'
 title: <netHttpsBinding>
 ms.date: 03/30/2017
 ms.assetid: ff122116-6042-4792-9f21-275b4f97a105
-ms.openlocfilehash: f6eca792f9bae6712a327fbcb5bdf47be9699062
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7f93e79fe8c390d2877d7e35ae6004475ddb849b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684029"
 ---
 # \<netHttpsBinding>
 
@@ -18,7 +19,7 @@ Representa uma associação que um serviço Windows Communication Foundation (WC
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<netHttpsBinding>**  
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <netHttpsBinding>
@@ -179,7 +180,7 @@ Representa uma associação que um serviço Windows Communication Foundation (WC
   
  Para obter mais informações sobre configurações padrão e associações e comportamentos do sem nome, consulte [configuração simplificada](../../../wcf/simplified-configuration.md) e [configuração simplificada para serviços WCF](../../../wcf/samples/simplified-configuration-for-wcf-services.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Channels.Binding>
 - <xref:System.ServiceModel.Channels.BindingElement>

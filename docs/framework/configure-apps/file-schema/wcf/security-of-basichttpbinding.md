@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <security> de <basicHttpBinding>'
 title: <security> de <basicHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 6432708d-5465-4bd9-bfc2-466742db99cb
-ms.openlocfilehash: 6144e5448526d7f2a7c89693f70f71a7f26c4a22
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 92d938d062d56cbb066a1170a9d3b8f3f5ba0186
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183657"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683249"
 ---
 # <a name="security-of-basichttpbinding"></a>\<security> de \<basicHttpBinding>
 
@@ -20,7 +21,7 @@ Define os recursos de segurança do [\<basicHttpBinding>](basichttpbinding.md) .
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <security mode="Message/None/Transport/TransportWithCredential">
@@ -69,7 +70,7 @@ Define os recursos de segurança do [\<basicHttpBinding>](basichttpbinding.md) .
 
  Por padrão, a mensagem SOAP não é protegida e o cliente não é autenticado. Esse elemento permite que você defina configurações de segurança adicionais para o `basicHttpBinding` elemento.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.BasicHttpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.BasicHttpBindingElement.Security%2A>

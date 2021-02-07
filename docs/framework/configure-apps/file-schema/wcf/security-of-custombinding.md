@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <security> de <customBinding>'
 title: <security> de <customBinding>
 ms.date: 03/30/2017
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
-ms.openlocfilehash: eb661864e2540a9b9f5f217402d37515043c862a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0c7a534754f19d46984911ba1dec60d9c517e6b6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170110"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683236"
 ---
 # <a name="security-of-custombinding"></a>\<security> de \<customBinding>
 
@@ -20,7 +21,7 @@ Especifica as opções de segurança para uma associação personalizada.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <security allowSerializedSigningTokenOnReply="Boolean"
@@ -55,11 +56,11 @@ Especifica as opções de segurança para uma associação personalizada.
 |defaultAlgorithmSuite|Opcional. Define a criptografia de mensagem e os algoritmos de encapsulamento de chaves. Os algoritmos e os tamanhos de chave são determinados pela <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> classe. Esses algoritmos são mapeados para aqueles especificados na especificação do WS-SecurityPolicy (Security Policy Language).<br /><br /> Os valores possíveis são mostrados abaixo. O valor padrão é `Basic256`.<br /><br /> Esse atributo é usado ao trabalhar com uma plataforma diferente que opta por um conjunto de algoritmos diferente do padrão. Você deve estar ciente dos pontos fortes e fracos dos algoritmos relevantes ao fazer modificações nessa configuração. Esse atributo é do tipo <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> .|  
 |includeTimestamp|Um valor booliano que especifica se os carimbos de data/hora são incluídos em cada mensagem. O padrão é `true`.|  
 |keyentropiamode|Especifica a maneira como as chaves para proteger mensagens são computadas. As chaves podem ser baseadas somente no material da chave do cliente, somente no material da chave de serviço ou em uma combinação de ambos. Os valores válidos são<br /><br /> -   `ClientEntropy`: A chave de sessão é baseada nos dados de chave fornecidos pelo cliente.<br />-   `ServerEntropy`: A chave de sessão é baseada nos dados de chave fornecidos pelo servidor.<br />-   `CombinedEntropy`: A chave de sessão é baseada nos dados de chave fornecidos pelo cliente e serviço.<br /><br /> O padrão é `CombinedEntropy`.<br /><br /> Esse atributo é do tipo <xref:System.ServiceModel.Security.SecurityKeyEntropyMode> .|  
-|messageProtectionOrder|Define a ordem na qual os algoritmos de segurança de nível de mensagem são aplicados à mensagem. Os valores válidos incluem os seguintes:<br /><br /> -   `SignBeforeEncrypt`: Assinar primeiro e depois criptografar.<br />-   `SignBeforeEncryptAndEncryptSignature`: Assinar primeiro, criptografar e, em seguida, criptografar a assinatura.<br />-   `EncryptBeforeSign`: Criptografar primeiro e depois assinar.<br /><br /> O valor padrão depende da versão do WS-Security que está sendo usada. O valor padrão é `SignBeforeEncryptAndEncryptSignature` ao usar o WS-Security 1,1. O valor padrão é `SignBeforeEncrypt` ao usar o WS-Security 1,0.<br /><br /> Esse atributo é do tipo <xref:System.ServiceModel.Security.MessageProtectionOrder> .|  
-|messageSecurityVersion|Opcional. Define a versão do WS-Security que é usada. Os valores válidos incluem os seguintes:<br /><br /> - WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11<br />- WSSecurity10WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br />- WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br /><br /> O padrão é WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11 e pode ser expresso no XML como de simples `Default` . Esse atributo é do tipo <xref:System.ServiceModel.MessageSecurityVersion> .|  
+|messageProtectionOrder|Define a ordem na qual os algoritmos de segurança de nível de mensagem são aplicados à mensagem. Os valores válidos incluem os seguintes:<br /><br /> -   `SignBeforeEncrypt`: Assinar primeiro e depois criptografar.<br />-   `SignBeforeEncryptAndEncryptSignature`: Assinar primeiro, criptografar e, em seguida, criptografar a assinatura.<br />-   `EncryptBeforeSign`: Criptografar primeiro e depois assinar.<br /><br /> O valor padrão depende da versão do WS-Security que está sendo usado. O valor padrão é `SignBeforeEncryptAndEncryptSignature` ao usar WS-Security 1,1. O valor padrão é `SignBeforeEncrypt` ao usar WS-Security 1,0.<br /><br /> Esse atributo é do tipo <xref:System.ServiceModel.Security.MessageProtectionOrder> .|  
+|messageSecurityVersion|Opcional. Define a versão do WS-Security que é usado. Os valores válidos incluem os seguintes:<br /><br /> - WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11<br />- WSSecurity10WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br />- WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10<br /><br /> O padrão é WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11 e pode ser expresso no XML como de simples `Default` . Esse atributo é do tipo <xref:System.ServiceModel.MessageSecurityVersion> .|  
 |requireDerivedKeys|Um valor booliano que especifica se as chaves podem ser derivadas das chaves de prova originais. O padrão é `true`.|  
 |requireSecurityContextCancellation|Opcional. Um valor booliano que especifica se o contexto de segurança deve ser cancelado e encerrado quando não for mais necessário. O padrão é `true`.|  
-|requireSignatureConfirmation|Opcional. Um valor booliano que especifica se a confirmação de assinatura do WS-Security está habilitada. Quando definido como `true` , as assinaturas de mensagens são confirmadas pelo respondente.  Quando a associação personalizada é configurada para certificados mútuos ou é configurada para usar tokens emitidos (associações do WSS 1,1), esse atributo usa como padrão `true` . Caso contrário, o padrão é `false`.<br /><br /> A confirmação de assinatura é usada para confirmar que o serviço está respondendo no reconhecimento total de uma solicitação.|  
+|requireSignatureConfirmation|Opcional. Um valor booliano que especifica se WS-Security confirmação de assinatura está habilitada. Quando definido como `true` , as assinaturas de mensagens são confirmadas pelo respondente.  Quando a associação personalizada é configurada para certificados mútuos ou é configurada para usar tokens emitidos (associações do WSS 1,1), esse atributo usa como padrão `true` . Caso contrário, o padrão é `false`.<br /><br /> A confirmação de assinatura é usada para confirmar que o serviço está respondendo no reconhecimento total de uma solicitação.|  
 |securityHeaderLayout|Opcional. Especifica a ordenação dos elementos no cabeçalho de segurança. Os valores válidos são<br /><br /> -   `Strict`: Os itens são adicionados ao cabeçalho de segurança de acordo com o princípio geral de "declare antes de usar".<br />-   `Lax`: Os itens são adicionados ao cabeçalho de segurança em qualquer ordem que confirme ao WSS: SOAP Message Security.<br />-   `LaxWithTimestampFirst`: Os itens são adicionados ao cabeçalho de segurança em qualquer ordem que confirme a segurança de mensagem do WSS: SOAP, exceto que o primeiro elemento no cabeçalho de segurança deve ser um elemento wsse: timestamp.<br />-   `LaxWithTimestampLast`: Os itens são adicionados ao cabeçalho de segurança em qualquer ordem que confirme o WSS: SOAP Message Security, exceto que o último elemento no cabeçalho de segurança deve ser um elemento wsse: timestamp.<br /><br /> O padrão é `Strict`.<br /><br /> Esse elemento é do tipo <xref:System.ServiceModel.Channels.SecurityHeaderLayout> .|  
   
 ## <a name="authenticationmode-attribute"></a>Atributo AuthenticationMode  
@@ -171,7 +172,7 @@ Especifica as opções de segurança para uma associação personalizada.
 </configuration>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.SecurityElement>
 - <xref:System.ServiceModel.Channels.SecurityBindingElement>

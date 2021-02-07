@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: <netPeerTcpBinding>'
 title: <netPeerTcpBinding>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - netPeerBinding element
 ms.assetid: 2dd77ada-a176-47c7-a740-900b279f1aad
-ms.openlocfilehash: 0f702788cf623651fd980b0443821b37acc7387c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 11f1618236c7219143225e2535e272254af6b81d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683899"
 ---
 # \<netPeerTcpBinding>
 
@@ -20,7 +21,7 @@ Define uma associação para mensagens TCP específicas do canal par.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<netPeerTcpBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <netPeerBinding>
@@ -105,7 +106,7 @@ Define uma associação para mensagens TCP específicas do canal par.
 </configuration>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.NetPeerTcpBinding>
 - <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement>

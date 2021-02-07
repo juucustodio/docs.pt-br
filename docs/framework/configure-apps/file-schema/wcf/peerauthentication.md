@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <peerAuthentication>'
 title: <peerAuthentication>
 ms.date: 03/30/2017
 ms.assetid: ad545e6f-f06e-4549-ac92-09d758d5c636
-ms.openlocfilehash: a88a3c0bbbd36d2372520f70b3c5692757b35ade
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b640b4aac296c40fadcc5f4070ba58e5f92fd265
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181551"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683652"
 ---
 # \<peerAuthentication>
 
@@ -22,7 +23,7 @@ Especifica as configurações de autenticação para um certificado par usado po
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<peer>**](peer-of-servicecredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<peerAuthentication>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <peerAuthentication customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
@@ -58,7 +59,7 @@ Especifica as configurações de autenticação para um certificado par usado po
 
  O `<authentication>` elemento corresponde à <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication> classe. Esse elemento especifica um validador, que é invocado durante a autenticação de vizinho para vizinho na malha. Quando um novo par tenta estabelecer uma conexão vizinha, ele passa sua própria credencial para o par de resposta. O validador do respondente é chamado para verificar a credencial da parte remota. Sempre que uma conexão de mesmo nível é estabelecida na malha, ambos os pares são mutuamente autenticados, o que significa que os validadores em ambas as extremidades são invocados.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
 - <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>

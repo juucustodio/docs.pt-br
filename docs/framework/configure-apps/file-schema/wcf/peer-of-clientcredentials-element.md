@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <peer> do <clientCredentials> elemento'
 title: <peer> do <clientCredentials> elemento
 ms.date: 03/30/2017
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
-ms.openlocfilehash: 75d8543d7db5eee1345d54f934fc89c9593b85ac
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1ff9386ba51dcf6bab6df71bd345cdaa59f18e3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91186985"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683782"
 ---
 # <a name="peer-of-clientcredentials-element"></a>\<peer> do \<clientCredentials> elemento
 
@@ -21,7 +22,7 @@ Especifica as credenciais usadas ao autenticar clientes ponto a ponto.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCredentials>**](clientcredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<peer>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <peer>
@@ -57,7 +58,7 @@ Especifica as credenciais usadas ao autenticar clientes ponto a ponto.
 
  Esse elemento de configuração especifica as credenciais que um nó par usa para se autenticar em outros nós na malha, bem como configurações de autenticação que um nó par usa para autenticar outros nós de mesmo nível. Para obter mais informações, consulte [autenticação de mensagens de canal de emparelhamento](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90)) e [protegendo os aplicativos de canal de mesmo nível](../../../wcf/feature-details/securing-peer-channel-applications.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Description.ClientCredentials>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <mexHttpsBinding>'
 title: <mexHttpsBinding>
 ms.date: 03/30/2017
 ms.assetid: f2ed3774-78b9-4a15-b79b-655f1ad68b86
-ms.openlocfilehash: 8025f5ed42325963aa4b695890caa5031f6bb6a6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1e6eb66e1379cb8f351e34d4fd406dd3cc1f9a4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204717"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684328"
 ---
 # \<mexHttpsBinding>
 
@@ -18,7 +19,7 @@ Especifica as configurações para uma associação usada para a troca de mensag
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<mexHttpsBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <mexHttpsBinding>
@@ -57,9 +58,9 @@ Especifica as configurações para uma associação usada para a troca de mensag
   
 ## <a name="remarks"></a>Comentários  
 
- Essa associação é essencialmente uma `WSHttpBinding` associação que dá suporte à segurança em nível de transporte usando certificados. Para obter mais informações sobre como configurar e usar esse ponto de extremidade de metadados, consulte [como: configurar uma associação de WS-Metadata Exchange personalizada](../../../wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md), [como recuperar metadados em uma associação não MEX](../../../wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md)e o [ponto de extremidade de metadados seguro personalizado](../../../wcf/samples/custom-secure-metadata-endpoint.md)de exemplo.  
+ Essa associação é essencialmente uma `WSHttpBinding` associação que dá suporte à segurança em nível de transporte usando certificados. Para obter mais informações sobre como configurar e usar esse ponto de extremidade de metadados, consulte [como configurar uma associação de WS-Metadata do Exchange personalizada](../../../wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md), [como recuperar metadados em uma associação não MEX](../../../wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md)e o [ponto de extremidade de metadados seguro personalizado](../../../wcf/samples/custom-secure-metadata-endpoint.md)de exemplo.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpsBinding%2A>
 - <xref:System.ServiceModel.Configuration.MexHttpsBindingElement>

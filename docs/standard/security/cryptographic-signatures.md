@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: assinaturas de criptografia'
 title: Assinaturas criptográficas
 ms.date: 07/14/2020
 dev_langs:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - digital signatures, verifying
 - signing XML
 ms.assetid: aa87cb7f-e608-4a81-948b-c9b8a1225783
-ms.openlocfilehash: 453e9d887012826da3f64d199e15a05fd0661191
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 082f55af648b73b6447d69edd5912804e9332d03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831124"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685290"
 ---
 # <a name="cryptographic-signatures"></a>Assinaturas criptográficas
 
@@ -160,7 +161,7 @@ else
 
 Esse fragmento de código exibirá " `The signature is valid` " se a assinatura for válida e " `The signature is not valid` " se não for.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços criptográficos](cryptographic-services.md)
 - [Modelo de criptografia](cryptography-model.md)

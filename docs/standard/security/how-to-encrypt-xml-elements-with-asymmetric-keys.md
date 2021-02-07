@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como criptografar elementos XML com chaves assimétricas'
 title: 'Como: criptografar elementos XML com chaves assimétricas'
 ms.date: 07/14/2020
 dev_langs:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Advanced Encryption Standard algorithm
 - encryption [.NET], asymmetric keys
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
-ms.openlocfilehash: 29fe7c229664b08c9e1563413525818f2e883198
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fff8ec57da0318e48f2a230f01dba26497837028
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729337"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685147"
 ---
 # <a name="how-to-encrypt-xml-elements-with-asymmetric-keys"></a>Como: criptografar elementos XML com chaves assimétricas
 
@@ -143,7 +144,7 @@ Nunca incorpore uma chave diretamente no seu código-fonte.  Chaves inseridas po
   
 Quando você terminar de usar uma chave criptográfica, limpe-a da memória definindo cada byte como zero ou chamando o <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> método da classe de criptografia gerenciada.  Às vezes, as chaves criptográficas podem ser lidas da memória por um depurador ou lidas de um disco rígido se o local da memória for paginado no disco.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de criptografia](cryptography-model.md)
 - [Serviços criptográficos](cryptographic-services.md)

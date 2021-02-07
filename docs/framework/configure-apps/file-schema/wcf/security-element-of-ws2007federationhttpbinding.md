@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <security> elemento de <ws2007FederationHttpBinding>'
 title: <security> elemento de <ws2007FederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
-ms.openlocfilehash: 943ccc241aef15b58661699408b085d98cf86c3b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0caa2c3791c0dc3c8db0d9ee27175a28e52f6baa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183696"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683288"
 ---
 # <a name="security-element-of-ws2007federationhttpbinding"></a>\<security> elemento de \<ws2007FederationHttpBinding>
 
@@ -20,7 +21,7 @@ Define as configurações de segurança do [\<ws2007FederationHttpBinding>](ws20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <ws2007FederationBinding>
@@ -67,7 +68,7 @@ Define as configurações de segurança do [\<ws2007FederationHttpBinding>](ws20
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Define todos os recursos de associação do [\<wsDualHttpBinding>](wsdualhttpbinding.md) .|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.WSFederationHttpSecurity>
 - <xref:System.ServiceModel.WSFederationHttpBinding.Security%2A>

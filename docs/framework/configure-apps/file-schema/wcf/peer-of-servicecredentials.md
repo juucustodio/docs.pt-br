@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <peer> de <serviceCredentials>'
 title: <peer> de <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed
-ms.openlocfilehash: 7f6669d3f53a6ee0d189786fa9ca3625fdedd127
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4d959f5061bb8069623b277219576dbd77ea52c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683730"
 ---
 # <a name="peer-of-servicecredentials"></a>\<peer> de \<serviceCredentials>
 
@@ -53,7 +54,7 @@ Especifica as credenciais atuais para um nó par.
 |-------------|-----------------|  
 |[\<serviceCredentials>](servicecredentials.md)|Especifica a credencial a ser usada na autenticação do serviço e as configurações relacionadas à validação da credencial do cliente.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.Peer%2A>

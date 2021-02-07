@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: uso de pontos de extremidade padrão'
 title: Uso de pontos de extremidade padrão
 ms.date: 03/30/2017
 ms.assetid: ecd6a62f-9619-4778-a497-6f888087a9ea
-ms.openlocfilehash: 2b210bfe683669aeebf54a1701f07d492e6abdb4
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: 804fdd84d3f6ff6f961aed81e8bd14cf8c43063c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715342"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685407"
 ---
 # <a name="usage-of-standard-endpoints"></a>Uso de pontos de extremidade padrão
 
@@ -15,7 +16,7 @@ Este exemplo demonstra como usar pontos de extremidade padrão em arquivos de co
 
 ## <a name="sample-details"></a>Detalhes de exemplo
 
-Os pontos de extremidade de serviço podem ser especificados fornecendo três parâmetros: endereço, associação e contrato. Outros parâmetros que podem ser fornecidos incluem configuração de comportamento, cabeçalhos, URI de escuta e assim por diante. Em alguns casos, qualquer um ou todos os endereços, associações e contratos têm valores que não podem ser alterados. Por esse motivo, é possível usar pontos de extremidade padrão. Alguns exemplos desses pontos de extremidade incluem pontos de extremidade de troca de metadados e pontos de extremidade de descoberta. Os pontos de extremidade padrão também melhoram a usabilidade, permitindo a configuração de pontos de extremidade de serviço sem precisar fornecer informações de natureza fixa ou criar seus próprios pontos de extremidade padrão, por exemplo, para melhorar a usabilidade fornecendo um conjunto razoável de padrão e, portanto, reduzindo o detalhamento dos arquivos de configuração.
+Os pontos de extremidade de serviço podem ser especificados fornecendo três parâmetros: endereço, associação e contrato. Outros parâmetros que podem ser fornecidos incluem configuração de comportamento, cabeçalhos, URI de escuta e assim por diante. Em alguns casos, qualquer um ou todos os endereços, associações e contratos têm valores que não podem ser alterados. Por esse motivo, é possível usar pontos de extremidade padrão. Alguns exemplos desses pontos de extremidade incluem pontos de extremidade de troca de metadados e pontos de extremidade de descoberta. Os pontos de extremidade padrão também melhoram a usabilidade, permitindo a configuração de pontos de extremidade de serviço sem precisar fornecer informações de natureza fixa ou criar seus próprios pontos de extremidade padrão, por exemplo, para melhorar a usabilidade fornecendo um conjunto razoável de valores padrão e, portanto, reduzindo o detalhamento dos arquivos de configuração.
 
 Este exemplo consiste em dois projetos: o serviço que define dois pontos de extremidade padrão e o cliente que se comunica com o serviço. A maneira como os pontos de extremidade padrão são definidos para o serviço no arquivo de configuração é mostrada no exemplo a seguir.
 
@@ -50,9 +51,9 @@ Este exemplo consiste em dois projetos: o serviço que define dois pontos de ext
 </configuration>
 ```
 
-O primeiro ponto de extremidade definido para o serviço é do tipo `customEndpoint`, cuja definição pode ser vista na seção `<standardEndpoints>`, na qual a propriedade `property` recebe o valor `true`. Esse é o caso de um ponto de extremidade personalizado com uma nova propriedade. O segundo ponto de extremidade corresponde a um ponto de extremidade de metadados, no qual os valores de endereço, associação e contrato são corrigidos.
+O primeiro ponto de extremidade definido para o serviço é de tipo `customEndpoint` , cuja definição pode ser vista na `<standardEndpoints>` seção, na qual a propriedade `property` recebe o valor `true` . Esse é o caso de um ponto de extremidade personalizado com uma nova propriedade. O segundo ponto de extremidade corresponde a um ponto de extremidade de metadados, no qual os valores de endereço, associação e contrato são corrigidos.
 
-Para definir o elemento de ponto de extremidade padrão, uma classe derivada de `StandardEndpointElement` deve ser criada. No caso deste exemplo, a classe `CustomEndpointElement` foi definida conforme mostrado no exemplo a seguir.
+Para definir o elemento de ponto de extremidade padrão, uma classe derivada de `StandardEndpointElement` deve ser criada. No caso deste exemplo, a classe foi `CustomEndpointElement` definida conforme mostrado no exemplo a seguir.
 
 ```csharp
 public class CustomEndpointElement : StandardEndpointElement
@@ -105,7 +106,7 @@ public class CustomEndpointElement : StandardEndpointElement
 }
 ```
 
-Na função `CreateServiceEndpoint`, um objeto `CustomEndpoint` é criado. Sua definição é mostrada no exemplo a seguir:
+Na `CreateServiceEndpoint` função, um `CustomEndpoint` objeto é criado. Sua definição é mostrada no exemplo a seguir:
 
 ```csharp
 public class CustomEndpoint : ServiceEndpoint
@@ -145,7 +146,7 @@ public class CustomEndpoint : ServiceEndpoint
 
     1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução pontos de extremidade padrão e selecione **Propriedades**.
 
-    2. Em **Propriedades comuns**, selecione **projeto de inicialização**e clique em **vários projetos de inicialização**.
+    2. Em **Propriedades comuns**, selecione **projeto de inicialização** e clique em **vários projetos de inicialização**.
 
     3. Mova o projeto de serviço para o início da lista, com a **ação** definida como **Iniciar**.
 
@@ -167,6 +168,6 @@ public class CustomEndpoint : ServiceEndpoint
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todas as Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] amostras. Este exemplo está localizado no seguinte diretório.
+> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\StandardEndpoints`

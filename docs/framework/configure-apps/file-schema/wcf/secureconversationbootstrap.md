@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <secureConversationBootstrap>'
 title: <secureConversationBootstrap>
 ms.date: 03/30/2017
 ms.assetid: 66b46f95-fa2d-4b5b-b6ce-0572ab0cdd50
-ms.openlocfilehash: 02072c55e299d9e3a5d53b61c891a9ee9837ada0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bbf0ed0df485ba76f0f179fdfc981802403e4e57
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183709"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683301"
 ---
 # \<secureConversationBootstrap>
 
@@ -21,7 +22,7 @@ Especifica os valores padrão usados para iniciar um serviço de conversa segura
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-custombinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<secureConversationBootstrap>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <secureConversationBootstrap allowSerializedSigningTokenOnReply="Boolean"
@@ -56,11 +57,11 @@ Especifica os valores padrão usados para iniciar um serviço de conversa segura
 |`defaultAlgorithmSuite`|O conjunto de algoritmos de segurança define uma variedade de algoritmos, como canonização, resumo, keywrap, assinatura, criptografia e algoritmos de keyderivações. Cada um dos conjuntos de algoritmos de segurança define valores para esses parâmetros diferentes. A segurança baseada em mensagem é obtida usando esses algoritmos.<br /><br /> Esse atributo é usado ao trabalhar com uma plataforma diferente que opta por um conjunto de algoritmos diferente do padrão. Você deve estar ciente dos pontos fortes e fracos dos algoritmos relevantes ao fazer modificações nessa configuração. Esse atributo é do tipo <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> . O padrão é `Basic256`.|  
 |`includeTimestamp`|Um valor booliano que especifica se os carimbos de data/hora são incluídos em cada mensagem. O padrão é `true`.|  
 |`keyEntropyMode`|Especifica a maneira como as chaves para proteger mensagens são computadas. As chaves podem ser baseadas somente no material da chave do cliente, somente no material da chave de serviço ou em uma combinação de ambos. Os valores válidos são:<br /><br /> -ClientEntropy: a chave de sessão baseia-se no material de chave fornecido pelo cliente.<br />-ServerEntropy: a chave de sessão baseia-se no material de chave fornecido pelo serviço.<br />-CombinedEntropy: a chave de sessão baseia-se no cliente e no serviço fornecido pelo material de chave.<br /><br /> O padrão é CombinedEntropy.<br /><br /> Esse atributo é do tipo <xref:System.ServiceModel.Security.SecurityKeyEntropyMode> .|  
-|`messageProtectionOrder`|Define a ordem na qual os algoritmos de segurança de nível de mensagem são aplicados à mensagem. Os valores válidos incluem os seguintes:<br /><br /> -SignBeforeEncrypt: assinar primeiro e depois criptografar.<br />-SignBeforeEncryptAndEncryptSignature: assinar, criptografar e criptografar assinatura.<br />-EncryptBeforeSign: criptografar primeiro e depois assinar.<br /><br /> SignBeforeEncryptAndEncryptSignature é o valor padrão ao usar certificados mútuos com o WS-Security 1,1.  SignBeforeEncrypt é o valor padrão com WS-Security 1,0.<br /><br /> Esse atributo é do tipo <xref:System.ServiceModel.Security.MessageProtectionOrder> .|  
-|`messageSecurityVersion`|Define a versão do WS-Security que é usada. Os valores válidos incluem os seguintes:<br /><br /> - WSSecurityJan2004<br />- WSSecurityXXX2005<br /><br /> O padrão é WSSecurityXXX2005. Esse atributo é do tipo <xref:System.ServiceModel.MessageSecurityVersion> .|  
+|`messageProtectionOrder`|Define a ordem na qual os algoritmos de segurança de nível de mensagem são aplicados à mensagem. Os valores válidos incluem os seguintes:<br /><br /> -SignBeforeEncrypt: assinar primeiro e depois criptografar.<br />-SignBeforeEncryptAndEncryptSignature: assinar, criptografar e criptografar assinatura.<br />-EncryptBeforeSign: criptografar primeiro e depois assinar.<br /><br /> SignBeforeEncryptAndEncryptSignature é o valor padrão ao usar certificados mútuos com WS-Security 1,1.  SignBeforeEncrypt é o valor padrão com WS-Security 1,0.<br /><br /> Esse atributo é do tipo <xref:System.ServiceModel.Security.MessageProtectionOrder> .|  
+|`messageSecurityVersion`|Define a versão do WS-Security que é usado. Os valores válidos incluem os seguintes:<br /><br /> - WSSecurityJan2004<br />- WSSecurityXXX2005<br /><br /> O padrão é WSSecurityXXX2005. Esse atributo é do tipo <xref:System.ServiceModel.MessageSecurityVersion> .|  
 |`requireDerivedKeys`|Um valor booliano que especifica se as chaves podem ser derivadas das chaves de prova originais. O padrão é `true`.|  
 |`requireSecurityContextCancellation`|Um valor booliano que especifica se o contexto de segurança deve ser cancelado e encerrado quando não for mais necessário. O padrão é `true`.|  
-|`requireSignatureConfirmation`|Um valor booliano que especifica se a confirmação de assinatura do WS-Security está habilitada. Quando definido como `true` , as assinaturas de mensagens são confirmadas pelo respondente. O padrão é `false`.<br /><br /> A confirmação de assinatura é usada para confirmar que o serviço está respondendo no reconhecimento total de uma solicitação.|  
+|`requireSignatureConfirmation`|Um valor booliano que especifica se WS-Security confirmação de assinatura está habilitada. Quando definido como `true` , as assinaturas de mensagens são confirmadas pelo respondente. O padrão é `false`.<br /><br /> A confirmação de assinatura é usada para confirmar que o serviço está respondendo no reconhecimento total de uma solicitação.|  
 |`securityHeaderLayout`|Especifica a ordenação dos elementos no cabeçalho de segurança. Os valores válidos são:<br /><br /> Strict. Itens são adicionados ao cabeçalho de segurança de acordo com o princípio geral de "declarar antes do uso".<br />Incerto. Itens são adicionados ao cabeçalho de segurança em qualquer ordem que confirme para WSS: segurança de mensagem SOAP.<br />- LaxWithTimestampFirst. Itens são adicionados ao cabeçalho de segurança em qualquer ordem que confirme para WSS: segurança de mensagem SOAP, exceto pelo fato de que o primeiro elemento no cabeçalho de segurança deve ser um elemento wsse:Timestamp.<br />- LaxWithTimestampLast. Itens são adicionados ao cabeçalho de segurança em qualquer ordem que confirme para WSS: segurança de mensagem SOAP, exceto pelo fato de que o último elemento no cabeçalho de segurança deve ser um elemento wsse:Timestamp.<br /><br /> O padrão é estrito.<br /><br /> Esse elemento é do tipo <xref:System.ServiceModel.Channels.SecurityHeaderLayout> .|  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -77,7 +78,7 @@ Especifica os valores padrão usados para iniciar um serviço de conversa segura
 |-------------|-----------------|  
 |[\<security>](security-of-custombinding.md)|Especifica as opções de segurança para uma associação personalizada.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement>
 - <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings%2A>

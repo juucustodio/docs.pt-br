@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <parameter>'
 title: <parameter>
 ms.date: 03/30/2017
 ms.assetid: 0fb41e2d-64f7-44ab-993e-05892eac6d82
-ms.openlocfilehash: 2ef674dc8601bc9afaf6b547265988bb8a99f943
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fb04cfb5bf451cdb99c23ae41ea8fafeb13f0d11
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170162"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683808"
 ---
 # \<parameter>
 
@@ -21,7 +22,7 @@ Especifica o parâmetro genérico quando um tipo declarado é um tipo genérico.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<knownType>**](knowntype.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<parameter>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <parameter index="Integer"
@@ -37,7 +38,7 @@ Especifica o parâmetro genérico quando um tipo declarado é um tipo genérico.
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |índice|Quando o tipo declarado é um tipo genérico, especifica o parâmetro genérico que retornará o tipo conhecido.|  
-|tipo|Uma cadeia de caracteres que descreve o tipo conhecido usado para serialização e desserialização.|  
+|type|Uma cadeia de caracteres que descreve o tipo conhecido usado para serialização e desserialização.|  
   
 ## <a name="index-attribute"></a>Atributo de índice  
   
@@ -64,7 +65,7 @@ Especifica o parâmetro genérico quando um tipo declarado é um tipo genérico.
   
  Este elemento de configuração não pode ter ambos os atributos ao mesmo tempo. Se ambos os atributos forem definidos, <xref:System.Configuration.ConfigurationErrorsException> ocorrerá um.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - [Tipos de contratos de dados conhecidos](../../../wcf/feature-details/data-contract-known-types.md)

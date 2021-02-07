@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serviço fachada confiável'
 title: Serviço de fachada confiável
 ms.date: 03/30/2017
 ms.assetid: c34d1a8f-e45e-440b-a201-d143abdbac38
-ms.openlocfilehash: 80f139ace43d5f8d2136528681386711bea7a1e5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aebfa89c47d5e8ea37e210b2d7b19afbe204a1a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685472"
 ---
 # <a name="trusted-facade-service"></a>Serviço de fachada confiável
 

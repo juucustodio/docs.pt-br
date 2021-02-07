@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <mexEndpoint>'
 title: <mexEndpoint>
 ms.date: 03/30/2017
 ms.assetid: c9823060-0a5d-4f9d-99d4-4d113b758247
-ms.openlocfilehash: e8f0e0fa2ea1606bf980fd6fa1fcd47f12c3b540
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1872b6104aaaaa2787ca3f359026552499bade9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684406"
 ---
 # \<mexEndpoint>
 
@@ -18,7 +19,7 @@ Este elemento de configuração define um ponto de extremidade padrão com um co
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<mexEndpoint>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>

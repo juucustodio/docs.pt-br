@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: substitutos de contrato de dados'
 title: Substitutos de contrato de dados
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data contracts [WCF], surrogates
 ms.assetid: 8c31134c-46c5-4ed7-94af-bab0ac0dfce5
-ms.openlocfilehash: e33a487c03bbf87666d517040e00131f5482be6f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 335e7f64868177d00c747e29c463808f3eff3056
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251510"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685797"
 ---
 # <a name="data-contract-surrogates"></a>Substitutos de contrato de dados
 
@@ -207,7 +208,7 @@ O *substituto* do contrato de dados é um recurso avançado criado com base no m
   
      [!code-csharp[C_IDataContractSurrogate#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#10)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.IDataContractSurrogate>

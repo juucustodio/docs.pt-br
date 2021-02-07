@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: estendendo associações'
 title: Estendendo associações
 ms.date: 03/30/2017
 helpviewer_keywords:
 - extending bindings [WCF]
 ms.assetid: 5e40d306-b3c1-4429-80c4-fbb1d956856c
-ms.openlocfilehash: 80e155ff760af2f7478cd6865f6b703b857b0913
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 721a844a51aa2b8a7073f5e489b34eab8955d276
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251497"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685771"
 ---
 # <a name="extending-bindings"></a>Estendendo associações
 

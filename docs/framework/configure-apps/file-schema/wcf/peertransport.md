@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <peerTransport>'
 title: <peerTransport>
 ms.date: 03/30/2017
 ms.assetid: c1a5013a-9dd4-4a27-b114-795b8b323177
-ms.openlocfilehash: 68832c3a5bd4cc423642a6272e70cbecab86d6a8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: babc4196c63d46b7515ac67812d5d584eb3ffcac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181538"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683613"
 ---
 # \<peerTransport>
 
@@ -20,7 +21,7 @@ Define um transporte de mesmo nível para uma associação personalizada.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<peerTransport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <peerTransport listenIpAddress="String"
@@ -61,7 +62,7 @@ Define um transporte de mesmo nível para uma associação personalizada.
 
  Esse transporte não pode ser usado com contratos que têm operações de solicitação/resposta.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerTransportElement>
 - <xref:System.ServiceModel.Channels.PeerTransportBindingElement>

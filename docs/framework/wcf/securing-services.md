@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: protegendo serviços'
 title: Serviços de segurança
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF security
 - WCF, security
 ms.assetid: f0ecc6f7-f4b5-42a4-9cb1-b02e28e26620
-ms.openlocfilehash: f2a8e10aaf9c1dbe3065344963fcc712776cd2db
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6d72b814e0669cac90210bd02f36740673f3960e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242221"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685303"
 ---
 # <a name="securing-services"></a>Serviços de segurança
 
@@ -80,7 +81,7 @@ A segurança de um serviço de Windows Communication Foundation (WCF) consiste e
   
 #### <a name="transport-mode"></a>Modo de transporte  
 
- Há várias camadas entre a rede e o aplicativo. Uma delas é a camada *transport* de transporte *,* que gerencia a transferência de mensagens entre pontos de extremidade. Para a finalidade atual, só é necessário que você entenda que o WCF usa vários protocolos de transporte, cada um dos quais pode proteger a transferência de mensagens. (Para obter mais informações sobre transportes, consulte [transportes](./feature-details/transports.md).)  
+ Há várias camadas entre a rede e o aplicativo. Uma delas é a camada  de transporte *,* que gerencia a transferência de mensagens entre pontos de extremidade. Para a finalidade atual, só é necessário que você entenda que o WCF usa vários protocolos de transporte, cada um dos quais pode proteger a transferência de mensagens. (Para obter mais informações sobre transportes, consulte [transportes](./feature-details/transports.md).)  
   
  Um protocolo comumente usado é HTTP; outro é o TCP. Cada um desses protocolos pode proteger a transferência de mensagens por um mecanismo (ou mecanismos) específico para o protocolo. Por exemplo, o protocolo HTTP é protegido usando SSL sobre HTTP, geralmente abreviado como "HTTPS". Portanto, ao selecionar o modo de transporte para segurança, você está optando por usar o mecanismo conforme determinado pelo protocolo. Por exemplo, se você selecionar a <xref:System.ServiceModel.WSHttpBinding> classe e definir seu modo de segurança como transporte, você está selecionando SSL sobre http (https) como o mecanismo de segurança. A vantagem do modo de transporte é que ele é mais eficiente do que o modo de mensagem, pois a segurança é integrada em um nível comparativamente baixo. Ao usar o modo de transporte, o mecanismo de segurança deve ser implementado de acordo com a especificação para o transporte e, portanto, as mensagens podem fluir com segurança apenas do ponto a ponto no transporte.  
   
@@ -116,7 +117,7 @@ A segurança de um serviço de Windows Communication Foundation (WCF) consiste e
 
  A `ProtectionLevel` Propriedade ocorre em várias classes de atributos (como as <xref:System.ServiceModel.ServiceContractAttribute> classes e <xref:System.ServiceModel.OperationContractAttribute> ). O nível de proteção é um valor que especifica se as mensagens (ou partes da mensagem) que dão suporte a um serviço são assinadas, assinadas e criptografadas ou enviadas sem assinaturas ou criptografia. Para obter mais informações sobre a propriedade, consulte [noções básicas](understanding-protection-level.md)sobre o nível de proteção e para obter exemplos de programação, consulte [como definir a propriedade ProtectionLevel](how-to-set-the-protectionlevel-property.md). Para obter mais informações sobre como criar um contrato de serviço com o `ProtectionLevel` no contexto, consulte [Criando contratos de serviço](designing-service-contracts.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel>
 - <xref:System.ServiceModel.Description.ServiceCredentials>

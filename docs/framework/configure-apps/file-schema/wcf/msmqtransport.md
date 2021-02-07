@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <msmqTransport>'
 title: <msmqTransport>
 ms.date: 03/30/2017
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
-ms.openlocfilehash: 6117a2d4323dce8c2772da46096164639b27032a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 036238340ef7638373b66a342fc4ef722d80400f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204652"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684185"
 ---
 # \<msmqTransport>
 
@@ -20,7 +21,7 @@ Faz com que um canal transfira mensagens no transporte MSMQ quando ele é inclu�
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<msmqTransport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <msmqTransport customDeadLetterQueue="Uri"
@@ -90,7 +91,7 @@ Faz com que um canal transfira mensagens no transporte MSMQ quando ele é inclu�
   
  Esse elemento de associação é o elemento de associação padrão usado pela associação padrão do enfileiramento de mensagens ( `netMsmqBinding` ).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.MsmqTransportElement>
 - <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>

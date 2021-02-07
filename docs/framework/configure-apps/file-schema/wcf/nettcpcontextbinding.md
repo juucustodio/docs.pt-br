@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <netTcpContextBinding>'
 title: <netTcpContextBinding>
 ms.date: 03/30/2017
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4
-ms.openlocfilehash: bb6094b962c0f1199f0a16eb7d0821a95eba4c77
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2a5eea664c4287f8da45e8d286621bb7aa358d0f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195019"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683860"
 ---
 # \<netTcpContextBinding>
 
@@ -18,7 +19,7 @@ Especifica um contexto para o <xref:System.ServiceModel.NetTcpBinding> que reque
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<netTcpContextBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <netTcpContextBinding>
@@ -101,7 +102,7 @@ Especifica um contexto para o <xref:System.ServiceModel.NetTcpBinding> que reque
 |-------------|-----------------|  
 |[\<bindings>](bindings.md)|Esse elemento contém uma coleção de associações padrão e personalizadas.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.NetTcpBinding>
 - <xref:System.ServiceModel.NetTcpContextBinding>

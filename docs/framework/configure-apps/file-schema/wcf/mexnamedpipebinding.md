@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <mexNamedPipeBinding>'
 title: <mexNamedPipeBinding>
 ms.date: 03/30/2017
 ms.assetid: 193412fa-3260-414c-92c6-b32ed3b94a34
-ms.openlocfilehash: 64e250ae5ccb30da3f8857b94628b85b8c237a03
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a7d1c6b10ed436d5ec1b20092d042d6b0a80bd34
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204704"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684315"
 ---
 # \<mexNamedPipeBinding>
 
@@ -18,7 +19,7 @@ Especifica as configurações para uma associação usada para a troca de mensag
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<mexNamedPipeBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <mexNamedPipeBinding>
@@ -55,7 +56,7 @@ Especifica as configurações para uma associação usada para a troca de mensag
 |-------------|-----------------|  
 |[\<bindings>](bindings.md)|Esse elemento contém uma coleção de associações padrão e personalizadas.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexNamedPipeBinding%2A>
 - <xref:System.ServiceModel.Configuration.MexNamedPipeBindingElement>

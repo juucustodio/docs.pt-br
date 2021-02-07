@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: transporte: UDP'
 title: 'Transporte: UDP'
 ms.date: 03/30/2017
 ms.assetid: 738705de-ad3e-40e0-b363-90305bddb140
-ms.openlocfilehash: 815a0a50e42e68040673e34e5ebccad17dfeecda
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ab4afa8850f78258d2ef984a9b7be61e135cadca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258745"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685511"
 ---
 # <a name="transport-udp"></a>Transporte: UDP
 

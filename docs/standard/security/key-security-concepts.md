@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: principais conceitos de segurança'
 title: Conceitos principais de segurança
 ms.date: 07/15/2020
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - permissions [.NET]
 - security [.NET], about security
 ms.assetid: 3cfced4f-ea02-4e66-ae98-d69286363e98
-ms.openlocfilehash: 73e4d0474810d097c5eee8b99ae30b6096ee1695
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8643c87197049465371da00b2ecb70ac99d70f9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687539"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684991"
 ---
 # <a name="key-security-concepts"></a>Conceitos principais de segurança
 
@@ -75,6 +76,6 @@ O exemplo a seguir requer que a entidade de segurança ativa seja um administrad
 
 A autorização é o processo de determinar se uma entidade de segurança tem permissão para executar uma ação solicitada. A autorização ocorre após a autenticação e usa informações sobre a identidade e as funções da entidade de segurança para determinar quais recursos a entidade de segurança pode acessar. Você pode usar a segurança baseada em função do .NET para implementar a autorização.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança de ASP.NET Core](/aspnet/core/security/)

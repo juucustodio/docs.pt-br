@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <routing>'
 title: <routing>
 ms.date: 03/30/2017
 ms.assetid: a210c209-3940-4288-9a8e-39b1e62606bc
-ms.openlocfilehash: fcf2d4eec93fd7127c6f800e1c739ad1fac49203
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 62222b527a14310b66015d4fdc4503e6cff25c8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399967"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683340"
 ---
 # \<routing>
 
@@ -17,7 +18,7 @@ Representa uma seção de configuração para definir um conjunto de filtros de 
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<routing>**
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>

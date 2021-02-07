@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: escolhendo um padrão de troca de mensagens'
 title: Escolhendo um padrão de troca de mensagens
 ms.date: 03/30/2017
 ms.assetid: 0f502ca1-6a8e-4607-ba15-59198c0e6146
-ms.openlocfilehash: 22c720beaa8dc70d2916a5b1d38819ad3d333a0f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c452a65e4d4108123deaab93be9bd825127eba70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275652"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685849"
 ---
 # <a name="choosing-a-message-exchange-pattern"></a>Escolhendo um padrão de troca de mensagens
 
@@ -97,6 +98,6 @@ Os três padrões básicos de troca de mensagens. De cima para baixo: datagrama,
   
 - Quando <xref:System.ServiceModel.ICommunicationObject.Abort%2A> é chamado em seu canal, encerre a sessão abruptamente sem executar e/s. Novamente, isso pode significar não fazer nada ou pode envolver a anulação de uma conexão de rede ou de algum outro recurso.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de modelo de canal](channel-model-overview.md)

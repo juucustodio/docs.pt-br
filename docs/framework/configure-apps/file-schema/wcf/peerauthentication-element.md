@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <peerAuthentication> elemento'
 title: Elemento <peerAuthentication>
 ms.date: 03/30/2017
 ms.assetid: 09a8a9ff-e395-42f6-8ceb-9d44bdc1cbe1
-ms.openlocfilehash: 7e4f86c361dc3ade5dedf4017921516357bb9a58
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 887b65a4a2a7da9d545bc25636be0ea6c646f6fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683717"
 ---
 # <a name="peerauthentication-element"></a>Elemento \<peerAuthentication>
 
@@ -24,7 +25,7 @@ Especifica opções de autenticação para clientes ponto a ponto.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<peer>**](peer-of-clientcredentials-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<peerAuthentication>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <peerAuthentication customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
@@ -106,7 +107,7 @@ Especifica opções de autenticação para clientes ponto a ponto.
 </behaviors>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
 - <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>

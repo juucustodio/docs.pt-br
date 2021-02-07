@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como criar objetos GenericPrincipal e GenericIdentity'
 title: 'Como: criar objetos GenericPrincipal e GenericIdentity'
 ms.date: 07/15/2020
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Creating GenericPrincipal Objects
 - GenericIdentity Objects
 ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
-ms.openlocfilehash: cde4669a1bac49d1d9fde39c99707561379aec19
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 8c77a9afec7bd166a71abb6af19d8766b02d0523
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818987"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685212"
 ---
 # <a name="how-to-create-genericprincipal-and-genericidentity-objects"></a>Como: criar objetos GenericPrincipal e GenericIdentity
 
@@ -143,7 +144,7 @@ The IsAuthenticated is: True
 Is this a Manager? True
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Security.Principal.GenericIdentity>
 - <xref:System.Security.Principal.GenericPrincipal>

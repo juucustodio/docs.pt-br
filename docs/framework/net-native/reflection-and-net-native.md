@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: reflexão e .NET Native'
 title: Reflexão e .NET Nativo
 ms.date: 03/30/2017
 ms.assetid: 91c9eae4-c641-476c-a06e-d7ce39709763
-ms.openlocfilehash: c38070ec4afe0a7311133e0ef7b5b24eb2fe4fb5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 150afe5964cbf3a8983540d5948b246a8f330793
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287833"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738436"
 ---
 # <a name="reflection-and-net-native"></a>Reflexão e .NET Nativo
 
@@ -32,7 +33,7 @@ No .NET Framework, o desenvolvimento gerenciado oferece suporte à metaprograma�
   
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Compilando aplicativos com .NET Native](index.md)
+- [Compilando aplicativos com o .NET Nativo](index.md)
 - [Compilação e .NET nativo](net-native-and-compilation.md)

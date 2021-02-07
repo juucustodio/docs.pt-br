@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: simultaneidade otimista'
 title: Simultaneidade otimista
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e380edac-da67-4276-80a5-b64decae4947
-ms.openlocfilehash: 681044a9d905f052516ba240e25ffff84928e58e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1034720b2c57b863b87eef440424a7e2f4c2c6c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166632"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739138"
 ---
 # <a name="optimistic-concurrency"></a>Simultaneidade otimista
 
@@ -39,17 +40,17 @@ Em um ambiente multiusuário, há dois modelos para atualizar dados em um banco 
 |-----------------|--------------------|-------------------|-----------------------|  
 |CustID|101|101|101|  
 |LastName|Smith|Smith|Smith|  
-|FirstName|Roberto|Roberto|Roberto|  
+|Nome|Roberto|Roberto|Roberto|  
   
  Às 13h01, o Usuário2 lê a mesma linha.  
   
- Às 1:03, Usuário2 altera **FirstName** de "Bob" para "Robert" e atualiza o banco de dados.  
+ Às 13h03, o Usuário2 altera **FirstName** de "Davi" para "Mateus" e atualiza o banco de dados.  
   
 |Nome da coluna|Valor original|Valor atual|Valor no banco de dados|  
 |-----------------|--------------------|-------------------|-----------------------|  
 |CustID|101|101|101|  
 |LastName|Smith|Smith|Smith|  
-|FirstName|Roberto|Robert|Roberto|  
+|Nome|Roberto|Robert|Roberto|  
   
  A atualização é bem-sucedida pois os valores no banco de dados no momento da atualização coincidem com os valores originais do Usuário2.  
   
@@ -59,7 +60,7 @@ Em um ambiente multiusuário, há dois modelos para atualizar dados em um banco 
 |-----------------|--------------------|-------------------|-----------------------|  
 |CustID|101|101|101|  
 |LastName|Smith|Smith|Smith|  
-|FirstName|Roberto|James|Robert|  
+|Nome|Roberto|James|Robert|  
   
  Neste ponto, o Usuário1 encontra uma violação de simultaneidade otimista porque o valor no banco de dados (“Robert”) não coincide mais com o valor original que o Usuário1 esperava (“Bob”). A violação de simultaneidade permite que você saiba que a atualização falhou. Agora é preciso decidir se as alterações fornecidas pelo Usuário2 devem ser substituídas pelas alterações fornecidas pelo Usuário1, ou se convém cancelar as alterações feitas pelo Usuário1.  
   
@@ -67,13 +68,13 @@ Em um ambiente multiusuário, há dois modelos para atualizar dados em um banco 
 
  Há várias técnicas para testar uma violação de simultaneidade otimista. Uma delas envolve a inclusão de uma coluna de carimbo de data/hora na tabela. Os bancos de dados geralmente fornecem a funcionalidade de carimbo de data/hora que pode ser usada para identificar a data e a hora da última atualização do registro. Usando essa técnica, uma coluna de carimbo de data/hora é incluída na definição da tabela. Sempre que o registro é atualizado, o carimbo de data/hora é atualizado para refletir a data e hora atuais. Em um teste para violações de simultaneidade otimista, a coluna de carimbo de data/hora é retornada com qualquer consulta de conteúdo da tabela. Quando há uma tentativa de atualização, o valor de carimbo de data/hora no banco de dados é comparado com o valor original de carimbo de data/hora contido na linha alterada. Se eles coincidirem, a atualização será executada e a coluna de carimbo de data/hora será atualizada com a hora atual para refletir a atualização. Se eles não coincidirem, significa que ocorreu uma violação de simultaneidade otimista.  
   
- Outra técnica para testar uma violação de simultaneidade otimista é verificar se todos os valores originais de coluna em uma linha ainda coincidem com aqueles encontrados no banco de dados. Por exemplo, considere a consulta abaixo:  
+ Outra técnica para testar uma violação de simultaneidade otimista é verificar se todos os valores originais de coluna em uma linha ainda coincidem com aqueles encontrados no banco de dados. Por exemplo, considere a seguinte consulta:  
   
 ```sql
 SELECT Col1, Col2, Col3 FROM Table1  
 ```  
   
- Para testar uma violação de simultaneidade otimista ao atualizar uma linha na **tabela1**, você emitiria a seguinte instrução UPDATE:  
+ Para testar uma violação de simultaneidade otimista ao atualizar uma linha na **Table1**, você emitirá a seguinte instrução UPDATE:  
   
 ```sql
 UPDATE Table1 Set Col1 = @NewCol1Value,  
@@ -99,15 +100,15 @@ UPDATE Table1 Set Col1 = @NewVal1
   
 ### <a name="the-dataadapterrowupdated-event"></a>O evento DataAdapter.RowUpdated  
 
- O evento de **teleupdate** do <xref:System.Data.Common.DataAdapter> objeto pode ser usado em conjunto com as técnicas descritas anteriormente, para fornecer notificação ao seu aplicativo de violações de simultaneidade otimistas. O **rowgroup ocorre depois** de cada tentativa de atualizar uma linha **modificada** de um **conjunto**de uma. Isso o habilita a adicionar código de manipulação especial, incluindo o processamento quando ocorre uma exceção, a adicionar informações de erro personalizadas, a adicionar a lógica de repetição e assim por diante. O <xref:System.Data.Common.RowUpdatedEventArgs> objeto retorna uma propriedade **RecordsAffected** que contém o número de linhas afetadas por um determinado comando de atualização para uma linha modificada em uma tabela. Ao definir o comando Update para testar a simultaneidade otimista, a propriedade **RecordsAffected** , como resultado, retornará um valor 0 quando uma violação de simultaneidade otimista tiver ocorrido, porque nenhum registro foi atualizado. Se esse for o caso, uma exceção será gerada. O evento de **Teleupdated** permite que você manipule essa ocorrência e evite a exceção definindo um valor apropriado de **RowUpdatedEventArgs. status** , como **updateStatus. SkipCurrentRow**. Para obter mais informações sobre o evento de **Teleupdated** , consulte [lidando com eventos de DataAdapter](handling-dataadapter-events.md).  
+ O evento **RowUpdated** do objeto <xref:System.Data.Common.DataAdapter> pode ser usado em conjunto com as técnicas descritas anteriormente, para fornecer uma notificação ao seu aplicativo sobre violações da simultaneidade otimista. **RowUpdated** ocorre após cada tentativa de atualizar uma linha **Modificado** de um **DataSet**. Isso o habilita a adicionar código de manipulação especial, incluindo o processamento quando ocorre uma exceção, a adicionar informações de erro personalizadas, a adicionar a lógica de repetição e assim por diante. O objeto <xref:System.Data.Common.RowUpdatedEventArgs> retorna uma propriedade **RecordsAffected** contendo o número de linhas afetadas por um comando de atualização específico para uma linha modificada em uma tabela. Ao definir o comando de atualização para testar a simultaneidade otimista, a propriedade **RecordsAffected**, como resultado, retornará um valor igual a 0 quando ocorrer uma violação de simultaneidade otimista, pois nenhum registro foi atualizado. Se esse for o caso, uma exceção será gerada. O evento **RowUpdated** permite que você trate essa ocorrência e evite a exceção, definindo um valor apropriado de **RowUpdatedEventArgs.Status**, como **UpdateStatus.SkipCurrentRow**. Para obter mais informações sobre o evento **RowUpdated**, confira [Como tratar eventos DataAdapter](handling-dataadapter-events.md).  
   
- Opcionalmente, você pode definir **DataAdapter. ContinueUpdateOnError** como **true**, antes de chamar **Update**e responder às **informações de erro armazenadas na propriedade rowgroup** de uma linha específica quando a **atualização** for concluída. Para obter mais informações, consulte [informações de erro de linha](./dataset-datatable-dataview/row-error-information.md).  
+ Opcionalmente, você pode definir **DataAdapter.ContinueUpdateOnError** como **true**, antes de chamar **Update** e responder às informações de erro armazenadas na propriedade **RowError** de uma linha específica quando **Update** é concluído. Para obter mais informações, confira [Informações de erro de linha](./dataset-datatable-dataview/row-error-information.md).  
   
 ## <a name="optimistic-concurrency-example"></a>Exemplo de simultaneidade otimista  
 
- Veja a seguir um exemplo simples que define o **UpdateCommand** de um **DataAdapter** para testar a simultaneidade otimista e, em seguida, usa o evento de **teleupdated** para testar violações de simultaneidade otimistas. Quando uma violação de simultaneidade otimista é encontrada, o aplicativo **define o rowgroup** da linha para a qual a atualização foi emitida para refletir uma violação de simultaneidade otimista.  
+ Veja a seguir um exemplo simples que define **UpdateCommand** de um **DataAdapter** para testar a simultaneidade otimista e, depois, usa o evento **RowUpdated** para testar violações da simultaneidade otimista. Quando uma violação da simultaneidade otimista é encontrada, o aplicativo define **RowError** da linha para a qual a atualização foi emitida para refletir uma violação da simultaneidade otimista.  
   
- Observe que os valores de parâmetro passados para a cláusula WHERE do comando UPDATE são mapeados para os valores **originais** de suas respectivas colunas.  
+ Observe que os valores de parâmetro transmitidos para a cláusula WHERE do comando UPDATE são mapeados para os valores **Originais** das respectivas colunas.  
   
 ```vb  
 ' Assumes connection is a valid SqlConnection.  

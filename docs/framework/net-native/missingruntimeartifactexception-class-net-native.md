@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: classe MissingRuntimeArtifactException (.NET Native)'
 title: Classe MissingRuntimeArtifactException (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590
-ms.openlocfilehash: 2618af8e122964d64126f945c337101cb5bbe5ae
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fae0ae708ab8d87347f29571ddb00e53bf7f6931
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250899"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738631"
 ---
 # <a name="missingruntimeartifactexception-class-net-native"></a>Classe MissingRuntimeArtifactException (.NET Nativo)
 
@@ -20,7 +21,7 @@ ms.locfileid: "96250899"
 > [!IMPORTANT]
 > A `MissingRuntimeArtifactException` classe é destinada exclusivamente ao uso interno da cadeia de ferramentas .net Native. Ela não é destinado para uso em código de terceiros e você também não deve tratar a exceção no seu código do aplicativo. Em vez disso, elimine a exceção adicionando entradas ao seu [arquivo de diretivas de runtime](runtime-directives-rd-xml-configuration-file-reference.md). Para obter mais informações, consulte a seção Comentários.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
 
  [!code-csharp[ProjectN#22](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/missingruntimeartifactexception_syntax1.cs#22)]  
   
@@ -81,7 +82,7 @@ ms.locfileid: "96250899"
   
  A classe `MissingRuntimeArtifactException` não contém membros exclusivos. Todos os seus membros são herdados de sua classe base, <xref:System.MemberAccessException>.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Configurações da política da diretiva de runtime](runtime-directive-policy-settings.md)

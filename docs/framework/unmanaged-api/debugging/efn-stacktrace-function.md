@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: _EFN_StackTrace função'
 title: Função _EFN_StackTrace
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: caea7754-867c-4360-a65c-5ced4408fd9d
 topic_type:
 - apiref
-ms.openlocfilehash: 9b7624c2902d17e437cda9a0a84ddf288323b577
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6092d0793967cc422e30342783ab4dfd70b33de9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676173"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738254"
 ---
 # <a name="_efn_stacktrace-function"></a>\_\_Função EFN StackTrace
 
@@ -103,6 +104,6 @@ HRESULT CALLBACK _EFN_StackTrace(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando funções estáticas globais](debugging-global-static-functions.md)

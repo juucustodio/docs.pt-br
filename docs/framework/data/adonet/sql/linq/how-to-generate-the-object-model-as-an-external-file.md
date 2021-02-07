@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como gerar o modelo de objeto como um arquivo externo'
 title: 'Como: gerar o modelo de objeto como um arquivo externo'
 ms.date: 03/30/2017
 ms.assetid: 2496fa06-3df4-4ecb-86c4-70a49ea08565
-ms.openlocfilehash: 2442caec5400759ae2bfeca35f99ebd2ff52d011
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7270e0204b1de5c56d9bc7bf9df89f72d8030e7b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180758"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738891"
 ---
 # <a name="how-to-generate-the-object-model-as-an-external-file"></a>Como: gerar o modelo de objeto como um arquivo externo
 
@@ -51,7 +52,7 @@ sqlmetal /server:myserver /database:northwind /map:externalfile.xml
 </Database>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Criando o modelo de objeto](creating-the-object-model.md)
 - [Mapeamento externo](external-mapping.md)

@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: <Namespace> elemento (.net Native)'
 title: <Namespace> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: 57c614e5-18a9-4e87-bfd5-d0fe3396a192
-ms.openlocfilehash: 05de04685f8ba746f55bf040c74fd3831c5b63ca
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c24f78d8d9fd59258391e9dd5e59988675163b49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287885"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738605"
 ---
 # <a name="namespace-element-net-native"></a>\<Namespace> (.NET Nativo)
 
 Aplica a política de reflexão de runtime a todos os tipos em um namespace especificado.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Namespace Name="namespace_name"
@@ -84,7 +85,7 @@ Aplica a política de reflexão de runtime a todos os tipos em um namespace espe
   
  Quando é um filho do [\<Assembly>](assembly-element-net-native.md) elemento, o `<Namespace>` elemento substitui a política de reflexão de tempo de execução definida pelo  [\<Assembly>](assembly-element-net-native.md) elemento.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Configurações da política da diretiva de runtime](runtime-directive-policy-settings.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: referência de API de reflexão de .NET Native'
 title: Referência da API de reflexão nativa do .NET
 ms.date: 03/30/2017
 ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
-ms.openlocfilehash: 4cded310397ffa4dea057899b6f008146d35a03b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 44786812b5bf8c7bd470a588730b7b03ee91f00c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250873"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738514"
 ---
 # <a name="net-native-reflection-api-reference"></a>Referência da API de reflexão nativa do .NET
 
@@ -47,7 +48,7 @@ ms.locfileid: "96250873"
   
  Para ver documentação sobre outros tipos neste namespace, consulte as páginas de referência <xref:System.Runtime.CompilerServices> no conjunto de documentação do .NET Framework.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Classe MissingInteropDataException](missinginteropdataexception-class-net-native.md)
 - [Classe MissingMetadataException](missingmetadataexception-class-net-native.md)

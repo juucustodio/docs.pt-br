@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: classe MissingInteropDataException (.NET Native)'
 title: Classe MissingInteropDataException (.NET Nativo)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: eab4bcf8-9f5f-4731-87d8-842748a6062a
-ms.openlocfilehash: bbbb484e5cb8060568b321a2a41474d60c9f87f6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ee1544d6a0e1e6a3f0e4386650754ed84b49015b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250912"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738696"
 ---
 # <a name="missinginteropdataexception-class-net-native"></a>Classe MissingInteropDataException (.NET Nativo)
 
@@ -23,7 +24,7 @@ ms.locfileid: "96250912"
 > [!IMPORTANT]
 > A `MissingInteropDataException` classe é destinada exclusivamente ao uso interno da cadeia de ferramentas .net Native. Ela não é destinado para uso em código de terceiros e você também não deve tratar a exceção no seu código do aplicativo. Em vez disso, elimine a exceção adicionando entradas ao seu [arquivo de diretivas de runtime](runtime-directives-rd-xml-configuration-file-reference.md). Para obter mais informações, consulte a seção Comentários.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
 
  [!code-csharp[ProjectN#21](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/missinginteropdataexception_syntax1.cs#21)]
  [!code-vb[ProjectN#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/projectn/vb/missinginteropdataexception_syntax1.vb#21)]  
@@ -80,7 +81,7 @@ ms.locfileid: "96250912"
   
  A classe `MissingInteropDataException` contém um único membro exclusivo, a propriedade `MissingType`, que indica o tipo cujos metadados são necessários para concluir uma chamada de método com êxito. Todos os membros restantes são herdados da classe base, <xref:System.Exception?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Exception?displayProperty=nameWithType>
 - [Classe MissingMetadataException](missingmetadataexception-class-net-native.md)

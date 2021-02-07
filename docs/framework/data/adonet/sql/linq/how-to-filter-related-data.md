@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como filtrar dados relacionados'
 title: 'Como: filtrar dados relacionados'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ec8b8f97-5d01-4f31-9b97-d1556df6a4bc
-ms.openlocfilehash: e12bab55b03fac3383b98b8ee1c56ab1954ff978
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d44e0805b82c0c58f9ee19808e078f9f9b337050
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173452"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738943"
 ---
 # <a name="how-to-filter-related-data"></a>Como: filtrar dados relacionados
 
@@ -23,6 +24,6 @@ Use o método de <xref:System.Data.Linq.DataLoadOptions.AssociateWith%2A> para e
  [!code-csharp[System.Data.Linq.DataLoadOptions#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.dataloadoptions/cs/program.cs#1)]
  [!code-vb[System.Data.Linq.DataLoadOptions#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.dataloadoptions/vb/module1.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Consultando o banco de dados](querying-the-database.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar dinamicamente um banco de dados'
 title: 'Como: criar um banco de dados dinamicamente'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fb7f23c4-4572-4c38-9898-a287807d070c
-ms.openlocfilehash: 95073eed3e0534a74272ee426ac6e329954c85a6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b9addce6befc63f91358d6ecae57e40d6123b200
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173478"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738969"
 ---
 # <a name="how-to-dynamically-create-a-database"></a>Como: criar um banco de dados dinamicamente
 
@@ -52,7 +53,7 @@ No LINQ to SQL, um modelo de objeto é mapeado para um banco de dados relacional
  [!code-csharp[DLinqSubmittingChanges#7](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSubmittingChanges/cs/Program.cs#7)]
  [!code-vb[DLinqSubmittingChanges#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb/Module1.vb#7)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Mapeamento baseado em atributos](attribute-based-mapping.md)
 - [Mapeamento externo](external-mapping.md)

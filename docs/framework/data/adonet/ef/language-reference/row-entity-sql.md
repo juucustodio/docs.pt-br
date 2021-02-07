@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: linha (Entity SQL)'
 title: LINHA (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 06da96e8-55d7-486c-991a-4e514d837ff9
-ms.openlocfilehash: 2ab91d0c6d3c3ed3f88a7f0ddbf3a6c2f36d8b04
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2d0bcf3c5be8ef3b67e170af5159ae7dd8744630
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739268"
 ---
 # <a name="row-entity-sql"></a>LINHA (Entity SQL)
 
@@ -27,7 +28,7 @@ ROW ( expression [ AS alias ] [,...] )
  `alias`  
  Especifica um alias para uma linha no tipo especificado valor. Se um alias não for fornecido, o [!INCLUDE[esql](../../../../../../includes/esql-md.md)] tentará gerar um alias com base nas [!INCLUDE[esql](../../../../../../includes/esql-md.md)] regras de geração de alias.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Um tipo de linha.  
   
@@ -59,7 +60,7 @@ ROW(1 AS a, "abc" AS b, a+34 AS c)
   
  [!code-sql[DP EntityServices Concepts#ROW](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#row)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Construir tipos](constructing-types-entity-sql.md)
 - [Referência de Entity SQL](entity-sql-reference.md)

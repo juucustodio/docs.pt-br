@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: OFTYPE (Entity SQL)'
 title: DOTIPO (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 6d259ca7-bbf0-40f8-a154-181d25c0d67e
-ms.openlocfilehash: b5600b4cee23945fe60142b370feb35ac1a2efa1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d916ea4487fcc7a21f5fb62aa7e6f8a23d73fed2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739333"
 ---
 # <a name="oftype-entity-sql"></a>DOTIPO (Entity SQL)
 
@@ -27,7 +28,7 @@ OFTYPE ( expression, [ONLY] test_type )
  `test_type`  
  O tipo para testar cada objeto retornado por `expression` contra. O tipo deve ser qualificado por um namespace.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Uma coleção de objetos que são do tipo `test_type`, ou um tipo base ou um tipo derivado de `test_type`. Se for especificado SOMENTE, somente as instâncias de `test_type` ou de uma coleção vazia serão retornadas.  
   
@@ -69,6 +70,6 @@ OfType(executives, NamespaceName.Manager)
   
  [!code-sql[DP EntityServices Concepts#OFTYPE](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#oftype)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

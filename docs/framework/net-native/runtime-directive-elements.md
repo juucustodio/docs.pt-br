@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: elementos de diretiva de tempo de execução'
 title: Elementos da diretiva de runtime
 ms.date: 03/30/2017
 ms.assetid: 3fe5848c-ecd7-4136-970b-8e48d250bde6
-ms.openlocfilehash: 96bce89c02ad17d1b30eda66237f69a15123dcd3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 74ff6c7d782f48106e37b99187770d8e82926be4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250795"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738423"
 ---
 # <a name="runtime-directive-elements"></a>Elementos da diretiva de runtime
 
@@ -67,6 +68,6 @@ O formato do arquivo de diretivas (rd.xml) do runtime suporta os seguintes eleme
  [\<TypeParameter>](typeparameter-element-net-native.md)  
  Aplica a política de runtime ao tipo representado por um argumento <xref:System.Type> passado para um método.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração rd.xml](runtime-directives-rd-xml-configuration-file-reference.md)

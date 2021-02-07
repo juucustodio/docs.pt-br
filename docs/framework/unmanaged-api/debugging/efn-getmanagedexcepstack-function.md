@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: _EFN_GetManagedExcepStack função'
 title: Função _EFN_GetManagedExcepStack
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 21ceed9e-62b2-4024-b027-6d095109955a
 topic_type:
 - apiref
-ms.openlocfilehash: b86277836b1be48c9f8020d59071aba8c5b1e457
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a3c7e30a377e10b9d4d0b1dd663a594a0e872f3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676225"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738306"
 ---
 # <a name="_efn_getmanagedexcepstack-function"></a>\_\_Função EFN GetManagedExcepStack
 
@@ -62,6 +63,6 @@ HRESULT _EFN_GetManagedExcepStack(
   
  **Versão do .NET Framework:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando funções estáticas globais](debugging-global-static-functions.md)

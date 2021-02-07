@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: considerações sobre a migração (Entity Framework)'
 title: Considerações sobre migração (Entity Framework)
 ms.date: 03/30/2017
 ms.assetid: c85b6fe8-cc32-4642-8f0a-dc0e5a695936
-ms.openlocfilehash: d5151f0215cde1c5e35cc87c3cd667e16a23a1df
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6824d28fecc743e17046c826b887900218c90f3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175467"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739242"
 ---
 # <a name="migration-considerations-entity-framework"></a>Considerações sobre migração (Entity Framework)
 
@@ -109,7 +110,7 @@ O Entity Framework ADO.NET fornece vários benefícios para um aplicativo existe
 
   Os aplicativos Web ASP.NET devem manter com frequência o estado de uma página da Web ou de uma sessão de usuário. Os objetos em uma <xref:System.Data.Objects.ObjectContext> instância podem ser armazenados no estado de exibição do cliente ou no estado da sessão no servidor e, posteriormente, recuperados e anexados novamente a um novo contexto de objeto. Para obter mais informações, consulte [anexando e desanexando objetos](/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100)).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Considerações sobre implantação](deployment-considerations.md)
 - [Terminologia do Entity Framework](terminology.md)

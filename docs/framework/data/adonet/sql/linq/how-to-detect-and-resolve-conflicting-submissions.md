@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como detectar e resolver envios conflitantes'
 title: 'Como: detectar e resolver submissões com conflito'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 91e27206-01fb-4c7a-8afc-1383a6ac5067
-ms.openlocfilehash: 96e96208d9bb28092701164e6cd5943ef81515a5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7ccfc9aeba8a21c3f5e950569d7650af087416a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147717"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739034"
 ---
 # <a name="how-to-detect-and-resolve-conflicting-submissions"></a>Como: detectar e resolver submissões com conflito
 
@@ -26,7 +27,7 @@ ms.locfileid: "91147717"
  [!code-csharp[DLinqSubmittingChanges#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSubmittingChanges/cs/Program.cs#2)]
  [!code-vb[DLinqSubmittingChanges#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb/Module1.vb#2)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Fazendo e enviando alterações de dados](making-and-submitting-data-changes.md)
 - [Como: gerenciar conflitos de alteração](how-to-manage-change-conflicts.md)

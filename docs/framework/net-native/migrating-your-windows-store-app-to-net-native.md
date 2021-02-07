@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: migrar seu aplicativo da Windows Store para .NET Native'
 title: Migrando seu aplicativo da Windows Store para .NET Nativo
 ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-ms.openlocfilehash: ee17e50590a80d8973197b46910d5e22296c265f
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 39f8427474b37c42d856366bf4e4d677ba77e7f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440888"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738709"
 ---
 # <a name="migrate-your-windows-store-app-to-net-native"></a>Migre seu aplicativo da Windows Store para .NET Native
 
@@ -143,7 +144,7 @@ As seções a seguir listam cenários não suportados e APIs de desenvolvimento 
 
 - Você não pode usar reflexão para obter ou definir um campo de ponteiro.
 
-**Serialização**
+**Série**
 
 O atributo <xref:System.Runtime.Serialization.KnownTypeAttribute.%23ctor%28System.String%29> não é suportado. Use o atributo <xref:System.Runtime.Serialization.KnownTypeAttribute.%23ctor%28System.Type%29> em vez disso.
 
@@ -663,7 +664,7 @@ Use as ferramentas de criação x86 usadas por padrão pelo Visual Studio. Não 
 
 A habilitação de .NET Native em uma biblioteca de teste de unidade para um projeto de aplicativos da Windows Store não tem suporte e faz com que o projeto falhe ao ser compilado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução](getting-started-with-net-native.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

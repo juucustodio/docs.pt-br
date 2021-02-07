@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: <Property> elemento (.net Native)'
 title: <Property> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: ad4ba56d-3bcb-4c10-ba90-1cc66e2175a1
-ms.openlocfilehash: a0bdf95a1d1cadf7423f8c6595add13eda4d0d9a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cd3c033fd2ce21b69ff0d8563f0782838f39b09f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250847"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738462"
 ---
 # <a name="property-element-net-native"></a>\<Property> (.NET Nativo)
 
 Aplica a política de reflexão de runtime a uma propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Property Name="property_name"  
@@ -49,7 +50,7 @@ Aplica a política de reflexão de runtime a uma propriedade.
   
 ### <a name="child-elements"></a>Elementos filho  
 
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -102,7 +103,7 @@ Aplica a política de reflexão de runtime a uma propriedade.
     </Directives>  
     ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Elementos da diretiva de runtime](runtime-directive-elements.md)

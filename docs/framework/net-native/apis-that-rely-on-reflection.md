@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: APIs que dependem de reflexão'
 title: APIs que dependem de reflexão
 ms.date: 03/30/2017
 ms.assetid: f9532629-6594-4a41-909f-d083f30a42f3
-ms.openlocfilehash: 2c361962f4570200d63037a68ef39b0c982bd5f7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a5661719e47a0a9ecb9f0fe9d188b8a67d1068eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738735"
 ---
 # <a name="apis-that-rely-on-reflection"></a>APIs que dependem de reflexão
 
@@ -92,7 +93,7 @@ Unfortunately, no further information is available.
 <Type Name="App1.Class1[]" Browse="Required Public" />  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução](getting-started-with-net-native.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

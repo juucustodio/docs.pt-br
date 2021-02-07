@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: extensibilidade'
 title: Extensibilidade
 ms.date: 03/30/2017
 ms.assetid: cd7ddffc-a261-44aa-bd50-33c1c74f0df0
-ms.openlocfilehash: bb939814fe30bd8e28d42cac4e4945a83b1b3158
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0c41d808e218ac344b51ff3217449cba073a1630
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255430"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752308"
 ---
 # <a name="extensibility"></a>Extensibilidade
 

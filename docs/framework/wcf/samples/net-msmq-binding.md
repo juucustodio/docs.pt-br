@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Associação net MSMQ'
 title: Associação de MSMQ de rede
 ms.date: 03/30/2017
 ms.assetid: fe4bb696-f57c-4cb3-9b7e-9d95fe6b8323
-ms.openlocfilehash: 22b82e9335f3bf5861000a62374ab9e8dccce8cf
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9934fa05cf31ab3e9fb0c081184b11b6dd39428e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96259974"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752113"
 ---
 # <a name="net-msmq-binding"></a>Associação de MSMQ de rede
 

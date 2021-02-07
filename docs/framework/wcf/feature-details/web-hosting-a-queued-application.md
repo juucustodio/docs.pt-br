@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Hospedagem Web de um aplicativo em fila'
 title: Hospedando na Web um aplicativo em fila
 ms.date: 03/30/2017
 ms.assetid: c7a539fa-e442-4c08-a7f1-17b7f5a03e88
-ms.openlocfilehash: c2b41ee1d0a82693760bc3e1b6144d2190153f24
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5fb056a75598523554869f0089689979986dba7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249768"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752555"
 ---
 # <a name="web-hosting-a-queued-application"></a>Hospedando na Web um aplicativo em fila
 
@@ -47,7 +48,7 @@ O Serviço de Ativação de Processos do Windows (WAS) gerencia a ativação e a
 
  Um aplicativo WAS hospedado não pode ser ativado com base em mensagens em uma fila do sistema, como a fila de mensagens mortas de todo o sistema, ou subfilas, como subfilas suspeitas. Esta é uma limitação para esta versão do produto.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Manuseio de mensagem suspeita](poison-message-handling.md)
 - [Pontos de extremidade de serviço e endereçamento de fila](service-endpoints-and-queue-addressing.md)

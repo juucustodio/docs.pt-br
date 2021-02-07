@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3377-SocketReadStop'
 title: 3377 - SocketReadStop
 ms.date: 03/30/2017
 ms.assetid: 980c24e8-47d5-4f1e-86cc-1cb1c0736d19
-ms.openlocfilehash: 813f2690754754ebf7be286f1eda27fa204880cd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 77d08ce33bc7708ff5ad6053a2747971d43218ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752880"
 ---
 # <a name="3377---socketreadstop"></a>3377 - SocketReadStop
 

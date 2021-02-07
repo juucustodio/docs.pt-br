@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: sessão confiável de associação personalizada'
 title: Sessão confiável de associação personalizada
 ms.date: 03/30/2017
 ms.assetid: c5fcd409-246f-4f3e-b3f1-629506ca4c04
-ms.openlocfilehash: bd690f96eea885c4d414f9725125e1918fdffa23
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0799e10c0fb86727bc21553584646031dc6f3606
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585137"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752503"
 ---
 # <a name="custom-binding-reliable-session"></a>Sessão confiável de associação personalizada
 

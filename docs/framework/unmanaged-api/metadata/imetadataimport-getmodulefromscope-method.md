@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetModuleFromScope'
 title: Método IMetaDataImport::GetModuleFromScope
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: add68d3f-45fd-4bef-af94-eb5273f26b11
 topic_type:
 - apiref
-ms.openlocfilehash: 2eddd7a80c2b9c1b71f3e7fc5b1e4686ba11bccd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8c1e952a45b3827717102428fbd18ceac3951baf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733159"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753361"
 ---
 # <a name="imetadataimportgetmodulefromscope-method"></a>Método IMetaDataImport::GetModuleFromScope
 
@@ -49,7 +50,7 @@ HRESULT GetModuleFromScope (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

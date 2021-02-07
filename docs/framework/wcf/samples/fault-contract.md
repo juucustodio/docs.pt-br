@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: contrato de falha'
 title: Contrato de falha
 ms.date: 03/30/2017
 ms.assetid: b31b140e-dc3b-408b-b3c7-10b6fe769725
-ms.openlocfilehash: 898692119e3e71b1c5aeedcd65674a49842ef110
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b7f6a30ff076eb56ebb0894c440fbc7937761410
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245205"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752347"
 ---
 # <a name="fault-contract"></a>Contrato de falha
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: modelo de objeto de programação do WCF Web HTTP'
 title: Modelo de objeto de programação HTTP Web do WCF
 ms.date: 03/30/2017
 ms.assetid: ed96b5fc-ca2c-4b0d-bdba-d06b77c3cb2a
-ms.openlocfilehash: 4cd23ccb1956a73e36d5c7d3e444c347247e338d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cfec94d323e2580cab64b426215cc2c7284743ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266877"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752568"
 ---
 # <a name="wcf-web-http-programming-object-model"></a>Modelo de objeto de programação HTTP Web do WCF
 
@@ -113,7 +114,7 @@ O modelo de programação WEB HTTP do WCF permite que os desenvolvedores exponha
 
 Como o modelo de programação do WCF WEB HTTP não dá suporte aos protocolos WS-*, a única maneira de proteger um serviço Web criado no modelo de programação do WCF WEB HTTP é expor seu serviço usando SSL. Para obter mais informações sobre como configurar o SSL com o IIS 7,0, consulte [como implementar o SSL no IIS](https://support.microsoft.com/help/299875/how-to-implement-ssl-in-iis).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.WebHttpBinding>
 - <xref:System.ServiceModel.Web.WebGetAttribute>

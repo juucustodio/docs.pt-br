@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo10:: iscongeladoobject'
 title: 'ICorProfilerInfo10:: iscongeladoobject'
 ms.date: 08/06/2019
 dev_langs:
@@ -11,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 3755260b885768de6b5b2d6342c0ad590a95caff
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b07e456f7fa9c328217b8779733d45dfe2793fe2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548664"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753270"
 ---
 # <a name="icorprofilerinfo10isfrozenobject-method"></a>Método ICorProfilerInfo10:: iscongeladoobject
 
@@ -49,6 +50,6 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
 
 **Versões do .net:**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo10](icorprofilerinfo10-interface.md)

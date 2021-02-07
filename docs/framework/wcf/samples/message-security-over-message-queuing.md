@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: segurança de mensagem sobre o enfileiramento de mensagens'
 title: Segurança de mensagem através do enfileiramento de mensagem
 ms.date: 03/30/2017
 ms.assetid: 329aea9c-fa80-45c0-b2b9-e37fd7b85b38
-ms.openlocfilehash: 1b262a5f4343e07aecf5eebda32cc995f86ec77b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bfbec02dec11d4f4eb153db942eb12ce4cb595e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248910"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752321"
 ---
 # <a name="message-security-over-message-queuing"></a>Segurança de mensagem através do enfileiramento de mensagem
 

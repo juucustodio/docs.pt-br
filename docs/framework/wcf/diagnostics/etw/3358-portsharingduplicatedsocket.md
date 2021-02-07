@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3358-PortSharingDuplicatedSocket'
 title: 3358 - PortSharingDuplicatedSocket
 ms.date: 03/30/2017
 ms.assetid: c6e5c051-5597-49d1-a5ea-0a26ec04443d
-ms.openlocfilehash: 82c7fc50f171c44d708558f54afd64d1f4b04b8b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 07ca19ef2bf5ff12e2ef26a8623d1e40461bc774
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96282609"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753179"
 ---
 # <a name="3358---portsharingduplicatedsocket"></a>3358 - PortSharingDuplicatedSocket
 

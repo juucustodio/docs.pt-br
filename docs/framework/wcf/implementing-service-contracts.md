@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: implementação de contratos de serviço'
 title: Implementando contratos de serviço
 ms.date: 03/30/2017
 helpviewer_keywords:
 - implementing service contracts [WCF]
 ms.assetid: aefb6f56-47e3-4f24-ab0a-9bc07bf9885f
-ms.openlocfilehash: 121922e3de62653babdac084d6bd226f7263e33c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4510c9e7b9ea3a98a37d528af4064f0e73bea89b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262730"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752490"
 ---
 # <a name="implementing-service-contracts"></a>Implementando contratos de serviço
 
@@ -59,7 +60,7 @@ class MathService
   
  Depois de implementar um contrato de serviço, você deve criar um ou mais pontos de extremidade para o serviço. Para obter mais informações, consulte [visão geral da criação de ponto de extremidade](endpoint-creation-overview.md). Para obter mais informações sobre como executar um serviço, consulte [serviços de hospedagem](hosting-services.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de implantação e projeção](designing-and-implementing-services.md)
 - [Como: criar um serviço com uma classe de contrato](./feature-details/how-to-create-a-wcf-contract-with-a-class.md)

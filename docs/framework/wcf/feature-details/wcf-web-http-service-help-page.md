@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: página de ajuda do serviço HTTP Web WCF'
 title: Página de ajuda de serviço HTTP Web do WCF
 ms.date: 03/30/2017
 ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
-ms.openlocfilehash: fe6b22c6ebd637d3aa2bcd3744cb6b73e71c9482
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 30025eec04402f8112197a95cee0efed093a0ca6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266929"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752632"
 ---
 # <a name="wcf-web-http-service-help-page"></a>Página de ajuda de serviço HTTP Web do WCF
 

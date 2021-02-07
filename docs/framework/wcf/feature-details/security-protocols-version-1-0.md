@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: protocolos de segurança versão 1,0'
 title: Protocolos de segurança versão 1.0
 ms.date: 03/30/2017
 ms.assetid: ee3402d2-1076-410b-a3cb-fae0372bd7af
-ms.openlocfilehash: d98a05bbcb8413c33672a17580c6d16b57c63b83
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c807f0b844fb9cb861148afa63d83826a9740c98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254019"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752724"
 ---
 # <a name="security-protocols-version-10"></a>Protocolos de segurança versão 1.0
 
@@ -39,7 +40,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
   
 - Padrões de troca de mensagens.  
   
-|Modo de autenticação|Autenticação de cliente|Autenticação do servidor|Mode|  
+|Modo de autenticação|Autenticação de cliente|Autenticação do servidor|Modo|  
 |-------------------------|---------------------------|---------------------------|----------|  
 |UserNameOverTransport|Nome de usuário/senha|X509|Transport|  
 |CertificateOverTransport|X509|X509|Transport|  

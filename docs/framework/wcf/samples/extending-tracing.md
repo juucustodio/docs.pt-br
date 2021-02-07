@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: estender o rastreamento'
 title: Estendendo rastreamento
 ms.date: 03/30/2017
 ms.assetid: 2b971a99-16ec-4949-ad2e-b0c8731a873f
-ms.openlocfilehash: 5e3329238998f11467511960f32b177953036ab1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e387f49eb4b31ce8dc0b726853ef69d20c8af063
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265330"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752360"
 ---
 # <a name="extend-tracing"></a>Estender rastreamento
 
@@ -101,6 +102,6 @@ Este exemplo demonstra como estender o recurso de rastreamento de Windows Commun
   
 3. Para executar o exemplo em uma configuração de computador único ou entre computadores, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [AppFabric que monitora Exemplos](/previous-versions/appfabric/ff383407(v=azure.10))

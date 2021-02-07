@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: NetNamedPipeBinding'
 title: NetNamedPipeBinding
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Net Profile Named Pipe
 ms.assetid: e78e845f-c325-46e2-927d-81616f97f7d5
-ms.openlocfilehash: 46365c8dbfee66d719b114947f6b04069e0f8870
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b405ab63fb9aa6b54ed29f45f1024a346c818bd2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96235293"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752139"
 ---
 # <a name="netnamedpipebinding"></a>NetNamedPipeBinding
 

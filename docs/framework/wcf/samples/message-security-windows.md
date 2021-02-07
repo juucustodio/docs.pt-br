@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: janelas de segurança de mensagens'
 title: Segurança de mensagens do Windows
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS Security
 ms.assetid: d2221d1c-c9cb-48d1-b044-a3b4445c7f05
-ms.openlocfilehash: 0c5cbb0962407ea6ee9a32e35f65103d1def880f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6b181e1bb835ea3129e99eb45baa6669bf8c09a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294337"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752269"
 ---
 # <a name="message-security-windows"></a>Segurança de mensagens do Windows
 

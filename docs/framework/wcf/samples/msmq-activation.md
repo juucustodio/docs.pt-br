@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ativação do MSMQ'
 title: Ativação de MSMQ
 ms.date: 03/30/2017
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
-ms.openlocfilehash: 349eadb8f517993c343e81656204ad25e62ed931
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 3360ae560cba9c3b42551617beb295154668814b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555231"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752189"
 ---
 # <a name="msmq-activation"></a>Ativação de MSMQ
 
@@ -269,7 +270,7 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
 
         Esse comando permite que o aplicativo/servicemodelsamples seja acessado usando `http://localhost/servicemodelsamples` e `net.msmq://localhost/servicemodelsamples` .
 
-7. Se você não tiver feito isso anteriormente, verifique se o serviço de ativação MSMQ está habilitado. No menu **Iniciar** , clique em **executar**e digite `Services.msc` . Pesquise a lista de serviços para o **adaptador de escuta net. MSMQ**. Clique com o botão direito do mouse e selecione **Propriedades**. Defina o **tipo de inicialização** como **automático**, clique em **aplicar** e clique no botão **Iniciar** . Essa etapa deve ser feita apenas uma vez antes do primeiro uso do serviço do adaptador de escuta net. MSMQ.
+7. Se você não tiver feito isso anteriormente, verifique se o serviço de ativação MSMQ está habilitado. No menu **Iniciar** , clique em **executar** e digite `Services.msc` . Pesquise a lista de serviços para o **adaptador de escuta net. MSMQ**. Clique com o botão direito do mouse e selecione **Propriedades**. Defina o **tipo de inicialização** como **automático**, clique em **aplicar** e clique no botão **Iniciar** . Essa etapa deve ser feita apenas uma vez antes do primeiro uso do serviço do adaptador de escuta net. MSMQ.
 
 8. Para executar o exemplo em uma configuração de computador único ou entre computadores, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md). Além disso, altere o código no cliente que envia a ordem de compra para refletir o nome do computador no URI da fila ao enviar a ordem de compra. Use o seguinte código:
 
@@ -337,7 +338,7 @@ Por padrão, com o `netMsmqBinding` transporte de associação, a segurança é 
 
     1. Execute Services. msc.
 
-    2. Clique com o botão direito do mouse no **adaptador net. MsmqListener**e escolha **Propriedades**.
+    2. Clique com o botão direito do mouse no **adaptador net. MsmqListener** e escolha **Propriedades**.
 
 4. Altere a conta na guia **logon** .
 
@@ -347,6 +348,6 @@ Por padrão, com o `netMsmqBinding` transporte de associação, a segurança é 
     sc sidtype netmsmqactivator unrestricted
     ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedagem de AppFabric e persistência Exemplos](/previous-versions/appfabric/ff383418(v=azure.10))

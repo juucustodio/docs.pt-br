@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: codificador de mensagem personalizada: codificador de compactação'
 title: 'Codificador de mensagem personalizado: Codificador de compactação'
 ms.date: 03/30/2017
 ms.assetid: 57450b6c-89fe-4b8a-8376-3d794857bfd7
-ms.openlocfilehash: db20ec20579d6fcb0ec202920db0d7781b0676df
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 61c28435000333b1411a3fbcba485e0a252aed63
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600614"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752505"
 ---
 # <a name="custom-message-encoder-compression-encoder"></a>Codificador de mensagem personalizado: Codificador de compactação
 
@@ -29,7 +30,7 @@ Este exemplo consiste em um programa de console do cliente (. exe), um programa 
 > [!NOTE]
 > No .NET Framework 4, a descompactação automática foi habilitada em um cliente WCF se o servidor estiver enviando uma resposta compactada (criada com um algoritmo como GZip ou deflate). Se o serviço for hospedado na Web no IIS (servidor de informações da Internet), o IIS poderá ser configurado para que o serviço envie uma resposta compactada. Este exemplo pode ser usado se o requisito for fazer a compactação e a descompactação no cliente e no serviço ou se o serviço for auto-hospedado.
 
-O exemplo demonstra como criar e integrar um codificador de mensagem personalizado em um aplicativo WCF. A biblioteca GZipEncoder. dll é implantada com o cliente e o serviço. Este exemplo também demonstra o impacto da compactação de mensagens. O código em GZipEncoder. dll demonstra o seguinte:
+O exemplo demonstra como criar e integrar um codificador de mensagem personalizado em um aplicativo WCF. O GZipEncoder.dll de biblioteca é implantado com o cliente e o serviço. Este exemplo também demonstra o impacto da compactação de mensagens. O código no GZipEncoder.dll demonstra o seguinte:
 
 - Criando um codificador personalizado e um alocador de codificador.
 
@@ -183,7 +184,7 @@ Observe que `GZipMessageEncodingBindingElement` a classe implementa a `IPolicyEx
 </wsp:Policy>
 ```
 
-A `GZipMessageEncodingBindingElementImporter` classe implementa a `IPolicyImportExtension` interface, essa classe importa a política para `GZipMessageEncodingBindingElement` . A ferramenta svcutil. exe pode ser usada para importar políticas para o arquivo de configuração, para manipular `GZipMessageEncodingBindingElement` , o seguinte deve ser adicionado a svcutil. exe. config.
+A `GZipMessageEncodingBindingElementImporter` classe implementa a `IPolicyImportExtension` interface, essa classe importa a política para `GZipMessageEncodingBindingElement` . Svcutil.exe ferramenta pode ser usada para importar políticas para o arquivo de configuração, para manipular `GZipMessageEncodingBindingElement` , o seguinte deve ser adicionado ao Svcutil.exe.config.
 
 ```xml
 <configuration>
@@ -289,7 +290,7 @@ public class GZipMessageEncodingElement : BindingElementExtensionElement
 }
 ```
 
-Esse manipulador de configuração é mapeado para a representação a seguir no app. config ou Web. config para o serviço ou cliente.
+Esse manipulador de configuração é mapeado para a representação a seguir no App.config ou Web.config para o serviço ou cliente.
 
 ```xml
 <gzipMessageEncoding innerMessageEncoding="textMessageEncoding" />

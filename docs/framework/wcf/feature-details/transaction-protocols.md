@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: protocolos de transação'
 title: Protocolos de transação
 ms.date: 03/30/2017
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
-ms.openlocfilehash: 08ce12109d89e9087ced06be409435ac8c5b9d08
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a790e5d79128fb606d89cb6a3b6a925b3084d481
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261534"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752685"
 ---
 # <a name="transaction-protocols"></a>Protocolos de transação
 

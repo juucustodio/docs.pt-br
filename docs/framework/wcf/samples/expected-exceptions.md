@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exceções esperadas'
 title: Exceções esperadas
 ms.date: 03/30/2017
 ms.assetid: 299a6987-ae6b-43c6-987f-12b034b583ae
-ms.openlocfilehash: 367397f738a2a0219a7bdaf3073b37890506929d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9ccb857da76143a37ed520f2fac8c515b332a565
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262028"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752399"
 ---
 # <a name="expected-exceptions"></a>Exceções esperadas
 

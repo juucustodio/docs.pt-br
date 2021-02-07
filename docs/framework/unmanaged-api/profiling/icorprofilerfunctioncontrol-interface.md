@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerFunctionControl'
 title: Interface ICorProfilerFunctionControl
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4e3d3141-4662-4166-8f05-bc857c1b4216
 topic_type:
 - apiref
-ms.openlocfilehash: 733a8f0bc7e8c19823827297a50f9c6906614ca7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7b4ac58d2b8754108b4e10493596776987a93a49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698371"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753309"
 ---
 # <a name="icorprofilerfunctioncontrol-interface"></a>Interface ICorProfilerFunctionControl
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem a um criador de perfis de código se comunicar com
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método SetCodegenFlags](icorprofilerfunctioncontrol-setcodegenflags-method.md)|Define um ou mais sinalizadores da enumeração de [COR_PRF_CODEGEN_FLAGS](cor-prf-codegen-flags-enumeration.md) para controlar a geração de código para uma função recompilada JIT (just-in-time).|  
 |[Método SetILFunctionBody](icorprofilerfunctioncontrol-setilfunctionbody-method.md)|Substitui o corpo CIL (Common Intermediate Language) do método.|  
@@ -47,7 +48,7 @@ Fornece métodos que permitem a um criador de perfis de código se comunicar com
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo4](icorprofilerinfo4-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

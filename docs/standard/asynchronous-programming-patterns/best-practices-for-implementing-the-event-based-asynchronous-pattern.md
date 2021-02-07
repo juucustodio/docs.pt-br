@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: práticas recomendadas para implementar o padrão assíncrono baseado em evento'
 title: Práticas recomendadas para a implementação do padrão assíncrono baseado em evento
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - AsyncOperation class
 - AsyncCompletedEventArgs class
 ms.assetid: 4acd2094-4f46-4eff-9190-92d0d9ff47db
-ms.openlocfilehash: 6c2df4c2877f9191bd2b8190869c359a74de8e8f
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 8c34133664b9fae25ca2d9ef5e906a75c4603d58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99751931"
 ---
 # <a name="best-practices-for-implementing-the-event-based-asynchronous-pattern"></a>Práticas recomendadas para a implementação do padrão assíncrono baseado em evento
 
@@ -74,7 +75,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 ### <a name="simultaneously-executing-operations"></a>Operações em execução simultânea  
   
-- Se sua classe der suporte a várias invocações simultâneas, habilite o desenvolvedor a controlar cada invocação separadamente definindo <em>a sobrecarga</em>**Async** de objeto de estado com valor de objetos, ou ID da tarefa, chamada `userSuppliedState` . Esse parâmetro sempre deve ser o último parâmetro na assinatura do método. <em>MethodName</em>**Async** .  
+- Se sua classe der suporte a várias invocações simultâneas, habilite o desenvolvedor a controlar cada invocação separadamente definindo <em>a sobrecarga</em> de objeto de estado com valor de objetos, ou ID da tarefa, chamada `userSuppliedState` . Esse parâmetro sempre deve ser o último parâmetro na assinatura do método. <em>MethodName</em>**Async** .  
   
 - Se sua classe define a sobrecarga de <em>MethodName</em>**Async** que usa um parâmetro de estado com valor de objeto, ou ID de tarefa, acompanhe o tempo de vida da operação com essa ID de tarefa e informe o manipulador de conclusão. Há algumas classes auxiliares disponíveis para ajudar. Para saber mais sobre o gerenciamento de simultaneidade, veja [Como implementar um componente compatível com o Padrão Assíncrono baseado em Evento](component-that-supports-the-event-based-asynchronous-pattern.md).  
   
@@ -147,7 +148,7 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 - Ao usar multithreading de qualquer tipo, você pode enfrentar bugs muito sérios e complexos. Veja as [Práticas recomendadas de threading gerenciado](../threading/managed-threading-best-practices.md) antes de implementar qualquer solução que use multithreading.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ComponentModel.AsyncOperation>
 - <xref:System.ComponentModel.AsyncOperationManager>

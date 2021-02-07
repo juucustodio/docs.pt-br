@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: formatador de feed (JSON)'
 title: Formatador do feed (JSON)
 ms.date: 03/30/2017
 ms.assetid: f9c0b295-55e7-48ea-b308-ba51c7d31143
-ms.openlocfilehash: f0b79adcc37037c3ba497946e8a6fb1a74f2e1e0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 124b0fbf81af2a3f548431f98f6a5d695d737074
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255527"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752334"
 ---
 # <a name="feed-formatter-json"></a>Formatador do feed (JSON)
 

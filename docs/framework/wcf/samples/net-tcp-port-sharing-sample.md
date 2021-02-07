@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exemplo de compartilhamento de porta Net. TCP'
 title: Exemplo de compartilhamento de porta Net.TCP
 ms.date: 03/30/2017
 ms.assetid: 03da5959-0574-4e91-8a53-05854b6c55dc
-ms.openlocfilehash: fa62734ed6a4a016011c9f29b3665dae05a000c6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 30b5e8896cfdd5b4174067fa37a047029bdb4502
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96235370"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752152"
 ---
 # <a name="nettcp-port-sharing-sample"></a>Exemplo de compartilhamento de porta Net.TCP
 

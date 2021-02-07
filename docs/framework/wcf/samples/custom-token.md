@@ -1,17 +1,18 @@
 ---
+description: 'Saiba mais sobre: token personalizado'
 title: Token personalizado
 ms.date: 03/30/2017
 ms.assetid: e7fd8b38-c370-454f-ba3e-19759019f03d
-ms.openlocfilehash: 1a8c312248b0c15bb2e366a3d9925014556b6dd8
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 500cc187db0280e508ef079ca370483c716ea2c5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752425"
 ---
 # <a name="custom-token"></a>Token personalizado
 
-Este exemplo demonstra como adicionar uma implementação de token personalizada a um aplicativo Windows Communication Foundation (WCF). O exemplo usa um `CreditCardToken` para transmitir informações com segurança sobre cartões de crédito do cliente para o serviço. O token é passado no cabeçalho da mensagem WS-Security e é assinado e criptografado usando o elemento de ligação de segurança simétrica junto com o corpo da mensagem e outros cabeçalhos de mensagem. Isso é útil em casos em que os tokens internos não são suficientes. Este exemplo demonstra como fornecer um token de segurança personalizado para um serviço em vez de usar um dos tokens internos. O serviço implementa um contrato que define um padrão de comunicação de solicitação-resposta.
+Este exemplo demonstra como adicionar uma implementação de token personalizada a um aplicativo Windows Communication Foundation (WCF). O exemplo usa um `CreditCardToken` para transmitir informações com segurança sobre cartões de crédito do cliente para o serviço. O token é passado no cabeçalho da mensagem de WS-Security e é assinado e criptografado usando o elemento de ligação de segurança simétrica junto com o corpo da mensagem e outros cabeçalhos de mensagem. Isso é útil em casos em que os tokens internos não são suficientes. Este exemplo demonstra como fornecer um token de segurança personalizado para um serviço em vez de usar um dos tokens internos. O serviço implementa um contrato que define um padrão de comunicação de solicitação-resposta.
 
 > [!NOTE]
 > O procedimento de instalação e as instruções de Build para este exemplo estão localizados no final deste tópico.
@@ -28,7 +29,7 @@ Este exemplo demonstra como adicionar uma implementação de token personalizada
 
 ## <a name="client-authentication-using-a-custom-security-token"></a>Autenticação de cliente usando um token de segurança personalizado
 
- O serviço expõe um único ponto de extremidade que é criado programaticamente usando `BindingHelper` `EchoServiceHost` classes e. O ponto de extremidade consiste em um endereço, uma associação e um contrato. A associação é configurada com uma associação personalizada usando `SymmetricSecurityBindingElement` e `HttpTransportBindingElement` . Este exemplo define o `SymmetricSecurityBindingElement` para usar o certificado X. 509 de um serviço para proteger a chave simétrica durante a transmissão e passar um personalizado `CreditCardToken` em um cabeçalho de mensagem do WS-Security como um token de segurança assinado e criptografado. O comportamento especifica as credenciais de serviço que devem ser usadas para autenticação de cliente e também informações sobre o certificado X. 509 do serviço.
+ O serviço expõe um único ponto de extremidade que é criado programaticamente usando `BindingHelper` `EchoServiceHost` classes e. O ponto de extremidade consiste em um endereço, uma associação e um contrato. A associação é configurada com uma associação personalizada usando `SymmetricSecurityBindingElement` e `HttpTransportBindingElement` . Este exemplo define o `SymmetricSecurityBindingElement` para usar o certificado X. 509 de um serviço para proteger a chave simétrica durante a transmissão e passar um personalizado `CreditCardToken` em um cabeçalho de mensagem de WS-Security como um token de segurança assinado e criptografado. O comportamento especifica as credenciais de serviço que devem ser usadas para autenticação de cliente e também informações sobre o certificado X. 509 do serviço.
 
 ```csharp
 public static class BindingHelper
@@ -619,7 +620,7 @@ string GetCallerCreditCardNumber()
   
 3. Você deve ter um certificado de servidor com o nome da entidade que contém o nome de domínio totalmente qualificado do computador. Você pode criar um usando a Setup.bat se alterar a `%SERVER_NAME%` variável para o nome totalmente qualificado do computador em que o serviço está hospedado. Observe que o arquivo de Setup.bat deve ser executado em um Prompt de Comando do Desenvolvedor para o Visual Studio aberto com privilégios de administrador.  
   
-4. Copie o certificado do servidor no repositório CurrentUser-TrustedPeople no cliente. Você deve fazer isso somente se o certificado do servidor não for emitido por um emissor confiável.  
+4. Copie o certificado do servidor no repositório de CurrentUser-TrustedPeople no cliente. Você deve fazer isso somente se o certificado do servidor não for emitido por um emissor confiável.  
   
 5. No arquivo EchoServiceHost.cs, altere o valor do nome da entidade do certificado para especificar um nome de computador totalmente qualificado em vez de localhost.  
   

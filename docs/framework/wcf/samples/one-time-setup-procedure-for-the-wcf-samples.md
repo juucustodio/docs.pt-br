@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: One-Time procedimento de instalação para os exemplos de Windows Communication Foundation'
 title: Procedimento de configuração único para exemplos do Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: a5848ffd-3eb5-432d-812e-bd948ccb6bca
-ms.openlocfilehash: bf25ea4734bad007fa3ac19df0664932d981519c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8d57da5e018a61c6d11c9a9dc319ee74ec19d2ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548111"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752087"
 ---
 # <a name="one-time-setup-procedure-for-the-windows-communication-foundation-samples"></a>Procedimento de configuração único para exemplos do Windows Communication Foundation
 

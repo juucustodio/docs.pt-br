@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: formatação HTTP Web WCF'
 title: Formatação HTTP Web WCF
 ms.date: 03/30/2017
 ms.assetid: e2414896-5463-41cd-b0a6-026a713eac2c
-ms.openlocfilehash: e9346cd1bb3798ad0beac5e9e28a8536007d897b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 715c28635f097cb9f1a773aa3afb7a12faa9478c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266903"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752594"
 ---
 # <a name="wcf-web-http-formatting"></a>Formatação HTTP Web WCF
 
@@ -166,7 +167,7 @@ public class Service : IService
 }  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.UriTemplate>
 - <xref:System.UriTemplateMatch>

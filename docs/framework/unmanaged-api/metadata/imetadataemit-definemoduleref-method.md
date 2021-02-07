@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método efineModuleRef de:D'
 title: Método IMetaDataEmit::DefineModuleRef
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f2833594-d90b-4a71-9a53-34b12470c64a
 topic_type:
 - apiref
-ms.openlocfilehash: 96d24705d80dabcda691edec497a4a30b6d37dc4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b5af5e458f749d2315612bbe9419f037331f8c46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753387"
 ---
 # <a name="imetadataemitdefinemoduleref-method"></a>Método IMetaDataEmit::DefineModuleRef
 
@@ -53,7 +54,7 @@ HRESULT DefineModuleRef (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

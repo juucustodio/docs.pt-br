@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ponto de extremidade de metadados seguro personalizado'
 title: Ponto de extremidade de metadados seguros personalizados
 ms.date: 03/30/2017
 ms.assetid: 9e369e99-ea4a-49ff-aed2-9fdf61091a48
-ms.openlocfilehash: d699c8dedfec3068bf0fc1504b47d78fde1988dc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 11b8439fda74924ff17a101d3aa0b0db948ff8dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96240895"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752451"
 ---
 # <a name="custom-secure-metadata-endpoint"></a>Ponto de extremidade de metadados seguros personalizados
 
@@ -179,7 +180,7 @@ ChannelFactory<ICalculator> cf = new ChannelFactory<ICalculator>(endpoint.Bindin
 - Execute Cleanup.bat na pasta Samples depois de concluir a execução do exemplo.  
   
     > [!NOTE]
-    > Esse script não remove certificados de serviço em um cliente ao executar esse exemplo em computadores. Se você tiver executado Windows Communication Foundation (WCF) exemplos que usam certificados entre computadores, certifique-se de limpar os certificados de serviço que foram instalados no repositório CurrentUser-TrustedPeople. Para fazer isso, use o seguinte comando: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` . Por exemplo: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
+    > Esse script não remove certificados de serviço em um cliente ao executar esse exemplo em computadores. Se você tiver executado Windows Communication Foundation (WCF) exemplos que usam certificados entre computadores, certifique-se de limpar os certificados de serviço que foram instalados no repositório CurrentUser-TrustedPeople. Para fazer isso, use o seguinte comando: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` . Por exemplo, `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.  
   
 > [!IMPORTANT]
 > Os exemplos podem já estar instalados no seu computador. Verifique o seguinte diretório (padrão) antes de continuar.  

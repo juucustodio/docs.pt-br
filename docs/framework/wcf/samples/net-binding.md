@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Associação de rede'
 title: Associação de rede
 ms.date: 03/30/2017
 ms.assetid: 4d10072a-ae0a-486a-b713-49703e26d9bf
-ms.openlocfilehash: 5679c9d836d16d4a8bdb6f5be001bb5944964bea
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ae4c194f6c36fc094793065ce1e693cd472c9d92
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96260078"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752126"
 ---
 # <a name="net-binding"></a>Associação de rede
 

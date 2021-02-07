@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerInfo10'
 title: Interface ICorProfilerInfo10
 ms.date: 08/06/2019
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: a99fa8410bbd0dedeaeb9e1713107a3dcc9ada6b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fd24491cb1ca55ad48137522c63e78e6387d33e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727218"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753283"
 ---
 # <a name="icorprofilerinfo10-interface"></a>Interface ICorProfilerInfo10
 
@@ -16,7 +17,7 @@ Uma subclasse de [ICorProfilerInfo9](icorprofilerinfo9-interface.md) que fornece
 
 ## <a name="methods"></a>Métodos  
 
-| Método|DESCRIÇÃO|  
+| Método|Descrição|  
 | ------------|-----------------|  
 |[Método EnumerateObjectReferences](icorprofilerinfo10-enumerateobjectreferences-method.md)|Dado um ObjectID, retorno de chamada e clientData, enumera cada referência de objeto (se houver). |
 |[Método IsFrozenObject](icorprofilerinfo10-isfrozenobject-method.md)|Dado um ObjectID, determina se o objeto está em um segmento somente leitura. |
@@ -31,6 +32,6 @@ Uma subclasse de [ICorProfilerInfo9](icorprofilerinfo9-interface.md) que fornece
 **Cabeçalho:** CorProf. idl, CorProf. h  
 **Versões do .net:**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)

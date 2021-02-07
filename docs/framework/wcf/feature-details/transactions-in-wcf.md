@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: transações no WCF'
 title: Transações do WCF
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF, using transactions
 - Windows Communication Foundation, using transactions
 ms.assetid: 1e8d04dd-b7cf-41e7-8560-54b4381beb0f
-ms.openlocfilehash: 29dc73c642642acb778a1f56e79185cbcec9ad3e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4b17acd43eba31a90ff3c635ae5c8372d36a81a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261482"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752659"
 ---
 # <a name="transactions-in-wcf"></a>Transações do WCF
 
@@ -36,6 +37,6 @@ O recurso de transações de Windows Communication Foundation (WCF) permite que 
 
  [Programação de WCF básica](../basic-wcf-programming.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de sessões confiáveis](reliable-sessions-overview.md)

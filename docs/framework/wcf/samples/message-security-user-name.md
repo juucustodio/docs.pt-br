@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: nome de usuário de segurança de mensagem'
 title: Message Security User Name
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS Security
 ms.assetid: c63cfc87-6b20-4949-93b3-bcd4b732b0a2
-ms.openlocfilehash: 8e1cf38a6906ca1c15c0dc00fc8866955a326f3d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f02b1aecffddfc047cc96acc071ab5eefca91807
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294359"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752282"
 ---
 # <a name="message-security-user-name"></a>Message Security User Name
 

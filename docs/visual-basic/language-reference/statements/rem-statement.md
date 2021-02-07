@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre a instrução: REM (Visual Basic)'
 title: Instrução REM
 ms.date: 07/20/2015
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - Visual Basic code, comments
 - "' comment marker character [Visual Basic]"
 ms.assetid: 34126d7f-e0f9-476d-91e6-b31b398615dc
-ms.openlocfilehash: 6161a9f7e589988882b5f76477bc069afd2b9b41
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: c82621db98dc66060ae098ee6537ee58b24046a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871954"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741309"
 ---
 # <a name="rem-statement-visual-basic"></a>Instrução REM (Visual Basic)
 
 Usado para incluir comentários explicativos no código-fonte de um programa.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 REM comment  
@@ -51,7 +52,7 @@ REM comment
   
  [!code-vb[VbVbalrStatements#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#6)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Comentários no código](../../programming-guide/program-structure/comments-in-code.md)
 - [Como: Quebrar e combinar instruções no código](../../programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

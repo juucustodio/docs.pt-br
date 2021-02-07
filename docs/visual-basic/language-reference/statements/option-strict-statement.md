@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução Option Strict'
 title: Instrução Option Strict
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - late binding [Visual Basic]
 - implicit conversions [Visual Basic]
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
-ms.openlocfilehash: ab1094961e2bc3aed0e975e40369a5f5c1ba93eb
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: a128aca1bdaa6ce8bd4c4cd8e63e05348f00e4d4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873136"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741426"
 ---
 # <a name="option-strict-statement"></a>Instrução Option Strict
 
 Restringe conversões de tipo de dados implícitos apenas a conversões de alargamento, não permite a associação tardia e não permite a digitação implícita que resulta em um `Object` tipo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Option Strict { On | Off }  
@@ -66,7 +67,7 @@ Option Strict { On | Off }
   
  Visual Basic pode converter muitos tipos de dados em outros tipos de dados. A perda de dados pode ocorrer quando o valor de um tipo de dados é convertido em um tipo de dados que tem menos precisão ou uma capacidade menor. Um erro em tempo de execução ocorrerá se uma conversão de restrição desse tipo falhar. `Option Strict` garante a notificação em tempo de compilação dessas conversões redutoras para que você possa evitá-las. Para obter mais informações, consulte [conversões implícitas e explícitas](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md) e conversões de [alargamento e estreitamento](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
   
- Conversões que podem causar erros incluem conversões implícitas que ocorrem em expressões. Para obter mais informações, consulte estes tópicos:  
+ Conversões que podem causar erros incluem conversões implícitas que ocorrem em expressões. Para mais informações, consulte os seguintes tópicos:  
   
 - [Operador +](../operators/addition-operator.md)  
   
@@ -100,7 +101,7 @@ Option Strict { On | Off }
 
  A tabela a seguir descreve os resultados de várias combinações de especificando o tipo de dados e o inicializador em uma [instrução Dim](dim-statement.md).  
   
-|Tipo de dados especificado?|Inicializador especificado?|Exemplo|Resultado|  
+|Tipo de dados especificado?|Inicializador especificado?|Exemplo|Result|  
 |---|---|---|---|  
 |Não|Não|`Dim qty`|Se o `Option Strict` estiver desativado (padrão), a variável é definida como `Nothing`.<br /><br /> Se `Option Strict` estiver ativado, ocorre um erro de tempo de compilação.|  
 |Não|Sim|`Dim qty = 5`|Se `Option Infer` estiver ativado (padrão), a variável usa o tipo de dados do inicializador. Consulte [inferência de tipo local](../../programming-guide/language-features/variables/local-type-inference.md).<br /><br /> Se `Option Infer` estiver desativado e `Option Strict` estiver desativado, a variável usa o tipo de dados do `Object`.<br /><br /> Se `Option Infer` estiver desativado e `Option Strict` estiver ativado, ocorre um erro de tempo de compilação.|  
@@ -165,7 +166,7 @@ Option Strict { On | Off }
   
  [!code-vb[VbVbalrStatements#164](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#164)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Conversões de Widening e Narrowing](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
 - [Conversões implícitas e explícitas](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: atividade personalizada do SendMail'
 title: Atividade personalizado de SendMail
 ms.date: 03/30/2017
 ms.assetid: 947a9ae6-379c-43a3-9cd5-87f573a5739f
-ms.openlocfilehash: f518beebe336080853e4dec3bca6f8539bbec304
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 853e28d26c41338670d377593d5a3536b011d112
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267576"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741751"
 ---
 # <a name="sendmail-custom-activity"></a>Atividade personalizado de SendMail
 
@@ -17,11 +18,11 @@ Este exemplo demonstra como criar uma atividade personalizada que derive de <xre
   
 |Nome|Tipo|Descrição|  
 |-|-|-|  
-|Host|Cadeia de caracteres|Endereço do host de servidor SMTP.|  
-|Porta|Cadeia de caracteres|Porta de serviço SMTP no host.|  
+|Host|String|Endereço do host de servidor SMTP.|  
+|Porta|String|Porta de serviço SMTP no host.|  
 |EnableSsl|bool|Especifica se <xref:System.Net.Mail.SmtpClient> usar secure sockets (SSL) para criptografar a conexão.|  
-|UserName|Cadeia de caracteres|Nome de usuário para configurar as credenciais para autenticar a propriedade de <xref:System.Net.Mail.SmtpClient.Credentials%2A> de retorno.|  
-|Senha|Cadeia de caracteres|Senha para configurar as credenciais para autenticar a propriedade de <xref:System.Net.Mail.SmtpClient.Credentials%2A> de retorno.|  
+|UserName|String|Nome de usuário para configurar as credenciais para autenticar a propriedade de <xref:System.Net.Mail.SmtpClient.Credentials%2A> de retorno.|  
+|Senha|String|Senha para configurar as credenciais para autenticar a propriedade de <xref:System.Net.Mail.SmtpClient.Credentials%2A> de retorno.|  
 |Assunto|<xref:System.Activities.InArgument%601>\<string>|Assunto de mensagem.|  
 |Corpo|<xref:System.Activities.InArgument%601>\<string>|Corpo da mensagem.|  
 |Anexos|<xref:System.Activities.InArgument%601>\<string>|Coleção de anexos usada para armazenar dados anexados a esta mensagem de email.|  
@@ -30,9 +31,9 @@ Este exemplo demonstra como criar uma atividade personalizada que derive de <xre
 |CC|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Coleção de endereços que contém destinatários de cópia carbono (CC) para esta mensagem de email.|  
 |BCC|<xref:System.Activities.InArgument%601>\<<xref:System.Net.Mail.MailAddressCollection>>|Coleção de endereços que contém os destinatários da cópia oculta (Cco) desta mensagem de email.|  
 |Tokens|<xref:System.Activities.InArgument%601> IDictionary<\<string, string>>|Tokens a substituição no corpo. Esse recurso permite que os usuários especifiquem alguns valores no corpo do que pode ser substituído pelos tokens fornecidos posteriormente usando essa propriedade.|  
-|BodyTemplateFilePath|Cadeia de caracteres|Caminho de um modelo para o corpo. A atividade de `SendMail` copia o conteúdo do arquivo a sua propriedade body.<br /><br /> O modelo pode conter os tokens que são substituídos pelos conteúdos da propriedade tokens.|  
+|BodyTemplateFilePath|String|Caminho de um modelo para o corpo. A atividade de `SendMail` copia o conteúdo do arquivo a sua propriedade body.<br /><br /> O modelo pode conter os tokens que são substituídos pelos conteúdos da propriedade tokens.|  
 |TestMailTo|<xref:System.Net.Mail.MailAddress>|Quando essa propriedade é definida, todos os emails são enviados para o endereço especificado nele.<br /><br /> Esta propriedade destina-se a ser usada ao testar fluxos de trabalho. Por exemplo, quando você deseja certificar-se de que todos os emails são enviados sem enviá-los aos destinatários reais.|  
-|TestDropPath|Cadeia de caracteres|Quando essa propriedade é definida, todos os emails também são salvos no arquivo especificado.<br /><br /> Essa propriedade deve ser usada quando você estiver testando ou Depurando fluxos de trabalho, para garantir que o formato e o conteúdo dos emails de saída sejam apropriados.|  
+|TestDropPath|String|Quando essa propriedade é definida, todos os emails também são salvos no arquivo especificado.<br /><br /> Essa propriedade deve ser usada quando você estiver testando ou Depurando fluxos de trabalho, para garantir que o formato e o conteúdo dos emails de saída sejam apropriados.|  
   
 ## <a name="solution-contents"></a>Conteúdo de solução  
 

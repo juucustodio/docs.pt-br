@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como criar um modelo de atividade personalizada'
 title: 'Como: criar um modelo personalizado de atividades'
 ms.date: 03/30/2017
 ms.assetid: 6760a5cc-6eb8-465f-b4fa-f89b39539429
-ms.openlocfilehash: 90a54806833ff66797fb7beaa6ac8a912665bddc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 06fda953110e36e46a91fda8697aadbcd6e6bf59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280111"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742102"
 ---
 # <a name="how-to-create-a-custom-activity-template"></a>Como: criar um modelo personalizado de atividades
 
@@ -125,7 +126,7 @@ namespace DelayActivityTemplate
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Activities.Presentation.IActivityTemplateFactory>
 - [Personalizando a experiência design de fluxo de trabalho](customizing-the-workflow-design-experience.md)

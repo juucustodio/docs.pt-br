@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: expressões C#'
 title: Expressões C#
 ms.date: 03/30/2017
 ms.assetid: 29110be7-f4e3-407e-8dbe-78102eb21115
-ms.openlocfilehash: b0e5d7f2fbb1f7b84c6d8f0110bd111165f0ea52
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ce918bb96164643f1adbc73f749d2b5f88f4eb3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239608"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742791"
 ---
 # <a name="c-expressions"></a>Expressões C#
 

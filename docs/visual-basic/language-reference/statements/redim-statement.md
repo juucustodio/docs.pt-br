@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução ReDim (Visual Basic)'
 title: Instrução ReDim
 ms.date: 07/20/2015
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - declaration statements [Visual Basic]
 - scalar variables [Visual Basic]
 ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
-ms.openlocfilehash: 17bc806f2e92c61f1dd7425de40b1a68f926a583
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 8f7525064c8b32748cf5ebb2df7d4a5dfc76f794
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90872032"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741322"
 ---
 # <a name="redim-statement-visual-basic"></a>Instrução ReDim (Visual Basic)
 
 Realoca espaço de armazenamento para uma variável de matriz.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]  
@@ -48,8 +49,8 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
 |Termo|Definição|  
 |----------|----------------|  
 |`Preserve`|Opcional. Modificador usado para preservar os dados na matriz existente quando você altera o tamanho da última dimensão.|  
-|`name`|Necessário. Nome da variável de matriz. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
-|`boundlist`|Necessário. Lista de limites de cada dimensão da matriz redefinida.|  
+|`name`|Obrigatório. Nome da variável de matriz. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
+|`boundlist`|Obrigatório. Lista de limites de cada dimensão da matriz redefinida.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -69,7 +70,7 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
 - **Tipos de dados.** A `ReDim` instrução não pode alterar o tipo de dados de uma variável de matriz ou seus elementos.  
   
-- **Initialization.** A `ReDim` instrução não pode fornecer novos valores de inicialização para os elementos da matriz.  
+- **Inicialização.** A `ReDim` instrução não pode fornecer novos valores de inicialização para os elementos da matriz.  
   
 - **Fique.** A `ReDim` instrução não pode alterar a classificação (o número de dimensões) da matriz.  
   
@@ -103,7 +104,7 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
  Para obter exemplos adicionais, consulte [matrizes](../../programming-guide/language-features/arrays/index.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IndexOutOfRangeException>
 - [Instrução Const](const-statement.md)

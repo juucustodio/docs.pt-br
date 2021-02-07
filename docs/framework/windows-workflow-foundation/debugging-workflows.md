@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: depuração de fluxos de trabalho'
 title: Depurar fluxos de trabalho
 ms.date: 03/30/2017
 ms.assetid: b23b4814-ebb1-4c51-b7a9-469f4da7a96d
-ms.openlocfilehash: 31c688f5f45b41f337176108486ec2074e1915a7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 9de65e580d47395a9528f4672014ceb491b09230
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543830"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742557"
 ---
 # <a name="debugging-workflows"></a>Depurar fluxos de trabalho
 

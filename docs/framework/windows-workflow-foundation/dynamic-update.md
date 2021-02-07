@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: atualização dinâmica'
 title: Atualização dinâmica
 ms.date: 03/30/2017
 ms.assetid: 8b6ef19b-9691-4b4b-824c-3c651a9db96e
-ms.openlocfilehash: cb4b63a67aa6e9033b227198e2ecc2b1b80db927
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 925212d94dc90a2e29397370746c7191a403c984
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98190150"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742414"
 ---
 # <a name="dynamic-update"></a>Atualização dinâmica
 

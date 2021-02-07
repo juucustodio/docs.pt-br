@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como adicionar um ponto de extremidade do ASP.NET AJAX sem usar a configuração'
 title: 'Como: adicionar um ponto de extremidade de ASP.NET AJAX sem utilizar a configuração'
 ms.date: 03/30/2017
 ms.assetid: b05c1742-8d0a-4673-9d71-725b18a3008e
-ms.openlocfilehash: e33f1fed7dd7bf45966815949ac544250f4d1de8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 52f572b8da1358911760808688574b6a1ac1bccd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742764"
 ---
 # <a name="how-to-add-an-aspnet-ajax-endpoint-without-using-configuration"></a>Como: adicionar um ponto de extremidade de ASP.NET AJAX sem utilizar a configuração
 
@@ -97,7 +98,7 @@ Windows Communication Foundation (WCF) permite que você crie um serviço que ex
   
  A <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> classe é uma classe derivada de <xref:System.ServiceModel.Activation.ServiceHostFactory> . Para obter uma explicação detalhada do mecanismo de fábrica do host de serviço, consulte o tópico [ampliando a hospedagem usando o ServiceHostFactory](../extending/extending-hosting-using-servicehostfactory.md) .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Criando serviços do WCF para o AJAX ASP.NET](creating-wcf-services-for-aspnet-ajax.md)
 - [Como: migrar serviços Web habilitados para AJAX ASP.NET para o WCF](how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução Return (Visual Basic)'
 title: Instrução Return
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - Return statement [Visual Basic]
 - expressions [Visual Basic], returning control to
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
-ms.openlocfilehash: 3ca705409bc8233bc2562c64b8e7704f08dd7641
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 62086090ede7e634b09d3edc3dc42feb28d15793
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871803"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741192"
 ---
 # <a name="return-statement-visual-basic"></a>Instrução Return (Visual Basic)
 
 Retorna o controle para o código que chamou `Function` um `Sub` procedimento,, `Get` , `Set` ou `Operator` .  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Return  
@@ -50,7 +51,7 @@ Return expression
   
  [!code-vb[VbVbalrStatements#53](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#53)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Function](function-statement.md)
 - [Instrução Sub](sub-statement.md)

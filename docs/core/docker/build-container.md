@@ -4,12 +4,12 @@ description: Neste tutorial, você aprenderá a colocar em contêiner um aplicat
 ms.date: 04/27/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 32ac736daa4d6cdebb6d4bdeccf3f8ba954a5721
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: c92f5823f56f74941afdd28638d30e759b2c51c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99505407"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740750"
 ---
 # <a name="tutorial-containerize-a-net-core-app"></a>Tutorial: Colocar um aplicativo .NET Core em contêineres
 
@@ -144,16 +144,16 @@ Antes de adicionar o aplicativo .NET Core à imagem do Docker, primeiro ele deve
 dotnet publish -c Release
 ```
 
-Esse comando compila seu aplicativo para a pasta *publish*. O caminho para a pasta *publish* da pasta de trabalho deve ser `.\App\bin\Release\netcoreapp5.0\publish\`
+Esse comando compila seu aplicativo para a pasta *publish*. O caminho para a pasta *publish* da pasta de trabalho deve ser `.\App\bin\Release\net5.0\publish\`
 
 #### <a name="windows"></a>[Windows](#tab/windows)
 
 Na pasta do *aplicativo* , obtenha uma listagem de diretório da pasta de publicação para verificar se o arquivo de *NetCore.Docker.dll* foi criado.
 
 ```powershell
-dir .\bin\Release\netcoreapp5.0\publish\
+dir .\bin\Release\net5.0\publish\
 
-    Directory: C:\Users\dapine\App\bin\Release\netcoreapp5.0\publish
+    Directory: C:\Users\dapine\App\bin\Release\net5.0\publish
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -169,7 +169,7 @@ Mode                LastWriteTime         Length Name
 Use o `ls` comando para obter uma listagem de diretório e verificar se o arquivo de *NetCore.Docker.dll* foi criado.
 
 ```bash
-me@DESKTOP:/docker-working/app$ ls bin/Release/netcoreapp5.0/publish
+me@DESKTOP:/docker-working/app$ ls bin/Release/net5.0/publish
 NetCore.Docker.deps.json  NetCore.Docker.dll  NetCore.Docker.pdb  NetCore.Docker.runtimeconfig.json
 ```
 
@@ -200,7 +200,7 @@ docker-working
         ├──Program.cs
         ├──bin
         │   └──Release
-        │       └──netcoreapp5.0
+        │       └──net5.0
         │           └──publish
         │               ├──NetCore.Docker.deps.json
         │               ├──NetCore.Docker.exe
@@ -229,7 +229,7 @@ mcr.microsoft.com/dotnet/aspnet         5.0                 e6780479db63        
 Observe que as duas imagens compartilham o mesmo valor de **ID DA IMAGEM**. O valor é o mesmo entre as duas imagens porque o único comando no *Dockerfile* era basear a nova imagem em uma imagem existente. Vamos adicionar três comandos ao *Dockerfile*. Cada comando cria uma nova camada de imagem com o comando final que representa os pontos de entrada do repositório de **imagem de contador** para.
 
 ```dockerfile
-COPY bin/Release/netcoreapp5.0/publish/ App/
+COPY bin/Release/net5.0/publish/ App/
 WORKDIR /App
 ENTRYPOINT ["dotnet", "NetCore.Docker.dll"]
 ```
@@ -247,7 +247,7 @@ docker build -t counter-image -f Dockerfile .
 Sending build context to Docker daemon  1.117MB
 Step 1/4 : FROM mcr.microsoft.com/dotnet/aspnet:5.0
  ---> e6780479db63
-Step 2/4 : COPY bin/Release/netcoreapp5.0/publish/ App/
+Step 2/4 : COPY bin/Release/net5.0/publish/ App/
  ---> d1732740eed2
 Step 3/4 : WORKDIR /App
  ---> Running in b1701a42f3ff
@@ -444,7 +444,7 @@ O Docker tem muitos comandos diferentes que criam, gerenciam e interagem com con
 - [docker rmi](https://docs.docker.com/engine/reference/commandline/rmi/)
 - [imagem do Docker](https://docs.docker.com/engine/reference/commandline/image/)
 
-## <a name="clean-up-resources"></a>Limpar os recursos
+## <a name="clean-up-resources"></a>Limpar recursos
 
 Durante este tutorial, você criou contêineres e imagens. Se quiser, exclua esses recursos. Use os seguintes comandos para:
 

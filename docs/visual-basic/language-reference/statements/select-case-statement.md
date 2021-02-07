@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: selecionar... Instrução Case (Visual Basic)'
 title: Instrução Select...Case
 ms.date: 07/20/2015
 f1_keywords:
@@ -21,18 +22,18 @@ helpviewer_keywords:
 - End keyword [Visual Basic], Select Case statements
 - Case statement [Visual Basic], Select...Case
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
-ms.openlocfilehash: 750e765390ad223976b000fe64e656fa2d62a34b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 4f8edecd0a0b1afd59e182a372e308c3829a9b93
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871780"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741127"
 ---
 # <a name="selectcase-statement-visual-basic"></a>Instrução Select...Case (Visual Basic)
 
 Executa um dos vários grupos de instruções, dependendo do valor de uma expressão.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Select [ Case ] testexpression  
@@ -47,8 +48,8 @@ End Select
   
 |Termo|Definição|  
 |---|---|  
-|`testexpression`|Necessário. Expressão. Deve ser avaliada como um dos tipos de dados elementares (,,,,,, `Boolean` `Byte` `Char` `Date` `Double` `Decimal` `Integer` , `Long` , `Object` , `SByte` ,, `Short` `Single` , `String` , `UInteger` , `ULong` e `UShort` ).|  
-|`expressionlist`|Necessário em uma `Case` instrução. Lista de cláusulas de expressão que representam valores de correspondência para `testexpression` . Várias cláusulas de expressão são separadas por vírgulas. Cada cláusula pode ter um dos seguintes formatos:<br /><br /> -   *expression1* `To` *expression2*<br />-[ `Is` ] *comparisonoperator* *expressão* ComparisonOperator<br />-   *expressão*<br /><br /> Use a `To` palavra-chave para especificar os limites de um intervalo de valores de correspondência para `testexpression` . O valor de `expression1` deve ser menor ou igual ao valor de `expression2` .<br /><br /> Use a `Is` palavra-chave com um operador de comparação (,,,, `=` `<>` `<` `<=` `>` ou `>=` ) para especificar uma restrição nos valores de correspondência para `testexpression` . Se a `Is` palavra-chave não for fornecida, ela será inserida automaticamente antes de *ComparisonOperator*.<br /><br /> O formulário que especifica apenas `expression` é tratado como um caso especial do `Is` formulário em que *ComparisonOperator* é o sinal de igual ( `=` ). Este formulário é avaliado como `testexpression`  =  `expression` .<br /><br /> As expressões em `expressionlist` podem ser de qualquer tipo de dados, desde que sejam conversíveis implicitamente para o tipo `testexpression` e o apropriado `comparisonoperator` seja válido para os dois tipos com os quais ele está sendo usado.|  
+|`testexpression`|Obrigatório. Expressão. Deve ser avaliada como um dos tipos de dados elementares (,,,,,, `Boolean` `Byte` `Char` `Date` `Double` `Decimal` `Integer` , `Long` , `Object` , `SByte` ,, `Short` `Single` , `String` , `UInteger` , `ULong` e `UShort` ).|  
+|`expressionlist`|Necessário em uma `Case` instrução. Lista de cláusulas de expressão que representam valores de correspondência para `testexpression` . Várias cláusulas de expressão são separadas por vírgulas. Cada cláusula pode ter um dos seguintes formatos:<br /><br /> -   *expression1* `To` *expression2*<br />-[ `Is` ]  *expressão* ComparisonOperator<br />-   *expressão*<br /><br /> Use a `To` palavra-chave para especificar os limites de um intervalo de valores de correspondência para `testexpression` . O valor de `expression1` deve ser menor ou igual ao valor de `expression2` .<br /><br /> Use a `Is` palavra-chave com um operador de comparação (,,,, `=` `<>` `<` `<=` `>` ou `>=` ) para especificar uma restrição nos valores de correspondência para `testexpression` . Se a `Is` palavra-chave não for fornecida, ela será inserida automaticamente antes de *ComparisonOperator*.<br /><br /> O formulário que especifica apenas `expression` é tratado como um caso especial do `Is` formulário em que *ComparisonOperator* é o sinal de igual ( `=` ). Este formulário é avaliado como `testexpression`  =  `expression` .<br /><br /> As expressões em `expressionlist` podem ser de qualquer tipo de dados, desde que sejam conversíveis implicitamente para o tipo `testexpression` e o apropriado `comparisonoperator` seja válido para os dois tipos com os quais ele está sendo usado.|  
 |`statements`|Opcional. Uma ou mais instruções que se seguem são `Case` executadas se o `testexpression` corresponde a qualquer cláusula no `expressionlist` .|  
 |`elsestatements`|Opcional. Uma ou mais instruções `Case Else` que se seguem são executadas se não `testexpression` correspondem a nenhuma cláusula no `expressionlist` de qualquer uma das `Case` instruções.|  
 |`End Select`|Encerra a definição da `Select` construção... `Case` .|  
@@ -85,7 +86,7 @@ End Select
   
  [!code-vb[VbVbalrStatements#54](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#54)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
 - [Instrução End](end-statement.md)

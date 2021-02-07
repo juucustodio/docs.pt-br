@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exceções'
 title: Exceções
 ms.date: 03/30/2017
 ms.assetid: 065205cc-52dd-4f30-9578-b17d8d113136
-ms.openlocfilehash: 53cc8e3e27e131c5c2a9f8271851a0d8d7e0cbd7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 71cf6a4ac23f7979d0c9137d88f36a45f71783a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280202"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742446"
 ---
 # <a name="exceptions"></a>Exceções
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre a instrução: RaiseEvent'
 title: Instrução RaiseEvent
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - RaiseEvent statement [Visual Basic]
 - event handlers, connecting events to
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
-ms.openlocfilehash: 13d86aad8b68391f7effe2f6637adc68d8a3b59a
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 9549eb64ef32147ed49ae8f805d01db8610b336e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90872019"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741335"
 ---
 # <a name="raiseevent-statement"></a>Instrução RaiseEvent
 
 Dispara um evento declarado no nível de módulo dentro de uma classe, formulário ou documento.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 RaiseEvent eventname[( argumentlist )]  
@@ -30,7 +31,7 @@ RaiseEvent eventname[( argumentlist )]
 ## <a name="parts"></a>Partes  
 
  `eventname`  
- Necessário. Nome do evento a ser disparado.  
+ Obrigatório. Nome do evento a ser disparado.  
   
  `argumentlist`  
  Opcional. Lista delimitada por vírgula de variáveis, matrizes ou expressões. O `argumentlist` argumento deve ser colocado entre parênteses. Se não houver argumentos, os parênteses deverão ser omitidos.  
@@ -80,7 +81,7 @@ RaiseEvent eventname[( argumentlist )]
 > [!NOTE]
 > O `My.Application.DoEvents` método não processa eventos exatamente da mesma forma que o formulário. Para permitir que o formulário manipule os eventos diretamente, você pode usar multithreading. Para obter mais informações, consulte [Threading gerenciado](../../../standard/threading/index.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Eventos](../../programming-guide/language-features/events/index.md)
 - [Instrução Event](event-statement.md)

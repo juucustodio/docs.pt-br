@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: gerenciamento de instância suspenso'
 title: Gerenciamento suspenso da instância
 ms.date: 03/30/2017
 ms.assetid: f5ca3faa-ba1f-4857-b92c-d927e4b29598
-ms.openlocfilehash: 620cd2299a3b08ee9330e13830c714c5d0ebb068
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d68dd8b61b6e0e7a618cf05f1df07e58ab75e27f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293644"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741712"
 ---
 # <a name="suspended-instance-management"></a>Gerenciamento suspenso da instância
 

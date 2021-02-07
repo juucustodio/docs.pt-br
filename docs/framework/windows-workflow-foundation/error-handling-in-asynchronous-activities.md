@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tratamento de erros em atividades assíncronas'
 title: Tratamento de erro em atividades assíncronos
 ms.date: 03/30/2017
 ms.assetid: e8f8ce2b-50c9-4e44-b187-030e0cf30a5d
-ms.openlocfilehash: 2c214ce1d0f435cda79deb6976ca9196a5d7aee1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: df223998737259aca01a4dc18ed9f2a911d80366
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280254"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742401"
 ---
 # <a name="error-handling-in-asynchronous-activities"></a>Tratamento de erro em atividades assíncronos
 

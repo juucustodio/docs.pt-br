@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: restrições declarativas'
 title: Restrições declarativas
 ms.date: 03/30/2017
 ms.assetid: 67001ed1-7f4d-4ada-ae57-a31176901a53
-ms.openlocfilehash: 9098a3d79337689fef6d37e4cccf3633d8128a10
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7eeee5577e9c98db52af579749a59bc76a59b411
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236449"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742505"
 ---
 # <a name="declarative-constraints"></a>Restrições declarativas
 

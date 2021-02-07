@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução Option Infer'
 title: Instrução Option Infer
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - declaring variables [Visual Basic], inferred
 - inferred variable declaration
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
-ms.openlocfilehash: 977e492c1c8ec5040c22169d91268c9c2241f6c4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d0c3de7bdafb7e9b361da7a8538046e3d76b5ce7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404350"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741582"
 ---
 # <a name="option-infer-statement"></a>Instrução Option Infer
 
 Permite o uso de inferência de tipo local ao declarar variáveis.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 Option Infer { On | Off }
@@ -101,7 +102,7 @@ O exemplo a seguir demonstra o tipo de tempo de execução pode ser diferente qu
 
 [!code-vb[VbVbalrTypeInference#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#11)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Dim](dim-statement.md)
 - [Inferência de Tipo de Variável Local](../../programming-guide/language-features/variables/local-type-inference.md)

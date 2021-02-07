@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como acessar serviços WCF com One-Way e contratos de Request-Reply'
 title: Como acessar os serviços do WCF com contratos de resposta/solicitação e unidirecionais
 ms.date: 03/30/2017
 ms.assetid: 7e10d3a5-fcf4-4a4b-a8d6-92ee2c988b3b
-ms.openlocfilehash: 2d415b8f901e0a0e35690c015656620fe5ce13d0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b8dc63b8f3e12b4322bae97f202a8c59a29637f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257698"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742752"
 ---
 # <a name="how-to-access-wcf-services-with-one-way-and-request-reply-contracts"></a>Como acessar os serviços do WCF com contratos de resposta/solicitação e unidirecionais
 
@@ -402,6 +403,6 @@ namespace Microsoft.ServiceModel.Samples
 }  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços unidirecionais](one-way-services.md)

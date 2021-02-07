@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: período de renovação do bloqueio do host'
 title: Período de renovação de bloqueio de host
 ms.date: 03/30/2017
 ms.assetid: f8ba94fc-27e0-4d8e-8f85-50a6d2a3cd43
-ms.openlocfilehash: 82073377353be6d4f8a7d0a343c31f2b49a2873f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 88348c4cebd7ac42657c4ba68238a3b58a8f0d1a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268178"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742206"
 ---
 # <a name="host-lock-renewal-period"></a>Período de renovação de bloqueio de host
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 4207-MaximumRetriesExceededForSqlCommand'
 title: 4207 - MaximumRetriesExceededForSqlCommand
 ms.date: 03/30/2017
 ms.assetid: 8c8bee26-9ad4-4e01-bd16-0e1fd510fb6b
-ms.openlocfilehash: f724379ef2ea23dcca7aa75caab3f10f7635e419
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e831da08e37010afaa33f3a52cd7cf7a9b4d713b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251198"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742713"
 ---
 # <a name="4207---maximumretriesexceededforsqlcommand"></a>4207 - MaximumRetriesExceededForSqlCommand
 
@@ -17,7 +18,7 @@ ms.locfileid: "96251198"
 |-|-|  
 |ID|4207|  
 |Palavras-chave|Cota, WFInstanceStore|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

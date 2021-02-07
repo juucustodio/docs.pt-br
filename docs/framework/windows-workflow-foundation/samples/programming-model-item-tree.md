@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: árvore de itens de modelo de programação'
 title: Árvore modelo de programação de item
 ms.date: 03/30/2017
 ms.assetid: 0229efde-19ac-4bdc-a187-c6227a7bd1a5
-ms.openlocfilehash: 059bb3edcfe41f52e2244ff6f5bf3fc78a4262bb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8dfcab99bb5e32d202fe2bdc09d63d8b7da6e748
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96235799"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741842"
 ---
 # <a name="programming-model-item-tree"></a>Árvore modelo de programação de item
 

@@ -1,5 +1,6 @@
 ---
-title: Método XmlReader.CreateSqlReader (System.Xml)
+description: 'Saiba mais sobre: método XmlReader. CreateSqlReader'
+title: Método XmlReader. CreateSqlReader (System.Xml)
 ms.date: 10/17/2019
 topic_type:
 - apiref
@@ -9,12 +10,12 @@ api_location:
 - system.xml.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 7bd2ef5158516acede47f73f9937d06159bc16c9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 61d594c0438c86863ce4052387439f5483d8a34c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155733"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740426"
 ---
 # <a name="xmlreadercreatesqlreader-method"></a>Método XmlReader.CreateSqlReader
 
@@ -25,16 +26,16 @@ internal static XmlReader CreateSqlReader(Stream input,
   XmlReaderSettings settings, XmlParserContext inputContext)
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 - `input` <xref:System.IO.Stream>  
   O fluxo que contém os dados XML.
 
 - `settings` <xref:System.Xml.XmlReaderSettings>  
-  As configurações para a nova instância <xref:System.Xml.XmlReader>. Esse valor pode ser `null`.
+  As configurações para a nova instância <xref:System.Xml.XmlReader>. Este valor pode ser `null`.
 
 - `inputContext` <xref:System.Xml.XmlParserContext>  
-  As informações de contexto necessárias para analisar o fragmento XML. Esse valor pode ser `null`.
+  As informações de contexto necessárias para analisar o fragmento XML. Este valor pode ser `null`.
 
 ## <a name="returns"></a>Retornos
 
@@ -44,14 +45,14 @@ Um objeto usado para ler os dados XML no fluxo.
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> O `XmlReader.CreateSqlReader` método é interno e não deve ser usado diretamente em seu código.
+> O `XmlReader.CreateSqlReader` método é interno e não deve ser usado diretamente no seu código.
 >
-> A Microsoft não suporta o uso deste método em um aplicativo de produção nenhuma circunstância.
+> A Microsoft não oferece suporte ao uso desse método em um aplicativo de produção em qualquer circunstância.
 
 ## <a name="requirements"></a>Requisitos
 
-**Espaço de nome:**<xref:System.Xml>
+**Namespace:** <xref:System.Xml>
 
-**Montagem:** System.xml.dll
+**Assembly:** System.Xml.dll
 
-**Versões do Framework .NET:** Disponível desde 2.0.
+**.NET Framework versões:** Disponível desde 2,0.

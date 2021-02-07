@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: modelo de dados do Windows Workflow Foundation'
 title: Modelo de dados do Windows Workflow Foundation
 ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], data model
 ms.assetid: d5752e51-cfc9-4499-af71-53b6daae9879
-ms.openlocfilehash: 6702dd59c34864e732b5b0d149b974ba370495dc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8f916464a3b272f348dd9bc3895a42ec14f9db55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239569"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742583"
 ---
 # <a name="windows-workflow-foundation-data-model"></a>Modelo de dados do Windows Workflow Foundation
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: registros de controle personalizados'
 title: Registros de rastreamento personalizadas
 ms.date: 03/30/2017
 ms.assetid: 24284565-c68b-40bf-b7f1-e148d151a6fc
-ms.openlocfilehash: e0bbb9d57290b072d834f0b8bc0815dfe265e72a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 9d6988465fa3afca4302c86e0c2cad2778f2beae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543895"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742687"
 ---
 # <a name="custom-tracking-records"></a>Registros de rastreamento personalizadas
 
@@ -29,7 +30,7 @@ protected override void Execute(CodeActivityContext context)
 
 <xref:System.Activities.Tracking.CustomTrackingRecord> é emitido em uma atividade de código chamando o método de <xref:System.Activities.NativeActivityContext.Track%2A> em `ActivityContext`.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Monitoramento do Windows Server app Fabric](/previous-versions/appfabric/ee677251(v=azure.10))
 - [Monitorando aplicativos com o app Fabric](/previous-versions/appfabric/ee677276(v=azure.10))

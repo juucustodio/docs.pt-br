@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: rastreamento do SQL'
 title: Rastreamento de SQL
 ms.date: 03/30/2017
 ms.assetid: bcaebeb1-b9e5-49e8-881b-e49af66fd341
-ms.openlocfilehash: 916c04b03dee296b7e6f5c792f0c4e50fb4203c0
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 2b336839b9c63c0b7bde8b6451add00cb353fec6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90559344"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741738"
 ---
 # <a name="sql-tracking"></a>Rastreamento do SQL
 
@@ -62,6 +63,6 @@ Este exemplo demonstra como gravar um participante de rastreamento do SQL person
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking`
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [AppFabric que monitora Exemplos](/previous-versions/appfabric/ff383407(v=azure.10))

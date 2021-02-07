@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: carregar do XAML'
 title: Carregamento XAML
 ms.date: 03/30/2017
 ms.assetid: 1f103ef6-7bed-4f16-ae52-9e665c5a43d7
-ms.openlocfilehash: ebf6ebe1001773768d8da318a0d6b68d50c7848c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fd0eca487c0245c7bfa46ca80c06f2adfa577353
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283556"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742024"
 ---
 # <a name="load-from-xaml"></a>Carregamento XAML
 

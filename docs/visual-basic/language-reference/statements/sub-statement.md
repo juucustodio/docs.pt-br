@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: sub Statement (Visual Basic)'
 title: Instrução Sub
 ms.date: 05/12/2018
 f1_keywords:
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - ByVal keyword [Visual Basic], Sub statements
 - Visual Basic code, Sub procedures
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
-ms.openlocfilehash: e50b79c31c92ac116d6c82bcececba3340894d74
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9be40c8284c677a151e4b1665f0b49e5f852bf00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404168"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740984"
 ---
 # <a name="sub-statement-visual-basic"></a>Instrução Sub (Visual Basic)
 
 Declara o nome, os parâmetros e o código que definem um `Sub` procedimento.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 [ <attributelist> ] [ Partial ] [ accessmodifier ] [ proceduremodifiers ] [ Shared ] [ Shadows ] [ Async ]
@@ -65,13 +66,13 @@ End Sub
 
   Opcional. Pode ser um dos seguintes:
 
-  - [Pública](../modifiers/public.md)
+  - [Público](../modifiers/public.md)
 
   - [Protected](../modifiers/protected.md)
 
-  - [Público](../modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - [Privada](../modifiers/private.md)
+  - [Privado](../modifiers/private.md)
 
   - [Amigo Protegido](../modifiers/protected-friend.md)
 
@@ -111,7 +112,7 @@ End Sub
 
 - `name`
 
-  Obrigatórios. Nome do procedimento. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md). Para criar um procedimento de construtor para uma classe, defina o nome de um `Sub` procedimento para a `New` palavra-chave. Para obter mais informações, consulte [tempo de vida do objeto: como os objetos são criados e destruídos](../../programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md).
+  Obrigatório. Nome do procedimento. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md). Para criar um procedimento de construtor para uma classe, defina o nome de um `Sub` procedimento para a `New` palavra-chave. Para obter mais informações, consulte [tempo de vida do objeto: como os objetos são criados e destruídos](../../programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md).
 
 - `typeparamlist`
 
@@ -138,7 +139,7 @@ End Sub
   |Parte|Descrição|
   |---|---|
   |`interface`|Obrigatórios. Nome de uma interface implementada por este procedimento que contém a classe ou a estrutura.|
-  |`definedname`|Obrigatórios. Nome pelo qual o procedimento é definido `interface` .|
+  |`definedname`|Obrigatório. Nome pelo qual o procedimento é definido `interface` .|
 
 - `Handles`
 
@@ -157,7 +158,7 @@ End Sub
   |Parte|Descrição|
   |---|---|
   |`eventvariable`|Obrigatórios. Variável de objeto declarada com o tipo de dados da classe ou estrutura que gera o evento.|
-  |`event`|Obrigatórios. Nome do evento que este procedimento manipula.|
+  |`event`|Obrigatório. Nome do evento que este procedimento manipula.|
 
 - `statements`
 
@@ -175,7 +176,7 @@ Todo o código executável deve estar dentro de um procedimento. Use um `Sub` pr
 
 Você pode definir um `Sub` procedimento somente no nível do módulo. O contexto de declaração para um procedimento Sub deve, portanto, ser uma classe, uma estrutura, um módulo ou uma interface e não pode ser um arquivo de origem, um namespace, um procedimento ou um bloco. Para obter mais informações, consulte [Contextos de declaração e níveis de acesso padrão](declaration-contexts-and-default-access-levels.md).
 
-`Sub`os procedimentos assumem como padrão o acesso público. Você pode ajustar seus níveis de acesso usando os modificadores de acesso.
+`Sub` os procedimentos assumem como padrão o acesso público. Você pode ajustar seus níveis de acesso usando os modificadores de acesso.
 
 Se o procedimento usar a `Implements` palavra-chave, a classe ou estrutura que a contém deve ter uma `Implements` instrução que imediatamente segue sua `Class` `Structure` instrução or. A `Implements` instrução deve incluir cada interface especificada em `implementslist` . No entanto, o nome pelo qual uma interface define o `Sub` (in `definedname` ) não precisa corresponder ao nome desse procedimento (em `name` ).
 
@@ -234,7 +235,7 @@ O `startButton_Click` procedimento é um exemplo de um `Async Sub` procedimento.
 
 [!code-vb[csAsyncMethod#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb/mainwindow.xaml.vb#1)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Implements](implements-statement.md)
 - [Instrução Function](function-statement.md)

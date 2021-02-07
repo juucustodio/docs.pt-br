@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução de opção <keyword>'
 title: Instrução Option <keyword>
 ms.date: 07/20/2015
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Option keyword [Visual Basic]
 ms.assetid: 6b2f41c4-2403-43b6-8a14-94a3775e5b47
-ms.openlocfilehash: cdd693270747125cf55d7484981e05df5afaf29f
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ed8371955286a70b5e4bb3c1122179d05aba2263
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874930"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741530"
 ---
 # <a name="option-keyword-statement"></a>Instrução Option \<keyword>
 
@@ -31,6 +32,6 @@ Apresenta uma instrução que especifica uma opção de compilador que se aplica
   
  [Instrução Option Strict](option-strict-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Palavras-chave](../keywords/index.md)

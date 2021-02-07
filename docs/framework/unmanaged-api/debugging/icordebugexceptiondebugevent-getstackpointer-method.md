@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugExceptionDebugEvent:: GetStackPointer'
 title: 'Método ICorDebugExceptionDebugEvent:: GetStackPointer'
 ms.date: 03/30/2017
 ms.assetid: d8f66a1c-16be-4264-afc5-bc2dfbb4a682
-ms.openlocfilehash: 46906e7d3ce7f257eb776e50dc6097946eb77d1f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5a62a5eb54fff1e94beebc222e3f18cc4655040f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697396"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693441"
 ---
 # <a name="icordebugexceptiondebugeventgetstackpointer-method"></a>Método ICorDebugExceptionDebugEvent:: GetStackPointer
 
@@ -52,7 +53,7 @@ HRESULT GetStackPointer(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugExceptionDebugEvent](icordebugexceptiondebugevent-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

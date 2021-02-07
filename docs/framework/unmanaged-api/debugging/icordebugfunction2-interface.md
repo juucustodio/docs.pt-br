@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugFunction2'
 title: Interface ICorDebugFunction2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2b936bef-9b75-48bf-859f-42e419c65f1c
 topic_type:
 - apiref
-ms.openlocfilehash: d9e84a70d72db1338c80140ce3350774bfae4bca
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e5297d46acb9b174537363fc185fa2d540d55a75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726269"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692189"
 ---
 # <a name="icordebugfunction2-interface"></a>Interface ICorDebugFunction2
 
@@ -27,7 +28,7 @@ Estende logicamente a interface ICorDebugFunction para fornecer suporte para dep
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método EnumerateNativeCode](icordebugfunction2-enumeratenativecode-method.md)|(Ainda não implementado.) Obtém um ponteiro de interface para um ICorDebugCodeEnum que contém as instruções de código nativo na função referenciada por este objeto ICorDebugFunction2.|  
 |[Método GetJMCStatus](icordebugfunction2-getjmcstatus-method.md)|Obtém um valor que indica se esta função está marcada como código de usuário.|  
@@ -49,6 +50,6 @@ Estende logicamente a interface ICorDebugFunction para fornecer suporte para dep
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

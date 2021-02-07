@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugEval'
 title: Interface ICorDebugEval
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3a5c9815-832d-47e1-b7f7-bbba135d7cf1
 topic_type:
 - apiref
-ms.openlocfilehash: 5d8fd79b242f2b88b82c5c3d78dfe45d80f1194f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6eda0f63b377399cad391346dc6bedfa860e4b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729779"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694091"
 ---
 # <a name="icordebugeval-interface"></a>Interface ICorDebugEval
 
@@ -27,7 +28,7 @@ Fornece métodos para permitir que o depurador execute um código no contexto do
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Abort](icordebugeval-abort-method.md)|Anula a computação que esse `ICorDebugEval` objeto está executando no momento.|  
 |[Método CallFunction](icordebugeval-callfunction-method.md)|Define uma chamada para a função especificada. (Obsoleto na versão de .NET Framework 2,0; use [ICorDebugEval2:: CallParameterizedFunction](icordebugeval2-callparameterizedfunction-method.md) em vez disso.)|  
@@ -63,6 +64,6 @@ Fornece métodos para permitir que o depurador execute um código no contexto do
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

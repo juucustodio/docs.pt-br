@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugEval2'
 title: Interface ICorDebugEval2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fce34531-2687-406d-9131-d6ad94f2ce0e
 topic_type:
 - apiref
-ms.openlocfilehash: 090b587ef509795609250914ce8883ad96d28c18
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2c279335bdd30b8dc2698f348d9537443b236a45
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693753"
 ---
 # <a name="icordebugeval2-interface"></a>Interface ICorDebugEval2
 
@@ -27,7 +28,7 @@ Estende "ICorDebugEval" para fornecer suporte para tipos genéricos.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CallParameterizedFunction](icordebugeval2-callparameterizedfunction-method.md)|Define uma chamada para o "ICorDebugFunction" especificado, que pode ser aninhado dentro de um tipo cujo construtor usa parâmetros de tipo ou pode usar parâmetros de tipo.|  
 |[Método CreateValueForType](icordebugeval2-createvaluefortype-method.md)|Obtém um ponteiro para um novo "ICorDebugValue" do tipo especificado, com um valor inicial de NULL ou zero.|  
@@ -52,6 +53,6 @@ Estende "ICorDebugEval" para fornecer suporte para tipos genéricos.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

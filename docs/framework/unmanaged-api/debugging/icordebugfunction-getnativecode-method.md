@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugFunction:: GetNativeCode'
 title: Método ICorDebugFunction::GetNativeCode
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c8a34916-0eef-4987-8d29-c8bcb4be9cf6
 topic_type:
 - apiref
-ms.openlocfilehash: e34dff2ebdb6e1ea56c2682b351c3e17a44416f3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8938e11a5fdc3aa693faf04eec639941475d95ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726308"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692440"
 ---
 # <a name="icordebugfunctiongetnativecode-method"></a>Método ICorDebugFunction::GetNativeCode
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval2:: RudeAbort'
 title: Método ICorDebugEval2::RudeAbort
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 02468edf-d32b-4cb3-aaa8-3dd2abfc8b25
 topic_type:
 - apiref
-ms.openlocfilehash: 478772925dfb7ca7389b5267433f9b06ace3d5a3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2835fd635da007b5ee3f0e642b77f3954945f168
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729610"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693506"
 ---
 # <a name="icordebugeval2rudeabort-method"></a>Método ICorDebugEval2::RudeAbort
 

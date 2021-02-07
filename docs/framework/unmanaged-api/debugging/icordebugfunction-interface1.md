@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugFunction'
 title: Interface ICorDebugFunction
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 783faea9-8083-41c1-b04a-51a81ac4c8f3
 topic_type:
 - apiref
-ms.openlocfilehash: 668b27932ea7a2bdc244e1ac0bb8e6891cbd4d17
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 835625341889e89e15ceb66ca71531cf7b8311c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726284"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692362"
 ---
 # <a name="icordebugfunction-interface"></a>Interface ICorDebugFunction
 
@@ -27,7 +28,7 @@ Representa uma função ou um método gerenciado.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CreateBreakpoint](icordebugfunction-createbreakpoint-method.md)|Cria um ponto de interrupção no início desta função.|  
 |[Método GetClass](icordebugfunction-getclass-method.md)|Obtém um objeto ICorDebugClass que representa a classe da qual essa função é membro.|  
@@ -61,6 +62,6 @@ Representa uma função ou um método gerenciado.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugFrame:: GetFunctionToken'
 title: Método ICorDebugFrame::GetFunctionToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a46925b3-3bf8-404f-9f30-a86ae41032c1
 topic_type:
 - apiref
-ms.openlocfilehash: 3430c5062bd5633e1178226974b7358783192e51
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c64bb8d59c8de03c3d8c667384ffe4118c996d8e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675978"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692934"
 ---
 # <a name="icordebugframegetfunctiontoken-method"></a>Método ICorDebugFrame::GetFunctionToken
 

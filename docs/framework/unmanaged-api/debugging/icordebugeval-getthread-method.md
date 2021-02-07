@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugEval:: GetThread'
 title: Método ICorDebugEval::GetThread
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 57163b0d-c8a7-44af-9078-e7a895d29f9a
 topic_type:
 - apiref
-ms.openlocfilehash: 0680c47e4390e876c5df99ee7eb200e7d187f0ac
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3e7120f618abce31b9940a886fd6b2b2f8639d2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722187"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694132"
 ---
 # <a name="icordebugevalgetthread-method"></a>Método ICorDebugEval::GetThread
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugILFrame:: GetIP'
 title: Método ICorDebugILFrame::GetIP
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 18217ba1-1776-4297-a3b9-f77e64b0fead
 topic_type:
 - apiref
-ms.openlocfilehash: 314d2a06c8e246a42b315690dc9fe4b507db285a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f3977d4fbe57b24e7b98b7a597b0db7ad171eb1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703162"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691868"
 ---
 # <a name="icordebugilframegetip-method"></a>Método ICorDebugILFrame::GetIP
 

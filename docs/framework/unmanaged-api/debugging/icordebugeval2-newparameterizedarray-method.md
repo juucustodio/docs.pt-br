@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval2:: NewParameterizedArray'
 title: Método ICorDebugEval2::NewParameterizedArray
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 45efb8ba-c4de-4109-945f-e734d376b43c
 topic_type:
 - apiref
-ms.openlocfilehash: 14274932461fa7a5278c9a09b421f50be098cb91
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0ce8582328013ad02357361f05efb55ade8780e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693740"
 ---
 # <a name="icordebugeval2newparameterizedarray-method"></a>Método ICorDebugEval2::NewParameterizedArray
 

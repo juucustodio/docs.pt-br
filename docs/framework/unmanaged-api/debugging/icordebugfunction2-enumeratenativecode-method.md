@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugFunction2:: EnumerateNativeCode'
 title: Método ICorDebugFunction2::EnumerateNativeCode
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d383f5cc-1144-4b6d-b57a-db34d9134ab2
 topic_type:
 - apiref
-ms.openlocfilehash: 2cac4a3120e842bde9ad708a251682421fd4ca93
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 617d6dbfdb596df192e2722a47d81517ae57ac1f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696070"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692245"
 ---
 # <a name="icordebugfunction2enumeratenativecode-method"></a>Método ICorDebugFunction2::EnumerateNativeCode
 
@@ -29,7 +30,7 @@ Obtém um ponteiro de interface para um objeto ICorDebugCodeEnum que contém as 
 > [!NOTE]
 > `EnumerateNativeCode` Não está implementado na versão atual do .NET Framework.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT EnumerateNativeCode (  

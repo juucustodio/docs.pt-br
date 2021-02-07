@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval2:: NewParameterizedObject'
 title: Método ICorDebugEval2::NewParameterizedObject
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3d705463-e640-4249-8036-4e8206d03cfe
 topic_type:
 - apiref
-ms.openlocfilehash: 8c91296bd4185fd98962d49f611a3cdcb5f0ad28
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2dc746fdada0e79044a1387bd4cb1c11b81d7777
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729649"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693675"
 ---
 # <a name="icordebugeval2newparameterizedobject-method"></a>Método ICorDebugEval2::NewParameterizedObject
 

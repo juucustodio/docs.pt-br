@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval:: CreateValue'
 title: Método ICorDebugEval::CreateValue
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9a1c0b47-6f10-4fcb-844a-4ab2d7990140
 topic_type:
 - apiref
-ms.openlocfilehash: 41db6ac00d8646651d0e8433d076c37af6020071
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f5ea753b5b95c68136e7b799aad88eee5845ea82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696148"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694156"
 ---
 # <a name="icordebugevalcreatevalue-method"></a>Método ICorDebugEval::CreateValue
 
@@ -67,7 +68,7 @@ HRESULT CreateValue (
   
  **Versões do .NET Framework:** 1,1, 1,0  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método CreateValueForType](icordebugeval2-createvaluefortype-method.md)
 - [Interface ICorDebugEval](icordebugeval-interface.md)

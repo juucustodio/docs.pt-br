@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval:: Novacadeiadecaracteres'
 title: Método ICorDebugEval::NewString
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 29e7a14b-d50e-4852-bfda-011b76c0c9ee
 topic_type:
 - apiref
-ms.openlocfilehash: c2d29a0cc344539bf515793c071fe839aa441ebc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 21eb49900d84cb1ad1f68a701998a4a778c3ef17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729714"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693831"
 ---
 # <a name="icordebugevalnewstring-method"></a>Método ICorDebugEval::NewString
 

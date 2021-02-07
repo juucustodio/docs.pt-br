@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugModule:: GetGlobalVariableValue'
 title: Método ICorDebugModule::GetGlobalVariableValue
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bbc0881c-6a59-41a0-b5ee-2f3d1b71684c
 topic_type:
 - apiref
-ms.openlocfilehash: 94fe7deb10c23ea0bc824bb2244e8d1d87f831e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a4efe2f56387be7351fd5bc16716bcd1f34f7d7a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710019"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691660"
 ---
 # <a name="icordebugmodulegetglobalvariablevalue-method"></a>Método ICorDebugModule::GetGlobalVariableValue
 

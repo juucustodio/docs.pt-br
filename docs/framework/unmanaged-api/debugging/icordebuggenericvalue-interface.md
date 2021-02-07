@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugGenericValue'
 title: Interface ICorDebugGenericValue
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bc14f408-b359-4c8c-ade2-888ccdf7261b
 topic_type:
 - apiref
-ms.openlocfilehash: cfa0950ca2ef4e969258c147b762fa95e52a82e5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7c81855849d7b72bc509d20072b96bb64f5d395a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705807"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692024"
 ---
 # <a name="icordebuggenericvalue-interface"></a>Interface ICorDebugGenericValue
 
@@ -53,6 +54,6 @@ Uma subclasse de "ICorDebugValue" que se aplica a todos os valores. Essa interfa
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

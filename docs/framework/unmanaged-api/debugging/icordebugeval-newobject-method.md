@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval:: NewObject'
 title: Método ICorDebugEval::NewObject
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ce3025e8-defa-4c5e-8298-f49d71fa5736
 topic_type:
 - apiref
-ms.openlocfilehash: a4d6dd0df9f38561ab5014d7ab65fde6793c9846
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0f7feb53d061e5dbc453015772b97f2a5a59bbb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729740"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693948"
 ---
 # <a name="icordebugevalnewobject-method"></a>Método ICorDebugEval::NewObject
 
@@ -59,6 +60,6 @@ HRESULT NewObject (
   
  **Versões do .NET Framework:** 1,1, 1,0  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método NewParameterizedObject](icordebugeval2-newparameterizedobject-method.md)

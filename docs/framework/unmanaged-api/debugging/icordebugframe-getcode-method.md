@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugFrame:: GetCode'
 title: Método ICorDebugFrame::GetCode
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fbaa0794-a031-4015-8beb-2749e47ac340
 topic_type:
 - apiref
-ms.openlocfilehash: 29dc87bf465fc9751b5af795f7640b095e535e63
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f45e0a29530a8b4ddbeaa92db4489a030ac1ae79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690376"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692999"
 ---
 # <a name="icordebugframegetcode-method"></a>Método ICorDebugFrame::GetCode
 

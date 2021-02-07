@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugExceptionDebugEvent'
 title: Interface ICorDebugExceptionDebugEvent
 ms.date: 03/30/2017
 ms.assetid: f9ba60d8-b54d-417e-bb3e-fde4b41ca44c
-ms.openlocfilehash: c280852d421742cf9e8c2f8dcaa9c0f588f8537b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: eacaa344763fb77faef5f66282809d741f017b37
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693415"
 ---
 # <a name="icordebugexceptiondebugevent-interface"></a>Interface ICorDebugExceptionDebugEvent
 
@@ -15,7 +16,7 @@ Estende a interface [ICorDebugDebugEvent](icordebugdebugevent-interface.md) para
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetFlags](icordebugexceptiondebugevent-getflags-method.md)|Obtém um sinalizador que indica se a exceção pode ser interceptada.|  
 |[Método GetNativeIP](icordebugexceptiondebugevent-getnativeip-method.md)|Obtém o ponteiro de interface nativa para este evento de depuração de exceção.|  
@@ -46,7 +47,7 @@ Estende a interface [ICorDebugDebugEvent](icordebugdebugevent-interface.md) para
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

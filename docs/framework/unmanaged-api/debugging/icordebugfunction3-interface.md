@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugFunction3'
 title: Interface ICorDebugFunction3
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: b22717b9-ead5-4eea-887e-789b52d613dc
 topic_type:
 - apiref
-ms.openlocfilehash: 17eda7470e5f2e4b41d1f2ed164843eaeeedea93
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f6f3ce78fbb0ca7efb6ba6a95da20f8c698b923c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695863"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692063"
 ---
 # <a name="icordebugfunction3-interface"></a>Interface ICorDebugFunction3
 
@@ -25,7 +26,7 @@ ms.locfileid: "95695863"
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetActiveReJitRequestILCode](icordebugfunction3-getactiverejitrequestilcode-method.md)|Obtém um ponteiro de interface para um [ICorDebugILCode](icordebugilcode-interface.md) que contém o Il de uma solicitação de ReJIT ativa.|  
   
@@ -41,7 +42,7 @@ ms.locfileid: "95695863"
   
  **.NET Framework versões:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

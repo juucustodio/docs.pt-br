@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: <Method> elemento (.net Native)'
 title: <Method> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: 348b49e5-589d-4eb2-a597-d6ff60ab52d1
-ms.openlocfilehash: 1d57457c90e44c70caa301eccc02c5831d283cea
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 76c379ed81e721316e4293b20ba89acfbc9d174f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747517"
 ---
 # <a name="method-element-net-native"></a>\<Method> (.NET Nativo)
 
 Aplica a política de reflexão de runtime a um construtor ou método.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Method Name="method_name"  
@@ -147,7 +148,7 @@ Aplica a política de reflexão de runtime a um construtor ou método.
 </Directives>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Elementos da diretiva de runtime](runtime-directive-elements.md)

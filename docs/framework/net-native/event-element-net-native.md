@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: <Event> elemento (.net Native)'
 title: <Event> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: e53b029c-9d6d-4c0a-9cdc-5cfca8a5ca47
-ms.openlocfilehash: b1cf2239e58839c5026bc375ba04568227881bdd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 16ef4376e5953da514598bd7cdcbe0c196ee4da5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288093"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747875"
 ---
 # <a name="event-element-net-native"></a>\<Event> (.NET Nativo)
 
 Aplica a política de reflexão de runtime a um evento.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Event Name="event_name"
@@ -47,7 +48,7 @@ Aplica a política de reflexão de runtime a um evento.
   
 ### <a name="child-elements"></a>Elementos filho  
 
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -60,7 +61,7 @@ Aplica a política de reflexão de runtime a um evento.
 
  Se uma política do evento não for definida explicitamente, ele herdará a política de runtime do seu elemento pai.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Elementos da diretiva de runtime](runtime-directive-elements.md)

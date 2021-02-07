@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_FIELD'
 title: Estrutura COR_FIELD
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c0822423-a9df-4961-950d-50dcc152f863
 topic_type:
 - apiref
-ms.openlocfilehash: ae8e907d0e0d6ef5030b3e9aa1f1b3dcef50193e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a3e9dcc2a5c3bb2abae42dab4292c1d285df5ad7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747100"
 ---
 # <a name="cor_field-structure"></a>Estrutura COR_FIELD
 
@@ -57,7 +58,7 @@ typedef struct COR_FIELD{
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de depuração](debugging-structures.md)
 - [Depuração](index.md)

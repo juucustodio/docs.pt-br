@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exemplo: tratamento de exceções ao associar dados'
 title: 'Exemplo: lidar com exceções ao associar dados'
 ms.date: 03/30/2017
 ms.assetid: bd63ed96-9853-46dc-ade5-7bd1b0f39110
-ms.openlocfilehash: 399bd1af9ef25eca9cdfe1e13fdc4c01021babcd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 434520e42afa3e1ab7c453c3ddf41863ceb62eb6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251068"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747888"
 ---
 # <a name="example-handling-exceptions-when-binding-data"></a>Exemplo: lidar com exceções ao associar dados
 
@@ -61,7 +62,7 @@ Windows_UI_Xaml!DirectUI::PropertyPathListener::ConnectPathStep+0x113
   
  No entanto, existem maneiras para especificar o `ViewModel` para a página XAML para que a cadeia de ferramentas possa associar propriedades de vinculação com o tipo correto no tempo de compilação e manter os metadados sem usar uma diretiva de runtime.  Por exemplo, você pode aplicar o <xref:Windows.UI.Xaml.Data.BindableAttribute?displayProperty=nameWithType> atributo em Propriedades. Isso faz com que o compilador XAML gere informações de pesquisa necessárias e evita que necessitem de uma diretiva de runtime no arquivo Default.rd.xml.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução](getting-started-with-net-native.md)
 - [Exemplo: solução de problemas de programação dinâmica](example-troubleshooting-dynamic-programming.md)

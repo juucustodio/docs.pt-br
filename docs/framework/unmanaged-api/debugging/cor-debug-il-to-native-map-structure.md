@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_DEBUG_IL_TO_NATIVE_MAP'
 title: Estrutura COR_DEBUG_IL_TO_NATIVE_MAP
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 06f3b504-085f-4142-934a-25381fe23d4c
 topic_type:
 - apiref
-ms.openlocfilehash: 61544d0dfe876f35fdfbe5afa945fad0620c0eb5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ec722b86f95e75d4ac00e04e8a602c6b6da64de5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726646"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747186"
 ---
 # <a name="cor_debug_il_to_native_map-structure"></a>Estrutura COR_DEBUG_IL_TO_NATIVE_MAP
 
@@ -53,7 +54,7 @@ typedef struct COR_DEBUG_IL_TO_NATIVE_MAP {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetILToNativeMapping](../profiling/icorprofilerinfo-getiltonativemapping-method.md)
 - [Método GetILToNativeMapping](icordebugcode-getiltonativemapping-method.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugExceptionFlags'
 title: Enumeração CorDebugExceptionFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b22687a8-e9cf-4e65-a1b0-f92a81bc524e
 topic_type:
 - apiref
-ms.openlocfilehash: a50272bce2e27963a1d684fef40bac30cf44e1f0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c0036c2674f3202623da1a8fdeea14165a2a6e62
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712709"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747027"
 ---
 # <a name="cordebugexceptionflags-enumeration"></a>Enumeração CorDebugExceptionFlags
 
@@ -55,6 +56,6 @@ typedef enum CorDebugExceptionFlags {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)

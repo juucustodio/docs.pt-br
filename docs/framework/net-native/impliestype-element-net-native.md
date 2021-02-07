@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: <ImpliesType> elemento (.net Native)'
 title: <ImpliesType> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: 3abd2071-0f28-40ba-b9a0-d52bd94cd2f6
-ms.openlocfilehash: 04c3a9498a5c9c24d67dedd02fb4c9d68d9efbdd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6476876f335788a276907fd2aef02d5623382699
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287950"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747680"
 ---
 # <a name="impliestype-element-net-native"></a>\<ImpliesType> (.NET Nativo)
 
 Aplica a política a um tipo, se ela foi aplicada ao tipo recipiente ou do método.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml
 <ImpliesType Name="type_name"  
@@ -63,7 +64,7 @@ Aplica a política a um tipo, se ela foi aplicada ao tipo recipiente ou do méto
   
 ### <a name="child-elements"></a>Elementos filho  
 
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -112,7 +113,7 @@ Aplica a política a um tipo, se ela foi aplicada ao tipo recipiente ou do méto
 </Type>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Elementos da diretiva de runtime](runtime-directive-elements.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess:: WriteMemory'
 title: Método ICorDebugProcess::WriteMemory
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d5c07d86-045d-4391-893b-0bcd2959f90e
 topic_type:
 - apiref
-ms.openlocfilehash: 18416954517c3cac09d013b8075bd097305a1dca
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6ea48aff2e1ea812d851a228976b458f58a60e14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673950"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746614"
 ---
 # <a name="icordebugprocesswritememory-method"></a>Método ICorDebugProcess::WriteMemory
 

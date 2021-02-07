@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: medindo a melhoria da inicialização com o .NET Native'
 title: Medindo o aprimoramento da inicialização com o .NET Nativo
 ms.date: 03/30/2017
 ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289
-ms.openlocfilehash: 6d89edaff184692eabb11e928f5211f664ff5afa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ef3245811f79475fc7c267e7376f6140e8686724
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747589"
 ---
 # <a name="measuring-startup-improvement-with-net-native"></a>Medindo o aprimoramento da inicialização com o .NET Nativo
 
@@ -66,7 +67,7 @@ ms.locfileid: "96250964"
 perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFile
 ```  
   
- onde:  
+ em que:  
   
  `-KernelEvents:Process`  
  Indica que você deseja saber quando o processo é iniciado e é interrompido. É necessário que o evento de início/processo para seu aplicativo para pode ser subtraído de outros tempos de eventos.  

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Introdução com .NET Native'
 title: Guia de Introdução ao .NET Nativo
 ms.date: 03/30/2017
 ms.assetid: fc9e04e8-2d05-4870-8cd6-5bd276814afc
-ms.openlocfilehash: b6cd4acaa377de7fc172fb12c9fb9ff1b832f88a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 6079e21764ebc39515eb9b9f217057d916da8942
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551204"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747797"
 ---
 # <a name="getting-started-with-net-native"></a>Guia de Introdução ao .NET Nativo
 
@@ -52,7 +53,7 @@ Um arquivo de diretivas de runtime, Default.rd.xml, é adicionado automaticament
 
 O arquivo de diretivas de runtime é usado para definir os metadados de que o aplicativo precisa em runtime. Em alguns casos, a versão padrão do arquivo pode ser adequada. No entanto, um código que depende da serialização ou da reflexão pode exigir entradas adicionais no arquivo de diretivas de runtime.
 
-**Serialização**
+**Série**
 
 Há duas categorias de serializadores e ambas podem necessitar de entradas adicionais no arquivo de diretivas de runtime:
 
@@ -121,7 +122,7 @@ Para ver alguns exemplos específicos de como lidar com exceções e outros prob
 
 - [Exceções em runtime em aplicativos do .NET Native](runtime-exceptions-in-net-native-apps.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Instalação e configuração do .NET Nativo](/previous-versions/dn600164(v=vs.110))

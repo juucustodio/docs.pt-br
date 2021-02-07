@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <Application> elemento (.net Native)'
 title: <Application> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: b4e9b37a-059b-4076-8f56-cb3f9cef0cd9
-ms.openlocfilehash: a7f2eca5a5bb5cfb7b9827f2463454a17fc128cb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ebbc6292b5936e6b7d54666070b33df2da80f57f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288132"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747940"
 ---
 # <a name="application-element-net-native"></a>\<Application> (.NET Nativo)
 
@@ -16,7 +17,7 @@ Serve como um contêiner para tipos em todo o aplicativo e membros de tipo cujos
  Elemento \<Directives>  
 \<Application> Elemento (rd.xml)  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Application Activate="policy_setting"  
@@ -86,7 +87,7 @@ Serve como um contêiner para tipos em todo o aplicativo e membros de tipo cujos
   
 - Como um elemento que define a política de todo o aplicativo para reflexão, serialização e interoperabilidade. Os atributos do `<Application>` elemento definem a política de todo o aplicativo, que pode ser substituída pelos elementos filho definidos `<Application>` pelo [\<Library>](library-element-net-native.md) elemento ou.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [\<Library> Elementos](library-element-net-native.md)
 - [\<Directives> Elementos](directives-element-net-native.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exemplo: solução de problemas de programação dinâmica'
 title: 'Exemplo: solução de problemas de programação dinâmica'
 ms.date: 03/30/2017
 ms.assetid: 42ed860a-a022-4682-8b7f-7c9870784671
-ms.openlocfilehash: 0cff232668b9eb65b09a22b14e4ae58673ccd6d0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7ad3fde9c81800123abe899e2f696c3833fed5bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288067"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747849"
 ---
 # <a name="example-troubleshooting-dynamic-programming"></a>Exemplo: solução de problemas de programação dinâmica
 
@@ -60,7 +61,7 @@ App!$43_System::Threading::SendOrPostCallback.InvokeOpenStaticThunk
 
  Se o aplicativo tivesse usado `typeof(LayoutApplicationVM)` em vez de `Type.GetType("LayoutApplicationVM")`, a cadeia de ferramentas poderia ter preservado os metadados `browse`.  No entanto, ele ainda não criaria os metadados de `invoke`, o que levaria a uma exceção [MissingMetadataException](missingmetadataexception-class-net-native.md) ao instanciar o tipo. Para evitar a exceção, ainda seria necessário adicionar uma diretiva de runtime para o namespace ou o tipo que especifica a política `dynamic`. Para obter informações sobre as diretivas de runtime, consulte a [Referência do arquivo de configuração das diretivas de runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução](getting-started-with-net-native.md)
 - [Exemplo: lidar com exceções ao associar dados](example-handling-exceptions-when-binding-data.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como personalizar uma política de cache com base no tempo'
 title: Como personalizar uma política de cache baseada em tempo
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - customizing time-based cache policies
 - cache [.NET Framework], time-based policies
 ms.assetid: 8d84f936-2376-4356-9264-03162e0f9279
-ms.openlocfilehash: 1a2ba404e333eeec2a23758c834876d0df5aba81
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bb00faa5c2cd3170a0f56b74032867d489c1fb8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73040629"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747446"
 ---
 # <a name="how-to-customize-a-time-based-cache-policy"></a>Como personalizar uma política de cache baseada em tempo
 
@@ -22,7 +23,7 @@ Ao criar uma política de cache baseada em tempo, você pode personalizar o comp
 
 ## <a name="to-create-a-time-based-cache-policy-that-uses-a-cache-synchronization-date"></a>Para criar uma política de cache baseada em tempo que usa uma data de sincronização do cache
 
-Crie uma diretiva de cache baseada no tempo que <xref:System.DateTime> usa <xref:System.Net.Cache.HttpRequestCachePolicy> uma data de sincronização de cache passando um objeto para o construtor:
+Crie uma política de cache baseada em tempo que usa uma data de sincronização de cache passando um <xref:System.DateTime> objeto para o <xref:System.Net.Cache.HttpRequestCachePolicy> Construtor:
 
 ```csharp
 public static HttpRequestCachePolicy CreateLastSyncPolicy(DateTime when)
@@ -52,7 +53,7 @@ Level:Default CacheSyncDate:1/14/2004 8:07:30 AM
 
 ## <a name="to-create-a-time-based-cache-policy-that-is-based-on-minimum-freshness"></a>Para criar uma política de cache baseada em tempo com base na atualização mínima
 
-Crie uma política de cache baseada no tempo que <xref:System.Net.Cache.HttpCacheAgeControl.MinFresh> se `cacheAgeControl` baseia no frescor mínimo, especificando como o valor do parâmetro e passando um <xref:System.TimeSpan> objeto para o <xref:System.Net.Cache.HttpRequestCachePolicy> construtor:
+Crie uma política de cache baseada em tempo com base na atualização mínima especificando <xref:System.Net.Cache.HttpCacheAgeControl.MinFresh> como o valor do `cacheAgeControl` parâmetro e passando um <xref:System.TimeSpan> objeto para o <xref:System.Net.Cache.HttpRequestCachePolicy> Construtor:
 
 ```csharp
 public static HttpRequestCachePolicy CreateMinFreshPolicy(TimeSpan span)
@@ -85,7 +86,7 @@ Level:Default MinFresh:3600
 
 ## <a name="to-create-a-time-based-cache-policy-that-is-based-on-minimum-freshness-and-maximum-age"></a>Para criar uma política de cache baseada em tempo com base na atualização mínima e idade máxima
 
-Crie uma política de cache baseada no tempo que se <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh> baseia `cacheAgeControl` no frescor mínimo <xref:System.TimeSpan> e <xref:System.Net.Cache.HttpRequestCachePolicy> na idade máxima, especificando como o valor do parâmetro e passando dois objetos para o construtor, um para especificar a idade máxima para recursos e um segundo para especificar o frescor mínimo permitido para um objeto retornado do cache:
+Crie uma política de cache baseada em tempo com base na atualização mínima e na idade máxima especificando <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh> como o `cacheAgeControl` valor do parâmetro e passando dois <xref:System.TimeSpan> objetos para o <xref:System.Net.Cache.HttpRequestCachePolicy> Construtor, um para especificar a idade máxima dos recursos e um segundo para especificar a atualização mínima permitida para um objeto retornado do cache:
 
 ```csharp
 public static HttpRequestCachePolicy CreateFreshAndAgePolicy(TimeSpan freshMinimum, TimeSpan ageMaximum)
@@ -116,10 +117,10 @@ A saída é:
 Level:Default MaxAge:36000 MinFresh:18000  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciamento de cache para aplicativos de rede](cache-management-for-network-applications.md)
-- [Política de Cache](cache-policy.md)
+- [Política de cache](cache-policy.md)
 - [Políticas de cache baseadas na localização](location-based-cache-policies.md)
 - [Políticas de cache baseadas em tempo](time-based-cache-policies.md)
-- [\<solicitarO elemento> (Configurações de rede)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)
+- [\<requestCaching> Elemento (configurações de rede)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)

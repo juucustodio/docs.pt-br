@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: <Assembly> elemento (.net Native)'
 title: <Assembly> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: cfe629eb-1106-4113-86e1-052f402d8d8b
-ms.openlocfilehash: 9d1556d8d414386d3f350a96396381bd7b66ffc5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 567a30a6a77e9de03635a9dfaae6bb28c9d728f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251120"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747914"
 ---
 # <a name="assembly-element-net-native"></a>\<Assembly> (.NET Nativo)
 
 Aplica a política de reflexão de runtime a todos os tipos em um assembly especificado.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Assembly Name="assembly_name"
@@ -92,7 +93,7 @@ Aplica a política de reflexão de runtime a todos os tipos em um assembly espec
   
  Os atributos `Activate`, `Browse`, `Dynamic` e `Serialize` são todos opcionais. No entanto, o elemento `<Assembly>` deve conter pelo menos um desses atributos.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Configurações da política da diretiva de runtime](runtime-directive-policy-settings.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: <GenericParameter> elemento (.net Native)'
 title: <GenericParameter> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
-ms.openlocfilehash: 1400fb7029df533d54e87a1c534f4ac3b0a5fc68
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 57cbb3418289d7da4f25577188299acd55ce6c94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288015"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747823"
 ---
 # <a name="genericparameter-element-net-native"></a>\<GenericParameter> (.NET Nativo)
 
 Aplica a política ao tipo de parâmetro de um tipo ou método genérico.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <GenericParameter Name="generic_parameter_name"  
@@ -63,7 +64,7 @@ Aplica a política ao tipo de parâmetro de um tipo ou método genérico.
   
 ### <a name="child-elements"></a>Elementos filho  
 
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -88,7 +89,7 @@ Aplica a política ao tipo de parâmetro de um tipo ou método genérico.
 </Directives>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [\<Method> Elementos](method-element-net-native.md)
 - [\<Type> Elementos](type-element-net-native.md)

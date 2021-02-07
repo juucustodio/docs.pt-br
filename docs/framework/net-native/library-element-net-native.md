@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <Library> elemento (.net Native)'
 title: <Library> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: f642276b-33fb-4a81-b882-8808c31ba69e
-ms.openlocfilehash: aeaa6b1a9c3c4ceebdd0eab3f331a044971398bf
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 224b2b9cbce8123f4a15b9ec3e3793674633822a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287911"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747602"
 ---
 # <a name="library-element-net-native"></a>\<Library> (.NET Nativo)
 
@@ -16,7 +17,7 @@ Define o assembly que contém tipos e membros de tipo cujos metadados estão dis
  Elemento \<Directives>  
 Elemento \<Library>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Library Name="assembly_name" />  
@@ -69,7 +70,7 @@ Elemento \<Library>
 </Directives>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [\<Application> Elementos](application-element-net-native.md)
 - [\<Directives> Elementos](directives-element-net-native.md)

@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: <AttributeImplies> elemento (.net Native)'
 title: <AttributeImplies> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: 82db7193-a860-418b-84fc-fff2fdf2e025
-ms.openlocfilehash: 4171345bb5337436142128623abc7d183c4477ff
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5af1f60f2c1e556281f2f1d392b1a046e52dd277
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288106"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747901"
 ---
 # <a name="attributeimplies-element-net-native"></a>\<AttributeImplies> (.NET Nativo)
 
 Define a política para os elementos de código ao qual o atributo recipiente é aplicado.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <AttributeImplies Activate="policy_type"  
@@ -55,7 +56,7 @@ Define a política para os elementos de código ao qual o atributo recipiente é
   
 ### <a name="child-elements"></a>Elementos filho  
 
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -69,7 +70,7 @@ Define a política para os elementos de código ao qual o atributo recipiente é
   
  Os atributos de reflexão, serialização e interoperabilidade são todos opcionais, embora pelo menos um deve estar presente.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [\<Type> Elementos](type-element-net-native.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

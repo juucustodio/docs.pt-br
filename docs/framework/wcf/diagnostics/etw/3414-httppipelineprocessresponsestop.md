@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3414-HttpPipelineProcessResponseStop'
 title: 3414 - HttpPipelineProcessResponseStop
 ms.date: 03/30/2017
 ms.assetid: 71ebd2ee-aedd-47ef-9a2b-00f778f7e225
-ms.openlocfilehash: f0f9a7049be3f1d043fc456a07d65f866e1bb4e7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8c7ea1212e01953191aa7e56ba225e8866b79cdc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96263965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99669599"
 ---
 # <a name="3414---httppipelineprocessresponsestop"></a>3414 - HttpPipelineProcessResponseStop
 

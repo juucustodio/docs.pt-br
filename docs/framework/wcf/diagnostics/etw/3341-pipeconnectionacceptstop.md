@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3341-PipeConnectionAcceptStop'
 title: 3341 - PipeConnectionAcceptStop
 ms.date: 03/30/2017
 ms.assetid: 85d20b28-53c2-4206-90bc-8564a03dcb49
-ms.openlocfilehash: 4aa913c8c42094e74b8c7a6f41842c00e4eaad37
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: af71ba541c3c3036ccd6535cc1d209b4975e75e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670236"
 ---
 # <a name="3341---pipeconnectionacceptstop"></a>3341 - PipeConnectionAcceptStop
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3340-PipeConnectionAcceptStart'
 title: 3340 - PipeConnectionAcceptStart
 ms.date: 03/30/2017
 ms.assetid: c18d0db8-6f44-42ab-b297-5e0209789e5c
-ms.openlocfilehash: c2ce7af5be720dd3ac88dd566c0c376b60bcb1f8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 87cdde85f5150b778d01fa5885d615bde82d7bf9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268723"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670262"
 ---
 # <a name="3340---pipeconnectionacceptstart"></a>3340 - PipeConnectionAcceptStart
 

@@ -1,28 +1,29 @@
 ---
+description: 'Saiba mais sobre: Associação de dados'
 title: Associação de dados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: cbec8b02-a1e8-4ae8-a83b-bb5190413ac5
-ms.openlocfilehash: c7048d292bdf5c1372d5f8f174f7f0e84efa7593
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: d5566fae505f5c5cd54b2a2990cf04169211003c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75634710"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729556"
 ---
 # <a name="data-binding"></a>Associação de dados
 
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] dá suporte à associação a controles comuns, como controles de grade. Especificamente, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] define os padrões básicos para a associação a uma grade de dados e o tratamento de associação mestre-Detail, tanto com relação à exibição quanto à atualização.
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] dá suporte à associação a controles comuns, como controles de grade. Especificamente, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] o define os padrões básicos para a associação a uma grade de dados e o processamento de associação mestre-Detail, tanto com relação à exibição quanto à atualização.
 
 ## <a name="underlying-principle"></a>Princípio subjacente
 
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] converte consultas LINQ para SQL para execução em um banco de dados. Os resultados são `IEnumerable` fortemente tipados. Como esses objetos são objetos comuns de Common Language Runtime (CLR), a ligação de dados de objeto comum pode ser usada para exibir os resultados. Por outro lado, as operações de alteração (inserções, atualizações e exclusões) exigem etapas adicionais.
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] traduz consultas LINQ para SQL para execução em um banco de dados. Os resultados são `IEnumerable` fortemente tipados. Como esses objetos são objetos CLR (Common Language Runtime) comuns, a vinculação de dados de objetos comuns pode ser usada para exibir os resultados. Por outro lado, as operações de alteração (inserções, atualizações e exclusões) exigem etapas adicionais.
 
 ## <a name="operation"></a>Operação
 
-Implicitamente, a associação aos controles do Windows Forms é realizada por meio da implementação de <xref:System.ComponentModel.IListSource>. As fontes de dados <xref:System.Data.Linq.Table%601> genéricas ( C#`Table<T>` em ou `Table(Of T)` em Visual Basic) e `DataQuery` genérico foram atualizadas para implementar <xref:System.ComponentModel.IListSource>. Os mecanismos de associação de dados (Windows Forms e Windows Presentation Foundation) da interface do usuário testam se sua fonte de dados implementa <xref:System.ComponentModel.IListSource>. Portanto, escrever um efeito direto de uma consulta para uma fonte de dados de um controle chama implicitamente [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] geração de coleção, como no exemplo a seguir:
+Implicitamente, a associação aos controles do Windows Forms é realizada por meio da implementação de <xref:System.ComponentModel.IListSource>. Fontes de dados genéricas <xref:System.Data.Linq.Table%601> ( `Table<T>` em C# ou `Table(Of T)` Visual Basic) e genéricas foram `DataQuery` atualizadas para implementar <xref:System.ComponentModel.IListSource> . Os mecanismos de associação de dados (Windows Forms e Windows Presentation Foundation) da interface do usuário testam se sua fonte de dados implementa <xref:System.ComponentModel.IListSource> . Portanto, escrever um efeito direto de uma consulta para uma fonte de dados de um controle chama implicitamente [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] a geração de coleção, como no exemplo a seguir:
 
 [!code-csharp[DLinqDataBinding#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqDataBinding/cs/Program.cs#1)]
 [!code-vb[DLinqDataBinding#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqDataBinding/vb/Module1.vb#1)]
@@ -38,13 +39,13 @@ As gerações de coleção são implementadas por <xref:System.Data.Linq.Table%6
 
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] implementa <xref:System.ComponentModel.IListSource> em dois locais:
 
-- A fonte de dados é uma <xref:System.Data.Linq.Table%601>: [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] procura a tabela para preencher uma coleção de `DataBindingList` que mantém uma referência na tabela.
+- A fonte de dados é <xref:System.Data.Linq.Table%601> : [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] procura a tabela para preencher uma `DataBindingList` coleção que mantém uma referência na tabela.
 
 - A fonte de dados é um <xref:System.Linq.IQueryable%601>. Há dois cenários:
 
-  - Se [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] encontrar o <xref:System.Data.Linq.Table%601> subjacente da <xref:System.Linq.IQueryable%601>, a origem permitirá a edição e a situação será a mesma do primeiro ponto de marcador.
+  - Se o [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] encontrar o subjacente <xref:System.Data.Linq.Table%601> do <xref:System.Linq.IQueryable%601> , a origem permitirá a edição e a situação será a mesma do primeiro ponto de marcador.
 
-  - Se [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não conseguir localizar o <xref:System.Data.Linq.Table%601>subjacente, a origem não permitirá a edição (por exemplo, `groupby`). [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] procura a consulta para preencher um `SortableBindingList`genérico, que é um <xref:System.ComponentModel.BindingList%601> simples que implementa o recurso de classificação para entidades T para uma determinada propriedade.
+  - Se [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não for possível localizar o subjacente <xref:System.Data.Linq.Table%601> , a origem não permitirá a edição (por exemplo, `groupby` ). [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] procura a consulta para preencher um genérico `SortableBindingList` , que é um simples <xref:System.ComponentModel.BindingList%601> que implementa o recurso de classificação para entidades T para uma determinada propriedade.
 
 ## <a name="specialized-collections"></a>Coleções especializadas
 
@@ -56,7 +57,7 @@ Essa classe herda de <xref:System.ComponentModel.BindingList%601> e é uma vers�
 
 Uma exceção será gerada se a propriedade não pertencer a T.
 
-Para obter classificação, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] cria uma classe genérica `SortableBindingList.PropertyComparer` que herda de <xref:System.Collections.Generic.Comparer%601.System%23Collections%23IComparer%23Compare%2A> genérico e implementa um comparador padrão para um determinado tipo T, um `PropertyDescriptor`e uma direção. Essa classe cria dinamicamente um `Comparer` de T onde T é `PropertyType` de `PropertyDescriptor`. Em seguida, o comparador padrão é recuperado do `Comparer` estático genérico. Uma instância padrão é obtida usando reflexão.
+Para obter a classificação, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] o cria uma `SortableBindingList.PropertyComparer` classe genérica que herda de genérico e implementa um comparador <xref:System.Collections.Generic.Comparer%601.System%23Collections%23IComparer%23Compare%2A> padrão para um determinado tipo T, a `PropertyDescriptor` e uma direção. Essa classe cria dinamicamente um `Comparer` de T onde T é `PropertyType` de `PropertyDescriptor`. Em seguida, o comparador padrão é recuperado do `Comparer` estático genérico. Uma instância padrão é obtida usando reflexão.
 
 A `SortableBindingList` genérica também é a classe base para `DataBindingList`. A `SortableBindingList` genérica oferece dois métodos virtuais para suspender ou retomar o controle de itens adicionar/remover. Esses dois métodos podem ser usados para recursos base como classificação, mas serão realmente implementados por classes superiores, como `DataBindingList`genérica.
 
@@ -66,11 +67,11 @@ Esta classe herda de `SortableBindingLIst`genérica. A `DataBindingList` genéri
 
 ## <a name="binding-to-entitysets"></a>Associando a EntitySets
 
-A associação a `EntitySet` é um caso especial porque `EntitySet` já é uma coleção que implementa <xref:System.ComponentModel.IBindingList>. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] adiciona suporte à classificação e cancelamento (<xref:System.ComponentModel.ICancelAddNew>). Uma classe `EntitySet` usa uma lista interna para armazenar entidades. Essa lista é uma coleção de baixo nível baseada em uma matriz genérica, a classe genérica `ItemList`.
+A associação a `EntitySet` é um caso especial porque `EntitySet` já é uma coleção que implementa <xref:System.ComponentModel.IBindingList>. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] Adiciona classificação e cancelamento ( <xref:System.ComponentModel.ICancelAddNew> ) suporte. Uma classe `EntitySet` usa uma lista interna para armazenar entidades. Essa lista é uma coleção de baixo nível baseada em uma matriz genérica, a classe genérica `ItemList`.
 
 ### <a name="adding-a-sorting-feature"></a>Adicionando um recurso de classificação
 
-As matrizes oferecem um método Sort (`Array.Sort()`) que você pode usar com um `Comparer` de T. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] usa a classe `SortableBindingList.PropertyComparer` genérica descrita anteriormente neste tópico para obter essa `Comparer` para a propriedade e a direção a ser classificada. Um método `ApplySort` é adicionado ao `ItemList` genérico para chamar esse recurso.
+As matrizes oferecem um método `Array.Sort()` de classificação () que você pode usar com um `Comparer` de T. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] o usa a `SortableBindingList.PropertyComparer` classe genérica descrita anteriormente neste tópico para obter isso `Comparer` para a propriedade e a direção a ser classificada. Um método `ApplySort` é adicionado ao `ItemList` genérico para chamar esse recurso.
 
 No lado de `EntitySet`, você agora precisa declarar suporte à classificação:
 
@@ -80,13 +81,13 @@ No lado de `EntitySet`, você agora precisa declarar suporte à classificação:
 
 - As propriedades <xref:System.ComponentModel.IBindingList.SortDirection%2A> e <xref:System.ComponentModel.IBindingList.SortProperty%2A> expõem a definição de classificação atual, que é armazenada em membros locais.
 
-Ao usar um System. Windows. Forms. BindingSource e associar um EntitySet\<TEntity > ao System. Windows. Forms. BindingSource. DataSource, você deve chamar EntitySet\<TEntity >. GetNewBindingList atualizar BindingSource. List.
+Quando você usa um System. Windows. Forms. BindingSource e associa um EntitySet \<TEntity> a System. Windows. Forms. BindingSource. DataSource, você deve chamar EntitySet \<TEntity> . GetNewBindingList atualizar BindingSource. List.
 
-Se você usar um System. Windows. Forms. BindingSource e definir a Propriedade BindingSource. DataMember e definir BindingSource. DataSource como uma classe que tem uma propriedade chamada em BindingSource. DataMember que expõe o EntitySet\<TEntity >, não será necessário chamar EntitySet\<TEntity >. GetNewBindingList atualizar a BindingSource. List, mas você perde a capacidade de classificação.
+Se você usar um System. Windows. Forms. BindingSource e definir a Propriedade BindingSource. DataMember e definir BindingSource. DataSource como uma classe que tem uma propriedade chamada em BindingSource. DataMember que expõe o EntitySet \<TEntity> , não será necessário chamar EntitySet \<TEntity> . GetNewBindingList atualizar a BindingSource. List, mas você perde a capacidade de classificação.
 
-## <a name="caching"></a>Armazenamento em cache
+## <a name="caching"></a>Cache
 
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] consultas implementam <xref:System.ComponentModel.IListSource.GetList%2A>. Quando a classe BindingSource do Windows Forms encontra essa interface, ela chama GetList() três vezes para uma única conexão. Para contornar essa situação, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] implementa um cache por instância para armazenar e sempre retornar a mesma coleção gerada.
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] as consultas implementam <xref:System.ComponentModel.IListSource.GetList%2A> . Quando a classe BindingSource do Windows Forms encontra essa interface, ela chama GetList() três vezes para uma única conexão. Para contornar essa situação, o [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] implementa um cache por instância para armazenar e sempre retornar a mesma coleção gerada.
 
 ## <a name="cancellation"></a>Cancelamento
 
@@ -94,7 +95,7 @@ O <xref:System.ComponentModel.IBindingList> define um método <xref:System.Compo
 
 Além desse recurso, uma coleção também pode implementar <xref:System.ComponentModel.ICancelAddNew>. Esse recurso permite que os controles cancelem ou validem se o novo item editado foi validado ou não.
 
-<xref:System.ComponentModel.ICancelAddNew> é implementado em todas as [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] coleções de ligação de ligações (`SortableBindingList` genérico e `EntitySet`genérico). Em ambas as implementações, o código é executado da seguinte maneira:
+<xref:System.ComponentModel.ICancelAddNew> é implementado em todas as [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] coleções de ligação de ligações (genéricas `SortableBindingList` e genéricas `EntitySet` ). Em ambas as implementações, o código é executado da seguinte maneira:
 
 - Permite que itens sejam inseridos e removidos da coleção.
 
@@ -112,12 +113,12 @@ Esta seção chama vários itens que podem ajudar a resolver problemas de seus a
 
 - Você deve usar propriedades; usar somente campos não é suficiente. O Windows Forms requer esse uso.
 
-- Por padrão, os tipos de banco de dados `image`, `varbinary`e `timestamp` são mapeados para a matriz de bytes. Como `ToString()` não é suportado nesse cenário, esses objetos não podem ser exibidos.
+- Por padrão, `image` , `varbinary` e os `timestamp` tipos de banco de dados são mapeados para a matriz de bytes. Como `ToString()` não é suportado nesse cenário, esses objetos não podem ser exibidos.
 
-- Um membro de classe mapeado para uma chave primária tem um setter, mas [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não oferece suporte à alteração de identidade de objeto. Portanto, a chave primária/exclusiva que é usada no mapeamento não pode ser atualizada no banco de dados. Uma alteração na grade causa uma exceção quando você chama <xref:System.Data.Linq.DataContext.SubmitChanges%2A>.
+- Um membro de classe mapeado para uma chave primária tem um setter, mas [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não dá suporte à alteração de identidade de objeto. Portanto, a chave primária/exclusiva que é usada no mapeamento não pode ser atualizada no banco de dados. Uma alteração na grade causa uma exceção quando você chama <xref:System.Data.Linq.DataContext.SubmitChanges%2A> .
 
 - Se uma entidade estiver associada em duas grades separadas (por exemplo, uma mestra e outra de detalhes), `Delete` na grade mestra não será propagado para a grade de detalhes.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Informações gerais](background-information.md)

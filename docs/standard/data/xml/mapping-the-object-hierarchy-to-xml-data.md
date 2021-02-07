@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: mapeando a hierarquia de objetos para dados XML'
 title: Mapeando a hierarquia do objeto para dados XML
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 450e350b-6a68-4634-a2a5-33f4dc33baf0
-ms.openlocfilehash: 9c4fbba63428e04b7b29a803061f288ca6ee5031
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1be34c43bc9656288e886c309e665b15cb332524
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732092"
 ---
 # <a name="mapping-the-object-hierarchy-to-xml-data"></a>Mapeando a hierarquia do objeto para dados XML
 
@@ -218,6 +219,6 @@ public class Sample
   
  Para adicionar novos nós para o DOM, consulte [Inserir nós em um documento XML](inserting-nodes-into-an-xml-document.md). Para remover os nós do DOM, consulte [Remover nós, conteúdo e valores de um documento XML](removing-nodes-content-and-values-from-an-xml-document.md). Para modificar o conteúdo de nós no DOM, consulte [Modificar nós, conteúdo e valores em um documento XML](modifying-nodes-content-and-values-in-an-xml-document.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

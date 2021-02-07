@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: Manipulando dados (Visual Basic)'
 title: 'Passo a passo: manipular dados (Visual Basic)'
 ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: 1f6a54f6-ec33-452a-a37d-48122207bf14
-ms.openlocfilehash: dbf18273e69ff0977f5d16ff179b8659865ef696
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 22bef61c294a92984446402063bf14b06f5b2b2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164045"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729517"
 ---
 # <a name="walkthrough-manipulating-data-visual-basic"></a>Passo a passo: manipular dados (Visual Basic)
 
@@ -75,7 +76,7 @@ Essa explicação passo a passo fornece um cenário completo fundamental do [!IN
   
 #### <a name="to-add-systemdatalinq"></a>Para adicionar System.Data.Linq  
   
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **referências**e clique em **Adicionar referência**.  
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **referências** e clique em **Adicionar referência**.  
   
 2. Na caixa de diálogo **Adicionar referência** , clique em **.net**, clique no assembly System. Data. LINQ e, em seguida, clique em **OK**.  
   
@@ -197,6 +198,6 @@ Essa explicação passo a passo fornece um cenário completo fundamental do [!IN
 > [!NOTE]
 > Depois de você ter adicionado o novo cliente enviando as alterações, você não poderá executar esta solução novamente desta forma, porque não poderá adicionar o mesmo cliente novamente. Para executar novamente a solução, altere o valor da identificação do cliente a ser adicionado.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Aprendendo com explicações passo a passo](learning-by-walkthroughs.md)

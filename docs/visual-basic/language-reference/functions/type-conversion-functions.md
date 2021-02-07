@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: funções de conversão de tipo (Visual Basic)'
 title: Funções de conversão do tipo
 ms.date: 10/24/2018
 f1_keywords:
@@ -81,18 +82,18 @@ helpviewer_keywords:
 - rounding numbers [Visual Basic], banker's rounding
 - type conversion [Visual Basic], Visual Basic vs. .NET Framework
 ms.assetid: d9d8d165-f967-44ff-a6cd-598e4740a99e
-ms.openlocfilehash: 5c0cfae01da02222d0827e81ec1ed35ce353ead1
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c2e701b522bbeb32f4f6f448acd78e09b0616f46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415369"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731078"
 ---
 # <a name="type-conversion-functions-visual-basic"></a>Funções de conversão do tipo (Visual Basic)
 
 Essas funções são compiladas em linha, o que significa que o código de conversão faz parte do código que avalia a expressão. Às vezes, não há nenhuma chamada para um procedimento para realizar a conversão, o que melhora o desempenho. Cada função impõe uma expressão para um tipo de dados específico.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 CBool(expression)
@@ -116,7 +117,7 @@ CUShort(expression)
 ## <a name="part"></a>Parte
 
 `expression`  
-Obrigatórios. Qualquer expressão do tipo de dados de origem.
+Obrigatório. Qualquer expressão do tipo de dados de origem.
 
 ## <a name="return-value-data-type"></a>Tipo de dados de valor de retorno
 
@@ -125,21 +126,21 @@ O nome da função determina o tipo de dados do valor que ele retorna, conforme 
 |Nome da função|Tipo de dados de retorno|Intervalo para o `expression` argumento|
 |-------------------|----------------------|-------------------------------------|
 |`CBool`|[Tipo de dados booliano](../data-types/boolean-data-type.md)|Qualquer `Char` expressão válida ou `String` numérica.|
-|`CByte`|[Tipo de Dados Byte](../data-types/byte-data-type.md)|<xref:System.Byte.MinValue?displayProperty=nameWithType>(0) a <xref:System.Byte.MaxValue?displayProperty=nameWithType> (255) (não assinado); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho da conversão de ponto flutuante para byte com a `CByte` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
+|`CByte`|[Tipo de Dados Byte](../data-types/byte-data-type.md)|<xref:System.Byte.MinValue?displayProperty=nameWithType> (0) a <xref:System.Byte.MaxValue?displayProperty=nameWithType> (255) (não assinado); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho da conversão de ponto flutuante para byte com a `CByte` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
 |`CChar`|[Tipo de Dados de Caractere](../data-types/char-data-type.md)|Qualquer `Char` expressão ou válida `String` ; somente o primeiro caractere de a `String` é convertido; o valor pode ser de 0 a 65535 (não assinado).|
 |`CDate`|[Tipo de Dados de Data](../data-types/date-data-type.md)|Qualquer representação válida de uma data e hora.|
 |`CDbl`|[Tipo de Dados Duplo](../data-types/double-data-type.md)|-1.79769313486231570 e + 308 a-4.94065645841246544 E-324 para valores negativos; 4.94065645841246544 e-324 a 1.79769313486231570 E + 308 para valores positivos.|
 |`CDec`|[Tipo de Dados Decimal](../data-types/decimal-data-type.md)|+/-79228162514264337593543950335 para números com escala zero, ou seja, números sem casas decimais. Para números com 28 casas decimais, o intervalo é +/-7.9228162514264337593543950335. O menor número não zero possível é 0, 1 (+/-1E-28).|
-|`CInt`|[Tipo de Dados Integer](../data-types/integer-data-type.md)|<xref:System.Int32.MinValue?displayProperty=nameWithType>(-2.147.483.648) a <xref:System.Int32.MaxValue?displayProperty=nameWithType> (2.147.483.647); partes fracionárias são arredondadas.<sup> 1</sup> <br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho da conversão de ponto flutuante para inteiro com a `CInt` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo. |
-|`CLng`|[Tipo de Dados Long](../data-types/long-data-type.md)|<xref:System.Int64.MinValue?displayProperty=nameWithType>(-9.223.372.036.854.775.808) a <xref:System.Int64.MaxValue?displayProperty=nameWithType> (9.223.372.036.854.775.807); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho de ponto flutuante para conversão de inteiro de 64 bits com a `CLng` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
+|`CInt`|[Tipo de Dados Integer](../data-types/integer-data-type.md)|<xref:System.Int32.MinValue?displayProperty=nameWithType> (-2.147.483.648) a <xref:System.Int32.MaxValue?displayProperty=nameWithType> (2.147.483.647); partes fracionárias são arredondadas.<sup> 1</sup> <br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho da conversão de ponto flutuante para inteiro com a `CInt` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo. |
+|`CLng`|[Tipo de Dados Long](../data-types/long-data-type.md)|<xref:System.Int64.MinValue?displayProperty=nameWithType> (-9.223.372.036.854.775.808) a <xref:System.Int64.MaxValue?displayProperty=nameWithType> (9.223.372.036.854.775.807); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho de ponto flutuante para conversão de inteiro de 64 bits com a `CLng` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
 |`CObj`|[Tipo de dados Object](../data-types/object-data-type.md)|Qualquer expressão válida.|
-|`CSByte`|[Tipo de Dados SByte](../data-types/sbyte-data-type.md)|<xref:System.SByte.MinValue?displayProperty=nameWithType>(-128) a <xref:System.SByte.MaxValue?displayProperty=nameWithType> (127); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho do ponto flutuante para conversão de bytes assinado com a `CSByte` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
-|`CShort`|[Tipo de Dados Short](../data-types/short-data-type.md)|<xref:System.Int16.MinValue?displayProperty=nameWithType>(-32.768) a <xref:System.Int16.MaxValue?displayProperty=nameWithType> (32.767); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho de ponto flutuante para conversão de inteiros de 16 bits com a `CShort` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
+|`CSByte`|[Tipo de Dados SByte](../data-types/sbyte-data-type.md)|<xref:System.SByte.MinValue?displayProperty=nameWithType> (-128) a <xref:System.SByte.MaxValue?displayProperty=nameWithType> (127); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho do ponto flutuante para conversão de bytes assinado com a `CSByte` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
+|`CShort`|[Tipo de Dados Short](../data-types/short-data-type.md)|<xref:System.Int16.MinValue?displayProperty=nameWithType> (-32.768) a <xref:System.Int16.MaxValue?displayProperty=nameWithType> (32.767); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho de ponto flutuante para conversão de inteiros de 16 bits com a `CShort` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
 |`CSng`|[Tipo de Dados Simples](../data-types/single-data-type.md)|-3.402823 e + 38 a-1.401298 E-45 para valores negativos; 1.401298 e-45 a 3.402823 E + 38 para valores positivos.|
 |`CStr`|[Tipo de dados da cadeia de caracteres](../data-types/string-data-type.md)|Retorna para `CStr` depende do `expression` argumento. Confira [valores de retorno para a função CStr](return-values-for-the-cstr-function.md).|
-|`CUInt`|[Tipo de Dados UInteger](../data-types/uinteger-data-type.md)|<xref:System.UInt32.MinValue?displayProperty=nameWithType>(0) a <xref:System.UInt32.MaxValue?displayProperty=nameWithType> (4.294.967.295) (não assinado); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho do ponto flutuante para conversão de inteiros sem sinal com a `CUInt` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
-|`CULng`|[Tipo de Dados ULong](../data-types/ulong-data-type.md)|<xref:System.UInt64.MinValue?displayProperty=nameWithType>(0) por meio <xref:System.UInt64.MaxValue?displayProperty=nameWithType> de (18446744073709551615) (não assinado); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho de ponto flutuante para conversão de inteiro longo sem sinal com a `CULng` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
-|`CUShort`|[Tipo de Dados UShort](../data-types/ushort-data-type.md)|<xref:System.UInt16.MinValue?displayProperty=nameWithType>(0) a <xref:System.UInt16.MaxValue?displayProperty=nameWithType> (65.535) (não assinado); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho do ponto flutuante para conversão de inteiros de 16 bits sem sinal com a `CUShort` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
+|`CUInt`|[Tipo de Dados UInteger](../data-types/uinteger-data-type.md)|<xref:System.UInt32.MinValue?displayProperty=nameWithType> (0) a <xref:System.UInt32.MaxValue?displayProperty=nameWithType> (4.294.967.295) (não assinado); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho do ponto flutuante para conversão de inteiros sem sinal com a `CUInt` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
+|`CULng`|[Tipo de Dados ULong](../data-types/ulong-data-type.md)|<xref:System.UInt64.MinValue?displayProperty=nameWithType> (0) por meio <xref:System.UInt64.MaxValue?displayProperty=nameWithType> de (18446744073709551615) (não assinado); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho de ponto flutuante para conversão de inteiro longo sem sinal com a `CULng` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
+|`CUShort`|[Tipo de Dados UShort](../data-types/ushort-data-type.md)|<xref:System.UInt16.MinValue?displayProperty=nameWithType> (0) a <xref:System.UInt16.MaxValue?displayProperty=nameWithType> (65.535) (não assinado); partes fracionárias são arredondadas.<sup> 1</sup><br/><br/>A partir do Visual Basic 15,8, Visual Basic otimiza o desempenho do ponto flutuante para conversão de inteiros de 16 bits sem sinal com a `CUShort` função; consulte a seção [comentários](#remarks) para obter mais informações. Consulte a seção [exemplo de CInt](#cint-example) para obter um exemplo.|
 
 <sup>1</sup> partes fracionárias podem estar sujeitas a um tipo especial de arredondamento chamado de *arredondamento do Banker*. Consulte "Comentários" para obter mais informações.
 
@@ -183,9 +184,9 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
 
      Se a parte fracionária for exatamente 0,5, as funções de conversão de inteiros o arredondarão para o inteiro par mais próximo. Por exemplo, 0,5 arredonda para 0 e 1,5 e 2,5 são arredondados para 2. Isso às vezes é chamado de *arredondamento do Banker*, e sua finalidade é compensar uma tendência que poderia se acumular ao adicionar muitos desses números juntos.
 
-     `CInt`e `CLng` difere das <xref:Microsoft.VisualBasic.Conversion.Int%2A> <xref:Microsoft.VisualBasic.Conversion.Fix%2A> funções e, que truncam, em vez de round, a parte fracionária de um número. Além disso, `Fix` e `Int` sempre retornam um valor do mesmo tipo de dados que você passa.
+     `CInt` e `CLng` difere das <xref:Microsoft.VisualBasic.Conversion.Int%2A> <xref:Microsoft.VisualBasic.Conversion.Fix%2A> funções e, que truncam, em vez de round, a parte fracionária de um número. Além disso, `Fix` e `Int` sempre retornam um valor do mesmo tipo de dados que você passa.
 
-- **Conversões de data/hora.** Use a <xref:Microsoft.VisualBasic.Information.IsDate%2A> função para determinar se um valor pode ser convertido em uma data e hora. `CDate`o reconhece literais de datas e literais de tempo, mas não valores numéricos. Para converter um valor Visual Basic 6,0 em `Date` um `Date` valor em Visual Basic 2005 ou versões posteriores, você pode usar o <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> método.
+- **Conversões de data/hora.** Use a <xref:Microsoft.VisualBasic.Information.IsDate%2A> função para determinar se um valor pode ser convertido em uma data e hora. `CDate` o reconhece literais de datas e literais de tempo, mas não valores numéricos. Para converter um valor Visual Basic 6,0 em `Date` um `Date` valor em Visual Basic 2005 ou versões posteriores, você pode usar o <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> método.
 
 - **Valores de data/hora neutros.** O [tipo de dados Date](../data-types/date-data-type.md) sempre contém informações de data e hora. Para fins de conversão de tipo, Visual Basic considera 1/1/0001 (1º de Janeiro do ano 1) como um *valor neutro* para a data e 00:00:00 (meia-noite) para ser um valor neutro para o tempo. Se você converter um `Date` valor em uma cadeia de caracteres, o não `CStr` incluirá valores neutros na cadeia de caracteres resultante. Por exemplo, se você converter `#January 1, 0001 9:30:00#` em uma cadeia de caracteres, o resultado será "9:30:00 AM"; as informações de data são suprimidas. No entanto, as informações de data ainda estão presentes no `Date` valor original e podem ser recuperadas com funções como a <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A> função.
 
@@ -283,7 +284,7 @@ O exemplo a seguir usa a `CStr` função para converter `Date` valores em `Strin
 
 [!code-vb[VbVbalrFunctions#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#15)]
 
-`CStr`sempre renderiza um `Date` valor no formato curto padrão para a localidade atual, por exemplo, "6/15/2003 4:35:47 PM". No entanto, `CStr` suprime os *valores neutros* de 1/1/0001 para a data e 00:00:00 para a hora.
+`CStr` sempre renderiza um `Date` valor no formato curto padrão para a localidade atual, por exemplo, "6/15/2003 4:35:47 PM". No entanto, `CStr` suprime os *valores neutros* de 1/1/0001 para a data e 00:00:00 para a hora.
 
 Para obter mais detalhes sobre os valores retornados por `CStr` , consulte [valores de retorno para a função CStr](return-values-for-the-cstr-function.md).
 
@@ -305,7 +306,7 @@ O exemplo a seguir usa a `CUShort` função para converter um valor numérico em
 
 [!code-vb[VbVbalrFunctions#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#18)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: esquema de configurações de criptografia'
 title: Esquema de configurações de criptografia
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - configuration sections [.NET Framework]
 - configuration settings [.NET Framework], cryptography
 ms.assetid: 1f55050a-b2a3-4868-a3c0-da20826150f3
-ms.openlocfilehash: 0215851f83a13ee48547144f08c5c693ec2d90bf
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a7b3c020ed760aba24c9faf020281b7ad4bf3af7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149524"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730077"
 ---
 # <a name="cryptography-settings-schema"></a>Esquema de configurações de criptografia
 
@@ -42,7 +43,7 @@ O esquema de configurações de criptografia contém elementos que especificam c
 |[**\<oidEntry>**](oidentry-element.md)|Mapeia um OID (identificador de objeto) do ASN.1 para um nome amigável.|  
 |[**\<oidMap>**](oidmap-element.md)|Contém mapeamentos de OID do ASN.1 para classes.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema do arquivo de configuração](../index.md)
 - [Serviços criptográficos](../../../../standard/security/cryptographic-services.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: membros protegidos'
 title: Membros protegidos
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - unsealed classes
 - customizing class behavior
 ms.assetid: aa0b58ee-3956-494d-ab48-471ae5db8740
-ms.openlocfilehash: a6f36ac4f994fdc3211cac619cc0b20f7b0335b1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5860828a5a469c77fbee001d01460a488fda4edf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730949"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731754"
 ---
 # <a name="protected-members"></a>Membros protegidos
 

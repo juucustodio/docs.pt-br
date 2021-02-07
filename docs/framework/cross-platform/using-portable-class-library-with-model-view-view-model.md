@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: usando a biblioteca de classes portátil com modelo de exibição de modelo-exibição'
 title: Usando a Biblioteca de Classes Portátil com Modelo MVVM
 ms.date: 07/18/2018
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Portable Class Library [.NET Framework], and MVVM
 - MVVM, and Portable Class Library
 ms.assetid: 41a0b9f8-15a2-431a-bc35-e310b2953b03
-ms.openlocfilehash: e8bce469fd09de02ef6ab30e21ae20a9b9f71325
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4eea099aaa515c2b7d9874fd6c6d5c4132c5e7a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96259265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729680"
 ---
 # <a name="using-portable-class-library-with-model-view-view-model"></a>Usando a Biblioteca de Classes Portátil com Modelo MVVM
 
@@ -94,6 +95,6 @@ Você pode usar a .NET Framework [biblioteca de classes portátil](portable-clas
   
  [!code-xaml[PortableClassLibraryMVVM#6](../../../samples/snippets/csharp/VS_Snippets_CLR/portableclasslibrarymvvm/cs/mainwindow.xaml#6)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Biblioteca de Classes Portátil](portable-class-library.md)

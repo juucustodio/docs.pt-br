@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: cláusula Where (Visual Basic)'
 title: Cláusula Where
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - queries [Visual Basic], Where
 - Where clause [Visual Basic]
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
-ms.openlocfilehash: 3a43554fb25592bf413525a2df109010e4868492
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 11f9a7e586a1fdea826df4fb34a7227747c8cebd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869633"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730311"
 ---
 # <a name="where-clause-visual-basic"></a>Cláusula Where (Visual Basic)
 
 Especifica a condição de filtragem para uma consulta.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Where condition  
@@ -28,7 +29,7 @@ Where condition
 ## <a name="parts"></a>Partes  
 
  `condition`  
- Necessário. Uma expressão que determina se os valores para o item atual na coleção são incluídos na coleção de saída. A expressão deve ser avaliada como um `Boolean` valor ou equivalente a um `Boolean` valor. Se a condição for avaliada como `True` , o elemento será incluído no resultado da consulta; caso contrário, o elemento será excluído do resultado da consulta.  
+ Obrigatório. Uma expressão que determina se os valores para o item atual na coleção são incluídos na coleção de saída. A expressão deve ser avaliada como um `Boolean` valor ou equivalente a um `Boolean` valor. Se a condição for avaliada como `True` , o elemento será incluído no resultado da consulta; caso contrário, o elemento será excluído do resultado da consulta.  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -50,7 +51,7 @@ Where condition
   
  [!code-vb[VbSimpleQuerySamples#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#31)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a LINQ no Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
 - [Consultas](index.md)

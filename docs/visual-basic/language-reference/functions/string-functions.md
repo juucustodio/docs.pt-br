@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: funções de cadeia de caracteres (Visual Basic)'
 title: Funções de Cadeia de Caracteres
 ms.date: 07/20/2015
 helpviewer_keywords:
 - string functions
 ms.assetid: f1bf9ac2-cbcf-4298-ae51-53182076bdc8
-ms.openlocfilehash: 778e57eadd75baf1aabd100f9d8d41a490f79a04
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 1c121bc3de66caf748426b5cd04d049b30bf78bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406282"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731092"
 ---
 # <a name="string-functions-visual-basic"></a>Funções da cadeia de caracteres (Visual Basic)
 
@@ -87,9 +88,9 @@ Este exemplo mostra vários usos da função `Format` para formatar valores usan
 
 [!code-vb[VbVbalrStrings#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#27)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Palavras-chave](../keywords/index.md)
 - [Membros da Biblioteca de Runtime do Visual Basic](../runtime-library-members.md)
-- [Resumo de Manipulação da Cadeia de Caracteres](../keywords/string-manipulation-summary.md)
+- [Resumo de manipulação da cadeia de caracteres](../keywords/string-manipulation-summary.md)
 - [Métodos de classe System. String](xref:System.String#methods)

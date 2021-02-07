@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador OR (Visual Basic)'
 title: Operador Or
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - logical disjunction
 - disjunction operator [Visual Basic]
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
-ms.openlocfilehash: f6cfd1073ada42aa2db8be9b14c81319bc0db294
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: dfc50af2298c162707976e4b2eda9e9536aa64bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874754"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730324"
 ---
 # <a name="or-operator-visual-basic"></a>Operador Or (Visual Basic)
 
 Executa uma disjunção lógica em duas `Boolean` expressões ou uma disjunção bit a bit em duas expressões numéricas.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 result = expression1 Or expression2  
@@ -95,7 +96,7 @@ result = expression1 Or expression2
   
  O exemplo anterior produz resultados de 10, 14 e 14, respectivamente.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores lógicos/bit a bit (Visual Basic)](logical-bitwise-operators.md)
 - [Precedência do operador no Visual Basic](operator-precedence.md)

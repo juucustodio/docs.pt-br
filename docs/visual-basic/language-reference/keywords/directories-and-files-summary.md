@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Resumo de diretórios e arquivos (Visual Basic)'
 title: Resumo de diretórios e arquivos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - directories [Visual Basic], Visual Basic
 - files [Visual Basic], summary
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
-ms.openlocfilehash: 84e5ac5276eeddf399003f72ef72e7117feb011b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 4f0d05cfa94076e1619748042faca61008a3a1c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90868937"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730740"
 ---
 # <a name="directories-and-files-summary-visual-basic"></a>Resumo de diretórios e arquivos (Visual Basic)
 
@@ -34,7 +35,7 @@ As palavras-chave do idioma Visual Basic e os membros da biblioteca de tempo de 
 |Retornar o nome ou o rótulo de volume de um arquivo.|<xref:Microsoft.VisualBasic.FileSystem.Dir%2A>|  
 |Definir informações de atributo para um arquivo.|<xref:Microsoft.VisualBasic.FileSystem.SetAttr%2A>|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Palavras-chave](index.md)
 - [Membros da Biblioteca de Runtime do Visual Basic](../runtime-library-members.md)

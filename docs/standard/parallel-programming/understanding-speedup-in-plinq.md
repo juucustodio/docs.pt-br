@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Noções básicas sobre a velocidade de aumento no PLINQ'
 title: Noções básicas sobre agilização em PLINQ
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - PLINQ queries, performance tuning
 ms.assetid: 53706c7e-397d-467a-98cd-c0d1fd63ba5e
-ms.openlocfilehash: 64eb346ba57e9af9f5be0cc1b42398c4f539d4d4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2cfa0a6e37004b1d4a7e799c83f6a4bad32b56db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689895"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731442"
 ---
 # <a name="understanding-speedup-in-plinq"></a>Noções básicas sobre agilização em PLINQ
 
@@ -84,6 +85,6 @@ O principal objetivo do PLINQ é acelerar a execução das consultas do LINQ to 
   
 - Consultas que contêm Reverse, a menos que ela seja aplicada a fontes de dados indexáveis.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ paralelo (PLINQ)](introduction-to-plinq.md)

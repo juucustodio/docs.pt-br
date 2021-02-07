@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: usando um delegado AsyncCallback e um objeto de estado'
 title: Usando um delegado AsyncCallback e um objeto de estado
 ms.date: 03/30/2017
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - asynchronous programming, state objects
 - IAsyncResult interface, samples
 ms.assetid: e3e5475d-c5e9-43f0-928e-d18df8ca1f1d
-ms.openlocfilehash: 3a929ad6e6445338325b1111ea57556272d6f7ae
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b7ffb3180d7e2e15a12d3bf0f98311b0310112e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699736"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732224"
 ---
 # <a name="using-an-asynccallback-delegate-and-state-object"></a>Usando um delegado AsyncCallback e um objeto de estado
 
@@ -28,7 +29,7 @@ Ao usar um representante <xref:System.AsyncCallback> para processar os resultado
  [!code-csharp[AsyncDesignPattern#5](../../../samples/snippets/csharp/VS_Snippets_CLR/AsyncDesignPattern/CS/AsyncDelegateWithStateObject.cs#5)]
  [!code-vb[AsyncDesignPattern#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDesignPattern/VB/AsyncDelegateWithStateObject.vb#5)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Padrão assíncrono baseado em evento (EAP)](event-based-asynchronous-pattern-eap.md)
 - [Visão geral do padrão assíncrono baseado em evento](event-based-asynchronous-pattern-overview.md)

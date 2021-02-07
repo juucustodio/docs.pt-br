@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: estendendo o DOM'
 title: Estendendo os DOM
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b5489c96-4afd-439a-a25d-fc82eb4a148d
-ms.openlocfilehash: 173d36f534f951cfafefd3bd69b7ab245d575747
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 46b721e093b2cf0247ddd7cf145381cdaec75773
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829499"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732144"
 ---
 # <a name="extending-the-dom"></a>Estendendo os DOM
 
@@ -249,6 +250,6 @@ Para saber mais sobre a manipulação de eventos do nó, confira [Eventos](../..
 
 Se você está substituindo o método de <xref:System.Xml.XmlDocument.CreateElement%2A> em uma classe derivada, os atributos padrão não são adicionados quando você está criando novos elementos ao editar o documento. Este é apenas um problema ao editar. Porque o método de <xref:System.Xml.XmlDocument.CreateElement%2A> é responsável para adicionar atributos padrão para <xref:System.Xml.XmlDocument>, você deve codificar essa funcionalidade no método de <xref:System.Xml.XmlDocument.CreateElement%2A> . Se você está carregando <xref:System.Xml.XmlDocument> que inclui atributos padrão, serão tratados corretamente. Para saber mais sobre os atributos padrão, confira [Criando novos atributos para os elementos em DOM](creating-new-attributes-for-elements-in-the-dom.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

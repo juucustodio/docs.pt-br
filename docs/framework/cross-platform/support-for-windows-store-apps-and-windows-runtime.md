@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: suporte a .NET Framework para aplicativos Microsoft Store e Windows Runtime'
 title: Suporte .NET Framework para Microsoft Store aplicativos e Windows Runtime
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - .NET Framework, and Windows Store apps
 - .NET Framework, and Windows Runtime
 ms.assetid: 6fa7d044-ae12-4c54-b8ee-50915607a565
-ms.openlocfilehash: 88b269e9c6174b32a5fae4edf9a8b7b50a2817ce
-ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
+ms.openlocfilehash: 851deb30420eb19c4fe2037bebe2cf8f84743c49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92687791"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729647"
 ---
 # <a name="net-framework-support-for-microsoft-store-apps-and-windows-runtime"></a>Suporte .NET Framework para Microsoft Store aplicativos e Windows Runtime
 
@@ -152,9 +153,9 @@ Você pode empacotar um conjunto de controles de interface do usuário relaciona
 
 Você pode empacotar o código gerenciado de seus aplicativos de área de trabalho existentes como um componente Windows Runtime autônomo. Isso permite que você use o componente no Windows 8. x aplicativos da loja criados usando C++ ou JavaScript, bem como em aplicativos da loja do Windows 8. x criados usando C# ou Visual Basic. O controle de versão é uma opção se houver vários cenários de reutilização para o código.
 
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Visão geral dos aplicativos .NET para Windows Store](/previous-versions/windows/apps/br230302(v=vs.140))|Descreve os tipos de .NET Framework e os membros que você pode usar para criar aplicativos de armazenamento do Windows 8. x e do Windows RuntimeComponents. (No centro de desenvolvimento do Windows.)|
 |[Roteiro para aplicativos da Windows Store usando C# ou Visual Basic](/previous-versions/windows/apps/br229583(v=win.10))|Fornece recursos importantes para ajudá-lo a começar a desenvolver aplicativos da loja do Windows 8. x usando C# ou Visual Basic, incluindo muitos tópicos de início rápido, diretrizes e práticas recomendadas. (No centro de desenvolvimento do Windows.)|

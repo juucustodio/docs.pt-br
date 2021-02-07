@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Personalizando operações: visão geral'
 title: 'Personalizar operações: Visão geral'
 ms.date: 03/30/2017
 ms.assetid: a3546296-1443-4b88-aa6e-d41011041ba7
-ms.openlocfilehash: d4d375716e3199afcbbb9bbd8b8b04867ca0e5fa
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bdcaf482f49b9c55fb7a1834b19b683ac2fa16bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173517"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729595"
 ---
 # <a name="customizing-operations-overview"></a>Personalizar operações: Visão geral
 
@@ -27,6 +28,6 @@ Por padrão, o [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md
 
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] dá suporte ao uso de procedimentos armazenados e funções definidas pelo usuário. Os procedimentos armazenados são usados para personalizar operações. Para obter mais informações, consulte [Procedimentos armazenados](stored-procedures.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Personalizando a inserção, atualiazação, e as operações de exclusão](customizing-insert-update-and-delete-operations.md)

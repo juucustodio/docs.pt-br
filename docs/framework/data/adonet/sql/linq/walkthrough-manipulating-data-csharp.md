@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: Manipulando dados (C#)'
 title: 'Passo a passo: Manipular dados (C#)'
 ms.date: 03/30/2017
 ms.assetid: 24adfbe0-0ad6-449f-997d-8808e0770d2e
-ms.openlocfilehash: fefbee533634ee42785c65e0265ce1e0567561b5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6176709a2e02d8c06ec54b70cc6e0e4c302509c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164058"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729582"
 ---
 # <a name="walkthrough-manipulating-data-c"></a>Passo a passo: Manipular dados (C#)
 
@@ -57,7 +58,7 @@ Essa explicação passo a passo fornece um cenário completo fundamental do [!IN
   
 #### <a name="to-create-a-linq-to-sql-solution"></a>Para criar uma solução LINQ to SQL  
   
-1. No menu **arquivo** do Visual Studio, aponte para **novo**e clique em **projeto**.  
+1. No menu **arquivo** do Visual Studio, aponte para **novo** e clique em **projeto**.  
   
 2. No painel **tipos de projeto** na caixa de diálogo **novo projeto** , clique em **Visual C#**.  
   
@@ -75,7 +76,7 @@ Essa explicação passo a passo fornece um cenário completo fundamental do [!IN
   
 #### <a name="to-add-systemdatalinq"></a>Para adicionar System.Data.Linq  
   
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **referências**e clique em **Adicionar referência**.  
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **referências** e clique em **Adicionar referência**.  
   
 2. Na caixa de diálogo **Adicionar referência** , clique em **.net**, clique no assembly System. Data. LINQ e, em seguida, clique em **OK**.  
   
@@ -172,6 +173,6 @@ Essa explicação passo a passo fornece um cenário completo fundamental do [!IN
 > [!NOTE]
 > Depois de adicionar o novo cliente enviando as alterações, você não poderá executar esta solução novamente como está. Para executar novamente a solução, altere o nome do cliente e a ID do cliente a ser adicionada.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Aprendendo com explicações passo a passo](learning-by-walkthroughs.md)

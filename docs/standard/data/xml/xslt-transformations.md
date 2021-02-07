@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: transformações XSLT'
 title: Transformações XSLT
 ms.date: 03/30/2017
 ms.assetid: 202f8820-224c-494f-b61e-cd127eac6e03
-ms.openlocfilehash: 686b2d454eda99095bcb335c8b0edba9ecf2e304
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 34fb84450ac2bb455a9b7132f79b4e1246c48ea3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685052"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731858"
 ---
 # <a name="xslt-transformations"></a>Transformações XSLT
 

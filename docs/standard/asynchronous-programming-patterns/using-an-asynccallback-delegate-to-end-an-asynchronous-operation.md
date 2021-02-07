@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: usando um delegado AsyncCallback para finalizar uma operação assíncrona'
 title: Usando um delegado AsyncCallback para finalizar uma operação assíncrona
 ms.date: 03/30/2017
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - AsyncCallback delegate
 - stopping asynchronous operations
 ms.assetid: 9d97206c-8917-406c-8961-7d0909d84eeb
-ms.openlocfilehash: 1da6bd95c79b25b5bbf6674cf7e9ef48d19cb708
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c97be1b9dbf225cfb76f8d9392269297fc1d123c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677954"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732183"
 ---
 # <a name="using-an-asynccallback-delegate-to-end-an-asynchronous-operation"></a>Usando um delegado AsyncCallback para finalizar uma operação assíncrona
 
@@ -34,7 +35,7 @@ Os aplicativos que podem executar outras tarefas enquanto aguardam os resultados
  [!code-csharp[AsyncDesignPattern#4](../../../samples/snippets/csharp/VS_Snippets_CLR/AsyncDesignPattern/CS/AsyncDelegateNoStateObject.cs#4)]
  [!code-vb[AsyncDesignPattern#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDesignPattern/VB/AsyncDelegateNoState.vb#4)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Padrão assíncrono baseado em evento (EAP)](event-based-asynchronous-pattern-eap.md)
 - [Visão geral do padrão assíncrono baseado em evento](event-based-asynchronous-pattern-overview.md)

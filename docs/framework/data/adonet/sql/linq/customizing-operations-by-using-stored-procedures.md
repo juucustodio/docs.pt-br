@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Personalizando operações usando procedimentos armazenados'
 title: Personalizando operações usando procedimentos armazenados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a
-ms.openlocfilehash: 3034af783f754a0fa044f13cba0df21e277bc1da
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: aa345ef8404b7cae7d96f75bb60325793767cd50
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173504"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729530"
 ---
 # <a name="customizing-operations-by-using-stored-procedures"></a>Personalizando operações usando procedimentos armazenados
 
@@ -54,6 +55,6 @@ Os procedimentos armazenados representam uma abordagem mais comum para substitui
  [!code-csharp[DLinqOverrideDefaultSproc#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefaultSproc/cs/Program.cs#3)]
  [!code-vb[DLinqOverrideDefaultSproc#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefaultSproc/vb/Module1.vb#3)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Responsabilidades do desenvolvedor em substituir o comportamento padrão](responsibilities-of-the-developer-in-overriding-default-behavior.md)

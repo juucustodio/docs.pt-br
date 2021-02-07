@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: nós correspondentes usando XPathNavigator'
 title: Nós compatíveis usando XPathNavigator
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e6848c47-ee5d-401a-89a5-50b5eed40f30
-ms.openlocfilehash: 2d598a4ddfe84eec7288d111fc156dd0c555a10e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d142490829473d0891c5b2f18b1c3ec9e7ace426
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720120"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732001"
 ---
 # <a name="matching-nodes-using-xpathnavigator"></a>Nós compatíveis usando XPathNavigator
 
@@ -37,7 +38,7 @@ XPathNavigator navigator = document.CreateNavigator();
 navigator.Matches("b[@c]");  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC40028: o tipo de parâmetro ' <parametername> ' não tem conformidade com CLS"
 title: O tipo de parâmetro '<parametername>' não é compatível com CLS
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40028
 ms.assetid: dfa1f6f9-bb88-44ad-b85f-149144363d41
-ms.openlocfilehash: 7043138f770264b73eeac79cd262104b88cd8516
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 5e430e55e24001d779243645cf4b409d1801d6f2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161225"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731091"
 ---
 # <a name="bc40028-type-of-parameter-parametername-is-not-cls-compliant"></a>BC40028: tipo de parâmetro " \<parametername> " não tem conformidade com CLS
 

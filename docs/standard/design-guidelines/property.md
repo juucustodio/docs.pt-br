@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: design de propriedade'
 title: Design de propriedade
 ms.date: 10/22/2008
 helpviewer_keywords:
 - member design guidelines, properties
 - properties [.NET Framework], design guidelines
 ms.assetid: 127cbc0c-cbed-48fd-9c89-7c5d4f98f163
-ms.openlocfilehash: ed287b98c012622caa5f8f1cc90fced90dda3e62
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b2f776a5fb651f8b2e61b750a556704fa6c8c366
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731793"
 ---
 # <a name="property-design"></a>Design de propriedade
 

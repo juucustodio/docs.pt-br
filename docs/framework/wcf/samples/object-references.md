@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: referências de objeto'
 title: Referências de objeto
 ms.date: 03/30/2017
 ms.assetid: 7a93d260-91c3-4448-8f7a-a66fb562fc23
-ms.openlocfilehash: 55cadc908a3479ee3d104354bcbfd3ea49b15d07
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ae76cf13b4ccbbde2ad6d5022248bbcfeb263879
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262366"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732404"
 ---
 # <a name="object-references"></a>Referências de objeto
 
@@ -116,7 +117,7 @@ public List<Person> GetCommonFriends(List<Person> people)
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\ObjectReferences`  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>
 - [Referências de objeto de interoperabilidade](../feature-details/interoperable-object-references.md)

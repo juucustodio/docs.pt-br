@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: iterador (Visual Basic)'
 title: Iterador
 ms.date: 07/20/2015
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Iterator keyword [Visual Basic]
 ms.assetid: 69cb0b04-ac87-49d0-bcfe-810c0d60daff
-ms.openlocfilehash: 0b459a16317b8ba55886e52ecadb227ddf2fee83
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 7a3329ba23a3f2487343b332f3bb9c4b19c36496
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875431"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730519"
 ---
 # <a name="iterator-visual-basic"></a>Iterador (Visual Basic)
 
@@ -55,7 +56,7 @@ Especifica que uma função ou `Get` acessador é um iterador.
   
  Para obter exemplos adicionais, consulte [iteradores](../../programming-guide/concepts/iterators.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>
 - [Iterators](../../programming-guide/concepts/iterators.md)

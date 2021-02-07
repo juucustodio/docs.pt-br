@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: esquema do arquivo de configuração para o .NET Framework'
 title: Esquema de arquivos de configuração para o .NET Framework
 ms.date: 05/01/2017
 helpviewer_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - configuration settings [.NET Framework], applications
 - configuration file reference [.NET Framework]
 ms.assetid: 69003d39-dc8a-460c-a6be-e6d93e690b38
-ms.openlocfilehash: ab6f12be01899f5b7e54a7ec2d9675d502d88bc3
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: eac6d14f29f5ae0eeb65efe5a1416b8f40583be3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555127"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729947"
 ---
 # <a name="configuration-file-schema-for-the-net-framework"></a>Esquema de arquivos de configuração para o .NET Framework
 

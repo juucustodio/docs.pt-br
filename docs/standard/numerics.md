@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: numéricos no .NET'
 title: Numéricos no .NET
 ms.date: 10/18/2018
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - numerics
 - BigInteger
 ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
-ms.openlocfilehash: f674f05e864e11c83bb2e046ed54b91afebf167e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 386b5322a19b1f59358a941d7c37f7e5a81df30c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831137"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731663"
 ---
 # <a name="numerics-in-net"></a>Numéricos no .NET
 
@@ -25,7 +26,7 @@ O .NET fornece uma variedade de inteiros numéricos e primitivos de ponto flutua
 
 O .NET dá suporte a tipos inteiros tanto com sinal quanto sem sinal de 8, 16, 32 e 64 bits, que estão listados na tabela a seguir:
   
-|Type|Assinado/não assinado|Tamanho (em bytes)|Valor mínimo|Valor máximo|  
+|Tipo|Assinado/não assinado|Tamanho (em bytes)|Valor mínimo|Valor máximo|  
 |----------|----------------------|--------------------|-------------------|-------------------|  
 |<xref:System.Byte?displayProperty=nameWithType>|Não assinado|1|0|255|  
 |<xref:System.Int16?displayProperty=nameWithType>|Com sinal|2|-32,768|32.767|  
@@ -51,7 +52,7 @@ A estrutura <xref:System.Numerics.BigInteger?displayProperty=nameWithType> é um
 
 O .NET inclui três primitivos tipos de ponto flutuante, que estão listados na tabela a seguir:
   
-|Type|Tamanho (em bytes)|Intervalo aproximado|Precisão|  
+|Tipo|Tamanho (em bytes)|Intervalo aproximado|Precisão|  
 |----------|--------|---------------------|--------------------|  
 |<xref:System.Single?displayProperty=nameWithType>|4|±1,5 x 10<sup>−45</sup> para ±3,4 x 10<sup>38</sup>|~6 a 9 dígitos|  
 |<xref:System.Double?displayProperty=nameWithType>|8|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15 a 17 dígitos|  
@@ -95,6 +96,6 @@ Os tipos habilitados para SIMD são implementados de modo que possam ser usados 
 
 Para obter mais informações, consulte [usar tipos numéricos acelerados por SIMD](simd.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Cadeias de Caracteres de Formato Numérico Padrão](base-types/standard-numeric-format-strings.md)

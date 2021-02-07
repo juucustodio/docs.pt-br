@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: carregar dados de um leitor'
 title: Carregando dados de um leitor
 ms.date: 03/30/2017
 ms.assetid: 7e74918c-bc72-4977-a49b-e1520a6d8f60
-ms.openlocfilehash: 345b6e35c84fe531e131d27bd09fbd8a87b4521a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b7f21ff96dd616fa9919d02d3a7edfd4ac8d0678
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732079"
 ---
 # <a name="load-data-from-a-reader"></a>Carregando dados de um leitor
 
@@ -27,6 +28,6 @@ Se um documento XML é carregado usando o método <xref:System.Xml.XmlDocument.L
   
  Por padrão, <xref:System.Xml.XmlDocument.Load%2A> não verifica se o XML é válida usando o Document type definition (DTD) ou validação de esquema. Verifica somente se está XML bem formado. Para que a validação ocorre, você precisa criar <xref:System.Xml.XmlReader> usando a classe de <xref:System.Xml.XmlReaderSettings> . A classe <xref:System.Xml.XmlReader> pode impor a validação usando um esquema da linguagem XSD ou DTD. A propriedade de <xref:System.Xml.ValidationType> na classe de <xref:System.Xml.XmlReaderSettings> determina se a instância de <xref:System.Xml.XmlReader> aplica a validação. Para obter mais informações sobre a validação de dados XML, consulte a seção comentários da página de referência <xref:System.Xml.XmlReader>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: design de parâmetro'
 title: Design de parâmetro
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - parameters, design guidelines
 - reserved parameters
 ms.assetid: 3f33bf46-4a7b-43b3-bb78-1ffebe0dcfa6
-ms.openlocfilehash: 815075198f34c0c045603b9d377b9d5fbdf1a91d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9663ef8146054985374fdb3e2974fcd996fd1402
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707874"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731819"
 ---
 # <a name="parameter-design"></a>Design de parâmetro
 

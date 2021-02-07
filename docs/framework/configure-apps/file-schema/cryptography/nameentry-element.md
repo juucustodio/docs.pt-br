@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <nameEntry> elemento'
 title: Elemento <nameEntry>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <nameEntry> element
 - nameEntry element
 ms.assetid: 7d7535e9-4b4a-4b8c-82e2-e40dff5a7821
-ms.openlocfilehash: 4341b1fcd3762e5aa55f0ba988f7f49d4b5cacd6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0ca227a2ba17a6b1e67fb75ec91aac9194b54737
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201766"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729999"
 ---
 # <a name="nameentry-element"></a>Elemento \<nameEntry>
 
@@ -25,7 +26,7 @@ Mapeia um nome de classe para um nome de algoritmo amigável, o que permite que 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptoNameMapping>**](cryptonamemapping-element.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<nameEntry>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <nameEntry name="friendly name" Class="class name" />  
@@ -80,7 +81,7 @@ Mapeia um nome de classe para um nome de algoritmo amigável, o que permite que 
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema do arquivo de configuração](../index.md)
 - [Esquema de configurações de criptografia](index.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Personalizando quais objetos estão disponíveis no meu (Visual Basic)'
 title: Como personalizar quais objetos estão disponíveis em My
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My namespace [Visual Basic], customizing
 - My namespace
 ms.assetid: 4e8279c2-ed5b-4681-8903-8a6671874000
-ms.openlocfilehash: 5245c129281bc8c7c1c6fe9215a221889380a901
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 065f7e645a5530db1e485ee3f8ea50f8a163f9e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410212"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731429"
 ---
 # <a name="customizing-which-objects-are-available-in-my-visual-basic"></a>Personalizando quais objetos estão disponíveis em My (Visual Basic)
 
@@ -33,9 +34,9 @@ Você deve usar a `/define` opção do compilador para definir a `_MYTYPE` const
 |Web|Site|  
 |Biblioteca de controle da Web|WebControl|  
 |Aplicativo do Windows|WindowsForms|  
-|Aplicativo do Windows, ao iniciar com personalizado`Sub Main`|"WindowsFormsWithCustomSubMain"|  
+|Aplicativo do Windows, ao iniciar com personalizado `Sub Main`|"WindowsFormsWithCustomSubMain"|  
 |Biblioteca de controle do Windows|“Windows”|  
-|Windows Service|MMC|  
+|Serviço Windows|MMC|  
 |Vazio|Esvaziá|  
   
 > [!NOTE]
@@ -47,14 +48,14 @@ A `_MYTYPE` constante de compilação condicional, por sua vez, controla os valo
   
 |\_COM MyType|\_MYAPPLICATIONTYPE|\_Mycomputertype|\_MYFORMS|\_Myusertype|\_Meus WEBSERVICEs|  
 |--------------|-------------------------|----------------------|---------------|------------------|---------------------|  
-|MMC|MMC|“Windows”|Indefinido|“Windows”|VERDADEIRO|  
+|MMC|MMC|“Windows”|Indefinido|“Windows”|TRUE|  
 |Personalizar|Indefinido|Indefinido|Indefinido|Indefinido|Indefinido|  
 |Esvaziá|Indefinido|Indefinido|Indefinido|Indefinido|Indefinido|  
-|Site|Indefinido|Site|FALSO|Site|FALSO|  
-|WebControl|Indefinido|Site|FALSO|Site|VERDADEIRO|  
-|"Windows" ou ""|“Windows”|“Windows”|Indefinido|“Windows”|VERDADEIRO|  
-|WindowsForms|WindowsForms|“Windows”|VERDADEIRO|“Windows”|VERDADEIRO|  
-|"WindowsFormsWithCustomSubMain"|MMC|“Windows”|VERDADEIRO|“Windows”|VERDADEIRO|  
+|Site|Indefinido|Site|FALSE|Site|FALSE|  
+|WebControl|Indefinido|Site|FALSE|Site|TRUE|  
+|"Windows" ou ""|“Windows”|“Windows”|Indefinido|“Windows”|TRUE|  
+|WindowsForms|WindowsForms|“Windows”|TRUE|“Windows”|TRUE|  
+|"WindowsFormsWithCustomSubMain"|MMC|“Windows”|TRUE|“Windows”|TRUE|  
   
  Por padrão, constantes de compilação condicional indefinidas são resolvidas para `FALSE` . Você pode especificar valores para as constantes indefinidas ao compilar seu projeto para substituir o comportamento padrão.  
   
@@ -72,7 +73,7 @@ A `_MYTYPE` constante de compilação condicional, por sua vez, controla os valo
 |`_MYWEBSERVICES`|Habilita `My.WebServices` , se a constante for `TRUE` .|  
 |`_MYTYPE`|Habilita `My.Log` , `My.Request` e `My.Response` , se a constante for "Web".|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
 - <xref:Microsoft.VisualBasic.Devices.Computer>

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Resumo de informações e interação (Visual Basic)'
 title: Informações e resumo da interação
 ms.date: 07/20/2015
 helpviewer_keywords:
 - information functions [Visual Basic]
 - interaction functions [Visual Basic]
 ms.assetid: 6e698461-e944-4c0f-ae48-87429f1fe740
-ms.openlocfilehash: 05a830ad633f7307cb63630d02c81d7897b840a0
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: c2594e0f36115c5deada63e3a87ac2ae9fa5fd6d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730584"
 ---
 # <a name="information-and-interaction-summary-visual-basic"></a>Informações e resumo da interação (Visual Basic)
 
@@ -26,7 +27,7 @@ As palavras-chave do idioma Visual Basic e os membros da biblioteca de tempo de 
 |Recuperar informações de cores.|<xref:Microsoft.VisualBasic.Information.QBColor%2A>, <xref:Microsoft.VisualBasic.Information.RGB%2A>|  
 |Caixas de diálogo de controle|<xref:Microsoft.VisualBasic.Interaction.InputBox%2A>, <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Palavras-chave](index.md)
 - [Membros da Biblioteca de Runtime do Visual Basic](../runtime-library-members.md)

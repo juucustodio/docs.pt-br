@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: elemento personalizado para SingleTagSectionHandler'
 title: Elemento personalizado para SingleTagSectionHandler
 ms.date: 05/01/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom element
 ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
-ms.openlocfilehash: a40f35838655f6021af0b2e966335803ec8c16b4
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 83022a1ebf295b89d5f868589e3d9a77c78e3fab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "80635393"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729973"
 ---
 # <a name="custom-element-for-singletagsectionhandler"></a>Elemento personalizado para SingleTagSectionHandler
 
@@ -19,7 +20,7 @@ Define as configurações em uma seção de configuração personalizada que é 
 
 [**\<configuration>**](configuration-element.md) &nbsp;&nbsp;*\<sectionName>*
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <sectionName key="value" key2="value2" />
@@ -61,8 +62,8 @@ O exemplo a seguir declara um elemento personalizado chamado **\<sampleSection>*
 
 ## <a name="configuration-file"></a>Arquivo de configuração
 
-Esse elemento pode ser usado no arquivo de configuração do aplicativo, no arquivo de configuração do computador (*Machine. config*) e nos arquivos *Web. config* que não estão no nível do diretório do aplicativo.
+Esse elemento pode ser usado no arquivo de configuração do aplicativo, no arquivo de configuração da máquina (*Machine.config*) e *Web.config* arquivos que não estão no nível do diretório do aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema do arquivo de configuração para o .NET Framework](index.md)

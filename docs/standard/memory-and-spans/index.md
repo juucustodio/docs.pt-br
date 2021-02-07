@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos relacionados à memória e ao span'
 title: Memória e extensão
 ms.date: 10/03/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Span<T>
 - buffers"
 - pipeline processing
-ms.openlocfilehash: b81531d77bae1dce9d6cf58fe1b5439bf79f9e9c
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: c151632db0fdfff388f1aba95fd9b0edc940ae0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99506364"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731689"
 ---
 # <a name="memory--and-span-related-types"></a>Tipos relacionados a memória e extensão
 

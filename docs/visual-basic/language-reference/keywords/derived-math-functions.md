@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: funções matemáticas derivadas (Visual Basic)'
 title: Funções Matemáticas Derivadas
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - degrees
 - arccosine function
 ms.assetid: 63e449d8-9444-44fb-8db1-6d9cf346e2aa
-ms.openlocfilehash: f84b1ef18ef2a924bb2e47da85ecbb51f982873a
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: daaed1312f08cecc0c68af0e36d574424fc526a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869025"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730766"
 ---
 # <a name="derived-math-functions-visual-basic"></a>Funções matemáticas derivadas (Visual Basic)
 
@@ -55,6 +56,6 @@ A tabela a seguir mostra funções matemáticas não intrínsecas que podem ser 
 |Cossecante hiperbólica inversa (Acsch (x))|Log ((sinal (x) * sqrt (x \* x + 1) + 1)/x)|  
 |Cotangente hiperbólica inversa (Acoth (x))|Log ((x + 1)/(x – 1))/2|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Funções Matemáticas](../functions/math-functions.md)
+- [Funções matemáticas](../functions/math-functions.md)

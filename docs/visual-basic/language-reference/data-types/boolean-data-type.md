@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados booliano (Visual Basic)'
 title: Tipo de dados booliano
 ms.date: 07/20/2015
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - True keyword [Visual Basic]
 - Boolean values [Visual Basic], True keyword
 ms.assetid: 4858e630-4813-4216-a55e-f4d0feb884e4
-ms.openlocfilehash: 851c524a83c5f24b77a151634a96798249c5905e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cdda6bc0571eb0a2a9ee6a079ffd276bfc89a9b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374415"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731403"
 ---
 # <a name="boolean-data-type-visual-basic"></a>Tipo de dados booliano (Visual Basic)
 
@@ -29,7 +30,7 @@ Contém valores que podem ser apenas `True` ou `False` . As palavras-chave `True
   
  O valor padrão de `Boolean` é `False`.  
   
- `Boolean`os valores não são armazenados como números e os valores armazenados não devem ser equivalentes aos números. Você nunca deve escrever código que dependa de valores numéricos equivalentes para `True` e `False` . Sempre que possível, você deve restringir o uso de `Boolean` variáveis para os valores lógicos para os quais elas foram projetadas.  
+ `Boolean` os valores não são armazenados como números e os valores armazenados não devem ser equivalentes aos números. Você nunca deve escrever código que dependa de valores numéricos equivalentes para `True` e `False` . Sempre que possível, você deve restringir o uso de `Boolean` variáveis para os valores lógicos para os quais elas foram projetadas.  
   
 ## <a name="type-conversions"></a>Conversões de tipo  
 
@@ -39,9 +40,9 @@ Contém valores que podem ser apenas `True` ou `False` . As palavras-chave `True
   
 ## <a name="programming-tips"></a>Dicas de programação  
   
-- **Números negativos.** `Boolean`Não é um tipo numérico e não pode representar um valor negativo. Em qualquer caso, você não deve usar `Boolean` para armazenar valores numéricos.  
+- **Números negativos.** `Boolean` Não é um tipo numérico e não pode representar um valor negativo. Em qualquer caso, você não deve usar `Boolean` para armazenar valores numéricos.  
   
-- **Digite os caracteres.** `Boolean`Não tem caractere de tipo literal ou caractere de tipo de identificador.  
+- **Digite os caracteres.** `Boolean` Não tem caractere de tipo literal ou caractere de tipo de identificador.  
   
 - **Tipo de estrutura.** O tipo correspondente no .NET Framework é a estrutura <xref:System.Boolean?displayProperty=nameWithType>.  
   
@@ -57,10 +58,10 @@ If scriptEngine = "VB" Then
 End If  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Boolean?displayProperty=nameWithType>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)
 - [Resumo da Conversão](../keywords/conversion-summary.md)
 - [Uso eficiente de tipos de dados](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)

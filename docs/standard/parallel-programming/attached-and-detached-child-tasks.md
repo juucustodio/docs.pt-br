@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tarefas filho anexadas e desanexadas'
 title: Tarefas filho anexadas e desanexadas
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - tasks, child tasks
 ms.assetid: c95788bf-90a6-4e96-b7bc-58e36a228cc5
-ms.openlocfilehash: 3b9bc2a854dfdee724c2059b3298b67da799284b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1ee69e1ed8314d976d0d17d7db15f9bcd994970a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734290"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731533"
 ---
 # <a name="attached-and-detached-child-tasks"></a>Tarefas filho anexadas e desanexadas
 
@@ -84,7 +85,7 @@ Uma *tarefa filho* (ou *tarefa aninhada*) é uma instância <xref:System.Threadi
   
  É provável que você também queira impedir que uma tarefa filho se anexe à sua tarefa pai quando a tarefa filho não for concluída de maneira oportuna. Como a tarefa pai não termina até que todas as tarefas filho sejam concluídas, uma tarefa filho de longa duração pode fazer com que o aplicativo geral tenha um baixo desempenho. Para obter um exemplo que mostre como melhorar o desempenho do aplicativo impedindo que ele seja anexado à sua tarefa pai, confira [Como evitar que uma tarefa filho se anexe à sua tarefa pai](how-to-prevent-a-child-task-from-attaching-to-its-parent.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Programação paralela](index.md)
 - [Paralelismo de dados](data-parallelism-task-parallel-library.md)

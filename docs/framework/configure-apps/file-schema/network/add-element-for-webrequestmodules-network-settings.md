@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <add> elemento para WebRequestModules (configurações de rede)'
 title: Elemento <add> para webRequestModules (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - add element, webRequestModules
 - <add> element, webRequestModules
 ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
-ms.openlocfilehash: 8d792b967d967540469dca7c090e0f905ecb2e6b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1edb63a1e1095bb4b3c3d749fd389ffaad5ddf9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201753"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729883"
 ---
 # <a name="add-element-for-webrequestmodules-network-settings"></a>Elemento \<add> para webRequestModules (Configurações de Rede)
 
@@ -26,7 +27,7 @@ Adiciona um módulo de solicitação da Web personalizado ao aplicativo.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<webRequestModules>**](webrequestmodules-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <add
@@ -87,7 +88,7 @@ Adiciona um módulo de solicitação da Web personalizado ao aplicativo.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.WebRequest>
 - [Esquema de configurações de rede](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: sobrecargas (Visual Basic)'
 title: Sobrecargas
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Shadows keyword [Visual Basic]
 - signature, hiding by
 ms.assetid: 0c6820b8-25b2-4664-bc59-5ca93c99c042
-ms.openlocfilehash: bd0931cab520f8580c0d7473a44e350752e287bb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7f0b440b537500595e465d8aabc7724671f3ae95
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392100"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730506"
 ---
 # <a name="overloads-visual-basic"></a>Sobrecargas (Visual Basic)
 
@@ -61,7 +62,7 @@ O *sobrecarregamento* é a prática de fornecer mais de uma definição para uma
 
 - **Modificador opcional.** Você não precisa usar o `Overloads` modificador ao definir várias propriedades ou procedimentos sobrecarregados na mesma classe. No entanto, se você usar `Overloads` o em uma das declarações, deverá usá-lo em todos eles.
 
-- **Sombreamento e sobrecarga.** `Overloads`também pode ser usado para sombrear um membro existente ou um conjunto de Membros sobrecarregados, em uma classe base. Ao usar `Overloads` dessa forma, você declara a propriedade ou o método com o mesmo nome e a mesma lista de parâmetros que o membro da classe base e não fornece a `Shadows` palavra-chave.
+- **Sombreamento e sobrecarga.** `Overloads` também pode ser usado para sombrear um membro existente ou um conjunto de Membros sobrecarregados, em uma classe base. Ao usar `Overloads` dessa forma, você declara a propriedade ou o método com o mesmo nome e a mesma lista de parâmetros que o membro da classe base e não fornece a `Shadows` palavra-chave.
 
 Se você usar `Overrides` o, o compilador adicionará implicitamente `Overloads` para que suas APIs de biblioteca trabalhem com o C# mais facilmente.
 
@@ -75,7 +76,7 @@ O `Overloads` modificador pode ser usado nesses contextos:
 
 - [Instrução Sub](../statements/sub-statement.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Sombras](shadows.md)
 - [Sobrecarga de procedimento](../../programming-guide/language-features/procedures/procedure-overloading.md)

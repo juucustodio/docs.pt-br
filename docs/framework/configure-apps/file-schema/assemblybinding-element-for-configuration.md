@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <assemblyBinding> elemento para <configuration>'
 title: Elemento <assemblyBinding> para <configuration>
 ms.date: 03/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - assemblyBinding Element
 - <assemblyBinding> Element
 ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
-ms.openlocfilehash: 21cf5e749b0dae310c3326f8abf82c6678fc97e9
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5cc3fc7cccd4b9dc7b62815734ff76e32e2243d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155473"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730103"
 ---
 # <a name="assemblybinding-element-for-configuration"></a>Elemento \<assemblyBinding> para \<configuration>
 
@@ -20,7 +21,7 @@ Especifica a diretiva de ligação de assembly no nível de configuração.
 
 [**\<configuration>**](configuration-element.md) &nbsp;&nbsp;**\<assemblyBinding>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
@@ -65,6 +66,6 @@ O exemplo a seguir mostra como incluir um arquivo de configuração no disco rí
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema do arquivo de configuração para o .NET Framework](index.md)

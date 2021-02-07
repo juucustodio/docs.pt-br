@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: aplicar atributos'
 title: Aplicando atributos
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - assemblies [.NET], attributes
 - attributes [.NET], applying
 ms.assetid: dd7604eb-9fa3-4b60-b2dd-b47739fa3148
-ms.openlocfilehash: 83cfb1d5b5aa3ebc8651406850a758146fd329d4
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 18825d3b4d6fc20b23755f58f355c783c0734041
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829096"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732157"
 ---
 # <a name="apply-attributes"></a>Aplicar atributos
 
@@ -52,7 +53,7 @@ Use o processo a seguir para aplicar um atributo a um elemento do código.
 
  Quando esse atributo é aplicado, a cadeia de caracteres `"My Assembly"` é colocada no manifesto do assembly na parte de metadados do arquivo. Você pode exibir o atributo usando o [Desmontador de MSIL (Ildasm.exe)](../../framework/tools/ildasm-exe-il-disassembler.md) ou criando um programa personalizado para recuperar o atributo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Atributos](index.md)
 - [Recuperando informações armazenadas em atributos](retrieving-information-stored-in-attributes.md)

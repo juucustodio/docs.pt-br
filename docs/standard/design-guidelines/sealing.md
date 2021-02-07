@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: lacre'
 title: Selar
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - preventing customization
 - sealed classes
 ms.assetid: cc42267f-bb7a-427a-845e-df97408528d4
-ms.openlocfilehash: bf8aad5d79e659ad9a767c2b0992eb9ee05fd531
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94673f793aa7373e1076e13cbda900fba83786f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730936"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731715"
 ---
 # <a name="sealing"></a>Selar
 

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: script de folha de estilos XSLT usando <msxsl: script>'
 title: Script de folha de estilos XSLT usando <msxsl:script>
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
-ms.openlocfilehash: 206a659656f1019af1540b9b2476ae7fe9ba93eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4ed2caf5b31fb5a6494c294b2619535699e09905
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685104"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731975"
 ---
 # <a name="xslt-stylesheet-scripting-using-msxslscript"></a>Script de folha de estilos XSLT usando \<msxsl:script>
 
@@ -47,7 +48,7 @@ A classe <xref:System.Xml.Xsl.XslTransform> dá suporte a scripts inserido usand
   
  As funções podem ser declaradas no elemento `msxsl:script`. A tabela a seguir mostra os namespaces que têm suporte por padrão. Você pode usar as classes fora dos namespaces listados. No entanto, essas classes devem ser totalmente qualificadas.  
   
-|Namespaces padrão|DESCRIÇÃO|  
+|Namespaces padrão|Descrição|  
 |------------------------|-----------------|  
 |Sistema|Classe do sistema.|  
 |System.Collection|Classes de coleção.|  
@@ -62,7 +63,7 @@ A classe <xref:System.Xml.Xsl.XslTransform> dá suporte a scripts inserido usand
   
  Os argumentos fornecidos e os valores de retorno definidos pelas funções de script devem ser do tipo XPath do W3C (World Wide Web Consortium) ou XSLT. A tabela a seguir mostra os tipos correspondentes de W3C, as classes equivalentes do .NET Framework (tipo) e se o tipo do W3C é XPath ou XSLT.  
   
-|Type|Classe equivalente do .NET Framework (tipo)|Tipo XPath ou XSLT|  
+|Tipo|Classe equivalente do .NET Framework (tipo)|Tipo XPath ou XSLT|  
 |----------|----------------------------------------------|-----------------------------|  
 |String|System.String|XPath|  
 |Boolean|System.Boolean|XPath|  
@@ -231,6 +232,6 @@ public class Sample
 </circles>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [A classe XslTransform implementa do processador XSLT](xsltransform-class-implements-the-xslt-processor.md)

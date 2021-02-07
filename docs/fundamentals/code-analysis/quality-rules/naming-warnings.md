@@ -11,16 +11,16 @@ helpviewer_keywords:
 - rules, naming
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 88e7ec6bc1051fa98c46696b2193a5d5912eb111
-ms.sourcegitcommit: 2e4adc490c1d2a705a0592b295d606b10b9f51f1
+ms.openlocfilehash: 57524fbff364fd03a90b90a0900bd17e9c8a9248
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "96584725"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732313"
 ---
 # <a name="naming-rules"></a>Regras de nomenclatura
 
-As regras de nomenclatura dão suporte à adesão às convenções de nomenclatura das diretrizes de design do .NET.
+As regras de nomenclatura dão suporte à adesão às [convenções de nomenclatura das diretrizes de design do .net](../../../standard/design-guidelines/naming-guidelines.md).
 
 ## <a name="in-this-section"></a>Nesta seção
 

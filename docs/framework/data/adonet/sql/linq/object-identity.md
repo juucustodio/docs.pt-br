@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: identidade de objeto'
 title: Identidade do objeto
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c788f2f9-65cc-4455-9907-e8388a268e00
-ms.openlocfilehash: 1a1617b4fb15a6adf94c0241c3ba577308c51a8b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1e525250e37e697e33ee53ea59b973882633ec15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169421"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695509"
 ---
 # <a name="object-identity"></a>Identidade do objeto
 
@@ -45,6 +46,6 @@ Os objetos em runtime têm identidades exclusivas. Duas variáveis que referem-s
  [!code-csharp[DLinqObjectIdentity#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqObjectIdentity/cs/Program.cs#2)]
  [!code-vb[DLinqObjectIdentity#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectIdentity/vb/Module1.vb#2)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Informações gerais](background-information.md)

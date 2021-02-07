@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: semântica nula'
 title: Semântica nula
 ms.date: 03/30/2017
 ms.assetid: a97017ae-d634-4cf3-bbaf-054a528fd683
-ms.openlocfilehash: 739ee95be45d7d64a4ad1678837b9706a533f07d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2326cd20a225f31693260aa038477f1f6090d02f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147535"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695547"
 ---
 # <a name="null-semantics"></a>Semântica nula
 
@@ -20,6 +21,6 @@ A tabela a seguir fornece links para várias partes da [!INCLUDE[vbtecdlinq](../
 |[Métodos de System.String](system-string-methods.md)|As “diferenças a seção .NET” neste tópico descrevem como um retorno de 0 de <xref:System.String.LastIndexOf%2A> pode significar qualquer pessoa que a cadeia de caracteres é nula ou que a posição encontrada é 0.|  
 |[Calcular a soma dos valores em uma sequência numérica](compute-the-sum-of-values-in-a-numeric-sequence.md)|Descreve como o <xref:System.Linq.Enumerable.Sum%2A> operador é avaliado como `null` ( `Nothing` em Visual Basic) em vez de 0 para uma sequência que contém somente nulos ou para uma sequência vazia.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de dados e funções](data-types-and-functions.md)

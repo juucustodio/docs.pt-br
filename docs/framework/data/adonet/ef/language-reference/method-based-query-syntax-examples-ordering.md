@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Method-Based exemplos de sintaxe de consulta: ordenação'
 title: 'Exemplos de sintaxe da consulta com base em método: Classificação'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 5d21b178-d731-471a-8534-1f8184a2ef06
-ms.openlocfilehash: 02889fb4172d24634cdcb1c8384a804b2ce1a0e8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7b1c67ba66f549e82a57b5b34c645d36d1255a14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191925"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696692"
 ---
 # <a name="method-based-query-syntax-examples-ordering"></a>Exemplos de sintaxe da consulta com base em método: Classificação
 
@@ -39,6 +40,6 @@ Os exemplos neste tópico demonstram como usar o <xref:System.Linq.Enumerable.Th
  [!code-csharp[DP L2E Examples#ThenByDescending_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#thenbydescending_mq)]
  [!code-vb[DP L2E Examples#ThenByDescending_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#thenbydescending_mq)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Consultas no LINQ to Entities](queries-in-linq-to-entities.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: | | OR (Entity SQL)'
 title: '|| (OU) (Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: 8e649648-eb9a-4380-9d74-36e62260628c
-ms.openlocfilehash: 89c0a92030f2f067d5e5d45b58d475414a224ce4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 83af0211de1dd86b057237c36312e3ce33a3512a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150798"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696328"
 ---
 # <a name="-or-entity-sql"></a>|| (OU) (Entity SQL)
 
@@ -26,7 +27,7 @@ boolean_expression || boolean_expression
  `boolean_expression`  
  Qualquer expressão válida que retorna `Boolean`.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` quando uma das condições for `true`; caso contrário, `false`.  
   
@@ -54,6 +55,6 @@ boolean_expression || boolean_expression
   
  [!code-sql[DP EntityServices Concepts 2#OR](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#or)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

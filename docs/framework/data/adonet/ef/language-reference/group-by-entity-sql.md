@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: agrupar por (Entity SQL)'
 title: AGRUPAR POR (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: cf4f4972-4724-4945-ba44-943a08549139
-ms.openlocfilehash: 281d5d2df389f0952f0552747fa12b67b14d470c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 16328b46a59a2a07622cda43dce30d8b4f1d3dde
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204483"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696926"
 ---
 # <a name="group-by-entity-sql"></a>AGRUPAR POR (Entity SQL)
 
@@ -72,7 +73,7 @@ GROUP BY 1   -- BAD, a constant is not allowed
   
  [!code-sql[DP EntityServices Concepts#GROUPBY](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#groupby)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)
 - [Expressões de consulta](query-expressions-entity-sql.md)

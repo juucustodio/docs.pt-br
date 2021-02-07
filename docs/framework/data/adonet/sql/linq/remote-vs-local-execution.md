@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: execução remota vs. local'
 title: Remoto vs. Execução de local
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ee50e943-9349-4c84-ab1c-c35d3ada1a9c
-ms.openlocfilehash: c99e726902192fc8324e77441b80aa4519c55ddc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ea4d85faedd4a299da292029e64d77132e1a65a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91196943"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695171"
 ---
 # <a name="remote-vs-local-execution"></a>Remoto vs. Execução de local
 
@@ -18,7 +19,7 @@ Você pode decidir executando remotamente (isto é, o mecanismo de base de dados
   
 ## <a name="remote-execution"></a>Execução remoto  
 
- Considere a consulta a seguir.  
+ Considere a consulta a seguir:  
   
  [!code-csharp[DLinqQueryConcepts#7](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#7)]
  [!code-vb[DLinqQueryConcepts#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#7)]  
@@ -52,6 +53,6 @@ Você pode decidir executando remotamente (isto é, o mecanismo de base de dados
 
  Observe a diferença importante entre uma coleção local que implementa <xref:System.Collections.Generic.List%601> e uma coleção que fornece consultas remotas executadas em relação a *conjuntos não ordenados* em um banco de dados relacional. os métodos de<xref:System.Collections.Generic.List%601> como aqueles que usam valores de índice requerem a semântica da lista, que normalmente não pode ser obtida com uma consulta remoto com um conjunto não ordenada. Por esse motivo, esses métodos carregam implicitamente <xref:System.Data.Linq.EntitySet%601> para permitir a execução local.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Consulte conceitos](query-concepts.md)

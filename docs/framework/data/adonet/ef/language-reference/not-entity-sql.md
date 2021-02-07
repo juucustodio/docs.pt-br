@@ -1,13 +1,14 @@
 ---
+description: Saiba mais sobre:! (NÃO) (Entity SQL)
 title: '! (NÃO) (Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: a1447a34-df06-4393-93c3-0612ebd41abc
-ms.openlocfilehash: 0eb9be9ed4cbce45a51d15eea68e9fb1a26f0107
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 648cc4ff73769ae280570b2d42934b2001fa5182
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191834"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696445"
 ---
 # <a name="-not-entity-sql"></a>! (NÃO) (Entity SQL)
 
@@ -40,6 +41,6 @@ NOT boolean_expression
   
  [!code-sql[DP EntityServices Concepts#NOT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#not)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

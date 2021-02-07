@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplos de sintaxe de expressão de consulta: ordenação'
 title: 'Exemplos de sintaxe da expressão de consulta: Classificação'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: bcbc9625-7cf7-476e-85d2-058f12682f54
-ms.openlocfilehash: ed03fc248ed48f56998bc27f7e880b1e8aa443d2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 931225344311e8dde6318564ddeba6eae0e2411d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156778"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696094"
 ---
 # <a name="query-expression-syntax-examples-ordering"></a>Exemplos de sintaxe da expressão de consulta: Classificação
 
@@ -64,6 +65,6 @@ Os exemplos neste tópico demonstram como usar os `OrderBy` métodos e `OrderByD
  [!code-csharp[DP L2E Examples#ThenByDescendingSimple](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#thenbydescendingsimple)]
  [!code-vb[DP L2E Examples#ThenByDescendingSimple](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#thenbydescendingsimple)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Consultas no LINQ to Entities](queries-in-linq-to-entities.md)

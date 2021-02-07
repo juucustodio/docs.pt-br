@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Method-Based exemplos de sintaxe de consulta: projeção'
 title: 'Exemplos de sintaxe da consulta baseada em método: projeção'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 505491fa-5920-43ce-8a96-c25389e125d8
-ms.openlocfilehash: 32db3d0f85e525ad1850df59f0abe66bf82b137b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ed4d53166f15f5a2b618ccae92b40fc07d370299
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175779"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696653"
 ---
 # <a name="method-based-query-syntax-examples-projection"></a>Exemplos de sintaxe da consulta baseada em método: projeção
 
@@ -53,6 +54,6 @@ Os exemplos neste tópico demonstram como usar os <xref:System.Linq.Enumerable.S
  [!code-csharp[DP L2E Examples#SelectManyCompoundFrom2_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#selectmanycompoundfrom2_mq)]
  [!code-vb[DP L2E Examples#SelectManyCompoundFrom2_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#selectmanycompoundfrom2_mq)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Consultas no LINQ to Entities](queries-in-linq-to-entities.md)

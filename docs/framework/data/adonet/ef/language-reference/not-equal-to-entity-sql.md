@@ -1,13 +1,14 @@
 ---
+description: Saiba mais sobre:! = (diferente de) (Entity SQL)
 title: '!= (Não é igual a) (Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: 3b4a02ad-ddfc-4c42-8dfa-676234461312
-ms.openlocfilehash: bebe85072f5a2cf6a133b88c6d3f5c97299aa63f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a7a96606fb1834b757253948c3a0d2cde11893dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696393"
 ---
 # <a name="-not-equal-to-entity-sql"></a>!= (Não é igual a) (Entity SQL)
 
@@ -40,6 +41,6 @@ expression <> expression
   
  [!code-sql[DP EntityServices Concepts#NOT_EQUALS](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#not_equals)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

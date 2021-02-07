@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: responsabilidades do desenvolvedor ao substituir o comportamento padrão'
 title: Responsabilidades do desenvolvedor em substituir o comportamento padrão
 ms.date: 03/30/2017
 ms.assetid: c6909ddd-e053-46a8-980c-0e12a9797be1
-ms.openlocfilehash: 88a7076e12e39ed23aa6d661aa90f74258f3dded
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e97f49fb569547f97d295463e4ef3e848ecf390b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200427"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695262"
 ---
 # <a name="responsibilities-of-the-developer-in-overriding-default-behavior"></a>Responsabilidades do desenvolvedor em substituir o comportamento padrão
 
@@ -21,12 +22,12 @@ ms.locfileid: "91200427"
   
 - Crie (`Insert`) e métodos de substituição de `Update` são esperados fluir a voltar os valores para colunas base de dados - gerados correspondentes aos membros do objeto quando a operação é concluída com êxito.  
   
-     Por exemplo, se `Order.OrderID` for mapeado para uma coluna de identidade (chave primária de*incremento automático* ), o `InsertOrder()` método override deverá recuperar a ID gerada pelo banco de dados e definir o `Order.OrderID` membro para essa ID. Também, os membros de carimbo de data/hora devem ser atualizados para valores base de dados - gerados de carimbo de data/hora para certificar-se que os objetos atualizados são consistentes. A falha propagar os valores base de dados - gerados pode causar uma inconsistência entre o base de dados e objetos controlados por <xref:System.Data.Linq.DataContext>.  
+     Por exemplo, se `Order.OrderID` for mapeado para uma coluna de identidade (chave primária de *incremento automático* ), o `InsertOrder()` método override deverá recuperar a ID gerada pelo banco de dados e definir o `Order.OrderID` membro para essa ID. Também, os membros de carimbo de data/hora devem ser atualizados para valores base de dados - gerados de carimbo de data/hora para certificar-se que os objetos atualizados são consistentes. A falha propagar os valores base de dados - gerados pode causar uma inconsistência entre o base de dados e objetos controlados por <xref:System.Data.Linq.DataContext>.  
   
 - É responsabilidade do usuário chamar a API dinâmico correto. Por exemplo, o método de substituição de atualização, somente <xref:System.Data.Linq.DataContext.ExecuteDynamicUpdate%2A> pode ser chamado. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não detecta ou não verifica se o método dinâmico chamado corresponde a operação aplicável. Se um método inaplicável é chamado (por exemplo, <xref:System.Data.Linq.DataContext.ExecuteDynamicDelete%2A> para um objeto é atualizado), os resultados são indefinidos.  
   
 - Finalmente, o método substituindo é esperado executar a operação indicada. A semântica de [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] operações, como carregamento adiantado, carregamento adiado e <xref:System.Data.Linq.DataContext.SubmitChanges%2A> ) exigem as substituições para fornecer o serviço declarado. Por exemplo, uma substituição de carga que simplesmente retorna uma coleção vazia sem verificar o conteúdo no banco de dados provavelmente levará a um dado inconsistente.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Personalizando a inserção, atualiazação, e as operações de exclusão](customizing-insert-update-and-delete-operations.md)

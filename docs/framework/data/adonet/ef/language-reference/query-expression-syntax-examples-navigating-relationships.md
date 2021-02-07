@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplos de sintaxe de expressão de consulta: navegando em relações'
 title: 'Exemplos de sintaxe da expressão de consulta: Navegando em relações'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0d4a7f41-c758-4059-8f83-d2e9c2745593
-ms.openlocfilehash: c09a0458f5b0b7d313da3379b5dda9b969eaf7e4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0548cba8d1d3d834da6a8416cb444898981b4123
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156791"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696146"
 ---
 # <a name="query-expression-syntax-examples-navigating-relationships"></a>Exemplos de sintaxe da expressão de consulta: Navegando em relações
 
@@ -51,6 +52,6 @@ As propriedades de navegação no Entity Framework são propriedades de atalho u
  [!code-csharp[DP L2E Examples#WhereNavProperty](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#wherenavproperty)]
  [!code-vb[DP L2E Examples#WhereNavProperty](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#wherenavproperty)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Consultas no LINQ to Entities](queries-in-linq-to-entities.md)

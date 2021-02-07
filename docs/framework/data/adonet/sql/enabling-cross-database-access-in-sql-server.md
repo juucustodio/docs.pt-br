@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Habilitando o acesso entre bancos de dados no SQL Server'
 title: Habilitando o acesso entre bancos de dados no SQL Server
 ms.date: 03/30/2017
 ms.assetid: 10663fb6-434c-4c81-8178-ec894b9cf895
-ms.openlocfilehash: 6ea1ed9a6faa39df0a4f9a4a353bf34c7f5ba601
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4e818b4f0294fdc7edd351a1e60203357579a320
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156258"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695860"
 ---
 # <a name="enabling-cross-database-access-in-sql-server"></a>Habilitando o acesso entre bancos de dados no SQL Server
 
@@ -55,7 +56,7 @@ ALTER DATABASE Database2 SET DB_CHAINING ON;
 |--------------|-----------------|  
 |[Estendendo a representação do banco de dados usando](/previous-versions/sql/sql-server-2008-r2/ms188304(v=sql.105)) a opção de encadeamento de propriedades execute as e [cross db](/sql/database-engine/configure-windows/cross-db-ownership-chaining-server-configuration-option).|Os artigos descrevem como configurar o encadeamento de propriedade de bancos de dados para uma instância do SQL Server.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Protegendo aplicativos ADO.NET](../securing-ado-net-applications.md)
 - [Visão geral de segurança do SQL Server](overview-of-sql-server-security.md)

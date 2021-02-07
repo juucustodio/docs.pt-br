@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: comparações nulas'
 title: Comparações nulas
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ef88af8c-8dfe-4556-8b56-81df960a900b
-ms.openlocfilehash: 71b7c4d86debe8cf267b1b65e3d176cbc4704e6d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3f2165cae56b6987330612cd2c9e21dfe8606fb2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185100"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696354"
 ---
 # <a name="null-comparisons"></a>Comparações nulas
 
@@ -50,6 +51,6 @@ WHERE h.ShipDate IS Null
 
  Em LINQ to Entities, quando você passa uma coleção que dá suporte `IQueryable` a uma função de agregação, as operações de agregação são executadas no banco de dados. Talvez haja diferenças nos resultados de uma consulta executada na memória e de uma consulta executada no banco de dados. Com uma consulta de memória, se não houver nenhuma correspondência, a consulta retornará zero. No banco de dados, a mesma consulta retorna `null`. Se um `null` valor for passado para uma função de agregação LINQ, uma exceção será lançada. Para aceitar `null` os valores possíveis, converta os tipos e as propriedades dos tipos que recebem resultados da consulta para tipos de valor anuláveis.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões em consultas LINQ to Entities](expressions-in-linq-to-entities-queries.md)

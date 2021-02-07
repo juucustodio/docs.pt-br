@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como chamar funções de banco de dados personalizadas'
 title: 'Como: Funções de base de dados personalizados de chamada'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 4354e5eb-dd45-469d-97fb-1c495705ee59
-ms.openlocfilehash: 9879803c970b7965bf152c216367b216e201af38
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: f33630f68740877ff2d0e7f0fec7202453d96bf7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90540302"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696783"
 ---
 # <a name="how-to-call-custom-database-functions"></a>Como: Funções de base de dados personalizados de chamada
 
@@ -65,7 +66,7 @@ Finalmente, chame o método em uma consulta LINQ to Entities. O código a seguir
 [!code-csharp[DP L2E MapToDBFunction#4](~/samples/snippets/csharp/VS_Snippets_Data/dp l2e maptodbfunction/cs/program.cs#4)]
 [!code-vb[DP L2E MapToDBFunction#4](~/samples/snippets/visualbasic/VS_Snippets_Data/dp l2e maptodbfunction/vb/module1.vb#4)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do arquivo. edmx](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
 - [Consultas no LINQ to Entities](queries-in-linq-to-entities.md)

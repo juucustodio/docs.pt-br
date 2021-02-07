@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ORDER BY (Entity SQL)'
 title: ORDENAR POR (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: c0b61572-ecee-41eb-9d7f-74132ec8a26c
-ms.openlocfilehash: 5e1c418a7f2bd40a42b259fb3784794b13098d7f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 092850e864ae95d50b615839265041a7e32b39a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173673"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696315"
 ---
 # <a name="order-by-entity-sql"></a>ORDENAR POR (Entity SQL)
 
@@ -35,7 +36,7 @@ Especifica a ordem de classificação usado em objetos retornados em uma instru�
  Especifica que a operação ORDER BY deve ser executada de acordo com a ordenação especificada em `collation_name`. COLLATE é aplicável somente para expressões de cadeia de caracteres.  
   
  ASC  
- Especifica que os valores na propriedade especificada devem ser classificados na ordem crescente, o valor menor para o maior valor. Esse é o padrão.  
+ Especifica que os valores na propriedade especificada devem ser classificados na ordem crescente, o valor menor para o maior valor. Este é o padrão.  
   
  DESC  
  Especifica que os valores na propriedade especificada devem ser classificados em ordem decrescente, o valor o maior o valor menor.  
@@ -134,10 +135,10 @@ SELECT C2.FirstName, C2.LastName
   
  [!code-sql[DP EntityServices Concepts#ORDERBY](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#orderby)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões de consulta](query-expressions-entity-sql.md)
 - [Referência de Entity SQL](entity-sql-reference.md)
-- [SKIP](skip-entity-sql.md)
+- [SALTAR](skip-entity-sql.md)
 - [LIMITE](limit-entity-sql.md)
-- [Início](top-entity-sql.md)
+- [INÍCIO](top-entity-sql.md)

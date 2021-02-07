@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: (módulo) (Entity SQL)'
 title: (Módulo) (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 243ddc4f-3c4e-41e1-a3ef-4ed39e36248b
-ms.openlocfilehash: 25bd34db3a627fa708e1ab9a3f0e237426487bcb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8ac9bf2fa9dbee843215dcfeed13fefc7bd54796
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175701"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696627"
 ---
 # <a name="modulo-entity-sql"></a>(Módulo) (Entity SQL)
 
@@ -41,6 +42,6 @@ dividend % divisor
   
  [!code-sql[DP EntityServices Concepts#MODULO](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#modulo)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

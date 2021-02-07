@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: consulta em relações'
 title: Consulte através das relações
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 297878d0-685b-4c01-b2e0-9d731b7322bc
-ms.openlocfilehash: 24ab13a1d67eac39c7b3d7be8cb1c16ec7265d5e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a29a24b21cc486f59ae7535db0e5f97831249ee0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91184870"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695241"
 ---
 # <a name="querying-across-relationships"></a>Consulte através das relações
 
@@ -53,6 +54,6 @@ WHERE  (t0.City = @p0)
  [!code-csharp[DLinqQueryConcepts#6](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#6)]
  [!code-vb[DLinqQueryConcepts#6](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#6)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Consulte conceitos](query-concepts.md)

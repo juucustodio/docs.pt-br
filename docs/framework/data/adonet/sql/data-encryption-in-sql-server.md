@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: criptografia de dados em SQL Server'
 title: Criptografia de dados no SQL Server
 ms.date: 03/30/2017
 ms.assetid: 83b992f7-b351-4678-b4b9-f4ffd58134cc
-ms.openlocfilehash: d0bda11f1a2933d096aa91d2be79d3af35172284
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ddf46834c408c98e3e82b1375c13cb6c24ba044b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169525"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695912"
 ---
 # <a name="data-encryption-in-sql-server"></a>Criptografia de dados no SQL Server
 
@@ -32,7 +33,7 @@ O SQL Server fornece funções para criptografar e descriptografar dados usando 
 |[Criptografia do SQL Server](/sql/relational-databases/security/encryption/sql-server-encryption)|Fornece uma visão geral de criptografia no SQL Server. Este tópico inclui links para artigos adicionais.|  
 |[Hierarquia de criptografia](/sql/relational-databases/security/encryption/encryption-hierarchy)|Fornece uma visão geral de criptografia no SQL Server. Este tópico fornece links para artigos adicionais.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Protegendo aplicativos ADO.NET](../securing-ado-net-applications.md)
 - [Cenários de Segurança de Aplicativo no SQL Server](application-security-scenarios-in-sql-server.md)

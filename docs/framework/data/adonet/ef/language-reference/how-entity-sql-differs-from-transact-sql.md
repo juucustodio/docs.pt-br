@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como Entity SQL difere do Transact-SQL'
 title: Como o Entity SQL difere do Transact-SQL
 ms.date: 03/30/2017
 ms.assetid: 9c9ee36d-f294-4c8b-a196-f0114c94f559
-ms.openlocfilehash: 9433e7a7ffdc3a7e32900981dca95eefde32f290
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 349dd64cc0e548ab0dc8d0e66e8bb14b58912d09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204431"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696861"
 ---
 # <a name="how-entity-sql-differs-from-transact-sql"></a>Como Entity SQL difere do Transact-SQL
 
@@ -126,7 +127,7 @@ p.Address.City
   
  Entity SQL não dá suporte à construção *. Consultas Transact-SQL do formulário `select * from T` e `select T1.* from T1, T2...` podem ser expressas em Entity SQL como `select value t from T as t` e `select value t1 from T1 as t1, T2 as t2...` , respectivamente. Além disso, essas construções manipulam a herança (substituibilidade do valor), embora as variantes `select *` sejam restritas a propriedades de nível superior do tipo declarado.  
   
- Entity SQL não oferece suporte à `count(*)` agregação. Use `count(0)` em vez disso.  
+ Entity SQL não oferece suporte à `count(*)` agregação. Use `count(0)` em seu lugar.  
   
 ## <a name="changes-to-group-by"></a>Alterações em group by  
 
@@ -227,7 +228,7 @@ SELECT value c FROM Categories AS c;
   
  Entity SQL só dá suporte a uma instrução de consulta de produção de resultado por comando.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral da Entity SQL](entity-sql-overview.md)
 - [Expressões sem suporte](unsupported-expressions-entity-sql.md)

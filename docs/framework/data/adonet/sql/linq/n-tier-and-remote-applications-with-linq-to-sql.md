@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: N camadas e aplicativos remotos com LINQ to SQL'
 title: Aplicativos de n camadas e remoto com LINQ to SQL
 ms.date: 03/30/2017
 ms.assetid: 854a1cdd-53cb-45f5-83ca-63962a9b3598
-ms.openlocfilehash: 70f6a6ee91761196b62b34f6dde73d11dbe6b39d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6abaeed8d4953a9b810db32418a4ebd3e78683fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200596"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695600"
 ---
 # <a name="n-tier-and-remote-applications-with-linq-to-sql"></a>Aplicativos de n camadas e remoto com LINQ to SQL
 
@@ -33,6 +34,6 @@ Você pode criar aplicativos de n camadas ou multicamadas que usam [!INCLUDE[vbt
 
  Para obter mais informações sobre aplicativos de n camadas que usam conjuntos de dados ADO.NET, consulte [trabalhar com conjuntos de dados em aplicativos de n camadas](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Informações gerais](background-information.md)

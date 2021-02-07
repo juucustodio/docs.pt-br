@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exemplos de consulta'
 title: Exemplos de consulta
 ms.date: 03/30/2017
 ms.assetid: 137f8677-494c-4d49-95ce-c17742f2d01f
-ms.openlocfilehash: f3f135850fb5f40b3b8882f72f5cc24512f21084
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 77eb5c475a4f84930bd760b34f48d3954083c892
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695188"
 ---
 # <a name="query-examples"></a>Exemplos de consulta
 

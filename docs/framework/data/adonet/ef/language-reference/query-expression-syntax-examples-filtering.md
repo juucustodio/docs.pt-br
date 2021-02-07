@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplos de sintaxe de expressão de consulta: filtragem'
 title: 'Exemplos de sintaxe de expressão de consulta: filtragem'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c27cb89c-1c1d-4988-9f38-950eda3cb275
-ms.openlocfilehash: feb05c0813587f8801aadd8bf64c4700badb2330
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f8bc2d08f7a8916ccbd2884ff9a9af616b2118f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152969"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696224"
 ---
 # <a name="query-expression-syntax-examples-filtering"></a>Exemplos de sintaxe de expressão de consulta: filtragem
 
@@ -72,6 +73,6 @@ Os exemplos neste tópico demonstram como usar os `Where` métodos e `Where…Co
  [!code-csharp[DP L2E ArraysAndListsInQueries#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp l2e arraysandlistsinqueries/cs/program.cs#2)]
  [!code-vb[DP L2E ArraysAndListsInQueries#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e arraysandlistsinqueries/vb/module1.vb#2)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Consultas no LINQ to Entities](queries-in-linq-to-entities.md)

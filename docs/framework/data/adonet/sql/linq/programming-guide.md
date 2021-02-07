@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: guia de programação'
 title: Guia de Programação
 ms.date: 03/30/2017
 ms.assetid: ed1012d4-3ff2-4877-af27-93125c4180ea
-ms.openlocfilehash: 50c4370e23faf8400eb23f1e8c0cc74cd4dce80e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 37f3974864e9bfc11bff762617bab27e25a44007
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203560"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695180"
 ---
 # <a name="programming-guide"></a>Guia de Programação
 
 Esta seção contém informações sobre como criar e usar o modelo de objeto do [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. Se você estiver usando o Visual Studio, também poderá usar o Object Relational Designer para executar muitas dessas mesmas tarefas.  
   
- Você também pode pesquisar Microsoft Docs problemas específicos e pode participar do [Fórum do LINQ](https://social.msdn.microsoft.com/forums/home?forum=linqtosql), no qual você pode discutir tópicos mais complexos em detalhes com especialistas. Por fim, a [LINQ to SQL: consulta integrada à linguagem .net para dados relacionais](/previous-versions/dotnet/articles/bb425822(v=msdn.10)) White Paper detalhes da [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tecnologia, completa com os exemplos de código do Visual Basic e do C#.  
+ Você também pode pesquisar Microsoft Docs problemas específicos e pode participar do [Fórum do LINQ](https://social.msdn.microsoft.com/forums/home?forum=linqtosql), no qual você pode discutir tópicos mais complexos em detalhes com especialistas. Por fim, a [LINQ to SQL: .net Language-Integrated consulta para dados relacionais](/previous-versions/dotnet/articles/bb425822(v=msdn.10)) White Paper [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tecnologia de detalhes, completa com os exemplos de código Visual Basic e C#.  
   
 ## <a name="in-this-section"></a>Nesta seção  
 

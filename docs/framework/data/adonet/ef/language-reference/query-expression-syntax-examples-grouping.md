@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplos de sintaxe de expressão de consulta: agrupamento'
 title: 'Exemplos de sintaxe de expressão de consulta: agrupamento'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2d83d7c0-b3be-4c92-a630-25cd1285de31
-ms.openlocfilehash: 854d9c2a7371b80dd288a1d6c67272678efda135
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1d8bd51a783cbd53716daebfa9b547f5e4fffc1f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152930"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696211"
 ---
 # <a name="query-expression-syntax-examples-grouping"></a>Exemplos de sintaxe de expressão de consulta: agrupamento
 
@@ -42,6 +43,6 @@ Os exemplos neste tópico demonstram como usar o `GroupBy` método para consulta
  [!code-csharp[DP L2E Examples#GroupByCount](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#groupbycount)]
  [!code-vb[DP L2E Examples#GroupByCount](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#groupbycount)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Consultas no LINQ to Entities](queries-in-linq-to-entities.md)

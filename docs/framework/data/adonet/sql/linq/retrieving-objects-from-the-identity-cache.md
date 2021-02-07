@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: recuperando objetos do cache de identidade'
 title: Recuperando objetos de cache de identidade
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 96c13903-ccb6-4a0e-ab6a-8ca955ca314d
-ms.openlocfilehash: 457e11ddad16ca3be55f53f03c480b0e464ab38f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1f3d5f839a6fff33d62d4e0cb2281bd087f2d320
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200388"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695080"
 ---
 # <a name="retrieving-objects-from-the-identity-cache"></a>Recuperando objetos de cache de identidade
 
@@ -66,7 +67,7 @@ Este tópico descreve os tipos LINQ to SQL consulta que retornam um objeto de ca
  [!code-csharp[L2S_QueryCache#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/l2s_querycache/cs/program.cs#1)]
  [!code-vb[L2S_QueryCache#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/l2s_querycache/vb/module1.vb#1)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Consulte conceitos](query-concepts.md)
 - [Identidade do objeto](object-identity.md)

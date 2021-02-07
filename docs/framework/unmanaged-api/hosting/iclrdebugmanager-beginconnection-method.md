@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICLRDebugManager:: método BeginConnection'
 title: Método ICLRDebugManager::BeginConnection
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bdd98146-ff4d-4150-a264-a4c1a32d31f3
 topic_type:
 - apiref
-ms.openlocfilehash: c5b41e4209141c0396ec8a1da766b80043be8807
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9b4ee64ad96bddfd5d7d650b657c6691b27d8c69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726152"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746120"
 ---
 # <a name="iclrdebugmanagerbeginconnection-method"></a>Método ICLRDebugManager::BeginConnection
 
@@ -43,7 +44,7 @@ HRESULT BeginConnection (
  `szConnectionName`  
  no Um nome amigável para associar à lista de tarefas do CLR.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -73,7 +74,7 @@ HRESULT BeginConnection (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRControl](iclrcontrol-interface.md)
 - [Interface ICLRDebugManager](iclrdebugmanager-interface.md)

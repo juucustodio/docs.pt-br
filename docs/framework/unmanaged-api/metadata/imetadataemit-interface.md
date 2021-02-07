@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMetaDataEmit'
 title: Interface IMetaDataEmit
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3b48fd47-7397-4e2c-8bec-8157aa08978c
 topic_type:
 - apiref
-ms.openlocfilehash: f5495c170abf3e991a6e28016687f8ae77f0b423
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: da8786f25e4081d3cc9c32cbb7ea7386d2e9f1f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722018"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745977"
 ---
 # <a name="imetadataemit-interface"></a>Interface IMetaDataEmit
 
@@ -27,7 +28,7 @@ Fornece métodos para criar, modificar e salvar metadados sobre o assembly no es
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método ApplyEditAndContinue](imetadataemit-applyeditandcontinue-method.md)|Atualiza o escopo do assembly atual com as alterações feitas no especificado `pImport` .|  
 |[Método DefineCustomAttribute](imetadataemit-definecustomattribute-method.md)|Cria uma definição para um atributo personalizado com a assinatura de metadados especificada, a ser anexada ao objeto especificado e Obtém um token para essa definição de atributo personalizado.|  
@@ -89,7 +90,7 @@ Fornece métodos para criar, modificar e salvar metadados sobre o assembly no es
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: _CorValidateImage função'
 title: Função _CorValidateImage
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0117e080-05f9-4772-885d-e1847230947c
 topic_type:
 - apiref
-ms.openlocfilehash: 2d49a40610bd0e1a7629594e245bde9eacfcc06d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f3d91c2d7e05786f7bfb0ab94b64e2cfb84a21d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687971"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746237"
 ---
 # <a name="_corvalidateimage-function"></a>Função _CorValidateImage
 
@@ -42,7 +43,7 @@ STDAPI _CorValidateImage (
  `FileName`  
  no O nome do arquivo da imagem.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Essa função retorna os valores padrão `E_INVALIDARG` , `E_OUTOFMEMORY` , `E_UNEXPECTED` e `E_FAIL` , bem como os valores a seguir.  
   
@@ -85,6 +86,6 @@ STDAPI _CorValidateImage (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções estáticas globais de metadados](../metadata/metadata-global-static-functions.md)

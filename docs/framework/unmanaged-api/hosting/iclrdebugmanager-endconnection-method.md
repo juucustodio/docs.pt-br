@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICLRDebugManager:: EndConnection'
 title: Método ICLRDebugManager::EndConnection
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 89dc7363-2f29-4eb2-8f23-fccdda6a76a6
 topic_type:
 - apiref
-ms.openlocfilehash: d6f22d6185f4063078463043a6ffd46e56289267
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 06dc9e20ec02c3e3040090babcc443a2ae59848b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719847"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746024"
 ---
 # <a name="iclrdebugmanagerendconnection-method"></a>Método ICLRDebugManager::EndConnection
 
@@ -39,7 +40,7 @@ HRESULT EndConnection (
  `dwConnectionId`  
  no O identificador específico do host para a conexão e a lista associada de tarefas de Common Language Runtime (CLR).  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -68,7 +69,7 @@ HRESULT EndConnection (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRControl](iclrcontrol-interface.md)
 - [Interface ICLRDebugManager](iclrdebugmanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedDocumentWriter'
 title: Interface ISymUnmanagedDocumentWriter
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: edc8a02b-a0ac-46e3-80c1-fb8b5cef6341
 topic_type:
 - apiref
-ms.openlocfilehash: d56ce4d508d9e3c55b70a3a599e98ce5b254352f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9d110432c60274e5ca2cfc2b4e67c63c4326c26f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687984"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764197"
 ---
 # <a name="isymunmanageddocumentwriter-interface"></a>Interface ISymUnmanagedDocumentWriter
 
@@ -27,7 +28,7 @@ Fornece métodos para gravar em um documento referenciado por um repositório de
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método SetCheckSum](isymunmanageddocumentwriter-setchecksum-method.md)|Define informações de soma de verificação.|  
 |[Método SetSource](isymunmanageddocumentwriter-setsource-method.md)|Define a fonte incorporada para um documento que está sendo gravado.|  
@@ -36,6 +37,6 @@ Fornece métodos para gravar em um documento referenciado por um repositório de
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)

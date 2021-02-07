@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugDataTarget3:: GetLoadedModules'
 title: Método ICorDebugDataTarget3::GetLoadedModules
 ms.date: 03/30/2017
 ms.assetid: 9a48c05b-1949-416e-933c-52549b6fcf5e
-ms.openlocfilehash: efbada02b7a24e0a7ed613b86b8a4a1a0b5b051a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ea6350155fd79b52a37133cad95f624635433a3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713737"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764340"
 ---
 # <a name="icordebugdatatarget3getloadedmodules-method"></a>Método ICorDebugDataTarget3::GetLoadedModules
 
@@ -49,7 +50,7 @@ HRESULT GetLoadedModules(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugDataTarget3](icordebugdatatarget3-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

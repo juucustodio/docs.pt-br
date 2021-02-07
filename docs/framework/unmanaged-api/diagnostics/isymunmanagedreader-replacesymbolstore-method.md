@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReader:: ReplaceSymbolStore'
 title: Método ISymUnmanagedReader::ReplaceSymbolStore
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 43257761-8cb1-4eaf-8fb5-1f3980cb66cd
 topic_type:
 - apiref
-ms.openlocfilehash: 3fa94094ad066496cc8a1fc4dd2ccb0ee16b5aac
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e05344ee0b14d40d735ca3e557c319998daf7849
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675835"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763755"
 ---
 # <a name="isymunmanagedreaderreplacesymbolstore-method"></a>Método ISymUnmanagedReader::ReplaceSymbolStore
 
@@ -45,7 +46,7 @@ HRESULT ReplaceSymbolStore (
  `pIStream`  
  no O fluxo de arquivos, usado como uma alternativa ao `filename` parâmetro.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -53,6 +54,6 @@ HRESULT ReplaceSymbolStore (
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReader](isymunmanagedreader-interface.md)

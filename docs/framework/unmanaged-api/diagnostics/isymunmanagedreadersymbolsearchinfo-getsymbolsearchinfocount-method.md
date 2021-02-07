@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReaderSymbolSearchInfo:: GetSymbolSearchInfoCount'
 title: Método ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4068b6ec-525f-4446-8818-0296178cbd19
 topic_type:
 - apiref
-ms.openlocfilehash: 5883b35bb3f1fec24ec108c9839501f0e81881fc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b8bfa61397850c3f960fe30c0136e0a8b074cf1e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708862"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763586"
 ---
 # <a name="isymunmanagedreadersymbolsearchinfogetsymbolsearchinfocount-method"></a>Método ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount
 
@@ -38,7 +39,7 @@ HRESULT GetSymbolSearchInfoCount(
  `pcSearchInfo`  
  ] out] um ponteiro para um `ULONG32` que recebe o tamanho do buffer necessário para conter as informações de pesquisa.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -46,6 +47,6 @@ HRESULT GetSymbolSearchInfoCount(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReaderSymbolSearchInfo](isymunmanagedreadersymbolsearchinfo-interface.md)

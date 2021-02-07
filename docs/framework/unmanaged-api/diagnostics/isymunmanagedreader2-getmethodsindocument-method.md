@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReader2:: GetMethodsInDocument'
 title: Método ISymUnmanagedReader2::GetMethodsInDocument
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c7ae84d6-81e8-4cb7-a1f9-d48b6cde5d79
 topic_type:
 - apiref
-ms.openlocfilehash: 2e7eb183200c6e6de8ee18b58aab457c7e7bf2eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1f75594a479edbf2e0160c9d3543384c0cbf68a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763677"
 ---
 # <a name="isymunmanagedreader2getmethodsindocument-method"></a>Método ISymUnmanagedReader2::GetMethodsInDocument
 
@@ -51,7 +52,7 @@ HRESULT GetMethodsInDocument(
  `pRetVal`  
  fora Um ponteiro para o buffer que recebe os métodos.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -59,6 +60,6 @@ HRESULT GetMethodsInDocument(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReader2](isymunmanagedreader2-interface.md)

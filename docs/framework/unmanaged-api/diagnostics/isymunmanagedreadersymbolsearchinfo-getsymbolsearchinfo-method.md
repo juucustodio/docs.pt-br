@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReaderSymbolSearchInfo:: GetSymbolSearchInfo'
 title: Método ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 40fcdbc5-3bb2-41e9-b995-40984c209a7f
 topic_type:
 - apiref
-ms.openlocfilehash: 69e05fc33b3489f535f1d051da0294fe59e11e00
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e14f78d6736684205b3f86150ce1fbb44a8112b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708953"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763599"
 ---
 # <a name="isymunmanagedreadersymbolsearchinfogetsymbolsearchinfo-method"></a>Método ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo
 
@@ -47,7 +48,7 @@ HRESULT GetSymbolSearchInfo(
  `rgpSearchInfo`  
  fora Um ponteiro que é definido para a interface [ISymUnmanagedSymbolSearchInfo](isymunmanagedsymbolsearchinfo-interface.md) retornada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -55,6 +56,6 @@ HRESULT GetSymbolSearchInfo(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReaderSymbolSearchInfo](isymunmanagedreadersymbolsearchinfo-interface.md)

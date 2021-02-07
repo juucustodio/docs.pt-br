@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReader:: GetDocument'
 title: Método ISymUnmanagedReader::GetDocument
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bb203853-6a6d-4027-b9e9-603a7f28b9d3
 topic_type:
 - apiref
-ms.openlocfilehash: 4604d78f66b872a30457c51bf65890caf613c4fa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f2f31467cfd00de68737224a2c1af5b1e78efed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764093"
 ---
 # <a name="isymunmanagedreadergetdocument-method"></a>Método ISymUnmanagedReader::GetDocument
 
@@ -54,7 +55,7 @@ HRESULT GetDocument (
  `pRetVal`  
  fora Um ponteiro para a interface retornada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -62,6 +63,6 @@ HRESULT GetDocument (
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReader](isymunmanagedreader-interface.md)

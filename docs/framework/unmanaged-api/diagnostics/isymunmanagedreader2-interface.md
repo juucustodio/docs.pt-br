@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedReader2'
 title: Interface ISymUnmanagedReader2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a01a881b-82a3-4b3e-a3a9-9dc305c2e5f7
 topic_type:
 - apiref
-ms.openlocfilehash: 3f34be833d3ccb5c636d2c5f18ccb6e216ef2c49
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2e6d994a3252b7fb09b2915266e3142255878a88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709070"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763612"
 ---
 # <a name="isymunmanagedreader2-interface"></a>Interface ISymUnmanagedReader2
 
@@ -27,7 +28,7 @@ Representa um leitor de símbolo que fornece acesso a documentos, métodos e var
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetMethodByVersionPreRemap](isymunmanagedreader2-getmethodbyversionpreremap-method.md)|Obtenha um método de leitor de símbolo, dado um token de método e um número de versão de edição e continuação.|  
 |[Método GetMethodsInDocument](isymunmanagedreader2-getmethodsindocument-method.md)|Obtém todos os métodos que têm informações de linha no documento fornecido.|  
@@ -37,7 +38,7 @@ Representa um leitor de símbolo que fornece acesso a documentos, métodos e var
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)
 - [Interface ISymUnmanagedReader](isymunmanagedreader-interface.md)

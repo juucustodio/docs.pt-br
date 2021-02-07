@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugDataTarget'
 title: Interface ICorDebugDataTarget
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: df5f05be-bed7-4f3c-bc89-dbb435d79a0b
 topic_type:
 - apiref
-ms.openlocfilehash: 14f0b247ded363dedce193886aab50538db3e6a6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 34121b56080a8adc17543ce5716962c17c1a156d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683674"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764418"
 ---
 # <a name="icordebugdatatarget-interface"></a>Interface ICorDebugDataTarget
 
@@ -27,7 +28,7 @@ Fornece uma interface de retorno de chamada que oferece acesso a um determinado 
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetPlatform](icordebugdatatarget-getplatform-method.md)|Fornece informações sobre a plataforma, incluindo arquitetura do processador e sistema operacional, em que o processo de destino está em execução.|  
 |[Método ReadVirtual](icordebugdatatarget-readvirtual-method.md)|Obtém um bloco de memória contígua a partir do endereço especificado e a retorna no buffer fornecido.|  
@@ -60,7 +61,7 @@ Fornece uma interface de retorno de chamada que oferece acesso a um determinado 
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

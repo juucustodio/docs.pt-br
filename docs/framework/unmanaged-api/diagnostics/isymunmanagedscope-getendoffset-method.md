@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedScope:: GetEndOffset'
 title: Método ISymUnmanagedScope::GetEndOffset
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1d0b15c9-8059-435f-9fce-346a08b9bd36
 topic_type:
 - apiref
-ms.openlocfilehash: 14e747e81e467019d464212e75513bdf98344916
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ac95b98bb87fbf3dc3b42b5a2e5413f76dfffa34
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763470"
 ---
 # <a name="isymunmanagedscopegetendoffset-method"></a>Método ISymUnmanagedScope::GetEndOffset
 
@@ -38,7 +39,7 @@ HRESULT GetEndOffset(
  `pRetVal`  
  fora Um ponteiro para um `ULONG32` que recebe o deslocamento final.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -46,7 +47,7 @@ HRESULT GetEndOffset(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedScope](isymunmanagedscope-interface.md)
 - [Método GetStartOffset](isymunmanagedscope-getstartoffset-method.md)

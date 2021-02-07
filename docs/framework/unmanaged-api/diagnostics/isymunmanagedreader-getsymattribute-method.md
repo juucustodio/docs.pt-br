@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReader:: GetSymAttribute'
 title: Método ISymUnmanagedReader::GetSymAttribute
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c675ce7e-76e7-45ff-8273-3b6489a2767c
 topic_type:
 - apiref
-ms.openlocfilehash: aa3b742babe4a94a43e4e6168dea67c0a0245eb0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd1c453e9f2ef68799fc5eccf1288a7665c5cfdf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720575"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763963"
 ---
 # <a name="isymunmanagedreadergetsymattribute-method"></a>Método ISymUnmanagedReader::GetSymAttribute
 
@@ -55,7 +56,7 @@ HRESULT GetSymAttribute (
  `buffer`  
  fora Um ponteiro para a variável que recebe os dados de atributo.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -63,6 +64,6 @@ HRESULT GetSymAttribute (
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReader](isymunmanagedreader-interface.md)

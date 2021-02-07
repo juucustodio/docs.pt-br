@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReader2:: GetMethodByVersionPreRemap'
 title: Método ISymUnmanagedReader2::GetMethodByVersionPreRemap
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0d144ed4-bdb0-4cac-960c-cb90f4dca173
 topic_type:
 - apiref
-ms.openlocfilehash: 5484242562deaf463b7435ad4e54735a7abee45e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b827821f529b9917c6bbb3452f0c3fe3283f1ee9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730481"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763716"
 ---
 # <a name="isymunmanagedreader2getmethodbyversionpreremap-method"></a>Método ISymUnmanagedReader2::GetMethodByVersionPreRemap
 
@@ -46,7 +47,7 @@ HRESULT GetMethodByVersionPreRemap(
  `pRetVal`  
  fora Um ponteiro para a interface [ISymUnmanagedMethod](isymunmanagedmethod-interface.md) retornada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -54,6 +55,6 @@ HRESULT GetMethodByVersionPreRemap(
 
  **Cabeçalho:** CorSym. idl. CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReader2](isymunmanagedreader2-interface.md)

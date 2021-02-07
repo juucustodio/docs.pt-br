@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugDebugEvent'
 title: Interface ICorDebugDebugEvent
 ms.date: 03/30/2017
 ms.assetid: a226737a-cb99-4e97-bd94-9a37094ded41
-ms.openlocfilehash: d73857bd9d0d5dd9e5eff0c89dcc573ae0d93f0e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5735be22b76e9f74847bb5138c00130f28dbfc96
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731872"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764301"
 ---
 # <a name="icordebugdebugevent-interface"></a>Interface ICorDebugDebugEvent
 
@@ -15,7 +16,7 @@ Define a interface base da qual derivam todos os eventos de depuração `ICorDeb
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetEventKind](icordebugdebugevent-geteventkind-method.md)|Indica o tipo de evento que este objeto `ICorDebugDebugEvent` representa.|  
 |[Método GetThread](icordebugdebugevent-getthread-method.md)|Obtém o thread no qual o evento ocorreu.|  
@@ -41,7 +42,7 @@ Define a interface base da qual derivam todos os eventos de depuração `ICorDeb
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

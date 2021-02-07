@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedReader'
 title: Interface ISymUnmanagedReader
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aa3cc15d-058e-4e6f-b03e-39569646ba47
 topic_type:
 - apiref
-ms.openlocfilehash: bca84fdba575ed9bfe572b9fd7a5869620962de6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bad4fdbac3bf6f03fa0db79ce54a5b0ca897028f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675861"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763794"
 ---
 # <a name="isymunmanagedreader-interface"></a>Interface ISymUnmanagedReader
 
@@ -27,7 +28,7 @@ Representa um leitor de símbolo que fornece acesso a documentos, métodos e var
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetDocument](isymunmanagedreader-getdocument-method.md)|Localiza um documento.|  
 |[Método GetDocuments](isymunmanagedreader-getdocuments-method.md)|Retorna uma matriz de todos os documentos definidos no repositório de símbolos.|  
@@ -51,7 +52,7 @@ Representa um leitor de símbolo que fornece acesso a documentos, métodos e var
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)
 - [Interface ISymUnmanagedReader2](isymunmanagedreader2-interface.md)

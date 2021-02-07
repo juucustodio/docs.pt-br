@@ -1,5 +1,6 @@
 ---
-title: Como desabilitar sessões seguranças em uma WSFederationHttpBinding
+description: 'Saiba mais sobre: como: desabilitar sessões seguras em um WSFederationHttpBinding'
+title: 'Como: desabilitar sessões seguras em uma WSFederationHttpBinding'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +9,14 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 675fa143-6a4e-4be3-8afc-673334ab55ec
-ms.openlocfilehash: df057d64feb89d1e43b938b36cb48f2f103b17d0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 73fb25c55cb6f7be13a286cf8e16701095739827
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595382"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756117"
 ---
-# <a name="how-to-disable-secure-sessions-on-a-wsfederationhttpbinding"></a>Como desabilitar sessões seguranças em uma WSFederationHttpBinding
+# <a name="how-to-disable-secure-sessions-on-a-wsfederationhttpbinding"></a>Como: desabilitar sessões seguras em uma WSFederationHttpBinding
 
 Alguns serviços podem exigir credenciais federadas, mas não dar suporte a sessões seguras. Nesse caso, você deve desabilitar o recurso de sessão segura. Ao contrário do <xref:System.ServiceModel.WSHttpBinding> , a <xref:System.ServiceModel.WSFederationHttpBinding> classe não fornece uma maneira de desabilitar sessões seguras ao se comunicar com um serviço. Em vez disso, você deve criar uma associação personalizada que substitua as configurações de sessão segura por uma inicialização.
 
@@ -42,7 +43,7 @@ Este exemplo a seguir cria uma associação federada personalizada sem sessão s
 
 ## <a name="compiling-the-code"></a>Compilando o código
 
-- Para compilar o exemplo de código, crie um projeto que referencie o assembly System. ServiceModel. dll.
+- Para compilar o exemplo de código, crie um projeto que referencie o assembly System.ServiceModel.dll.
 
 ## <a name="see-also"></a>Consulte também
 

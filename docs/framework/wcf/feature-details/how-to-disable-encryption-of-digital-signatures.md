@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como desabilitar a criptografia de assinaturas digitais'
 title: 'Como: desabilitar criptografia de assinaturas digitais'
 ms.date: 03/30/2017
 ms.assetid: fd174313-ad81-4dca-898a-016ccaff8187
-ms.openlocfilehash: 6d9102ab7676a8e751e608b6081da751464e6ee0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 95e9bd18b480f5fdf9c98fdb3447610e0d4e3c75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237385"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756130"
 ---
 # <a name="how-to-disable-encryption-of-digital-signatures"></a>Como: desabilitar criptografia de assinaturas digitais
 
@@ -26,6 +27,6 @@ Por padrão, uma mensagem é assinada e a assinatura é criptografada digitalmen
   
 3. Defina a <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=nameWithType> propriedade como <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt> ou defina a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder%2A?displayProperty=nameWithType> propriedade como <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt> .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Recursos de segurança com associações personalizadas](security-capabilities-with-custom-bindings.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: arquitetura de ativação WAS'
 title: Arquitetura de ativação do WAS
 ms.date: 03/30/2017
 ms.assetid: 58aeffb0-8f3f-4b40-80c8-15f3f1652fd3
-ms.openlocfilehash: 46f9f9b0e951d363200cf41b5119b13ca921a3b5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 616b3b404258356bcd5600c68b6f70aaf096e978
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281632"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756013"
 ---
 # <a name="was-activation-architecture"></a>Arquitetura de ativação do WAS
 
@@ -89,7 +90,7 @@ Este tópico relaciona e discute os componentes do serviço de ativação de pro
 </system.web>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Configurar o WAS para uso com o WCF](configuring-the-wpa--service-for-use-with-wcf.md)
 - [Recursos de hospedagem do Windows Server AppFabric](/previous-versions/appfabric/ee677189(v=azure.10))

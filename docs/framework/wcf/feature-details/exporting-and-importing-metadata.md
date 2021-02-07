@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: exportar e importar metadados'
 title: Exportando e importando metadados
 ms.date: 03/30/2017
 helpviewer_keywords:
 - metadata [WCF], exporting and importing
 ms.assetid: 614a75bb-e0b0-4c95-b6d8-02cb5e5ddb38
-ms.openlocfilehash: 44a684ca7904cc059277d94f26b5c077794d75b9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c4309e9ce48089fa0034f2b93128ac021dd08998
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756286"
 ---
 # <a name="exporting-and-importing-metadata"></a>Exportando e importando metadados
 
@@ -75,7 +76,7 @@ No Windows Communication Foundation (WCF), exportar metadados é o processo de d
   
  <xref:System.ServiceModel.Description.WsdlImporter>  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Exportando metadados personalizados para uma extensão do WCF](../extending/exporting-custom-metadata-for-a-wcf-extension.md)
 - [Importando metadados personalizados para uma extensão do WCF](../extending/importing-custom-metadata-for-a-wcf-extension.md)

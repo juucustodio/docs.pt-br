@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: integração de cache ASP.NET'
 title: Integração de cache ASP.NET
 ms.date: 03/30/2017
 ms.assetid: f581923a-8a72-42fc-bd6a-46de2aaeecc1
-ms.openlocfilehash: c541f3caad8a500b9fdb33d00b58706bac876e37
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c366efdc95cfa67f4fad9b8534edb047ad98ab32
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594745"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755948"
 ---
 # <a name="aspnet-caching-integration"></a>Integração de cache ASP.NET
 
@@ -30,7 +31,7 @@ Integração com o cache de saída ASP.NET
 
 O exemplo usa o <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> para utilizar o cache de saída do ASP.NET com o serviço do Windows Communication Foundation (WCF). O <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> é aplicado às operações de serviço e fornece o nome de um perfil de cache em um arquivo de configuração que deve ser aplicado a respostas da operação especificada.
 
-No arquivo Service.cs do projeto de serviço de exemplo, as `GetCustomer` operações e `GetCustomers` são marcadas com o <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> , que fornece o nome do perfil de cache "CacheFor60Seconds". No arquivo Web. config do projeto de serviço, o perfil de cache "CacheFor60Seconds" é fornecido sob o `caching` elemento < > de < `system.web` >. Para esse perfil de cache, o valor do `duration` atributo é "60", portanto, as respostas associadas a esse perfil são armazenadas em cache no cache de saída ASP.net por 60 segundos. Além disso, para esse perfil de cache, o `varmByParam` atributo é definido como "Format" para que as solicitações com valores diferentes para o `format` parâmetro de cadeia de caracteres de consulta tenham suas respostas armazenadas em cache separadamente. Por fim, o atributo do perfil de cache `varyByHeader` é definido como "Accept", portanto, as solicitações com valores de cabeçalho Accept diferentes têm suas respostas armazenadas em cache separadamente.
+No arquivo Service.cs do projeto de serviço de exemplo, as `GetCustomer` operações e `GetCustomers` são marcadas com o <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> , que fornece o nome do perfil de cache "CacheFor60Seconds". No arquivo de Web.config do projeto de serviço, o perfil de cache "CacheFor60Seconds" é fornecido sob o `caching` elemento <> de <`system.web`>. Para esse perfil de cache, o valor do `duration` atributo é "60", portanto, as respostas associadas a esse perfil são armazenadas em cache no cache de saída ASP.net por 60 segundos. Além disso, para esse perfil de cache, o `varmByParam` atributo é definido como "Format" para que as solicitações com valores diferentes para o `format` parâmetro de cadeia de caracteres de consulta tenham suas respostas armazenadas em cache separadamente. Por fim, o atributo do perfil de cache `varyByHeader` é definido como "Accept", portanto, as solicitações com valores de cabeçalho Accept diferentes têm suas respostas armazenadas em cache separadamente.
 
 Program.cs no projeto do cliente demonstra como um cliente desse tipo pode ser criado usando o <xref:System.Net.HttpWebRequest> . Observe que essa é apenas uma maneira de acessar um serviço WCF. Também é possível acessar o serviço usando outras classes de .NET Framework, como a fábrica de canais do WCF e o <xref:System.Net.WebClient> . Outros exemplos no SDK (como o exemplo de [serviço http básico](basic-http-service.md) ) ilustram como usar essas classes para se comunicar com um serviço WCF.
 

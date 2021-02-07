@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Transferência de Dados e serialização'
 title: Serialização e transferência de dados
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data serialization [WCF]
 - data transfer [WCF]
 ms.assetid: 0f03c635-f3e7-4c5c-9463-3cb0135e221e
-ms.openlocfilehash: 490c89f5cfbecd4b2cc0c0e639aa97849132a809
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 50e5068efc10d706fb9ce2634998408e48037ded
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261976"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756559"
 ---
 # <a name="data-transfer-and-serialization"></a>Serialização e transferência de dados
 
@@ -64,7 +65,7 @@ Em um sistema conectado, os serviços e os clientes dependem da troca de dados p
 
  [Estendendo codificadores e serializadores](../extending/extending-encoders-and-serializers.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Melhores práticas: Controle de versão de contrato de dados](../best-practices-data-contract-versioning.md)
 - [Controle de versão de serviço](../service-versioning.md)

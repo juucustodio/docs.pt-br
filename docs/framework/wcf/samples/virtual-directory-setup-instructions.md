@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: instruções de configuração do diretório virtual'
 title: Instruções de definição de diretório virtual
 ms.date: 03/30/2017
 ms.assetid: 3c62cab5-81a4-48b6-ac8c-9ce33a85a157
-ms.openlocfilehash: dba6547888935ccf36ec0924fd3c95e8fbda5688
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4b1a68fb657a59e9858c6efa7931c5d106231605
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243645"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755701"
 ---
 # <a name="virtual-directory-setup-instructions"></a>Instruções de definição de diretório virtual
 
@@ -191,6 +192,6 @@ Os exemplos de Windows Communication Foundation (WCF) destinam-se a compartilhar
   
     3. Na coluna **grupo** , verifique se o valor de **ASPNET** é "Users".  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Instruções de hospedagem de serviço de informação de internet](internet-information-service-hosting-instructions.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como especificar uma associação de serviço no código'
 title: 'Como: especificar uma associação de serviço no código'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 67ab5dd8-79c1-4e62-aa75-828ea918a53a
-ms.openlocfilehash: 7cf54754661182dca1e91c75b158d9b0a34a1f5e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 744919fee4ec28d7df4581ac1d608d1fa9e99a29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236475"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755935"
 ---
 # <a name="how-to-specify-a-service-binding-in-code"></a>Como: especificar uma associação de serviço no código
 
@@ -49,7 +50,7 @@ Neste exemplo, um `ICalculator` contrato é definido para um serviço de calcula
      [!code-csharp[C_HowTo_CodeServiceBinding#5](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_codeservicebinding/cs/source.cs#5)]
      [!code-vb[C_HowTo_CodeServiceBinding#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_codeservicebinding/vb/source.vb#5)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Usando associações para configurar serviços e clientes](using-bindings-to-configure-services-and-clients.md)
 - [Especificando um endereço de ponto de extremidade](specifying-an-endpoint-address.md)

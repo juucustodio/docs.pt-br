@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar um contrato de Windows Communication Foundation com uma classe'
 title: Como criar um contrato do Windows Communication Foundation com uma classe
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1ad69393-3915-4e7f-9b91-b6fc59c6f5ba
-ms.openlocfilehash: f2164b4f4c997de764139a7a0a2aecbf91616458
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 63a5cc4e6a7966af69f2d5f3c7db0c7f4e313faf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286234"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756156"
 ---
 # <a name="how-to-create-a-windows-communication-foundation-contract-with-a-class"></a>Como criar um contrato do Windows Communication Foundation com uma classe
 

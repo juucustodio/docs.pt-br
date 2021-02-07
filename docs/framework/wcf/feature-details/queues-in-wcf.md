@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: filas no Windows Communication Foundation'
 title: Filas no Windows Communication Foundation
 ms.date: 03/30/2017
 helpviewer_keywords:
 - queues [WCF]
 ms.assetid: 43008409-1bb4-4bd4-85d7-862c8f10ae20
-ms.openlocfilehash: d63b03e519484ad6ec90b4267a49b77738593e45
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 14ca429a03bc4c085b0a0e2079646b9edbb337ce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244646"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756052"
 ---
 # <a name="queues-in-windows-communication-foundation"></a>Filas no Windows Communication Foundation
 

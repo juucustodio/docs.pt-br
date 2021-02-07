@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: TransportSecurityBindingElement'
 title: TransportSecurityBindingElement
 ms.date: 03/30/2017
 ms.assetid: 31b8cd3b-3be5-4b6c-93f0-69d7aaf791d0
-ms.openlocfilehash: 5afc14fda6701a02f10d0a58cbae3937a8529b65
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c52da0c280a91e17001f3edc7b93c5d0f0dbeb85
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234824"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757092"
 ---
 # <a name="transportsecuritybindingelement"></a>TransportSecurityBindingElement
 
 TransportSecurityBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class TransportSecurityBindingElement : SecurityBindingElement  

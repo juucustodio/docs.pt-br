@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 100-WorkflowInstanceRecord'
 title: 100 - WorkflowInstanceRecord
 ms.date: 03/30/2017
 ms.assetid: ed4d1851-b378-489b-a22d-c1db09571fb4
-ms.openlocfilehash: c0780aa21e76eb0d72f83b5d2de7d16ff84a6ac7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 59145d0d8151017cfeebe68e0da147410aae991a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96240037"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755649"
 ---
 # <a name="100---workflowinstancerecord"></a>100 - WorkflowInstanceRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96240037"
 |-|-|  
 |ID|100|  
 |Palavras-chave|EndToEndMonitoring, solução de problemas, HealthMonitoring, WFTracking|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: validador de senha de nome de usuário'
 title: Validador de senha e nome de usuário
 ms.date: 03/30/2017
 ms.assetid: 42f03841-286b-42d8-ba58-18c75422bc8e
-ms.openlocfilehash: bf20c9baaec44ebdfed351b35c54ab14448c7644
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8195549da81c8fbb7259d2b3e00db39017817c41
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294918"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755740"
 ---
 # <a name="user-name-password-validator"></a>Validador de senha e nome de usuário
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: retornos de chamada de serialização de Version-Tolerant'
 title: Retornos de chamada de serialização tolerantes à versão
 ms.date: 03/30/2017
 dev_langs:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - serialization [WCF], setting default values
 - OnSerializedAttribute [WCF]
 ms.assetid: aa4a3a6f-05ec-4efd-bdbf-2181e13e6468
-ms.openlocfilehash: ad162f24042f30eabee7a1fad2025072b26d9af5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8ee53e96b90ae6b0f2993a543fc129d75eb3481f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289367"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756000"
 ---
 # <a name="version-tolerant-serialization-callbacks"></a>Retornos de chamada de serialização tolerantes à versão
 

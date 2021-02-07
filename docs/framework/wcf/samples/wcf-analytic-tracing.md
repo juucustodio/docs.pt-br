@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: rastreamento analítico do WCF'
 title: Rastreamento analítico do WCF
 ms.date: 03/30/2017
 ms.assetid: 6029c7c7-3515-4d36-9d43-13e8f4971790
-ms.openlocfilehash: 490c67c92407626a67ea8561a378ef3e70266fe2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1f5ec26828bba99a127fea6a81f57fed717943a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755688"
 ---
 # <a name="wcf-analytic-tracing"></a>Rastreamento analítico do WCF
 
@@ -122,6 +123,6 @@ Este exemplo demonstra como adicionar seus próprios eventos de rastreamento no 
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTrace`  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [AppFabric que monitora Exemplos](/previous-versions/appfabric/ff383407(v=azure.10))

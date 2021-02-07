@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Federação'
 title: Federação
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation [WCF]
 ms.assetid: 2f1e646f-8361-48d4-9d5d-1b961f31ede4
-ms.openlocfilehash: 5b5e944b96fc5e56fbb4d19a582ba9dd245904b4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 069017097b46ef0b86e74fb94c2e2823172fb1e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286741"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756325"
 ---
 # <a name="federation"></a>Federação
 
@@ -302,6 +303,6 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 
  A segurança federada fornece uma divisão de responsabilidade limpa e ajuda a criar arquiteturas de serviço seguras e escalonáveis. Como uma plataforma para a criação e implantação de aplicativos distribuídos, o WCF fornece suporte nativo para implementar a segurança federada.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança](security.md)

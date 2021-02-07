@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: serializador de contrato de dados'
 title: Serializador de contrato de dados
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF, data
 - DataContractSerializer
 ms.assetid: 3d64837e-0a0c-4cc8-90ff-a5c6f313c63a
-ms.openlocfilehash: e299d129e9296467d9b966cff5353c629461bee4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6ad73cf6894ea3fc46e3e7fcf8f4bdaab2a78d99
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285233"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756624"
 ---
 # <a name="data-contract-serializer"></a>Serializador de contrato de dados
 
@@ -41,7 +42,7 @@ A infraestrutura do Windows Communication Foundation (WCF) usa a <xref:System.Ru
   
  [Serialização e transferência de dados](data-transfer-and-serialization.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de esquema de contrato de dados](data-contract-schema-reference.md)
 - [Especificando transferência de dados em contratos de serviço](specifying-data-transfer-in-service-contracts.md)

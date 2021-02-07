@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Windows Communication Foundation pontos de extremidade'
 title: Pontos de extremidade do Windows Communication Foundation
 ms.date: 03/30/2017
 helpviewer_keywords:
 - endpoints [WCF]
 ms.assetid: bd0c310f-dd9f-4081-9be2-3db5909850b6
-ms.openlocfilehash: d3281ac648ecb43ce5248fe86b6da1d268e382f8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: caa918f2dd7ca7b0289cc1faf6d189270596808b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262145"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756767"
 ---
 # <a name="windows-communication-foundation-endpoints"></a>Pontos de extremidade do Windows Communication Foundation
 

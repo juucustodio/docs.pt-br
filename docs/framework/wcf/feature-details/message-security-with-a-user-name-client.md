@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: segurança de mensagem com um cliente de nome de usuário'
 title: Segurança de mensagem com um nome de usuário cliente
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
-ms.openlocfilehash: 7168b393bde626c8c413cda3c7422e0eee4ce267
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4502635df3b52ba069c19fca7a73cc9395dd105d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292864"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756104"
 ---
 # <a name="message-security-with-a-user-name-client"></a>Segurança de mensagem com um nome de usuário cliente
 
@@ -33,7 +34,7 @@ A ilustração a seguir mostra um serviço de Windows Communication Foundation (
   
 ## <a name="service"></a>Serviço  
 
- O código e a configuração a seguir devem ser executados de forma independente. Realize uma destas ações:  
+ O código e a configuração a seguir devem ser executados de forma independente. Realize um dos seguintes procedimentos:  
   
 - Crie um serviço autônomo usando o código sem configuração.  
   
@@ -131,7 +132,7 @@ A ilustração a seguir mostra um serviço de Windows Communication Foundation (
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de segurança](security-overview.md)
 - [Message Security User Name](../samples/message-security-user-name.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando o moniker do WCF com clientes COM'
 title: Usando o WCF Moniker com clientes COM
 ms.date: 03/30/2017
 ms.assetid: e2799bfe-88bd-49d7-9d6d-ac16a9b16b04
-ms.openlocfilehash: eb2f14db8b58fd182bbe711bf559055659a02652
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c2888224e36a473773ef6d7fbd72dbae7420fab0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243684"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755753"
 ---
 # <a name="using-the-wcf-moniker-with-com-clients"></a>Usando o WCF Moniker com clientes COM
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: CustomChannelsTester'
 title: CustomChannelsTester
 ms.date: 03/30/2017
 ms.assetid: ee1fa307-98b1-4647-8860-2e9217ba6082
-ms.openlocfilehash: e095221e1f17cdf4a63c2fe86d5ba050e354e471
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f1b84d8de0a93edf685d63b2bfd3c51f8b3e0420
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96240687"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755909"
 ---
 # <a name="customchannelstester"></a>CustomChannelsTester
 

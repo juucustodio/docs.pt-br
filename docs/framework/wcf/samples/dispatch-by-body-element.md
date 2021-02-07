@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: expedição por elemento body'
 title: Expedição por elemento Body
 ms.date: 03/30/2017
 ms.assetid: f64a3c04-62b4-47b2-91d9-747a3af1659f
-ms.openlocfilehash: ddff361179c2ef071ca4df076e78b238de9041a1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 431a69e1650ca7481432f71e67b87750254bda9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292578"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755792"
 ---
 # <a name="dispatch-by-body-element"></a>Expedição por elemento Body
 

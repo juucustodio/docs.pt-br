@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: diagnosticando aplicativos transacionais'
 title: Diagnosticando aplicativos transacionais
 ms.date: 03/30/2017
 ms.assetid: 4a993492-1088-4d10-871b-0c09916af05f
-ms.openlocfilehash: 696ebe7249a8388eaaf38a678581e28d472e821a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4b80dd5273781feaad0ef1c964c737a1cd470c75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290238"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756442"
 ---
 # <a name="diagnosing-transactional-applications"></a>Diagnosticando aplicativos transacionais
 
@@ -56,8 +57,8 @@ Este tópico descreve como usar o recurso de diagnóstico e gerenciamento do Win
   
 |Nome|Tipo|Descrição|  
 |----------|----------|-----------------|  
-|ReleaseServiceInstanceOnTransactionComplete|Booliano|Especifica se o objeto de serviço é reciclado quando a transação atual é concluída.|  
-|TransactionAutoCompleteOnSessionClose|Booliano|Especifica se as transações pendentes são concluídas quando a sessão atual é fechada.|  
+|ReleaseServiceInstanceOnTransactionComplete|Boolean|Especifica se o objeto de serviço é reciclado quando a transação atual é concluída.|  
+|TransactionAutoCompleteOnSessionClose|Boolean|Especifica se as transações pendentes são concluídas quando a sessão atual é fechada.|  
 |TransactionIsolationLevel|Uma cadeia de caracteres que contém um valor válido da <xref:System.Transactions.IsolationLevel> enumeração.|Especifica o nível de isolamento da transação ao qual esse serviço dá suporte.|  
 |TransactionTimeout|<xref:System.DateTime>|Especifica o período no qual uma transação deve ser concluída.|  
   
@@ -72,14 +73,14 @@ Este tópico descreve como usar o recurso de diagnóstico e gerenciamento do Win
 |Nome|Tipo|Descrição|  
 |----------|----------|-----------------|  
 |TransactionProtocol|Uma cadeia de caracteres que contém um valor válido do <xref:System.ServiceModel.TransactionProtocol> tipo.|Especifica o protocolo de transação a ser usado no fluxo de uma transação.|  
-|TransactionFlow|Booliano|Especifica se o fluxo de transações de entrada está habilitado.|  
+|TransactionFlow|Boolean|Especifica se o fluxo de transações de entrada está habilitado.|  
   
  Em uma operação, o `OperationBehaviorAttribute` tem as seguintes propriedades:  
   
 |Nome|Tipo|Descrição|  
 |----------|----------|-----------------|  
-|TransactionAutoComplete|Booliano|Especifica se a transação atual deve ser confirmada automaticamente se não ocorrer nenhuma exceção não tratada.|  
-|TransactionScopeRequired|Booliano|Especifica se a operação requer uma transação.|  
+|TransactionAutoComplete|Boolean|Especifica se a transação atual deve ser confirmada automaticamente se não ocorrer nenhuma exceção não tratada.|  
+|TransactionScopeRequired|Boolean|Especifica se a operação requer uma transação.|  
   
  Em uma operação, o `TransactionFlowAttribute` tem as seguintes propriedades.  
   
@@ -124,8 +125,8 @@ Este tópico descreve como usar o recurso de diagnóstico e gerenciamento do Win
   
      Isso também habilita o rastreamento do WCF, pois o WCF também utiliza a <xref:System.Transactions> infraestrutura.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Administração e diagnóstico](../diagnostics/index.md)
+- [Administração e diagnósticos](../diagnostics/index.md)
 - [Configurando o rastreamento](../diagnostics/tracing/configuring-tracing.md)
 - [Utilitário de configuração de transações WS-Atomic (wsatConfig.exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md)

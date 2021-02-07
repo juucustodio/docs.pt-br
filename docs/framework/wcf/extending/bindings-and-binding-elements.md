@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: associações e elementos de associação'
 title: Associações e elementos de associações
 ms.date: 03/30/2017
 helpviewer_keywords:
 - binding elements [WCF]
 ms.assetid: 765ff77b-7682-4ea3-90eb-e4d751e37379
-ms.openlocfilehash: 16e1b7840be6a3ec247033fa3a2eada9e5799bdb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0d43a676bf5b4a166a34a2d623e0f80cc9df66f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262132"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756715"
 ---
 # <a name="bindings-and-binding-elements"></a>Associações e elementos de associações
 

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: diferenças em recursos de enfileiramento no Windows Vista, no Windows Server 2003 e no Windows XP'
 title: Diferenças de recursos em fila no Windows Vista, Windows Server 2003, e no Windows XP
 ms.date: 03/30/2017
 helpviewer_keywords:
 - queues [WCF], differences in operating systems
 ms.assetid: aa809d93-d0a3-4ae6-a726-d015cca37c04
-ms.openlocfilehash: 6ec20a0d9512b1f80da1fd423282fc1538c750ef
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6a6206b3033454528797f3c8f4276add9c35023d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254266"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756377"
 ---
 # <a name="differences-in-queuing-features-in-windows-vista-windows-server-2003-and-windows-xp"></a>Diferenças de recursos em fila no Windows Vista, Windows Server 2003, e no Windows XP
 
@@ -39,7 +40,7 @@ Este tópico resume as diferenças no recurso de filas do Windows Communication 
 
  O MSMQ no Windows Vista dá suporte a leituras transacionais remotas. Isso permite que um aplicativo que está lendo de uma fila seja hospedado em um computador diferente do computador no qual a fila está hospedada. Isso garante a capacidade de ter um farm de serviços de leitura de uma fila central, o que aumenta a taxa de transferência geral do sistema. Ele também garante que, se ocorrer uma falha durante a leitura e o processamento da mensagem, a transação será revertida e a mensagem permanecerá na fila para processamento posterior.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Utilizando filas de mensagens mortas para manuseio de transferência de mensagens com falha](using-dead-letter-queues-to-handle-message-transfer-failures.md)
 - [Manuseio de mensagem suspeita](poison-message-handling.md)

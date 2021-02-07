@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: WindowsStreamSecurityBindingElement'
 title: WindowsStreamSecurityBindingElement
 ms.date: 03/30/2017
 ms.assetid: 4b0508c5-669c-4fe3-9225-8a10f8ee3be4
-ms.openlocfilehash: cbffbc8dcf2463a09371b7ae126d6f51afc349d4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 58bee7fda3b5d04a2a0d3f1bb63d7c083d6cb4cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757053"
 ---
 # <a name="windowsstreamsecuritybindingelement"></a>WindowsStreamSecurityBindingElement
 
 WindowsStreamSecurityBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class WindowsStreamSecurityBindingElement : BindingElement  

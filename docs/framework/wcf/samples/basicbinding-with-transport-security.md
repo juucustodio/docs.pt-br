@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: BasicBinding com segurança de transporte'
 title: BasicBinding com segurança de transporte
 ms.date: 03/30/2017
 ms.assetid: f49b1de6-0254-4362-8ef2-fccd8ff9688b
-ms.openlocfilehash: 822a7dcb20c6559a70ba77719b6e7a62633bb31c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e3d196136fcf91e3e61f82cee7e16421db221192
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575661"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755896"
 ---
 # <a name="basicbinding-with-transport-security"></a>BasicBinding com segurança de transporte
 
@@ -56,7 +57,7 @@ O código do programa no exemplo é idêntico ao do serviço de [introdução](g
 </system.serviceModel>
 ```
 
-Como o certificado usado neste exemplo é um certificado de teste criado com MakeCert. exe, um alerta de segurança é exibido quando você tenta acessar um endereço HTTPS: em seu navegador, como `https://localhost/servicemodelsamples/service.svc` . Para permitir que o cliente do Windows Communication Foundation (WCF) funcione com um certificado de teste, algum código adicional é adicionado ao cliente para suprimir o alerta de segurança. Esse código e a classe que o acompanham não são necessários ao usar certificados reais.
+Como o certificado usado neste exemplo é um certificado de teste criado com Makecert.exe, um alerta de segurança é exibido quando você tenta acessar um endereço HTTPS: em seu navegador, como `https://localhost/servicemodelsamples/service.svc` . Para permitir que o cliente do Windows Communication Foundation (WCF) funcione com um certificado de teste, algum código adicional é adicionado ao cliente para suprimir o alerta de segurança. Esse código e a classe que o acompanham não são necessários ao usar certificados reais.
 
 ```csharp
 // This code is required only for test certificates such as those

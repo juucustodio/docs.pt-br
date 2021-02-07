@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: substituto DataContract'
 title: Alternativa de DataContract
 ms.date: 03/30/2017
 ms.assetid: b0188f3c-00a9-4cf0-a887-a2284c8fb014
-ms.openlocfilehash: 23a83b0a99a17af011bea1193c2ea013a2c3c5a9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 739471efcea1d04752f3065c7a28f55f9ff9a0f8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253681"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755818"
 ---
 # <a name="datacontract-surrogate"></a>Alternativa de DataContract
 

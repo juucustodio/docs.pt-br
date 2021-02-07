@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: TransactionFlowAttribute'
 title: TransactionFlowAttribute
 ms.date: 03/30/2017
 ms.assetid: 0a9c8674-29f7-4f14-aa1f-dc2644ca57e4
-ms.openlocfilehash: b07ca5aa15a43a285f83f74d6e3f1df1cac7b7c9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8bb39990d2c12470cfdb6ff4d0c49364d6c2fac6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96264264"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757144"
 ---
 # <a name="transactionflowattribute"></a>TransactionFlowAttribute
 
 TransactionFlowAttribute  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class TransactionFlowAttribute : Behavior  

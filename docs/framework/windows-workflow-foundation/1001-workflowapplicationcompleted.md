@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1001-WorkflowApplicationCompleted'
 title: 1001 - WorkflowApplicationCompleted
 ms.date: 03/30/2017
 ms.assetid: 7a2ab59a-cf66-437a-b01e-f8f7268a3f7a
-ms.openlocfilehash: be97991be9b61908a23486da0ef255ebfbdc5485
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d32028bbe582f4a1e31796ed1f75e41c651e6c59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239946"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755636"
 ---
 # <a name="1001---workflowapplicationcompleted"></a>1001 - WorkflowApplicationCompleted
 
@@ -17,7 +18,7 @@ ms.locfileid: "96239946"
 |-|-|  
 |ID|1001|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

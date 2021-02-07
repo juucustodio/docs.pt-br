@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: duplex'
 title: Duplex
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Duplex Service Contract
 ms.assetid: bc5de6b6-1a63-42a3-919a-67d21bae24e0
-ms.openlocfilehash: 77eab6a4975fc67c20558a53f399c7e709215587
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 2681506e186cb38eedc1888987fa46ddf2c0b7b8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575193"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755779"
 ---
 # <a name="duplex"></a>Duplex
 

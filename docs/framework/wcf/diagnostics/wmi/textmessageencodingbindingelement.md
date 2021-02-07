@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: TextMessageEncodingBindingElement'
 title: TextMessageEncodingBindingElement
 ms.date: 03/30/2017
 ms.assetid: 885e2d7a-3436-4093-bc5f-0a404c62acdc
-ms.openlocfilehash: 551761af255681dd2c2dbb9e40b7103c95cd2e0a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9848f1660642f92c4bce3542fbd404f463b8c84d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267215"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757339"
 ---
 # <a name="textmessageencodingbindingelement"></a>TextMessageEncodingBindingElement
 
 TextMessageEncodingBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class TextMessageEncodingBindingElement : MessageEncodingBindingElement  

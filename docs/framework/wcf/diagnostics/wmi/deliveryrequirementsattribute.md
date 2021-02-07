@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: DeliveryRequirementsAttribute'
 title: DeliveryRequirementsAttribute
 ms.date: 03/30/2017
 ms.assetid: 40c5435c-a325-4cf8-9dd0-d6e24b4a56a3
-ms.openlocfilehash: a70a4ba40b569acc7893b21d796194224dc4ee78
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ee27ada1c1fb447de3d7a108a4a285ca106e4e8e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96274043"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757495"
 ---
 # <a name="deliveryrequirementsattribute"></a>DeliveryRequirementsAttribute
 
 DeliveryRequirementsAttribute  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class DeliveryRequirementsAttribute : Behavior  

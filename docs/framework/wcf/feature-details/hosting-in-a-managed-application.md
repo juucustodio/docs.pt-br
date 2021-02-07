@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Hospedagem em um aplicativo gerenciado'
 title: Hospedagem em um aplicativo gerenciado
 ms.date: 03/30/2017
 ms.assetid: af70132d-e9e1-4f32-b20f-f0014629758a
-ms.openlocfilehash: 0f220b3eb249a9615024adbd798db49ea94376eb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 14fd6b2dea1a4315567611f505f2898314a07908
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289932"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756195"
 ---
 # <a name="hosting-in-a-managed-application"></a>Hospedagem em um aplicativo gerenciado
 
@@ -27,7 +28,7 @@ Os serviços do Windows Communication Foundation (WCF) podem ser hospedados em q
 
  Outros cenários comuns que a hospedagem interna habilita são aplicativos cliente avançados, como aqueles baseados em Windows Presentation Foundation (WPF) ou Windows Forms (WinForms). Essa opção de hospedagem também torna mais fácil para aplicativos cliente avançados, como aplicativos do WPF e WinForms, para se comunicar com o mundo exterior. Por exemplo, um cliente de colaboração ponto a ponto que usa o WPF para sua interface do usuário e também hospeda um serviço WCF que permite que outros clientes se conectem a ele e compartilhem informações.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de hospedagem](../hosting-services.md)
 - [Guia de introdução ao tutorial](../getting-started-tutorial.md)

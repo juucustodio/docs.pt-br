@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: WCF e WebSockets'
 title: WCF e WebSockets
 ms.date: 03/30/2017
 ms.assetid: 1e53b49e-022c-49c7-8984-4b21b53c05b3
-ms.openlocfilehash: 2ee27eef015ee8c2fbee8360b444343a1c757097
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6b0d8c33000a65bf3bbf834f66119d65768b3cb6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755974"
 ---
 # <a name="wcf-and-websockets"></a>WCF e WebSockets
 

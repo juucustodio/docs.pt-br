@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: controle de versão de contrato de dados'
 title: Controle de versão de contrato de dados
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - versioning [WCF]
 - data contracts [WCF], versioning
 ms.assetid: 4a0700cb-5f5f-4137-8705-3a3ecf06461f
-ms.openlocfilehash: 6f8623c9d8e9e7ba1f7c762c929f986b523c2f90
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 89b99ccad1671d33383cfce8d25b241d71788670
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285194"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756598"
 ---
 # <a name="data-contract-versioning"></a>Controle de versão de contrato de dados
 
@@ -124,7 +125,7 @@ ms.locfileid: "96285194"
  A maioria das alterações de coleção são não separáveis porque a maioria dos tipos de coleção são intercambiáveis entre si no modelo de contrato de dados. No entanto, tornar uma coleção não personalizada personalizada ou vice-versa é uma alteração significativa. Além disso, alterar as configurações de personalização da coleção é uma alteração significativa; ou seja, alterando o nome do contrato de dados e o namespace, o nome do elemento de repetição, o nome do elemento de chave e o nome do elemento de valor. Para obter mais informações sobre a personalização da coleção, consulte [tipos de coleção em contratos de dados](collection-types-in-data-contracts.md).  
 Naturalmente, alterar o contrato de dados de conteúdo de uma coleção (por exemplo, alterar de uma lista de inteiros para uma lista de cadeias de caracteres) é uma alteração significativa.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>

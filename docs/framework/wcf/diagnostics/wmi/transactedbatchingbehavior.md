@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: TransactedBatchingBehavior'
 title: TransactedBatchingBehavior
 ms.date: 03/30/2017
 ms.assetid: 2d03e6ae-f06c-4ada-b279-e01838b2ecdc
-ms.openlocfilehash: 152886180842d3da301f74286b0d41a98c39da54
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e0a0a7291ae03e1922010b8aafffdc7d5dbdda5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757157"
 ---
 # <a name="transactedbatchingbehavior"></a>TransactedBatchingBehavior
 
 TransactedBatchingBehavior  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class TransactedBatchingBehavior : Behavior  

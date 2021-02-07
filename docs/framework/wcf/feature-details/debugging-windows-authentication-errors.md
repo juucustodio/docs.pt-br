@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Depurar erros de autenticação do Windows'
 title: Depurando erros de autenticação do Windows
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, authentication
 - WCF, Windows authentication
 ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
-ms.openlocfilehash: c8aa87bdbf9488bce8e1a62f6d1a3898f923d349
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cfc8bf8ce9b9c5da3d9b25949321ed1ac2b62d98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756481"
 ---
 # <a name="debug-windows-authentication-errors"></a>Depurar erros de autenticação do Windows
 
@@ -52,9 +53,9 @@ Ao usar a autenticação do Windows como um mecanismo de segurança, a interface
   
 - Sistema local: o sistema de conta interno em um computador que não está ingressado em um domínio.  
   
-- Usuário de domínio: uma conta de usuário em um domínio do Windows. Por exemplo: `DomainName\ProfileName`.  
+- Usuário de domínio: uma conta de usuário em um domínio do Windows. Por exemplo, `DomainName\ProfileName`.  
   
-- Computador de domínio: um processo com a identidade do computador em execução em um computador ingressado em um domínio do Windows. Por exemplo: `MachineName\Network Service`.  
+- Computador de domínio: um processo com a identidade do computador em execução em um computador ingressado em um domínio do Windows. Por exemplo, `MachineName\Network Service`.  
   
 > [!NOTE]
 > A credencial de serviço é capturada quando o <xref:System.ServiceModel.ICommunicationObject.Open%2A> método da <xref:System.ServiceModel.ServiceHost> classe é chamado. A credencial do cliente é lida sempre que o cliente envia uma mensagem.  
@@ -157,7 +158,7 @@ Ao usar a autenticação do Windows como um mecanismo de segurança, a interface
 
  Se você desenvolver seu aplicativo em um computador e implantá-lo em outro e usar tipos de conta diferentes para autenticar em cada computador, poderá ocorrer um comportamento diferente. Por exemplo, suponha que você desenvolva seu aplicativo em um computador Windows XP Pro usando o `SSPI Negotiated` modo de autenticação. Se você usar uma conta de usuário local para autenticar com o, o protocolo NTLM será usado. Depois que o aplicativo é desenvolvido, você implanta o serviço em um computador com Windows Server 2003 em que ele é executado em uma conta de domínio. Neste ponto, o cliente não poderá autenticar o serviço, pois ele usará o Kerberos e um controlador de domínio.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.WindowsClientCredential>
 - <xref:System.ServiceModel.Security.WindowsServiceCredential>

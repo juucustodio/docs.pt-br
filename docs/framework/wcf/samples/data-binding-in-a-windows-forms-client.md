@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Associação de dados em um cliente Windows Forms'
 title: Associação de dados em um cliente de formulários do Windows
 ms.date: 03/30/2017
 ms.assetid: a2a30b37-d6e2-4552-820e-e60b2bbe8829
-ms.openlocfilehash: 07af2f2e604c8eab7eca9908e0985fefee5b273f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e82bd9eff7c6e8ad132235f5e705b814225aec2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289443"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755883"
 ---
 # <a name="data-binding-in-a-windows-forms-client"></a>Associação de dados em um cliente de formulários do Windows
 

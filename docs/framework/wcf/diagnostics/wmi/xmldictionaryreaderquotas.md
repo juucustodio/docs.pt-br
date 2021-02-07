@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: XmlDictionaryReaderQuotas'
 title: XmlDictionaryReaderQuotas
 ms.date: 03/30/2017
 ms.assetid: 9b4ca8b4-0a89-4758-97ab-528a8ce18f07
-ms.openlocfilehash: c5bb7813a680c89eb90f4ccf4ed6f09a831c8095
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d1450051e7107e9b92f848d26e6b182bfd2f2340
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262197"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756858"
 ---
 # <a name="xmldictionaryreaderquotas"></a>XmlDictionaryReaderQuotas
 
 XmlDictionaryReaderQuotas  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class XmlDictionaryReaderQuotas  

@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: WSAT_TraceRecord'
 title: WSAT_TraceRecord
 ms.date: 03/30/2017
 ms.assetid: 99bc7f66-1335-40d8-aa68-e754d569dc0d
-ms.openlocfilehash: 0409277821a7cca3f97fcec1bb383aba9583a1f6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 67202c5d2910783c40b934d2da6108e6b514a728
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262210"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756871"
 ---
 # <a name="wsat_tracerecord"></a>WSAT_TraceRecord
 
 WSAT_TraceRecord  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class WSAT_TraceRecord : WSAT_TraceEvent  

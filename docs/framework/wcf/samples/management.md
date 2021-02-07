@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: gerenciamento'
 title: Gerenciamento
 ms.date: 03/30/2017
 ms.assetid: 52f4825b-91a2-4f23-94f4-cfd76a7980cf
-ms.openlocfilehash: 0f3d5404787d46f5b00ec54fc155997e40ac7fac
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 62604c055daba58957c78d0b778fc61065f21da4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96264732"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755766"
 ---
 # <a name="management"></a>Gerenciamento
 

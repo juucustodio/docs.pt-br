@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugProcess6'
 title: Interface ICorDebugProcess6
 ms.date: 03/30/2017
 ms.assetid: 34a10ac2-882c-4797-8369-f120e8e640c7
-ms.openlocfilehash: ba70bab28eeddad6e3cf3c2b82b196a69ce68647
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f303670d0667a80507bc623f9af037759fdde463
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732600"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691452"
 ---
 # <a name="icordebugprocess6-interface"></a>Interface ICorDebugProcess6
 
@@ -15,7 +16,7 @@ Estende logicamente a interface ICorDebugProcess para habilitar recursos como ev
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método DecodeEvent](icordebugprocess6-decodeevent-method.md)|Decodifica eventos de depuração gerenciados que foram encapsulados na carga de eventos de depuração de exceção nativo especialmente criado.|  
 |[Método EnableVirtualModuleSplitting](icordebugprocess6-enablevirtualmodulesplitting-method.md)|Habilita ou desabilita a divisão de módulo virtual.|  
@@ -39,7 +40,7 @@ Estende logicamente a interface ICorDebugProcess para habilitar recursos como ev
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

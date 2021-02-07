@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: EnumParams'
 title: Método IMetaDataImport::EnumParams
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 52118dc9-fe6e-4b39-aa48-c3cc3ea4214d
 topic_type:
 - apiref
-ms.openlocfilehash: b41f9bb05a43ac4c6dd8a89c45ef4826741e5679
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3402e0277631cb54232269ad96194583cc466c4d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728258"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688787"
 ---
 # <a name="imetadataimportenumparams-method"></a>Método IMetaDataImport::EnumParams
 
@@ -55,9 +56,9 @@ HRESULT EnumParams (
  `pcTokens`  
  fora O número de tokens ParamDef retornados em `rParams` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
-|HRESULT|DESCRIÇÃO|  
+|HRESULT|Descrição|  
 |-------------|-----------------|  
 |`S_OK`|`EnumParams` retornado com êxito.|  
 |`S_FALSE`|Não há tokens para enumerar. Nesse caso, `pcTokens` é zero.|  
@@ -72,7 +73,7 @@ HRESULT EnumParams (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

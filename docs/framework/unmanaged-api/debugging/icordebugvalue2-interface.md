@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugValue2'
 title: Interface ICorDebugValue2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3ff2ad2a-da5a-461b-8627-1a8eba49df9c
 topic_type:
 - apiref
-ms.openlocfilehash: 7aca5fcb5a55331756b4f98c08eb46fc4db1e289
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b408bb5d1732a60fc9aa8ffb93321d3542f2cab7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720328"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690256"
 ---
 # <a name="icordebugvalue2-interface"></a>Interface ICorDebugValue2
 
@@ -27,7 +28,7 @@ Estende a interface "ICorDebugValue" para fornecer suporte para objetos "ICorDeb
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetExactType](icordebugvalue2-getexacttype-method.md)|Obtém um ponteiro de interface para um `ICorDebugType` objeto que representa o <xref:System.Type> desse valor.|  
   
@@ -46,7 +47,7 @@ Estende a interface "ICorDebugValue" para fornecer suporte para objetos "ICorDeb
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 

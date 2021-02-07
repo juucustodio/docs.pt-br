@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: EnumPermissionSets'
 title: Método IMetaDataImport::EnumPermissionSets
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 347d7e5c-c90f-45ad-bd1e-2c7912b0b19c
 topic_type:
 - apiref
-ms.openlocfilehash: eef2c733f96d74e3353a940cc90f1a631cf48a36
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7138cb2a89ecbea1afbf3e9fccfcac26e7e0fd7a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690485"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688748"
 ---
 # <a name="imetadataimportenumpermissionsets-method"></a>Método IMetaDataImport::EnumPermissionSets
 
@@ -59,9 +60,9 @@ HRESULT EnumPermissionSets
  `pcTokens`  
  fora O número de tokens de permissão retornados em `rPermission` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
-|HRESULT|DESCRIÇÃO|  
+|HRESULT|Descrição|  
 |-------------|-----------------|  
 |`S_OK`|`EnumPermissionSets` retornado com êxito.|  
 |`S_FALSE`|Não há tokens para enumerar. Nesse caso, `pcTokens` é zero.|  
@@ -76,7 +77,7 @@ HRESULT EnumPermissionSets
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

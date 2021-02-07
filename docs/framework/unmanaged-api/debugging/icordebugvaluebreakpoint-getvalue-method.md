@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugValueBreakpoint:: GetValue'
 title: Método ICorDebugValueBreakpoint::GetValue
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 52a73654-bc47-48b6-b2b1-a4456b10140c
 topic_type:
 - apiref
-ms.openlocfilehash: 8b0ab22d4a782bb21e09d29c9121ef83782a4571
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b690ea7a39ac70edd8e3e6be7682bae1e808555d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722317"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690140"
 ---
 # <a name="icordebugvaluebreakpointgetvalue-method"></a>Método ICorDebugValueBreakpoint::GetValue
 

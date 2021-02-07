@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRMetaHost:: GetVersionFromFile'
 title: Método ICLRMetaHost::GetVersionFromFile
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55bb3eb4-f665-42fc-973c-465567570e82
 topic_type:
 - apiref
-ms.openlocfilehash: f5e0ead41ebd13c259c24fa0c02bcc9a3b33e0fb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0122c4aba3b8454a84540b22e815c61a2cb25df8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689440"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689047"
 ---
 # <a name="iclrmetahostgetversionfromfile-method"></a>Método ICLRMetaHost::GetVersionFromFile
 
@@ -52,7 +53,7 @@ HRESULT GetVersionFromFile (
  `pcchBuffer`  
  [entrada, saída] O tamanho de `pwzbuffer` para evitar estouros de buffer.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -72,7 +73,7 @@ HRESULT GetVersionFromFile (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRMetaHost](iclrmetahost-interface.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedConstant:: GetName'
 title: Método ISymUnmanagedConstant::GetName
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cbaca4e1-4473-459b-ba34-f1f59ce7c0ba
 topic_type:
 - apiref
-ms.openlocfilehash: fca7b11a83b5a695feae82fe5f25218f87afbce2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 57531711ed60c9e35e749a3cb1f1ba5d5c48ca66
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732886"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689814"
 ---
 # <a name="isymunmanagedconstantgetname-method"></a>Método ISymUnmanagedConstant::GetName
 
@@ -47,7 +48,7 @@ HRESULT GetName(
  `szName`  
  fora O buffer que armazena o nome.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -55,7 +56,7 @@ HRESULT GetName(
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedConstant](isymunmanagedconstant-interface.md)
 - [Método GetSignature](isymunmanagedconstant-getsignature-method.md)

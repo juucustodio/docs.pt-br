@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugReferenceValue:: SetValue'
 title: Método ICorDebugReferenceValue::SetValue
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3d3f6eec-d772-401f-a028-1a2ecdc31e95
 topic_type:
 - apiref
-ms.openlocfilehash: 3fdd3180a01e4609ac40fd358879c0d2569234ef
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 44909962d2716ddb606d98a2f6b3804247c581cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728375"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690906"
 ---
 # <a name="icordebugreferencevaluesetvalue-method"></a>Método ICorDebugReferenceValue::SetValue
 

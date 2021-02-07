@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRMetaHost:: EnumerateInstalledRuntimes'
 title: Método ICLRMetaHost::EnumerateInstalledRuntimes
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9e359384-0d3d-451c-807e-5d7fcebf2be7
 topic_type:
 - apiref
-ms.openlocfilehash: f8f67edde7f99878429ca0bbd89aaf52336aa79c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a1c2fe46a64339e013df0f65dc073d183036a0fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730442"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689190"
 ---
 # <a name="iclrmetahostenumerateinstalledruntimes-method"></a>Método ICLRMetaHost::EnumerateInstalledRuntimes
 
@@ -38,7 +39,7 @@ HRESULT EnumerateInstalledRuntimes (
  `ppEnumerator`  
  fora Uma enumeração de interfaces [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) correspondentes a cada versão do CLR instalada no computador.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -57,7 +58,7 @@ HRESULT EnumerateInstalledRuntimes (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRMetaHost](iclrmetahost-interface.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

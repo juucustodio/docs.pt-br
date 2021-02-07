@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRMemoryNotificationCallback'
 title: Interface ICLRMemoryNotificationCallback
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 873639e2-4837-4568-83b3-4493e67e4174
 topic_type:
 - apiref
-ms.openlocfilehash: 5762a354bec485cb382b5460dfd2a337f79bee1a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 46e53cdf0b7f797b8945237d47fc3b521b08ddb7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689216"
 ---
 # <a name="iclrmemorynotificationcallback-interface"></a>Interface ICLRMemoryNotificationCallback
 
@@ -27,7 +28,7 @@ Permite que o host relate condições de pressão de memória usando uma abordag
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método OnMemoryNotification](iclrmemorynotificationcallback-onmemorynotification-method.md)|Notifica o Common Language Runtime (CLR) da carga de memória no computador.|  
   
@@ -45,7 +46,7 @@ Permite que o host relate condições de pressão de memória usando uma abordag
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)

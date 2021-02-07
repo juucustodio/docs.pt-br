@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRRuntimeHost:: ExecuteApplication'
 title: Método ICLRRuntimeHost::ExecuteApplication
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5f28cc4e-7176-4e00-aa1f-58ae6ee52fe4
 topic_type:
 - apiref
-ms.openlocfilehash: ef043dd2308c4b76e975bd2ad1f68725579e8fc9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1511cc3dcf05c3f2243f4080143789e456c39167
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688969"
 ---
 # <a name="iclrruntimehostexecuteapplication-method"></a>Método ICLRRuntimeHost::ExecuteApplication
 
@@ -59,7 +60,7 @@ HRESULT ExecuteApplication(
  `pReturnValue`  
  fora O valor retornado do ponto de entrada do aplicativo.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -89,7 +90,7 @@ HRESULT ExecuteApplication(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ActivationContext>
 - <xref:System.AppDomainManager>

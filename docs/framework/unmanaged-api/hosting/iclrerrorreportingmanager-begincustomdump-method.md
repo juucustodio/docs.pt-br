@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRErrorReportingManager:: BeginCustomDump'
 title: Método ICLRErrorReportingManager::BeginCustomDump
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 93424a87-ba13-4fa1-b4dc-69d44437b7ae
 topic_type:
 - apiref
-ms.openlocfilehash: 199c130d70cfbf0d383c2e0dc148ffe3dc1242d1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3f8498068d50ffc6ea00cf4f08f969c92f010d6c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689476"
 ---
 # <a name="iclrerrorreportingmanagerbegincustomdump-method"></a>Método ICLRErrorReportingManager::BeginCustomDump
 
@@ -51,7 +52,7 @@ HRESULT BeginCustomDump (
  `dwReserved`  
  no Reservado para uso futuro.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -79,7 +80,7 @@ HRESULT BeginCustomDump (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estrutura CustomDumpItem](customdumpitem-structure.md)
 - [Enumeração ECustomDumpFlavor](ecustomdumpflavor-enumeration.md)

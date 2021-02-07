@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedBinder3'
 title: Interface ISymUnmanagedBinder3
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 37527a84-4b03-4f08-8135-94d898599089
 topic_type:
 - apiref
-ms.openlocfilehash: 0cb0b91f2dca8203c37599400b3b61f84eb7d282
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6d2172fb119076cea6d0f912fb3f403d36856599
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727309"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689827"
 ---
 # <a name="isymunmanagedbinder3-interface"></a>Interface ISymUnmanagedBinder3
 
@@ -30,7 +31,7 @@ Estende a interface do fichário de símbolos. Obtenha essa interface chamando `
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetReaderFromCallback](isymunmanagedbinder3-getreaderfromcallback-method.md)|Permite que o usuário implemente ou forneça por meio de um retorno de chamada `IID_IDiaReadExeAtRVACallback` ou `IID_IDiaReadExeAtOffsetCallback` para obter as informações do diretório de depuração da memória|  
   
@@ -38,7 +39,7 @@ Estende a interface do fichário de símbolos. Obtenha essa interface chamando `
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)
 - [Interface ISymUnmanagedBinder](isymunmanagedbinder-interface.md)

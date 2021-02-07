@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRErrorReportingManager'
 title: Interface ICLRErrorReportingManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ea8af0d5-4133-4472-8a1f-50570d7e85fa
 topic_type:
 - apiref
-ms.openlocfilehash: d3816c8a3b6204b053505aa888eb28d696f8990b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 094fe52858983fd0e1e5826e823932cb150b6087
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677831"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689268"
 ---
 # <a name="iclrerrorreportingmanager-interface"></a>Interface ICLRErrorReportingManager
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem ao host configurar despejos de pilha personalizado
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método BeginCustomDump](iclrerrorreportingmanager-begincustomdump-method.md)|Especifica a configuração de despejos de pilha personalizados para o relatório de erros.|  
 |[Método EndCustomDump](iclrerrorreportingmanager-endcustomdump-method.md)|Limpa a configuração de despejo de pilha personalizado que foi definida por uma chamada anterior para `BeginCustomDump` .|  
@@ -50,7 +51,7 @@ Fornece métodos que permitem ao host configurar despejos de pilha personalizado
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração ECustomDumpItemKind](ecustomdumpitemkind-enumeration.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)

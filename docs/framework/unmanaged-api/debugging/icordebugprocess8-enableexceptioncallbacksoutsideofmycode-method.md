@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess8:: EnableExceptionCallbacksOutsideOfMyCode'
 title: Método ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode
 ms.date: 03/30/2017
 dev_langs:
 - cpp
 ms.assetid: b3af44ec-7d41-425b-aed9-0c4379e5cbe9
-ms.openlocfilehash: 750d2a2d69c74e147c34c9c496079ee48ac04b42
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a85c9d62e5fb62fe620f0901509afa5a03504d4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732535"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691270"
 ---
 # <a name="icordebugprocess8enableexceptioncallbacksoutsideofmycode-method"></a>Método ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode
 
@@ -50,7 +51,7 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugProcess8](icordebugprocess8-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como: adicionar opções de consulta a uma consulta de serviço de dados (WCF Data Services)'
 title: 'Como: adicionar opções de consulta a uma consulta de serviço de dados (WCF Data Services)'
 ms.date: 03/30/2017
 dev_langs:
@@ -9,14 +10,16 @@ helpviewer_keywords:
 - WCF Data Services, querying
 - WCF Data Services, accessing data
 ms.assetid: e4258526-557e-4e96-91e1-2175400c7c8f
-ms.openlocfilehash: 76d2b1ff3cbb5440bfed62ba840e646cf68de025
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8b5fdf1105ae06485ab8fea7c5db2adf78e7e3e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180719"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765718"
 ---
 # <a name="how-to-add-query-options-to-a-data-service-query-wcf-data-services"></a>Como: adicionar opções de consulta a uma consulta de serviço de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services permite consultar um serviço de dados de um aplicativo cliente baseado em .NET Framework usando as classes de serviço de dados do cliente geradas. A maneira mais fácil de fazer isso é compor uma expressão de consulta LINQ (consulta integrada à linguagem) que inclui as opções de consulta desejadas. Você também pode chamar uma série de métodos de consulta LINQ para compor uma consulta equivalente. Por fim, você pode usar o <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> método para adicionar opções de consulta a uma consulta. Em cada um desses casos, o URI gerado pelo cliente inclui o conjunto de entidades solicitadas com as opções de consulta selecionadas aplicadas. Para obter mais informações, consulte [consultando o serviço de dados](querying-the-data-service-wcf-data-services.md).  
   
@@ -50,7 +53,7 @@ WCF Data Services permite consultar um serviço de dados de um aplicativo client
  [!code-csharp[Astoria Northwind Client#OrderWithFilter](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#orderwithfilter)]
  [!code-vb[Astoria Northwind Client#OrderWithFilter](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#orderwithfilter)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Consultar o serviço de dados](querying-the-data-service-wcf-data-services.md)
 - [Como: projetar resultados da consulta](how-to-project-query-results-wcf-data-services.md)

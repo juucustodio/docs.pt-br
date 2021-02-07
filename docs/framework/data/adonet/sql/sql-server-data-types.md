@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: tipos de dados do SQL Server e ADO.NET'
 title: Tipos de dados do SQL Server e ADO.NET
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: 81b43550-23e8-43bb-b460-7eb8ac825c33
-ms.openlocfilehash: db4618ac624ea8401cab682a8c21d8f23c253d05
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 841fa5864bf54b5e4fc4dc24dab64e6ac1435c7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155452"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767291"
 ---
 # <a name="sql-server-data-types-and-adonet"></a>Tipos de dados do SQL Server e ADO.NET
 
@@ -58,10 +59,10 @@ O SQL Server e o .NET Framework são baseados em diferentes tipos de sistema, o 
  <xref:System.Data.DbType>  
  Descreve a enumeração `DbType` e todos os membros dela.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Mapeamentos de tipos de dados do SQL Server](../sql-server-data-type-mappings.md)
 - [Configurar parâmetros e tipos de dados de parâmetro](../configuring-parameters-and-parameter-data-types.md)
 - [Parâmetros com valor de tabela](table-valued-parameters.md)
-- [SQL Server dados binários e de valor grande](sql-server-binary-and-large-value-data.md)
+- [Dados binários e de valor grande do SQL Server](sql-server-binary-and-large-value-data.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

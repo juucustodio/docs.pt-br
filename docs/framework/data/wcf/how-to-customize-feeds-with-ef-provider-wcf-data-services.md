@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: como personalizar feeds com o provedor de Entity Framework (WCF Data Services)'
 title: 'Como: Personalizar feeds com o provedor de Entity Framework (WCF Data Services)'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, customizing
 - WCF Data Services, customizing feeds
 ms.assetid: fd16272e-36f2-415e-850e-8a81f2b17525
-ms.openlocfilehash: 76cc8da052ee51157857418cd81088a523f95ea2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b2d2432065ee0982822d0f332744f988d80add12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91186583"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765666"
 ---
 # <a name="how-to-customize-feeds-with-the-entity-framework-provider-wcf-data-services"></a>Como: Personalizar feeds com o provedor de Entity Framework (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services permite que você personalize a serialização Atom em uma resposta do serviço de dados para que as propriedades de uma entidade possam ser mapeadas para elementos não utilizados que são definidos no protocolo AtomPub. Este tópico mostra como definir atributos de mapeamento para os tipos de entidade em um modelo de dados que é definido em um arquivo. edmx usando o provedor de Entity Framework. Para obter mais informações, consulte [personalização de feed](feed-customization-wcf-data-services.md).  
   
@@ -22,7 +25,7 @@ WCF Data Services permite que você personalize a serialização Atom em uma res
   
 1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no `Northwind.edmx` arquivo e clique em **abrir com**.  
   
-2. Na caixa de diálogo **abrir com-Northwind. edmx** , selecione **Editor de XML**e clique em **OK**.  
+2. Na caixa de diálogo **abrir com-Northwind. edmx** , selecione **Editor de XML** e clique em **OK**.  
   
 3. Localize o `ConceptualModels` elemento e substitua o `Customers` tipo de entidade existente pelo seguinte elemento que contém os atributos de mapeamento de personalização do feed:  
   
@@ -42,6 +45,6 @@ WCF Data Services permite que você personalize a serialização Atom em uma res
   
  [!code-xml[Astoria Custom Feeds#EdmFeedResult](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria_custom_feeds/xml/edmfeedresult.xml#edmfeedresult)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Provedor de Entity Framework](entity-framework-provider-wcf-data-services.md)

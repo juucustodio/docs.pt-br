@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como desenvolver um serviço de dados WCF em execução no IIS'
 title: 'Como: desenvolver um serviço de dados do WCF em execução no IIS'
 ms.date: 03/30/2017
 dev_langs:
@@ -9,14 +10,16 @@ helpviewer_keywords:
 - WCF Data Services, deploying
 - WCF Data Services, hosting
 ms.assetid: f6f768c5-4989-49e3-a36f-896ab4ded86e
-ms.openlocfilehash: 75dc18f3ee91ec077ed48c68ec62cb47910d9ddd
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b4d7b322a00e3c9c43005a416c608e1b98f1ce51
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543479"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765471"
 ---
 # <a name="how-to-develop-a-wcf-data-service-running-on-iis"></a>Como: desenvolver um serviço de dados WCF em execução no IIS
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Este artigo mostra como usar WCF Data Services para criar um serviço de dados que é baseado no exemplo Northwind, que é hospedado por um aplicativo Web ASP.NET em execução no Serviços de Informações da Internet (IIS). Para obter um exemplo de como criar o mesmo serviço de dados Northwind como um aplicativo Web ASP.NET que é executado no ASP.NET Development Server, consulte o guia de [início rápido WCF Data Services](quickstart-wcf-data-services.md).
 
@@ -128,7 +131,7 @@ Após criar o serviço, você deve fornecer explicitamente acesso aos recursos d
 
 3. Para o nome do modelo de dados, digite `Northwind.edmx` .
 
-4. No assistente de Modelo de Dados de Entidade, selecione **gerar do banco de dados**e clique em **Avançar**.
+4. No assistente de Modelo de Dados de Entidade, selecione **gerar do banco de dados** e clique em **Avançar**.
 
 5. Conecte o modelo de dados ao banco de dado executando uma das etapas a seguir e clique em **Avançar**:
 
@@ -162,6 +165,6 @@ Após criar o serviço, você deve fornecer explicitamente acesso aos recursos d
      [!code-csharp[Astoria Quickstart Service#ServiceDefinition](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_quickstart_service/cs/northwind.svc.cs#servicedefinition)]
      [!code-vb[Astoria Quickstart Service#ServiceDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_quickstart_service/vb/northwind.svc.vb#servicedefinition)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Expor seus dados como um serviço](exposing-your-data-as-a-service-wcf-data-services.md)

@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: como gerar manualmente classes de serviço de dados do cliente (WCF Data Services)'
 title: 'Como: gerar manualmente classes de serviço de dados do cliente (WCF Data Services)'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, configuring
 - WCF Data Services, client library
 ms.assetid: b98cb1d6-956a-4e50-add6-67e4f2587346
-ms.openlocfilehash: 368f2546652d21be44c0ffb4cc5f279c56beda51
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6fe878e1177055540a29fb84252eddaa4d97e536
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91165986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765198"
 ---
 # <a name="how-to-manually-generate-client-data-service-classes-wcf-data-services"></a>Como: gerar manualmente classes de serviço de dados do cliente (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 O WCF Data Services integra-se com o Visual Studio para permitir que você gere automaticamente classes de serviço de dados do cliente quando você usa a caixa de diálogo **Adicionar referência de serviço** para adicionar uma referência a um serviço de dados em um projeto do Visual Studio. Para obter mais informações, consulte [como: adicionar uma referência de serviço de dados](how-to-add-a-data-service-reference-wcf-data-services.md). Você também pode gerar manualmente as mesmas classes de serviço de dados do cliente usando a ferramenta de geração de código, `DataSvcUtil.exe` . Essa ferramenta, que é incluída com o WCF Data Services, gera .NET Framework classes da definição do serviço de dados. Ele também pode ser usado para gerar classes de serviço de dados do arquivo de modelo conceitual (. CSDL) e do arquivo. edmx que representa um modelo de Entity Framework em um projeto do Visual Studio.
 
@@ -94,7 +97,7 @@ O WCF Data Services integra-se com o Visual Studio para permitir que você gere 
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:VB /in:Northwind.edmx /out:c:\northwind.vb
     ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Gerar a biblioteca de clientes do serviço de dados](generating-the-data-service-client-library-wcf-data-services.md)
 - [Como: adicionar uma referência de serviço de dados](how-to-add-a-data-service-reference-wcf-data-services.md)

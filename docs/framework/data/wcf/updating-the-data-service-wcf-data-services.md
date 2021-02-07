@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: atualizando o serviço de dados (WCF Data Services)'
 title: Atualizando o serviço de dados (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -8,14 +9,16 @@ helpviewer_keywords:
 - WCF Data Services, changing data
 - WCF Data Services, client library
 ms.assetid: 00d993be-ffed-4dea-baf7-6eea982cdb54
-ms.openlocfilehash: 3e2bd3f4ca5402abe4a7f8ec8f5410effaee6700
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3223207b310c28d8e586a537b5c76b7e1b7ca17c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180602"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764886"
 ---
 # <a name="updating-the-data-service-wcf-data-services"></a>Atualizando o serviço de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Quando você usa a biblioteca de cliente WCF Data Services para consumir um feed de Protocolo Open Data (OData), a biblioteca converte as entradas no feed em instâncias de classes de serviço de dados do cliente. Essas classes de serviço de dados são controladas usando o <xref:System.Data.Services.Client.DataServiceContext> ao qual o <xref:System.Data.Services.Client.DataServiceQuery%601> pertence. O cliente controla as alterações nas entidades que você relata usando métodos em <xref:System.Data.Services.Client.DataServiceContext> . Esses métodos permitem que o cliente rastreie entidades adicionadas e excluídas e também alterações feitas em valores de propriedade ou em relações entre instâncias de entidade. Essas alterações controladas são enviadas de volta ao serviço de dados como operações baseadas em REST quando você chama o <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> método.  
   
@@ -98,7 +101,7 @@ Quando você usa a biblioteca de cliente WCF Data Services para consumir um feed
 
  As alterações são rastreadas na <xref:System.Data.Services.Client.DataServiceContext> instância, mas não são enviadas ao servidor imediatamente. Depois de concluir as alterações necessárias para uma atividade especificada, chame <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> para enviar todas as alterações para o serviço de dados. Para obter mais informações, consulte [Gerenciando o contexto do serviço de dados](managing-the-data-service-context-wcf-data-services.md). Você também pode salvar as alterações de forma assíncrona usando os <xref:System.Data.Services.Client.DataServiceContext.BeginSaveChanges%2A> <xref:System.Data.Services.Client.DataServiceContext.EndSaveChanges%2A> métodos e. Para obter mais informações, consulte [operações assíncronas](asynchronous-operations-wcf-data-services.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Biblioteca de cliente do WCF Data Services](wcf-data-services-client-library.md)
 - [Consultar o serviço de dados](querying-the-data-service-wcf-data-services.md)

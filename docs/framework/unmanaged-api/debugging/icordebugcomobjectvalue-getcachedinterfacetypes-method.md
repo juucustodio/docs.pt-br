@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugComObjectValue:: GetCachedInterfaceTypes'
 title: Método ICorDebugComObjectValue::GetCachedInterfaceTypes
 ms.date: 03/30/2017
 api_name:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d492284f-d3c5-4614-adb8-d718d5042500
 topic_type:
 - apiref
-ms.openlocfilehash: f5f0f11683043f1c287dd3ca3071830bcfb46502
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b1c65979895dfaeacae3d171adbcfd1455b7030d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677551"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764613"
 ---
 # <a name="icordebugcomobjectvaluegetcachedinterfacetypes-method"></a>Método ICorDebugComObjectValue::GetCachedInterfaceTypes
 
@@ -52,7 +53,7 @@ HRESULT GetCachedInterfaceTypes(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugComObjectValue](icordebugcomobjectvalue-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

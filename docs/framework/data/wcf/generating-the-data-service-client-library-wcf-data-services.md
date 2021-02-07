@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: gerando a biblioteca de cliente do serviço de dados (WCF Data Services)'
 title: Gerando a biblioteca do cliente de serviço de dados (serviços de dados WCF)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,14 +7,16 @@ helpviewer_keywords:
 - WCF Data Services, client library
 - Add Service Reference dialog box
 ms.assetid: 314077c1-ac10-47e1-bed4-940b5462359d
-ms.openlocfilehash: 050a791736e90b5daf46fd272197ca21a220afb0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3bac2459044ff910c8085ff56e60d9da6e0ba877
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172613"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765926"
 ---
 # <a name="generating-the-data-service-client-library-wcf-data-services"></a>Gerando a biblioteca do cliente de serviço de dados (serviços de dados WCF)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Um serviço de dados que implementa o Protocolo Open Data (OData) pode retornar um documento de metadados de serviço que descreve o modelo de dados exposto pelo feed OData. Para obter mais informações, consulte a seção documento de metadados de serviço no artigo [OData: Overview](https://www.odata.org/documentation/odata-version-2-0/overview/) . Você pode usar a caixa de diálogo **Adicionar referência de serviço** no Visual Studio para adicionar uma referência a um serviço baseado em OData. Quando você usa essa ferramenta para adicionar uma referência aos metadados retornados por um feed OData em um projeto cliente, ele executa as seguintes ações:  
   
@@ -54,7 +57,7 @@ Um serviço de dados que implementa o Protocolo Open Data (OData) pode retornar 
   
  Para obter mais informações, consulte a seção tipos de dados primitivos no artigo [OData: Overview](https://www.odata.org/documentation/odata-version-2-0/overview/) .
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Biblioteca de cliente do WCF Data Services](wcf-data-services-client-library.md)
 - [Início rápido](quickstart-wcf-data-services.md)

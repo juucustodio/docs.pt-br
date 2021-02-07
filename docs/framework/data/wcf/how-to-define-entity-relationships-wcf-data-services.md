@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como definir relações de entidade (WCF Data Services)'
 title: Como definir relações de entidade (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -7,14 +8,16 @@ dev_langs:
 helpviewer_keywords:
 - WCF Data Services, changing data
 ms.assetid: cc255524-1534-4fae-b83c-250933d5a72b
-ms.openlocfilehash: dec22f2f1e1d259e341100bce2b99d71540797db
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 08add639fe333d4892737c64b12ca370129d0bf7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150629"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765510"
 ---
 # <a name="how-to-define-entity-relationships-wcf-data-services"></a>Como definir relações de entidade (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Quando você adiciona uma nova entidade no WCF Data Services, quaisquer relações entre a nova entidade e as entidades relacionadas não são definidas automaticamente. Você pode criar e alterar relações entre instâncias de entidade e fazer com que a biblioteca de cliente reflita essas alterações no serviço de dados. Para obter mais informações, consulte [atualizando o serviço de dados](updating-the-data-service-wcf-data-services.md).  
   
@@ -34,7 +37,7 @@ Quando você adiciona uma nova entidade no WCF Data Services, quaisquer relaçõ
  [!code-csharp[Astoria Northwind Client#AddOrderDetailToOrder](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#addorderdetailtoorder)]
  [!code-vb[Astoria Northwind Client#AddOrderDetailToOrder](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#addorderdetailtoorder)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Biblioteca de cliente do WCF Data Services](wcf-data-services-client-library.md)
 - [Como: adicionar, modificar e excluir entidades](how-to-add-modify-and-delete-entities-wcf-data-services.md)

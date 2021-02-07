@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: vinculação de dados a controles (WCF Data Services)'
 title: Associando dados a controles (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -9,14 +10,16 @@ helpviewer_keywords:
 - WCF Data Services, client library
 - data binding, WCF Data Services
 ms.assetid: b32e1d49-c214-4cb1-867e-88fbb3d08c8d
-ms.openlocfilehash: 178d77c225144497982487afa00f4493e17d1744
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: 01ef24c2723bb690a8f441a315085c4312307b03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805207"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766472"
 ---
 # <a name="binding-data-to-controls-wcf-data-services"></a>Associando dados a controles (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Com WCF Data Services, você pode associar controles como os `ComboBox` controles e `ListView` a uma instância da <xref:System.Data.Services.Client.DataServiceCollection%601> classe. Essa coleção, que é herdada da <xref:System.Collections.ObjectModel.ObservableCollection%601> classe, contém os dados de um feed protocolo Open Data (OData). Essa classe representa uma coleção de dados dinâmicos que fornece notificações quando itens são adicionados ou removidos. Quando você usa uma instância do <xref:System.Data.Services.Client.DataServiceCollection%601> para associação de dados, as bibliotecas de cliente do WCF Data Services lidam com esses eventos para garantir que os objetos rastreados pelo <xref:System.Data.Services.Client.DataServiceContext> permaneçam sincronizados com os dados no elemento da interface do usuário associada.  
   
@@ -120,7 +123,7 @@ Com WCF Data Services, você pode associar controles como os `ComboBox` controle
   
  Para obter mais informações, consulte [atualizando o serviço de dados](updating-the-data-service-wcf-data-services.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: gerar manualmente as classes de serviço de dados do cliente](how-to-manually-generate-client-data-service-classes-wcf-data-services.md)
 - [Como: adicionar uma referência de serviço de dados](how-to-add-a-data-service-reference-wcf-data-services.md)

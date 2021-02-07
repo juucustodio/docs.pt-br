@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operações assíncronas (WCF Data Services)'
 title: Operações assíncronas (WCF Data Services)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,14 +7,16 @@ helpviewer_keywords:
 - asynchronous operations [WCF Data Services]
 - WCF Data Services, client library
 ms.assetid: 679644c7-e3fc-422c-b14a-b44b683900d0
-ms.openlocfilehash: cf3a81914d78e8f08c06602600ce5dcef4f4d35b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ede69fef4e284f2f7a06f4e1e842f07380d77cbf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191639"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766602"
 ---
 # <a name="asynchronous-operations-wcf-data-services"></a>Operações assíncronas (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Os aplicativos Web devem acomodar uma latência maior entre cliente e servidor do que os aplicativos que são executados dentro das redes internas. Para otimizar o desempenho e a experiência do usuário do seu aplicativo, é recomendável usar os métodos assíncronos das <xref:System.Data.Services.Client.DataServiceContext> <xref:System.Data.Services.Client.DataServiceQuery%601> classes e ao acessar WCF Data Services servidores pela Web.  
   
@@ -38,6 +41,6 @@ Os aplicativos Web devem acomodar uma latência maior entre cliente e servidor d
 
  Em um aplicativo multi-threaded, o delegado registrado como um retorno de chamada para a operação assíncrona não é necessariamente invocado no mesmo thread que foi usado para chamar o método *begin* , que cria a solicitação inicial. Em um aplicativo em que o retorno de chamada deve ser invocado em um thread específico, você deve realizar marshaling explicitamente da execução do método *end* , que manipula a resposta, para o thread desejado. Por exemplo, em aplicativos baseados no Windows Presentation Foundation (WPF) e aplicativos baseados no Silverlight, a resposta deverá ser lido de volta para o thread de interface de usuário usando o método <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> no objeto <xref:System.Windows.Threading.Dispatcher>. Para obter mais informações, consulte [consultando o serviço de dados (WCF Data Services/Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc903932(v=vs.95)).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Biblioteca de cliente do WCF Data Services](wcf-data-services-client-library.md)

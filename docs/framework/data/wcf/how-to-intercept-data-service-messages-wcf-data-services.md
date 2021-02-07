@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como interceptar mensagens do serviço de dados (WCF Data Services)'
 title: Como interceptar mensagens de serviço de dados (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -8,14 +9,16 @@ helpviewer_keywords:
 - WCF Data Services, customizing
 - query interceptors [WCF Data Services]
 ms.assetid: 24b9df1b-b54b-4795-a033-edf333675de6
-ms.openlocfilehash: 8cc8bdcf776befafba967ee2649a6ada789d07c5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6768fa9f0c7ca9a5a6ed6faa318675f2c2c51543
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194356"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765276"
 ---
 # <a name="how-to-intercept-data-service-messages-wcf-data-services"></a>Como interceptar mensagens de serviço de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Com WCF Data Services, você pode interceptar mensagens de solicitação para poder adicionar lógica personalizada a uma operação. Para interceptar uma mensagem, você usa métodos especialmente atribuídos no serviço de dados. Para obter mais informações, consulte [Interceptors](interceptors-wcf-data-services.md).  
   
@@ -58,7 +61,7 @@ Com WCF Data Services, você pode interceptar mensagens de solicitação para po
  [!code-csharp[Astoria Northwind Service#ChangeInterceptor](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#changeinterceptor)]
  [!code-vb[Astoria Northwind Service#ChangeInterceptor](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#changeinterceptor)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: definir uma operação de serviço](how-to-define-a-service-operation-wcf-data-services.md)
 - [Configurando WCF Data Services](defining-wcf-data-services.md)

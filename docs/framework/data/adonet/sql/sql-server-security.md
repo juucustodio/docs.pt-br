@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: segurança de SQL Server'
 title: Segurança do SQL Server
 ms.date: 03/30/2017
 ms.assetid: 9053724d-a1fb-4f0f-b9dc-7f6dd893e8ff
-ms.openlocfilehash: 5db14e681b5a9445c034be60993661a61a038e08
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 73e5d72dfacb1f856056ba733c4ff06823ae08d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177300"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767200"
 ---
 # <a name="sql-server-security"></a>Segurança do SQL Server
 
@@ -42,7 +43,7 @@ Descreve as considerações de segurança para o SQL Server e o Banco de Dados S
 [Considerações sobre segurança para uma instalação do SQL Server](/sql/sql-server/install/security-considerations-for-a-sql-server-installation)  
 Descreve as preocupações de segurança a serem consideradas antes de instalar o SQL Server.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Protegendo aplicativos ADO.NET](../securing-ado-net-applications.md)
 - [SQL Server e ADO.NET](index.md)

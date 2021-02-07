@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugCode2:: GetCodeChunks'
 title: Método ICorDebugCode2::GetCodeChunks
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 210a2f02-2678-4555-bc4a-78a0408764c8
 topic_type:
 - apiref
-ms.openlocfilehash: e419ebb6ffd404368baf32e591e08c4a70645127
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 371d077466ff2390293d9d4e320d4c95a992fe54
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73121116"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764951"
 ---
 # <a name="icordebugcode2getcodechunks-method"></a>Método ICorDebugCode2::GetCodeChunks
 
@@ -40,10 +41,10 @@ HRESULT GetCodeChunks (
 ## <a name="parameters"></a>Parâmetros
 
 `cbufSize`  
-no Tamanho da matriz de `chunks`.
+no Tamanho da `chunks` matriz.
 
 `pcnumChunks`  
-fora O número de partes retornadas na matriz de `chunks`.
+fora O número de partes retornadas na `chunks` matriz.
 
 `chunks`  
 fora Uma matriz de estruturas "CodeChunkInfo", cada uma representando uma única parte do código. Se o valor de `cbufSize` for 0, esse parâmetro poderá ser nulo.
@@ -60,4 +61,4 @@ Os trechos de código nunca serão sobrepostos e eles seguirão a ordem em que s
 
 **Biblioteca:** CorGuids.lib
 
-**Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+**.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

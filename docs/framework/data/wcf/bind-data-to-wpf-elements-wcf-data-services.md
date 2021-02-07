@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como associar dados a elementos de Windows Presentation Foundation (WCF Data Services)'
 title: Como associar dados aos elementos do Windows Presentation Foundation (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -8,14 +9,16 @@ helpviewer_keywords:
 - data binding, WCF Data Services
 - WCF Data Services, data binding
 ms.assetid: d6538ab0-0abe-426a-b9d9-e6f3a5ca2016
-ms.openlocfilehash: d6f50fb849d958ae1109324f1055b84451bde5a9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 57ad03770681fbedf9b0d5afae82a0a2590f0bc6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191626"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766524"
 ---
 # <a name="how-to-bind-data-to-windows-presentation-foundation-elements-wcf-data-services"></a>Como associar dados aos elementos do Windows Presentation Foundation (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Com WCF Data Services, você pode associar elementos de Windows Presentation Foundation (WPF), como um <xref:System.Windows.Controls.ListBox> ou <xref:System.Windows.Controls.ComboBox> a uma instância do <xref:System.Data.Services.Client.DataServiceCollection%601> , que manipula os eventos gerados pelos controles para manter o <xref:System.Data.Services.Client.DataServiceContext> sincronizado com as alterações feitas nos dados nos controles. Para obter mais informações, consulte [associando dados a controles](binding-data-to-controls-wcf-data-services.md).  
   

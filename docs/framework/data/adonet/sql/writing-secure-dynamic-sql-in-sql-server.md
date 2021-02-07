@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: gravando SQL dinâmico seguro no SQL Server'
 title: Escrevendo SQL dinâmico seguro no SQL Server
 ms.date: 03/30/2017
 ms.assetid: df5512b0-c249-40d2-82f9-f9a2ce6665bc
-ms.openlocfilehash: c598427a17ceb289f75fab481a55016f0efe5624
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 35db22358bae1150a80daa72cf4a86ef8fba9620
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147444"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766940"
 ---
 # <a name="writing-secure-dynamic-sql-in-sql-server"></a>Escrevendo SQL dinâmico seguro no SQL Server
 
@@ -73,7 +74,7 @@ A injeção de SQL é o processo pelo qual um usuário mal-intencionado insere i
 |--------------|-----------------|  
 |[Procedimentos armazenados](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) e [Injeção de SQL](/sql/relational-databases/security/sql-injection) nos Manuais Online do SQL Server|Os tópicos descrevem como criar procedimentos armazenados e como a injeção de SQL funciona.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Protegendo aplicativos ADO.NET](../securing-ado-net-applications.md)
 - [Visão geral de segurança do SQL Server](overview-of-sql-server-security.md)

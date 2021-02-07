@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: SQL Server Express instâncias de usuário'
 title: Instâncias de usuário do SQL Server Express
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 00c12376-cb26-4317-86ad-e6e9c089be57
-ms.openlocfilehash: 401b62f56918e8ac406a5ee2dda2252d328592bc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8579dee5c31a2b63156db72df6cc109beb843f08
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147574"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767265"
 ---
 # <a name="sql-server-express-user-instances"></a>Instâncias de usuário do SQL Server Express
 
@@ -45,7 +46,7 @@ sp_configure 'user instances enabled','0'
   
 - A palavra-chave `Data Source` se refere à instância pai do SQL Server Express que está gerando a instância de usuário. A instância padrão é .\sqlexpress.  
   
-- `Integrated Security` é definido como `true`. Para se conectar a uma instância de usuário, é preciso autenticar-se no Windows; não há suporte para logons do SQL Server.  
+- `Integrated Security` está definido como `true`. Para se conectar a uma instância de usuário, é preciso autenticar-se no Windows; não há suporte para logons do SQL Server.  
   
 - O `User Instance` é definido como `true`, que invoca uma instância de usuário. (O padrão é `false`.)  
   
@@ -156,7 +157,7 @@ private static void OpenSqlConnection()
   
 - Hospedagem ASP.NET dedicada usando a Autenticação do Windows. Uma só instância do SQL Server Express pode ser hospedada em uma intranet. O aplicativo se conecta usando a conta do Windows do ASPNET, não usando a representação. As instâncias de usuário não devem ser usadas para cenários de hospedagem compartilhada ou de terceiros em que todos os aplicativos compartilhariam a mesma instância de usuário e não permaneceriam mais isolados uns dos outros.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [SQL Server e ADO.NET](index.md)
 - [Cadeias de conexão](../connection-strings.md)

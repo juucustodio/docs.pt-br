@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: recursos de SQL Server e ADO.NET'
 title: funcionalidades do SQL Server e ADO.NET
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
-ms.openlocfilehash: 121381114fadd8b20978d2e932bf3ec8bdcdb193
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 19440a74e5561f730ece0c4f96de69f4e4baba2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177313"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767226"
 ---
 # <a name="sql-server-features-and-adonet"></a>funcionalidades do SQL Server e ADO.NET
 
@@ -49,9 +50,9 @@ Os tópicos nesta seção abordam os recursos do SQL Server destinados a desenvo
  [Suporte a SqlClient para LocalDB](sqlclient-support-for-localdb.md)  
  Descreve o suporte SqlClient para bancos de dados LocalDB.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [SQL Server operações de dados no ADO.NET](sql-server-data-operations.md)
+- [Operações de dados do SQL Server no ADO.NET](sql-server-data-operations.md)
 - [Recuperando e modificando dados no ADO.NET](../retrieving-and-modifying-data.md)
 - [LINQ to SQL](./linq/index.md)
 - [SQL Server e ADO.NET](index.md)

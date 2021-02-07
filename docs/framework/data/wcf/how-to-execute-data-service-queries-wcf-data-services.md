@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como executar consultas de serviço de dados (WCF Data Services)'
 title: Como executar consultas do serviço de dados (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -9,14 +10,16 @@ helpviewer_keywords:
 - WCF Data Services, querying
 - WCF Data Services, accessing data
 ms.assetid: 62997821-e0c6-4c4d-9fb7-1273fb5e5d18
-ms.openlocfilehash: 11a37340df879db7c2f8fdeaa792c1466e4a75d0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0d78a5a82f23bb6035d21bd45d68a0b1bb76f34b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91184749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765315"
 ---
 # <a name="how-to-execute-data-service-queries-wcf-data-services"></a>Como executar consultas do serviço de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services permite consultar um serviço de dados de um aplicativo cliente baseado em .NET Framework usando as classes de serviço de dados do cliente geradas. Você pode executar consultas usando um desses métodos:  
   
@@ -51,6 +54,6 @@ WCF Data Services permite consultar um serviço de dados de um aplicativo client
  [!code-csharp[Astoria Northwind Client#GetAllCustomersExplicit](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#getallcustomersexplicit)]
  [!code-vb[Astoria Northwind Client#GetAllCustomersExplicit](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#getallcustomersexplicit)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: adicionar opções de consulta a uma consulta de serviço de dados](how-to-add-query-options-to-a-data-service-query-wcf-data-services.md)

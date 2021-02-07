@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: segurança de SQL Server Express'
 title: Segurança do SQL Server Express
 ms.date: 03/30/2017
 ms.assetid: cf9cf6d9-4b05-43e9-ac7b-6cefbfcd6d4e
-ms.openlocfilehash: b34e0aff4b460be2dd33b1a5e73d001c79f48f1f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1e23c418c28fb2b463e54f9d645c2851b9896452
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203443"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767268"
 ---
 # <a name="sql-server-express-security"></a>Segurança do SQL Server Express
 
@@ -39,8 +40,8 @@ O SQL Server Express (Microsoft SQL Server Express Edition) é baseado no Micros
 |[Instância de usuário para não administradores](/previous-versions/sql/sql-server-2008/ms143684(v=sql.100)) nos Manuais Online do SQL Server|Descreve como criar e implantar instâncias de usuário.|  
 |[SQL Server Express instâncias de usuário](sql-server-express-user-instances.md)|Descreve as capacidades de instância de usuário em um aplicativo ADO.NET. Fornece informações sobre como habilitar uma instância de usuário e conectar-se a uma instância de usuário usando um <xref:System.Data.SqlClient.SqlConnection>, o tempo de vida da instância do usuário e cenários de instância do usuário.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Segurança de SQL Server](sql-server-security.md)
-- [SQL Server Express instâncias de usuário](sql-server-express-user-instances.md)
+- [Segurança do SQL Server](sql-server-security.md)
+- [Instâncias de usuário do SQL Server Express](sql-server-express-user-instances.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

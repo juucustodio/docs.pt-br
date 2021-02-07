@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: hospedando o serviço de dados (WCF Data Services)'
 title: Hospedando o serviço de dados (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -8,14 +9,16 @@ helpviewer_keywords:
 - WCF Data Services, configuring
 - WCF Data Services, Windows Communication Foundation
 ms.assetid: b48f42ce-22ce-4f8d-8f0d-f7ddac9125ee
-ms.openlocfilehash: 5dfa1d9f02f660b55ecf6598ef5012174a1ba853
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 519adde3a3e054d68ff9a1b7acf7ff06c0ca7532
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765783"
 ---
 # <a name="hosting-the-data-service-wcf-data-services"></a>Hospedando o serviço de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Usando WCF Data Services, você pode criar um serviço que expõe dados como um feed Protocolo Open Data (OData). Esse serviço de dados é definido como uma classe que herda de <xref:System.Data.Services.DataService%601> . Essa classe fornece a funcionalidade necessária para processar mensagens de solicitação, executar atualizações na fonte de dados e gerar mensagens de respostas, conforme exigido pelo OData. No entanto, um serviço de dados não pode se associar a e escutar em um soquete de rede para solicitações HTTP de entrada. Para essa funcionalidade necessária, o serviço de dados depende de um componente de hospedagem.
 
@@ -58,7 +61,7 @@ Quando você usa a caixa de diálogo **Adicionar novo item** no Visual Studio 20
 
  Como um serviço de dados se comporta como um serviço WCF, o serviço de dados integra-se ao ASP.NET e segue o modelo de programação Web do WCF. Para obter mais informações, consulte [Serviços WCF e](../../wcf/feature-details/wcf-services-and-aspnet.md) [modelo de programação Web http](../../wcf/feature-details/wcf-web-http-programming-model.md)do ASP.net e WCF.
 
-## <a name="self-hosted-wcf-services"></a>Serviços WCF auto-hospedados
+## <a name="self-hosted-wcf-services"></a>Self-Hosted serviços WCF
 
  Como ele incorpora uma implementação do WCF, WCF Data Services dá suporte à hospedagem interna de um serviço de dados como um serviço WCF. Um serviço pode ser hospedado automaticamente em qualquer aplicativo .NET Framework, como um aplicativo de console. A <xref:System.Data.Services.DataServiceHost> classe, que é herdada de <xref:System.ServiceModel.Web.WebServiceHost> , é usada para instanciar o serviço de dados em um endereço específico.
 
@@ -76,7 +79,7 @@ Quando você usa a caixa de diálogo **Adicionar novo item** no Visual Studio 20
 
 - Valide os parâmetros na cadeia de caracteres de consulta.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Configurando WCF Data Services](defining-wcf-data-services.md)
 - [Expor seus dados como um serviço](exposing-your-data-as-a-service-wcf-data-services.md)

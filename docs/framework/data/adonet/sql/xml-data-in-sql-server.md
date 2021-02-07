@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: dados XML em SQL Server'
 title: Dados XML no SQL Server
 ms.date: 03/30/2017
 ms.assetid: 9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d
-ms.openlocfilehash: 8ad92334a2afd4791bb0b40378c49a0efa14fefd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fb087aeb0893ce9de9c5beb7728ff1af3259d3e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147600"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766927"
 ---
 # <a name="xml-data-in-sql-server"></a>Dados XML no SQL Server
 
@@ -21,7 +22,7 @@ SQL Server expõe a funcionalidade do SQLXML dentro do .NET Framework. Os desenv
  [Especificando valores XML como parâmetros](specifying-xml-values-as-parameters.md)  
  Demonstra como passar dados XML como um parâmetro para um comando.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [SQL Server e ADO.NET](index.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

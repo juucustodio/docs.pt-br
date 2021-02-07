@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: considerações sobre LINQ (WCF Data Services)'
 title: Considerações sobre o LINQ (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -9,14 +10,16 @@ helpviewer_keywords:
 - querying the data service [WCF Data Services]
 - WCF Data Services, querying
 ms.assetid: cc4ec9e9-348f-42a6-a78e-1cd40e370656
-ms.openlocfilehash: 2523aac510516fdf19087425b10ab3f2296eb726
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4205fc5c67c5939377e2a964d5a82d8855b03fce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194331"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764958"
 ---
 # <a name="linq-considerations-wcf-data-services"></a>Considerações sobre o LINQ (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Este tópico fornece informações sobre a maneira como as consultas LINQ são compostas e executadas quando você está usando o cliente WCF Data Services e as limitações de usar o LINQ para consultar um serviço de dados que implementa o Protocolo Open Data (OData). Para obter mais informações sobre como compor e executar consultas em um serviço de dados baseado em OData, consulte [consultando o serviço de dados](querying-the-data-service-wcf-data-services.md).  
   
@@ -228,7 +231,7 @@ http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight 
   
  O cliente também pode avaliar funções de CLR adicionais no cliente. Um <xref:System.NotSupportedException> é gerado para qualquer expressão que não possa ser avaliada no cliente e não possa ser convertida em um URI de solicitação válido para avaliação no servidor.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Consultar o serviço de dados](querying-the-data-service-wcf-data-services.md)
 - [Projeções de consulta](query-projections-wcf-data-services.md)

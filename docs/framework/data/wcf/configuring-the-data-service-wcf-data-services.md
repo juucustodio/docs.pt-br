@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Configurando o serviço de dados (WCF Data Services)'
 title: Configurando o serviço de dados (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -7,14 +8,16 @@ dev_langs:
 helpviewer_keywords:
 - WCF Data Services, configuring
 ms.assetid: 59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c
-ms.openlocfilehash: a30a8c2c731e8c5cb2b22c8d7f34ec32d149803c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 72bd0de5319cc4b19fd831f4ee302e073106c74b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152787"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766160"
 ---
 # <a name="configuring-the-data-service-wcf-data-services"></a>Configurando o serviço de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Com WCF Data Services, você pode criar serviços de dados que expõem feeds Protocolo Open Data (OData). Os dados nesses feeds podem vir de uma variedade de fontes de dados. WCF Data Services usa provedores de dados para expor esses dados como um feed OData. Esses provedores incluem um provedor de Entity Framework, um provedor de reflexão e um conjunto de interfaces de provedor de serviços de dados personalizados. A implementação do provedor define o modelo de dados para o serviço. Para obter mais informações, consulte [provedores de serviços de dados](data-services-providers-wcf-data-services.md).  
   
@@ -58,7 +61,7 @@ Com WCF Data Services, você pode criar serviços de dados que expõem feeds Pro
 |Caminho/ação|`GET`|`DELETE`|`MERGE`|`POST`|`PUT`|  
 |------------------|-----------|--------------|-------------|------------|-----------|  
 |`/Customers`|<xref:System.Data.Services.EntitySetRights.ReadMultiple>|Sem suporte|Sem suporte|<xref:System.Data.Services.EntitySetRights.WriteAppend>|Sem suporte|  
-|`/Customers('ALFKI')`|<xref:System.Data.Services.EntitySetRights.ReadSingle>|<xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteDelete>|<xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteMerge>|N/D|<xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteReplace>|  
+|`/Customers('ALFKI')`|<xref:System.Data.Services.EntitySetRights.ReadSingle>|<xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteDelete>|<xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteMerge>|n/a|<xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteReplace>|  
 |`/Customers('ALFKI')/Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Sem suporte|Sem suporte|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteMerge> ou <xref:System.Data.Services.EntitySetRights.WriteReplace><br /><br /> -e-<br /><br /> `Orders``:`e<xref:System.Data.Services.EntitySetRights.WriteAppend>|Sem suporte|  
 |`/Customers('ALFKI')/Orders(10643)`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteDelete>|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteMerge>|Sem suporte|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteReplace>|  
 |`/Orders(10643)/Customer`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteDelete><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteMerge>;<br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|`Customers`: <xref:System.Data.Services.EntitySetRights.WriteAppend><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.WriteAppend> e <xref:System.Data.Services.EntitySetRights.ReadSingle>|Sem suporte|  
@@ -67,9 +70,9 @@ Com WCF Data Services, você pode criar serviços de dados que expõem feeds Pro
 |`/Orders(10643)/$links/Customer`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle>|`Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteMerge> ou <xref:System.Data.Services.EntitySetRights.WriteReplace>|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteMerge>|Sem suporte|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle>;<br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteReplace>|  
 |`/Customers/$count`|<xref:System.Data.Services.EntitySetRights.ReadMultiple>|Sem suporte|Sem suporte|Sem suporte|Sem suporte|  
 |`/Customers('ALFKI')/ContactName`|<xref:System.Data.Services.EntitySetRights.ReadSingle>|Sem suporte|<xref:System.Data.Services.EntitySetRights.WriteMerge>|Sem suporte|<xref:System.Data.Services.EntitySetRights.WriteReplace>|  
-|`/Customers('ALFKI')/Address/StreetAddress/$value`<sup>1</sup>|<xref:System.Data.Services.EntitySetRights.ReadSingle>|<xref:System.Data.Services.EntitySetRights.WriteDelete>|Sem suporte|Sem suporte|Sem suporte|  
+|`/Customers('ALFKI')/Address/StreetAddress/$value` <sup>1</sup>|<xref:System.Data.Services.EntitySetRights.ReadSingle>|<xref:System.Data.Services.EntitySetRights.WriteDelete>|Sem suporte|Sem suporte|Sem suporte|  
 |`/Customers('ALFKI')/ContactName/$value`|<xref:System.Data.Services.EntitySetRights.ReadSingle>|<xref:System.Data.Services.EntitySetRights.ReadSingle> e <xref:System.Data.Services.EntitySetRights.WriteDelete>|<xref:System.Data.Services.EntitySetRights.WriteMerge>|Sem suporte|<xref:System.Data.Services.EntitySetRights.WriteReplace>|  
-|`/Customers('ALFKI')/$value`<sup>2</sup>|<xref:System.Data.Services.EntitySetRights.ReadSingle>|Sem suporte|Sem suporte|Sem suporte|<xref:System.Data.Services.EntitySetRights.WriteReplace>|  
+|`/Customers('ALFKI')/$value` <sup>2</sup>|<xref:System.Data.Services.EntitySetRights.ReadSingle>|Sem suporte|Sem suporte|Sem suporte|<xref:System.Data.Services.EntitySetRights.WriteReplace>|  
 |`/Customers?$select=Orders/*&$expand=Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Sem suporte|Sem suporte|`Customers`: <xref:System.Data.Services.EntitySetRights.WriteAppend>|Sem suporte|  
 |`/Customers('ALFKI')?$select=Orders/*&$expand=Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -e-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Sem suporte|Sem suporte|Sem suporte|Sem suporte|  
   
@@ -89,7 +92,7 @@ Com WCF Data Services, você pode criar serviços de dados que expõem feeds Pro
   
  Para obter mais informações, consulte [controle de versão do serviço de dados](data-service-versioning-wcf-data-services.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Configurando WCF Data Services](defining-wcf-data-services.md)
 - [Hospedar o serviço de dados](hosting-the-data-service-wcf-data-services.md)

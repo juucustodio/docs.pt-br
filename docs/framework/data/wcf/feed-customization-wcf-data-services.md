@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: personalização do feed (WCF Data Services)'
 title: Personalização do feed (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -10,14 +11,16 @@ helpviewer_keywords:
 - Atom Publishing Protocol [WCF Data Services]
 - WCF Data Services, customizing feeds
 ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
-ms.openlocfilehash: bf25737d98a880ac720318de18b687b4df5b0708
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9c9e0ead05c446b293fd728c3720472529a0cf0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172626"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765945"
 ---
 # <a name="feed-customization-wcf-data-services"></a>Personalização do feed (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services usa o Protocolo Open Data (OData) para expor dados como um feed. O OData dá suporte a formatos Atom e JavaScript Object Notation (JSON) para feeds de dados. Quando você usa um Feed Atom, o OData fornece um método padrão para serializar dados, como entidades e relações, em um formato XML que pode ser incluído no corpo da mensagem HTTP. O OData define um mapeamento de propriedade de entidade padrão entre os dados contidos em entidades e elementos Atom. Para obter mais informações, consulte [OData: Atom Format](https://www.odata.org/documentation/odata-version-2-0/atom-format/).  
   
@@ -100,7 +103,7 @@ WCF Data Services usa o Protocolo Open Data (OData) para expor dados como um fee
   
  Para obter mais informações, consulte [controle de versão do serviço de dados](data-service-versioning-wcf-data-services.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Provedor de reflexão](reflection-provider-wcf-data-services.md)
 - [Provedor de Entity Framework](entity-framework-provider-wcf-data-services.md)

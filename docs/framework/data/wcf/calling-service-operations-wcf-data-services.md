@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: chamadas de operações de serviço (WCF Data Services)'
 title: Chamando operações de serviço (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1767f3a7-29d2-4834-a763-7d169693fa8b
-ms.openlocfilehash: ac1b28665dcaaa9f8c6ae6a6611757f6c4969adb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 49b08581e42fcd20b9d560d73379eb43ebbf2eb4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152839"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766459"
 ---
 # <a name="calling-service-operations-wcf-data-services"></a>Chamando operações de serviço (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 O Protocolo Open Data (OData) define as operações de serviço para um serviço de dados. WCF Data Services permite que você defina operações como métodos no serviço de dados. Assim como outros recursos de serviço de dados, essas operações de serviço são endereçadas usando URIs. Uma operação de serviço pode retornar coleções de tipos de entidade, instâncias de tipo de entidade única e tipos primitivos, como inteiro e cadeia de caracteres. Uma operação de serviço também pode retornar `null` ( `Nothing` em Visual Basic). A biblioteca de cliente WCF Data Services pode ser usada para acessar as operações de serviço que dão suporte a solicitações HTTP GET. Esses tipos de operações de serviço são definidos como métodos que têm o <xref:System.ServiceModel.Web.WebGetAttribute> aplicado. Para obter mais informações, consulte [operações de serviço](service-operations-wcf-data-services.md).  
   
@@ -141,6 +144,6 @@ O Protocolo Open Data (OData) define as operações de serviço para um serviço
  [!code-csharp[Astoria Northwind Client#OnAsyncQueryExecutionComplete](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#onasyncqueryexecutioncomplete)]
  [!code-vb[Astoria Northwind Client#OnAsyncQueryExecutionComplete](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#onasyncqueryexecutioncomplete)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Biblioteca de cliente do WCF Data Services](wcf-data-services-client-library.md)

@@ -1,37 +1,38 @@
 ---
+description: 'Saiba mais sobre: execução de SqlCommand com um SqlNotificationRequest'
 title: Execução de SqlCommand com um SqlNotificationRequest
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1776f48f-9bea-41f6-83a4-c990c7a2c991
-ms.openlocfilehash: 3115bfb80d4e5e61ed49da11e36eaa37bc24334f
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: d3e82022794aa67d4bd20223cac852097f2be9dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70791537"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767044"
 ---
 # <a name="sqlcommand-execution-with-a-sqlnotificationrequest"></a>Execução de SqlCommand com um SqlNotificationRequest
 
-Um <xref:System.Data.SqlClient.SqlCommand> pode ser configurado para gerar uma notificação quando os dados forem alterados após sua busca do servidor e o conjunto de resultados for diferente se a consulta tiver sido executada novamente. Isso é útil para cenários em que você deseja usar filas de notificação personalizadas no servidor ou quando não deseja manter objetos dinâmicos.
+Um <xref:System.Data.SqlClient.SqlCommand> pode ser configurado para gerar uma notificação quando os dados forem alterados após terem sido obtidos do servidor. Além disso, o conjunto de resultados seria diferente caso a consulta seja executada novamente. Isso é útil para cenários em que você deseja usar filas de notificação personalizadas no servidor ou quando não quiser manter objetos dinâmicos.
 
 ## <a name="creating-the-notification-request"></a>Criando a solicitação de notificação
 
-Você pode usar um <xref:System.Data.Sql.SqlNotificationRequest> objeto para criar a solicitação de notificação ligando-a a `SqlCommand` um objeto. Depois que a solicitação for criada, você não precisará `SqlNotificationRequest` mais do objeto. Você pode consultar a fila para todas as notificações e responder adequadamente. As notificações podem ocorrer mesmo que o aplicativo seja desligado e subsequentemente reiniciado.
+É possível usar um objeto <xref:System.Data.Sql.SqlNotificationRequest> para criar a solicitação de notificação associando-o a um objeto `SqlCommand`. Depois que a solicitação for criada, o objeto `SqlNotificationRequest` não será mais necessário. É possível consultar a fila para todas as notificações e responder adequadamente. As notificações podem ocorrer mesmo que o aplicativo seja desligado e reiniciado em seguida.
 
-Quando o comando com a notificação associada é executado, qualquer alteração no gatilho do conjunto de resultados original envia uma mensagem para a fila de SQL Server que foi configurada na solicitação de notificação.
+Quando o comando é executado com a notificação associada, qualquer alteração no conjunto de resultados original dispara o envio de uma mensagem para a fila do SQL Server configurada na solicitação de notificação.
 
-Como você sonda a fila de SQL Server e interpreta a mensagem é específica para seu aplicativo. O aplicativo é responsável por sondar a fila e reagir com base no conteúdo da mensagem.
+A forma de sondar a fila do SQL Server e interpretar a mensagem é específica para seu aplicativo. O aplicativo é responsável pela sondagem da fila e por reagir com base no conteúdo da mensagem.
 
 > [!NOTE]
-> Ao usar SQL Server solicitações de notificação <xref:System.Data.SqlClient.SqlDependency>com, crie seu próprio nome de fila em vez de usar o nome do serviço padrão.
+> Ao usar as solicitações de notificação do SQL Server com <xref:System.Data.SqlClient.SqlDependency>, crie um nome de fila próprio em vez de usar o nome de serviço padrão.
 
-Não há nenhum novo elemento de segurança do lado do <xref:System.Data.Sql.SqlNotificationRequest>cliente para o. Isso é basicamente um recurso de servidor e o servidor criou privilégios especiais que os usuários precisam ter para solicitar uma notificação.
+Não há elementos novos de segurança do lado do cliente para <xref:System.Data.Sql.SqlNotificationRequest>. Esse é basicamente um recurso do servidor. Ele criou privilégios especiais que os usuários devem ter para solicitar uma notificação.
 
 ### <a name="example"></a>Exemplo
 
-O fragmento de código a seguir demonstra como criar <xref:System.Data.Sql.SqlNotificationRequest> um e associá-lo <xref:System.Data.SqlClient.SqlCommand>a um.
+O fragmento de código a seguir demonstra como criar um <xref:System.Data.Sql.SqlNotificationRequest> e associá-lo a um <xref:System.Data.SqlClient.SqlCommand>.
 
 ```vb
 ' Assume connection is an open SqlConnection.
@@ -76,4 +77,4 @@ command.ExecuteReader();
 ## <a name="see-also"></a>Consulte também
 
 - [Notificações de consulta no SQL Server](query-notifications-in-sql-server.md)
-- [ADO.NET Overview](../ado-net-overview.md) (Visão geral do ADO.NET)
+- [Visão geral do ADO.NET](../ado-net-overview.md)

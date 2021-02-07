@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interceptores (WCF Data Services)'
 title: Interceptores (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -8,14 +9,16 @@ helpviewer_keywords:
 - WCF Data Services, customizing
 - query interceptors [WCF Data Services]
 ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
-ms.openlocfilehash: 64c5c82f33daf677e58d49655897c392f1f7b7f9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f73ee498d0419df9e083248802ea52ed050a914b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204391"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765068"
 ---
 # <a name="interceptors-wcf-data-services"></a>Interceptores (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services permite que um aplicativo intercepte mensagens de solicitação para que você possa adicionar lógica personalizada a uma operação. Você pode usar essa lógica personalizada para validar dados em mensagens de entrada. Você também pode usá-la para restringir mais o escopo de uma solicitação de consulta, como inserir uma política de autorização personalizada com base na solicitação.  
   
@@ -49,6 +52,6 @@ WCF Data Services permite que um aplicativo intercepte mensagens de solicitaçã
   
  Para obter mais informações, consulte [como: interceptar mensagens do serviço de dados](how-to-intercept-data-service-messages-wcf-data-services.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Operações de serviço](service-operations-wcf-data-services.md)

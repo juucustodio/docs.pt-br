@@ -1,17 +1,20 @@
 ---
+description: 'Saiba mais sobre: provedores de serviços de dados (WCF Data Services)'
 title: Provedores de serviços de dados (WCF Data Services)
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, providers
 ms.assetid: a0160b1b-3d9c-4cc8-8391-cb0986a60a41
-ms.openlocfilehash: dcca6023349148ac7f65f97028d876514ef31163
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ee28604b7e3e9e1558a7d80838b072b236572893
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91182829"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766108"
 ---
 # <a name="data-services-providers-wcf-data-services"></a>Provedores de serviços de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 O WCF Data Services dá suporte a vários modelos de provedor para expor dados como um feed Protocolo Open Data (OData). Este tópico fornece informações para permitir que você selecione o melhor provedor de WCF Data Services para sua fonte de dados.  
   
@@ -33,7 +36,7 @@ O WCF Data Services dá suporte a vários modelos de provedor para expor dados c
 |--------------|-----------------|  
 |Provedor de streaming|Esse provedor permite expor tipos de dados de objeto binário grande usando WCF Data Services. Um provedor de streaming é criado com a implementação da interface <xref:System.Data.Services.Providers.IDataServiceStreamProvider>. Este provedor pode ser implementado junto com qualquer provedor de fonte de dados. Para obter mais informações, consulte [streaming Provider](streaming-provider-wcf-data-services.md).|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Configurando WCF Data Services](defining-wcf-data-services.md)
 - [Configurar o serviço de dados](configuring-the-data-service-wcf-data-services.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: SQL Server integração do Common Language Runtime'
 title: Integração do Common Language Runtime do SQL
 ms.date: 03/30/2017
 ms.assetid: c7a324c4-160d-44c2-b593-641af06eca61
-ms.openlocfilehash: d9fe0f03c88584607c6bc38fcbcff3f9424fd40c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 096bba0d183526ec8e5d272c5ea6a77ad0778e5f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183020"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767395"
 ---
 # <a name="sql-server-common-language-runtime-integration"></a>Integração do Common Language Runtime do SQL
 
@@ -29,7 +30,7 @@ O SQL Server 2005 introduziu a integração do componente CLR do .NET Framework 
  [Funções do CLR definidas pelo usuário](clr-user-defined-functions.md)  
  Descreve como implementar e usar os vários tipos de funções CLR: com valor de tabela, escalares e funções de agregação definida pelo usuário.  
   
- [Tipos definidos pelo usuário de CLR](clr-user-defined-types.md)  
+ [Tipos definido pelo usuário CLR](clr-user-defined-types.md)  
  Descreve como implementar e usar tipos definidos pelo usuário CLR. Fornece links para tópicos adicionais.  
   
  [Procedimentos armazenados CLR](clr-stored-procedures.md)  
@@ -44,7 +45,7 @@ O SQL Server 2005 introduziu a integração do componente CLR do .NET Framework 
  [Comportamento específico do processo do SQL Server do ADO.NET](sql-server-in-process-specific-behavior-of-adonet.md)  
  Descreve as extensões específicas no processo do SQL Server para o ADO.NET, e a conexão de contexto. Fornece links para tópicos adicionais.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [SQL Server e ADO.NET](index.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

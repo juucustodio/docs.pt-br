@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: desenvolver e implantar WCF Data Services'
 title: Desenvolvendo e implantando WCF Data Services
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,14 +8,16 @@ helpviewer_keywords:
 - deploying [WCF Data Services
 - developing applications [WCF Data Services]
 ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
-ms.openlocfilehash: 484505406701b52a2b80b95b718a23a2156aa22c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 52d7a00ffbd333b9a6ad01298fd1133ea8d5e731
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2020
-ms.locfileid: "90556083"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766069"
 ---
 # <a name="develop-and-deploy-wcf-data-services"></a>Desenvolva e implante WCF Data Services
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Este artigo fornece informações sobre como desenvolver e implantar WCF Data Services. Para obter informações mais básicas sobre WCF Data Services, consulte [introdução](getting-started-with-wcf-data-services.md) e [visão geral](wcf-data-services-overview.md).
 
@@ -125,7 +128,7 @@ Considere o seguinte ao implantar um serviço de dados:
 
 - Como o WCF Data Services inclui uma implementação básica do WCF, você pode usar o Windows Server AppFabric para monitorar um serviço de dados implantado no IIS em execução no Windows Server. Para obter mais informações sobre como usar o Windows Server AppFabric para monitorar um serviço de dados, consulte o WCF Data Services de rastreamento de postagem [com o Windows Server AppFabric](/archive/blogs/rjacobs/tracking-wcf-data-services-with-windows-server-appfabric).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedar o serviço de dados](hosting-the-data-service-wcf-data-services.md)
 - [Protegendo o WCF Data Services](securing-wcf-data-services.md)

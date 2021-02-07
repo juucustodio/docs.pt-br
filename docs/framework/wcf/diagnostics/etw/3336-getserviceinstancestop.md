@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3336-GetServiceInstanceStop'
 title: 3336 - GetServiceInstanceStop
 ms.date: 03/30/2017
 ms.assetid: 4648026e-670d-4743-85f8-3ccfaaf18d6f
-ms.openlocfilehash: 0d35047431fe3c1ae9f26e75dccf5c133b39ecd8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2556c23e6ce4aa6272e0b5920fd1f570498daa20
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295347"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744806"
 ---
 # <a name="3336---getserviceinstancestop"></a>3336 - GetServiceInstanceStop
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: arquitetura de cliente'
 title: Arquitetura do cliente
 ms.date: 03/30/2017
 ms.assetid: 02624403-0d77-41cb-9a86-ab55e98c7966
-ms.openlocfilehash: d2a7c25b73562155a7120ecee4998b0de364ca45
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dc027d5b9d470afe71c577681f42fc2d0b6bef4c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295100"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743610"
 ---
 # <a name="client-architecture"></a>Arquitetura do cliente
 

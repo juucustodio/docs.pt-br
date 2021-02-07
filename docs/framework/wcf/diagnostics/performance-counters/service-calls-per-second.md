@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serviço: chamadas por segundo'
 title: 'Serviço: chamadas por segundo'
 ms.date: 03/30/2017
 ms.assetid: 6261d28d-d449-425a-b9fc-a4ee14079134
-ms.openlocfilehash: 7e702d402909c4a85a2cb42c837e0813c4d9f841
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f6e21f5f1c7a0d5d4ceeb11f954ebbc95f66a3ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96252875"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744026"
 ---
 # <a name="service-calls-per-second"></a>Serviço: chamadas por segundo
 

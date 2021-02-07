@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: SecurityBindingElement'
 title: SecurityBindingElement
 ms.date: 03/30/2017
 ms.assetid: ef93b6e6-3524-48a8-94d3-c8837f1872f9
-ms.openlocfilehash: 61eae75de04f75b6ad6e78d16569595732b3d28f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bc9a519978a9cccccd80a58abb8d109fa9bc9337
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273302"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743805"
 ---
 # <a name="securitybindingelement"></a>SecurityBindingElement
 
 SecurityBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class SecurityBindingElement : BindingElement  

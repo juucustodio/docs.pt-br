@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: desenvolvimento de canais'
 title: Canais de desenvolvimento
 ms.date: 03/30/2017
 ms.assetid: 0513af9f-a0c2-457b-9a50-5b6bfee48513
-ms.openlocfilehash: 11e7a78282a3c9f7cd221e2ef44bc43c625e447b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7fd6dc68a72d5167868c3ccee0f53c1ba3090322
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286793"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743740"
 ---
 # <a name="developing-channels"></a>Canais de desenvolvimento
 
@@ -35,6 +36,6 @@ O desenvolvimento de um protocolo ou canal de transporte que pode ser usado com 
   
 4. Adicione uma seção de associação e um elemento de configuração de associação para expor a associação ao sistema de configuração. Para obter mais informações, consulte [suporte de configuração e metadados](configuration-and-metadata-support.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Estendendo associações](extending-bindings.md)

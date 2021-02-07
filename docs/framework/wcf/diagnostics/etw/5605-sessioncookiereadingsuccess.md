@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 5605-SessionCookieReadingSuccess'
 title: 5605 - SessionCookieReadingSuccess
 ms.date: 03/30/2017
 ms.assetid: 2cc1693d-7834-45ce-9a6d-dbe31dc2d517
-ms.openlocfilehash: ce8e3f2dbe1ad535b04800433aef569cbe4af787
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8639fe51cf9282ce3c0fb57b8720a34036335b7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276302"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744377"
 ---
 # <a name="5605---sessioncookiereadingsuccess"></a>5605 - SessionCookieReadingSuccess
 

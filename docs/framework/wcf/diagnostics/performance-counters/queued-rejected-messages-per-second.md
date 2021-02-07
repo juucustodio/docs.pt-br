@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: mensagens rejeitadas enfileiradas por segundo'
 title: Mensagens em fila rejeitadas por segundo
 ms.date: 03/30/2017
 ms.assetid: 77ea9aa3-b9e2-4a1d-a65e-5ca115ba0567
-ms.openlocfilehash: 2b7686ee94ab051bc255bdb71681c8d1c473094c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d0d227a26a49921449786d2c9f885fac13a82bde
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276198"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744065"
 ---
 # <a name="queued-rejected-messages-per-second"></a>Mensagens em fila rejeitadas por segundo
 

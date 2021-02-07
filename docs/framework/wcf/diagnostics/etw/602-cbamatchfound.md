@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 602-CBAMatchFound'
 title: 602 - CBAMatchFound
 ms.date: 03/30/2017
 ms.assetid: 6b1ccbb8-5a43-4b36-9949-702877cef90a
-ms.openlocfilehash: 988664a6223b17ec3f745e946a0080b8ab746abf
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dc584d186197f2ff6608d8d6292a5bb5ef7ace12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744286"
 ---
 # <a name="602---cbamatchfound"></a>602 - CBAMatchFound
 

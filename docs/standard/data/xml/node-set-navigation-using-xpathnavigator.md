@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: navegação de conjunto de nós usando XPathNavigator'
 title: Navegação do nó usando XPathNavigator
 ms.date: 03/30/2017
 ms.assetid: 1a954b41-7173-40bc-8544-d430f209b1e5
-ms.openlocfilehash: 592acfb5e4065d707f4dda09f349e8b783656148
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d4e902cbe8cf93fe753c9cbdd01d6a369152c092
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714289"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675956"
 ---
 # <a name="node-set-navigation-using-xpathnavigator"></a>Navegação do nó usando XPathNavigator
 
@@ -19,7 +20,7 @@ Você pode navegar sobre nós em <xref:System.Xml.XPath.XPathDocument> ou o obje
   
  Para saber mais sobre como escolher nós no objeto <xref:System.Xml.XPath.XPathNavigator>, confira [Selecionar, avaliar e corresponder dados XML usando XPathNavigator](selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md). Para saber mais sobre a navegação de nós de atributo e do namespace, confira [Navegação do nó de atributo e do namespace usando XPathNavigator](attribute-and-namespace-node-navigation-using-xpathnavigator.md).  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |<xref:System.Xml.XPath.XPathNavigator.MoveTo%2A>|Move <xref:System.Xml.XPath.XPathNavigator> a mesma posição de <xref:System.Xml.XPath.XPathNavigator> especificou.|  
 |<xref:System.Xml.XPath.XPathNavigator.MoveToChild%2A>|Move <xref:System.Xml.XPath.XPathNavigator> a um nó filho do nó atual.|  
@@ -52,7 +53,7 @@ Você pode navegar sobre nós em <xref:System.Xml.XPath.XPathDocument> ou o obje
   
 - <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A>  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. CommunicationObjectFaultReason'
 title: System.ServiceModel.CommunicationObjectFaultReason
 ms.date: 03/30/2017
 ms.assetid: d2530933-bfba-4b20-aba6-b1f99e97699d
-ms.openlocfilehash: 0da888104818d91b679e6d29c105627f670a9225
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 49c0ca7cbe72ceff431909abfdd48094e3d4220b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96256905"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676632"
 ---
 # <a name="systemservicemodelcommunicationobjectfaultreason"></a>System.ServiceModel.CommunicationObjectFaultReason
 
@@ -17,8 +18,8 @@ System.ServiceModel.CommunicationObjectFaultReason
 
  Um objeto de comunicação falhou devido à exceção.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

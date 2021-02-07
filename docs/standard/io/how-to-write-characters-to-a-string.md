@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como escrever caracteres para uma cadeia de caracteres'
 title: 'Como: gravar caracteres em uma cadeia de caracteres'
 ms.date: 01/21/2019
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - streams, writing characters to strings
 - I/O [.NET], writing characters to strings
 ms.assetid: 1222cbeb-0760-44bf-9888-914a2a37174b
-ms.openlocfilehash: 21661a858cff9fc8bc84d497b4af8bedb1393f0a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 86b19222d05e720904192d16f2082e8ae53a993f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734524"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675618"
 ---
 # <a name="how-to-write-characters-to-a-string"></a>Como: gravar caracteres em uma cadeia de caracteres
 
@@ -35,7 +36,7 @@ Os exemplos de código a seguir gravam caracteres de forma síncrona ou assíncr
  [!code-csharp[StreamReaderWriter](../../../samples/snippets/csharp/VS_Snippets_Wpf/StringReaderWriter/MainWindow.xaml.cs)]
  [!code-vb[StreamReaderWriter](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/StringReaderWriter/MainWindow.xaml.vb)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.StringWriter>  
 - <xref:System.IO.StringWriter.Write%2A?displayProperty=nameWithType>  

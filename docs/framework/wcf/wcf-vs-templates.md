@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: modelos do WCF do Visual Studio'
 title: Modelos do Visual Studio do WCF
 ms.date: 03/30/2017
 ms.assetid: 6a608575-3535-4190-89da-911e24c8374f
-ms.openlocfilehash: a3aa7e3ee57759ef54ddaa898fe036c4e3caa33e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 95d320b2a425ddef7e48f915c8f66d759702ccce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2020
-ms.locfileid: "96279695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676359"
 ---
 # <a name="wcf-visual-studio-templates"></a>Modelos do Visual Studio do WCF
 
@@ -93,7 +94,7 @@ Os modelos do Windows Communication Foundation (WCF) do Visual Studio são model
 > [!NOTE]
 > O serviço WCF habilitado para Silverlight expõe um `basicHttpBinding` ponto de extremidade sem habilitar nenhuma configuração de segurança. Portanto, as informações sobre o serviço podem ser obtidas por todos os clientes que se conectam a esse serviço. As mensagens trocadas entre o serviço e o cliente também não são assinadas ou criptografadas. Para proteger o ponto de extremidade corretamente, você deve usar a autenticação ASP.NET, HTTPS ou outros mecanismos.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Host de serviço do WCF (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md)
 - [Cliente de Teste do WCF (WcfTestClient.exe)](wcf-test-client-wcftestclient-exe.md)

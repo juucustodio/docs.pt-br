@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: executando comparações de cadeia de caracteres Culture-Insensitive'
 title: Executando comparações de cadeias de caracteres que não levam em conta a cultura
 ms.date: 08/22/2018
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - culture-insensitive string operations, comparisons
 - culture parameter
 ms.assetid: abae50ef-32f7-4a50-a540-fd256fd1aed0
-ms.openlocfilehash: 3f933121d3c878dd8eee4812fa6669a915c22356
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bdbab5df50cd43350628e64c02751c2c56c272e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696486"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675735"
 ---
 # <a name="performing-culture-insensitive-string-comparisons"></a>Executando comparações de cadeias de caracteres que não levam em conta a cultura
 
@@ -39,7 +40,7 @@ Por padrão, o método <xref:System.String.Compare%2A?displayProperty=nameWithTy
 
 Você pode baixar as [Tabelas de peso de classificação](https://www.microsoft.com/download/details.aspx?id=10921), um conjunto de arquivos de texto que contêm informações sobre os pesos de caracteres usados em operações de classificação e comparação dos sistemas operacionais Windows, e a [Tabela de elemento de ordenação Unicode padrão](https://www.unicode.org/Public/UCA/latest/allkeys.txt), a tabela de peso de classificação para Linux e macOS.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.String.Compare%2A?displayProperty=nameWithType>
 - <xref:System.String.CompareTo%2A?displayProperty=nameWithType>

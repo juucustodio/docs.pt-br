@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos de coleção de tabela de hash e de dicionário'
 title: Tipos de coleção Hashtable e Dictionary
 ms.date: 03/30/2017
 '\helpviewer_keywords':
@@ -9,12 +10,12 @@ ms.date: 03/30/2017
 - hash function
 - collections [.NET], Hashtable collection type
 ms.assetid: bfc20837-3d02-4fc7-8a8f-c5215b6b7913
-ms.openlocfilehash: 56e8ceff05f8f9777af370301a96cd17d0286f44
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5ba4952ad8f820984a735685571eb76236cb0dae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733523"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676190"
 ---
 # <a name="hashtable-and-dictionary-collection-types"></a>Tipos de coleção Hashtable e Dictionary
 
@@ -34,7 +35,7 @@ A classe <xref:System.Collections.Hashtable?displayProperty=nameWithType>, e as 
   
  As classes <xref:System.Collections.Generic.Dictionary%602> e <xref:System.Collections.Concurrent.ConcurrentDictionary%602> têm a mesma funcionalidade que a classe <xref:System.Collections.Hashtable>. Um <xref:System.Collections.Generic.Dictionary%602> de um tipo específico (diferente de <xref:System.Object>) fornece desempenho melhor do que um <xref:System.Collections.Hashtable> para tipos de valor. Isso ocorre porque os elementos de <xref:System.Collections.Hashtable> são do tipo <xref:System.Object>; portanto, conversões boxing e unboxing normalmente ocorrem quando você armazena ou recupera um tipo de valor. A classe <xref:System.Collections.Concurrent.ConcurrentDictionary%602> deve ser usada quando vários threads podem estar acessando a coleção simultaneamente.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Collections.Hashtable>
 - <xref:System.Collections.IDictionary>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: falhas do XmlSerializer'
 title: Falhas de XmlSerializer
 ms.date: 03/30/2017
 ms.assetid: c6b80f14-64f4-4162-ae76-71664cf42fd3
-ms.openlocfilehash: 1eefa37d6d11e232bd4d0914eedab3ebb66b92ef
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c48aa88103dc2b913fe520dff996414b7c1505a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237645"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676502"
 ---
 # <a name="xmlserializer-faults"></a>Falhas de XmlSerializer
 

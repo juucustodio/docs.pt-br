@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. CommunicationObjectOpened'
 title: System.ServiceModel.CommunicationObjectOpened
 ms.date: 03/30/2017
 ms.assetid: 431ccb35-b593-4157-8e4d-f20e579630fd
-ms.openlocfilehash: 7640f76f821f57e29882c4692285f12bf6957933
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 957d456aa2e5e21e86af840ac01dfb18223b639b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96256879"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676606"
 ---
 # <a name="systemservicemodelcommunicationobjectopened"></a>System.ServiceModel.CommunicationObjectOpened
 
@@ -17,8 +18,8 @@ System.ServiceModel.CommunicationObjectOpened
 
  Um objeto de comunicação foi aberto.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

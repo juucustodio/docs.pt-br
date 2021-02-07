@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tipos de nó reconhecidos com consultas XPath'
 title: Tipos de nós reconhecidos com consultas XPath
 ms.date: 03/30/2017
 ms.assetid: 1d33e22d-18e5-43f8-a466-2e3d0a8dd094
-ms.openlocfilehash: bfc94958dbe54f05773a3adfcdfa9bf1c7ee8037
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0fb310a7c2b353ecce14bb2f1a3ac8032fdde4d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734077"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675878"
 ---
 # <a name="node-types-recognized-with-xpath-queries"></a>Tipos de nós reconhecidos com consultas XPath
 
@@ -45,7 +46,7 @@ Os tipos de nós reconhecidas em uma consulta XPath não são os mesmos tipos de
   
  Para saber mais sobre o elemento de navegação, o atributo e nós de namespace, confira os tópicos [Navegação do nó usando XPathNavigator](node-set-navigation-using-xpathnavigator.md) e [Navegação do nó de atributo e do namespace usando XPathNavigator](attribute-and-namespace-node-navigation-using-xpathnavigator.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

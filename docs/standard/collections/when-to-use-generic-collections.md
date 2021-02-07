@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: quando usar coleções genéricas'
 title: Quando usar coleções genéricas
 ms.date: 04/30/2020
 helpviewer_keywords:
 - collections [.NET], generic
 - generic collections [.NET]
 ms.assetid: e7b868b1-11fe-4ac5-bed3-de68aca47739
-ms.openlocfilehash: 7b8b7b458a1667a1d3239ef378c729929678e8aa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aea85606044e50c788eee9da4aaf7a4f5934cfc1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733068"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675982"
 ---
 # <a name="when-to-use-generic-collections"></a>Quando usar coleções genéricas
 
@@ -67,7 +68,7 @@ Alguns dos tipos genéricos possuem funcionalidades que não se encontram em tip
 
 A classe <xref:System.Collections.Generic.List%601> permite que você especifique suas próprias implementações de interface genérica <xref:System.Collections.Generic.IComparer%601> para classificação e pesquisa na lista. As classes <xref:System.Collections.Generic.SortedDictionary%602> e <xref:System.Collections.Generic.SortedList%602> também possuem esse recurso. Além disso, essas classes permitem que você especifique comparadores quando a coleção for criada. De maneira semelhante, as classes <xref:System.Collections.Generic.Dictionary%602> e <xref:System.Collections.ObjectModel.KeyedCollection%602> permitem que você especifique seus próprios comparadores de igualdade.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Coleções e estruturas de dados](index.md)
 - [Tipos de coleção comumente usados](commonly-used-collection-types.md)

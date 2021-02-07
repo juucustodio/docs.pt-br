@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: análise de possibilidade de localização'
 title: Revisão de localização
 ms.date: 03/30/2017
 dev_langs:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - global applications, localizability
 - localizing resources
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247
-ms.openlocfilehash: ecfba7b6b5908a16bb23860704a35035f58e3ed4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5228cf7ff2615f14439dfeffd0d9b511be274dae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675761"
 ---
 # <a name="localizability-review"></a>Revisão de localização
 
@@ -79,7 +80,7 @@ Antes de localizar seu aplicativo, você deve testá-lo usando dados internacion
 
 Se você tiver seguido as recomendações de globalização ao desenvolver seu aplicativo, sendo tratadas corretamente, tratado os recursos sensíveis à cultura e identificado e resolvido os problemas de localização que surgiram durante o teste, você poderá prosseguir para a próxima etapa, [Localização](localization.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Globalização e localização](index.md)
 - [Localização](localization.md)

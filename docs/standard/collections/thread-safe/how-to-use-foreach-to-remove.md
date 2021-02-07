@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: usar ForEach para remover itens de um BlockingCollection'
 title: Usar ForEach para remover itens de um BlockingCollection
 ms.date: 05/04/2020
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - thread-safe collections, how to enumerate blocking collection
 ms.assetid: 2096103c-22f7-420d-b631-f102bc33a6dd
-ms.openlocfilehash: 9346ead4bf0aef91a224e0ab11ffd30a7c205294
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 34909356a64192f14227927b2103ee35e4a44f44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830994"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676008"
 ---
 # <a name="use-foreach-to-remove-items-in-a-blockingcollection"></a>Usar ForEach para remover itens de um BlockingCollection
 
@@ -31,7 +32,7 @@ O <xref:System.Collections.Concurrent.BlockingCollection%601.GetConsumingEnumera
 
 Para enumerar a coleção sem modificá-la, basta usar `foreach` (`For Each`) sem o método <xref:System.Collections.Concurrent.BlockingCollection%601.GetConsumingEnumerable%2A>. No entanto, é importante compreender que esse tipo de enumeração representa um instantâneo da coleção em um ponto preciso no tempo. Se outros threads estiverem adicionando ou removendo itens simultaneamente enquanto você estiver executando o loop, o loop poderá não representar o estado real da coleção.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Collections.Concurrent?displayProperty=nameWithType>
 - [Programação paralela](../../parallel-programming/index.md)

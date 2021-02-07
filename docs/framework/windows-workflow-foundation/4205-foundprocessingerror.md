@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 4205-FoundProcessingError'
 title: 4205 - FoundProcessingError
 ms.date: 03/30/2017
 ms.assetid: f2235a15-dd87-439e-8cb9-8b1b89a3dacf
-ms.openlocfilehash: 2931d3723a04d7970197c9ebd79dc65ea43d67a7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 847535af51cae8723f06d33b3b5c5c64cf3c5dd7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251237"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676281"
 ---
 # <a name="4205---foundprocessingerror"></a>4205 - FoundProcessingError
 
@@ -17,7 +18,7 @@ ms.locfileid: "96251237"
 |-|-|  
 |ID|4205|  
 |Palavras-chave|WFInstanceStore|  
-|Nível|Erro do|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

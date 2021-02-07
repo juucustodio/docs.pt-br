@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: protegendo clientes'
 title: Protegendo clientes
 ms.date: 03/30/2017
 helpviewer_keywords:
 - clients [WCF], security considerations
 ms.assetid: 44c8578c-9a5b-4acd-8168-1c30a027c4c5
-ms.openlocfilehash: b7f720b83a858c8739d2f7b9bf63d29c54b914e0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d78ad2fba00a0707dcf1c63681d9d76e68a31c00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676437"
 ---
 # <a name="securing-clients"></a>Protegendo clientes
 
@@ -154,7 +155,7 @@ No Windows Communication Foundation (WCF), o serviço determina os requisitos de
 </wsHttpBinding>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>
 - <xref:System.ServiceModel.ClientBase%601>

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: como adicionar funcionalidade de delimitador e bloqueio a uma coleção'
 title: 'Como: Adicionar a funcionalidade de delimitação e bloqueio a uma coleção'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - thread-safe collections, custom blocking collections
 ms.assetid: 4c2492de-3876-4873-b5a1-000bb404d770
-ms.openlocfilehash: ba41176d87779fe673fa162d0bf04c10414cdd92
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c44febe0a7b2155c61b12c280d830ad7b028d326
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733471"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676060"
 ---
 # <a name="how-to-add-bounding-and-blocking-functionality-to-a-collection"></a>Como: Adicionar a funcionalidade de delimitação e bloqueio a uma coleção
 
@@ -27,6 +28,6 @@ Este exemplo mostra como adicionar a funcionalidade de delimitação e de bloque
   
  Por padrão, o armazenamento para um <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> é <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Coleções thread-safe](index.md)

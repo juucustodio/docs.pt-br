@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como usar matrizes de bloqueio de coleções em um pipeline'
 title: 'Como: Usar matrizes de coleções de bloqueio em um pipeline'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - thread-safe collections, blocking collections in pipeline
 ms.assetid: a39c7ec3-3ad7-4f4d-8fe4-b3e9dbabe2ed
-ms.openlocfilehash: 55dc3e9934efa153c61322f63b7dde8077442fd9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7b8d0da612a7e742c85b1133908b8d54a4f9b0fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733458"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676047"
 ---
 # <a name="how-to-use-arrays-of-blocking-collections-in-a-pipeline"></a>Como: Usar matrizes de coleções de bloqueio em um pipeline
 
@@ -25,7 +26,7 @@ O exemplo a seguir mostra como usar matrizes de objetos <xref:System.Collections
  [!code-csharp[CDS_BlockingCollection#07](../../../../samples/snippets/csharp/VS_Snippets_Misc/cds_blockingcollection/cs/example07.cs#07)]
  [!code-vb[CDS_BlockingCollection#07](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_blockingcollection/vb/bcpipeline.vb#07)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Collections.Concurrent?displayProperty=nameWithType>
 - [Coleções thread-safe](index.md)

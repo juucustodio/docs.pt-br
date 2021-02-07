@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: criar um pool de objetos usando um ConcurrentBag'
 title: Criar um pool de objetos usando um ConcurrentBag
 ms.date: 05/01/2020
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - object pool, in .NET Framework
 ms.assetid: 0480e7ff-b6f9-480e-a889-2ed4264d8372
-ms.openlocfilehash: c593c9b2011814c49563939f1094b62cd252879c
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: c14f77fcedaab8e7e1ac09eb065d1a8d0198e127
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822900"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676034"
 ---
 # <a name="create-an-object-pool-by-using-a-concurrentbag"></a>Criar um pool de objetos usando um ConcurrentBag
 
@@ -28,6 +29,6 @@ O <xref:System.Collections.Concurrent.ConcurrentBag%601> é usado para armazenar
 [!code-csharp[CDS#04](../../../../samples/snippets/csharp/VS_Snippets_Misc/cds/cs/objectpool.cs#04)]
 [!code-vb[CDS#04](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds/vb/objectpool04.vb#04)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Coleções thread-safe](index.md)

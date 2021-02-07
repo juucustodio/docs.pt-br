@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. ComIntegration. ComIntegrationTxProxyTxCommitted'
 title: System.ServiceModel.ComIntegration.ComIntegrationTxProxyTxCommitted
 ms.date: 03/30/2017
 ms.assetid: f9f5d2aa-04db-4d4d-b802-3bf5d4626e59
-ms.openlocfilehash: e8dfa413771984e87608d31e564ce991410d892b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ddf2906bec36dca200741d5d6c87d3273b47efb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290381"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676892"
 ---
 # <a name="systemservicemodelcomintegrationcomintegrationtxproxytxcommitted"></a>System.ServiceModel.ComIntegration.ComIntegrationTxProxyTxCommitted
 
@@ -17,8 +18,8 @@ System.ServiceModel.ComIntegration.ComIntegrationTxProxyTxCommitted
 
  ComPlus: transação confirmada.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

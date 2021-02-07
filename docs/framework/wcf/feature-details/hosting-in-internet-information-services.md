@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: host no Serviços de Informações da Internet'
 title: Hospedagem no Internet Information Services
 ms.date: 03/30/2017
 helpviewer_keywords:
 - hosting services [WCF], IIS
 ms.assetid: ddae14e8-143c-442d-b660-2046809b2d43
-ms.openlocfilehash: 7bfdf2b057c791da7e15619d69c0314557944093
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 23c81bcfccba316500d333d277907d66e5d457c7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555829"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743129"
 ---
 # <a name="host-in-internet-information-services"></a>Host no Serviços de Informações da Internet
 
@@ -55,13 +56,13 @@ O desenvolvimento e a implantação de um serviço WCF hospedado pelo IIS consis
 
 - Configure o serviço WCF.
 
-Para obter uma discussão sobre cada uma dessas tarefas, consulte [implantando um serviço WCF hospedado por serviços de informações da Internet](deploying-an-internet-information-services-hosted-wcf-service.md).
+Para obter uma discussão sobre cada uma dessas tarefas, consulte [implantando uma informação da Internet Services-Hosted serviço WCF](deploying-an-internet-information-services-hosted-wcf-service.md).
 
 ## <a name="wcf-services-and-aspnet"></a>Serviços WCF e ASP.NET
 
 Os serviços WCF podem ser hospedados lado a lado com o ASP.NET ou no modo de compatibilidade ASP.NET, no qual os serviços podem aproveitar ao máximo os recursos fornecidos pela plataforma de aplicativo Web ASP.NET. Para obter uma discussão sobre esses recursos, consulte [Serviços WCF e ASP.net](wcf-services-and-aspnet.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estendendo a hospedagem com ServiceHostFactory](../extending/extending-hosting-using-servicehostfactory.md)
 - [Implantando um Serviço WCF hospedado do Internet Information Services dos Serviços de Informações da Internet](deploying-an-internet-information-services-hosted-wcf-service.md)

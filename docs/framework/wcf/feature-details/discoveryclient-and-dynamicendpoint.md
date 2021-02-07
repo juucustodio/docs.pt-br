@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: DiscoveryClient e DynamicEndpoint'
 title: DiscoveryClient e DynamicEndpoint
 ms.date: 03/30/2017
 ms.assetid: 7cd418f0-0eab-48d1-a493-7eb907867ec3
-ms.openlocfilehash: 72e5beb1306b679cc3b546d77846b5d1e9bb8bb4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 34f6c5d7d8958f4a28a6bff950f3f6dad81871ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275005"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743168"
 ---
 # <a name="discoveryclient-and-dynamicendpoint"></a>DiscoveryClient e DynamicEndpoint
 
@@ -108,7 +109,7 @@ double result = client.Add(value1, value2);
 Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Descoberta com escopos](../samples/discovery-with-scopes-sample.md)
 - [Basic](../samples/basic-sample.md)

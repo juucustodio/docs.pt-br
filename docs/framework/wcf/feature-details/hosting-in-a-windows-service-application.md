@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Hospedagem em um aplicativo de serviço do Windows'
 title: Hospedando um aplicativo de serviço do Windows
 ms.date: 03/30/2017
 ms.assetid: f4199998-27f3-4dd9-aee4-0a4addfa9f24
-ms.openlocfilehash: 9f5c78adad34b5fed53a50e85f0361eef469de99
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 702fe95b14b9bce3ffaa774e17a9fc1293717e66
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243066"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743116"
 ---
 # <a name="hosting-in-a-windows-service-application"></a>Hospedando um aplicativo de serviço do Windows
 
@@ -37,7 +38,7 @@ Os serviços do Windows (anteriormente conhecidos como serviços do Windows NT) 
   
      Os aplicativos de serviço do Windows que hospedam serviços WCF são implantados e gerenciados da mesma maneira que os aplicativos de serviço do Windows que não usam o WCF.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceProcess>
 - [Passo a passo: criando um aplicativo de Serviço Windows no Designer de componentes](https://go.microsoft.com/fwlink/?LinkId=94875)

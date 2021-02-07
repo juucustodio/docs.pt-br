@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Configurando a serialização em um serviço de fluxo de trabalho'
 title: Configurando a serialização em um serviço de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: aa70b290-a2ee-4c3c-90ea-d0a7665096ae
-ms.openlocfilehash: d1cda33c8a469b4a54b6d282b99c07b23e91543e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e268f82fc3c1f65086e3c6b112e481ad8abed070
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284193"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743233"
 ---
 # <a name="configuring-serialization-in-a-workflow-service"></a>Configurando a serialização em um serviço de fluxo de trabalho
 

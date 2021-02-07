@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Configuration-Based ativação no IIS e WAS'
 title: Ativação com base em configuração no ISS e WAS
 ms.date: 03/30/2017
 ms.assetid: 6a927e1f-b905-4ee5-ad0f-78265da38238
-ms.openlocfilehash: f947a64acdf602d12fcd2319a1b994912ecb331e
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 7515e3f0d3035e1ab93c67980bd00eeb0a063d17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556623"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743356"
 ---
 # <a name="configuration-based-activation-in-iis-and-was"></a>Ativação com base em configuração no ISS e WAS
 
@@ -40,7 +41,7 @@ A ativação baseada em configuração usa os metadados que costumava ser coloca
 > - Os registros em um arquivo de configuração têm precedência sobre as configurações em um. svc,. xamlx,. xoml ou outro arquivo.
 > - Qualquer ' \ ' (barras invertidas) em um URI enviado para o IIS/WAS é convertido automaticamente em um '/' (barra "/"). Se um endereço relativo for adicionado que contenha um ' \ ' e você enviar um URI que usa o endereço relativo, a barra invertida será convertida em uma barra e o IIS não poderá corresponder ao endereço relativo. O IIS envia informações de rastreamento que indicam que não foram encontradas correspondências.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.ServiceActivations%2A>
 - [Serviços de hospedagem](../hosting-services.md)

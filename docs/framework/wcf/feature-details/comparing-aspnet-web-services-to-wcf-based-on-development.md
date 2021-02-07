@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: comparando serviços Web ASP.NET ao WCF com base no desenvolvimento'
 title: Comparando os serviços Web ASP.NET com o WCF baseado em desenvolvimento
 ms.date: 03/30/2017
 ms.assetid: f362d00e-ce82-484f-9d4f-27e579d5c320
-ms.openlocfilehash: c6e83bb234751dc477776f0fa540ffa8688dc667
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: fa9db35070bdde32d509f0e9c25dbf179d64da32
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597586"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743454"
 ---
 # <a name="comparing-aspnet-web-services-to-wcf-based-on-development"></a>Comparando os serviços Web ASP.NET com o WCF baseado em desenvolvimento
 
@@ -201,7 +202,7 @@ public class LineItem
 }
 ```
 
-O Windows Software Development Kit (SDK) inclui uma ferramenta de linha de comando chamada [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Assim como a ferramenta xsd. exe usada com os serviços Web do ASP.NET, o SvcUtil. exe pode gerar definições de tipos de dados do .NET a partir do esquema XML. Os tipos serão contratos de dados se o <xref:System.Runtime.Serialization.DataContractSerializer> puder emitir o XML no formato definido pelo Esquema XML; caso contrário, eles serão destinados à serialização por meio do <xref:System.Xml.Serialization.XmlSerializer>. Svcutil. exe também pode gerar um esquema XML de contratos de dados usando sua `dataContractOnly` opção.
+O Windows Software Development Kit (SDK) inclui uma ferramenta de linha de comando chamada [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Assim como a ferramenta de xsd.exe usada com os serviços Web do ASP.NET, Svcutil.exe pode gerar definições de tipos de dados do .NET a partir do esquema XML. Os tipos serão contratos de dados se o <xref:System.Runtime.Serialization.DataContractSerializer> puder emitir o XML no formato definido pelo Esquema XML; caso contrário, eles serão destinados à serialização por meio do <xref:System.Xml.Serialization.XmlSerializer>. Svcutil.exe também pode gerar um esquema XML de contratos de dados usando sua `dataContractOnly` opção.
 
 > [!NOTE]
 > Embora os serviços Web do ASP.NET usem o <xref:System.Xml.Serialization.XmlSerializer> e o modo de compatibilidade do wcf ASP.net, os serviços WCF imitam o comportamento dos serviços Web ASP.net, a opção de compatibilidade ASP.net não restringe um ao uso do <xref:System.Xml.Serialization.XmlSerializer> . É possível ainda usar o <xref:System.Runtime.Serialization.DataContractSerializer> com os serviços em execução no modo de compatibilidade com o ASP.NET.
@@ -320,7 +321,7 @@ Alguns comportamentos, como o <xref:System.ServiceModel.ServiceBehaviorAttribute
 
 Nos tipos de serviço de programação, a classe <xref:System.ServiceModel.OperationContext> é usada frequentemente. Sua propriedade estática <xref:System.ServiceModel.OperationContext.Current%2A> fornece acesso a informações sobre o contexto em que uma operação está sendo executada. O <xref:System.ServiceModel.OperationContext> é semelhante às classes <xref:System.Web.HttpContext> e <xref:System.EnterpriseServices.ContextUtil>.
 
-## <a name="hosting"></a>Hosting
+## <a name="hosting"></a>Hospedagem
 
 Os serviços Web ASP.NET são compilados em um assembly de biblioteca de classes. Um arquivo denominado arquivo de serviço é fornecido, com a extensão .asmx, contendo uma diretiva `@ WebService` que identifica a classe que contém o código do serviço e o assembly em que ele está localizado.
 
@@ -418,11 +419,11 @@ Somente os serviços hospedados no IIS ou WAS, e que são configurados com HTTP 
 
 ## <a name="client-development"></a>Desenvolvimento do cliente
 
-Os clientes para serviços Web ASP.NET são gerados usando a ferramenta de linha de comando, WSDL.exe, que fornece o URL do arquivo .asmx como entrada. A ferramenta correspondente fornecida pelo WCF é a [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Ele gera um módulo de código com a definição do contrato de serviço e a definição de uma classe de cliente WCF. Ela gera também um arquivo de configuração com o endereço e a associação do serviço.
+Os clientes para serviços Web ASP.NET são gerados usando a ferramenta de linha de comando, WSDL.exe, que fornece o URL do arquivo .asmx como entrada. A ferramenta correspondente fornecida pelo WCF é a [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Ele gera um módulo de código com a definição do contrato de serviço e a definição de uma classe de cliente WCF. Ela gera também um arquivo de configuração com o endereço e a associação do serviço.
 
-Ao programar o cliente de um serviço remoto, geralmente é aconselhável fazer isso de acordo com o padrão assíncrono. O código gerado pela ferramenta WSDL.exe sempre fornece um modelo síncrono e um modelo assíncrono, por padrão. O código gerado pela [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) pode fornecer qualquer um dos padrões. Por padrão, ele é projetado para o modelo síncrono. Se a ferramenta for executada com a opção `/async`, o código gerado será projetado para o modelo assíncrono.
+Ao programar o cliente de um serviço remoto, geralmente é aconselhável fazer isso de acordo com o padrão assíncrono. O código gerado pela ferramenta WSDL.exe sempre fornece um modelo síncrono e um modelo assíncrono, por padrão. O código gerado pela [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) pode fornecer um dos padrões. Por padrão, ele é projetado para o modelo síncrono. Se a ferramenta for executada com a opção `/async`, o código gerado será projetado para o modelo assíncrono.
 
-Não há nenhuma garantia de que os nomes nas classes de cliente do WCF geradas pelo ASP. Por padrão, a ferramenta WSDL. exe da rede corresponde aos nomes nas classes de cliente do WCF geradas pela ferramenta svcutil. exe. Em particular, os nomes das propriedades das classes que precisam ser serializadas por meio do <xref:System.Xml.Serialization.XmlSerializer> recebem, por padrão, o sufixo Property no código gerado pela ferramenta Svcutil.exe, o que não acontece com a ferramenta WSDL.exe.
+Não há nenhuma garantia de que os nomes nas classes de cliente do WCF geradas pelo ASP. Por padrão, a ferramenta de WSDL.exe da rede corresponde aos nomes nas classes de cliente do WCF geradas pela ferramenta de Svcutil.exe. Em particular, os nomes das propriedades das classes que precisam ser serializadas por meio do <xref:System.Xml.Serialization.XmlSerializer> recebem, por padrão, o sufixo Property no código gerado pela ferramenta Svcutil.exe, o que não acontece com a ferramenta WSDL.exe.
 
 ## <a name="message-representation"></a>Representação da mensagem
 
@@ -533,7 +534,7 @@ Essa sintaxe produz uma representação explícita da estrutura das mensagens, e
 
 Essa opção permite que você evite qualquer referência aos cabeçalhos de protocolo infraestruturais no código de um cliente ou serviço: os cabeçalhos são adicionados às mensagens devido à forma como o ponto de extremidade é configurado.
 
-## <a name="service-description"></a>Descrição do Serviço
+## <a name="service-description"></a>Descrição do serviço
 
 A emissão de uma solicitação HTTP GET para o arquivo .asmx de um serviço Web ASP.NET com a consulta WSDL faz com que o ASP.NET gere o WSDL para descrever o serviço. Ela retorna esse WSDL como a resposta à solicitação.
 
@@ -551,7 +552,7 @@ O WSDL que o ASP.NET gera para um serviço pode ser personalizado. As personaliz
 
 Emitir uma solicitação HTTP GET com o WSDL de consulta para o arquivo. svc de um serviço WCF com um ponto de extremidade HTTP hospedado no IIS 51, 6,0 ou WAS faz com que o WCF responda com o WSDL para descrever o serviço. A emissão de uma solicitação HTTP GET com a consulta WSDL para o endereço básico HTTP de um serviço hospedado em um aplicativo .NET terá o mesmo efeito se httpGetEnabled for definido como true.
 
-No entanto, o WCF também responde a solicitações WS-MetadataExchange com WSDL que ele gera para descrever um serviço. Os Serviços Web ASP.NET não têm suporte interno para solicitações WS-MetadataExchange.
+No entanto, o WCF também responde a WS-MetadataExchange solicitações com WSDL que ele gera para descrever um serviço. Os Serviços Web ASP.NET não têm suporte interno para solicitações WS-MetadataExchange.
 
 O WSDL gerado pelo WCF pode ser amplamente personalizado. A classe <xref:System.ServiceModel.Description.ServiceMetadataBehavior> fornece alguns recursos para a personalização do WSDL. O WCF também pode ser configurado para não gerar WSDL, mas sim usar um arquivo WSDL estático em uma determinada URL.
 
@@ -568,7 +569,7 @@ O WSDL gerado pelo WCF pode ser amplamente personalizado. A classe <xref:System.
 </behaviors>
 ```
 
-## <a name="exception-handling"></a>Tratamento de Exceção
+## <a name="exception-handling"></a>Tratamento de exceção
 
 Nos serviços Web ASP.NET, as exceções não tratadas são retornadas aos clientes como falhas SOAP. Você também pode lançar explicitamente as instâncias da classe <xref:System.Web.Services.Protocols.SoapException> e ter mais controle sobre o conteúdo da falha SOAP que é passada para o cliente.
 

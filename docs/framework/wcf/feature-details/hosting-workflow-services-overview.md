@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral dos serviços de fluxo de trabalho de hospedagem'
 title: Visão geral de serviços de fluxo de trabalho de hospedagem
 ms.date: 03/30/2017
 ms.assetid: 19f3704f-06bf-4eeb-8724-5224e02d7ead
-ms.openlocfilehash: 150cb98ab3cef8231489219a16709344cbd19bd5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e183dfd7428c11cf20e731ab4a9975a7388b6f98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743077"
 ---
 # <a name="hosting-workflow-services-overview"></a>Visão geral de serviços de fluxo de trabalho de hospedagem
 

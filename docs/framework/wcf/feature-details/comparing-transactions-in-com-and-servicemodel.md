@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: comparando transações em COM+ e ServiceModel'
 title: Comparando transações em COM+ e ServiceModel
 ms.date: 03/30/2017
 ms.assetid: e493bcdd-b91a-4486-853f-83dbcd1931b7
-ms.openlocfilehash: 30ecbd374e909141dbc944740f90c1b41ac44ed2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9b4e8e0940297e887ec9a3085ebe521afe4d000d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96264902"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743415"
 ---
 # <a name="comparing-transactions-in-com-and-servicemodel"></a>Comparando transações em COM+ e ServiceModel
 
@@ -20,7 +21,7 @@ Este tópico discute como simular o comportamento de um serviço COM+ transacion
 |Atributo COM+|Atributos do WCF|  
 |---------------------|------------------------------------------------------------------------|  
 |RequiresNew|<xref:System.ServiceModel.TransactionFlowAttribute> é definido como <xref:System.ServiceModel.TransactionFlowOption.NotAllowed>.<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> é `true`.<br /><br /> O `TransactionFlow` atributo no elemento de associação é `false` .|  
-|Necessária|<xref:System.ServiceModel.TransactionFlowAttribute> é definido como <xref:System.ServiceModel.TransactionFlowOption.Allowed>.<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> é `true`.<br /><br /> O `TransactionFlow` atributo no elemento de associação é `true` .|  
+|Obrigatório|<xref:System.ServiceModel.TransactionFlowAttribute> é definido como <xref:System.ServiceModel.TransactionFlowOption.Allowed>.<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> é `true`.<br /><br /> O `TransactionFlow` atributo no elemento de associação é `true` .|  
 |Com suporte|Não há equivalente direto. Em geral, você deve adotar o comportamento especificado para `Required` , em vez disso.|  
 |NotSupported|<xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> é `false`.<br /><br /> O `TransactionFlow` atributo no elemento de associação é `false` .|  
 |Desabilitado|Não há equivalente direto. Em geral, você deve adotar o comportamento especificado para `NotSupported` , em vez disso.|

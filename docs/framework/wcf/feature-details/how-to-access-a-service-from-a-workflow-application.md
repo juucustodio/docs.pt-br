@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como acessar um serviço de um aplicativo de fluxo de trabalho'
 title: 'Como: acessar um serviço de um aplicativo de fluxo de trabalho'
 ms.date: 03/30/2017
 ms.assetid: 925ef8ea-5550-4c9d-bb7b-209e20c280ad
-ms.openlocfilehash: 13fae7dec3026e96e3c196467da29fe768a3655f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f8972bf7755c0103d164633d53d8d32508ce2efe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257926"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743090"
 ---
 # <a name="how-to-access-a-service-from-a-workflow-application"></a>Como: acessar um serviço de um aplicativo de fluxo de trabalho
 
@@ -63,7 +64,7 @@ Este tópico descreve como chamar um serviço de fluxo de trabalho de um aplicat
 
 12. Pressione CTRL + F5 para iniciar o serviço e o cliente. O ASP.NET Development Server hospeda o serviço, o Internet Explorer exibe a página de ajuda do WCF e o aplicativo de fluxo de trabalho do cliente é iniciado em uma janela do console e exibe a cadeia de caracteres retornada do serviço ("Olá, mundo").
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de fluxo de trabalho](workflow-services.md)
 - [Como: criar um serviço de fluxo de trabalho com atividades de mensagens](how-to-create-a-workflow-service-with-messaging-activities.md)

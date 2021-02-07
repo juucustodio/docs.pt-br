@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Configurando o Serviços de Informações da Internet 7,0 para Windows Communication Foundation'
 title: Configurando os Serviços de informação da internet 7.0 para o Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: 1050d395-092e-44d3-b4ba-66be3b039ffb
-ms.openlocfilehash: 865e19d6626846481347274774d3ea59f2f7ecdd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e76918d70a922cb32c9bbacd5779aa4f8e991b2c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284206"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743259"
 ---
 # <a name="configuring-internet-information-services-70-for-windows-communication-foundation"></a>Configurando os Serviços de informação da internet 7.0 para o Windows Communication Foundation
 
@@ -71,7 +72,7 @@ O Serviços de Informações da Internet (IIS) 7,0 tem um design modular que per
  </system.webServer>
  ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Arquitetura de ativação do WAS](was-activation-architecture.md)
 - [Configurar o WAS para uso com o WCF](configuring-the-wpa--service-for-use-with-wcf.md)

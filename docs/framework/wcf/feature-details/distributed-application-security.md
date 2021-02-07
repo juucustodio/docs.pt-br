@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: segurança de aplicativo distribuído'
 title: Segurança de aplicativos distribuídos
 ms.date: 03/30/2017
 helpviewer_keywords:
 - distributed application security [WCF]
 - security [WCF], transfer
 ms.assetid: 53928a10-e474-46d0-ab90-5f98f8d7b668
-ms.openlocfilehash: 80878857145c7a4e09106b6e1c4cb9ad68b7680a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 79e206157e7bb0a242b66064d345038d4272cf3b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254240"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743155"
 ---
 # <a name="distributed-application-security"></a>Segurança de aplicativos distribuídos
 
@@ -68,7 +69,7 @@ A segurança do Windows Communication Foundation (WCF) é dividida em três áre
 
  A tabela a seguir mostra os possíveis valores usados ao criar um aplicativo que usa a segurança de transferência. Você pode usar esses valores no código ou nas configurações de associação.  
   
-|Setting|Descrição|  
+|Configuração|Descrição|  
 |-------------|-----------------|  
 |Nenhum|Especifica que o cliente não precisa apresentar nenhuma credencial. Isso se traduz em um cliente anônimo.|  
 |Básico|Especifica autenticação básica. Para obter mais informações, consulte RFC2617, "[autenticação http: autenticação básica e resumida](http://schemas.xmlsoap.org/ws/2004/10/discovery/ws-discovery.pdf)".|  
@@ -81,11 +82,11 @@ A segurança do Windows Communication Foundation (WCF) é dividida em três áre
 
  A tabela a seguir mostra os possíveis valores usados ao criar um aplicativo que usa a segurança de mensagem. Você pode usar esses valores no código ou nas configurações de associação.  
   
-|Setting|Descrição|  
+|Configuração|Descrição|  
 |-------------|-----------------|  
 |Nenhum|Permite que o serviço interaja com clientes anônimos.|  
 |Windows|Permite que as trocas de mensagens SOAP ocorram sob o contexto autenticado de uma credencial do Windows. Usa o mecanismo de negociação SSPI para escolher o protocolo Kerberos ou NTLM como um serviço de autenticação.|  
-|Nome de usuário|Permite que o serviço exija que o cliente seja autenticado com uma credencial de nome de usuário. Observe que o WCF não permite nenhuma operação criptográfica com o nome de usuário, como gerar uma assinatura ou criptografar dados. Dessa forma, o WCF impõe que o transporte seja protegido ao usar credenciais de nome de usuário.|  
+|Nome de Usuário|Permite que o serviço exija que o cliente seja autenticado com uma credencial de nome de usuário. Observe que o WCF não permite nenhuma operação criptográfica com o nome de usuário, como gerar uma assinatura ou criptografar dados. Dessa forma, o WCF impõe que o transporte seja protegido ao usar credenciais de nome de usuário.|  
 |Certificado|Permite que o serviço exija que o cliente seja autenticado usando um certificado.|  
 |CardSpace|Permite que o serviço exija que o cliente seja autenticado usando um CardSpace.|  
   
@@ -103,7 +104,7 @@ A segurança do Windows Communication Foundation (WCF) é dividida em três áre
   
  O modo de segurança de mensagem também permite que você execute a segurança de transferência para que a credencial de serviço seja trocada pelo cliente como parte de uma negociação inicial. Para habilitar a negociação, defina a <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> propriedade como `true` .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de criação de ponto de extremidade](../endpoint-creation-overview.md)
 - [Associações fornecidas pelo sistema](../system-provided-bindings.md)

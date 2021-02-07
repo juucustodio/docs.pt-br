@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como configurar o serviço WCF para interoperar com clientes de serviço Web ASP.NET'
 title: 'Como: configurar um serviço do WCF para interoperar com os clientes de serviço Web do ASP.NET'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 48e1cd90-de80-4d6c-846e-631878955762
-ms.openlocfilehash: 9c241c06f153e4f85c70459ff3c50889057103f5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 180307763054f8dfe5696fb0bbf294ec2b5ee3db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295035"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743389"
 ---
 # <a name="how-to-configure-wcf-service-to-interoperate-with-aspnet-web-service-clients"></a>Como: configurar um serviço do WCF para interoperar com os clientes de serviço Web do ASP.NET
 
@@ -48,7 +49,7 @@ Para configurar um ponto de extremidade de serviço do Windows Communication Fou
  [!code-vb[C_HowTo-WCFServiceAndASMXClient#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto-wcfserviceandasmxclient/vb/program.vb#0)]
  [!code-xml[C_HowTo-WCFServiceAndASMXClient#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto-wcfserviceandasmxclient/common/app.config#1)]
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: criar um ponto de extremidade de serviço em código](how-to-create-a-service-endpoint-in-code.md)
 - [Como: publicar metadados utilizando código para um serviço](how-to-publish-metadata-for-a-service-using-code.md)

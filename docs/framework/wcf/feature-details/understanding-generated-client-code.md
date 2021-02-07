@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Noções básicas sobre o código do cliente gerado'
 title: Noções básicas de código de cliente gerado
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c3f6e4b0-1131-4c94-aa39-a197c5c2f2ca
-ms.openlocfilehash: 22cb7a7b4cd6712d509586cb2ae7699d233eff2a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c95f02a257cd9417b94190c82fe426a1550f1bf0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281619"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732950"
 ---
 # <a name="understanding-generated-client-code"></a>Noções básicas de código de cliente gerado
 
@@ -87,6 +88,6 @@ A [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../service
   
  [!code-csharp[C_GeneratedCodeFiles#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#13)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do cliente WCF](../wcf-client-overview.md)

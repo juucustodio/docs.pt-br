@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como: usar Svcutil.exe para validar o código de serviço compilado'
 title: 'Como: usar Svcutil.exe para validar o código de serviço compilado'
 ms.date: 03/30/2017
 ms.assetid: d0d820fb-41c2-45b8-8f22-0fa5aeebbbaa
-ms.openlocfilehash: 21cd0c13cea764efb60b7b94b699e9a483269da8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b68cdeb61ac1f42cacdcf7d1468623acb8542abe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280657"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734159"
 ---
 # <a name="how-to-use-svcutilexe-to-validate-compiled-service-code"></a>Como: usar Svcutil.exe para validar o código de serviço compilado
 
@@ -37,6 +38,6 @@ Você pode usar a [ferramenta de utilitário de metadados ServiceModel (Svcutil.
 svcutil /validate /serviceName:myServiceName myServiceHost.exe  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramenta Utilitário de Metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

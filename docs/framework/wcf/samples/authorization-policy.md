@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: política de autorização'
 title: Política de autorização
 ms.date: 03/30/2017
 ms.assetid: 1db325ec-85be-47d0-8b6e-3ba2fdf3dda0
-ms.openlocfilehash: a789faae1f6224512f9a8a9ab084c8a82e4a2b87
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: c096585803f07aff157726bce850c09e27c51df5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553656"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732703"
 ---
 # <a name="authorization-policy"></a>Política de autorização
 
@@ -30,7 +31,7 @@ Este exemplo demonstra como implementar uma política de autorização de declar
 
 - Como implementar <xref:System.IdentityModel.Policy.IAuthorizationPolicy> .
 
-O serviço expõe dois pontos de extremidade para se comunicar com o serviço, definido usando o arquivo de configuração App.config. Cada ponto de extremidade consiste em um endereço, uma associação e um contrato. Uma associação é configurada com uma `wsHttpBinding` associação padrão que usa o WS-Security e a autenticação de nome de usuário do cliente. A outra associação é configurada com uma `wsHttpBinding` associação padrão que usa WS-Security e autenticação de certificado do cliente. O [\<behavior>](../../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) especifica que as credenciais de usuário devem ser usadas para autenticação de serviço. O certificado do servidor deve conter o mesmo valor para a `SubjectName` propriedade que o `findValue` atributo no [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) .
+O serviço expõe dois pontos de extremidade para se comunicar com o serviço, definido usando o arquivo de configuração App.config. Cada ponto de extremidade consiste em um endereço, uma associação e um contrato. Uma associação é configurada com uma `wsHttpBinding` associação padrão que usa WS-Security e autenticação de nome de usuário do cliente. A outra associação é configurada com uma `wsHttpBinding` associação padrão que usa WS-Security e autenticação de certificado do cliente. O [\<behavior>](../../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) especifica que as credenciais de usuário devem ser usadas para autenticação de serviço. O certificado do servidor deve conter o mesmo valor para a `SubjectName` propriedade que o `findValue` atributo no [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) .
 
 ```xml
 <system.serviceModel>
@@ -466,7 +467,7 @@ Se o cliente e o serviço não puderem se comunicar, consulte [dicas de soluçã
 
 1. Crie um diretório no computador de serviço.
 
-2. Copie os arquivos de programa do serviço do *\service\bin* para o diretório no computador do serviço. Copie também os arquivos Setup.bat, Cleanup.bat, GetComputerName. vbs e ImportClientCert.bat para o computador de serviço.
+2. Copie os arquivos de programa do serviço do *\service\bin* para o diretório no computador do serviço. Copie também os arquivos Setup.bat, Cleanup.bat, GetComputerName.vbs e ImportClientCert.bat para o computador de serviço.
 
 3. Crie um diretório no computador cliente para os binários do cliente.
 

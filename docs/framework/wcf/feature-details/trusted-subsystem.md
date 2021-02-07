@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: subsistema confiável'
 title: Subsistema de confiança
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1f5ce46b-e259-4bc9-a0b9-89d06fc9341c
-ms.openlocfilehash: 93770c8f4d92a12dcfe29290c84708949d9a1d4a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 41c2943c7794206dba06ef8b5bbee762931ce0c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293384"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733041"
 ---
 # <a name="trusted-subsystem"></a>Subsistema de confiança
 
@@ -217,7 +218,7 @@ Um cliente acessa um ou mais serviços Web que são distribuídos em uma rede. O
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de segurança](security-overview.md)
 - [Modelo de segurança para o Windows Server app Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como: usar Svcutil.exe para exportar metadados do código de serviço compilado'
 title: 'Como: usar Svcutil.exe para exportar metadados de código de serviço compilado'
 ms.date: 03/30/2017
 ms.assetid: 95d0aed3-16a2-4398-89bb-39418eeb7355
-ms.openlocfilehash: f60d0c9ad3f6fc4e9596d466b5eabdaab0f4822f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 509d987ff27f9a05ca59d6065d76f27006f3cb25
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280605"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734198"
 ---
 # <a name="how-to-use-svcutilexe-to-export-metadata-from-compiled-service-code"></a>Como: usar Svcutil.exe para exportar metadados de código de serviço compilado
 
@@ -168,7 +169,7 @@ public class MyService : IPersonFinder
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramenta Utilitário de Metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)
 - [Exportando e importando metadados](exporting-and-importing-metadata.md)

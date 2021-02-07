@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar um token de contexto de segurança para uma sessão segura'
 title: 'Como: criar um token de contexto de segurança para uma sessão segura'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 640676b6-c75a-4ff7-aea4-b1a1524d71b2
-ms.openlocfilehash: 87156eb4c8d28180b492c7ff445b3334515f4a7f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 29e8b694779f2a960f449469438c3aed0d0a815d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286494"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734666"
 ---
 # <a name="how-to-create-a-security-context-token-for-a-secure-session"></a>Como: criar um token de contexto de segurança para uma sessão segura
 

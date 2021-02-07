@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como fazer referência consistente de certificados X. 509'
 title: 'Como: fazer referência de forma consistente aos certificados X.509'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - certificates [WCF], referencing X.509 certificates
 ms.assetid: a6de1c63-e450-4640-ad08-ad7302dbfbfc
-ms.openlocfilehash: b5be8990384178c1954834204c23c0b9cf4a5ad9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cdf5535373490e8cb78e28a8fc0cf881df40e041
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257269"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734796"
 ---
 # <a name="how-to-consistently-reference-x509-certificates"></a>Como: fazer referência de forma consistente aos certificados X.509
 
@@ -39,6 +40,6 @@ Você pode identificar um certificado de várias maneiras: pelo hash do certific
   
 - <xref:System.ServiceModel.Security.Tokens>  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Trabalhando com certificados](working-with-certificates.md)

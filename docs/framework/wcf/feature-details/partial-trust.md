@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: confiança parcial'
 title: Confiança parcial
 ms.date: 03/30/2017
 ms.assetid: 489b1587-9909-4d0e-8c1a-5e83c8f8292b
-ms.openlocfilehash: 844fa65bbb2858fc961091614ba581265bc08be5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 89d714a57c4662958689e536b7bff2d0bfd67e2b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733509"
 ---
 # <a name="partial-trust"></a>Confiança parcial
 

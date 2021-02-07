@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: segurança de transporte HTTP'
 title: Segurança de transporte de HTTP
 ms.date: 03/30/2017
 ms.assetid: d3439262-c58e-4d30-9f2b-a160170582bb
-ms.openlocfilehash: 1af9913ac977b0e1c112ca818a04842af9f1307c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 946fe1066005d66c853ee3ce79c82099306264b0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280553"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734055"
 ---
 # <a name="http-transport-security"></a>Segurança de transporte de HTTP
 
@@ -59,7 +60,7 @@ Para configurar certificados para uso com o IIS 7,0, consulte [Configurando cert
   
  Para obter mais informações sobre como usar a ferramenta de HttpCfg.exe para configurar uma porta com um certificado X. 509, consulte [como: configurar uma porta com um certificado SSL](how-to-configure-a-port-with-an-ssl-certificate.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança de transporte](transport-security.md)
 - [Segurança de mensagem](message-security-in-wcf.md)

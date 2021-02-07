@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Dispatcher do canal personalizado'
 title: Distribuidor de canal personalizado
 ms.date: 03/30/2017
 ms.assetid: 813acf03-9661-4d57-a3c7-eeab497321c6
-ms.openlocfilehash: 38d39cbba15c95a43444108d634d3c30524c70f4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cb56c21b540f359d78e71d8769e9f2d9ccf65a63
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241766"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732586"
 ---
 # <a name="custom-channel-dispatcher"></a>Distribuidor de canal personalizado
 

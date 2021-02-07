@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral do modelo de programação Web HTTP do WCF'
 title: Visão geral de modelo de programação HTTP Web do WCF
 ms.date: 03/30/2017
 ms.assetid: 381fdc3a-6e6c-4890-87fe-91cca6f4b476
-ms.openlocfilehash: 713dd05daa5071f253afd70e735475e49a986aa7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3359b0018458256cb3436e0fb631ee5fa438521e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239010"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732872"
 ---
 # <a name="wcf-web-http-programming-model-overview"></a>Visão geral de modelo de programação HTTP Web do WCF
 
@@ -150,7 +151,7 @@ Como o modelo de programação WEB HTTP do WCF não dá suporte aos protocolos W
 
  Ao chamar WCF WEB HTTP Services usando um <xref:System.ServiceModel.Channels.ChannelFactoryBase%601> para criar um canal, o <xref:System.ServiceModel.Description.WebHttpBehavior> usa o <xref:System.ServiceModel.EndpointAddress> conjunto no arquivo de configuração, mesmo se um diferente <xref:System.ServiceModel.EndpointAddress> for passado para o <xref:System.ServiceModel.Channels.ChannelFactoryBase%601> .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Sindicalização do WCF](wcf-syndication.md)
 - [Modelo de objeto de programação HTTP Web do WCF](wcf-web-http-programming-object-model.md)

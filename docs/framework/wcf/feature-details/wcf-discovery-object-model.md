@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: modelo de objeto de descoberta do WCF'
 title: Modelo de objeto de descoberta do WCF
 ms.date: 03/30/2017
 ms.assetid: 8365a152-eacd-4779-9130-bbc48fa5c5d9
-ms.openlocfilehash: 06984766fa8199a18197255c57492863a888e3aa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e0d1c569329e0f6c5d4a6cfe4271b954299efdac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281931"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732911"
 ---
 # <a name="wcf-discovery-object-model"></a>Modelo de objeto de descoberta do WCF
 

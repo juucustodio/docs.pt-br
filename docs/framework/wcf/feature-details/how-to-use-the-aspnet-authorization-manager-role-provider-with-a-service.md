@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como usar o provedor de função do Gerenciador de autorização ASP.NET com um serviço'
 title: 'Como: usar o provedor de função do gerenciador de autorização ASP.NET com um serviço'
 ms.date: 03/30/2017
 ms.assetid: f21deb81-91ef-49ef-94d6-494785143271
-ms.openlocfilehash: bbdafdd96a32b41d7c6892944ed872e3f8702f0e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 24d6bbbf2181189104fb0df0068130c402fd2f68
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280592"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734120"
 ---
 # <a name="how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service"></a>Como: usar o provedor de função do gerenciador de autorização ASP.NET com um serviço
 
@@ -32,6 +33,6 @@ Quando o ASP.NET hospeda um serviço Web, você pode integrar o Gerenciador de a
   
  Para obter mais informações sobre como integrar um provedor de função ASP.NET a um aplicativo WCF, consulte [como: usar o provedor de função ASP.NET com um serviço](how-to-use-the-aspnet-role-provider-with-a-service.md). Para obter mais informações sobre como usar o Gerenciador de autorização com ASP.NET, consulte [como: usar o Gerenciador de autorização (AzMan) com o ASP.NET 2,0](/previous-versions/msp-n-p/ff649313(v=pandp.10)).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: usar o provedor de função do ASP.NET com um serviço](how-to-use-the-aspnet-role-provider-with-a-service.md)

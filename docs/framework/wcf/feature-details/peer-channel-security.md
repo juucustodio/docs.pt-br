@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: segurança de canal par'
 title: Segurança de canal par
 ms.date: 03/30/2017
 ms.assetid: 2c59b164-3729-44f0-a967-f247c42de662
-ms.openlocfilehash: a237987a0139f0f72f2e49be318da0f62c4f2691
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: af2256c5b40daad7705946cb74c175dffde410f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247857"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733418"
 ---
 # <a name="peer-channel-security"></a>Segurança de canal par
 
@@ -37,7 +38,7 @@ O Peer Channel permite uma variedade de tipos de aplicativos distribuídos que d
   
  O canal par não requer um modelo de identidade específico, desde que o aplicativo escolha um dos tipos de token com suporte. Os aplicativos são completamente proprietários do ciclo de vida dessas identidades e decisões de autenticação.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Protegendo aplicativos de canal par](securing-peer-channel-applications.md)
 - [Conceitos de canal par](peer-channel-concepts.md)

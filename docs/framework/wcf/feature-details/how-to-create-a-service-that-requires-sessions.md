@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar um serviço que requer sessões'
 title: 'Como: criar um serviço que requer sessões'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8a7613ef-0df9-47c3-b8dc-47f42cb1fd8b
-ms.openlocfilehash: 13287d0d5c989fc3a5dc95c6df5d548bca9df4d8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 362aee23437bb7f45af5a265a9d3ef47bf62915c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734458"
 ---
 # <a name="how-to-create-a-service-that-requires-sessions"></a>Como: criar um serviço que requer sessões
 

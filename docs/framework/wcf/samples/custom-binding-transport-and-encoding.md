@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: transporte e codificação de associação personalizada'
 title: Codificação e transporte de associação personalizado
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 6c0b353d-79ee-4e61-b348-be49ad0e9a16
-ms.openlocfilehash: 00af245f49994314ca29e1f5a2debe3af2364999
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d579414d77836abecc685b758e81d0775c3ca142
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241857"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732677"
 ---
 # <a name="custom-binding-transport-and-encoding"></a>Codificação e transporte de associação personalizado
 

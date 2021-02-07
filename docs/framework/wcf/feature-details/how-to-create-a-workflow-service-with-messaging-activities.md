@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como criar um serviço de fluxo de trabalho com atividades de mensagens'
 title: 'Como: criar um serviço de fluxo de trabalho com atividades de mensagens'
 ms.date: 03/30/2017
 ms.assetid: 53d094e2-6901-4aa1-88b8-024b27ccf78b
-ms.openlocfilehash: 21d08d9c3c78cc8774d038018703ffb0c7ceb1fe
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c8f01574c2880e3a75a4db8edea949648d49426c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734536"
 ---
 # <a name="how-to-create-a-workflow-service-with-messaging-activities"></a>Como: criar um serviço de fluxo de trabalho com atividades de mensagens
 
@@ -91,7 +92,7 @@ Este tópico descreve como criar um serviço de fluxo de trabalho simples usando
   
 4. Continue no tópico [como: acessar um serviço de um aplicativo de fluxo de trabalho](how-to-access-a-service-from-a-workflow-application.md) para criar um cliente de fluxo de trabalho que chama esse serviço.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de fluxo de trabalho](workflow-services.md)
 - [Visão geral de serviços de fluxo de trabalho de hospedagem](hosting-workflow-services-overview.md)

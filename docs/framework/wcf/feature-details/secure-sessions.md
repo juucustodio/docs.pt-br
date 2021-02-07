@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: sessões seguras'
 title: Sessões seguras
 ms.date: 03/30/2017
 ms.assetid: 7b50602f-d7b5-42e9-8e92-1f0413df0d8b
-ms.openlocfilehash: fd8406af0c37981b2ddc7ab8ddb0c82c63cbc0b1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8a4a2d23d5a27f5066bd5f004582829e499f714c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288535"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733067"
 ---
 # <a name="secure-sessions"></a>Sessões seguras
 
@@ -37,7 +38,7 @@ Um recurso do Windows Communication Foundation (WCF) é uma sessão confiável q
   
  [Serviços de implantação e projeção](../designing-and-implementing-services.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: habilitar a detecção de reprodução de mensagem](how-to-enable-message-replay-detection.md)
 - [Ataques por repetição](replay-attacks.md)

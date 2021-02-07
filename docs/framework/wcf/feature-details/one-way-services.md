@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: serviços de One-Way'
 title: Serviços unidirecionais
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF [WCF], one-way service contracts
 - service contracts [WCF], defining one-way
 ms.assetid: 19053a36-4492-45a3-bfe6-0365ee0205a3
-ms.openlocfilehash: c4b69d68c52e9f199348544e5838babc9f4d8c2c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c614db0103506022da72e8f4659ae09e8b949a27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248078"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733691"
 ---
 # <a name="one-way-services"></a>Serviços unidirecionais
 
@@ -56,6 +57,6 @@ public interface IOneWayCalculator
   
  Em vez disso, é recomendável que você examine os vários controles no serviço, bem como no cliente, e teste seus cenários de aplicativo para determinar a melhor configuração em ambos os lados. Por exemplo, se o uso de sessões estiver bloqueando o processamento de mensagens em seu serviço, você poderá definir a <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> propriedade como para <xref:System.ServiceModel.InstanceContextMode.PerCall> que cada mensagem possa ser processada por uma instância de serviço diferente e definir a <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> para para permitir que <xref:System.ServiceModel.ConcurrencyMode.Multiple> mais de um thread envie mensagens por vez. Outra abordagem é aumentar as cotas de leitura das associações de serviço e de cliente.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Unidirecional](../samples/one-way.md)

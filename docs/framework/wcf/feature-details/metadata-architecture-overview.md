@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: visão geral da arquitetura de metadados'
 title: Visão geral da arquitetura de metadados
 ms.date: 03/30/2017
 helpviewer_keywords:
 - metadata [WCF], overview
 ms.assetid: 1d37645e-086d-4d68-a358-f3c5b6e8205e
-ms.openlocfilehash: db601a26eb7a7703403432590e359f51231e3ca1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 63e513c340ea37914da5942ac2479af4be6b8519
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248286"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733925"
 ---
 # <a name="metadata-architecture-overview"></a>Visão geral da arquitetura de metadados
 
@@ -93,7 +94,7 @@ O Windows Communication Foundation (WCF) fornece uma infra-estrutura avançada p
 
  Você pode atualizar dinamicamente a associação que você usa para criar um canal para um ponto de extremidade de serviço no caso em que a associação para o ponto de extremidade é alterada ou você deseja criar um canal para um ponto de extremidade que usa o mesmo contrato, mas tem uma associação diferente. Você pode usar a <xref:System.ServiceModel.Description.MetadataResolver> classe estática para recuperar e importar metadados em tempo de execução para pontos de extremidade de serviço que implementam um contrato específico. Você pode usar os objetos importados <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> para criar uma fábrica de cliente ou de canal para o ponto de extremidade desejado.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Description>
 - [Formatos de metadados](metadata-formats.md)

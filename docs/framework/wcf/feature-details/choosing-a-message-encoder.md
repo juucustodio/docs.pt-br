@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: escolha um codificador de mensagem'
 title: Escolhendo um codificador de mensagem
 ms.date: 03/30/2017
 ms.assetid: 2204d82d-d962-4922-a79e-c9a231604f19
-ms.openlocfilehash: 8b53c17cccc74153e652494ec9753302cda8679b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 16f58dd0510584fa94363f63e1a2e56a9de83b52
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295152"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734991"
 ---
 # <a name="choose-a-message-encoder"></a>Escolher um codificador de mensagem
 
@@ -85,6 +86,6 @@ Como essa propriedade só é exposta no binaryMessageEncodingBindingElement, voc
 
 O cliente e o serviço precisam concordar em enviar e receber mensagens compactadas e, portanto, a propriedade compressionFormat deve ser configurada no elemento binaryMessageEncoding no cliente e no serviço. Uma ProtocolException será gerada se o serviço ou o cliente não estiver configurado para compactação, mas o outro lado for. A habilitação da compactação deve ser cuidadosamente considerada. A compactação será útil principalmente se a largura de banda da rede for um afunilamento. No caso em que a CPU é o afunilamento, a compactação diminuirá a taxa de transferência. Os testes apropriados devem ser feitos em um ambiente simulado para descobrir se isso beneficia o aplicativo  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Associações](bindings.md)

@@ -1,5 +1,6 @@
 ---
-title: Como criar uma WSFederationHttpBinding
+description: 'Saiba mais sobre: como criar um WSFederationHttpBinding'
+title: 'Como: criar uma WSFederationHttpBinding'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +9,14 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: e54897d7-aa6c-46ec-a278-b2430c8c2e10
-ms.openlocfilehash: ccc28c46e8be0b835cf08d372ef85b8a66e989ef
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f0b40cf074d5c3f2575c5a94baa2fdd4271f280f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595434"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734393"
 ---
-# <a name="how-to-create-a-wsfederationhttpbinding"></a>Como criar uma WSFederationHttpBinding
+# <a name="how-to-create-a-wsfederationhttpbinding"></a>Como: criar uma WSFederationHttpBinding
 
 No Windows Communication Foundation (WCF), a <xref:System.ServiceModel.WSFederationHttpBinding> classe ( [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) na configuração) fornece um mecanismo para expor um serviço federado. Ou seja, um serviço que exige que os clientes se autentiquem usando um token de segurança emitido por um serviço de token de segurança. Este tópico mostra como configurar um <xref:System.ServiceModel.WSFederationHttpBinding> no código e na configuração. Depois que a associação é criada, você pode configurar um ponto de extremidade para usar essa associação.
 
@@ -24,7 +25,7 @@ No Windows Communication Foundation (WCF), a <xref:System.ServiceModel.WSFederat
 1. Selecione um modo de segurança. O <xref:System.ServiceModel.WSFederationHttpBinding> oferece suporte `Message` , que fornece segurança de ponta a ponta no nível de mensagem, mesmo entre vários saltos e `TransportWithMessageCredential` , que fornece melhor desempenho em casos em que o cliente e o serviço podem fazer uma conexão direta via HTTPS.
 
     > [!NOTE]
-    > O <xref:System.ServiceModel.WSFederationHttpBinding> também dá suporte `None` como modo de segurança. Esse modo não é seguro e é fornecido apenas para fins de depuração. Se um ponto de extremidade de serviço for implantado com um <xref:System.ServiceModel.WSFederationHttpBinding> com seu modo de segurança definido como `None` , a associação de cliente resultante (gerada pela [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)é um <xref:System.ServiceModel.WSHttpBinding> com um modo de segurança de `None` .
+    > O <xref:System.ServiceModel.WSFederationHttpBinding> também dá suporte `None` como modo de segurança. Esse modo não é seguro e é fornecido apenas para fins de depuração. Se um ponto de extremidade de serviço for implantado com um <xref:System.ServiceModel.WSFederationHttpBinding> com seu modo de segurança definido como `None` , a associação de cliente resultante (gerada pela [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)é um <xref:System.ServiceModel.WSHttpBinding> com um modo de segurança de `None` .
 
      Ao contrário de outras associações fornecidas pelo sistema, não é necessário selecionar um tipo de credencial de cliente ao usar o `WSFederationHttpBinding` . Isso ocorre porque o tipo de credencial do cliente é sempre um token emitido. O WCF adquire um token de um emissor especificado e apresenta esse token ao serviço para autenticar o cliente.
 
@@ -32,7 +33,7 @@ No Windows Communication Foundation (WCF), a <xref:System.ServiceModel.WSFederat
 
 3. Opcional. Defina a <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedTokenType%2A> propriedade para o Uniform Resource Identifier (URI) de um tipo de token. Em serviços federados, especifique o tipo de token que o serviço espera. Em clientes federados, especifique o tipo de token que o cliente solicita do serviço de token de segurança.
 
-     Se nenhum tipo de token for especificado, os clientes gerarão tokens de segurança de solicitação WS-Trust (RSTs) sem um URI de tipo de token e os serviços esperam a autenticação de cliente usando um token 1,1 SAML (Security Asserts Markup Language) por padrão.
+     Se nenhum tipo de token for especificado, os clientes gerarão WS-Trust RSTs (tokens de segurança de solicitação) sem um URI de tipo de token, e os serviços esperam a autenticação de cliente usando um token 1,1 de SAML (Security Asserties Markup Language) por padrão.
 
      O URI para um token SAML 1,1 é `http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1` .
 
@@ -110,4 +111,4 @@ O exemplo de código a seguir mostra o código para configurar um `WSFederationH
 
 - [Federação](federation.md)
 - [Exemplo de federação](../samples/federation-sample.md)
-- [Como desabilitar sessões seguranças em uma WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
+- [Como: desabilitar sessões seguras em uma WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)

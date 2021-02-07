@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: processamento de mensagens fora de ordem'
 title: Processamento de mensagem com problema
 ms.date: 03/30/2017
 ms.assetid: 33fc62a5-5d59-461c-a37a-0e1b51ac763d
-ms.openlocfilehash: 7a5042e390231498de4f98abfc0e863cba199943
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4349b7d72c080dff579eda18ce51de99ab5e91fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247999"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733600"
 ---
 # <a name="out-of-order-message-processing"></a>Processamento de mensagem com problema
 
@@ -36,7 +37,7 @@ WorkflowService service = new WorkflowService
 </Sequence>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Channels.ReceiveContext>
 - [Serviços de fluxo de trabalho](workflow-services.md)

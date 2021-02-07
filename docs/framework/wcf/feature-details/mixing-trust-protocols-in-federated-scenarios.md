@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: misturar protocolos de confiança em cenários federados'
 title: Misturando protocolos confiáveis em cenários federados
 ms.date: 03/30/2017
 ms.assetid: d7b5fee9-2246-4b09-b8d7-9e63cb817279
-ms.openlocfilehash: 5ce178c0b2c83469a26993ce6db2d6c87815543b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f882b3728ed791f611a9f71f32840e68d8e17a1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248169"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733717"
 ---
 # <a name="mixing-trust-protocols-in-federated-scenarios"></a>Misturando protocolos confiáveis em cenários federados
 

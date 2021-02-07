@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como criar um serviço de token de segurança'
 title: 'Como: criar um serviço de token de segurança'
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 98e82101-4cff-4bb8-a220-f7abed3556e5
-ms.openlocfilehash: cfe1da7c66f5c64ac3f5346bc23e9b618db38d20
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a3bfe6f97eeccdb31d3b8f4ef6c05a3c15257e91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286455"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734445"
 ---
 # <a name="how-to-create-a-security-token-service"></a>Como: criar um serviço de token de segurança
 
@@ -130,7 +131,7 @@ Um serviço de token de segurança implementa o protocolo definido na especifica
 
  Para obter o código completo de um serviço de token de segurança, consulte [exemplo de Federação](../samples/federation-sample.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IdentityModel.Tokens.SigningCredentials>
 - <xref:System.IdentityModel.Tokens.SecurityKey>

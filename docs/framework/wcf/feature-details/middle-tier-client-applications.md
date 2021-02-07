@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Middle-Tier aplicativos cliente'
 title: Aplicativos cliente de camada intermediária
 ms.date: 03/30/2017
 ms.assetid: f9714a64-d0ae-4a98-bca0-5d370fdbd631
-ms.openlocfilehash: 5019215567f4c9127f2e53fd4cdf0d4a67b84d17
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 90de03bb72e14f023db86e6f8226ae84f7461bee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733808"
 ---
 # <a name="middle-tier-client-applications"></a>Aplicativos cliente de camada intermediária
 
@@ -37,6 +38,6 @@ Este tópico discute vários problemas específicos para aplicativos cliente de 
   
  Além disso, você pode aumentar o desempenho de inicialização para os clientes que usam tipos de dados que são serializáveis usando o <xref:System.Xml.Serialization.XmlSerializer> código de serialização Generate e compile para esses tipos de dados no tempo de execução, o que pode resultar em um desempenho de inicialização lento. A [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) pode melhorar o desempenho de inicialização para esses aplicativos, gerando o código de serialização necessário dos assemblies compilados para o aplicativo. Para obter mais informações, consulte [como: melhorar o tempo de inicialização de aplicativos cliente WCF usando o XmlSerializer](startup-time-of-wcf-client-applications-using-the-xmlserializer.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Usando um cliente WCF para acessar um serviço](accessing-services-using-a-client.md)

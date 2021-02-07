@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: protegendo mensagens usando a segurança da mensagem'
 title: Protegendo as mensagens com a segurança de mensagens
 ms.date: 03/30/2017
 ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
-ms.openlocfilehash: 6aae16b766889f402f774451338ae2cd30162437
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 006caa232ef0ae92dfd27b03d7a20af3f4174c81
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733054"
 ---
 # <a name="securing-messages-using-message-security"></a>Protegendo as mensagens com a segurança de mensagens
 
@@ -70,7 +71,7 @@ Esta seção aborda a segurança de mensagens do WCF ao usar o <xref:System.Serv
 
  Ao usar a segurança de transporte e a segurança de mensagem, o certificado usado para proteger a mensagem no transporte e o nível de mensagem SOAP deve ser o mesmo.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Mensagens de segurança que usam a segurança de transporte](securing-messages-using-transport-security.md)
 - [Segurança de mensagem através do enfileiramento de mensagem](../samples/message-security-over-message-queuing.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: estendendo a hospedagem usando o ServiceHostFactory'
 title: Estendendo a hospedagem com ServiceHostFactory
 ms.date: 03/30/2017
 ms.assetid: bcc5ae1b-21ce-4e0e-a184-17fad74a441e
-ms.openlocfilehash: d2224ea683326679efdad368cf2ff7b2b95f4dba
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cd7749a153f23586bbf570eaf97f5ae849fc522d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273120"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735134"
 ---
 # <a name="extending-hosting-using-servicehostfactory"></a>Estendendo a hospedagem com ServiceHostFactory
 

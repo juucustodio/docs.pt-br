@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: estendendo o ServiceHost e a camada do modelo de serviço'
 title: Estendendo a camada de modelo de serviço e o ServiceHost
 ms.date: 03/30/2017
 helpviewer_keywords:
 - extending service models [WCF]
 ms.assetid: 954c138a-1cd0-45a0-8abe-e4d2b8ff5400
-ms.openlocfilehash: 184719f5c3e2e3830d7e1c9c69b73649b66fff34
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 446c02fbbb2391a4cc9c08c9e42f2194dfbcf9b9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735056"
 ---
 # <a name="extending-servicehost-and-the-service-model-layer"></a>Estendendo a camada de modelo de serviço e o ServiceHost
 

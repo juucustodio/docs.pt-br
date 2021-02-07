@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: correlação de solução de problemas'
 title: Correlação de solução de problemas
 ms.date: 03/30/2017
 ms.assetid: 98003875-233d-4512-a688-4b2a1b0b5371
-ms.openlocfilehash: 71e9cedde95791df3929b795312efd5a73fc3e93
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: de02017f7a86478147cd12a89c37bb7b5bc89a7d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291083"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733015"
 ---
 # <a name="troubleshooting-correlation"></a>Correlação de solução de problemas
 

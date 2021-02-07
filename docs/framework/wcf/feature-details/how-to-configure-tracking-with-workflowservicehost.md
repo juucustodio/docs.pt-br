@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como configurar o acompanhamento com o WorkflowServiceHost'
 title: 'Como: configurar o acompanhamento com WorkflowServiceHost'
 ms.date: 03/30/2017
 ms.assetid: ed1485fe-7529-4351-bca3-8bb915260b17
-ms.openlocfilehash: cf30ace90f86e282d72c4da5f2c3707905360aeb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 11c48c3989ab9b788c1e6834d8cbfe53e2b8a53e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257347"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734822"
 ---
 # <a name="how-to-configure-tracking-with-workflowservicehost"></a>Como: configurar o acompanhamento com WorkflowServiceHost
 
@@ -69,7 +70,7 @@ Este tópico explica como configurar o acompanhamento de um [!INCLUDE[netfx_curr
   
      Para obter mais informações sobre o rastreamento em geral, consulte rastreamento [e acompanhamento de fluxo de trabalho](../../windows-workflow-foundation/workflow-tracking-and-tracing.md). Para obter um exemplo de como configurar o acompanhamento programaticamente, consulte [Configurando o acompanhamento de um fluxo](../../windows-workflow-foundation/configuring-tracking-for-a-workflow.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Configuração simplificada para serviços do WCF](../samples/simplified-configuration-for-wcf-services.md)
 - [Serviços de fluxo de trabalho](workflow-services.md)

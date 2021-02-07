@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: processamento ordenado de mensagens em modo de simultaneidade única'
 title: Processamento ordenado de mensagens em modo de concorrência única
 ms.date: 03/30/2017
 ms.assetid: a90f5662-a796-46cd-ae33-30a4072838af
-ms.openlocfilehash: d70087a6dc1501f9a7f7ed057eae3dad181761ae
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2dd876f1831dda8b388108f238810be333e693be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248013"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733678"
 ---
 # <a name="ordered-processing-of-messages-in-single-concurrency-mode"></a>Processamento ordenado de mensagens em modo de concorrência única
 
@@ -27,7 +28,7 @@ O WCF não faz nenhuma garantia sobre a ordem na qual as mensagens são processa
   
  Se <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> é definido como qualquer outro valor, um <xref:System.InvalidOperationException> é gerado.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Sessões,instanciação e simultaneidade](sessions-instancing-and-concurrency.md)
 - [Simultaneidade](../samples/concurrency.md)

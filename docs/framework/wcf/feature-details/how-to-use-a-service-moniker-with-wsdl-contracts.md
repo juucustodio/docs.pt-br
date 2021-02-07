@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como usar um moniker de serviço com contratos WSDL'
 title: 'Como: usar um moniker de serviço com contratos WSDL'
 ms.date: 03/30/2017
 ms.assetid: a88d9650-bb50-4f48-8c85-12f5ce98a83a
-ms.openlocfilehash: 6b1a6c905008b0232a098f253b9007e5147d71a2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 70a8ef0258cd8490d8e14b6a80e8de0248fa0ae2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280878"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734367"
 ---
 # <a name="how-to-use-a-service-moniker-with-wsdl-contracts"></a>Como: usar um moniker de serviço com contratos WSDL
 
@@ -55,7 +56,7 @@ Há situações em que você talvez queira ter um cliente de interoperabilidade 
   
 7. Execute o aplicativo Visual Basic. Uma caixa de mensagem será exibida com os resultados da chamada de subtração (145, 76,54).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução](../samples/getting-started-sample.md)
 - [Integração com visão geral de aplicativos COM](integrating-with-com-applications-overview.md)

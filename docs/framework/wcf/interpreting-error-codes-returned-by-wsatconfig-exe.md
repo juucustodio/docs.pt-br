@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interpretação de códigos de erro retornados pelo wsatConfig.exe'
 title: Interpretando os códigos de erro retornados pelo wsatConfig.exe
 ms.date: 03/30/2017
 ms.assetid: ab65f22b-0d69-4c21-9aaf-74acef0ca102
-ms.openlocfilehash: c5f423f5054a3a80bc0c730444ca9e90c203e288
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3cde6e3f38ff09ca86159e8f499ba725ec7734f2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732846"
 ---
 # <a name="interpreting-error-codes-returned-by-wsatconfigexe"></a>Interpretando os códigos de erro retornados pelo wsatConfig.exe
 
@@ -68,6 +69,6 @@ Este tópico lista todos os códigos de erro gerados pelo wsatConfig.exe (utilit
 |55|Ocorreu um erro inesperado ao tentar iniciar a sessão de rastreamento ETW.|Contate a Microsoft.|  
 |56|Ocorreu um erro inesperado ao tentar iniciar a sessão de rastreamento ETW.|Contate a Microsoft.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Utilitário de configuração de transações WS-Atomic (wsatConfig.exe)](ws-atomictransaction-configuration-utility-wsatconfig-exe.md)

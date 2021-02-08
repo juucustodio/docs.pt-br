@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral da agregação do WCF'
 title: Visão geral de sindicalização do WCF
 ms.date: 03/30/2017
 ms.assetid: af6d4c39-e5e8-4099-aee6-5261feff9107
-ms.openlocfilehash: 8ffc42987ff03b074e35f594491a0ca5a3adbe46
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ac5b00488d1e9cd6469b619ec6a5e71e8c94441d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239049"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779511"
 ---
 # <a name="wcf-syndication-overview"></a>Visão geral de sindicalização do WCF
 
@@ -25,6 +26,6 @@ O Windows Communication Foundation (WCF) fornece suporte para expor feeds de dis
 
  A plataforma de distribuição do WCF dá suporte a RSS 2,0 e Atom 1,0.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de programação WCF Web HTTP](wcf-web-http-programming-model.md)

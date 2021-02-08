@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: comportamentos de segurança no WCF'
 title: Comportamentos de segurança no WCF
 ms.date: 03/30/2017
 ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0
-ms.openlocfilehash: 4e8452d2beb93c9ae59ef6535f45445352a48e22
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a9ebdc44b3770ab4d0cf931db4bf23c9a4cd8e4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288327"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779849"
 ---
 # <a name="security-behaviors-in-wcf"></a>Comportamentos de segurança no WCF
 
@@ -239,7 +240,7 @@ No Windows Communication Foundation (WCF), os comportamentos modificam o comport
 </behaviors>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Auditoria](auditing-security-events.md)
 - [Modelo de segurança para o Windows Server app Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

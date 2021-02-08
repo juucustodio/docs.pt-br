@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Proteção Estendida para Autenticação visão geral'
 title: Proteção estendida para visão geral de autenticação
 ms.date: 03/30/2017
 ms.assetid: 3d2ceffe-a7bf-4bd9-a5a2-9406423bd7f8
-ms.openlocfilehash: 0537e6147a7b43dabcb4c3612fc58da11dfd4d6d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5f79092d71266176af3916e919be0018793959ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255540"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780265"
 ---
 # <a name="extended-protection-for-authentication-overview"></a>Proteção estendida para visão geral de autenticação
 
@@ -25,7 +26,7 @@ Proteção Estendida para Autenticação ajuda a proteger contra ataques MITM (M
   
  O servidor pode ter os seguintes níveis de proteção:  
   
-- nenhuma. Nenhuma validação de associação de canal é executada. Esse é o comportamento de todos os servidores que não foram atualizados.  
+- Nenhum. Nenhuma validação de associação de canal é executada. Esse é o comportamento de todos os servidores que não foram atualizados.  
   
 - Parcial. Todos os clientes que foram atualizados devem fornecer informações de associação de canal para o servidor. Os clientes que não foram atualizados não precisam fazer isso. Essa é uma opção intermediária que permite a compatibilidade de aplicativos.  
   
@@ -33,6 +34,6 @@ Proteção Estendida para Autenticação ajuda a proteger contra ataques MITM (M
   
  Para obter mais informações, consulte o exemplo de proteção do Win7 CBT/Extended.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de segurança para o Windows Server app Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

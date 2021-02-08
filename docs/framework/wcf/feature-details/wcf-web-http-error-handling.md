@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tratamento de erro do WCF Web HTTP'
 title: Tratamento de erros HTTP Web do WCF
 ms.date: 03/30/2017
 ms.assetid: 02891563-0fce-4c32-84dc-d794b1a5c040
-ms.openlocfilehash: cfbf98c69370764a9526c32459d43521177476e3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 88483c249bc1b6b866517ca10b348c0885fc34fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779472"
 ---
 # <a name="wcf-web-http-error-handling"></a>Tratamento de erros HTTP Web do WCF
 
@@ -54,7 +55,7 @@ public string Operation2()
   
  <xref:System.ServiceModel.Web.WebFaultException> é um <xref:System.ServiceModel.FaultException> e, portanto, pode ser usado como o modelo de programação de exceção de falha para serviços que expõem pontos de extremidade SOAP, bem como pontos de extremidade http da Web.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de programação WCF Web HTTP](wcf-web-http-programming-model.md)
 - [Formatação HTTP Web do WCF](wcf-web-http-formatting.md)

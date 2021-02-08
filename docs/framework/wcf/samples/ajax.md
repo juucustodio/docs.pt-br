@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: AJAX'
 title: AJAX
 ms.date: 03/30/2017
 ms.assetid: 9e0eb40a-69ef-4821-bdc3-45a9b71a58c3
-ms.openlocfilehash: 4e54daedf0906200c47a7ab0985b104739c6a7be
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c4e440c80a3b802e8934a767dc70f3079a3f6922
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249613"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778978"
 ---
 # <a name="ajax"></a>AJAX
 

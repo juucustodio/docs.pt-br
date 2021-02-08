@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como criar um serviço que aceite dados arbitrários usando o modelo de programação REST do WCF'
 title: 'Como: criar um serviço que aceita dados arbitrários usando o modelo de programação WCF REST'
 ms.date: 03/30/2017
 ms.assetid: e566c15a-b600-4e4a-be3a-4af43e767dae
-ms.openlocfilehash: 9c9899705861cc1cf2cda2559c30a0a60d8cc635
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a08e611b51d92e070f18620d61a2b95de2cd6cfb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96237826"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780317"
 ---
 # <a name="how-to-create-a-service-that-accepts-arbitrary-data-using-the-wcf-rest-programming-model"></a>Como: criar um serviço que aceita dados arbitrários usando o modelo de programação WCF REST
 
@@ -195,7 +196,7 @@ namespace ReceiveRawData
   
 - Ao compilar a referência de código System.ServiceModel.dll e System.ServiceModel.Web.dll  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [UriTemplate and UriTemplateTable](uritemplate-and-uritemplatetable.md)
 - [Modelo de programação WCF Web HTTP](wcf-web-http-programming-model.md)

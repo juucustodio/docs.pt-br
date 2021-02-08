@@ -1,5 +1,6 @@
 ---
-title: Reliable Services
+description: 'Saiba mais sobre: Reliable Services'
+title: Serviços confiáveis
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF [WCF], reliable messaging
@@ -8,14 +9,14 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], reliable sessions
 - service contracts [WCF], reliable services
 ms.assetid: 07814ed0-0775-47f2-987b-d8134fdd5099
-ms.openlocfilehash: d028af80a30fd18b6aa6e9678e7fd8788e7b7b95
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c38f949e57b1891da2433875571443656c7044dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779199"
 ---
-# <a name="reliable-services"></a>Reliable Services
+# <a name="reliable-services"></a>Serviços confiáveis
 
 As filas e as sessões confiáveis são os recursos de Windows Communication Foundation (WCF) que implementam mensagens confiáveis. Este tópico explica os recursos de mensagens confiáveis do WCF.  
   
@@ -47,7 +48,7 @@ As filas e as sessões confiáveis são os recursos de Windows Communication Fou
   
  A separação, combinada com transferências de mensagens confiáveis entre filas, permite que os aplicativos que são livremente acoplados se comuniquem de forma confiável. Ao contrário de sessões confiáveis, a origem e o destino não precisam estar em execução ao mesmo tempo. Isso habilita implicitamente cenários em que as filas são, na verdade, usadas como um mecanismo de nivelamento de carga quando a taxa de produção de mensagem da origem e a taxa de destino do consumo de mensagem não coincidem. Para obter mais informações sobre filas, consulte [filas no WCF](./feature-details/queues-in-wcf.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de sessões confiáveis](./feature-details/reliable-sessions-overview.md)
 - [Enfileiramento no WCF](./feature-details/queuing-in-wcf.md)

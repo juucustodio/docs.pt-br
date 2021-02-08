@@ -1,17 +1,18 @@
 ---
-title: Como criar uma associação duplex federada
+description: 'Saiba mais sobre: como criar uma associação federada duplex'
+title: 'Como: criar uma associação duplex federada'
 ms.date: 03/30/2017
 ms.assetid: 4331d2bc-5455-492a-9189-634a82597726
-ms.openlocfilehash: e93651ce9fe9dae55c299fcb061da6bdc4b6bc5e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 92d5eeeffab88d88aa245b51738048dced2d5d2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779901"
 ---
-# <a name="how-to-create-a-duplex-federated-binding"></a>Como criar uma associação duplex federada
+# <a name="how-to-create-a-duplex-federated-binding"></a>Como: criar uma associação duplex federada
 
-<xref:System.ServiceModel.WSFederationHttpBinding>o só dá suporte aos contratos de troca de datagrama e solicitação/resposta. Para usar o contrato de troca de mensagens duplex, você deve criar uma associação personalizada. Os procedimentos a seguir mostram como fazer isso na configuração, usando a segurança do modo de mensagem para os transportes HTTP e TCP e usando a segurança de modo misto para o transporte TCP. O código de exemplo mostrando todas as 3 associações está no final deste tópico.
+<xref:System.ServiceModel.WSFederationHttpBinding> o só dá suporte aos contratos de troca de datagrama e solicitação/resposta. Para usar o contrato de troca de mensagens duplex, você deve criar uma associação personalizada. Os procedimentos a seguir mostram como fazer isso na configuração, usando a segurança do modo de mensagem para os transportes HTTP e TCP e usando a segurança de modo misto para o transporte TCP. O código de exemplo mostrando todas as 3 associações está no final deste tópico.
 
 Você também pode criar a associação no código. Para obter uma descrição da pilha de elementos de associação a ser criada, consulte [como: criar uma associação personalizada usando o SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md).
 

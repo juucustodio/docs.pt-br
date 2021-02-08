@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como: configurar o comportamento ocioso com o WorkflowServiceHost'
 title: 'Como: configurar o comportamento ocioso com WorkflowServiceHost'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1bb93652-d687-46ff-bff6-69ecdcf97437
-ms.openlocfilehash: 8491fccee9f148412aed89280ccd20b315d25da6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 530ab1833f3f8bb91d39b19161070bc75c45f11a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257360"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780044"
 ---
 # <a name="how-to-configure-idle-behavior-with-workflowservicehost"></a>Como: configurar o comportamento ocioso com WorkflowServiceHost
 
@@ -42,7 +43,7 @@ Os fluxos de trabalho ficam ociosos quando encontram um indicador que deve ser r
      [!code-csharp[Wf_SvcHost_Idle_persist#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/wf_svchost_idle_persist/cs/source.cs#1)]
      [!code-vb[Wf_SvcHost_Idle_persist#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/wf_svchost_idle_persist/vb/source.vb#1)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Extensibilidade de host de serviço do fluxo de trabalho](workflow-service-host-extensibility.md)
 - [Configuração simplificada](../simplified-configuration.md)

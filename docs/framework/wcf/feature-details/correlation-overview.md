@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral da correlação'
 title: Visão geral de correlação
 ms.date: 03/30/2017
 ms.assetid: edcc0315-5d26-44d6-a36d-ea554c418e9f
-ms.openlocfilehash: 3cc0bc49ad464401ccff769fd5873d5b7e19dccc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 66413a5289a8ff6172c7167a972754e3e0ba4279
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293709"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780382"
 ---
 # <a name="correlation-overview"></a>Visão geral de correlação
 
@@ -29,6 +30,6 @@ Para obter mais informações sobre correlação de protocolo, consulte [duplex 
 
 A correlação baseada em conteúdo usa alguma informação na mensagem para associá-la a uma instância específica. Diferentemente da correlação baseada em protocolo, a correlação baseada em conteúdo exige que o autor do aplicativo declare explicitamente onde esses dados podem ser encontrados em cada mensagem relacionada. As atividades que usam a correlação baseada em conteúdo especificam esses dados de mensagem usando um <xref:System.ServiceModel.MessageQuerySet> . A correlação baseada em conteúdo é útil ao se comunicar com serviços que não usam uma das associações de contexto, como <xref:System.ServiceModel.BasicHttpContextBinding> .
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [NetContextExchangeCorrelation](/previous-versions/dotnet/netframework-4.0/ee662963(v=vs.100))

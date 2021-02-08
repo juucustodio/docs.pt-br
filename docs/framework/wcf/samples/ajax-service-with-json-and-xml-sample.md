@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serviço AJAX com JSON e XML de exemplo'
 title: Serviço de AJAX com exemplo de JSON e XML
 ms.date: 03/30/2017
 ms.assetid: 8ea5860d-0c42-4ae9-941a-e07efdd8e29c
-ms.openlocfilehash: 8f70b6aa2e61d01a075a6edb3fe490ef593e73b0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e47f6cbd7e4659488325e158e5594ca94322c520
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575947"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779056"
 ---
 # <a name="ajax-service-with-json-and-xml-sample"></a>Serviço de AJAX com exemplo de JSON e XML
 
@@ -20,11 +21,11 @@ Este exemplo mostra como alternar o tipo de resposta de uma operação entre JSO
 > [!NOTE]
 > O procedimento de instalação e as instruções de Build para este exemplo estão localizados no final deste tópico.
 
-Para habilitar o uso de clientes non-ASP.NET AJAX, use <xref:System.ServiceModel.Activation.WebServiceHostFactory> (não <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> ) no arquivo. svc. <xref:System.ServiceModel.Activation.WebServiceHostFactory>Adiciona um <xref:System.ServiceModel.Description.WebHttpEndpoint> ponto de extremidade padrão ao serviço. O ponto de extremidade está configurado em um endereço vazio relativo ao arquivo. svc; Isso significa que o endereço do serviço é `http://localhost/ServiceModelSamples/service.svc` , sem nenhum sufixo adicional além do nome da operação.
+Para habilitar o uso de clientes non-ASP.NET AJAX, use <xref:System.ServiceModel.Activation.WebServiceHostFactory> (não <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> ) no arquivo. svc. <xref:System.ServiceModel.Activation.WebServiceHostFactory> Adiciona um <xref:System.ServiceModel.Description.WebHttpEndpoint> ponto de extremidade padrão ao serviço. O ponto de extremidade está configurado em um endereço vazio relativo ao arquivo. svc; Isso significa que o endereço do serviço é `http://localhost/ServiceModelSamples/service.svc` , sem nenhum sufixo adicional além do nome da operação.
 
 `<%@ServiceHost language="c#" Debug="true" Service="Microsoft.Samples.XmlAjaxService.CalculatorService" Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>`
 
-A seção a seguir no Web. config pode ser usada para fazer alterações de configuração adicionais no ponto de extremidade. Ela poderá ser removida se nenhuma alteração extra for necessária.
+A seção a seguir no Web.config pode ser usada para fazer alterações de configuração adicionais no ponto de extremidade. Ela poderá ser removida se nenhuma alteração extra for necessária.
 
 ```xml
 <system.serviceModel>
@@ -59,7 +60,7 @@ MathResult DoMathJson(double n1, double n2);
 
 Observe que em ambos os casos as operações retornam um tipo complexo, `MathResult` , que é um tipo de contrato de dados padrão do WCF.
 
-A página da Web do cliente XmlAjaxClientPage. htm contém o código JavaScript que invoca uma das duas operações anteriores quando o usuário clica nos botões **executar cálculo (retornar JSON)** ou **executar cálculo (XML de retorno)** na página. O código para invocar o serviço constrói um corpo JSON e o envia usando HTTP POST. A solicitação é criada manualmente em JavaScript, diferentemente do exemplo de [serviço AJAX básico](basic-ajax-service.md) e de outros exemplos usando o ASP.NET AJAX.
+A página da Web do cliente XmlAjaxClientPage.htm contém o código JavaScript que invoca uma das duas operações anteriores quando o usuário clica nos botões **executar cálculo (retornar JSON)** ou **executar cálculo (retornar XML)** na página. O código para invocar o serviço constrói um corpo JSON e o envia usando HTTP POST. A solicitação é criada manualmente em JavaScript, diferentemente do exemplo de [serviço AJAX básico](basic-ajax-service.md) e de outros exemplos usando o ASP.NET AJAX.
 
 ```csharp
 // Create HTTP request
@@ -108,7 +109,7 @@ xmlHttp.onreadystatechange=function(){
 
 2. Crie a solução XmlAjaxService. sln, conforme descrito em [criando os exemplos de Windows Communication Foundation](building-the-samples.md).
 
-3. Navegue até `http://localhost/ServiceModelSamples/XmlAjaxClientPage.htm` (não abra XmlAjaxClientPage. htm no navegador do diretório do projeto).
+3. Navegue até `http://localhost/ServiceModelSamples/XmlAjaxClientPage.htm` (não abra XmlAjaxClientPage.htm no navegador do diretório do projeto).
 
 ## <a name="see-also"></a>Consulte também
 

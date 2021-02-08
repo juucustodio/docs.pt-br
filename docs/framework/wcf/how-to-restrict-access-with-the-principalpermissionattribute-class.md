@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como restringir o acesso com a classe PrincipalPermissionattribute'
 title: 'Como: restringir o acesso com a classe PrincipalPermissionAttribute'
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - WCF, authorization
 - WCF, security
 ms.assetid: 5162f5c4-8781-4cc4-9425-bb7620eaeaf4
-ms.openlocfilehash: 92d27548c510a19bf36ffaffb532f48461146d99
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 533bd3358d5e337071c6419264d1dac03b8987ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96269607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779342"
 ---
 # <a name="how-to-restrict-access-with-the-principalpermissionattribute-class"></a>Como: restringir o acesso com a classe PrincipalPermissionAttribute
 
@@ -86,7 +87,7 @@ Controlar o acesso a recursos em um computador de domínio do Windows é uma tar
      [!code-csharp[c_PrincipalPermissionAttribute#3](../../../samples/snippets/csharp/VS_Snippets_CFX/c_principalpermissionattribute/cs/source.cs#3)]
      [!code-vb[c_PrincipalPermissionAttribute#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_principalpermissionattribute/vb/source.vb#3)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
 - <xref:System.Security.Permissions.SecurityAction.Demand>

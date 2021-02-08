@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serviço AJAX sem configuração'
 title: Serviço AJAX sem configuração
 ms.date: 03/30/2017
 ms.assetid: e6db7acd-5679-45d4-b98a-8449c6873838
-ms.openlocfilehash: ab3731ab6aeb80e0e46228b8bf702b0fe5c6e6e9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 137f0845f042d1919c1cb070c91a473ff81863cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575895"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779030"
 ---
 # <a name="ajax-service-without-configuration"></a>Serviço AJAX sem configuração
 
@@ -29,7 +30,7 @@ O suporte ao AJAX no WCF é otimizado para uso com o ASP.NET AJAX por meio do `S
 %>
 ```
 
-<xref:System.ServiceModel.Activation.WebScriptServiceHostFactory>adiciona automaticamente um <xref:System.ServiceModel.Description.WebScriptEndpoint> ao serviço. Se nenhuma alteração de configuração precisar ser feita no ponto de extremidade, a `<system.ServiceModel>` seção poderá ser completamente removida do arquivo Web. config para o serviço. O arquivo Web. config contém algumas configurações de ASP.NET, que são usadas pelo ConfigFreeClientPage. aspx. Se esse não for o caso, todo o arquivo Web. config poderá ser removido.
+<xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> adiciona automaticamente um <xref:System.ServiceModel.Description.WebScriptEndpoint> ao serviço. Se nenhuma alteração de configuração precisar ser feita no ponto de extremidade, a `<system.ServiceModel>` seção poderá ser completamente removida do arquivo de Web.config para o serviço. O arquivo de Web.config contém algumas configurações de ASP.NET, que são usadas pelo ConfigFreeClientPage. aspx. Se esse não for o caso, todo o arquivo de Web.config poderia ser removido.
 
 > [!IMPORTANT]
 > Os exemplos podem mais ser instalados no seu computador. Verifique o seguinte diretório (padrão) antes de continuar.

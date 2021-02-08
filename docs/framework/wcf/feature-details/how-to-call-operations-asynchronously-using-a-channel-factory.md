@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como chamar operações de forma assíncrona usando uma fábrica de canais'
 title: 'Como: chamar operações assíncronas usando uma fábrica de canais'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: cc17dd47-b9ad-451c-a362-e36e0aac7ba0
-ms.openlocfilehash: c288df6059cfe1cd1f4ff35cebffafd3fddb38d1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 081211d0202550e93e3aabb5c8b5b5b5adbcdcde
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257529"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780187"
 ---
 # <a name="how-to-call-operations-asynchronously-using-a-channel-factory"></a>Como: chamar operações assíncronas usando uma fábrica de canais
 

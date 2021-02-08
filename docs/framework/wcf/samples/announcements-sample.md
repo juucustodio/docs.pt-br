@@ -1,21 +1,22 @@
 ---
+description: 'Saiba mais sobre: exemplo de anúncios'
 title: Exemplo de anúncios
 ms.date: 03/30/2017
 ms.assetid: 954a75e4-9a97-41d6-94fc-43765d4205a9
-ms.openlocfilehash: c3824fb0dc7ab4169c309d1a5154127d6bc3b78f
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 076efed31f862f6de68e924446528d682a62824a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76747002"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778939"
 ---
 # <a name="announcements-sample"></a>Exemplo de anúncios
 
 Este exemplo mostra como usar a funcionalidade de anúncio do recurso de descoberta. Os anúncios permitem que os serviços enviem mensagens de comunicado que contêm metadados sobre o serviço. Por padrão, um comunicado de saudação é enviado quando o serviço é iniciado e um comunicado de adeus é enviado quando o serviço é desligado. Esses comunicados podem ser multicast ou podem ser enviados ponto a ponto. Este exemplo consiste em dois projetos serviço e cliente.
 
-## <a name="service"></a>Service
+## <a name="service"></a>Serviço
 
-Este projeto contém um serviço de calculadora auto-hospedado. No método `Main`, um host de serviço é criado e um ponto de extremidade de serviço é adicionado a ele. Em seguida, um <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> é criado. Para habilitar anúncios, um ponto de extremidade de anúncio deve ser adicionado ao <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>. Nesse caso, um ponto de extremidade padrão, usando o multicast UDP, é adicionado como o ponto de extremidade do anúncio. Isso transmite os anúncios por um endereço UDP conhecido.
+Este projeto contém um serviço de calculadora auto-hospedado. No `Main` método, um host de serviço é criado e um ponto de extremidade de serviço é adicionado a ele. Em seguida, um <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> é criado. Para habilitar anúncios, um ponto de extremidade de anúncio deve ser adicionado ao <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> . Nesse caso, um ponto de extremidade padrão, usando o multicast UDP, é adicionado como o ponto de extremidade do anúncio. Isso transmite os anúncios por um endereço UDP conhecido.
 
 ```csharp
 Uri baseAddress = new Uri("http://localhost:8000/" + Guid.NewGuid().ToString());
@@ -40,7 +41,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), base
 
 ## <a name="client"></a>Cliente
 
-Neste projeto, observe que o cliente hospeda um <xref:System.ServiceModel.Discovery.AnnouncementService>. Além disso, dois delegados são registrados com eventos. Esses eventos ditam o que o cliente faz quando anúncios online e offline são recebidos.
+Neste projeto, observe que o cliente hospeda um <xref:System.ServiceModel.Discovery.AnnouncementService> . Além disso, dois delegados são registrados com eventos. Esses eventos ditam o que o cliente faz quando anúncios online e offline são recebidos.
 
 ```csharp
 // Create an AnnouncementService instance
@@ -51,7 +52,7 @@ announcementService.OnlineAnnouncementReceived += OnOnlineEvent;
 announcementService.OfflineAnnouncementReceived += OnOfflineEvent;
 ```
 
-Os métodos `OnOnlineEvent` e `OnOfflineEvent` lidam com as mensagens de anúncio de saudação e adeus, respectivamente.
+Os `OnOnlineEvent` `OnOfflineEvent` métodos e lidam com as mensagens de anúncio de saudação e adeus, respectivamente.
 
 ```csharp
 static void OnOnlineEvent(object sender, AnnouncementEventArgs e)
@@ -73,19 +74,19 @@ static void OnOfflineEvent(object sender, AnnouncementEventArgs e)
 
 1. Este exemplo usa pontos de extremidade HTTP e para executar este exemplo, as ACLs de URL adequadas devem ser adicionadas. Para obter mais informações, consulte [Configurando http e HTTPS](../feature-details/configuring-http-and-https.md). A execução do comando a seguir em um privilégio elevado deve adicionar as ACLs apropriadas. Talvez você queira substituir seu domínio e nome de usuário pelos argumentos a seguir se o comando não funcionar como está. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`
 
-2. {1&gt;Compile a solução.&lt;1}
+2. Compile a solução.
 
-3. Execute o aplicativo Client. exe.
+3. Execute o aplicativo client.exe.
 
-4. Execute o aplicativo Service. exe. Observação o cliente recebe um comunicado online.
+4. Execute o aplicativo service.exe. Observação o cliente recebe um comunicado online.
 
-5. Feche o aplicativo Service. exe. Observação o cliente recebe um anúncio offline.
+5. Feche o aplicativo service.exe. Observação o cliente recebe um anúncio offline.
 
 > [!IMPORTANT]
 > Os exemplos podem já estar instalados no seu computador. Verifique o seguinte diretório (padrão) antes de continuar.
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todas as Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] amostras. Este exemplo está localizado no seguinte diretório.
+> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Announcements`

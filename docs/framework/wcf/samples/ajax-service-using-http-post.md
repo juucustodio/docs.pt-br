@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serviço AJAX usando HTTP POST'
 title: Serviço AJAX utilizando HTTP POST
 ms.date: 03/30/2017
 ms.assetid: 1ac80f20-ac1c-4ed1-9850-7e49569ff44e
-ms.openlocfilehash: 143585b40a493983b7265971a17224165de6f36d
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4d319d4120310d79af5bda6026a2192d1270943b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575882"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779095"
 ---
 # <a name="ajax-service-using-http-post"></a>Serviço AJAX utilizando HTTP POST
 

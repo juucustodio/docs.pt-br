@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: endereçamento'
 title: Endereçando
 ms.date: 03/30/2017
 ms.assetid: d438e6f2-d0f3-43aa-b259-b51b5bda2e64
-ms.openlocfilehash: 77a1321f2babb93ab39eeac944de06fc8c2634c3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 40c13515f0a53e7e8e4dbf10708cebe0b2886a6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249690"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779173"
 ---
 # <a name="addressing"></a>Endereçando
 

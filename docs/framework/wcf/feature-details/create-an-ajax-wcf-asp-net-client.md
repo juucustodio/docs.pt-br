@@ -1,13 +1,14 @@
 ---
-title: Criar um serviço WCF habilitado para AJAX e um cliente ASP.NET no Visual Studio
+description: 'Saiba mais sobre: como criar um serviço AJAX-Enabled WCF e um cliente ASP.NET que acessa o serviço'
+title: Criar um serviço AJAX-Enabled WCF e um cliente ASP.NET no Visual Studio
 ms.date: 08/17/2018
 ms.assetid: 95012df8-2a66-420d-944a-8afab261013e
-ms.openlocfilehash: 0bfe55c68f68bfef7b7ec2034413b53d41b0c785
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: 59b0cab9b28dd68b27529b5d880138cc283144a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91609350"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780343"
 ---
 # <a name="how-to-create-an-ajax-enabled-wcf-service-and-an-aspnet-client-that-accesses-the-service"></a>Como criar um serviço do WCF habilitado pelo AJAX em um cliente do ASP.NET que acessa o serviço
 
@@ -19,7 +20,7 @@ Este tópico mostra como usar o Visual Studio para criar um serviço de Windows 
 
 1. No menu **arquivo** , selecione **novo**  >  **projeto**
 
-1. Na caixa de diálogo **novo projeto** , expanda a **Installed**  >  categoria da Web do**Visual C#** instalado  >  **Web** e selecione **ASP.NET aplicativo Web (.NET Framework)**.
+1. Na caixa de diálogo **novo projeto** , expanda a   >  categoria da Web do **Visual C#** instalado  >   e selecione **ASP.NET aplicativo Web (.NET Framework)**.
 
 1. Nomeie o projeto como **sanduícheservices** e clique em **OK**.
 
@@ -31,7 +32,7 @@ Este tópico mostra como usar o Visual Studio para criar um serviço de Windows 
 
 1. Clique com o botão direito do mouse no projeto sanduícheservices em **Gerenciador de soluções** e selecione **Adicionar**  >  **novo item**.
 
-1. Na caixa de diálogo **Adicionar novo item** , expanda a **Installed**  >  categoria da Web do**Visual C#** instalado  >  **Web** e selecione o modelo de **formulário da Web** .
+1. Na caixa de diálogo **Adicionar novo item** , expanda a   >  categoria da Web do **Visual C#** instalado  >   e selecione o modelo de **formulário da Web** .
 
 1. Aceite o nome padrão (**WebForm1**) e, em seguida, selecione **Adicionar**.
 
@@ -49,7 +50,7 @@ Este tópico mostra como usar o Visual Studio para criar um serviço de Windows 
 
 1. Clique com o botão direito do mouse no projeto sanduícheservices em **Gerenciador de soluções** e selecione **Adicionar**  >  **novo item**.
 
-1. Na caixa de diálogo **Adicionar novo item** , expanda a **Installed**  >  categoria da Web do**Visual C#** instalado  >  **Web** e selecione o modelo **serviço WCF (habilitado para Ajax)** .
+1. Na caixa de diálogo **Adicionar novo item** , expanda a   >  categoria da Web do **Visual C#** instalado  >   e selecione o modelo **serviço WCF (habilitado para Ajax)** .
 
    ![Modelo de item do serviço WCF (habilitado para AJAX) no Visual Studio](./media/create-an-ajax-wcf-asp-net-client/add-wcf-service.png)
 

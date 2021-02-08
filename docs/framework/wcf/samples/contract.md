@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: contrato'
 title: Exemplos de contrato do WCF
 ms.date: 03/30/2017
 ms.assetid: 305eeb65-a52f-459e-9aa8-0ef071eade16
-ms.openlocfilehash: f937eaaf85e2e05aad85ef73158534c713bd4122
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 10d6cdff3fff2b6cb38fea2858a4a0591f65b07e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96264186"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778328"
 ---
 # <a name="contract"></a>Contrato
 

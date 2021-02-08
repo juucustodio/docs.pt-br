@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: controlando a serialização e a desserialização com o SerializationBinder'
 title: Controlando a serialização e a desserialização sem SerializationBinder
 ms.date: 07/14/2020
 ms.assetid: ba8dcecf-acc7-467c-939d-021bbac797d4
-ms.openlocfilehash: be4068411e2154db53a9616df6cf4d83803954e6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e1a437fa2f627fd3d5989d053a21540f139c9797
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293735"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780421"
 ---
 # <a name="controlling-serialization-and-deserialization-with-serializationbinder"></a>Controlando a serialização e a desserialização sem SerializationBinder
 
@@ -23,7 +24,7 @@ Durante a serialização, um formatador transmite as informações necessárias 
 
  O <xref:System.Runtime.Serialization.SerializationBinder> é uma classe abstrata usada para controlar os tipos reais usados durante a serialização e a desserialização. Para controlar os tipos usados durante a serialização e desserialização, derive uma classe de <xref:System.Runtime.Serialization.SerializationBinder> e substitua os <xref:System.Runtime.Serialization.SerializationBinder.BindToName(System.Type,System.String@,System.String@)> <xref:System.Runtime.Serialization.SerializationBinder.BindToType(System.String,System.String)> métodos e. O <xref:System.Runtime.Serialization.SerializationBinder.BindToName(System.Type,System.String@,System.String@)> método usa um <xref:System.Type> e retorna um assembly e um nome de tipo. O <xref:System.Runtime.Serialization.SerializationBinder.BindToType(System.String,System.String)> método usa um assembly e um nome de tipo e retorna um <xref:System.Type> .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serialização e desserialização](serialization-and-deserialization.md)
 - [Utilização do associador de serialização](../samples/usage-of-serialization-binder.md)

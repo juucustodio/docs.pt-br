@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Configurando associações de System-Provided'
 title: Configurando associações fornecidas pelo sistema
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF [WCF], system-provided bindings
 - bindings [WCF], system-provided
 ms.assetid: 443f8d65-f1f2-4311-83b3-4d8fdf7ccf16
-ms.openlocfilehash: ab608ba954eafd9035335f00c8755629c5703c22
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1254d40638dd27ea14d79888cdf326d49345e02a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284154"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780720"
 ---
 # <a name="configuring-system-provided-bindings"></a>Configurando associações fornecidas pelo sistema
 
@@ -54,11 +55,11 @@ As associações especificam o mecanismo de comunicação a ser usado ao se comu
 
  A tabela a seguir mostra alguns dos principais recursos de cada uma das associações fornecidas pelo sistema fornecidas. As associações são listadas na primeira coluna e as informações sobre os recursos são descritas na tabela. A tabela a seguir fornece um código para as abreviações de associação usadas. Para escolher uma associação, determine qual coluna atende a todas as funcionalidades de linha necessárias.  
   
-|Associação|Interoperabilidade|Modo de segurança (padrão)|Session<br /><br /> (Padrão)|Transactions|Duplex|  
+|Associação|Interoperabilidade|Modo de segurança (padrão)|Sessão<br /><br /> (Padrão)|Transactions|Duplex|  
 |-------------|----------------------|----------------------------------|-----------------------------|------------------|------------|  
-|<xref:System.ServiceModel.BasicHttpBinding>|Basic Profile 1.1|(Nenhum), Transporte, Mensagem, Misto|Nenhum, (nenhum)|(Nenhuma)|N/D|  
-|<xref:System.ServiceModel.WSHttpBinding>|WS|Nenhum, transporte, (mensagem), misto|(Nenhum), transporte, sessão confiável|(Nenhum), Sim|N/D|  
-|<xref:System.ServiceModel.WS2007HttpBinding>|WS-Security, WS-Trust, WS-SecureConversation, WS-SecurityPolicy|Nenhum, transporte, (mensagem), misto|(Nenhum), transporte, sessão confiável|(Nenhum), Sim|N/D|  
+|<xref:System.ServiceModel.BasicHttpBinding>|Basic Profile 1.1|(Nenhum), Transporte, Mensagem, Misto|Nenhum, (nenhum)|(Nenhuma)|n/a|  
+|<xref:System.ServiceModel.WSHttpBinding>|WS|Nenhum, transporte, (mensagem), misto|(Nenhum), transporte, sessão confiável|(Nenhum), Sim|n/a|  
+|<xref:System.ServiceModel.WS2007HttpBinding>|WS-Security, WS-Trust, WS-SecureConversation, WS-SecurityPolicy|Nenhum, transporte, (mensagem), misto|(Nenhum), transporte, sessão confiável|(Nenhum), Sim|n/a|  
 |<xref:System.ServiceModel.WSDualHttpBinding>|WS|Nenhum, (mensagem)|(Sessão confiável)|(Nenhum), Sim|Sim|  
 |<xref:System.ServiceModel.WSFederationHttpBinding>|O certificado do provedor de identidade do Web Services Federation|Nenhum, (mensagem), misto|(Nenhum), sessão confiável|(Nenhum), Sim|Não|  
 |<xref:System.ServiceModel.WS2007FederationHttpBinding>|O certificado do provedor de identidade do Web Services Federation|Nenhum, (mensagem), misto|(Nenhum), sessão confiável|(Nenhum), Sim|Não|  
@@ -66,8 +67,8 @@ As associações especificam o mecanismo de comunicação a ser usado ao se comu
 |<xref:System.ServiceModel.NetNamedPipeBinding>|.NET|None<br /><br /> (Transporte)|Nenhum, (Transporte)|(Nenhum), Sim|Sim|  
 |<xref:System.ServiceModel.NetMsmqBinding>|.NET|Nenhum, mensagem, (transporte), ambos|(Nenhuma)|(Nenhum), Sim|Não|  
 |<xref:System.ServiceModel.NetPeerTcpBinding>|Par|Nenhum, mensagem, (transporte), misto|(Nenhuma)|(Nenhuma)|Sim|  
-|<xref:System.ServiceModel.WebHttpBinding>|.Net|Nenhum, transporte, TransportCredentialOnly|(Nenhuma)|(Nenhuma)|N/D|  
-|<xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>|MSMQ|Nenhum, (Transporte)|(Nenhuma)|(Nenhum), Sim|N/D|  
+|<xref:System.ServiceModel.WebHttpBinding>|.Net|Nenhum, transporte, TransportCredentialOnly|(Nenhuma)|(Nenhuma)|n/a|  
+|<xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>|MSMQ|Nenhum, (Transporte)|(Nenhuma)|(Nenhum), Sim|n/a|  
   
  A tabela a seguir explica os recursos encontrados na tabela anterior.  
   
@@ -75,12 +76,12 @@ As associações especificam o mecanismo de comunicação a ser usado ao se comu
 |-------------|-----------------|  
 |Tipo de interoperabilidade|Nomeia a tecnologia ou o protocolo com o qual a associação garante a interoperação.|  
 |Segurança|Especifica como o canal é protegido:<br /><br /> -Nenhum: a mensagem SOAP não é protegida e o cliente não está autenticado.<br />-Transport: os requisitos de segurança são atendidos na camada de transporte.<br />-Message: os requisitos de segurança são atendidos na camada de mensagem.<br />-Mixed: esse modo de segurança é conhecido como `TransportWithMessageCredentials` . Ele manipula as credenciais no nível da mensagem, e os requisitos de integridade e confidencialidade são satisfeitos pela camada de transporte.<br />-Ambos: o nível de mensagem e a segurança de nível de transporte são usados. Essa capacidade é exclusiva do <xref:System.ServiceModel.NetMsmqBinding> .|  
-|Session|Especifica se essa associação dá suporte a contratos de sessão.|  
+|Sessão|Especifica se essa associação dá suporte a contratos de sessão.|  
 |Transactions|Especifica se as transações estão habilitadas.|  
 |Duplex|Especifica se há suporte para os contratos duplex. Observe que esse recurso requer suporte para sessões na associação.|  
 |Streaming|Especifica se o streaming de mensagens tem suporte.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de criação de ponto de extremidade](../endpoint-creation-overview.md)
 - [Usando associações para configurar serviços e clientes](../using-bindings-to-configure-services-and-clients.md)

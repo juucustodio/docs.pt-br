@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral da descoberta do WCF'
 title: Visão geral de descoberta do WCF
 ms.date: 03/30/2017
 ms.assetid: 84fad0e4-23b1-45b5-a2d4-c9cdf90bbb22
-ms.openlocfilehash: 5876605f5096bfb75c18680faaef4ba0cd15c082
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d6acfb86ce0961ea7fbfba7695bece067e3dcec2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281411"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779641"
 ---
 # <a name="wcf-discovery-overview"></a>Visão geral de descoberta do WCF
 

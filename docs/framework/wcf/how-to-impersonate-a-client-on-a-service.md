@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como representar um cliente em um serviço'
 title: 'Como: representar um cliente em um serviço'
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - impersonation
 - WCF, security
 ms.assetid: 431db851-a75b-4009-9fe2-247243d810d3
-ms.openlocfilehash: 24a06df5b6fbb908aff3ef1b2166fd5162549ba2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 84d50b0c22161a829da66e42b4b3bbf004b68487
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290108"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779368"
 ---
 # <a name="how-to-impersonate-a-client-on-a-service"></a>Como: representar um cliente em um serviço
 
@@ -46,7 +47,7 @@ A representação de um cliente em um serviço de Windows Communication Foundati
      [!code-csharp[c_SimpleImpersonation#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_simpleimpersonation/cs/source.cs#1)]
      [!code-vb[c_SimpleImpersonation#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_simpleimpersonation/vb/source.vb#1)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.OperationBehaviorAttribute>
 - <xref:System.Security.Principal.TokenImpersonationLevel>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: comportamentos'
 title: Comportamentos
 ms.date: 03/30/2017
 ms.assetid: b0885b65-4e74-4bc9-bbf0-eb7ebe566da1
-ms.openlocfilehash: e963da6d151b82b205f6f52b70aeb69b09eae4f4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 71c66c6df4b286f2c3bd7300593412b30db271f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283608"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778718"
 ---
 # <a name="behaviors"></a>Comportamentos
 

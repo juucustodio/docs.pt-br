@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como configurar a persistência com o WorkflowServiceHost'
 title: 'Como: configurar a persistência com WorkflowServiceHost'
 ms.date: 03/30/2017
 ms.assetid: e31cd4df-13a3-4a9a-9be8-5243e0055356
-ms.openlocfilehash: 3d8b7183b11c138b8da1f04d9084f8b94b7dcaa6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 79945fb791cc25bdf362302fa884636942fb5692
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257334"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780031"
 ---
 # <a name="how-to-configure-persistence-with-workflowservicehost"></a>Como: configurar a persistência com WorkflowServiceHost
 
@@ -60,7 +61,7 @@ Este tópico descreve como configurar o recurso de repositório de instância do
   
      Para obter um exemplo de como configurar a persistência programaticamente [, consulte Como habilitar a persistência para fluxos de trabalho e serviços de fluxo de trabalho](../../windows-workflow-foundation/how-to-enable-persistence-for-workflows-and-workflow-services.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de fluxo de trabalho](workflow-services.md)
 - [Persistência de fluxo de trabalho](../../windows-workflow-foundation/workflow-persistence.md)

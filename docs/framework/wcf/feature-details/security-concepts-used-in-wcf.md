@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: conceitos de segurança usados no WCF'
 title: Conceitos de segurança utilizados no WCF
 ms.date: 03/30/2017
 ms.assetid: 3b9dfcf5-4bf1-4f35-9070-723171c823a1
-ms.openlocfilehash: 2c7bc01ba45c02be4a1d40c2600fde62e94afe32
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5ad5b80c69e5dec5675879984fbcd2585b295dd4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251380"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779758"
 ---
 # <a name="security-concepts-used-in-wcf"></a>Conceitos de segurança utilizados no WCF
 
@@ -53,7 +54,7 @@ A PKI (infraestrutura de chave pública) é um sistema de certificados digitais,
   
  Para obter mais informações sobre esses tópicos, consulte [mecanismos de controle de acesso](access-control-mechanisms.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de segurança](security-overview.md)
 - [Modelo de segurança para o Windows Server app Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

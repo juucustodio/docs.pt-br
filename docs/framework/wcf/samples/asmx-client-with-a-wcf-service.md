@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cliente ASMX com um serviço WCF'
 title: Cliente ASMX com um serviço do WCF
 ms.date: 03/30/2017
 ms.assetid: 3ea381ee-ac7d-4d62-8c6c-12dc3650879f
-ms.openlocfilehash: fd13d4907f1be09440387a36e14ecdc4926ba7e7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b9f561f6651c591556f821478c4c4bfd7d7da23d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594771"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778913"
 ---
 # <a name="asmx-client-with-a-wcf-service"></a>Cliente ASMX com um serviço do WCF
 
@@ -35,9 +36,9 @@ public interface ICalculator
 }
 ```
 
-O <xref:System.Runtime.Serialization.DataContractSerializer> e <xref:System.Xml.Serialization.XmlSerializer> mapeiam os tipos CLR para uma representação XML. O <xref:System.Runtime.Serialization.DataContractSerializer> interpreta algumas representações XML de forma diferente do XmlSerializer. Geradores de proxy não WCF, como WSDL. exe, geram uma interface mais utilizável quando o XmlSerializer está sendo usado. O <xref:System.ServiceModel.XmlSerializerFormatAttribute> é aplicado à `ICalculator` interface do, para garantir que o XmlSerializer seja usado para mapear tipos CLR para XML. A implementação do serviço calcula e retorna o resultado apropriado.
+O <xref:System.Runtime.Serialization.DataContractSerializer> e <xref:System.Xml.Serialization.XmlSerializer> mapeiam os tipos CLR para uma representação XML. O <xref:System.Runtime.Serialization.DataContractSerializer> interpreta algumas representações XML de forma diferente do XmlSerializer. Geradores de proxy não WCF, como Wsdl.exe, geram uma interface mais utilizável quando o XmlSerializer está sendo usado. O <xref:System.ServiceModel.XmlSerializerFormatAttribute> é aplicado à `ICalculator` interface do, para garantir que o XmlSerializer seja usado para mapear tipos CLR para XML. A implementação do serviço calcula e retorna o resultado apropriado.
 
-O serviço expõe um único ponto de extremidade para se comunicar com o serviço, definido usando um arquivo de configuração (Web. config). O ponto de extremidade consiste em um endereço, uma associação e um contrato. O serviço expõe o ponto de extremidade no endereço base fornecido pelo host do Serviços de Informações da Internet (IIS). O `binding` atributo é definido como BasicHttpBinding que fornece comunicações http usando SOAP 1,1, que é compatível com WS-I BasicProfile 1,1, conforme mostrado na configuração de exemplo a seguir.
+O serviço expõe um único ponto de extremidade para se comunicar com o serviço, definido usando um arquivo de configuração (Web.config). O ponto de extremidade consiste em um endereço, uma associação e um contrato. O serviço expõe o ponto de extremidade no endereço base fornecido pelo host do Serviços de Informações da Internet (IIS). O `binding` atributo é definido como BasicHttpBinding que fornece comunicações http usando SOAP 1,1, que é compatível com WS-I BasicProfile 1,1, conforme mostrado na configuração de exemplo a seguir.
 
 ```xml
 <services>
@@ -51,7 +52,7 @@ O serviço expõe um único ponto de extremidade para se comunicar com o serviç
 </services>
 ```
 
-O cliente ASMX se comunica com o serviço WCF usando um proxy tipado que é gerado pelo utilitário WSDL (Web Services Description Language) (WSDL. exe). O proxy tipado está contido no arquivo generatedClient.cs. O utilitário WSDL recupera metadados para o serviço especificado e gera um proxy de tipo para ser usado por um cliente para se comunicar. Por padrão, a estrutura não expõe nenhum metadado. Para expor os metadados necessários para gerar o proxy, você deve adicionar um [\<serviceMetadata>](../../configure-apps/file-schema/wcf/servicemetadata.md) e definir seu `httpGetEnabled` atributo `True` como, conforme mostrado na configuração a seguir.
+O cliente ASMX se comunica com o serviço WCF usando um proxy tipado que é gerado pelo utilitário WSDL (Web Services Description Language) (Wsdl.exe). O proxy tipado está contido no arquivo generatedClient.cs. O utilitário WSDL recupera metadados para o serviço especificado e gera um proxy de tipo para ser usado por um cliente para se comunicar. Por padrão, a estrutura não expõe nenhum metadado. Para expor os metadados necessários para gerar o proxy, você deve adicionar um [\<serviceMetadata>](../../configure-apps/file-schema/wcf/servicemetadata.md) e definir seu `httpGetEnabled` atributo `True` como, conforme mostrado na configuração a seguir.
 
 ```xml
 <behaviors>
@@ -73,7 +74,7 @@ Execute o comando a seguir em um prompt de comando no diretório do cliente para
 wsdl /n:Microsoft.ServiceModel.Samples /o:generatedClient.cs /urlkey:CalculatorServiceAddress http://localhost/servicemodelsamples/service.svc?wsdl
 ```
 
-Usando o proxy de tipo gerado, o cliente pode acessar um determinado ponto de extremidade de serviço Configurando o endereço apropriado. O cliente usa um arquivo de configuração (App. config) para especificar o ponto de extremidade com o qual se comunicar.
+Usando o proxy de tipo gerado, o cliente pode acessar um determinado ponto de extremidade de serviço Configurando o endereço apropriado. O cliente usa um arquivo de configuração (App.config) para especificar o ponto de extremidade com o qual se comunicar.
 
 ```xml
 <appSettings>

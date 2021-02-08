@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: contratos'
 title: Contratos
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - contracts [WCF]
 - Windows Communication Foundation [WCF], contracts
 ms.assetid: c8364183-4ac1-480b-804a-c5e6c59a5d7d
-ms.openlocfilehash: b51bbd1a8a9bfc8963cee429dab41fdf9b4f594c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: efa924970ce8d07a6b068e92ff85f099b696016d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286753"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780512"
 ---
 # <a name="contracts"></a>Contratos
 
@@ -69,7 +70,7 @@ Esta seção mostra como definir e implementar contratos de Windows Communicatio
   
  Esse processo de requisito aditivo é importante para ter em mente ao projetar, implementar, configurar e hospedar seu aplicativo de serviço de Windows Communication Foundation (WCF). Por exemplo, o contrato pode especificar que ele precisa oferecer suporte a uma sessão. Nesse caso, você deve configurar a associação para dar suporte a esse requisito contratual ou a implementação do serviço não funcionará. Ou, se o serviço exigir autenticação integrada do Windows e estiver hospedado no Serviços de Informações da Internet (IIS), o aplicativo Web no qual o serviço reside deve ter a autenticação integrada do Windows ativada e o suporte anônimo desativado. Para obter mais informações sobre os recursos e o impacto dos diferentes tipos de aplicativo de host de serviço, consulte [Hosting](hosting.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Pontos de extremidade: endereços, associações e contratos](endpoints-addresses-bindings-and-contracts.md)
 - [Criando contratos de serviço](../designing-service-contracts.md)

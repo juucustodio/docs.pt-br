@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: conceitos de segurança'
 title: Conceitos de segurança
 ms.date: 03/30/2017
 ms.assetid: 944fa5ca-2c34-4268-8897-e005a61b470d
-ms.openlocfilehash: fee751a1a309e9afb7b143f274f8a4e403030dd7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 61cf3e939d3a360857918d81b1197ffa77f25ec3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779719"
 ---
 # <a name="security-concepts"></a>Conceitos de segurança
 
@@ -40,7 +41,7 @@ Esta seção explica brevemente os conceitos associados à segurança do Windows
 
  [Segurança estendida](../extending/extending-security.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança](security.md)
 - [Visão geral de segurança](security-overview.md)

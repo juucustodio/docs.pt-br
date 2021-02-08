@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: configurar o suporte a transações WS-Atomic'
 title: Configurando suporte de transações de WS-Atomic
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS-AT protocol [WCF], configuring WS-Atomic Transaction
 ms.assetid: cb9f1c9c-1439-4172-b9bc-b01c3e09ac48
-ms.openlocfilehash: 9c0e75d58fbcf61137ceae3fba9d8acfe3902171
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: c9b732bd0d6b6aa8cb1cf04803ae302a00348987
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556584"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780538"
 ---
 # <a name="configure-ws-atomic-transaction-support"></a>Configurar o suporte à transação WS-Atomic
 
-Este tópico descreve como você pode configurar o suporte a WS-AtomicTransaction (WS-AT) usando o utilitário de configuração WS-AT.
+Este tópico descreve como você pode configurar o suporte do WS-AtomicTransaction (WS-AT) usando o utilitário de configuração WS-AT.
 
 ## <a name="use-the-ws-at-configuration-utility"></a>Usar o utilitário de configuração WS-AT
 
@@ -25,7 +26,7 @@ A janela de linha de comando pode ser acessada no local de instalação do SDK d
 
 Para obter mais informações sobre a ferramenta de linha de comando, consulte [Utilitário de configuração do WS-AtomicTransaction (wsatConfig.exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md).
 
-Se você estiver executando o Windows XP ou o Windows Server 2003, poderá acessar o snap-in do MMC navegando até **painel de controle/ferramentas administrativas/serviços de componentes**, clicando com o botão direito do mouse em **meu computador**e selecionando **Propriedades**. Esse é o mesmo local em que você pode configurar o Microsoft Coordenador de Transações Distribuídas (MSDTC). As opções disponíveis para configuração são agrupadas na guia **WS-AT** . Se você estiver executando o Windows Vista ou o Windows Server 2008, o snap-in do MMC pode ser encontrado clicando no botão **Iniciar** e digitando `dcomcnfg.exe` na caixa de **pesquisa** . Quando o MMC for aberto, navegue até o nó **minhas Computer\Distributed Transaction COORDINATOR\LOCAL DTC** , clique com o botão direito e selecione **Propriedades**. As opções disponíveis para configuração são agrupadas na guia **WS-AT** .
+Se você estiver executando o Windows XP ou o Windows Server 2003, poderá acessar o snap-in do MMC navegando até **painel de controle/ferramentas administrativas/serviços de componentes**, clicando com o botão direito do mouse em **meu computador** e selecionando **Propriedades**. Esse é o mesmo local em que você pode configurar o Microsoft Coordenador de Transações Distribuídas (MSDTC). As opções disponíveis para configuração são agrupadas na guia **WS-AT** . Se você estiver executando o Windows Vista ou o Windows Server 2008, o snap-in do MMC pode ser encontrado clicando no botão **Iniciar** e digitando `dcomcnfg.exe` na caixa de **pesquisa** . Quando o MMC for aberto, navegue até o nó **minhas Computer\Distributed Transaction COORDINATOR\LOCAL DTC** , clique com o botão direito e selecione **Propriedades**. As opções disponíveis para configuração são agrupadas na guia **WS-AT** .
 
 Para obter mais informações sobre o snap-in, consulte o [snap-in MMC de configuração do WS-AtomicTransaction](../ws-atomictransaction-configuration-mmc-snap-in.md).
 
@@ -126,7 +127,7 @@ O serviço de protocolo WS-AT também dá suporte ao rastreamento de ServiceMode
 
 - 31: detalhado
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Utilitário de configuração de transações WS-Atomic (wsatConfig.exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
 - [Snap-in do MMC de configuração de WS-AtomicTransaction](../ws-atomictransaction-configuration-mmc-snap-in.md)

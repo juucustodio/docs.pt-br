@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Configurando o serviço de ativação de processos do Windows para uso com o Windows Communication Foundation'
 title: Configurando o Serviço de ativação de processos do Windows (WAS) para utilizar com o Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: 1d50712e-53cd-4773-b8bc-a1e1aad66b78
-ms.openlocfilehash: 2f84afba72e5260a44726dcc812401da5475679f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b98cc776b3a0bd860b4837ba70d58d10a83827dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284089"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780616"
 ---
 # <a name="configuring-the-windows-process-activation-service-for-use-with-windows-communication-foundation"></a>Configurando o Serviço de ativação de processos do Windows (WAS) para utilizar com o Windows Communication Foundation
 
@@ -100,7 +101,7 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
   
  Para obter instruções detalhadas sobre como criar um serviço WCF ativado, consulte [como hospedar um serviço WCF no was](how-to-host-a-wcf-service-in-was.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedagem no serviço de ativação do processo do Windows](hosting-in-windows-process-activation-service.md)
 - [Recursos de hospedagem do Windows Server AppFabric](/previous-versions/appfabric/ee677189(v=azure.10))

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: validação do cliente'
 title: Validação de cliente
 ms.date: 03/30/2017
 ms.assetid: f0c1f805-1a81-4d0d-a112-bf5e2e87a631
-ms.openlocfilehash: dee57e039d4510673b7205fd44fa300b24ac1df5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 373ee49bccd8905e0cb9bfebf281abdd183ac506
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243307"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778562"
 ---
 # <a name="client-validation"></a>Validação de cliente
 
@@ -64,6 +65,6 @@ Os serviços geralmente publicam metadados para habilitar a geração automátic
     > [!NOTE]
     > Esse script não remove certificados de serviço em um cliente ao executar esse exemplo em computadores. Se você tiver executado os exemplos do WCF que usam certificados entre computadores, certifique-se de limpar os certificados de serviço que foram instalados no repositório CurrentUser-TrustedPeople. Para fazer isso, use o seguinte comando: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>. For example: certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com` .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Utilizando metadados](../feature-details/using-metadata.md)

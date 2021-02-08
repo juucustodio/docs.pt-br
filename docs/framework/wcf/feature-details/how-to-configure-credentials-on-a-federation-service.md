@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como configurar credenciais em um Serviço de Federação'
 title: 'Como: configurar credenciais em um serviço de federação'
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 149ab165-0ef3-490a-83a9-4322a07bd98a
-ms.openlocfilehash: 692ccc0c39ca7ed40601551ea6bbcdd840fa03af
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 100012312b9b900f35753e1fa0761ba132fe0c06
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780070"
 ---
 # <a name="how-to-configure-credentials-on-a-federation-service"></a>Como: configurar credenciais em um serviço de federação
 
@@ -73,7 +74,7 @@ No Windows Communication Foundation (WCF), a criação de um serviço federado c
   
  Por exemplo, a configuração de <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> para <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust> autenticará qualquer token emitido cujo certificado de autenticação esteja no `TrustedPeople` repositório de certificados. Nesse caso, defina a <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.TrustedStoreLocation%2A> propriedade como <xref:System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser> ou <xref:System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine> . Você pode selecionar outros modos, incluindo <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom> . Quando `Custom` é selecionado, você deve atribuir uma instância da <xref:System.IdentityModel.Selectors.X509CertificateValidator> classe à <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CustomCertificateValidator%2A> propriedade. O validador personalizado pode validar certificados usando qualquer critério que ele goste. Para obter mais informações, consulte [como: criar um serviço que emprega um validador de certificado personalizado](../extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Federação](federation.md)
 - [Federação e confiabilidade](federation-and-trust.md)

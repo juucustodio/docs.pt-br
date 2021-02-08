@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: diretrizes e práticas recomendadas'
 title: Diretrizes e práticas recomendadas
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, best practices
 - Windows Communication Foundation, guidelines
 ms.assetid: 5098ba46-6e8d-4e02-b0c5-d737f9fdad84
-ms.openlocfilehash: eeca4ee47db2aef139567e37cba60cab863e6d53
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0a09eea7d0eef10f015f80baf64df860d5ff1dd7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238126"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779420"
 ---
 # <a name="guidelines-and-best-practices"></a>Diretrizes e práticas recomendadas
 
@@ -48,7 +49,7 @@ Esta seção contém tópicos que fornecem diretrizes para criar aplicativos Win
   
  [Programação de WCF básica](basic-wcf-programming.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [O que é o Windows Communication Foundation](whats-wcf.md)
 - [Exemplos do WCF (Windows Communication Foundation)](./samples/index.md)

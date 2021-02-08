@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: simultaneidade'
 title: Simultaneidade
 ms.date: 03/30/2017
 helpviewer_keywords:
 - service behaviors, concurency sample
 - Concurrency Sample [Windows Communication Foundation]
 ms.assetid: f8dbdfb3-6858-4f95-abe3-3a1db7878926
-ms.openlocfilehash: 69692f48cc1f45057e865a3908ddf41afc599bb1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2fbb6f9fc5ee2807ed0ca0592c364f048d5d8b14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243244"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778536"
 ---
 # <a name="concurrency"></a>Simultaneidade
 

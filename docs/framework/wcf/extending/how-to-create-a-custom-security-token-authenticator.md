@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como criar um autenticador de token de segurança personalizado'
 title: 'Como: criar um autenticador de token de segurança personalizado'
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - WCF, authentication
 ms.assetid: 10e245f7-d31e-42e7-82a2-d5780325d372
-ms.openlocfilehash: 667dc82502ba881b067b5588271947f7c18c8810
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dd1dbd413638ab8693ec5ac3454d9fac9b26565b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249248"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780746"
 ---
 # <a name="how-to-create-a-custom-security-token-authenticator"></a>Como: criar um autenticador de token de segurança personalizado
 
@@ -59,7 +60,7 @@ Este tópico mostra como criar um autenticador de token de segurança personaliz
      [!code-csharp[c_CustomTokenAuthenticator#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtokenauthenticator/cs/source.cs#2)]
      [!code-vb[c_CustomTokenAuthenticator#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenauthenticator/vb/source.vb#2)]  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator>
 - <xref:System.IdentityModel.Selectors.SecurityTokenRequirement>

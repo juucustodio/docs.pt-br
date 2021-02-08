@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como auditar Windows Communication Foundation eventos de segurança'
 title: Como fazer auditoria de eventos de segurança do Windows Communication Foundation
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - security [WCF], auditing events
 ms.assetid: e71e9587-3336-46a2-9a9e-d72a1743ecec
-ms.openlocfilehash: 67ab5d4a4592a8b772cfdd70befe32f339062b8c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b9cd258f51dbc726108fef0bbf173c7ee26c1d0f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257555"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780200"
 ---
 # <a name="how-to-audit-windows-communication-foundation-security-events"></a>Como fazer auditoria de eventos de segurança do Windows Communication Foundation
 
@@ -90,7 +91,7 @@ O Windows Communication Foundation (WCF) permite que você registre eventos de s
   
  Se a <xref:System.ServiceModel.AuditLogLocation> propriedade for definida como <xref:System.ServiceModel.AuditLogLocation.Security> e a **auditoria de acesso a objeto** não estiver definida na política de **segurança local**, os eventos de auditoria não serão gravados no log de segurança. Observe que nenhuma falha é retornada, mas as entradas de auditoria não são gravadas no log de segurança.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A>
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>

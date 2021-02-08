@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como definir a propriedade ProtectionLevel'
 title: 'Como: definir a propriedade ProtectionLevel'
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, security
 - ProtectionLevel property
 ms.assetid: 3d4e8f80-0f9e-4a26-9899-beb6584e78df
-ms.openlocfilehash: 359364228c4ab4d5b247f4f42f3ef3391f774197
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 526ed923d254f0312c9a2c6d17b7306973d88902
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236592"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779238"
 ---
 # <a name="how-to-set-the-protectionlevel-property"></a>Como: definir a propriedade ProtectionLevel
 
@@ -93,7 +94,7 @@ Você pode definir o nível de proteção aplicando um atributo apropriado e con
  [!code-csharp[C_ProtectionLevel#0](../../../samples/snippets/csharp/VS_Snippets_CFX/c_protectionlevel/cs/source.cs#0)]
  [!code-vb[C_ProtectionLevel#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_protectionlevel/vb/source.vb#0)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como configurar um cliente WCF para interoperar com os serviços WSE 3.0'
 title: 'Como: configurar um cliente do WCF para interoperar com serviços WSE3.0'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 3dadd7f1-d207-4ea5-a73b-3e8aa44407f8
-ms.openlocfilehash: b5284db1329c572bdecf3ef607e697c63835d508
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 97de90c491a29cdacf881a92013a11db6aea416f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257516"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780122"
 ---
 # <a name="how-to-configure-a-wcf-client-to-interoperate-with-wse30-services"></a>Como: configurar um cliente do WCF para interoperar com serviços WSE3.0
 
@@ -63,7 +64,7 @@ Os clientes do Windows Communication Foundation (WCF) são compatíveis com o n�
 [!code-csharp[c_WCFClientToWSEService#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wcfclienttowseservice/cs/client.cs#0)]
 [!code-vb[c_WCFClientToWSEService#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wcfclienttowseservice/vb/client.vb#0)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Channels.Binding>
 - [Interoperação com o WSE](/previous-versions/dotnet/netframework-3.5/ms752257(v=vs.90))

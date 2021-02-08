@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Federação e tokens emitidos'
 title: Federação e tokens emitidos
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - issued tokens [WCF]
 - federation [WCF], issued tokens
 ms.assetid: 4c31ee7d-a820-4067-8b84-a83049021bb6
-ms.openlocfilehash: 0ab3d6bad717e71901b4d94c99f1c48f99d8675e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 209a3f158e2ffc00c3fd09053374340c430cc823
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255514"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780239"
 ---
 # <a name="federation-and-issued-tokens"></a>Federação e tokens emitidos
 
@@ -64,7 +65,7 @@ Com o Windows Communication Foundation (WCF), você pode criar clientes que se c
   
  <xref:System.ServiceModel.WSFederationHttpBinding>  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Autorização](authorization-in-wcf.md)
 - [Tokens personalizados](../extending/custom-tokens.md)

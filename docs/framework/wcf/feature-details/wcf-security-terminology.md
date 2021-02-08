@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: terminologia de segurança do WCF'
 title: Terminologia de segurança do WCF
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - security glossary [WCF]
 - security terms [WCF]
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
-ms.openlocfilehash: 70dde7ab30d542ecc9f85d027a86b466eb13e4f6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 490bc0f0be5cb26299db9b51691bca87c2371297
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281306"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779576"
 ---
 # <a name="wcf-security-terminology"></a>Terminologia de segurança do WCF
 
@@ -182,7 +183,7 @@ Parte da terminologia usada para discutir a segurança pode não ser familiar. E
  X.509  
  Um padrão reconhecido internacionalmente para certificados que define suas partes necessárias.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos fundamentais do Windows Communication Foundation](../fundamental-concepts.md)
 - [Conceitos de segurança](security-concepts.md)

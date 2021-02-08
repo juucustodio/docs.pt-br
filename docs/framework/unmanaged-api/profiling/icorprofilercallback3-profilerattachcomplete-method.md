@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorProfilerCallback3: método rofilerAttachComplete de:P'
 title: Método ICorProfilerCallback3::ProfilerAttachComplete
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 257d6076-06e0-4d93-bb33-651fbb2b92d7
 topic_type:
 - apiref
-ms.openlocfilehash: a16e77619ec85ebdf47a2b821309bbb3af63282b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: dcd8ab9fed402593fc955050b0d3be6f8a46730a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705313"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788781"
 ---
 # <a name="icorprofilercallback3profilerattachcomplete-method"></a>Método ICorProfilerCallback3::ProfilerAttachComplete
 
@@ -52,7 +53,7 @@ HRESULT ProfilerAttachComplete ();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Interface ICorProfilerInfo3](icorprofilerinfo3-interface.md)

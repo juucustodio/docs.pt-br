@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorRuntimeHost:: CloseEnum'
 title: Método ICorRuntimeHost::CloseEnum
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f7ce7e8c-0a3e-4587-a180-063e2b85940e
 topic_type:
 - apiref
-ms.openlocfilehash: d3748621474373fee8248496d48414ff67c699d6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1fc18ff3e00f85a4f047417f880ec2b0e06496b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715688"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789717"
 ---
 # <a name="icorruntimehostcloseenum-method"></a>Método ICorRuntimeHost::CloseEnum
 
@@ -39,7 +40,7 @@ HRESULT CloseEnum (
  `hEnum`  
  no O enumerador a ser redefinido.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -58,7 +59,7 @@ HRESULT CloseEnum (
   
  **Versões do .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função CorBindToRuntimeEx](corbindtoruntimeex-function.md)
 - [Interface ICorRuntimeHost](icorruntimehost-interface.md)

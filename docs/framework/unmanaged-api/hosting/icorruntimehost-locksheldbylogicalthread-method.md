@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorRuntimeHost:: LocksHeldByLogicalThread'
 title: Método ICorRuntimeHost::LocksHeldByLogicalThread
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c3601255-d894-4d7c-b1df-c31334551700
 topic_type:
 - apiref
-ms.openlocfilehash: 16f34d91861f9fcae51691ab13549bdf1ef333a7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bd64151bdc0c6aa0235192f0fc7f4badd8b0bbd6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671493"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789639"
 ---
 # <a name="icorruntimehostlocksheldbylogicalthread-method"></a>Método ICorRuntimeHost::LocksHeldByLogicalThread
 
@@ -51,6 +52,6 @@ HRESULT LocksHeldByLogicalThread(
   
  **Versões do .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorRuntimeHost](icorruntimehost-interface.md)

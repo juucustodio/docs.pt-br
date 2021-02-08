@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 4806-DiscoveryMessageWithInvalidRelatesToOrOperationCompleted'
 title: 4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted
 ms.date: 03/30/2017
 ms.assetid: 19e9a660-25f3-4332-b716-a12a59f2cbbb
-ms.openlocfilehash: 46d71979e7b6bfcccc27064fd6fee626ea71dc1c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 51c1dd9e4478f53098a8087cb4c2e2efdceeaa2a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242572"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788378"
 ---
 # <a name="4806---discoverymessagewithinvalidrelatestooroperationcompleted"></a>4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted
 
@@ -17,7 +18,7 @@ ms.locfileid: "96242572"
 |-|-|  
 |ID|4806|  
 |Palavras-chave|Descoberta|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

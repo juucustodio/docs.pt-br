@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3429-WebSocketCloseStatusReceived'
 title: 3429 - WebSocketCloseStatusReceived
 ms.date: 03/30/2017
 ms.assetid: b4f16083-cb55-4215-af12-478d5e70301e
-ms.openlocfilehash: ce472133ea70e808557999ba5aaad65701ed359a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ddea343dd9337cfa2d629ae89deafc9275fa6399
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287326"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788508"
 ---
 # <a name="3429---websocketclosestatusreceived"></a>3429 - WebSocketCloseStatusReceived
 

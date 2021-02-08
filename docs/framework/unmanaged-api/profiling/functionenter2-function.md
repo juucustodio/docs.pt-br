@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função FunctionEnter2'
 title: Função FunctionEnter2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ce7a21f9-0ca3-4b92-bc4b-bb803cae3f51
 topic_type:
 - apiref
-ms.openlocfilehash: e8466970a1c137276e842b37f0305fdfd9169be6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8b8061b213d02efd845e214c1177db4e5351869b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717212"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788976"
 ---
 # <a name="functionenter2-function"></a>Função FunctionEnter2
 
@@ -84,7 +85,7 @@ void __stdcall FunctionEnter2 (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função FunctionLeave2](functionleave2-function.md)
 - [Função FunctionTailcall2](functiontailcall2-function.md)

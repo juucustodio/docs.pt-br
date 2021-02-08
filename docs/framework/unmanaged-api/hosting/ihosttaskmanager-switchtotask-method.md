@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTaskManager:: SwitchToTask'
 title: Método IHostTaskManager::SwitchToTask
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 35d0c27e-4b14-49ce-810d-7ab2120177e8
 topic_type:
 - apiref
-ms.openlocfilehash: bf3ddd91a58669540ef310e268162ec78408494f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6333dcdf7e1bbe6bde575f53f4743a1300c770f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702018"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789353"
 ---
 # <a name="ihosttaskmanagerswitchtotask-method"></a>Método IHostTaskManager::SwitchToTask
 
@@ -39,7 +40,7 @@ HRESULT SwitchToTask (
  `option`  
  no Um dos [WAIT_OPTION](wait-option-enumeration.md) valores de enumeração, indicando a ação que o host deve executar se a operação solicitada for bloqueada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -67,7 +68,7 @@ HRESULT SwitchToTask (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

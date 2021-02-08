@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetTypeSpecFromToken'
 title: Método IMetaDataImport::GetTypeSpecFromToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ee518bda-3296-482e-a7b7-e9d51dd1a181
 topic_type:
 - apiref
-ms.openlocfilehash: 62495aa4280bb1799af09fea2e550ae6107e09e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b71f8f856da517b3e5046c20d787a555816fb728
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789106"
 ---
 # <a name="imetadataimportgettypespecfromtoken-method"></a>Método IMetaDataImport::GetTypeSpecFromToken
 
@@ -47,7 +48,7 @@ HRESULT GetTypeSpecFromToken (
  `pcbSig`  
  fora O tamanho, em bytes, da assinatura de metadados.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Um HRESULT que indica êxito ou falha. As falhas podem ser testadas com a macro com falha.  
   
@@ -61,7 +62,7 @@ HRESULT GetTypeSpecFromToken (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

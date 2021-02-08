@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICLRSyncManager: método eleteRWLockOwnerIterator de:D'
 title: Método ICLRSyncManager::DeleteRWLockOwnerIterator
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fcfd340a-b7d6-44e4-8167-2c05b789d483
 topic_type:
 - apiref
-ms.openlocfilehash: db651e3fe51f90b84449874f2c60a12050b0350e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7968f326f1ad92fe6e3a0f91749fb7e462e81c04
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687106"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789769"
 ---
 # <a name="iclrsyncmanagerdeleterwlockowneriterator-method"></a>Método ICLRSyncManager::DeleteRWLockOwnerIterator
 
@@ -39,7 +40,7 @@ HRESULT DeleteRWLockOwnerIterator (
  `Iterator`  
  no O iterador criado usando uma chamada para `CreateRWLockOwnerIterator` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT DeleteRWLockOwnerIterator (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostSyncManager](ihostsyncmanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorThreadpool:: CorRegisterWaitForSingleObject'
 title: Método ICorThreadpool::CorRegisterWaitForSingleObject
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: cade1feb-71d2-43ed-85ca-7b2e9da12994
 topic_type:
 - apiref
-ms.openlocfilehash: 9f555d3119ede5eabe61467aa81d35aa5c354751
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fdbb41f78f7aeb4a426de48e2da7616cfaecaa6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727842"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789548"
 ---
 # <a name="icorthreadpoolcorregisterwaitforsingleobject-method"></a>Método ICorThreadpool::CorRegisterWaitForSingleObject
 
 Esse método oferece suporte a infraestrutura do .NET Framework e não se destina a ser usado diretamente do seu código.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT CorRegisterWaitForSingleObject (  
@@ -50,6 +51,6 @@ HRESULT CorRegisterWaitForSingleObject (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorThreadpool](icorthreadpool-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IHostAssemblyStore: método rovideAssembly de:P'
 title: Método IHostAssemblyStore::ProvideAssembly
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 625c3dd5-a3f0-442c-adde-310dadbb5054
 topic_type:
 - apiref
-ms.openlocfilehash: db65519579104dd01816bb6d7cacaec947f24f53
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f8917cb28dd3898343a7b6ee08bd54096df8cfa7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680858"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789496"
 ---
 # <a name="ihostassemblystoreprovideassembly-method"></a>Método IHostAssemblyStore::ProvideAssembly
 
@@ -55,7 +56,7 @@ HRESULT ProvideAssembly (
  `ppStmPDB`  
  fora Um ponteiro para o endereço de um `IStream` que contém as informações de depuração do programa (PDB) ou NULL se não foi possível encontrar o arquivo. pdb.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -82,7 +83,7 @@ HRESULT ProvideAssembly (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Interface IHostAssemblyManager](ihostassemblymanager-interface.md)

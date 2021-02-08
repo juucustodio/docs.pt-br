@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMetaDataImport'
 title: Interface IMetaDataImport
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0adbbd35-5e8d-4fec-8268-dc70a07c5975
 topic_type:
 - apiref
-ms.openlocfilehash: 0049db66d7a753488388c85e87e1f907db56c7cf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4fb0dc4cce6901858cde8cfbc494fce7ddbfeb0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679085"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789080"
 ---
 # <a name="imetadataimport-interface"></a>Interface IMetaDataImport
 
@@ -27,7 +28,7 @@ Fornece métodos para importar e manipular metadados existentes de um arquivo ex
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CloseEnum](imetadataimport-closeenum-method.md)|Fecha o enumerador com o identificador especificado.|  
 |[Método CountEnum](imetadataimport-countenum-method.md)|Obtém o número de elementos no enumerador com o identificador especificado.|  
@@ -114,7 +115,7 @@ Fornece métodos para importar e manipular metadados existentes de um arquivo ex
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

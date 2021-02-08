@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 4805-DiscoveryMessageWithInvalidContent'
 title: 4805 - DiscoveryMessageWithInvalidContent
 ms.date: 03/30/2017
 ms.assetid: 2c69a7ef-2f5a-438d-bcaf-b3e4c79f0ab7
-ms.openlocfilehash: 21b369464dd6cce5622e8de8e5077fb646ea99aa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1794b17bae600e67121e40e352c6ce47256763ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788391"
 ---
 # <a name="4805---discoverymessagewithinvalidcontent"></a>4805 - DiscoveryMessageWithInvalidContent
 
@@ -17,7 +18,7 @@ ms.locfileid: "96254149"
 |-|-|  
 |ID|4805|  
 |Palavras-chave|Descoberta|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

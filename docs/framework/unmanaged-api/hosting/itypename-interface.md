@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ITypeName'
 title: Interface ITypeName
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3be458bb-a519-4e22-b373-0b28f2c9cc3c
 topic_type:
 - apiref
-ms.openlocfilehash: db699df08a538b16146e9254b7f7a9cb4785e686
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 39b2d089b3e94f87a38e4def984aa022ceaae8a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789314"
 ---
 # <a name="itypename-interface"></a>Interface ITypeName
 
@@ -37,6 +38,6 @@ Fornece métodos para obter informações de nome de tipo.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)

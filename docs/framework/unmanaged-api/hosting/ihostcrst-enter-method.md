@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método IHostCrst:: Enter'
 title: Método IHostCrst::Enter
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 100dd7eb-7053-4295-9bb3-32ba47f6ec79
 topic_type:
 - apiref
-ms.openlocfilehash: a5c2646d7c9dbf8a7aea4a7fb9bd0a6b8c1d5d66
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ef8e4ce71cde75fe6b834802b08d22aedbd6fab9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789444"
 ---
 # <a name="ihostcrstenter-method"></a>Método IHostCrst::Enter
 
@@ -39,7 +40,7 @@ HRESULT Enter (
  `option`  
  no Um dos valores de [WAIT_OPTION](wait-option-enumeration.md) , que indica a ação que o host deve executar se a operação for bloqueada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -67,7 +68,7 @@ HRESULT Enter (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostCrst](ihostcrst-interface.md)

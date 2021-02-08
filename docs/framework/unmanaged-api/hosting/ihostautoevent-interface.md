@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostAutoEvent'
 title: Interface IHostAutoEvent
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6c1d15c1-a80a-4ee9-b1e4-6e859db6575a
 topic_type:
 - apiref
-ms.openlocfilehash: 6893b019c7e86d3f359cf64752d30f7896203786
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4aea282dbe2067d50214b237650ba01fb8bf22a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680853"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789481"
 ---
 # <a name="ihostautoevent-interface"></a>Interface IHostAutoEvent
 
@@ -27,7 +28,7 @@ Fornece uma representação da implementação do host de um evento de redefini�
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Set](ihostautoevent-set-method.md)|Define a `IHostAutoEvent` instância atual para um estado sinalizado.|  
 |[Método Wait](ihostautoevent-wait-method.md)|Faz com que a `IHostAutoEvent` instância atual aguarde até que o evento seja propriedade ou um período de tempo especificado decorre.|  
@@ -42,7 +43,7 @@ Fornece uma representação da implementação do host de um evento de redefini�
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostManualEvent](ihostmanualevent-interface.md)

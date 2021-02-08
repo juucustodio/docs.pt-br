@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: IsValidToken'
 title: Método IMetaDataImport::IsValidToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: aeb0fc63-9eff-4384-9284-cb9900572d74
 topic_type:
 - apiref
-ms.openlocfilehash: b4dc1e60f3d29e2671882d1900a1c49e56969601
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 68589496213c93f81cfbd0992f9b210e03d6f178
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702851"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789054"
 ---
 # <a name="imetadataimportisvalidtoken-method"></a>Método IMetaDataImport::IsValidToken
 
@@ -39,7 +40,7 @@ BOOL IsValidToken (
  `tk`  
  no O token para verificar a validade de referência.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` Se `tk` é um token de metadados válido dentro do escopo atual. Caso contrário, `false`.  
   
@@ -53,7 +54,7 @@ BOOL IsValidToken (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

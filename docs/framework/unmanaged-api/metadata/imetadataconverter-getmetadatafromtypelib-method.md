@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataConverter:: GetMetaDataFromTypeLib'
 title: Método IMetaDataConverter::GetMetaDataFromTypeLib
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 97dc3a56-adfa-431f-889e-06a35ac84d51
 topic_type:
 - apiref
-ms.openlocfilehash: ed0902824bdbb4d057bf5a7920db4b1d18eb7347
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d1ed5feb9f42ea0f8dc802c4dad527be5d2ed25f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714660"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789275"
 ---
 # <a name="imetadataconvertergetmetadatafromtypelib-method"></a>Método IMetaDataConverter::GetMetaDataFromTypeLib
 
@@ -53,7 +54,7 @@ HRESULT GetMetaDataFromTypeLib (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataImport](imetadataimport-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Interface ICorRuntimeHost'
 title: Interface ICorRuntimeHost
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4369533d-7834-4497-bc37-bfea0ad737b1
 topic_type:
 - apiref
-ms.openlocfilehash: 9fcb5e189af9f72de7635aad550a5e8ab5522dbd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd50d31668b2dd0718dbe644343bfe314a0afdbe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720614"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789652"
 ---
 # <a name="icorruntimehost-interface"></a>Interface ICorRuntimeHost
 
@@ -29,7 +30,7 @@ Fornece métodos que permitem ao host iniciar e parar explicitamente o Common La
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CloseEnum](icorruntimehost-closeenum-method.md)|Redefine um enumerador de domínio de volta para o início da lista de domínios.|  
 |[Método CreateDomain](icorruntimehost-createdomain-method.md)|Cria um domínio de aplicativo. O chamador recebe um ponteiro de interface do tipo <xref:System._AppDomain> para uma instância do tipo <xref:System.AppDomain?displayProperty=nameWithType> .|  
@@ -45,7 +46,7 @@ Fornece métodos que permitem ao host iniciar e parar explicitamente o Common La
 |[Método LocksHeldByLogicalThread](icorruntimehost-locksheldbylogicalthread-method.md)|Não use.|  
 |[Método MapFile](icorruntimehost-mapfile-method.md)|Mapeia o arquivo especificado na memória. Esse método é obsoleto.|  
 |[Método NextDomain](icorruntimehost-nextdomain-method.md)|Obtém um ponteiro de interface para o próximo domínio na enumeração.|  
-|[Método de início](icorruntimehost-start-method.md)|Inicia o CLR.|  
+|[Método Start](icorruntimehost-start-method.md)|Inicia o CLR.|  
 |[Método Stop](icorruntimehost-stop-method.md)|Interrompe a execução do código no tempo de execução para o processo atual.|  
 |[Método SwitchInLogicalThreadState](icorruntimehost-switchinlogicalthreadstate-method.md)|Não use.|  
 |[Método SwitchOutLogicalThreadState](icorruntimehost-switchoutlogicalthreadstate-method.md)|Não use.|  
@@ -61,10 +62,10 @@ Fornece métodos que permitem ao host iniciar e parar explicitamente o Common La
   
  **Versões do .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.AppDomain>
-- [Hosting](index.md)
+- [Hospedagem](index.md)
 - [Interface ICLRRuntimeHost](iclrruntimehost-interface.md)
 - [Hosts de runtime](/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))
 - [Interfaces de hospedagem](hosting-interfaces.md)

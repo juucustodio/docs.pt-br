@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorRuntimeHost:: método CreateEvidence'
 title: Método ICorRuntimeHost::CreateEvidence
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e235ea80-b84c-4442-a4c3-fc96c25a8eb9
 topic_type:
 - apiref
-ms.openlocfilehash: 6627fce519934177aefd26a612e5b00ca1941d02
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 34694f7e867066430a28120b412237ef9c64c740
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715661"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789665"
 ---
 # <a name="icorruntimehostcreateevidence-method"></a>Método ICorRuntimeHost::CreateEvidence
 
@@ -39,7 +40,7 @@ HRESULT CreateEvidence (
  `pEvidence`  
  fora Um ponteiro de interface para uma <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> instância usada para criar evidências de segurança. Esse ponteiro é digitado `IUnknown` , de modo que os chamadores normalmente devem chamar `QueryInterface` essa interface para obter um ponteiro para um <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -62,7 +63,7 @@ HRESULT CreateEvidence (
   
  **Versão do .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

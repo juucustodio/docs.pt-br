@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorRuntimeHost:: SwitchInLogicalThreadState'
 title: Método ICorRuntimeHost::SwitchInLogicalThreadState
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7df1e492-8014-43ea-80d1-a4743e9b1c17
 topic_type:
 - apiref
-ms.openlocfilehash: a4590bcd96226a713ff5535a8bc802c2116f862a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3e375379cc5d6af7c3a8fb8d64a40a389e0f9dcc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690129"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789561"
 ---
 # <a name="icorruntimehostswitchinlogicalthreadstate-method"></a>Método ICorRuntimeHost::SwitchInLogicalThreadState
 
@@ -49,6 +50,6 @@ HRESULT SwitchInLogicalThreadState(
   
  **Versão do .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorRuntimeHost](icorruntimehost-interface.md)

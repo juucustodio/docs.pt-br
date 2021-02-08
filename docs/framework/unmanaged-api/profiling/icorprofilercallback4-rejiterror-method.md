@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback4:: ReJITError'
 title: Método ICorProfilerCallback4::ReJITError
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d7888aa9-dfaa-420f-9f99-e06ab35ca482
 topic_type:
 - apiref
-ms.openlocfilehash: 46312aaf530e69f0e6a90e35515f1373d01b4340
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f5173d90e65a1e9f1049ba7eadc1ce9cf7630096
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730234"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788690"
 ---
 # <a name="icorprofilercallback4rejiterror-method"></a>Método ICorProfilerCallback4::ReJITError
 
@@ -50,13 +51,13 @@ HRESULT ReJITError(
  `hrStatus`  
  no Um HRESULT que indica a natureza da falha. Consulte a seção status HRESULTs para obter uma lista de valores.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Os valores retornados desse retorno de chamada são ignorados.  
   
 ## <a name="status-hresults"></a>Status HRESULTs  
   
-|Matriz de status HRESULT|DESCRIÇÃO|  
+|Matriz de status HRESULT|Descrição|  
 |--------------------------|-----------------|  
 |E_INVALIDARG|O `moduleID` `methodDef` token ou é `NULL` .|  
 |CORPROF_E_DATAINCOMPLETE|O módulo ainda não está totalmente carregado ou está em processo de descarregamento.|  
@@ -75,7 +76,7 @@ HRESULT ReJITError(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Interface ICorProfilerCallback4](icorprofilercallback4-interface.md)

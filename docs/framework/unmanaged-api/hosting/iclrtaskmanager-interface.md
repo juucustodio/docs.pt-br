@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRTaskManager'
 title: Interface ICLRTaskManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2bd55e0c-001b-41fd-b29d-f01670fe8216
 topic_type:
 - apiref
-ms.openlocfilehash: 1170b29c01275b108a6ccdf6e324c96d97c10c82
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0ce3641042725bc2f3acb95933ccd7a5bbe3bc4d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732444"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789730"
 ---
 # <a name="iclrtaskmanager-interface"></a>Interface ICLRTaskManager
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem que o host solicite explicitamente que o Common La
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CreateTask](iclrtaskmanager-createtask-method.md)|Solicita explicitamente que o CLR crie uma nova instância de [ICLRTask](iclrtask-interface.md) .|  
 |[Método GetCurrentTask](iclrtaskmanager-getcurrenttask-method.md)|Obtém a `ICLRTask` instância que representa a tarefa que está sendo executada no momento.|  
@@ -49,7 +50,7 @@ Fornece métodos que permitem que o host solicite explicitamente que o Common La
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface IHostTask](ihosttask-interface.md)

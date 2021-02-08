@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorRuntimeHost:: CreateDomainSetup'
 title: Método ICorRuntimeHost::CreateDomainSetup
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c21dab60-fb65-47d9-8a94-7fd47ca53b48
 topic_type:
 - apiref
-ms.openlocfilehash: 1be7eee5c2591f26c33572446080a4fa4b3b929d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b7c2dc55fa9f0d3d5a5c18e38c2c825048ae5f53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723890"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789678"
 ---
 # <a name="icorruntimehostcreatedomainsetup-method"></a>Método ICorRuntimeHost::CreateDomainSetup
 
@@ -39,7 +40,7 @@ HRESULT CreateDomainSetup (
  `pAppDomainSetup`  
  fora Um ponteiro de interface para uma <xref:System.AppDomainSetup?displayProperty=nameWithType> instância. Esse parâmetro é digitado como `IUnknown` , de modo que os chamadores geralmente devem chamar `QueryInterface` esse ponteiro para obter um ponteiro de interface do tipo `IAppDomainSetup` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -62,7 +63,7 @@ HRESULT CreateDomainSetup (
   
  **Versão do .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

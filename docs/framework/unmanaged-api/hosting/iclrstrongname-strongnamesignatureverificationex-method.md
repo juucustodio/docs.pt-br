@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRStrongName:: StrongNameSignatureVerificationEx'
 title: Método ICLRStrongName::StrongNameSignatureVerificationEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dbd2f662-208b-4174-b301-5c99af91040f
 topic_type:
 - apiref
-ms.openlocfilehash: 9caeb72c57260012ae2b459950bf19d907da1d98
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0e1692d7151e09a621b93823424b3ac10b6607d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671545"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789756"
 ---
 # <a name="iclrstrongnamestrongnamesignatureverificationex-method"></a>Método ICLRStrongName::StrongNameSignatureVerificationEx
 
@@ -47,7 +48,7 @@ HRESULT StrongNameSignatureVerificationEx (
  `pfWasVerified`  
  [fora] `true` se a assinatura de nome forte foi verificada; caso contrário, `false` . `pfWasVerified` também será definido como `false` se a verificação tiver sido bem-sucedida devido a configurações do registro.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` se a verificação foi bem-sucedida; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
   
@@ -65,7 +66,7 @@ HRESULT StrongNameSignatureVerificationEx (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameSignatureVerification](iclrstrongname-strongnamesignatureverification-method.md)
 - [Interface ICLRStrongName](iclrstrongname-interface.md)

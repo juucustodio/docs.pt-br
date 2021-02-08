@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTaskManager:: SetUILocale'
 title: Método IHostTaskManager::SetUILocale
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d0c87a9c-ea81-4237-a16b-c22b36ec9dc8
 topic_type:
 - apiref
-ms.openlocfilehash: bd1a1d7d2f7f945f345e8af802b881392d6d93e5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0b81f127c6afb64670424a05db6cc57c4918396a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724215"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789379"
 ---
 # <a name="ihosttaskmanagersetuilocale-method"></a>Método IHostTaskManager::SetUILocale
 
@@ -39,7 +40,7 @@ HRESULT SetUILocale (
  `lcid`  
  no O valor do identificador de localidade que mapeia para a cultura geográfica e a linguagem recém atribuídas.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -65,7 +66,7 @@ HRESULT SetUILocale (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

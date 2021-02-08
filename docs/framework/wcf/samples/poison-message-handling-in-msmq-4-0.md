@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: manipulação de mensagens suspeitas no MSMQ 4,0'
 title: Tratamento de mensagens suspeitas no MSMQ 4.0
 ms.date: 03/30/2017
 ms.assetid: ec8d59e3-9937-4391-bb8c-fdaaf2cbb73e
-ms.openlocfilehash: 2ad7ad5b7e1865d5c9843720861b7a8e440f47f0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fadbce9379b63f47f80c38551c1c71b81df5fee0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261352"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793162"
 ---
 # <a name="poison-message-handling-in-msmq-40"></a>Tratamento de mensagens suspeitas no MSMQ 4.0
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: especificando Transferência de Dados em contratos de serviço'
 title: Especificando transferência de dados em contratos de serviço
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - service contracts [WCF], data transfer
 ms.assetid: 7c5a26c8-89c9-4bcb-a4bc-7131e6d01f0c
-ms.openlocfilehash: 30cdae7e15b80ca826eeea652566a535271477d9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 672d2127af95847c0a085a8ca1c358f2a8440dee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246388"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793422"
 ---
 # <a name="specifying-data-transfer-in-service-contracts"></a>Especificando transferência de dados em contratos de serviço
 
@@ -588,7 +589,7 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
   
  Para obter mais informações sobre conceitos de serialização avançada, consulte [serialização e desserialização](serialization-and-deserialization.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Usando a classe XmlSerializer](using-the-xmlserializer-class.md)
 - [Como: habilitar a transmissão](how-to-enable-streaming.md)

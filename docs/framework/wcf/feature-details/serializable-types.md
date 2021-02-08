@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tipos serializáveis'
 title: Tipos serializáveis
 ms.date: 03/30/2017
 ms.assetid: f1c8539a-6a79-4413-b294-896f0957b2cd
-ms.openlocfilehash: 4ba5fb80b3a7f4149eb49aa838826f2792147dd1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0316946a2d373f6fec4df388e5ed50bd4dc2b1c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253954"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793565"
 ---
 # <a name="serializable-types"></a>Tipos serializáveis
 
@@ -41,7 +42,7 @@ Por padrão, o <xref:System.Runtime.Serialization.DataContractSerializer> serial
 
  Os tipos não marcados (tipos sem o <xref:System.Runtime.Serialization.DataContractAttribute> atributo) podem herdar de tipos que têm esse atributo; no entanto, o inverso não é permitido: tipos com o atributo não podem herdar de tipos desmarcados. Essa regra é imposta principalmente para garantir a compatibilidade com o código escrito em versões anteriores do .NET Framework.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute>

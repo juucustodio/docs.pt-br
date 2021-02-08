@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: suporte para JSON e outros formatos de Transferência de Dados'
 title: Suporte para JSON e outros formatos de transferência de dados
 ms.date: 03/30/2017
 ms.assetid: a527f1be-4e37-4beb-9a95-291480d19627
-ms.openlocfilehash: 5f625c4ac6f2fa65df4d5a046b747c58f7a725b0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4919082d75fd6e0b742b9ca17308c3b393afc632
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246297"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793370"
 ---
 # <a name="support-for-json-and-other-data-transfer-formats"></a>Suporte para JSON e outros formatos de transferência de dados
 

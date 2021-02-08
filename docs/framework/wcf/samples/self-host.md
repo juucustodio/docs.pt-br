@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Self-Host'
 title: Self-Host
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Self hosted service
 - Self Host Sample [Windows Communication Foundation]
 ms.assetid: 05e68661-1ddf-4abf-a899-9bb1b8272a5b
-ms.openlocfilehash: f421e9e1fb33ca0f8a35025603d279c5629fb7ec
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7421e5e24534fbae16d1ddd11c488ad0269883e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793136"
 ---
 # <a name="self-host"></a>Self-Host
 
@@ -76,6 +77,6 @@ public static void Main()
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\SelfHost`  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedagem de AppFabric e persistência Exemplos](/previous-versions/appfabric/ff383418(v=azure.10))

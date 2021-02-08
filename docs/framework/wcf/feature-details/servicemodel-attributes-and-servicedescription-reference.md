@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: atributos de ServiceModel e referência de ServiceDescription'
 title: Atributos de ServiceModel e referência de ServiceDescription
 ms.date: 03/30/2017
 ms.assetid: 4ab86b17-eab9-4846-a881-0099f9a7cc64
-ms.openlocfilehash: db2824d7452f1ec4c675782e18ad25bd4be6a483
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 52d800d1aab7fc7d60f0b1234065aa876944ea3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253863"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793500"
 ---
 # <a name="servicemodel-attributes-and-servicedescription-reference"></a>Atributos de ServiceModel e referência de ServiceDescription
 
@@ -63,12 +64,12 @@ A *árvore de descrição* é a hierarquia de tipos (começando com a <xref:Syst
   
 |Valor de DataContractFormatAttribute|Valor de árvore de descrição afetado|  
 |---------------------------------------|-------------------------------------|  
-|Usar|O <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> valor é definido no <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> para a operação.|  
+|Uso|O <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> valor é definido no <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> para a operação.|  
   
 |Valor de XmlSerializerFormatAttribute|Valor de árvore de descrição afetado|  
 |----------------------------------------|-------------------------------------|  
 |Estilo|Essa <xref:System.ServiceModel.XmlSerializerFormatAttribute> propriedade é definida no <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> para a operação.|  
-|Usar|O <xref:System.ServiceModel.XmlSerializerFormatAttribute> é definido no <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> para a operação.|  
+|Uso|O <xref:System.ServiceModel.XmlSerializerFormatAttribute> é definido no <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> para a operação.|  
   
 |Valor de TransactionFlowAttribute|Valor de árvore de descrição afetado|  
 |------------------------------------|-------------------------------------|  
@@ -115,6 +116,6 @@ A *árvore de descrição* é a hierarquia de tipos (começando com a <xref:Syst
   
  Para obter mais informações sobre como os valores de árvore de descrição são convertidos em metadados, consulte [ServiceDescription e referência WSDL](servicedescription-and-wsdl-reference.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [ServiceDescription and WSDL Reference](servicedescription-and-wsdl-reference.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: contexto de instância durável'
 title: Contexto de instância durável
 ms.date: 03/30/2017
 ms.assetid: 97bc2994-5a2c-47c7-927a-c4cd273153df
-ms.openlocfilehash: 567ca62d48e80993328548b11f8b59c4fcd355fe
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 6f879b2f6c592e5d8f7294405fda403e918070ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793291"
 ---
 # <a name="durable-instance-context"></a>Contexto de instância durável
 

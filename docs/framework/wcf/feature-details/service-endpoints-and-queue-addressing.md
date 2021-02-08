@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: pontos de extremidade de serviço e endereçamento de fila'
 title: Pontos de extremidade de serviço e endereçamento de fila
 ms.date: 03/30/2017
 ms.assetid: 7d2d59d7-f08b-44ed-bd31-913908b83d97
-ms.openlocfilehash: f7c3221d466d2599139eb29a8358d726c2b4edda
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 61b4e35de6bd89f45aa9f5e54a55beaf8536b74b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253915"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793552"
 ---
 # <a name="service-endpoints-and-queue-addressing"></a>Pontos de extremidade de serviço e endereçamento de fila
 
@@ -35,7 +36,7 @@ Este tópico discute como os clientes atendem aos serviços que lêem de filas e
   
  NET. MSMQ:// \<*host-name*> /[privado/] \<*queue-name*>  
   
- onde:  
+ em que:  
   
 - \<*host-name*> é o nome do computador que hospeda a fila de destino.  
   
@@ -81,7 +82,7 @@ Este tópico discute como os clientes atendem aos serviços que lêem de filas e
 |----------------------------------|-----------------------------------|--------------------------------------|---------------------------------|  
 |`Net.msmq://<machine-name>/private/abc`|False (padrão)|Nativo (padrão)|`DIRECT=OS:machine-name\private$\abc`|  
 |`Net.msmq://<machine-name>/private/abc`|Falso|SRMP|`DIRECT=http://machine/msmq/private$/abc`|  
-|`Net.msmq://<machine-name>/private/abc`|True|Nativo|`PUBLIC=some-guid` (o GUID da fila)|  
+|`Net.msmq://<machine-name>/private/abc`|Verdadeiro|Nativo|`PUBLIC=some-guid` (o GUID da fila)|  
   
 ### <a name="reading-messages-from-the-dead-letter-queue-or-the-poison-message-queue"></a>Lendo mensagens da fila de Dead-Letter ou da fila de Poison-Message  
 
@@ -113,6 +114,6 @@ Este tópico discute como os clientes atendem aos serviços que lêem de filas e
   
  Observe que você não pode usar net. MSMQ://endereçamento com `MsmqIntegrationBinding` . Como o `MsmqIntegrationBinding` dá suporte ao endereçamento de nome de formato MSMQ de forma livre, você pode usar um serviço WCF que usa essa associação para usar recursos de lista de distribuição e multicast no MSMQ. Uma exceção é especificar `CustomDeadLetterQueue` ao usar o `MsmqIntegrationBinding` . Ele deve estar no formato net. MSMQ://, semelhante a como ele é especificado usando o `NetMsmqBinding` .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando na Web um aplicativo em fila](web-hosting-a-queued-application.md)

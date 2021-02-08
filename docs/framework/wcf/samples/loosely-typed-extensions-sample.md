@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exemplo de extensões de Loosely-Typed'
 title: Exemplo de extensões tipadas vagamente
 ms.date: 03/30/2017
 ms.assetid: 56ce265b-8163-4b85-98e7-7692a12c4357
-ms.openlocfilehash: 94e01970502223febd3ff03e30be7b17d9019d93
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cd430a922a35baf0ed9ce387b7df81fa3af6b35d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96264875"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793227"
 ---
 # <a name="loosely-typed-extensions-sample"></a>Exemplo de extensões tipadas vagamente
 
@@ -159,7 +160,7 @@ foreach (SyndicationElementExtension extension in feed2.ElementExtensions.Where<
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Syndication\LooselyTypedExtensions`  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Extensões com rigidez de tipos](strongly-typed-extensions-sample.md)
 - [Sindicalização do WCF](../feature-details/wcf-syndication.md)

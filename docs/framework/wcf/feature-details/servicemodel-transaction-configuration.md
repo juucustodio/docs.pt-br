@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: configuração de transação de ServiceModel'
 title: Configuração de transação de ServiceModel
 ms.date: 03/30/2017
 helpviewer_keywords:
 - transactions [WCF], ServiceModel configuration
 ms.assetid: 5636067a-7fbd-4485-aaa2-8141c502acf3
-ms.openlocfilehash: 27deaf38a8809b8a7fca560cc6783bd24dc43686
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 260e3cbe94ce0d22887554705134eef72a031981
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242884"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793461"
 ---
 # <a name="servicemodel-transaction-configuration"></a>Configuração de transação de ServiceModel
 
@@ -66,7 +67,7 @@ Windows Communication Foundation (WCF) fornece três atributos para configurar t
   
  Observe que o valor de tempo limite usado é o valor menor entre esse `transactionTimeout` parâmetro de configuração e qualquer <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> propriedade.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [\<binding>](../../configure-apps/file-schema/wcf/bindings.md)
 - [Esquema de configuração do WCF](../../configure-apps/file-schema/wcf/index.md)

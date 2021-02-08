@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: OperationContextScope'
 title: OperationContextScope
 ms.date: 03/30/2017
 ms.assetid: 11c11108-8eb4-4d49-95a0-83285a812262
-ms.openlocfilehash: 261247daf01e975cfc3b5ae449fae6dfbf9d1a80
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: efe05bdf4071ef8dfd86cf4c393b2abb8d20ad31
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96259990"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793201"
 ---
 # <a name="operationcontextscope"></a>OperationContextScope
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cenários de implantação com suporte'
 title: Cenários de implantação com suporte
 ms.date: 03/30/2017
 ms.assetid: 3399f208-3504-4c70-a22e-a7c02a8b94a6
-ms.openlocfilehash: 299c8f2e29806a123e0a8b6e1e70d8cc13daa7bf
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 090f0912660fc113bad8640afb1360b64071fa78
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546244"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793357"
 ---
 # <a name="supported-deployment-scenarios"></a>Cenários de implantação com suporte
 
@@ -43,9 +44,9 @@ Algumas precauções de segurança devem ser tomadas durante o download e a exec
 
 O WCF pode ser usado para se comunicar com servidores remotos de dentro de aplicativos parcialmente confiáveis implantados pela [implantação do ClickOnce](/visualstudio/deployment/clickonce-security-and-deployment) ou XBAP. O conjunto de permissões de zona da Internet inclui <xref:System.Net.WebPermission> para o host de origem, que permite que esses aplicativos se comuniquem com seu servidor de origem usando qualquer uma das associações do WCF com suporte descritas em [compatibilidade parcial do recurso de confiança](partial-trust-feature-compatibility.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Segurança de acesso do código](../../misc/code-access-security.md)
-- [Visão geral de aplicativos hospedados Windows Presentation Foundation navegador](/dotnet/desktop/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Visão geral dos aplicativos Windows Presentation Foundation Browser-Hosted](/dotnet/desktop/wpf/app-development/wpf-xaml-browser-applications-overview)
 - [Confiança parcial](partial-trust.md)
 - [ASP.NET de níveis de confiança e arquivos de política](/previous-versions/wyts434y(v=vs.140))

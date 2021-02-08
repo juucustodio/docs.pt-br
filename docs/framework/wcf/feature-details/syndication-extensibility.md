@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: extensibilidade de agregação'
 title: Extensibilidade de sindicalização
 ms.date: 03/30/2017
 ms.assetid: 4d941175-74a2-4b15-81b3-086e8a95d25f
-ms.openlocfilehash: 39187f228e47ed4e82c8e737563b860ce5734416
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 103fa0a1b288068e724ab27f37cf096f3ececa42
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266526"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793344"
 ---
 # <a name="syndication-extensibility"></a>Extensibilidade de sindicalização
 
@@ -47,7 +48,7 @@ A API de distribuição foi projetada para fornecer um modelo de programação d
   
 - Substitua <xref:System.ServiceModel.Syndication.SyndicationFeed.CreateItem> na classe MyExtensionFeed para instanciar um MyExtensionItem em vez do padrão <xref:System.ServiceModel.Syndication.SyndicationItem> . Uma série de métodos é definida em <xref:System.ServiceModel.Syndication.SyndicationFeed> e <xref:System.ServiceModel.Syndication.SyndicationItem> que pode criar <xref:System.ServiceModel.Syndication.SyndicationLink> <xref:System.ServiceModel.Syndication.SyndicationCategory> objetos, e <xref:System.ServiceModel.Syndication.SyndicationPerson> (por exemplo,, <xref:System.ServiceModel.Syndication.SyndicationFeed.CreateLink> <xref:System.ServiceModel.Syndication.SyndicationFeed.CreateCategory> e <xref:System.ServiceModel.Syndication.SyndicationFeed.CreatePerson> ). Todos os quais podem ser substituídos para criar uma classe derivada personalizada.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de sindicalização do WCF](wcf-syndication-overview.md)
 - [Arquitetura de sindicalização](architecture-of-syndication.md)

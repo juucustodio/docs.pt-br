@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como especificar a cadeia de certificados da autoridade de certificação usada para verificar as assinaturas (WCF)'
 title: Como especificar a cadeia de certificados da autoridade de certificação utilizada para verificar assinaturas (WCF)
 ms.date: 03/30/2017
 helpviewer_keywords:
 - certificates [WCF], specifying the certificate authority certificate chain
 - certificates [WCF], verifying signatures
 ms.assetid: 7c719355-aa41-4567-80d0-5115a8cf73fd
-ms.openlocfilehash: 0a03902c9a0d36ebd6e2c38f4a827737cacec447
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f3bfcb378641db2a4bdba054f25042a5e7e9be07
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245026"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793448"
 ---
 # <a name="how-to-specify-the-certificate-authority-certificate-chain-used-to-verify-signatures-wcf"></a>Como especificar a cadeia de certificados da autoridade de certificação utilizada para verificar assinaturas (WCF)
 
@@ -34,6 +35,6 @@ Quando Windows Communication Foundation (WCF) recebe uma mensagem SOAP assinada 
   
          Para obter mais informações sobre como usar o snap-in de certificados com o MMC, consulte [How to: View Certificates with the MMC Snap-in](how-to-view-certificates-with-the-mmc-snap-in.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Trabalhando com certificados](working-with-certificates.md)

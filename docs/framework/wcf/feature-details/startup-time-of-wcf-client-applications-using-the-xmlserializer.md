@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como melhorar o tempo de inicialização de aplicativos cliente WCF usando o XmlSerializer'
 title: 'Como: melhorar o tempo de inicialização dos aplicativos do cliente WCF usando o XmlSerializer'
 ms.date: 03/30/2017
 ms.assetid: 21093451-0bc3-4b1a-9a9d-05f7f71fa7d0
-ms.openlocfilehash: ac54a766161db146331a3e072b97822b609344c0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8cf46cc35753934e8f4cb3abadc20c912e9efca9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246375"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793396"
 ---
 # <a name="how-to-improve-the-startup-time-of-wcf-client-applications-using-the-xmlserializer"></a>Como: melhorar o tempo de inicialização dos aplicativos do cliente WCF usando o XmlSerializer
 
@@ -88,6 +89,6 @@ Os serviços e os aplicativos cliente que usam tipos de dados que são serializa
 svcutil /t:xmlserializer myContractLibrary.exe  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Ferramenta Utilitário de Metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

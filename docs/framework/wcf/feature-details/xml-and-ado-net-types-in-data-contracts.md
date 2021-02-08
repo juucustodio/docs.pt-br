@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: tipos de ADO.NET e XML em contratos de dados'
 title: Tipos de XML e ADO.NET em contratos de dados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c2ce8461-3c15-4c41-8c81-1cb78f5b59a6
-ms.openlocfilehash: d4ac956af0addf9c3b38f3bfb8e8644757dc81c3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c83520b1be1bdf0f7985982dc498f9c12cef5722
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238297"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793305"
 ---
 # <a name="xml-and-adonet-types-in-data-contracts"></a>Tipos de XML e ADO.NET em contratos de dados
 
@@ -215,7 +216,7 @@ O modelo de contrato de dados do Windows Communication Foundation (WCF) dá supo
   
  O suporte para datasets tipados no modelo de contrato de dados é limitado. Os conjuntos de linhas tipados podem ser serializados e desserializados e podem exportar seu esquema. No entanto, a importação de esquema de contrato de dados não é capaz de gerar novos tipos de DataSet tipados a partir do esquema, pois ele só pode reutilizar os existentes. Você pode apontar para um DataSet tipado existente usando a `/r` opção on Svcutil.exe. Se você tentar usar um Svcutil.exe sem a `/r` opção em um serviço que usa um conjunto de um DataSet, um serializador alternativo (XmlSerializer) será selecionado automaticamente. Se você precisar usar o DataContractSerializer e precisar gerar conjuntos de valores do esquema, poderá usar o seguinte procedimento: gerar os tipos de conjunto de valores tipados (usando a ferramenta de Xsd.exe com a `/d` opção no serviço), compilar os tipos e, em seguida, apontar para eles usando a `/r` opção on Svcutil.exe.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Xml.Serialization.IXmlSerializable>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: suporte a POCO'
 title: Suporte para POCO
 ms.date: 03/30/2017
 ms.assetid: 3846ca73-2819-4ca2-8367-dc739dde5a5b
-ms.openlocfilehash: d416f37e0add99fbe3d60982fd2298748ff78556
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8d44e7a3ebffc6c460a735587ca56990953b2d9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96259961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793175"
 ---
 # <a name="poco-support"></a>Suporte para POCO
 
@@ -57,7 +58,7 @@ public class ComplexNumber
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\POCO`  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>
 - [Tipos serializáveis](../feature-details/serializable-types.md)

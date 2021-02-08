@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: namespaces e DTDs no DOM'
 title: Namespaces e DTDs em DOM
 ms.date: 03/30/2017
 ms.assetid: 1e9b55c4-76ad-4f54-8d96-7ce4b4cf1e05
-ms.openlocfilehash: 42bd30e7eea2ec0a3e1aa6846196c3280697efdf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4445c1a33cca50707940758f812995c6b1db64cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714543"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775923"
 ---
 # <a name="namespaces-and-dtds-in-the-dom"></a>Namespaces e DTDs em DOM
 
@@ -31,6 +32,6 @@ Definições de tipo (DTDs) de documento complicam suporte de namespace. Por exe
   
  O XML no Microsoft .NET Framework implementa a segunda opção para compatibilidade máxima com o W3C.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

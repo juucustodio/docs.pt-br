@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: estendendo o modelo de aplicativo Visual Basic'
 title: Estendendo o modelo de aplicativo do Visual Basic
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Visual Basic Application Model, extending
 ms.assetid: e91d3bed-4c27-40e3-871d-2be17467c72c
-ms.openlocfilehash: e707f034f05aababdc70d5d6e1f9e1da0ed558bc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3aea2ab77b46976b6f7b220ee0b5811dc97e373c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410225"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775572"
 ---
 # <a name="extending-the-visual-basic-application-model"></a>Estendendo o modelo de aplicativo do Visual Basic
 
@@ -94,7 +95,7 @@ Se o aplicativo for um aplicativo normal (aplicativo de várias instâncias) ou 
 |<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit%2A>|Se o aplicativo salvar automaticamente as alterações de configurações de usuário do aplicativo quando o aplicativo for encerrado.|Caixa **de seleção Salvar My. Settings na desligamento**|
 |<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A>|O que faz com que o aplicativo seja encerrado, como quando o formulário de inicialização é fechado ou quando o último formulário é fechado.|Lista de **modo de desligamento**|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 39457-TrackingRecordRaised'
 title: 39457 - TrackingRecordRaised
 ms.date: 03/30/2017
 ms.assetid: 5a2731d1-c731-4b79-bb69-016cb69ef481
-ms.openlocfilehash: 5bf343f29528bdb3941e253b2fd5b39799d94c2a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 551e13e32dbb690458877ceed0b532799f238966
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275899"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99777899"
 ---
 # <a name="39457---trackingrecordraised"></a>39457 - TrackingRecordRaised
 
@@ -17,7 +18,7 @@ ms.locfileid: "96275899"
 |-|-|  
 |ID|39457|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

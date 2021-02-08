@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como consultar instâncias não persistentes'
 title: 'Como: consultar para instâncias não persistentes'
 ms.date: 03/30/2017
 ms.assetid: 294019b1-c1a7-4b81-a14f-b47c106cd723
-ms.openlocfilehash: 54a442dab6700dda33cf05df1fb5c60a96bcbd56
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2cef64f97b32c5f1d31fa078200bc2fe15179485
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279994"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99777652"
 ---
 # <a name="how-to-query-for-non-persisted-instances"></a>Como: consultar para instâncias não persistentes
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: usando sessões'
 title: Utilizando sessões
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - sessions [WCF]
 ms.assetid: 864ba12f-3331-4359-a359-6d6d387f1035
-ms.openlocfilehash: 42159b3871d974e53751468b422cbe9f72b6f908
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bd5fc82af9b613566885bcf27e659edc4ba0e579
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273679"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778159"
 ---
 # <a name="using-sessions"></a>Utilizando sessões
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como excluir arquivos e diretórios no armazenamento isolado'
 title: 'Como: Excluir arquivos e diretórios no armazenamento isolado'
 ms.date: 03/30/2017
 dev_langs:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - storing data using isolated storage, deleting files and directories
 - deleting directories within isolated stage file
 ms.assetid: 8fcc0dea-435b-4d40-ba4d-ba056265c202
-ms.openlocfilehash: ea1d7a460a8867f069aa4b4d915e03d6948e23b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9ea8ea16b4329989f8c2453153ef3d803a4cc598
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688504"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775676"
 ---
 # <a name="how-to-delete-files-and-directories-in-isolated-storage"></a>Como: Excluir arquivos e diretórios no armazenamento isolado
 
@@ -39,7 +40,7 @@ Você pode excluir pastas e arquivos em um arquivo de armazenamento isolado. Em 
  [!code-csharp[Conceptual.IsolatedStorage#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source4.cs#4)]
  [!code-vb[Conceptual.IsolatedStorage#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source4.vb#4)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType>
 - [Armazenamentos isolado](isolated-storage.md)

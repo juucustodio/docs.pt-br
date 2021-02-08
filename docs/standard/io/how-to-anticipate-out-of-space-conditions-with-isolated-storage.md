@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como prever condições de fora de espaço com armazenamento isolado'
 title: 'Como: Prever condições de espaço insuficiente com o armazenamento isolado'
 ms.date: 03/30/2017
 dev_langs:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - isolated storage, out of space conditions
 - data storage using isolated storage, out of space conditions
 ms.assetid: e35d4535-3732-421e-b1a3-37412e036145
-ms.openlocfilehash: c8052030cdc385fc54852bb8ec48c783f2ee5bc4
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 782fcf66a8cf3f609153c897fb9248f53a764150
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830838"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775793"
 ---
 # <a name="how-to-anticipate-out-of-space-conditions-with-isolated-storage"></a>Como: Prever condições de espaço insuficiente com o armazenamento isolado
 
@@ -44,7 +45,7 @@ O exemplo de código a seguir obtém um armazenamento isolado, cria alguns arqui
 [!code-csharp[Conceptual.IsolatedStorage#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source7.cs#8)]
 [!code-vb[Conceptual.IsolatedStorage#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source7.vb#8)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
 - [Armazenamento isolado](isolated-storage.md)

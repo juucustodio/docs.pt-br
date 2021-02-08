@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como obter armazenamentos para armazenamento isolado'
 title: 'Como: Obter repositórios para o armazenamento isolado'
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - data stores, obtaining
 - data storage using isolated storage, obtaining stores
 ms.assetid: fcb6b178-d526-47c4-b029-e946f880f9db
-ms.openlocfilehash: ac53432374b546a46417e9d3b9de342a7ea2ef81
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4d65eb23d4e6935b72dd32926c097f7cf0ab6b85
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734615"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775585"
 ---
 # <a name="how-to-obtain-stores-for-isolated-storage"></a>Como: Obter repositórios para o armazenamento isolado
 
@@ -55,7 +56,7 @@ Um repositório isolado expõe um sistema de arquivos virtual dentro de um compa
  [!code-csharp[Conceptual.IsolatedStorage#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source6.cs#7)]
  [!code-vb[Conceptual.IsolatedStorage#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source6.vb#7)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
 - <xref:System.IO.IsolatedStorage.IsolatedStorageScope>

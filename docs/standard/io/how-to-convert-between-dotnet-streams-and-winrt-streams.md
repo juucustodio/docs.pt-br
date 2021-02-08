@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como converter entre .NET Framework e Windows Runtime fluxos (somente Windows)'
 title: Como converter entre fluxos de .NET Framework e Windows Runtime (somente Windows)
 ms.date: 01/14/2019
 dev_langs:
 - csharp
 - vb
 ms.assetid: 23a763ea-8348-4244-9f8c-a4280b870b47
-ms.openlocfilehash: c2ab384b6d84a14d5e8f4cfe66281a26b14421f4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fc79af9debb721ddb136d525fab0845ea03f8618
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726958"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775754"
 ---
 # <a name="how-to-convert-between-net-framework-and-windows-runtime-streams-windows-only"></a>Como converter entre fluxos de .NET Framework e Windows Runtime (somente Windows)
 
@@ -69,7 +70,7 @@ Para executar esse exemplo, crie um aplicativo UWP XAML direcionado ao .NET Fram
   [!code-csharp[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/cs/mainpage2.xaml.cs)]
   [!code-vb[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/vb/mainpage2.xaml.vb)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Início rápido: ler e gravar um arquivo (Windows)](/previous-versions/windows/apps/hh464978(v=win.10))  
 - [Visão geral dos aplicativos .NET para Windows Store](/previous-versions/windows/apps/br230302(v=vs.140))  

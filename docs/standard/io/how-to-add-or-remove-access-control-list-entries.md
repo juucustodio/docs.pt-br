@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como adicionar ou remover entradas da lista de controle de acesso (somente .NET Framework)'
 title: 'Como: Adicionar ou remover entradas da lista de controle de acesso (somente .NET Framework)'
 ms.date: 01/14/2019
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - I/O [.NET Framework], access control list entries
 - access control lists [.NET Framework]
 ms.assetid: 53758b39-bd9b-4640-bb04-cad5ed8d0abf
-ms.openlocfilehash: 53daa88b761f46dab26b1c12c73741e880512d8d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6a880b26dcfb328be4a788bc52596c2dee442511
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682686"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775819"
 ---
 # <a name="how-to-add-or-remove-access-control-list-entries-net-framework-only"></a>Como: Adicionar ou remover entradas da lista de controle de acesso (somente .NET Framework)
 

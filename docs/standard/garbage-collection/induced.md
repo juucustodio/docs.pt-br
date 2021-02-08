@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: coleções induzidas'
 title: Coletas induzidas
 ms.date: 03/30/2017
 helpviewer_keywords:
 - garbage collection, forced
 ms.assetid: 019008fe-4708-4e65-bebf-04fd9941e149
-ms.openlocfilehash: 25e94221355569931a31b566a53434cbed9ea93f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c9f1929b40ed7cdb38832afebd6d0c67910ccfb7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714231"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775845"
 ---
 # <a name="induced-collections"></a>Coletas induzidas
 
@@ -36,7 +37,7 @@ Na maioria dos casos, o coletor de lixo pode determinar o melhor momento para ex
 |<xref:System.GCCollectionMode.Forced> ou <xref:System.GCCollectionMode.Default>|Uma coleção de bloqueio é executada assim que possível. Se uma coleta em segundo plano estiver em andamento e a geração for 0 ou 1, o método <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> disparará imediatamente uma coleta de bloqueio e retornará quando a coleção for concluída. Se uma coleta em segundo plano estiver em andamento e o parâmetro `generation` for 2, o método aguardará até que a coleta em segundo plano seja concluída, disparará uma coleta de bloqueio de geração 2 e retornará.|Uma coleta é executada assim que possível. O método <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> solicita uma coleta em segundo plano, mas isso não é garantido; dependendo das circunstâncias, uma coleta de bloqueio ainda pode ser executada. Se uma coleta em segundo plano já estiver em andamento, o método retornará imediatamente.|  
 |<xref:System.GCCollectionMode.Optimized>|Uma coleta de bloqueio pode ser executada, dependendo do estado do coletor de lixo e do parâmetro `generation`. O coletor de lixo tenta fornecer um desempenho ideal.|Uma coleta pode ser executada, dependendo do estado do coletor de lixo. O método <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> solicita uma coleta em segundo plano, mas isso não é garantido; dependendo das circunstâncias, uma coleta de bloqueio ainda pode ser executada. O coletor de lixo tenta fornecer um desempenho ideal. Se uma coleta em segundo plano já estiver em andamento, o método retornará imediatamente.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Modos de latência](latency.md)
 - [Coleta de lixo](index.md)

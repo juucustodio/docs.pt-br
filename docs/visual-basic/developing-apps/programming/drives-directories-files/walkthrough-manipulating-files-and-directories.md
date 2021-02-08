@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: manipulando arquivos e diretórios no Visual Basic'
 title: criar arquivos e diretórios
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - writing to files [Visual Basic], walkthroughs
 - I/O [Visual Basic], reading text from files
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
-ms.openlocfilehash: 4b77618e5cd525cf3ad012405f402681aa5bb52c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 315635ee43ee4d4956fc35b7f9bc635b374646f8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775377"
 ---
 # <a name="walkthrough-manipulating-files-and-directories-in-visual-basic"></a>Instruções passo a passo: manipulando arquivos e diretórios no Visual Basic
 
@@ -47,9 +48,9 @@ Este passo a passo fornece uma introdução para os fundamentos de E/S de arquiv
     |Control|Propriedade|Valor|  
     |-------------|--------------|-----------|  
     |**ListBox**|**Nome**|`filesListBox`|  
-    |**Botão**|**Nome**<br /><br /> **Texto**|`browseButton`<br /><br /> **Procurar**|  
-    |**Botão**|**Nome**<br /><br /> **Texto**|`examineButton`<br /><br /> **Examinar**|  
-    |**CheckBox**|**Nome**<br /><br /> **Texto**|`saveCheckBox`<br /><br /> **Salvar resultados**|  
+    |**Botão**|**Nome**<br /><br /> **Text**|`browseButton`<br /><br /> **Procurar**|  
+    |**Botão**|**Nome**<br /><br /> **Text**|`examineButton`<br /><br /> **Examinar**|  
+    |**CheckBox**|**Nome**<br /><br /> **Text**|`saveCheckBox`<br /><br /> **Salvar resultados**|  
     |**FolderBrowserDialog**|**Nome**|`FolderBrowserDialog1`|  
   
 ### <a name="to-select-a-folder-and-list-files-in-a-folder"></a>Para selecionar uma pasta e listar arquivos em uma pasta  
@@ -72,7 +73,7 @@ Este passo a passo fornece uma introdução para os fundamentos de E/S de arquiv
   
      As cadeias de caracteres retornadas pelo método `GetFiles` serão adicionadas à **ListBox**.  
   
-4. Execute o aplicativo. Clique no botão **procurar** . Na caixa de diálogo **Procurar Pasta**, navegue até uma pasta que contenha os arquivos .txt e, em seguida, selecione a pasta e clique em **OK**.  
+4. Execute o aplicativo. Clique no botão **Procurar** . Na caixa de diálogo **Procurar Pasta**, navegue até uma pasta que contenha os arquivos .txt e, em seguida, selecione a pasta e clique em **OK**.  
   
      A `ListBox` contém uma lista de arquivos .txt na pasta selecionada.  
   
@@ -162,7 +163,7 @@ Este passo a passo fornece uma introdução para os fundamentos de E/S de arquiv
   
  [!code-vb[VbVbcnMyFileSystem#111](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class3.vb#111)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>

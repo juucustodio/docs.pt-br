@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como localizar arquivos e diretórios existentes no armazenamento isolado'
 title: 'Como: Localizar arquivos e diretórios existentes no armazenamento isolado'
 ms.date: 03/30/2017
 dev_langs:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - locating directories in isolated storage file
 - storing data using isolated storage, finding files and directories
 ms.assetid: eb28458a-6161-4e7a-9ada-30ef93761b5c
-ms.openlocfilehash: 43685a6ecb92510ad8d80c472a1c774d46cbb5f7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8f8b48046bb65a2a5ba66df7212445bcd965682a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775598"
 ---
 # <a name="how-to-find-existing-files-and-directories-in-isolated-storage"></a>Como: Localizar arquivos e diretórios existentes no armazenamento isolado
 
@@ -39,7 +40,7 @@ Para procurar um diretório no armazenamento isolado, use o método <xref:System
  [!code-csharp[Conceptual.IsolatedStorage#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source8.cs#9)]
  [!code-vb[Conceptual.IsolatedStorage#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source8.vb#9)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
 - [Armazenamentos isolado](isolated-storage.md)

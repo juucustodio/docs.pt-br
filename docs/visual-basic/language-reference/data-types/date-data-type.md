@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados Date (Visual Basic)'
 title: Tipo de Dados de Data
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - literals [Visual Basic], Date
 - '# specifier for Date literals'
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
-ms.openlocfilehash: 46c25e14db56d4cc3c6d59ec7649b37c35676e2e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f6ea6aa99339d13824477bba99ecd211f826a3ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387420"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775013"
 ---
 # <a name="date-data-type-visual-basic"></a>Tipo de dados Data (Visual Basic)
 
@@ -70,22 +71,22 @@ Se você converter um `Date` valor para o `String` tipo, o Visual Basic renderiz
 
 - **Considerações sobre interoperabilidade.** Se você estiver fazendo a interface com componentes não escritos para o .NET Framework, por exemplo, automação ou objetos COM, tenha em mente que os tipos de data/hora em outros ambientes não são compatíveis com o tipo de Visual Basic `Date` . Se você estiver passando um argumento de data/hora para esse componente, declare- `Double` o como em vez de `Date` em seu novo código de Visual Basic e use os métodos de conversão <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> e <xref:System.DateTime.ToOADate%2A?displayProperty=nameWithType> .
 
-- **Digite os caracteres.** `Date`Não tem caractere de tipo literal ou caractere de tipo de identificador. No entanto, o compilador trata literais delimitados entre sinais numéricos ( `# #` ) como `Date` .
+- **Digite os caracteres.** `Date` Não tem caractere de tipo literal ou caractere de tipo de identificador. No entanto, o compilador trata literais delimitados entre sinais numéricos ( `# #` ) como `Date` .
 
 - **Tipo de estrutura.** O tipo correspondente no .NET Framework é a estrutura <xref:System.DateTime?displayProperty=nameWithType>.
 
 ## <a name="example"></a>Exemplo
 
-Uma variável ou constante do `Date` tipo de dados contém a data e a hora. O exemplo a seguir ilustra isto.
+Uma variável ou constante do `Date` tipo de dados contém a data e a hora. O exemplo a seguir ilustra essa situação.
 
 ```vb
 Dim someDateAndTime As Date = #8/13/2002 12:14 PM#
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.DateTime?displayProperty=nameWithType>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Cadeias de caracteres de formato de data e hora padrão](../../../standard/base-types/standard-date-and-time-format-strings.md)
 - [Cadeias de caracteres de formato de data e hora personalizadas](../../../standard/base-types/custom-date-and-time-format-strings.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)

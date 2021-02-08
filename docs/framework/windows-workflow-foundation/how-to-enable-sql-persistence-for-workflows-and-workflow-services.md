@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como habilitar a persistência de SQL para fluxos de trabalho e serviços de fluxo de trabalho'
 title: 'Como: habilitar persistência SQL para fluxos de trabalho e serviços de fluxo de trabalho'
 ms.date: 03/30/2017
 ms.assetid: ca7bf77f-3e5d-4b23-b17a-d0b60f46411d
-ms.openlocfilehash: 5bcd37a654db35ba6e8af1b15d6c132a090b0579
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 5c124c4ec1d75d4b3b24468c04a4fb82236aa29a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90547747"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99777717"
 ---
 # <a name="how-to-enable-sql-persistence-for-workflows-and-workflow-services"></a>Como: habilitar persistência SQL para fluxos de trabalho e serviços de fluxo de trabalho
 

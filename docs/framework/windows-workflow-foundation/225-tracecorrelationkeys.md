@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 225-TraceCorrelationKeys'
 title: 225 - TraceCorrelationKeys
 ms.date: 03/30/2017
 ms.assetid: d9083aaf-3816-4c1c-bae0-2d7f49628345
-ms.openlocfilehash: 04c5e0f4fbf3b95485e5bf4aae53aa2e4912d893
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c5fdb9305815cdc4df6bbae3e54209d2b5cffd9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294489"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778107"
 ---
 # <a name="225---tracecorrelationkeys"></a>225 - TraceCorrelationKeys
 
@@ -17,7 +18,7 @@ ms.locfileid: "96294489"
 |-|-|  
 |ID|225|  
 |Palavras-chave|Solução de problemas, ServiceModel|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

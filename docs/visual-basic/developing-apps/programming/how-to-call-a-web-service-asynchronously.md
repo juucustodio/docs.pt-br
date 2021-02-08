@@ -1,16 +1,17 @@
 ---
-title: Como chamar um serviço Web de forma assíncrona
+description: 'Saiba mais sobre: como chamar um serviço Web de forma assíncrona (Visual Basic)'
+title: 'Como: Chamar um serviço Web de forma assíncrona'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - asynchronous calls [Visual Basic]
 - Web services [Visual Basic], accessing
 ms.assetid: ff8046f4-f1f2-4d8b-90b7-95e3f7415418
-ms.openlocfilehash: d288cc1f2991a8f504dc9f1b206bba76fa378b75
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a702177f60ac598f624676072116bd3ce78da0bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "76794560"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775247"
 ---
 # <a name="how-to-call-a-web-service-asynchronously-visual-basic"></a>Como chamar um serviço Web de forma assíncrona (Visual Basic)
 
@@ -66,7 +67,7 @@ A classe proxy permite chamar os métodos de serviço Web de forma síncrona, em
 
     Para chamar o método Web `getTemp` de forma assíncrona, chame o método `CallGetTempAsync`. Quando o método Web for concluído, seu valor retornado será transmitido ao manipulador de eventos `getTempCompletedHandler`.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como acessar serviços Web de aplicativo](accessing-application-web-services.md)
 - [Objeto My.WebServices](../../language-reference/objects/my-webservices-object.md)

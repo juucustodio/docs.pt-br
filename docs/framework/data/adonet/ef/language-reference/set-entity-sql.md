@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: SET (Entity SQL)'
 title: DEFINIR (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 28b4deac-c7e4-4f09-b428-4d352ef2dc94
-ms.openlocfilehash: 2ac7db5b22ad21eb152788b6c6d6a8e65c1f6a7b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 80be5b76e654c39776d97413c4ece5a8f3df8d2b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169629"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768019"
 ---
 # <a name="set-entity-sql"></a>DEFINIR (Entity SQL)
 
@@ -44,6 +45,6 @@ SELECT VALUE DISTINCT c FROM c
   
  [!code-sql[DP EntityServices Concepts#SET](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#set)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

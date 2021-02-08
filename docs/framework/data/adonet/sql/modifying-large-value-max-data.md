@@ -1,16 +1,17 @@
 ---
-title: Modificando dados de valor grande (max)
+description: 'Saiba mais sobre: Modificando dados de Large-Value (max) no ADO.NET'
+title: Modificando dados de Large-Value (max)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8aca5f00-d80e-4320-81b3-016d0466f7ee
-ms.openlocfilehash: 4748740379df689669ee87f66dce58a7015d1217
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2d4721d2de24399a33322bde9e70eb68e59480cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767668"
 ---
 # <a name="modifying-large-value-max-data-in-adonet"></a>Modificando dados de valores grandes (max) no ADO.NET
 
@@ -264,9 +265,9 @@ WHERE   DocumentID=@DocumentID
  [!code-csharp[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/CS/source.cs#1)]
  [!code-vb[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/VB/source.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [SQL Server dados binários e de valor grande](sql-server-binary-and-large-value-data.md)
+- [Dados binários e de valor grande do SQL Server](sql-server-binary-and-large-value-data.md)
 - [Mapeamentos de tipos de dados do SQL Server](../sql-server-data-type-mappings.md)
-- [SQL Server operações de dados no ADO.NET](sql-server-data-operations.md)
+- [Operações de dados do SQL Server no ADO.NET](sql-server-data-operations.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

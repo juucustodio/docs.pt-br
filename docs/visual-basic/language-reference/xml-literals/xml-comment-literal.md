@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: literal de comentário XML (Visual Basic)'
 title: Literal de Comentário XML
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - XML comment literal [Visual Basic]
 - XML literals [Visual Basic], comment
 ms.assetid: 634c1cee-5e01-48d0-88d7-2dd55e4a9e52
-ms.openlocfilehash: 3272cc0f976d6e8819e51bb5d5fce73066007963
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: f44d2e132236d74d312910921fabb3a85afd82d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875186"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768734"
 ---
 # <a name="xml-comment-literal-visual-basic"></a>Literal de comentário XML (Visual Basic)
 
 Um literal que representa um <xref:System.Xml.Linq.XComment> objeto.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <!-- content -->  
@@ -30,11 +31,11 @@ Um literal que representa um <xref:System.Xml.Linq.XComment> objeto.
   
 |Termo|Definição|  
 |---|---|  
-|`<!--`|Necessário. Denota o início do comentário XML.|  
-|`content`|Necessário. Texto a ser exibido no comentário XML. Não pode conter uma série de dois hifens (--) ou terminar com um hífen adjacente à marca de fechamento.|  
-|`-->`|Necessário. Denota o final do comentário XML.|  
+|`<!--`|Obrigatório. Denota o início do comentário XML.|  
+|`content`|Obrigatório. Texto a ser exibido no comentário XML. Não pode conter uma série de dois hifens (--) ou terminar com um hífen adjacente à marca de fechamento.|  
+|`-->`|Obrigatório. Denota o final do comentário XML.|  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Um objeto <xref:System.Xml.Linq.XComment>.  
   
@@ -59,7 +60,7 @@ Um literal que representa um <xref:System.Xml.Linq.XComment> objeto.
   
  [!code-vb[VbXMLSamples#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples4.vb#9)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XComment>
 - [Literal do Elemento XML](xml-element-literal.md)

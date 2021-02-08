@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <exception> (Visual Basic)'
 title: <exception>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - <exception> XML tag
 - exception XML tag
 ms.assetid: c0517549-171e-4dae-ab88-a9c1700b6eee
-ms.openlocfilehash: e3f386d2a1e15ea3e1519d6e1e5e31c34c73fb99
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 14b7f78dd2521f7d5b3d62f635baa5b50969afa0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90872902"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787468"
 ---
 # <a name="exception-visual-basic"></a>\<exception> (Visual Basic)
 
@@ -42,6 +43,6 @@ Especifica quais exceções podem ser geradas.
   
  [!code-vb[VbVbcnXmlDocComments#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#3)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

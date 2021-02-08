@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <appDomainManagerType> elemento'
 title: Elemento <appDomainManagerType>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - appDomainManagerType element
 - <appDomainManagerType> element
 ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
-ms.openlocfilehash: e21384de6ca07c637a79ee54207d1e3ddfbf20e6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 633dcce2e370bda96efc61447611519d0ed04a3b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170305"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787130"
 ---
 # <a name="appdomainmanagertype-element"></a>Elemento \<appDomainManagerType>
 
@@ -20,7 +21,7 @@ Especifica o tipo que serve como o gerenciador de domínio do aplicativo para o 
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainManagerType>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <appDomainManagerAssembly
@@ -76,7 +77,7 @@ Especifica o tipo que serve como o gerenciador de domínio do aplicativo para o 
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>
 - <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>

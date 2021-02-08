@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: marcas XML recomendadas para comentários de documentação (Visual Basic)'
 title: Marcas XML recomendadas para comentários de documentação
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - XML comments, recommended tags [Visual Basic]
 - comments, recommended XML tags
 ms.assetid: 294e0736-ff1e-498e-af83-6db71ed41a72
-ms.openlocfilehash: 9f877ee3fc9d616dc1e946293489a8aab96ac2e1
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5d3451d98b66817de143cfbddbcb6121de57ca8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90872796"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787442"
 ---
 # <a name="recommended-xml-tags-for-documentation-comments-visual-basic"></a>marcações XML recomendadas para comentários da documentação (Visual Basic)
 
@@ -40,8 +41,8 @@ O compilador Visual Basic pode processar comentários de documentação em seu c
 > [!NOTE]
 > Se você quiser que os colchetes angulares apareçam no texto de um comentário de documentação, use `&lt;` e `&gt;` . Por exemplo, a cadeia de caracteres `"&lt;text in angle brackets&gt;"` será exibida como `<text in angle brackets>` .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Documentando o código com XML](../../programming-guide/program-structure/documenting-your-code-with-xml.md)
-- [-Doc](../../reference/command-line-compiler/doc.md)
+- [-doc](../../reference/command-line-compiler/doc.md)
 - [Como criar documentação XML](../../programming-guide/program-structure/how-to-create-xml-documentation.md)

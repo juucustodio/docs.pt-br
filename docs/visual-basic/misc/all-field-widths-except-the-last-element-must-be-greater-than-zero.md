@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: todas as larguras de campo, exceto o último elemento, devem ser maiores que zero'
 title: Todas as larguras de campo, exceto do último elemento, devem ser maiores que zero
 ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_FieldWidthsMustPositive
 ms.assetid: 41d8c661-a749-4c89-be56-905c6e7c3c9d
-ms.openlocfilehash: 4fb40e5f2b458fbbd0bfdb329f75250e70fd7e28
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: cf2edb21f017031c7dd333893d554353eceebe73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083911"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787377"
 ---
 # <a name="all-field-widths-except-the-last-element-must-be-greater-than-zero"></a>Todas as larguras de campo, exceto do último elemento, devem ser maiores que zero
 
@@ -21,7 +22,7 @@ Todas as larguras de campo, exceto o último elemento, devem ser maiores que zer
   
 - Defina a largura do campo para o comprimento correto.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.FieldWidths>

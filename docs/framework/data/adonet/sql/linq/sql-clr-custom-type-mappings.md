@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: mapeamentos de tipo personalizado do SQL-CLR'
 title: Mapeamentos de tipo personalizados de SQL-CLR
 ms.date: 03/30/2017
 ms.assetid: d916c7fb-4b56-4214-acbe-5e23365047b2
-ms.openlocfilehash: 14d7f8409f93a5414a37a8b1c8e172f53478e817
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5ad929ae4a47964b333616867ad01da2892c21af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155699"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803744"
 ---
 # <a name="sql-clr-custom-type-mappings"></a>Mapeamentos de tipo personalizados de SQL-CLR
 
@@ -34,7 +35,7 @@ O mapeamento de classificação entre o SQL Server e o Common Language Runtime (
 
  Quando seu base de dados, você precisará atualizar o arquivo DBML para refletir as alterações. Uma maneira de fazer isso é automaticamente criar um novo arquivo DBML e novamente faz nas personalizações de mapeamento de tipo. Como alternativa, você pode comparar as diferenças entre seu novo arquivo DBML e o arquivo DBML personalizado e atualizar o arquivo DBML personalizado manualmente para refletir a alteração de base de dados.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Mapeamento de tipo SQL-CLR](sql-clr-type-mapping.md)
 - [Geração de código em LINQ para SQL](code-generation-in-linq-to-sql.md)

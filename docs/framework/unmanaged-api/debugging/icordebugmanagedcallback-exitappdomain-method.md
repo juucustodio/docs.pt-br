@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugManagedCallback:: ExitAppDomain'
 title: Método ICorDebugManagedCallback::ExitAppDomain
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d815486e-b3bd-4fe8-ba28-02abdb4d67ba
 topic_type:
 - apiref
-ms.openlocfilehash: 51beed47e7187d6fa22e60baed16598a8ad73adb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a08f29c6c4c8196b968118433c31afb715935aec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688985"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803614"
 ---
 # <a name="icordebugmanagedcallbackexitappdomain-method"></a>Método ICorDebugManagedCallback::ExitAppDomain
 
@@ -53,6 +54,6 @@ HRESULT ExitAppDomain (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

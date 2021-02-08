@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <remove> elemento para AuthenticationModules (configurações de rede)'
 title: Elemento <remove> para authenticationModules (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - <remove> element, authenticationModules
 - authenticationModules, remove element
 ms.assetid: abf79949-b05c-465a-b51c-bbeda9a74173
-ms.openlocfilehash: 0829f57d8dca91c2d895085dceaeea422229537c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7c97cd20717e6e0945cf77ad6584b319120ec6a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176195"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804082"
 ---
 # <a name="remove-element-for-authenticationmodules-network-settings"></a>Elemento \<remove> para authenticationModules (Configurações de Rede)
 
@@ -26,7 +27,7 @@ Remove um módulo de autenticação do aplicativo.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <remove
@@ -42,7 +43,7 @@ Remove um módulo de autenticação do aplicativo.
   
 |**Atributo**|**Descrição**|  
 |-------------------|---------------------|  
-|**tipo**|O nome do módulo de autenticação a ser removido.|  
+|**type**|O nome do módulo de autenticação a ser removido.|  
   
 ### <a name="child-elements"></a>Elementos filho  
 
@@ -78,7 +79,7 @@ Remove um módulo de autenticação do aplicativo.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>

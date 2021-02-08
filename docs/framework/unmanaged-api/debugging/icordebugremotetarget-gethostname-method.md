@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugRemoteTarget:: GetHostName'
 title: Método ICorDebugRemoteTarget::GetHostName
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1c7276f7-7e54-470c-808c-e13745ac07a1
 topic_type:
 - apiref
-ms.openlocfilehash: 3e946d8a27ec6b568b2f3c3633695c9f6795c938
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a24f34dd638c7031211c2185cd761af0aa24105e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712047"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803520"
 ---
 # <a name="icordebugremotetargetgethostname-method"></a>Método ICorDebugRemoteTarget::GetHostName
 
@@ -47,7 +48,7 @@ HRESULT GetHostName (
  `szHostName`  
  fora Buffer que contém o nome do host ou o endereço IP.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK  
  O nome do host ou o endereço IP foi retornado com êxito.  
@@ -69,7 +70,7 @@ HRESULT GetHostName (
   
  **Versões do .NET Framework:** 3,5 SP1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRemoteTarget](icordebugremotetarget-interface.md)
 - [Interface ICorDebug](icordebug-interface.md)

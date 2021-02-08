@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> de <claimTypeRequirements>'
 title: <add> de <claimTypeRequirements>
 ms.date: 03/30/2017
 ms.assetid: c68e83c9-39e8-4264-b1ce-b6a9eb5b98aa
-ms.openlocfilehash: 00699a6fa5d0de7ac554db6ef8d0bbe511a85c0a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 63cdbce62c20cda1cabe18bbd7b045e2b9a109d5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149212"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804017"
 ---
 # <a name="add-of-claimtyperequirements"></a>\<add> de \<claimTypeRequirements>
 
@@ -79,7 +80,7 @@ Especifica os tipos de declarações obrigatórias e opcionais esperados para ap
 </bindings>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>
 - <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.ClaimTypeRequirements%2A>

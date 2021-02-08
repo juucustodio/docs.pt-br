@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> de <authorizationPolicies>'
 title: <add> de <authorizationPolicies>
 ms.date: 03/30/2017
 ms.assetid: 613a03d8-4384-4556-bce2-8c23286c0bb0
-ms.openlocfilehash: 39cb89340907743c727a425bb2f140ac34842e3b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 616f09abfad51f41348b0ffa8557a4fd54492437
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181668"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804095"
 ---
 # <a name="add-of-authorizationpolicies"></a>\<add> de \<authorizationPolicies>
 
@@ -22,7 +23,7 @@ Especifica uma política de autorização para transformação de declaração.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<authorizationPolicies>**](authorizationpolicies.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <authorizationPolicies>
@@ -58,7 +59,7 @@ Especifica uma política de autorização para transformação de declaração.
 
  Cada política de autorização contém um único `policyType` atributo necessário que é uma cadeia de caracteres. O atributo especifica uma política de autorização, que permite a transformação de um conjunto de declarações de entrada em outro conjunto de declarações. Controle de acesso pode ser concedido ou negado com base nisso. Para obter mais informações sobre como funciona uma diretiva de autorização, consulte <xref:System.IdentityModel.Policy.IAuthorizationPolicy> e [política de autorização](../../../wcf/samples/authorization-policy.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>
 - <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ExternalAuthorizationPolicies%2A>

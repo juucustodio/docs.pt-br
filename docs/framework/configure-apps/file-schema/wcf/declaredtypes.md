@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <declaredTypes>'
 title: <declaredTypes>
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - KnownTypes
 - <declaredTypes> element
 ms.assetid: f35184e4-9d9e-4d37-8fb4-d5b58220eb3e
-ms.openlocfilehash: 281d9d7d7e51a837de4f86f85472815956a20319
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e5f60209dd556edc7cf47b01b1a58c1f17d74eac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153905"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803926"
 ---
 # \<declaredTypes>
 
@@ -94,7 +95,7 @@ Contém os tipos conhecidos que o <xref:System.Runtime.Serialization.DataContrac
 </configuration>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - [\<dataContractSerializer>](datacontractserializer-element.md)

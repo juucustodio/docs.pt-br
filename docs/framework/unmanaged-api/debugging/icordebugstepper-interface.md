@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugStepper'
 title: Interface ICorDebugStepper
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ed8364eb-f01b-46f6-b5e3-5dda9cae2dfe
 topic_type:
 - apiref
-ms.openlocfilehash: 8b5bbb65034e5b715532397c9ecc650da9aee912
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a16df9d25b4d87b0638448c1fdf8fec4759261d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718287"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803575"
 ---
 # <a name="icordebugstepper-interface"></a>Interface ICorDebugStepper
 
@@ -65,6 +66,6 @@ Representa uma etapa na execução do código que é realizada por um depurador,
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

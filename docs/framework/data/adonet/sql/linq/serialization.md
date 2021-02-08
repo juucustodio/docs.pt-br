@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: serialização'
 title: Serialization2
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a15ae411-8dc2-4ca3-84d2-01c9d5f1972a
-ms.openlocfilehash: 778cc73575ffc7421854fd89592f1c4eaa284678
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f4d9ecd63d4d15744fca4c6a6c61d9737cc8a196
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803770"
 ---
 # <a name="serialization"></a>Serialização
 
@@ -77,7 +78,7 @@ Este tópico descreve os [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecd
  [!code-csharp[DLinqSerialization#7](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs/northwind-ser.cs#7)]
  [!code-vb[DLinqSerialization#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/northwind-ser.vb#7)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Informações gerais](background-information.md)
 - [SqlMetal.exe (ferramenta de geração de código)](../../../../tools/sqlmetal-exe-code-generation-tool.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <defaultCertificate> elemento'
 title: Elemento <defaultCertificate>
 ms.date: 03/30/2017
 ms.assetid: f1ddf364-9a00-45d3-b989-ff381c154ce6
-ms.openlocfilehash: 2eaec4f4296f90579ca32d817f0a20da4ccc9a37
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 580236e521e91c8b475586f6c6378630960f233c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803913"
 ---
 # <a name="defaultcertificate-element"></a>Elemento \<defaultCertificate>
 
@@ -39,7 +40,7 @@ Especifica um certificado X. 509 a ser usado quando um serviço ou STS não forn
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|findValue|Cadeia. O valor a ser procurado.|  
+|findValue|Cadeia de caracteres. O valor a ser procurado.|  
 |x509FindType|Enumeração. Um dos campos de certificado a serem pesquisados.|  
 |storeLocation|Enumeração. Um dos dois locais de armazenamento do sistema para pesquisar.|  
 |storeName|Enumeração. Uma das lojas de sistema para pesquisa.|  
@@ -104,7 +105,7 @@ Especifica um certificado X. 509 a ser usado quando um serviço ou STS não forn
 </serviceCertificate>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.X509DefaultServiceCertificateElement>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> do <claimTypeRequirements> elemento'
 title: <add> do <claimTypeRequirements> elemento
 ms.date: 03/30/2017
 ms.assetid: 3234cd45-1478-468e-8b19-5c50815c4786
-ms.openlocfilehash: 920d2b3fa4b51ee56e30863d521214ff66e7fcf2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7ad93c4e1c2379704b38d3cdc68fddca62b3c057
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149238"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804030"
 ---
 # <a name="add-of-claimtyperequirements-element"></a>\<add> do \<claimTypeRequirements> elemento
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetFieldMarshal'
 title: Método IMetaDataImport::GetFieldMarshal
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4e2d88c6-8a3a-4fbe-900b-b4f4c06bf6bf
 topic_type:
 - apiref
-ms.openlocfilehash: 35f73135dbeea1c79d15e0a9e9367c5d533487ce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d6ca1f80a8b9bae4d9c02466042300bc3662f7c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676849"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803510"
 ---
 # <a name="imetadataimportgetfieldmarshal-method"></a>Método IMetaDataImport::GetFieldMarshal
 
@@ -57,7 +58,7 @@ HRESULT GetFieldMarshal (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

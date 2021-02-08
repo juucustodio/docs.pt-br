@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3302-ReceiveContextFaulted'
 title: 3302 - ReceiveContextFaulted
 ms.date: 03/30/2017
 ms.assetid: af3d1fc2-40e9-4466-b756-51a582505f3d
-ms.openlocfilehash: b186be1471c2dffbccea342da73a2d4393a68345
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 68de1a91ac918f67f5354786b335fb0324b5196a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293267"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803471"
 ---
 # <a name="3302---receivecontextfaulted"></a>3302 - ReceiveContextFaulted
 
@@ -17,7 +18,7 @@ ms.locfileid: "96293267"
 |-|-|  
 |ID|3302|  
 |Palavras-chave|ServiceModel|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: suporte à herança'
 title: Suporte à herança
 ms.date: 03/30/2017
 ms.assetid: 19bb2794-b4e7-402e-8307-1d1517381a08
-ms.openlocfilehash: 7673e69458d5c1af854747c43ba463332a9cd588
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ff6956441ab72f720151e42bd9358c8df1170e09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803861"
 ---
 # <a name="inheritance-support"></a>Suporte à herança
 
@@ -19,6 +20,6 @@ ms.locfileid: "91158247"
   
  Os desenvolvedores que usam o Visual Studio também podem usar o Object Relational Designer para mapear hierarquias de herança.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Informações gerais](background-information.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: mapeamento de tipo SQL-CLR'
 title: Mapeamento de tipo SQL-CLR
 ms.date: 07/23/2018
 ms.assetid: 4ed76327-54a7-414b-82a9-7579bfcec04b
-ms.openlocfilehash: 313fd81bd84a99e4a2d32925a7d3bb4776f8472b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 59d3594287ceb20f5c3887c58a0f5527df35218a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203534"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803731"
 ---
 # <a name="sql-clr-type-mapping"></a>Mapeamento de tipo SQL-CLR
 
@@ -284,7 +285,7 @@ No LINQ to SQL, o modelo de dados de um banco de dados relacional mapeia para u
   
  O LINQ to SQL não dá suporte a nenhum outro mapeamentos de tipo para esses tipos variados.  Para obter mais informações, consulte a [matriz de comportamento de tempo de execução de mapeamento de tipo](#BehaviorMatrix).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Mapeamento baseado em atributos](attribute-based-mapping.md)
 - [Mapeamento externo](external-mapping.md)

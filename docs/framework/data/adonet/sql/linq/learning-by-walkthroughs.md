@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: aprendendo por orientações'
 title: Aprendendo com explicações passo a passo
 ms.date: 03/30/2017
 ms.assetid: a8ae2965-6a49-4155-89b0-7fab2c488ab1
-ms.openlocfilehash: f3d313fd50108420b631cff783708191f97a8b04
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8a0163e03ee7e992d75c8f8864a6a2b256c40a7c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158234"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803817"
 ---
 # <a name="learning-by-walkthroughs"></a>Aprendendo com explicações passo a passo
 
@@ -58,7 +59,7 @@ A [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documenta�
   
 ##### <a name="to-verify-or-change-the-database-log-on"></a>Para verificar ou alterar o logon no banco de dados  
   
-1. No menu **Iniciar** do Windows, aponte para **todos os programas**, **Microsoft SQL Server 2005**, aponte para **ferramentas de configuração**e clique em **SQL Server Configuration Manager**.  
+1. No menu **Iniciar** do Windows, aponte para **todos os programas**, **Microsoft SQL Server 2005**, aponte para **ferramentas de configuração** e clique em **SQL Server Configuration Manager**.  
   
 2. No painel esquerdo da **SQL Server Configuration Manager**, clique em **SQL Server serviços 2005**.  
   
@@ -76,7 +77,7 @@ A [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documenta�
   
 ##### <a name="to-enable-the-named-pipes-protocol"></a>Para habilitar o protocolo Pipes Nomeados  
   
-1. No painel esquerdo da **SQL Server Configuration Manager**, expanda **SQL Server configuração de rede 2005**e clique em **protocolos para SQLExpress**.  
+1. No painel esquerdo da **SQL Server Configuration Manager**, expanda **SQL Server configuração de rede 2005** e clique em **protocolos para SQLExpress**.  
   
 2. No painel direito, verifique se o protocolo **pipes nomeados** está habilitado. Se não estiver, clique com o botão direito do mouse em **pipes de nome** e clique em **habilitar**.  
   
@@ -94,6 +95,6 @@ A [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documenta�
   
 3. Clique com o botão direito do mouse em **SQL Server (SQLExpress)** e clique em **reiniciar**.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução](getting-started.md)

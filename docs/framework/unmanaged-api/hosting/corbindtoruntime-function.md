@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função CorBindToRuntime'
 title: Função CorBindToRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 799740aa-46ec-4532-95da-6444565b4971
 topic_type:
 - apiref
-ms.openlocfilehash: 426e95281b648217642ca06f04dfbd9ec991221e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 727abdccd692a431960d293404025cf9ccc1d7ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733770"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790081"
 ---
 # <a name="corbindtoruntime-function"></a>Função CorBindToRuntime
 
@@ -99,7 +100,7 @@ HRESULT CorBindToRuntime (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Função CorBindToRuntimeByCfg](corbindtoruntimebycfg-function.md)

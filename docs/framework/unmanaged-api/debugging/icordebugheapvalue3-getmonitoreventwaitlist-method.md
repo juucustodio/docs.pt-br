@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugHeapValue3:: GetMonitorEventWaitList'
 title: Método ICorDebugHeapValue3::GetMonitorEventWaitList
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 035a9035-ac66-4953-b48a-99652b42b7fe
 topic_type:
 - apiref
-ms.openlocfilehash: 21bf0122039a720ff8a1d38d62e77c2560dcc435
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ffc849e83151719062133382989344a8f0057caf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726529"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791446"
 ---
 # <a name="icordebugheapvalue3getmonitoreventwaitlist-method"></a>Método ICorDebugHeapValue3::GetMonitorEventWaitList
 
@@ -39,7 +40,7 @@ HRESULT GetMonitorEventWaitList (
  `ppThreadEnum`  
  fora O enumerador ICorDebugThreadEnum que fornece a lista ordenada de threads.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -72,7 +73,7 @@ HRESULT GetMonitorEventWaitList (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

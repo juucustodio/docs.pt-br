@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorPublishProcessEnum:: Next Method'
 title: Método ICorPublishProcessEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6c399f37-1e38-4ca1-b70d-8ae41f7228b7
 topic_type:
 - apiref
-ms.openlocfilehash: 9965a468f788efead0477bb7574ef3bf156fd869
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 14b4f815aff986b23a22ed3d5736c37128d3d7e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95692469"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790471"
 ---
 # <a name="icorpublishprocessenumnext-method"></a>Método ICorPublishProcessEnum::Next
 
@@ -58,6 +59,6 @@ HRESULT Next (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorPublishProcessEnum](icorpublishprocessenum-interface.md)

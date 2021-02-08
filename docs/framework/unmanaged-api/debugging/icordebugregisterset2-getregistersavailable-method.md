@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugRegisterSet2:: GetRegistersAvailable'
 title: Método ICorDebugRegisterSet2::GetRegistersAvailable
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f3ed344b-0d3a-44e8-8000-2a97e0805a2c
 topic_type:
 - apiref
-ms.openlocfilehash: cb56ea817d4045c19793a6290d68ae8b6236f14a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3839647e69efd63aefd1aa154c457f292e684336
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712307"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790715"
 ---
 # <a name="icordebugregisterset2getregistersavailable-method"></a>Método ICorDebugRegisterSet2::GetRegistersAvailable
 
@@ -65,7 +66,7 @@ HRESULT GetRegistersAvailable (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRegisterSet2](icordebugregisterset2-interface.md)
 - [Interface ICorDebugRegisterSet](icordebugregisterset-interface.md)

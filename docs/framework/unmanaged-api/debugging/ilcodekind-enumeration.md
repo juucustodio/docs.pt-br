@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração ILCodeKind'
 title: Enumeração ILCodeKind
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: b91765e4-82db-46f9-a6dc-6b80610276af
 topic_type:
 - apiref
-ms.openlocfilehash: 7e9cf760ec609786804a05177349ee2eacd79eaf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2d3163b2c601c6f53d9a532fa877c014a67b3e18
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95692235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790458"
 ---
 # <a name="ilcodekind-enumeration"></a>Enumeração ILCodeKind
 
@@ -36,7 +37,7 @@ typedef enum ILCodeKind {
   
 ## <a name="members"></a>Membros  
   
-|Nome do membro|DESCRIÇÃO|  
+|Nome do membro|Descrição|  
 |-----------------|-----------------|  
 |`ILCODE_ORIGINAL_IL`|O depurador não tem acesso a informações de instrumentação ReJIT.|  
 |`ILCODE_REJIT_IL`|O depurador tem acesso a informações de instrumentação ReJIT.|  
@@ -55,7 +56,7 @@ typedef enum ILCodeKind {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)
 - [Interface ICorDebugILFrame4](icordebugilframe4-interface.md)

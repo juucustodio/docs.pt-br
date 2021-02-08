@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugILFrame4'
 title: Interface ICorDebugILFrame4
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: 1e739183-3e05-49e5-846f-4075256e41de
 topic_type:
 - apiref
-ms.openlocfilehash: 7d0f3661c7941c5f2f85fa5b0b67af213de75f05
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f2d29229f039509ed7799399f0d4d701e8cafba7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724943"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791199"
 ---
 # <a name="icordebugilframe4-interface"></a>Interface ICorDebugILFrame4
 
@@ -25,7 +26,7 @@ ms.locfileid: "95724943"
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método EnumerateLocalVariablesEx](icordebugilframe4-enumeratelocalvariablesex-method.md)|Retorna uma lista das variáveis locais disponíveis em um quadro atual.|  
 |[Método GetCodeEx](icordebugilframe4-getcodeex-method.md)|Retorna o código que esse quadro de pilha está executando.|  
@@ -45,7 +46,7 @@ ms.locfileid: "95724943"
   
  **.NET Framework versões:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

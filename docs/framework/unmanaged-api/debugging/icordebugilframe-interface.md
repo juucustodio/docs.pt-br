@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugILFrame'
 title: Interface ICorDebugILFrame
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d5cf5056-da4d-4629-914d-afe42a5393df
 topic_type:
 - apiref
-ms.openlocfilehash: 4f34fdf9a0eeb47e027cc874afee5bd04f5bd9bc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 251fa18151ff286bee3e1bcf7707bf5f7145b4f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791342"
 ---
 # <a name="icordebugilframe-interface"></a>Interface ICorDebugILFrame
 
@@ -27,7 +28,7 @@ Representa um quadro de pilha do código MSIL (Microsoft Intermediate Language).
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CanSetIP](icordebugilframe-cansetip-method.md)|Obtém um valor que indica se é seguro definir o ponteiro de instrução para o local de deslocamento especificado.|  
 |[Método EnumerateArguments](icordebugilframe-enumeratearguments-method.md)|Obtém um enumerador para os argumentos neste quadro.|  
@@ -56,6 +57,6 @@ Representa um quadro de pilha do código MSIL (Microsoft Intermediate Language).
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

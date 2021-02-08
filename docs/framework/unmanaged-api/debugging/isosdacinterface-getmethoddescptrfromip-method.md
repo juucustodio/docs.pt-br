@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISOSDacInterface:: GetMethodDescPtrFromIP'
 title: 'Método ISOSDacInterface:: GetMethodDescPtrFromIP'
 ms.date: 02/01/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: c3de9e5ffe23a13c126343c6f74f042bf1239609
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 8d7c7071b7b3fc520faea71c8d7792317745cfde
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790406"
 ---
 # <a name="isosdacinterfacegetmethoddescptrfromip-method"></a>Método ISOSDacInterface:: GetMethodDescPtrFromIP
 
@@ -56,7 +57,7 @@ O método fornecido faz parte da [ `ISOSDacInterface` interface](isosdacinterfac
 **Biblioteca:** None  
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Interface ISOSDacInterface](isosdacinterface-interface.md)

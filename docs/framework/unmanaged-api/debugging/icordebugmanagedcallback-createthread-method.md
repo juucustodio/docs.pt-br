@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugManagedCallback:: CreateThread'
 title: Método ICorDebugManagedCallback::CreateThread
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6b961728-21c4-4e8d-ae81-197458be62f4
 topic_type:
 - apiref
-ms.openlocfilehash: 56ec7c56b167c29c9951638c5eee159e1d3c7ffb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 20d5ce9da34e7082502252eeece2ab34b1f2e902
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721290"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791023"
 ---
 # <a name="icordebugmanagedcallbackcreatethread-method"></a>Método ICorDebugManagedCallback::CreateThread
 
@@ -57,6 +58,6 @@ HRESULT CreateThread (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: agrupamento de conexões'
 title: Agrupamento de conexão
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - network resources, connections
 - connection pooling
 ms.assetid: 2ec502e8-4ba0-4c22-9410-f28eaf4eee63
-ms.openlocfilehash: 8bd4412a4c13dd490fce3118f59b5bb1f0d3ea85
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 08e917b555da918ad4386a77938aeb57bc4e4ced
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250561"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791563"
 ---
 # <a name="connection-grouping"></a>Agrupamento de conexão
 
@@ -21,7 +22,7 @@ O agrupamento de conexão associa solicitações específicas em um único aplic
   
  Para atribuir uma solicitação a um grupo de conexão específico, é necessário atribuir um nome à propriedade <xref:System.Net.WebRequest.ConnectionGroupName%2A> da <xref:System.Net.WebRequest> antes de fazer a solicitação.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciando conexões](managing-connections.md)
 - [Como: Atribuir informações de usuário a conexões de grupo](how-to-assign-user-information-to-group-connections.md)

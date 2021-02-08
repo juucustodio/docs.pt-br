@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLROnEventManager:: UnregisterActionOnEvent'
 title: Método ICLROnEventManager::UnregisterActionOnEvent
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4c02ec37-cdf0-46b2-890e-235092741236
 topic_type:
 - apiref
-ms.openlocfilehash: ca3c7fe813f22d3beab3087414100b3d8e5814ac
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8131c58669ff7be0fdc2b2e063c70d3b370921e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725593"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789808"
 ---
 # <a name="iclroneventmanagerunregisteractiononevent-method"></a>Método ICLROnEventManager::UnregisterActionOnEvent
 
@@ -43,7 +44,7 @@ HRESULT UnregisterActionOnEvent (
  `pAction`  
  no Um ponteiro para um objeto [IActionOnCLREvent](iactiononclrevent-interface.md) que foi passado como um parâmetro para o método [RegisterActionOnEvent](iclroneventmanager-registeractiononevent-method.md) .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT UnregisterActionOnEvent (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrEvent](eclrevent-enumeration.md)
 - [Interface IActionOnCLREvent](iactiononclrevent-interface.md)

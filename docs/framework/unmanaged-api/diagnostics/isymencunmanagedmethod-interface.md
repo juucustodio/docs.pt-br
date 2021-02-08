@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymENCUnmanagedMethod'
 title: Interface ISymENCUnmanagedMethod
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: faebf594-67d5-4abf-b9c1-547fd3a1ff87
 topic_type:
 - apiref
-ms.openlocfilehash: acb8d48ed6314756e2c1a10fff314a303799fb24
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 59dd56c20279b2507fc4432182d0abb5b3e9c289
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707276"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790315"
 ---
 # <a name="isymencunmanagedmethod-interface"></a>Interface ISymENCUnmanagedMethod
 
@@ -27,7 +28,7 @@ Fornece informações para o recurso Editar e continuar.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetDocumentsForMethod](isymencunmanagedmethod-getdocumentsformethod-method.md)|Obtém os documentos em que este método tem linhas.|  
 |[Método GetDocumentsForMethodCount](isymencunmanagedmethod-getdocumentsformethodcount-method.md)|Obtém o número de documentos em que esse método tem linhas.|  
@@ -39,6 +40,6 @@ Fornece informações para o recurso Editar e continuar.
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: trabalhando com logs de aplicativo no Visual Basic'
 title: Trabalhar com logs do aplicativo
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - application event logs, Visual Basic
 - application event logs
 ms.assetid: 2581afd1-5791-4bc4-86b2-46244e9fe468
-ms.openlocfilehash: e33efac8f65832c87d5c9271eba25c2ca1d1803b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0c05bd63cfbae668c58a87aa39651b6c3ef166ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387589"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792265"
 ---
 # <a name="working-with-application-logs-in-visual-basic"></a>Trabalhando com logs de aplicativo no Visual Basic
 
@@ -49,7 +50,7 @@ Você pode substituir o comportamento padrão adicionando ou alterando os arquiv
 
 ## <a name="configuring-log-settings"></a>Definindo configurações de log
 
-O `Log` objeto tem uma implementação padrão que funciona sem um arquivo de configuração de aplicativo, app. config. Para alterar os padrões, você deve adicionar um arquivo de configuração com as novas configurações. Para obter mais informações, consulte [Instruções passo a passo: filtrando a saída de My.Application.Log](walkthrough-filtering-my-application-log-output.md).
+O `Log` objeto tem uma implementação padrão que funciona sem um arquivo de configuração de aplicativo, app.config. Para alterar os padrões, você deve adicionar um arquivo de configuração com as novas configurações. Para obter mais informações, consulte [Instruções passo a passo: filtrando a saída de My.Application.Log](walkthrough-filtering-my-application-log-output.md).
 
 As seções de configuração de log ficam localizadas no nó `<system.diagnostics>` no nó `<configuration>` principal do arquivo app.config. As informações de log são definidas em vários nós:
 
@@ -106,7 +107,7 @@ Considere o seguinte ao gravar dados no log:
 
 - **Evite situações de negação de serviço.** Se seu aplicativo gravar muitas informações no log, ele poderá encher o log ou tornar difícil de encontrar informações importantes.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - [Registrando informações em log a partir do aplicativo](index.md)

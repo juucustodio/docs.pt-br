@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: Criando ouvintes de log personalizados (Visual Basic)'
 title: criar ouvintes de log personalizados
 ms.date: 07/20/2015
 helpviewer_keywords:
 - custom log listeners
 - My.Application.Log object, custom log listeners
 ms.assetid: 0e019115-4b25-4820-afb1-af8c6e391698
-ms.openlocfilehash: 5a140607a4fe7e1e13de54e8d56cab53e52aaa2a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bc5e1743eeaec427adf909ca95aa1979ce61a993
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398260"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792291"
 ---
 # <a name="walkthrough-creating-custom-log-listeners-visual-basic"></a>Instruções passo a passo: criando ouvintes de log personalizados (Visual Basic)
 
@@ -107,7 +108,7 @@ Com o nome forte, você pode adicionar o ouvinte à coleção de ouvintes de log
 
      Altere o valor de `SimpleLogStrongName` para ser o nome forte do ouvinte.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - [Trabalhar com logs do aplicativo](working-with-application-logs.md)

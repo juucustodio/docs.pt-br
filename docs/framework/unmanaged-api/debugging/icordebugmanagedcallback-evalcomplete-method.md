@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugManagedCallback:: EvalComplete'
 title: Método ICorDebugManagedCallback::EvalComplete
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f74ab4eb-cd1b-407c-a66d-8ec0d85647f3
 topic_type:
 - apiref
-ms.openlocfilehash: e95874447528989af68f5c97825691532195889f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 729b00bc630ef5d6e508b75bd6483580f1dd75b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731794"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791017"
 ---
 # <a name="icordebugmanagedcallbackevalcomplete-method"></a>Método ICorDebugManagedCallback::EvalComplete
 
@@ -57,6 +58,6 @@ HRESULT EvalComplete (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

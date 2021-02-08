@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugAssemblyEnum'
 title: Interface ICorDebugAssemblyEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 891ceb43-5161-421e-a0bf-299962fd7efd
 topic_type:
 - apiref
-ms.openlocfilehash: dea5c0fd5d4ed1f830d9e75097d49c544dac2e57
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e9dab7560da10efcb33fc48f5718f26b960cdaa3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719236"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791485"
 ---
 # <a name="icordebugassemblyenum-interface"></a>Interface ICorDebugAssemblyEnum
 
@@ -46,6 +47,6 @@ Implementa métodos ICorDebugEnum e enumera matrizes ICorDebugAssembly.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

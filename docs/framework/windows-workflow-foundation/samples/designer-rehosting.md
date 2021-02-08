@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Hospedagem de designer'
 title: Designer ReHosting
 ms.date: 03/30/2017
 ms.assetid: b676ad31-5f64-4d84-9a36-b4d7113a2f4d
-ms.openlocfilehash: ce81f41764aa35b3173cca89cdb219ae9b21436d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 84401ba7cfc2b5515a9dcfda36289893e55660e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251653"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792525"
 ---
 # <a name="designer-rehosting"></a>Alterar a hospedagem do designer
 

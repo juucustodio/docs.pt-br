@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugThread2:: InterceptCurrentException'
 title: Método ICorDebugThread2::InterceptCurrentException
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 536d2357-1b97-49e0-a10c-c860aed74e6e
 topic_type:
 - apiref
-ms.openlocfilehash: 96e3a90bcb7700915bfd3618d7bae40c0ff64a75
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5bf8d3adf6f5e4a24d8fc5abddb72c0c8963c142
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678591"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790705"
 ---
 # <a name="icordebugthread2interceptcurrentexception-method"></a>Método ICorDebugThread2::InterceptCurrentException
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugILFrame4:: GetLocalVariableEx'
 title: ICorDebugILFrame4::Método GetLocalVariableEx
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 0c8676f8-ca0d-4998-b64d-fefac7e38912
 topic_type:
 - apiref
-ms.openlocfilehash: c9dfbdc141c19cb9bee87a34d838c5e7c6b366df
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4eb6b3abbaf05c0373a487d9bd9d575b58a9af49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724956"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791212"
 ---
 # <a name="icordebugilframe4getlocalvariableex-method"></a>ICorDebugILFrame4::Método GetLocalVariableEx
 
@@ -60,7 +61,7 @@ HRESULT GetLocalVariableEx(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugILFrame4](icordebugilframe4-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

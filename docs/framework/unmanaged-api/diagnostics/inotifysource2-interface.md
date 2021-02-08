@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface INotifySource2'
 title: Interface INotifySource2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f432fb85-5c78-43d1-8302-53b8fc605c97
 topic_type:
 - apiref
-ms.openlocfilehash: efb7ca77b2468bf05b8973d80c2c20b85a64faf6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8a14f4578d322802360de35396c684d69e2d12da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790328"
 ---
 # <a name="inotifysource2-interface"></a>Interface INotifySource2
 
@@ -27,7 +28,7 @@ Declara um método para definir filtros de notificação.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método SetNotifyFilter](inotifysource2-setnotifyfilter-method.md)|Atribui um filtro de notificação para uso com esta origem.|  
   
@@ -35,7 +36,7 @@ Declara um método para definir filtros de notificação.
 
  **Cabeçalho:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface INotifyConnection2](inotifyconnection2-interface.md)
 - [Interface INotifySink2](inotifysink2-interface.md)

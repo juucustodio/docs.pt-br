@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: invocando a validação da atividade'
 title: Invocando a validação de atividades
 ms.date: 03/30/2017
 ms.assetid: 22bef766-c505-4fd4-ac0f-7b363b238969
-ms.openlocfilehash: 95e6b22fe9814133df080b1faadcc4be32b60bf9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dc710e76134fbd76f5217df4ea569f20e6de4445
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279799"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792655"
 ---
 # <a name="invoking-activity-validation"></a>Invocando a validação de atividades
 

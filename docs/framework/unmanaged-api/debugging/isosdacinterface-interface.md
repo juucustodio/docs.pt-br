@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISOSDacInterface'
 title: Interface ISOSDacInterface
 ms.date: 02/01/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: c9b4e6e5b36fe38b6c0ea78f6d1848d155008bcc
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: ddb99b7c6fca6870024f04933861d01e4b31ea9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790393"
 ---
 # <a name="isosdacinterface-interface"></a>Interface ISOSDacInterface
 
@@ -47,7 +48,7 @@ Essa interface reside dentro do tempo de execução e não é exposta por nenhum
 **Biblioteca:** None  
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Depurando interfaces](debugging-interfaces.md)

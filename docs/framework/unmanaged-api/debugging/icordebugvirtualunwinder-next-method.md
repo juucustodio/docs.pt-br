@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ICorDebugVirtualUnwinder:: Next Method'
 title: 'Método ICorDebugVirtualUnwinder:: Next'
 ms.date: 03/30/2017
 ms.assetid: 790e0426-e5cd-49fd-a792-f8c8635d72fe
-ms.openlocfilehash: bfc827a1503b0367a442e3f3ca0915bd2aaeb01e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b509e8e4fb24c66764999e67ba7e36299ce7f570
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725944"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790510"
 ---
 # <a name="icordebugvirtualunwindernext-method"></a>Método ICorDebugVirtualUnwinder:: Next
 
@@ -23,7 +24,7 @@ HRESULT Next();
 
  Nenhum.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` Se o desenrolar tiver ocorrido com êxito ou `CORDBG_S_AT_END_OF_STACK` se o desenrolamento não puder ser concluído porque não há mais quadros.  
   
@@ -46,7 +47,7 @@ HRESULT Next();
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

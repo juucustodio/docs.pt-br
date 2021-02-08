@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugInternalFrame'
 title: Interface ICorDebugInternalFrame
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bb4772ca-0d54-4185-b738-7a6ffe9ea85a
 topic_type:
 - apiref
-ms.openlocfilehash: b7e738f06f9a9a06caedec2bdd0de4ab57f6d9b3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7143f270b97e10fb9664aa7f7387749ddecbbcc5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719717"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791121"
 ---
 # <a name="icordebuginternalframe-interface"></a>Interface ICorDebugInternalFrame
 
@@ -27,7 +28,7 @@ Representa um quadro interno de tempo de execução na pilha. Essa interface é 
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetFrameType](icordebuginternalframe-getframetype-method.md)|Obtém o tipo deste quadro interno.|  
   
@@ -46,6 +47,6 @@ Representa um quadro interno de tempo de execução na pilha. Essa interface é 
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

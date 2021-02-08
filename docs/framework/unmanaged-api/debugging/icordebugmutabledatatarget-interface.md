@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugMutableDataTarget'
 title: Interface ICorDebugMutableDataTarget
 ms.date: 03/30/2017
 ms.assetid: 14aad5b3-84ab-4bbc-94e3-1eb92e258d10
-ms.openlocfilehash: cd22707832504ca2f08299872bc39bca2af782bb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 387c5317bea015459e306994c36761571b427628
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709343"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790692"
 ---
 # <a name="icordebugmutabledatatarget-interface"></a>Interface ICorDebugMutableDataTarget
 
@@ -15,7 +16,7 @@ Estende a interface [ICorDebugDataTarget](icordebugdatatarget-interface.md) para
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método ContinueStatusChanged](icordebugmutabledatatarget-continuestatuschanged-method.md)|Altera o status de continuação para o evento de depuração pendente no thread especificado.|  
 |[Método SetThreadContext](icordebugmutabledatatarget-setthreadcontext-method.md)|Define o contexto (valores de registro) para um thread.|  
@@ -39,7 +40,7 @@ Estende a interface [ICorDebugDataTarget](icordebugdatatarget-interface.md) para
   
  **.NET Framework versões:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

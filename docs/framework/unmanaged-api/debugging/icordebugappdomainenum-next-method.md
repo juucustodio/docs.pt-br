@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugAppDomainEnum:: Next Method'
 title: Método ICorDebugAppDomainEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b8d1def7-0ebc-4314-a3a2-fd36a75973e7
 topic_type:
 - apiref
-ms.openlocfilehash: b315f38dc306727e33b52b84d17951a91ccdc39f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ac5397250e661b4ed380b3272744957f86e1a07b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684467"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791524"
 ---
 # <a name="icordebugappdomainenumnext-method"></a>Método ICorDebugAppDomainEnum::Next
 

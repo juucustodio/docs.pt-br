@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugVariableHomeEnum:: Next Method'
 title: 'Método ICorDebugVariableHomeEnum:: Next'
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: eb9ea96c-5b58-4655-8104-094fc8b393b8
 topic_type:
 - apiref
-ms.openlocfilehash: 4ef4ed19033b0857b9970ee8103bbd92f383898c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0aa0174e67bceaa724ddfeadc2560d12e112b859
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679527"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790601"
 ---
 # <a name="icordebugvariablehomeenumnext-method"></a>Método ICorDebugVariableHomeEnum:: Next
 
@@ -47,11 +48,11 @@ HRESULT Next(
  `pceltFetched`  
  fora O número de instâncias realmente retornadas em objetos.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  O método retorna os valores a seguir.  
   
-|HRESULT|DESCRIÇÃO|  
+|HRESULT|Descrição|  
 |-------------|-----------------|  
 |`S_OK`|O método foi concluído com êxito.|  
 |`S_FALSE`|O número real de instâncias recuperadas, como refletido em `pceltFetched` , é menor que o número de instâncias solicitadas.|  
@@ -70,7 +71,7 @@ HRESULT Next(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugVariableHomeEnum](icordebugvariablehomeenum-interface.md)
 - [Interface ICorDebugVariableHome](icordebugvariablehome-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: filtrando minha saída. Application. log (Visual Basic)'
 title: filtrar a saída de My.Application.Log
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - My.Application.Log object, filtering output
 - application event logs, output filtering
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
-ms.openlocfilehash: e77a56b2be33555bc02157c8e643ac655b083bc3
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 0fa64bde27be17b1809e45bfe294e70c7dd33563
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282204"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792252"
 ---
 # <a name="walkthrough-filtering-myapplicationlog-output-visual-basic"></a>Instruções passo a passo: filtrando a saída de My.Application.Log (Visual Basic)
 
@@ -76,13 +77,13 @@ Esta tabela explica a saída de log mostrada no exemplo anterior: com a configur
 
 1. Clique com o botão direito do mouse em app.config no **Gerenciador de Soluções** e selecione **Abrir**.
 
-     - ou -
+     -ou-
 
      Se não houver nenhum arquivo app.config:
 
-    1. No menu **Projeto** , escolha **Adicionar Novo Item**.
+    1. No menu **Projeto**, escolha **Adicionar Novo Item**.
 
-    2. Na caixa de diálogo **Adicionar novo item** , escolha **Arquivo de configuração de aplicativo**.
+    2. Na caixa de diálogo **Adicionar novo item**, escolha **Arquivo de configuração de aplicativo**.
 
     3. Clique em **Adicionar**.
 
@@ -156,9 +157,9 @@ Este exemplo demonstra como configurar a filtragem para um novo ouvinte de depur
 
      Se não houver nenhum arquivo app.config:
 
-    1. No menu **Projeto** , escolha **Adicionar Novo Item**.
+    1. No menu **Projeto**, escolha **Adicionar Novo Item**.
 
-    2. Na caixa de diálogo **Adicionar novo item** , escolha **Arquivo de configuração de aplicativo**.
+    2. Na caixa de diálogo **Adicionar novo item**, escolha **Arquivo de configuração de aplicativo**.
 
     3. Clique em **Adicionar**.
 
@@ -251,7 +252,7 @@ Este exemplo demonstra como configurar a filtragem para um novo ouvinte de depur
 
 Para obter mais informações sobre como alterar as configurações de log após a implantação, consulte [Trabalhando com logs de aplicativo](working-with-application-logs.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Passo a passo: determinar o local no qual My.Application.Log grava informações](walkthrough-determining-where-my-application-log-writes-information.md)
 - [Passo a passo: alterar o local no qual My.Application.Log grava informações](walkthrough-changing-where-my-application-log-writes-information.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRMetaHostPolicy:: GetRequestedRuntime'
 title: Método ICLRMetaHostPolicy::GetRequestedRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 59ec1832-9cc1-4b5c-983d-03407e51de56
 topic_type:
 - apiref
-ms.openlocfilehash: 37167b7a9aefa6cd9d5e4df043e8bbc1b0514261
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0e11694b0cb66ad7fc28abf7bb9f7fc8c6931a19
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504115"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789834"
 ---
 # <a name="iclrmetahostpolicygetrequestedruntime-method"></a>Método ICLRMetaHostPolicy::GetRequestedRuntime
 
@@ -61,25 +62,25 @@ HRESULT GetRequestedRuntime(
 
 Quando esse método for bem sucedido, ele terá o efeito colateral de combinar sinalizadores adicionais com os sinalizadores de inicialização padrão atuais da interface de tempo de execução retornada, se e somente se um ou mais dos seguintes elementos existirem no fluxo de configuração dentro da `<configuration><runtime>` seção:
 
-- `<gcServer enabled="true"/>`faz com que `STARTUP_SERVER_GC` seja definido.
+- `<gcServer enabled="true"/>` faz com que `STARTUP_SERVER_GC` seja definido.
 
-- `<etwEnable enabled="true"/>`faz com que `STARTUP_ETW` seja definido.
+- `<etwEnable enabled="true"/>` faz com que `STARTUP_ETW` seja definido.
 
-- `<appDomainResourceMonitoring enabled="true"/>`faz com que `STARTUP_ARM` seja definido.
+- `<appDomainResourceMonitoring enabled="true"/>` faz com que `STARTUP_ARM` seja definido.
 
 O valor padrão resultante `STARTUP_FLAGS` é a combinação de bits ou de valores definidos na lista anterior com os sinalizadores de inicialização padrão.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.
 
 |HRESULT|Descrição|
 |-------------|-----------------|
 |S_OK|O método foi concluído com êxito.|
-|E_POINTER|`pwzVersion`Não é nulo e `pcchVersion` é nulo.<br /><br /> -ou-<br /><br /> `pwzImageVersion`Não é nulo e `pcchImageVersion` é nulo.|
-|E_INVALIDARG|`dwPolicyFlags`não especifica `METAHOST_POLICY_HIGHCOMPAT` .|
+|E_POINTER|`pwzVersion` Não é nulo e `pcchVersion` é nulo.<br /><br /> -ou-<br /><br /> `pwzImageVersion` Não é nulo e `pcchImageVersion` é nulo.|
+|E_INVALIDARG|`dwPolicyFlags` não especifica `METAHOST_POLICY_HIGHCOMPAT` .|
 |ERROR_INSUFFICIENT_BUFFER|A memória alocada para `pwzVersion` é inadequada.<br /><br /> -ou-<br /><br /> A memória alocada para `pwzImageVersion` é inadequada.|
-|CLR_E_SHIM_RUNTIMELOAD|`dwPolicyFlags`inclui METAHOST_POLICY_APPLY_UPGRADE_POLICY e ambos `pwzVersion` e `pcchVersion` são nulos.|
+|CLR_E_SHIM_RUNTIMELOAD|`dwPolicyFlags` inclui METAHOST_POLICY_APPLY_UPGRADE_POLICY e ambos `pwzVersion` e `pcchVersion` são nulos.|
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,13 +88,13 @@ Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRE
 
 **Cabeçalho:** MetaHost. h
 
-**Biblioteca:** Incluído como um recurso em MSCorEE. dll
+**Biblioteca:** Incluído como um recurso no MSCorEE.dll
 
 **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md)
-- [Interfaces de hospedagem CLR adicionadas ao .NET Framework 4 e 4.5](clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)
+- [Interfaces de hospedagem CLR adicionadas no .NET Framework 4 e 4.5](clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

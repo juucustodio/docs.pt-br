@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados decimal (Visual Basic)'
 title: Tipo de Dados Decimal
 ms.date: 07/20/2015
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - '@ identifier type character'
 - identifier type characters [Visual Basic], @
 ms.assetid: 1d855b45-afe2-45b0-a623-96b6f63a43d5
-ms.openlocfilehash: 690c8061b6df1115aa24668520170b44edfa8287
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5806041e7737b8fe0f1c7ffa63f6cbadcbf92e42
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415641"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792226"
 ---
 # <a name="decimal-data-type-visual-basic"></a>Tipo de dados decimal (Visual Basic)
 
@@ -39,13 +40,13 @@ O valor padrão de `Decimal` é 0.
 
 ## <a name="programming-tips"></a>Dicas de programação
 
-- **Preciso.** `Decimal`Não é um tipo de dados de ponto flutuante. A `Decimal` estrutura contém um valor inteiro binário, junto com um bit de sinal e um fator de dimensionamento inteiro que especifica qual parte do valor é uma fração decimal. Por isso, os `Decimal` números têm uma representação mais precisa na memória do que os tipos de ponto flutuante ( `Single` e `Double` ).
+- **Preciso.** `Decimal` Não é um tipo de dados de ponto flutuante. A `Decimal` estrutura contém um valor inteiro binário, junto com um bit de sinal e um fator de dimensionamento inteiro que especifica qual parte do valor é uma fração decimal. Por isso, os `Decimal` números têm uma representação mais precisa na memória do que os tipos de ponto flutuante ( `Single` e `Double` ).
 
 - **Desempenho.** O `Decimal` tipo de dados é o mais lento de todos os tipos numéricos. Você deve avaliar a importância da precisão em relação ao desempenho antes de escolher um tipo de dados.
 
 - **Ampliação.** O `Decimal` tipo de dados amplia para `Single` ou `Double` . Isso significa que você pode converter `Decimal` para qualquer um desses tipos sem encontrar um <xref:System.OverflowException?displayProperty=nameWithType> erro.
 
-- **Zeros à direita.** Visual Basic não armazena zeros à direita em um `Decimal` literal. No entanto, uma `Decimal` variável preserva os zeros à direita adquiridos de computação. O exemplo a seguir ilustra isto.
+- **Zeros à direita.** Visual Basic não armazena zeros à direita em um `Decimal` literal. No entanto, uma `Decimal` variável preserva os zeros à direita adquiridos de computação. O exemplo a seguir ilustra essa situação.
 
   ```vb
   Dim d1, d2, d3, d4 As Decimal
@@ -83,12 +84,12 @@ A declaração para `bigDec2` gera um erro de estouro porque o valor atribuído 
 
 Para `bigDec3` , o caractere de tipo literal `D` resolve o problema forçando o compilador a interpretar o literal como um `Decimal` , em vez de como um `Long` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Decimal?displayProperty=nameWithType>
 - <xref:System.Decimal.%23ctor%2A>
 - <xref:System.Math.Round%2A?displayProperty=nameWithType>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipo de Dados Simples](single-data-type.md)
 - [Tipo de Dados Duplo](double-data-type.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)

@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedAsyncMethod'
 title: Interface ISymUnmanagedAsyncMethod
 ms.date: 03/30/2017
 ms.assetid: f2de5224-fd91-45de-9e58-bc600c6d22f1
-ms.openlocfilehash: 02b1866f2b9e89cdc8c8795f399ecc0c733c7202
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cb3120464224137dfdcff4f13ca4aee82ef4d89e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707159"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790263"
 ---
 # <a name="isymunmanagedasyncmethod-interface"></a>Interface ISymUnmanagedAsyncMethod
 
 Essa interface é o complemento de leitura para a [interface ISymUnmanagedAsyncMethodPropertiesWriter](isymunmanagedasyncmethodpropertieswriter-interface.md).  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```idl  
 [object,uuid(B20D55B3-532E-4906-87E7-25BD5734ABD2),pointer_default(unique)]interface ISymUnmanagedAsyncMethod : IUnknown  
@@ -36,6 +37,6 @@ Essa interface é o complemento de leitura para a [interface ISymUnmanagedAsyncM
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)

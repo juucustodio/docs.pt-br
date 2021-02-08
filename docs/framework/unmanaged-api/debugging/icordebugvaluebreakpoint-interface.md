@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugValueBreakpoint'
 title: Interface ICorDebugValueBreakpoint
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c02338fe-da6c-467f-9567-70ebb387e901
 topic_type:
 - apiref
-ms.openlocfilehash: cf0a87afd1c0057c054205432fea7aa5844afb53
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff53b1f6e1557a3e98cc642f80eaaa2feaeac473
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684389"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790679"
 ---
 # <a name="icordebugvaluebreakpoint-interface"></a>Interface ICorDebugValueBreakpoint
 
@@ -27,7 +28,7 @@ Estende a interface ICorDebugBreakpoint para fornecer acesso a valores específi
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetValue](icordebugvaluebreakpoint-getvalue-method.md)|Obtém um ponteiro de interface para um objeto ICorDebugValue que representa o valor do objeto no qual o ponto de interrupção está definido.|  
   
@@ -46,6 +47,6 @@ Estende a interface ICorDebugBreakpoint para fornecer acesso a valores específi
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

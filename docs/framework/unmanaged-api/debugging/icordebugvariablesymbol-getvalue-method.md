@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugVariableSymbol:: GetValue'
 title: 'Método ICorDebugVariableSymbol:: GetValue'
 ms.date: 03/30/2017
 ms.assetid: 90abece1-392e-4ade-94a1-30c75b0f7074
-ms.openlocfilehash: 0a57b1a31e1ef4b0db317012b25bc65ecbbaf011
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ccd7eae5cc4740e83d0210a903ba0e7778aa8896
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725957"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790562"
 ---
 # <a name="icordebugvariablesymbolgetvalue-method"></a>Método ICorDebugVariableSymbol:: GetValue
 
@@ -61,7 +62,7 @@ HRESULT GetValue(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugVariableSymbol](icordebugvariablesymbol-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRPolicyManager:: SetActionOnFailure'
 title: Método ICLRPolicyManager::SetActionOnFailure
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4664033f-db97-4388-b988-2ec470796e58
 topic_type:
 - apiref
-ms.openlocfilehash: 8f44247ca7904a40f5ebc092d95c2e08b6048438
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 67d3ca5d7924caf0a768b4de53b4b24f1c72fa27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725567"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789795"
 ---
 # <a name="iclrpolicymanagersetactiononfailure-method"></a>Método ICLRPolicyManager::SetActionOnFailure
 
@@ -43,7 +44,7 @@ HRESULT SetActionOnFailure (
  `action`  
  no Um dos valores de [EPolicyAction](epolicyaction-enumeration.md) , indicando a ação a ser executada quando ocorrer uma falha. Para obter uma lista de valores com suporte, consulte a seção comentários.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -82,7 +83,7 @@ HRESULT SetActionOnFailure (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrFailure](eclrfailure-enumeration.md)
 - [Enumeração EPolicyAction](epolicyaction-enumeration.md)

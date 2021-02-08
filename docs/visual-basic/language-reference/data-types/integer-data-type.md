@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados Integer (Visual Basic)'
 title: Tipo de Dados Integer
 ms.date: 01/31/2018
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - I literal type character [Visual Basic]
 - Integer data type
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
-ms.openlocfilehash: aa7b64162308d6af2763b29034c5a7276c973876
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8c60bf19ecd44ca7c9972cbfeb4ee2197bcb137c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415603"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792200"
 ---
 # <a name="integer-data-type-visual-basic"></a>Tipo de dados Integer (Visual Basic)
 
@@ -95,10 +96,10 @@ k = 4.5
 k = 5.5  
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Int32?displayProperty=nameWithType>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipo de Dados Long](long-data-type.md)
 - [Tipo de Dados Short](short-data-type.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)

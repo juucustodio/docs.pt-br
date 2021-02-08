@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados UInteger'
 title: Tipo de Dados UInteger
 ms.date: 01/31/2018
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - UI literal type characters [Visual Basic]
 - data types [Visual Basic], integral
 ms.assetid: db7ddd34-4f23-46f5-84dd-8b0f83bb8729
-ms.openlocfilehash: 11070f6c7f3259b8c34528eb54d99b031b68f9f9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5202619909de4a132bda8ab3dca63337c6f3493f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415538"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792096"
 ---
 # <a name="uinteger-data-type"></a>tipo de dados UInteger
 
@@ -74,14 +75,14 @@ Os `UInteger` `Integer` tipos de dados e fornecem um desempenho ideal em um proc
 
 - **Ampliação.** O `UInteger` tipo de dados amplia para `Long` , `ULong` , `Decimal` , `Single` e `Double` . Isso significa que você pode converter `UInteger` para qualquer um desses tipos sem encontrar um <xref:System.OverflowException?displayProperty=nameWithType> erro.
 
-- **Digite os caracteres.** Acrescentar os caracteres do tipo literal `UI` a um literal força-o ao `UInteger` tipo de dados. `UInteger`Não tem um caractere de tipo de identificador.
+- **Digite os caracteres.** Acrescentar os caracteres do tipo literal `UI` a um literal força-o ao `UInteger` tipo de dados. `UInteger` Não tem um caractere de tipo de identificador.
 
 - **Tipo de estrutura.** O tipo correspondente no .NET Framework é a estrutura <xref:System.UInt32?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.UInt32>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)
 - [Resumo da Conversão](../keywords/conversion-summary.md)
 - [Como: Chamar uma função do Windows que use tipos não assinados](../../programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)

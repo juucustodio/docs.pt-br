@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugVariableHome'
 title: Interface ICorDebugVariableHome
 ms.date: 03/30/2017
 dev_langs:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 76f2bf3b-759f-4eed-bce7-119415b25915
 topic_type:
 - apiref
-ms.openlocfilehash: 089e68278113dfdf509ed848f424ad32baa145ed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a1dcc959ba9aeffc0e511dcd2f5bb15f58445139
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679540"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790627"
 ---
 # <a name="icordebugvariablehome-interface"></a>Interface ICorDebugVariableHome
 
@@ -29,7 +30,7 @@ Representa uma variável local ou um argumento de uma função.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetArgumentIndex](icordebugvariablehome-getargumentindex-method.md)|Obtém o índice de um argumento de função.|  
 |[Método GetCode](icordebugvariablehome-getcode-method.md)|Obtém a instância "ICorDebugCode" que contém este `ICorDebugVariableHome` objeto.|  
@@ -92,7 +93,7 @@ for (int i = 0; i < celtFetched; i++)
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Interface ICorDebugVariableHomeEnum](icordebugvariablehomeenum-interface.md)

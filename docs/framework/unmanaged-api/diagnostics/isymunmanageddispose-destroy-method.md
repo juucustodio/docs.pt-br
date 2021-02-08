@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ISymUnmanagedDispose: método estroy de:D'
 title: Método ISymUnmanagedDispose::Destroy
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a854ab9f-d2ba-470e-867f-808c1e7bd07a
 topic_type:
 - apiref
-ms.openlocfilehash: 6a31026f5b1669c0c29762048dc2c5c1c7bbb6a2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3c13f90e08f2ba0dd7c70acc3321913b14195f1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732821"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790198"
 ---
 # <a name="isymunmanageddisposedestroy-method"></a>Método ISymUnmanagedDispose::Destroy
 
@@ -40,6 +41,6 @@ HRESULT Destroy();
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedDispose](isymunmanageddispose-interface.md)

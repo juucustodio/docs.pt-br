@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugILFrame3'
 title: Interface ICorDebugILFrame3
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: 15212cb5-93d4-4025-bec9-d4b9919eb1fe
 topic_type:
 - apiref
-ms.openlocfilehash: dab5329086971b9349deaf84535fa251744f3cf0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a34a3f0941871a2d0a63fb2d9f78ccb7ff455866
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724982"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791251"
 ---
 # <a name="icordebugilframe3-interface"></a>Interface ICorDebugILFrame3
 
@@ -23,7 +24,7 @@ Fornece um método que encapsula o valor de retorno de uma função. `ICorDebugI
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetReturnValueForILOffset](icordebugilframe3-getreturnvalueforiloffset-method.md)|Obtém um objeto ICorDebugValue que encapsula o valor de retorno de uma função.|  
   
@@ -42,7 +43,7 @@ Fornece um método que encapsula o valor de retorno de uma função. `ICorDebugI
   
  **.NET Framework versões:**[!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugCode3](icordebugcode3-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

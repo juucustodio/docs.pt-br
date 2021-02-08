@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: determinando onde minhas. Application. log grava informações (Visual Basic)'
 title: determinar o local no qual My.Application.Log grava informações
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - application event logs, output location
 - applications [Visual Basic], output location
 ms.assetid: 5b70143a-7741-45f2-ae1d-03324a3a4189
-ms.openlocfilehash: 00b543dbe96ca99446f6797a13b66ee62c422b93
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4ddb5777bcbdde07069efd2fd3a66f0c220ee135
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398273"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792278"
 ---
 # <a name="walkthrough-determining-where-myapplicationlog-writes-information-visual-basic"></a>Instruções passo a passo: determinando onde My.Application.Log grava informações (Visual Basic)
 
@@ -63,7 +64,7 @@ Para obter mais informações sobre os locais de saída padrão, consulte [Traba
 
     - Para obter informações sobre onde outros tipos de ouvintes de log gravam informações, consulte a documentação daquele tipo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:System.Diagnostics.DefaultTraceListener>

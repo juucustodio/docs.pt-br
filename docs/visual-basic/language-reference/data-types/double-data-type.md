@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados duplo (Visual Basic)'
 title: Tipo de Dados Duplo
 ms.date: 07/20/2015
 f1_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - zeros, trailing
 - Double data type
 ms.assetid: 0c5670f7-fcb1-453a-bef1-374730cd38fd
-ms.openlocfilehash: 899554f427ac77ead465752c35e51ca88d045763
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ae7b87b392038c67ba47e09d7ca995562bf06c1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792213"
 ---
 # <a name="double-data-type-visual-basic"></a>Tipo de dados double (Visual Basic)
 
@@ -57,10 +58,10 @@ O valor padrão de `Double` é 0.
 
 - **Tipo de estrutura.** O tipo correspondente no .NET Framework é a estrutura <xref:System.Double?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Double?displayProperty=nameWithType>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipo de Dados Decimal](decimal-data-type.md)
 - [Tipo de Dados Simples](single-data-type.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)

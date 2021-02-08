@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugVariableHomeEnum'
 title: Interface ICorDebugVariableHomeEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c312ae6d-c8dc-48d6-9f1e-ead515c88fdf
 topic_type:
 - apiref
-ms.openlocfilehash: 8e8caad9f0fc60121dbd1c738a6024da3e4d02f6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c56c68a6b5f9d329fe8af23f47b40fa629bfe3ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790614"
 ---
 # <a name="icordebugvariablehomeenum-interface"></a>Interface ICorDebugVariableHomeEnum
 
@@ -27,7 +28,7 @@ Fornece um enumerador para as variáveis locais e argumentos em uma função.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Next](icordebugvariablehomeenum-next-method.md)|Obtém o número especificado de instâncias [ICorDebugVariableHome](icordebugvariablehome-interface.md) que contêm informações sobre as variáveis e os argumentos locais em uma função.|  
   
@@ -47,7 +48,7 @@ Fornece um enumerador para as variáveis locais e argumentos em uma função.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugVariableHome](icordebugvariablehome-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

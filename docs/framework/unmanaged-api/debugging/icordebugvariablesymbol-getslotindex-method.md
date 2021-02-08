@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugVariableSymbol:: GetSlotIndex'
 title: 'Método ICorDebugVariableSymbol:: GetSlotIndex'
 ms.date: 03/30/2017
 ms.assetid: 09c19f5f-afc4-4e0c-bffe-cd7147bc7a43
-ms.openlocfilehash: fc42517cb95dfc14c472b5bb9111ebd70639cee7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3b5cba06a5e80ffa323d2e6521e9ec4666f6f5f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725983"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790549"
 ---
 # <a name="icordebugvariablesymbolgetslotindex-method"></a>Método ICorDebugVariableSymbol:: GetSlotIndex
 
@@ -26,7 +27,7 @@ HRESULT GetSlotIndex(
  `pSlotIndex`  
  fora Um ponteiro para o índice de slot da variável local.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` se bem-sucedido. `E_FAIL` se a variável for um argumento de função.  
   
@@ -47,7 +48,7 @@ HRESULT GetSlotIndex(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugVariableSymbol](icordebugvariablesymbol-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

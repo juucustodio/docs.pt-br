@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugInternalFrame:: GetFrameType'
 title: Método ICorDebugInternalFrame::GetFrameType
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: da278a29-dc2e-4bf7-96ce-801bdc4d7025
 topic_type:
 - apiref
-ms.openlocfilehash: c675ba4b56cecd1990184cd2f0e805250c3dfeb7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ea96f032ebfa5914503287d124242b74a84ea11f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724878"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791173"
 ---
 # <a name="icordebuginternalframegetframetype-method"></a>Método ICorDebugInternalFrame::GetFrameType
 

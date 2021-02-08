@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugILFrame:: método CanSetIP'
 title: Método ICorDebugILFrame::CanSetIP
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 16caf02f-c71e-486c-90b0-f0e54357d8f0
 topic_type:
 - apiref
-ms.openlocfilehash: 99c80fba594e9eaf69a3cc9a025509aa4c3c26a4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d6ba0d073e8807ac6173f7f3e3982fe1d3eb4e01
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703298"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791433"
 ---
 # <a name="icordebugilframecansetip-method"></a>Método ICorDebugILFrame::CanSetIP
 

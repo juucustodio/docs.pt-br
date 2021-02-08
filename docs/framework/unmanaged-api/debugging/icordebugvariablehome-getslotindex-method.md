@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugVariableHome:: GetSlotIndex'
 title: 'Método ICorDebugVariableHome:: GetSlotIndex'
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 966da50d-5665-4fff-bf7b-1c72bbadd9a4
 topic_type:
 - apiref
-ms.openlocfilehash: 4b071bd8e9d96084848c1553385eec5f8beca624
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f6ee01c2bfcee4c78f8463a7cefac1f90a3295f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711722"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790640"
 ---
 # <a name="icordebugvariablehomegetslotindex-method"></a>Método ICorDebugVariableHome:: GetSlotIndex
 
@@ -39,11 +40,11 @@ HRESULT GetSlotIndex(
  `pSlotIndex`  
  fora Um ponteiro para o índice de slot de uma variável local.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  O método retorna os valores a seguir.  
   
-|Valor|DESCRIÇÃO|  
+|Valor|Descrição|  
 |-----------|-----------------|  
 |`S_OK`|A chamada de método retornou um valor de índice de slot em `pSlotIndex` .|  
 |`E_FAIL`|A instância [ICorDebugVariableHome](icordebugvariablehome-interface.md) atual representa um argumento de função.|  
@@ -62,6 +63,6 @@ HRESULT GetSlotIndex(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugVariableHome](icordebugvariablehome-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebug:: EnumerateProcesses'
 title: Método ICorDebug::EnumerateProcesses
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ba25d166-1d28-4f1d-aca2-de298bbca669
 topic_type:
 - apiref
-ms.openlocfilehash: bf672c90cdbb9e9fb66105820a264a49601b38d7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 44ee21a820a1c9f94f1d66c93ff040b504bfcc93
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723448"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791576"
 ---
 # <a name="icordebugenumerateprocesses-method"></a>Método ICorDebug::EnumerateProcesses
 
@@ -49,6 +50,6 @@ HRESULT EnumerateProcesses (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebug](icordebug-interface.md)

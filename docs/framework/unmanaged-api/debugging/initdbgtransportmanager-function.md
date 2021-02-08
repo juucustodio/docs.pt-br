@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função InitDbgTransportManager'
 title: Função InitDbgTransportManager
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: a30102ff-c52e-48c9-b3a9-aa14286a42b2
 topic_type:
 - apiref
-ms.openlocfilehash: a5b4783eadb8045733b9ebd6d10c4e31f7829498
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 19cdfcbe3a5b120c11fc781476410833997b8c6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790432"
 ---
 # <a name="initdbgtransportmanager-function"></a>Função InitDbgTransportManager
 

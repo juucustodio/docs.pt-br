@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugVirtualUnwinder:: GetContext'
 title: 'Método ICorDebugVirtualUnwinder:: GetContext'
 ms.date: 03/30/2017
 ms.assetid: fe502a76-3068-47e5-a0a0-85ccb72dfac3
-ms.openlocfilehash: a5a1afa47e52eff7c930698a3354a03d8c62259f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 864f32ce82149658b2d4a617b08e8d7aa41fe642
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679449"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790523"
 ---
 # <a name="icordebugvirtualunwindergetcontext-method"></a>Método ICorDebugVirtualUnwinder:: GetContext
 
@@ -38,7 +39,7 @@ HRESULT GetContext(
  `contextBuf`  
  fora Uma matriz de bytes que contém o contexto atual deste desenrolador.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Qualquer valor HRESULT com falha recebido por MSCorDbi é considerado fatal e fará com que as APIs do ICorDebug sejam retornadas `CORDBG_E_DATA_TARGET_ERROR` .  
   
@@ -61,7 +62,7 @@ HRESULT GetContext(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugILCode2:: GetLocalVarSigToken'
 title: ICorDebugILCode2::Método GetLocalVarSigToken
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 17665b77-1342-4115-94fd-9f45b0ecfb0f
 topic_type:
 - apiref
-ms.openlocfilehash: 33533c9e3bfbe78abeddb5ed591f741219826127
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cdf2725274a132528123534ddd36ae95e265af44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728626"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791420"
 ---
 # <a name="icordebugilcode2getlocalvarsigtoken-method"></a>ICorDebugILCode2::Método GetLocalVarSigToken
 
@@ -50,7 +51,7 @@ HRESULT GetLocalVarSigToken(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugILCode2](icordebugilcode2-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

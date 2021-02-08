@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: mapeamento entre JSON e XML'
 title: Mapeamento entre JSON e XML
 ms.date: 03/30/2017
 ms.assetid: 22ee1f52-c708-4024-bbf0-572e0dae64af
-ms.openlocfilehash: 649d0f50aae806394587c7b79a7970c2de03e087
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1d9652d1683446da9946987a31a92906d5e38e55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234642"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793669"
 ---
 # <a name="mapping-between-json-and-xml"></a>Mapeamento entre JSON e XML
 
@@ -144,7 +145,7 @@ No elemento JSON raiz e nos elementos internos, o atributo de tipo JSON define o
 |`boolean`|4 ou 5 CIIs (que corresponde a `true` ou `false` ), possivelmente cercados por CIIs de espaço em branco adicional.|Uma sequência CII que corresponde à cadeia de caracteres "true" é mapeada para o literal `true` e uma sequência CII que corresponde à cadeia de caracteres "false" é mapeada para o literal `false` . O espaço em branco ao redor é preservado.<br /><br /> Exemplo: o elemento a seguir mapeia para um fragmento JSON.<br /><br /> `<root type="boolean"> false</root>`<br /><br /> O fragmento JSON é `false` .|
 |`null`|Nenhum permitido.|O literal `null` . No mapeamento JSON para XML, o `null` pode estar entre espaços em branco (' WS ' na seção 2) que não é mapeado para XML.<br /><br /> Exemplo: o elemento a seguir mapeia para um fragmento JSON.<br /><br /> `<root type="null"/>`<br /><br /> ou<br /><br /> `<root type="null"></root>`<br /><br /> :<br /><br /> O fragmento JSON em ambos os casos é `Null` .|
 |`object`|0 ou mais EIIs.|A `begin-object` (chave esquerda) como na seção 2,2 da RFC JSON, seguida por um registro de membro para cada EII, conforme descrito mais adiante. Se houver mais de um EII, haverá separadores de valor (vírgulas) entre os registros de membro. Tudo isso é seguido por um objeto final (chave direita).<br /><br /> Exemplo: o elemento a seguir mapeia para o fragmento JSON.<br /><br /> `<root type="object">`<br /><br /> `<type1 type="string">aaa\</type1>`<br /><br /> `<type2 type="string">bbb\</type2>`<br /><br /> `</root >`<br /><br /> O fragmento JSON é `{"type1":"aaa","type2":"bbb"}` .<br /><br /> Se o atributo de tipo de contrato de dados estiver presente no mapeamento de XML para JSON, um registro de membro adicional será inserido no início. Seu nome é o [nome local] do atributo de tipo de contrato de dados (" \_ \_ tipo") e seu valor é o [valor normalizado] do atributo. Por outro lado, no mapeamento de JSON para XML, se o nome do primeiro registro de membro for o [nome local] do atributo de tipo de contrato de dados (ou seja, " \_ \_ tipo"), um atributo de tipo de contrato de dados correspondente estará presente no XML mapeado, mas um EII correspondente não estará presente. Observe que esse registro de membro deve ocorrer primeiro no objeto JSON para que esse mapeamento especial seja aplicado. Isso representa uma partida do processamento comum de JSON, em que a ordem dos registros de membros não é significativa.<br /><br /> Exemplo:<br /><br /> O fragmento JSON a seguir mapeia para XML.<br /><br /> `{"__type":"Person","name":"John"}`<br /><br /> O XML é o código a seguir.<br /><br /> `<root type="object" __type="Person">   <name type="string">John</name> </root>`<br /><br /> Observe que o \_ \_ tipo todos está presente, mas não há nenhum \_ \_ tipo EIi.<br /><br /> No entanto, se a ordem no JSON for revertida, conforme mostrado no exemplo a seguir.<br /><br /> `{"name":"John","\_\_type":"Person"}`<br /><br /> O XML correspondente é mostrado.<br /><br /> `<root type="object">   <name type="string">John</name>   <__type type="string">Person</__type> </root>`<br /><br /> Ou seja, \_ _type deixa de ter um significado especial e é mapeado para um EII como de costume, não todos.<br /><br /> As regras de escape/saída para o [valor normalizado] do todos quando mapeadas para um valor JSON são iguais às cadeias de caracteres JSON, especificadas na linha "String" dessa tabela.<br /><br /> Exemplo:<br /><br /> `<root type="object" __type="\abc" />`<br /><br /> para o exemplo anterior, é possível mapear para o JSON a seguir.<br /><br /> `{"__type":"\\abc"}`<br /><br /> Em um mapeamento de XML para JSON, o primeiro [nome local] do EII não deve ser " \_ \_ Type".<br /><br /> O espaço em branco ( `ws` ) nunca é gerado em mapeamento de XML para JSON para objetos e é ignorado no mapeamento de JSON para XML.<br /><br /> Exemplo: o fragmento JSON a seguir mapeia para um elemento XML.<br /><br /> `{ "ccc" : "aaa", "ddd" :"bbb"}`<br /><br /> O elemento XML é mostrado no código a seguir.<br /><br /> `<root type="object">    <ccc type="string">aaa</ccc>    <ddd type="string">bbb</bar> </root >`|
-|matriz|0 ou mais EIIs|Um Begin-array (colchete esquerdo) como na seção 2,3 da RFC JSON, seguido por um registro de matriz para cada EII, conforme descrito mais adiante. Se houver mais de um EII, haverá separadores de valor (vírgulas) entre os registros de matriz. Tudo isso é seguido por uma matriz final.<br /><br /> Exemplo: o elemento XML a seguir é mapeado para um fragmento JSON.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`<br /><br /> O fragmento JSON é `["aaa","bbb"]`<br /><br /> O espaço em branco ( `ws` ) nunca é gerado no mapeamento de XML para JSON para matrizes e é ignorado no mapeamento de JSON para XML.<br /><br /> Exemplo: um fragmento JSON.<br /><br />`["aaa", "bbb"]`<br /><br /> O elemento XML para o qual ele é mapeado.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`|
+|array|0 ou mais EIIs|Um Begin-array (colchete esquerdo) como na seção 2,3 da RFC JSON, seguido por um registro de matriz para cada EII, conforme descrito mais adiante. Se houver mais de um EII, haverá separadores de valor (vírgulas) entre os registros de matriz. Tudo isso é seguido por uma matriz final.<br /><br /> Exemplo: o elemento XML a seguir é mapeado para um fragmento JSON.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`<br /><br /> O fragmento JSON é `["aaa","bbb"]`<br /><br /> O espaço em branco ( `ws` ) nunca é gerado no mapeamento de XML para JSON para matrizes e é ignorado no mapeamento de JSON para XML.<br /><br /> Exemplo: um fragmento JSON.<br /><br />`["aaa", "bbb"]`<br /><br /> O elemento XML para o qual ele é mapeado.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`|
 
 Os registros de membro funcionam da seguinte maneira:
 
@@ -218,7 +219,7 @@ Este é o fragmento JSON.
 ["myValue1",2,[true,null]]
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory>
 - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>

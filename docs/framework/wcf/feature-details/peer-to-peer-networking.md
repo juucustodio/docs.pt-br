@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: rede ponto a ponto'
 title: Rede peer-to-peer
 ms.date: 03/30/2017
 ms.assetid: ad6cb67b-fd1c-4ca1-a767-b410da2e16ca
-ms.openlocfilehash: 001185dc38c06b6546bc7f973bb155cd0af5cf9c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 39ca4580c5b00b3962247d45ba3f60926035ea58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96272079"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793643"
 ---
 # <a name="peer-to-peer-networking"></a>Rede peer-to-peer
 

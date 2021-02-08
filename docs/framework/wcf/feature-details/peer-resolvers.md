@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: resolvedores de pares'
 title: Resolvedor peer
 ms.date: 03/30/2017
 ms.assetid: d86d12a1-7358-450f-9727-b6afb95adb9c
-ms.openlocfilehash: c9fcfbd416fb530898b2bd963dd0df1e5c1bfd62
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e35da7ddae2b18924b04800c698452bf7d7eeeff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96272105"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793656"
 ---
 # <a name="peer-resolvers"></a>Resolvedor peer
 
@@ -42,7 +43,7 @@ Para se conectar a uma malha, um nó par requer os endereços IP de outros nós.
 
  [Sobre o CustomPeerResolverService: registros de clientes](inside-the-custompeerresolverservice-client-registrations.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Conceitos de canal par](peer-channel-concepts.md)
 - [Segurança de canal par](peer-channel-security.md)

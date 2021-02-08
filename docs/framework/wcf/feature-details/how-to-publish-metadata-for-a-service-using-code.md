@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como publicar metadados para um serviço usando código'
 title: 'Como: publicar metadados utilizando código para um serviço'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 51407e6d-4d87-42d5-be7c-9887b8652006
-ms.openlocfilehash: 1291cb040fdcad17135e2187ade1966f3032fb44
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 94939c77b1c66643b0cc378516479e35c41aefbb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295529"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793682"
 ---
 # <a name="how-to-publish-metadata-for-a-service-using-code"></a>Como: publicar metadados utilizando código para um serviço
 
@@ -88,7 +89,7 @@ Este é um dos dois tópicos de instruções que abordam a publicação de metad
  [!code-csharp[htPublishMetadataCode#11](../../../../samples/snippets/csharp/VS_Snippets_CFX/htpublishmetadatacode/cs/program.cs#11)]
  [!code-vb[htPublishMetadataCode#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htpublishmetadatacode/vb/program.vb#11)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: hospedar um serviço do WCF em um aplicativo gerenciado](../how-to-host-a-wcf-service-in-a-managed-application.md)
 - [Self-Host](../samples/self-host.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como importar metadados em pontos de extremidade de serviço'
 title: 'Como: importar metadados para pontos de extremidade de serviço'
 ms.date: 03/30/2017
 ms.assetid: b69dbe20-92a1-4911-89d8-ffbc3dad4663
-ms.openlocfilehash: 1efc38d4b72037274edd3b6180c102cf7416faa0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d6e69b64c5f70a8e49ed6ee7c9ff319f5a639a30
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293371"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793734"
 ---
 # <a name="how-to-import-metadata-into-service-endpoints"></a>Como: importar metadados para pontos de extremidade de serviço
 
@@ -38,7 +39,7 @@ Este tópico explica como importar metadados para uma coleção de pontos de ext
   
      [!code-csharp[UE_ImportMetadata#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/ue_importmetadata/cs/client.cs#4)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Metadados](metadata.md)
 - [Introdução](../samples/getting-started-sample.md)

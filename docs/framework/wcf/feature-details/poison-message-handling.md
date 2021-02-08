@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: manipulação de mensagens suspeitas'
 title: Manuseio de mensagem suspeita
 ms.date: 03/30/2017
 ms.assetid: 8d1c5e5a-7928-4a80-95ed-d8da211b8595
-ms.openlocfilehash: 9aeb404cea18a7dd6a9c416c0728d9905c0d782d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1d6c8027d44da4d79562e4e427654a3d85df3e88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244815"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793617"
 ---
 # <a name="poison-message-handling"></a>Manuseio de mensagem suspeita
 
@@ -111,7 +112,7 @@ Veja a seguir o número máximo de tentativas de entrega feitas para uma mensage
   
 - O enfileiramento de mensagens no Windows Vista dá suporte a uma propriedade Message que mantém a contagem do número de vezes que a entrega de mensagens é tentada. Essa propriedade de anulação de contagem não está disponível no Windows Server 2003 e no Windows XP. O WCF mantém a contagem de anulação na memória, portanto, é possível que essa propriedade não contenha um valor preciso quando a mesma mensagem é lida por mais de um serviço WCF em um farm.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de filas](queues-overview.md)
 - [Diferenças de recursos em fila no Windows Vista, Windows Server 2003, e no Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md)

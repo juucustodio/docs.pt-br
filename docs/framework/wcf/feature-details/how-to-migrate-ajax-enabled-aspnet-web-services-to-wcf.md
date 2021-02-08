@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como migrar AJAX-Enabled serviços Web ASP.NET para o WCF'
 title: 'Como: migrar serviços Web habilitados para AJAX ASP.NET para o WCF'
 ms.date: 03/30/2017
 ms.assetid: 1428df4d-b18f-4e6d-bd4d-79ab3dd5147c
-ms.openlocfilehash: 89c9601ba6afcef9733d7653564a98664a1ed70f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fe79660f0ed8ef01a2607c94362d484cacc6a7b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241896"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793721"
 ---
 # <a name="how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf"></a>Como: migrar serviços Web habilitados para AJAX ASP.NET para o WCF
 
@@ -205,7 +206,7 @@ d.Add("two", 2);
 
 |Categoria de diferenças|DataContractJsonSerializer|ASP.NET AJAX JavaScriptSerializer|
 |-----------------------------|--------------------------------|---------------------------------------|
-|Desserializar o buffer vazio (novo byte [0]) em <xref:System.Object> (ou <xref:System.Uri> ou em algumas outras classes).|SerializationException|null|
+|Desserializar o buffer vazio (novo byte [0]) em <xref:System.Object> (ou <xref:System.Uri> ou em algumas outras classes).|SerializationException|nulo|
 |Serialização de <xref:System.DBNull.Value>|{} (ou {"__type": "#System"})|Nulo|
 |Serialização dos membros privados de tipos de [Serializable].|serializado|não serializado|
 |Serialização das propriedades públicas de <xref:System.Runtime.Serialization.ISerializable> tipos.|não serializado|serializado|
@@ -214,6 +215,6 @@ d.Add("two", 2);
 |Representação de dicionários|Uma matriz de KeyValuePair \<K,V> , lida com tipos de chave que não são cadeias de caracteres.|Como objetos JSON reais – mas só trata os tipos de chave que são cadeias de caracteres.|
 |Caracteres de escape|Sempre com uma barra de escape (/); Nunca permite caracteres JSON inválidos sem escape, como "\n".|Com uma barra de escape (/) para valores DateTime.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: usar a configuração para adicionar um ponto de extremidade AJAX ASP.NET](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)

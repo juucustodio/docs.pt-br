@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: modos de autenticação SecurityBindingElement'
 title: SecurityBindingElement Authentication Modes
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 12300bf4-c730-4405-9f65-d286f68b5a43
-ms.openlocfilehash: bf1b8103714c174fc2746bc864a7d7e0e5ea5ff1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bf91f0fbb112e8a0fcd4d03fe7dd82a3a4eebbd0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253980"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793578"
 ---
 # <a name="securitybindingelement-authentication-modes"></a>SecurityBindingElement Authentication Modes
 
@@ -140,7 +141,7 @@ O Windows Communication Foundation (WCF) fornece vários modos pelos quais os cl
 
  Com esse modo de autenticação, o cliente é autenticado usando um token de nome de usuário que aparece na camada SOAP como um token de suporte assinado; ou seja, um token assinado pela assinatura da mensagem. O serviço é autenticado usando um certificado X. 509 na camada de transporte. O elemento de associação de segurança é `TransportSecurityBindingElement` retornado pelo <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateUserNameOverTransportBindingElement%2A> método. Como alternativa, defina o `authenticationMode` atributo como `UserNameOverTransport` .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Channels.SecurityBindingElement>
 - [Como: criar um SecurityBindingElement para um modo de autenticação especificado](how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)

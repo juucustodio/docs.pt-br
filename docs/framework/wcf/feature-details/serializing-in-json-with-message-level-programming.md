@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serialização em JSON com programação em nível de mensagem'
 title: Serialização em Json com programação de nível de mensagem
 ms.date: 03/30/2017
 ms.assetid: 5f940ba2-57ee-4c49-a779-957c5e7e71fa
-ms.openlocfilehash: 8343f7a8aa3c01557aae7df420351fa318cbb4b5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 715e44b0e2137197f5883e2327288555513f29cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253928"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793539"
 ---
 # <a name="serializing-in-json-with-message-level-programming"></a>Serialização em Json com programação de nível de mensagem
 
@@ -34,7 +35,7 @@ O WCF dá suporte à serialização de dados no formato JSON. Este tópico descr
                     new WebBodyFormatMessageProperty(WebContentFormat.Json)); // Use JSON format  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Integração de AJAX e suporte para JSON](ajax-integration-and-json-support.md)
 - [Serialização JSON autônoma](stand-alone-json-serialization.md)

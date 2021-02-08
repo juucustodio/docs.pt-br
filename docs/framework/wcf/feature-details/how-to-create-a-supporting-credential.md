@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como criar uma credencial de suporte'
 title: 'Como: criar uma credencial de suporte'
 ms.date: 03/30/2017
 ms.assetid: d0952919-8bb4-4978-926c-9cc108f89806
-ms.openlocfilehash: 1e11da11de68b1d3e24115387ec61ad22ec031b1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2f84e58eb0b8df5e1297fcbc50ddcac96db4fe5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286299"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793812"
 ---
 # <a name="how-to-create-a-supporting-credential"></a>Como: criar uma credencial de suporte
 
@@ -87,6 +88,6 @@ ms.locfileid: "96286299"
 
  [!code-csharp[c_SupportingCredential#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_supportingcredential/cs/source.cs#1)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: criar uma associação personalizada utilizando o SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugStackWalk:: GetFrame'
 title: Método ICorDebugStackWalk::GetFrame
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4083b505-5b59-44fb-8c5d-129db6a96c10
 topic_type:
 - apiref
-ms.openlocfilehash: 452635764794e01858baab10464a03c966a55271
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b00ddb6a475aff4263a922f5a20b866cd0e1b2ed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711930"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794735"
 ---
 # <a name="icordebugstackwalkgetframe-method"></a>Método ICorDebugStackWalk::GetFrame
 
@@ -37,7 +38,7 @@ HRESULT GetFrame([out] ICorDebugFrame ** pFrame);
  `pFrame`  
  no Um ponteiro para o endereço do objeto frame criado que representa o quadro atual na pilha.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -65,7 +66,7 @@ HRESULT GetFrame([out] ICorDebugFrame ** pFrame);
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugStackWalk](icordebugstackwalk-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

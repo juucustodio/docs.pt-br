@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 224-MessageThrottleAtSeventyPercent'
 title: 224 - MessageThrottleAtSeventyPercent
 ms.date: 03/30/2017
 ms.assetid: 82bbbfd7-10d2-41fd-805d-2443b0c1b96b
-ms.openlocfilehash: 26b860b88313a971960a65b599562ef1ccb4e7da
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 14c08371c5db7e6f7deb0a5851a1d24dfc94475e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243515"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794267"
 ---
 # <a name="224---messagethrottleatseventypercent"></a>224 - MessageThrottleAtSeventyPercent
 
@@ -17,7 +18,7 @@ ms.locfileid: "96243515"
 |-|-|  
 |ID|224|  
 |Palavras-chave|EndToEndMonitoring, HealthMonitoring, solução de problemas, ServiceModel|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

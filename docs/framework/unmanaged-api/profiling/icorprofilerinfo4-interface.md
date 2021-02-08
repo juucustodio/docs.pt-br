@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerInfo4'
 title: Interface ICorProfilerInfo4
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 80a5308e-c22f-4201-ba89-31cc8562515b
 topic_type:
 - apiref
-ms.openlocfilehash: c3e623b0b5f8b49e043fe3a1aa8311558e573573
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94e33be74ccffea3fa9a0e51e317a6888596606d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682829"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794501"
 ---
 # <a name="icorprofilerinfo4-interface"></a>Interface ICorProfilerInfo4
 
@@ -27,7 +28,7 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método EnumJITedFunctions2](icorprofilerinfo4-enumjitedfunctions2-method.md)|Retorna um enumerador para todas as funções que foram previamente compiladas e recompiladas por JIT.|  
 |[Método EnumThreads](icorprofilerinfo4-enumthreads-method.md)|Obtém um enumerador que fornece métodos para iterar sequencialmente através da coleção de todos os threads gerenciados no processo de perfil.|  
@@ -54,7 +55,7 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

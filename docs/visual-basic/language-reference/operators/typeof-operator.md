@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador TypeOf (Visual Basic)'
 title: Operador TypeOf
 ms.date: 07/20/2015
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - TypeOf operator [Visual Basic]
 - compatible data types [Visual Basic]
 ms.assetid: 33f65296-659a-4b9a-9a29-c2a91cff68b2
-ms.openlocfilehash: 0a01b49cf1e0bf9ad7b2ce541cee39cba83025ca
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 59a03095b2abbaa304221b30402b9a058954db63
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875309"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795229"
 ---
 # <a name="typeof-operator-visual-basic"></a>Operador TypeOf (Visual Basic)
 
 Verifica se o tipo de tempo de execução do resultado de uma expressão é compatível com tipo com o tipo especificado.
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 result = TypeOf objectexpression Is typename  
@@ -39,10 +40,10 @@ result = TypeOf objectexpression IsNot typename
  Exibido. Um valor `Boolean`.  
   
  `objectexpression`  
- Necessário. Qualquer expressão que seja avaliada como um tipo de referência.  
+ Obrigatório. Qualquer expressão que seja avaliada como um tipo de referência.  
   
  `typename`  
- Necessário. Qualquer nome de tipo de dados.  
+ Obrigatório. Qualquer nome de tipo de dados.  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -50,7 +51,7 @@ result = TypeOf objectexpression IsNot typename
   
 |Categoria de tipo de `typename`|Critério de compatibilidade|  
 |---------------------------------|-----------------------------|  
-|Classe|`objectexpression` é do tipo `typename` ou herda de `typename`|  
+|Class|`objectexpression` é do tipo `typename` ou herda de `typename`|  
 |Estrutura|`objectexpression` é do tipo `typename`|  
 |Interface|`objectexpression` implementa `typename` ou herda de uma classe que implementa `typename`|  
   
@@ -66,7 +67,7 @@ result = TypeOf objectexpression IsNot typename
   
  A variável `refInteger` tem um tipo de tempo de execução de `Integer` . Ele é compatível com `Integer` , mas não com `Double` . A variável `refForm` tem um tipo de tempo de execução de <xref:System.Windows.Forms.Form> . Ele é compatível com <xref:System.Windows.Forms.Form> porque é seu tipo, com <xref:System.Windows.Forms.Control> porque <xref:System.Windows.Forms.Form> herda de <xref:System.Windows.Forms.Control> e com <xref:System.ComponentModel.IComponent> porque <xref:System.Windows.Forms.Form> herda de <xref:System.ComponentModel.Component> , que implementa <xref:System.ComponentModel.IComponent> . No entanto, o `refForm` não é compatível com o <xref:System.Windows.Forms.Label> .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operador Is](is-operator.md)
 - [Operador IsNot](isnot-operator.md)

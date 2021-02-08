@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 301-UserDefinedErrorOccurred'
 title: 301 - UserDefinedErrorOccurred
 ms.date: 03/30/2017
 ms.assetid: a0285d1c-550f-4c14-9c36-a96e97f1c4e4
-ms.openlocfilehash: 2c3ff1905a1d17413211246f5b3cc156bcbb7320
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 15e12bb27e3626f80747498a1387aa90fc461d28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243450"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794241"
 ---
 # <a name="301---userdefinederroroccurred"></a>301 - UserDefinedErrorOccurred
 
@@ -17,7 +18,7 @@ ms.locfileid: "96243450"
 |-|-|  
 |ID|301|  
 |Palavras-chave|Solução de problemas, HealthMonitoring, UserEvents, ServiceModel, EndToEndMonitoring|  
-|Nível|Erro do|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

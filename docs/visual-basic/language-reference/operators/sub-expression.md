@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: sub Expression (Visual Basic)'
 title: Subexpressão
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - Sub Expression [Visual Basic]
 - subroutines [Visual Basic], sub expressions
 ms.assetid: 36b6bfd1-6539-4d8f-a5eb-6541a745ffde
-ms.openlocfilehash: e564fa3f717fc1a9f4e9961d9b3e961912a4d56b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e47aa8f9707701b5fd9d90fb3fabb31e9c052b53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873323"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795281"
 ---
 # <a name="sub-expression-visual-basic"></a>Subexpressão (Visual Basic)
 
 Declara os parâmetros e o código que definem uma expressão lambda de sub-rotina.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Sub ( [ parameterlist ] ) statement  
@@ -32,8 +33,8 @@ End Sub
 |Termo|Definição|  
 |---|---|  
 |`parameterlist`|Opcional. Uma lista de nomes de variáveis locais que representam os parâmetros do procedimento. Os parênteses devem estar presentes mesmo quando a lista estiver vazia. Para obter mais informações, consulte [lista de parâmetros](../statements/parameter-list.md).|  
-|`statement`|Necessário. Uma única instrução.|  
-|`statements`|Necessário. Uma lista de instruções.|  
+|`statement`|Obrigatório. Uma única instrução.|  
+|`statements`|Obrigatório. Uma lista de instruções.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -61,7 +62,7 @@ End Sub
   
  [!code-vb[VbVbalrLambdas#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#15)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Sub](../statements/sub-statement.md)
 - [Expressões lambda](../../programming-guide/language-features/procedures/lambda-expressions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <codeBase> elemento'
 title: Elemento <codeBase>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - container tags, <codeBase> element
 - codeBase element
 ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
-ms.openlocfilehash: 475b7df55ed509157c1da0aeb8f979de238c72b5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 714392444d3ee3db9126e9fe67832cb5f0bf5e3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70971882"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795112"
 ---
 # <a name="codebase-element"></a>Elemento \<codeBase>
 
@@ -26,7 +27,7 @@ Especifica onde o Common Language Runtime pode encontrar um assembly.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<codeBase>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
    <codeBase
@@ -92,7 +93,7 @@ O exemplo a seguir mostra como especificar onde o tempo de execução pode encon
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações de tempo de execução](index.md)
 - [Esquema do arquivo de configuração](../index.md)

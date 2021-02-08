@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugRemote:: CreateProcessEx'
 title: Método ICorDebugRemote::CreateProcessEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 41af93c7-e448-4251-8d4d-413d38c635f2
 topic_type:
 - apiref
-ms.openlocfilehash: 37bf800f27754d1bf80aece962b7cbb85b1cbedc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd27400f5c9f348621fb66b3b7730cf15d397151
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712177"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794722"
 ---
 # <a name="icordebugremotecreateprocessex-method"></a>Método ICorDebugRemote::CreateProcessEx
 
@@ -87,7 +88,7 @@ HRESULT CreateProcessEx (
  `ppProcess`  
  fora Um ponteiro para o endereço de um objeto "interface ICorDebugProcess" que representa o processo.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK  
  O processo foi iniciado com êxito no computador remoto e retornou uma "interface ICorDebugProcess" para depuração.  
@@ -109,7 +110,7 @@ HRESULT CreateProcessEx (
   
  **Versões do .NET Framework:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRemote](icordebugremote-interface.md)
 - [Interface ICorDebug](icordebug-interface.md)

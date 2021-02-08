@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRDataTarget3:: GetExceptionContextRecord'
 title: ICLRDataTarget3::Método GetExceptionContextRecord
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 66076ed5-f05c-4114-9788-94cb143abb8a
 topic_type:
 - apiref
-ms.openlocfilehash: 87065b83e0b28eafdf5099f99fd188e2e21e7a12
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c722eaaf0f9935bc7adaa69a1792f934f631a728
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723617"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794826"
 ---
 # <a name="iclrdatatarget3getexceptioncontextrecord-method"></a>ICLRDataTarget3::Método GetExceptionContextRecord
 
@@ -44,11 +45,11 @@ HRESULT GetExceptionContextRecord(
  `buffer`  
  [out] Um ponteiro para um buffer de memória que recebe uma cópia do registro de contexto. O registro de exceção é retornado como um tipo de [contexto](/windows/win32/api/winnt/ns-winnt-arm64_nt_context) .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  O valor retornado é `S_OK` em caso de êxito, ou um código de falha `HRESULT` em caso de falha. Os códigos `HRESULT` podem incluir, entre outros:  
   
-|Código de retorno|DESCRIÇÃO|  
+|Código de retorno|Descrição|  
 |-----------------|-----------------|  
 |`S_OK`|O método foi bem-sucedido. O registro de contexto foi copiado no buffer de saída.|  
 |`HRESULT_FROM_WIN32(ERROR_NOT_FOUND)`|Nenhum registro de contexto está associado ao destino.|  
@@ -70,7 +71,7 @@ HRESULT GetExceptionContextRecord(
   
  **.NET Framework versões:**[!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRDataTarget3](iclrdatatarget3-interface.md)
 - [Método GetExceptionRecord](iclrdatatarget3-getexceptionrecord-method.md)

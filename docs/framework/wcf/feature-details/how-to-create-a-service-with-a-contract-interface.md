@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar um serviço com uma interface de contrato'
 title: 'Como: criar um serviço com interface de contrato'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 7b6803f6-d6f9-4cc2-9f1b-6f4c920475d5
-ms.openlocfilehash: 2234e6fe8d0ee2e0029a061ba96ef84f840f0c9b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5080f6bb45030811b87f952fb62a74801bc1ef88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286338"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793825"
 ---
 # <a name="how-to-create-a-service-with-a-contract-interface"></a>Como: criar um serviço com interface de contrato
 

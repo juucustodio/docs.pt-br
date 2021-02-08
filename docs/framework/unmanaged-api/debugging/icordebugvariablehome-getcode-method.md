@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugVariableHome:: GetCode'
 title: 'Método ICorDebugVariableHome:: GetCode'
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ef002890-4a7b-4a5d-abbf-16c60083f794
 topic_type:
 - apiref
-ms.openlocfilehash: 6f5d99e6dc4290ef69c0a0748fe15ae538e83558
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e3ff96816e580fe3cd1cee782dc5bd4166f08a14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684220"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794631"
 ---
 # <a name="icordebugvariablehomegetcode-method"></a>Método ICorDebugVariableHome:: GetCode
 
@@ -49,6 +50,6 @@ HRESULT GetCode(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugVariableHome](icordebugvariablehome-interface.md)

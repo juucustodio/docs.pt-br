@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como hospedar um serviço de fluxo de trabalho com a malha de aplicativos do Windows Server'
 title: 'Como: hospedar um serviço de fluxo de trabalho com o Windows Server App Fabric'
 ms.date: 03/30/2017
 ms.assetid: 83b62cce-5fc2-4c6d-b27c-5742ba3bac73
-ms.openlocfilehash: 2cf77753a0540e75ae6778065f7fa006729f8d6a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 057e81c50844d1a36e32fe899de3469f024d775b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555979"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793799"
 ---
 # <a name="how-to-host-a-workflow-service-with-windows-server-app-fabric"></a>Como: hospedar um serviço de fluxo de trabalho com o Windows Server App Fabric
 
@@ -35,23 +36,23 @@ A hospedagem de serviços de fluxo de trabalho no app Fabric é semelhante à ho
   
 4. Selecione a guia **geral** para exibir informações gerais sobre o aplicativo, conforme mostrado na captura de tela a seguir.  
   
-     ![Guia Geral da caixa de diálogo Configuração da Malha de Aplicativos](media/appfabricconfiguration-general.gif "AppFabricConfiguration-geral")  
+     ![Guia Geral da caixa de diálogo Configuração da Malha de Aplicativos](media/appfabricconfiguration-general.gif "AppFabricConfiguration-General")  
   
 5. Selecione a guia **monitoramento** . Isso mostra várias configurações de monitoramento, conforme mostrado na captura de tela a seguir.  
   
-     ![Guia de monitoramento da configuração da malha de aplicativos](media/appfabricconfiguration-monitoring.gif "AppFabricConfiguration-monitoramento")  
+     ![Guia de monitoramento da configuração da malha de aplicativos](media/appfabricconfiguration-monitoring.gif "AppFabricConfiguration-Monitoring")  
   
      Para obter mais informações sobre como configurar o monitoramento do serviço de fluxo de trabalho no app Fabric, consulte [Configuring Monitoring with app Fabric](/previous-versions/appfabric/ee677384(v=azure.10)).  
   
 6. Selecione a guia **persistência do fluxo de trabalho** . Isso permite que você configure seu aplicativo para usar o provedor de persistência padrão do App Fabric, conforme mostrado na captura de tela a seguir.  
   
-     ![Persistência de &#45; de configuração do Fabric do aplicativo](media/appfabricconfiguration-persistence.gif "AppFabricConfiguration-persistência")  
+     ![Persistência de &#45; de configuração do Fabric do aplicativo](media/appfabricconfiguration-persistence.gif "AppFabricConfiguration-Persistence")  
   
      Para obter mais informações sobre como configurar a persistência de fluxo de trabalho no Windows Server app Fabric, consulte [Configuring Workflow Persistence in app Fabric](/previous-versions/appfabric/ee677353(v=azure.10)).  
   
 7. Selecione a guia **Gerenciamento de host do fluxo de trabalho** . Isso permite que você especifique quando as instâncias de serviço de fluxo de trabalho ocioso devem ser descarregadas e persistidas, conforme mostrado na captura de tela a seguir.  
   
-     ![Gerenciamento de host de fluxo de trabalho de configuração do App Fabric](media/appfabricconfiguration-management.gif "AppFabricConfiguration-gerenciamento")  
+     ![Gerenciamento de host de fluxo de trabalho de configuração do App Fabric](media/appfabricconfiguration-management.gif "AppFabricConfiguration-Management")  
   
      Para obter mais informações sobre a configuração de gerenciamento de host de fluxo de trabalho, consulte [Configuring Workflow host Management in app Fabric](/previous-versions/appfabric/ff383424(v=azure.10)).  
   
@@ -69,7 +70,7 @@ A hospedagem de serviços de fluxo de trabalho no app Fabric é semelhante à ho
   
 10. Selecione a guia **segurança** . Isso permite que você defina as configurações de segurança para o aplicativo, conforme mostrado na captura de tela a seguir.  
   
-     ![Configuração da segurança da malha de aplicativos](media/appfabricconfiguration-security.gif "AppFabricConfiguration-segurança")  
+     ![Configuração da segurança da malha de aplicativos](media/appfabricconfiguration-security.gif "AppFabricConfiguration-Security")  
   
      Para obter mais informações sobre como configurar a segurança com o Windows Server app Fabric, consulte [Configurando a segurança com o app Fabric](/previous-versions/appfabric/ee677278(v=azure.10)).  
   
@@ -91,7 +92,7 @@ A hospedagem de serviços de fluxo de trabalho no app Fabric é semelhante à ho
   
      Para obter mais informações sobre os recursos do Windows Server app Fabric e como usá-los, consulte [recursos de hospedagem do Windows Server app Fabric](/previous-versions/appfabric/ee677189(v=azure.10))  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando um serviço de fluxo de trabalho de execução longa](creating-a-long-running-workflow-service.md)
 - [Recursos de hospedagem do Windows Server AppFabric](/previous-versions/appfabric/ee677189(v=azure.10))

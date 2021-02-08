@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <customTrackingQuery>'
 title: <customTrackingQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 4e108e89-1132-46b7-868a-c7f5c69dc89f
-ms.openlocfilehash: 59a76ea772dc8d06c390e3bca9d531df5f11e5f0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 24857aca39aad825a3dd4eca83fa3a51ec440b25
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148718"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795086"
 ---
 # \<customTrackingQuery>
 
@@ -60,7 +61,7 @@ Representa uma coleção de consultas que são usados para controlar os eventos 
 |-------------|-----------------|  
 |[\<customTrackingQuery>](customtrackingquery.md)|Uma consulta que é usada para controlar os eventos que você define em suas atividades de código.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.CustomTrackingQuery?displayProperty=nameWithType>

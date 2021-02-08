@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugStaticFieldSymbol'
 title: Interface ICorDebugStaticFieldSymbol
 ms.date: 03/30/2017
 ms.assetid: c0b93609-631e-4b15-878a-189ede922631
-ms.openlocfilehash: fcf3bb61ccd903f2dd375e638814247a98aaf7b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3aa9c98cef4cdc7edc519b06b6cf9b4b2192b4e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794670"
 ---
 # <a name="icordebugstaticfieldsymbol-interface"></a>Interface ICorDebugStaticFieldSymbol
 
@@ -15,7 +16,7 @@ Representa as informações de símbolo de depuração de um campo estático.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetAddress](icordebugstaticfieldsymbol-getaddress-method.md)|Obtém o endereço do campo estático.|  
 |[Método GetName](icordebugstaticfieldsymbol-getname-method.md)|Obtém o nome do campo estático.|  
@@ -38,7 +39,7 @@ Representa as informações de símbolo de depuração de um campo estático.
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugInstanceFieldSymbol](icordebuginstancefieldsymbol-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador XOR (Visual Basic)'
 title: Operador Xor
 ms.date: 07/20/2015
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - Xor keyword [Visual Basic]
 - bitwise comparison [Visual Basic]
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
-ms.openlocfilehash: ce7592c73f387d6ddbfd328abce8555cb7dcd303
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 313ff30ace91b1832c0d35df13294e570a8e410d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875292"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795216"
 ---
 # <a name="xor-operator-visual-basic"></a>Operador Xor (Visual Basic)
 
 Executa uma exclusão lógica em duas `Boolean` expressões, ou uma exclusão bit a bit em duas expressões numéricas.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 result = expression1 Xor expression2  
@@ -34,7 +35,7 @@ result = expression1 Xor expression2
 ## <a name="parts"></a>Partes  
 
  `result`  
- Necessário. Qualquer `Boolean` variável ou numérica. Para comparação booliana, `result` é a exclusão lógica (disjunção lógica exclusiva) de dois `Boolean` valores. No caso de operações bit-ais, `result` é um valor numérico que representa a exclusão de bit-de-bits exclusiva (disjunção bit que não é exclusivo) de dois padrões de bits  
+ Obrigatório. Qualquer `Boolean` variável ou numérica. Para comparação booliana, `result` é a exclusão lógica (disjunção lógica exclusiva) de dois `Boolean` valores. No caso de operações bit-ais, `result` é um valor numérico que representa a exclusão de bit-de-bits exclusiva (disjunção bit que não é exclusivo) de dois padrões de bits  
   
  `expression1`  
  Obrigatórios. Qualquer `Boolean` ou expressão numérica.  
@@ -96,7 +97,7 @@ result = expression1 Xor expression2
   
  O exemplo anterior produz resultados de 2, 12 e 14, respectivamente.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores lógicos/bit a bit (Visual Basic)](logical-bitwise-operators.md)
 - [Precedência do operador no Visual Basic](operator-precedence.md)

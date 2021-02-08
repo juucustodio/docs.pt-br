@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-= operador (Visual Basic)
 title: Operador -=
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - operator -=
 - compound assignment statements [Visual Basic]
 ms.assetid: 5ead0c37-ae50-48f7-8435-8e341d81cae1
-ms.openlocfilehash: 9149d9b350fc05c5e576f9f7800725aeb330e79d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 55574fa56d0ebe02fa5aef1a2711dfb3e5161a9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873303"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795268"
 ---
 # <a name="--operator-visual-basic"></a>Operador -= (Visual Basic)
 
 Subtrai o valor de uma expressão do valor de uma variável ou propriedade e atribui o resultado à variável ou à propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 variableorproperty -= expression  
@@ -30,7 +31,7 @@ variableorproperty -= expression
 ## <a name="parts"></a>Partes  
 
  `variableorproperty`  
- Necessário. Qualquer variável numérica ou propriedade.  
+ Obrigatório. Qualquer variável numérica ou propriedade.  
   
  `expression`  
  Obrigatórios. Qualquer expressão numérica.  
@@ -51,7 +52,7 @@ variableorproperty -= expression
   
  [!code-vb[VbVbalrOperators#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#11)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operador - (Visual Basic)](subtraction-operator.md)
 - [Operadores de atribuição](assignment-operators.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função StrongNameSignatureVerificationEx'
 title: Função StrongNameSignatureVerificationEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cfe4b634-18bf-44b8-9773-d94fb7e8a480
 topic_type:
 - apiref
-ms.openlocfilehash: 27417c379411e242c48d6d9b0c99de833f7ede8a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9e20044e9c3caef8c2276ac5f390269ee978d55b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719262"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794514"
 ---
 # <a name="strongnamesignatureverificationex-function"></a>Função StrongNameSignatureVerificationEx
 
@@ -49,7 +50,7 @@ BOOLEAN StrongNameSignatureVerificationEx (
  `pfWasVerified`  
  [fora] `true` se a assinatura de nome forte foi verificada; caso contrário, `false` . `pfWasVerified` também será definido como `false` se a verificação tiver sido bem-sucedida devido a configurações do registro.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` se a verificação foi bem-sucedida; caso contrário, `false` .  
   
@@ -67,7 +68,7 @@ BOOLEAN StrongNameSignatureVerificationEx (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameSignatureVerificationEx](../hosting/iclrstrongname-strongnamesignatureverificationex-method.md)
 - [Método StrongNameSignatureVerification](../hosting/iclrstrongname-strongnamesignatureverification-method.md)

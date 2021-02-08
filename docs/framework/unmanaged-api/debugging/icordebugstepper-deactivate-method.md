@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugStepper: método eactivate de:D'
 title: Método ICorDebugStepper::Deactivate
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 855f4199-b62d-40ce-998e-1eb4a1772142
 topic_type:
 - apiref
-ms.openlocfilehash: 0d7d5e7e6c9bc1a68feda85c5214f3ae95df9b97
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 039c52f5bc237506dcc648ace70789c8eb7ef8c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794657"
 ---
 # <a name="icordebugstepperdeactivate-method"></a>Método ICorDebugStepper::Deactivate
 

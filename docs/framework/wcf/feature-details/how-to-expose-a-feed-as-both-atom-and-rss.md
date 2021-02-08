@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como: expor um feed como Atom e RSS'
 title: 'Como: expor um feed como Atom e RSS'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fe374932-67f5-487d-9325-f868812b92e4
-ms.openlocfilehash: 1b03434e4f9552b714b40d54ba36c8468d0e2ccd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5afe08b2c1d9fc687563e124061fe7fb59257180
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265356"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793773"
 ---
 # <a name="how-to-expose-a-feed-as-both-atom-and-rss"></a>Como: expor um feed como Atom e RSS
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: agrupando mensagens enfileiradas em uma sessão'
 title: Agrupamento de mensagens em fila em uma sessão
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - queues [WCF]. grouping messages
 ms.assetid: 63b23b36-261f-4c37-99a2-cc323cd72a1a
-ms.openlocfilehash: 9ad3bd29535e14231d07b9e491e606f8349ca3ac
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5a23133090ebfd5db9f59bb37a69cdca83ce2bc0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290056"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793838"
 ---
 # <a name="grouping-queued-messages-in-a-session"></a>Agrupamento de mensagens em fila em uma sessão
 
@@ -86,7 +87,7 @@ O Windows Communication Foundation (WCF) fornece uma sessão que permite agrupar
  [!code-csharp[S_Msmq_Session#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_session/cs/client.cs#3)]
  [!code-vb[S_Msmq_Session#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_session/vb/client.vb#3)]  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Sessões e filas](../samples/sessions-and-queues.md)
 - [Visão geral de filas](queues-overview.md)

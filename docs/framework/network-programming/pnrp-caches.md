@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: caches PNRP'
 title: Caches PNRP
 ms.date: 03/30/2017
 ms.assetid: 270068d9-1b6b-4eb9-9e14-e02326bb88df
-ms.openlocfilehash: 6f45b6d829867d830a9a10acf11e8456ba65d29e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a9e64cd647be2fe33863e014ee4c22d1752f56f8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96263211"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794904"
 ---
 # <a name="pnrp-caches"></a>Caches PNRP
 

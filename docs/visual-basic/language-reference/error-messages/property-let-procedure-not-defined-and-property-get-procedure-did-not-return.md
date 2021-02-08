@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: o procedimento Let da propriedade não foi definido e o procedimento Get da propriedade não retornou um objeto'
 title: Procedimento let de propriedade não definido e procedimento get de propriedade não retornou um objeto
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID451
 ms.assetid: 8542382a-689f-4e1b-abc0-c1e2dadb92f4
-ms.openlocfilehash: fbeaa224ea9e095f86c37e571492d83bc98b4397
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 8376a30abb476abb1d45973e36eb086cadad0054
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871095"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795359"
 ---
 # <a name="property-let-procedure-not-defined-and-property-get-procedure-did-not-return-an-object"></a>Procedimento let de propriedade não definido e procedimento get de propriedade não retornou um objeto
 

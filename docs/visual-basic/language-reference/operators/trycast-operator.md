@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Operador TryCast (Visual Basic)'
 title: Operador TryCast
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - TryCast keyword [Visual Basic]
 ms.assetid: d1ef5d47-fef4-491e-b014-1d910628f65c
-ms.openlocfilehash: dc4807781f9e1aaf894016952911bd7b32c42948
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5b941ec40c4ba0198fced64d0ef039605efad472
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875318"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795242"
 ---
 # <a name="trycast-operator-visual-basic"></a>Operador TryCast (Visual Basic)
 
@@ -44,7 +45,7 @@ Apresenta uma operação de conversão de tipo que não gera uma exceção.
   
  [!code-vb[VbVbalrKeywords#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#6)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Conversões de Widening e Narrowing](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
 - [Conversões implícitas e explícitas](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

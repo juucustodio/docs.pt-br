@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo3:: GetThreadStaticAddress2'
 title: Método ICorProfilerInfo3::GetThreadStaticAddress2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a9608861-ae64-4467-8a73-be05ad34beac
 topic_type:
 - apiref
-ms.openlocfilehash: d8f2788d63f27aac30cf239b410eecea31f09212
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6734996435206f9e0c837eba39df1ad81677e54b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697877"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794540"
 ---
 # <a name="icorprofilerinfo3getthreadstaticaddress2-method"></a>Método ICorProfilerInfo3::GetThreadStaticAddress2
 
@@ -76,7 +77,7 @@ HRESULT GetThreadStaticAddress2(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo3](icorprofilerinfo3-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

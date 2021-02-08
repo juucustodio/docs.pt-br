@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetTypeLibInfo'
 title: Função GetTypeLibInfo
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a1c4d165-9bdc-4ca8-940e-292d4ffcc338
 topic_type:
 - apiref
-ms.openlocfilehash: e9f6ae9a0fcd6651395c54c2e44973e53668c1ac
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 61a830f3ce81345634da377f6fc815a307700e9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794462"
 ---
 # <a name="gettypelibinfo-function"></a>Função GetTypeLibInfo
 
@@ -74,7 +75,7 @@ HRESULT GetTypeLibInfo(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Funções auxiliares Tlbexp](index.md)
+- [Funções auxiliares do Tlbexp](index.md)
 - [Função LoadTypeLibEx](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

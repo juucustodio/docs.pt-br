@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3821-RoutingServiceCloseFailed'
 title: 3821 - RoutingServiceCloseFailed
 ms.date: 03/30/2017
 ms.assetid: 584cc4d0-6c9e-4dce-b1d1-5bcc9a41011b
-ms.openlocfilehash: e26b2adeda1842fbca27ab9b821cacb79e953ebd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bcbeec762232ad407029e0d4926d4470cc645441
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245309"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794098"
 ---
 # <a name="3821---routingserviceclosefailed"></a>3821 - RoutingServiceCloseFailed
 
@@ -17,7 +18,7 @@ ms.locfileid: "96245309"
 |-|-|  
 |ID|3821|  
 |Palavras-chave|Roteamentoservices|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

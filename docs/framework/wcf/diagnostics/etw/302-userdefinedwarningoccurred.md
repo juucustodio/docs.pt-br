@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 302-UserDefinedWarningOccurred'
 title: 302 - UserDefinedWarningOccurred
 ms.date: 03/30/2017
 ms.assetid: 8d1f0bf1-0151-45e6-be92-573d397b54de
-ms.openlocfilehash: b942b2e9716713371b8679fc9df9b9634dfc7283
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: eb79e32d8993ec60c05e5aaaee1b5e15ee7e32e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243437"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794215"
 ---
 # <a name="302---userdefinedwarningoccurred"></a>302 - UserDefinedWarningOccurred
 
@@ -17,7 +18,7 @@ ms.locfileid: "96243437"
 |-|-|  
 |ID|302|  
 |Palavras-chave|Solução de problemas, HealthMonitoring, UserEvents, ServiceModel, EndToEndMonitoring|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

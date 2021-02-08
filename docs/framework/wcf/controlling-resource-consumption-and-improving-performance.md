@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: controlando o consumo de recursos e melhorando o desempenho'
 title: Controlando o consumo de recursos e a melhoria de desempenho
 ms.date: 03/30/2017
 ms.assetid: 9a829669-5f76-4c88-80ec-92d0c62c0660
-ms.openlocfilehash: f06dd0b7e66ae783b2f268551f15c5e6e8369b7f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: df2a2ae8235acecd269644690546098f36bf73c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255059"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794449"
 ---
 # <a name="controlling-resource-consumption-and-improving-performance"></a>Controlando o consumo de recursos e a melhoria de desempenho
 
@@ -51,7 +52,7 @@ Este tópico descreve várias propriedades em áreas diferentes da arquitetura d
 
 Quando um serviço WCF é hospedado em IIS e ASP.NET, as definições de configuração do IIS e do ASP.NET podem afetar a taxa de transferência e a superfície de memória do serviço WCF.  Para obter mais informações sobre o desempenho do ASP.NET, consulte [melhorando o desempenho do ASP.net](/previous-versions/msp-n-p/ff647787(v=pandp.10)). Uma configuração que pode ter consequências indesejadas é <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A> , que é uma propriedade do <xref:System.Web.Configuration.ProcessModelSection> . Se seu aplicativo tiver um número fixo ou pequeno de clientes, <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A> a configuração para 2 pode fornecer um aumento de taxa de transferência em um computador com multiprocessador que tenha uma utilização de CPU perto de 100%. Esse aumento no desempenho vem com um custo: ele também causará um aumento no uso da memória, o que pode reduzir a escalabilidade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Administração e diagnóstico](./diagnostics/index.md)
+- [Administração e diagnósticos](./diagnostics/index.md)
 - [Dados grandes e streaming](./feature-details/large-data-and-streaming.md)

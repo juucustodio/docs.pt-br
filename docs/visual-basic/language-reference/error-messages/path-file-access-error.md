@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: erro de acesso ao caminho/arquivo'
 title: Erro de acesso ao demarcador/arquivo
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID75
 ms.assetid: 6ce3a161-7316-46bd-a785-0d50e5414020
-ms.openlocfilehash: 70de8f9cb33ab3d889f4916ae3d5de48cd218092
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d4fc7e716f025c0a482ab414f4a25a2b521634e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871189"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795437"
 ---
 # <a name="pathfile-access-error"></a>Erro de acesso ao demarcador/arquivo
 
@@ -25,6 +26,6 @@ Durante uma operação de acesso a arquivo ou de acesso a disco, o sistema opera
   
 4. Certifique-se de que você não tentou alterar um projeto de Visual Basic dentro de um banco de dados ou documento.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de erro](../../programming-guide/language-features/error-types.md)

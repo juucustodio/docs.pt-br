@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Operador OrElse (Visual Basic)'
 title: Operador OrElse
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - short-circuit evaluation
 - OrElse operator [Visual Basic]
 ms.assetid: 253803d8-05b0-47d7-b213-abd222847779
-ms.openlocfilehash: edac3eeaef5d0127f10a0d570ca27c8158806ff3
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 48ccbda1e0cb4f655b28e902b22fbfe0c3e66ac8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866726"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795320"
 ---
 # <a name="orelse-operator-visual-basic"></a>Operador OrElse (Visual Basic)
 
 Executa uma disjunção lógica inclusiva de curto-circuito em duas expressões.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb
 result = expression1 OrElse expression2  
@@ -74,7 +75,7 @@ Para obter mais informações, consulte [conversões de tipo booliano](../data-t
   
  [!code-vb[VbVbalrOperators#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#38)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores lógicos/bit a bit (Visual Basic)](logical-bitwise-operators.md)
 - [Precedência do operador no Visual Basic](operator-precedence.md)

@@ -1,15 +1,18 @@
 ---
+description: 'Saiba mais sobre: Gerenciando o contexto do serviço de dados (WCF Data Services)'
 title: Gerenciando o contexto do serviço de dados (WCF Data Services)
 ms.date: 03/30/2017
 ms.assetid: 15b19d09-7de7-4638-9556-6ef396cc45ec
-ms.openlocfilehash: e67f7280bc85c7577f960707659890f59470e535
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 713136245ae2d7d27010cc527efad83979929761
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194291"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795008"
 ---
 # <a name="managing-the-data-service-context-wcf-data-services"></a>Gerenciando o contexto do serviço de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 A classe <xref:System.Data.Services.Client.DataServiceContext> encapsula as operações que têm suporte em um serviço de dados especificado. Embora os serviços OData sejam sem estado, o contexto não é. Portanto, você pode usar a <xref:System.Data.Services.Client.DataServiceContext> classe para manter o estado no cliente entre as interações com o serviço de dados para dar suporte a recursos como o gerenciamento de alterações. Essa classe também gerencia identidades e rastreia alterações.  
   
@@ -42,7 +45,7 @@ A classe <xref:System.Data.Services.Client.DataServiceContext> encapsula as oper
 
  Por padrão, a biblioteca de cliente envia solicitações de criação, leitura, atualização e exclusão para um serviço OData usando os métodos HTTP correspondentes de POST, GET, PUT/MERGE/PATCH e DELETE. Isso mantém os princípios básicos da REST (transferência de estado de reapresentação). No entanto, nem toda implementação de servidor Web dá suporte ao conjunto completo de métodos HTTP. Em alguns casos, os métodos com suporte podem ser restritos a apenas GET e POST. Isso pode acontecer quando um intermediário, como um firewall, bloqueia solicitações com determinados métodos. Como os métodos GET e POST são suportados com mais frequência, o OData prescreve uma maneira de executar qualquer método HTTP sem suporte usando uma solicitação POST. Conhecido como *encapsulamento de método* ou *pós-túnel*, isso permite que um cliente envie uma solicitação post com o método real especificado no `X-HTTP-Method` cabeçalho personalizado. Para habilitar o encapsulamento posterior para solicitações, defina a <xref:System.Data.Services.Client.DataServiceContext.UsePostTunneling%2A> Propriedade na <xref:System.Data.Services.Client.DataServiceContext> instância como `true` .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Biblioteca de cliente do WCF Data Services](wcf-data-services-client-library.md)
 - [Atualizar o serviço de dados](updating-the-data-service-wcf-data-services.md)

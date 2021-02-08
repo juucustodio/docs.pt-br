@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3807-RoutingServiceCompletingTwoWay'
 title: 3807 - RoutingServiceCompletingTwoWay
 ms.date: 03/30/2017
 ms.assetid: 9bcc3b48-1b84-4fb0-89b2-c54e45304007
-ms.openlocfilehash: 912264030b25414ce33e3d20de07aaf5af6e1b86
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f3116948ab979ebd98797ac9b4feefc8dcc30d62
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284856"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794176"
 ---
 # <a name="3807---routingservicecompletingtwoway"></a>3807 - RoutingServiceCompletingTwoWay
 
@@ -17,7 +18,7 @@ ms.locfileid: "96284856"
 |-|-|  
 |ID|3807|  
 |Palavras-chave|Roteamentoservices|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

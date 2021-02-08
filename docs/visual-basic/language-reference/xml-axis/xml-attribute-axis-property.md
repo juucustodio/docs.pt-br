@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Propriedade do eixo de atributo XML (Visual Basic)'
 title: Propriedade de Eixo do Atributo XML
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - XML axis [Visual Basic], attribute
 - XML [Visual Basic], accessing
 ms.assetid: 7a4777e1-0618-4de9-9510-fb9ace2bf4db
-ms.openlocfilehash: 9eddd132b2d4dd6ffbd935a0c8c57a03a3d65435
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 2085ef2151e7aef7c5642e0ba9ac2e6fa90bfd4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869445"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795164"
 ---
 # <a name="xml-attribute-axis-property-visual-basic"></a>Propriedade de eixo do atributo XML (Visual Basic)
 
 Fornece acesso ao valor de um atributo para um <xref:System.Xml.Linq.XElement> objeto ou para o primeiro elemento em uma coleção de <xref:System.Xml.Linq.XElement> objetos.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 object.@attribute  
@@ -32,26 +33,26 @@ object.@<attribute>
 ## <a name="parts"></a>Partes  
 
  `object`  
- Necessário. Um <xref:System.Xml.Linq.XElement> objeto ou uma coleção de <xref:System.Xml.Linq.XElement> objetos.  
+ Obrigatório. Um <xref:System.Xml.Linq.XElement> objeto ou uma coleção de <xref:System.Xml.Linq.XElement> objetos.  
   
  .@  
- Necessário. Denota o início de uma propriedade de eixo de atributo.  
+ Obrigatório. Denota o início de uma propriedade de eixo de atributo.  
   
  <  
  Opcional. Indica o início do nome do atributo quando `attribute` não é um identificador válido no Visual Basic.  
   
  `attribute`  
- Necessário. Nome do atributo a ser acessado, do formato [ `prefix` :] `name` .  
+ Obrigatório. Nome do atributo a ser acessado, do formato [ `prefix` :] `name` .  
   
 |Parte|Descrição|  
 |----------|-----------------|  
 |`prefix`|Opcional. Prefixo do namespace XML para o atributo. Deve ser um namespace XML global definido com uma `Imports` instrução.|  
-|`name`|Necessário. Nome do atributo local. Consulte [nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|  
+|`name`|Obrigatório. Nome do atributo local. Consulte [nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|  
   
  \>  
  Opcional. Indica o fim do nome do atributo quando `attribute` não é um identificador válido no Visual Basic.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Uma cadeia de caracteres que contém o valor de `attribute` . Se o nome do atributo não existir, `Nothing` será retornado.  
   
@@ -115,7 +116,7 @@ object.@<attribute>
   
  `Phone type: home`  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XElement>
 - [Propriedades do eixo XML](index.md)

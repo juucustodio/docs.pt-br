@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Forward-Compatible contratos de dados'
 title: Contratos de dados compatíveis por encaminhamento
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - data contracts [WCF], forward compatibility
 ms.assetid: 413c9044-26f8-4ecb-968c-18495ea52cd9
-ms.openlocfilehash: e8a6cf0cae7519c3ffdbad188c6f67d11a4a6fc1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 70256449d405290e9c32eebdc5b8e3a78b76ed56
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289796"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793851"
 ---
 # <a name="forward-compatible-data-contracts"></a>Contratos de dados compatíveis por encaminhamento
 
@@ -44,7 +45,7 @@ Um recurso do sistema de contrato de dados do Windows Communication Foundation (
   
  O recurso de ida e volta pode ser desativado, seja definindo `ignoreExtensionDataObject` `true` no <xref:System.Runtime.Serialization.DataContractSerializer> Construtor ou definindo a <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> propriedade como `true` no <xref:System.ServiceModel.ServiceBehaviorAttribute> . Quando esse recurso estiver desativado, o desserializador não preencherá a <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> propriedade e o serializador não emitirá o conteúdo da propriedade.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.IExtensibleDataObject>
 - <xref:System.Runtime.Serialization.ExtensionDataObject>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 401-StopSignPostEvent'
 title: 401- StopSignPostEvent
 ms.date: 03/30/2017
 ms.assetid: e033d03a-510d-4300-aa65-ef02cb4807f2
-ms.openlocfilehash: e549a8aabd0a54022000515050cde19dc4f20dd3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 99b6151d902f3f8059b0aa01e6cda290debafda6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294060"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793942"
 ---
 # <a name="401--stopsignpostevent"></a>401- StopSignPostEvent
 
@@ -17,7 +18,7 @@ ms.locfileid: "96294060"
 |-|-|  
 |ID|401|  
 |Palavras-chave|Solução de problemas|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

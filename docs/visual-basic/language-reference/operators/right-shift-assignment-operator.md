@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre:  >>= Operator (Visual Basic)'
 title: '>>Operador ='
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - compound assignment statements [Visual Basic]
 - '>>= operator [Visual Basic]'
 ms.assetid: 2bcd9abb-7a8c-4229-b75d-8816ff1dc700
-ms.openlocfilehash: a1c2331791644155504183d3cf5767470a3bf17b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 80f614042403ad9179de0025b289bd83c71008b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795307"
 ---
 # <a name="-operator-visual-basic"></a>Operador >>= (Visual Basic)
 
 Executa um deslocamento aritmético para a direita no valor de uma variável ou propriedade e atribui o resultado de volta à variável ou à propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 variableorproperty >>= amount  
@@ -30,10 +31,10 @@ variableorproperty >>= amount
 ## <a name="parts"></a>Partes  
 
  `variableorproperty`  
- Necessário. Variável ou propriedade de um tipo integral ( `SByte` ,,,,, `Byte` `Short` `UShort` `Integer` `UInteger` , `Long` ou `ULong` ).  
+ Obrigatório. Variável ou propriedade de um tipo integral ( `SByte` ,,,,, `Byte` `Short` `UShort` `Integer` `UInteger` , `Long` ou `ULong` ).  
   
  `amount`  
- Necessário. Expressão numérica de um tipo de dados que amplia para `Integer` .  
+ Obrigatório. Expressão numérica de um tipo de dados que amplia para `Integer` .  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -45,7 +46,7 @@ variableorproperty >>= amount
   
 ## <a name="overloading"></a>Sobrecarga  
 
- O [ operador>> ](right-shift-operator.md) pode ser *sobrecarregado*, o que significa que uma classe ou estrutura pode redefinir seu comportamento quando um operando tem o tipo dessa classe ou estrutura. Sobrecarregar o `>>` operador afeta o comportamento do `>>=` operador. Se o seu código usa `>>=` em uma classe ou estrutura que sobrecarrega, certifique-se de `>>` entender seu comportamento redefinido. Para obter mais informações, consulte [procedimentos de operador](../../programming-guide/language-features/procedures/operator-procedures.md).  
+ O [ operador>>](right-shift-operator.md) pode ser *sobrecarregado*, o que significa que uma classe ou estrutura pode redefinir seu comportamento quando um operando tem o tipo dessa classe ou estrutura. Sobrecarregar o `>>` operador afeta o comportamento do `>>=` operador. Se o seu código usa `>>=` em uma classe ou estrutura que sobrecarrega, certifique-se de `>>` entender seu comportamento redefinido. Para obter mais informações, consulte [procedimentos de operador](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## <a name="example"></a>Exemplo  
 
@@ -53,7 +54,7 @@ variableorproperty >>= amount
   
  [!code-vb[VbVbalrOperators#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#15)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ Operador de>> ](right-shift-operator.md)
 - [Operadores de atribuição](assignment-operators.md)

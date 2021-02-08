@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 216-MessageSentByTransport'
 title: 216 - MessageSentByTransport
 ms.date: 03/30/2017
 ms.assetid: 150c3167-4154-4225-8d94-57cc94341233
-ms.openlocfilehash: b3e9e1a48951ad5a2e5e7820dc1828c20e310635
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 34c10fbbf61adde102641cb44db6645ea648a646
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96278902"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794371"
 ---
 # <a name="216---messagesentbytransport"></a>216 - MessageSentByTransport
 
@@ -17,7 +18,7 @@ ms.locfileid: "96278902"
 |-|-|  
 |ID|216|  
 |Palavras-chave|Solução de problemas, ServiceModel|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

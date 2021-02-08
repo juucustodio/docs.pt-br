@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3830-RoutingServiceAbortingChannel'
 title: 3830 - RoutingServiceAbortingChannel
 ms.date: 03/30/2017
 ms.assetid: fba86ec8-4360-43e5-be54-cce43270af21
-ms.openlocfilehash: 19fa0b91289d8987cb9d710e9a1a012da3cc26cc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d1792c67cbaf7e86e87559d11fa67aac084ed3a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294138"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794020"
 ---
 # <a name="3830---routingserviceabortingchannel"></a>3830 - RoutingServiceAbortingChannel
 

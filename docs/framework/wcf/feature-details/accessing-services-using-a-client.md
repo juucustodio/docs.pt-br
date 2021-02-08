@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: acessando serviços usando um cliente'
 title: Usando um cliente para acessar um serviço
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c8329832-bf66-4064-9034-bf39f153fc2d
-ms.openlocfilehash: d136e094e4f1ea5258ff568527d10ac25a38f1a9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 112e401f96fb1bf4231fb6bef3e5a57b6f40949e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293956"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793877"
 ---
 # <a name="accessing-services-using-a-client"></a>Usando um cliente para acessar um serviço
 
@@ -100,7 +101,7 @@ Os aplicativos cliente devem criar, configurar e usar objetos de cliente ou de c
   
  Os aplicativos que usam a abordagem implícita invocam os inicializadores de interface do usuário, mas se o usuário do aplicativo não responder dentro do período de tempo limite de envio da associação, uma exceção será lançada quando a interface do usuário retornar.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de duplex](duplex-services.md)
 - [Como: acessar os serviços com contratos unidirecionais e de solicitação-resposta](how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)

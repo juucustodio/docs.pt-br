@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-Operator (Visual Basic)
 title: '- Operador'
 ms.date: 07/20/2015
 f1_keywords:
@@ -17,18 +18,18 @@ helpviewer_keywords:
 - operators [Visual Basic], negation
 - minus operator [Visual Basic]
 ms.assetid: bff2c368-662d-4c92-ac87-1d9bdfd3426a
-ms.openlocfilehash: b5129c2dbb361940fa6da2cb424ee23736ba72c5
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 858e887fa7c5c0cc6129996c98bddb78bc53045c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795255"
 ---
 # <a name="--operator-visual-basic"></a>Operador - (Visual Basic)
 
 Retorna a diferença entre duas expressões numéricas ou o valor negativo de uma expressão numérica.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 expression1 – expression2
@@ -48,7 +49,7 @@ ou
  `expression2`  
  Necessário, a menos que o `–` operador esteja calculando um valor negativo. Qualquer expressão numérica.  
   
-## <a name="result"></a>Resultado  
+## <a name="result"></a>Result  
 
  O resultado é a diferença entre `expression1` e `expression2` , ou o valor negado de `expression1` .  
   
@@ -77,7 +78,7 @@ ou
   
  Após a execução dessas instruções, `binaryResult` contém 124,45 e `unaryResult` contém – 334,90.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [-= Operador (Visual Basic)](subtraction-assignment-operator.md)
 - [Operadores aritméticos](arithmetic-operators.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 4010-PendingSessionQueueFull'
 title: 4010 - PendingSessionQueueFull
 ms.date: 03/30/2017
 ms.assetid: 14696793-16eb-4847-a530-fa2f90f682c9
-ms.openlocfilehash: 342d4bbc64c652168e9b6526d18fc9a14280040b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 385ef0b2c01306e5c0b42c8f90570499d67c2db5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294021"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793929"
 ---
 # <a name="4010---pendingsessionqueuefull"></a>4010 - PendingSessionQueueFull
 
@@ -17,7 +18,7 @@ ms.locfileid: "96294021"
 |-|-|  
 |ID|4010|  
 |Palavras-chave|Ativaçãoservices|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

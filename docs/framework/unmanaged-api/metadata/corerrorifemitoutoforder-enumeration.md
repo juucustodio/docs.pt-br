@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração CorErrorIfEmitOutOfOrder'
 title: Enumeração CorErrorIfEmitOutOfOrder
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6d758aad-29a7-44fe-9481-bbff5b799a32
 topic_type:
 - apiref
-ms.openlocfilehash: 1d1b0cbb8be33f285b63e7353da973455e0fd752
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b45d3204ae386b7ad9d7ab1daccdfdef35e2ad9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718846"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784516"
 ---
 # <a name="corerrorifemitoutoforder-enumeration"></a>Enumeração CorErrorIfEmitOutOfOrder
 
@@ -63,6 +64,6 @@ typedef enum CorErrorIfEmitOutOfOrder {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTaskManager:: BeginDelayAbort'
 title: Método IHostTaskManager::BeginDelayAbort
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 75f42a8b-ed68-4718-a030-a179cfba7d72
 topic_type:
 - apiref
-ms.openlocfilehash: f72cc15904d098e159dd7f75f673d43ae987998d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f991690af4f7e634c8d845bdbd09f690b4ea3af7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727322"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784607"
 ---
 # <a name="ihosttaskmanagerbegindelayabort-method"></a>Método IHostTaskManager::BeginDelayAbort
 
@@ -58,7 +59,7 @@ HRESULT BeginDelayAbort ();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

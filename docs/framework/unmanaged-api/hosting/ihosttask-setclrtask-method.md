@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTask:: SetCLRTask'
 title: Método IHostTask::SetCLRTask
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e9d39c80-41a1-49e7-bb5e-ea3433bfb5d7
 topic_type:
 - apiref
-ms.openlocfilehash: e6b9a4015a6139d6c8d7101fa7811c7ad9134e4c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 381b7827f043b6ef1d4a6698f5eb103233c9af55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720458"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784672"
 ---
 # <a name="ihosttasksetclrtask-method"></a>Método IHostTask::SetCLRTask
 
@@ -39,7 +40,7 @@ HRESULT SetCLRTask (
  `pCLRTask`  
  no Um ponteiro de interface para a `ICLRTask` instância a ser associada à `IHostTask` instância atual.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT SetCLRTask (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

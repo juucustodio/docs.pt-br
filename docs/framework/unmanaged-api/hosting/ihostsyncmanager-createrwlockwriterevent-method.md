@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostSyncManager:: CreateRWLockWriterEvent'
 title: Método IHostSyncManager::CreateRWLockWriterEvent
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 70e488c2-cf53-4dc0-ba52-74372d215c41
 topic_type:
 - apiref
-ms.openlocfilehash: 5b5faf14337f78d9b176787528ae8947f5810ba6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 509f18ff49966e5da3a25e39258d33caf69249a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704364"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784750"
 ---
 # <a name="ihostsyncmanagercreaterwlockwriterevent-method"></a>Método IHostSyncManager::CreateRWLockWriterEvent
 
@@ -43,7 +44,7 @@ HRESULT CreateRWLockWriterEvent (
  `ppEvent`  
  fora Um ponteiro para o endereço de uma instância de [IHostAutoEvent](ihostautoevent-interface.md) ou NULL se o objeto de evento não pôde ser criado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -69,7 +70,7 @@ HRESULT CreateRWLockWriterEvent (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostAutoEvent](ihostautoevent-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDeclSecurity'
 title: Enumeração CorDeclSecurity
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 864f1267-d267-4696-8df7-1f83f8444d6f
 topic_type:
 - apiref
-ms.openlocfilehash: dd599ce8c63fa94e1a18b4e2d18fa334238728bd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4c4b57c09ea8b3ec1b98ff120d72a5920dc5aa4a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718872"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784542"
 ---
 # <a name="cordeclsecurity-enumeration"></a>Enumeração CorDeclSecurity
 
@@ -89,6 +90,6 @@ typedef enum CorDeclSecurity {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

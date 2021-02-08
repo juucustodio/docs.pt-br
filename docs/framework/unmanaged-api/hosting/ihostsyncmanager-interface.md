@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostSyncManager'
 title: Interface IHostSyncManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2e081a37-6a28-4c93-b7ab-1c96a464637c
 topic_type:
 - apiref
-ms.openlocfilehash: 8a5fc42191634a2e5a441baecc4b78212ffad687
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c3bd2928315567605d320c772de8ff824ad3cd09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720484"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784724"
 ---
 # <a name="ihostsyncmanager-interface"></a>Interface IHostSyncManager
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) crie primitivo
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CreateAutoEvent](ihostsyncmanager-createautoevent-method.md)|Cria um objeto de evento de redefinição automática.|  
 |[Método CreateCrst](ihostsyncmanager-createcrst-method.md)|Cria um objeto de seção crítica para sincronização.|  
@@ -53,7 +54,7 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) crie primitivo
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)

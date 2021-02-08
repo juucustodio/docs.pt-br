@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTask:: getanteriority'
 title: Método IHostTask::GetPriority
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4b463cd6-77c1-4f9a-8518-346ad8fc4b70
 topic_type:
 - apiref
-ms.openlocfilehash: d30dcbe4e7c289c23c5af00e4bdadedc186809b4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fb64164a54806a362888e93f031713ccc0ac3578
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784685"
 ---
 # <a name="ihosttaskgetpriority-method"></a>Método IHostTask::GetPriority
 
@@ -39,7 +40,7 @@ HRESULT GetPriority (
  `pPriority`  
  fora Um ponteiro para um inteiro que indica o nível de prioridade de thread da tarefa representada pela `IHostTask` instância atual.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT GetPriority (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

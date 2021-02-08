@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostSyncManager:: SetCLRSyncManager'
 title: Método IHostSyncManager::SetCLRSyncManager
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2b8bbe76-a45d-4989-bacb-11df42f8798c
 topic_type:
 - apiref
-ms.openlocfilehash: 79a41b6705b41414f0926c2ed819e437ecfb51d5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e2a6a54334f7b8a63696ead918f4f34e0c36e438
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714816"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784701"
 ---
 # <a name="ihostsyncmanagersetclrsyncmanager-method"></a>Método IHostSyncManager::SetCLRSyncManager
 
@@ -39,7 +40,7 @@ HRESULT SetCLRSyncManager (
  `pManager`  
  no Um ponteiro para uma `ICLRSyncManager` instância fornecida pelo Common Language Runtime (CLR).  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT SetCLRSyncManager (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostSyncManager](ihostsyncmanager-interface.md)

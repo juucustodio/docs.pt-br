@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTask:: join'
 title: Método IHostTask::Join
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2cffcc52-19e0-4ced-a440-fc7375078ac9
 topic_type:
 - apiref
-ms.openlocfilehash: 37156b03b184d06e0c7b03d7d7a9a018793bbb98
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8231401ab01ee040f225b78a52b61eb7d59af1d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784646"
 ---
 # <a name="ihosttaskjoin-method"></a>Método IHostTask::Join
 
@@ -43,7 +44,7 @@ HRESULT Join (
  `option`  
  no Um dos valores de [WAIT_OPTION](wait-option-enumeration.md) . Um valor de WAIT_ALERTABLE instrui o host a ativar a tarefa se `Alert` for chamado antes de `milliseconds` decorrer.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT Join (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

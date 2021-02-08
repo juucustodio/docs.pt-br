@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTaskManager:: CreateTask'
 title: Método IHostTaskManager::CreateTask
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a6f8ad36-61e1-42b0-9db2-add575646d18
 topic_type:
 - apiref
-ms.openlocfilehash: 7fdf25d44bdf630e306cf0f5dcb3387a3b0f7c76
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c14c80ea9067b0a28e7b9186ea66eb695687bf27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731677"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784568"
 ---
 # <a name="ihosttaskmanagercreatetask-method"></a>Método IHostTaskManager::CreateTask
 
@@ -51,7 +52,7 @@ HRESULT CreateTask (
  `ppTask`  
  fora Um ponteiro para o endereço de uma instância de [IHostTask](ihosttask-interface.md) criada pelo host ou NULL se a tarefa não puder ser criada. A tarefa permanece em um estado suspenso até que seja explicitamente iniciada por uma chamada para [IHostTask:: Start](ihosttask-start-method.md).  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -77,7 +78,7 @@ HRESULT CreateTask (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

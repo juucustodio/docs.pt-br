@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: SKIP (Entity SQL)'
 title: IGNORAR (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: e2139412-8ea4-451b-8f10-91af18dfa3ec
-ms.openlocfilehash: 68f54dc5118e09d78f98c687e8a44def43b45c7d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: f4924acae6e351e076b5795cf47d63966ebdcb43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90540986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768006"
 ---
 # <a name="skip-entity-sql"></a>IGNORAR (Entity SQL)
 
@@ -40,9 +41,9 @@ Se uma subpropriedades cláusula de expressão de SKIP está presente em uma cl�
 
 A [!INCLUDE[esql](../../../../../../includes/esql-md.md)] consulta em [como: paginar os resultados da consulta](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100)) usa o operador order by com Skip para especificar a ordem de classificação usada nos objetos retornados em uma instrução SELECT.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ORDER BY](order-by-entity-sql.md)
 - [Como: paginar os resultados da consulta](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
-- [Paginação](paging-entity-sql.md)
-- [Início](top-entity-sql.md)
+- [Houver](paging-entity-sql.md)
+- [INÍCIO](top-entity-sql.md)

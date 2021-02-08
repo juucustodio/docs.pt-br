@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplos de sintaxe de expressão de consulta: operadores de agregação'
 title: 'Consulte exemplos de sintaxe de expressão: Operadores agregados'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d729120c-4c1b-4f34-bbe9-33694fca2dde
-ms.openlocfilehash: 4842bdb3aeb024afc72bde43d056b48b0d8258b8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c0fd9c3faf770a00a54341cf3718c2dda91a4d7b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152995"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767928"
 ---
 # <a name="query-expression-syntax-examples-aggregate-operators"></a>Consulte exemplos de sintaxe de expressão: Operadores agregados
 
@@ -60,7 +61,7 @@ Os exemplos neste tópico demonstram como usar os <xref:System.Linq.Enumerable.A
  [!code-csharp[DP L2E Examples#CountGrouped](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#countgrouped)]
  [!code-vb[DP L2E Examples#CountGrouped](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#countgrouped)]  
   
-## <a name="max"></a>Máx  
+## <a name="max"></a>Max  
   
 ### <a name="example"></a>Exemplo  
 
@@ -76,7 +77,7 @@ Os exemplos neste tópico demonstram como usar os <xref:System.Linq.Enumerable.A
  [!code-csharp[DP L2E Examples#MaxElements_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#maxelements_mq)]
  [!code-vb[DP L2E Examples#MaxElements_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#maxelements_mq)]  
   
-## <a name="min"></a>Mín  
+## <a name="min"></a>Min  
   
 ### <a name="example"></a>Exemplo  
 
@@ -92,7 +93,7 @@ Os exemplos neste tópico demonstram como usar os <xref:System.Linq.Enumerable.A
  [!code-csharp[DP L2E Examples#MinElements_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#minelements_mq)]
  [!code-vb[DP L2E Examples#MinElements_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#minelements_mq)]  
   
-## <a name="sum"></a>SUM  
+## <a name="sum"></a>Somar  
   
 ### <a name="example"></a>Exemplo  
 
@@ -101,6 +102,6 @@ Os exemplos neste tópico demonstram como usar os <xref:System.Linq.Enumerable.A
  [!code-csharp[DP L2E Examples#SumGrouped_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#sumgrouped_mq)]
  [!code-vb[DP L2E Examples#SumGrouped_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#sumgrouped_mq)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Consultas no LINQ to Entities](queries-in-linq-to-entities.md)

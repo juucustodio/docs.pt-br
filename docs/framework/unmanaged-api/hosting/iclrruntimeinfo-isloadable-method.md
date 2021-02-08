@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICLRRuntimeInfo:: método isuploadable'
 title: Método ICLRRuntimeInfo::IsLoadable
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 205ca53b-e78e-49b2-9a46-2a7823e96b8c
 topic_type:
 - apiref
-ms.openlocfilehash: 2236e815211168d8e7105375b75f30128f7f209a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf63212350bfbd18e2a312add72818b163c32d0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714959"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789782"
 ---
 # <a name="iclrruntimeinfoisloadable-method"></a>Método ICLRRuntimeInfo::IsLoadable
 
@@ -38,7 +39,7 @@ HRESULT IsLoadable(
  `pbLoadable`  
  [fora] `true` Se esse tempo de execução puder ser carregado no processo atual; caso contrário, `false` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -63,8 +64,8 @@ HRESULT IsLoadable(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: assinando procedimentos armazenados no SQL Server'
 title: Assinando procedimentos armazenados no SQL Server
 ms.date: 01/05/2018
 ms.assetid: eeed752c-0084-48e5-9dca-381353007a0d
-ms.openlocfilehash: 3f33af0238781407dd845a823ff28d87af48feb2
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1189f3ac24c8499cd8fb3ff9e6b6263a71fcc3a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558544"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767499"
 ---
 # <a name="signing-stored-procedures-in-sql-server"></a>Assinando procedimentos armazenados no SQL Server
 
@@ -57,7 +58,7 @@ Para obter mais informações, consulte os recursos a seguir.
 |[Assinatura de módulo](/previous-versions/sql/sql-server-2008/ms345102(v=sql.100))|Descreve a assinatura de módulo, fornecendo um cenário de exemplo e links para os artigos relevantes do Transact-SQL.|
 |[Assinando procedimentos armazenados com um certificado](/sql/relational-databases/tutorial-signing-stored-procedures-with-a-certificate)|Fornece um tutorial para assinar um procedimento armazenado com um certificado.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Protegendo aplicativos ADO.NET](../securing-ado-net-applications.md)
 - [Visão geral de segurança do SQL Server](overview-of-sql-server-security.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorPinvokeMap'
 title: Enumeração CorPinvokeMap
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f14f986e-f6ce-42bc-aa23-18150c46d28c
 topic_type:
 - apiref
-ms.openlocfilehash: da3ee54b1c3361149c11a9cfad8bdb07a5007ecf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8285632725096b4e6afc85fe54a89f12fc899dd1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706132"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784256"
 ---
 # <a name="corpinvokemap-enumeration"></a>Enumeração CorPinvokeMap
 
@@ -97,6 +98,6 @@ typedef enum  CorPinvokeMap {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

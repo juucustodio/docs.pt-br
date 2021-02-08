@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30909: ' <membername> ' não é possível expor <typename> o tipo ' ' fora do projeto por meio de <containertype> '<containertypename>"
 title: "'<membername>' não pode expor o tipo '<typename>' fora do projeto por meio de <containertype> '<containertypename>'"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30909
 ms.assetid: ffa7395d-e182-4087-8ce8-079810fdae54
-ms.openlocfilehash: a3972eabfe297b89c0e4d0f36943ac58e5bdf688
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: e2cc1d950b646bb787dfe714c39efea78a530129
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162460"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795853"
 ---
 # <a name="bc30909-membername-cannot-expose-type-typename-outside-the-project-through-containertype-containertypename"></a>BC30909: ' \<membername> ' não pode expor o tipo ' \<typename> ' fora do projeto por meio de \<containertype> ' \<containertypename> '
 
@@ -36,6 +37,6 @@ End Class
 
 - Altere o nível de acesso da variável, do parâmetro de procedimento ou da função retornar para ser pelo menos tão restritivo quanto o nível de acesso de seu tipo de dados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Níveis de acesso no Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)

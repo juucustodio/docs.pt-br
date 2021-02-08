@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método efineUserString de:D'
 title: Método IMetaDataEmit::DefineUserString
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 88fb7ef3-bbdf-429c-b678-c9c153456461
 topic_type:
 - apiref
-ms.openlocfilehash: ed3c20fe8272ca3205079d26df0b7bde12e58307
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0d1c376e3f121d35cb9f6c08d7013a3913a8bd49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783996"
 ---
 # <a name="imetadataemitdefineuserstring-method"></a>Método IMetaDataEmit::DefineUserString
 
@@ -57,7 +58,7 @@ HRESULT DefineUserString (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

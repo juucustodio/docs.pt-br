@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30157: a entrelinha '. ' ou '! ' só pode aparecer dentro de uma instrução ' with '"
 title: "'.' ou '!' à esquerda só podem aparecer dentro de uma instrução 'With'"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30157
 ms.assetid: 70daaee1-14f9-45b7-9f30-53794310b95e
-ms.openlocfilehash: 4ff273d5930fe58a5bccf0f4f4c10e971d777d01
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: e0325ac3c54046718d71df37edaac1edaf12f43e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162499"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795892"
 ---
 # <a name="bc30157-leading--or--can-only-appear-inside-a-with-statement"></a>BC30157: '. ' ou '! ' à esquerda só podem aparecer dentro de uma instrução ' with '
 
@@ -26,7 +27,7 @@ Um período (.) ou ponto de exclamação (!) que não está dentro de um `With` 
 
 2. Se não houver nenhum `With` bloco, adicione uma expressão à esquerda do acessador que é avaliada como um elemento definido que contém o membro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Caracteres especiais no código](../../programming-guide/program-structure/special-characters-in-code.md)
 - [Instrução With...End With](../statements/with-end-with-statement.md)

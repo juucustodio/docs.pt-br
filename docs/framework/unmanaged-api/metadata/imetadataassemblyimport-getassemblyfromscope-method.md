@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataAssemblyImport:: GetAssemblyFromScope'
 title: Método IMetaDataAssemblyImport::GetAssemblyFromScope
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0b437f70-561d-48c7-abe0-0cb9ace10c08
 topic_type:
 - apiref
-ms.openlocfilehash: dc40b4a7cf61f8d6141b8e3e57c5e13fe2261b35
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 78e2862fca80dc06c37436f3d81db4b19c4ec332
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731560"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784152"
 ---
 # <a name="imetadataassemblyimportgetassemblyfromscope-method"></a>Método IMetaDataAssemblyImport::GetAssemblyFromScope
 
@@ -49,6 +50,6 @@ HRESULT GetAssemblyFromScope (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

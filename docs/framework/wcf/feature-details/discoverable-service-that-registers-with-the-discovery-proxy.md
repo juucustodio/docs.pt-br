@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como implementar um serviço detectável que registra com o proxy de descoberta'
 title: 'Como: implementar um serviço de descoberta que registra usando o proxy de descoberta'
 ms.date: 03/30/2017
 ms.assetid: eb275bc1-535b-44c8-b9f3-0b75e9aa473b
-ms.openlocfilehash: 1e6b57193d25da7e5c9a865525dd5e9ea21110b0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 71991de6b7fd0180d4f87c2bfc48e99dc398fa53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254253"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802951"
 ---
 # <a name="how-to-implement-a-discoverable-service-that-registers-with-the-discovery-proxy"></a>Como: implementar um serviço de descoberta que registra usando o proxy de descoberta
 
@@ -291,7 +292,7 @@ namespace Microsoft.Samples.Discovery
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Descoberta de WCF](wcf-discovery.md)
 - [Como: implementar um proxy de descoberta](how-to-implement-a-discovery-proxy.md)

@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC42015: ' <interfacename> . <membername> ' já está implementado pela classe base ' <baseclassname> '. Reimplementação de <type> assumido"
 title: "'<interfacename>.<membername>' já é implementado pela classe base '<baseclassname>'. Reimplementação de <type> assumido"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42015
 ms.assetid: 658c070a-113e-4bd8-b294-12c243191160
-ms.openlocfilehash: 8137f6b1712b6a0752a991f5a3d598b5f958252c
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 7e9cce6250d21dfc4255d9971eea407b3a60e96a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796022"
 ---
 # <a name="bc42015-interfacenamemembername-is-already-implemented-by-the-base-class-baseclassname-re-implementation-of-type-assumed"></a>BC42015: ' \<interfacename> . \<membername> ' já está implementado pela classe base ' \<baseclassname> '. Reimplementação de \<type> assumido
 
@@ -30,6 +31,6 @@ Uma propriedade, um procedimento ou um evento em uma classe derivada usa uma `Im
 
 - Se você não pretende reimplementar o membro da interface, remova a `Implements` cláusula da propriedade, do procedimento ou da declaração de evento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces](../../programming-guide/language-features/interfaces/index.md)

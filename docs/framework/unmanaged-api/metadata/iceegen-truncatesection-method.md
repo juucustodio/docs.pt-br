@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICeeGen:: TruncateSection'
 title: Método ICeeGen::TruncateSection
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0451d752-1e5c-4c9a-8bad-6cd35b7ba3df
 topic_type:
 - apiref
-ms.openlocfilehash: 3005db62bba4089c669a00f62e3c1e62f9e1dae9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 074c7d7b4222b5b22f1d9b79169d531cd5544b1e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685676"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784204"
 ---
 # <a name="iceegentruncatesection-method"></a>Método ICeeGen::TruncateSection
 
@@ -59,6 +60,6 @@ HRESULT TruncateSection (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICeeGen](iceegen-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como trocar mensagens em uma sessão confiável'
 title: 'Como: fazer intercâmbio de mensagens dentro de uma sessão confiável'
 ms.date: 03/30/2017
 ms.assetid: 87cd0e75-dd2c-44c1-8da0-7b494bbdeaea
-ms.openlocfilehash: 97371f8572d5d0db633ab8dd1ca82067d9d55c3f
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e4a8f6a180b9c2ff9471558997034d02acc817e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90550183"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802899"
 ---
 # <a name="how-to-exchange-messages-within-a-reliable-session"></a>Como: fazer intercâmbio de mensagens dentro de uma sessão confiável
 
@@ -77,6 +78,6 @@ Por padrão, várias das associações fornecidas pelo sistema dão suporte a se
 
 Para obter um exemplo de como criar uma associação personalizada que dê suporte a sessões confiáveis, consulte [como: criar uma associação de sessão confiável personalizada com HTTPS](how-to-create-a-custom-reliable-session-binding-with-https.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Sessões confiáveis](reliable-sessions.md)

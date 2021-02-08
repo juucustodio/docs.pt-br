@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: operadores de consulta padrão em consultas de LINQ to Entities'
 title: Operadores de consulta padrão em consultas LINQ to Entities
 ms.date: 08/21/2018
 ms.assetid: 7fa55a9b-6219-473d-b1e5-2884a32dcdff
-ms.openlocfilehash: 23aea5fe1bcee8d043a7f093790cb45a1edc4aae
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2186d8efb9994a44f700ac3eb5de0d6658385a58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173634"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767850"
 ---
 # <a name="standard-query-operators-in-linq-to-entities-queries"></a>Operadores de consulta padrão em consultas LINQ to Entities
 
@@ -85,7 +86,7 @@ Em uma consulta, você especifica as informações que deseja recuperar da fonte
   
  Não há suporte para vários métodos de paginação, devido à incapacidade de mapear funções para a fonte de dados ou à falta de ordenação implícita de conjuntos na fonte de dados. Os métodos que retornam um valor padrão são restritos a tipos primitivos de modelo conceitual e a tipos de referência com valores nulos como padrão. Os métodos de paginação executados em uma sequência vazia retornam nulo.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Métodos suportados e sem suporte LINQ (LINQ to Entities)](supported-and-unsupported-linq-methods-linq-to-entities.md)
 - [Visão geral de operadores de consulta padrão](/previous-versions/visualstudio/visual-studio-2013/bb397896(v=vs.120))

@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: NamedPipeTransportBindingElement'
 title: NamedPipeTransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: c201309c-c528-4b92-a53c-4d48151c5749
-ms.openlocfilehash: 8e403ec02b09d0dbc165c40c2bd28d54d0219325
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7e76b51fdcc64256427141dcae1d980a9fb2db7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250405"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803094"
 ---
 # <a name="namedpipetransportbindingelement"></a>NamedPipeTransportBindingElement
 
 NamedPipeTransportBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class NamedPipeTransportBindingElement : ConnectionOrientedTransportBindingElement  

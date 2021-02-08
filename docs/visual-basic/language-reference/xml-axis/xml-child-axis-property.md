@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: propriedade de eixo filho XML (Visual Basic)'
 title: Propriedade do Eixo Filho XML
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - XML child axis property [Visual Basic]
 - XML [Visual Basic], accessing
 ms.assetid: 89a59d00-985e-4f5c-b59f-29b47bad11cb
-ms.openlocfilehash: c6af9584931206fecde3154a91a60cfd38278ec0
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 54920ebd35635f215eb6cb58867be1e4a7acd847
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873069"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768786"
 ---
 # <a name="xml-child-axis-property-visual-basic"></a>Propriedade do eixo filho XML (Visual Basic)
 
 Fornece acesso aos descendentes de um dos seguintes: um objeto de <xref:System.Xml.Linq.XElement> , um objeto de <xref:System.Xml.Linq.XDocument> , uma coleção de objetos <xref:System.Xml.Linq.XElement> , ou uma coleção de <xref:System.Xml.Linq.XDocument> objeto.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 object.<child>  
@@ -31,12 +32,12 @@ object.<child>
   
 |Termo|Definição|  
 |---|---|  
-|`object`|Necessário. Um <xref:System.Xml.Linq.XElement> objeto, um <xref:System.Xml.Linq.XDocument> objeto, uma coleção de <xref:System.Xml.Linq.XElement> objetos ou uma coleção de <xref:System.Xml.Linq.XDocument> objetos.|  
-|. <|Necessário. Denota o início de uma propriedade de eixo filho.|  
-|`child`|Necessário. Nome dos nós filho a serem acessados, do formulário `[prefix:]name` .<br /><br /> -   `Prefix` Adicional. Prefixo do namespace XML para o nó filho. Deve ser um namespace XML global definido com uma `Imports` instrução.<br />-   `Name` Necessária. Nome do nó filho local. Consulte [nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|  
-|>|Necessário. Denota o final de uma propriedade do eixo filho.|  
+|`object`|Obrigatório. Um <xref:System.Xml.Linq.XElement> objeto, um <xref:System.Xml.Linq.XDocument> objeto, uma coleção de <xref:System.Xml.Linq.XElement> objetos ou uma coleção de <xref:System.Xml.Linq.XDocument> objetos.|  
+|. <|Obrigatório. Denota o início de uma propriedade de eixo filho.|  
+|`child`|Obrigatório. Nome dos nós filho a serem acessados, do formulário `[prefix:]name` .<br /><br /> -   `Prefix` Adicional. Prefixo do namespace XML para o nó filho. Deve ser um namespace XML global definido com uma `Imports` instrução.<br />-   `Name` Necessária. Nome do nó filho local. Consulte [nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|  
+|>|Obrigatório. Denota o final de uma propriedade do eixo filho.|  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Uma coleção de objetos <xref:System.Xml.Linq.XElement> .  
   
@@ -80,7 +81,7 @@ object.<child>
   
  `Patrick Hines`  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XElement>
 - [Propriedades do eixo XML](index.md)

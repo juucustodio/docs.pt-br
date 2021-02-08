@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetInterfaceImplProps'
 title: Método IMetaDataImport::GetInterfaceImplProps
 ms.date: 02/25/2019
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: be3f5985-b1e4-4036-8602-c16e8508d4af
 topic_type:
 - apiref
-ms.openlocfilehash: e81816ce2194c2c1862cb997ad2c6e5baf301231
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6b3c9394bcf37f700c84e1fda0b785dc0c3f4713
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703989"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783905"
 ---
 # <a name="imetadataimportgetinterfaceimplprops-method"></a>Método IMetaDataImport::GetInterfaceImplProps
 
@@ -84,7 +85,7 @@ Lembre-se de que o token é um valor de 4 bytes:
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

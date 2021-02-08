@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 206-ErrorHandlerInvoked'
 title: 206 - ErrorHandlerInvoked
 ms.date: 03/30/2017
 ms.assetid: 97340f4d-4e09-4e42-a17a-982b3868dbcf
-ms.openlocfilehash: 99415733624752217d32f6f026a419b2b32bfa7b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: addbcbdea25c7f8e7515b743e98e426476fa0b28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783775"
 ---
 # <a name="206---errorhandlerinvoked"></a>206 - ErrorHandlerInvoked
 
@@ -17,7 +18,7 @@ ms.locfileid: "96244607"
 |-|-|  
 |ID|206|  
 |Palavras-chave|Solução de problemas, ServiceModel|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

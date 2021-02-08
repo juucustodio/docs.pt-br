@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: programação de Channel-Level de cliente'
 title: Programação de nível de canal cliente
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 3b787719-4e77-4e77-96a6-5b15a11b995a
-ms.openlocfilehash: cf6ee310e034ad7b2e53206e1bdba68007b1a268
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7e4e977231339fbbede7111e38a67054eb24eed9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275574"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802990"
 ---
 # <a name="client-channel-level-programming"></a>Programação de nível de canal cliente
 

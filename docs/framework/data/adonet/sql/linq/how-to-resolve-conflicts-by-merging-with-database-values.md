@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como resolver conflitos mesclando com valores de banco de dados'
 title: 'Como: resolver conflitos mesclando com valores de banco de dados'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1988b79c-3bfc-4c5c-a08a-86cf638bbe17
-ms.openlocfilehash: fb77c4a23a4c4fa93dc55e63858ee41783c197ee
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 83cae4c98fdd2e51065c66d36ef04202bdc86c9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166177"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767759"
 ---
 # <a name="how-to-resolve-conflicts-by-merging-with-database-values"></a>Como: resolver conflitos mesclando com valores de banco de dados
 
@@ -42,7 +43,7 @@ Para reconciliar diferenças entre valores esperados e reais de base de dados an
  [!code-csharp[System.Data.Linq.RefreshMode#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.refreshmode/cs/program.cs#3)]
  [!code-vb[System.Data.Linq.RefreshMode#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.refreshmode/vb/module1.vb#3)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: resolver conflitos substituindo valores de banco de dados](how-to-resolve-conflicts-by-overwriting-database-values.md)
 - [Como: resolver conflitos mantendo valores de banco de dados](how-to-resolve-conflicts-by-retaining-database-values.md)

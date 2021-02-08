@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo9:: GetCodeInfo4'
 title: ICorProfilerInfo9::GetCodeInfo4
 ms.date: 08/06/2019
 dev_langs:
@@ -11,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: ecaff179378eb417393c0a0d17d0a00d3b99e5a4
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 765f3dfee6c56148eb7807b0606e79d4b3a2e7a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90541292"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783801"
 ---
 # <a name="icorprofilerinfo9getcodeinfo4-method"></a>Método ICorProfilerInfo9:: GetCodeInfo4
 
@@ -72,6 +73,6 @@ Como alternativa, você pode primeiro chamar `GetCodeInfo4` com um buffer de com
 
 **Versões do .net:**[!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo9](ICorProfilerInfo9-interface.md)

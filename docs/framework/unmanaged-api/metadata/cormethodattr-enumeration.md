@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorMethodAttr'
 title: Enumeração CorMethodAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4e0c3521-e54d-43c1-9857-cc76b49b8ffc
 topic_type:
 - apiref
-ms.openlocfilehash: 6c3e721c24da217eaf2e8857377359e1c51b7b59
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4050235675f4b237b184d31378a614a0613ab3df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677005"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784373"
 ---
 # <a name="cormethodattr-enumeration"></a>Enumeração CorMethodAttr
 
@@ -100,6 +101,6 @@ typedef enum CorMethodAttr {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

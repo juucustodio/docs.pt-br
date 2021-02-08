@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: MsmqIntegrationBindingElement'
 title: MsmqIntegrationBindingElement
 ms.date: 03/30/2017
 ms.assetid: eaaa7651-e6e5-4fae-9dad-c1867d38b586
-ms.openlocfilehash: 236589e2a691efe1fec7b43a758ca4455f72deb3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 018f030c3cf804a67e4df3a9b47c86987233e65f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267839"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803159"
 ---
 # <a name="msmqintegrationbindingelement"></a>MsmqIntegrationBindingElement
 
 MsmqIntegrationBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp  
 class MsmqIntegrationBindingElement : MsmqBindingElementBase  

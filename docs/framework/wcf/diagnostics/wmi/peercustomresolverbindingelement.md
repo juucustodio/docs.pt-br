@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: PeerCustomResolverBindingElement'
 title: PeerCustomResolverBindingElement
 ms.date: 03/30/2017
 ms.assetid: 9ccc2770-a20e-4dff-9970-f56ad8aec2b5
-ms.openlocfilehash: c7f8fd23133cd83ad87a00134b9755b94f531d8b
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f4277c04818eec69c1041eee30282d3111421eaa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61963051"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803042"
 ---
 # <a name="peercustomresolverbindingelement"></a>PeerCustomResolverBindingElement
 
 PeerCustomResolverBindingElement
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```csharp
 class PeerCustomResolverBindingElement : PeerResolverBindingElement
@@ -25,11 +26,11 @@ class PeerCustomResolverBindingElement : PeerResolverBindingElement
 
 ## <a name="methods"></a>Métodos
 
-A classe da classe PeerCustomResolverBindingElement não define quaisquer métodos.
+A classe PeerCustomResolverBindingElement não define nenhum método.
 
 ## <a name="properties"></a>Propriedades
 
- A classe da classe PeerCustomResolverBindingElement tem as seguintes propriedades:
+ A classe PeerCustomResolverBindingElement tem as seguintes propriedades:
 
 ### <a name="address"></a>Endereço
 
@@ -37,7 +38,7 @@ Tipo de dados: cadeia de caracteres
 
 Tipo de acesso: Somente leitura
 
-O endereço do resolvedor personalizado ponto a ponto.
+O endereço do resolvedor personalizado do par.
 
 ### <a name="binding"></a>Associação
 
@@ -49,10 +50,10 @@ O nome da configuração da associação.
 
 ## <a name="requirements"></a>Requisitos
 
-|MOF|Declarado em Servicemodel.mof.|
+|MOF|Declarado em ServiceModel. mof.|
 |---------|-----------------------------------|
-|Namespace|Definido no root\ServiceModel|
+|Namespace|Definido em root\ServiceModel|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Channels.PeerCustomResolverBindingElement>

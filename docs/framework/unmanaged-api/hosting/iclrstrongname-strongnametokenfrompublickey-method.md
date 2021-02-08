@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRStrongName:: StrongNameTokenFromPublicKey'
 title: Método ICLRStrongName::StrongNameTokenFromPublicKey
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7962ce88-7e86-4a6f-8298-621b01ffc3c2
 topic_type:
 - apiref
-ms.openlocfilehash: c727d4524bc40ab90eee90faf16788140a73ad9a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: de245b151e5ca016a00793a8901c0fd990a3f804
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789737"
 ---
 # <a name="iclrstrongnamestrongnametokenfrompublickey-method"></a>Método ICLRStrongName::StrongNameTokenFromPublicKey
 
@@ -51,7 +52,7 @@ HRESULT StrongNameTokenFromPublicKey (
  `pcbStrongNameToken`  
  fora O tamanho, em bytes, do token de nome forte retornado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` Se o método foi concluído com êxito; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
   
@@ -69,7 +70,7 @@ HRESULT StrongNameTokenFromPublicKey (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameGetPublicKey](iclrstrongname-strongnamegetpublickey-method.md)
 - [Estrutura PublicKeyBlob](../strong-naming/publickeyblob-structure.md)

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Federação e confiança'
 title: Federação e confiabilidade
 ms.date: 03/30/2017
 helpviewer_keywords:
 - federation [WCF], and trust
 ms.assetid: 4bdec4f2-f8a2-4512-bdcf-14ef54b5877a
-ms.openlocfilehash: 6baa336f96f2349315cab2ed51bfb67c4745a110
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ccacb38f9542fab5522331d53dc29792318c5dea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255475"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802938"
 ---
 # <a name="federation-and-trust"></a>Federação e confiabilidade
 
@@ -42,7 +43,7 @@ Este tópico aborda vários aspectos relacionados a aplicativos federados, limit
 
  Se um token emitido é serializado em uma mensagem enviada de um cliente para um ponto de extremidade federado ou não é controlado pela definição da <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> propriedade da <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters> classe. Essa propriedade pode ser definida como um dos <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode> valores de enumeração, mas não é útil na maioria dos cenários federados. Os `SecurityTokenInclusionMode.Never` `SecurityTokenInclusionMode.AlwaysToInitiator` valores e fazem com que o cliente envie uma referência para o token emitido pelo serviço de token de segurança para a terceira parte confiável. A menos que a terceira parte confiável possua uma cópia do token emitido, a autenticação falhará porque a referência de token não poderá ser resolvida. O WCF trata `SecurityTokenInclusionMode.Once` como equivalente a `SecurityTokenInclusionMode.AlwaysToRecipient` .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>
 - [Como: criar um cliente federado](how-to-create-a-federated-client.md)

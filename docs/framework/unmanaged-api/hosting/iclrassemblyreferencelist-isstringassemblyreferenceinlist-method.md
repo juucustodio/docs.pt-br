@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRAssemblyReferenceList:: IsStringAssemblyReferenceInList'
 title: Método ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e6121cc3-2f11-42c7-bdae-47808581ff71
 topic_type:
 - apiref
-ms.openlocfilehash: 74d47b3f55c10f65d47f726a2b96ba5e0b18b749
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 667764337fbda22a526e51575faf049efc4b86ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679137"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790029"
 ---
 # <a name="iclrassemblyreferencelistisstringassemblyreferenceinlist-method"></a>Método ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList
 
@@ -39,7 +40,7 @@ HRESULT IsStringAssemblyReferenceInList (
  `pwzAssemblyName`  
  no O nome do assembly para o qual Pesquisar.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -57,7 +58,7 @@ HRESULT IsStringAssemblyReferenceInList (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Interface ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)

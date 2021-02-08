@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRIoCompletionManager'
 title: Interface ICLRIoCompletionManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c6c3ace6-e5e7-4450-8cc5-a9a48208c493
 topic_type:
 - apiref
-ms.openlocfilehash: e23675351e1fd0de510243c9ee8b3a6dd6f29cec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b2d18f9c9900d448f0c6517520c303eb4258f8d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714114"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789875"
 ---
 # <a name="iclriocompletionmanager-interface"></a>Interface ICLRIoCompletionManager
 
@@ -27,7 +28,7 @@ Implementa um método de retorno de chamada que permite ao host notificar o Comm
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método OnComplete](iclriocompletionmanager-oncomplete-method.md)|Notifica o CLR sobre o status de uma solicitação de e/s que foi feita usando uma chamada para o método [IHostIoCompletionManager:: bind](ihostiocompletionmanager-bind-method.md) .|  
   
@@ -45,7 +46,7 @@ Implementa um método de retorno de chamada que permite ao host notificar o Comm
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostIoCompletionManager](ihostiocompletionmanager-interface.md)
 - [Interface IHostThreadPoolManager](ihostthreadpoolmanager-interface.md)

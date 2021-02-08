@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: NamedPipeConnectionPoolSettings'
 title: NamedPipeConnectionPoolSettings
 ms.date: 03/30/2017
 ms.assetid: 079bccb8-54b5-4436-a43d-5567763f72ce
-ms.openlocfilehash: 8422e1adf9a8914b631431eba5c9c0ed058cd0f3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8d724c7a24f62a8d48797125528eb8a194ece660
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96258017"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803107"
 ---
 # <a name="namedpipeconnectionpoolsettings"></a>NamedPipeConnectionPoolSettings
 
 NamedPipeConnectionPoolSettings  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class NamedPipeConnectionPoolSettings  

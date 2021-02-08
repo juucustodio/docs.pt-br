@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: anúncios de descoberta e cliente de anúncio'
 title: Anúncios de descoberta e cliente de anúncio
 ms.date: 03/30/2017
 ms.assetid: 426c6437-f8d2-4968-b23a-18afd671aa4b
-ms.openlocfilehash: 4ad0b3ea5c257fa3117c426391bd59ad7b560d4f
-ms.sourcegitcommit: 581ab03291e91983459e56e40ea8d97b5189227e
+ms.openlocfilehash: 2076b4dbdc57bd3de47fccdb4a51ef9e6fc48366
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70040177"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802964"
 ---
 # <a name="discovery-announcements-and-announcement-client"></a>Anúncios de descoberta e cliente de anúncio
 
@@ -15,7 +16,7 @@ O recurso de descoberta do WCF permite que os componentes anunciem sua disponibi
 
 ## <a name="discovery-announcements"></a>Anúncios de descoberta
 
-Quando um serviço configurado para anúncios ingressar em uma rede e se tornar detectável, ele enviará uma mensagem de saudação anunciando sua disponibilidade para clientes de escuta. A mensagem contém informações relacionadas à descoberta sobre o serviço, como seu contrato, o endereço do ponto de extremidade e os escopos associados. Você pode especificar onde a mensagem de anúncio é enviada com <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> a classe. Se o ponto de extremidade do <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> comunicado for um, as saudações e as outras são multicast adequadamente, ou se o ponto de extremidade do anúncio for unicast, as mensagens serão enviadas diretamente para o ponto de extremidade especificado.
+Quando um serviço configurado para anúncios ingressar em uma rede e se tornar detectável, ele enviará uma mensagem de saudação anunciando sua disponibilidade para clientes de escuta. A mensagem contém informações relacionadas à descoberta sobre o serviço, como seu contrato, o endereço do ponto de extremidade e os escopos associados. Você pode especificar onde a mensagem de anúncio é enviada com a <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> classe. Se o ponto de extremidade do comunicado for um <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> , as saudações e as outras são multicast adequadamente, ou se o ponto de extremidade do anúncio for unicast, as mensagens serão enviadas diretamente para o ponto de extremidade especificado.
 
 > [!NOTE]
 > Os anúncios são enviados quando o host de serviço abre e fecha. Se essas chamadas não forem concluídas corretamente, a mensagem de anúncio não poderá ser enviada. Por exemplo, se o serviço falhar, a mensagem de anúncio de adeus não será enviada.
@@ -23,11 +24,11 @@ Quando um serviço configurado para anúncios ingressar em uma rede e se tornar 
 > [!TIP]
 > Você pode personalizar a funcionalidade do comunicado, permitindo que você envie anúncios sempre que escolher.
 
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]define o <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> e <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> como pontos de extremidade padrão para permitir que serviços e clientes enviem anúncios de saudação e adeus.
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] define o <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> e <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> como pontos de extremidade padrão para permitir que serviços e clientes enviem anúncios de saudação e adeus.
 
 ### <a name="announcements-on-the-service"></a>Anúncios no serviço
 
-Para configurar o serviço para enviar anúncios, adicione um <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> com um ponto de extremidade de anúncio. O exemplo a seguir mostra como adicionar esse comportamento programaticamente ao host de serviço. Este exemplo usa o `UdpAnnouncementEndpoint`, que implica que os anúncios são multicast para um local especificado por esse ponto de extremidade padrão.
+Para configurar o serviço para enviar anúncios, adicione um <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> com um ponto de extremidade de anúncio. O exemplo a seguir mostra como adicionar esse comportamento programaticamente ao host de serviço. Este exemplo usa o `UdpAnnouncementEndpoint` , que implica que os anúncios são multicast para um local especificado por esse ponto de extremidade padrão.
 
 ```csharp
 ServiceDiscoveryBehavior serviceDiscoveryBehavior = new ServiceDiscoveryBehavior();
@@ -62,7 +63,7 @@ Os exemplos anteriores configuram um serviço para enviar automaticamente mensag
 
 ### <a name="announcements-on-the-client"></a>Anúncios no cliente
 
-Um aplicativo cliente deve hospedar um serviço de anúncio para responder às mensagens de saudação e de adeus e <xref:System.ServiceModel.Discovery.AnnouncementService.OnlineAnnouncementReceived> assinar <xref:System.ServiceModel.Discovery.AnnouncementService.OfflineAnnouncementReceived> os eventos e. O exemplo a seguir mostra como fazer isso.
+Um aplicativo cliente deve hospedar um serviço de anúncio para responder às mensagens de saudação e de adeus e assinar os <xref:System.ServiceModel.Discovery.AnnouncementService.OnlineAnnouncementReceived> <xref:System.ServiceModel.Discovery.AnnouncementService.OfflineAnnouncementReceived> eventos e. O exemplo a seguir mostra como fazer isso.
 
 ```csharp
 // Create an AnnouncementService instance
@@ -84,7 +85,7 @@ using (ServiceHost announcementServiceHost = new ServiceHost(announcementService
 }
 ```
 
-Quando uma mensagem Hello ou adeus for recebida, você poderá acessar os metadados de descoberta do <xref:System.ServiceModel.Discovery.AnnouncementEventArgs> ponto de extremidade por meio do, conforme mostrado no exemplo a seguir.
+Quando uma mensagem Hello ou adeus for recebida, você poderá acessar os metadados de descoberta do ponto de extremidade por meio <xref:System.ServiceModel.Discovery.AnnouncementEventArgs> do, conforme mostrado no exemplo a seguir.
 
 ```csharp
 static void OnOnlineEvent(object sender, AnnouncementEventArgs e)

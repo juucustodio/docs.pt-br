@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30830: não há mais suporte para instruções ' line '"
 title: Instruções 'Line' não são mais compatíveis (erro de compilador do Visual Basic)
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30830
 ms.assetid: 4734bc1d-882e-4555-b498-1f1ec0399d16
-ms.openlocfilehash: f34095becf321c6cb4b316b6378a2da0107577ba
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 16696856cee365171000e7b0abc206c42d3f3174
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162473"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795866"
 ---
 # <a name="bc30830-line-statements-are-no-longer-supported"></a>BC30830: não há mais suporte para instruções ' line '
 
@@ -26,7 +27,7 @@ Não há mais suporte para instruções de linha. A funcionalidade de e/s de arq
 
 - Se estiver executando gráficos, use `System.Drawing.Graphics.Drawline` .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO>
 - <xref:System.Drawing>

@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: PeerResolverBindingElement'
 title: PeerResolverBindingElement
 ms.date: 03/30/2017
 ms.assetid: 36882183-13a3-443f-8aae-62a7825d5633
-ms.openlocfilehash: f3ffd03f9149d13567d84e00a5fa035d462f2ba8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f3bb1b9e8c3acb94c1a3cf9eaa44c7ffeec07c51
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96269061"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803016"
 ---
 # <a name="peerresolverbindingelement"></a>PeerResolverBindingElement
 
 PeerResolverBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class PeerResolverBindingElement : BindingElement  

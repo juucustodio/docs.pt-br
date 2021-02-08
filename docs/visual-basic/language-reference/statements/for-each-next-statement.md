@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: para cada... Próxima instrução (Visual Basic)'
 title: Instrução For Each...Next
 ms.date: 07/20/2015
 f1_keywords:
@@ -22,18 +23,18 @@ helpviewer_keywords:
 - Exit statement [Visual Basic], For Each...Next statements
 - iteration
 ms.assetid: ebce3120-95c3-42b1-b70b-fa7da40c75e2
-ms.openlocfilehash: 0feb938121a97b06509b472652e6a753841ab2b8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ff7afb5e3b505ebe2326343063a7884dc4f567b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404648"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769097"
 ---
 # <a name="for-eachnext-statement-visual-basic"></a>Instrução For Each...Next (Visual Basic)
 
 Repete um grupo de instruções para cada elemento em uma coleção.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 For Each element [ As datatype ] In group
@@ -51,11 +52,11 @@ Next [ element ]
 |---|---|
 |`element`|Necessário na `For Each` instrução. Opcional na `Next` instrução. Variável. Usado para iterar pelos elementos da coleção.|
 |`datatype`|Opcional se [`Option Infer`](option-infer-statement.md) for on (o padrão) ou `element` já estiver declarado; Required se `Option Infer` for off e `element` ainda não estiver declarado. O tipo de dados de `element`.|
-|`group`|Obrigatórios. Uma variável com um tipo que é um tipo de coleção ou objeto. Refere-se à coleção na qual os `statements` devem ser repetidos.|
+|`group`|Obrigatório. Uma variável com um tipo que é um tipo de coleção ou objeto. Refere-se à coleção na qual os `statements` devem ser repetidos.|
 |`statements`|Opcional. Uma ou mais instruções entre `For Each` e `Next` que são executadas em cada item no `group` .|
 |`Continue For`|Opcional. Transfere o controle para o início do `For Each` loop.|
 |`Exit For`|Opcional. Transfere o controle do `For Each` loop.|
-|`Next`|Obrigatórios. Encerra a definição do `For Each` loop.|
+|`Next`|Obrigatório. Encerra a definição do `For Each` loop.|
 
 ## <a name="simple-example"></a>Exemplo simples
 
@@ -94,7 +95,7 @@ O exemplo a seguir mostra como usar as `Continue For` `Exit For` instruções e.
 
 Você pode colocar qualquer número de `Exit For` instruções em um `For Each` loop. Quando usado em `For Each` loops aninhados, `Exit For` faz com que a execução saia do loop mais interno e transfere o controle para o próximo nível mais alto de aninhamento.
 
-`Exit For`geralmente é usado após uma avaliação de alguma condição, por exemplo, em um `If` ... `Then` ...`Else` estruturá. Talvez você queira usar `Exit For` o para as seguintes condições:
+`Exit For` geralmente é usado após uma avaliação de alguma condição, por exemplo, em um `If` ... `Then` ...`Else` estruturá. Talvez você queira usar `Exit For` o para as seguintes condições:
 
 - Continuar a iterar é desnecessário ou impossível. Isso pode ser causado por um valor errado ou uma solicitação de encerramento.
 
@@ -132,7 +133,7 @@ Se o seu código depende de percorrer uma coleção em uma ordem específica, um
 
 O tempo de execução deve ser capaz de converter os elementos em `group` para `element` . A `Option Strict` instrução [] controla se as conversões de alargamento e de estreitamento são permitidas ( `Option Strict` está desativado, seu valor padrão) ou se apenas conversões ampliadas são permitidas ( `Option Strict` está ativada). Para obter mais informações, consulte [conversões redutoras](#narrowing-conversions).
 
-O tipo de dados de `group` deve ser um tipo de referência que se refere a uma coleção ou uma matriz enumerável. Normalmente, isso significa que `group` se refere a um objeto que implementa a <xref:System.Collections.IEnumerable> interface do `System.Collections` namespace ou a <xref:System.Collections.Generic.IEnumerable%601> interface do `System.Collections.Generic` namespace. `System.Collections.IEnumerable`define o <xref:System.Collections.IEnumerable.GetEnumerator%2A> método, que retorna um objeto enumerador para a coleção. O objeto Enumerator implementa a `System.Collections.IEnumerator` interface do `System.Collections` namespace e expõe a <xref:System.Collections.IEnumerator.Current%2A> propriedade e os <xref:System.Collections.IEnumerator.Reset%2A> métodos e <xref:System.Collections.IEnumerator.MoveNext%2A> . Visual Basic os usa para atravessar a coleção.
+O tipo de dados de `group` deve ser um tipo de referência que se refere a uma coleção ou uma matriz enumerável. Normalmente, isso significa que `group` se refere a um objeto que implementa a <xref:System.Collections.IEnumerable> interface do `System.Collections` namespace ou a <xref:System.Collections.Generic.IEnumerable%601> interface do `System.Collections.Generic` namespace. `System.Collections.IEnumerable` define o <xref:System.Collections.IEnumerable.GetEnumerator%2A> método, que retorna um objeto enumerador para a coleção. O objeto Enumerator implementa a `System.Collections.IEnumerator` interface do `System.Collections` namespace e expõe a <xref:System.Collections.IEnumerator.Current%2A> propriedade e os <xref:System.Collections.IEnumerator.Reset%2A> métodos e <xref:System.Collections.IEnumerator.MoveNext%2A> . Visual Basic os usa para atravessar a coleção.
 
 ### <a name="narrowing-conversions"></a>Conversões de redução
 
@@ -182,7 +183,7 @@ No método `ListCars`, a instrução `cars.Sort()` classifica a lista. Essa cham
 
 [!code-vb[VbVbalrStatements#125](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#125)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Coleções](../../../standard/collections/index.md)
 - [Instrução For...Next](for-next-statement.md)
@@ -192,4 +193,4 @@ No método `ListCars`, a instrução `cars.Sort()` classifica a lista. Essa cham
 - [Conversões de Widening e Narrowing](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
 - [Inicializadores de objeto: tipos nomeados e anônimos](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
 - [Inicializadores de coleção](../../programming-guide/language-features/collection-initializers/index.md)
-- [Matrizes](../../programming-guide/language-features/arrays/index.md)
+- [matrizes](../../programming-guide/language-features/arrays/index.md)

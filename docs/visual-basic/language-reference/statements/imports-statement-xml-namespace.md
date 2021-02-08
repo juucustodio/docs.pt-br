@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução Imports (namespace XML)'
 title: Instrução Imports-namespace XML
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - Imports statement [Visual Basic]
 - namespaces [Visual Basic], importing
 ms.assetid: 1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4
-ms.openlocfilehash: a3184d68b0e4cdff5d4296a5a638e22b4e83bcde
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2ca285c9104c5a03b265dd15ce38a378e66d6916
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768955"
 ---
 # <a name="imports-statement-xml-namespace"></a>Instrução Imports (namespace XML)
 
 Importa prefixos de namespace XML para uso em literais XML e propriedades de eixo XML.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
@@ -32,7 +33,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 Opcional. A cadeia de caracteres pela qual os elementos e atributos XML podem se referir `xmlNamespaceName` . Se não `xmlNamespacePrefix` for fornecido, o namespace XML importado será o namespace XML padrão. Deve ser um identificador XML válido. Para obter mais informações, consulte [nomes de elementos XML declarados e atributos](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).
 
 `xmlNamespaceName`  
-Obrigatórios. A cadeia de caracteres que identifica o namespace XML que está sendo importado.
+Obrigatório. A cadeia de caracteres que identifica o namespace XML que está sendo importado.
 
 ## <a name="remarks"></a>Comentários
 
@@ -94,7 +95,7 @@ Esse código exibe o seguinte texto:
 
 `Patrick Hines`
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Literal do Elemento XML](../xml-literals/xml-element-literal.md)
 - [Propriedades do eixo XML](../xml-axis/index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução enum (Visual Basic)'
 title: Instrução Enum
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - variables [Visual Basic], enumeration
 - constants [Visual Basic], enumerated
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
-ms.openlocfilehash: 976cc68d67c69ec86918962ab2dd3406d15aed9a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dcaf28e949f8d34b8d72b07d8029ea10d6baeabf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404726"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769163"
 ---
 # <a name="enum-statement-visual-basic"></a>Instrução Enum (Visual Basic)
 
 Declara uma enumeração e define os valores de seus membros.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 [ <attributelist> ] [ accessmodifier ]  [ Shadows ]
@@ -43,13 +44,13 @@ End Enum
 
   Opcional. Especifica qual código pode acessar essa enumeração. Pode ser um dos seguintes:
 
-  - [Pública](../modifiers/public.md)
+  - [Público](../modifiers/public.md)
 
   - [Protected](../modifiers/protected.md)
 
-  - [Público](../modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - [Privada](../modifiers/private.md)
+  - [Privado](../modifiers/private.md)
 
   - [Amigo Protegido](../modifiers/protected-friend.md)
 
@@ -61,7 +62,7 @@ End Enum
 
 - `enumerationname`
 
-  Obrigatórios. Nome da enumeração. Para obter informações sobre nomes válidos, consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).
+  Obrigatório. Nome da enumeração. Para obter informações sobre nomes válidos, consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).
 
 - `datatype`
 
@@ -69,9 +70,9 @@ End Enum
 
 - `memberlist`
 
-  Obrigatórios. Lista de constantes de membro sendo declarada nesta instrução. Vários membros aparecem em linhas de código-fonte individuais.
+  Obrigatório. Lista de constantes de membro sendo declarada nesta instrução. Vários membros aparecem em linhas de código-fonte individuais.
 
-  Cada `member` uma tem a seguinte sintaxe e partes:`[<attribute list>] member name [ = initializer ]`
+  Cada `member` uma tem a seguinte sintaxe e partes: `[<attribute list>] member name [ = initializer ]`
 
   |Parte|Descrição|
   |---|---|
@@ -108,7 +109,7 @@ O *contexto de declaração* para uma enumeração deve ser um arquivo de origem
 
 Você pode aplicar atributos a uma enumeração como um todo, mas não a seus membros individualmente. Um atributo contribui com informações para os metadados do assembly.
 
-## <a name="data-type"></a>Tipo de Dados
+## <a name="data-type"></a>Tipo de dados
 
 A `Enum` instrução pode declarar o tipo de dados de uma enumeração. Cada membro usa o tipo de dados da enumeração. Você pode especificar `Byte` , `Integer` , `Long` , `SByte` , `Short` , `UInteger` , `ULong` ou `UShort` .
 
@@ -184,7 +185,7 @@ O exemplo a seguir itera por meio de uma enumeração. Ele usa o <xref:System.En
 
 [!code-vb[VbEnumsTask#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#51)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Enum>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>

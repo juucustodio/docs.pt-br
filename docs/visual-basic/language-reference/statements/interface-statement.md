@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução de interface (Visual Basic)'
 title: Instrução Interface
 ms.date: 05/12/2018
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - interface statement [Visual Basic]
 - interfaces [Visual Basic], interface definition
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
-ms.openlocfilehash: 3025adfe8c881a08df3b5f03253510c263c624d1
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e7fccec585fdbfd3946c2fa9874b5ea9b65ff014
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873218"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768903"
 ---
 # <a name="interface-statement-visual-basic"></a>Instrução Interface (Visual Basic)
 
 Declara o nome de uma interface e apresenta as definições dos membros que a interface compreende.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 [ <attributelist> ] [ accessmodifier ] [ Shadows ] _  
@@ -39,9 +40,9 @@ End Interface
 |Termo|Definição|  
 |---|---|  
 |`attributelist`|Opcional. Consulte a [lista de atributos](attribute-list.md).|  
-|`accessmodifier`|Opcional. Um dos seguintes pode ser feito:<br /><br /> -   [Publicada](../modifiers/public.md)<br />-   [Protected](../modifiers/protected.md)<br />-   [Público](../modifiers/friend.md)<br />-   [Pessoal](../modifiers/private.md)<br />-  [Amigo protegido](../modifiers/protected-friend.md)<br/>- [Particular protegido](../modifiers/private-protected.md)<br /><br /> Consulte [níveis de acesso em Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Opcional. Pode ser um dos seguintes:<br /><br /> -   [Publicada](../modifiers/public.md)<br />-   [Protected](../modifiers/protected.md)<br />-   [Público](../modifiers/friend.md)<br />-   [Pessoal](../modifiers/private.md)<br />-  [Amigo protegido](../modifiers/protected-friend.md)<br/>- [Particular protegido](../modifiers/private-protected.md)<br /><br /> Consulte [níveis de acesso em Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Opcional. Consulte [Shadows](../modifiers/shadows.md).|  
-|`name`|Necessário. Nome desta interface. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
+|`name`|Obrigatório. Nome desta interface. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
 |`Of`|Opcional. Especifica que esta é uma interface genérica.|  
 |`typelist`|Necessário se você usar a palavra-chave [of](of-clause.md) . Lista de parâmetros de tipo para esta interface. Opcionalmente, cada parâmetro de tipo pode ser declarado como Variant usando os `In` `Out` modificadores genérico. Consulte [lista de tipos](type-list.md).|  
 |`Inherits`|Opcional. Indica que essa interface herda os atributos e membros de outra interface ou interfaces. Consulte a [instrução Inherits](inherits-statement.md).|  
@@ -69,7 +70,7 @@ End Interface
   
 ## <a name="rules"></a>Regras  
   
-- **Aninhando interfaces.** Você pode definir uma interface dentro de outra. A interface externa é chamada de *interface que a contém*e a interface interna é chamada de *interface aninhada*.  
+- **Aninhando interfaces.** Você pode definir uma interface dentro de outra. A interface externa é chamada de *interface que a contém* e a interface interna é chamada de *interface aninhada*.  
   
 - **Declaração de membro.** Quando você declara uma propriedade ou um procedimento como membro de uma interface, você está definindo apenas a *assinatura* dessa propriedade ou procedimento. Isso inclui o tipo de elemento (Propriedade ou procedimento), seus parâmetros e tipos de parâmetro e seu tipo de retorno. Por isso, a definição de membro usa apenas uma linha de código e encerrando instruções como `End Function` ou `End Property` não são válidas em uma interface.  
   
@@ -95,7 +96,7 @@ End Interface
   
 - **Nível de acesso.** Todos os membros de interface implicitamente têm acesso [público](../modifiers/public.md) . Você não pode usar nenhum modificador de acesso ao definir um membro. No entanto, uma classe que implementa a interface pode declarar um nível de acesso para cada membro implementado.  
   
-     Se você atribuir uma instância de classe a uma variável, o nível de acesso de seus membros poderá depender se o tipo de dados da variável é a interface subjacente ou a classe de implementação. O exemplo a seguir ilustra isto.  
+     Se você atribuir uma instância de classe a uma variável, o nível de acesso de seus membros poderá depender se o tipo de dados da variável é a interface subjacente ou a classe de implementação. O exemplo a seguir ilustra essa situação.  
   
      [!code-vb[VbVbalrStatements#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#39)]  
   
@@ -115,7 +116,7 @@ End Interface
   
  Observe que as `Property` instruções e não `Function` introduzem blocos que terminam com `End Property` e `End Function` dentro da interface. A interface define somente as assinaturas de seus membros. Os `Property` blocos Full e The `Function` são exibidos em uma classe que implementa `thisInterface` .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces](../../programming-guide/language-features/interfaces/index.md)
 - [Instrução Class](class-statement.md)

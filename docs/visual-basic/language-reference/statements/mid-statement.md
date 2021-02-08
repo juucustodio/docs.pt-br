@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução mid'
 title: Instrução Mid
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - Mid statement [Visual Basic]
 - strings [Visual Basic], replacing
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
-ms.openlocfilehash: 0379a6cabe819365b22994a5e4f9353d98b2c768
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 29cf933cb38fc6ef831570d0940b481abf9cfecf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873202"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768877"
 ---
 # <a name="mid-statement"></a>Instrução Mid
 
 Substitui um número especificado de caracteres em uma `String` variável por caracteres de outra cadeia de caractere.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Mid( _  
@@ -34,16 +35,16 @@ Mid( _
 ## <a name="parts"></a>Partes  
 
  `Target`  
- Necessário. Nome da `String` variável a ser modificada.  
+ Obrigatório. Nome da `String` variável a ser modificada.  
   
  `Start`  
- Necessário. Expressão `Integer`. Posição do caractere em `Target` que começa a substituição do texto. `Start` usa um índice baseado em um.  
+ Obrigatórios. Expressão `Integer`. Posição do caractere em `Target` que começa a substituição do texto. `Start` usa um índice baseado em um.  
   
  `Length`  
  Opcional. Expressão `Integer`. Número de caracteres a serem substituídos. Se omitido, todos `String` serão usados.  
   
  `StringExpression`  
- Necessário. `String` expressão que substitui parte de `Target` .  
+ Obrigatório. `String` expressão que substitui parte de `Target` .  
   
 ## <a name="exceptions"></a>Exceções  
   
@@ -74,7 +75,7 @@ Mid( _
   
  **Assembly:** Visual Basic a biblioteca de tempo de execução (em Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Strings.Mid%2A>
 - [Cadeias de caracteres](../../programming-guide/language-features/strings/index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. PortSharing. RoutingTableRegisterSuccess'
 title: System.ServiceModel.PortSharing.RoutingTableRegisterSuccess
 ms.date: 03/30/2017
 ms.assetid: 7f9441ce-5f4a-4080-9be5-c3c08a87bb21
-ms.openlocfilehash: 785969aa50f5b49a715c39a0c5a23f0b7a72426d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d6a62e07aa27fc0578b534697b438661ab4e6cde
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276081"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769463"
 ---
 # <a name="systemservicemodelportsharingroutingtableregistersuccess"></a>System.ServiceModel.PortSharing.RoutingTableRegisterSuccess
 
@@ -17,8 +18,8 @@ System.ServiceModel.PortSharing.RoutingTableRegisterSuccess
 
  O namespace foi registrado com êxito.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

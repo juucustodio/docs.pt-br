@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: instruções F-P'
 title: Instruções F-P
 ms.date: 07/20/2015
 ms.assetid: cdce7ab0-c52e-4d33-a29b-bf32cdacc79f
-ms.openlocfilehash: 81a3c27dd49ce7f870e9609d582945641567e483
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e9b9ff71623846a196c7b03b9decbbcb9b33e0ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90865893"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769085"
 ---
 # <a name="f-p-statements"></a>Instruções F-P
 
@@ -22,7 +23,7 @@ A tabela a seguir contém uma lista de instruções de Visual Basic Language.
 |[Option \<keyword>](option-keyword-statement.md)|[Opção Comparar](option-compare-statement.md)|[Opção Explícita](option-explicit-statement.md)|[Opção Inferir](option-infer-statement.md)|  
 |[Opção Estrita](option-strict-statement.md)|[Propriedade](property-statement.md)|||  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instruções A-E](a-e-statements.md)
 - [Instruções Q-Z](q-z-statements.md)

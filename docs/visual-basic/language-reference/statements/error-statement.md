@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução de erro'
 title: Instrução Error
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], codes
 - errors [Visual Basic], simulating
 ms.assetid: 85cd5c59-5224-4f02-aaf5-fcfefab17a29
-ms.openlocfilehash: f3f9f5ecb96686fe525e98cf64672d81a3145796
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6c152e9e4fb4fa3a937042761c7d776b337f4fef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873270"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769137"
 ---
 # <a name="error-statement"></a>Instrução Error
 
 Simula a ocorrência de um erro.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Error errornumber  
@@ -30,7 +31,7 @@ Error errornumber
 ## <a name="parts"></a>Partes  
 
  `errornumber`  
- Necessário. Pode ser qualquer número de erro válido.  
+ Obrigatório. Pode ser qualquer número de erro válido.  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -67,7 +68,7 @@ Error 11   ' Simulate the "Division by zero" error.
   
  **Assembly:** Visual Basic a biblioteca de tempo de execução (em Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.ErrObject.Clear%2A>
 - <xref:Microsoft.VisualBasic.Information.Err%2A>

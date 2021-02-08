@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: para... Próxima instrução (Visual Basic)'
 title: Instrução For...Next
 ms.date: 07/20/2015
 f1_keywords:
@@ -23,18 +24,18 @@ helpviewer_keywords:
 - Exit statement [Visual Basic], For...Next statements
 - For statement [Visual Basic]
 ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
-ms.openlocfilehash: 6896c6cfb4ec5d6207011e56b72639c459120e53
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f26d9cb1885d9d22b96d622f44325aad64e34d1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769072"
 ---
 # <a name="fornext-statement-visual-basic"></a>Instrução For...Next (Visual Basic)
 
 Repete um grupo de instruções um número especificado de vezes.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 For counter [ As datatype ] = start To end [ Step step ]
@@ -58,7 +59,7 @@ Next [ counter ]
 |`statements`|Opcional. Uma ou mais instruções entre `For` e `Next` que executam o número especificado de vezes.|
 |`Continue For`|Opcional. Transfere o controle para a próxima iteração do loop.|
 |`Exit For`|Opcional. Transfere o controle do `For` loop.|
-|`Next`|Obrigatórios. Encerra a definição do `For` loop.|
+|`Next`|Obrigatório. Encerra a definição do `For` loop.|
 
 > [!NOTE]
 > A `To` palavra-chave é usada nesta instrução para especificar o intervalo para o contador. Você também pode usar essa palavra-chave na [marca de seleção... Instrução Case](select-case-statement.md) e em declarações de matriz. Para obter mais informações sobre declarações de matriz, consulte [instrução Dim](dim-statement.md).
@@ -100,7 +101,7 @@ O exemplo a seguir ilustra o uso das `Continue For` `Exit For` instruções e.
 
 Você pode colocar qualquer número de `Exit For` instruções em um `For` ...`Next` While. Quando usado dentro de aninhado `For` ...`Next` loops, `Exit For` sai do loop mais interno e transfere o controle para o próximo nível mais alto de aninhamento.
 
-`Exit For`geralmente é usado depois que você avalia alguma condição (por exemplo, em um `If` ... `Then` ...`Else` estrutura). Talvez você queira usar `Exit For` o para as seguintes condições:
+`Exit For` geralmente é usado depois que você avalia alguma condição (por exemplo, em um `If` ... `Then` ...`Else` estrutura). Talvez você queira usar `Exit For` o para as seguintes condições:
 
 - Continuar a iterar é desnecessário ou impossível. Um valor errado ou uma solicitação de encerramento pode criar essa condição.
 
@@ -131,7 +132,7 @@ O valor de `step` pode ser positivo ou negativo. Esse parâmetro determina o pro
 
 O valor padrão de `step` é 1.
 
-### <a name="counter-argument"></a><a name="BKMK_Counter"></a>Argumento do contador
+### <a name="counter-argument"></a><a name="BKMK_Counter"></a> Argumento do contador
 
 A tabela a seguir indica se o `counter` define uma nova variável local com escopo para todo o `For…Next` loop. Essa determinação depende de se o `datatype` está presente e se `counter` já está definido.
 
@@ -182,7 +183,7 @@ No exemplo a seguir, os parâmetros de instrução usam uma classe que tem sobre
 
 [!code-vb[VbVbalrStatements#117](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class7.vb#117)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Collections.Generic.List%601>
 - [Estruturas de Loop](../../programming-guide/language-features/control-flow/loop-structures.md)

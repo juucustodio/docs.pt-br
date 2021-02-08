@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução Get'
 title: Instrução Get
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - Get keyword [Visual Basic]
 - property procedures [Visual Basic], Get statements
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
-ms.openlocfilehash: 3da6c099b3f43a144484eaddf58605609eb0bbfe
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 1cda485867a941129ab2453d4c0900d1403f4e8d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866202"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769033"
 ---
 # <a name="get-statement"></a>Instrução Get
 
 Declara um `Get` procedimento de propriedade usado para recuperar o valor de uma propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 [ <attributelist> ] [ accessmodifier ] Get()  
@@ -35,9 +36,9 @@ End Get
 |Termo|Definição|  
 |---|---|  
 |`attributelist`|Opcional. Consulte a [lista de atributos](attribute-list.md).|  
-|`accessmodifier`|Opcional em no máximo uma das `Get` instruções e `Set` nesta propriedade. Um dos seguintes pode ser feito:<br /><br /> -   [Protected](../modifiers/protected.md)<br />-   [Público](../modifiers/friend.md)<br />-   [Pessoal](../modifiers/private.md)<br />-   `Protected Friend`<br /><br /> Consulte [níveis de acesso em Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Opcional em no máximo uma das `Get` instruções e `Set` nesta propriedade. Pode ser um dos seguintes:<br /><br /> -   [Protected](../modifiers/protected.md)<br />-   [Público](../modifiers/friend.md)<br />-   [Pessoal](../modifiers/private.md)<br />-   `Protected Friend`<br /><br /> Consulte [níveis de acesso em Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
 |`statements`|Opcional. Uma ou mais instruções que são executadas quando o `Get` procedimento de propriedade é chamado.|  
-|`End Get`|Necessário. Encerra a definição do procedimento de `Get` propriedade.|  
+|`End Get`|Obrigatório. Encerra a definição do procedimento de `Get` propriedade.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -85,7 +86,7 @@ End Get
   
  [!code-vb[VbVbalrStatements#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#30)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução SET](set-statement.md)
 - [Instrução Property](property-statement.md)

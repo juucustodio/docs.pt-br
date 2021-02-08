@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução de evento'
 title: Instrução Event
 ms.date: 05/12/2018
 f1_keywords:
@@ -18,18 +19,18 @@ helpviewer_keywords:
 - ByRef keyword [Visual Basic], Event statements
 - declaring user-defined events
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
-ms.openlocfilehash: 0575a67f89f734c79259036fe48d6e2671c2d1ed
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 719b7af664795e2ff39d86bfa204112b7a90e1b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769111"
 ---
 # <a name="event-statement"></a>Instrução Event
 
 Declara um evento definido pelo usuário.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 [ <attrlist> ] [ accessmodifier ] _  
@@ -60,25 +61,25 @@ End Event
 |Parte|Descrição|  
 |---|---|  
 |`attrlist`|Opcional. Lista de atributos que se aplicam a este evento. Vários atributos são separados por vírgulas. Você deve colocar a [lista de atributos](attribute-list.md) entre colchetes angulares (" `<` " e " `>` ").|  
-|`accessmodifier`|Opcional. Especifica qual código pode acessar o evento. Um dos seguintes pode ser feito:<br /><br /> -   [Público](../modifiers/public.md)— qualquer código que possa acessar o elemento que o declara pode acessá-lo.<br />-   [Protegido](../modifiers/protected.md)– somente o código dentro de sua classe ou de uma classe derivada pode acessá-lo.<br />-   [Friend](../modifiers/friend.md)— somente o código no mesmo assembly pode acessá-lo.<br />-   [Particular](../modifiers/private.md)— somente o código no elemento que o declara pode acessá-lo.<br /> -   Código somente [Friend protegido](../modifiers/protected-friend.md)na classe do evento, uma classe derivada ou o mesmo assembly pode acessá-lo. <br />- Código somente [protegido privado](../modifiers/private-protected.md)na classe do evento ou uma classe derivada no mesmo assembly pode acessá-lo.|  
+|`accessmodifier`|Opcional. Especifica qual código pode acessar o evento. Pode ser um dos seguintes:<br /><br /> -   [Público](../modifiers/public.md)— qualquer código que possa acessar o elemento que o declara pode acessá-lo.<br />-   [Protegido](../modifiers/protected.md)– somente o código dentro de sua classe ou de uma classe derivada pode acessá-lo.<br />-   [Friend](../modifiers/friend.md)— somente o código no mesmo assembly pode acessá-lo.<br />-   [Particular](../modifiers/private.md)— somente o código no elemento que o declara pode acessá-lo.<br /> -   Código somente [Friend protegido](../modifiers/protected-friend.md)na classe do evento, uma classe derivada ou o mesmo assembly pode acessá-lo. <br />- Código somente [protegido privado](../modifiers/private-protected.md)na classe do evento ou uma classe derivada no mesmo assembly pode acessá-lo.|  
 |`Shared`|Opcional. Especifica que esse evento não está associado a uma instância específica de uma classe ou estrutura.|  
 |`Shadows`|Opcional. Indica que esse evento redeclara e oculta um elemento de programação de nome idêntico, ou conjunto de elementos sobrecarregados, em uma classe base. Você pode sombrear qualquer tipo de elemento declarado com qualquer outro tipo.<br /><br /> Um elemento sombreado não está disponível de dentro da classe derivada que o sombreia, exceto de onde o elemento de sombreamento está inacessível. Por exemplo, se um `Private` elemento sombreia um elemento de classe base, o código que não tem permissão para acessar o `Private` elemento acessa o elemento de classe base em vez disso.|  
-|`eventname`|Necessário. Nome do evento; segue as convenções padrão de nomenclatura de variável.|  
+|`eventname`|Obrigatório. Nome do evento; segue as convenções padrão de nomenclatura de variável.|  
 |`parameterlist`|Opcional. Lista de variáveis locais que representam os parâmetros deste evento. Você deve colocar a [lista de parâmetros](parameter-list.md) entre parênteses.|  
 |`Implements`|Opcional. Indica que esse evento implementa um evento de uma interface.|  
 |`implementslist`|Necessário se `Implements` for fornecido. Lista de `Sub` procedimentos que estão sendo implementados. Vários procedimentos são separados por vírgulas:<br /><br /> *implementedprocedure* [, *implementedprocedure* ...]<br /><br /> Cada `implementedprocedure` uma tem a seguinte sintaxe e partes:<br /><br /> `interface`.`definedname`<br /><br /> -   `interface` Necessária. Nome de uma interface que o procedimento que contém a classe ou a estrutura está implementando.<br />-   `Definedname` Necessária. Nome pelo qual o procedimento é definido `interface` . Isso não precisa ser o mesmo `name` que o nome que este procedimento está usando para implementar o procedimento definido.|  
-|`Custom`|Necessário. Eventos declarados como `Custom` devem definir personalizados `AddHandler` , `RemoveHandler` e `RaiseEvent` acessadores.|  
+|`Custom`|Obrigatório. Eventos declarados como `Custom` devem definir personalizados `AddHandler` , `RemoveHandler` e `RaiseEvent` acessadores.|  
 |`delegatename`|Opcional. O nome de um delegado que especifica a assinatura do manipulador de eventos.|  
-|`AddHandler`|Necessário. Declara um `AddHandler` acessador, que especifica as instruções a serem executadas quando um manipulador de eventos é adicionado, seja explicitamente usando a `AddHandler` instrução ou implicitamente usando a `Handles` cláusula.|  
-|`End AddHandler`|Necessário. Encerra o `AddHandler` bloco.|  
-|`value`|Necessário. Nome do parâmetro.|  
-|`RemoveHandler`|Necessário. Declara um `RemoveHandler` acessador, que especifica as instruções a serem executadas quando um manipulador de eventos é removido usando a `RemoveHandler` instrução.|  
-|`End RemoveHandler`|Necessário. Encerra o `RemoveHandler` bloco.|  
-|`RaiseEvent`|Necessário. Declara um `RaiseEvent` acessador, que especifica as instruções a serem executadas quando o evento é gerado usando a `RaiseEvent` instrução. Normalmente, isso invoca uma lista de delegados mantidos pelos `AddHandler` `RemoveHandler` acessadores e.|  
-|`End RaiseEvent`|Necessário. Encerra o `RaiseEvent` bloco.|  
-|`delegatesignature`|Necessário. Lista de parâmetros que corresponde aos parâmetros exigidos pelo `delegatename` delegado. Você deve colocar a [lista de parâmetros](parameter-list.md) entre parênteses.|  
+|`AddHandler`|Obrigatório. Declara um `AddHandler` acessador, que especifica as instruções a serem executadas quando um manipulador de eventos é adicionado, seja explicitamente usando a `AddHandler` instrução ou implicitamente usando a `Handles` cláusula.|  
+|`End AddHandler`|Obrigatório. Encerra o `AddHandler` bloco.|  
+|`value`|Obrigatório. Nome do parâmetro.|  
+|`RemoveHandler`|Obrigatório. Declara um `RemoveHandler` acessador, que especifica as instruções a serem executadas quando um manipulador de eventos é removido usando a `RemoveHandler` instrução.|  
+|`End RemoveHandler`|Obrigatório. Encerra o `RemoveHandler` bloco.|  
+|`RaiseEvent`|Obrigatório. Declara um `RaiseEvent` acessador, que especifica as instruções a serem executadas quando o evento é gerado usando a `RaiseEvent` instrução. Normalmente, isso invoca uma lista de delegados mantidos pelos `AddHandler` `RemoveHandler` acessadores e.|  
+|`End RaiseEvent`|Obrigatório. Encerra o `RaiseEvent` bloco.|  
+|`delegatesignature`|Obrigatório. Lista de parâmetros que corresponde aos parâmetros exigidos pelo `delegatename` delegado. Você deve colocar a [lista de parâmetros](parameter-list.md) entre parênteses.|  
 |`statements`|Opcional. Instruções que contêm os corpos dos `AddHandler` métodos, `RemoveHandler` e `RaiseEvent` .|  
-|`End Event`|Necessário. Encerra o `Event` bloco.|  
+|`End Event`|Obrigatório. Encerra o `Event` bloco.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -120,7 +121,7 @@ End Event
 > [!NOTE]
 > O `My.Application.DoEvents` método não processa eventos da mesma maneira que o formulário. Para permitir que o formulário manipule os eventos diretamente, você pode usar multithreading. Para obter mais informações, consulte [Threading gerenciado](../../../standard/threading/index.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução RaiseEvent](raiseevent-statement.md)
 - [Instrução Implements](implements-statement.md)

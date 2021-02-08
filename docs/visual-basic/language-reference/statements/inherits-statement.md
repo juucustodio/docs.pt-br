@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução Inherits'
 title: Instrução Inherits
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - Inherits statement [Visual Basic]
 - Inherits statement [Visual Basic], syntax
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
-ms.openlocfilehash: dd8fbc71fdc859bb127764951464278267c0984c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: fba574ec207b384c1e7219341526a4a89c8a619c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875230"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768916"
 ---
 # <a name="inherits-statement"></a>Instrução Inherits
 
 Faz com que a classe ou a interface atual herde os atributos, variáveis, propriedades, procedimentos e eventos de outra classe ou conjunto de interfaces.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Inherits basetypenames  
@@ -29,7 +30,7 @@ Inherits basetypenames
   
 |Termo|Definição|  
 |---|---|  
-|`basetypenames`|Necessário. O nome da classe da qual essa classe deriva.<br /><br /> - ou -<br /><br /> Os nomes das interfaces das quais essa interface deriva. Use vírgulas para separar vários nomes.|  
+|`basetypenames`|Obrigatório. O nome da classe da qual essa classe deriva.<br /><br /> -ou-<br /><br /> Os nomes das interfaces das quais essa interface deriva. Use vírgulas para separar vários nomes.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -67,7 +68,7 @@ Inherits basetypenames
   
  A interface chamada `thisInterface` agora inclui todas as definições no <xref:System.IComparable> , <xref:System.IDisposable> e <xref:System.IFormattable> as interfaces que os membros herdados fornecem, respectivamente, para comparação específica de tipo de dois objetos, liberando recursos alocados e expressando o valor de um objeto como um `String` . Uma classe que implementa o `thisInterface` deve implementar todos os membros de cada interface base.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [MustInherit](../modifiers/mustinherit.md)
 - [NotInheritable](../modifiers/notinheritable.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre a cláusula: of (Visual Basic)'
 title: Cláusula Of
 ms.date: 07/20/2015
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - type parameters
 - data type arguments
 ms.assetid: 0db8f65c-65af-4089-ab7f-6fcfecb60444
-ms.openlocfilehash: 0595356fb75fc0ac73a49622d71fe1d28fa7b648
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d6002041a2fe8db5b07e12e9e396a65fde30b716
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90865901"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768838"
 ---
 # <a name="of-clause-visual-basic"></a>Cláusula Of (Visual Basic)
 
@@ -66,7 +67,7 @@ Dim d As New dictionary(Of String, Integer)
   
  [Instrução Sub](sub-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IComparable>
 - [Lista de Tipos](type-list.md)

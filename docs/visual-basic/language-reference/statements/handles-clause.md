@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre a cláusula: Handles (Visual Basic)'
 title: Cláusula Handles
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Handles keyword [Visual Basic]
 ms.assetid: 1b051c0e-f499-42f6-acb5-6f4f27824b40
-ms.openlocfilehash: 347f521267d4fd954ac359ab25ed5810cfd71d34
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 2bddfdecc163feacaaf042a7928ab16af324b0a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873254"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769020"
 ---
 # <a name="handles-clause-visual-basic"></a>Cláusula Handles (Visual Basic)
 
 Declara que um procedimento manipula um evento especificado.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 proceduredeclaration Handles eventlist  
@@ -60,7 +61,7 @@ proceduredeclaration Handles eventlist
   
  [!code-vb[VbVbalrEvents#42](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/class3.vb#42)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [WithEvents](../modifiers/withevents.md)
 - [Instrução AddHandler](addhandler-statement.md)

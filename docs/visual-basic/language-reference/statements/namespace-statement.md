@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução de namespace'
 title: Instrução Namespace
 ms.date: 07/20/2015
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - root namespaces
 - declarations [Visual Basic], namespaces
 ms.assetid: a31fbd95-9ace-4c3d-bbb1-51222a2272b2
-ms.openlocfilehash: cef339a66458ee9657dc1706082c3c5328746dc6
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 2c315947a26f72a90e03bc1f4bf1b5f647866b33
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875219"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768851"
 ---
 # <a name="namespace-statement"></a>Instrução Namespace
 
 Declara o nome de um namespace e faz com que o código-fonte que segue a declaração seja compilado dentro desse namespace.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Namespace [Global.] { name | name.name }  
@@ -37,7 +38,7 @@ End Namespace
  Opcional. Permite que você defina um namespace fora do namespace raiz do seu projeto. Consulte [namespaces em Visual Basic](../../programming-guide/program-structure/namespaces.md).  
   
  `name`  
- Necessário. Um nome exclusivo que identifica o namespace. Deve ser um identificador de Visual Basic válido. Para obter mais informações, consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).  
+ Obrigatório. Um nome exclusivo que identifica o namespace. Deve ser um identificador de Visual Basic válido. Para obter mais informações, consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).  
   
  `componenttypes`  
  Opcional. Elementos que compõem o namespace. Elas incluem, mas não se limitam a, enumerações, estruturas, interfaces, classes, módulos, delegados e outros namespaces.  
@@ -112,7 +113,7 @@ Namespace System.Collections.Generic
 End Namespace  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Imports (tipo e namespace .NET)](imports-statement-net-namespace-and-type.md)
 - [Nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md)

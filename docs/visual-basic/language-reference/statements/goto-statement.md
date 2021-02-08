@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução GoTo'
 title: Instrução GoTo
 ms.date: 07/20/2015
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - conditional statements [Visual Basic], GoTo statement
 - GoTo statement [Visual Basic], syntax
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
-ms.openlocfilehash: 000f6754575bcce6b2d79d85541e755219aca956
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 804baec130111562225b09cbdc7b5fb2d73adba5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866622"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769046"
 ---
 # <a name="goto-statement"></a>Instrução GoTo
 
 Ramifica incondicionalmente para uma linha especificada em um procedimento.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 GoTo line  
@@ -33,7 +34,7 @@ GoTo line
 ## <a name="part"></a>Parte  
 
  `line`  
- Necessário. Qualquer rótulo de linha.  
+ Obrigatório. Qualquer rótulo de linha.  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -66,7 +67,7 @@ GoTo line
   
  [!code-vb[VbVbalrStatements#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#31)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Do...Loop](do-loop-statement.md)
 - [Instrução For...Next](for-next-statement.md)

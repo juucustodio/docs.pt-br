@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre a cláusula: Implements (Visual Basic)'
 title: Cláusula Implements
 ms.date: 07/20/2015
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - members [Visual Basic], Implements keyword
 - reimplementation
 ms.assetid: 5252cdf9-964d-4fc6-af0f-0449b7126b5a
-ms.openlocfilehash: 7c95cf76b1bac24e2a0f20857b8984d54ebbea85
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 360d8812a7c49d6462818246b1448e171dcd597f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866167"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768994"
 ---
 # <a name="implements-clause-visual-basic"></a>Cláusula Implements (Visual Basic)
 
@@ -48,7 +49,7 @@ A `Implements` palavra-chave pode ser usada nos seguintes contextos:
 - [Instrução Property](property-statement.md)
 - [Instrução Sub](sub-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Implements](implements-statement.md)
 - [Instrução Interface](interface-statement.md)

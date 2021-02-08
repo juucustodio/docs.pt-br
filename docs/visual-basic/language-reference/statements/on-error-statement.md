@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução On Error (Visual Basic)'
 title: Instrução On Error
 ms.date: 07/20/2015
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], handling
 - On Error statement [Visual Basic]
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
-ms.openlocfilehash: 7e007d59292fc577c0c8927766423ba6f7896a71
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 593e90b07101d08d18a0db127bcb74cf6509f317
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873182"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768825"
 ---
 # <a name="on-error-statement-visual-basic"></a>Instrução On Error (Visual Basic)
 
@@ -38,7 +39,7 @@ Habilita uma rotina de tratamento de erros e especifica o local da rotina dentro
 > [!NOTE]
 > A `Error` palavra-chave também é usada na [instrução de erro](error-statement.md), que tem suporte para compatibilidade com versões anteriores.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 On Error { GoTo [ line | 0 | -1 ] | Resume Next }
@@ -125,7 +126,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 
  **Assembly:** Visual Basic a biblioteca de tempo de execução (em Microsoft.VisualBasic.dll)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Information.Err%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.Number%2A>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRSyncManager:: GetMonitorOwner'
 title: Método ICLRSyncManager::GetMonitorOwner
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 840983a4-396d-47b4-86a0-d35f9b437cdb
 topic_type:
 - apiref
-ms.openlocfilehash: a2cb82d8071518af4d4bc3276871f3846a5a5693
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 67fb966c415009236cabef5e6b4d27cbb90d50ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687061"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785023"
 ---
 # <a name="iclrsyncmanagergetmonitorowner-method"></a>Método ICLRSyncManager::GetMonitorOwner
 
@@ -43,7 +44,7 @@ HRESULT GetMonitorOwner (
  `ppOwnerHostTask`  
  fora Um ponteiro para o `IHostTask` que atualmente possui o monitor ou nulo se nenhuma tarefa tiver propriedade.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -73,7 +74,7 @@ HRESULT GetMonitorOwner (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostSyncManager](ihostsyncmanager-interface.md)

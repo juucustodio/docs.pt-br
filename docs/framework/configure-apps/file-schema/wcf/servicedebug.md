@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <serviceDebug>'
 title: <serviceDebug>
 ms.date: 03/30/2017
 ms.assetid: 6d7ea986-f232-49fe-842c-f934d9966889
-ms.openlocfilehash: 8236e581ee754a39ae32fa97084b8e2bfbaee652
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7563969ef54e9644982c707ef1cd2e18ca7b41f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153866"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786740"
 ---
 # \<serviceDebug>
 
@@ -75,7 +76,7 @@ Especifica recursos de depuração e de informações de ajuda para um serviço 
   
  Os `httpHelpPageBinding` atributos e opcionais `httpHelpPageBinding` permitem configurar as associações usadas para acessar a página da Web do serviço. Se não forem especificadas, as associações padrão ( `HttpTransportBindingElement` , no caso de http e `HttpsTransportBindingElement` , no caso de HTTPS) serão usadas para acesso à página de ajuda de serviço conforme apropriado. Observe que você não pode usar esses atributos com as associações internas do WCF. Somente associações com elementos de associação interna que dão suporte a xref: System. ServiceModel. Channels. IReplyChannel> terão suporte. Além disso, a <xref:System.ServiceModel.Channels.MessageVersion?displayProperty=nameWithType> propriedade da associação deve ser <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType> .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceDebugElement>
 - <xref:System.ServiceModel.Description.ServiceDebugBehavior>

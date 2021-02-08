@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <serviceThrottling>'
 title: <serviceThrottling>
 ms.date: 03/30/2017
 ms.assetid: a337d064-1e64-4209-b4a9-db7fdb7e3eaf
-ms.openlocfilehash: 0c6d844ac287037b7a546d3a48e7cd924e8a63d1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: eb65f6d60a266a367789d87e4e6ea10ebfd2c7a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153606"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786675"
 ---
 # \<serviceThrottling>
 
@@ -74,7 +75,7 @@ Especifica o mecanismo de limitação de um serviço do Windows Communication Fo
 </behaviors>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>
 - <xref:System.ServiceModel.Configuration.ServiceThrottlingElement>

@@ -1,15 +1,16 @@
 ---
-title: <states>do WCF,<workflowInstanceQuery>
+description: 'Saiba mais sobre: <states> do WCF, <workflowInstanceQuery>'
+title: <states> do WCF, <workflowInstanceQuery>
 ms.date: 03/30/2017
 ms.assetid: d17f7525-8035-4e9e-85a0-4cddae59f85d
-ms.openlocfilehash: 5b779cf1074687dbd648b23d04f7cf3a354a2014
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 66b3008b352d1f76c30aab9a0ec038836f33d408
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855032"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786636"
 ---
-# <a name="states-of-wcf-workflowinstancequery"></a>\<states>do WCF,\<workflowInstanceQuery>
+# <a name="states-of-wcf-workflowinstancequery"></a>\<states> do WCF, \<workflowInstanceQuery>
 
 Representa uma coleção de estados inscritos da instância do fluxo de trabalho controladas quando os registros de rastreamento são criados.  
   
@@ -25,7 +26,7 @@ Para obter mais informações sobre consultas de perfil de rastreamento, consult
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<workflowInstanceQuery>**](workflowinstancequery-of-wcf.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<states>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <tracking>
@@ -77,14 +78,14 @@ Estado de possíveis valores é descritos na tabela a seguir.
 |Concluído|A instância de fluxo de trabalho for concluída.|  
 |Excluído|A instância de fluxo de trabalho é excluída.|  
 |Idle|A instância de fluxo de trabalho está ociosa.|  
-|Persistentes|A instância de fluxo de trabalho é mantida.|  
+|Persistente|A instância de fluxo de trabalho é mantida.|  
 |Retomada|A instância de fluxo de trabalho é retomada.|  
 |Iniciado|A instância de fluxo de trabalho é iniciada.|  
 |UnhandledException|A instância de fluxo de trabalho encontrou uma exceção sem tratamento.|  
 |Descarregado|A instância de fluxo de trabalho é descarregada.|  
 |Canceled|A instância de fluxo de trabalho é cancelada.|  
 |Suspenso|A instância de fluxo de trabalho é suspensa.|  
-|Encerrada|A instância de fluxo de trabalho é encerrada.|  
+|Terminado|A instância de fluxo de trabalho é encerrada.|  
 |Não suspenso|A instância de fluxo de trabalho é unsuspended.|  
   
 ## <a name="example"></a>Exemplo
@@ -101,10 +102,10 @@ A configuração a seguir assina o fluxo de trabalho em nível de instância reg
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
-- [Acompanhamento e rastreamento de fluxo de trabalho](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
-- [Acompanhando perfis](../../../windows-workflow-foundation/tracking-profiles.md)
+- [Rastreamento e rastreamento de fluxo de trabalho](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Controlando perfis](../../../windows-workflow-foundation/tracking-profiles.md)

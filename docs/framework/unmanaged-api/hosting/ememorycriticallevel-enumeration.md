@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração EMemoryCriticalLevel'
 title: Enumeração EMemoryCriticalLevel
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2ca8a7a2-7b54-4ba3-8e73-277c7df485f3
 topic_type:
 - apiref
-ms.openlocfilehash: 3b9ad4b40ce94420f2ab5fc25335c41dec15dc09
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 88965a29164de1ec7b01c2fcc8f51415127e69fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785426"
 ---
 # <a name="ememorycriticallevel-enumeration"></a>Enumeração EMemoryCriticalLevel
 
@@ -57,7 +58,7 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRMemoryNotificationCallback](iclrmemorynotificationcallback-interface.md)
 - [Hospedando enumerações](hosting-enumerations.md)

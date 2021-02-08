@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces de hospedagem'
 title: Interfaces de hospedagem
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - hosting interfaces [.NET Framework]
 - unmanaged interfaces [.NET Framework], hosting
 ms.assetid: cc64cb05-38da-418e-815a-daac8e8e26e5
-ms.openlocfilehash: f82301da1813b8d50deebf4452d8c07809c186c5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 596de1e74fc9c80e5f8b63f40c91a9ef29abcc6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721797"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785179"
 ---
 # <a name="hosting-interfaces"></a>Interfaces de hospedagem
 
@@ -44,6 +45,6 @@ Esta seção descreve as interfaces que os hosts não gerenciados podem usar par
   
  [Estruturas de hospedagem](hosting-structures.md)  
   
- [Hosting](index.md)  
+ [Hospedagem](index.md)  
   
  [Hosts de runtime](/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))

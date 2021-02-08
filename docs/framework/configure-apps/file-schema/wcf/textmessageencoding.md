@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <textMessageEncoding>'
 title: <textMessageEncoding>
 ms.date: 03/30/2017
 ms.assetid: e6d834d0-356e-45eb-b530-bbefbb9ec3f0
-ms.openlocfilehash: 159c581955336575af87a66a796cb78dd35d09c7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a8c7820b2e22152850d6d21c5091e328feb7a9f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158650"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786597"
 ---
 # \<textMessageEncoding>
 
@@ -69,7 +70,7 @@ Especifica a codificação de caracteres e o controle de versão de mensagem usa
                      textEncoding="utf-8" />
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.TextMessageEncodingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

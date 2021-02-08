@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetVersionFromProcess'
 title: Função GetVersionFromProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a9f7f824-64a1-408d-8607-91c7f19d21fe
 topic_type:
 - apiref
-ms.openlocfilehash: da0d159da6eef7745c1fa7f7320d5e1355f6e413
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ab665d2984f79baf049009690b36782528094937
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721875"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785244"
 ---
 # <a name="getversionfromprocess-function"></a>Função GetVersionFromProcess
 
@@ -53,14 +54,14 @@ HRESULT GetVersionFromProcess (
  `pdwLength`  
  fora Um ponteiro para o comprimento da cadeia de caracteres do número de versão.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna códigos de erro padrão de Component Object Model (COM), conforme definido no WinError. h, além dos valores a seguir.  
   
 |Código de retorno|Descrição|  
 |-----------------|-----------------|  
 |S_OK|O método foi concluído com êxito.|  
-|E_INVALIDARG|`pVersion` é NULL e `cchBuffer` não é nulo, ou vice-versa.<br /><br /> - ou -<br /><br /> `hProcess` Não é um identificador válido para um processo.<br /><br /> - ou -<br /><br /> O CLR não está carregado.|  
+|E_INVALIDARG|`pVersion` é NULL e `cchBuffer` não é nulo, ou vice-versa.<br /><br /> -ou-<br /><br /> `hProcess` Não é um identificador válido para um processo.<br /><br /> -ou-<br /><br /> O CLR não está carregado.|  
 |ERROR_INSUFFICIENT_BUFFER|`cchBuffer` é nulo ou menor que o comprimento da cadeia de caracteres da versão.|  
 |E_NOTIMPL|Esse método não está disponível no sistema operacional Microsoft Windows 95, Microsoft Windows 98 ou Microsoft Windows Millennium Edition.|  
   
@@ -74,7 +75,7 @@ HRESULT GetVersionFromProcess (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função GetRequestedRuntimeInfo](getrequestedruntimeinfo-function.md)
 - [Função GetRequestedRuntimeVersion](getrequestedruntimeversion-function.md)

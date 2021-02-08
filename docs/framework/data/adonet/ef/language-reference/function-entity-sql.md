@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: função (Entity SQL)'
 title: FUNÇÃO (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 0bb88992-37ed-4991-ace5-55be612a2c4d
-ms.openlocfilehash: 4e06b5bf8a2ca62630666ab3e8ba35f0425e3988
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d61aafce03dc7b82b678f1eb107afb79c6c3ed2f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786310"
 ---
 # <a name="function-entity-sql"></a>FUNÇÃO (Entity SQL)
 
@@ -64,7 +65,7 @@ FUNCTION function-name
   
  `A()`  
   
- Para obter mais informações, consulte [como: chamar uma função definida pelo usuário](/previous-versions/dotnet/netframework-4.0/dd490951(v=vs.100)).  
+ Para obter mais informações, consulte [como: chamar uma função User-Defined](/previous-versions/dotnet/netframework-4.0/dd490951(v=vs.100)).  
   
  As funções podem também ser declaradas no próprio modelo. As funções declaradas no modelo são executadas da mesma forma como as funções está embutido no comando. Para obter mais informações, consulte [funções definidas pelo usuário](user-defined-functions-entity-sql.md).  
   
@@ -80,7 +81,7 @@ FUNCTION function-name
   
  [!code-sql[DP EntityServices Concepts#FUNCTION2](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#function2)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)
 - [Linguagem Entity SQL](entity-sql-language.md)

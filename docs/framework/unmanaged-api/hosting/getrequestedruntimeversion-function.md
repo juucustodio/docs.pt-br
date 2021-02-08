@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetRequestedRuntimeVersion'
 title: Função GetRequestedRuntimeVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 82f596a4-483d-4509-b0c5-a84c53c3da1b
 topic_type:
 - apiref
-ms.openlocfilehash: 6c16b02a5ae323ba80d44937f322810022dfa9f5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 836cc4b875ddc427c6779950f5b68d2df8b6ef75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711631"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785270"
 ---
 # <a name="getrequestedruntimeversion-function"></a>Função GetRequestedRuntimeVersion
 
@@ -53,7 +54,7 @@ HRESULT GetRequestedRuntimeVersion (
  `pdwLength`  
  fora Um ponteiro para o comprimento da cadeia de caracteres do número de versão.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna códigos de erro padrão de Component Object Model (COM), conforme definido no WinError. h, além dos valores a seguir.  
   
@@ -73,7 +74,7 @@ HRESULT GetRequestedRuntimeVersion (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função GetRequestedRuntimeInfo](getrequestedruntimeinfo-function.md)
 - [Função GetVersionFromProcess](getversionfromprocess-function.md)

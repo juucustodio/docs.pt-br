@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetRealProcAddress'
 title: Função GetRealProcAddress
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f1f2fab1-400b-488f-95f2-d49c4fca3556
 topic_type:
 - apiref
-ms.openlocfilehash: d48106fca6008955409581ad9ac202aebe785cb4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b8b3db77d6aef7fae3045a7aa2310c1fadc70e91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733215"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785309"
 ---
 # <a name="getrealprocaddress-function"></a>Função GetRealProcAddress
 
@@ -44,7 +45,7 @@ HRESULT GetRealProcAddress (
  `ppv`  
  fora O local que recebe um ponteiro para o endereço da função.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna códigos de erro padrão de Component Object Model (COM), conforme definido no WinError. h, além dos valores a seguir definidos em CorError. h.  
   
@@ -64,6 +65,6 @@ HRESULT GetRealProcAddress (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

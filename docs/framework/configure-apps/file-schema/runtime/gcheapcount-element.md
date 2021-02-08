@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: <GCHeapCount> elemento'
 title: Elemento GCHeapCount
 ms.date: 11/08/2019
 helpviewer_keywords:
 - gcHeapCount element
 - <gcHeapCount> element
-ms.openlocfilehash: 3d6cac4185af182758cb82e6bfd9d96ed24869b4
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9e1e000d647435fe7a8c4b1a8f7549f06c2a3b38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74283079"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786961"
 ---
 # <a name="gcheapcount-element"></a>Elemento \<GCHeapCount>
 
@@ -19,7 +20,7 @@ Especifica o número de heaps/threads a serem usados para a coleta de lixo do se
 &nbsp;&nbsp;\<runtime>\
 &nbsp;&nbsp;&nbsp;&nbsp;\<GCHeapCount>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <GCHeapCount
@@ -93,7 +94,7 @@ O exemplo a seguir não relacionar threads GC do servidor e limita o número de 
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [Elemento GCNoAffinitize](gcnoaffinitize-element.md)

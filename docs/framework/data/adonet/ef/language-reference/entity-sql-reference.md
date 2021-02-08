@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: referência de Entity SQL'
 title: Referência de Entity SQL
 ms.date: 03/30/2017
 ms.assetid: 61ce7ee1-ffe2-477d-8a9f-835b0a11d900
-ms.openlocfilehash: 987aa5c05b88d684e050721077d704b29e546aab
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 89a53d6d365d8cae99e16c52cc159c9d2ff57cfc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90542118"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786414"
 ---
 # <a name="entity-sql-reference"></a>Referência de Entity SQL
 
@@ -83,7 +84,7 @@ Os operadores de consulta são usados para definir as expressões de consulta qu
 |[ORDER BY](order-by-entity-sql.md)|Especifica a ordem de classificação usada em objetos retornados em uma instrução [Select](select-entity-sql.md) .|
 |[SELECT](select-entity-sql.md)|Especifica os elementos na projeção que são retornados por uma consulta.|
 |[SALTAR](skip-entity-sql.md)|Usado com a cláusula [order by](order-by-entity-sql.md) para executar a paginação física.|
-|[Início](top-entity-sql.md)|Especifica que apenas o primeiro conjunto de linhas será retornado do resultado da consulta.|
+|[INÍCIO](top-entity-sql.md)|Especifica que apenas o primeiro conjunto de linhas será retornado do resultado da consulta.|
 |[WHERE](where-entity-sql.md)|Filtra condicionalmente os dados que são retornados por uma consulta.|
 
 ## <a name="reference-operators"></a>Operadores de referência
@@ -140,6 +141,6 @@ A tabela a seguir lista outros operadores de Entity SQL:
 |[-- (Comentário)](comment-entity-sql.md)|Inclua comentários de Entity SQL.|
 |[FUNCIONAMENTO](function-entity-sql.md)|Define uma função embutida que pode ser executada em uma consulta Entity SQL.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Entity SQL Language](entity-sql-language.md) (Linguagem SQL de entidade)
+- [Linguagem Entity SQL](entity-sql-language.md)

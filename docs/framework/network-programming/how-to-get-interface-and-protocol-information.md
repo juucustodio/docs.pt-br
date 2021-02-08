@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: como obter informações de interface e protocolo'
 title: 'Como: obter informações de interface e de protocolo'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Network
 ms.assetid: fd88d26c-4063-495e-a253-736ac3e6b23f
-ms.openlocfilehash: 6e94914ec6312fad9a22cdbb4d145ed131d233da
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8db91bbd556a3d145674b00cd017d7c068936995
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250522"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785764"
 ---
 # <a name="how-to-get-interface-and-protocol-information"></a>Como: obter informações de interface e de protocolo
 

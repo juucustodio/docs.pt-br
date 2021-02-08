@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRSyncManager'
 title: Interface ICLRSyncManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a49f9d80-1c76-4ddd-8c49-34f913a5c596
 topic_type:
 - apiref
-ms.openlocfilehash: 5bfab21a36becf943b1813f266cf70c4b5e5b1d2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 188d1c913d75666aea09b17244012401d377fa10
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690987"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784994"
 ---
 # <a name="iclrsyncmanager-interface"></a>Interface ICLRSyncManager
 
@@ -27,7 +28,7 @@ Define métodos que permitem ao host obter informações sobre as tarefas solici
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CreateRWLockOwnerIterator](iclrsyncmanager-createrwlockowneriterator-method.md)|Solicita que o Common Language Runtime (CLR) crie um iterador para o host usar para determinar o conjunto de tarefas que estão aguardando um bloqueio do gravador de leitor.|  
 |[Método DeleteRWLockOwnerIterator](iclrsyncmanager-deleterwlockowneriterator-method.md)|Solicita que o CLR destrua um iterador criado por uma chamada para `CreateRWLockOwnerIterator` .|  
@@ -44,7 +45,7 @@ Define métodos que permitem ao host obter informações sobre as tarefas solici
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.Thread>
 - [Interface IHostSyncManager](ihostsyncmanager-interface.md)

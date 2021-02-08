@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostSyncManager:: CreateCrstWithSpinCount'
 title: Método IHostSyncManager::CreateCrstWithSpinCount
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7280fa8c-3639-4abf-91cb-bc343da742d1
 topic_type:
 - apiref
-ms.openlocfilehash: 6b2f57c7147cc8ff2abff848bd1e4661c2f5e728
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3c43f1a3d52eb7174844ecb4079cf54413f20853
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682870"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784815"
 ---
 # <a name="ihostsyncmanagercreatecrstwithspincount-method"></a>Método IHostSyncManager::CreateCrstWithSpinCount
 
@@ -43,7 +44,7 @@ HRESULT CreateCrstWithSpinCount (
  `ppCrst`  
  fora Um ponteiro para o endereço de uma instância de [IHostCrst](ihostcrst-interface.md) ou NULL se a seção crítica não pôde ser criada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -69,7 +70,7 @@ HRESULT CreateCrstWithSpinCount (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostSemaphore](ihostsemaphore-interface.md)

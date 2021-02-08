@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como gerar o modelo de objeto em Visual Basic ou C #'
 title: 'Como: gerar o modelo de objeto em Visual Basic ou em C#'
 ms.date: 03/30/2017
 ms.assetid: a0c73b33-5650-420c-b9dc-f49310c201ee
-ms.openlocfilehash: 03525b6f39dcccfb9c68da6bab8b524efa3613ef
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d842a646f9f6186d252d10297618ddc2cb137e70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158403"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785959"
 ---
 # <a name="how-to-generate-the-object-model-in-visual-basic-or-c"></a>Como gerar o modelo de objeto em Visual Basic ou C\#
 
@@ -38,7 +39,7 @@ sqlmetal /code:northwind.vb /language:vb "c:\northwnd.mdf" /sprocs /functions
 sqlmetal /code:northwind.cs /language:csharp "c:\northwnd.mdf" /sprocs /functions /pluralize  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Guia de programação](programming-guide.md)
 - [Modelo de objeto LINQ to SQL](the-linq-to-sql-object-model.md)

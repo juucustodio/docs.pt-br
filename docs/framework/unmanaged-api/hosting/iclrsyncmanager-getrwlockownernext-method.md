@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRSyncManager:: GetRWLockOwnerNext'
 title: Método ICLRSyncManager::GetRWLockOwnerNext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0e025b6a-280e-40a2-a2d0-b15f58777b81
 topic_type:
 - apiref
-ms.openlocfilehash: 93a8b3884d831b7da412b6c53dd599af216cbbf2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f49bdd5065ac896147967c0a013347ab39ce1eff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728310"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784984"
 ---
 # <a name="iclrsyncmanagergetrwlockownernext-method"></a>Método ICLRSyncManager::GetRWLockOwnerNext
 
@@ -43,7 +44,7 @@ HRESULT GetRWLockOwnerNext (
  `ppOwnerHostTask`  
  fora Um ponteiro para o próximo `IHostTask` que está aguardando o bloqueio ou nulo se nenhuma tarefa estiver aguardando.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -71,7 +72,7 @@ HRESULT GetRWLockOwnerNext (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostSyncManager](ihostsyncmanager-interface.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <legacyCorruptedStateExceptionsPolicy> elemento'
 title: Elemento <legacyCorruptedStateExceptionsPolicy>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <legacyCorruptedStateExceptionsPolicy> element
 - legacyCorruptedStateExceptionsPolicy element
 ms.assetid: e0a55ddc-bfa8-4f3e-ac14-d1fc3330e4bb
-ms.openlocfilehash: f36e27a1b85cff2ba8c7e838bace37890a5aa760
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 34082c0779b09400a875894359cf7cf501173508
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151201"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786948"
 ---
 # <a name="legacycorruptedstateexceptionspolicy-element"></a>Elemento \<legacyCorruptedStateExceptionsPolicy>
 
@@ -62,7 +63,7 @@ Especifica se o Common Language Runtime permite que o código gerenciado Capture
   
 - Defina o `<legacyCorruptedStateExceptionsPolicy>` atributo do elemento `enabled` como `true` . Essa configuração é aplicada processwide e afeta todos os métodos.  
   
- - ou -  
+ -ou-  
   
 - Aplique o <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=nameWithType> atributo ao método que contém o bloco de exceções `catch` .  
   
@@ -80,7 +81,7 @@ Especifica se o Common Language Runtime permite que o código gerenciado Capture
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>
 - [Esquema de configurações do runtime](index.md)

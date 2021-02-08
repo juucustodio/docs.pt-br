@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <developmentMode> elemento'
 title: Elemento <developmentMode>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - container tags, <developmentMode> element
 - <developmentMode> element
 ms.assetid: 60e79a8c-415a-497d-be29-b9d0fd9bdee3
-ms.openlocfilehash: ddcabb831193baee30016f663f32d8562283d936
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 668461d13c8a1767268692804e9783bb6d4b9a56
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91205016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787117"
 ---
 # <a name="developmentmode-element"></a>Elemento \<developmentMode>
 
@@ -24,7 +25,7 @@ Especifica se o runtime pesquisa por assemblies em diretórios especificados pel
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<developmentMode>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <developmentMode developerInstallation="true | false"/>  
@@ -74,7 +75,7 @@ Especifica se o runtime pesquisa por assemblies em diretórios especificados pel
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

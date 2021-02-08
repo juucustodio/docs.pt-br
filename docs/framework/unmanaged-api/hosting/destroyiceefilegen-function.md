@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função DestroyICeeFileGen'
 title: Função DestroyICeeFileGen
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: dc1e2235-e721-4cb2-a0b8-6b0c030d7bab
 topic_type:
 - apiref
-ms.openlocfilehash: 495d84470c559df13ea64b63dd00582f4335d4e3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 14ae990999247b90f16b10115dea3408b965a04a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673170"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785647"
 ---
 # <a name="destroyiceefilegen-function"></a>Função DestroyICeeFileGen
 
@@ -42,7 +43,7 @@ HRESULT DestroyICeeFileGen (
  `ceeFileGen`  
  no O `ICeeFileGen` objeto a ser destruído.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna códigos de erro COM padrão.  
   
@@ -60,6 +61,6 @@ HRESULT DestroyICeeFileGen (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

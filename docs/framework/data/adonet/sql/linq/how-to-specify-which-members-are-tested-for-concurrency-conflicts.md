@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como especificar quais membros são testados para conflitos de simultaneidade'
 title: 'Como: especificar quais membros são testados quanto a conflitos de simultaneidade'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d2cda293-1e2f-4878-af0e-5aaf0d092120
-ms.openlocfilehash: e774935827934ae73873247def049b4045535272
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f2623c1e6afcf97ee2de62b94b80145ca2a5cad3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197138"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785843"
 ---
 # <a name="how-to-specify-which-members-are-tested-for-concurrency-conflicts"></a>Como: especificar quais membros são testados quanto a conflitos de simultaneidade
 
@@ -48,7 +49,7 @@ Aplique uma das três enums à [!INCLUDE[vbtecdlinq](../../../../../../includes/
  [!code-csharp[System.Data.Linq.Mapping.UpdateCheck#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs/northwind.cs#1)]
  [!code-vb[System.Data.Linq.Mapping.UpdateCheck#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.mapping.updatecheck/vb/northwind.vb#1)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como: gerenciar conflitos de alteração](how-to-manage-change-conflicts.md)
 - [Fazendo e enviando alterações de dados](making-and-submitting-data-changes.md)

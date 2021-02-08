@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <timeOuts>'
 title: <timeOuts>
 ms.date: 03/30/2017
 ms.assetid: 7fccd436-b326-48ec-8de1-c16817a09e0d
-ms.openlocfilehash: f7e513bb5c486fa5f7c39c9b2e3cfcd26bd7c219
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 097569d1742f6486ddfb5fb3c3d98ba106424f45
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157090"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786584"
 ---
 # \<timeOuts>
 
@@ -48,8 +49,8 @@ Representa um elemento de configuração que especifica o intervalo de tempo per
 |-------------|-----------------|  
 |[\<host>](host.md)|Um elemento de configuração que especifica as configurações para um host de serviço.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
-- [Hosting](../../../wcf/feature-details/hosting.md)
+- [Hospedagem](../../../wcf/feature-details/hosting.md)

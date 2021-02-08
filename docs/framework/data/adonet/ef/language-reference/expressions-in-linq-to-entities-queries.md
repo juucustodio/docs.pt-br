@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: expressões em LINQ to Entities consultas'
 title: Expressões em consultas LINQ to Entities
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d70b502f-6a15-4120-b4fe-500b173ad9cc
-ms.openlocfilehash: f65759d37661271588d56965eadcccbe997623f4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3ab9e04adb7e823538638ae262f0e481b6948a24
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166645"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786362"
 ---
 # <a name="expressions-in-linq-to-entities-queries"></a>Expressões em consultas LINQ to Entities
 
@@ -38,6 +39,6 @@ Uma expressão é um fragmento de código que pode ser avaliado como um único v
   
  [Relações, propriedades de navegação e chaves estrangeiras](/ef/ef6/fundamentals/relationships)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ADO.NET Entity Framework](../index.md)

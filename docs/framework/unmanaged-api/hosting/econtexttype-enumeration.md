@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração EContextType'
 title: Enumeração EContextType
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 92b926a9-b87e-408a-9036-df7b752c9492
 topic_type:
 - apiref
-ms.openlocfilehash: c6d1ace12bd07fa1f14c8570eca1f950a5c22be9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b7d6ddb385386bb0616a01ef6fcc432f2c925d51
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686326"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785520"
 ---
 # <a name="econtexttype-enumeration"></a>Enumeração EContextType
 
@@ -55,7 +56,7 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostSecurityContext](ihostsecuritycontext-interface.md)
 - [Interface IHostSecurityManager](ihostsecuritymanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração EHostBindingPolicyModifyFlags'
 title: Enumeração EHostBindingPolicyModifyFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0339af16-ee1d-48ec-837d-a79d9a9c89f8
 topic_type:
 - apiref
-ms.openlocfilehash: ec64f9bec0ee9b63796958b17c7f10b87692f1d0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: be8a15cad49097d1ea2e206e01da2d5d5dcb165a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785478"
 ---
 # <a name="ehostbindingpolicymodifyflags-enumeration"></a>Enumeração EHostBindingPolicyModifyFlags
 
@@ -59,7 +60,7 @@ typedef enum _hostBindingPolicyModifyFlags {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md)
 - [Hospedando enumerações](hosting-enumerations.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: EXISTs (Entity SQL)'
 title: EXISTE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: d28ead43-4afb-4bdc-af64-efd2e05005d7
-ms.openlocfilehash: f08b3ea60a985e56e05e4686cd531f94e0bd4e18
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c6c5b86616d63b9cc3389365a96c382101463732
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786375"
 ---
 # <a name="exists-entity-sql"></a>EXISTE (Entity SQL)
 
@@ -27,7 +28,7 @@ Determina se uma coleção está vazia.
  NOT  
  Especifica que o resultado EXISTS seja negado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` se a coleção é não vazio; caso contrário, `false`.  
   
@@ -45,6 +46,6 @@ Determina se uma coleção está vazia.
   
  [!code-sql[DP EntityServices Concepts#EXISTS](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#exists)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

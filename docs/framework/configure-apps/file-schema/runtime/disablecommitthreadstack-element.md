@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <disableCommitThreadStack> elemento'
 title: Elemento <disableCommitThreadStack>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <disableCommitThreadStack> element
 - disableCommitThreadStack element
 ms.assetid: 3559d46a-7640-4c72-9a11-7e980768929e
-ms.openlocfilehash: f717f57fe8670b126ed1468713a2114aaa772762
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f80a23b12f67b9f3df1ddb010edb735225f6f7a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198984"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787091"
 ---
 # <a name="disablecommitthreadstack-element"></a>Elemento \<disableCommitThreadStack>
 
@@ -23,7 +24,7 @@ Especifica se a pilha de threads completa é confirmada quando um thread é inic
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<disableCommitThreadStack>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <disableCommitThreadStack enabled="0|1"/>  
@@ -76,7 +77,7 @@ Especifica se a pilha de threads completa é confirmada quando um thread é inic
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

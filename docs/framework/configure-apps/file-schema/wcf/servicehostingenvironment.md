@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <serviceHostingEnvironment>'
 title: <serviceHostingEnvironment>
 ms.date: 03/30/2017
 ms.assetid: 4f8a7c4f-e735-4987-979a-b74fcdae2652
-ms.openlocfilehash: 5a7043064593fa329618510d15baeb87da432652
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 95243a1cf9cea734b7f35a1400a8b5b865767976
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167087"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786714"
 ---
 # \<serviceHostingEnvironment>
 
@@ -17,7 +18,7 @@ Esse elemento define o tipo que o ambiente de Hospedagem de serviço instancia p
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<serviceHostingEnvironment>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <serviceHostingEnvironment aspNetCompatibilityEnabled="Boolean"
@@ -97,9 +98,9 @@ Esse elemento define o tipo que o ambiente de Hospedagem de serviço instancia p
 <serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [Hosting](../../../wcf/feature-details/hosting.md)
+- [Hospedagem](../../../wcf/feature-details/hosting.md)
 - [Serviços WCF e ASP.NET](../../../wcf/feature-details/wcf-services-and-aspnet.md)

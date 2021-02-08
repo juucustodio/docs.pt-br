@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostSyncManager:: CreateAutoEvent'
 title: Método IHostSyncManager::CreateAutoEvent
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3153643e-cf5c-4b44-8e0e-c2b22cb08208
 topic_type:
 - apiref
-ms.openlocfilehash: 37c306df76a796d6e0a2b7540ebd85c13865dfbe
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 69767f1e01ead93c874eecf01c3167a5dc0e4b82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682959"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784841"
 ---
 # <a name="ihostsyncmanagercreateautoevent-method"></a>Método IHostSyncManager::CreateAutoEvent
 
@@ -39,7 +40,7 @@ HRESULT CreateAutoEvent (
  `ppEvent`  
  fora Um ponteiro para o endereço de uma instância de [IHostAutoEvent](ihostautoevent-interface.md) implementada pelo host ou NULL se o objeto de evento não pôde ser criado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -65,7 +66,7 @@ HRESULT CreateAutoEvent (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostAutoEvent](ihostautoevent-interface.md)

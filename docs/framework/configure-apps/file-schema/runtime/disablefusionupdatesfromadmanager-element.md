@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <disableFusionUpdatesFromADManager> elemento'
 title: Elemento <disableFusionUpdatesFromADManager>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - disableFusionUpdatesFromADManager element
 - <disableFusionUpdatesFromADManager> element
 ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
-ms.openlocfilehash: c3971379b358ae16fc463df2b8d6288cf8881391
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c3b5758a12fc78c67ec0a4a9631361808724e72a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91205029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787078"
 ---
 # <a name="disablefusionupdatesfromadmanager-element"></a>Elemento \<disableFusionUpdatesFromADManager>
 
@@ -20,7 +21,7 @@ Especifica se o comportamento padrão, que é permitir que o host de runtime sub
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<disableFusionUpdatesFromADManager>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <disableFusionUpdatesFromADManager enabled="0|1"/>  
@@ -78,7 +79,7 @@ Especifica se o comportamento padrão, que é permitir que o host de runtime sub
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

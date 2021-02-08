@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: NetworkInformation'
 title: NetworkInformation
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Network
 ms.assetid: 31b44dd3-b903-4a48-8419-40419a3e4038
-ms.openlocfilehash: 550555be7cc95cafebabfd3ac230ced024a9202c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9092fd0593d9046f419018b882c08066a6bc654c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261612"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785699"
 ---
 # <a name="networkinformation"></a>NetworkInformation
 
@@ -27,7 +28,7 @@ O namespace <xref:System.Net.NetworkInformation> permite que você colete inform
 
  Você pode usar a classe <xref:System.Net.NetworkInformation.Ping> para determinar se um Host remoto está funcionando, se está na rede e se pode ser acessado. Para obter mais informações, consulte [Como executar ping em um host](how-to-ping-a-host.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Amostras de programação de rede](network-programming-samples.md)
 

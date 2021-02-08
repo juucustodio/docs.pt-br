@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como exibir um conjunto de alterações'
 title: 'Como: exibir um ChangeSet'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 126e7245-c5a0-4ebf-800d-cc1fcf9cd0ab
-ms.openlocfilehash: 288920567db75dc1d4c7273f698467063af52ed6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e5ff7aebcc74ded1300433a3bf7b280db3a11b28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180771"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786011"
 ---
 # <a name="how-to-display-a-changeset"></a>Como: exibir um ChangeSet
 
@@ -53,6 +54,6 @@ CustomerID: SPECD
 Total changes: {Added: 0, Removed: 0, Modified: 8}
 ```
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração de suporte](debugging-support.md)

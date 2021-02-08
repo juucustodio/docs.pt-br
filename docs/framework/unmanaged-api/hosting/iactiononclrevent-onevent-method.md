@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IActionOnCLREvent:: OnEvent'
 title: Método IActionOnCLREvent::OnEvent
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0970f10c-4304-4c12-91c0-83e51455afb4
 topic_type:
 - apiref
-ms.openlocfilehash: 3bfcb01e30b4cb33ec9276f1d3c6ac2f3bde4b58
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 163956ab319eb34d58da23d2c4ef2a6b592aab0d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721758"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785126"
 ---
 # <a name="iactiononclreventonevent-method"></a>Método IActionOnCLREvent::OnEvent
 
@@ -43,7 +44,7 @@ HRESULT OnEvent (
  `data`  
  no Um ponteiro para um objeto que contém detalhes sobre `event` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -70,7 +71,7 @@ HRESULT OnEvent (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Diagnosticando erros com assistentes de depuração gerenciados](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [Enumeração EClrEvent](eclrevent-enumeration.md)

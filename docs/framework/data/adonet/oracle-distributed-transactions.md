@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: transações distribuídas Oracle'
 title: Transações distribuídas do Oracle
 ms.date: 03/30/2017
 ms.assetid: c340ca81-ef79-402f-b204-c5156b890fe5
-ms.openlocfilehash: a21134c3283d3d9d8d7660eecaaf74d60ecf6662
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d0c41920f18e0f56ebdf57e3cb82cf829a59c450
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166515"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786167"
 ---
 # <a name="oracle-distributed-transactions"></a>Transações distribuídas do Oracle
 
@@ -19,7 +20,7 @@ Enlist=false
   
  como um parâmetro de cadeia de conexão para um <xref:System.Data.OracleClient.OracleConnection> .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Oracle e ADO.NET](oracle-and-adonet.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

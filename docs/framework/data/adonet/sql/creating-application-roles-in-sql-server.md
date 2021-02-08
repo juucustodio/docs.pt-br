@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Criando funções de aplicativo no SQL Server'
 title: Criando funções de aplicativo no SQL Server
 ms.date: 03/30/2017
 ms.assetid: 27442435-dfb2-4062-8c59-e2960833a638
-ms.openlocfilehash: 764ae61cba4bf01681d658cc4aacc2aeaecedd3f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 20047d12a004230aebca1cf9d42b3893d36f3844
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173543"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786154"
 ---
 # <a name="creating-application-roles-in-sql-server"></a>Criando funções de aplicativo no SQL Server
 
@@ -64,7 +65,7 @@ As funções de aplicativo fornecem uma maneira de atribuir permissões para um 
 |--------------|-----------------|  
 |[Funções de aplicativo](/sql/relational-databases/security/authentication-access/application-roles)|Descreve como criar e usar funções de aplicativo no SQL Server 2008.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Protegendo aplicativos ADO.NET](../securing-ado-net-applications.md)
 - [Visão geral de segurança do SQL Server](overview-of-sql-server-security.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração EClrOperation'
 title: Enumeração EClrOperation
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5aef6808-5aac-4b2f-a2c7-fee1575c55ed
 topic_type:
 - apiref
-ms.openlocfilehash: c24e4557695d26666682ee385131abaab707a24d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9f75762a400955b5f36fb2a337f283e36a32658c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720705"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785556"
 ---
 # <a name="eclroperation-enumeration"></a>Enumeração EClrOperation
 
@@ -71,7 +72,7 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrFailure](eclrfailure-enumeration.md)
 - [Enumeração EPolicyAction](epolicyaction-enumeration.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRTask:: SetTaskIdentifier'
 title: Método ICLRTask::SetTaskIdentifier
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bdb7f047-1e90-40fc-9e3b-d44a16509073
 topic_type:
 - apiref
-ms.openlocfilehash: d1f731e00d4917b997dfba392cb9b6ce2afc082e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e746d8ec96d16f7761dd49ac814ddbed073c2686
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690740"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784945"
 ---
 # <a name="iclrtasksettaskidentifier-method"></a>Método ICLRTask::SetTaskIdentifier
 
@@ -39,7 +40,7 @@ HRESULT SetTaskIdentifier (
  `Asked`  
  no O identificador exclusivo do Common Language Runtime a ser associado à tarefa representada pela `ICLRTask` instância atual.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT SetTaskIdentifier (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

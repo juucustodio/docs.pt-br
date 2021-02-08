@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorRuntimeHost:: CurrentDomain'
 title: Método ICorRuntimeHost::CurrentDomain
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dd2afb38-675b-4c3c-a9f3-8ab3b133eb02
 topic_type:
 - apiref
-ms.openlocfilehash: 33d56354a560949b2f451df9ef82d4f433951195
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fd75028b57475a620cc88a75016911dd0ab55b2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715557"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784893"
 ---
 # <a name="icorruntimehostcurrentdomain-method"></a>Método ICorRuntimeHost::CurrentDomain
 
@@ -39,7 +40,7 @@ HRESULT CurrentDomain (
  `pAppDomain`  
  fora Um ponteiro do tipo <xref:System.AppDomain?displayProperty=nameWithType> que representa o domínio do aplicativo atual do thread. Esse ponteiro é digitado `IUnknown` , de modo que os chamadores geralmente devem chamar `QueryInterface` para obter um ponteiro do tipo <xref:System._AppDomain> .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -58,7 +59,7 @@ HRESULT CurrentDomain (
   
  **Versões do .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

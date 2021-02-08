@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <EnableAmPmParseAdjustment> elemento'
 title: Elemento <EnableAmPmParseAdjustment>
 ms.date: 03/30/2017
 ms.assetid: fda998a5-f538-4f8b-a18c-ee7f35e16938
-ms.openlocfilehash: f935f213e1bca8dac7a5401970bc6183575e2301
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 86fd04ab536f44f0cffdb5a37f4718fc03698485
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167223"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787052"
 ---
 # <a name="enableampmparseadjustment-element"></a>Elemento \<EnableAmPmParseAdjustment>
 
@@ -17,7 +18,7 @@ Determina se os métodos de análise de data e hora usam um conjunto ajustado de
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<EnableAmPmParseAdjustment>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <EnableAmPmParseAdjustment enabled="0"|"1" />  
@@ -83,7 +84,7 @@ Determina se os métodos de análise de data e hora usam um conjunto ajustado de
 |en-US|1/5/2017 4:00:00 AM|4/10/2017 6:00:00 AM|  
 |en-GB|5/1/2017 6:00:00|10/4/2017 6:00:00|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [\<runtime> Elementos](runtime-element.md)
 - [\<configuration> Elementos](../configuration-element.md)

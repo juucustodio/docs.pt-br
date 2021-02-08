@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: semântica de comparação (Entity SQL)'
 title: Semântica de comparação (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: b36ce28a-2fe4-4236-b782-e5f7c054deae
-ms.openlocfilehash: 9a36fcc4476c25d64fed670e857f339fb20043d8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b1c832cb6f2903073b1c6be806c73823b1f4a220
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197827"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786427"
 ---
 # <a name="comparison-semantics-entity-sql"></a>Semântica de comparação (Entity SQL)
 
@@ -79,7 +80,7 @@ Executar alguns dos seguintes operadores de [!INCLUDE[esql](../../../../../../in
 |Tipo primitivo|Específica do provedor|Específica do provedor|Específica do provedor|Específica do provedor|Específica do provedor|Específica do provedor|Específica do provedor|  
 |Multiset|Lançamento<sup>3</sup>|Lançamento<sup>3</sup>|Lançamento<sup>3</sup>|Lançamento<sup>3</sup>|Lançamento<sup>3</sup>|Lançamento<sup>3</sup>|Lançamento<sup>3</sup>|  
 |Ref|Sim<sup>5</sup>|Sim<sup>5</sup>|Sim<sup>5</sup>|Sim<sup>5</sup>|Throw|Throw|Sim<sup>5</sup>|  
-|Associação<br /><br /> tipo|Lançamento<sup>3</sup>|Throw|Throw|Throw|Lançamento<sup>3</sup>|Lançamento<sup>3</sup>|Lançamento<sup>3</sup>|  
+|Associação<br /><br /> type|Lançamento<sup>3</sup>|Throw|Throw|Throw|Lançamento<sup>3</sup>|Lançamento<sup>3</sup>|Lançamento<sup>3</sup>|  
   
  <sup>1</sup> As referências das instâncias de tipo de entidade fornecidas são implicitamente comparadas, conforme mostrado no exemplo a seguir:  
   
@@ -107,6 +108,6 @@ WHERE p1 != REF(p2)
   
  <sup>5</sup> Todos os elementos individuais das referências são comparados (isso inclui o nome do conjunto de entidades e todas as propriedades de chave do tipo de entidade).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral da Entity SQL](entity-sql-overview.md)

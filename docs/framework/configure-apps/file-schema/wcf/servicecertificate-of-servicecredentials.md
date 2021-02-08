@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <serviceCertificate> de <serviceCredentials>'
 title: <serviceCertificate> de <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: 597ae6d5-4938-4950-9f5e-b2280e816182
-ms.openlocfilehash: 936661595813d7b8f3e894efb7bf6cf3aab7e89e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ab52f27949168562ec0cab0433c95843a7c312d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167088"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786727"
 ---
 # <a name="servicecertificate-of-servicecredentials"></a>\<serviceCertificate> de \<serviceCredentials>
 
@@ -21,7 +22,7 @@ Especifique um certificado X. 509 que será usado para autenticar o serviço par
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceCredentials>**](servicecredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceCertificate>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <serviceCertificate findValue="String"
@@ -59,7 +60,7 @@ Especifique um certificado X. 509 que será usado para autenticar o serviço par
   
  Para obter mais informações sobre como usar o elemento, consulte [como especificar valores de credencial do cliente](../../../wcf/how-to-specify-client-credential-values.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.X509RecipientCertificateServiceElement>
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ServiceCertificate%2A>

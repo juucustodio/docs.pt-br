@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Método ICLRRuntimeHost:: Start'
 title: Método ICLRRuntimeHost::Start
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c0a6dce5-0a8d-42e8-808b-6ca14df9d289
 topic_type:
 - apiref
-ms.openlocfilehash: 2358af3dff97dbe648da924bc929dd2f83b12df0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0ada729c9a90b23fb1573a2101845028e5e2fe76
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728804"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785075"
 ---
 # <a name="iclrruntimehoststart-method"></a>Método ICLRRuntimeHost::Start
 
@@ -57,7 +58,7 @@ HRESULT Start();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.AppDomain>
 - [Interface ICLRRuntimeHost](iclrruntimehost-interface.md)

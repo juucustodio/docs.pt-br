@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: EXCEPT (Entity SQL)'
 title: EXCETO (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 69cc23e5-3f8f-4b49-b20e-2f84ff11c80d
-ms.openlocfilehash: 6797f8038a83533b5a6bd41ad402daec7abdc7de
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fd66d8dc6e22a73afbfd27e6eb1fd6c8bb9d3475
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786388"
 ---
 # <a name="except-entity-sql"></a>EXCETO (Entity SQL)
 
@@ -24,7 +25,7 @@ expression EXCEPT expression
  `expression`  
  Qualquer expressão de consulta válida que retornar uma coleção para comparar com a coleção retornada de outra expressão de consulta.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Uma coleção de mesmos tipos ou uma base comum ou um tipo derivado como `expression`.  
   
@@ -49,6 +50,6 @@ expression EXCEPT expression
   
  [!code-sql[DP EntityServices Concepts#EXCEPT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#except)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

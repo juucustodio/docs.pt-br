@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <security> de <wsFederationHttpBinding>'
 title: <security> de <wsFederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: a8e5e854-b8dc-4921-843d-34b6a4a6a8ba
-ms.openlocfilehash: 650483099c7d70450cfc56a9a28efac076d64675
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6c01c7a50b05f1723b3620407eb5e5761bae35cb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162225"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786792"
 ---
 # <a name="security-of-wsfederationhttpbinding"></a>\<security> de \<wsFederationHttpBinding>
 
@@ -110,7 +111,7 @@ Define as configurações de segurança do [\<wsFederationHttpBinding>](wsfedera
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Define todos os recursos de associação do [\<wsDualHttpBinding>](wsdualhttpbinding.md) .|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.WSFederationHttpSecurity>
 - <xref:System.ServiceModel.WSFederationHttpBinding.Security%2A>

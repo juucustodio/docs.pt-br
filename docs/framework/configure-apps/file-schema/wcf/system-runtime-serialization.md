@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <System. Runtime. Serialization>'
 title: <system.runtime.serialization>
 ms.date: 03/30/2017
 ms.assetid: a8cebf4c-06d2-4667-8f5b-c3e1fc90df6f
-ms.openlocfilehash: 84ced06691ce3b3c9c9573fc9d114335096a849d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: cf1d95c8650e4b6979d4f34b0bed1fa395911f2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157103"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786623"
 ---
 # \<system.runtime.serialization>
 
@@ -55,7 +56,7 @@ Representa o elemento raiz da <xref:System.Runtime.Serialization> seção namesp
 |-------------|-----------------|  
 |[\<configuration> Elementos](../configuration-element.md)|O elemento de nível superior para configuração.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization>
 - [Usando contratos de dados](../../../wcf/feature-details/using-data-contracts.md)

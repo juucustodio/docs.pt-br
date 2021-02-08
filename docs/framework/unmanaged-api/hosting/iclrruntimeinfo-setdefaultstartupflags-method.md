@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRRuntimeInfo:: SetDefaultStartupFlags'
 title: Método ICLRRuntimeInfo::SetDefaultStartupFlags
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 98ae174f-bff0-48f1-9e05-6cb63b451824
 topic_type:
 - apiref
-ms.openlocfilehash: 8020db491c3b66be38a9f6cbcb7551721859dcd5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: eb839b2ff71836adc1b3858092f7caf5787275b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723110"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785036"
 ---
 # <a name="iclrruntimeinfosetdefaultstartupflags-method"></a>Método ICLRRuntimeInfo::SetDefaultStartupFlags
 
@@ -42,7 +43,7 @@ HRESULT SetDefaultStartupFlags(
  `pwzHostConfigFile`  
  no O caminho do diretório do arquivo de configuração do host a ser definido.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna o HRESULT específico a seguir, bem como erros HRESULT que indicam falha de método.  
   
@@ -64,8 +65,8 @@ HRESULT SetDefaultStartupFlags(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

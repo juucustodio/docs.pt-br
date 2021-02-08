@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <standardEndpoints>'
 title: <standardEndpoints>
 ms.date: 03/30/2017
 ms.assetid: d62153d7-a6e6-462a-a784-cca61e9c2ba1
-ms.openlocfilehash: 5d0607b5c541fc5ae402a50a0f8c464355b6b246
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f792f55b2c0c76727f4aaee50df072ee0c8bdbc5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157194"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786649"
 ---
 # \<standardEndpoints>
 
@@ -43,7 +44,7 @@ Esta seção de configuração permite que você defina uma coleção de pontos 
 |[\<dynamicEndpoint>](dynamicendpoint.md)|Este elemento de configuração define um ponto de extremidade padrão que contém informações para permitir que um aplicativo funcione como um programa cliente que pode encontrar o endereço do ponto de extremidade dinamicamente no tempo de execução.|  
 |[\<mexEndpoint>](mexendpoint.md)|Define um ponto de extremidade padrão com um contrato IMetadataExchange fixo. Como todos os pontos de extremidade de troca de metadados especificam IMetadataExchange como seu contrato, você pode usar esse ponto padrão em vez de definir um para você mesmo.|  
 |[\<udpAnnouncementEndpoint>](udpannouncementendpoint.md)|Define um ponto de extremidade padrão que é usado pelos serviços para enviar mensagens de anúncio por uma associação UDP. Ele tem um contrato fixo e dá suporte a duas versões de descoberta. Além disso, ele tem uma associação de UDP fixa e um valor de endereço padrão, conforme as especificações do WS-Discovery (WS-Discovery de abril de 2005 ou WS-Discovery versão 1.1). Você pode especificar o endereço de multicast a ser usado para enviar e receber as mensagens de anúncio.|  
-|[\<udpDiscoveryEndpoint>](udpdiscoveryendpoint.md)|Define um ponto de extremidade padrão que é pré-configurado para operações de descoberta em uma associação multicast UDP. Esse ponto de extremidade tem um contrato fixo e dá suporte a duas versões do protocolo WS-Discovery. Além disso, ele tem uma associação de UDP fixa e um endereço padrão, conforme as especificações do WS-Discovery (WS-Discovery de abril de 2005 ou WS-Discovery V1.1).|  
+|[\<udpDiscoveryEndpoint>](udpdiscoveryendpoint.md)|Define um ponto de extremidade padrão que é pré-configurado para operações de descoberta em uma associação multicast UDP. Esse ponto de extremidade tem um contrato fixo e dá suporte a duas versões de protocolo WS-Discovery. Além disso, ele tem uma associação de UDP fixa e um endereço padrão, conforme as especificações do WS-Discovery (WS-Discovery de abril de 2005 ou WS-Discovery V1.1).|  
 |[\<webHttpEndpoint>](webhttpendpoint.md)|Define um ponto de extremidade padrão com uma [\<webHttpBinding>](webhttpbinding.md) Associação fixa que adiciona automaticamente o [\<webHttp>](webhttp.md) comportamento. Use esse ponto de extremidade ao escrever um serviço REST.|  
 |[\<webScriptEndpoint>](webscriptendpoint.md)|Define um ponto de extremidade padrão com uma [\<webHttpBinding>](webhttpbinding.md) Associação fixa que adiciona automaticamente o [\<enableWebScript>](enablewebscript.md) comportamento. Use esse ponto de extremidade quando estiver escrevendo um serviço que é chamado de um aplicativo ASP.NET AJAX.|  
 |[\<workflowControlEndpoint>](workflowcontrolendpoint.md)|Define um ponto de extremidade padrão para controlar a execução de instâncias de fluxo de trabalho (criar, executar, suspender, encerrar, etc.).|  
@@ -54,6 +55,6 @@ Esta seção de configuração permite que você defina uma coleção de pontos 
 |-------------|-----------------|  
 |\<system.ServiceModel>|O elemento raiz de todos os elementos de configuração do WCF.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Pontos de extremidade padrão](../../../wcf/feature-details/standard-endpoints.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <enforceFIPSPolicy> elemento'
 title: Elemento <enforceFIPSPolicy>
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - <enforceFIPSPolicy> element
 - Federal Information Processing Standards (FIPS)
 ms.assetid: c35509c4-35cf-43c0-bb47-75e4208aa24e
-ms.openlocfilehash: 864a371d4ad10585e672452ad85cc09d4b684068
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d445570db634867a15b6d97d4e20186bd0641c2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787065"
 ---
 # <a name="enforcefipspolicy-element"></a>Elemento \<enforceFIPSPolicy>
 
@@ -74,7 +75,7 @@ Especifica se deve-se impor um requisito de configuração do computador em que 
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

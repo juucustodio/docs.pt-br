@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração ECLRAssemblyIdentityFlags'
 title: Enumeração ECLRAssemblyIdentityFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d1e0b654-ccaf-4fa2-9aa3-8e007813c84d
 topic_type:
 - apiref
-ms.openlocfilehash: c3fed9166d95c0ca71ac44f5447b95eee97af310
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d0211c6116b566964aeca29a52aede7e232f5556
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726828"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785569"
 ---
 # <a name="eclrassemblyidentityflags-enumeration"></a>Enumeração ECLRAssemblyIdentityFlags
 
@@ -47,6 +48,6 @@ typedef enum _CLRAssemblyIdentityFlags {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando enumerações](hosting-enumerations.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <gcAllowVeryLargeObjects> elemento'
 title: Elemento gcAllowVeryLargeObjects
 ms.date: 03/30/2017
 helpviewer_keywords:
 - gcAllowVeryLargeObjects element
 - <gcAllowVeryLargeObjects> element
 ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
-ms.openlocfilehash: 1e54b0780ffb5bbe81ab1be2b376ff7a038ee05c
-ms.sourcegitcommit: 0273f8845eb1ea8de64086bef2271b4f22182c91
+ms.openlocfilehash: ff8380a13c4284cc24178e185344207c3b9a39b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "98058123"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787013"
 ---
 # <a name="gcallowverylargeobjects-element"></a>Elemento \<gcAllowVeryLargeObjects>
 
@@ -20,7 +21,7 @@ Em plataformas de 64 bits, habilita matrizes com mais de 2 gigabytes (GB) de tam
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<gcAllowVeryLargeObjects>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <gcAllowVeryLargeObjects enabled="true|false" />  
@@ -36,12 +37,12 @@ Em plataformas de 64 bits, habilita matrizes com mais de 2 gigabytes (GB) de tam
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|`false`|Matrizes maiores que 2 GB no tamanho total não estão habilitadas. Esse é o padrão.|  
+|`false`|Matrizes maiores que 2 GB no tamanho total não estão habilitadas. Este é o padrão.|  
 |`true`|Matrizes maiores que 2 GB no tamanho total são habilitadas em plataformas de 64 bits.|  
   
 ## <a name="child-elements"></a>Elementos filho  
 
-nenhuma.  
+Nenhum.  
   
 ## <a name="parent-elements"></a>Elementos pai
   
@@ -79,7 +80,7 @@ nenhuma.
 
 .NET Framework 4,5 e versões posteriores
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRDataEnumMemoryRegions:: EnumMemoryRegions'
 title: Método ICLRDataEnumMemoryRegions::EnumMemoryRegions
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 22d2e339-f174-40b5-a478-0b744501566f
 topic_type:
 - apiref
-ms.openlocfilehash: 386f975ab0bbbe804fda2bd7567acf24f69e77fb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 48887defab38d6ac99c718e14646d39166927438
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676069"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785712"
 ---
 # <a name="iclrdataenummemoryregionsenummemoryregions-method"></a>Método ICLRDataEnumMemoryRegions::EnumMemoryRegions
 
@@ -63,6 +64,6 @@ HRESULT EnumMemoryRegions (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRDataEnumMemoryRegions](iclrdataenummemoryregions-interface.md)

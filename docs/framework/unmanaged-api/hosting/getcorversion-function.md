@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetCORVersion'
 title: Função GetCORVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2f09cd37-bf3a-4cc5-87b0-adc42a7eed31
 topic_type:
 - apiref
-ms.openlocfilehash: e7ef3f300c8cfa0c275d15913e171abe09385eea
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 96899b2193be9307314dbc2afb7cd6d70d229cfe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681191"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785322"
 ---
 # <a name="getcorversion-function"></a>Função GetCORVersion
 
@@ -59,6 +60,6 @@ HRESULT GetCORVersion (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: recursos de aplicativo para bibliotecas direcionadas a várias plataformas'
 title: Recursos do aplicativo para bibliotecas direcionadas a várias plataformas
 ms.date: 07/18/2018
 dev_langs:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - resources, for multiple platforms
 - targeting multiple platforms, resources for
 ms.assetid: 72c76f0b-7255-4576-9261-3587f949669c
-ms.openlocfilehash: a4fa3f5e5a4b0e88a0c37f84672ab4b611f89f0c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c6d1a8d19c58174e4b08842c4965dfbe3389d1e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96272918"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786486"
 ---
 # <a name="app-resources-for-libraries-that-target-multiple-platforms"></a>Recursos do aplicativo para bibliotecas direcionadas a várias plataformas
 
@@ -67,7 +68,7 @@ Você pode usar o .NET Framework tipo de projeto de [biblioteca de classes port�
 |ID.Length|12|
 |Nome|Nome|
 |NameLength|25|
-|Título|Employee Database|
+|Title|Employee Database|
 
  O código a seguir define uma `UILibrary` classe que usa o wrapper do Gerenciador de recursos chamado `resources` gerado pelo Visual Studio quando o **modificador de acesso** do arquivo é alterado para **público**. A classe UILibrary analisa os dados de cadeia de caracteres conforme o necessário. . Observe que a classe está no namespace `MyCompany.Employees`.
 
@@ -95,7 +96,7 @@ Você pode usar o .NET Framework tipo de projeto de [biblioteca de classes port�
 |HiredLength|16|
 |ID|ID|
 |Nome|Nom|
-|Título|Base de données des employés|
+|Title|Base de données des employés|
 
  O código a seguir ilustra como a classe `UILibrary` e seus recursos podem ser acessados de um aplicativo no modo de console. Ele requer uma referência para UILibrary.dll a ser adicionada ao projeto de aplicativo de console.
 
@@ -107,7 +108,7 @@ Você pode usar o .NET Framework tipo de projeto de [biblioteca de classes port�
  [!code-csharp[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portablemetroloc/cs/blankpage.xaml.cs#1)]
  [!code-vb[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portablemetroloc/vb/blankpage.xaml.vb#1)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Resources.ResourceManager>
 - [Recursos em aplicativos da área de trabalho](../../framework/resources/index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <net. TCP>'
 title: <net.tcp>
 ms.date: 03/30/2017
 ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
-ms.openlocfilehash: 12709d58d9192825598b15a50baa10a54450226e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b7b36e0309139508011e5abceab97cc6f6f9a53d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178067"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786935"
 ---
 # \<net.tcp>
 
@@ -17,7 +18,7 @@ Especifica as definições de configuração para a rede. O serviço de comparti
 &nbsp;&nbsp;[**\<system.serviceModel.activation>**](system-servicemodel-activation.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<net.tcp>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <configuration>
@@ -78,7 +79,7 @@ Especifica as definições de configuração para a rede. O serviço de comparti
 
  Para obter mais informações sobre compartilhamento de porta, consulte [net. TCP Port Sharing](../../../wcf/feature-details/net-tcp-port-sharing.md). Para entender como configurar o serviço de compartilhamento de porta, consulte [Configurando o serviço de compartilhamento de porta Net. TCP](../../../wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activation.Configuration.NetTcpSection>
 - [Compartilhamento de porta Net.TCP](../../../wcf/feature-details/net-tcp-port-sharing.md)

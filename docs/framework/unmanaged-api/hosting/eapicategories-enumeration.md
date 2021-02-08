@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração EApiCategories'
 title: Enumeração EApiCategories
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3c4a8a5a-8a46-4ac9-947f-4959bc9d6ac6
 topic_type:
 - apiref
-ms.openlocfilehash: f90e08373c0497201816bc7eead89b83b84be255
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 58a7d4fa4d0c965bf9158ad6713185782d4ae94a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726854"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785621"
 ---
 # <a name="eapicategories-enumeration"></a>Enumeração EApiCategories
 
@@ -75,7 +76,7 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRHostProtectionManager](iclrhostprotectionmanager-interface.md)
 - [Hospedando enumerações](hosting-enumerations.md)

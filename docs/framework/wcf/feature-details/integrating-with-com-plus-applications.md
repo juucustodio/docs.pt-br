@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: integração com aplicativos COM+'
 title: Integração com COM+ Aplicativos
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - COM+ [WCF]
 - WCF, COM+ integration
 ms.assetid: 98bf7dc4-d49a-4129-a59b-db7a7ec8c241
-ms.openlocfilehash: 96a1f1cc68d28665a1b5dea1a106abfd793a4d1f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 02f1791d32863a413804a4a3a9c2710901f5a1e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96260325"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802756"
 ---
 # <a name="integrating-with-com-applications"></a>Integração com COM+ Aplicativos
 
@@ -38,6 +39,6 @@ O Windows Communication Foundation (WCF) fornece um ambiente avançado para a cr
 
  <xref:System.ServiceModel>  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Integração com aplicativos COM](integrating-with-com-applications.md)

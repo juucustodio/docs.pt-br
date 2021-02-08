@@ -1,15 +1,16 @@
 ---
-title: Revelação de informações
+description: 'Saiba mais sobre: divulgação de informações'
+title: Divulgação de informações
 ms.date: 03/30/2017
 ms.assetid: 4064c89f-afa6-444a-aa7e-807ef072131c
-ms.openlocfilehash: a58ac4dd3715052031c7fb5c1da480c0d01396ea
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 420437703fab883698cdd7217efb14c214a1f529
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596858"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802847"
 ---
-# <a name="information-disclosure"></a>Revelação de informações
+# <a name="information-disclosure"></a>Divulgação de informações
 
 A divulgação de informações permite que um invasor receba informações valiosas sobre um sistema. Portanto, sempre considere quais informações você está revelando e se elas podem ser usadas por um usuário mal-intencionado. A lista a seguir contém possíveis ataques de divulgação de informações e fornece mitigações para cada um.
 
@@ -68,8 +69,8 @@ Se o domínio for especificado, mas um nome de entidade de serviço inválido fo
 ## <a name="see-also"></a>Consulte também
 
 - [Considerações sobre segurança](security-considerations-in-wcf.md)
-- [Elevação de privilégio](elevation-of-privilege.md)
-- [Negação de serviço](denial-of-service.md)
+- [Elevação de Privilégio](elevation-of-privilege.md)
+- [Negação de Serviço](denial-of-service.md)
 - [Adulteração](tampering.md)
 - [Cenários sem suporte](unsupported-scenarios.md)
 - [Ataques por repetição](replay-attacks.md)

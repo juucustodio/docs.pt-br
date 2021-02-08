@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como: trocar mensagens em fila com pontos de extremidade do WCF'
 title: 'Como: fazer intercâmbio de mensagens em fila com pontos de extremidade do WCF'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 938e7825-f63a-4c3d-b603-63772fabfdb3
-ms.openlocfilehash: 3f69286a2b4d4ec55f18931f9156c20a38da9c34
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fe7195719c57454cb0035c1b6f06134cf3380a46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265421"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802886"
 ---
 # <a name="how-to-exchange-queued-messages-with-wcf-endpoints"></a>Como: fazer intercâmbio de mensagens em fila com pontos de extremidade do WCF
 
@@ -77,7 +78,7 @@ As filas do garantem que mensagens confiáveis possam ocorrer entre um cliente e
  [!code-csharp[S_Msmq_Transacted#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/client.cs#12)]
  [!code-vb[S_Msmq_Transacted#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/client.vb#12)]  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.NetMsmqBinding>
 - [Associação transacionada do MSMQ](../samples/transacted-msmq-binding.md)

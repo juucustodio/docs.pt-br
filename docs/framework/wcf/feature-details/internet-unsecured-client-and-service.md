@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: cliente e serviço desprotegidos da Internet'
 title: Serviço e cliente de internet desprotegido
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
-ms.openlocfilehash: 32c08daaacb482aa98a58d7f8882da2c9389293d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8b402b276c80b2e1c148de0837d8644aad7a2d4a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276666"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802769"
 ---
 # <a name="internet-unsecured-client-and-service"></a>Serviço e cliente de internet desprotegido
 
@@ -30,7 +31,7 @@ A ilustração a seguir mostra um exemplo de um cliente e serviço de Windows Co
   
 ## <a name="service"></a>Serviço  
 
- O código e a configuração a seguir devem ser executados de forma independente. Realize uma destas ações:  
+ O código e a configuração a seguir devem ser executados de forma independente. Realize um dos seguintes procedimentos:  
   
 - Crie um serviço autônomo usando o código sem configuração.  
   
@@ -73,7 +74,7 @@ A ilustração a seguir mostra um exemplo de um cliente e serviço de Windows Co
   
 ## <a name="client"></a>Cliente  
 
- O código e a configuração a seguir devem ser executados de forma independente. Realize uma destas ações:  
+ O código e a configuração a seguir devem ser executados de forma independente. Realize um dos seguintes procedimentos:  
   
 - Crie um cliente autônomo usando o código (e o código do cliente).  
   
@@ -116,7 +117,7 @@ A ilustração a seguir mostra um exemplo de um cliente e serviço de Windows Co
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Cenários comuns de segurança](common-security-scenarios.md)
 - [Visão geral de segurança](security-overview.md)

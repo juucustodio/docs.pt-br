@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Resumo do tipo de rastreamento'
 title: Resumo de tipo de rastreamento
 ms.date: 03/30/2017
 ms.assetid: e639410b-d1d1-479c-b78e-a4701d4e4085
-ms.openlocfilehash: e8d222d6f093f5db3bd620194bfde7edd4b998a8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ebfe9de16766494a6aebe0a8d2501954855dc4df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96259239"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803211"
 ---
 # <a name="trace-type-summary"></a>Resumo de tipo de rastreamento
 
@@ -22,9 +23,9 @@ ms.locfileid: "96259239"
 |Crítico|Erro fatal ou falha do aplicativo.|  
 |Erro do|Erro recuperável.|  
 |Aviso|Mensagem informativa.|  
-|Informações do|Problema não crítico.|  
+|Informações|Problema não crítico.|  
 |Detalhado|Rastreamento de depuração.|  
-|Inicie o|Início de uma unidade lógica de processamento.|  
+|Iniciar|Início de uma unidade lógica de processamento.|  
 |Suspend|Suspensão de uma unidade lógica de processamento.|  
 |Retomar|Retomada de uma unidade lógica de processamento.|  
 |Parar|Interrupção de uma unidade lógica de processamento.|  

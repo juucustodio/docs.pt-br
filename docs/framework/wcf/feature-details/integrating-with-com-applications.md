@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: integração com aplicativos COM'
 title: Integração com aplicativos COM
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - COM [WCF]
 - WCF, COM integration
 ms.assetid: c98bda3e-6779-419e-8e6d-9aa94053026d
-ms.openlocfilehash: bc58e22b64284d66367302d55b5c9554c9ec0d72
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7afee4bed334d7f392b73773f0981022a59170fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268229"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802795"
 ---
 # <a name="integrating-with-com-applications"></a>Integração com aplicativos COM
 
@@ -44,6 +45,6 @@ Os serviços do Windows Communication Foundation (WCF) podem ser integrados dire
 
  <xref:System.ServiceModel>  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Integração com aplicativos COM+](integrating-with-com-plus-applications.md)

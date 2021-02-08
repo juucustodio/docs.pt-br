@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: MsmqBindingElementBase'
 title: MsmqBindingElementBase
 ms.date: 03/30/2017
 ms.assetid: 210d41ab-a2a4-4d7a-afd2-0916c08a4015
-ms.openlocfilehash: 48d26bfa9074fd605e3545579f0bdc2744dfc7d8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3aa5ec2343d73798f1cf5e3c7d4b5a8282f97ac9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267852"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803172"
 ---
 # <a name="msmqbindingelementbase"></a>MsmqBindingElementBase
 
 MsmqBindingElementBase  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp  
 class MsmqBindingElementBase : TransportBindingElement  

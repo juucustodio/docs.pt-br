@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: suporte de configuração e metadados'
 title: Configuração e suporte de metadados
 ms.date: 03/30/2017
 ms.assetid: 27c240cb-8cab-472c-87f8-c864f4978758
-ms.openlocfilehash: fe7de6fddeccbc83bc81eea69c27c7da5df5c8c3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 725d6625e224ea3de5d8bd49fd06199e7c5d61be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802977"
 ---
 # <a name="configuration-and-metadata-support"></a>Configuração e suporte de metadados
 

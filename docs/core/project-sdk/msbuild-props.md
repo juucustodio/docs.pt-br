@@ -4,12 +4,12 @@ description: Referência para as propriedades e os itens do MSBuild que são com
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: 21bbe46cf60540c01344cc8fcb82c62ff0fbbee5
-ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
+ms.openlocfilehash: e140491c694291438fe1db7fd60d581ffed0319d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98692702"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802665"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Referência do MSBuild para projetos do SDK do .NET
 
@@ -344,7 +344,12 @@ A `EnableDefaultNoneItems` propriedade controla se os `None` itens (arquivos que
 
 ### <a name="analysislevel"></a>AnalysisLevel
 
-A `AnalysisLevel` propriedade permite especificar um nível de análise de código. Por exemplo, se você quiser acessar analisadores de código de visualização, defina `AnalysisLevel` como `preview` . O valor padrão é `latest`.
+A `AnalysisLevel` propriedade permite especificar um nível de análise de código. Por exemplo, se você quiser acessar analisadores de código de visualização, defina `AnalysisLevel` como `preview` .
+
+Valor padrão:
+
+- Se o projeto tiver como alvo o .NET 5,0 ou posterior, ou se você tiver adicionado a propriedade [analysismode](#analysismode) , o valor padrão será `latest` .
+- Caso contrário, essa propriedade será omitida a menos que você a adicione explicitamente ao arquivo de projeto.
 
 ```xml
 <PropertyGroup>
@@ -398,9 +403,6 @@ A [análise de qualidade de código .net](../../fundamentals/code-analysis/overv
   <EnableNETAnalyzers>true</EnableNETAnalyzers>
 </PropertyGroup>
 ```
-
-> [!TIP]
-> Outra maneira de habilitar a análise de código .NET em projetos que visam versões .NET anteriores ao .NET 5,0 é definir a propriedade [AnalysisLevel](#analysislevel) como `latest` .
 
 ### <a name="enforcecodestyleinbuild"></a>EnforceCodeStyleInBuild
 

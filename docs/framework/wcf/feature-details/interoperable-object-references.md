@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: referências a objetos interoperáveis'
 title: Referências de objeto interoperável
 ms.date: 04/15/2019
 ms.assetid: cb8da4c8-08ca-4220-a16b-e04c8f527f1b
-ms.openlocfilehash: bf395c187c46e88406bfb81798c7e359b48255e3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 27c801fb3954c7ea3f821a6588a2229502702989
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96263224"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802678"
 ---
 # <a name="interoperable-object-references"></a>Referências de objeto interoperável
 

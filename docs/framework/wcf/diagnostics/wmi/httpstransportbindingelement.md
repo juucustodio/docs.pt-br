@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: HttpsTransportBindingElement'
 title: HttpsTransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: e78aa8c6-b53b-4105-a900-d3e7a39670f2
-ms.openlocfilehash: e974f3942f44f8b515b041a49d9b22a57bb77823
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 70fadf136080d865a2738e4b93aa5d7edadc0244
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288795"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803198"
 ---
 # <a name="httpstransportbindingelement"></a>HttpsTransportBindingElement
 
 HttpsTransportBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp  
 class HttpsTransportBindingElement : HttpTransportBindingElement  

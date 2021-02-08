@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: objeto necessário (Visual Basic)'
 title: Objeto obrigatório
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID424
 ms.assetid: afdc660b-81a5-4c92-ac7e-9c3a3105fc16
-ms.openlocfilehash: 5384dc603d51b31c252c9cad0775a453210f29ff
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: b5f213641d9b7c52db15c47afbcf767f040c04f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873637"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795580"
 ---
 # <a name="object-required-visual-basic"></a>Objeto obrigatório (Visual Basic)
 
@@ -25,6 +26,6 @@ Referências a propriedades e métodos geralmente exigem um qualificador de obje
   
 4. Verifique a documentação do objeto e certifique-se de que a ação seja válida.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de erro](../../programming-guide/language-features/error-types.md)

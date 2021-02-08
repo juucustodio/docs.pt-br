@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC36593: a expressão do tipo <type> não é passível de consulta'
 title: A expressão do tipo <type> não pode ser consultada
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC36593
 ms.assetid: 6f1f5860-bf97-4885-9ebb-bc87d028095c
-ms.openlocfilehash: d605243c213166f20592fdc440a3362f957ebbf2
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: b2fc6c81ee34c1f8e251ac65ba582fde1c6a7b9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163058"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796347"
 ---
 # <a name="bc36593-expression-of-type-type-is-not-queryable"></a>BC36593: a expressão do tipo \<type> não é passível de consulta
 
@@ -34,7 +35,7 @@ A expressão do tipo \<type> não é passível de consulta. Verifique se você n
 
 2. Certifique-se de que o tipo que você identificou como a origem da consulta é um tipo consultável. Ou seja, um tipo que implementa <xref:System.Collections.Generic.IEnumerable%601> ou <xref:System.Linq.IQueryable%601> .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq>
 - <xref:System.Data.Linq>

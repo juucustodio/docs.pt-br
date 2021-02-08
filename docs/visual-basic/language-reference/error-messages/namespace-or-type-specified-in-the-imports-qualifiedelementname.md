@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC40056: o namespace ou o tipo especificado em Imports ' <qualifiedelementname> ' não contém nenhum membro público ou não pode ser encontrado"
 title: O namespace ou o tipo especificado em Imports '<qualifiedelementname>' não contém nenhum membro público ou não pode ser localizado
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40056
 ms.assetid: b59f5754-444f-4378-9272-9678b437e84a
-ms.openlocfilehash: 284a8c71fee8835f78ca5435932819fded1b1f30
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: e98ba70660823196e763300cd33ec1ba9a9db3b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160126"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795697"
 ---
 # <a name="bc40056-namespace-or-type-specified-in-the-imports-qualifiedelementname-doesnt-contain-any-public-member-or-cannot-be-found"></a>BC40056: o namespace ou tipo especificado em Imports ' \<qualifiedelementname> ' não contém nenhum membro público ou não pode ser encontrado
 
@@ -46,7 +47,7 @@ Imports behave = winfrm.Design.Behavior`
 
 3. Verifique se o elemento que o contém expõe pelo menos um `Public` membro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Imports (tipo e namespace .NET)](../statements/imports-statement-net-namespace-and-type.md)
 - [Instrução Namespace](../statements/namespace-statement.md)

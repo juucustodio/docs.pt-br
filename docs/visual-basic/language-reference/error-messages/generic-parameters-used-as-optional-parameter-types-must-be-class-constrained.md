@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC32124: parâmetros genéricos usados como tipos de parâmetro opcionais devem ser restritos por classe'
 title: Parâmetros genéricos usados como tipos de parâmetro opcionais devem ter a classe restrita
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32124
 ms.assetid: 55aa8b2a-9ce3-4620-a710-2f9b0feb6143
-ms.openlocfilehash: 5e0d4eaf7557eb9a544a8845299f3d69dbb78486
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 0014720d55dc4395178186b5e183d5b0279d7029
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163214"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796139"
 ---
 # <a name="bc32124-generic-parameters-used-as-optional-parameter-types-must-be-class-constrained"></a>BC32124: parâmetros genéricos usados como tipos de parâmetro opcionais devem ser restritos por classe
 
@@ -28,7 +29,7 @@ Um procedimento é declarado com um parâmetro opcional que usa um parâmetro de
 
 - Restrinja o parâmetro de tipo para aceitar apenas um tipo de referência ou não use-o para o parâmetro opcional.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos genéricos no Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
 - [Lista de Tipos](../statements/type-list.md)

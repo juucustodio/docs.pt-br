@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC32126: métodos de ' System. Nullable (Of T) ' não podem ser usados como operandos do operador ' AddressOf '"
 title: Os métodos de 'System.Nullable(Of T)' não podem ser usados como operandos do operador 'AddressOf'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32126
 ms.assetid: 2325668b-e2ad-40ee-a1ec-30450236c20d
-ms.openlocfilehash: 173cf19537e3f9ffc4cff6cef71f34b6d365e5d3
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 5ddf2f11bab3193423a3294a7f96afe68f0e5dce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160386"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795788"
 ---
 # <a name="bc32126-methods-of-systemnullableof-t-cannot-be-used-as-operands-of-the-addressof-operator"></a>BC32126: métodos de ' System. Nullable (Of T) ' não podem ser usados como operandos do operador ' AddressOf '
 
@@ -62,7 +63,7 @@ Module Module1
 End Module
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Nullable%601>
 - [Operador AddressOf](../operators/addressof-operator.md)

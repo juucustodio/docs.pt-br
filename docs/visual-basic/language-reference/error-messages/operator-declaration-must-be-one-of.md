@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: a declaração de operador BC33000: deve ser um destes: +,-, *,,/, ^, &amp; , like, mod, and ou, Xor, not,  <<,  >>...'
 title: 'A declaração do operador deve ser uma das: +,-, *,-,-, ^, &amp; , like, mod, and ou, Xor, not,  <<,  >>, =,  <>, <, <=, >, re>=, CType, IsTrue, IsFalse'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC33000
 ms.assetid: 15c5d8eb-3a8c-4141-8f41-33151afabf97
-ms.openlocfilehash: a94e62e33427987a302a6244b2b8ce8d295e4f11
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 0ad82a6414387278622a10624952ebc35e7e9b83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92159892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795554"
 ---
 # <a name="bc33000-operator-declaration-must-be-one-of----amp-like-mod-and-or-xor-not--"></a>BC33000: a declaração do operador deve ser um destes: +,-, *, \, /, ^, &amp; , like, mod, and ou, Xor, not, \<\<, >>...
 
@@ -34,7 +35,7 @@ Você pode declarar apenas um operador que seja elegível para sobrecarga. A tab
 
 - Se você precisar da funcionalidade de sobrecarregar um operador que você não pode sobrecarregar diretamente, crie um `Function` procedimento que aceite os parâmetros apropriados e retorne o valor apropriado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Operator](../statements/operator-statement.md)
 - [Procedimentos do operador](../../programming-guide/language-features/procedures/operator-procedures.md)

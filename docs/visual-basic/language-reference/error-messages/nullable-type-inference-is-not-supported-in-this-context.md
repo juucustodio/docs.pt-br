@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC36629: não há suporte para a inferência de tipo anulável neste contexto'
 title: Inferência de tipo que permite valor nulo não suportada neste contexto
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC36629
 ms.assetid: 0a1e2dbc-d9a4-433d-9306-c5540782b81d
-ms.openlocfilehash: 610d2dc427d882c412b87eb67f021a8a86025f25
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 915f964d55068f39b0468e2c47cc6e5538be1a6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92159919"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795619"
 ---
 # <a name="bc36629-nullable-type-inference-is-not-supported-in-this-context"></a>BC36629: não há suporte para inferência de tipo anulável neste contexto
 
@@ -37,7 +38,7 @@ Dim b As Integer?
 
 - Use uma `As` cláusula para declarar a variável como um tipo de valor anulável.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de valor anulável](../../programming-guide/language-features/data-types/nullable-value-types.md)
 - [Inferência de Tipo de Variável Local](../../programming-guide/language-features/variables/local-type-inference.md)

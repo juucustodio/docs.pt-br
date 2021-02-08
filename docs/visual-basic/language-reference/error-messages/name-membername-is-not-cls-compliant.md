@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC40031: name <membername> não tem conformidade com CLS'
 title: O nome <membername> não é compatível com CLS
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40031
 ms.assetid: e2b885dc-cbf9-49ff-bbbe-531657ea99f7
-ms.openlocfilehash: 43fff3f12295f3837148b0a349887e8405126819
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 7abc4aee8bb468b523e5bdd2ac13947d19c926bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160230"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795749"
 ---
 # <a name="bc40031-name-membername-is-not-cls-compliant"></a>BC40031: o nome \<membername> não tem conformidade com CLS
 
@@ -34,7 +35,7 @@ Um assembly é marcado como `<CLSCompliant(True)>` , mas expõe um membro com um
 
 - Se você precisar que o nome do membro permaneça inalterado, remova o <xref:System.CLSCompliantAttribute> de sua definição ou marque-o como `<CLSCompliant(False)>` . Você ainda pode marcar o assembly como `<CLSCompliant(True)>` .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md)
 - [Convenções de nomenclatura do Visual Basic](../../programming-guide/program-structure/naming-conventions.md)

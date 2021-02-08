@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC30957: a avaliação de função está desabilitada porque uma avaliação de função anterior atingiu o tempo limite'
 title: A avaliação de função está desabilitada porque uma avaliação de função anterior atingiu o tempo limite
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30957
 ms.assetid: 561e593a-f50a-4b72-a708-4cab60ec7b28
-ms.openlocfilehash: 6367553df38a7ccf3b4afbeec877f88fc3d3a1da
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 32e4b460a0334a542d59091bfc0b9a2337fdd089
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160679"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796178"
 ---
 # <a name="bc30957-function-evaluation-is-disabled-because-a-previous-function-evaluation-timed-out"></a>BC30957: a avaliação de função está desabilitada porque uma avaliação de função anterior atingiu o tempo limite
 
@@ -32,7 +33,7 @@ A avaliação de função está desabilitada porque uma avaliação de função 
 
 2. Siga as etapas do depurador novamente ou encerre e reinicie a depuração.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando no Visual Studio](/visualstudio/debugger/debugger-feature-tour)
 - [Navegar pelo Código com o Depurador](/visualstudio/debugger/navigating-through-code-with-the-debugger)

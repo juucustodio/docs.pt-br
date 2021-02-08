@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC40057: o namespace ou o tipo especificado nas importações de nível de projeto ' <qualifiedelementname> ' não contém nenhum membro público ou não pode ser encontrado"
 title: O namespace ou o tipo especificado no nível de projeto Imports '<qualifiedelementname>' não contém nenhum membro público ou não pode ser localizado.
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40057
 ms.assetid: 4ae3506e-2ebe-4ff3-995d-14ac60db5e9f
-ms.openlocfilehash: 54ee046cda998be8bd70e531918d6ab2a67d0494
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 66ae40ca6a2feff78f80bdbc8886387e801f7db2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160113"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795684"
 ---
 # <a name="bc40057-namespace-or-type-specified-in-the-project-level-imports-qualifiedelementname-doesnt-contain-any-public-member-or-cannot-be-found"></a>BC40057: o namespace ou tipo especificado nas importações de nível de projeto ' \<qualifiedelementname> ' não contém nenhum membro público ou não pode ser encontrado
 
@@ -38,7 +39,7 @@ O namespace ou tipo especificado nas importações de nível de projeto ' \<qual
 
 3. Verifique se o elemento que o contém expõe pelo menos um `Public` membro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Página Referências, Designer de Projeto (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

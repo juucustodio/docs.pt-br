@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC36532: a função aninhada não tem uma assinatura compatível com o delegado '<delegatename>"
 title: A função aninhada não tem uma assinatura que seja compatível com o delegado '<delegatename>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC36532
 ms.assetid: 493f292c-d81e-40ef-8b47-61f020571829
-ms.openlocfilehash: 0dde340164f1ba80d0e1d9fbb5d17ba6da0a5bc4
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 2220faacdac065718a302ef7b086f99bf1e16cef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795658"
 ---
 # <a name="bc36532-nested-function-does-not-have-a-signature-that-is-compatible-with-delegate-delegatename"></a>BC36532: a função aninhada não tem uma assinatura compatível com o delegado ' \<delegatename> '
 
@@ -36,7 +37,7 @@ O erro será gerado se uma expressão lambda com um argumento for declarada como
 
 Ajuste a definição de delegado ou a expressão lambda atribuída para que as assinaturas sejam compatíveis.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Conversão de delegado reduzida](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
 - [Expressões lambda](../../programming-guide/language-features/procedures/lambda-expressions.md)

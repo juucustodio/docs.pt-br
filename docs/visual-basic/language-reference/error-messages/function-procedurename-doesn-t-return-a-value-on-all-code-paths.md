@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC42105: a função ' <procedurename> ' não retorna um valor em todos os caminhos de código"
 title: A função '<procedurename>' não retorna um valor em todos os caminhos de código
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42105
 ms.assetid: b6929bf4-a365-4a70-8dc9-6b0fc09e1468
-ms.openlocfilehash: 19b305e337767dfb34718aed7b665f142851bd36
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 2d0fa99906606228595a0c0d45f58dae0b269b77
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796165"
 ---
 # <a name="bc42105-function-procedurename-doesnt-return-a-value-on-all-code-paths"></a>BC42105: a função ' \<procedurename> ' não retorna um valor em todos os caminhos de código
 
@@ -40,7 +41,7 @@ A função ' \<procedurename> ' não retorna um valor em todos os caminhos de c�
 
      É mais fácil garantir que cada retorno do procedimento retorne um valor se você sempre usar a `Return` instrução. Se você fizer isso, a última instrução antes `End Function` deve ser uma `Return` instrução.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos de função](../../programming-guide/language-features/procedures/function-procedures.md)
 - [Instrução Function](../statements/function-statement.md)

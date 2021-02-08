@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC32061: ' <expression> ' não pode ser usado como uma restrição de tipo"
 title: "'<expression>' não pode ser usado como restrição de tipo"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32061
 ms.assetid: b17821b7-fa14-4397-a211-6e2a14079f09
-ms.openlocfilehash: 6e55bfdc175f285b335512e64f4c2407bdb0e8c7
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 3484c617b28ed068c917c83454b866f8dd50c5c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163084"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796399"
 ---
 # <a name="bc32061-expression-cannot-be-used-as-a-type-constraint"></a>BC32061: ' \<expression> ' não pode ser usado como uma restrição de tipo
 
@@ -44,8 +45,8 @@ Uma lista de restrições inclui uma expressão que não representa uma restriç
 
 - Se a expressão se referir a uma interface ou classe, verifique se o compilador tem acesso a essa interface ou classe. Talvez seja necessário qualificar seu nome, e talvez seja necessário adicionar uma referência ao seu projeto. Para obter mais informações, consulte "referências a projetos" em [referências a elementos declarados](../../programming-guide/language-features/declared-elements/references-to-declared-elements.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos genéricos no Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
-- [Tipos de valor e referência](../../programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](../../programming-guide/language-features/data-types/value-types-and-reference-types.md)
 - [Referências a elementos declarados](../../programming-guide/language-features/declared-elements/references-to-declared-elements.md)

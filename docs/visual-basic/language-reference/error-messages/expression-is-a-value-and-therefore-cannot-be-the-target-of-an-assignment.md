@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC30068: Expression é um valor e, portanto, não pode ser o destino de uma atribuição'
 title: Expressão é um valor e, por isso, não pode ser o destino de uma atribuição
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30068
 ms.assetid: d65141e1-f31e-4ac5-a3b8-0b2e02a71ebf
-ms.openlocfilehash: cd23e6c2beb2f93578a350bc41a780c9ab785f26
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 424ce9cb0183153454bc068e9da940948b737c47
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160887"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796360"
 ---
 # <a name="bc30068-expression-is-a-value-and-therefore-cannot-be-the-target-of-an-assignment"></a>BC30068: Expression é um valor e, portanto, não pode ser o destino de uma atribuição
 
@@ -58,7 +59,7 @@ exitButton.Location = exitLocation
 
 - Use a variável para acessar a propriedade para atribuir um valor a ela.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores e expressões](../../programming-guide/language-features/operators-and-expressions/index.md)
 - [Instruções](../../programming-guide/language-features/statements.md)

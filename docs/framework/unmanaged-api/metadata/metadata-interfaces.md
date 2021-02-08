@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces de metadados'
 title: Interfaces de metadados
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - metadata interfaces [.NET Framework]
 - interfaces (.NET Framework metadata]
 ms.assetid: f5cdac93-a28c-48ef-8a19-5773376e9e7c
-ms.openlocfilehash: 5d9b48df740668797a7c901219401e9ea304a8f8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4851fbc93bfa29f1b4b5015c82f05c1b200b9092
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672875"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799129"
 ---
 # <a name="metadata-interfaces"></a>Interfaces de metadados
 

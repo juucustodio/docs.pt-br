@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC30424: constantes devem ser de um tipo intrínseco ou enumerado, não uma classe, estrutura, parâmetro de tipo ou tipo de matriz'
 title: As constantes devem ser do tipo intrínseco ou enumerado, e não classe, estrutura, parâmetro de tipo ou tipo de matriz
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30424
 ms.assetid: 2d402c2f-27ad-428b-b699-d45cd62f7196
-ms.openlocfilehash: e820287f0ddf462b30867d90501f7d730c9c6739
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: e9765d78ff671d6b99f47242509b1c3b4560c029
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796724"
 ---
 # <a name="bc30424-constants-must-be-of-an-intrinsic-or-enumerated-type-not-a-class-structure-type-parameter-or-array-type"></a>BC30424: constantes devem ser de um tipo intrínseco ou enumerado, não uma classe, estrutura, parâmetro de tipo ou tipo de matriz
 
@@ -28,7 +29,7 @@ Você tentou declarar uma constante como uma classe, estrutura ou tipo de matriz
 
 2. Uma constante também pode ser um valor especial, como `True` , `False` ou `Nothing` . O compilador considera esses valores predefinidos como sendo do tipo intrínseco apropriado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Constantes e enumerações](../constants-and-enumerations.md)
 - [Data Types](../../programming-guide/language-features/data-types/index.md)

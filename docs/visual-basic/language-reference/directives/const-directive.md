@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre a diretiva: #Const'
 title: '#Diretiva Const'
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - Const statement [Visual Basic], directive (#Const)
 - 'declaring constants [Visual Basic], #const directive'
 ms.assetid: 707669e5-23f9-4f17-8622-a0d534429386
-ms.openlocfilehash: 91152771a4ef5ec74a7408511ccc2afe28dd442e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9597666ee1320f5dfda226040f93a84eb60a3deb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415460"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797270"
 ---
 # <a name="const-directive"></a>Diretiva #Const
 
 Define constantes de compilador condicional para Visual Basic.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 #Const constname = expression  
@@ -35,10 +36,10 @@ Define constantes de compilador condicional para Visual Basic.
 ## <a name="parts"></a>Partes  
 
  `constname`  
- Obrigatórios. Nome da constante que está sendo definida.  
+ Obrigatório. Nome da constante que está sendo definida.  
   
  `expression`  
- Obrigatórios. Literal, outra constante de compilador condicional ou qualquer combinação que inclua qualquer ou todos os operadores aritméticos ou lógicos, exceto `Is` .  
+ Obrigatório. Literal, outra constante de compilador condicional ou qualquer combinação que inclua qualquer ou todos os operadores aritméticos ou lógicos, exceto `Is` .  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -52,7 +53,7 @@ Define constantes de compilador condicional para Visual Basic.
   
  [!code-vb[VbVbalrConditionalComp#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#3)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [-definir (Visual Basic)](../../reference/command-line-compiler/define.md)
 - [#If... Diretivas then... #Else](if-then-else-directives.md)

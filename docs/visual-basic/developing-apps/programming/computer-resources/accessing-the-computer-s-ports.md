@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: acessando as portas do computador (Visual Basic)'
 title: Acessar as portas do computador
 ms.date: 07/20/2015
 helpviewer_keywords:
 - serial ports
 - My.Computer.Ports object [Visual Basic], tasks
 ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
-ms.openlocfilehash: 4868514ab7ddb3c85686f4e71360791f458240a0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2338d784bcc51b31b465d346e2c08520671f58b0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410095"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797790"
 ---
 # <a name="accessing-the-computers-ports-visual-basic"></a>Acessando as portas do computador (Visual Basic)
 

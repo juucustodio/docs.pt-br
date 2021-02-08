@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre as diretivas: #Disable e #Enable (Visual Basic)'
 title: Habilitar e desabilitar diretivas
 ms.date: 01/28/2021
 helpviewer_keywords:
 - directives, enable
 - directives, disable
 - disable directive
-ms.openlocfilehash: 3104b25c903465f3a650304f477b25a74591c8ba
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: d600cc959639a3f70bca5678fbc81aae0806c9cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99217222"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797257"
 ---
 # <a name="disable-and-enable-directives-visual-basic"></a>Diretivas #Disable e #Enable (Visual Basic)
 
@@ -27,7 +28,7 @@ As `#Disable` `#Enable` diretivas e são Visual Basic diretivas do compilador de
 
 Você também pode desabilitar e habilitar uma lista separada por vírgulas de códigos de aviso.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de linguagem de Visual Basic](../index.md)
 - [Como suprimir avisos de análise de código](../../../fundamentals/code-analysis/suppress-warnings.md)

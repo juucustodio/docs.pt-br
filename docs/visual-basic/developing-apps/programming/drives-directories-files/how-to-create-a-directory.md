@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar um diretório no Visual Basic'
 title: 'Como: criar um diretório'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - directories [Visual Basic], creating
 - folders [Visual Basic], creating
 ms.assetid: 0351a2ca-24d8-43b5-bb39-9b99e6401cff
-ms.openlocfilehash: 0da915054a2e38c778f15bc0b472fe9b02521189
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 39a0f1b2f482b27b6f207f0ca8a498db198e9d59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401661"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797595"
 ---
 # <a name="how-to-create-a-directory-in-visual-basic"></a>Como criar um diretório no Visual Basic
 
@@ -42,7 +43,7 @@ Use o método `CreateDirectory` do objeto `My.Computer.FileSystem` para criar di
   
 - O usuário não possui permissões em uma situação de confiança parcial (<xref:System.Security.SecurityException>).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory%2A>
 - [Criar, excluir e mover arquivos e diretórios](creating-deleting-and-moving-files-and-directories.md)

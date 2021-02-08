@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: EnumTypeSpecs'
 title: Método IMetaDataImport::EnumTypeSpecs
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 75331c7b-988b-436c-9eb9-a270d37b4f06
 topic_type:
 - apiref
-ms.openlocfilehash: 38c9f8df12b0fc83a236d2cb7c32d1198be7096d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7446bbf3296ffb6cfa3a20f594b4a7da22acff5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719808"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799337"
 ---
 # <a name="imetadataimportenumtypespecs-method"></a>Método IMetaDataImport::EnumTypeSpecs
 
@@ -51,9 +52,9 @@ HRESULT EnumTypeSpecs (
  `pcTypeSpecs`  
  fora O número de tokens TypeSpec retornados em `rTypeSpecs` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
-|HRESULT|DESCRIÇÃO|  
+|HRESULT|Descrição|  
 |-------------|-----------------|  
 |`S_OK`|`EnumTypeSpecs` retornado com êxito.|  
 |`S_FALSE`|Não há tokens para enumerar. Nesse caso, `pcTypeSpecs` é zero.|  
@@ -72,7 +73,7 @@ HRESULT EnumTypeSpecs (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

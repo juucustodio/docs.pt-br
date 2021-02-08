@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ativação de UDP'
 title: Ativação de UDP
 ms.date: 03/30/2017
 ms.assetid: 4b0ccd10-0dfb-4603-93f9-f0857c581cb7
-ms.openlocfilehash: 74ee3e1d53b9ba060820f69c201bfdccb6308d47
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8ee5e6363265ddc74d27884ef40354108da17581
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798219"
 ---
 # <a name="udp-activation"></a>Ativação de UDP
 

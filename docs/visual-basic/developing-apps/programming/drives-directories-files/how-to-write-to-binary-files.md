@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como gravar em arquivos binários no Visual Basic'
 title: 'Como: gravar em arquivos binários'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WriteAllBytes method [Visual Basic]
 - binary files [Visual Basic], writing in Visual Basic
 ms.assetid: 59fae125-de5b-4c96-883c-209f4a55112c
-ms.openlocfilehash: b36da82060b930101cb54dd852d050ac0155bd10
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a1fe18c9143c26fd40e6a1d9cde36581c2c0be12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411545"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797322"
 ---
 # <a name="how-to-write-to-binary-files-in-visual-basic"></a>Como gravar em arquivos binários no Visual Basic
 
@@ -43,7 +44,7 @@ As seguintes condições podem criar uma exceção:
 
 - O usuário não possui permissões necessárias para exibir o caminho (<xref:System.Security.SecurityException>).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>
 - [Como: gravar texto em arquivos](how-to-write-text-to-files.md)

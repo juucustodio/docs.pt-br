@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30014: ' #ElseIf ' deve ser precedido por ' #If ' ou ' #ElseIf ' correspondente"
 title: "'#ElseIf' deve ser precedido por um '#If' ou '#ElseIf' correspondente"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30014
 ms.assetid: 5215585e-2efa-485a-9efe-9833a1cc83a0
-ms.openlocfilehash: 142c142afe0d9be0ecd4d8a0340f0f1957b20470
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 5eeb9c2fc0fd7267d95a8713a7071cd08788e48b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162772"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796555"
 ---
 # <a name="bc30014-elseif-must-be-preceded-by-a-matching-if-or-elseif"></a>BC30014: ' #ElseIf ' deve ser precedido por ' #If ' ou ' #ElseIf ' correspondente
 
@@ -28,6 +29,6 @@ ms.locfileid: "92162772"
 
 3. Se todo o resto estiver em ordem, adicione uma `#If` diretiva ao início do bloco de compilação condicional.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [#If... Diretivas then... #Else](../directives/if-then-else-directives.md)

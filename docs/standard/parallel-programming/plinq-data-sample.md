@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: exemplo de dados do PLINQ'
 title: Exemplo de dados PLINQ
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - PLINQ queries, sample data
 ms.assetid: 4fccbb35-eaa5-44e9-a252-a5c3d4bc7604
-ms.openlocfilehash: cdbecc0c7483ec189c7c19f19d75ababeb20989f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2461878367c81f684776f6b8ffb3a1b72c3e4256
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797998"
 ---
 # <a name="plinq-data-sample"></a>Exemplo de dados PLINQ
 
@@ -860,6 +861,6 @@ PRODUCTS
 END PRODUCTS  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ paralelo (PLINQ)](introduction-to-plinq.md)

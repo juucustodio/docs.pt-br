@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: usando BatchBlock e BatchedJoinBlock para melhorar a eficiência'
 title: 'Passo a passo: usando BatchBlock e BatchedJoinBlock para melhorar a eficiência'
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - TPL dataflow library, improving efficiency
 ms.assetid: 5beb4983-80c2-4f60-8c51-a07f9fd94cb3
-ms.openlocfilehash: d9c4b2d5cfab28f10be82724f46660e4b42ce410
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: b87e80bc378c3279bbe58a3847cffcc831a17de0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829915"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798011"
 ---
 # <a name="walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency"></a>Passo a passo: usando BatchBlock e BatchedJoinBlock para melhorar a eficiência
 
@@ -128,6 +129,6 @@ O exemplo a seguir mostra todo o código. O método `Main` compara o tempo neces
 [!code-csharp[TPLDataflow_BatchDatabase#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_batchdatabase/cs/dataflowbatchdatabase.cs#100)]
 [!code-vb[TPLDataflow_BatchDatabase#100](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_batchdatabase/vb/dataflowbatchdatabase.vb#100)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Fluxo de dados](dataflow-task-parallel-library.md)

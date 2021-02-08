@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC30140: erro ao criar o manifesto do assembly: <error message>'
 title: 'Erro na criação de manifesto do assembly: <error message>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30140
 ms.assetid: 1beb5aa0-7b79-4c85-946b-5c2d0a41d1d2
-ms.openlocfilehash: a772167966c4ec858197cc2032f4ae3d4e86070c
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 4116f3293a36f4592712c3e39c988aa730753de4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163409"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796529"
 ---
 # <a name="bc30140-error-creating-assembly-manifest-error-message"></a>BC30140: erro ao criar o manifesto do assembly: \<error message>
 
@@ -28,7 +29,7 @@ O compilador Visual Basic chama o vinculador de assembly (Al.exe, também conhec
 
 2. Se o erro persistir, reúna informações sobre as circunstâncias e notifique o Microsoft Product Support Services.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Como assinar um assembly com um nome forte](../../../standard/assembly/sign-strong-name.md)
 - [Página de Assinatura, Designer de Projeto](/visualstudio/ide/reference/signing-page-project-designer)

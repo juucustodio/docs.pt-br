@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: como mover um arquivo no Visual Basic'
 title: 'Como: mover um arquivo'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - files [Visual Basic], moving
 ms.assetid: 53a7457b-5815-41ad-b37d-28537c1fb77a
-ms.openlocfilehash: 2dafeb3b5f8b8c3a8976b25c1a57f405aebb32b9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 31049d2b7f0516c056fc1f1620a3ad8c1f0a2e1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401596"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797517"
 ---
 # <a name="how-to-move-a-file-in-visual-basic"></a>Como mover um arquivo no Visual Basic
 
@@ -51,7 +52,7 @@ O método `My.Computer.FileSystem.MoveFile` pode ser utilizado para mover um arq
   
 - O usuário não tem a permissão necessária (<xref:System.UnauthorizedAccessException>).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.MoveFile%2A>
 - [Como: renomear um arquivo](how-to-rename-a-file.md)

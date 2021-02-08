@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como baixar um arquivo no Visual Basic'
 title: 'Como: baixar um arquivo'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - files [Visual Basic], downloading
 - files [Visual Basic], transferring
 ms.assetid: ac479f81-c0e2-4b99-af73-217f446b73da
-ms.openlocfilehash: a5b379da00656f65476e4d9504457bf8b464beac
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dd296a5958431b74ccc8e0fb41a49073f4847ded
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411649"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797686"
 ---
 # <a name="how-to-download-a-file-in-visual-basic"></a>Como baixar um arquivo no Visual Basic
 
@@ -55,7 +56,7 @@ As seguintes condições podem causar uma exceção:
   > [!IMPORTANT]
   > O protocolo FTP usado pelo método `DownLoadFile` envia informações, incluindo senhas, em texto sem formatação e não deve ser usado para transmitir informações confidenciais.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Devices.Network>
 - <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A>

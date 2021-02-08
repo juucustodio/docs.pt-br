@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataValidate:: ValidatorInit'
 title: Método IMetaDataValidate::ValidatorInit
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6bafd75a-e2d0-4aea-aed1-074374d5dff6
 topic_type:
 - apiref
-ms.openlocfilehash: e2f54e11906cd4ba1440e220530f2ca5b9de769f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 99435eeab542e9cb3bb679ad146b546ce51c8df4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708550"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799181"
 ---
 # <a name="imetadatavalidatevalidatorinit-method"></a>Método IMetaDataValidate::ValidatorInit
 
@@ -53,6 +54,6 @@ HRESULT ValidatorInit (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataValidate](imetadatavalidate-interface.md)

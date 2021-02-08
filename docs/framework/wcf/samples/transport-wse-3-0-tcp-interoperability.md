@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: transporte: interoperabilidade TCP do WSE 3,0'
 title: 'Transporte: interoperabilidade de TCP de WSE 3.0'
 ms.date: 03/30/2017
 ms.assetid: 5f7c3708-acad-4eb3-acb9-d232c77d1486
-ms.openlocfilehash: c268043a9d5c3f6a48b7b66dc807e4e30f029f61
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2e0a5927b8f16116dc07910970268ff6ec35f396
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292500"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798232"
 ---
 # <a name="transport-wse-30-tcp-interoperability"></a>Transporte: interoperabilidade de TCP de WSE 3.0
 

@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30686: o acesso à propriedade padrão é ambíguo entre os membros da interface herdada ' <defaultpropertyname> ' da interface ' <interfacename1> ' e ' <defaultpropertyname> ' da interface '<interfacename2>"
 title: O acesso à propriedade padrão é ambíguo entre os membros de interface herdada '<defaultpropertyname>' da interface '<interfacename1>' e '<defaultpropertyname>' da interface '<interfacename2>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - BC30686
 ms.assetid: 784fefec-ef57-48cf-b960-957df419b439
-ms.openlocfilehash: b7c4c9c75de1b3777f34a70470b89f323a5699f9
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 5ae5e5b2dc7a61540e26d125e960d4755141d975
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162057"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796646"
 ---
 # <a name="bc30686-default-property-access-is-ambiguous-between-the-inherited-interface-members-defaultpropertyname-of-interface-interfacename1-and-defaultpropertyname-of-interface-interfacename2"></a>BC30686: o acesso à propriedade padrão é ambíguo entre os membros da interface herdada ' \<defaultpropertyname> ' da interface ' \<interfacename1> ' e ' \<defaultpropertyname> ' da interface ' \<interfacename2> '
 
-Uma interface herda de duas interfaces, cada uma delas declara uma propriedade padrão com o mesmo nome. O compilador não pode resolver um acesso a essa propriedade padrão sem qualificação. O exemplo a seguir ilustra isto.
+Uma interface herda de duas interfaces, cada uma delas declara uma propriedade padrão com o mesmo nome. O compilador não pode resolver um acesso a essa propriedade padrão sem qualificação. O exemplo a seguir ilustra essa situação.
 
 ```vb
 Public Interface Iface1
@@ -50,7 +51,7 @@ Quando você especifica `testObj(1)` , o compilador tenta resolvê-lo para a pro
 
   \-ou-
 
-- Implemente a interface herdada em uma classe. Em seguida, você pode implementar cada uma das propriedades herdadas com nomes diferentes. No entanto, apenas uma delas pode ser a propriedade padrão da classe de implementação. O exemplo a seguir ilustra isto.
+- Implemente a interface herdada em uma classe. Em seguida, você pode implementar cada uma das propriedades herdadas com nomes diferentes. No entanto, apenas uma delas pode ser a propriedade padrão da classe de implementação. O exemplo a seguir ilustra essa situação.
 
   ```vb
   Public Class useIface3
@@ -64,6 +65,6 @@ Quando você especifica `testObj(1)` , o compilador tenta resolvê-lo para a pro
   End Class
   ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces](../../programming-guide/language-features/interfaces/index.md)

@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC32022: ' <eventname> ' é um evento e não pode ser chamado diretamente"
 title: "'<eventname>' é um evento, e não pode ser chamado diretamente"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32022
 ms.assetid: 4dcfcb8d-a9fa-46a7-a034-29d9ff3a59b3
-ms.openlocfilehash: 246cb92daa2c838c95f695542f33cf02af42764d
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: f9d4b8fe54e1101e7963933f871cf5af2c1af903
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161979"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796438"
 ---
 # <a name="bc32022-eventname-is-an-event-and-cannot-be-called-directly"></a>BC32022: ' \<eventname> ' é um evento e não pode ser chamado diretamente
 
@@ -26,6 +27,6 @@ ms.locfileid: "92161979"
 
 - Use uma `RaiseEvent` instrução para sinalizar um evento e invocar o procedimento ou procedimentos que o manipulam.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução RaiseEvent](../statements/raiseevent-statement.md)

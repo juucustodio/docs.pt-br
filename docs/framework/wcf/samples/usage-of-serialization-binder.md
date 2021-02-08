@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: uso do associador de serialização'
 title: Utilização do associador de serialização
 ms.date: 03/30/2017
 ms.assetid: ab46c087-200c-45bf-9c95-5a6cda6e8b98
-ms.openlocfilehash: 061afb94d97e3d8a1222e6de9932344fb3ebbe59
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ee00d8049ae644525f8013801dc7c453b9ad5aeb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798167"
 ---
 # <a name="usage-of-serialization-binder"></a>Utilização do associador de serialização
 

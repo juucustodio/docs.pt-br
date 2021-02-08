@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura OSINFO'
 title: Estrutura OSINFO
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fac7b480-7adb-4450-a5e9-690fed81ffae
 topic_type:
 - apiref
-ms.openlocfilehash: 49e29cc0367d5162dffcd641b163fd7b9a56ffd0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5027ef5cf4137aa1e781134b325407e1251fdd31
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672871"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799090"
 ---
 # <a name="osinfo-structure"></a>Estrutura OSINFO
 
@@ -57,7 +58,7 @@ typedef struct {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de metadados](metadata-structures.md)
 - [Interface IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

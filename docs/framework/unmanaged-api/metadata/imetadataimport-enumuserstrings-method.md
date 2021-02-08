@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: EnumUserStrings'
 title: Método IMetaDataImport::EnumUserStrings
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2b1f1418-4be8-4cdb-b418-b3abccc527a7
 topic_type:
 - apiref
-ms.openlocfilehash: c7dcc740dcf9b228713693a57dc8ef96d215ebad
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a4ead696f3d924fef9ebfed5c4f1eb97eb13e14e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716553"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799311"
 ---
 # <a name="imetadataimportenumuserstrings-method"></a>Método IMetaDataImport::EnumUserStrings
 
@@ -51,7 +52,7 @@ HRESULT EnumUserStrings (
  `pcStrings`  
  fora O número de tokens de cadeia de caracteres retornados em `rStrings` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -72,7 +73,7 @@ HRESULT EnumUserStrings (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC32053: copiar o valor do parâmetro ' ByRef ' ' <parametername> ' de volta para o argumento correspondente reduz do tipo ' <typename1> ' para o tipo '<typename2>"
 title: A cópia do parâmetro '<parametername>' do valor 'ByRef' de volta para o argumento correspondente é restrita do tipo '<typename1>' para o tipo '<typename2>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32053
 ms.assetid: 281564b7-99f7-451f-b10d-f985e831bb25
-ms.openlocfilehash: b9a38d3eb4e25d5c9ac765adf47df72e45fd082a
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: a90e64cd81443831a7b8f934fea646411eb5a220
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160926"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796698"
 ---
 # <a name="bc32053-copying-the-value-of-byref-parameter-parametername-back-to-the-matching-argument-narrows-from-type-typename1-to-type-typename2"></a>BC32053: copiar o valor do parâmetro ' ByRef ' ' \<parametername> ' de volta para o argumento correspondente reduz do tipo ' \<typename1> ' para o tipo ' \<typename2> '
 
@@ -34,7 +35,7 @@ Um procedimento é chamado com um argumento que amplia o tipo de parâmetro corr
 
 - Se você precisar retornar um valor para o argumento de chamada, defina o operador de conversão reversa como [ampliação](../modifiers/widening.md), se possível.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](../../programming-guide/language-features/procedures/index.md)
 - [Parâmetros e Argumentos de Procedimento](../../programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)

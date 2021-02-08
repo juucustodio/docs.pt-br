@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30663: o atributo ' <attributename> ' não pode ser aplicado várias vezes"
 title: O atributo '<attributename>' não pode ser aplicado várias vezes
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30663
 ms.assetid: 3760e7ff-7238-40a1-8676-77d858a64fc0
-ms.openlocfilehash: 27cbe6d0043179c4a5d52baae06bad805f9d1d3a
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 84b77111a7401eb6f30eb7cd167f4b5689f33e77
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797140"
 ---
 # <a name="bc30663-attribute-attributename-cannot-be-applied-multiple-times"></a>BC30663: o atributo ' \<attributename> ' não pode ser aplicado várias vezes
 
@@ -30,7 +31,7 @@ O atributo só pode ser aplicado uma vez. O `AttributeUsage` atributo determina 
 <AttributeUsage(AllowMultiple := True)>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.AttributeUsageAttribute>
 - [Criando atributos personalizados](../../programming-guide/concepts/attributes/creating-custom-attributes.md)

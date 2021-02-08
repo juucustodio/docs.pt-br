@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como excluir uma chave do registro no Visual Basic'
 title: 'Como: Excluir uma Chave do Registro'
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - registry [Visual Basic], deleting keys
 - examples [Visual Basic], registry
 ms.assetid: ab9aca0e-42b0-4ff7-8ff9-845a4bfdf9f2
-ms.openlocfilehash: ea537d302f64933176f1a44fec2e27b804ff5809
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ca99855d30c2dd697c789bb4017429b906b3b63d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363313"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797712"
 ---
 # <a name="how-to-delete-a-registry-key-in-visual-basic"></a>Como excluir uma chave do Registro no Visual Basic
 
@@ -48,7 +49,7 @@ Os métodos <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%29> e
 
  As chamadas do Registro falharão se as permissões suficientes de tempo de execução não forem concedidas (<xref:System.Security.Permissions.RegistryPermission>) ou se o usuário não tiver o acesso correto para (conforme determinado pelas ACLs) para criar ou gravar nas configurações. Por exemplo, um aplicativo local que tem a permissão de segurança de acesso do código pode não ter permissão do sistema operacional.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%2A>
 - <xref:Microsoft.Win32.RegistryKey>

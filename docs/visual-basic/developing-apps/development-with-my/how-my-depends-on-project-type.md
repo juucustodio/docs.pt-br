@@ -1,23 +1,24 @@
 ---
+description: 'Saiba mais sobre: como a minha depende do tipo de projeto (Visual Basic)'
 title: Como My depende do tipo de projeto
 ms.date: 07/20/2015
 helpviewer_keywords:
 - _MYTYPE
 ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
-ms.openlocfilehash: 740185d8030c09e8813bc7680b451f6326588593
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 69c1ffdbd241816c9061bf4b4feb6d4359258059
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411708"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797972"
 ---
 # <a name="how-my-depends-on-project-type-visual-basic"></a>Como My depende do tipo de projeto (Visual Basic)
 
-`My`expõe somente os objetos exigidos por um tipo de projeto específico. Por exemplo, o `My.Forms` objeto está disponível em um aplicativo Windows Forms, mas não está disponível em um aplicativo de console. Este tópico descreve quais `My` objetos estão disponíveis em diferentes tipos de projeto.  
+`My` expõe somente os objetos exigidos por um tipo de projeto específico. Por exemplo, o `My.Forms` objeto está disponível em um aplicativo Windows Forms, mas não está disponível em um aplicativo de console. Este tópico descreve quais `My` objetos estão disponíveis em diferentes tipos de projeto.  
   
 ## <a name="my-in-windows-applications-and-web-sites"></a>Meu nos aplicativos e sites do Windows  
 
- `My`expõe somente objetos que são úteis no tipo de projeto atual; Ele suprime objetos que não são aplicáveis. Por exemplo, a imagem a seguir mostra o `My` modelo de objeto em um projeto Windows Forms.  
+ `My` expõe somente objetos que são úteis no tipo de projeto atual; Ele suprime objetos que não são aplicáveis. Por exemplo, a imagem a seguir mostra o `My` modelo de objeto em um projeto Windows Forms.  
   
  ![Diagrama que mostra o modelo de objeto My em um aplicativo Windows Forms.](./media/how-my-depends-on-project-type/my-object-model-windows-forms.png)  
   
@@ -31,7 +32,7 @@ ms.locfileid: "84411708"
   
  Há três versões do `My.Application` objeto, duas versões do `My.Computer` objeto e duas versões do `My.User` objeto; os detalhes sobre essas versões são fornecidos nas notas de rodapé após a tabela.  
   
-|Meu objeto|Aplicativo do Windows|Biblioteca de Classes|Aplicativo do Console|Biblioteca de controle do Windows|Biblioteca de controle da Web|Windows Service|Vazio|Site|  
+|Meu objeto|Aplicativo do Windows|Biblioteca de Classes|Aplicativo do Console|Biblioteca de controle do Windows|Biblioteca de controle da Web|Serviço Windows|Vazio|Site|  
 |---|---|---|---|---|---|---|---|---|  
 |`My.Application`|**Sim** <sup>1</sup>|**Sim** <sup>2</sup>|**Sim** <sup>3</sup>|**Sim** <sup>2</sup>|Não|**Sim** <sup>3</sup>|Não|Não|  
 |`My.Computer`|**Sim** <sup>4</sup>|**Sim** <sup>4</sup>|**Sim** <sup>4</sup>|**Sim** <sup>4</sup>|**Sim** <sup>5</sup>|**Sim** <sup>4</sup>|Não|**Sim** <sup>5</sup>|  
@@ -58,7 +59,7 @@ ms.locfileid: "84411708"
   
  <sup>7</sup> versão da Web do `My.User` . Esse objeto é associado à identidade do usuário da solicitação HTTP atual do aplicativo.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
 - <xref:Microsoft.VisualBasic.Devices.Computer>

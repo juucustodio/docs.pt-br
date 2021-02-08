@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: SpinWait'
 title: SpinWait
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - synchronization primitives, SpinWait
 ms.assetid: 36012f42-34e5-4f86-adf4-973f433ed6c6
-ms.openlocfilehash: 2031ebc30d0789181786053d401e69da782a619f
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 929db1b35d7d526585641ef1c1b213f4e000585b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94826203"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797985"
 ---
 # <a name="spinwait"></a>SpinWait
 
@@ -27,7 +28,7 @@ ms.locfileid: "94826203"
  [!code-csharp[CDS_SpinWait#05](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_spinwait/cs/spinwait.cs#05)]
  [!code-vb[CDS_SpinWait#05](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_spinwait/vb/cds_spinwait1.vb#05)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.Thread.SpinWait%2A>
-- [Threading de objetos e recursos](threading-objects-and-features.md)
+- [Objetos e recursos de Threading](threading-objects-and-features.md)

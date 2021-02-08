@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMetaDataTables'
 title: Interface IMetaDataTables
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 31272cce-506a-4f18-bcbf-01ee45e36356
 topic_type:
 - apiref
-ms.openlocfilehash: 073e73f082416308b893974471e39cbf5243d01c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c3edf504586bad1252c36d6e8254193eaf9cc26d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708849"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799259"
 ---
 # <a name="imetadatatables-interface"></a>Interface IMetaDataTables
 
@@ -27,7 +28,7 @@ Fornece métodos para o armazenamento e a recuperação de informações de meta
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetBlob](imetadatatables-getblob-method.md)|Obtém um ponteiro para o objeto binário grande (BLOB) no índice de coluna especificado.|  
 |[Método GetBlobHeapSize](imetadatatables-getblobheapsize-method.md)|Obtém o tamanho, em bytes, do heap de BLOB.|  
@@ -59,7 +60,7 @@ Fornece métodos para o armazenamento e a recuperação de informações de meta
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)

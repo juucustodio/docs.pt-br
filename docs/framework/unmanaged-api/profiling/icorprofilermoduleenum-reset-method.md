@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerModuleEnum:: Reset'
 title: Método ICorProfilerModuleEnum::Reset
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c9110b49-823c-4ba9-9a4c-198afeb7780e
 topic_type:
 - apiref
-ms.openlocfilehash: 5dca8c1b2f34de63e7779535190d0a8c34082038
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5d20ae9a7d5557157734409f65ba89c968f5cf58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722785"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798973"
 ---
 # <a name="icorprofilermoduleenumreset-method"></a>Método ICorProfilerModuleEnum::Reset
 
@@ -44,7 +45,7 @@ HRESULT Reset();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerModuleEnum](icorprofilermoduleenum-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

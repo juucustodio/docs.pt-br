@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: desenvolvimento rápido de aplicativos com My. Resources e My. Settings (Visual Basic)'
 title: Método RAD com My.Resources e My.Settings
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - rapid application development (RAD), My.Settings
 - My.Resources object [Visual Basic], developing applications
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
-ms.openlocfilehash: fd1ec25582e919b84235502f5921edfbc6e1dade
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 38846b3a6ac273306f588ad8b043d7f35f7230a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990212"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797920"
 ---
 # <a name="rapid-application-development-with-myresources-and-mysettings-visual-basic"></a>Desenvolvimento de aplicativo rápido com My.Resources e My.Settings (Visual Basic)
 
@@ -28,7 +29,7 @@ O `My.Resources` objeto fornece acesso aos recursos do aplicativo e permite que 
   
  Da mesma forma, o `My.Settings` objeto fornece acesso às configurações do aplicativo e permite que você armazene e recupere dinamicamente as configurações de propriedade e outras informações para seu aplicativo. Para obter mais informações, consulte [My. Resources](../../language-reference/objects/my-resources-object.md) Object e [My. Settings Object](../../language-reference/objects/my-settings-object.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objeto My.Resources](../../language-reference/objects/my-resources-object.md)
 - [Objeto My.Settings](../../language-reference/objects/my-settings-object.md)

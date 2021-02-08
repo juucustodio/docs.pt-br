@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30137: erro ao salvar o arquivo de recurso Win32 temporário ' <filename> ': <error message>"
 title: "Erro na gravação do arquivo de recurso Win32 temporário '<filename>': <error message>"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30137
 ms.assetid: 61c23f48-0e06-42fc-be00-5598053c86dd
-ms.openlocfilehash: 62d42cec5b60b1124680f94601314e5565c974fa
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 21051f648eee41c0415795a18bbe47e97e1c7077
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162070"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796464"
 ---
 # <a name="bc30137-error-saving-temporary-win32-resource-file-filename-error-message"></a>BC30137: erro ao salvar o arquivo de recurso Win32 temporário ' \<filename> ': \<error message>
 
@@ -26,7 +27,7 @@ O compilador Visual Basic chama o vinculador de assembly (Al.exe, também conhec
 
 2. Se o erro persistir, reúna informações sobre as circunstâncias e notifique o Microsoft Product Support Services.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [Fale conosco](/visualstudio/ide/feedback-options)

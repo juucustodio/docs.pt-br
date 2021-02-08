@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: limitação'
 title: Limitação
 ms.date: 03/30/2017
 helpviewer_keywords:
 - service behaviors, throttling sample
 - Throttling Sample [Windows Communication Foundation]
 ms.assetid: 40bb3582-8ae9-4410-96f0-6c515bfaf47c
-ms.openlocfilehash: 89c460f58626abc2957f7f78e536ca43eea19afd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 91b69ca02e139064b012cab26bba8acd13002cbd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96271285"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798271"
 ---
 # <a name="throttling"></a>Limitação
 

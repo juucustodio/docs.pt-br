@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: desenvolvendo aplicativos com o Visual Basic'
 title: Desenvolvendo aplicativos
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Visual Basic, developing applications
 - applications [Visual Basic]
 ms.assetid: 1e1c0c81-6d95-4167-a98b-44b1efb6d25f
-ms.openlocfilehash: 1161a99a3e1317b4a4e1daa686ad2678422c0c6f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9bd788e011f00fe4a6094ad633d5f941f0b67fd9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797907"
 ---
 # <a name="developing-applications-with-visual-basic"></a>Desenvolvendo aplicativos com o Visual Basic
 

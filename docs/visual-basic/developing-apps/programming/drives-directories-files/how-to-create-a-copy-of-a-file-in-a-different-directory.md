@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como criar uma cópia de um arquivo em um diretório diferente no Visual Basic'
 title: 'Como: criar uma cópia de um arquivo em outro diretório'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CopyFile method [Visual Basic], copying files in Visual Basic
 - I/O [Visual Basic], copying files
 ms.assetid: 88e2145c-d414-45a5-ad03-6f5d58ecca26
-ms.openlocfilehash: 3b4b41e105d6bb6a17fbb688aa4718b33c23b9d6
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 128a813ec3e5c759d5320d59a1e83f9d66af3bbd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401687"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797634"
 ---
 # <a name="how-to-create-a-copy-of-a-file-in-a-different-directory-in-visual-basic"></a>Como criar uma cópia de um arquivo em um diretório diferente no Visual Basic
 
@@ -56,7 +57,7 @@ O método `My.Computer.FileSystem.CopyFile` permite a cópia de arquivos. Os par
   
 - O usuário não possui permissões necessárias para exibir o caminho (<xref:System.Security.SecurityException>).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A>

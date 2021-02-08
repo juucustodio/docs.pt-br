@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como ler configurações do aplicativo no Visual Basic'
 title: 'Como: ler configurações de aplicativo'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - My.Settings object [Visual Basic], reading application settings
 - application settings [Visual Basic], reading
 ms.assetid: eb3428ef-115e-49a8-a878-e0613183fee0
-ms.openlocfilehash: 9b326341c54d652479776e3ab93a2b140f4531e0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 30b5a3b0cdf3565fc8c1f0dfa19e7717a714c350
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797816"
 ---
 # <a name="how-to-read-application-settings-in-visual-basic"></a>Como ler configurações do aplicativo no Visual Basic
 
@@ -27,7 +28,7 @@ Você pode ler uma configuração de usuário, acessando a propriedade da config
   
  Para que esse exemplo funcione, seu aplicativo deve ter uma configuração `Nickname`, do tipo `String`. Para obter mais informações, consulte [Gerenciando configurações de aplicativo (.NET)](/visualstudio/ide/managing-application-settings-dotnet).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objeto My.Settings](../../../language-reference/objects/my-settings-object.md)
 - [Como alterar configurações do usuário no Visual Basic](how-to-change-user-settings.md)

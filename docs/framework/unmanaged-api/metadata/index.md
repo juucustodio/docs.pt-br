@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: metadados (referência de API não gerenciada)'
 title: Metadados (referência de API não gerenciada)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - native API reference [.NET Framework], metadata
 - metadata [.NET Framework], using the unmanaged API
 ms.assetid: 10cfea92-db5e-4bcb-b301-ef029bcf77a3
-ms.openlocfilehash: 54d8177b6c2a8492f1391645771b4620bab365e8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6e6ec1cb27c72136c8684cc4c3f844b66eb94fbe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708484"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799168"
 ---
 # <a name="metadata-unmanaged-api-reference"></a>Metadados (referência de API não gerenciada)
 

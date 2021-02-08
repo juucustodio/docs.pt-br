@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: uma propriedade ou chamada de método não pode incluir uma referência a um objeto particular, como um argumento ou um valor de retorno'
 title: Uma chamada de propriedade ou método não pode incluir uma referência a um objeto particular, como um argumento ou um valor de retorno
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID98
 ms.assetid: 059b43e1-202d-4fa2-806b-7bad63c1e7ca
-ms.openlocfilehash: 00237d795fb62fbae426e0015d8e64d5fabb4c32
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 8fe570c9ed789a5bac36aafa9b1ec2f507a55d51
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162668"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797192"
 ---
 # <a name="a-property-or-method-call-cannot-include-a-reference-to-a-private-object-either-as-an-argument-or-as-a-return-value"></a>Uma chamada de propriedade ou método não pode incluir uma referência a um objeto particular, como um argumento ou um valor de retorno
 
@@ -27,6 +28,6 @@ Entre as possíveis causas desse erro estão:
 
 - Remova a referência.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Privado](../modifiers/private.md)

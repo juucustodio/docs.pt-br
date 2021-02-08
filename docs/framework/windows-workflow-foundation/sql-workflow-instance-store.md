@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: repositório de instância do fluxo de trabalho SQL'
 title: Store instância de fluxo de trabalho do SQL
 ms.date: 03/30/2017
 ms.assetid: 8cd2f8a5-4bf8-46ea-8909-c7fdb314fabc
-ms.openlocfilehash: e0989e4ed5d9e256d3570b0c3ee2bb35a95b410a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ca2b6751b69aa65a1e151feb55eee3a62f31895e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798063"
 ---
 # <a name="sql-workflow-instance-store"></a>Store instância de fluxo de trabalho do SQL
 
@@ -37,6 +38,6 @@ Os vem de [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-m
   
 - [A base de dados do SQL Server](sql-server-persistence-database.md)  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Persistência Exemplos](/previous-versions/dotnet/netframework-4.0/dd699769(v=vs.100))

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: usando Dataflow em um aplicativo Windows Forms'
 title: 'Passo a passo: usar um fluxo de dados em um aplicativo do Windows Forms'
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - Windows Forms, and TPL
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
-ms.openlocfilehash: da42358007b887f6bab05c35e0f7542f1069abd4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 761f47b3250827a8d5cbee8bb444d172e9ae950f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689804"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798037"
 ---
 # <a name="walkthrough-using-dataflow-in-a-windows-forms-application"></a>Passo a passo: usar um fluxo de dados em um aplicativo do Windows Forms
 
@@ -90,7 +91,7 @@ Este documento demonstra como criar uma rede de blocos de fluxo de dados que exe
   
  A tabela a seguir descreve os membros da rede.  
   
-|Membro|Type|DESCRIÇÃO|  
+|Membro|Type|Descrição|  
 |------------|----------|-----------------|  
 |`loadBitmaps`|<xref:System.Threading.Tasks.Dataflow.TransformBlock%602>|Usa um caminho de pasta como entrada e produz uma coleção de objetos <xref:System.Drawing.Bitmap> como saída.|  
 |`createCompositeBitmap`|<xref:System.Threading.Tasks.Dataflow.TransformBlock%602>|Usa uma coleção de objetos <xref:System.Drawing.Bitmap> como entrada e produz um bitmap composto como saída.|  
@@ -139,6 +140,6 @@ Este documento demonstra como criar uma rede de blocos de fluxo de dados que exe
   
  ![O aplicativo Windows Forms](media/tpldataflow-compositeimages.gif "TPLDataflow_CompositeImages")  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Fluxo de dados](dataflow-task-parallel-library.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Configurando o acompanhamento de um fluxo de trabalho'
 title: Configurando o rastreamento para um fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: 905adcc9-30a0-4918-acd6-563f86db988a
-ms.openlocfilehash: 098b295be00b1b8283e26e79ea14e78634fdb504
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 061a0edf107296e04d86ed1a50b9a8bfefd7bfce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792759"
 ---
 # <a name="configuring-tracking-for-a-workflow"></a>Configurando o rastreamento para um fluxo de trabalho
 
@@ -148,15 +149,15 @@ invoker.Invoke();
 
 ### <a name="viewing-tracking-records-in-event-viewer"></a>Registros de exibição de rastreamento no visualizador de eventos
 
-Há dois logs do visualizador de eventos de interesse específico exibir quando controlando a execução de WF - o log analítico e depuração de log. Ambos residem no nó Microsoft&#124;Windows&#124;Application Server – Applications. Os logs dentro desta seção contêm eventos de um único aplicativo em vez de eventos que têm um impacto no sistema inteiro.
+Há dois logs do visualizador de eventos de interesse específico exibir quando controlando a execução de WF - o log analítico e depuração de log. Ambos residem no nó Microsoft&#124;Windows&#124;aplicativo Server-Applications. Os logs dentro desta seção contêm eventos de um único aplicativo em vez de eventos que têm um impacto no sistema inteiro.
 
 Os eventos de rastreamento de depuração são gravados no log de depuração. Para coletar eventos de rastreamento de depuração de WF no visualizador de eventos, ative o log de depuração.
 
-1. Para abrir Visualizador de Eventos, clique em **Iniciar**e em **executar.** Na caixa de diálogo Executar, digite `eventvwr` .
+1. Para abrir Visualizador de Eventos, clique em **Iniciar** e em **executar.** Na caixa de diálogo Executar, digite `eventvwr` .
 
 2. Na caixa de diálogo Visualizador de Eventos, expanda o nó **logs de aplicativos e serviços** .
 
-3. Expanda os nós **Microsoft**, **Windows**e **Application Server – Applications** .
+3. Expanda os nós **Microsoft**, **Windows** e **Application Server – Applications** .
 
 4. Clique com o botão direito do mouse no nó de **depuração** no nó **servidor de aplicativos – aplicativos** e selecione **habilitar log**.
 
@@ -168,11 +169,11 @@ WF 4 fornece um participante de rastreamento que grava registros de rastreamento
 
 Para exibir registros de rastreamento, siga estas etapas.
 
-1. Para abrir Visualizador de Eventos, clique em **Iniciar**e em **executar.** Na caixa de diálogo Executar, digite `eventvwr` .
+1. Para abrir Visualizador de Eventos, clique em **Iniciar** e em **executar.** Na caixa de diálogo Executar, digite `eventvwr` .
 
 2. Na caixa de diálogo Visualizador de Eventos, expanda o nó **logs de aplicativos e serviços** .
 
-3. Expanda os nós **Microsoft**, **Windows**e **Application Server – Applications** .
+3. Expanda os nós **Microsoft**, **Windows** e **Application Server – Applications** .
 
 4. Clique com o botão direito do mouse no nó **analítico** no nó **servidor de aplicativos – aplicativos** e selecione **habilitar log**.
 
@@ -196,7 +197,7 @@ Se os eventos precisam ser gravados em um log do aplicativo específico, siga es
     </system.serviceModel>
     ```
 
-2. Copie o arquivo de manifesto de%windir%\Microsoft.NET\Framework \\ \<latest version of [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]> \Microsoft.Windows.ApplicationServer.Applications.Man para um local temporário e renomeie-o para Microsoft. Windows. ApplicationServer. Applications_Provider1. Man
+2. Copie o arquivo de manifesto de%windir%\Microsoft.NET\Framework \\ \<latest version of [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]> \Microsoft.Windows.ApplicationServer.Applications.Man para um local temporário e renomeie-o para Microsoft.Windows.ApplicationServer.Applications_Provider1. Man
 
 3. Altere o GUID no arquivo de manifesto a nova GUID.
 
@@ -256,7 +257,7 @@ Se os eventos precisam ser gravados em um log do aplicativo específico, siga es
         wevtutil im Microsoft.Windows.ApplicationServer.Applications_Provider1.man
         ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Monitoramento do Windows Server app Fabric](/previous-versions/appfabric/ee677251(v=azure.10))
 - [Monitorando aplicativos com o app Fabric](/previous-versions/appfabric/ee677276(v=azure.10))

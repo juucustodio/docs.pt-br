@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: comportamento de auditoria de serviço'
 title: Comportamento de auditoria de serviço
 ms.date: 03/30/2017
 ms.assetid: 59bf0cda-e496-4418-a3a1-2f0f6e85f8ce
-ms.openlocfilehash: ae7ed2059b491a71de9c806e78f1fb784da197fa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 101f737d790d7e5ec0fdefc3a60695cb3c432c28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262561"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793123"
 ---
 # <a name="service-auditing-behavior"></a>Comportamento de auditoria de serviço
 
@@ -51,7 +52,7 @@ Este exemplo demonstra como usar o <xref:System.ServiceModel.Description.Service
   
 3. Para executar o exemplo em uma configuração de computador único ou entre computadores, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Auditoria](../feature-details/auditing-security-events.md)
 - [Como: auditar eventos de segurança](../feature-details/how-to-audit-wcf-security-events.md)

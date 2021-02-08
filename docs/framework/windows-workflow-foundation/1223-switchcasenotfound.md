@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1223-SwitchCaseNotFound'
 title: 1223 - SwitchCaseNotFound
 ms.date: 03/30/2017
 ms.assetid: 332ace82-2d9e-4fd9-a9a8-f077f43b4a08
-ms.openlocfilehash: b50f2bb9e6a507a2928a472310fdc2780c35885d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: b1e679f5041c3f55bfb6ba7e0596d1dc521b1cfe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294632"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792798"
 ---
 # <a name="1223---switchcasenotfound"></a>1223 - SwitchCaseNotFound
 
@@ -17,7 +18,7 @@ ms.locfileid: "96294632"
 |-|-|  
 |ID|1223|  
 |Palavras-chave|WFActivities|  
-|Nível|Informações do|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

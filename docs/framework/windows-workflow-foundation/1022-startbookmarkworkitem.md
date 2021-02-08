@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 1022-StartBookmarkWorkItem'
 title: 1022 - StartBookmarkWorkItem
 ms.date: 03/30/2017
 ms.assetid: 4415fbdb-0329-4019-803f-aea66e75f3da
-ms.openlocfilehash: ca1f4244fb1a5144cb2d86eaacb9b31137d317c2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 37d1ec1216df26a928b39189ca299dbb5b6c3d4b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275330"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792824"
 ---
 # <a name="1022---startbookmarkworkitem"></a>1022 - StartBookmarkWorkItem
 

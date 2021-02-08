@@ -1,17 +1,18 @@
 ---
+description: 'Saiba mais sobre: utilitário de configuração do WS-AtomicTransaction (wsatConfig.exe)'
 title: Utilitário de configuração de transações WS-Atomic (wsatConfig.exe)
 ms.date: 03/30/2017
 ms.assetid: 1c56cf98-3963-46d5-a4e1-482deae58c58
-ms.openlocfilehash: dbd33869de6b1ecee6406dfeede88afc4eca07f1
-ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
+ms.openlocfilehash: 8b315e5aa5df23a4d9bb032db41b7067accfa010
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90720485"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792954"
 ---
 # <a name="ws-atomictransaction-configuration-utility-wsatconfigexe"></a>Utilitário de configuração de transações WS-Atomic (wsatConfig.exe)
 
-O utilitário de configuração WS-AtomicTransaction é usado para definir configurações básicas de suporte WS-AtomicTransaction.  
+O utilitário de configuração WS-AtomicTransaction é usado para definir as configurações básicas de suporte de WS-AtomicTransaction.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -21,13 +22,13 @@ wsatConfig [Options]
   
 ## <a name="remarks"></a>Comentários
 
- Essa ferramenta de linha de comando pode ser usada para definir configurações básicas do WS-AT somente em um computador local. Se você tiver que definir as configurações em máquinas locais e remotas, deverá usar o snap-in do MMC, conforme descrito em [Configurando o suporte à transação WS-Atomic](./feature-details/configuring-ws-atomic-transaction-support.md).  
+ Essa ferramenta de linha de comando pode ser usada para definir configurações básicas do WS-AT somente em um computador local. Se você precisar definir as configurações em máquinas locais e remotas, deverá usar o snap-in do MMC, conforme descrito em [Configurando o suporte à transação WS-Atomic](./feature-details/configuring-ws-atomic-transaction-support.md).  
   
  A ferramenta de linha de comando pode ser encontrada no local de instalação do SDK do Windows:
   
  Foundation\wsatConfig.exe de comunicação%SystemRoot%\Microsoft.Net\Framework\v3.0\Windows
   
- A tabela a seguir mostra as opções que podem ser usadas com o utilitário de configuração WS-AtomicTransaction (wsatConfig.exe).  
+ A tabela a seguir mostra as opções que podem ser usadas com o wsatConfig.exe (utilitário de configuração do WS-AtomicTransaction).  
   
 > [!NOTE]
 > Ao definir um certificado SSL para uma porta selecionada, você substitui o certificado SSL original associado a essa porta, se houver.  
@@ -46,10 +47,10 @@ wsatConfig [Options]
 |-tracePII:\<enable&#124;disable>|Habilita ou desabilita o rastreamento de informações de identificação pessoal.|  
 |-traceProp:\<enable&#124;disable>|Habilita ou desabilita o rastreamento de eventos de propagação.|  
 |-restart|Reinicia o MSDTC para ativar as alterações imediatamente. Se isso não for especificado, as alterações entrarão em vigor quando o MSDTC for reiniciado.|  
-|-Mostrar|Exibe as configurações de protocolo WS-AtomicTransaction atuais.|  
+|-Mostrar|Exibe as configurações de protocolo de WS-AtomicTransaction atuais.|  
 |servidor virtual\<virtualServer>|Especifica o nome do cluster de recursos do DTC.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Utilizando Transações WS-Atomic](./feature-details/using-ws-atomictransaction.md)
 - [Configurando suporte de transações de WS-Atomic](./feature-details/configuring-ws-atomic-transaction-support.md)

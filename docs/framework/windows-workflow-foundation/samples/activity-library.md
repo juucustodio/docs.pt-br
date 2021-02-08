@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: biblioteca de atividades'
 title: Biblioteca de Atividades
 ms.date: 03/30/2017
 ms.assetid: 5323e9d4-71d6-47eb-bfa6-31feac62044d
-ms.openlocfilehash: 1a0c289315d7181645573098916788f18493abb8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7e59846d34b63683266fed2c4ec1ad4ed5cb9566
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245685"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792603"
 ---
 # <a name="activity-library"></a>Biblioteca de Atividades
 

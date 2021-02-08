@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interoperabilidade de serviço'
 title: Interoperabilidade de serviço
 ms.date: 03/30/2017
 ms.assetid: 3628557f-b8b3-47fc-8fdc-0c7d2e4268bd
-ms.openlocfilehash: 9168329d449fe8043e182c40918526f338cb1027
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3ac4f8ff9a57c585cacbdc27903156186b1d7203
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96264654"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793071"
 ---
 # <a name="service-interoperability"></a>Interoperabilidade de serviço
 

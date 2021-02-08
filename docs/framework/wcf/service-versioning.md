@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: controle de versão de serviço'
 title: Controle de versão de serviço
 ms.date: 03/30/2017
 ms.assetid: 37575ead-d820-4a67-8059-da11a2ab48e2
-ms.openlocfilehash: fae0a5eca5737c3d7885cbe6c678678adabbea01
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3a49b29b3f99caff688a0c1540698d80608a7ce2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245338"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792980"
 ---
 # <a name="service-versioning"></a>Controle de versão de serviço
 

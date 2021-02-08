@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: acessando o OperationContext'
 title: Acessando OperationContext
 ms.date: 03/30/2017
 ms.assetid: 4e92efe8-7e79-41f3-b50e-bdc38b9f41f8
-ms.openlocfilehash: 5cffae101c5d39fcc9500aa7ccafde7a836a5023
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 768475f115f653630aaedeee976d0c96bc9e4dd7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245725"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792616"
 ---
 # <a name="accessing-operationcontext"></a>Acessando OperationContext
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: comportamento de depuração de serviço'
 title: Comportamento de depuração de serviço
 ms.date: 03/30/2017
 ms.assetid: 9d8fd3fb-dc39-427a-8235-336a7e7162ba
-ms.openlocfilehash: 53f21129860c644d09d1a2eb9cb956aecf8ab0ad
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3aae4a4cca53fce50bff8ec02896e748f430166f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596629"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793097"
 ---
 # <a name="service-debug-behavior"></a>Comportamento de depuração de serviço
 
@@ -18,7 +19,7 @@ Neste exemplo, o cliente é um aplicativo de console (. exe) e o serviço é hos
 > [!NOTE]
 > O procedimento de instalação e as instruções de Build para este exemplo estão localizados no final deste tópico.
 
-O arquivo Web. config do servidor define o comportamento de depuração do serviço para habilitar a página de ajuda e o tratamento de exceções, conforme mostrado no exemplo a seguir.
+O arquivo de Web.config do servidor define o comportamento de depuração do serviço para habilitar a página de ajuda e o tratamento de exceções, conforme mostrado no exemplo a seguir.
 
 ```xml
 <behaviors>
@@ -32,7 +33,7 @@ O arquivo Web. config do servidor define o comportamento de depuração do servi
 </behaviors>
 ```
 
-[\<serviceDebug>](../../configure-apps/file-schema/wcf/servicedebug.md)é o elemento de configuração que permite alterar as propriedades de comportamento de depuração do serviço. O usuário pode modificar esse comportamento para obter o seguinte:
+[\<serviceDebug>](../../configure-apps/file-schema/wcf/servicedebug.md) é o elemento de configuração que permite alterar as propriedades de comportamento de depuração do serviço. O usuário pode modificar esse comportamento para obter o seguinte:
 
 - Isso permite que o serviço retorne qualquer exceção gerada pelo código do aplicativo, mesmo se a exceção não for declarada usando o <xref:System.ServiceModel.FaultContractAttribute> . Isso é feito definindo `includeExceptionDetailInFaults` como `true` . Essa configuração é útil ao depurar casos em que o servidor está lançando uma exceção inesperada.
 

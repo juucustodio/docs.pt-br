@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: classe ComNetOS'
 title: Classe ComNetOS (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
@@ -11,16 +12,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: ed2b970d07df2c338870b386e75c1688703f1d68
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 7376fe4a5e02818907cb71573451fffb3a3667cb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802522"
 ---
 # <a name="comnetos-class"></a>Classe ComNetOS
 
-Fornece informações sobre o sistema operacional atual, como sua versão e o tipo de instalação (cliente ou servidor). Esta classe não pode ser herdada.
+Fornece informações sobre o sistema operacional atual, como sua versão e o tipo de instalação (cliente ou servidor). Essa classe não pode ser herdada.
   
 ```csharp  
 internal static class ComNetOS

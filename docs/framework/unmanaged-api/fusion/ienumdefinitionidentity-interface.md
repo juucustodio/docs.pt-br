@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IEnumDefinitionIdentity'
 title: Interface IEnumDefinitionIdentity
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 8263e75d-251b-4abc-8a1a-c62884142232
 topic_type:
 - apiref
-ms.openlocfilehash: f3872a2b03d3b22d695af1c104e9ae8ba8856990
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1055031c064115410334bbe4b20b48deee7ec4c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728999"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800156"
 ---
 # <a name="ienumdefinitionidentity-interface"></a>Interface IEnumDefinitionIdentity
 
 Serve como o enumerador para uma coleção de `IDefinitionIdentity` objetos.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 IEnumDefinitionIdentity : IUnknown {  
@@ -52,7 +53,7 @@ IEnumDefinitionIdentity : IUnknown {
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |`IEnumDefinitionIdentity::Clone`|Obtém um ponteiro de interface para um novo `IEnumDefinitionIdentity` objeto que contém os mesmos membros que isso `IEnumDefinitionIdentity` .|  
 |`IEnumDefinitionIdentity::Next`|Obtém o número especificado de `IDefinitionIdentity` objetos, começando na posição atual.|  
@@ -67,7 +68,7 @@ IEnumDefinitionIdentity : IUnknown {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de fusão](fusion-interfaces.md)
 - [Interface IDefinitionIdentity](idefinitionidentity-interface.md)

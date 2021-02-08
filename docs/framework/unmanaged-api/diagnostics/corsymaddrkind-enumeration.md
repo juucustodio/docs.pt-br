@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorSymAddrKind'
 title: Enumeração CorSymAddrKind
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3ef841c2-cade-42ee-ba34-2ef91d6d0879
 topic_type:
 - apiref
-ms.openlocfilehash: f71d8956e8706cdc71b94b6e6e2e8210e5b9161e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94ee9f3da63a33a9f4a80289dbf9b03969d37b3d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725229"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800494"
 ---
 # <a name="corsymaddrkind-enumeration"></a>Enumeração CorSymAddrKind
 
@@ -62,6 +63,6 @@ typedef enum CorSymAddrKind
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-enumerations.md)

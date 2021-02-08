@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRTask2:: EndPreventAsyncAbort'
 title: Método ICLRTask2::EndPreventAsyncAbort
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d8013659-e3df-44b3-814f-a6b534ce62f8
 topic_type:
 - apiref
-ms.openlocfilehash: 7f8963403c60815bbf1cd3008ed7fec73d849fea
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 964a68c1ad6d5aa6a95560d2870e135640283590
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720250"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799493"
 ---
 # <a name="iclrtask2endpreventasyncabort-method"></a>Método ICLRTask2::EndPreventAsyncAbort
 
@@ -59,7 +60,7 @@ HRESULT EndPreventAsyncAbort();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método BeginPreventAsyncAbort](iclrtask2-beginpreventasyncabort-method.md)
 - [Interface ICLRTask2](iclrtask2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Interface ICLRTask'
 title: Interface ICLRTask
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b3a44df3-578a-4451-b55e-70c8e7695f5e
 topic_type:
 - apiref
-ms.openlocfilehash: 5ecc42950775a620796a1c775e5f088f461a12c3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f48216b19dd2c1d0d0ba64117169b74767dbdf2b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690818"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799520"
 ---
 # <a name="iclrtask-interface"></a>Interface ICLRTask
 
@@ -27,7 +28,7 @@ Fornece métodos que permitem ao host fazer solicitações do Common Language Ru
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método Abort](iclrtask-abort-method.md)|Solicita que o CLR anule a tarefa que a `ICLRTask` instância atual representa.|  
 |[Método ExitTask](iclrtask-exittask-method.md)|Notifica o CLR que a tarefa associada à `ICLRTask` instância atual está terminando e tenta desligar a tarefa normalmente.|  
@@ -57,7 +58,7 @@ Fornece métodos que permitem ao host fazer solicitações do Common Language Ru
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)
 - [Interface IHostTask](ihosttask-interface.md)

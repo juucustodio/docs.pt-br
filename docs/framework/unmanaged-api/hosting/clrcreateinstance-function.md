@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função CLRCreateInstance'
 title: Função CLRCreateInstance
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
 topic_type:
 - apiref
-ms.openlocfilehash: 3c7a14f828e55310435a99693c1195f2f0dd40c6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3b4dd9f07444f3e7ca68af3b85a7a053fc72b772
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711670"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799933"
 ---
 # <a name="clrcreateinstance-function"></a>Função CLRCreateInstance
 
@@ -47,7 +48,7 @@ HRESULT CLRCreateInstance(
  `ppInterface`  
  fora Uma das três interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md)ou [ICLRDebugging](../debugging/iclrdebugging-interface.md).  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -94,6 +95,6 @@ hr = CLRCreateInstance (CLSID_CLRDebugging, IID_ICLRDebugging,
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Hosting](index.md)
+- [Hospedagem](index.md)

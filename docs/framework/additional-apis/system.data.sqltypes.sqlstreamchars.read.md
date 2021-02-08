@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método SqlStreamChars. Read (Char [], Int32, Int32)'
 title: Método SqlStreamChars. Read (Char [], Int32, Int32) (System. Data. SqlTypes)
 author: stevestein
 ms.author: sstein
@@ -12,16 +13,16 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 9c8a1526e75fdc304022e74a7cc52506762489ea
-ms.sourcegitcommit: 2e95559d957a1a942e490c5fd916df04b39d73a9
+ms.openlocfilehash: a899ddff7b7242fcc32aaf7b7f7794970596027b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72395747"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802574"
 ---
 # <a name="sqlstreamcharsreadchar-int32-int32-method"></a>Método SqlStreamChars. Read (Char [], Int32, Int32)
 
-Quando substituído em uma classe derivada, o lê o próximo conjunto de caracteres do fluxo de entrada. O assembly que contém esse método tem uma relação Friend com SQLAccess. dll. Ele é destinado ao uso por SQL Server. Para outros bancos de dados, use o mecanismo de hospedagem fornecido por esse banco.
+Quando substituído em uma classe derivada, o lê o próximo conjunto de caracteres do fluxo de entrada. O assembly que contém esse método tem uma relação Friend com SQLAccess.dll. Ele é destinado ao uso por SQL Server. Para outros bancos de dados, use o mecanismo de hospedagem fornecido por esse banco.
 
 ```csharp
 public abstract int Read (char[] buffer, int offset, int count);
@@ -38,7 +39,7 @@ Um deslocamento relativo à origem.
 `count`\
 O número de caracteres a serem lidos do fluxo atual.
 
-## <a name="returns"></a>Retorna
+## <a name="returns"></a>Retornos
 
 <xref:System.Int32>\
 O número total de caracteres lidos no buffer.
@@ -46,7 +47,7 @@ O número total de caracteres lidos no buffer.
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> O método `SqlStreamChars.Read` é privado e não se destina a ser usado diretamente no seu código.
+> O `SqlStreamChars.Read` método é privado e não deve ser usado diretamente no seu código.
 >
 > A Microsoft não oferece suporte ao uso desse método em um aplicativo de produção em qualquer circunstância.
 
@@ -54,6 +55,6 @@ O número total de caracteres lidos no buffer.
 
 **Namespace:** <xref:System.Data.SqlTypes>
 
-**Assembly:** System. Data (em System. Data. dll)
+**Assembly:** System.Data (em System.Data.dll)
 
 **.NET Framework versões:** Disponível desde 2,0.

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: suporte ao identificador de recurso internacional em System. URI'
 title: Suporte ao International Resource Identifier em System.Uri
 ms.date: 03/30/2017
 ms.assetid: b5e994c3-3535-4aff-8e1b-b69be22e9a22
-ms.openlocfilehash: a3670c40a7a78e2ac8b521a4cb95477381848f36
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9aa22a42f45d149b56441e113e3e6cc00512c506
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253356"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801872"
 ---
 # <a name="international-resource-identifier-support-in-systemuri"></a>Suporte ao International Resource Identifier em System.Uri
 

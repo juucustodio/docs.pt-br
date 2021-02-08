@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugModule:: EnableClassLoadCallbacks'
 title: Método ICorDebugModule::EnableClassLoadCallbacks
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 78dad5e4-8e2e-400f-bec3-92ff0205cd82
 topic_type:
 - apiref
-ms.openlocfilehash: 1f6c6ae3b7cb45b049d0fb0d88bbf89121bccfd7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 16516cceae9a10288f8660fa69d8e0c018953777
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710409"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801079"
 ---
 # <a name="icordebugmoduleenableclassloadcallbacks-method"></a>Método ICorDebugModule::EnableClassLoadCallbacks
 

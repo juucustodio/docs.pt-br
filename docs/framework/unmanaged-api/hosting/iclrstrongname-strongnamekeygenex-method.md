@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRStrongName:: StrongNameKeyGenEx'
 title: Método ICLRStrongName::StrongNameKeyGenEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1f8b59d0-5b72-45b8-ab74-c2b43ffc806e
 topic_type:
 - apiref
-ms.openlocfilehash: 9ba50616b25f9c7c592f19947c82a890ae6b5a4a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3ea2bef5cc6a45066d010fc925f8866e8129faaa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799535"
 ---
 # <a name="iclrstrongnamestrongnamekeygenex-method"></a>Método ICLRStrongName::StrongNameKeyGenEx
 
@@ -59,7 +60,7 @@ HRESULT StrongNameKeyGenEx (
  `pcbKeyBlob`  
  fora O tamanho, em bytes, de `ppbKeyBlob` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` Se o método foi concluído com êxito; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
   
@@ -79,7 +80,7 @@ HRESULT StrongNameKeyGenEx (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameKeyGen](iclrstrongname-strongnamekeygen-method.md)
 - [Interface ICLRStrongName](iclrstrongname-interface.md)

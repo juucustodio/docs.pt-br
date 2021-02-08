@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IXCLRDataProcess:: GetRuntimeNameByAddress'
 title: 'Método IXCLRDataProcess:: GetRuntimeNameByAddress'
 ms.date: 4/27/2020
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: tommcdon
 ms.author: tommcdon
-ms.openlocfilehash: 6648bdafe6e5cdd402bcfa02a148c57f0f1e209e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 62d9ae73c216748cc8eb02aedd41cf19f475d071
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96270478"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800650"
 ---
 # <a name="ixclrdataprocessgetruntimenamebyaddress-method"></a>Método IXCLRDataProcess:: GetRuntimeNameByAddress
 
@@ -75,7 +76,7 @@ O método fornecido faz parte da `IXCLRDataProcess` interface e corresponde ao 1
 **Biblioteca:** None
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Interface IXCLRDataProcess](ixclrdataprocess-interface.md)

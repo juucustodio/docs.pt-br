@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRRuntimeHost:: GetCurrentAppDomainId'
 title: Método ICLRRuntimeHost::GetCurrentAppDomainId
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 33800475-7815-4976-8aca-a1038761a2ef
 topic_type:
 - apiref
-ms.openlocfilehash: 2b1c9e99604664c99960a0741de6eae6b38fe963
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 88d5288e2e8ee7d8d1f5430261e21052334240be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728843"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799715"
 ---
 # <a name="iclrruntimehostgetcurrentappdomainid-method"></a>Método ICLRRuntimeHost::GetCurrentAppDomainId
 
@@ -39,7 +40,7 @@ HRESULT GetCurrentAppDomainId(
  `pdwAppDomainId`  
  fora O identificador numérico do <xref:System.AppDomain> que está sendo executado no momento.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT GetCurrentAppDomainId(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.AppDomain>
 - <xref:System.AppDomainManager>

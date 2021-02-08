@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IBindingDisplay:: GetCurrentDisplay'
 title: Método IBindingDisplay::GetCurrentDisplay
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d28eeea4-c4e0-40d4-91de-198d98cfa13c
 topic_type:
 - apiref
-ms.openlocfilehash: d52f089923d16f93345444c07ff8e0619644f2eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 680a91c8025ac3247701c14c23f442da5e304ecb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800412"
 ---
 # <a name="ibindingdisplaygetcurrentdisplay-method"></a>Método IBindingDisplay::GetCurrentDisplay
 
@@ -55,7 +56,7 @@ HRESULT GetCurrentDisplay (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IBindingDisplay](ibindingdisplay-interface.md)
 - [Método InitializeForProcess](ibindingdisplay-initializeforprocess-method.md)

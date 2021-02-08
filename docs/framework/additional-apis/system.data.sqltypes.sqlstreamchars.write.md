@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método SqlStreamChars. Write (Char [], Int32, Int32)'
 title: Método SqlStreamChars. Write (Char [], Int32, Int32) (System. Data. SqlTypes)
 author: stevestein
 ms.author: sstein
@@ -12,16 +13,16 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 9d952041122ceb3824712bd81cab7ce4789c9db8
-ms.sourcegitcommit: 2e95559d957a1a942e490c5fd916df04b39d73a9
+ms.openlocfilehash: 3031b57902215df01c5c30625281a99be73ba2d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72395583"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802548"
 ---
 # <a name="sqlstreamcharswritechar-int32-int32-method"></a>Método SqlStreamChars. Write (Char [], Int32, Int32)
 
-Quando substituído em uma classe derivada, o grava uma sequência de caracteres no fluxo atual e avança a posição atual dentro desse fluxo pelo número de caracteres gravados. O assembly que contém esse método tem uma relação Friend com SQLAccess. dll. Ele é destinado ao uso por SQL Server. Para outros bancos de dados, use o mecanismo de hospedagem fornecido por esse banco.
+Quando substituído em uma classe derivada, o grava uma sequência de caracteres no fluxo atual e avança a posição atual dentro desse fluxo pelo número de caracteres gravados. O assembly que contém esse método tem uma relação Friend com SQLAccess.dll. Ele é destinado ao uso por SQL Server. Para outros bancos de dados, use o mecanismo de hospedagem fornecido por esse banco.
 
 ```csharp
 public abstract void Write (char[] buffer, int offset, int count);
@@ -41,7 +42,7 @@ O número de caracteres a serem gravados no fluxo atual.
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> O método `SqlStreamChars.Write` é privado e não se destina a ser usado diretamente no seu código.
+> O `SqlStreamChars.Write` método é privado e não deve ser usado diretamente no seu código.
 >
 > A Microsoft não dá suporte ao uso desse método para gravar em um aplicativo de produção sob nenhuma circunstância.
 
@@ -49,6 +50,6 @@ O número de caracteres a serem gravados no fluxo atual.
 
 **Namespace:** <xref:System.Data.SqlTypes>
 
-**Assembly:** System. Data (em System. Data. dll)
+**Assembly:** System.Data (em System.Data.dll)
 
 **.NET Framework versões:** Disponível desde 2,0.

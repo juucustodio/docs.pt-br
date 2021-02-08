@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Depurando enumerações'
 title: Declarando enumerações
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - unmanaged enumerations [.NET Framework], debugging
 - enumerations [.NET Framework debugging]
 ms.assetid: 3af9f584-f1b4-4154-aeaa-8fce7c9f8b50
-ms.openlocfilehash: bdd4b60d068677ae2a0874b589294ba220f0d854
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4a1d2fc9061fec7f5384418e4893c357f5d340ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722993"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801417"
 ---
 # <a name="debugging-enumerations"></a>Declarando enumerações
 

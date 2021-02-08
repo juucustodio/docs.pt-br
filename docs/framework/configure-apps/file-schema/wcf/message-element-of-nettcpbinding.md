@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <message> elemento de <netTcpBinding>'
 title: <message> elemento de <netTcpBinding>
 ms.date: 03/30/2017
 ms.assetid: 1d71edd9-c085-4c2e-b6d3-980c313366f9
-ms.openlocfilehash: ab767a5a1179de81bf9a8adc61799ede2d915ac1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 10c1f2897bc880ca1f328b546357d3cf7cdb26a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204899"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802171"
 ---
 # <a name="message-element-of-nettcpbinding"></a>\<message> elemento de \<netTcpBinding>
 
@@ -21,7 +22,7 @@ Define o tipo de requisitos de segurança no nível de mensagem para um ponto de
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-nettcpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <message algorithmSuite="System.Servicemodel.Security.SecurityAlgorithmsuite"
@@ -84,7 +85,7 @@ Define o tipo de requisitos de segurança no nível de mensagem para um ponto de
 
  A mensagem usa segurança em nível de mensagem para a integridade e a confidencialidade da mensagem SOAP e para a autenticação mútua dos pares de comunicação. Se esse modo de segurança for selecionado em uma associação, a pilha de canais será configurada com elementos de ligação de segurança de mensagem e as mensagens SOAP serão protegidas em conformidade com os padrões WS-Security *.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.MessageSecurityOverTcp>
 - <xref:System.ServiceModel.Configuration.NetTcpSecurityElement.Message%2A>

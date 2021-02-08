@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função CreateCordbObject'
 title: Função CreateCordbObject
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: b259821d-4fa7-464d-85cf-304dfffc8089
 topic_type:
 - apiref
-ms.openlocfilehash: eccdfcb60b2d2b5d652ccac948c01c16e7cb828d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b6a585fc89f780b22f842127e1923414dbb8230f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725970"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801469"
 ---
 # <a name="createcordbobject-function"></a>Função CreateCordbObject
 
@@ -44,7 +45,7 @@ HRESULT CordbCreateObject (
  `ppCordb`  
  fora Ponteiro para um ponteiro para um objeto que será convertido em uma interface [ICorDebug](icordebug-interface.md) e retornado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK  
  O número de CLRs no processo foi determinado com êxito e as matrizes de identificador e caminho correspondentes foram preenchidas corretamente.  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRStrongName'
 title: Interface ICLRStrongName
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2fac66fd-6b3b-4dbd-8baf-86038bd85526
 topic_type:
 - apiref
-ms.openlocfilehash: 691cc3cf4ec8d036a4de04247f243d99daa887d4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5565e864d35e68e714602b291a724a0ad9999a28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799662"
 ---
 # <a name="iclrstrongname-interface"></a>Interface ICLRStrongName
 
@@ -27,7 +28,7 @@ Fornece funções estáticas globais básicas para assinar assemblies com nomes 
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetHashFromAssemblyFile](iclrstrongname-gethashfromassemblyfile-method.md)|Obtém um hash do arquivo do assembly especificado, usando o algoritmo de hash especificado.|  
 |[Método GetHashFromAssemblyFileW](iclrstrongname-gethashfromassemblyfilew-method.md)|Obtém um hash do arquivo do assembly especificado como uma cadeia de caracteres Unicode, usando o algoritmo de hash especificado.|  
@@ -69,7 +70,7 @@ Fornece funções estáticas globais básicas para assinar assemblies com nomes 
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugMDA:: GetXML'
 title: Método ICorDebugMDA::GetXML
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 29746b24-3766-4255-8813-0426c45e73e5
 topic_type:
 - apiref
-ms.openlocfilehash: 9a088c7e4e9c72c8247ccdd384bc724587210c37
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fa506e6e8f306271f10a7a715af9b8bc6a80c1d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710864"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801128"
 ---
 # <a name="icordebugmdagetxml-method"></a>Método ICorDebugMDA::GetXML
 
@@ -62,7 +63,7 @@ HRESULT GetXML (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMDA](icordebugmda-interface.md)
 - [Diagnosticando erros com assistentes de depuração gerenciados](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

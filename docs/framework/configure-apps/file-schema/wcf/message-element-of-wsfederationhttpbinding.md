@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <message> elemento de <wsFederationHttpBinding>'
 title: <message> elemento de <wsFederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 9d710389-d9d8-4454-9bf2-da4ccda31cec
-ms.openlocfilehash: ea320b1d97e742d4f90ec55502f3bd429803283d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 64978902081ec9e5a603804fed3b378da12fe42e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204886"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802184"
 ---
 # <a name="message-element-of-wsfederationhttpbinding"></a>\<message> elemento de \<wsFederationHttpBinding>
 
@@ -21,7 +22,7 @@ Define as configurações para a segurança em nível de mensagem para o [\<wsFe
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-wsfederationhttpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <wsFederationBinding>
@@ -130,7 +131,7 @@ Define as configurações para a segurança em nível de mensagem para o [\<wsFe
 |-------------|-----------------|  
 |[\<security>](security-of-wsfederationhttpbinding.md)|Define as configurações de segurança para uma associação.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>
 - <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>

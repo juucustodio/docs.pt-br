@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <identity>'
 title: <identity>
 ms.date: 03/30/2017
 ms.assetid: c1d2ae56-e231-4a07-9c3f-9f13381dc0d8
-ms.openlocfilehash: bb9468b6005361a2a480f7c0ebfb2cbb9e9199c2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ceb4dc0e7efa6cd01204253001432ed1ef2c048e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157376"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802249"
 ---
 # \<identity>
 
@@ -67,7 +68,7 @@ O elemento Identity permite que um desenvolvedor cliente especifique em tempo de
 |[\<issuedTokenParameters>](issuedtokenparameters.md)|Define parâmetros para um token emitido em uma associação personalizada.|  
 |[\<localIssuer>](localissuer.md)|Especifica um serviço de token de segurança (STS) local.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>

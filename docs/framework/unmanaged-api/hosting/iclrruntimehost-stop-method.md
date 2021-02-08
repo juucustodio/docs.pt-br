@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRRuntimeHost:: Stop'
 title: Método ICLRRuntimeHost::Stop
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b8fd7daf-8f8d-4ad7-92ae-019db244cec1
 topic_type:
 - apiref
-ms.openlocfilehash: 50e777bde34eb0122ca537da4b73a5e507ce7a7b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3e6b1cf2aee95af6354905f6dcdcb678ff785aa6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728791"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799714"
 ---
 # <a name="iclrruntimehoststop-method"></a>Método ICLRRuntimeHost::Stop
 
@@ -56,6 +57,6 @@ HRESULT Stop();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRRuntimeHost](iclrruntimehost-interface.md)

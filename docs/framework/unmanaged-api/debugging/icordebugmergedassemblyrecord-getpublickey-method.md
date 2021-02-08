@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ICorDebugMergedAssemblyRecord:: método GetPublicKey'
 title: 'Método ICorDebugMergedAssemblyRecord:: GetPublicKey'
 ms.date: 03/30/2017
 ms.assetid: 6f4e78ba-082b-489d-8b58-4c35fbcc7a5b
-ms.openlocfilehash: e89ecca25edb0d7eae3a7e65f9585d71ad4ace4d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 15175b0d02773bcbce46bfaec9ce1de3021b7dde
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710591"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801092"
 ---
 # <a name="icordebugmergedassemblyrecordgetpublickey-method"></a>Método ICorDebugMergedAssemblyRecord:: GetPublicKey
 
@@ -48,7 +49,7 @@ HRESULT GetPublicKey(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMergedAssemblyRecord](icordebugmergedassemblyrecord-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: nomes de pares e IDs PNRP'
 title: Nomes de par e IDs de PNRP
 ms.date: 03/30/2017
 ms.assetid: afa538e8-948f-4a98-aa9f-305134004115
-ms.openlocfilehash: a56200d599d417dac549af000b35024338d43796
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ff9f77917ef05754f2373369d623b66e66b5a753
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239218"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801859"
 ---
 # <a name="peer-names-and-pnrp-ids"></a>Nomes de par e IDs de PNRP
 
@@ -33,7 +34,7 @@ Um nome de par representa um ponto de extremidade para comunicação, que pode s
   
  Essa combinação de ID P2P e Local de Serviço permite que várias IDs de PNRP sejam registradas em um único computador.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.PeerToPeer.PeerName>
 - <xref:System.Net.PeerToPeer>

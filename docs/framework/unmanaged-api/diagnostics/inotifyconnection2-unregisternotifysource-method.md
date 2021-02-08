@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: INotifyConnection2:: UnregisterNotifySource'
 title: Método INotifyConnection2::UnregisterNotifySource
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2fc6c715-646f-41fd-9c12-c59b40575269
 topic_type:
 - apiref
-ms.openlocfilehash: 90220c2bfea683ff0472473e180c9e11ea568672
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d3b82665375f54d33b6a5581241788d828060a83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800299"
 ---
 # <a name="inotifyconnection2unregisternotifysource-method"></a>Método INotifyConnection2::UnregisterNotifySource
 
@@ -40,7 +41,7 @@ HRESULT UnregisterNotifySource
  `in_pNotifySource`  
  no Objeto de notificação a ser cancelado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso.  
   
@@ -48,7 +49,7 @@ HRESULT UnregisterNotifySource
 
  **Cabeçalho:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface INotifyConnection2](inotifyconnection2-interface.md)
 - [Interface INotifySource2](inotifysource2-interface.md)

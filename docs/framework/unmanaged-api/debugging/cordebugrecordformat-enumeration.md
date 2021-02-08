@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugRecordFormat'
 title: Enumeração CorDebugRecordFormat
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: d680c1c0-16ab-4ccc-9444-39cf8e0e05ee
 topic_type:
 - apiref
-ms.openlocfilehash: b3a22d7b32eb258263d373ae91b3fb7fbc9aae99
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 856522497a8f858abdb39ac232fb3034d4d91dfc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696382"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801560"
 ---
 # <a name="cordebugrecordformat-enumeration"></a>Enumeração CorDebugRecordFormat
 
@@ -54,6 +55,6 @@ typedef enum CorDebugRecordFormat {
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)

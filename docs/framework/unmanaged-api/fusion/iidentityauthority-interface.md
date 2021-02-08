@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IIdentityAuthority'
 title: Interface IIdentityAuthority
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6277f914-51a8-49be-bec6-52d6d648527d
 topic_type:
 - apiref
-ms.openlocfilehash: 3e2d2335e37ced9139ea44092f10b19566894681
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 3064a3d95ebe9a098a7cac0766f18654c6fab8b9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73127091"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800130"
 ---
 # <a name="iidentityauthority-interface"></a>Interface IIdentityAuthority
 
@@ -33,20 +34,20 @@ Gerencia chaves de identidade para objetos de código.
 |`IIdentityAuthority::AreReferencesEqual`|Obtém um valor que indica se as duas instâncias de [IReferenceIdentity](ireferenceidentity-interface.md) especificadas são iguais.|
 |`IIdentityAuthority::AreTextualDefinitionsEqual`|Obtém um valor que indica se as duas representações de identidade de definição de cadeia de caracteres especificadas são iguais.|
 |`IIdentityAuthority::AreTextualReferencesEqual`|Obtém um valor que indica se as duas representações de identidade de referência de cadeia de caracteres especificadas são iguais.|
-|`IIdentityAuthority::CreateDefinition`|Obtém um ponteiro para uma nova instância de `IDefinitionIdentity` que representa o objeto de código no escopo atual.|
-|`IIdentityAuthority::CreateReference`|Obtém um ponteiro para uma nova instância de `IReferenceIdentity` que representa o objeto de código no escopo atual.|
-|`IIdentityAuthority::DefinitionToText`|Obtém uma versão de cadeia de caracteres formatada do `IDefinitionIdentity`especificado.|
-|`IIdentityAuthority::DefinitionToTextBuffer`|Preenche o buffer de caracteres largos especificado com uma versão de cadeia de caracteres do `IDefinitionIdentity`especificado.|
-|`IIdentityAuthority::DoesDefinitionMatchReference`|Obtém um valor que indica se as instâncias especificadas `IDefinitionIdentity` e `IReferenceIdentity` se referem ao mesmo objeto de código.|
+|`IIdentityAuthority::CreateDefinition`|Obtém um ponteiro para uma nova `IDefinitionIdentity` instância que representa o objeto de código no escopo atual.|
+|`IIdentityAuthority::CreateReference`|Obtém um ponteiro para uma nova `IReferenceIdentity` instância que representa o objeto de código no escopo atual.|
+|`IIdentityAuthority::DefinitionToText`|Obtém uma versão de cadeia de caracteres formatada do especificada `IDefinitionIdentity` .|
+|`IIdentityAuthority::DefinitionToTextBuffer`|Preenche o buffer de caracteres largos especificado com uma versão de cadeia de caracteres do especificado `IDefinitionIdentity` .|
+|`IIdentityAuthority::DoesDefinitionMatchReference`|Obtém um valor que indica se as `IDefinitionIdentity` instâncias especificadas e `IReferenceIdentity` se referem ao mesmo objeto de código.|
 |`IIdentityAuthority::DoesTextualDefinitionMatchTextualReference`|Obtém um valor que indica se as cadeias de caracteres especificadas se referem ao mesmo objeto de código.|
-|`IIdentityAuthority::GenerateDefinitionKey`|Obtém um ponteiro para uma chave de cadeia de caracteres recém-criada para o `IDefinitionIdentity`especificado.|
-|`IIdentityAuthority::GenerateReferenceKey`|Obtém um ponteiro para uma chave de cadeia de caracteres recém-criada para o `IReferenceIdentity`especificado.|
-|`IIdentityAuthority::HashDefinition`|Obtém um valor de hash para o `IDefinitionIdentity`especificado.|
-|`IIdentityAuthority::HashReference`|Obtém um valor de hash para o `IReferenceIdentity`especificado.|
-|`IIdentityAuthority::ReferenceToText`|Obtém uma versão de cadeia de caracteres formatada do `IReferenceIdentity`especificado.|
-|`IIdentityAuthority::ReferenceToTextBuffer`|Preenche o buffer de caracteres largos especificado com uma versão de cadeia de caracteres do `IReferenceIdentity`especificado.|
-|`IIdentityAuthority::TextToDefinition`|Obtém um ponteiro de interface para uma instância de `IDefinitionIdentity` gerada a partir da cadeia de caracteres formatada especificada.|
-|`IIdentityAuthority::TextToReference`|Obtém um ponteiro de interface para uma instância de `IReferenceIdentity` gerada a partir da cadeia de caracteres formatada especificada.|
+|`IIdentityAuthority::GenerateDefinitionKey`|Obtém um ponteiro para uma chave de cadeia de caracteres recém-criada para o especificado `IDefinitionIdentity` .|
+|`IIdentityAuthority::GenerateReferenceKey`|Obtém um ponteiro para uma chave de cadeia de caracteres recém-criada para o especificado `IReferenceIdentity` .|
+|`IIdentityAuthority::HashDefinition`|Obtém um valor de hash para o especificado `IDefinitionIdentity` .|
+|`IIdentityAuthority::HashReference`|Obtém um valor de hash para o especificado `IReferenceIdentity` .|
+|`IIdentityAuthority::ReferenceToText`|Obtém uma versão de cadeia de caracteres formatada do especificada `IReferenceIdentity` .|
+|`IIdentityAuthority::ReferenceToTextBuffer`|Preenche o buffer de caracteres largos especificado com uma versão de cadeia de caracteres do especificado `IReferenceIdentity` .|
+|`IIdentityAuthority::TextToDefinition`|Obtém um ponteiro de interface para uma `IDefinitionIdentity` instância gerada a partir da cadeia de caracteres formatada especificada.|
+|`IIdentityAuthority::TextToReference`|Obtém um ponteiro de interface para uma `IReferenceIdentity` instância gerada a partir da cadeia de caracteres formatada especificada.|
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +55,7 @@ Gerencia chaves de identidade para objetos de código.
 
 **Cabeçalho:** Isolamento. h
 
-**Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+**.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> de <filters>'
 title: <add> de <filters>
 ms.date: 03/30/2017
 ms.assetid: e3bf437c-dd99-49f3-9792-9a8721e6eaad
-ms.openlocfilehash: c1de0605bc8afc502a85d9b2917b975ee45a3d26
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 546ff41fddfd8a48e14508e27f09236c67c9abc9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201649"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802340"
 ---
 # <a name="add-of-filters"></a>\<add> de \<filters>
 
@@ -20,7 +21,7 @@ Um filtro XPath que especifica o tipo de mensagem a ser registrada.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<filters>**](filters.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <filters>
@@ -36,7 +37,7 @@ Um filtro XPath que especifica o tipo de mensagem a ser registrada.
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|filtro|Uma cadeia de caracteres que especifica uma consulta em um documento XML definido por uma expressão XPath 1,0. Para obter mais informações, consulte <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>.|  
+|filter|Uma cadeia de caracteres que especifica uma consulta em um documento XML definido por uma expressão XPath 1,0. Para obter mais informações, consulte <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>.|  
   
 ### <a name="child-elements"></a>Elementos filho  
 
@@ -76,7 +77,7 @@ Um filtro XPath que especifica o tipo de mensagem a ser registrada.
 </messageLogging>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>

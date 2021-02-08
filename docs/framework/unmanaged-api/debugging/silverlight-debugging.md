@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: depuração do Silverlight'
 title: Depuração Silverlight
 ms.date: 03/30/2017
 helpviewer_keywords:
 - debugging API [Silverlight]
 - Silverlight, debugging
 ms.assetid: 5e903e04-17d0-4014-ac9a-a43330ec8b1c
-ms.openlocfilehash: 49f026b8e1a3dd78a62091e77a5aba0c9a2e09d6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 54a3f7f4b2de867509ff94dafa25c067a78b3ee6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671831"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800533"
 ---
 # <a name="silverlight-debugging"></a>Depuração Silverlight
 
@@ -54,7 +55,7 @@ Os tópicos nesta seção descrevem o ambiente e as interfaces que o Common Lang
  [Função ShutdownDbgTransportManager](shutdowndbgtransportmanager-function.md)  
  Desliga o Gerenciador de transporte para uma conexão a um computador de destino remoto.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando coclasses](debugging-coclasses.md)
 - [Depurando interfaces](debugging-interfaces.md)

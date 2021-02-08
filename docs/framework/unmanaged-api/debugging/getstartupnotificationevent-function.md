@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetStartupNotificationEvent'
 title: Função GetStartupNotificationEvent
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c94b1b61-045a-4695-bacd-0f18c5acc246
 topic_type:
 - apiref
-ms.openlocfilehash: 1c6ad35cd42760a4d88cf78bb084a25cf58a1064
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 49b0e3f9b2acec87e419bae03086a7e437f45f98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676082"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801378"
 ---
 # <a name="getstartupnotificationevent-function"></a>Função GetStartupNotificationEvent
 
@@ -45,7 +46,7 @@ HRESULT GetStartupNotificationEvent
  `phStartupEvent`  
  fora Um ponteiro para um identificador que será sinalizado por um CLR na inicialização.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK  
  O identificador para o evento de notificação de inicialização foi obtido com êxito.  

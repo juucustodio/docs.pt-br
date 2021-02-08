@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IXCLRDataProcess:: StartEnumModules'
 title: 'Método IXCLRDataProcess:: StartEnumModules'
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: d55b07ea3fada73237919bf677163a9096d5ad04
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 2e90c646ee8815ec10ce0bbd7538f13d7b5dcf8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420715"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800572"
 ---
 # <a name="ixclrdataprocessstartenummodules-method"></a>Método IXCLRDataProcess:: StartEnumModules
 
@@ -52,7 +53,7 @@ O método fornecido faz parte da `IXCLRDataProcess` interface e corresponde ao s
 **Biblioteca:** None  
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração CLRDataSourceType](clrdatasourcetype-enumeration.md)
 - [Depuração](index.md)

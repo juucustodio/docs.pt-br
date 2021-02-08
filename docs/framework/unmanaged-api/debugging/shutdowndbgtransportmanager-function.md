@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função ShutdownDbgTransportManager'
 title: Função ShutdownDbgTransportManager
 ms.date: 03/30/2017
 api_name:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 6325a782-6862-4346-8e20-d922ca246169
 topic_type:
 - apiref
-ms.openlocfilehash: a8993a36c082e251231872881653c55e133e8a8a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 210d4944777b0f563f2b46116fcae8cf7bb668c1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671896"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800554"
 ---
 # <a name="shutdowndbgtransportmanager-function"></a>Função ShutdownDbgTransportManager
 
 Desliga o Gerenciador de transporte para uma conexão a um computador de destino remoto.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 void InitDbgTransportManager ();  

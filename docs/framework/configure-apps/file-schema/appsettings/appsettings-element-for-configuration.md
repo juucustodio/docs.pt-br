@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <appSettings> elemento para <configuration>'
 title: Elemento <appSettings> para <configuration>
 ms.date: 05/01/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - appSettings Element
 - <appSettings> Element
 ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
-ms.openlocfilehash: 66260d15768781b7fa3d9397b8e8a7d9ad68ab95
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: 74a25bb0dffd97057cda45575745b6f51ad2a675
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009788"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802483"
 ---
 # <a name="appsettings-element-for-configuration"></a>Elemento \<appSettings> para \<configuration>
 
@@ -21,7 +22,7 @@ Contém configurações de aplicativo personalizadas. Esta é uma seção de con
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;**\<appSettings>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <appSettings>
@@ -82,6 +83,6 @@ O exemplo a seguir mostra um arquivo de configuração de aplicativo que consome
 
 Esse elemento pode ser usado no arquivo de configuração do aplicativo, no arquivo de configuração do computador (*Machine.config*) e *Web.config* arquivos que não estão no nível do diretório do aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema do arquivo de configuração para o .NET Framework](../index.md)

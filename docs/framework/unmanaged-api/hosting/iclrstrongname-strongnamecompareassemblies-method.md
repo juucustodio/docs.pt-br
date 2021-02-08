@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRStrongName:: StrongNameCompareAssemblies'
 title: Método ICLRStrongName::StrongNameCompareAssemblies
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b1fb356c-72cf-4aa4-8376-f291a6d97c01
 topic_type:
 - apiref
-ms.openlocfilehash: ddcbe84053aa7f4cafd81e905f8aef988f92875e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ab02312073f9caf5059ecf7b4eeddaef864bd7b6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685693"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799637"
 ---
 # <a name="iclrstrongnamestrongnamecompareassemblies-method"></a>Método ICLRStrongName::StrongNameCompareAssemblies
 
@@ -53,7 +54,7 @@ HRESULT StrongNameCompareAssemblies (
   
 - `SN_CMP_SIGONLY` (2)-especifica que os assemblies diferem somente por assinatura e soma de verificação.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` Se o método foi concluído com êxito; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
   
@@ -71,6 +72,6 @@ HRESULT StrongNameCompareAssemblies (
 
  A assinatura de nome forte de um assembly consiste no nome de texto, versão, cultura e token de chave pública do assembly.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRStrongName](iclrstrongname-interface.md)

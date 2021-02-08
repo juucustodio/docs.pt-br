@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugType2'
 title: Interface ICorDebugType2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 376fb03f-f1ef-4107-baa4-4d9d55884862
 topic_type:
 - apiref
-ms.openlocfilehash: 0d5fffe4350cc1f58acf588f288db3bdb7e213d0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8691cf294e835bef0f5a0ac694110f73577fb5d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725662"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800862"
 ---
 # <a name="icordebugtype2-interface"></a>Interface ICorDebugType2
 
@@ -65,6 +66,6 @@ pType2->GetTypeID(&id);
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

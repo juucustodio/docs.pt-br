@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ComCallUnmarshal coclass'
 title: Coclass ComCallUnmarshal
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 2adb5827-2268-4914-a1c6-f62b61880a45
 topic_type:
 - apiref
-ms.openlocfilehash: 90bcf4f37631e0246e58cc14bfcd331d981e4713
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 508c1183e2862a286e9db0390bc0348629a9db8e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731716"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799831"
 ---
 # <a name="comcallunmarshal-coclass"></a>Coclass ComCallUnmarshal
 
 Fornece interfaces para gerenciar o marshaling de ponteiros de interface.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 coclass ComCallUnmarshal {  
@@ -49,6 +50,6 @@ coclass ComCallUnmarshal {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando coclasses](hosting-coclasses.md)

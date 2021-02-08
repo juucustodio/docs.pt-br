@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração WriteableMetadataUpdateMode'
 title: Enumeração WriteableMetadataUpdateMode
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 6758f4d3-6bc7-4c99-8582-e9be00566784
 topic_type:
 - apiref
-ms.openlocfilehash: 1553e18da10844da28bbaf84ba76bc5c34ca49b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b8136963e315c429643bd0ebf4bdb509d5173bec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725294"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800507"
 ---
 # <a name="writeablemetadataupdatemode-enumeration"></a>Enumeração WriteableMetadataUpdateMode
 
@@ -36,7 +37,7 @@ typedef enum WriteableMetadataUpdateMode {
   
 ## <a name="members"></a>Membros  
   
-|Nome do membro|DESCRIÇÃO|  
+|Nome do membro|Descrição|  
 |-----------------|-----------------|  
 |`LegacyCompatPolicy`|Mantenha a compatibilidade com as versões anteriores do .NET Framework ao fazer atualizações na memória para os metadados visíveis. Consulte a seção Comentários para obter mais informações.|  
 |`AlwaysShowUpdates`|Faça atualizações na memória para os metadados visíveis para o depurador.|  
@@ -57,7 +58,7 @@ typedef enum WriteableMetadataUpdateMode {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)
 - [Método SetWriteableMetadataUpdateMode](icordebugprocess7-setwriteablemetadataupdatemode-method.md)

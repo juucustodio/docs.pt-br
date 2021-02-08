@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: classe HttpStatusDescription'
 title: Classe HttpStatusDescription (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
@@ -11,16 +12,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 0214d8259c735de11abe204680d619a7298466de
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: fa135a6421397ce6b7be2af05d66aa8e81beafb7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990303"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802496"
 ---
 # <a name="httpstatusdescription-class"></a>Classe HttpStatusDescription
 
-Fornece descrições de status HTTP padrão. Esta classe não pode ser herdada.
+Fornece descrições de status HTTP padrão. Essa classe não pode ser herdada.
 
 ```csharp
 internal static class HttpStatusDescription

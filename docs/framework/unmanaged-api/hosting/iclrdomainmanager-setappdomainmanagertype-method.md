@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRDomainManager:: SetAppDomainManagerType'
 title: Método ICLRDomainManager::SetAppDomainManagerType
 ms.date: 03/30/2017
 api_name:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - SetAppDomainManagerType method, ICLRDomainManager interface [.NET Framework hosting]
 - ICLRDomainManager::SetAppDomainManagerType method [.NET Framework hosting]
 ms.assetid: ee91abb0-cb74-41dd-927b-e117fb8ffdf4
-ms.openlocfilehash: 7c6b328793e6437682ad8d642e611be30e7b0fe6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 479e6596982d21c4e9ae445a7d4453235dbef729
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702141"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799753"
 ---
 # <a name="iclrdomainmanagersetappdomainmanagertype-method"></a>Método ICLRDomainManager::SetAppDomainManagerType
 
@@ -45,7 +46,7 @@ HRESULT SetAppDomainManagerType(
  `dwInitializeDomainFlags`  
  no Uma combinação de valores de enumeração [EInitializeNewDomainFlags](einitializenewdomainflags-enumeration.md) que fornecem informações sobre o Gerenciador de domínio do aplicativo.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -73,8 +74,8 @@ HRESULT SetAppDomainManagerType(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Hosting](index.md)
+- [Hospedagem](index.md)
 - [Interface ICLRDomainManager](iclrdomainmanager-interface.md)
 - [Enumeração EInitializeNewDomainFlags](einitializenewdomainflags-enumeration.md)

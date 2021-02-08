@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <discoveryClientSettings>'
 title: <discoveryClientSettings>
 ms.date: 03/30/2017
 ms.assetid: 02e1b823-a8bb-4074-90d5-8599f71e8f9d
-ms.openlocfilehash: 6e3f273af807eb362f005fef63246013ecc88581
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c2fda0dea33ffd6dbca24881eefab2e54e361f92
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192237"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802288"
 ---
 # \<discoveryClientSettings>
 
@@ -20,7 +21,7 @@ Contém as configurações necessárias para um aplicativo participar do process
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<standardEndpoint>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<discoveryClientSettings>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: repositório de símbolos de diagnóstico (referência de API não gerenciada)'
 title: Armazenamento do símbolo de diagnóstico (referência de api não gerenciada)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - unmanaged API reference [.NET Framework], diagnostics symbol store
 - native API reference [.NET Framework], diagnostics symbol store
 ms.assetid: ee1fbb7a-b0f9-482f-8cd0-6df37e6586a2
-ms.openlocfilehash: f53c9dfce6b2e962a355fedf805e612345b4f381
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 08c4232bc9b78c58cb68d029e60b70da5fd80b1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720068"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800338"
 ---
 # <a name="diagnostics-symbol-store-unmanaged-api-reference"></a>Armazenamento do símbolo de diagnóstico (referência de api não gerenciada)
 

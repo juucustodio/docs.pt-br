@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumerações de armazenamento de símbolo de diagnóstico'
 title: Enumerações de armazenamento de símbolo de diagnóstico
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - diagnostics symbol store enumerations [.NET Framework]
 - enumerations [.NET Framework debugging]
 ms.assetid: 57d68c70-aba1-4bad-a13f-6d0c55f43746
-ms.openlocfilehash: b2a30bdb4af2dc9f4e9ed8741805bf3bc0495b65
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 220dd09f87855c1c81609d2f40e67448aa5827f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725203"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800442"
 ---
 # <a name="diagnostics-symbol-store-enumerations"></a>Enumerações de armazenamento de símbolo de diagnóstico
 

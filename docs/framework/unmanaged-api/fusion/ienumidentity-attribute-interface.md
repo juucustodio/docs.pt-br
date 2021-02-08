@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IEnumIDENTITY_ATTRIBUTE interface'
 title: Interface IEnumIDENTITY_ATTRIBUTE
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c2ec2748-e9ae-4e1b-80db-6fcec5cb81a1
 topic_type:
 - apiref
-ms.openlocfilehash: 71a6ea9f593da093985a4420e690f1bdd7f9d139
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b621a722e35d5b31f487e8823b1627fdfe1e7888
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800140"
 ---
 # <a name="ienumidentity_attribute-interface"></a>Interface IEnumIDENTITY_ATTRIBUTE
 
@@ -27,7 +28,7 @@ Serve como um enumerador para os atributos do objeto de código no escopo atual.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |`IEnumIDENTITY_ATTRIBUTE::Clone`|Obtém um ponteiro de interface para um novo `IEnumIDENTITY_ATTRIBUTE` que contém os mesmos membros que isso `IEnumIDENTITY_ATTRIBUTE` .|  
 |`IEnumIDENTITY_ATTRIBUTE::CurrentIntoBuffer`|Grava os dados contidos nos elementos deste `IEnumIDENTITY_ATTRIBUTE` para o buffer de dados especificado.|  
@@ -43,6 +44,6 @@ Serve como um enumerador para os atributos do objeto de código no escopo atual.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de fusão](fusion-interfaces.md)

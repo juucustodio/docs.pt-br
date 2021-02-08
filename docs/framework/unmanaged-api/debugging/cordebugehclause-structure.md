@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura CorDebugEHClause'
 title: Estrutura CorDebugEHClause
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 0e350a1b-6997-46d0-bfc5-962a5011ef43
 topic_type:
 - apiref
-ms.openlocfilehash: 225523280a2e1e0d8f51321e9dd865d901e725ba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ecb00e2a110719ab82de32fb1f1c861e2033a528
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712697"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801664"
 ---
 # <a name="cordebugehclause-structure"></a>Estrutura CorDebugEHClause
 
@@ -59,7 +60,7 @@ typedef struct _CorDebugEHClause {
   
  O campo `flags` pode conter os seguintes sinalizadores. Observe se eles não estão definidos em CorDebug.idl ou em CorDebug.h.  
   
-|Sinalizador|Valor|DESCRIÇÃO|  
+|Sinalizador|Valor|Descrição|  
 |----------|-----------|-----------------|  
 |`COR_ILEXCEPTION_CLAUSE_EXCEPTION`|0x00000000|Uma cláusula de exceção digitada.|  
 |`COR_ILEXCEPTION_CLAUSE_FILTER`|0x00000001|Uma cláusula do manipulador e do filtro de exceção.|  
@@ -76,7 +77,7 @@ typedef struct _CorDebugEHClause {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetEHClauses](icordebugilcode-getehclauses-method.md)
 - [Estruturas de depuração](debugging-structures.md)

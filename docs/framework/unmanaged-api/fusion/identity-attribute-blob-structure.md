@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de IDENTITY_ATTRIBUTE_BLOB'
 title: Estrutura IDENTITY_ATTRIBUTE_BLOB
 ms.date: 03/30/2017
 dev_langs:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: af14ae5f-d226-47dd-ba90-8fc6e6605d4d
 topic_type:
 - apiref
-ms.openlocfilehash: 9a59e70257064220e8138f9d267a815fcdbf3929
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e89294397287cb5751196b563b1576bb4f1c0f12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729025"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800182"
 ---
 # <a name="identity_attribute_blob-structure"></a>Estrutura IDENTITY_ATTRIBUTE_BLOB
 
@@ -245,7 +246,7 @@ Exit:
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IReferenceIdentity](ireferenceidentity-interface.md)
 - [Interface IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md)

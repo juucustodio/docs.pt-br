@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura DacpReJitData'
 title: Estrutura DacpReJitData
 ms.date: 02/01/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: 46708acc77dad00727ee35e7d06e4228eacbd502
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8e8d506856dbc6579ac6ea0eee2b2088a980a315
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723032"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801430"
 ---
 # <a name="dacprejitdata-structure"></a>Estrutura DacpReJitData
 
@@ -66,7 +67,7 @@ Essa estrutura reside dentro do tempo de execução e não é exposta por nenhum
 **Biblioteca:** None  
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Estruturas de depuração](debugging-structures.md)

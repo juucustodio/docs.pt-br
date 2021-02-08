@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: INotifySource2:: SetNotifyFilter'
 title: Método INotifySource2::SetNotifyFilter
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6351fc92-b126-4af6-9bf3-0a8ce92845fc
 topic_type:
 - apiref
-ms.openlocfilehash: 99bce831405d722f1f1ca0ae56e60f95f2d905e8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2aaf2a5253f8a9acb67c4b538f109a7a62559d12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719925"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800221"
 ---
 # <a name="inotifysource2setnotifyfilter-method"></a>Método INotifySource2::SetNotifyFilter
 
@@ -44,7 +45,7 @@ HRESULT SetNotifyFilter
  `in_pUserThreadFilter`  
  no Um ponteiro para uma estrutura de [USER_THREAD](user-thread-structure.md) que identifica threads para a API do depurador.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso.  
   
@@ -52,7 +53,7 @@ HRESULT SetNotifyFilter
 
  **Cabeçalho:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface INotifySource2](inotifysource2-interface.md)
 - [Interface INotifyConnection2](inotifyconnection2-interface.md)

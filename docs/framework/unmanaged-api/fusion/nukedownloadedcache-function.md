@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função NukeDownloadedCache'
 title: Função NukeDownloadedCache
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: fac2b1c6-6fa3-4818-805b-b63972024c86
 topic_type:
 - apiref
-ms.openlocfilehash: 5ae0a887d666a150b717d495848c8a411d030a09
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2239473b8e6e43a539b0507c8255d40f87e72043
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728570"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800026"
 ---
 # <a name="nukedownloadedcache-function"></a>Função NukeDownloadedCache
 
@@ -51,7 +52,7 @@ HRESULT NukeDownloadedCache();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função CreateHistoryReader](createhistoryreader-function.md)
 - [Função GetHistoryFileDirectory](gethistoryfiledirectory-function.md)

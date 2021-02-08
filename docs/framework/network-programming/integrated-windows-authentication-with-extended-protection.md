@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: autenticação integrada do Windows com proteção estendida'
 title: Autenticação Integrada do Windows com proteção estendida
 ms.date: 03/30/2017
 ms.assetid: 81731998-d5e7-49e4-ad38-c8e6d01689d0
-ms.openlocfilehash: 74f421131da0e5b11fd676ff23229f5ff6ec7eca
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 56f69d0c2fe5def43e640d687b12a45c17292d67
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801885"
 ---
 # <a name="integrated-windows-authentication-with-extended-protection"></a>Autenticação Integrada do Windows com proteção estendida
 

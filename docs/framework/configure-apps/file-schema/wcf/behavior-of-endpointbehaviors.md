@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <behavior> de <endpointBehaviors>'
 title: <behavior> de <endpointBehaviors>
 ms.date: 03/30/2017
 ms.assetid: b90ca3bc-3c22-4174-b903-e3a39898bd27
-ms.openlocfilehash: d191b968e1c3fd1db0837ba7e03f210a1b00062d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a72bb69cce96d72cdc00d48546244bdcde20271f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201493"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802327"
 ---
 # <a name="behavior-of-endpointbehaviors"></a>\<behavior> de \<endpointBehaviors>
 
@@ -19,7 +20,7 @@ O `behavior` elemento contém uma coleção de configurações para o comportame
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<behavior>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.ServiceModel>

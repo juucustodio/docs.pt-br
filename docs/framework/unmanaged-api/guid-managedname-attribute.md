@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: GUID_ManagedName atributo'
 title: Atributo GUID_ManagedName
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 11e18095-e444-47bc-aff6-b887ac5dc01e
 topic_type:
 - apiref
-ms.openlocfilehash: 0127b6894f1095521f1b24fc8c0424dc7db824b3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c139e8bdc00aa3b008a706de0c42cfbf8e3510c5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721043"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799987"
 ---
 # <a name="guid_managedname-attribute"></a>Atributo GUID_ManagedName
 

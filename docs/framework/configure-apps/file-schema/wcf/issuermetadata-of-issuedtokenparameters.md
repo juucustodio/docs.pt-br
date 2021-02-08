@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <issuerMetadata> de <issuedTokenParameters>'
 title: <issuerMetadata> de <issuedTokenParameters>
 ms.date: 03/30/2017
 ms.assetid: 1a85ca37-496d-4fa3-8d44-d6c9383d735c
-ms.openlocfilehash: 389ac9e96c1462f59bc42b2e20cb511acdefda00
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6b0b5064254caf1c6bcf72c2e6d3449402853b98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185659"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802236"
 ---
 # <a name="issuermetadata-of-issuedtokenparameters"></a>\<issuerMetadata> de \<issuedTokenParameters>
 
@@ -20,7 +21,7 @@ ms.locfileid: "91185659"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<issuedTokenParameters>**](issuedtokenparameters.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<issuerMetadata>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <issuerMetaData address="String" />
@@ -34,7 +35,7 @@ ms.locfileid: "91185659"
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|address|Necessário. Uma cadeia de caracteres que especifica o endereço do ponto de extremidade. O endereço deve ser um URI absoluto. O valor padrão é uma cadeia de caracteres vazia.|  
+|address|Obrigatório. Uma cadeia de caracteres que especifica o endereço do ponto de extremidade. O endereço deve ser um URI absoluto. O valor padrão é uma cadeia de caracteres vazia.|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -49,7 +50,7 @@ ms.locfileid: "91185659"
 |-------------|-----------------|  
 |[\<issuedTokenParameters>](issuedtokenparameters.md)|Especifica os parâmetros para um token de segurança emitido em um cenário de segurança federada.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>

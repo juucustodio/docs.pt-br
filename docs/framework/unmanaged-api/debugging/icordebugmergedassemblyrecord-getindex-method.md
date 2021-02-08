@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugMergedAssemblyRecord:: GetIndex'
 title: 'Método ICorDebugMergedAssemblyRecord:: GetIndex'
 ms.date: 03/30/2017
 ms.assetid: 98701444-b9bc-4978-9548-89ac3394147d
-ms.openlocfilehash: 3056d22f5ddc1b11b79ee072aba68ce3ad40e8da
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f3a51c5ed5edacc9678c965ac385d0969e2ee8a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710630"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801105"
 ---
 # <a name="icordebugmergedassemblyrecordgetindex-method"></a>Método ICorDebugMergedAssemblyRecord:: GetIndex
 
@@ -43,7 +44,7 @@ HRESULT GetIndex(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMergedAssemblyRecord](icordebugmergedassemblyrecord-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

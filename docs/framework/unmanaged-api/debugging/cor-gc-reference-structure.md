@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_GC_REFERENCE'
 title: Estrutura COR_GC_REFERENCE
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 162e8179-0cd4-4110-8f06-5f387698bd62
 topic_type:
 - apiref
-ms.openlocfilehash: bb4a8f7ff3ee54474804e3e5620dcce7c9f79fb5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 38518bb1eb870081621bf32af9e63cdaa208dbd3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801807"
 ---
 # <a name="cor_gc_reference-structure"></a>Estrutura COR_GC_REFERENCE
 
@@ -73,7 +74,7 @@ typedef struct _COR_GC_REFERENCE {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de depuração](debugging-structures.md)
 - [Depuração](index.md)

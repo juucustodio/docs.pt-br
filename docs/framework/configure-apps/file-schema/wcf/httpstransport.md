@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <httpsTransport>'
 title: <httpsTransport>
 ms.date: 03/30/2017
 ms.assetid: f6ed4bc0-7e38-4348-9259-30bf61eb9435
-ms.openlocfilehash: 07f7b07815454983b0e8f09a5f242a12f4d4bdb3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 60f35e6b81633cc8c00740e659671a67eeb4e494
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192211"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802262"
 ---
 # \<httpsTransport>
 
@@ -20,7 +21,7 @@ Especifica um transporte HTTP para transmissão de mensagens SOAP para uma assoc
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<httpsTransport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <httpsTransport allowCookies="Boolean"
@@ -78,7 +79,7 @@ Especifica um transporte HTTP para transmissão de mensagens SOAP para uma assoc
 
  O `httpsTransport` elemento é o ponto de partida para criar uma associação personalizada que implementa o protocolo de transporte HTTPS. HTTPS é o transporte primário usado para fins de interoperabilidade segura. O Windows Communication Foundation (WCF) dá suporte ao HTTPS para garantir a interoperabilidade com outras pilhas de serviços da Web.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.HttpsTransportElement>
 - <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>

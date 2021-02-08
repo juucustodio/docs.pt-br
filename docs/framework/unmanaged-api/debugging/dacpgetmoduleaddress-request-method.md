@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: DacpGetModuleAddress:: Request'
 title: Método DacpGetModuleAddress::Request
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 1755526636bed6d78663112e4c2ad5ab7c3f731c
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 4cdec9cf6b9bd818ce1137fb5b2c691532fab94e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860843"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801495"
 ---
 # <a name="dacpgetmoduleaddressrequest-method"></a>Método DacpGetModuleAddress::Request
 
@@ -45,7 +46,7 @@ no Um ponteiro para o módulo de dados de semente.
 
 Essa estrutura reside dentro do tempo de execução e não é exposta por nenhum cabeçalho ou arquivo de biblioteca. Para usá-lo, a maneira mais fácil é imitar a implementação:
 
-- Retorne o valor obtido da chamada `Request` do método no `IXCLRDataModule*` parâmetro com os seguintes parâmetros:`((uint32) 0xf0000000, 0, 0, (uint32) sizeof(*this), (uint8*) this)`
+- Retorne o valor obtido da chamada do `Request` método no `IXCLRDataModule*` parâmetro com os seguintes parâmetros: `((uint32) 0xf0000000, 0, 0, (uint32) sizeof(*this), (uint8*) this)`
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +55,7 @@ Essa estrutura reside dentro do tempo de execução e não é exposta por nenhum
 **Biblioteca:** None
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Estrutura DacpGetModuleAddress](dacpgetmoduleaddress-structure.md)

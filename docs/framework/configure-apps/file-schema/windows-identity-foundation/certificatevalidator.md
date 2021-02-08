@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <certificateValidator>'
 title: <certificateValidator>
 ms.date: 03/30/2017
 ms.assetid: 86161897-c20f-4ad8-9d7f-050c247251bf
 author: BrucePerlerMS
-ms.openlocfilehash: 8476600769b6099bb885566de4c908c78a2dbbda
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0b92eada916b239ca56342021bb958da6d02c2e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201363"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802158"
 ---
 # \<certificateValidator>
 
@@ -20,7 +21,7 @@ Especifica um tipo personalizado para validação de certificado. Esse tipo ser�
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<certificateValidation>**](certificatevalidation.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<certificateValidator>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.identityModel>  

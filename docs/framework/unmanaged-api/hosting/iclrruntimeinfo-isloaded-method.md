@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRRuntimeInfo:: EstáCarregado'
 title: Método ICLRRuntimeInfo::IsLoaded
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fdc5a3a7-71ff-4025-99a1-59e4ee0bfe1b
 topic_type:
 - apiref
-ms.openlocfilehash: 66ae74deba9ceab9d1ea6b2c0b96a87bf44f32ab
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e6a5984dbd2340fe07af546dd48ae6760d5b4271
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714920"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799692"
 ---
 # <a name="iclrruntimeinfoisloaded-method"></a>Método ICLRRuntimeInfo::IsLoaded
 
@@ -42,7 +43,7 @@ HRESULT IsLoaded(
  `pbLoaded`  
  [fora] `true` Se o CLR for carregado no processo; caso contrário, `false` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
@@ -75,8 +76,8 @@ HRESULT IsLoaded(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

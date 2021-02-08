@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface INotifySink2'
 title: Interface INotifySink2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c1018789-4206-455d-aacc-2d876fc0d0bb
 topic_type:
 - apiref
-ms.openlocfilehash: 255fe51f86157842a5807145bf7c58ae1ff5ba8a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4d046c5566d9cb1641426f6a990f39449c33bc4d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800286"
 ---
 # <a name="inotifysink2-interface"></a>Interface INotifySink2
 
@@ -27,7 +28,7 @@ Declara métodos para notificação de coletor.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método OnSyncCallEnter](inotifysink2-onsynccallenter-method.md)|É invocado ao inserir uma chamada.|  
 |[Método OnSyncCallExit](inotifysink2-onsynccallexit-method.md)|É invocado ao sair de uma chamada.|  
@@ -38,7 +39,7 @@ Declara métodos para notificação de coletor.
 
  **Cabeçalho:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface INotifyConnection2](inotifyconnection2-interface.md)
 - [Interface INotifySource2](inotifysource2-interface.md)

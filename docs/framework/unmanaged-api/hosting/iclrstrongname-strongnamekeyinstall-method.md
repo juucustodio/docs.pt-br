@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRStrongName:: StrongNameKeyInstall'
 title: Método ICLRStrongName::StrongNameKeyInstall
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5c15cf3b-164c-49d1-8e57-e42949d55acf
 topic_type:
 - apiref
-ms.openlocfilehash: 7e0c689dad0c288e3af3a3d64ee1bba1c44053c1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8f9e7bfebff555a6430a3970c8ee1c481e341f58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674522"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799506"
 ---
 # <a name="iclrstrongnamestrongnamekeyinstall-method"></a>Método ICLRStrongName::StrongNameKeyInstall
 
@@ -47,7 +48,7 @@ HRESULT StrongNameKeyInstall (
  `cbKeyBlob`  
  no O tamanho, em bytes, de `pbKeyBlob` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` Se o método foi concluído com êxito; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
   
@@ -65,7 +66,7 @@ HRESULT StrongNameKeyInstall (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameKeyDelete](iclrstrongname-strongnamekeydelete-method.md)
 - [Interface ICLRStrongName](iclrstrongname-interface.md)

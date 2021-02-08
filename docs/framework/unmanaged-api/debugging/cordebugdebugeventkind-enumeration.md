@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugDebugEventKind'
 title: Enumeração CorDebugDebugEventKind
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: 6075a6cd-97e6-4472-a090-0dd14860d1f3
 topic_type:
 - apiref
-ms.openlocfilehash: e348e0070a5ce619f95dad9ebe4085d17f7ade6d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 62094c934873a74fdab01fad87c42126e28cb0f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733367"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801703"
 ---
 # <a name="cordebugdebugeventkind-enumeration"></a>Enumeração CorDebugDebugEventKind
 
@@ -62,6 +63,6 @@ typedef enum CorDebugDebugEventKind {
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)

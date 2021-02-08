@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: sobre o namespace System .net. PeerToPeer. Collaboration'
 title: Sobre o namespace System.Net.PeerToPeer.Collaboration
 ms.date: 03/30/2017
 ms.assetid: b5d8c1c1-6844-4947-9759-c7f1b564bded
-ms.openlocfilehash: 54eaf1a99aab8b1db61f4b46237d57104c9d1a44
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cb51208b2424b93e963101943652c57f0266baf6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250704"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801911"
 ---
 # <a name="about-the-systemnetpeertopeercollaboration-namespace"></a>Sobre o namespace System.Net.PeerToPeer.Collaboration
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugType'
 title: Interface ICorDebugType
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 94e02e31-67ea-4b00-8148-a46740a4571d
 topic_type:
 - apiref
-ms.openlocfilehash: 9407dda7aab337f667cd5043b562d0eac94f0f04
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4cd668263906ef21e1bb665795425ca3a239c2bd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711917"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800884"
 ---
 # <a name="icordebugtype-interface"></a>Interface ICorDebugType
 
@@ -27,7 +28,7 @@ Representa um tipo, básico ou complexo (ou seja, definido pelo usuário). Se o 
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método EnumerateTypeParameters](icordebugtype-enumeratetypeparameters-method.md)|Obtém um ponteiro de interface para um ICorDebugTypeEnum que faz referência aos <xref:System.Type> parâmetros genéricos da classe referenciada por isso `ICorDebugType` .|  
 |[Método GetBase](icordebugtype-getbase-method.md)|Obtém um ponteiro de interface para um `ICorDebugType` que faz referência à classe base da classe referenciada por isso `ICorDebugType` , se houver.|  
@@ -56,6 +57,6 @@ Representa um tipo, básico ou complexo (ou seja, definido pelo usuário). Se o 
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

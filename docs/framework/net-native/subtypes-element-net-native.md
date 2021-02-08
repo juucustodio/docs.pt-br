@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: <Subtypes> elemento (.net Native)'
 title: <Subtypes> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: fb854070-248b-46cf-9dab-c322e2b4d624
-ms.openlocfilehash: 7484152c351f59ee84b601584bd84347186628a3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d30bb482e784d912d3f5d61f688ed2b824e45f27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287807"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801950"
 ---
 # <a name="subtypes-element-net-native"></a>\<Subtypes> (.NET Nativo)
 
 Aplica a política de runtime a todas as classes herdadas do tipo recipiente.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Subtypes Activate="policy_type"  
@@ -55,7 +56,7 @@ Aplica a política de runtime a todas as classes herdadas do tipo recipiente.
   
 ### <a name="child-elements"></a>Elementos filho  
 
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -92,7 +93,7 @@ Aplica a política de runtime a todas as classes herdadas do tipo recipiente.
   
  [!code-csharp[ProjectN_Reflection#5](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/subtypes.cs#5)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [\<Type> Elementos](type-element-net-native.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

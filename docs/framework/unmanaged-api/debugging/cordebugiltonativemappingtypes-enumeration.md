@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugIlToNativeMappingTypes'
 title: Enumeração CorDebugIlToNativeMappingTypes
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c35e2919-42c3-4ba0-ae28-443c35f66f93
 topic_type:
 - apiref
-ms.openlocfilehash: ecb88195e3ecc7c540679a683005798247afe57f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bcca11bf3c7574fe76684f6786d7408c80acfa43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712398"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801625"
 ---
 # <a name="cordebugiltonativemappingtypes-enumeration"></a>Enumeração CorDebugIlToNativeMappingTypes
 
@@ -53,7 +54,7 @@ typedef enum CorDebugIlToNativeMappingTypes {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetILToNativeMapping](icordebugcode-getiltonativemapping-method.md)
 - [Declarando enumerações](debugging-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IDebugAutoAttach:: método de anexação automática'
 title: Método IDebugAutoAttach::AutoAttach
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3cf3bd9c-7d88-4afa-a476-94cdc7609aa6
 topic_type:
 - apiref
-ms.openlocfilehash: 64dd653bb0d4e383075a999e0803e4acfd0fae3d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8abd35b1d94fc074d4dafe424c52c274b1de1541
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720094"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800351"
 ---
 # <a name="idebugautoattachautoattach-method"></a>Método IDebugAutoAttach::AutoAttach
 
@@ -56,7 +57,7 @@ HRESULT AutoAttach
  `pszSessionId`  
  no Cadeia de caracteres passada pelo verbo Debug.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso.  
   
@@ -64,6 +65,6 @@ HRESULT AutoAttach
 
  **Cabeçalho:** DbgAutoAttach. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IDebugAutoAttach](idebugautoattach-interface.md)

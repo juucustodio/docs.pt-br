@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugStaticFieldSymbol:: GetAddress'
 title: 'Método ICorDebugStaticFieldSymbol:: GetAddress'
 ms.date: 03/30/2017
 ms.assetid: 5a6c9a5a-ec72-4c40-a9c3-cee7baa63687
-ms.openlocfilehash: e9404b429ad4507acb5132a86af5f287dbcf07b3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1944839ff6afc31dc3667111397cbb088b95b412
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677278"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801001"
 ---
 # <a name="icordebugstaticfieldsymbolgetaddress-method"></a>Método ICorDebugStaticFieldSymbol:: GetAddress
 
@@ -41,7 +42,7 @@ HRESULT GetAddress(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugStaticFieldSymbol](icordebugstaticfieldsymbol-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

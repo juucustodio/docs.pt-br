@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces de hospedagem CLR'
 title: Interfaces de hospedagem CLR
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - hosting interfaces [.NET Framework], version 2.0
 - .NET Framework 2.0, hosting interfaces
 ms.assetid: 703b8381-43db-4a4d-9faa-cca39302d922
-ms.openlocfilehash: 77f2ba64d9bdbe9793d56e88dae46fd506119ab8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f42a74698607ffbed4a981f061d13ea4e9d634d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719041"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799896"
 ---
 # <a name="clr-hosting-interfaces"></a>Interfaces de hospedagem CLR
 

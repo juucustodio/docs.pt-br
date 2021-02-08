@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugMDA'
 title: Interface ICorDebugMDA
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8ecbb854-295c-4dd4-b9fc-01ebeac46e06
 topic_type:
 - apiref
-ms.openlocfilehash: c4ff28ff1019b5314902a4e71f6d02b5a2fd8d70
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8e6e779c58d71b07edc9b63dff72aef728ebe050
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801118"
 ---
 # <a name="icordebugmda-interface"></a>Interface ICorDebugMDA
 
@@ -27,7 +28,7 @@ Representa uma mensagem do assistente de depuração gerenciado (MDA).
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método GetDescription](icordebugmda-getdescription-method.md)|Obtém uma cadeia de caracteres que contém uma descrição deste MDA.|  
 |[Método GetFlags](icordebugmda-getflags-method.md)|Obtém os sinalizadores associados a este MDA.|  
@@ -50,7 +51,7 @@ Representa uma mensagem do assistente de depuração gerenciado (MDA).
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Diagnosticando erros com assistentes de depuração gerenciados](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

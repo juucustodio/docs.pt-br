@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função PreBindAssemblyEx'
 title: Função PreBindAssemblyEx
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bd285233-a4a2-4b52-bbca-0025a60e4864
 topic_type:
 - apiref
-ms.openlocfilehash: a729249f7b0681941a0b1a478dbe2c0d9d6cd01c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e94bd7c335555e8109df60a00cadc76f7e13434b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723955"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800000"
 ---
 # <a name="prebindassemblyex-function"></a>Função PreBindAssemblyEx
 
@@ -74,6 +75,6 @@ HRESULT PreBindAssemblyEx (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções estáticas globais de fusão](fusion-global-static-functions.md)

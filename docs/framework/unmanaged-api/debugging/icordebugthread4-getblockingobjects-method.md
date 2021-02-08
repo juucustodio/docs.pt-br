@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugThread4:: GetBlockingObjects'
 title: Método ICorDebugThread4::GetBlockingObjects
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a7e6c54e-7be9-4e52-bbb4-95f52458e8e4
 topic_type:
 - apiref
-ms.openlocfilehash: eb8692aebe7b702b5778b3f13e496d81dcd45784
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6a60ebe6f5f6dac93dcb11dad7658aba9c934329
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678529"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800949"
 ---
 # <a name="icordebugthread4getblockingobjects-method"></a>Método ICorDebugThread4::GetBlockingObjects
 
@@ -60,7 +61,7 @@ HRESULT GetBlockingObjects (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugThread4](icordebugthread4-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

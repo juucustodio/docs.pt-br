@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_HEAPOBJECT'
 title: Estrutura COR_HEAPOBJECT
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a92fdf95-492b-49ae-a741-2186e5c1d7c5
 topic_type:
 - apiref
-ms.openlocfilehash: 54af02b48dabdf2042763954805f0d454323ac89
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f41e02e7c528063f4b7ed485cbadbabb4d3e5ca7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726360"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801794"
 ---
 # <a name="cor_heapobject-structure"></a>Estrutura COR_HEAPOBJECT
 
@@ -65,7 +66,7 @@ typedef struct _COR_HEAPOBJECT {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de depuração](debugging-structures.md)
 - [Depuração](index.md)

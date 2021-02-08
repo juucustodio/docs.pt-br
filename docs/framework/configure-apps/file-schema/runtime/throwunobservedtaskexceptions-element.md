@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <ThrowUnobservedTaskExceptions> elemento'
 title: Elemento <ThrowUnobservedTaskExceptions>
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ThrowUnobservedTaskExceptions element
 - <ThrowUnobservedTaskExceptions> element
 ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
-ms.openlocfilehash: 012c2e70e66015bc317606a7eea07812b5df26e7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 53f3f1275ea8419bed52fd73726c043e1c49eed7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183917"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802392"
 ---
 # <a name="throwunobservedtaskexceptions-element"></a>Elemento \<ThrowUnobservedTaskExceptions>
 
@@ -23,7 +24,7 @@ Especifica se as exceções de tarefas sem tratamento devem encerrar um processo
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<ThrowUnobservedTaskExceptions>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <ThrowUnobservedTaskExceptions  
@@ -44,7 +45,7 @@ Especifica se as exceções de tarefas sem tratamento devem encerrar um processo
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|`false`|Não encerra o processo em execução para uma exceção de tarefa sem tratamento. Esse é o padrão.|  
+|`false`|Não encerra o processo em execução para uma exceção de tarefa sem tratamento. Este é o padrão.|  
 |`true`|Encerra o processo em execução para uma exceção de tarefa sem tratamento.|  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -73,7 +74,7 @@ Especifica se as exceções de tarefas sem tratamento devem encerrar um processo
   
 - Definindo a variável de ambiente `COMPlus_ThrowUnobservedTaskExceptions` ( `set COMPlus_ThrowUnobservedTaskExceptions=1` ).  
   
-- Definindo o valor DWORD do registro ThrowUnobservedTaskExceptions = 1 no HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft \\ . Chave NETFramework.  
+- Definindo o valor DWORD do registro ThrowUnobservedTaskExceptions = 1 no HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\ . Chave NETFramework.  
   
 ## <a name="example"></a>Exemplo  
 
@@ -94,7 +95,7 @@ Especifica se as exceções de tarefas sem tratamento devem encerrar um processo
  [!code-csharp[ThrowUnobservedTaskExceptions#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/throwunobservedtaskexceptions/cs/program.cs#1)]
  [!code-vb[ThrowUnobservedTaskExceptions#1](../../../../../samples/snippets/visualbasic/VS_Snippets_CLR/throwunobservedtaskexceptions/vb/program.vb#1)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

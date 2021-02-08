@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tipos estruturados anuláveis (Entity SQL)'
 title: Tipos anuláveis estruturados (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: ae006fa9-997e-45bb-8a04-a7f62026171e
-ms.openlocfilehash: fc2230401ef98c005ab52a845de37482c0dcf698
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bf303c9cd61fad2c2a8ffedf338bb3a8876db27b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802080"
 ---
 # <a name="nullable-structured-types-entity-sql"></a>Tipos anuláveis estruturados (Entity SQL)
 
@@ -91,6 +92,6 @@ Uma instância de `null` de um tipo estruturada é uma instância que não exist
     }  
     ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral da Entity SQL](entity-sql-overview.md)

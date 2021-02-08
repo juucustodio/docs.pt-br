@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IBindingDisplay:: InitializeForProcess'
 title: Método IBindingDisplay::InitializeForProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 59417acb-4e59-46ad-acfe-d827e6ab6078
 topic_type:
 - apiref
-ms.openlocfilehash: f9e65b49c9a3b506cba3493d81a40f2759dca781
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf7f0f4d057659089bd7da173e5fac98a7c00dad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725138"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800403"
 ---
 # <a name="ibindingdisplayinitializeforprocess-method"></a>Método IBindingDisplay::InitializeForProcess
 
@@ -53,6 +54,6 @@ HRESULT InitializeForProcess (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IBindingDisplay](ibindingdisplay-interface.md)

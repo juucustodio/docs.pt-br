@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit2:: SaveDeltaToStream'
 title: Método IMetaDataEmit2::SaveDeltaToStream
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ecd786e8-f9a4-4190-a6ef-af18e8c6d654
 topic_type:
 - apiref
-ms.openlocfilehash: dad916d74c4e754d8fd3ffb62024e49617f5de05
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ce2e7822a5220a8ab1264a6e18337ba0f7828e3b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702011"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771698"
 ---
 # <a name="imetadataemit2savedeltatostream-method"></a>Método IMetaDataEmit2::SaveDeltaToStream
 
@@ -53,7 +54,7 @@ HRESULT SaveDeltaToStream (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)
 - [Interface IMetaDataEmit](imetadataemit-interface.md)

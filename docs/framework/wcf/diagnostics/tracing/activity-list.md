@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: lista de atividades'
 title: Lista de atividades
 ms.date: 03/30/2017
 ms.assetid: 5540e185-ce8e-4db3-83b0-2b9f5bf71829
-ms.openlocfilehash: d28ae2e4750c718c35105d090aff8d085025b9d6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 656c605e81872405aa8637b647b40278b06913cb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236085"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99770866"
 ---
 # <a name="activity-list"></a>Lista de atividades
 
@@ -20,15 +21,15 @@ Este tópico lista todas as atividades definidas por Windows Communication Found
 
  A tabela a seguir lista todas as atividades para os principais cenários de uso.  
   
-|Rotular|Nome da atividade|Tipo de atividade|Descrição|  
+|Rótulo|Nome da atividade|Tipo de atividade|Descrição|  
 |-----------|-------------------|-------------------|-----------------|  
 |A, M|Atividade de ambiente|N/A (isso não é controlado pelo ServiceModel)|A atividade cuja ID é definida em TLS antes de qualquer chamada para o código de ServiceModel (lado do cliente ou servidor).<br /><br /> Exemplo: uma atividade em que Open é chamada no cliente WCF ou serviceHost. Open é chamado.|  
 |B|Constructo<br /><br /> ChannelFactory. Tipo de contrato: ' [type] '.|Constructo||  
-|C|Abrir<br /><br /> [ClientBase&#124;ChannelFactory]. Tipo de contrato: ' [type] '.|Abrir||  
-|I|Feche [ClientBase&#124;ChannelFactory]. Tipo de contrato: ' [type] '.|Fechar||  
+|C|Aberto<br /><br /> [ClientBase&#124;ChannelFactory]. Tipo de contrato: ' [type] '.|Aberto||  
+|I|Feche [ClientBase&#124;ChannelFactory]. Tipo de contrato: ' [type] '.|Feche||  
 |M|Construir ServiceHost. ServiceType: ' [type] '.|Constructo||  
-|N|Abra o ServiceHost. ServiceType: ' [type] '.|Abrir||  
-|Z|Feche o ServiceHost. ServiceType: ' [type] '.|Fechar||  
+|N|Abra o ServiceHost. ServiceType: ' [type] '.|Aberto||  
+|Z|Feche o ServiceHost. ServiceType: ' [type] '.|Feche||  
 |O|Escute em ' [endereço] '.|ListenAt|Essa e a próxima atividade são específicas de transporte. A atividade ListenAt representa o conteúdo que mapeia para o endereço onde o ouvinte de canal escuta. No caso do MSMQ, é a própria fila, uma vez que a fila é mapeada para um endereço. Essa atividade escuta conexões de entrada no caso de transportes orientados a conexões, para mensagens MSMQ no caso do MSMQ. Essa atividade é criada durante ServiceHost. Open () e contém os rastreamentos relacionados à criação e à descartação do ouvinte, bem como a transferência para todas as atividades ReceiveBytes.|  
 |P|Bytes de recebimento na conexão ' [endereço] '. Receber mensagem MSMQ.|ReceiveBytes|Nessa atividade, os dados que eventualmente receberão uma mensagem do WCF serão processados. Os bytes de entrada são esperados no caso de transporte orientado a conexão ou http. Para TCP/named-pipe, o tempo de vida dessa atividade é o tempo de vida da conexão, pois ela é criada quando a conexão é criada. Para http, é o tempo de vida de uma solicitação de mensagem e é criado quando a mensagem é enviada. Essa atividade contém os rastreamentos relacionados à criação e ao descarte da conexão, se aplicável, e transferências para todas as atividades de processamento de mensagem (objeto).<br /><br /> No caso do MSMQ, é a atividade em que a mensagem MSMQ é recuperada.|  
 |Q|Processar mensagem [número]. (Observação: [número] é um valor que aumenta de forma monotônico, que começa em 1.)|ProcessMessage|Processar uma mensagem de entrada. Essa atividade é iniciada quando todos os dados (bytes, mensagem MSMQ) são recebidos para formar um objeto de mensagem do WCF. Os rastreamentos dentro dessa atividade lidam com o processamento de cabeçalho.<br /><br /> Depois que uma mensagem que pode ser expedida é formada, a atividade processAction do ServiceHost é alternada para depois de Pesquisar a ID da atividade correspondente.|  

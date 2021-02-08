@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRDebugManager:: IsDebuggerAttached'
 title: Método ICLRDebugManager::IsDebuggerAttached
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2f105fe0-f52d-49c5-bda5-583fb27e3aa6
 topic_type:
 - apiref
-ms.openlocfilehash: 71e11d7db3bd679e7972fb2f6ce098edc3399885
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 74305989797bcb553feb727a133e24bd308ac715
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772127"
 ---
 # <a name="iclrdebugmanagerisdebuggerattached-method"></a>Método ICLRDebugManager::IsDebuggerAttached
 
@@ -39,7 +40,7 @@ HRESULT IsDebuggerAttached (
  `pbAttached`  
  [fora] `true` se um depurador estiver anexado ao processo; caso contrário, `false` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
@@ -64,7 +65,7 @@ HRESULT IsDebuggerAttached (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRControl](iclrcontrol-interface.md)
 - [Interface ICLRDebugManager](iclrdebugmanager-interface.md)

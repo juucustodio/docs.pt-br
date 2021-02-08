@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugAppDomain3'
 title: Interface ICorDebugAppDomain3
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 875ef5be-c1e7-4d95-97e9-d3a667aeaba0
 topic_type:
 - apiref
-ms.openlocfilehash: 644457edbf5035f6d946e1c83ff0053fb118288e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6575aa685759102443babeaf82774e6221b80693
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698228"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772205"
 ---
 # <a name="icordebugappdomain3-interface"></a>Interface ICorDebugAppDomain3
 
@@ -51,6 +52,6 @@ Fornece métodos para recuperar informações sobre as representações gerencia
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

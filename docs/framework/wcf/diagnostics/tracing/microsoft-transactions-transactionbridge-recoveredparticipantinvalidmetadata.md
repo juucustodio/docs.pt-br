@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Microsoft. Transactions. TransactionBridge. RecoveredParticipantInvalidMetadata'
 title: Microsoft.Transactions.TransactionBridge.RecoveredParticipantInvalidMetadata
 ms.date: 03/30/2017
 ms.assetid: 5d38eb27-bb00-4d7e-a234-50de8d90a0f9
-ms.openlocfilehash: cddcdc18b92465ac1de17dd62554ad070327f758
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 54d48d10e2a25d0d9044b85e23932915d4a69356
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96252069"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99770710"
 ---
 # <a name="microsofttransactionstransactionbridgerecoveredparticipantinvalidmetadata"></a>Microsoft.Transactions.TransactionBridge.RecoveredParticipantInvalidMetadata
 
@@ -21,8 +22,8 @@ A referência do ponto de extremidade encontrada em uma entrada de log de recupe
 
  Contate a Microsoft se o problema persistir.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

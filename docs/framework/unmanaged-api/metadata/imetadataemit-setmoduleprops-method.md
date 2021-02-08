@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit:: SetModuleProps'
 title: Método IMetaDataEmit::SetModuleProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b74d7629-5f46-458f-8d67-2456a1e7030c
 topic_type:
 - apiref
-ms.openlocfilehash: 1757662d2004dce3156182c35b37237ff91bae7f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0fc68a3f40871ddbb70cef885789ae7fe8ae0cba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730331"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772011"
 ---
 # <a name="imetadataemitsetmoduleprops-method"></a>Método IMetaDataEmit::SetModuleProps
 
@@ -49,7 +50,7 @@ HRESULT SetModuleProps (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: rastreamento de atividade na segurança da mensagem'
 title: Rastreamento de atividades em segurança de mensagens
 ms.date: 03/30/2017
 ms.assetid: 68862534-3b2e-4270-b097-8121b12a2c97
-ms.openlocfilehash: 4ab34e3a3ef8487a747c9f9dac71a22006ea515a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 94fb6f60539465dd16e09a968679567e94d6cd24
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265005"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99770853"
 ---
 # <a name="activity-tracing-in-message-security"></a>Rastreamento de atividades em segurança de mensagens
 

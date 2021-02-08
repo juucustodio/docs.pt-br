@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebug'
 title: Interface ICorDebug
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 33f431d7-ab1a-494d-8af2-20ab15aba194
 topic_type:
 - apiref
-ms.openlocfilehash: 21838bdd8ff45f8f74524dc4da52364fb032b396
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b989013f7eb54e163feeb965e10448a3a1756e3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723396"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772517"
 ---
 # <a name="icordebug-interface"></a>Interface ICorDebug
 
@@ -30,7 +31,7 @@ Fornece métodos que permitem aos desenvolvedores depurar aplicativos no ambient
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método CanLaunchOrAttach](icordebug-canlaunchorattach-method.md)|Determina se é possível iniciar um novo processo ou anexá-lo ao processo fornecido no contexto da máquina atual e da configuração de tempo de execução.|  
 |[Método CreateProcess](icordebug-createprocess-method.md)|Inicia um processo e seu thread principal sob o controle do depurador.|  
@@ -61,6 +62,6 @@ Fornece métodos que permitem aos desenvolvedores depurar aplicativos no ambient
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

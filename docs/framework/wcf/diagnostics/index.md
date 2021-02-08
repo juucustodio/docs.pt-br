@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: administração e diagnóstico'
 title: Administração e diagnósticos
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - administration [WCF]
 - WCF, administration
 ms.assetid: 34c81c08-0e0f-4fbc-9ae8-91948640ee43
-ms.openlocfilehash: 703724c3040f2508f011e002c22fa45dd3197884
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aa2efe31431f80dda6c98b0ac13162e32390b12c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96285558"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771256"
 ---
 # <a name="administration-and-diagnostics"></a>Administração e diagnósticos
 
@@ -41,7 +42,7 @@ O Windows Communication Foundation (WCF) fornece um conjunto avançado de funcio
   
  O WCF também fornece várias ferramentas de GUI e de linha de comando para facilitar a criação, a implantação e o gerenciamento de aplicativos WCF. Para obter mais informações, consulte [ferramentas de Windows Communication Foundation](../tools.md). Por exemplo, você pode usar a [ferramenta do editor de configuração (SvcConfigEditor.exe)](../configuration-editor-tool-svcconfigeditor-exe.md) para criar e Editar definições de configuração do WCF usando um assistente, em vez de editar XML diretamente. Você também pode usar a [ferramenta Visualizador de rastreamento de serviço (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) para exibir, agrupar e filtrar mensagens de rastreamento para que você possa diagnosticar, reparar e verificar problemas com os serviços WCF.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Configurando seu aplicativo](configuring-your-application.md)
 - [Implantando serviços](deploying-services.md)
@@ -52,6 +53,6 @@ O Windows Communication Foundation (WCF) fornece um conjunto avançado de funcio
 - [Ferramenta Visualizador de Rastreamento de Serviço (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md)
 - [Ferramenta de registro de ServiceModel](servicemodel-registration-tool.md)
 - [Rastreamento](./tracing/index.md)
-- [Usando Instrumentação de Gerenciamento do Windows para diagnóstico](./wmi/index.md)
+- [Usando Windows Management Instrumentation para diagnóstico](./wmi/index.md)
 - [Contadores de desempenho](./performance-counters/index.md)
 - [Ferramentas do Windows Communication Foundation](../tools.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 5204-JsonMessageEncodingStart'
 title: 5204 - JsonMessageEncodingStart
 ms.date: 03/30/2017
 ms.assetid: eda84660-7bf9-4633-81ce-e294f258d8e4
-ms.openlocfilehash: 7c88000fcd2d196d451880a32304f940858050e9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2d087aba84b007471ebe52aeefb41d39e34eb467
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287027"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771542"
 ---
 # <a name="5204---jsonmessageencodingstart"></a>5204 - JsonMessageEncodingStart
 

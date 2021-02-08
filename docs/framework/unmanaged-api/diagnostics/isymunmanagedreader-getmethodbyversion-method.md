@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReader:: GetMethodByVersion'
 title: Método ISymUnmanagedReader::GetMethodByVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6ddb0631-4569-41b3-93e4-50fdfaa486dc
 topic_type:
 - apiref
-ms.openlocfilehash: 64e6b9a1942e9a69e43de3d2f09564814328ec08
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6b2fa3ff3af91d59bb79029d039e5656610bebff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689609"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772062"
 ---
 # <a name="isymunmanagedreadergetmethodbyversion-method"></a>Método ISymUnmanagedReader::GetMethodByVersion
 
@@ -46,7 +47,7 @@ HRESULT GetMethodByVersion (
  `pRetVal`  
  fora Um ponteiro para a interface retornada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
@@ -54,6 +55,6 @@ HRESULT GetMethodByVersion (
 
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReader](isymunmanagedreader-interface.md)

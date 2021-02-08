@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: questões de segurança para o log de mensagens'
 title: Problemas de segurança de registro em log de mensagens
 ms.date: 03/30/2017
 ms.assetid: 21f513f2-815b-47f3-85a6-03c008510038
-ms.openlocfilehash: 8594329fb27aa1d77a2baffee2a7e37ea0d009c4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 88adc4eb772ad8c39ace23f2771ee68fa2288c3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771009"
 ---
 # <a name="security-concerns-for-message-logging"></a>Problemas de segurança de registro em log de mensagens
 
@@ -109,11 +110,11 @@ Este tópico descreve como você pode proteger dados confidenciais de serem expo
   
 - Registrar PII conhecido em: esse evento é emitido quando o log de PII conhecido está habilitado. Isso acontece quando o `enableLoggingKnownPii` atributo no `machineSettings` elemento do arquivo de Machine.config é definido como `true` e o `logKnownPii` atributo do `source` elemento no arquivo de App.config ou Web.config é definido como `true` .  
   
-- PII conhecida de log não permitido: esse evento é emitido quando o log de PII conhecido não é permitido. Isso acontece quando o `logKnownPii` atributo do `source` elemento no arquivo de App.config ou Web.config é definido como `true` , mas o `enableLoggingKnownPii` atributo no `machineSettings` elemento do arquivo de Machine.config é definido como `false` . Nenhuma exceção é lançada.  
+- PII conhecida de log não permitido: esse evento é emitido quando o log de PII conhecido não é permitido. Isso acontece quando o `logKnownPii` atributo do `source` elemento no arquivo de App.config ou Web.config é definido como `true` , mas o `enableLoggingKnownPii` atributo no `machineSettings` elemento do arquivo de Machine.config é definido como `false` . Nenhuma exceção é gerada.  
   
  Esses eventos podem ser exibidos na ferramenta de Visualizador de Eventos que vem com o Windows. Para obter mais informações sobre isso, consulte [log de eventos](./event-logging/index.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Registro em log de mensagens](message-logging.md)
 - [Preocupações de segurança e dicas úteis para rastreamento](./tracing/security-concerns-and-useful-tips-for-tracing.md)

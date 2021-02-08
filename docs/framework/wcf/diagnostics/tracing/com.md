@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: COM+'
 title: COM+
 ms.date: 03/30/2017
 ms.assetid: 6665a2d3-7e11-4cce-8968-3fcf3426d362
-ms.openlocfilehash: 3945ba8bd5e3c26c09c5526765841b47b35ba68e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 16a3bfbcac4e59d90db32a855406a81a1be0f55d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254474"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99770814"
 ---
 # <a name="com"></a>COM+
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cenários assíncronos usando HTTP, TCP ou Named-Pipe'
 title: Cenários assíncronos usando HTTP, TCP ou pipe nomeado
 ms.date: 03/30/2017
 ms.assetid: a4d62402-43a4-48a4-9ced-220633ebc4ce
-ms.openlocfilehash: 00213c8d117f4319d7e29312dd0b9805d916231a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5e01866cd20d63796741a097a6d7d774ea45d3d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244139"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99770944"
 ---
 # <a name="asynchronous-scenarios-using-http-tcp-or-named-pipe"></a>Cenários assíncronos usando HTTP, TCP ou pipe nomeado
 

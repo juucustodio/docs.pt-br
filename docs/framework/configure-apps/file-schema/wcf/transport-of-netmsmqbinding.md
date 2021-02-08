@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <transport> de <netMsmqBinding>'
 title: <transport> de <netMsmqBinding>
 ms.date: 03/30/2017
 ms.assetid: 72e1b338-39f0-4af1-a5d9-7a2fb79f6a0b
-ms.openlocfilehash: 84a5437de851ecdb96d0463ec574186ba5f91d9e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 04768f259629277abd758d102f3873bb28f16514
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203872"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773492"
 ---
 # <a name="transport-of-netmsmqbinding"></a>\<transport> de \<netMsmqBinding>
 
@@ -21,7 +22,7 @@ Define as configurações de segurança de transporte.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-netmsmqbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <netMsmqBinding>
@@ -59,7 +60,7 @@ Define as configurações de segurança de transporte.
 |-------------|-----------------|  
 |[\<security>](security-of-netmsmqbinding.md)|Define as configurações de segurança de transporte para transportes em fila.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>
 - <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Transport%2A>

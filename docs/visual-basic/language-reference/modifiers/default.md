@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: padrão (Visual Basic)'
 title: Padrão
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Default keyword [Visual Basic]
 - default properties
 ms.assetid: 45fce9b9-d212-4b2d-ab86-6e359b8b57af
-ms.openlocfilehash: bc213c3b5564d1833136df8f5b8dab1c6b012296
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: fe135df4f29ae3c4064c97d4f2789be7f4f3d8f9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875492"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774597"
 ---
 # <a name="default-visual-basic"></a>Padrão (Visual Basic)
 
@@ -37,7 +38,7 @@ Identifica uma propriedade como a propriedade padrão de sua classe, estrutura o
   
  [Instrução Property](../statements/property-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como declarar e chamar uma propriedade padrão no Visual Basic](../../programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md)
 - [Palavras-chave](../keywords/index.md)

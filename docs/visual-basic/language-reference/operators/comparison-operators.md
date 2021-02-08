@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operadores de comparação (Visual Basic)'
 title: Operadores de comparação
 ms.date: 07/20/2015
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - Is operator [Visual Basic]
 - comparison operators [Visual Basic], Visual Basic
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
-ms.openlocfilehash: fcbb9052a79fa4b20b5a0f8fdc15de73d55a4281
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 28eded0cfae54ec83ad9546b801243e4de0e45fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873443"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774103"
 ---
 # <a name="comparison-operators-visual-basic"></a>Operadores de comparação (Visual Basic)
 
@@ -61,7 +62,7 @@ A seguir estão os operadores de comparação definidos no Visual Basic.
 
  Esses operadores comparam duas expressões para determinar se elas são iguais e se não, como diferem. `Is`, `IsNot` e `Like` são discutidos em detalhes em páginas de ajuda separadas. Os operadores de comparação relacional são discutidos em detalhes nesta página.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
   
 ```vb
 result = expression1 comparisonoperator expression2  
@@ -72,7 +73,7 @@ result = string Like pattern
 ## <a name="parts"></a>Partes
 
  `result`  
- Necessário. Um `Boolean` valor que representa o resultado da comparação.
+ Obrigatório. Um `Boolean` valor que representa o resultado da comparação.
 
  `expression1`, `expression2`  
  Obrigatórios. Qualquer expressão.
@@ -81,7 +82,7 @@ result = string Like pattern
  Obrigatórios. Qualquer operador de comparação relacional.
 
  `object1`, `object2`  
- Necessário. Qualquer nome de objeto de referência.
+ Obrigatório. Qualquer nome de objeto de referência.
 
  `string`  
  Obrigatórios. Qualquer expressão de `String` .
@@ -160,7 +161,7 @@ result = string Like pattern
 
  No exemplo anterior, a primeira comparação retorna `False` e as comparações restantes são retornadas `True` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.InvalidCastException>
 - [= Operador](assignment-operator.md)

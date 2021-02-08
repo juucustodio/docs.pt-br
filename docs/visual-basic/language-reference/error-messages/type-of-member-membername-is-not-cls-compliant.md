@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC40025: o tipo de membro ' <membername> ' não tem conformidade com CLS"
 title: O tipo de membro '<membername>' não é compatível com CLS
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40025
 ms.assetid: adbd34bb-43d2-4266-90e7-cd1afaf49b4e
-ms.openlocfilehash: c8c14a2d6df8804967807af881384bc7d9ccd99f
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 4fe83999a0cb2d678ccc0119509a368160dfc3ab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92163474"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774870"
 ---
 # <a name="bc40025-type-of-member-membername-is-not-cls-compliant"></a>BC40025: tipo de membro " \<membername> " não tem conformidade com CLS
 
@@ -42,6 +43,6 @@ O tipo de dados especificado para esse membro não faz parte da [independência 
 
 - Se você estiver fazendo a interface com automação ou objetos COM, tenha em mente que alguns tipos têm larguras de dados diferentes das .NET Framework. Por exemplo, `uint` geralmente é 16 bits em outros ambientes. Se você estiver passando um argumento de 16 bits para esse componente, declare-o como `UShort` em vez de `UInteger` em seu código de Visual Basic gerenciado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Reflexão](../../../framework/reflection-and-codedom/reflection.md)

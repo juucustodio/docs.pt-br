@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: My. Forms Object'
 title: Objeto My.Forms
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Forms object
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
-ms.openlocfilehash: 001f6fbfae2467ea0af5e98ca041b694d1e7b8f9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 18ef8ee475163ff7eb177dfee590d959a242a88e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84372434"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774402"
 ---
 # <a name="myforms-object"></a>Objeto My.Forms
 
@@ -22,7 +23,7 @@ Fornece propriedades para acessar uma instância de cada formulário do Windows 
 
 O `My.Forms` objeto fornece uma instância de cada formulário no projeto atual. O nome da propriedade é o mesmo que o nome do formulário que a propriedade acessa.
 
-Você pode acessar os formulários fornecidos pelo `My.Forms` objeto usando o nome do formulário, sem qualificação. Como o nome da propriedade é igual ao nome do tipo do formulário, isso permite que você acesse um formulário como se ele tivesse uma instância padrão. Por exemplo, `My.Forms.Form1.Show` equivale a `Form1.Show`.
+Você pode acessar os formulários fornecidos pelo `My.Forms` objeto usando o nome do formulário, sem qualificação. Como o nome da propriedade é igual ao nome do tipo do formulário, isso permite que você acesse um formulário como se ele tivesse uma instância padrão. Por exemplo, `My.Forms.Form1.Show` é equivalente a `Form1.Show`.
 
 O `My.Forms` objeto expõe apenas os formulários associados ao projeto atual. Ele não fornece acesso a formulários declarados em DLLs referenciadas. Para acessar um formulário que uma DLL fornece, você deve usar o nome qualificado do formulário, escrito como *DllName*. *FormName*.
 
@@ -35,7 +36,7 @@ O objeto e suas propriedades estão disponíveis apenas para aplicativos do Wind
 Cada propriedade do `My.Forms` objeto fornece acesso a uma instância de um formulário no projeto atual. O nome da propriedade é o mesmo que o nome do formulário que a propriedade acessa, e o tipo de propriedade é o mesmo que o tipo do formulário.
 
 > [!NOTE]
-> Se houver uma colisão de nomes, o nome da propriedade para acessar um formulário será *RootNamespace*_*namespace* \_ *FormName*. Por exemplo, considere dois formulários chamados `Form1.` se um desses formulários estiver no namespace raiz `WindowsApplication1` e no namespace `Namespace1` , você acessaria esse formulário por meio do `My.Forms.WindowsApplication1_Namespace1_Form1` .
+> Se houver uma colisão de nomes, o nome da propriedade para acessar um formulário será *RootNamespace* _ *namespace* \_ *FormName*. Por exemplo, considere dois formulários chamados `Form1.` se um desses formulários estiver no namespace raiz `WindowsApplication1` e no namespace `Namespace1` , você acessaria esse formulário por meio do `My.Forms.WindowsApplication1_Namespace1_Form1` .
 
 O `My.Forms` objeto fornece acesso à instância do formulário principal do aplicativo que foi criado na inicialização. Para todos os outros formulários, o `My.Forms` objeto cria uma nova instância do formulário quando ele é acessado e armazena-o. As tentativas subsequentes de acessar essa propriedade retornam essa instância do formulário.
 
@@ -67,7 +68,7 @@ Esse código só funcionará em um projeto de aplicativo do Windows.
 |Aplicativo do Console|Não|
 |Biblioteca de controle do Windows|Não|
 |Biblioteca de controle da Web|Não|
-|Windows Service|Não|
+|Serviço do Windows|Não|
 |Site|Não|
 
 ## <a name="see-also"></a>Confira também

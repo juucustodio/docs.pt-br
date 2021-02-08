@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Operador AndAlso (Visual Basic)'
 title: Operador AndAlso
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - operators [Visual Basic], conjunction
 - short-circuit evaluation
 ms.assetid: bbc15191-b374-495b-9b8f-7b8c2f4388eb
-ms.openlocfilehash: aff4621b8f415b9441ad1edf537b9b0736892bb8
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: dcf6c2685bf8f9ffee27b00543786cd3b315b327
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874846"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774259"
 ---
 # <a name="andalso-operator-visual-basic"></a>Operador AndAlso (Visual Basic)
 
 Executa uma conjunção lógica de curto-circuito em duas expressões.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb
 result = expression1 AndAlso expression2  
@@ -71,7 +72,7 @@ Para obter mais informações, consulte [conversões de tipo booliano](../data-t
   
  [!code-vb[VbVbalrOperators#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#25)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores lógicos/bit a bit (Visual Basic)](logical-bitwise-operators.md)
 - [Precedência do operador no Visual Basic](operator-precedence.md)

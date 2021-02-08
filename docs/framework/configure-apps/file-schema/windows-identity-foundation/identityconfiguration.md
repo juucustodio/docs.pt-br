@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <identityConfiguration>'
 title: <identityConfiguration>
 ms.date: 03/30/2017
 ms.assetid: 1db76253-07da-447b-9e7a-3705c7228cf4
 author: BrucePerlerMS
-ms.openlocfilehash: 0fa8c574fd5663606cf081f1000a24884306edfe
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 987dfb006984f757ad117157e915f1909ab3a8c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70251989"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773401"
 ---
 # \<identityConfiguration>
 
@@ -18,7 +19,7 @@ Especifica as configurações de identidade de nível de serviço.
 &nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<identityConfiguration>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <system.identityModel>

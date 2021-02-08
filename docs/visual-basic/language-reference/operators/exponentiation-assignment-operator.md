@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador ^ = (Visual Basic)'
 title: Operador ^=
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - ^= operator [Visual Basic]
 - compound assignment statements [Visual Basic]
 ms.assetid: 397da132-2d96-4a85-a7bc-f7c730a608c9
-ms.openlocfilehash: a956ffdaa3456ed09443f25c3383b6aab52fb5bf
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5894fdbedb411c6324a9355bd2d335bb6c6c5867
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867061"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773882"
 ---
 # <a name="-operator-visual-basic"></a>Operador ^= (Visual Basic)
 
 Gera o valor de uma variável ou propriedade para a potência de uma expressão e atribui o resultado de volta à variável ou à propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 variableorproperty ^= expression  
@@ -29,7 +30,7 @@ variableorproperty ^= expression
 ## <a name="parts"></a>Partes  
 
  `variableorproperty`  
- Necessário. Qualquer variável numérica ou propriedade.  
+ Obrigatório. Qualquer variável numérica ou propriedade.  
   
  `expression`  
  Obrigatórios. Qualquer expressão numérica.  
@@ -54,7 +55,7 @@ variableorproperty ^= expression
   
  [!code-vb[VbVbalrOperators#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#21)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operador ^](exponentiation-operator.md)
 - [Operadores de atribuição](assignment-operators.md)

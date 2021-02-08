@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <transport> de <webHttpBinding>'
 title: <transport> de <webHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: f150fb19-7de1-44af-81f4-86cad881cd05
-ms.openlocfilehash: b9efc732832a8862373b14f657796a59fb52c1a1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a845786f4e60a44dcb157201235d28d49ab8d40b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162108"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773440"
 ---
 # <a name="transport-of-webhttpbinding"></a>\<transport> de \<webHttpBinding>
 
@@ -89,7 +90,7 @@ Define as configurações de segurança no nível de transporte para um ponto de
 |-------------|-----------------|  
 |[\<security>](security-of-webhttpbinding.md)|Representa os recursos de segurança do [\<wsHttpBinding>](wshttpbinding.md) elemento.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.HttpTransportSecurity>
 - <xref:System.ServiceModel.Configuration.WebHttpSecurityElement.Transport%2A>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: criando o modelo de objeto'
 title: Criando o modelo de objeto
 ms.date: 03/30/2017
 ms.assetid: 27afce86-9b1d-45fb-8e0b-636bf671a236
-ms.openlocfilehash: 2191c29c0b2e56f9fdf7983bf96d2494867f318b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c258179274ddc02f78c161084042c3e0266cfb36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773180"
 ---
 # <a name="creating-the-object-model"></a>Criando o modelo de objeto
 

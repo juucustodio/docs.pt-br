@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC40042: o tipo de valor opcional para o parâmetro opcional <parametername> não tem conformidade com CLS'
 title: O tipo de valor opcional para o parâmetro opcional <parametername> não é compatível com CLS
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40042
 ms.assetid: 1d6eae29-4ad3-4434-bde4-a53b6051adf5
-ms.openlocfilehash: e4fd7f0fd219eba7f20b62e0357d2139a21c0af7
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 44dee07120ebcd99be69257aef6a334f9067cdb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162681"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774857"
 ---
 # <a name="bc40042-type-of-optional-value-for-optional-parameter-parametername-is-not-cls-compliant"></a>BC40042: tipo de valor opcional para o parâmetro opcional \<parametername> não tem conformidade com CLS
 

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: operadores listados por funcionalidade (Visual Basic)'
 title: Operadores Listados por Funcionalidade
 ms.date: 07/20/2015
 helpviewer_keywords:
 - operators [Visual Basic]
 ms.assetid: d1fb027c-872b-4ccc-afc8-2380e3f65d4a
-ms.openlocfilehash: 7eaf7390e0c6ba1c9e350a6aab903c0a794e4e80
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: bd038192b08c94aefd32235a3a7cd5063b2cc43f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874776"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773869"
 ---
 # <a name="operators-listed-by-functionality-visual-basic"></a>Operadores listados por funcionalidade (Visual Basic)
 
@@ -27,7 +28,7 @@ Consulte uma das categorias listadas abaixo ou abra esta parte do Sumário da aj
 |[Operadores Bit Shift](bit-shift-operators.md)|Esses operadores executam deslocamentos aritméticos em padrões de bits.|  
 |[Operadores diversos](miscellaneous-operators.md)|Esses operadores executam operações diversas.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores e expressões](../../programming-guide/language-features/operators-and-expressions/index.md)
 - [Precedência do operador no Visual Basic](operator-precedence.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador and (Visual Basic)'
 title: Operador And
 ms.date: 07/20/2015
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - operators [Visual Basic], conjunction
 - bitwise comparison [Visual Basic]
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
-ms.openlocfilehash: b4d6d08cca2907befeab2e31c6804b69849c9e38
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 238ef0b2f14f2014da6e65684bfac183e03d963e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874861"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774272"
 ---
 # <a name="and-operator-visual-basic"></a>Operador And (Visual Basic)
 
 Executa uma conjunção lógica em duas `Boolean` expressões, ou uma conjunção bit a bit em duas expressões numéricas.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 result = expression1 And expression2  
@@ -92,7 +93,7 @@ result = expression1 And expression2
   
  O exemplo anterior produz resultados de 8, 2 e 0, respectivamente.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores lógicos/bit a bit (Visual Basic)](logical-bitwise-operators.md)
 - [Precedência do operador no Visual Basic](operator-precedence.md)

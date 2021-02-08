@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: in (modificador genérico) (Visual Basic)'
 title: In (modificador genérico)-Visual Basic
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - contravariance, In keyword [Visual Basic]
 - In keyword [Visual Basic]
 ms.assetid: 59bb13c5-fe96-42b8-8286-86293d1661c5
-ms.openlocfilehash: 9c0f7d454767112e1e309af81407b5fdef22eee9
-ms.sourcegitcommit: eff6adb61852369ab690f3f047818c90580e7eb1
+ms.openlocfilehash: e6ac95a77253b28e45a4be8a29623bdd76a231f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72004876"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774532"
 ---
 # <a name="in-generic-modifier-visual-basic"></a>In (modificador genérico) (Visual Basic)
 
@@ -28,7 +29,7 @@ Para obter mais informações, consulte [Covariância e contravariância](../../
 
 Você pode usar a palavra-chave `In` em delegados e interfaces genéricas.
   
-Um parâmetro de tipo pode ser declarado contravariant em uma interface genérica ou delegado se for usado apenas como um tipo de argumento de método e não usado como um tipo de retorno de método. parâmetros de `ByRef` não podem ser covariantes ou contravariant.
+Um parâmetro de tipo pode ser declarado contravariant em uma interface genérica ou delegado se for usado apenas como um tipo de argumento de método e não usado como um tipo de retorno de método. `ByRef` os parâmetros não podem ser covariant ou contravariant.
 
 Covariance e contravariância têm suporte para tipos de referência e não têm suporte para tipos de valor.
 
@@ -36,7 +37,7 @@ No Visual Basic, você não pode declarar eventos em interfaces contravariant se
 
 ## <a name="behavior"></a>Comportamento
 
-Uma interface que tem um parâmetro de tipo contravariante permite que os seus métodos aceitem argumentos de tipos menos derivados que aqueles especificados pelo parâmetro de tipo de interface. Por exemplo, como no .NET Framework 4, na interface <xref:System.Collections.Generic.IComparer%601>, o tipo T é contravariant, você pode atribuir um objeto do tipo `IComparer(Of Person)` a um objeto do tipo `IComparer(Of Employee)` sem usar nenhum método de conversão especial se `Employee` herdar de `Person`.
+Uma interface que tem um parâmetro de tipo contravariante permite que os seus métodos aceitem argumentos de tipos menos derivados que aqueles especificados pelo parâmetro de tipo de interface. Por exemplo, como no .NET Framework 4, na <xref:System.Collections.Generic.IComparer%601> interface, o tipo T é contravariant, você pode atribuir um objeto do `IComparer(Of Person)` tipo a um objeto do `IComparer(Of Employee)` tipo sem usar nenhum método de conversão especial se `Employee` herdar de `Person` .
 
 Um delegado contravariante pode ser atribuído a outro delegado do mesmo tipo, mas com um parâmetro de tipo genérico menos derivado.
 
@@ -54,5 +55,5 @@ O exemplo a seguir mostra como declarar, instanciar e invocar um delegado genér
 
 ## <a name="see-also"></a>Consulte também
 
-- [Variação em Interfaces Genéricas](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
-- [Saída](out-generic-modifier.md)
+- [Variação em interfaces genéricas](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
+- [Fora](out-generic-modifier.md)

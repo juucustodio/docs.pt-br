@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: tipos de dados comuns (referência de API não gerenciada)'
 title: Tipos de dados comuns (referência API não gerenciada)
 ms.date: 03/30/2017
 ms.assetid: e4ab2c4c-9433-4eba-9e9a-096de406cafb
-ms.openlocfilehash: 5c00ff6d0947b5d847a9622dce02bd310491818c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 037a212d9b58adbfdc24635bc651946af9f9bb7c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673976"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772816"
 ---
 # <a name="common-data-types-unmanaged-api-reference"></a>Tipos de dados comuns (referência API não gerenciada)
 
 Este tópico lista tipos de dados simples usados pelas APIs não gerenciadas para o .NET Framework que são definidas por instruções `typedef` do C/C++. Esses tipos de dados são geralmente aliases para tipos de dados primitivos do C/C++. Geralmente, os valores desses tipos de dados são opacos, ou seja, eles são retornados por uma função ou um método específico para que possam ser transmitidos para outras funções ou métodos sem modificação.  
   
-|Tipo de dados|Definição|Definido em|DESCRIÇÃO|  
+|Tipo de dados|Definição|Definido em|Descrição|  
 |---------------|----------------|----------------|-----------------|  
 |AppDomainID|`typedef UINT_PTR AppDomainID;`|corprof.h|O identificador de um domínio de aplicativo.|  
 |AssemblyID|`typedef UINT_PTR AssemblyID;`|corprof.h|O identificador de um assembly.|  
@@ -40,6 +41,6 @@ Este tópico lista tipos de dados simples usados pelas APIs não gerenciadas par
 |TASKID|`typedef UINT64 TASKID;`|cordebug.h, mscoree.h|O identificador de uma instância de [ICLRTask](./hosting/iclrtask-interface.md) .|  
 |ThreadID|`typedef UINT_PTR ThreadID;`|corprof.h|O identificador de um thread gerenciado.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de API não gerenciada](index.md)

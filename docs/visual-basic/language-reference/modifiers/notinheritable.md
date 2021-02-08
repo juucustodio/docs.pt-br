@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: NotInheritable (Visual Basic)'
 title: NotInheritable
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - sealed classes [Visual Basic]
 - classes [Visual Basic], not inheritable
 ms.assetid: 5c4da7c9-9562-4653-a947-1972e992f9f9
-ms.openlocfilehash: a204303a9695a157f598f83e182709a458a62be7
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 0d101760c1d19d8dc1dd130616756b893a80611a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867889"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774494"
 ---
 # <a name="notinheritable-visual-basic"></a>NotInheritable (Visual Basic)
 
@@ -34,7 +35,7 @@ Especifica que uma classe não pode ser usada como uma classe base.
   
  [Instrução Class](../statements/class-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Inherits](../statements/inherits-statement.md)
 - [MustInherit](mustinherit.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: concatenar duas sequências'
 title: Concatenar duas sequências
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 76767e7c-0607-4e1d-9ca2-a94f311f45eb
-ms.openlocfilehash: 87d341357b8d11eafbc3f3867c45ac5a32270688
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5e48f3e2900bf53d042eb9c2aad6535bad9ec7e9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164396"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773167"
 ---
 # <a name="concatenate-two-sequences"></a>Concatenar duas sequências
 
@@ -34,7 +35,7 @@ Use o operador de <xref:System.Linq.Queryable.Concat%2A> para concatenar duas se
  [!code-csharp[DLinqQueryExamples#40](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#40)]
  [!code-vb[DLinqQueryExamples#40](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#40)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Exemplos de consulta](query-examples.md)
 - [Conversão padrão de operador de consulta](standard-query-operator-translation.md)

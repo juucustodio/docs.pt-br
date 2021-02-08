@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: meu objeto. Computer. Registry'
 title: Objeto My.Computer.Registry
 ms.date: 07/20/2015
 helpviewer_keywords:
 - DeleteSetting function [Visual Basic], increasing performance
 - My.Computer.Registry object
 ms.assetid: afd9edf9-ef9b-438b-a390-d71a02dc8203
-ms.openlocfilehash: 720dcc5dd97eca724ff3e52509e7dc41fcdae8a6
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 68f6cd641f8761ac86e33829c4073f506dacd671
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867377"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774441"
 ---
 # <a name="mycomputerregistry-object"></a>Objeto My.Computer.Registry
 
@@ -33,6 +34,6 @@ Fornece propriedades e métodos para manipular o Registro.
   
  **Assembly:** Visual Basic a biblioteca de tempo de execução (em Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objeto My.Computer](my-computer-object.md)

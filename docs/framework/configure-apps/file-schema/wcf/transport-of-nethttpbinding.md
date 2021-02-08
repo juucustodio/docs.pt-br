@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <transport> de <netHttpBinding>'
 title: <transport> de <netHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 3b180006-1661-43bf-a699-96fd3da469af
-ms.openlocfilehash: 996b3655b0698595256c9a7197f705d46e6e9fcf
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1c2029fcbc57632b828fa180ba0ffbbf6b974775
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773505"
 ---
 # <a name="transport-of-nethttpbinding"></a>\<transport> de \<netHttpBinding>
 
@@ -21,7 +22,7 @@ Define as propriedades que controlam os parâmetros de autenticação para o tra
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-nethttpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <netHttpBinding>
@@ -60,7 +61,7 @@ Define as propriedades que controlam os parâmetros de autenticação para o tra
 |Valor|Descrição|  
 |-----------|-----------------|  
 |Nenhum|As mensagens não são protegidas durante a transferência.|  
-|Basic|Especifica autenticação básica.|  
+|Básico|Especifica autenticação básica.|  
 |Digest|Especifica a autenticação Digest.|  
 |Ntlm|Especifica a autenticação NTLM quando possível, e se a autenticação do Windows falhar.|  
 |Windows|Especifica a autenticação integrada do Windows.|  
@@ -70,7 +71,7 @@ Define as propriedades que controlam os parâmetros de autenticação para o tra
 |Valor|Descrição|  
 |-----------|-----------------|  
 |Nenhum|-As mensagens não são protegidas durante a transferência.|  
-|Basic|Especifica a autenticação básica, conforme definido pela RFC 2617 – autenticação HTTP: autenticação básica e resumida.|  
+|Básico|Especifica a autenticação básica, conforme definido pela RFC 2617 – autenticação HTTP: autenticação básica e resumida.|  
 |Digest|Especifica a autenticação Digest, conforme definido pela RFC 2617 – autenticação HTTP: autenticação básica e resumida.|  
 |Ntlm|Especifica a autenticação NTLM quando possível, e se a autenticação do Windows falhar.|  
 |Windows|Especifica a autenticação integrada do Windows.|  
@@ -122,7 +123,7 @@ Define as propriedades que controlam os parâmetros de autenticação para o tra
 </system.serviceModel>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>
 - <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>

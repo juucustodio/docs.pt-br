@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Windows Forms adicionar elemento de configuração'
 title: Windows Forms adicionar elemento de configuração
 ms.date: 04/07/2017
 helpviewer_keywords:
 - Windows Forms Add configuration element
 - configuring Windows Forms applications
 ms.assetid: 3e3e04de-99d1-4658-b716-44cb669d9589
-ms.openlocfilehash: dc1786f1f2dcc7bd01488dd24c6ef454f7e1cfbd
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a0db81e0dd86f9ee6f2a47183100645ece78280c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557626"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773248"
 ---
 # <a name="windows-forms-add-configuration-element"></a>Windows Forms adicionar elemento de configuração
 
@@ -107,7 +108,7 @@ A partir do .NET Framework 4,7, Windows Forms controles geram vários eventos re
 
 O dimensionamento único ou de várias passagens influencia a capacidade de resposta percebida da interface do usuário e a aparência visual dos elementos da interface do usuário conforme eles são dimensionados. A partir do .NET Framework 4,7, Windows Forms usa o dimensionamento de passagem única. Nas versões anteriores do .NET Framework, o dimensionamento foi realizado por meio de várias passagens, o que fazia com que alguns controles fosse escalado mais do que o necessário. O dimensionamento de passagem única só deverá ser desabilitado se seu aplicativo depender do comportamento antigo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Windows Forms seção de configuração](index.md)
 - [Suporte a alto DPI no Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms)

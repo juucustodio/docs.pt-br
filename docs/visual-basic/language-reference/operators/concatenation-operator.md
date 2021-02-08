@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: &amp; operador (Visual Basic)'
 title: Operador &amp;
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - concatenation operators [Visual Basic], syntax
 - strings [Visual Basic], concatenating
 ms.assetid: fefc3d00-cbf1-475c-8c5e-6fb213b3f85a
-ms.openlocfilehash: 20c2e2088691e68221872cc1dfc5486413515a4d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ba7c94805e805c841d05241fef557ca972a19ae9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867158"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774090"
 ---
 # <a name="amp-operator-visual-basic"></a>&amp; Operador (Visual Basic)
 
 Gera uma concatenação de cadeia de caracteres de duas expressões.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 result = expression1 & expression2  
@@ -30,13 +31,13 @@ result = expression1 & expression2
 ## <a name="parts"></a>Partes  
 
  `result`  
- Necessário. Qualquer `String` `Object` variável ou.  
+ Obrigatório. Qualquer `String` `Object` variável ou.  
   
  `expression1`  
- Necessário. Qualquer expressão com um tipo de dados que amplia para `String` .  
+ Obrigatório. Qualquer expressão com um tipo de dados que amplia para `String` .  
   
  `expression2`  
- Necessário. Qualquer expressão com um tipo de dados que amplia para `String` .  
+ Obrigatório. Qualquer expressão com um tipo de dados que amplia para `String` .  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -56,7 +57,7 @@ result = expression1 & expression2
   
  [!code-vb[VbVbalrOperators#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#2)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ Operador&=](and-assignment-operator.md)
 - [Operadores de concatenação](concatenation-operators.md)

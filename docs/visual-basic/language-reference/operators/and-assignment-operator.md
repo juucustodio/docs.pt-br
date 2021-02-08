@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: &amp; = operador (Visual Basic)'
 title: '&amp;= Operador'
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - '&= operator [Visual Basic]'
 - compound assignment statements [Visual Basic]
 ms.assetid: 0cf262fc-1a05-419a-a503-60013f111c8a
-ms.openlocfilehash: 9b77c44aa77afd59e36e1d21451205d3929ef527
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ffc4de352ee29f4c7d18a257dd3699b37c668db7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874871"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774311"
 ---
 # <a name="amp-operator-visual-basic"></a>&amp;= Operador (Visual Basic)
 
 Concatena uma `String` expressão a uma `String` variável ou propriedade e atribui o resultado à variável ou à propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 variableorproperty &= expression  
@@ -30,7 +31,7 @@ variableorproperty &= expression
 ## <a name="parts"></a>Partes  
 
  `variableorproperty`  
- Necessário. Qualquer `String` variável ou propriedade.  
+ Obrigatório. Qualquer `String` variável ou propriedade.  
   
  `expression`  
  Obrigatórios. Qualquer expressão de `String` .  
@@ -49,7 +50,7 @@ variableorproperty &= expression
   
  [!code-vb[VbVbalrOperators#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#3)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ Operador de&](concatenation-operator.md)
 - [Operador + =](addition-assignment-operator.md)

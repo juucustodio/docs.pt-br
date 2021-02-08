@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <transport> de <msmqIntegrationBinding>'
 title: <transport> de <msmqIntegrationBinding>
 ms.date: 03/30/2017
 ms.assetid: 054579e3-7fdd-47df-99ca-952706ba5c8e
-ms.openlocfilehash: 03e6236d1e89f16a460860f5dffff19b7bed8a0a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bcca714320f333a16d518248531efe8039ff566e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169824"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773518"
 ---
 # <a name="transport-of-msmqintegrationbinding"></a>\<transport> de \<msmqIntegrationBinding>
 
@@ -21,7 +22,7 @@ Define as configurações de segurança para o transporte de integração do enf
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-msmqintegrationbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <security>
@@ -59,7 +60,7 @@ Define as configurações de segurança para o transporte de integração do enf
 
  Esse elemento encapsula as configurações de segurança para o transporte de integração do enfileiramento de mensagens. As configurações são as mesmas para a integração do enfileiramento de mensagens e para os transportes em fila. Ele permite que você defina o modo de autenticação, o algoritmo de criptografia, o algoritmo de hash seguro e o nível de proteção.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Transport%2A>

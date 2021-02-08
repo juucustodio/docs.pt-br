@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Friend (Visual Basic)'
 title: Friend
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Protected Friend keyword combination
 - Friend keyword [Visual Basic], and Protected
 ms.assetid: b664605e-1c79-4728-b996-aa59c50846bc
-ms.openlocfilehash: d37a93343822d069295477958780c2b9c72043fa
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ef2444555c05d6a4b24048316e282d269d4b7f1b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875460"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774584"
 ---
 # <a name="friend-visual-basic"></a>Friend (Visual Basic)
 
@@ -75,10 +76,10 @@ Especifica que um ou mais elementos de programação declarados são acessíveis
   
  [Instrução Sub](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
-- [Pública](public.md)
+- [Público](public.md)
 - [Protected](protected.md)
 - [Privado](private.md)
 - [Particular protegido](./private-protected.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Personalizando operações de inserção, atualização e exclusão'
 title: Personalizando a inserção, atualiazação, e as operações de exclusão
 ms.date: 03/30/2017
 ms.assetid: 07eef055-8f6c-414d-850e-d323ff946cd0
-ms.openlocfilehash: 4b846d1e1f737cec85ecda75df5e3f66982def62
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 44bd76b61aff335019818b3c61040d10babe7301
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177339"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773206"
 ---
 # <a name="customizing-insert-update-and-delete-operations"></a>Personalizando a inserção, atualiazação, e as operações de exclusão
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como especificar credenciais de cliente para uma solicitação de serviço de dados (WCF Data Services)'
 title: Como especificar credenciais de cliente para uma solicitação de serviço de dados (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -7,14 +8,16 @@ dev_langs:
 helpviewer_keywords:
 - WCF Data Services, customizing requests
 ms.assetid: 1632f9af-e45f-4363-9222-03823daa8e28
-ms.openlocfilehash: fd69d5f7eddf713612000b0ad677e7ada378553e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 45ccb237d310479d708b6ab0a7dcfe8812c1ea3f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180654"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773050"
 ---
 # <a name="how-to-specify-client-credentials-for-a-data-service-request-wcf-data-services"></a>Como especificar credenciais de cliente para uma solicitação de serviço de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Por padrão, a biblioteca de cliente não fornece credenciais ao enviar uma solicitação para um serviço OData. No entanto, você pode especificar que as credenciais sejam enviadas para autenticar solicitações para o serviço de dados fornecendo um <xref:System.Net.NetworkCredential> para a <xref:System.Data.Services.Client.DataServiceContext.Credentials%2A> Propriedade do <xref:System.Data.Services.Client.DataServiceContext> . Para obter mais informações, consulte [securing WCF Data Services](securing-wcf-data-services.md). O exemplo neste tópico mostra como fornecer explicitamente as credenciais que são usadas pelo cliente do WCF Data Services ao solicitar dados do serviço de dados.  
   
@@ -22,7 +25,7 @@ Por padrão, a biblioteca de cliente não fornece credenciais ao enviar uma soli
   
 ## <a name="example"></a>Exemplo  
 
- O exemplo a seguir é da página code-behind para um arquivo de Extensible Application Markup Language (XAML) que é a página principal do aplicativo Windows Presentation Framework. Este exemplo exibe uma `LoginWindow` instância para coletar credenciais de autenticação do usuário e, em seguida, usa essas credenciais ao fazer uma solicitação para o serviço de dados.  
+ O exemplo a seguir é da página code-behind para um arquivo de linguagem XAML (XAML) que é a página principal do aplicativo Windows Presentation Framework. Este exemplo exibe uma `LoginWindow` instância para coletar credenciais de autenticação do usuário e, em seguida, usa essas credenciais ao fazer uma solicitação para o serviço de dados.  
   
  [!code-csharp[Astoria Northwind Client#ClientCredentials](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/clientcredentials.xaml.cs#clientcredentials)]  
  [!code-vb[Astoria Northwind Client#ClientCredentials](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/clientcredentials.xaml.vb#clientcredentials)]
@@ -58,7 +61,7 @@ Por padrão, a biblioteca de cliente não fornece credenciais ao enviar uma soli
   
  Para obter mais informações, consulte [securing WCF Data Services](securing-wcf-data-services.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Protegendo o WCF Data Services](securing-wcf-data-services.md)
 - [Biblioteca de cliente do WCF Data Services](wcf-data-services-client-library.md)

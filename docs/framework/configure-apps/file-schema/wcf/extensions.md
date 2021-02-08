@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <extensions>'
 title: <extensions>
 ms.date: 03/30/2017
 ms.assetid: bcfe5c44-04ef-4a20-96a5-90bfadf39623
-ms.openlocfilehash: c811162c17417144432f97fd9a47b2e02ecafbe2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d54f30b50a43e01d32e9fceea65137c8967cb527
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151175"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782072"
 ---
 # \<extensions>
 

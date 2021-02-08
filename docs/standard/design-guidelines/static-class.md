@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: design de classe estática'
 title: Design de classe estática
 ms.date: 10/22/2008
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - classes [.NET Framework], design guidelines
 - type design guidelines, classes
 ms.assetid: d67c14d8-c4dd-443f-affb-4ccae677c9b6
-ms.openlocfilehash: 2ae541898435773ca51dbc425c09a533dbef4e9e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 16db470ab0975a5545617c9c5471d6ac157e688b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730910"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782462"
 ---
 # <a name="static-class-design"></a>Design de classe estática
 

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: salvar e gravar um documento'
 title: Salvando e escrevendo um documento
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 097b0cb1-5743-4c3a-86ef-caf5cbe6750d
-ms.openlocfilehash: 14497bb5b027209c4707eab9bcf1b60f85740dfd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c5d91a2ec057272db87d7d3fd8146be34ec2b76e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697552"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782995"
 ---
 # <a name="saving-and-writing-a-document"></a>Salvando e escrevendo um documento
 
@@ -90,6 +91,6 @@ string xml = mydoc.DocumentElement.OuterXml;
   
  Ao contrário, você pode usar a propriedade <xref:System.Xml.XmlNode.InnerText%2A> se quiser o conteúdo dos nós filho.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

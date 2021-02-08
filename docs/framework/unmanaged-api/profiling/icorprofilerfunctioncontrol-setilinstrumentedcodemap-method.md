@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerFunctionControl:: SetILInstrumentedCodeMap'
 title: Método ICorProfilerFunctionControl::SetILInstrumentedCodeMap
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ecf56646-7e5f-46c4-8340-f3a04e88920f
 topic_type:
 - apiref
-ms.openlocfilehash: d22d789724a62cebb0136b9b01be22d6825384ac
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bb345f737459342e0146cbb0e0bd7dd4b1e9a037
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714530"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781539"
 ---
 # <a name="icorprofilerfunctioncontrolsetilinstrumentedcodemap-method"></a>Método ICorProfilerFunctionControl::SetILInstrumentedCodeMap
 
@@ -56,6 +57,6 @@ HRESULT SetILInstrumentedCodeMap(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: funções e variáveis definidas pelo usuário'
 title: Funções definidas pelo usuário e variáveis
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 4772f20e-1e7f-496e-93c2-1484473be555
-ms.openlocfilehash: c1f519dd539a266d61945ad221bccceaa1361779
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 730f99b1d8b9cefafbdff4ed74b9775b0be863c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675614"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782852"
 ---
 # <a name="user-defined-functions-and-variables"></a>Funções definidas pelo usuário e variáveis
 

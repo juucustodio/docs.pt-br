@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataAssemblyImport:: GetExportedTypeProps'
 title: Método IMetaDataAssemblyImport::GetExportedTypeProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 25ca7623-5a55-4f09-b44a-36b03d142278
 topic_type:
 - apiref
-ms.openlocfilehash: 32224431051b958a3f01ffeb15cdb6db1dae2657
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 894fb65fb6de76a218489b2a85a2d3c20c572789
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722096"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784113"
 ---
 # <a name="imetadataassemblyimportgetexportedtypeprops-method"></a>Método IMetaDataAssemblyImport::GetExportedTypeProps
 
@@ -73,6 +74,6 @@ HRESULT GetExportedTypeProps (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

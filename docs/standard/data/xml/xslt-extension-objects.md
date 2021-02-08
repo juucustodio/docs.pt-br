@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: objetos de extensão XSLT'
 title: Objetos de extensão XSLT
 ms.date: 03/30/2017
 ms.assetid: a4ebdbad-087c-4cfe-acc0-17c48142f81a
-ms.openlocfilehash: 0e874bb7679854b75a07eb452e47eba0d30807a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5fc4ee8b3828219bc298a3ffc4c81bc342e2f591
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720783"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782527"
 ---
 # <a name="xslt-extension-objects"></a>Objetos de extensão XSLT
 
@@ -36,7 +37,7 @@ Os objetos de extensão são usados para estender a funcionalidade de folhas de 
   
 3. Passe o objeto de <xref:System.Xml.Xsl.XsltArgumentList> para o método de <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Transformações XSLT](xslt-transformations.md)
 - [Considerações de segurança XSLT](xslt-security-considerations.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: XPathNodeIterator em transformações'
 title: XPathNodeIterator nas transformações
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2bc6ddc6-674a-4f75-b264-abc35e4e5857
-ms.openlocfilehash: a1542c0800f9042e27a4b0806d717c58d7783c79
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5e27ff243e4ca0a609b4d5c28d941ea84ea5b10d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720835"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782553"
 ---
 # <a name="xpathnodeiterator-in-transformations"></a>XPathNodeIterator nas transformações
 
@@ -156,6 +157,6 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 </out>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [A classe XslTransform implementa do processador XSLT](xsltransform-class-implements-the-xslt-processor.md)

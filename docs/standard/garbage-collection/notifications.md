@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: notificações de coleta de lixo'
 title: Notificações sobre a coleta de lixo
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - garbage collection, notifications
 ms.assetid: e12d8e74-31e3-4035-a87d-f3e66f0a9b89
-ms.openlocfilehash: 70343851ba73af9041014e8654f5df82d8389c39
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bbdb3cecde6a7e91b79992be9424ecffebfdaa15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734771"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782449"
 ---
 # <a name="garbage-collection-notifications"></a>Notificações sobre a coleta de lixo
 
@@ -123,6 +124,6 @@ Há situações em que uma coleta de lixo completa (ou seja, uma coleta de gera�
  [!code-csharp[GCNotification#1](../../../samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#1)]
  [!code-vb[GCNotification#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/GCNotification/vb/program.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Coleta de lixo](index.md)

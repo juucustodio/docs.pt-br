@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: editando dados XML usando XPathNavigator'
 title: Editando dados XML usando XPathNavigator
 ms.date: 03/30/2017
 ms.assetid: b1f91616-3115-4264-9821-c66589d11d11
-ms.openlocfilehash: c35c63342548a4eaaf8afe68f542c08998de332b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 918757e8236523a0918cb2d8127a887631b837d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687379"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783359"
 ---
 # <a name="editing-xml-data-using-xpathnavigator"></a>Editando dados XML usando XPathNavigator
 
@@ -24,7 +25,7 @@ A classe de <xref:System.Xml.XPath.XPathNavigator> fornece métodos para inserir
  [Remova os dados XML usando XPathNavigator](remove-xml-data-using-xpathnavigator.md)  
  Descreve como remover os nós e valores de um objeto de <xref:System.Xml.XmlDocument> usando a classe de <xref:System.Xml.XPath.XPathNavigator> .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

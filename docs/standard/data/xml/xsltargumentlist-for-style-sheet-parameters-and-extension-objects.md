@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: XsltArgumentList para parâmetros de folha de estilo e objetos de extensão'
 title: XsltArgumentList para parâmetros de folha de estilos e objetos de extensão
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: de2f0dce-6b98-4908-bba7-ed150cc50355
-ms.openlocfilehash: fe227a2d3efc5c36b818b7f4431896e6f62b1f26
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aa96d952cefe35db7451619e760c3d1826f109d2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685039"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782488"
 ---
 # <a name="xsltargumentlist-for-style-sheet-parameters-and-extension-objects"></a>XsltArgumentList para parâmetros de folha de estilos e objetos de extensão
 
@@ -369,6 +370,6 @@ public class Sample
   
  `</circles>`  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [A classe XslTransform implementa do processador XSLT](xsltransform-class-implements-the-xslt-processor.md)

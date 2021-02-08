@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerCallback7'
 title: Interface ICorProfilerCallback7
 ms.date: 03/30/2017
 api_name:
@@ -9,12 +10,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: a0be019e-aaa1-4036-990f-565f114d4b5c
-ms.openlocfilehash: e9c7186b3217c29805327e6c1d6b10f580c3a9e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3db402db221fca4487939f9817b20ec0c5207fc5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725450"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781734"
 ---
 # <a name="icorprofilercallback7-interface"></a>Interface ICorProfilerCallback7
 
@@ -24,7 +25,7 @@ ms.locfileid: "95725450"
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método ModuleInMemorySymbolsUpdated](icorprofilercallback7-moduleinmemorysymbolsupdated-method.md)|Notifica o criador de perfil de que o fluxo de símbolos associado a um módulo na memória é atualizado.|  
   
@@ -36,6 +37,6 @@ ms.locfileid: "95725450"
   
  **.NET Framework versões:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tipos de nós XML'
 title: Tipos de nós XML
 ms.date: 03/30/2017
 ms.assetid: 71d03b78-6898-4ce7-b0fc-1282573f31f7
-ms.openlocfilehash: edf47246782e86cf134ea88d41381bed9ff16f69
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6a43d9259bc1798be962ec0c599299a2a663a0d4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782878"
 ---
 # <a name="types-of-xml-nodes"></a>Tipos de nós XML
 
@@ -44,6 +45,6 @@ Quando um documento XML é lido na memória como uma árvore de nós, os tipos d
   
  Para saber mais sobre a hierarquia de objetos dos tipos de nós e o nome do objeto equivalente, confira [Hierarquia DOM (Document Object Model) XML](xml-document-object-model-dom-hierarchy.md). Para saber mais sobre objetos criados na árvore de nós, confira [Mapeando a hierarquia de objetos para dados XML](mapping-the-object-hierarchy-to-xml-data.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

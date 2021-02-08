@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral do modelo de objeto de esquema XML'
 title: Visão geral do modelo de objeto de esquema XML
 ms.date: 03/30/2017
 ms.assetid: 896a1e12-5655-42c6-8cdd-89c12862b34b
-ms.openlocfilehash: 62560b641c43f2210b052e9880f2d945dbae0c6f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7c780cf2a1b23c39b8c1051dbebcbb9d96fec22d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733094"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782722"
 ---
 # <a name="xml-schema-object-model-overview"></a>Visão geral do modelo de objeto de esquema XML
 
@@ -37,7 +38,7 @@ O modelo de objeto (SOM) de esquema no Microsoft.NET Framework é ricos API que 
   
  Para obter mais informações sobre cada classe no namespace de <xref:System.Xml.Schema> , consulte a documentação de referência do <xref:System.Xml.Schema> na biblioteca de classes do .NET Framework.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Lendo e gravando esquemas XML](reading-and-writing-xml-schemas.md)
 - [Compilando esquemas XML](building-xml-schemas.md)

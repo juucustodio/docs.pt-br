@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> de <allowedAudienceUris>'
 title: <add> de <allowedAudienceUris>
 ms.date: 03/30/2017
 ms.assetid: 4e7b7637-e0ea-4a91-988f-6b6ef28d9fc3
-ms.openlocfilehash: bcbc9c7dbc5b57da2de2685fff8eee4aca64f7cc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: caa61da0ee7e00691213b95e31c943f5d81eea32
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181681"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782190"
 ---
 # <a name="add-of-allowedaudienceuris"></a>\<add> de \<allowedAudienceUris>
 
@@ -23,7 +24,7 @@ Adiciona um URI de destino para o qual o <xref:System.IdentityModel.Tokens.SamlS
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<allowedAudienceUris>**](allowedaudienceuris.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <allowedAudienceUris>
@@ -63,7 +64,7 @@ Adiciona um URI de destino para o qual o <xref:System.IdentityModel.Tokens.SamlS
   
  Para obter mais informações sobre como usar esse elemento de configuração, consulte [How to: Configure Credentials on a serviço de Federação](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>

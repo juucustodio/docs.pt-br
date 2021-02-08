@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <NetFx40_PInvokeStackResilience elemento>'
 title: Elemento <NetFx40_PInvokeStackResilience>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <NetFx40_PInvokeStackResilience> element
 - NetFx40_PInvokeStackResilience element
 ms.assetid: 39fb1588-72a4-4479-af74-0605233b68bd
-ms.openlocfilehash: 86f50aafe0b21d5080288e09ac7118ca1e4c939a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 59e2a5845868ebfa186344c9a731871739a29c47
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73116155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782293"
 ---
 # <a name="netfx40_pinvokestackresilience-element"></a>Elemento \<NetFx40_PInvokeStackResilience>
 
@@ -20,7 +21,7 @@ Especifica se o runtime corrige automaticamente declarações de invocação de 
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx40_PInvokeStackResilience>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <NetFx40_PInvokeStackResilience  enabled="1|0"/>
@@ -80,8 +81,8 @@ O exemplo a seguir mostra como aceitar maior resiliência contra declarações d
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [pInvokeStackImbalance](../../../debug-trace-profile/pinvokestackimbalance-mda.md)

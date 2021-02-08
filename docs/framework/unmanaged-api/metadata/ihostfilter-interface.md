@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostFilter'
 title: Interface IHostFilter
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e79456b1-045b-4a84-9714-2ea560ff75ea
 topic_type:
 - apiref
-ms.openlocfilehash: fedf50db963cb2f3d9a45713b13c0d190fe4a597
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cc041a2eb2f2a30cfed008681f3fd3f7b9d63953
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726490"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784191"
 ---
 # <a name="ihostfilter-interface"></a>Interface IHostFilter
 
@@ -30,7 +31,7 @@ Fornece um método para indicar que um token especificado será processado.
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método MarkToken](ihostfilter-marktoken-method.md)|Indica que o token de metadados especificado será processado.|  
   
@@ -44,6 +45,6 @@ Fornece um método para indicar que um token especificado será processado.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)

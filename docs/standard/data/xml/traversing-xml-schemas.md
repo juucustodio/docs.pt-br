@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: atravessando esquemas XML'
 title: Percorrer esquemas XML
 ms.date: 03/30/2017
 dev_langs:
@@ -6,12 +7,12 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: cce69574-5861-4a30-b730-2e18d915d8ee
-ms.openlocfilehash: 6371d7e16af45eebf09f95bce2864be3bf44321e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: d860235fb8d4414a465a931438701ace5ed1e08c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94824669"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782904"
 ---
 # <a name="traversing-xml-schemas"></a>Percorrer esquemas XML
 
@@ -66,7 +67,7 @@ A propriedade de <xref:System.Xml.Schema.XmlSchemaElement.ElementSchemaType%2A?d
 
 O exemplo de código no tópico [Criação de esquemas XML](building-xml-schemas.md) usou a coleção <xref:System.Xml.Schema.XmlSchemaComplexType.Attributes%2A?displayProperty=nameWithType> para adicionar o atributo `CustomerId` para o elemento `Customer`. Esta é uma propriedade de pre-esquema- compilação. A propriedade correspondente de POST-Esquema- compilação - Infoset é a coleção de <xref:System.Xml.Schema.XmlSchemaComplexType.AttributeUses%2A?displayProperty=nameWithType> , que contém todos os atributos do tipo complexo, incluindo aqueles que são herdadas com a derivação de tipo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do modelo de objeto de esquema XML](xml-schema-object-model-overview.md)
 - [Lendo e gravando esquemas XML](reading-and-writing-xml-schemas.md)

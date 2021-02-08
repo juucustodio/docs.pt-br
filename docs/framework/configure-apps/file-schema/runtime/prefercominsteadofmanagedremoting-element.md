@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <PreferComInsteadOfManagedRemoting> elemento'
 title: Elemento <PreferComInsteadOfManagedRemoting>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <PreferComInsteadOfManagedRemoting> element
 - PreferComInsteadOfManagedRemoting element
 ms.assetid: a279a42a-c415-4e79-88cf-64244ebda613
-ms.openlocfilehash: 2fb0d94f91d28f9d9d4f247411d273f786f7b63b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b621af9b584d1ea2623ffe5a44f74b5b7bd520e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195279"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782267"
 ---
 # <a name="prefercominsteadofmanagedremoting-element"></a>Elemento \<PreferComInsteadOfManagedRemoting>
 
@@ -20,7 +21,7 @@ Especifica se o tempo de execução usará a interoperabilidade COM em vez de co
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<PreferComInsteadOfManagedRemoting>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <PreferComInsteadOfManagedRemoting enabled="true|false"/>  
@@ -40,7 +41,7 @@ Especifica se o tempo de execução usará a interoperabilidade COM em vez de co
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|`false`|O tempo de execução usará a comunicação remota entre os limites do domínio do aplicativo. Esse é o padrão.|  
+|`false`|O tempo de execução usará a comunicação remota entre os limites do domínio do aplicativo. Este é o padrão.|  
 |`true`|O tempo de execução usará a interoperabilidade COM entre limites de domínio do aplicativo.|  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -76,7 +77,7 @@ Especifica se o tempo de execução usará a interoperabilidade COM em vez de co
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

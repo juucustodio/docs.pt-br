@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerCallback8'
 title: Interface ICorProfilerCallback8
 ms.date: 04/10/2018
 api_name:
@@ -8,12 +9,12 @@ api_location:
 - corprof.idl
 api_type:
 - COM
-ms.openlocfilehash: 22a133d02bb69026190428905379323362943d40
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8dd9b8eea82f38b7598d578bd718743af826070d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732379"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781669"
 ---
 # <a name="icorprofilercallback8-interface"></a>Interface ICorProfilerCallback8
 
@@ -23,7 +24,7 @@ ms.locfileid: "95732379"
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método DynamicMethodJITCompilationStarted](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)|Notifica o criador de perfil de que a compilação JIT de um método dinâmico foi iniciada.|  
 |[Método DynamicMethodJITCompilationFinished](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)|Notifica o criador de perfil de que a compilação JIT de um método dinâmico foi concluída.|  
@@ -36,7 +37,7 @@ ms.locfileid: "95732379"
   
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)
 - [Interface ICorProfilerCallback9](icorprofilercallback9-interface.md)

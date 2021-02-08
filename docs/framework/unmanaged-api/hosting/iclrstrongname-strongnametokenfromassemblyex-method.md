@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRStrongName:: StrongNameTokenFromAssemblyEx'
 title: Método ICLRStrongName::StrongNameTokenFromAssemblyEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 648ea90e-5e60-40a0-a56a-3e61bf2fba7c
 topic_type:
 - apiref
-ms.openlocfilehash: 35fe86f856360814cfbb5453bfb6e5efaaef02fd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e0a05d2aa0b41c370bde2bbff5367f25a1b13322
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677720"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781799"
 ---
 # <a name="iclrstrongnamestrongnametokenfromassemblyex-method"></a>Método ICLRStrongName::StrongNameTokenFromAssemblyEx
 
@@ -55,7 +56,7 @@ HRESULT StrongNameTokenFromAssemblyEx (
  `pcbPublicKeyBlob`  
  fora O tamanho, em bytes, da chave pública.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` Se o método foi concluído com êxito; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
   
@@ -75,7 +76,7 @@ HRESULT StrongNameTokenFromAssemblyEx (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameTokenFromAssembly](iclrstrongname-strongnametokenfromassembly-method.md)
 - [Interface ICLRStrongName](iclrstrongname-interface.md)

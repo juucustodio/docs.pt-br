@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <legacyImpersonationPolicy> elemento'
 title: Elemento <legacyImpersonationPolicy>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <legacyImpersonationPolicy> element
 - legacyImpersonationPolicy element
 ms.assetid: 6e00af10-42f3-4235-8415-1bb2db78394e
-ms.openlocfilehash: ca10c809ddf319817aaa074ba5fc3415abf6387d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 36cc3336e8e3c0196ae20fc749fc2239c35c8584
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192510"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782358"
 ---
 # <a name="legacyimpersonationpolicy-element"></a>Elemento \<legacyImpersonationPolicy>
 
@@ -23,7 +24,7 @@ Especifica que a identidade do Windows não flua entre pontos assíncronos, inde
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<legacyImpersonationPolicy>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <legacyImpersonationPolicy
@@ -44,7 +45,7 @@ Especifica que a identidade do Windows não flua entre pontos assíncronos, inde
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|`false`|<xref:System.Security.Principal.WindowsIdentity> flui entre pontos assíncronos, dependendo das <xref:System.Threading.ExecutionContext> configurações de fluxo do thread atual. Esse é o padrão.|  
+|`false`|<xref:System.Security.Principal.WindowsIdentity> flui entre pontos assíncronos, dependendo das <xref:System.Threading.ExecutionContext> configurações de fluxo do thread atual. Este é o padrão.|  
 |`true`|<xref:System.Security.Principal.WindowsIdentity> não flui em pontos assíncronos, independentemente das <xref:System.Threading.ExecutionContext> configurações de fluxo no thread atual.|  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -119,7 +120,7 @@ Especifica que a identidade do Windows não flua entre pontos assíncronos, inde
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

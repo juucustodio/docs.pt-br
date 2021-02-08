@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: lendo um documento XML no DOM'
 title: Lendo um documento XML no DOM
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a4fb291f-5630-49ba-a49a-5b66c3b71e49
-ms.openlocfilehash: 61275e9232b3d9e516636869d7153f33133cbd03
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e24e6781a7c8df115402ca1675a0f954c24924aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686859"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783177"
 ---
 # <a name="reading-an-xml-document-into-the-dom"></a>Lendo um documento XML no DOM
 
@@ -68,6 +69,6 @@ public class Sample
 }  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

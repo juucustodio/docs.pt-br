@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: fluxos de composição'
 title: Redigir fluxos
 ms.date: 01/21/2019
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - base streams
 - streams, backing stores
 ms.assetid: da761658-a535-4f26-a452-b30df47f73d5
-ms.openlocfilehash: d848a989378ed40df794554f3a0a9a7f135fbd4e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 55c3bd8b5f951397463d9f5c9c97efb6a1ef44b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732184"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782397"
 ---
 # <a name="compose-streams"></a>Redigir fluxos
 

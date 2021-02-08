@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: coleções genéricas no .NET'
 title: Coleções genéricas no .NET
 ms.date: 02/15/2018
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - generic collections [.NET]
 - generic types [.NET]
 ms.assetid: 5b646751-6ab7-465c-916c-b1a76aefa9f5
-ms.openlocfilehash: 256fddd6c35cb78e8e22562960580929e1230c34
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 129d86e5a710c3570056c83e1cb225053aee72ab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827341"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782410"
 ---
 # <a name="generic-collections-in-net"></a>Coleções genéricas no .NET
 
@@ -50,7 +51,7 @@ ms.locfileid: "94827341"
  [!code-csharp[Conceptual.Generics.Overview#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.generics.overview/cs/source2.cs#7)]
  [!code-vb[Conceptual.Generics.Overview#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.generics.overview/vb/source2.vb#7)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Collections.Generic?displayProperty=nameWithType>
 - <xref:System.Collections.ObjectModel?displayProperty=nameWithType>

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: considerações de segurança do XSLT'
 title: Considerações de segurança XSLT
 ms.date: 03/30/2017
 ms.assetid: fea695be-617c-4977-9567-140e820436fc
-ms.openlocfilehash: a8d077cf35da56795cc0b0c22e9bab26ce99f3a2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6d233447bd9d616c72e7f6663934f44721e3f393
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685195"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782501"
 ---
 # <a name="xslt-security-considerations"></a>Considerações de segurança XSLT
 
@@ -60,7 +61,7 @@ O idioma XSLT tem um conjunto rico de recursos que oferecem várias energia e fl
   
 - Se você quiser garantir que nenhum recurso externo é acessado, você pode especificar `null` para o argumento de <xref:System.Xml.XmlResolver> .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Transformações XSLT](xslt-transformations.md)
 - [Resolvendo recursos externos durante processamento XSLT](resolving-external-resources-during-xslt-processing.md)

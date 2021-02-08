@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando a classe XslCompiledTransform'
 title: Usando a classe XslCompiledTransform
 ms.date: 03/30/2017
 ms.assetid: f9b074f6-d6f4-49dd-a093-df510bf0cf7b
-ms.openlocfilehash: cdcbb803fee8eba2b05c7ca12208dbf9c5ad0f7f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 76f595e0604fb586223affe2155ad7fdcac83963
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782839"
 ---
 # <a name="using-the-xslcompiledtransform-class"></a>Usando a classe XslCompiledTransform
 

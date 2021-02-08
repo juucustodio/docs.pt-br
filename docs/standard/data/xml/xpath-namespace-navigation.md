@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: navegação de namespace do XPath'
 title: Navegação do namespace XPath
 ms.date: 03/30/2017
 ms.assetid: 06cc7abb-7416-415c-9dd6-67751b8cabd5
-ms.openlocfilehash: d5350f0c8f73c5efb0f7d9e4c492a841b4978c36
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a45f17b4b234f00788c117478ca30c07eee49f4b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720887"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782592"
 ---
 # <a name="xpath-namespace-navigation"></a>Navegação do namespace XPath
 
@@ -64,7 +65,7 @@ using (XmlReader reader = XmlReader.Create("response.xml"))
   
  A precisão de namespaces totalmente aplicáveis e de nomes é mais de uma conveniência. Pouca experimentação com a definição de documento e o código nos exemplos anteriores verificarão a navegação sem exceções totalmente qualificados de gera os nomes de elemento. Por exemplo, a definição de elemento: `<Search xmlns="http://schemas.microsoft.com/v1/Search">`, e consulta: a cadeia de caracteres `xpath = "/s:Envelope/s:Body/Search";` sem o prefixo do namespace no elemento de `Search` retorna `null` em vez do elemento de `Search` .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Acessando dados XML usando XPathNavigator](accessing-xml-data-using-xpathnavigator.md)
 - [Selecionando, avaliando e correspondente de dados XML usando XPathNavigator](selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md)

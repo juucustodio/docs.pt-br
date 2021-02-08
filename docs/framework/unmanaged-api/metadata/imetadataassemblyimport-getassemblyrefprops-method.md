@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataAssemblyImport:: GetAssemblyRefProps'
 title: Método IMetaDataAssemblyImport::GetAssemblyRefProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5c6b7fb4-cbca-4479-b650-ab9a99732ea0
 topic_type:
 - apiref
-ms.openlocfilehash: 25aefff46f7557f89f27d1eccab58c9c70d2d13e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f7011806920ba37ca84b1a48f12da3a5557fa464
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722109"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784126"
 ---
 # <a name="imetadataassemblyimportgetassemblyrefprops-method"></a>Método IMetaDataAssemblyImport::GetAssemblyRefProps
 
@@ -75,7 +76,7 @@ HRESULT GetAssemblyRefProps (
  `pdwAssemblyRefFlags`  
  fora Um ponteiro para sinalizadores que descrevem os metadados aplicados a um assembly. O valor de flags é uma combinação de um ou mais valores de [CorAssemblyFlags](corassemblyflags-enumeration.md) .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Esse método retornará S_OK se tiver sucesso; caso contrário, ele retorna um dos códigos de erro definidos no arquivo de cabeçalho Winerror. h.  
   
@@ -89,6 +90,6 @@ HRESULT GetAssemblyRefProps (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

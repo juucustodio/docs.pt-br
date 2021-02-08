@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: comparação de objetos usando XmlNameTable'
 title: Comparação de objeto usando XmlNameTable
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8d94e041-d340-4ddf-9a2c-d7319e3f4f86
-ms.openlocfilehash: 5e0f5de6fd956bcaaf30b592e04c432a5f824c52
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7be93741b9eeb353e4e3a2135f975f9031557d6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734094"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783307"
 ---
 # <a name="object-comparison-using-xmlnametable"></a>Comparação de objeto usando XmlNameTable
 
@@ -51,6 +52,6 @@ if (((object)node1.Name) == ((object)node2.Name))
   
  A situação acima de uma tabela de nome transmitida entre dois documentos é típico quando o mesmo tipo de documento está sendo processado repetidamente, como documentos de ordem em um site de comércio eletrônico, que atendem a um esquema de linguagem de definição de esquema XML (XSD) ou Document type definition (DTD) e as mesmas cadeias de caracteres são repetidas. Usar a mesma tabela de nome fornece uma melhoria de desempenho, porque o mesmo nome de elemento ocorre em vários documentos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

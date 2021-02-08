@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: removendo nós do DOM'
 title: Removendo os nós DOM
 ms.date: 03/30/2017
 ms.assetid: 0a98e0ca-0555-45c1-ab69-0d8d20ca1abd
-ms.openlocfilehash: 5b1a6dfb2da4556e0332441a8e56679aee37a091
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b5e85157c194b034289a46140a44d2a9d1109061
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686651"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783086"
 ---
 # <a name="removing-nodes-from-the-dom"></a>Removendo os nós DOM
 
@@ -19,6 +20,6 @@ Para remover um nó de (DOM) modelo de objeto de documento, use o método de <xr
   
  Para remover os atributos, confira [Removendo os atributos de um nó no elemento DOM](removing-attributes-from-an-element-node-in-the-dom.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

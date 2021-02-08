@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 499-TransferEmitted'
 title: 499 - TransferEmitted
 ms.date: 03/30/2017
 ms.assetid: 07a26434-a7a0-40fc-b5d0-3520a04328ae
-ms.openlocfilehash: dc47aa36b5a409c89aaf7963ce51f11cdf84b0fc
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d9802ef718ce6091abe1d1092ad6bb7e7fff108a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96247571"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783567"
 ---
 # <a name="499---transferemitted"></a>499 - TransferEmitted
 
@@ -17,7 +18,7 @@ ms.locfileid: "96247571"
 |-|-|  
 |ID|499|  
 |Palavras-chave|Solução de problemas, UserEvents, EndToEndMonitoring, ServiceModel, WFTracking, ServiceHost, WCFMessageLogging|  
-|Nível|LogAlways|  
+|Level|LogAlways|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  

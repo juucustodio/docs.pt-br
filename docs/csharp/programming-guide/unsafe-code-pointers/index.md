@@ -1,6 +1,6 @@
 ---
 title: Código e ponteiros não seguros – Guia de Programação em C#
-Description: Saiba mais sobre códigos e ponteiros sem segurança. O C# não dá suporte a ponteiros, mas você pode definir um contexto não seguro no qual os ponteiros podem ser usados com uma palavra-chave ' unsafe '.
+description: Saiba mais sobre códigos e ponteiros sem segurança. O C# não dá suporte a ponteiros, mas você pode definir um contexto não seguro no qual os ponteiros podem ser usados com uma palavra-chave ' unsafe '.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - security [C#], type safety
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - C# language, pointers
 - pointers [C#], about pointers
 ms.assetid: b0fcca10-a92d-4f2a-835b-b0ccae6739ee
-ms.openlocfilehash: 5684a97ed6f7b6632d8fe3d52747d9187c4b8cbc
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 4d624bdc8fc4a756f47d66c9dec6eba8c24a9d9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782384"
 ---
 # <a name="unsafe-code-and-pointers-c-programming-guide"></a>Código e ponteiros não seguros (Guia de Programação em C#)
 
@@ -41,17 +41,17 @@ O código não seguro tem as propriedades a seguir:
   
 ## <a name="related-sections"></a>Seções relacionadas
 
-Para obter mais informações, veja:
+Para obter mais informações, consulte:
 
 - [Tipos de ponteiro](pointer-types.md)
 
 - [Buffers de tamanho fixo](fixed-size-buffers.md)
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 Para obter mais informações, confira o tópico [Código não seguro](~/_csharplang/spec/unsafe-code.md) na [especificação da linguagem C#](~/_csharplang/spec/introduction.md).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Guia de programação C#](../index.md)
 - [UNSAFE](../../language-reference/keywords/unsafe.md)

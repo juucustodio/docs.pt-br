@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <endToEndTracing>'
 title: <endToEndTracing>
 ms.date: 03/30/2017
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
-ms.openlocfilehash: 6b50c0c3db644787fe41ee58ced7eb640e7295f1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2ac4a7563d7d7881cdb503e843d34f84fd9c95a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782111"
 ---
 # \<endToEndTracing>
 
@@ -18,7 +19,7 @@ Um elemento de configuração que permite habilitar e desabilitar diferentes asp
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<diagnostics>**](diagnostics.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endToEndTracing>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>
@@ -52,7 +53,7 @@ Um elemento de configuração que permite habilitar e desabilitar diferentes asp
 |-------------|-----------------|  
 |[\<diagnostics>](diagnostics.md)|Define as configurações do WCF para inspeção e controle de tempo de execução para o administrador.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>

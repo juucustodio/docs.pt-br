@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: criando clientes'
 title: Compilando clientes
 ms.date: 03/30/2017
 helpviewer_keywords:
 - clients [WCF], building
 - clients [WCF]
 ms.assetid: 28dfff47-d95b-4cc2-9d5c-b3b9ba71fd50
-ms.openlocfilehash: 228981f7d8aef0f2d3be562d01bab8e40975cbcd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4b9a08521c5b56a67e399fd1a7e283d80516dcb2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96272326"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781123"
 ---
 # <a name="building-clients"></a>Compilando clientes
 

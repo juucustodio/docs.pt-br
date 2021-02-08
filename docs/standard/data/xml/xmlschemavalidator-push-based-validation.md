@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: validação de Push-Based de XmlSchemaValidator'
 title: XmlSchemaValidator Envio- de validação
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 911d4460-dd91-4958-85b2-2ca3299f9ec6
-ms.openlocfilehash: 9daf6f416d22cd06932cdaba1276889e319d3d90
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 6492285b26659fabbc72bf56304c5f24790af170
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94824890"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782605"
 ---
 # <a name="xmlschemavalidator-push-based-validation"></a>XmlSchemaValidator Envio- de validação
 

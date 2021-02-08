@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: blocos de script usando msxsl: script'
 title: Blocos de script usando msxsl:script
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fde6f43f-c594-486f-abcb-2211197fae20
-ms.openlocfilehash: 1a2d1f0972bc610cb4943dacc74c1bae8c54012b
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: 30cfd7b2504a6f97f64bdf11393a7d84b23dd218
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96032210"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782969"
 ---
 # <a name="script-blocks-using-msxslscript"></a>Blocos de script usando msxsl:script
 
@@ -158,7 +159,7 @@ A classe <xref:System.Xml.Xsl.XslCompiledTransform> oferece suporte a scripts in
 </circles>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Transformações XSLT](xslt-transformations.md)
 - [Geração e compilação de código-fonte dinâmico](../../../framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)

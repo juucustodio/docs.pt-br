@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback7:: ModuleInMemorySymbolsUpdated'
 title: 'Método ICorProfilerCallback7:: ModuleInMemorySymbolsUpdated'
 ms.date: 03/30/2017
 api_name:
@@ -9,12 +10,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78
-ms.openlocfilehash: 248d2f749ddcbd772313558af2b2721f4d1c0f58
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 74adf7edc5269824a924933eb3284a5964e1bac1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723084"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781721"
 ---
 # <a name="icorprofilercallback7moduleinmemorysymbolsupdated-method"></a>Método ICorProfilerCallback7:: ModuleInMemorySymbolsUpdated
 
@@ -54,7 +55,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md)
 - [Método SetEventMask2](icorprofilerinfo5-seteventmask2-method.md)

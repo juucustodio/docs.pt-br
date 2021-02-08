@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: processar dados XML usando LINQ to XML'
 title: Dados XML do processo usando LINQ to XML
 ms.date: 03/30/2017
 ms.assetid: 059d6b9d-63f7-4011-9ba8-8406f0bbae7d
-ms.openlocfilehash: 782a14303a9ec35750530d2506a046dd53d37fc0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9aad2e8b8981cef72952f393a4b9d4d49f503377
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686989"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783242"
 ---
 # <a name="process-xml-data-using-linq-to-xml"></a>Dados XML do processo usando LINQ to XML
 
@@ -19,7 +20,7 @@ LINQ to XML é o novo modelo no .NET Framework versão 3.5 para processar dados 
   
  Para obter uma discussão detalhada sobre o uso, confira [LINQ to XML (C#)](../../linq/linq-xml-overview.md) e [LINQ to XML (Visual Basic)](../../linq/linq-xml-overview.md). Para obter uma visão geral da estrutura da LINQ, confira [LINQ (consulta integrada à linguagem) – C#](../../../csharp/programming-guide/concepts/linq/index.md) ou [LINQ (consulta integrada à linguagem) – Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq>
 - <xref:System.Linq>

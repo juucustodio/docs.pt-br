@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> de <allowAccounts>'
 title: <add> de <allowAccounts>
 ms.date: 03/30/2017
 ms.assetid: 763c7b1f-e7b0-4d99-a42c-4506fcb8da00
-ms.openlocfilehash: cd4b9fd02eee2de1d0e8be185ffb69c0eae1cd58
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 275631c4467a888966e89a2f664b186f989ae101
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181720"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782215"
 ---
 # <a name="add-of-allowaccounts"></a>\<add> de \<allowAccounts>
 
@@ -19,7 +20,7 @@ Especifica uma conta de usuário para processos que hospedam serviços WCF e rec
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<allowAccounts>**](allowaccounts.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <allowAccounts>

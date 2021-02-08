@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <loadFromRemoteSources> elemento'
 title: Elemento <loadFromRemoteSources>
 ms.date: 05/24/2018
 helpviewer_keywords:
 - loadFromRemoteSources element
 - <loadFromRemoteSources> element
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
-ms.openlocfilehash: 568c0c814dcc57be0f5be435bb7750c970ffec19
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f5dcff1fb7b0393fe5896dd9d107461a3151f79a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192445"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782345"
 ---
 # <a name="loadfromremotesources-element"></a>Elemento \<loadFromRemoteSources>
 
@@ -23,7 +24,7 @@ Especifica se os assemblies carregados de fontes remotas devem receber confianç
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<loadFromRemoteSources>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <loadFromRemoteSources
@@ -44,7 +45,7 @@ Especifica se os assemblies carregados de fontes remotas devem receber confianç
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|`false`|Não conceda confiança total a aplicativos de fontes remotas. Esse é o padrão.|  
+|`false`|Não conceda confiança total a aplicativos de fontes remotas. Este é o padrão.|  
 |`true`|Conceda confiança total a aplicativos de fontes remotas.|  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -116,7 +117,7 @@ O exemplo a seguir mostra como conceder confiança total a assemblies carregados
 </configuration>  
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Mais usos implícitos da política de CAS: loadFromRemoteSources](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources)
 - [Como: executar código parcialmente confiável em uma área restrita](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)

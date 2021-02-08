@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <diagnostics>'
 title: <diagnostics>
 ms.date: 03/30/2017
 ms.assetid: 0c2f95c4-cc12-4fb5-a70c-7fc6fa95db58
-ms.openlocfilehash: 775ec3a4d3dd8709c61fb46155b5085a3343d218
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d1651d949cdc095e630e9cde0bacbe51a5eb6062
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192263"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782150"
 ---
 # \<diagnostics>
 
@@ -17,7 +18,7 @@ O `diagnostics` elemento define as configurações que podem ser usadas por um a
 &nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<diagnostics>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>
@@ -49,7 +50,7 @@ O `diagnostics` elemento define as configurações que podem ser usadas por um a
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|etwProviderId|Uma cadeia de caracteres que especifica o identificador para o provedor de rastreamento de eventos, que grava eventos em sessões do ETW.|  
+|etwProviderId|Uma cadeia de caracteres que especifica o identificador para o provedor de Event-Tracing, que grava eventos em sessões de ETW.|  
 |performanceCounters|Especifica se contadores de desempenho para o assembly estão habilitados. Os valores válidos são<br /><br /> -Desativado: os contadores de desempenho estão desabilitados.<br />-Service only: somente contadores de desempenho relevantes para esse serviço estão habilitados.<br />-Todos: contadores de desempenho podem ser exibidos em tempo de execução.<br />-Padrão: uma única instância de contador de desempenho _WCF_Admin é criada. Esta instância é usada para habilitar a coleta de dados SQM usados pela infraestrutura. Nenhum dos valores de contador para esta instância estão atualizados e, portanto, permanecerão em zero. Esse será o valor padrão se nenhuma configuração estiver presente para o WCF.|  
 |wmiProviderEnabled|Um valor booliano que especifica se o provedor WMI para o assembly está habilitado. O provedor WMI é necessário para que o usuário tenha acesso em tempo de execução aos recursos de inspeção e controle do Windows Communication Foundation (WCF). O padrão é `false`.|  
   

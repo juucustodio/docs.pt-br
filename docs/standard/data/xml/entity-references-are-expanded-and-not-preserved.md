@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: as referências de entidade são expandidas e não preservadas'
 title: Referências a entidades são expandidos e não preservadas
 ms.date: 03/30/2017
 ms.assetid: ffd97806-ab43-4538-8de2-5828bfbbde57
-ms.openlocfilehash: 5a3c93807866c5925696f2d913dfc443d8ff12a4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 85152acb8ff91fd8b42f73434a1807fd23ceb2e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687444"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783346"
 ---
 # <a name="entity-references-are-expanded-and-not-preserved"></a>Referências a entidades são expandidos e não preservadas
 
@@ -38,6 +39,6 @@ Estrutura de árvore para as referências de entidade que são expandidas
   
  Se você usar um leitor que não possa resolver entidades, o método **Load** lançará uma exceção quando encontrar uma referência de entidade.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

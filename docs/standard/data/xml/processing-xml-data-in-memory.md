@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: processando dados XML In-Memory'
 title: Processamento de Dados XML na memória
 ms.date: 03/30/2017
 ms.assetid: 1bbb4d05-ead7-4bda-8ece-f86d35c57ad4
-ms.openlocfilehash: 878e008f5c7c3a018389e8666263269162989812
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2990a922fa864849e0f46bcfc5d9da017e28495d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686911"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783190"
 ---
 # <a name="processing-xml-data-in-memory"></a>Processamento de Dados XML na memória
 

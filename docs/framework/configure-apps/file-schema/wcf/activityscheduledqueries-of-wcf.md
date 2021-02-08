@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <activityScheduledQueries> do WCF'
 title: <activityScheduledQueries> do WCF
 ms.date: 03/30/2017
 ms.assetid: e351329f-9676-4f11-9b19-f4bac82f36fc
-ms.openlocfilehash: 86f196437b2230d6541570aa8994d99e7b340f66
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b92bb2827b4c8bce43e4ee0b8dc03c7be124e3da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151188"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782241"
 ---
 # <a name="activityscheduledqueries-of-wcf"></a>\<activityScheduledQueries> do WCF
 
@@ -60,7 +61,7 @@ Nenhum.
 |-------------|-----------------|  
 |[\<workflow>](../windows-workflow-foundation/workflow.md)|Um elemento de configuração que contém todas as consultas de um fluxo de trabalho específico identificado pelo `activityDefinitionId` propriedade.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElementCollection>
 - <xref:System.Activities.Tracking.ActivityScheduledQuery>

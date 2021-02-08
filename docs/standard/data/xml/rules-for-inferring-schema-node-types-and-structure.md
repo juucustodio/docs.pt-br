@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: regras para a estrutura e tipos de nó de esquema de referência'
 title: Regras para inferir tipos de nó e estrutura de esquema
 ms.date: 03/30/2017
 ms.assetid: d74ce896-717d-4871-8fd9-b070e2f53cb0
-ms.openlocfilehash: e49e50dc21951d739b12cdfa60c6a48f67576873
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cbcc60a4c2510fb75aa5194164881f573f1a688f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697591"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783021"
 ---
 # <a name="rules-for-inferring-schema-node-types-and-structure"></a>Regras para inferir tipos de nó e estrutura de esquema
 
@@ -157,7 +158,7 @@ Este tópico descreve como o processo de inferência de esquema converte os tipo
   
  Para saber mais sobre o processo de inferência de esquema, consulte [Inferência de esquemas de documentos XML](inferring-schemas-from-xml-documents.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Schema.XmlSchemaInference>
 - [SOM (Schema Object Model) XML](xml-schema-object-model-som.md)

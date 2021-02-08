@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <connectionPoolSettings>'
 title: <connectionPoolSettings>
 ms.date: 03/30/2017
 ms.assetid: 6fa7fa65-2c6e-4eab-b8cf-7690112c0be5
-ms.openlocfilehash: d8787bc2ef8da4fdc01237ac9b041dfdd66fce03
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5acf2d800f1a18f45750d0fabd23516f987b2c5e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175987"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782163"
 ---
 # \<connectionPoolSettings>
 
@@ -21,7 +22,7 @@ Especifica configurações de pool de conexões adicionais para uma associação
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<namedPipeTransport>**](namedpipetransport.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<connectionPoolSettings>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <connectionPoolSettings groupName="String"
@@ -51,7 +52,7 @@ Especifica configurações de pool de conexões adicionais para uma associação
 |-------------|-----------------|  
 |[\<namedPipeTransport>](namedpipetransport.md)|Define um transporte que faz com que um canal transfira mensagens usando pipes nomeados.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.NamedPipeConnectionPoolSettingsElement>
 - <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement.ConnectionPoolSettings%2A>

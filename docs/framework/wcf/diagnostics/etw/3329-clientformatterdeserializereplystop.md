@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3329-ClientFormatterDeserializeReplyStop'
 title: 3329 - ClientFormatterDeserializeReplyStop
 ms.date: 03/30/2017
 ms.assetid: c65657a4-80c1-448a-81d9-02d734e66075
-ms.openlocfilehash: 991452d78f7e6634c4ff3c7b9daaf55265794b4a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: da881dc23779f377d32f075f0b95880e26f040f9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295451"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783749"
 ---
 # <a name="3329---clientformatterdeserializereplystop"></a>3329 - ClientFormatterDeserializeReplyStop
 

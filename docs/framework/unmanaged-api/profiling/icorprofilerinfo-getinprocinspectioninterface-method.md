@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo:: GetInprocInspectionInterface'
 title: Método ICorProfilerInfo::GetInprocInspectionInterface
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 22a92d1d-8849-4af6-8304-ecc53dd1d289
 topic_type:
 - apiref
-ms.openlocfilehash: cc8bdfb1e46e5304227a40f869856f07e1f90bed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5b7ce053f0a64afd5d702a4eb59c1712f4b26e9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707484"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781461"
 ---
 # <a name="icorprofilerinfogetinprocinspectioninterface-method"></a>Método ICorProfilerInfo::GetInprocInspectionInterface
 
@@ -52,6 +53,6 @@ HRESULT GetInprocInspectionInterface(
   
  **Versão do .NET Framework:** 1,0  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

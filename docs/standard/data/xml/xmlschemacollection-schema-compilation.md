@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: compilação de esquema XmlSchemaCollection'
 title: Compilação do esquema de XmlSchemaCollection
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 76f28770-7126-428f-9ed5-7b5ae8bad5ee
-ms.openlocfilehash: bb17cd4802f97bb012ae8214b3c4095ed516d367
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 34ef2e92c50eec600484c140551554073700867a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721902"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782631"
 ---
 # <a name="xmlschemacollection-schema-compilation"></a>Compilação do esquema de XmlSchemaCollection
 
@@ -60,7 +61,7 @@ xsc.Add("urn:bookstore-schema", "Books.xsd");
 vr.Schemas.Add(xsc);  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Validação de XDR com XmlSchemaCollection](xdr-validation-with-xmlschemacollection.md)
 - [Validação de XSD (esquema XML) com XmlSchemaCollection](xml-schema-xsd-validation-with-xmlschemacollection.md)

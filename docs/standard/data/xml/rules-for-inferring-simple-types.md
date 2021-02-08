@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: regras para inferir tipos simples'
 title: Regras para inferir tipos simples
 ms.date: 03/30/2017
 ms.assetid: 394624d6-4da0-430a-8a88-46efe40f14de
-ms.openlocfilehash: b8fa3037d9ad5af057f477733ffdea74681f5549
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4b7c212f262d3c24a3bd4e677ee04bd169c6dd3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686534"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783008"
 ---
 # <a name="rules-for-inferring-simple-types"></a>Regras para inferir tipos simples
 
@@ -34,7 +35,7 @@ Descreve como a classe de <xref:System.Xml.Schema.XmlSchemaInference> infere o t
 |unsignedInt|Inteiros no intervalo de 0 a 4294967295.|  
 |long|Inteiros no intervalo de – 9223372036854775808 a 9223372036854775807.|  
 |unsignedLong|Inteiros no intervalo de 0 a 18446744073709551615.|  
-|inteiro|Um número de dígitos finito prefixados possivelmente com “-”.|  
+|Número inteiro|Um número de dígitos finito prefixados possivelmente com “-”.|  
 |decimal|Valores numéricos que contêm 0 a 28 dígitos de precisão.|  
 |FLOAT|Os decimais opcionalmente seguido por “E” ou “e” tiver usado por um valor inteiro que representa o expoente. Os valores decimais podem estar no intervalo de -16777216 a 16777216. Os valores do expoente podem estar no intervalo de – 149 a 104.<br /><br /> O flutuante permite valores especiais representar a infinito e não valores numéricos. Os valores especiais para o flutuante são: 0, -0, INF, - INF, NaN.|  
 |double|O mesmo como flutuam exceto valores decimais podem estar no intervalo de -9007199254740992 a 9007199254740992, e o expoente valor podem estar no intervalo de – 1075 a 970.<br /><br /> O tipo double permite valores especiais representar a infinito e não valores numéricos. Os valores especiais para o flutuante são: 0, -0, INF, - INF, NaN.|  
@@ -76,7 +77,7 @@ Os seguintes esquema- está definindo os atributos que são ignorados durante a 
 |`xsi:schemaLocation`|Se `xsi:schemaLocation` é encontrado, será ignorado.|  
 |`xsi:noNamespaceSchemaLocation`|Se `xsi:noNamespaceSchemaLocation` é encontrado, será ignorado.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [SOM (Schema Object Model) XML](xml-schema-object-model-som.md)
 - [Inferindo esquemas de documentos XML](inferring-schemas-from-xml-documents.md)

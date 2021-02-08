@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: lendo dados XML usando XPathDocument e XmlDocument'
 title: Lendo dados XML usando XPathDocument e XmlDocument
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 5711b225-6aa2-4e4f-9898-19f2d518ad1a
-ms.openlocfilehash: 8ffd03d1a9915bade6c4d421d5fad096a4784fb8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cfb21a98cc6d2bf4f3caa4e86c3c6bfffa636d72
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686781"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783164"
 ---
 # <a name="reading-xml-data-using-xpathdocument-and-xmldocument"></a>Lendo dados XML usando XPathDocument e XmlDocument
 
@@ -75,7 +76,7 @@ document.Load("books.xml");
 |<xref:System.Xml.XPath.XPathDocument>|`false`|  
 |<xref:System.Xml.XmlDocument>|`true`|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

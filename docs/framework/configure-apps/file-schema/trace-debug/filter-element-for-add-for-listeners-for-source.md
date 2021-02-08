@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <filter> elemento para <add> para para <listeners><source>'
 title: <filter>Elemento para <add> para para <listeners><source>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - <filter> element for <add> for <listeners> for <source>
 - filter element for <add> for <listeners> for <source>
 ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
-ms.openlocfilehash: 2b83fd10da506202427aaeee454411822ff1ae5b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 65233aa2d9ea000d1d27d0241c734bee7097b7ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782254"
 ---
 # <a name="filter-element-for-add-for-listeners-for-source"></a>\<filter>Elemento para \<add> para para \<listeners>\<source>
 
@@ -28,7 +29,7 @@ Adiciona um filtro a um ouvinte na coleção `Listeners` de uma origem de rastre
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add-element-for-listeners-for-source.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<filter>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <filter
@@ -95,7 +96,7 @@ Adiciona um filtro a um ouvinte na coleção `Listeners` de uma origem de rastre
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.TraceSource>
 - <xref:System.Diagnostics.TraceListener>

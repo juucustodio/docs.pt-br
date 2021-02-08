@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: saídas de um XslTransform'
 title: Saída de um XslTransform
 ms.date: 03/30/2017
 ms.assetid: 8e149d32-4b2f-493f-9e4b-d0d93475acde
-ms.openlocfilehash: ebe276a9627a36f1248f0043af6c82e76fe7fd78
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 103334274daafc7de2e7cadab7191bc5b90a34d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95691364"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783268"
 ---
 # <a name="outputs-from-an-xsltransform"></a>Saída de um XslTransform
 
@@ -56,6 +57,6 @@ Como as folhas de estilos podem determinar o formato de saída usando uma instru
 
  A marca de `<xsl:text disable-output-escaping>` é usada para indicar se os caracteres especiais precisam ser escapados em um formulário XML (por exemplo, usando `<&lt>` no lugar do símbolo de `"<"` ) ou esquerdo em condição atual. O atributo de `disable-output-escaping` é ignorado quando uma transformação a <xref:System.Xml.XmlReader> ou <xref:System.Xml.XmlWriter> objetos e não tem efeito em caracteres especiais.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [A classe XslTransform implementa do processador XSLT](xsltransform-class-implements-the-xslt-processor.md)

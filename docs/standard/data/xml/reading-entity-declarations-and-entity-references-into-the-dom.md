@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: lendo declarações de entidade e referências de entidade no DOM'
 title: Declarações de entidade de leitura e referências a entidades em DOM
 ms.date: 03/30/2017
 ms.assetid: 86dba977-5cc4-4567-964f-027ffabc47b2
-ms.openlocfilehash: 8af9e4c1aedc588bcbf3b4f43e9e562fda2f3ce3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 312fd215076f4b0eee280767b8c367d34ffe6bb6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783216"
 ---
 # <a name="reading-entity-declarations-and-entity-references-into-the-dom"></a>Declarações de entidade de leitura e referências a entidades em DOM
 
@@ -52,6 +53,6 @@ Uma entidade é uma declaração que indica um nome ser usado em XML no lugar do
   
  As diferenças quando as referências a entidades são expandidos e quando não são faz uma diferença no qual nós são gerados na árvore DOM, na memória. A diferença em nós que são gerados é explicado nos tópicos [Referências a entidades são preservadas](entity-references-are-preserved.md) e [Referências a entidades são expandidos e não preservadas](entity-references-are-expanded-and-not-preserved.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

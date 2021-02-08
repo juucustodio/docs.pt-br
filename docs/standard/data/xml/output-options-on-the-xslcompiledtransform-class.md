@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: opções de saída na classe XslCompiledTransform'
 title: Opções de saída na classe de XslCompiledTransform
 ms.date: 03/30/2017
 ms.assetid: 91ce8cba-386c-411e-bb38-0891a0393c0a
-ms.openlocfilehash: 5835cfee69730d5dd2322422aeed6e0d72995eec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8f16de929ba196eddb6ebb4b8b251668820b4d91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731131"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783294"
 ---
 # <a name="output-options-on-the-xslcompiledtransform-class"></a>Opções de saída na classe de XslCompiledTransform
 
@@ -22,7 +23,7 @@ Este tópico discute opções de saída disponíveis XSLT. Você pode especifica
 |Nome do atributo|Comportamento|  
 |--------------------|--------------|  
 |method|Com suporte.|  
-|Versão|Ignorado. A versão é sempre 1,0 para XML e 4,0 para HTML.|  
+|version|Ignorado. A versão é sempre 1,0 para XML e 4,0 para HTML.|  
 |codificando|Ignorado para gerar a <xref:System.IO.TextWriter>. A propriedade de <xref:System.IO.TextWriter.Encoding%2A?displayProperty=nameWithType> é usada em vez.|  
 |omit-xml-declaration|Com suporte.|  
 |autônomos|Com suporte.|  
@@ -48,7 +49,7 @@ Este tópico discute opções de saída disponíveis XSLT. Você pode especifica
 
  Use esse tipo de saída para especificar a URL do arquivo de saída.  
   
-#### <a name="stream"></a>STREAM  
+#### <a name="stream"></a>Fluxo  
 
  Um fluxo é uma abstração de uma sequência de bytes, como um arquivo, um dispositivo de arquivos entrada/saída, um pipe de comunicação de inter- processo, ou um soquete TCP/IP. A classe de <xref:System.IO.Stream> e suas classes derivadas fornecem uma visão genérica desses tipos diferentes de entrada e saída, isolando o programador de detalhes específicos do sistema operacional e dispositivos subjacentes.  
   
@@ -62,6 +63,6 @@ Este tópico discute opções de saída disponíveis XSLT. Você pode especifica
   
 - Para gravar marcas vazios, um espaço é escrito entre o último caractere do nome de elemento e a barra invertida, `<myElement />` por exemplo. Isso permite que um navegadores mais antigos exibir as páginas corretamente gerados HTML.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Transformações XSLT](xslt-transformations.md)

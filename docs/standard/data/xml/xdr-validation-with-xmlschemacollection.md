@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: validação de XDR com XmlSchemaCollection'
 title: Validação de XDR com XmlSchemaCollection
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 00833027-1428-4586-83c1-42f5de3323d1
-ms.openlocfilehash: 9edde2fc0da97b570162775a33c95d472cda974b
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 270626a99fd87f859e8b32bbce522caeba44acdc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819273"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782787"
 ---
 # <a name="xdr-validation-with-xmlschemacollection"></a>Validação de XDR com XmlSchemaCollection
 
@@ -69,7 +70,7 @@ Namespace ValidationSample
         End Sub
 
         Public Shared Sub ValidationHandler(sender As Object, args As ValidationEventArgs)
-            Console.WriteLine("**_Validation error")
+            Console.WriteLine("***Validation error")
             Console.WriteLine($"Severity:{args.Severity}")
             Console.WriteLine($"Message:{args.Message}")
         End Sub
@@ -122,7 +123,7 @@ namespace ValidationSample
 
         public static void ValidationHandler(object sender, ValidationEventArgs args)
         {
-            Console.WriteLine("_*_Validation error");
+            Console.WriteLine("***Validation error");
             Console.WriteLine($"\tSeverity:{args.Severity}");
             Console.WriteLine($"\tMessage:{args.Message}");
         }
@@ -130,7 +131,7 @@ namespace ValidationSample
 }
 ```
 
-O seguinte descreve o conteúdo do arquivo de entrada, _HeadCount.xml *, a ser validado:
+O seguinte descreve o conteúdo do arquivo de entrada, *HeadCount.xml*, a ser validado:
 
 ```xml
 <!--Load HeadCount.xdr in SchemaCollection for Validation-->
@@ -153,7 +154,7 @@ O seguinte descreve o conteúdo do arquivo de esquema XDR, *HeadCount.xdr*, a se
 </Schema>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlValidatingReader.ValidationType%2A>
 - [Compilação do esquema de XmlSchemaCollection](xmlschemacollection-schema-compilation.md)

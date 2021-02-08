@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRStrongName:: StrongNameSignatureVerification'
 title: Método ICLRStrongName::StrongNameSignatureVerification
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 734dc4d1-0a76-4736-b5ac-cb4253b3dd49
 topic_type:
 - apiref
-ms.openlocfilehash: 2d53eebcc272ab87a2af5b3c081ca37dde5c74b9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 985a00ffe464f2dd6a92c299dae14206fd37a898
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674457"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781838"
 ---
 # <a name="iclrstrongnamestrongnamesignatureverification-method"></a>Método ICLRStrongName::StrongNameSignatureVerification
 
@@ -61,7 +62,7 @@ HRESULT StrongNameSignatureVerification (
   
 - `SN_OUTFLAG_WAS_VERIFIED` (0x00000001)-esse valor é definido como `false` para especificar que a verificação foi bem-sucedida devido a configurações do registro.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `S_OK` Se o método foi concluído com êxito; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
   
@@ -75,7 +76,7 @@ HRESULT StrongNameSignatureVerification (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameSignatureVerificationEx](iclrstrongname-strongnamesignatureverificationex-method.md)
 - [Interface ICLRStrongName](iclrstrongname-interface.md)

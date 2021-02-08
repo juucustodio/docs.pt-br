@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: otimização para hospedagem na Web compartilhada'
 title: Otimização da hospedagem Web compartilhada
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - garbage collection, optimizing
 - garbage collection, shared Web hosting
 ms.assetid: be98c0ab-7ef8-409f-8a0d-cb6e5b75ff20
-ms.openlocfilehash: abab4ac451a70fbc81ac6d7c9da6f8d0123287a8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 80627aba90825fe08f891672da4d598edb6f5686
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95669023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782436"
 ---
 # <a name="optimization-for-shared-web-hosting"></a>Otimização da hospedagem Web compartilhada
 
@@ -43,6 +44,6 @@ Se você for o administrador de um servidor que é compartilhado ao hospedar vá
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Coleta de lixo](index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: processar dados XML usando o modelo de dados XPath'
 title: Processar dados XML usando o modelo de dados XPath
 ms.date: 03/30/2017
 ms.assetid: 536c6fce-1453-4654-9c72-bca54d47e081
-ms.openlocfilehash: 840fb40cc650d8f65af533d4102f18132bce3f53
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c01d2313d3045e1516b8bfc59dfdb3180109f560
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686950"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783203"
 ---
 # <a name="process-xml-data-using-the-xpath-data-model"></a>Processar dados XML usando o modelo de dados XPath
 
@@ -34,7 +35,7 @@ O namespace <xref:System.Xml?displayProperty=nameWithType> fornece uma represent
  [Validação de esquema usando XPathNavigator](schema-validation-using-xpathnavigator.md)  
  Descreve as maneiras para validar o conteúdo XML contido em um objeto <xref:System.Xml.XPath.XPathDocument> ou de <xref:System.Xml.XmlDocument>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

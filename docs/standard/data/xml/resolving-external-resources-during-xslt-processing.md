@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: resolvendo recursos externos durante o processamento XSLT'
 title: Resolvendo recursos externos durante processamento XSLT
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 3a59d31c-0ec5-4de6-a2a9-558531c8116e
-ms.openlocfilehash: 5d50711eda266cecdb817c778f04aa845fa4c342
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5b45458f8d4f240de5dc5e370e5a57c6ecab191d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686638"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783073"
 ---
 # <a name="resolving-external-resources-during-xslt-processing"></a>Resolvendo recursos externos durante processamento XSLT
 
@@ -44,7 +45,7 @@ Há várias vezes durante uma transformação XSLT quando você precise resolver
  [!code-csharp[XslCompiledTransform.Load#11](../../../../samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#11)]
  [!code-vb[XslCompiledTransform.Load#11](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb#11)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Xsl.XslCompiledTransform>
 - <xref:System.Xml.Xsl.XsltSettings>

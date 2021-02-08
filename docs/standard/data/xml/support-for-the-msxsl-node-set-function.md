@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: suporte para a função msxsl: node-set ()'
 title: Suporte à função msxsl:node-set()
 ms.date: 03/30/2017
 ms.assetid: d0cbf517-d9f6-4097-9851-4fa62903decd
-ms.openlocfilehash: 6c84e3789916e8d842e51e8417cb27505cb5cba6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd9f02dbfdd400b182c95453de5f49e43ee0b2aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673391"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782917"
 ---
 # <a name="support-for-the-msxslnode-set-function"></a>Suporte à função msxsl:node-set()
 
@@ -53,6 +54,6 @@ A função `msxsl:node-set` permite que você converta um fragmento da árvore d
 <authors><author>Michael Howard</author><author>Michael Kay</author></authors>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [A classe XslTransform implementa do processador XSLT](xsltransform-class-implements-the-xslt-processor.md)

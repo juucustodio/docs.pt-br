@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <basicHttpContextBinding>'
 title: <basicHttpContextBinding>
 ms.date: 03/30/2017
 ms.assetid: 39b16b82-4ec6-4eff-8031-67e026870961
-ms.openlocfilehash: 038841c2710466e8cddd0909804b01af6f03b2c1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d77d57325417a2aa7c49fb8893f4512dad71563b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201506"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782189"
 ---
 # \<basicHttpContextBinding>
 
@@ -18,7 +19,7 @@ Especificar uma associação que fornece contexto para o <xref:System.ServiceMod
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<basicHttpContextBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <basicHttpContextBinding>
@@ -97,7 +98,7 @@ Especificar uma associação que fornece contexto para o <xref:System.ServiceMod
 
  Esse elemento de associação fornece um nível de proteção e um mecanismo de troca como parte do contexto para um `BasicHttpBinding` .  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.BasicHttpBinding>
 - <xref:System.ServiceModel.BasicHttpContextBinding>

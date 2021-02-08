@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <compositeDuplex>'
 title: <compositeDuplex>
 ms.date: 03/30/2017
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f
-ms.openlocfilehash: a5209efddd489f8cb04b3266e6ba0bb033eeae6c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0a9ec47027618a5f4fb30b627ccb9ad04c547f48
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176013"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782176"
 ---
 # \<compositeDuplex>
 
@@ -20,7 +21,7 @@ Define o elemento de associação que é usado quando o cliente deve expor um po
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<compositeDuplex>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <compositeDuplex clientBaseAddress="URI" />
@@ -58,7 +59,7 @@ Define o elemento de associação que é usado quando o cliente deve expor um po
 <compositeDuplex clientBaseAddress="http://www.contoso.com" />
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.CompositeDuplexElement>
 - <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>

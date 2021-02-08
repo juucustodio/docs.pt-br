@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: erros de XSLT recuperáveis'
 title: Erros recuperáveis XSLT
 ms.date: 03/30/2017
 ms.assetid: 484929b0-fefb-4629-87ee-ebdde70ff1f8
-ms.openlocfilehash: 2123ead435fe389693f3b141a26873700ba5647f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5e31059554d36efd4c8738da7720e0ddf04999c5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686768"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783151"
 ---
 # <a name="recoverable-xslt-errors"></a>Erros recuperáveis XSLT
 
@@ -40,7 +41,7 @@ A recomendação de versão 1,0 do W3C de transformações XSL (XSLT) inclui as 
 |O resultado de criar uma instância do conteúdo de `xsl:processing-instruction` contém a cadeia de caracteres “--” ou termina com “-”.|7.4|Recuperar|  
 |O resultado de criar uma instância do conteúdo de `xsl:comment` cria nós diferentes de nós de texto.|7.4|Erro*|  
 |O modelo dentro de um elemento de variável associação retorna um nó de atributo ou um nó de namespace.|11.2|Erro*|  
-|Há um erro que recupera o recurso URI passado na função do documento.|12.1|Erro|  
+|Há um erro que recupera o recurso URI passado na função do documento.|12.1|Erro do|  
 |A referência URI na função do documento contém um identificador de fragmento e há um erro que processa o identificador do fragmento.|12.1|Recover*|  
 |Há vários atributos com o mesmo nome, mas os valores diferentes, que não são nomeados elementos de cdata- seção em `xsl:output` com a mesma precedência de importação.|16|Recuperar|  
 |O processador não oferece suporte a codificação em `xsl:output` que codifica o atributo.|16.1|Recuperar|  
@@ -53,6 +54,6 @@ A recomendação de versão 1,0 do W3C de transformações XSL (XSLT) inclui as 
   
  <sup>*</sup> Esse comportamento é diferente daquele da <xref:System.Xml.Xsl.XslTransform> classe. Para saber mais, confira [Implementação de comportamentos discricionários na classe XslTransform](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Transformações XSLT](xslt-transformations.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 3338-ChannelReceiveStop'
 title: 3338 - ChannelReceiveStop
 ms.date: 03/30/2017
 ms.assetid: e8f0c71e-69e5-4390-aef3-e51c67d0bf0d
-ms.openlocfilehash: 8d68553a1ce4b5219203d8d3cc976e0f136c7458
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 22489ebc9805b59c1e0114ef97389c8fd5ae8ae5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268775"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783684"
 ---
 # <a name="3338---channelreceivestop"></a>3338 - ChannelReceiveStop
 

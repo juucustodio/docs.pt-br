@@ -1,14 +1,15 @@
 ---
+description: 'Saiba mais sobre: <sqlWorkflowInstanceStore>'
 title: <sqlWorkflowInstanceStore>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 8a4e4214-fc51-4f4d-b968-0427c37a9520
-ms.openlocfilehash: d6c86d02e14a38c2a35ba4858c4abfea73268fd8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8fcf5dd970adf5aa668d90b012c94e04c5373752
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148705"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782005"
 ---
 # \<sqlWorkflowInstanceStore>
 
@@ -64,7 +65,7 @@ Um comportamento de serviço que permite configurar o recurso <xref:System.Activ
 |-------------|-----------------|  
 |[\<behavior> desse \<serviceBehaviors>](behavior-of-servicebehaviors-of-workflow.md)|Especifica um elemento de comportamento.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior>
 - <xref:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement>

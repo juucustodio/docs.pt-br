@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRStrongName2'
 title: Interface ICLRStrongName2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9f098a74-201e-4628-a468-8dee9ab99b4a
 topic_type:
 - apiref
-ms.openlocfilehash: df570f32d694ec21e9642e75b4965e169afaccfc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7442bd054af735e9f1b75b05feb8724dfa993f73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677642"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781786"
 ---
 # <a name="iclrstrongname2-interface"></a>Interface ICLRStrongName2
 
@@ -27,7 +28,7 @@ Fornece a capacidade de criar nomes fortes usando o grupo SHA-2 de algoritmos de
   
 ## <a name="methods"></a>Métodos  
   
-|Método|DESCRIÇÃO|  
+|Método|Descrição|  
 |------------|-----------------|  
 |[Método StrongNameGetPublicKeyEx](strongnamegetpublickeyex-method.md)|Obtém a chave pública de um par de chaves pública/privada e especifica um algoritmo de hash e um algoritmo de assinatura.|  
 |[Método StrongNameSignatureVerificationEx2](strongnamesignatureverificationex2-method.md)|Verifica a assinatura de um assembly com nome forte e fornece um mapeamento da chave ECMA para uma chave real.|  

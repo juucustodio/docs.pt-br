@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: observações de implementação de suporte de tipo XML'
 title: Notas de implementação de suporte do tipo XML
 ms.date: 03/30/2017
 ms.assetid: 26b071f3-1261-47ef-8690-0717f5cd93c1
-ms.openlocfilehash: 29535efcbc7ecaaef0c5d1620ac05464a9a6a69a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 52a014f0056b1f78b297ec9289e9748ec7dd392e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731911"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782670"
 ---
 # <a name="xml-type-support-implementation-notes"></a>Notas de implementação de suporte do tipo XML
 
@@ -51,6 +52,6 @@ Este tópico descreve alguns detalhes de implementação de que você deseja est
 
  Quando uma instância de `xs:anyURI` que representa o URL relativa é mapeada a <xref:System.Uri>, o objeto de <xref:System.Uri> não tem URI base.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Digite suporte nas classes de System.Xml](type-support-in-the-system-xml-classes.md)

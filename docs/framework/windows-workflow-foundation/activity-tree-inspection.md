@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: inspeção de árvore de atividade'
 title: Inspeção da árvore de atividade
 ms.date: 03/30/2017
 ms.assetid: 100d00e4-8c1d-4233-8fbb-dd443a01155d
-ms.openlocfilehash: 044dcbbe7f22b1026dbc4dc14ab87da4f5a9d0ee
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aac19dd99199481e6ad0d1a554ad1846678c160e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289146"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787949"
 ---
 # <a name="activity-tree-inspection"></a>Inspeção da árvore de atividade
 
@@ -31,7 +32,7 @@ A inspeção da árvore de atividade é usada por autores de aplicativo de fluxo
  **Item de lista 4** 
  **Item de lista 5** 
  **Itens adicionados à coleção.** 
- **Sequence** **Lista \<String> de ><literal** de sequência  
+  **Lista \<String> de ><literal** de sequência  
  **While**  
  **AddToCollection\<String>**  
  **VariableValue<ICollection\<String>>**  

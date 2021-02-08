@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando a atividade de seleção'
 title: Usando a atividade de picareta
 ms.date: 03/30/2017
 ms.assetid: b89be812-a247-4025-b0e3-ffb20db027a6
-ms.openlocfilehash: df8570a61c7bfbfacc00b0896156135ecf2a0c32
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3c7a96c6250db8b9301dfeba858568d5638a29f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267449"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787741"
 ---
 # <a name="using-the-pick-activity"></a>Usando a atividade de picareta
 

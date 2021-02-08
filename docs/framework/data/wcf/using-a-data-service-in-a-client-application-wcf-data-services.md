@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: usando um serviço de dados em um aplicativo cliente (WCF Data Services)'
 title: Usando um serviço de dados em um aplicativo cliente (WCF Data Services)
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, client library
 - WCF Data Services, getting started
 ms.assetid: 90872d0c-e989-4490-b3e9-54afb10d33d4
-ms.openlocfilehash: b921e78c1b3d3d90d9ac8b4a459df496cf6d14dd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f16b927a00aae55a3cb95630fc5d75a1c4c9e238
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180576"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791719"
 ---
 # <a name="using-a-data-service-in-a-client-application-wcf-data-services"></a>Usando um serviço de dados em um aplicativo cliente (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Você pode acessar um serviço que expõe um feed Protocolo Open Data (OData) fornecendo um URI para um navegador da Web. O URI fornece o endereço de um recurso e, em seguida, são enviadas a esses endereços mensagens de solicitação para acessar ou alterar os dados subjacentes que o recurso representa. O navegador emite um comando HTTP GET e retorna o recurso solicitado como um feed OData. Para obter mais informações, consulte [acessando o serviço em um navegador da Web](accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).  
   
@@ -56,7 +59,7 @@ Você pode acessar um serviço que expõe um feed Protocolo Open Data (OData) fo
   
  Há bibliotecas de programação disponíveis que você pode usar para consumir um feed OData em outros tipos de aplicativos cliente. Para obter mais informações sobre o SDK do OData, consulte [SDK do OData – código de exemplo](https://www.odata.org/ecosystem/#sdk).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Acessar recursos do serviço de dados](accessing-data-service-resources-wcf-data-services.md)
 - [Início rápido](quickstart-wcf-data-services.md)

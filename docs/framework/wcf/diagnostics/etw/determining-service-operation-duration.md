@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: determinando a duração da operação de serviço'
 title: Determinando a duração da operação de serviço
 ms.date: 03/30/2017
 ms.assetid: e8a93a2c-2c20-48b3-8986-57e90e9aa908
-ms.openlocfilehash: 2607efe0d469f1235ee3d43d62f5e9781681668d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e9dd9ee4113ee4b4521afb6dfaf6a913e72ea5d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798804"
 ---
 # <a name="determining-service-operation-duration"></a>Determinando a duração da operação de serviço
 

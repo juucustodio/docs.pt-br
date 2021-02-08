@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <example> (Visual Basic)'
 title: <example>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - example XML tag
 - <example> XML tag
 ms.assetid: 90eeda1c-3fc4-427c-879c-5046d265a97c
-ms.openlocfilehash: 6e9f63e4d31df7790f51ae4d166b606f2c63f14b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 643e06fd24e38123dd2693d671b9ab33da5b413e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90872981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787481"
 ---
 # <a name="example-visual-basic"></a>\<example> (Visual Basic)
 
@@ -39,6 +40,6 @@ Especifica um exemplo para o membro.
   
  [!code-vb[VbVbcnXmlDocComments#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#2)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

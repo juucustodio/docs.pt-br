@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução yield (Visual Basic)'
 title: Instrução Yield
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - iterators [Visual Basic]
 - Yield statement [Visual Basic]
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
-ms.openlocfilehash: 783785f2a078b6ad8f975846c44ee4e716a12773
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: cd07c271722a715beeddfddf660cec3e05127db8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866499"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787546"
 ---
 # <a name="yield-statement-visual-basic"></a>Instrução Yield (Visual Basic)
 
@@ -29,7 +30,7 @@ Yield expression
   
 |Termo|Definição|  
 |---|---|  
-|`expression`|Necessário. Uma expressão que é conversível implicitamente no tipo da função de iterador ou `Get` acessador que contém a `Yield` instrução.|  
+|`expression`|Obrigatório. Uma expressão que é conversível implicitamente no tipo da função de iterador ou `Get` acessador que contém a `Yield` instrução.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -59,7 +60,7 @@ Yield expression
   
  Uma função de iterador pode ser uma função anônima. Para obter mais informações, consulte [Iteradores](../../programming-guide/concepts/iterators.md).  
   
-## <a name="exception-handling"></a>Tratamento de Exceção  
+## <a name="exception-handling"></a>Tratamento de exceção  
 
  Uma `Yield` instrução pode estar dentro de um `Try` bloco de um [try... Capturar... Instrução Finally](try-catch-finally-statement.md). Um `Try` bloco que tem uma `Yield` instrução pode ter `Catch` blocos e pode ter um `Finally` bloco.  
   
@@ -100,6 +101,6 @@ Next
   
  Para obter exemplos adicionais, consulte [iteradores](../../programming-guide/concepts/iterators.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instruções](index.md)

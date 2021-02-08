@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: usando apenas procedimentos armazenados (C#)'
 title: 'Passo a passo: usar somente procedimentos armazenados (C#)'
 ms.date: 03/30/2017
 ms.assetid: ecde4bf2-fa4d-4252-b5e4-96a46b9e097d
-ms.openlocfilehash: f980402c976db9ee327a7b726e36a0a4d9d6d73f
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 89cb6da9ec4e8d144726b6e3575a32c04d6aeec0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70792092"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791771"
 ---
 # <a name="walkthrough-using-only-stored-procedures-c"></a>Passo a passo: usar somente procedimentos armazenados (C#)
 
@@ -16,7 +17,7 @@ Este passo a passo fornece um cenário completo do [!INCLUDE[vbtecdlinq](../../.
 > [!NOTE]
 > Você também pode usar procedimentos armazenados nos aplicativos do [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] para substituir o comportamento padrão, especialmente para os processos `Create`, `Update` e `Delete`. Para obter mais informações, consulte [Personalizando as operações de inserção, atualização e exclusão](customizing-insert-update-and-delete-operations.md).
 
-Para fins deste passo a passos, você usará dois métodos que foram mapeados para procedimentos armazenados no banco de dados de exemplo Northwind: CustOrdersDetail e CustOrderHist. O mapeamento ocorre quando você executa a ferramenta de linha de comando SqlMetal para gerar um arquivo C#. Para obter mais informações, consulte a seção Pré-requisitos posteriormente neste passo a passo.
+Neste passo a passo, você usará dois métodos que foram mapeados para os procedimentos armazenados no banco de dados de exemplo Northwind: CustOrdersDetail e CustOrderHist. O mapeamento ocorre quando você executa a ferramenta de linha de comando SqlMetal para gerar um arquivo C#. Para obter mais informações, consulte a seção Pré-requisitos posteriormente neste passo a passo.
 
 Este tutorial não depende do Object Relational Designer. Os desenvolvedores que usam o Visual Studio também podem usar o o/R Designer para implementar a funcionalidade de procedimento armazenado. Consulte [LINQ to SQL Tools no Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).
 
@@ -24,7 +25,7 @@ Este tutorial não depende do Object Relational Designer. Os desenvolvedores que
 
 Esse passo a passo foi escrito usando as configurações de desenvolvimento do Visual C#.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 Este passo a passo requer o seguinte:
 
@@ -38,7 +39,7 @@ Este passo a passo requer o seguinte:
 
      Este passo a passo foi escrito usando a ferramenta SqlMetal com a seguinte linha de comando:
 
-     **sqlmetal /code:"c:\linqtest7\northwind.cs" /language:csharp "c:\linqtest7\northwnd.mdf" /sprocs /functions /pluralize**
+     **SqlMetal/Code: "c:\linqtest7\northwind.cs"/Language: CSharp "c:\linqtest7\northwnd.MDF"/sprocs/Functions/Pluralize**
 
      Para obter mais informações, consulte [SqlMetal.exe (ferramenta de geração de código)](../../../../tools/sqlmetal-exe-code-generation-tool.md).
 
@@ -46,7 +47,7 @@ Este passo a passo requer o seguinte:
 
 Este passo a passo consiste em seis tarefas principais:
 
-- Configurando [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] a solução no Visual Studio.
+- Configurando a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solução no Visual Studio.
 
 - Adicionar o assembly System.Data.Linq ao projeto.
 
@@ -64,9 +65,9 @@ Nesta primeira tarefa, você cria uma solução do Visual Studio que contém as 
 
 ### <a name="to-create-a-linq-to-sql-solution"></a>Para criar uma solução LINQ to SQL
 
-1. No menu **arquivo** do Visual Studio, aponte para **novo**e clique em **projeto**.
+1. No menu **arquivo** do Visual Studio, aponte para **novo** e clique em **projeto**.
 
-2. No painel **tipos de projeto** na caixa de diálogo **novo projeto** , clique **em C#Visual** .
+2. No painel **tipos de projeto** na caixa de diálogo **novo projeto** , clique em **Visual C#**.
 
 3. No painel **modelos** , clique em **Windows Forms aplicativo**.
 
@@ -84,7 +85,7 @@ O assembly do [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)
 
 ### <a name="to-add-systemdatalinqdll"></a>Para adicionar o System.Data.Linq.dll
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **referências**e clique em **Adicionar referência**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **referências** e clique em **Adicionar referência**.
 
 2. Na caixa de diálogo **Adicionar referência** , clique em **.net**, clique no assembly System. Data. LINQ e, em seguida, clique em **OK**.
 
@@ -96,7 +97,7 @@ Esta etapa presume que você usou a ferramenta SqlMetal para gerar um arquivo de
 
 ### <a name="to-add-the-northwind-code-file-to-the-project"></a>Para adicionar o arquivo do código Northwind ao projeto
 
-1. No menu **projeto** , clique em **Adicionar item existente**.
+1. No menu **Projeto** , clique em **Adicionar Item Existente**.
 
 2. Na caixa de diálogo **Adicionar item existente** , vá para c:\linqtest7\northwind.cs e clique em **Adicionar**.
 
@@ -108,7 +109,7 @@ Nesta etapa, você define a conexão com o banco de dados de exemplo Northwind. 
 
 ### <a name="to-create-the-database-connection"></a>Par criar a conexão de banco de dados
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Form1.cs**e clique em **Exibir código**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Form1.cs** e clique em **Exibir código**.
 
 2. Digite o código a seguir na classe `Form1`:
 
@@ -120,9 +121,9 @@ Nesta tarefa, você configura uma interface de modo que os usuários possam exec
 
 ### <a name="to-set-up-the-user-interface"></a>Para configurar a interface do usuário
 
-1. Retorne para o Designer de Formulários do Windows (**Form1. cs [Design]** ).
+1. Retorne para o Designer de Formulários do Windows (**Form1. cs [Design]**).
 
-2. No menu **Exibir**, clique em **Caixa de Ferramentas**.
+2. No menu **Exibir** , clique em **Caixa de Ferramentas**.
 
      A caixa de ferramentas é aberta.
 
@@ -133,11 +134,11 @@ Nesta tarefa, você configura uma interface de modo que os usuários possam exec
 
      Organize os controles conforme mostrado na ilustração de acompanhamento. Expanda **Form1** para que os controles caibam facilmente.
 
-4. Clique com o botão direito do mouse em **Label1**e clique em **Propriedades**.
+4. Clique com o botão direito do mouse em **Label1** e clique em **Propriedades**.
 
-5. Altere a propriedade **Text** de **Label1** para **Enter OrderID:** .
+5. Altere a propriedade **Text** de **Label1** para **Enter OrderID:**.
 
-6. Da mesma forma para o **Label2**, altere a propriedade **Text** de **Label2** para **Enter CustomerID:** .
+6. Da mesma forma para o **Label2**, altere a propriedade **Text** de **Label2** para **Enter CustomerID:**.
 
 7. Da mesma forma, altere a propriedade **Text** de **Button1** para **Order Details**.
 
@@ -153,7 +154,7 @@ Nesta tarefa, você configura uma interface de modo que os usuários possam exec
 
      [!code-csharp[DLinqWalk4CS#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk4CS/cs/Form1.cs#2)]
 
-3. Agora, clique duas vezes em **Button2** no **Form1** para `button2` abrir o manipulador
+3. Agora, clique duas vezes em **Button2** no **Form1** para abrir o `button2` manipulador
 
 4. Digite o código a seguir no manipulador `button2`:
 
@@ -169,23 +170,23 @@ Agora é hora de testar o aplicativo. Observe que o contato com o repositório d
 
      Form1 aparecerá.
 
-2. Na caixa **Inserir NúmeroDoPedido** , digite `10249`e clique em detalhes do **pedido**.
+2. Na caixa **Inserir NúmeroDoPedido** , digite `10249` e clique em detalhes do **pedido**.
 
      Uma caixa de mensagem lista os produtos incluídos no pedido 10249.
 
-     Clique em **OK** para fechar a caixa de mensagem.
+     Clique em **OK** para fechar a caixa de mensagens.
 
-3. Na caixa **Inserir CustomerID** , digite `ALFKI`e, em seguida, clique em **histórico do pedido**.
+3. Na caixa **Inserir CustomerID** , digite e, em `ALFKI` seguida, clique em **histórico do pedido**.
 
      Uma caixa de mensagem aparecerá, listando o histórico do pedido do cliente ALFKI.
 
-     Clique em **OK** para fechar a caixa de mensagem.
+     Clique em **OK** para fechar a caixa de mensagens.
 
-4. Na caixa **Inserir NúmeroDoPedido** , digite `123`e clique em detalhes do **pedido**.
+4. Na caixa **Inserir NúmeroDoPedido** , digite `123` e clique em detalhes do **pedido**.
 
      Uma caixa de mensagem exibirá "Nenhum resultado".
 
-     Clique em **OK** para fechar a caixa de mensagem.
+     Clique em **OK** para fechar a caixa de mensagens.
 
 5. No menu **depurar** , clique em **parar depuração**.
 

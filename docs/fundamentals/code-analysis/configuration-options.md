@@ -5,12 +5,12 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 0687bcb16cae6a0a2dde6c7864a1af1d0027e122
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 8f76c9c86c202ef1bad23bffe8379b0b93a53f17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216454"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787715"
 ---
 # <a name="configuration-options-for-code-analysis"></a>Opções de configuração para análise de código
 
@@ -60,7 +60,7 @@ As opções específicas de regra podem ser aplicadas a uma única regra, a um c
 
 A tabela a seguir mostra as diferentes severidades de regra que você pode configurar para todas as regras do analisador, incluindo a [qualidade de código](quality-rules/index.md) e as regras de [estilo de código](style-rules/index.md) .
 
-| Gravidade | Comportamento de tempo de compilação |
+| Severity | Comportamento de tempo de compilação |
 |-|-|
 | `error` | As violações aparecem como *erros* de compilação e causam a falha das compilações.|
 | `warning` | As violações aparecem como *avisos* de compilação, mas não causam a falha das compilações (a menos que você tenha uma opção definida para tratar avisos como erros). |
@@ -80,7 +80,7 @@ Para definir a severidade da regra para uma única regra, use a sintaxe a seguir
 dotnet_diagnostic.<rule ID>.severity = <severity value>
 ```
 
-Para definir a severidade da regra padrão para uma categoria de regras do analisador, use a sintaxe a seguir. A categoria de cada regra é fornecida nas páginas de referência de regra individuais, por exemplo, [CA1000](quality-rules/ca1000.md).
+Para definir a severidade da regra padrão para uma [categoria de regras](categories.md), use a sintaxe a seguir. A categoria de cada regra é fornecida nas páginas de referência de regra individuais, por exemplo, [CA1000](quality-rules/ca1000.md).
 
 ```ini
 dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>

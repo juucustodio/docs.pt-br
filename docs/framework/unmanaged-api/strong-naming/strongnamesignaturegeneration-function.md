@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função StrongNameSignatureGeneration'
 title: Função StrongNameSignatureGeneration
 ms.date: 03/30/2017
 api_name:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - StrongNameSignatureGeneration function [.NET Framework strong naming]
 ms.assetid: 839b765c-3e41-44ce-bf1b-dc10453db18e
-ms.openlocfilehash: 78a89c07b9a7ddbccee9716de37c96d23635f87b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6f5a164e73af743cdd13390c60d00d553e5e0312
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708517"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798895"
 ---
 # <a name="strongnamesignaturegeneration-function"></a>Função StrongNameSignatureGeneration
 
@@ -67,7 +68,7 @@ BOOLEAN StrongNameSignatureGeneration (
  `pcbSignatureBlob`  
  fora O tamanho, em bytes, da assinatura retornada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` após a conclusão bem-sucedida; caso contrário, `false` .  
   
@@ -89,7 +90,7 @@ BOOLEAN StrongNameSignatureGeneration (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameSignatureGeneration](../hosting/iclrstrongname-strongnamesignaturegeneration-method.md)
 - [Método StrongNameSignatureGenerationEx](../hosting/iclrstrongname-strongnamesignaturegenerationex-method.md)

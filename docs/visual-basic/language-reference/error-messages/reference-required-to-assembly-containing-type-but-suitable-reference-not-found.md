@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30969: referência necessária para o assembly ' <assemblyidentity> ' contendo o tipo ' <typename> ', mas não foi possível encontrar uma referência adequada devido à ambiguidade entre os projetos ' <projectname1> ' e '<projectname2>"
 title: Referência obrigatória ao assembly '<assemblyidentity>' contendo o tipo '<typename>', mas não foi possível localizar uma referência adequada devido à ambiguidade entre os projetos '<projectname1>' e '<projectname2>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30969
 ms.assetid: 1b29dbc5-8268-45fe-bfc2-b2070a5c845c
-ms.openlocfilehash: ca574bfe926b7b9df272e296190b36f8635263db
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 945a6558ff9eea20a28bc27da27e495d0eddfb15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162304"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792031"
 ---
 # <a name="bc30969-reference-required-to-assembly-assemblyidentity-containing-type-typename-but-a-suitable-reference-could-not-be-found-due-to-ambiguity-between-projects-projectname1-and-projectname2"></a>BC30969: referência necessária para o assembly ' \<assemblyidentity> ' contendo o tipo ' \<typename> ', mas não foi possível encontrar uma referência adequada devido à ambiguidade entre os projetos ' \<projectname1> ' e ' \<projectname2> '
 
@@ -30,7 +31,7 @@ Uma expressão usa um tipo, como uma classe, estrutura, interface, enumeração 
 
 2. Nas propriedades do projeto, adicione uma referência ao arquivo que contém o assembly que define o tipo que você está usando.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciando referências em um projeto](/visualstudio/ide/managing-references-in-a-project)
 - [Referências a elementos declarados](../../programming-guide/language-features/declared-elements/references-to-declared-elements.md)

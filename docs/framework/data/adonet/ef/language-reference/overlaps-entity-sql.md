@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: sobreposições (Entity SQL)'
 title: SOBREPÕE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 41743e89-79cb-4d7b-8a27-355b45024b61
-ms.openlocfilehash: 6902a44af343c37ccb26412738d9f96b28551814
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: dd2f4a0925c57edcc3dd2d1264d00921b092525a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204418"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791901"
 ---
 # <a name="overlaps-entity-sql"></a>SOBREPÕE (Entity SQL)
 
@@ -24,7 +25,7 @@ expression OVERLAPS expression
  `expression`  
  Qualquer expressão de consulta válida que retornar uma coleção para comparar com a coleção retornada de outra expressão de consulta. Todas as expressões devem ser do mesmo tipo ou de uma base comum ou um tipo derivado que `expression`.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` se as duas coleções possuem elementos comuns; caso contrário, `false`.  
   
@@ -46,6 +47,6 @@ expression OVERLAPS expression
   
  [!code-sql[DP EntityServices Concepts#OVERLAPS](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#overlaps)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)

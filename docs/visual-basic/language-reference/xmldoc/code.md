@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <code>(Visual Basic)'
 title: <code>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - code XML tag
 - <code> XML tag
 ms.assetid: 925e5342-be05-45f2-bf66-7398bbd6710e
-ms.openlocfilehash: d058663213cf02f2142bff740aeec1b60791362c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 80fc0988f60d9d82b9c88734f86b20ebccc80b7c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787494"
 ---
 # <a name="code-visual-basic"></a>\<code> (Visual Basic)
 
@@ -39,6 +40,6 @@ Indica que o texto tem várias linhas de código.
   
  [!code-vb[VbVbcnXmlDocComments#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#2)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

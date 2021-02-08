@@ -1,15 +1,18 @@
 ---
+description: 'Saiba mais sobre: usando ações para implementar o comportamento do lado do servidor'
 title: Usando as ações implementar o comportamento do lado do servidor
 ms.date: 03/30/2017
 ms.assetid: 11a372db-7168-498b-80d2-9419ff557ba5
-ms.openlocfilehash: 19139a7efd955448a1f97c492a7245c1bbfe6c3d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6decd6134184de860ae2865b6dcf34b3c0b81813
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180589"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791706"
 ---
 # <a name="using-actions-to-implement-server-side-behavior"></a>Usando as ações implementar o comportamento do lado do servidor
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 As ações OData fornecem uma maneira de implementar um comportamento que age mediante um recurso recuperado de um serviço OData. Por exemplo, considere um filme como um recurso. Há muitas coisas que você pode fazer com um filme: check-out, avaliar/comentar ou check-in. Estes são exemplos de Ações que podem ser implementadas por um WCF Data Service que gerencia filmes. As ações são descritas em uma resposta OData que contém um recurso no qual a Ação pode ser invocada. Quando um usuário solicita um recurso que representa um filme, a resposta retornada do WCF Data Service contém informações sobre as Ações disponíveis para esse recurso. A disponibilidade de uma Ação pode depender do estado do serviço de dados ou recurso. Por exemplo, quando um filme fez o check-out, ele não pode ter o check-out feito por outro usuário. Os clientes podem invocar uma ação somente especificando uma URL. Por exemplo, `http://MyServer/MovieService.svc/Movies(6)` identificaria um filme digital específico e `http://MyServer/MovieService.svc/Movies(6)/Checkout` invocaria a ação no filme específico. As ações permitem que você exponha o modelo de serviço sem expor o modelo de dados. Continuando o exemplo do serviço de filmes, talvez você queira permitir que um usuário avalie um filme, mas não expor os dados de avaliação diretamente como um recurso. Você pode implementar uma Ação de Avaliação para permitir que o usuário avalie um filme, mas não acessar os dados de avaliação diretamente como um recurso.
 
@@ -90,7 +93,7 @@ context.Execute(new Uri("http://MyServer/MoviesService.svc/Movies(1)/Rate"), "PO
 
  No snippet de código acima, a classe `MoviesModel` foi gerada com o Visual Studio para Adicionar a Referência de Serviço a um WCF Data Service.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [WCF Data Services 4.5](index.md)
 - [Configurando WCF Data Services](defining-wcf-data-services.md)

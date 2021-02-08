@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: visão geral da criação de perfil'
 title: Visão geral da criação de perfil
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - security, profiling API considerations
 - stack depth [.NET Framework profiling]
 ms.assetid: 864c2344-71dc-46f9-96b2-ed59fb6427a8
-ms.openlocfilehash: cf29260c36437aaf679498f648d0fcac5d65f321
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: f83a4435f6a4a62a190383543cf824c76a54a838
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558323"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798908"
 ---
 # <a name="profiling-overview"></a>Visão geral da criação de perfil
 
@@ -67,7 +68,7 @@ Por exemplo, um criador de perfil pode medir o desempenho do código por meio de
 
 As outras interfaces principais envolvidas na criação de perfil são [ICorProfilerInfo](icorprofilerinfo-interface.md) e [ICorProfilerInfo2](icorprofilerinfo2-interface.md). O criador de perfil chama essas interfaces conforme necessário para obter mais informações para ajudar sua análise. Por exemplo, sempre que o CLR chama a função [FunctionEnter2](functionenter2-function.md) , ele fornece um identificador de função. O criador de perfil pode obter mais informações sobre essa função chamando o método [ICorProfilerInfo2:: GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) para descobrir a classe pai da função, seu nome e assim por diante.
 
-## <a name="supported-features"></a>Recursos com suporte
+## <a name="supported-features"></a>Recursos compatíveis
 
 A API de criação de perfil fornece informações sobre uma variedade de eventos e ações que ocorrem no Common Language Runtime. Você pode usar essas informações para monitorar o funcionamento interno dos processos e analisar o desempenho do seu aplicativo .NET Framework.
 
@@ -187,7 +188,7 @@ Os retornos de chamada do profiler podem ser emitidos em circunstâncias com res
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Configurando um ambiente de criação de perfil](setting-up-a-profiling-environment.md)|Explica como inicializar um profiler, definir notificações de eventos e criar um perfil de um serviço do Windows.|
 |[Criação de perfil de interfaces](profiling-interfaces.md)|Descreve as interfaces não gerenciadas que a API de criação de perfil usa.|

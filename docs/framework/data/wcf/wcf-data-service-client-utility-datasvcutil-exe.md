@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: utilitário cliente do WCF Data Service (DataSvcUtil.exe)'
 title: Utilitário de cliente do WCF Data Service (DataSvcUtil.exe)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,14 +7,16 @@ helpviewer_keywords:
 - WCF Data Services, client library
 - WCF Data Services, consuming
 ms.assetid: 9d0af606-929b-4c03-b307-3ef5f705afce
-ms.openlocfilehash: 600cb9a4f91ff2051f60ee86d4cb80cc5b404c61
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1e232538284072d82eed3f1b9e8d41f2ae950adf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544291"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791693"
 ---
 # <a name="wcf-data-service-client-utility-datasvcutilexe"></a>Utilitário de cliente do WCF Data Service (DataSvcUtil.exe)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 DataSvcUtil.exe é uma ferramenta de linha de comando fornecida por WCF Data Services que consome um feed Protocolo Open Data (OData) e gera as classes de serviço de dados do cliente que são necessárias para acessar um serviço de dados de um aplicativo cliente .NET Framework. Esse utilitário pode gerar classes de dados usando as seguintes fontes de metadados:
 
@@ -38,7 +41,7 @@ datasvcutil /out:file [/in:file | /uri:serviceuri] [/dataservicecollection] [/la
 |Opção|Descrição|
 |------------|-----------------|
 |`/dataservicecollection`|Especifica que o código necessário para associar objetos a controles também é gerado.|
-|`/help`<br /><br /> - ou -<br /><br /> `/?`|Exibe sintaxe de comando e opções para a ferramenta.|
+|`/help`<br /><br /> -ou-<br /><br /> `/?`|Exibe sintaxe de comando e opções para a ferramenta.|
 |`/in:` *\<file>*|Especifica o arquivo. CSDL ou. edmx ou um diretório onde o arquivo está localizado.|
 |`/language:`[VB&#124;CSharp]|Especifica a linguagem dos arquivos de código-fonte gerados. A linguagem volta automaticamente para C#.|
 |`/nologo`|Suprime a notificação de direitos autorais da exibição.|
@@ -46,7 +49,7 @@ datasvcutil /out:file [/in:file | /uri:serviceuri] [/dataservicecollection] [/la
 |`/uri:` *\<string>*|O URI do feed OData.|
 |`/version:`[1,0&#124;2,0]|Especifica a versão mais aceita do OData. A versão é determinada com base no `DataServiceVersion` atributo do elemento DataService nos metadados do serviço de dados retornados. Para obter mais informações, consulte [controle de versão do serviço de dados](data-service-versioning-wcf-data-services.md). Ao especificar o `/dataservicecollection` parâmetro, você também deve especificar `/version:2.0` para habilitar a vinculação de dados.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Gerar a biblioteca de clientes do serviço de dados](generating-the-data-service-client-library-wcf-data-services.md)
 - [Como: adicionar uma referência de serviço de dados](how-to-add-a-data-service-reference-wcf-data-services.md)

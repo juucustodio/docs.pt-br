@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: BindingError'
 title: BindingError
 ms.date: 03/30/2017
 ms.assetid: 19d90e9d-c92a-4ca7-ba31-aa07882bb81e
-ms.openlocfilehash: 35d48b37461914ea0db2f9bae0b700e3f7eba16b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4056081ff7f293c65cc6c58db1b77a08721deca6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266604"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788183"
 ---
 # <a name="bindingerror"></a>BindingError
 
@@ -21,7 +22,7 @@ ID: 159
 
  Esse evento indica que ocorreu um erro ao analisar a associação específica do site específico, portanto, o protocolo está desabilitado para o site temporariamente. O evento lista a associação, origem, exceção, nome do processo e ID do processo.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Log de eventos](index.md)
 - [Referência geral de eventos](events-general-reference.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: escopo e visibilidade da definição de atividade'
 title: Escopo e visibilidade de definição de atividades
 ms.date: 03/30/2017
 ms.assetid: ccdffa07-9503-4eea-a61b-17f1564368b7
-ms.openlocfilehash: c7f656fee4960a8c43ac58abafba400ed9b35bc1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ab779fe36473a8888ee0fb0c1b94f1ea6324f991
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289159"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787962"
 ---
 # <a name="activity-definition-scoping-and-visibility"></a>Escopo e visibilidade de definição de atividades
 

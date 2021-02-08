@@ -492,6 +492,8 @@ items:
                     href: code-analysis/code-style-rule-options.md
           - name: Referência de regra
             items:
+              - name: Categorias
+                href: code-analysis/categories.md
               - name: Regras de qualidade de código
                 items:
                   - name: Visão geral
@@ -1255,15 +1257,9 @@ items:
                       - name: IDE0077
                         href: code-analysis/style-rules/ide0077.md
                   - name: Regras de formatação
-                    items:
-                      - name: Visão geral
-                        displayName: formatting rules
-                        href: code-analysis/style-rules/formatting-rules.md
+                    href: code-analysis/style-rules/formatting-rules.md
                   - name: Regras de nomenclatura
-                    items:
-                      - name: Visão geral
-                        displayName: naming rules
-                        href: code-analysis/style-rules/naming-rules.md
+                    href: code-analysis/style-rules/naming-rules.md
           - name: Analisador de compatibilidade de plataforma
             href: ../standard/analyzers/platform-compat-analyzer.md
           - name: Analisador de API

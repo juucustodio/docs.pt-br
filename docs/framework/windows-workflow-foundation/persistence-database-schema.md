@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: esquema de banco de dados de persistência'
 title: Esquema de base de dados de persistência
 ms.date: 03/30/2017
 ms.assetid: 34f69f4c-df81-4da7-b281-a525a9397a5c
-ms.openlocfilehash: f0ee076aa327f298007dfb18af324fb81c309067
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 40c47c5bfcb6c974eab6f2f2c926e0fa13054a38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246089"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787832"
 ---
 # <a name="persistence-database-schema"></a>Esquema de base de dados de persistência
 
@@ -30,9 +31,9 @@ Este tópico descreve as visualizações públicas suportadas por instância Sto
 |CurrentMachine|Nvarchar (128)|Indica que o nome do computador atualmente tem a instância de fluxo de trabalho carregado na memória.|  
 |LastMachine|Nvarchar (450)|Indica o computador o último que carregou a instância de fluxo de trabalho.|  
 |ExecutionStatus|Nvarchar (450)|Indica o estado atual de execução de fluxo de trabalho. Os Estados possíveis incluem **execuções**, **ociosas**, **fechadas**.|  
-|IsInitialized|Bit|Indica se a instância de fluxo de trabalho foi inicializada. Uma instância inicializada de fluxo de trabalho é uma instância de fluxo de trabalho que é mantido pelo menos uma vez.|  
-|IsSuspended|Bit|Indica se a instância de fluxo de trabalho foi suspendida.|  
-|IsCompleted|Bit|Indica se a instância de fluxo de trabalho terminou de executar. **Observação:**  IIf a propriedade **InstanceCompletionAction** é definida como **DeleteAll**, as instâncias são removidas da exibição após a conclusão.|  
+|IsInitialized|bit|Indica se a instância de fluxo de trabalho foi inicializada. Uma instância inicializada de fluxo de trabalho é uma instância de fluxo de trabalho que é mantido pelo menos uma vez.|  
+|IsSuspended|bit|Indica se a instância de fluxo de trabalho foi suspendida.|  
+|IsCompleted|bit|Indica se a instância de fluxo de trabalho terminou de executar. **Observação:**  IIf a propriedade **InstanceCompletionAction** é definida como **DeleteAll**, as instâncias são removidas da exibição após a conclusão.|  
 |EncodingOption|TinyInt|Descreve a codificação usada para serializar as propriedades de dados.<br /><br /> -0 – sem codificação<br />-1 – GzipStream|  
 |ReadWritePrimitiveDataProperties|Varbinary (máximo)|Contém serializou as propriedades de dados de instância que serão fornecidos de volta para o runtime de fluxo de trabalho que a instância é carregada.<br /><br /> Cada propriedade primitiva é um tipo nativo de CLR, o que significa que qualquer conjunto especial é necessário para desserializar a operação.|  
 |WriteOnlyPrimitiveDataProperties|Varbinary (máximo)|Contém serializou as propriedades de dados de instância que não são fornecidas de volta para o runtime de fluxo de trabalho que a instância é carregada.<br /><br /> Cada propriedade primitiva é um tipo nativo de CLR, o que significa que qualquer conjunto especial é necessário para desserializar a operação.|  
@@ -40,7 +41,7 @@ Este tópico descreve as visualizações públicas suportadas por instância Sto
 |WriteOnlyComplexDataProperties|Varbinary (máximo)|Contém serializou as propriedades de dados de instância que não são fornecidas de volta para o runtime de fluxo de trabalho que a instância é carregada.<br /><br /> Desserialização um exigiria conhecimento de todos os tipos de objeto armazenados nesta operação.|  
 |IdentityName|Nvarchar(max)|O nome da definição de fluxo de trabalho.|  
 |IdentityPackage|Nvarchar(max)|Informações de pacote fornecida quando o fluxo de trabalho foi criado (como o nome assembly).|  
-|Compilação|BigInt|O número de compilação de versão de fluxo de trabalho.|  
+|Build|BigInt|O número de compilação de versão de fluxo de trabalho.|  
 |Principal|BigInt|O número de versão principal de fluxo de trabalho.|  
 |Secundária|BigInt|O menor número de versão de fluxo de trabalho.|  
 |Revisão|BigInt|O número de revisão de versão de fluxo de trabalho.|  

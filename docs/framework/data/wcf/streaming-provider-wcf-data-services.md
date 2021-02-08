@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: provedor de streaming (WCF Data Services)'
 title: Provedor de streaming (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -10,14 +11,16 @@ helpviewer_keywords:
 - streaming data provider [WCF Data Services]
 - WCF Data Services, streams
 ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
-ms.openlocfilehash: 9ed728fa8d1d56c835aa27645a28921aa4f641e9
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a87cd0764156e803bf30520160b54f6baaf4f644
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544447"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791732"
 ---
 # <a name="streaming-provider-wcf-data-services"></a>Provedor de streaming (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Um serviço de dados pode expor dados de objeto binário grande. Esses dados binários podem representar fluxos de vídeo e áudio, imagens, arquivos de documento ou outros tipos de mídia binária. Quando uma entidade no modelo de dados inclui uma ou mais propriedades binárias, o serviço de dados retorna esses dados binários codificados como base 64 no feed de resposta. Como carregar e serializar dados binários grandes dessa maneira pode afetar o desempenho, o Protocolo Open Data (OData) define um mecanismo para recuperar dados binários independentemente da entidade à qual ele pertence. Isso é feito separando os dados binários da entidade em um ou mais fluxos de dados.
 
@@ -67,7 +70,7 @@ Ao usar provedores de serviços personalizados, você implementa a interface <xr
 
 Para criar um serviço de dados que oferece suporte a fluxos de dados binários, você deve implementar a interface <xref:System.Data.Services.Providers.IDataServiceStreamProvider>. Essa implementação permite que o serviço de dados retorne dados binários como um fluxo para o cliente e consuma dados binários como um fluxo enviado pelo cliente. O serviço de dados cria uma instância dessa interface sempre que precisa acessar dados binários como um fluxo. A interface <xref:System.Data.Services.Providers.IDataServiceStreamProvider> especifica os seguintes membros:
 
-|Nome do membro|Description|
+|Nome do membro|Descrição|
 |-----------------|-----------------|
 |<xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A>|Este método é chamado pelo serviço de dados para excluir o recurso de mídia correspondente quando sua entrada de link de mídia é excluída. Quando você implementa o <xref:System.Data.Services.Providers.IDataServiceStreamProvider>, este método contém o código que exclui o recurso de mídia associado à entrada de link de mídia fornecida.|
 |<xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A>|Este método é chamado pelo serviço de dados para retornar um recurso de mídia como um fluxo. Quando você implementa o <xref:System.Data.Services.Providers.IDataServiceStreamProvider>, este método contém o código que fornece um fluxo usado pelo serviço de dados ao recurso de mídia de retorno que está associado à entrada de link de mídia fornecida.|
@@ -137,7 +140,7 @@ O provedor de streaming tem os seguintes requisitos de controle de versão do pr
 
 Para obter mais informações, consulte [controle de versão do serviço de dados](data-service-versioning-wcf-data-services.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Provedores de serviços de dados](data-services-providers-wcf-data-services.md)
 - [Provedores de serviços de dados personalizados](custom-data-service-providers-wcf-data-services.md)

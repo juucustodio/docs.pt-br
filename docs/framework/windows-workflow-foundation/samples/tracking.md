@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: acompanhamento'
 title: Acompanhamento
 ms.date: 03/30/2017
 ms.assetid: afdcd9bd-b462-4b2a-aac7-bebf9c80be81
-ms.openlocfilehash: 1fe90e16b7f502154fd9d93e42ed64eb3060359d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 235fa4ff10edd186c9259d8a892a59012aafe7ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787793"
 ---
 # <a name="tracking"></a>Acompanhamento
 

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: usando somente procedimentos armazenados (Visual Basic)'
 title: 'Passo a passo: usar somente procedimentos armazenados (Visual Basic)'
 ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: 5a736a30-ba66-4adb-b87c-57d19476e862
-ms.openlocfilehash: 57ae5dba89a299365e1ce3c2d54d844da0102f31
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b368bdd5717c0f424192c3eabb8058d633cac61e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163941"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791758"
 ---
 # <a name="walkthrough-using-only-stored-procedures-visual-basic"></a>Passo a passo: usar somente procedimentos armazenados (Visual Basic)
 
@@ -68,7 +69,7 @@ Essa explicação passo a passo fornece um cenário de ponta a ponta básico de 
   
 1. No menu **arquivo** do Visual Studio, clique em **novo projeto**.  
   
-2. No painel **tipos de projeto** na caixa de diálogo **novo projeto** , expanda **Visual Basic**e clique em **Windows**.  
+2. No painel **tipos de projeto** na caixa de diálogo **novo projeto** , expanda **Visual Basic** e clique em **Windows**.  
   
 3. No painel **modelos** , clique em **Windows Forms aplicativo**.  
   
@@ -86,7 +87,7 @@ Essa explicação passo a passo fornece um cenário de ponta a ponta básico de 
   
 1. Em **Gerenciador de soluções**, clique em **Mostrar todos os arquivos**.  
   
-2. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **referências**e clique em **Adicionar referência**.  
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **referências** e clique em **Adicionar referência**.  
   
 3. Na caixa de diálogo **Adicionar referência** , clique em **.net**, clique no assembly System. Data. LINQ e, em seguida, clique em **OK**.  
   
@@ -110,7 +111,7 @@ Essa explicação passo a passo fornece um cenário de ponta a ponta básico de 
   
 ### <a name="to-create-the-database-connection"></a>Par criar a conexão de banco de dados  
   
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Form1. vb**e clique em **Exibir código**.  
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Form1. vb** e clique em **Exibir código**.  
   
      `Class Form1` aparece no editor de códigos.  
   
@@ -137,7 +138,7 @@ Essa explicação passo a passo fornece um cenário de ponta a ponta básico de 
   
      Organize os controles conforme mostrado na ilustração de acompanhamento. Expanda **Form1** para que os controles caibam facilmente.  
   
-4. Clique com o botão direito do mouse em **Label1**e clique em **Propriedades**.  
+4. Clique com o botão direito do mouse em **Label1** e clique em **Propriedades**.  
   
 5. Altere a propriedade **Text** de **Label1** para **Enter OrderID:**.  
   
@@ -201,7 +202,7 @@ Essa explicação passo a passo fornece um cenário de ponta a ponta básico de 
 
  Você pode aprimorar esse projeto fazendo algumas alterações. Por exemplo, você pode listar os procedimentos armazenados disponíveis em uma caixa de listagem e fazer com que o usuário selecione os procedimentos que serão executados. Você também pode transmitir a saída dos relatórios para um arquivo de texto.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Aprendendo com explicações passo a passo](learning-by-walkthroughs.md)
 - [Procedimentos armazenados](stored-procedures.md)

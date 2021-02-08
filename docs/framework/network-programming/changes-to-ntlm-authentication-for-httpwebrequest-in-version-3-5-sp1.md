@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: alterações na autenticação NTLM para HttpWebRequest na versão 3,5 SP1'
 title: Alterações na autenticação NTLM para HttpWebRequest na versão 3.5 SP1
 ms.date: 03/30/2017
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
-ms.openlocfilehash: 388e6dc648e1fd68e24a852cb08de107f09f9c9f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cdb17317dbafc167cce7a9b2785be68a35d3bd5b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "64754883"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791628"
 ---
 # <a name="changes-to-ntlm-authentication-for-httpwebrequest-in-version-35-sp1"></a>Alterações na autenticação NTLM para HttpWebRequest na versão 3.5 SP1
 

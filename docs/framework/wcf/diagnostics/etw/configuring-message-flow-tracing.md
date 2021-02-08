@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Configurando o rastreamento de fluxo de mensagens'
 title: Configurando rastreamento de fluxo de mensagem
 ms.date: 03/30/2017
 ms.assetid: 15571ca2-bee2-47fb-ba10-fcbc09152ad0
-ms.openlocfilehash: 6c271c26eb4e57014b3aaebf306b283bd06c7119
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c91362ca0d0a8fd83f69c6988d2ad2786b08b339
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254877"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798843"
 ---
 # <a name="configuring-message-flow-tracing"></a>Configurando rastreamento de fluxo de mensagem
 

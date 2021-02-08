@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função StrongNameSignatureGenerationEx'
 title: Função StrongNameSignatureGenerationEx
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9a75469e-aa49-4e32-ad48-3bafd5202f09
 topic_type:
 - apiref
-ms.openlocfilehash: 96dae519d73505a30c8593e9883da7338525ea2c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e4d35cf51df6047d3a89d4146ceb8bf62e3f1b8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708511"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798869"
 ---
 # <a name="strongnamesignaturegenerationex-function"></a>Função StrongNameSignatureGenerationEx
 
@@ -74,7 +75,7 @@ BOOLEAN StrongNameSignatureGenerationEx (
   
 - `SN_TEST_SIGN` (0x00000002)-testar o assembly.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  `true` após a conclusão bem-sucedida; caso contrário, `false` .  
   
@@ -100,7 +101,7 @@ BOOLEAN StrongNameSignatureGenerationEx (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameSignatureGenerationEx](../hosting/iclrstrongname-strongnamesignaturegenerationex-method.md)
 - [Método StrongNameSignatureGeneration](../hosting/iclrstrongname-strongnamesignaturegeneration-method.md)

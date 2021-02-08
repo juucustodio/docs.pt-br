@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados ULong (Visual Basic)'
 title: Tipo de Dados ULong
 ms.date: 01/31/2018
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - ULong data type
 - UL literal type characters [Visual Basic]
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
-ms.openlocfilehash: ee9297ae917345d44d8e630bd09beea2245b56da
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9082fc9444f0754c60a6aa3f9b58db1d833349b8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415512"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792083"
 ---
 # <a name="ulong-data-type-visual-basic"></a>Tipo de dados ULong (Visual Basic)
 
@@ -74,14 +75,14 @@ Dim number = &H_00_00_0A_96_2F_AC_14_D7ul
 
 - **Ampliação.** O `ULong` tipo de dados amplia para `Decimal` , `Single` e `Double` . Isso significa que você pode converter `ULong` para qualquer um desses tipos sem encontrar um <xref:System.OverflowException?displayProperty=nameWithType> erro.
 
-- **Digite os caracteres.** Acrescentar os caracteres do tipo literal `UL` a um literal força-o ao `ULong` tipo de dados. `ULong`Não tem um caractere de tipo de identificador.
+- **Digite os caracteres.** Acrescentar os caracteres do tipo literal `UL` a um literal força-o ao `ULong` tipo de dados. `ULong` Não tem um caractere de tipo de identificador.
 
 - **Tipo de estrutura.** O tipo correspondente no .NET Framework é a estrutura <xref:System.UInt64?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.UInt64>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)
 - [Resumo da Conversão](../keywords/conversion-summary.md)
 - [Como: Chamar uma função do Windows que use tipos não assinados](../../programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)

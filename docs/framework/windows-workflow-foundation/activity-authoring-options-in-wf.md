@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: opções de criação de atividades no WF'
 title: Opções de criação de atividade de WF
 ms.date: 03/30/2017
 ms.assetid: b9061f5f-12c3-47f0-adbe-1330e2714c94
-ms.openlocfilehash: e80750b3865a21d072f45b0245ae114660012e66
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5f200f11f1643a9da6c8a14a40ef9c0bb1d607b6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289198"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787975"
 ---
 # <a name="activity-authoring-options-in-wf"></a>Opções de criação de atividade de WF
 

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: WCF Data Services visão geral'
 title: Visão geral do WCF Data Services
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services
 - WCF Data Services, about
 ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
-ms.openlocfilehash: 6f085f87286aa5af4a3c2aaf2b74c9bf19023356
-ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
+ms.openlocfilehash: 26ad6bc1775a5315bcf5b825b66b995a8bd53914
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98899432"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791680"
 ---
 # <a name="wcf-data-services-overview"></a>Visão geral do WCF Data Services
 
@@ -66,7 +67,7 @@ O OData define um conjunto de extensões para o protocolo de publicação Atom (
   
  ![Captura de tela mostrando um diagrama de arquitetura de WCF Data Services.](./media/wcf-data-services-overview/windows-communication-foundation-data-services-architecture.gif)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [WCF Data Services 4.5](index.md)
 - [Introdução](getting-started-with-wcf-data-services.md)

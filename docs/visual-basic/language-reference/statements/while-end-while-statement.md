@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: While... Instrução End While (Visual Basic)'
 title: Instrução While...End While
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - While statement [Visual Basic]
 - While...End While statements [Visual Basic]
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
-ms.openlocfilehash: e3ab95f43e101a9ad8abe6fa61b94ae7542e409c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ab452e2d9446c9c44b952c6ebf026f7a6f9080cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869482"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787572"
 ---
 # <a name="whileend-while-statement-visual-basic"></a>Instrução While...End While (Visual Basic)
 
 Executa uma série de instruções desde que uma determinada condição seja `True` .  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 While condition  
@@ -36,11 +37,11 @@ End While
   
 |Termo|Definição|  
 |---|---|  
-|`condition`|Necessário. Expressão `Boolean`. Se `condition` for `Nothing` , Visual Basic tratará como `False` .|  
+|`condition`|Obrigatórios. Expressão `Boolean`. Se `condition` for `Nothing` , Visual Basic tratará como `False` .|  
 |`statements`|Opcional. Uma ou mais instruções `While` a seguir, que são executadas toda vez `condition` são `True` .|  
 |`Continue While`|Opcional. Transfere o controle para a próxima iteração do `While` bloco.|  
 |`Exit While`|Opcional. Transfere o controle do `While` bloco.|  
-|`End While`|Necessário. Finaliza a definição do bloco `While`.|  
+|`End While`|Obrigatório. Finaliza a definição do bloco `While`.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -87,7 +88,7 @@ End While
   
  [!code-vb[VbVbalrStatements#173](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#173)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de Loop](../../programming-guide/language-features/control-flow/loop-structures.md)
 - [Instrução Do...Loop](do-loop-statement.md)

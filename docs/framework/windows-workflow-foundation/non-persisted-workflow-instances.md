@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: instâncias de fluxo de trabalho não persistentes'
 title: Instâncias são persistentes de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: 5e01af77-6b14-4964-91a5-7dfd143449c0
-ms.openlocfilehash: 315d791585ace6ce4adf281abbba0a4c8c72d75a
-ms.sourcegitcommit: d6e27023aeaffc4b5a3cb4b88685018d6284ada4
+ms.openlocfilehash: 0ee5968426a6bb800b9e70ac592c6da191c22511
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67663039"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787897"
 ---
 # <a name="non-persisted-workflow-instances"></a>Instâncias são persistentes de fluxo de trabalho
 
 Quando uma nova instância de um fluxo de trabalho é criada que persiste seu estado em <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, o host serviço cria uma entrada para o serviço no armazenamento de instância. Posteriormente, quando a instância do fluxo de trabalho é mantida pela primeira vez, <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> armazena o estado atual da instância. Se o fluxo de trabalho é hospedado no serviço de ativação de processo do Windows, os dados de implantação de serviço são gravados também para o armazenamento de instância quando a instância é mantida pela primeira vez.
 
-Desde que a instância de fluxo de trabalho não foi persistente, ela está em um **são persistentes** estado. Quando nesse estado, a instância de fluxo de trabalho não pode ser recuperada após um domínio de aplicativo se recicla, falha do host, ou falha do computador.
+Desde que a instância do fluxo de trabalho não tenha sido persistida, ela está em um estado **não persistente** . Quando nesse estado, a instância de fluxo de trabalho não pode ser recuperada após um domínio de aplicativo se recicla, falha do host, ou falha do computador.
 
 ## <a name="the-non-persisted-state"></a>O estado não persistente
 
@@ -23,9 +24,9 @@ As instâncias duráveis de fluxo de trabalho que não foram persistentes perman
 
 - A instância de fluxo de trabalho apresenta uma exceção antes de ser mantidas pela primeira vez. Como <xref:System.Activities.UnhandledExceptionAction> retornado, os seguintes cenários ocorrem:
 
-  - <xref:System.Activities.UnhandledExceptionAction> é definido como <xref:System.Activities.UnhandledExceptionAction.Abort>: Quando ocorre uma exceção, informações de implantação do serviço é escrita para o armazenamento de instância e a instância de fluxo de trabalho é descarregada da memória. O de instância de fluxo de trabalho em um estado não persistido e não podem ser recarregadas.
+  - <xref:System.Activities.UnhandledExceptionAction> é definido como <xref:System.Activities.UnhandledExceptionAction.Abort>: Quando ocorre uma exceção, informações de implantação de serviço é escrita para o armazenamento de instância, e a instância de fluxo de trabalho é descarregada de memória. O de instância de fluxo de trabalho em um estado não persistido e não podem ser recarregadas.
 
-  - <xref:System.Activities.UnhandledExceptionAction> é definido como <xref:System.Activities.UnhandledExceptionAction.Cancel> ou <xref:System.Activities.UnhandledExceptionAction.Terminate>: Quando ocorre uma exceção, informações de implantação do serviço é escrita para o armazenamento de instância e o estado da instância de atividade é definido como <xref:System.Activities.ActivityInstanceState.Closed>.
+  - <xref:System.Activities.UnhandledExceptionAction> é definido como <xref:System.Activities.UnhandledExceptionAction.Cancel> ou a <xref:System.Activities.UnhandledExceptionAction.Terminate>: Quando ocorre uma exceção, informações de implantação de serviço é escrita para o armazenamento de instância, e o estado da instância da atividade é definido como <xref:System.Activities.ActivityInstanceState.Closed>.
 
 Para minimizar o risco de localizar instâncias são persistentes descarregadas de fluxo de trabalho, recomendamos persistir o fluxo de trabalho no início em seu ciclo de vida.
 

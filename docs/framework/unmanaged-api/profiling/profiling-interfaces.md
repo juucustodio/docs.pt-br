@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces de perfil'
 title: Criação de perfil de interfaces
 ms.date: 04/10/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - profiling interfaces [.NET Framework]
 - interfaces [.NET Framework profiling]
 ms.assetid: d9303db8-e881-4217-91b7-8c7573c8ef9e
-ms.openlocfilehash: dd6999e9f9e16264bde3cf62ce3a888841347607
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d35931c0caad93116d7ea26d29020d84e48ebc29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727465"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798921"
 ---
 # <a name="profiling-interfaces"></a>Criação de perfil de interfaces
 

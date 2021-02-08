@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: literal de instrução de processamento XML (Visual Basic)'
 title: Literal de Instrução de Processamento XML
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - XML processing instruction literal [Visual Basic]
 - processing instruction literal [Visual Basic]
 ms.assetid: cef4f7f8-0011-4f64-8602-795077ad4f15
-ms.openlocfilehash: 3d18e58cb643fa075f6eb08eb6fe909d27a6737b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5037aab343cbe50ebc48614991e96da8198a481f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866399"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787520"
 ---
 # <a name="xml-processing-instruction-literal-visual-basic"></a>Literal de instrução de processamento XML (Visual Basic)
 
 Um literal que representa um <xref:System.Xml.Linq.XProcessingInstruction> objeto.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <?piName [ = piData ] ?>  
@@ -28,18 +29,18 @@ Um literal que representa um <xref:System.Xml.Linq.XProcessingInstruction> objet
 ## <a name="parts"></a>Partes  
 
  `<?`  
- Necessário. Indica o início do literal de instrução de processamento XML.  
+ Obrigatório. Indica o início do literal de instrução de processamento XML.  
   
  `piName`  
- Necessário. Nome que indica a qual aplicativo a instrução de processamento se destina. Não é possível começar com "XML" ou "XML".  
+ Obrigatório. Nome que indica a qual aplicativo a instrução de processamento se destina. Não é possível começar com "XML" ou "XML".  
   
  `piData`  
  Opcional. Cadeia de caracteres que indica como o aplicativo de destino `piName` deve processar o documento XML.  
   
  `?>`  
- Necessário. Denota o fim da instrução de processamento.  
+ Obrigatório. Denota o fim da instrução de processamento.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
 
  Um objeto <xref:System.Xml.Linq.XProcessingInstruction>.  
   
@@ -65,7 +66,7 @@ Um literal que representa um <xref:System.Xml.Linq.XProcessingInstruction> objet
   
  [!code-vb[VbXMLSamples#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#28)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XProcessingInstruction>
 - [Literal de Documento XML](xml-document-literal.md)

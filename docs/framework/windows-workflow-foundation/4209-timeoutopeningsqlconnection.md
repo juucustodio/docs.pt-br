@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: 4209-TimeoutOpeningSqlConnection'
 title: 4209 - TimeoutOpeningSqlConnection
 ms.date: 03/30/2017
 ms.assetid: f0e56518-9758-41dc-a760-50d1a10fba6e
-ms.openlocfilehash: 9aa8cdffebb0cdf8b1e8225a394edf78ecf032b9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9c7540e328530fdc01b9f065dfb75b92c467bd43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238672"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787988"
 ---
 # <a name="4209---timeoutopeningsqlconnection"></a>4209 - TimeoutOpeningSqlConnection
 
@@ -17,7 +18,7 @@ ms.locfileid: "96238672"
 |-|-|  
 |ID|4209|  
 |Palavras-chave|WFInstanceStore|  
-|Nível|Erro do|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interação de política de cache — idade máxima e máxima desatualização'
 title: Interação da política de cache – idade máxima e desatualização máxima
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - staleness of cached resources
 - age of cached resources
 ms.assetid: 7f775925-89a1-4956-ba90-c869c1749a94
-ms.openlocfilehash: bdfa608b5169755b2b4daaaa26e562308ae2be01
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 909a7203d4c9813c90dc0dea9bae7f8a1f7336cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250600"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791654"
 ---
 # <a name="cache-policy-interactionmaximum-age-and-maximum-staleness"></a>Interação da política de cache – idade máxima e desatualização máxima
 
@@ -36,7 +37,7 @@ Para ajudar a garantir que o conteúdo mais atualizado é retornado para o aplic
   
 - Se a política de cache definir `maxAge` = 1 dia e `maxStale` = 1 dia, o conteúdo será revalidado em 2 de janeiro.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciamento de cache para aplicativos de rede](cache-management-for-network-applications.md)
 - [Política de cache](cache-policy.md)

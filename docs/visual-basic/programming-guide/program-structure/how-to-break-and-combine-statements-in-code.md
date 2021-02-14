@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como quebrar e combinar instruções no código (Visual Basic)'
 title: 'Como: Quebrar e combinar instruções no código'
 ms.date: 07/20/2015
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - Visual Basic code, line continuation in
 - statements [Visual Basic], line breaks in
 ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc
-ms.openlocfilehash: c78cbeaa5c2df2d4f2e3cce2b5b3fb8048ff3388
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 33a8b87171c4ee14e73ada564cff406637e96783
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403246"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475988"
 ---
 # <a name="how-to-break-and-combine-statements-in-code-visual-basic"></a>Como quebrar e combinar instruções no código (Visual Basic)
 
@@ -59,7 +60,7 @@ Separe as instruções com dois-pontos ( `:` ), como no exemplo a seguir:
 
   [!code-vb[VbVbcnConventions#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#10)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estrutura do programa e convenções de código](program-structure-and-code-conventions.md)
 - [Instruções](../language-features/statements.md)

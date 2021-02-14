@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: visão geral de literais XML (Visual Basic)'
 title: Visão geral dos literais XML
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], XML literals
 - literals [Visual Basic], XML
 ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
-ms.openlocfilehash: c65cac4f6e8f5f314587f20d5c373c92ea0c51e5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5544c0238b117ed5b9b2f9cdab312127736e97d7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085380"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100423843"
 ---
 # <a name="xml-literals-overview-visual-basic"></a>Visão geral dos literais XML (Visual Basic)
 
 Um *literal XML* permite que você incorpore XML diretamente em seu código de Visual Basic. A sintaxe XML literal representa [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objetos, e é semelhante à sintaxe xml 1,0. Isso facilita a criação de elementos e documentos XML programaticamente porque seu código tem a mesma estrutura que o XML final.  
   
- Visual Basic compila literais XML em [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objetos. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] fornece um modelo de objeto simples para criar e manipular XML, e esse modelo se integra bem com o LINQ (consulta integrada à linguagem). Para obter mais informações, consulte <xref:System.Xml.Linq.XElement>.  
+ Visual Basic compila literais XML em [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objetos. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] fornece um modelo de objeto simples para criar e manipular XML, e esse modelo se integra bem com a consulta de Language-Integrated (LINQ). Para obter mais informações, consulte <xref:System.Xml.Linq.XElement>.  
   
  Você pode inserir uma expressão de Visual Basic em um literal XML. Em tempo de execução, seu aplicativo cria um [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objeto para cada literal, incorporando os valores das expressões inseridas. Isso permite que você especifique o conteúdo dinâmico dentro de um literal XML. Para obter mais informações, consulte [expressões inseridas em XML](embedded-expressions-in-xml.md).  
   
@@ -59,7 +60,7 @@ Um *literal XML* permite que você incorpore XML diretamente em seu código de V
   
  [!code-vb[VbXMLSamples#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#6)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XElement>
 - [Criando XML no Visual Basic](creating-xml.md)

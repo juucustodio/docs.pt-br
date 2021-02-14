@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: acessando XML no Visual Basic'
 title: Acessar XML
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - XML [Visual Basic], axis properties
 - XML [Visual Basic], accessing
 ms.assetid: c47f88b2-3cbc-4bb1-b4b9-be60f71ffc6a
-ms.openlocfilehash: 8ffe6d5ed368aee6d6984ec6ab28c8832921a3f8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2d77b2aa5f4136095ce5684976fe3ba03be7c28c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080173"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462653"
 ---
 # <a name="accessing-xml-in-visual-basic"></a>Acessando XML no Visual Basic
 

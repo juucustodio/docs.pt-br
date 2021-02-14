@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: não é possível ler campos delimitados porque os delimitadores são Nothing ou Empty'
 title: Não é possível ler campos delimitados porque Delimiters é Nothing ou vazio
 ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_DelimitersNothing
 ms.assetid: 94f64c48-8e17-449d-b92a-0426efec879c
-ms.openlocfilehash: 3442168d4fee00ea74d236eb7bc21d1bbbf915c5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e17f3abf17b4a2cafc9104a2cb75fe545eeb13ee
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075740"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455256"
 ---
 # <a name="unable-to-read-delimited-fields-because-delimiters-is-nothing-or-empty"></a>Não é possível ler campos delimitados porque Delimiters é Nothing ou vazio
 
@@ -19,7 +20,7 @@ O `TextFieldParser` não pode ler a partir do arquivo porque a `Delimiters` prop
   
 - Forneça um valor válido para `Delimiters` .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método TextFieldParser. delimitadores](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A)
 - [Propriedade TextFieldParser. Delimiters](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A)

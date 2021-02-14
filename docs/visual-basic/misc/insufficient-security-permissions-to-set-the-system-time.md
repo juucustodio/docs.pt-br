@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: permissões de segurança insuficientes para definir a hora do sistema'
 title: Permissões de segurança insuficientes para definir a hora do sistema
 ms.date: 07/20/2015
 f1_keywords:
 - vbrSetLocalTimeFailure
 ms.assetid: 6c034821-a260-4837-af1c-c11f8eba6d54
-ms.openlocfilehash: 4c216a862bc15df961ae076109480a0d5ac1e6e7
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: de3ee45bde82ec74af2049541853679192e23be0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090801"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462869"
 ---
 # <a name="insufficient-security-permissions-to-set-the-system-time"></a>Permissões de segurança insuficientes para definir a hora do sistema
 

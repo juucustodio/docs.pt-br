@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-Target (Visual Basic)
 title: -target
 ms.date: 03/13/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - -target compiler options [Visual Basic]
 - /target compiler options [Visual Basic]
 ms.assetid: e0954147-548b-461f-9c4b-a8f88845616c
-ms.openlocfilehash: 0ab28d55b2426a4efda112ab84da5e790909d565
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6f07bd081131934b9d7046f0db7b8a35acfce5fe
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403064"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483593"
 ---
 # <a name="-target-visual-basic"></a>-Target (Visual Basic)
 
@@ -38,7 +39,7 @@ A tabela a seguir resume o efeito da `-target` opção.
 
 A menos que você especifique `-target:module` , `-target` faz com que um manifesto de assembly .NET Framework seja adicionado a um arquivo de saída.
 
-Cada instância do Vbc. exe produz, no máximo, um arquivo de saída. Se você especificar uma opção de compilador como `-out` ou `-target` mais de uma vez, o último processo do compilador será colocado em vigor. As informações sobre todos os arquivos em uma compilação são adicionadas ao manifesto. Todos os arquivos de saída exceto aqueles criados com `-target:module` contêm metadados de assembly no manifesto. Use [ILDASM. exe (desmontador de Il)](../../../framework/tools/ildasm-exe-il-disassembler.md) para exibir os metadados em um arquivo de saída.
+Cada instância do Vbc.exe produz, no máximo, um arquivo de saída. Se você especificar uma opção de compilador como `-out` ou `-target` mais de uma vez, o último processo do compilador será colocado em vigor. As informações sobre todos os arquivos em uma compilação são adicionadas ao manifesto. Todos os arquivos de saída exceto aqueles criados com `-target:module` contêm metadados de assembly no manifesto. Use [Ildasm.exe (desmontador de Il)](../../../framework/tools/ildasm-exe-il-disassembler.md) para exibir os metadados em um arquivo de saída.
 
 A forma abreviada de `-target` é `-t`.
 
@@ -58,10 +59,10 @@ O código a seguir é compilado `in.vb` , criando `in.dll` :
 vbc -target:library in.vb
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
-- [-main](main.md)
+- [-principal](main.md)
 - [-out (Visual Basic)](out.md)
 - [-referência (Visual Basic)](reference.md)
 - [-addmodule](addmodule.md)

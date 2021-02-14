@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: chamando APIs do Windows (Visual Basic)'
 title: 'Passo a passo: Fazer chamadas de APIs do Windows'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - DllImport attribute, calling Windows API
 - Declare statement [Visual Basic], declaring DLL functions
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
-ms.openlocfilehash: 88b3df2f18add6641d0355d2c605bc5f74dabbc7
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 9ffe89cabade780dbe1ced189a92c37e822c59e9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91098314"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427252"
 ---
 # <a name="walkthrough-calling-windows-apis-visual-basic"></a>Instruções passo a passo: chamando APIs do Windows (Visual Basic)
 
@@ -156,7 +157,7 @@ As APIs do Windows são DLLs (bibliotecas de vínculo dinâmico) que fazem parte
   
 12. Clique em **Button2**. A mensagem "o arquivo foi movido com êxito" será exibida se o arquivo puder ser movido.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: eventos (Visual Basic)'
 title: Eventos
 ms.date: 07/20/2015
 helpviewer_keywords:
 - events [Visual Basic], about events
 - events [Visual Basic]
 ms.assetid: 8fb0353a-e41b-4e23-b78f-da65db832f70
-ms.openlocfilehash: 15ab02c20c1baf0fbc9087bfe2e75ec97acd0734
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6cd4a4b997ec13b394cae38e9d66c7dd9c283aaf
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057930"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483671"
 ---
 # <a name="events-visual-basic"></a>Eventos (Visual Basic)
 

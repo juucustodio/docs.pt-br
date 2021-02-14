@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: a codificação não pode ser definida como Nothing'
 title: A codificação não pode ser definida como Nothing
 ms.date: 07/20/2015
 ms.assetid: 59f7c731-8291-4a85-bf51-c225e48cdc84
-ms.openlocfilehash: 0356098ca3fb41804ea396b0ff792cf2990b3340
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4fa9cbd9488501b5295da8d8ace41ef06a706c12
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077534"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462989"
 ---
 # <a name="encoding-cannot-be-set-to-nothing"></a>A codificação não pode ser definida como Nothing
 
@@ -19,7 +20,7 @@ Falha na tentativa de ler ou gravar em um arquivo porque o parâmetro foi `encod
   
 - Forneça um valor válido para o `encoding` parâmetro.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Codificações de arquivo](../developing-apps/programming/drives-directories-files/file-encodings.md)
 - [Ler arquivos](../developing-apps/programming/drives-directories-files/reading-from-files.md)

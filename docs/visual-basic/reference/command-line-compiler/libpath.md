@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-LIBPATH
 title: -libpath
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - /libpath compiler option [Visual Basic]
 - -libpath compiler option [Visual Basic]
 ms.assetid: 5f1c26c9-3455-4e89-bdf3-b12d6c2e655b
-ms.openlocfilehash: a91bd74d0be4f1cb223091ee2527f9567b4ca5db
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: cdc3f557e0d069930032ac3b0af7a0e88762189d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058463"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455672"
 ---
 # <a name="-libpath"></a>-libpath
 
@@ -27,7 +28,7 @@ Especifica o local dos assemblies referenciados.
   
 |Termo|Definição|  
 |---|---|  
-|`dirList`|Necessário. Lista delimitada por ponto-e-vírgula de diretórios para o compilador examinar se um assembly referenciado não for encontrado no diretório de trabalho atual (o diretório do qual você está invocando o compilador) ou o diretório do sistema do Common Language Runtime. Se o nome do diretório contiver um espaço, coloque o nome entre aspas ("").|  
+|`dirList`|Obrigatório. Lista delimitada por ponto-e-vírgula de diretórios para o compilador examinar se um assembly referenciado não for encontrado no diretório de trabalho atual (o diretório do qual você está invocando o compilador) ou o diretório do sistema do Common Language Runtime. Se o nome do diretório contiver um espaço, coloque o nome entre aspas ("").|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -59,7 +60,7 @@ Especifica o local dos assemblies referenciados.
 vbc -libpath:c:\;"c:\New Assemblies" -reference:t2.dll t2.vb  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Assemblies no .NET](../../../standard/assembly/index.md)
 - [Compilador de linha de comando do Visual Basic](index.md)

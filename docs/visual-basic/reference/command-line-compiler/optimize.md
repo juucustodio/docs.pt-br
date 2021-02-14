@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-Optimize
 title: -optimize
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - optimization [Visual Basic], enabling
 - -optimize compiler option [Visual Basic]
 ms.assetid: fcba4a97-3622-4b87-a891-0f77deab4998
-ms.openlocfilehash: d4b50d56373676bf78a7591102095209401c907d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 812eaa544dd874fd3871e58f366a34ee8176273a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91097586"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100426693"
 ---
 # <a name="-optimize"></a>-optimize
 
@@ -50,7 +51,7 @@ Habilita ou desabilita as otimizações do compilador.
 vbc t2.vb -optimize  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [-debug (Visual Basic)](debug.md)

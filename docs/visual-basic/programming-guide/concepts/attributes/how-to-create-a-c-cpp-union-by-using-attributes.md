@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como criar uma União C/C++ usando atributos (Visual Basic)'
 title: 'Como: criar uma União C-C + + usando atributos'
 ms.date: 07/20/2015
 ms.assetid: 9352a7e4-c0da-4d07-aa14-55ed43736fcb
-ms.openlocfilehash: ebab0ad947f776932f9379af3969e369eeec1941
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 10717ec97efe866f4c3993cc26789f29d97b148a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400675"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437742"
 ---
 # <a name="how-to-create-a-cc-union-by-using-attributes-visual-basic"></a>Como criar uma união do C/C++ usando atributos (Visual Basic)
 
@@ -69,7 +70,7 @@ Structure TestExplicit
 
 Os dois campos inteiros, `i1` e `i2`, compartilham os mesmos locais de memória que `lg`. Esse tipo de controle sobre o layout do struct é útil ao usar a invocação de plataforma.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>

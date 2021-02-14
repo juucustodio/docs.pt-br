@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-KeyContainer
 title: -keycontainer
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - keycontainer compiler option [Visual Basic]
 - /keycontainer compiler option [Visual Basic]
 ms.assetid: 6a9bc861-1752-4db1-9f64-b5252f0482cc
-ms.openlocfilehash: 243583e55dcf278f951b813cca8384246d2d6db9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d8b83162d9404eb2ce80e5e531457360b040f27d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085224"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436806"
 ---
 # <a name="-keycontainer"></a>-keycontainer
 
@@ -27,7 +28,7 @@ Especifica um nome de contêiner de chave para um par de chaves para dar a um as
   
 |Termo|Definição|  
 |---|---|  
-|`container`|Necessário. Arquivo de contêiner que contém a chave. Coloque o nome do arquivo entre aspas ("") se o nome contiver um espaço.|  
+|`container`|Obrigatório. Arquivo de contêiner que contém a chave. Coloque o nome do arquivo entre aspas ("") se o nome contiver um espaço.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -39,7 +40,7 @@ Especifica um nome de contêiner de chave para um par de chaves para dar a um as
   
  Também é possível passar suas informações de criptografia para o compilador com [-keyfile](keyfile.md). Use [-delaysign](delaysign.md) se quiser um assembly parcialmente assinado.  
   
- Consulte [criando e usando assemblies de nome forte](../../../standard/assembly/create-use-strong-named.md) para obter mais informações sobre como assinar um assembly.  
+ Consulte [criando e usando assemblies de Strong-Named](../../../standard/assembly/create-use-strong-named.md) para obter mais informações sobre como assinar um assembly.  
   
 > [!NOTE]
 > A `-keycontainer` opção não está disponível no ambiente de desenvolvimento do Visual Studio; ela está disponível somente durante a compilação na linha de comando.  
@@ -52,7 +53,7 @@ Especifica um nome de contêiner de chave para um par de chaves para dar a um as
 vbc -keycontainer:key1 input.vb  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Assemblies no .NET](../../../standard/assembly/index.md)
 - [Compilador de linha de comando do Visual Basic](index.md)

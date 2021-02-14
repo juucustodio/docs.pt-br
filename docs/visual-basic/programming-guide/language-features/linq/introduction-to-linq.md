@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: introdução ao LINQ no Visual Basic'
 title: Introdução ao LINQ
 ms.date: 08/28/2018
 helpviewer_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - deferred execution
 - iteration variables [Visual Basic]
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
-ms.openlocfilehash: 00022fc7790548dbc0ed8018f202e136bdbcc033
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6dc260f7c7305dc3380cbd7c7c9f2402e000b986
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075246"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438795"
 ---
 # <a name="introduction-to-linq-in-visual-basic"></a>Introdução a LINQ no Visual Basic
 
-A consulta integrada à linguagem (LINQ) adiciona funcionalidades de consulta para Visual Basic e fornece recursos simples e poderosos quando você trabalha com todos os tipos de dados. Em vez de enviar uma consulta para um banco de dados a ser processado ou trabalhar com sintaxe de consulta diferente para cada tipo de dado que você está pesquisando, o LINQ apresenta consultas como parte da linguagem de Visual Basic. Ele usa uma sintaxe unificada, independentemente do tipo de dados.  
+A consulta de Language-Integrated (LINQ) adiciona recursos de consulta para Visual Basic e fornece recursos simples e poderosos quando você trabalha com todos os tipos de dados. Em vez de enviar uma consulta para um banco de dados a ser processado ou trabalhar com sintaxe de consulta diferente para cada tipo de dado que você está pesquisando, o LINQ apresenta consultas como parte da linguagem de Visual Basic. Ele usa uma sintaxe unificada, independentemente do tipo de dados.  
   
  O LINQ permite que você consulte dados de um banco de dados SQL Server, XML, matrizes na memória e coleções, conjuntos de ADO.NET, ou qualquer outra fonte de dado local ou remota que ofereça suporte a LINQ. Você pode fazer tudo isso com elementos de linguagem de Visual Basic comuns. Como as consultas são gravadas na linguagem Visual Basic, os resultados da consulta são retornados como objetos fortemente tipados. Esses objetos dão suporte ao IntelliSense, que permite escrever código mais rapidamente e capturar erros em suas consultas em tempo de compilação em vez de em tempo de execução. Consultas LINQ podem ser usadas como a fonte de consultas adicionais para refinar os resultados. Eles também podem ser associados a controles para que os usuários possam exibir e modificar facilmente os resultados da consulta.  
   
@@ -186,7 +187,7 @@ Você pode usar recursos adicionais de consulta LINQ chamando membros dos tipos 
   
 ## <a name="visual-basic-features-that-support-linq"></a>Visual Basic recursos que dão suporte ao LINQ  
 
- O Visual Basic inclui outros recursos notáveis que tornam o uso do LINQ simples e reduzem a quantidade de código que você deve escrever para executar consultas LINQ. Isso inclui o seguinte:  
+ O Visual Basic inclui outros recursos notáveis que tornam o uso do LINQ simples e reduzem a quantidade de código que você deve escrever para executar consultas LINQ. Elas incluem o seguinte:  
   
 - **Tipos anônimos**, que permitem que você crie um novo tipo com base em um resultado de consulta.  
   
@@ -254,7 +255,7 @@ Você pode usar recursos adicionais de consulta LINQ chamando membros dos tipos 
 
  [Capítulo 17: LINQ](/previous-versions/visualstudio/visual-studio-2008/ff652502(v=orm.10)) em [programação Visual Basic 2008](/previous-versions/visualstudio/visual-studio-2008/ff652504(v=orm.10))  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ (Consulta Integrada à Linguagem)](../../concepts/linq/index.md)
 - [Visão geral de LINQ to XML no Visual Basic](../xml/overview-of-linq-to-xml.md)

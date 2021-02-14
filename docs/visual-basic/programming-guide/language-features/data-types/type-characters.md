@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: caracteres de tipo (Visual Basic)'
 title: Caracteres de tipo
 ms.date: 01/31/2018
 helpviewer_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - UL literal type characters [Visual Basic]
 - literal types [Visual Basic], default
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
-ms.openlocfilehash: a48260694c1dfcbbb8f804f220fe89b1663c7319
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d1afccb821d2ffb4dfabe3c38e0db4a7f902c164
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393072"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454541"
 ---
 # <a name="type-characters-visual-basic"></a>Caracteres de tipo (Visual Basic)
 
@@ -79,7 +80,7 @@ A forma de um literal como ele aparece em seu código normalmente determina seu 
 |Forma textual de literal|Tipo de dados padrão|Exemplo|  
 |-----------------------------|-----------------------|-------------|  
 |Numeric, sem parte fracionária|`Integer`|`2147483647`|  
-|Numeric, sem parte fracionária, muito grande para`Integer`|`Long`|`2147483648`|  
+|Numeric, sem parte fracionária, muito grande para `Integer`|`Long`|`2147483648`|  
 |Parte numérica, fracionária|`Double`|`1.2`|  
 |Entre aspas duplas|`String`|`"A"`|  
 |Entre sinais de número|`Date`|`#5/17/1993 9:32 AM#`|  
@@ -142,10 +143,10 @@ Dim number As Integer = &H_C305_F860
 
 ## <a name="see-also"></a>Confira também
 
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipos de dados elementares](elementary-data-types.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)
 - [Conversões de tipo no Visual Basic](type-conversions.md)
 - [Solução de problemas de tipos de dados](troubleshooting-data-types.md)
 - [Declaração de Variável](../variables/variable-declaration.md)
-- [Tipos de dados](../../../language-reference/data-types/index.md)
+- [Data Types](../../../language-reference/data-types/index.md)

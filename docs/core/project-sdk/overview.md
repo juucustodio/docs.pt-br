@@ -4,12 +4,16 @@ titleSuffix: ''
 description: Saiba mais sobre os SDKs do projeto .NET.
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: d0eb4291f4def9263f37d2d09f09ef43d40dfbac
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+no-loc:
+- EmbeddedResource
+- Compile
+- None
+ms.openlocfilehash: e5a6d0a1c988818e507936b567fa0188675cedc3
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99506390"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432641"
 ---
 # <a name="net-project-sdks"></a>SDKs do projeto .NET
 
@@ -25,7 +29,7 @@ Os seguintes SDKs estão disponíveis:
 | `Microsoft.NET.Sdk.Web` | O SDK do .NET [Web](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Razor` | O SDK do .NET [Razor](/aspnet/core/razor-pages/sdk) |
 | `Microsoft.NET.Sdk.Worker` | O SDK do serviço de trabalho do .NET |
-| `Microsoft.NET.Sdk.WindowsDesktop` | O SDK do WinForms e do WPF\* | <https://github.com/dotnet/winforms> e <https://github.com/dotnet/wpf> |
+| `Microsoft.NET.Sdk.WindowsDesktop` | O [SDK de área de trabalho](msbuild-props-desktop.md)do .net, que inclui Windows Forms (WinForms) e Windows Presentation Foundation (WPF).\* | <https://github.com/dotnet/winforms> e <https://github.com/dotnet/wpf> |
 
 O SDK do .NET é o SDK base para .NET. Os outros SDKs fazem referência ao SDK do .NET e os projetos associados a outros SDKs têm todas as propriedades do SDK do .NET disponíveis para eles. O SDK da Web, por exemplo, depende do SDK do .NET e do SDK do Razor.
 
@@ -91,20 +95,22 @@ A tabela a seguir mostra quais elementos e quais [globs](https://en.wikipedia.or
 
 | Elemento           | Incluir glob                              | Excluir glob                                                  | Remover glob              |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|--------------------------|
-| Compilar           | \*\*/\*.cs (ou outras extensões de linguagem) | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc  | N/D                      |
+| Compile           | \*\*/\*.cs (ou outras extensões de linguagem) | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc  | N/D                      |
 | EmbeddedResource  | \*\*/\*.resx                              | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | N/D                      |
-| Nenhum              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
+| None              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
 
 > [!NOTE]
 > As `./bin` `./obj` pastas e, que são representadas pelas `$(BaseOutputPath)` Propriedades do e do `$(BaseIntermediateOutputPath)` MSBuild, são excluídas do globs por padrão. As exclusões são representadas pela [Propriedade DefaultItemExcludes](msbuild-props.md#defaultitemexcludes).
+
+O SDK de área de trabalho do .NET tem mais inclusão e exclusões para o WPF. Para obter mais informações, consulte [inclusões e exclusões padrão do WPF](msbuild-props-desktop.md#wpf-default-includes-and-excludes).
 
 ### <a name="build-errors"></a>Erros de compilação
 
 Se você definir explicitamente qualquer um desses itens em seu arquivo de projeto, provavelmente receberá um erro de compilação "NETSDK1022" semelhante ao seguinte:
 
-  > Itens ' compile ' duplicados foram incluídos. O SDK do .NET inclui, por padrão, itens de "Compilar" do diretório do projeto. É possível remover esses itens do arquivo de projeto ou definir a propriedade “EnableDefaultCompileItems” como “false” se desejar incluí-los explicitamente no arquivo de projeto.
+> Itens ' Compile ' duplicados foram incluídos. O SDK do .NET inclui ' Compile ' itens do diretório do projeto por padrão. Você pode remover esses itens do arquivo de projeto ou definir a propriedade ' EnableDefault Compile Items ' como ' false ' se desejar incluí-los explicitamente em seu arquivo de projeto.
 
-  > Itens ' EmbeddedResource ' duplicados foram incluídos. O SDK do .NET inclui os itens ' EmbeddedResource ' do diretório do projeto por padrão. Você pode remover esses itens do arquivo de projeto ou definir a propriedade ' EnableDefaultEmbeddedResourceItems ' como ' false ' se quiser incluí-los explicitamente em seu arquivo de projeto.
+> Itens ' EmbeddedResource ' duplicados foram incluídos. O SDK do .NET inclui ' EmbeddedResource ' itens do diretório do projeto por padrão. Você pode remover esses itens do arquivo de projeto ou definir a propriedade ' EnableDefault EmbeddedResource Items ' como ' false ' se desejar incluí-los explicitamente em seu arquivo de projeto.
 
 Para resolver os erros, siga um destes procedimentos:
 
@@ -120,7 +126,7 @@ Para resolver os erros, siga um destes procedimentos:
 
   Se você quiser especificar arquivos a serem publicados com seu aplicativo, ainda poderá usar os mecanismos do MSBuild conhecidos para isso, por exemplo, o `Content` elemento.
 
-- Desabilite seletivamente `Compile` apenas, `EmbeddedResource` , ou `None` globs definindo a propriedade [EnableDefaultCompileItems](msbuild-props.md#enabledefaultcompileitems), [EnableDefaultEmbeddedResourceItems](msbuild-props.md#enabledefaultembeddedresourceitems)ou [EnableDefaultNoneItems](msbuild-props.md#enabledefaultnoneitems) para `false` :
+- Desabilite seletivamente `Compile` apenas, `EmbeddedResource` , ou `None` globs definindo a propriedade [ Compile itens EnableDefault](msbuild-props.md#enabledefaultcompileitems), itens de [EnableDefault ou EmbeddedResource ](msbuild-props.md#enabledefaultembeddedresourceitems)itens de [EnableDefault None ](msbuild-props.md#enabledefaultnoneitems) para `false` :
 
   ```xml
   <PropertyGroup>

@@ -3,18 +3,20 @@ title: Tutorial de depuração de perda de memória
 description: Saiba como depurar um vazamento de memória no .NET Core.
 ms.topic: tutorial
 ms.date: 04/20/2020
-ms.openlocfilehash: 7fa87a411606e81ffe91348c3cbce5f258a6e4e2
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 6764663eedc28cd75f9f68927a12ae5b2255d11b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538586"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431445"
 ---
 # <a name="debug-a-memory-leak-in-net-core"></a>Depurar um vazamento de memória no .NET Core
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 3,1 e versões posteriores
 
-Este tutorial demonstra as ferramentas para analisar um vazamento de memória do .NET Core.
+Um vazamento de memória pode ocorrer quando seu aplicativo faz referência a objetos que ele não precisa mais para executar a tarefa desejada. Fazer referência a objetos dizia faz com que o coletor de lixo não consiga recuperar a memória usada, muitas vezes resultando em degradação do desempenho e, potencialmente, gerando uma <xref:System.OutOfMemoryException> .
+
+Este tutorial demonstra as ferramentas para analisar um vazamento de memória em um aplicativo .NET Core usando as ferramentas da CLI do diagnóstico do .NET. Se você estiver no Windows, poderá usar as ferramentas de [diagnóstico de memória do Visual Studio](/visualstudio/profiling/memory-usage) para depurar o vazamento de memória.
 
 Este tutorial usa um aplicativo de exemplo, que é projetado para vazar a memória intencionalmente. O exemplo é fornecido como um exercício. Você pode analisar um aplicativo que está vazando involuntariamente a memória também.
 
@@ -232,12 +234,13 @@ Neste tutorial, você iniciou um servidor Web de exemplo. Esse servidor deve ter
 
 Você também pode excluir o arquivo de despejo que foi criado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [dotnet-rastrear](dotnet-trace.md) para listar processos
 - [dotnet-contadores](dotnet-counters.md) para verificar o uso de memória gerenciada
 - [dotnet-despejo](dotnet-dump.md) para coletar e analisar um arquivo de despejo
 - [dotnet/diagnóstico](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+- [Usar o Visual Studio para depurar vazamentos de memória](/visualstudio/profiling/memory-usage)
 
 ## <a name="next-steps"></a>Próximas etapas
 

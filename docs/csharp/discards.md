@@ -3,12 +3,12 @@ title: Descartes – Guia do C#
 description: Descreve o suporte do C# a descartes, que são variáveis descartáveis não atribuídas, além das maneiras em que descartes podem ser usados.
 ms.technology: csharp-fundamentals
 ms.date: 09/22/2020
-ms.openlocfilehash: 7562da880ff3136dfc04ce4061bafa8ed55f5a23
-ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
+ms.openlocfilehash: 3c18fbb0bbb80c2c29c9f5d8334a5dd711b68cc5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99426912"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432628"
 ---
 # <a name="discards---c-guide"></a>Descartes – Guia do C#
 
@@ -40,7 +40,7 @@ O método `Deconstruct` de uma classe, estrutura ou interface também permite qu
 
 Para obter mais informações sobre desconstruir tipos definidos pelo usuário com descartes, consulte [Desconstruindo tuplas e outros tipos](deconstruct.md#deconstructing-a-user-defined-type-with-discards).
 
-## <a name="pattern-matching-with-switch"></a>Correspondência de padrões com ' switch '
+## <a name="pattern-matching-with-switch"></a>Correspondência de padrões com `switch`
 
 O *padrão de descarte* pode ser usado na correspondência de padrões com a palavra-chave [switch](language-reference/keywords/switch.md) . Toda expressão sempre corresponde ao padrão de descarte. (Ele pode ser usado com expressões [is](language-reference/keywords/is.md) . No entanto, esse uso é raro porque o descarte pode ser removido sem alterar seu significado).
 

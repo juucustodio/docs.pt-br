@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRAssemblyIdentityManager:: GetProbingAssembliesFromReference'
 title: Método ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: aec05744-e8d4-44c6-b4a8-e583229ac34e
 topic_type:
 - apiref
-ms.openlocfilehash: 263058131e63205aa37f81847ed647944fef7540
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 38fcea460537ebed0e54103b460a48c2e58d8173
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731378"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431419"
 ---
 # <a name="iclrassemblyidentitymanagergetprobingassembliesfromreference-method"></a>Método ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference
 
@@ -72,7 +73,7 @@ HRESULT GetProbingAssembliesFromReference (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Interface ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)

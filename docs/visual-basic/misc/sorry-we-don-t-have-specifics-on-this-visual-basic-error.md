@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Desculpe, não temos especificações sobre este Visual Basic erro'
 title: Infelizmente, não há informações específicas sobre este erro do Visual Basic
 ms.date: 07/20/2015
 f1_keywords:
@@ -3044,12 +3045,12 @@ f1_keywords:
 - bc30233
 - bc30829
 ms.assetid: 0938efc2-e205-450b-9314-99951fcbd702
-ms.openlocfilehash: d96f2512e2fae038853baedfb78fcf2feb84542b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 51cd9e21ba40677953fc63d64758dd9c122bc69c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059633"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431139"
 ---
 # <a name="sorry-we-dont-have-specifics-on-this-visual-basic-error"></a>Infelizmente, não há informações específicas sobre este erro do Visual Basic
 
@@ -3070,10 +3071,10 @@ Infelizmente não temos informações específicas sobre este erro. Você pode p
  [StackOverflow](https://stackoverflow.com/questions/tagged/vb.net)  
  Fornece um fórum para perguntas e problemas com o Visual Basic.  
   
- Consulte também:  
+ Veja também:  
  [Recursos adicionais para programadores do Visual Basic](../getting-started/additional-resources.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Guia de programação do Visual Basic](../programming-guide/index.md)
 - [Referência do Visual Basic](../reference/index.md)

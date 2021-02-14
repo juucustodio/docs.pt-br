@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como consultar o conteúdo de arquivos em uma pasta (LINQ) (Visual Basic)'
 title: Como consultar o conteúdo de arquivos em uma pasta (LINQ)
 ms.date: 07/20/2015
 ms.assetid: edacbcd3-f3e4-4429-a8be-28a58dc0dd70
-ms.openlocfilehash: 3ad5fd6c893d590d46be67e6320ac5b915829f4b
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 5043f64a0bb38811b6155394b18a88f702515cc5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75346041"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434986"
 ---
 # <a name="how-to-query-the-contents-of-files-in-a-folder-linq-visual-basic"></a>Como consultar o conteúdo de arquivos em uma pasta (LINQ) (Visual Basic)
 
@@ -77,7 +78,7 @@ End Module
 
 Crie um projeto de aplicativo de console Visual Basic, copie e cole o exemplo de código e ajuste o valor do objeto de inicialização nas propriedades do projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ to Objects (Visual Basic)](linq-to-objects.md)
 - [LINQ e diretórios de arquivos (Visual Basic)](linq-and-file-directories.md)

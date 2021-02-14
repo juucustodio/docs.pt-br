@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral dos operadores de consulta padrão (Visual Basic)'
 title: Visão geral de operadores de consulta padrão
 ms.date: 07/20/2015
 ms.assetid: 302bd39e-2ec1-495b-94bf-37d370d6f05f
-ms.openlocfilehash: 7c229a576f6695282473352d6253d2c699c76604
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: febf0fa85c020504858587bdb080c1bd6725158e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406775"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434895"
 ---
 # <a name="standard-query-operators-overview-visual-basic"></a>Visão geral de operadores de consulta padrão (Visual Basic)
 
@@ -104,7 +105,7 @@ Os links a seguir levam você a tópicos que fornecem informações adicionais s
 
 - [Operações de agregação (Visual Basic)](aggregation-operations.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: conversões de tipo no Visual Basic'
 title: Conversões de tipo
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - changing data types [Visual Basic]
 - data type conversion [Visual Basic]
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
-ms.openlocfilehash: ee8700ea757cee9c20e2598de029f54ae33a7114
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1f40951856710eb6f2892a7f7a4e04173ee3ee44
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090151"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454476"
 ---
 # <a name="type-conversions-in-visual-basic"></a>Conversões de tipo no Visual Basic
 

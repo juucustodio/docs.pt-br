@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: sombreamento em Visual Basic'
 title: Sombreamento
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -18,16 +19,16 @@ helpviewer_keywords:
 - objects [Visual Basic], names
 - names [Visual Basic], shadowing
 ms.assetid: 54bb4c25-12c4-4181-b4a0-93546053964e
-ms.openlocfilehash: 81e54875a3c1a4bbc5f5631e7ebac649a2e5afaf
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 468ad72808d689016cacb8d2be56fa9f9fcd1eec
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085887"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434817"
 ---
 # <a name="shadowing-in-visual-basic"></a>Sombreamento no Visual Basic
 
-Quando dois elementos de programação compartilham o mesmo nome, um deles pode ocultar ou *sombrear*o outro. Nessa situação, o elemento sombreado não está disponível para referência; em vez disso, quando seu código usa o nome do elemento, o compilador Visual Basic o resolve para o elemento de sombreamento.  
+Quando dois elementos de programação compartilham o mesmo nome, um deles pode ocultar ou *sombrear* o outro. Nessa situação, o elemento sombreado não está disponível para referência; em vez disso, quando seu código usa o nome do elemento, o compilador Visual Basic o resolve para o elemento de sombreamento.  
   
 ## <a name="purpose"></a>Finalidade  
 
@@ -147,7 +148,7 @@ End Class
   
  No exemplo anterior, a variável `basObj` é declarada como a classe base. Atribuir um `dervCls` objeto a ele constitui uma conversão de ampliação e, portanto, é válido. No entanto, a classe base não pode acessar a versão de sombreamento da variável `z` na classe derivada, portanto, o compilador é resolvido `basObj.z` para o valor da classe base original.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referências a elementos declarados](references-to-declared-elements.md)
 - [Escopo no Visual Basic](scope.md)

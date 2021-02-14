@@ -1,7 +1,7 @@
 ---
 title: Como personalizar nomes de propriedade e valores com System.Text.Json
 description: Saiba como personalizar nomes de propriedade e valores ao serializar com o System.Text.Json no .net.
-ms.date: 11/30/2020
+ms.date: 02/01/2021
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 4b88509313e719ea993e00d889bc6145f4976a2d
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: f38511838fee299880ba7ca50c071aa790a031cd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97008897"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438171"
 ---
-# <a name="how-to-customize-property-names-and-values-with-no-locsystemtextjson"></a>Como personalizar nomes de propriedade e valores com System.Text.Json
+# <a name="how-to-customize-property-names-and-values-with-systemtextjson"></a>Como personalizar nomes de propriedade e valores com System.Text.Json
 
 Por padrão, os nomes de propriedade e as chaves de dicionário são inalterados na saída JSON, incluindo maiúsculas e minúsculas. Os valores de enumeração são representados como números. Neste artigo, você aprenderá a:
 
@@ -53,6 +53,7 @@ O nome da propriedade definido por este atributo:
 
 * Aplica-se em ambas as direções, para serialização e desserialização.
 * Tem precedência sobre as políticas de nomenclatura de propriedade.
+* [Não afeta a correspondência de nome de parâmetro para construtores com parâmetros](system-text-json-immutability.md#immutable-types-and-records).
 
 ## <a name="use-camel-case-for-all-json-property-names"></a>Usar o camel case para todos os nomes de propriedade JSON
 
@@ -164,7 +165,7 @@ Os nomes de cadeias de caracteres de enumeração também podem ser desserializa
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs" id="Deserialize":::
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [System.Text.Json sobre](system-text-json-overview.md)
 * [Como serializar e desserializar JSON](system-text-json-how-to.md)

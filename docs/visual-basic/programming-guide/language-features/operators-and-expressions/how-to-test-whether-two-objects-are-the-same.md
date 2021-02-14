@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como testar se dois objetos são os mesmos (Visual Basic)'
 title: Como testar se dois objetos são iguais
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - objects [Visual Basic], variables referring to same
 - Visual Basic code, operators
 ms.assetid: f760e828-8704-4256-bc2d-c22a4c93b524
-ms.openlocfilehash: d29d1b0026b3f62d47859cd5b4b7a601532e27b8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: a0136d9db487ad0ce70b9d55ff8ee014ec30b05a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071684"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100435532"
 ---
 # <a name="how-to-test-whether-two-objects-are-the-same-visual-basic"></a>Como testar se dois objetos são iguais (Visual Basic)
 
@@ -30,6 +31,6 @@ Se você tiver duas variáveis que se referem a objetos, poderá usar o `Is` ope
   
  Quer você use `Is` ou `IsNot` seja uma questão de conveniência pessoal para você. Uma delas pode ser mais fácil de ler do que a outra em uma determinada expressão.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores de comparação no Visual Basic](comparison-operators.md)

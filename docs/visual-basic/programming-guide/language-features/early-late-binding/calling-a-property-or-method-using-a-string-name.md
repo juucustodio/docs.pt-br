@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: chamando uma propriedade ou método usando um nome de cadeia de caracteres (Visual Basic)'
 title: Chamando uma propriedade ou um método usando o nome de uma cadeia de caracteres
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - properties [Visual Basic], setting at run time
 - CallByName function
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
-ms.openlocfilehash: 9f28548c27545d94dde38cef3e9c56f98a69b259
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ad14f66ef4e3e06b969cb39a0203442cb0a4f1bb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086082"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434414"
 ---
 # <a name="calling-a-property-or-method-using-a-string-name-visual-basic"></a>Chamando uma propriedade ou um método usando o nome de uma cadeia de caracteres (Visual Basic)
 
@@ -29,7 +30,7 @@ Na maioria dos casos, você pode descobrir as propriedades e os métodos de um o
   
  A `CallByName` função permite que você use uma cadeia de caracteres para especificar uma propriedade ou um método em tempo de execução. A assinatura da `CallByName` função é parecida com esta:  
   
- *Result*  =  Resultado `CallByName` (*Object*, *ProcedureName*, *CallType*, *argumentos*())  
+   =  Resultado `CallByName` (*Object*, *ProcedureName*, *CallType*, *argumentos*())  
   
  O primeiro argumento, *Object*, usa o nome do objeto no qual você deseja agir. O argumento *ProcedureName* usa uma cadeia de caracteres que contém o nome do método ou procedimento de propriedade a ser invocado. O argumento *CallType* usa uma constante que representa o tipo de procedimento a ser invocado: um método ( `Microsoft.VisualBasic.CallType.Method` ), uma propriedade leitura ( `Microsoft.VisualBasic.CallType.Get` ) ou um conjunto de Propriedades ( `Microsoft.VisualBasic.CallType.Set` ). O argumento *arguments* , que é opcional, usa uma matriz do tipo `Object` que contém argumentos para o procedimento.  
   
@@ -48,7 +49,7 @@ Na maioria dos casos, você pode descobrir as propriedades e os métodos de um o
 > [!NOTE]
 > Embora a `CallByName` função possa ser útil em alguns casos, você deve avaliar sua utilidade em relação às implicações de desempenho — usar `CallByName` para invocar um procedimento é um pouco mais lento do que uma chamada de associação tardia. Se você estiver invocando uma função que é chamada repetidamente, como dentro de um loop, o `CallByName` pode ter um efeito grave no desempenho.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>
 - [Determinar o Tipo de Objeto](determining-object-type.md)

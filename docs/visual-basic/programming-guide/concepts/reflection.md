@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: reflexão (Visual Basic)'
 title: Reflexão
 ms.date: 07/20/2015
 ms.assetid: d991bc0f-d16a-4ac5-9351-70e5c5b9891b
-ms.openlocfilehash: 79603e0951732c7d0d0031d4fc44ddd7dbd392c9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 532087f2ac32242b473d4524a6026519951d96d2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077248"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100486804"
 ---
 # <a name="reflection-visual-basic"></a>Reflexão (Visual Basic)
 
@@ -64,7 +65,7 @@ System.Console.WriteLine(info)
   
 - [Recuperando informações armazenadas em atributos](../../../standard/attributes/retrieving-information-stored-in-attributes.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Guia de programação do Visual Basic](../index.md)
 - [Assemblies no .NET](../../../standard/assembly/index.md)

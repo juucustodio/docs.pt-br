@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: Manipulando eventos (Visual Basic)'
 title: Tratando eventos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - WithEvents keyword [Visual Basic], walkthroughs
 - event handlers [Visual Basic], walkthroughs
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
-ms.openlocfilehash: 4489f75e50a783a9b1acfb9c30568fdec6614488
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5101bd2287c81e03efb69b398d6cc961d3e6d9dc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057904"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436169"
 ---
 # <a name="walkthrough-handling-events-visual-basic"></a>Instruções passo a passo: tratando eventos (Visual Basic)
 
@@ -36,7 +37,7 @@ Este é o segundo de dois tópicos que demonstram como trabalhar com eventos. O 
   
 ## <a name="writing-code-to-handle-an-event"></a>Escrevendo código para manipular um evento  
 
- Assim que você declarar uma variável usando `WithEvents` , o nome da variável aparecerá na lista suspensa à esquerda do **Editor de código**da classe. Quando você seleciona `mWidget` , os `Widget` eventos da classe são exibidos na lista suspensa à direita. A seleção de um evento exibe o procedimento de evento correspondente, com o prefixo `mWidget` e um sublinhado. Todos os procedimentos de evento associados a uma `WithEvents` variável recebem o nome da variável como um prefixo.  
+ Assim que você declarar uma variável usando `WithEvents` , o nome da variável aparecerá na lista suspensa à esquerda do **Editor de código** da classe. Quando você seleciona `mWidget` , os `Widget` eventos da classe são exibidos na lista suspensa à direita. A seleção de um evento exibe o procedimento de evento correspondente, com o prefixo `mWidget` e um sublinhado. Todos os procedimentos de evento associados a uma `WithEvents` variável recebem o nome da variável como um prefixo.  
   
 #### <a name="to-handle-an-event"></a>Para identificar um evento  
   
@@ -119,7 +120,7 @@ Este é o segundo de dois tópicos que demonstram como trabalhar com eventos. O 
 > [!NOTE]
 > Você pode declarar quantas `WithEvents` variáveis forem necessárias, mas `WithEvents` não há suporte para matrizes de variáveis.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instruções passo a passo: declarando e acionando eventos](walkthrough-declaring-and-raising-events.md)
 - [Eventos](index.md)

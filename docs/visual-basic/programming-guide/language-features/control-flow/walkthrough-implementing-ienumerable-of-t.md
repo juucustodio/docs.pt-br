@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: Implementing IEnumerable (Of T) in Visual Basic'
 title: Implementando IEnumerable
 ms.date: 07/31/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - loop structures [Visual Basic], optimizing performance
 - control flow [Visual Basic]
 ms.assetid: c60d7589-51f2-4463-a2d5-22506bbc1554
-ms.openlocfilehash: f1f0036c38299f2392f8c8705e67b7bb6b7db068
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 87905e4f110d3a9d95b1cad642296ea8105f32f4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058632"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428136"
 ---
 # <a name="walkthrough-implementing-ienumerableof-t-in-visual-basic"></a>Instruções passo a passo: implementando IEnumerable(Of T) no Visual Basic
 
@@ -36,7 +37,7 @@ A <xref:System.Collections.Generic.IEnumerable%601> interface é implementada po
 
 1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no arquivo Class1. vb e clique em **renomear**. Renomeie o arquivo como `StreamReaderEnumerable.vb` e pressione ENTER. Renomear o arquivo também renomeará a classe para `StreamReaderEnumerable`. Essa classe implementará a interface `IEnumerable(Of String)`.
 
-1. Clique com o botão direito do mouse no projeto StreamReaderEnumerable, aponte para **Adicionar**e clique em **novo item**. Selecione o modelo de **classe** . Na caixa **Nome**, digite `StreamReaderEnumerator.vb` e clique em **OK**.
+1. Clique com o botão direito do mouse no projeto StreamReaderEnumerable, aponte para **Adicionar** e clique em **novo item**. Selecione o modelo de **classe** . Na caixa **Nome**, digite `StreamReaderEnumerator.vb` e clique em **OK**.
 
  A primeira classe neste projeto é a classe enumerável e implementará a `IEnumerable(Of String)` interface. Essa interface genérica implementa a <xref:System.Collections.IEnumerable> interface e garante que os consumidores dessa classe possam acessar valores digitados como `String` .  
   
@@ -94,7 +95,7 @@ A <xref:System.Collections.Generic.IEnumerable%601> interface é implementada po
   
  [!code-vb[VbVbalrIteratorWalkthrough#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB/Module1.vb#10)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a LINQ no Visual Basic](../linq/introduction-to-linq.md)
 - [Fluxo de Controle](index.md)

@@ -1,22 +1,23 @@
 ---
+description: 'Saiba mais sobre: como a cultura afeta as cadeias de caracteres no Visual Basic'
 title: Como a cultura afeta cadeias de caracteres
 ms.date: 07/20/2015
 helpviewer_keywords:
 - locale [Visual Basic], effect on strings
 - strings [Visual Basic], locale dependence
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
-ms.openlocfilehash: 878e028f7c7f0e93752765272e93baa3ffe1426d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e1d330c9bf879ad174f58d7a91c0ddac7e68c0dd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059204"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100459962"
 ---
 # <a name="how-culture-affects-strings-in-visual-basic"></a>Como a cultura afeta cadeias de caracteres no Visual Basic
 
 Esta página de ajuda discute como Visual Basic usa informações de cultura para executar conversões e comparações de cadeia de caracteres.  
   
-## <a name="when-to-use-culture-specific-strings"></a>Quando usar cadeias de caracteres específicas de cultura  
+## <a name="when-to-use-culture-specific-strings"></a>Quando usar cadeias de caracteres de Culture-Specific  
 
  Normalmente, você deve usar cadeias de caracteres específicas de cultura para todos os dados apresentados e lidos de usuários e usar cadeias de caracteres invariáveis de cultura para os dados internos do seu aplicativo.  
   
@@ -24,7 +25,7 @@ Esta página de ajuda discute como Visual Basic usa informações de cultura par
   
  No entanto, se o aplicativo carregar a data em um servidor central, ele deverá Formatar a cadeia de caracteres de acordo com uma cultura específica, para evitar confusão entre formatos de data potencialmente diferentes.  
   
-## <a name="culture-sensitive-functions"></a>Funções sensíveis à cultura  
+## <a name="culture-sensitive-functions"></a>Funções de Culture-Sensitive  
 
  Todas as funções de conversão de cadeia de caracteres Visual Basic (exceto para as `Str` `Val` funções e) usam as informações de cultura do aplicativo para garantir que as conversões e comparações sejam apropriadas para a cultura do usuário do aplicativo.  
   
@@ -80,11 +81,11 @@ Esta página de ajuda discute como Visual Basic usa informações de cultura par
 |`CurrentCulture` ou `CurrentCultureIgnoreCase`|Comparação baseada na interpretação de cadeias de caracteres na cultura atual.|Use estes valores ao comparar: dados que são exibidos para o usuário, a maioria das entradas de usuário e outros dados que exigem interpretação linguística.|  
 |`InvariantCulture` ou `InvariantCultureIgnoreCase`|Comparação baseada na interpretação de cadeias de caracteres na cultura invariável.<br /><br /> Isso é diferente de `Ordinal` e `OrdinalIgnoreCase` , porque a cultura invariável trata caracteres fora de seu intervalo aceito como caracteres invariáveis equivalentes.|Use esses valores somente ao comparar dados persistentes ou exibir dados relevantes linguísticas que exijam uma ordem de classificação fixa.|  
   
-### <a name="security-considerations"></a>Considerações sobre segurança  
+### <a name="security-considerations"></a>Considerações de segurança  
 
  Se seu aplicativo toma decisões de segurança com base no resultado de uma operação de comparação ou de alteração de maiúsculas e minúsculas, a operação deve usar o <xref:System.String.Compare%2A?displayProperty=nameWithType> método e passar `Ordinal` ou `OrdinalIgnoreCase` para o `comparisonType` argumento.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Globalization.CultureInfo>
 - [Introdução a cadeias de caracteres no Visual Basic](introduction-to-strings.md)

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: não é possível obter um fluxo para o log'
 title: Não é possível obter um fluxo para o log
 ms.date: 07/20/2015
 f1_keywords:
 - vbrApplicationLog_ExhaustedPossibleStreamNames
 ms.assetid: 33994f52-8efb-4790-a459-033e5c1db632
-ms.openlocfilehash: 887356fac3abe5c9d28751f7c4d3b1908ed35acb
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6eda12eb4dc2b3cf303e543a66e1f2f7d739eb6b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078379"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455269"
 ---
 # <a name="unable-to-obtain-a-stream-for-the-log"></a>Não é possível obter um fluxo para o log
 
@@ -25,7 +26,7 @@ Não é possível obter um fluxo para o log. Os nomes de arquivo potenciais com 
   
 2. Arquive os logs existentes e remova-os do computador para permitir que o <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> objeto crie novos logs.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A>

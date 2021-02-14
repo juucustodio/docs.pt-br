@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operadores lógicos e de bit-a-bit em Visual Basic'
 title: Operadores lógicos e bit a bit
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - OrElse operator [Visual Basic]
 - logical operators [Visual Basic], unary
 ms.assetid: ca474e13-567d-4b1d-a18b-301433705e57
-ms.openlocfilehash: c15b9337f262563941699c0ff8fe5219ca6a5c93
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 55d9567813a9114573e1e3f70fe181cb8621b350
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085991"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472716"
 ---
 # <a name="logical-and-bitwise-operators-in-visual-basic"></a>Operadores lógicos e bit a bit no Visual Basic
 
@@ -34,7 +35,7 @@ Os operadores lógicos comparam `Boolean` expressões e retornam um `Boolean` re
   
 ## <a name="unary-logical-operator"></a>Operador lógico unário  
 
- O [operador NOT](../../../language-reference/operators/not-operator.md) executa uma *negação* lógica em uma `Boolean` expressão. Ele gera o oposto lógico de seu operando. Se a expressão for avaliada como `True` , `Not` retornará `False` ; se a expressão for avaliada como `False` , `Not` retorna `True` . O exemplo a seguir ilustra isto.  
+ O [operador NOT](../../../language-reference/operators/not-operator.md) executa uma *negação* lógica em uma `Boolean` expressão. Ele gera o oposto lógico de seu operando. Se a expressão for avaliada como `True` , `Not` retornará `False` ; se a expressão for avaliada como `False` , `Not` retorna `True` . O exemplo a seguir ilustra essa situação.  
   
  [!code-vb[VbVbalrOperators#77](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#77)]  
   
@@ -50,13 +51,13 @@ Os operadores lógicos comparam `Boolean` expressões e retornam um `Boolean` re
   
  [!code-vb[VbVbalrOperators#78](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#78)]  
   
-## <a name="short-circuiting-logical-operations"></a>Operações lógicas de curto-circuito  
+## <a name="short-circuiting-logical-operations"></a>Short-Circuiting operações lógicas  
 
  O [Operador AndAlso](../../../language-reference/operators/andalso-operator.md) é muito semelhante ao `And` operador, pois ele também executa uma conjunção lógica em duas `Boolean` expressões. A principal diferença entre os dois é que o `AndAlso` exibe o comportamento *de curto-circuito* . Se a primeira expressão em uma `AndAlso` expressão for avaliada como `False` , a segunda expressão não será avaliada porque não pode alterar o resultado final e `AndAlso` retorna `False` .  
   
  Da mesma forma, o [Operador OrElse](../../../language-reference/operators/orelse-operator.md) executa uma disjunção lógica de curto-circuito em duas `Boolean` expressões. Se a primeira expressão em uma `OrElse` expressão for avaliada como `True` , a segunda expressão não será avaliada porque não pode alterar o resultado final e `OrElse` retorna `True` .  
   
-### <a name="short-circuiting-trade-offs"></a>Compensações de curto-circuito  
+### <a name="short-circuiting-trade-offs"></a>Short-Circuiting Trade-Offs  
 
  O curto-circuito pode melhorar o desempenho não avaliando uma expressão que não possa alterar o resultado da operação lógica. No entanto, se essa expressão executar ações adicionais, o circuito curto ignorará essas ações. Por exemplo, se a expressão incluir uma chamada para um `Function` procedimento, esse procedimento não será chamado se a expressão tiver um circuito curto e qualquer código adicional contido no `Function` não for executado. Portanto, a função pode ser executada apenas ocasionalmente e pode não ser testada corretamente. Ou a lógica do programa pode depender do código no `Function` .  
   
@@ -101,7 +102,7 @@ Os operadores lógicos comparam `Boolean` expressões e retornam um `Boolean` re
 > [!NOTE]
 > As operações de bit a bit podem ser executadas somente em tipos integrais. Os valores de ponto flutuante devem ser convertidos em tipos integrais antes que a operação bit-up possa continuar.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores lógicos/bit a bit (Visual Basic)](../../../language-reference/operators/logical-bitwise-operators.md)
 - [Expressões booleanas](boolean-expressions.md)

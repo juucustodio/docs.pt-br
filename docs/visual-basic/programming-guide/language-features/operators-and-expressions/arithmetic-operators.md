@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operadores aritméticos no Visual Basic'
 title: Operadores aritméticos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - Visual Basic code, operators
 - arithmetic operators [Visual Basic], about arithmetic operators
 ms.assetid: 325dac7a-ea4f-41d5-8b48-f6e904211569
-ms.openlocfilehash: 023e479736285aa2d04509e05f49fe930cb4721d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3a7005b0a44f9b0358e393d8580a2a19a9a19881
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090073"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465321"
 ---
 # <a name="arithmetic-operators-in-visual-basic"></a>Operadores aritméticos no Visual Basic
 
 Os operadores aritméticos são usados para executar muitas das operações aritméticas familiares que envolvem o cálculo de valores numéricos representados por literais, variáveis, outras expressões, chamadas de função e propriedade e constantes. Também classificado com operadores aritméticos são os operadores de deslocamento de bits, que atuam no nível dos bits individuais dos operandos e deslocam seus padrões de bits para a esquerda ou para a direita.  
   
-## <a name="arithmetic-operations"></a>Operações Aritméticas  
+## <a name="arithmetic-operations"></a>Operações aritméticas  
 
  Você pode adicionar dois valores em uma expressão junto com o [operador +](../../../language-reference/operators/addition-operator.md)ou subtrair um de outro com o [operador-Operator (Visual Basic)](../../../language-reference/operators/subtraction-operator.md), como demonstra o exemplo a seguir.  
   
@@ -66,7 +67,7 @@ Os operadores aritméticos são usados para executar muitas das operações arit
   
  Ao capturar uma <xref:System.DivideByZeroException> exceção, você pode usar seus membros para ajudá-lo a tratá-la. Por exemplo, a <xref:System.Exception.Message%2A> propriedade contém o texto da mensagem para a exceção. Para obter mais informações, consulte [Instrução Try...Catch...Finally](../../../language-reference/statements/try-catch-finally-statement.md).  
   
-## <a name="bit-shift-operations"></a>Operações de deslocamento de bits  
+## <a name="bit-shift-operations"></a>Operações de Bit-Shift  
 
  Uma operação de deslocamento de bits executa um deslocamento aritmético em um padrão de bit. O padrão está contido no operando à esquerda, enquanto o operando à direita especifica o número de posições para deslocar o padrão. Você pode deslocar o padrão para a direita com o [ operador de>> ](../../../language-reference/operators/right-shift-operator.md) ou para a esquerda com o [ operador de<< ](../../../language-reference/operators/left-shift-operator.md).  
   
@@ -100,7 +101,7 @@ Os operadores aritméticos são usados para executar muitas das operações arit
   
  No entanto, se você definir `Option Strict Off` , o Visual Basic permitir conversões de estreitamento implícitas, embora elas possam resultar na perda inesperada de dados ou precisão. Por esse motivo, recomendamos que você use `Option Strict On` ao escrever código de produção. Para obter mais informações, consulte [Ampliando e restringindo conversões](../data-types/widening-and-narrowing-conversions.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores aritméticos](../../../language-reference/operators/arithmetic-operators.md)
 - [Operadores Bit Shift](../../../language-reference/operators/bit-shift-operators.md)

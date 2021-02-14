@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: relações de tipo em operações de consulta (Visual Basic)'
 title: Relacionamentos entre tipos em operações de consulta
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - inferring type information [LINQ in Visual Basic]
 - relationships [LINQ in Visual Basic]
 ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
-ms.openlocfilehash: 73a287541ddf115510bf6ab5c830eafac370cc3a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b6a59308e76afdcf1aaf7084904b9925cd5bef14
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406723"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428214"
 ---
 # <a name="type-relationships-in-query-operations-visual-basic"></a>Relacionamentos de tipo em operações de consulta (Visual Basic)
 
-As variáveis usadas em operações de consulta do LINQ (consulta integrada à linguagem) são fortemente tipadas e devem ser compatíveis entre si. A tipagem forte é usada na fonte de dados, na própria consulta e na execução da consulta. A ilustração a seguir identifica os termos usados para descrever uma consulta LINQ. Para obter mais informações sobre as partes de uma consulta, consulte [Basic Query Operations (Visual Basic)](basic-query-operations.md).
+As variáveis usadas em operações de consulta do LINQ (consulta de Language-Integrated) são fortemente tipadas e devem ser compatíveis entre si. A tipagem forte é usada na fonte de dados, na própria consulta e na execução da consulta. A ilustração a seguir identifica os termos usados para descrever uma consulta LINQ. Para obter mais informações sobre as partes de uma consulta, consulte [Basic Query Operations (Visual Basic)](basic-query-operations.md).
 
 ![Captura de tela mostrando uma consulta de pseudocódigo com elementos realçados.](./media/type-relationships-in-query-operations/linq-query-description-terms.png)
 
@@ -120,7 +121,7 @@ Embora não seja possível especificar tipos para todas as variáveis no exemplo
 
 3. O tipo da variável de iteração no `For Each` loop é o tipo anônimo criado na etapa 2. Como o tipo não tem nenhum nome utilizável, o tipo da variável de iteração de loop deve ser determinado implicitamente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a LINQ no Visual Basic](getting-started-with-linq.md)
 - [Tipos anônimos](../../language-features/objects-and-classes/anonymous-types.md)

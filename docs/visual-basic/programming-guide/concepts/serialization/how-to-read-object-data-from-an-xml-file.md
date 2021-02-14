@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como ler dados de objeto de um arquivo XML (Visual Basic)'
 title: Como ler dados de objeto a partir de um arquivo XML
 ms.date: 07/20/2015
 ms.assetid: 1e1423bf-74a4-4dde-a3bb-ae1bfc0a68ed
-ms.openlocfilehash: 7677b32f76bee3fe579f96715b6c748c08c83a82
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d281997a0dd96ad6263fe03cea84b3e84005a3ad
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077235"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100486817"
 ---
 # <a name="how-to-read-object-data-from-an-xml-file-visual-basic"></a>Como ler dados de objeto de um arquivo XML (Visual Basic)
 
@@ -52,7 +53,7 @@ End Sub
 
  Sempre verifique as entradas e nunca desserialize dados de uma fonte não confiável. O objeto recriado é executado em um computador local com as permissões do código que o desserializou. Verifique todas as entradas antes de usar os dados no seu aplicativo.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.StreamWriter>
 - [Como gravar dados de objeto em um arquivo XML (Visual Basic)](how-to-write-object-data-to-an-xml-file.md)

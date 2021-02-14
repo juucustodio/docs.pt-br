@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-sdkpath
 title: -sdkpath
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - /sdkpath compiler option [Visual Basic]
 - sdkpath compiler option [Visual Basic]
 ms.assetid: fec8a3f1-b791-4a37-8af7-344859f8212d
-ms.openlocfilehash: 18bf22861c1cbc3a37ef917b421491c2d01efba8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3c593d56924f4b903540b2392cb86b31cae09cc8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085107"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100473986"
 ---
 # <a name="-sdkpath"></a>-sdkpath
 
@@ -48,7 +49,7 @@ Especifica o local de mscorlib.dll e Microsoft.VisualBasic.dll.
 vbc -netcf -sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE " myfile.vb  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [Linhas de Comando de Compilação de Exemplo](sample-compilation-command-lines.md)

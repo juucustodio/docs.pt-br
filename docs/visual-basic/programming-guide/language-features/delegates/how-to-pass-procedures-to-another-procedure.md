@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como passar procedimentos para outro procedimento no Visual Basic'
 title: Como passar procedimentos para outro procedimento
 ms.date: 07/20/2015
 helpviewer_keywords:
 - AddressOf operator [Visual Basic]
 - delegates [Visual Basic], passing procedures
 ms.assetid: 5adbba15-5a1d-413f-ab3e-3ff6cc0a4669
-ms.openlocfilehash: 3a7a653bbf238b50e3c7339da76df0f68ab9b59f
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: dfd75d1f58519365bfb6ac59892238b5322743f3
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085783"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434440"
 ---
 # <a name="how-to-pass-procedures-to-another-procedure-in-visual-basic"></a>Como passar procedimentos para outro procedimento no Visual Basic
 
@@ -46,7 +47,7 @@ Este exemplo mostra como usar delegados para passar um procedimento para outro p
   
      Quando `Test` é chamado, ele primeiro exibe o resultado de `AddNumbers` atuar em `5` e `3` , que é 8. Em seguida, o resultado de `SubtractNumbers` atuar em `9` e `3` é exibido, que é 6.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Representantes](index.md)
 - [Operador AddressOf](../../../language-reference/operators/addressof-operator.md)

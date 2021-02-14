@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: classificação de operadores de consulta padrão por meio de execução (Visual Basic)'
 title: Classificação de operadores de consulta padrão por maneira de execução
 ms.date: 07/20/2015
 ms.assetid: 7f55b0be-9f6e-44f8-865c-6afbea50cc54
-ms.openlocfilehash: 0628565fc0406c88aac814a05275cccdc61c44fe
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 286520f7697d7d88de903bd1965864942c1728e1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078353"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424561"
 ---
 # <a name="classification-of-standard-query-operators-by-manner-of-execution-visual-basic"></a>Classificação de operadores de consulta padrão por meio de execução (Visual Basic)
 
@@ -93,7 +94,7 @@ As implementações de LINQ to Objects dos métodos de operador de consulta padr
 |<xref:System.Linq.Enumerable.Union%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
 |<xref:System.Linq.Enumerable.Where%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq.Enumerable>
 - [Visão geral de operadores de consulta padrão (Visual Basic)](standard-query-operators-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como acessar elementos descendentes XML (Visual Basic)'
 title: Como acessar elementos descendentes XML
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - descendent axis property [Visual Basic]
 - XML [Visual Basic], accessing
 ms.assetid: aabfa258-4112-4e7e-bab9-403f96072ef7
-ms.openlocfilehash: dcbaf1f9022d86f40a90ef6a1e0033f627caeef2
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d8f3176a91c2f637f49d2754513f3253399ee8ed
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058203"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433168"
 ---
 # <a name="how-to-access-xml-descendant-elements-visual-basic"></a>Como acessar elementos descendentes XML (Visual Basic)
 
@@ -28,7 +29,7 @@ Este exemplo mostra como usar uma propriedade de eixo descendente para acessar t
   
 - Uma referência ao <xref:System.Xml.Linq> namespace.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XContainer.Descendants%2A?displayProperty=nameWithType>
 - [Propriedade de Eixo Descendente XML](../../../language-reference/xml-axis/xml-descendant-axis-property.md)

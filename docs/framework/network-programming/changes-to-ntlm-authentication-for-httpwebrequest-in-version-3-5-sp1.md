@@ -3,12 +3,12 @@ description: 'Saiba mais sobre: alterações na autenticação NTLM para HttpWeb
 title: Alterações na autenticação NTLM para HttpWebRequest na versão 3.5 SP1
 ms.date: 03/30/2017
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
-ms.openlocfilehash: cdb17317dbafc167cce7a9b2785be68a35d3bd5b
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 24787894d89f65024f7022a44b507c689bb0beb5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99791628"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434843"
 ---
 # <a name="changes-to-ntlm-authentication-for-httpwebrequest-in-version-35-sp1"></a>Alterações na autenticação NTLM para HttpWebRequest na versão 3.5 SP1
 
@@ -52,7 +52,7 @@ Para especificar os nomes do host que são mapeados para o endereço de loopback
 
 7. Encerre o Editor do Registro e, em seguida, reinicie o serviço IISAdmin e execute IISReset.
 
-Uma solução alternativa menos segura é desabilitar a verificação de loopback, conforme descrito em <https://support.microsoft.com/kb/896861>. Isso desabilita a proteção contra ataques de reflexão. Portanto, é melhor restringir o conjunto de nomes alternativos somente àqueles que você espera que sejam usados pelo computador.
+Um trabalho menos seguro é desabilitar a verificação de retorno de loop. Isso desabilita a proteção contra ataques de reflexão. Portanto, é melhor restringir o conjunto de nomes alternativos somente àqueles que você espera que sejam usados pelo computador.
 
 ## <a name="see-also"></a>Confira também
 

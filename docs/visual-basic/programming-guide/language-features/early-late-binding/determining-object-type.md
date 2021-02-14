@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: determinando o tipo de objeto (Visual Basic)'
 title: Determinar o Tipo de Objeto
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - TypeName function
 - objects [Visual Basic], type determining
 ms.assetid: d95e7ad1-cd63-41d6-9a28-d7a1380d49c1
-ms.openlocfilehash: ae338bc9bad9646abc045a652d4ef33a8863354b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 0cf64b6dde74b98edaf055537533cb648ed3381a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086056"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434401"
 ---
 # <a name="determining-object-type-visual-basic"></a>Determinando o tipo de objeto (Visual Basic)
 
@@ -46,11 +47,11 @@ Variáveis de objeto genérico (ou seja, variáveis declaradas como `Object` ) p
   
      [!code-vb[VbVbalrOOP#95](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#95)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Information.TypeName%2A>
 - [Chamando uma propriedade ou um método usando o nome de uma cadeia de caracteres](calling-a-property-or-method-using-a-string-name.md)
 - [Tipo de dados Object](../../../language-reference/data-types/object-data-type.md)
 - [Instrução If...Then...Else](../../../language-reference/statements/if-then-else-statement.md)
 - [Tipo de dados da cadeia de caracteres](../../../language-reference/data-types/string-data-type.md)
-- [Tipo de dados Integer](../../../language-reference/data-types/integer-data-type.md)
+- [Tipo de Dados Integer](../../../language-reference/data-types/integer-data-type.md)

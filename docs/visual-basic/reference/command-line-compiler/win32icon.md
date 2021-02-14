@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-win32icon
 title: -win32icon
 ms.date: 03/13/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - -win32icon compiler option [Visual Basic]
 - /win32icon compiler option [Visual Basic]
 ms.assetid: aecaab01-9353-46c5-941c-6edabd4eff92
-ms.openlocfilehash: c6d5e054063592db5777a76fe19da79337ed5034
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 32a46771012708a42beb5450d28daf2fbab3f1c0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91084951"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433543"
 ---
 # <a name="-win32icon"></a>-win32icon
 
@@ -47,7 +48,7 @@ Insere um arquivo. ico no arquivo de saída. Esse arquivo. ico representa o arqu
 vbc -win32icon:rf.ico in.vb  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [Linhas de Comando de Compilação de Exemplo](sample-compilation-command-lines.md)

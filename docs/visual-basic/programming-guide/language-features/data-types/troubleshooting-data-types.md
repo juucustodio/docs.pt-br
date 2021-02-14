@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Solucionando problemas de tipos de dados (Visual Basic)'
 title: Solução de problemas de tipos de dados
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -19,18 +20,18 @@ helpviewer_keywords:
 - floating-point numbers [Visual Basic], comparison
 - floating-point numbers
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
-ms.openlocfilehash: 239e1c2f908a9023aeca6e92aff4633b60f27b69
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 417a71e88dcd0bfb0c6582ee6304a64871640255
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393397"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100463839"
 ---
 # <a name="troubleshooting-data-types-visual-basic"></a>Solucionando problemas de tipos de dados (Visual Basic)
 
 Esta página lista alguns problemas comuns que podem ocorrer quando você executa operações em tipos de dados intrínsecos.
 
-## <a name="floating-point-expressions-do-not-compare-as-equal"></a>As expressões de ponto flutuante não são comparadas como iguais
+## <a name="floating-point-expressions-do-not-compare-as-equal"></a>Floating-Point expressões não são comparadas como iguais
 
 Quando você trabalha com números de ponto flutuante ([tipo de dados único](../../../language-reference/data-types/single-data-type.md) e [tipo de dados duplo](../../../language-reference/data-types/double-data-type.md)), lembre-se de que eles são armazenados como frações binárias. Isso significa que eles não podem manter uma representação exata de qualquer quantidade que não seja uma fração binária (do formulário k/(2 ^ n) em que k e n são inteiros). Por exemplo, 0,5 (= 1/2) e 0,3125 (= 5/16) podem ser mantidos como valores precisos, enquanto 0,2 (= 1/5) e 0,3 (= 3/10) podem ser apenas aproximações.
 
@@ -102,7 +103,7 @@ Sempre há um risco no uso de conversões redutoras, pois elas podem falhar em t
 
 ## <a name="string-conversion-fails-at-run-time"></a>A conversão da cadeia de caracteres falha em tempo de execução
 
-O [tipo de dados String](../../../language-reference/data-types/string-data-type.md) participa de poucas conversões ampliadas. `String`amplia apenas para si mesmo e `Object` , e apenas `Char` e `Char()` (uma `Char` matriz) amplia para `String` . Isso ocorre porque as `String` variáveis e constantes podem conter valores que outros tipos de dados não podem conter.
+O [tipo de dados String](../../../language-reference/data-types/string-data-type.md) participa de poucas conversões ampliadas. `String` amplia apenas para si mesmo e `Object` , e apenas `Char` e `Char()` (uma `Char` matriz) amplia para `String` . Isso ocorre porque as `String` variáveis e constantes podem conter valores que outros tipos de dados não podem conter.
 
 Quando o tipo verificando switch ([Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)) é `On` , o compilador não permite todas as conversões de estreitamento implícitas. Isso inclui os que envolvem `String` . Seu código ainda pode usar palavras-chave de conversão como `CStr` , e a [função CType](../../../language-reference/functions/ctype-function.md), que direcionam a .NET Framework para tentar a conversão.
 
@@ -123,12 +124,12 @@ Um único `Char` e uma matriz de `Char` elementos são ampliados para `String` .
 
 Em geral, `String` os valores não são significativos em outros tipos de dados, e a conversão é altamente artificial e perigosa. Sempre que possível, você deve restringir o uso de `String` variáveis para as sequências de caracteres para as quais elas foram projetadas. Você nunca deve escrever código que dependa de valores equivalentes em outros tipos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Caracteres de tipo](type-characters.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)
 - [Conversões de tipo no Visual Basic](type-conversions.md)
-- [Tipos de dados](../../../language-reference/data-types/index.md)
+- [Data Types](../../../language-reference/data-types/index.md)
 - [Funções de conversão do tipo](../../../language-reference/functions/type-conversion-functions.md)
 - [Uso eficiente de tipos de dados](efficient-use-of-data-types.md)

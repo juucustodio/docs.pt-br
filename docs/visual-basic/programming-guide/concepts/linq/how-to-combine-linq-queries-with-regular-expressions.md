@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como combinar consultas LINQ com expressões regulares (Visual Basic)'
 title: Como combinar consultas LINQ com expressões regulares
 ms.date: 07/20/2015
 ms.assetid: 3da1bd10-b0d8-4d5b-a637-966891c13592
-ms.openlocfilehash: a091418be1f7cc30d42a98f80ebae2d36d29b5d8
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: a2fd06f76c5c278ad1a67f3822151e5f73a2630e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75337553"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424500"
 ---
 # <a name="how-to-combine-linq-queries-with-regular-expressions-visual-basic"></a>Como combinar consultas LINQ com expressões regulares (Visual Basic)
 
@@ -88,7 +89,7 @@ Observe que também é possível consultar o objeto <xref:System.Text.RegularExp
 
 Crie um projeto de aplicativo de console Visual Basic, copie e cole o exemplo de código e ajuste o valor do objeto de inicialização nas propriedades do projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ e cadeias de caracteres (Visual Basic)](linq-and-strings.md)
 - [LINQ e diretórios de arquivos (Visual Basic)](linq-and-file-directories.md)

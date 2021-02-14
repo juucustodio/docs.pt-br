@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: nomes de elementos XML declarados e atributos (Visual Basic)'
 title: Nomes de elementos e atributos XML declarados
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - attribute names [XML in Visual Basic]
 - XML literals [Visual Basic], element names
 ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
-ms.openlocfilehash: 2142674c3de4c5ac9e806c1328daa3efb697beb9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 0c5d049a7d877a23562b91c5d7b3306d8e68ea3a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085614"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422725"
 ---
 # <a name="names-of-declared-xml-elements-and-attributes-visual-basic"></a>Nomes de elementos e atributos XML declarados (Visual Basic)
 
@@ -49,7 +50,7 @@ Este tópico fornece diretrizes de Visual Basic para nomear elementos XML e atri
 
  Ao criar um literal de elemento XML, você pode especificar o prefixo do namespace XML para o nome do elemento. Para obter mais informações, consulte [literal de elemento XML](../../../language-reference/xml-literals/xml-element-literal.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando XML no Visual Basic](creating-xml.md)
 - [Literal do Elemento XML](../../../language-reference/xml-literals/xml-element-literal.md)

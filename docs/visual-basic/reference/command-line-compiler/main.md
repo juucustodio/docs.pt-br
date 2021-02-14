@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-Main
 title: -main
 ms.date: 03/13/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - /main compiler option [Visual Basic]
 - -main compiler option [Visual Basic]
 ms.assetid: 83fc339d-6652-415d-b205-b5133319b5b0
-ms.openlocfilehash: fb317b3c555d151e132122c476ce19bdeceb1321
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4c225c5a0030de6de0aaa510080a586272aa920b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91065613"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455659"
 ---
 # <a name="-main"></a>-main
 
@@ -26,7 +27,7 @@ Especifica a classe ou o módulo que contém o procedimento `Sub Main`.
 ## <a name="arguments"></a>Argumentos  
 
  `location`  
- Necessário. O nome da classe ou do módulo que contém o `Sub Main` procedimento a ser chamado quando o programa for iniciado. Isso pode estar no formato **-principal: módulo** ou **-principal: namespace. Module**.  
+ Obrigatório. O nome da classe ou do módulo que contém o `Sub Main` procedimento a ser chamado quando o programa for iniciado. Isso pode estar no formato **-principal: módulo** ou **-principal: namespace. Module**.  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -56,7 +57,7 @@ Especifica a classe ou o módulo que contém o procedimento `Sub Main`.
 vbc t2.vb t3.vb -main:Test2  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [-Target (Visual Basic)](target.md)

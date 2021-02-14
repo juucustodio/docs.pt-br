@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando Async para acesso a arquivos (Visual Basic)'
 title: Usando o Async para acessar arquivos
 ms.date: 07/20/2015
 ms.assetid: c989305f-08e3-4687-95c3-948465cda202
-ms.openlocfilehash: 2e7fa4a78363a08f2ff25e6a961868e85994e200
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f065ef8d8672569921e1652e62d24c10a506f828
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077352"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474207"
 ---
 # <a name="using-async-for-file-access-visual-basic"></a>Usando o Async para acessar arquivos (Visual Basic)
 
@@ -166,7 +167,7 @@ End Sub
   
  Ao usar os métodos <xref:System.IO.Stream.WriteAsync%2A> e <xref:System.IO.Stream.ReadAsync%2A>, você pode especificar um <xref:System.Threading.CancellationToken>, que pode ser usado para cancelar o fluxo intermediário da operação. Para obter mais informações, consulte ajustar [seu aplicativo assíncrono (Visual Basic)](fine-tuning-your-async-application.md) e o [cancelamento em threads gerenciados](../../../../standard/threading/cancellation-in-managed-threads.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Programação assíncrona com Async e Await (Visual Basic)](index.md)
 - [Tipos de retorno assíncronos (Visual Basic)](async-return-types.md)

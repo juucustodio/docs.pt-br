@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-Resource (Visual Basic)
 title: -resource
 ms.date: 03/13/2018
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - -res compiler option [Visual Basic]
 - resource compiler option [Visual Basic]
 ms.assetid: eee2f227-91f2-4f2b-a9d6-1c51c5320858
-ms.openlocfilehash: 726f3dd179aedb39b578c8580c9632182af2d5e0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 830d89ab4f4063aa12d12a5206b76e49c5355708
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085120"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474103"
 ---
 # <a name="-resource-visual-basic"></a>-recurso (Visual Basic)
 
 Insere um recurso gerenciado em um assembly.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```console  
 -resource:filename[,identifier[,public|private]]  
@@ -36,7 +37,7 @@ ou
   
 |Termo|Definição|  
 |---|---|  
-|`filename`|Necessário. O nome do arquivo de recurso a ser inserido no arquivo de saída. Por padrão, `filename` é público no assembly. Coloque o nome de arquivo entre aspas ("") se ele contiver um espaço.|  
+|`filename`|Obrigatório. O nome do arquivo de recurso a ser inserido no arquivo de saída. Por padrão, `filename` é público no assembly. Coloque o nome de arquivo entre aspas ("") se ele contiver um espaço.|  
 |`identifier`|Opcional. O nome lógico do recurso; o nome usado para carregá-lo. O padrão é o nome do arquivo. Opcionalmente, você pode especificar se o recurso é público ou privado no manifesto do assembly, como com o seguinte: `-res:filename.res, myname.res, public`|  
   
 ## <a name="remarks"></a>Comentários  
@@ -57,7 +58,7 @@ ou
 vbc -res:rf.resource in.vb  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [-win32resource](win32resource.md)

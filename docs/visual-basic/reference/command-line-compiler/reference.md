@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-Reference (Visual Basic)
 title: -reference
 ms.date: 03/13/2018
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - reference compiler option [Visual Basic]
 - -r compiler option [Visual Basic]
 ms.assetid: 66bdfced-bbf6-43d1-a554-bc0990315737
-ms.openlocfilehash: b489a164e56a5e3bdbf7e3cdf24ec330fadedf38
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e84cdf447294a299c26a775327528a94ebba03da
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91097547"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474142"
 ---
 # <a name="-reference-visual-basic"></a>-referência (Visual Basic)
 
 Faz com que o compilador transforme informações de tipo nos assemblies especificados disponíveis para o projeto que você está compilando no momento.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```console  
 -reference:fileList  
@@ -36,7 +37,7 @@ ou
   
 |Termo|Definição|  
 |---|---|  
-|`fileList`|Necessário. Lista delimitada por vírgulas de nomes de arquivo do assembly. Se o nome do arquivo contém um espaço, coloque o nome entre aspas.|  
+|`fileList`|Obrigatório. Lista delimitada por vírgulas de nomes de arquivo do assembly. Se o nome do arquivo contém um espaço, coloque o nome entre aspas.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -64,10 +65,10 @@ ou
 vbc -reference:metad1.dll,metad2.dll -out:out.exe input.vb  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [-noconfig](noconfig.md)
 - [-Target (Visual Basic)](target.md)
-- [Pública](../../language-reference/modifiers/public.md)
+- [Público](../../language-reference/modifiers/public.md)
 - [Linhas de Comando de Compilação de Exemplo](sample-compilation-command-lines.md)

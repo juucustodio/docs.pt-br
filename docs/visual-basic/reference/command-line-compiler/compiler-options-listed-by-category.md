@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Visual Basic opções de compilador listadas por categoria'
 title: Opções de compilador listadas por categoria
 ms.date: 04/12/2018
 helpviewer_keywords:
 - Visual Basic compiler, options
 ms.assetid: fbe36f7a-7cfa-4f77-a8d4-2be5958568e3
-ms.openlocfilehash: 77a130b684d26cf7e4b9df9382348a371a60bc5d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f0535e2aa94cda96610acb0edb24f6d46cc4afa0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072035"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474168"
 ---
 # <a name="visual-basic-compiler-options-listed-by-category"></a>Visual Basic opções de compilador listadas por categoria
 
@@ -38,7 +39,7 @@ O compilador de linha de comando Visual Basic é fornecido como uma alternativa 
   
 |Opção|Finalidade|  
 |---|---|  
-|[-Doc](doc.md)|Processa comentários de documentação em um arquivo XML.|  
+|[-doc](doc.md)|Processa comentários de documentação em um arquivo XML.|  
 |[-determinístico](deterministic.md)|Faz com que o compilador gere um assembly de conteúdo binário idêntico entre compilações se as entradas são idênticas.|
 |[-netcf](netcf.md)|Define o compilador para o .NET Compact Framework de destino.|  
 |[-out](out.md)|Especifica um arquivo de saída.|  
@@ -55,7 +56,7 @@ O compilador de linha de comando Visual Basic é fornecido como uma alternativa 
 |[-imports](imports.md)|Importa um namespace de um assembly especificado.|  
 |[-keycontainer](keycontainer.md)|Especifica um nome de contêiner de chave para um par de chaves para dar a um assembly um nome forte.|  
 |[-keyfile](keyfile.md)|Especifica um arquivo que contém uma chave ou um par de chaves para fornecer um nome forte ao assembly.|  
-|[-libpath](libpath.md)|Especifica o local dos assemblies referenciados pela opção [-Reference](reference.md) .|  
+|[-LIBPATH](libpath.md)|Especifica o local dos assemblies referenciados pela opção [-Reference](reference.md) .|  
 |[-referência](reference.md)|Importa metadados de um assembly.|  
 |[-moduleassemblyname](moduleassemblyname.md)|Especifica o nome do assembly do qual um módulo fará parte.|  
 |`-analyzer`|Executar os analisadores com basse nesse assembly (forma abreviada: -a)|  
@@ -80,7 +81,7 @@ O compilador de linha de comando Visual Basic é fornecido como uma alternativa 
 |[-?](help.md)|Exibe as opções do compilador. Esse comando é o mesmo que especificar a `-help` opção. Nenhuma compilação ocorre.|  
 |[-ajuda](help.md)|Exibe as opções do compilador. Esse comando é o mesmo que especificar a `-?` opção. Nenhuma compilação ocorre.|  
   
-## <a name="language"></a>Linguagem  
+## <a name="language"></a>Idioma  
   
 |Opção|Finalidade|  
 |---|---|  
@@ -114,7 +115,7 @@ O compilador de linha de comando Visual Basic é fornecido como uma alternativa 
 |[-página de código](codepage.md)|Especifica a página de código a ser usada para todos os arquivos de código-fonte na compilação.|  
 |[-errorreport](errorreport.md)|Especifica como o compilador de Visual Basic deve relatar erros internos do compilador.|  
 |[-highentropyva](highentropyva.md)|Informa ao kernel do Windows se um executável específico dá suporte a alta (randomização de layout de espaço de endereço) de entropia.|  
-|[-main](main.md)|Especifica a classe que contém o `Sub Main` procedimento a ser usado na inicialização.|  
+|[-principal](main.md)|Especifica a classe que contém o `Sub Main` procedimento a ser usado na inicialização.|  
 |[-noconfig](noconfig.md)|Não compilar com Vbc. rsp|  
 |[-nostdlib](nostdlib.md)|Faz com que o compilador não referencie as bibliotecas padrão.|  
 |[-nowin32manifest](nowin32manifest.md)|Instrui o compilador a não inserir nenhum manifesto de aplicativo no arquivo executável.|  
@@ -127,7 +128,7 @@ O compilador de linha de comando Visual Basic é fornecido como uma alternativa 
 |`-parallel[+&#124;-]`|Especifica se deve o build simultâneo deve ser usado (+).|  
 |`-checksumalgorithm:<alg>`|Especifique o algoritmo para calcular a soma de verificação do arquivo de origem armazenada no PDB.  Os valores com suporte são: SHA1 (padrão) ou SHA256. <br>Devido a problemas de colisão com o SHA1, a Microsoft recomenda SHA256 ou melhor.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Opções do compilador do Visual Basic listadas em ordem alfabética](compiler-options-listed-alphabetically.md)
 - [Gerenciar propriedades do projeto e da solução](/visualstudio/ide/managing-project-and-solution-properties)

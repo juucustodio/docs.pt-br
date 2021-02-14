@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: conversões entre cadeias de caracteres e outros tipos (Visual Basic)'
 title: Conversões entre cadeias de caracteres e outros tipos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - type conversion [Visual Basic], string
 - regional options
 ms.assetid: c3a99596-f09a-44a5-81dd-1b89a094f1df
-ms.openlocfilehash: 823931f7d6beb8218e8b99d4a8d45716b7214304
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c0f7f7637d173d039d58b2516fba41ae55b990ac
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077144"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477210"
 ---
 # <a name="conversions-between-strings-and-other-types-visual-basic"></a>Conversões entre cadeias de caracteres e outros tipos (Visual Basic)
 
@@ -26,7 +27,7 @@ Você pode converter um valor numérico, `Boolean` ou de data/hora em um `String
   
 ## <a name="conversion-of-numbers-to-strings"></a>Conversão de números em cadeias de caracteres  
 
- Você pode usar a `Format` função para converter um número em uma cadeia de caracteres formatada, que pode incluir não apenas os dígitos apropriados, mas também os símbolos de formatação, como um símbolo de moeda (como `$` ), separadores de milhares ou *símbolos de agrupamento de dígitos* (como `,` ) e um separador decimal (como `.` ). `Format` o usa automaticamente os símbolos apropriados de acordo com as configurações de **Opções regionais** especificadas no **painel de controle**do Windows.  
+ Você pode usar a `Format` função para converter um número em uma cadeia de caracteres formatada, que pode incluir não apenas os dígitos apropriados, mas também os símbolos de formatação, como um símbolo de moeda (como `$` ), separadores de milhares ou *símbolos de agrupamento de dígitos* (como `,` ) e um separador decimal (como `.` ). `Format` o usa automaticamente os símbolos apropriados de acordo com as configurações de **Opções regionais** especificadas no **painel de controle** do Windows.  
   
  Observe que o operador concatenation ( `&` ) pode converter um número em uma cadeia de caracteres implicitamente, como mostra o exemplo a seguir.  
   
@@ -43,7 +44,7 @@ Str = "The total count is " & count
   
  Quando Visual Basic converte uma cadeia de caracteres em um valor numérico, ele usa as configurações de **Opções regionais** especificadas no **painel de controle** do Windows para interpretar o separador de milhar, o separador decimal e o símbolo de moeda. Isso significa que uma conversão pode ter sucesso em uma configuração, mas não em outra. Por exemplo, `"$14.20"` é aceitável na localidade inglês (Estados Unidos), mas não em qualquer localidade em francês.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Conversões de tipo no Visual Basic](type-conversions.md)
 - [Conversões de Widening e Narrowing](widening-and-narrowing-conversions.md)

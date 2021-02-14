@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como acessar caracteres em cadeias de caractere no Visual Basic'
 title: Como acessar caracteres em cadeias de caracteres
 ms.date: 07/20/2015
 helpviewer_keywords:
 - strings [Visual Basic], accessing characters
 - characters [Visual Basic], accessing in strings
 ms.assetid: 02c5206c-ffab-494d-b648-3b2ea358dc34
-ms.openlocfilehash: 4ea37c4393a8ece5513327b22c6c0ba4b027c781
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 373005699483dbae92df3a6fe73cc9b6318a9c61
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059178"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476157"
 ---
 # <a name="how-to-access-characters-in-strings-in-visual-basic"></a>Como acessar caracteres em cadeias de caracteres no Visual Basic
 
@@ -30,7 +31,7 @@ Este exemplo demonstra como usar a <xref:System.String.Chars%2A> propriedade par
   
  A <xref:System.String.Chars%2A> propriedade gera uma <xref:System.IndexOutOfRangeException> exceção se o `index` parâmetro for maior ou igual ao comprimento da cadeia de caracteres, ou se for menor que zero  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.String.Chars%2A>
 - [Como converter uma cadeia de caracteres em uma matriz de caracteres](how-to-convert-a-string-to-an-array-of-characters.md)

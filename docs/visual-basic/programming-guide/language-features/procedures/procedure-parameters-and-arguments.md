@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: parâmetros de procedimento e argumentos (Visual Basic)'
 title: Parâmetros e argumentos de procedimento
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - argument lists [Visual Basic]
 - procedures [Visual Basic], parameter lists
 ms.assetid: ff275aff-aa13-40df-bd4c-63486db8c1e9
-ms.openlocfilehash: c7f8eb1fa4e1fa3d87474d048d5a60994b0b7fc5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c2239c76450f503e74dbf5f191cd212e05d11600
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071268"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100423154"
 ---
 # <a name="procedure-parameters-and-arguments-visual-basic"></a>Parâmetros e argumentos de procedimento (Visual Basic)
 
@@ -61,7 +62,7 @@ Na maioria dos casos, um procedimento precisa de algumas informações sobre as 
 
  Um *procedimento genérico* também define um ou mais *parâmetros de tipo* , além de seus parâmetros normais. Um procedimento genérico permite que o código de chamada passe tipos de dados diferentes cada vez que chama o procedimento, para que possa personalizar os tipos de dados para os requisitos de cada chamada individual. Consulte [procedimentos genéricos em Visual Basic](../data-types/generic-procedures.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Subprocedimentos](./sub-procedures.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instruções em Visual Basic'
 title: Instruções
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - variables [Visual Basic], defining
 - statements [Visual Basic], about statements
 ms.assetid: fcfdee1a-82b7-4846-98f7-9ca3f5160089
-ms.openlocfilehash: 09fe53f4bc2b6d025b762c6595c5337263456bae
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9da27c77c858075e413580047b7ed688b328c87f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401973"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436884"
 ---
 # <a name="statements-in-visual-basic"></a>Instruções no Visual Basic
 
@@ -84,7 +85,7 @@ No exemplo anterior, a instrução de atribuição armazena o valor literal 42 n
 
 O elemento de programação no lado esquerdo do operador de atribuição deve ser capaz de aceitar e armazenar um valor. Isso significa que ele deve ser uma variável ou propriedade que não seja [ReadOnly](../../language-reference/modifiers/readonly.md)ou deve ser um elemento de matriz. No contexto de uma instrução de atribuição, esse elemento, às vezes, é chamado de *lvalue*, para "valor esquerdo".
 
-O valor no lado direito do operador de atribuição é gerado por uma expressão, que pode consistir em qualquer combinação de literais, constantes, variáveis, propriedades, elementos de matriz, outras expressões ou chamadas de função. O exemplo a seguir ilustra isto.
+O valor no lado direito do operador de atribuição é gerado por uma expressão, que pode consistir em qualquer combinação de literais, constantes, variáveis, propriedades, elementos de matriz, outras expressões ou chamadas de função. O exemplo a seguir ilustra essa situação.
 
 [!code-vb[VbVbalrStatements#74](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#74)]
 
@@ -128,7 +129,7 @@ Para obter informações sobre a conversão entre tipos de dados, consulte [conv
 
 ## <a name="putting-multiple-statements-on-one-line"></a>Colocando várias instruções em uma linha
 
-Você pode ter várias instruções em uma única linha separada pelo caractere de dois-pontos ( `:` ). O exemplo a seguir ilustra isto.
+Você pode ter várias instruções em uma única linha separada pelo caractere de dois-pontos ( `:` ). O exemplo a seguir ilustra essa situação.
 
 [!code-vb[VbVbalrStatements#70](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#70)]
 

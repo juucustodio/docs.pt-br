@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como: contar, somar ou média de dados usando o LINQ (Visual Basic)'
 title: Como contar, somar ou fazer média de dados usando LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - query samples [Visual Basic]
 - count operator [LINQ in Visual Basic]
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
-ms.openlocfilehash: 617c6959e2d3add6d36266b0827ef7281b0c77a9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1759a2f990c2e61a862d032f2a09f29f65a05103
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059243"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422778"
 ---
 # <a name="how-to-count-sum-or-average-data-by-using-linq-visual-basic"></a>Como contar, somar ou fazer média de dados usando LINQ (Visual Basic)
 
-A consulta integrada à linguagem (LINQ) facilita o acesso a informações do banco de dados e a execução de consultas.  
+A consulta de Language-Integrated (LINQ) facilita o acesso a informações do banco de dados e a execução de consultas.  
   
  O exemplo a seguir mostra como criar um novo aplicativo que executa consultas em um banco de dados SQL Server. O exemplo conta, soma e calcula a média dos resultados usando as `Aggregate` `Group By` cláusulas e. Para obter mais informações, consulte [cláusula Aggregate](../../../language-reference/queries/aggregate-clause.md) e [cláusula Group by](../../../language-reference/queries/group-by-clause.md).  
   
@@ -78,11 +79,11 @@ A consulta integrada à linguagem (LINQ) facilita o acesso a informações do ba
   
 4. Pressione F5 para executar o projeto e exibir os resultados.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ](index.md)
 - [Consultas](../../../language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [Métodos de DataContext (Designer de Objeto Relacional)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
 - [Cláusula Aggregate](../../../language-reference/queries/aggregate-clause.md)
-- [Cláusula Group By](../../../language-reference/queries/group-by-clause.md)
+- [Cláusula Group by](../../../language-reference/queries/group-by-clause.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: namespaces no Visual Basic'
 title: Namespaces
 ms.date: 07/20/2015
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - naming conventions [Visual Basic], naming conflicts
 - namespaces
 ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
-ms.openlocfilehash: f4521fa10c3bb9e8e121e3c228a23061becd1741
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2f7c0bfd29bf6fe104252aa125b4ddff1259b50a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072191"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100460742"
 ---
 # <a name="namespaces-in-visual-basic"></a>Namespaces no Visual Basic
 
@@ -86,7 +87,7 @@ Namespace SpecialSpace
 End Namespace  
 ```  
   
- Como resultado, o compilador Visual Basic não consegue resolver com êxito a referência a <xref:System.Int32?displayProperty=nameWithType> , porque não `SpecialSpace.System` define `Int32` . Você pode usar a `Global` palavra-chave para iniciar a cadeia de qualificação no nível mais externo da biblioteca de classes de .NET Framework. Isso permite que você especifique o <xref:System?displayProperty=nameWithType> namespace ou qualquer outro namespace na biblioteca de classes. O exemplo a seguir ilustra isto.  
+ Como resultado, o compilador Visual Basic não consegue resolver com êxito a referência a <xref:System.Int32?displayProperty=nameWithType> , porque não `SpecialSpace.System` define `Int32` . Você pode usar a `Global` palavra-chave para iniciar a cadeia de qualificação no nível mais externo da biblioteca de classes de .NET Framework. Isso permite que você especifique o <xref:System?displayProperty=nameWithType> namespace ou qualquer outro namespace na biblioteca de classes. O exemplo a seguir ilustra essa situação.  
   
 ```vb  
 Namespace SpecialSpace  
@@ -125,7 +126,7 @@ End Namespace
   
  [!code-vb[VbVbalrApplication#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrApplication/VB/module1.vb#21)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Windows.Forms.ListBox>
 - <xref:System.Windows.Forms?displayProperty=nameWithType>

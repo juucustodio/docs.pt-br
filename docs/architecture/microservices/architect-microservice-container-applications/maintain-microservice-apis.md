@@ -2,18 +2,18 @@
 title: Criando, evoluindo e fazendo o controle de versão de APIs e de contratos de microsserviços
 description: Crie contratos e APIs de microsserviço levando em conta a evolução e o controle de versão, porque a alteração é necessária.
 ms.date: 01/13/2021
-ms.openlocfilehash: 84eeaa9776947abda6171949c730f8473e97b241
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: ec4dbcd1fde2078ddb6b5feb67b47a52f8b3aeb8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189454"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425523"
 ---
 # <a name="creating-evolving-and-versioning-microservice-apis-and-contracts"></a>Criando, evoluindo e fazendo o controle de versão de APIs e de contratos de microsserviços
 
 Uma API de microsserviço é um contrato entre o serviço e seus clientes. Você poderá evoluir um microsserviço de forma independente apenas se você não precisar interromper seu contrato de API, que é o motivo pelo qual o contrato é tão importante. Se você alterar o contrato, isso afetará seus aplicativos cliente ou seu Gateway de API.
 
-A natureza da definição de API depende do protocolo que você está usando. Por exemplo, se você estiver usando mensagens (como [AMQP](http://www.amqp.org/)), a API consistirá nos tipos de mensagem. Se você estiver usando serviços HTTP e RESTful, a API consistirá nas URLs e nos formatos JSON de solicitação e de resposta.
+A natureza da definição de API depende do protocolo que você está usando. Por exemplo, se você estiver usando mensagens (como [AMQP](http://www.amqp.org)), a API consistirá nos tipos de mensagem. Se você estiver usando serviços HTTP e RESTful, a API consistirá nas URLs e nos formatos JSON de solicitação e de resposta.
 
 No entanto, mesmo se você estiver em dúvida sobre seu contrato inicial, uma API de serviço precisará ser alterada com o tempo. Quando isso acontecer – e, principalmente, se a API for uma API pública consumida por vários aplicativos cliente – normalmente não será possível forçar todos os clientes a atualizarem para seu novo contrato de API. Geralmente, é necessário implantar novas versões de um serviço de forma incremental de maneira que versões novas e antigas de um contrato de serviço estejam em execução simultaneamente. Portanto, é importante ter uma estratégia para o controle de versão do serviço.
 

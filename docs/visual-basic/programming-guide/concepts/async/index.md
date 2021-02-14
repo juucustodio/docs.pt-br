@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: programação assíncrona com Async e Await (Visual Basic)'
 title: Programação assíncrona com Async e Await
 ms.date: 07/20/2015
 ms.assetid: bd7e462b-583b-4395-9c36-45aa9e61072c
-ms.openlocfilehash: b4f35b482b4ee3fc7e08c296cf3815fb2bdd6874
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e0723490a5f3863dc05acd49d6e3e91133413420
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555374"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474350"
 ---
 # <a name="asynchronous-programming-with-async-and-await-visual-basic"></a>Programação assíncrona com Async e Await (Visual Basic)
 
@@ -255,7 +256,7 @@ O código a seguir é o arquivo MainWindow.xaml.vb do aplicativo WPF (Windows Pr
 
 [!code-vb[async](~/samples/snippets/standard/async/async-and-await/vb/MainWindow.xaml.vb)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operador Await](../../../language-reference/operators/await-operator.md)
 - [Async](../../../language-reference/modifiers/async.md)

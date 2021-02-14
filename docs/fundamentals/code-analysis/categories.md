@@ -5,16 +5,16 @@ ms.date: 02/05/2021
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, categories
-ms.openlocfilehash: 3eaff57a7ea175fbe0895fb7bb8d8d0d8df1365d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: fdb4662f52a13906a2d9bcb3fd9a90860e394e72
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99804173"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100467323"
 ---
 # <a name="rule-categories"></a>Categorias de regras
 
-Cada regra de análise de código pertence a uma categoria de regras. Por exemplo, as regras de design dão suporte à adesão às diretrizes de design do .NET e as regras de segurança ajudam a evitar falhas de segurança. Você pode [desabilitar ou habilitar uma categoria inteira](configuration-options.md#scope) de regras. Você também pode [Configurar opções adicionais](code-quality-rule-options.md#category-of-rules) em uma base por categoria.
+Cada regra de análise de código pertence a uma categoria de regras. Por exemplo, as regras de design dão suporte à adesão às diretrizes de design do .NET e as regras de segurança ajudam a evitar falhas de segurança. Você pode [Configurar o nível de severidade](configuration-options.md#scope) para uma categoria inteira de regras. Você também pode [Configurar opções adicionais](code-quality-rule-options.md#category-of-rules) em uma base por categoria.
 
 A tabela a seguir mostra as diferentes categorias de regra de análise de código e fornece um link para as regras em cada categoria.
 

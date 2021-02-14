@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como filtrar os resultados da consulta usando o LINQ (Visual Basic)'
 title: Como filtrar resultados de consulta usando LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - query samples [Visual Basic]
 - filtering data [Visual Basic]
 ms.assetid: ef103092-9bed-4134-97f4-2db696e83c12
-ms.openlocfilehash: 4d91783429f24abfe4149217542f8f7a6073bfef
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b3f861d9a7fb7b601606f190ad3bfbeef054cad7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404985"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422777"
 ---
 # <a name="how-to-filter-query-results-by-using-linq-visual-basic"></a>Como filtrar resultados de consulta usando LINQ (Visual Basic)
 
-A consulta integrada à linguagem (LINQ) facilita o acesso a informações do banco de dados e a execução de consultas.
+A consulta de Language-Integrated (LINQ) facilita o acesso a informações do banco de dados e a execução de consultas.
 
 O exemplo a seguir mostra como criar um novo aplicativo que executa consultas em um banco de dados SQL Server e filtra os resultados por um valor específico usando a `Where` cláusula. Para obter mais informações, consulte a [cláusula WHERE](../../../language-reference/queries/where-clause.md).
 
@@ -78,9 +79,9 @@ Os exemplos neste tópico usam o banco de dados de exemplo Northwind. Caso não 
 
     [!code-vb[VbLINQToSQLHowTos#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form5.vb#12)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ](index.md)
 - [Consultas](../../../language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
-- [Métodos DataContext (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+- [Métodos de DataContext (Designer de Objeto Relacional)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

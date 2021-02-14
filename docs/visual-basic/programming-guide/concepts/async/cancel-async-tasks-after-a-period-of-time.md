@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cancelar tarefas assíncronas após um período de tempo (Visual Basic)'
 title: Cancelar tarefas assíncronas após um período
 ms.date: 07/20/2015
 ms.assetid: a48045a3-6a99-42af-b824-af340f0b9a5d
-ms.openlocfilehash: 048d4c19d459905ea579ede96c69230e718d55aa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fa1711017128dd32f29adfd87a540676371d02cf
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396682"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431627"
 ---
 # <a name="cancel-async-tasks-after-a-period-of-time-visual-basic"></a>Cancelar tarefas assíncronas após um período (Visual Basic)
 
@@ -193,7 +194,7 @@ End Class
 ' Downloads canceled.
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Programação assíncrona com Async e Await (Visual Basic)](index.md)
 - [Instruções passo a passo: acessando a Web usando Async e Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)

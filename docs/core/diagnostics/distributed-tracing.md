@@ -2,12 +2,12 @@
 title: Rastreamento distribuído-.NET
 description: Uma introdução ao rastreamento distribuído do .NET.
 ms.date: 02/02/2021
-ms.openlocfilehash: d21d2a978cfe58d89db689dec07107f089363912
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: d29c803dfec00474562abdc61ce65ea3f3faa133
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99640115"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431432"
 ---
 # <a name="net-distributed-tracing"></a>Rastreamento distribuído do .NET
 
@@ -79,7 +79,7 @@ Aplicativos e bibliotecas podem facilmente publicar dados de rastreamento simple
 A primeira etapa para publicar dados de rastreamento é criar uma instância da classe Activityry. A ActivityName é a classe que fornece APIs para criar e iniciar objetos de atividade e para registrar objetos ActivityListener para escutar os eventos de atividade.
 
 ```csharp
-    internal static ActivitySource source = new ActivitySource("MyCompany.MyComponent.SourceName", "v1");
+    private static ActivitySource source = new ActivitySource("MyCompany.MyComponent.SourceName", "v1");
 ```
 
 #### <a name="best-practices"></a>Práticas Recomendadas
@@ -105,7 +105,7 @@ Agora, o objeto Activityprovider criado pode ser usado para criar e iniciar obje
 
 Este código de exemplo tenta criar o objeto de atividade e, em seguida, registra em log alguma marca `key` de rastreamento e `value` .
 
-#### <a name="notes"></a>Observações
+#### <a name="notes"></a>Anotações
 
 - `ActivitySource.StartActivity` tenta criar e iniciar a atividade ao mesmo tempo. O padrão de código listado está usando o `using` bloco que descarta automaticamente o objeto de atividade criado após a execução do bloco. Descartar o objeto de atividade interromperá essa atividade iniciada e o código não precisará parar explicitamente a atividade. Isso simplifica o padrão de codificação.
 

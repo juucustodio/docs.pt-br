@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: diferenças entre parâmetros e argumentos (Visual Basic)'
 title: Diferenças entre parâmetros e argumentos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - procedure parameters
 - parameters [Visual Basic], definition
 ms.assetid: c237c056-74f4-4749-9f2c-15864f139a31
-ms.openlocfilehash: 0ad9104f347205cebc6e078aac246a413c0d9b78
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 01efc7dc3f451d6aae20cfd091355f531af4431c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057839"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438756"
 ---
 # <a name="differences-between-parameters-and-arguments-visual-basic"></a>Diferenças entre parâmetros e argumentos (Visual Basic)
 
 Na maioria dos casos, um procedimento deve ter algumas informações sobre as circunstâncias em que ele foi chamado. Um procedimento que executa tarefas repetidas ou compartilhadas usa informações diferentes para cada chamada. Essas informações consistem em variáveis, constantes e expressões que você passa para o procedimento ao chamá-lo.  
   
- Para comunicar essas informações ao procedimento, o procedimento define um *parâmetro*e o código de chamada passa um *argumento* para esse parâmetro. Você pode considerar o parâmetro como um espaço de estacionamento e o argumento como um automóvel. Assim como os automóveis diferentes podem estacionar em um espaço de estacionamento em momentos diferentes, o código de chamada pode passar um argumento diferente para o mesmo parâmetro toda vez que ele chama o procedimento.  
+ Para comunicar essas informações ao procedimento, o procedimento define um *parâmetro* e o código de chamada passa um *argumento* para esse parâmetro. Você pode considerar o parâmetro como um espaço de estacionamento e o argumento como um automóvel. Assim como os automóveis diferentes podem estacionar em um espaço de estacionamento em momentos diferentes, o código de chamada pode passar um argumento diferente para o mesmo parâmetro toda vez que ele chama o procedimento.  
   
 ## <a name="parameters"></a>Parâmetros  
 
@@ -40,7 +41,7 @@ Na maioria dos casos, um procedimento deve ter algumas informações sobre as ci
   
  Ao contrário da definição de parâmetro, os argumentos não têm nomes. Cada argumento é uma expressão, que pode conter zero ou mais variáveis, constantes e literais. O tipo de dados da expressão avaliada normalmente deve corresponder ao tipo de dados definido para o parâmetro correspondente e, em qualquer caso, ele deve ser conversível para o tipo de parâmetro.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Subprocedimentos](./sub-procedures.md)

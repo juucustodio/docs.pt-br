@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: declaração de variável em Visual Basic'
 title: Declaração de variável
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - local variables [Visual Basic], declarations
 - scope [Visual Basic], variables
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
-ms.openlocfilehash: 8d78509e1604fee4a151608f6166de6fc8ccfdaa
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ef0e7bc7a99f320bd40788ef019b05c7ebf4ce46
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080147"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462692"
 ---
 # <a name="variable-declaration-in-visual-basic"></a>Declaração de variável no Visual Basic
 
@@ -38,9 +39,9 @@ Você declara uma variável para especificar seu nome e suas características. A
   
 ### <a name="shared-and-instance-variables"></a>Variáveis de instância e compartilhadas  
 
- Em uma classe ou estrutura, a categoria de uma variável de membro depende se ela é compartilhada ou não. Se ela for declarada com a palavra-chave [Shared](../../../language-reference/modifiers/shared.md) , ela será uma *variável compartilhada*e ela existirá em uma única cópia compartilhada entre todas as instâncias da classe ou estrutura.  
+ Em uma classe ou estrutura, a categoria de uma variável de membro depende se ela é compartilhada ou não. Se ela for declarada com a palavra-chave [Shared](../../../language-reference/modifiers/shared.md) , ela será uma *variável compartilhada* e ela existirá em uma única cópia compartilhada entre todas as instâncias da classe ou estrutura.  
   
- Caso contrário, é uma *variável de instância*e uma cópia separada dela é criada para cada instância da classe ou estrutura. Uma determinada cópia de uma variável de instância está disponível somente para a instância da classe ou estrutura na qual ela foi criada. Ele é independente de uma cópia da variável de instância em qualquer outra instância da classe ou estrutura.  
+ Caso contrário, é uma *variável de instância* e uma cópia separada dela é criada para cada instância da classe ou estrutura. Uma determinada cópia de uma variável de instância está disponível somente para a instância da classe ou estrutura na qual ela foi criada. Ele é independente de uma cópia da variável de instância em qualquer outra instância da classe ou estrutura.  
   
 ## <a name="declaring-data-type"></a>Tipo de dados declarativo  
 
@@ -83,7 +84,7 @@ Dim l, m As Long, x, y As Single
   
  O nível de *acesso* de uma variável é a extensão do código que tem permissão para acessá-lo. Isso é determinado pelo modificador de acesso (como [público](../../../language-reference/modifiers/public.md) ou [privado](../../../language-reference/modifiers/private.md)) que você usa na `Dim` instrução. Para obter mais informações, consulte [níveis de acesso em Visual Basic](../declared-elements/access-levels.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como criar uma nova variável](how-to-create-a-new-variable.md)
 - [Como inserir e remover dados de uma variável](how-to-move-data-into-and-out-of-a-variable.md)

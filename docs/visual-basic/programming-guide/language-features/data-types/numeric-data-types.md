@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos de dados numéricos (Visual Basic)'
 title: Tipos de dados numéricos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - Single data type [Visual Basic], numeric types
 - Decimal data type [Visual Basic], numeric data types
 ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
-ms.openlocfilehash: 317c0862953e7bb866faa4712d42dfd5995ecf35
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 0e44301d953ab75378aabbec82fdb6dce00a02e2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086225"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430684"
 ---
 # <a name="numeric-data-types-visual-basic"></a>Tipos de dados numéricos (Visual Basic)
 
@@ -88,7 +89,7 @@ O Visual Basic fornece vários *tipos de dados numéricos* para lidar com númer
 
  Se você não precisar do intervalo completo do tipo de `Double` dados, poderá usar o tipo de `Single` dados, que pode conter números de ponto flutuante de-3.4028235 e + 38 a 3.4028235 e + 38. As menores magnitudes das `Single` variáveis são-1.401298 e-45 para valores negativos e 1.401298 e-45 para valores positivos. Se você tiver um número muito grande de variáveis que contenham números pequenos de ponto flutuante, a Common Language Runtime poderá, às vezes, armazenar suas `Single` variáveis com mais eficiência e economizar o consumo de memória.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de dados elementares](elementary-data-types.md)
 - [Tipos de dados de caractere](character-data-types.md)

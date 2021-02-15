@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como chamar um procedimento de propriedade (Visual Basic)'
 title: Como chamar um procedimento de propriedade
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - properties [Visual Basic], property procedures
 - procedure calls [Visual Basic], property procedures
 ms.assetid: 96bc4d74-d9c3-4b7a-954d-58ac8553cd94
-ms.openlocfilehash: 0b35751136937d4cee5b3ca9669b43d3fbdf71a1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 541768cb6381aa3d2b1bf75267c5b34a82a3d2ab
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071944"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466751"
 ---
 # <a name="how-to-call-a-property-procedure-visual-basic"></a>Como chamar um procedimento de propriedade (Visual Basic)
 
@@ -25,7 +26,7 @@ Você chama um procedimento de propriedade armazenando um valor na propriedade o
   
 1. Use o nome da propriedade em uma expressão da mesma maneira que usaria um nome de variável. Você pode usar uma propriedade em qualquer lugar em que possa usar uma variável ou uma constante.  
   
-     - ou -  
+     -ou-  
   
      Use o nome da propriedade após o sinal de igual ( `=` ) em uma instrução de atribuição.  
   
@@ -53,7 +54,7 @@ Você chama um procedimento de propriedade armazenando um valor na propriedade o
   
  O valor gerado no lado direito da instrução de atribuição é armazenado na propriedade.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos de propriedade](./property-procedures.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)

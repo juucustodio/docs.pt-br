@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos de dados de caractere (Visual Basic)'
 title: Tipos de dados de caractere
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Char data type [Visual Basic], character data types
 - data types [Visual Basic], choosing
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
-ms.openlocfilehash: 5fde5eff40d83bdd7d90cd611bd6749106db6e16
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2197c0210cb0c2287baff9856889334f5f95bd4d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077170"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466387"
 ---
 # <a name="character-data-types-visual-basic"></a>Tipos de dados de caractere (Visual Basic)
 
@@ -42,12 +43,12 @@ Visual Basic fornece *tipos de dados de caractere* para lidar com caracteres imp
   
  Para obter mais informações, consulte [cadeia de caracteres tipo de dados](../../../language-reference/data-types/string-data-type.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de dados elementares](elementary-data-types.md)
 - [Tipos de dados compostos](composite-data-types.md)
 - [Tipos genéricos no Visual Basic](generic-types.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)
 - [Conversões de tipo no Visual Basic](type-conversions.md)
 - [Solução de problemas de tipos de dados](troubleshooting-data-types.md)
 - [Caracteres de tipo](type-characters.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como gravar dados de objeto em um arquivo XML (Visual Basic)'
 title: Como gravar dados de objeto em um arquivo XML
 ms.date: 07/20/2015
 ms.assetid: f7966480-5ed2-43ac-9894-33427436de2a
-ms.openlocfilehash: af62d10b29e76701668fd3d595b967bd1754a22c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c6935fa97ed8813528630f5794e0a8e3e7e77b4d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077222"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100486830"
 ---
 # <a name="how-to-write-object-data-to-an-xml-file-visual-basic"></a>Como gravar dados de objeto em um arquivo XML (Visual Basic)
 
@@ -58,7 +59,7 @@ End Module
 
  Este exemplo cria um novo arquivo, se o arquivo ainda não existe. Se um aplicativo precisar criar um arquivo, ele precisará de acesso `Create` para a pasta. Se o arquivo já existe, o aplicativo precisa apenas de acesso `Write`, um privilégio menor. Sempre que possível, é mais seguro criar o arquivo durante a implantação e somente conceder acesso `Read` a um único arquivo, em vez de acesso `Create` a uma pasta.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.StreamWriter>
 - [Como ler dados de objeto de um arquivo XML (Visual Basic)](how-to-read-object-data-from-an-xml-file.md)

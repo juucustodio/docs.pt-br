@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: tipos de dados elementares (Visual Basic)'
 title: Tipos de dados elementares
 ms.date: 07/20/2015
 helpviewer_keywords:
 - elementary data types [Visual Basic]
 - data types [Visual Basic], elementary
 ms.assetid: dfad6fe9-2da6-49a4-b0b1-2d7ae0283de5
-ms.openlocfilehash: b4ecb67e346b06085217bc1f7660755c061916ee
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 71bf05f72521694b8aeef344dc8604d0e1a292e5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077131"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462042"
 ---
 # <a name="elementary-data-types-visual-basic"></a>Tipos de dados elementares (Visual Basic)
 

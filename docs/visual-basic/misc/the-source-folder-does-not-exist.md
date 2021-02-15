@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: a pasta de origem não existe'
 title: A pasta de origem não existe
 ms.date: 07/20/2015
 ms.assetid: c891d006-b721-4d93-b57d-ce51d91fca00
-ms.openlocfilehash: 8dc4fa80c4328cbeea5c63eb110c62b988da91c4
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: afae118614fca4b80ad34bf339187d64b3c680e1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086550"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430736"
 ---
 # <a name="the-source-folder-does-not-exist"></a>A pasta de origem não existe
 
@@ -17,7 +18,7 @@ Você tentou uma operação que faz referência a uma pasta de origem que não e
   
 - Verifique se você está usando o caminho correto, especialmente se estiver usando caminhos relativos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como: analisar caminhos de arquivo](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
 - [Ler arquivos](../developing-apps/programming/drives-directories-files/reading-from-files.md)

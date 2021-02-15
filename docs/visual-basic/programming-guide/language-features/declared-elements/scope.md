@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: escopo no Visual Basic'
 title: Escopo
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - scope [Visual Basic], Visual Basic
 - procedure scope [Visual Basic]
 ms.assetid: 208106fe-79c9-4eec-93c6-55f08548895f
-ms.openlocfilehash: 1bee904996257474b7457b2aefb1f17d250933cb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5b5412f5743162bb91fc3651d08f5c7ff9ba8abd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410728"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480200"
 ---
 # <a name="scope-in-visual-basic"></a>Escopo no Visual Basic
 
@@ -57,7 +58,7 @@ Um bloco é um conjunto de instruções incluídas em instruções de declaraç�
 
 - `Do` e `Loop`
 
-- `For`[ `Each` ] e`Next`
+- `For` [ `Each` ] e `Next`
 
 - `If` e `End If`
 
@@ -126,7 +127,7 @@ Public strMsg As String
 
 O escopo do namespace inclui namespaces aninhados. Um elemento disponível de dentro de um namespace também está disponível de dentro de qualquer namespace aninhado dentro desse namespace.
 
-Se o seu projeto não contiver nenhuma [instrução de namespace](../../../language-reference/statements/namespace-statement.md)s, tudo no projeto estará no mesmo namespace. Nesse caso, o escopo do namespace pode ser considerado como escopo do projeto. `Public`os elementos em um módulo, classe ou estrutura também estão disponíveis para qualquer projeto que faça referência a seu projeto.
+Se o seu projeto não contiver nenhuma [instrução de namespace](../../../language-reference/statements/namespace-statement.md)s, tudo no projeto estará no mesmo namespace. Nesse caso, o escopo do namespace pode ser considerado como escopo do projeto. `Public` os elementos em um módulo, classe ou estrutura também estão disponíveis para qualquer projeto que faça referência a seu projeto.
 
 ## <a name="choice-of-scope"></a>Escolha do escopo
 
@@ -144,7 +145,7 @@ As variáveis locais são uma boa opção para qualquer tipo de cálculo tempor�
 
 Em geral, ao declarar qualquer variável ou constante, é uma boa prática de programação tornar o escopo o mais estreito possível (o escopo do bloco é o mais estreito). Isso ajuda a conservar a memória e minimiza as chances de seu código se referir erroneamente à variável errada. Da mesma forma, você deve declarar uma variável para ser [estática](../../../language-reference/modifiers/static.md) somente quando for necessário preservar seu valor entre chamadas de procedimento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Características do Elemento Declarado](declared-element-characteristics.md)
 - [Como controlar o escopo de uma variável](how-to-control-the-scope-of-a-variable.md)

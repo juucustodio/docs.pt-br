@@ -1,5 +1,5 @@
 ---
-description: "Saiba mais sobre: BC30712: não é possível carregar informações para a classe '<classname>"
+description: "Saiba mais sobre: BC30712: não é possível carregar informações para a classe ' <classname> '"
 title: Não é possível carregar informações da classe '<classname>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30712
 ms.assetid: c7ffbd6d-05c6-4261-b44b-1bcd521bb350
-ms.openlocfilehash: 5e96df57b83b32b70a2d0d6eca1578b5d15ec065
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 5325afabfd267f15f0d0497be6ef03c8f5c828c0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99674825"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480525"
 ---
 # <a name="bc30712-unable-to-load-information-for-class-classname"></a>BC30712: não é possível carregar informações para a classe ' \<classname> '
 

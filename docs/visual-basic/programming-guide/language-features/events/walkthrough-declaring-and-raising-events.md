@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: declarando e gerando eventos (Visual Basic)'
 title: declarar e gerar eventos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - events [Visual Basic], raising
 - raising events [Visual Basic], walkthroughs
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
-ms.openlocfilehash: 07ef611b50cfa13f77fa168d58dd3b43e97eeec6
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 98e9d2eabd1ace06de9f8cc7931013093d864e7a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057982"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466374"
 ---
 # <a name="walkthrough-declaring-and-raising-events-visual-basic"></a>Instruções passo a passo: declarando e acionando eventos (Visual Basic)
 
@@ -36,7 +37,7 @@ Este tutorial demonstra como declarar e gerar eventos para uma classe chamada `W
   
 3. Nomeie os objetos como mostrado na tabela a seguir.  
   
-    |Objeto|Propriedade|Configuração|  
+    |Objeto|Propriedade|Setting|  
     |------------|--------------|-------------|  
     |`Button1`|`Text`|Tarefa de início|  
     |`Button2`|`Text`|Cancelar|  
@@ -75,7 +76,7 @@ Este tutorial demonstra como declarar e gerar eventos para uma classe chamada `W
   
  Agora que a `Widget` classe pode gerar eventos, você pode ir para o próximo passo a passos. [Walkthrough: manipular eventos](walkthrough-handling-events.md) demonstra como usar `WithEvents` o para associar um manipulador de eventos ao `PercentDone` evento.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>
 - <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>

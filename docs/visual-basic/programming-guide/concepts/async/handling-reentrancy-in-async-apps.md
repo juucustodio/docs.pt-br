@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: manipulação de reentrância em aplicativos assíncronos (Visual Basic)'
 title: Tratar a reentrada em aplicativos assíncronos
 ms.date: 07/20/2015
 ms.assetid: ef3dc73d-13fb-4c5f-a686-6b84148bbffe
-ms.openlocfilehash: 2d1af14016f82b5de875d3638b132e14c7d2280d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: aca917c1b22655547f155009c5877140d9ca5e43
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396630"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425796"
 ---
 # <a name="handling-reentrancy-in-async-apps-visual-basic"></a>Tratando a reentrada em aplicativos assíncronos (Visual Basic)
 
@@ -19,7 +20,7 @@ Ao incluir código assíncrono em seu aplicativo, você deve considerar e, possi
 > [!NOTE]
 > O protocolo TLS versão 1,2 agora é a versão mínima a ser usada no desenvolvimento de seu aplicativo. Se seu aplicativo tiver como alvo uma versão .NET Framework anterior a 4,7, consulte o artigo a seguir para obter as [práticas recomendadas de TLS (Transport Layer Security) com o .NET Framework](../../../../framework/network-programming/tls.md).
 
-## <a name="recognizing-reentrancy"></a><a name="BKMK_RecognizingReentrancy"></a>Reconhecendo a reentrância
+## <a name="recognizing-reentrancy"></a><a name="BKMK_RecognizingReentrancy"></a> Reconhecendo a reentrância
 
 No exemplo deste tópico, os usuários escolhem um botão **Iniciar** para iniciar um aplicativo assíncrono que baixa uma série de sites e calcula o número total de bytes baixados. Uma versão síncrona do exemplo responderia da mesma forma, independentemente de quantas vezes um usuário escolhesse o botão porque, após a primeira vez, o thread da interface do usuário ignora esses eventos até que o aplicativo conclua a execução. Em um aplicativo assíncrono, no entanto, o thread da interface do usuário continua a responder e você pode reinserir a operação assíncrona antes que ele seja concluído.
 
@@ -93,7 +94,7 @@ Você pode examinar o código que produz esta saída fazendo a rolagem até o fi
 
   Permitir que todas as operações solicitadas sejam executadas de forma assíncrona, mas coordenar a exibição da saída, de forma que os resultados de cada operação apareçam juntos e em ordem.
 
-### <a name="disable-the-start-button"></a><a name="BKMK_DisableTheStartButton"></a>Desabilitar o botão iniciar
+### <a name="disable-the-start-button"></a><a name="BKMK_DisableTheStartButton"></a> Desabilitar o botão iniciar
 
 Você pode bloquear o botão **Iniciar** enquanto uma operação estiver em execução, desabilitando o botão na parte superior do manipulador de eventos `StartButton_Click`. Você pode reativar o botão de dentro um bloco `Finally` quando a operação for concluída para que os usuários possam executar o aplicativo novamente.
 
@@ -278,7 +279,7 @@ TOTAL bytes returned:  890591
 
 Para eliminar as listas parciais, remova a marca de comentário da primeira linha de código em `StartButton_Click`, para limpar a caixa de texto sempre que o usuário reiniciar a operação.
 
-### <a name="run-multiple-operations-and-queue-the-output"></a><a name="BKMK_RunMultipleOperations"></a>Executar várias operações e enfileirar a saída
+### <a name="run-multiple-operations-and-queue-the-output"></a><a name="BKMK_RunMultipleOperations"></a> Executar várias operações e enfileirar a saída
 
 Este terceiro exemplo é mais complicado pois o aplicativo iniciará outra operação assíncrona a cada vez que o usuário escolher o botão **Iniciar** e todas as operações serão executadas até a conclusão. Todas as operações solicitadas baixam sites da lista de maneira assíncrona, mas a saída das operações será apresentada sequencialmente. Ou seja, a atividade de download real é intercalada, conforme mostrado na saída em [Reconhecendo a reentrância](#BKMK_RecognizingReentrancy), mas a lista de resultados para cada grupo é apresentada separadamente.
 
@@ -527,7 +528,7 @@ A saída mostra os padrões a seguir.
 
   Depois que um grupo insere o `StartButton_Click`, a operação não conclui uma expressão await até que a operação insira `FinishOneGroupAsync`. Portanto, nenhuma outra operação pode obter controle durante esse segmento de código.
 
-## <a name="reviewing-and-running-the-example-app"></a><a name="BKMD_SettingUpTheExample"></a>Revisando e executando o aplicativo de exemplo
+## <a name="reviewing-and-running-the-example-app"></a><a name="BKMD_SettingUpTheExample"></a> Revisando e executando o aplicativo de exemplo
 
 Para entender melhor o aplicativo de exemplo, você pode baixá-lo, compilá-lo ou examinar o código ao final deste tópico sem implementar o aplicativo.
 
@@ -560,7 +561,7 @@ A seção a seguir fornece o código para compilar o exemplo como um aplicativo 
 
      A caixa de diálogo **Novo Projeto** será aberta.
 
-3. No painel **modelos instalados** , expanda **Visual Basic**e, em seguida, expanda **Windows**.
+3. No painel **modelos instalados** , expanda **Visual Basic** e, em seguida, expanda **Windows**.
 
 4. Na lista de tipos de projeto, escolha **Aplicativo WPF**.
 
@@ -682,7 +683,7 @@ A seção a seguir fornece o código para compilar o exemplo como um aplicativo 
 
 12. Faça as alterações de [Desabilitar o botão Iniciar](#BKMK_DisableTheStartButton), [Cancelar e reiniciar a operação](#BKMK_CancelAndRestart) ou [Executar várias operações e colocar a saída em fila](#BKMK_RunMultipleOperations) para tratar a reentrância.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instruções passo a passo: acessando a Web usando Async e Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Programação assíncrona com Async e Await (Visual Basic)](index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como consultar os metadados de um assembly com reflexão (LINQ) (Visual Basic)'
 title: 'Como: consultar metadados de um assembly com reflexão (LINQ)'
 ms.date: 07/20/2015
 ms.assetid: 53caa336-ab83-4181-b0f6-5c87c5f9e4ee
-ms.openlocfilehash: fda27f41d31bf8aa3931bf5923ff4011628107fe
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2e0f242112ddbac3d88d7d0173550978f8784cef
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075324"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477535"
 ---
 # <a name="how-to-query-an-assemblys-metadata-with-reflection-linq-visual-basic"></a>Como consultar metadados de um assembly com reflexão (LINQ) (Visual Basic)
 
@@ -48,6 +49,6 @@ End Module
   
 O exemplo usa o método <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> para retornar uma matriz de tipos no assembly especificado. O filtro de [cláusula WHERE](../../../language-reference/queries/where-clause.md) é aplicado para que apenas tipos públicos sejam retornados. Para cada tipo de público, uma subconsulta é gerada usando a matriz <xref:System.Reflection.MethodInfo> que é retornada da chamada <xref:System.Type.GetMethods%2A?displayProperty=nameWithType>. Esses resultados são filtrados para retornar apenas os métodos cujo tipo de retorno é uma matriz ou um tipo que implementa <xref:System.Collections.Generic.IEnumerable%601>. Por fim, esses resultados são agrupados usando o nome do tipo como uma chave.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ to Objects (Visual Basic)](linq-to-objects.md)

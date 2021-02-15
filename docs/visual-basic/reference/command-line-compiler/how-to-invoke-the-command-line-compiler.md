@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como invocar o compilador de Command-Line (Visual Basic)'
 title: 'Como: Invocar o compilador de linha de comando'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Visual Basic compiler, starting
 - command line [Visual Basic], arguments
 ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
-ms.openlocfilehash: 6def53d4a2d15dda3e3ac43abe35b3100f456fe9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: aca8fe70e252ae9e7fb06f740ce5b7f3c8ca3d5d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408602"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100470207"
 ---
 # <a name="how-to-invoke-the-command-line-compiler-visual-basic"></a>Como invocar o compilador de linha de comando (Visual Basic)
 
@@ -34,11 +35,11 @@ Você pode invocar o compilador de linha de comando digitando o nome do seu arqu
 
 ## <a name="to-set-the-path-environment-variable-to-the-compiler-for-the-windows-command-prompt"></a>Para definir a variável de ambiente PATH para o compilador para o prompt de comando do Windows
 
-1. Use o recurso de pesquisa do Windows para localizar o Vbc. exe no disco local.
+1. Use o recurso de pesquisa do Windows para localizar Vbc.exe em seu disco local.
 
     O nome exato do diretório em que o compilador está localizado depende do local do diretório do Windows e da versão do ".NET Framework" instalado. Se você tiver mais de uma versão do ".NET Framework" instalada, deverá determinar qual versão usar (normalmente a versão mais recente).
 
-2. No menu **Iniciar** , clique com o botão direito do mouse em **meu computador**e, em seguida, clique em **Propriedades** no menu de atalho.
+2. No menu **Iniciar** , clique com o botão direito do mouse em **meu computador** e, em seguida, clique em **Propriedades** no menu de atalho.
 
 3. Clique na guia **Avançado** e em **Variáveis de Ambiente**.
 
@@ -58,7 +59,7 @@ Você pode invocar o compilador de linha de comando digitando o nome do seu arqu
 
      Por exemplo, se você armazenou o código-fonte em um diretório chamado `SourceFiles` , abra o prompt de comando e digite `cd SourceFiles` para alterar para esse diretório. Se o diretório contiver um arquivo de origem chamado `Source.vb` , você poderá compilá-lo digitando `vbc.exe Source.vb` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [Compilação condicional](../../programming-guide/program-structure/conditional-compilation.md)

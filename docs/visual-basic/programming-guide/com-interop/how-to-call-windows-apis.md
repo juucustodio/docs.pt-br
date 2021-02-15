@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como: chamar APIs do Windows (Visual Basic)'
 title: 'Como: Chamar APIs do Windows'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - API calls [Visual Basic], platform invoke
 - calls [Visual Basic], stored procedures
 ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
-ms.openlocfilehash: 40b40c1a489d514c82cbccdeacda27900d9ec87d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ec25df3715b1f8a4612c1575b5f7192d0a133c4b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083352"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464905"
 ---
 # <a name="how-to-call-windows-apis-visual-basic"></a>Como chamar APIs do Windows (Visual Basic)
 
@@ -38,7 +39,7 @@ Este exemplo define e chama a `MessageBox` função em user32.dll e, em seguida,
   
 - O tipo recipiente foi criado anteriormente usando `CreateType`. (<xref:System.InvalidOperationException>)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Um olhar detalhado sobre invocação de plataforma](../../../framework/interop/consuming-unmanaged-dll-functions.md#a-closer-look-at-platform-invoke)
 - [Exemplos de invocação de plataforma](../../../framework/interop/platform-invoke-examples.md)

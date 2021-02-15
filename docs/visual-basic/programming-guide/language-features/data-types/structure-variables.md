@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: variáveis de estrutura (Visual Basic)'
 title: Variáveis de estrutura
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - variables [Visual Basic], structure variables
 - structure variables [Visual Basic]
 ms.assetid: 156872f8-aabc-4454-8e2d-f2253c3c13c9
-ms.openlocfilehash: 270e8ca26185e4a68def3b95f4ce6ab4c57a629c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 64c53b06369bc7d7d0c46bc87d4c73ce90b4011f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393579"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100484152"
 ---
 # <a name="structure-variables-visual-basic"></a>Variáveis de estrutura (Visual Basic)
 
@@ -55,12 +56,12 @@ yourSystem = mySystem
 
 Se um elemento de estrutura for um tipo de referência, como `String` uma `Object` matriz, ou, o ponteiro para os dados será copiado. No exemplo anterior, se `systemInfo` tiver incluído uma variável de objeto, o exemplo anterior teria copiado o ponteiro de `mySystem` para `yourSystem` , e uma alteração nos dados do objeto por meio de uma estrutura estaria em vigor quando acessada por meio da outra estrutura.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipos de dados elementares](elementary-data-types.md)
 - [Tipos de dados compostos](composite-data-types.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)
 - [Estruturas](structures.md)
 - [Solução de problemas de tipos de dados](troubleshooting-data-types.md)
 - [Como: Declarar uma estrutura](how-to-declare-a-structure.md)

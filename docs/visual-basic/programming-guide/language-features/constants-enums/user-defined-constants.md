@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: constantes de User-Defined (Visual Basic)'
 title: Constantes definidas pelo usuário
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - constants [Visual Basic], user-defined
 - circular references between constants [Visual Basic]
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
-ms.openlocfilehash: 351bdb6963e278341c13e53ef19aea0876010aa9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 290d4122249315ae3c6dc5e18ca4faefecb72044
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095636"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485218"
 ---
 # <a name="user-defined-constants-visual-basic"></a>Constantes definidas pelo usuário (Visual Basic)
 
@@ -36,7 +37,7 @@ Uma constante é um nome significativo que substitui um número ou uma cadeia de
   
  [!code-vb[VbEnumsTask#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#15)]  
   
-## <a name="scope-of-user-defined-constants"></a>Escopo de constantes definidas pelo usuário  
+## <a name="scope-of-user-defined-constants"></a>Escopo de constantes de User-Defined  
 
  `Const`O escopo de uma instrução é o mesmo de uma variável declarada no mesmo local. Você pode especificar o escopo de qualquer uma das seguintes maneiras:  
   
@@ -59,7 +60,7 @@ Uma constante é um nome significativo que substitui um número ou uma cadeia de
   
  Se ocorrer um ciclo, Visual Basic gerará um erro do compilador.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Const](../../../language-reference/statements/const-statement.md)
 - [Tipos de dados constante e literal](constant-and-literal-data-types.md)

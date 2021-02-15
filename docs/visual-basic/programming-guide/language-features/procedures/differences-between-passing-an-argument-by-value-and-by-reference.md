@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: diferenças entre passar um argumento por valor e por referência (Visual Basic)'
 title: Diferenças entre passar um argumento por valor e por referência
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ByVal keyword [Visual Basic], passing arguments by value
 - arguments [Visual Basic], passing by value or by reference
 ms.assetid: 5f5c38fe-3e2d-494c-8fff-f4025b55ec93
-ms.openlocfilehash: f9fdb1e98fb827391b615f5fe0afd1ee43c9f8e1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 632895eae82a20c9bcd773da71f88ebef26d786c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075038"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464723"
 ---
 # <a name="differences-between-passing-an-argument-by-value-and-by-reference-visual-basic"></a>Diferenças entre passar um argumento por valor e por referência (Visual Basic)
 
@@ -44,7 +45,7 @@ Quando você passa um ou mais argumentos para um procedimento, cada argumento co
 |Tipo de valor (contém apenas um valor)|O procedimento não pode alterar a variável ou nenhum de seus membros.|O procedimento pode alterar a variável e seus membros.|  
 |Tipo de referência (contém um ponteiro para uma classe ou instância de estrutura)|O procedimento não pode alterar a variável, mas pode alterar os membros da instância para a qual ela aponta.|O procedimento pode alterar a variável e os membros da instância para a qual ele aponta.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)
@@ -55,4 +56,4 @@ Quando você passa um ou mais argumentos para um procedimento, cada argumento co
 - [Como proteger um argumento de procedimento contra alterações de valor](./how-to-protect-a-procedure-argument-against-value-changes.md)
 - [Como forçar um argumento a ser passado por Valor](./how-to-force-an-argument-to-be-passed-by-value.md)
 - [Passando argumentos por posição e nome](./passing-arguments-by-position-and-by-name.md)
-- [Tipos de valor e referência](../data-types/value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](../data-types/value-types-and-reference-types.md)

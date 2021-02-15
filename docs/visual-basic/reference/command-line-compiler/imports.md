@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-Imports (Visual Basic)
 title: -imports
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - imports compiler option [Visual Basic]
 - -imports compiler option [Visual Basic]
 ms.assetid: 9a93fb53-c080-497b-bf9b-441022dbbc39
-ms.openlocfilehash: 69781dff1474e42ae5f735fdefd694c6447636b5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 8c6744ff857a15da9362b724a62fcf053e9fd8f0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085250"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100470194"
 ---
 # <a name="-imports-visual-basic"></a>-importações (Visual Basic)
 
@@ -27,7 +28,7 @@ Importa namespaces de um assembly especificado.
   
 |Termo|Definição|  
 |---|---|  
-|`namespaceList`|Necessário. Lista delimitada por vírgulas de namespaces a serem importados.|  
+|`namespaceList`|Obrigatório. Lista delimitada por vírgulas de namespaces a serem importados.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -51,7 +52,7 @@ Module Example
 End Module
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [Referências e a instrução Imports](../../programming-guide/program-structure/references-and-the-imports-statement.md)

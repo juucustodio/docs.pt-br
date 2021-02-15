@@ -1,5 +1,5 @@
 ---
-description: "Saiba mais sobre: BC30969: referência necessária para o assembly ' <assemblyidentity> ' contendo o tipo ' <typename> ', mas não foi possível encontrar uma referência adequada devido à ambiguidade entre os projetos ' <projectname1> ' e '<projectname2>"
+description: "Saiba mais sobre: BC30969: referência necessária para o assembly ' <assemblyidentity> ' contendo o tipo ' <typename> ', mas não foi possível encontrar uma referência adequada devido à ambiguidade entre os projetos ' <projectname1> ' e ' <projectname2> '"
 title: Referência obrigatória ao assembly '<assemblyidentity>' contendo o tipo '<typename>', mas não foi possível localizar uma referência adequada devido à ambiguidade entre os projetos '<projectname1>' e '<projectname2>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30969
 ms.assetid: 1b29dbc5-8268-45fe-bfc2-b2070a5c845c
-ms.openlocfilehash: 945a6558ff9eea20a28bc27da27e495d0eddfb15
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 93713fe2175c303b7d126a7c3d5e33f9990955a1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99792031"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481656"
 ---
 # <a name="bc30969-reference-required-to-assembly-assemblyidentity-containing-type-typename-but-a-suitable-reference-could-not-be-found-due-to-ambiguity-between-projects-projectname1-and-projectname2"></a>BC30969: referência necessária para o assembly ' \<assemblyidentity> ' contendo o tipo ' \<typename> ', mas não foi possível encontrar uma referência adequada devido à ambiguidade entre os projetos ' \<projectname1> ' e ' \<projectname2> '
 

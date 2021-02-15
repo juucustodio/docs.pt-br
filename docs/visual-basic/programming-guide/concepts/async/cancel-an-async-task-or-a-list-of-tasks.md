@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cancelar uma tarefa assíncrona ou uma lista de tarefas (Visual Basic)'
 title: Cancelar uma tarefa assíncrona ou uma lista de tarefas
 ms.date: 07/20/2015
 ms.assetid: a9ee1b71-5bec-4736-a1e9-448042dd7215
-ms.openlocfilehash: 932bf46f1e3aee220d0412f1688e961faaef3459
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d61db65db62c62e93abf0a5036533dd2967fe917
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396695"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100467076"
 ---
 # <a name="cancel-an-async-task-or-a-list-of-tasks-visual-basic"></a>Cancelar uma tarefa assíncrona ou uma lista de tarefas (Visual Basic)
 
@@ -18,7 +19,7 @@ Os exemplos usam a interface do usuário que descreve o [ajuste do seu aplicativ
 > [!NOTE]
 > Para executar os exemplos, você precisa ter o Visual Studio 2012 ou uma versão mais recente e o .NET Framework 4.5 ou posterior instalados em seu computador.
 
-## <a name="cancel-a-task"></a><a name="BKMK_CancelaTask"></a>Cancelar uma tarefa
+## <a name="cancel-a-task"></a><a name="BKMK_CancelaTask"></a> Cancelar uma tarefa
 
 O primeiro exemplo associa o botão **Cancelar** a uma única tarefa de download. Se você escolher o botão enquanto o aplicativo está baixando conteúdo, o download será cancelado.
 
@@ -138,7 +139,7 @@ Em seguida, adicione as seguintes alterações ao arquivo MainWindow. XAML. vb d
     Download canceled.
     ```
 
-## <a name="cancel-a-list-of-tasks"></a><a name="BKMK_CancelaListofTasks"></a>Cancelar uma lista de tarefas
+## <a name="cancel-a-list-of-tasks"></a><a name="BKMK_CancelaListofTasks"></a> Cancelar uma lista de tarefas
 
 Você pode estender o exemplo anterior para cancelar muitas tarefas associando a mesma instância `CancellationTokenSource` a cada tarefa. Se você escolher o botão **Cancelar**, cancela todas as tarefas que ainda não estão concluídas.
 
@@ -253,7 +254,7 @@ Para estender o exemplo você mesmo, passo a passo, siga as instruções na seç
     Downloads canceled.
     ```
 
-## <a name="complete-examples"></a><a name="BKMK_CompleteExamples"></a>Exemplos completos
+## <a name="complete-examples"></a><a name="BKMK_CompleteExamples"></a> Exemplos completos
 
 As seções a seguir contêm o código para cada um dos exemplos anteriores. Observe que você deve adicionar uma referência para <xref:System.Net.Http>.
 
@@ -463,7 +464,7 @@ End Class
 ' Downloads canceled.
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.CancellationTokenSource>
 - <xref:System.Threading.CancellationToken>

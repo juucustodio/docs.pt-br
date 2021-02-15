@@ -9,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - DisposeAsync method
 - garbage collection, DisposeAsync method
-ms.openlocfilehash: f04ac6695864b96cdcb7efeb6eb8e1d9551e1d14
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: d82883198626b3c760b86decab8a7f791fa9b7cf
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009684"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485179"
 ---
 # <a name="implement-a-disposeasync-method"></a>Implementar um método DisposeAsync
 
@@ -107,7 +107,7 @@ Em situações em que você cria e usa vários objetos que implementam <xref:Sys
 
 :::code language="csharp" id="one" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
 
-No exemplo anterior, cada operação de limpeza assíncrona é explicitamente delimitada no `await using` bloco. O escopo externo é definido por como o `objOne` define suas chaves, os delimitadores `objTwo` , pois isso `objTwo` é Descartado primeiro, seguido por `objOne` . Ambas as `IAsyncDisposable` instâncias têm <xref:System.IAsyncDisposable.DisposeAsync> métodos aguardados, realizando assim sua operação de limpeza assíncrona. As chamadas estão aninhadas, não empilhadas.
+No exemplo anterior, cada operação de limpeza assíncrona é explicitamente delimitada no `await using` bloco. O escopo externo é definido por como o `objOne` define suas chaves, os delimitadores `objTwo` , pois isso `objTwo` é Descartado primeiro, seguido por `objOne` . Ambas as `IAsyncDisposable` instâncias têm o <xref:System.IAsyncDisposable.DisposeAsync> método esperado, portanto, cada instância executa sua operação de limpeza assíncrona. As chamadas estão aninhadas, não empilhadas.
 
 ### <a name="acceptable-pattern-two"></a>Padrão aceitável dois
 
@@ -130,7 +130,7 @@ Se uma exceção for lançada do `AnotherAsyncDisposable` Construtor, não `objO
 > [!TIP]
 > Evite esse padrão, pois isso pode levar a um comportamento inesperado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 Para obter um exemplo de implementação dupla do `IDisposable` e do `IAsyncDisposable` , consulte o <xref:System.Text.Json.Utf8JsonWriter> código-fonte [no GitHub](https://github.com/dotnet/runtime/blob/035b729d829368c2790d825bd02db14f0c0fd2ea/src/libraries/System.Text.Json/src/System/Text/Json/Writer/Utf8JsonWriter.cs#L297-L345).
 

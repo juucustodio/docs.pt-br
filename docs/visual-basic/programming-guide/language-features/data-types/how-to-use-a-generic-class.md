@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como usar uma classe genérica (Visual Basic)'
 title: 'Como: Usar uma classe genérica'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: 242dd2a6-86c4-4ce7-83f2-f2661803f752
-ms.openlocfilehash: 87ba5132afe9f5a7cd6fb33d716c670f4812c7e2
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b21f29223c6a7f611fd4064a0df28ed72f599361
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077105"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483957"
 ---
 # <a name="how-to-use-a-generic-class-visual-basic"></a>Como usar uma classe genérica (Visual Basic)
 
@@ -46,7 +47,7 @@ Uma classe que usa *parâmetros de tipo* é chamada de *classe genérica*. Se vo
   
      [!code-vb[VbVbalrDataTypes#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#9)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Data Types](index.md)
 - [Tipos genéricos no Visual Basic](generic-types.md)

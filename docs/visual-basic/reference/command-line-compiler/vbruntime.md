@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-vbruntime
 title: -vbruntime
 ms.date: 03/13/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - -vbruntime compiler option [Visual Basic]
 - /vbruntime compiler option [Visual Basic]
 ms.assetid: 1aa0239e-511a-4c29-957d-fd72877b350a
-ms.openlocfilehash: 46d4b095d4a2bf9aac9124d5d4b2a09adb347ba1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d542324e64ce31224aa75f164f121898a25f7be9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085055"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100470143"
 ---
 # <a name="-vbruntime"></a>-vbruntime
 
@@ -100,7 +101,7 @@ Especifica que o compilador deve compilar sem uma referência para a biblioteca 
 vbc -vbruntime:C:\VBLibraries\CustomVBLibrary.dll  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Núcleo de Visual Basic – novo modo de compilação no Visual Studio 2010 SP1](https://devblogs.microsoft.com/vbteam/vb-core-new-compilation-mode-in-visual-studio-2010-sp1/)
 - [Compilador de linha de comando do Visual Basic](index.md)

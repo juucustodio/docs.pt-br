@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces (Visual Basic)'
 title: Interfaces
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - interfaces
 - interfaces [Visual Basic]
 ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
-ms.openlocfilehash: ac5db62fec3548bfd4a99477958f4f29463267c0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 9778ed770b6aef81f4804add075f6014913fce22
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057826"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468402"
 ---
 # <a name="interfaces-visual-basic"></a>Interfaces (Visual Basic)
 

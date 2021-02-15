@@ -8,12 +8,12 @@ helpviewer_keywords:
 - installing .NET Framework
 - installation [.NET Framework]
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
-ms.openlocfilehash: 45ae10a92b66bc1b487e3ed4e1e29b6905b895f5
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 48bbdcabcf025b2924fd722308664ebe9affaad0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98190774"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464775"
 ---
 # <a name="install-the-net-framework-for-developers"></a>Instalar o .NET Framework para desenvolvedores
 
@@ -138,7 +138,7 @@ Os instaladores offline e da Web são projetados para computadores baseados em x
 
 - Você deve ter credenciais administrativas para instalar o .NET Framework 4,5 ou versões posteriores.
 
-- O .NET Framework 4.5 redistribuível foi atualizado em 9 de outubro de 2012 para corrigir um problema relacionado a um carimbo de data/hora incorreto em um certificado digital, que fazia com que a assinatura digital em arquivos produzidos e assinados pela Microsoft expirassem prematuramente. Se você já instalou o pacote redistribuível do .NET Framework 4,5 com data de 16 de agosto de 2012, recomendamos que atualize sua cópia com os pacotes redistribuíveis mais recentes da [página de download do .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework/net45). Para saber mais sobre esse problema, veja [Supervisão de Segurança da Microsoft 2749655](/security-updates/SecurityAdvisories/2012/2749655) e [Artigo da Base de Dados de Conhecimento 2770445](https://support.microsoft.com/kb/2770445).
+- O .NET Framework 4.5 redistribuível foi atualizado em 9 de outubro de 2012 para corrigir um problema relacionado a um carimbo de data/hora incorreto em um certificado digital, que fazia com que a assinatura digital em arquivos produzidos e assinados pela Microsoft expirassem prematuramente. Se você já instalou o pacote redistribuível do .NET Framework 4,5 com data de 16 de agosto de 2012, recomendamos que atualize sua cópia com os pacotes redistribuíveis mais recentes da [página de download do .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework/net45). Para saber mais sobre esse problema, consulte [Comunicado de Segurança da Microsoft 2749655](/security-updates/SecurityAdvisories/2012/2749655).
 
 ## <a name="to-install-language-packs"></a>Para instalar pacotes de idiomas
 
@@ -207,7 +207,7 @@ A tabela a seguir lista os idiomas compatíveis.
 
 - Confira a [Fonte de referência do .NET Framework](https://referencesource.microsoft.com/) para navegar online no código-fonte do .NET Framework. A fonte de referência também está disponível no [GitHub](https://github.com/Microsoft/referencesource). Também é possível [baixar a referência](https://referencesource.microsoft.com/download.html) para visualização offline e percorrer as fontes (incluindo correções e atualizações) durante a depuração. Para saber mais, confira a postagem no blog [A new look for .NET Reference Source](https://devblogs.microsoft.com/dotnet/a-new-look-for-net-reference-source/) (Um novo olhar sobre a fonte de referência do .NET).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Guia de implantação para desenvolvedores](../deployment/deployment-guide-for-developers.md)
 - [Guia de implantação para administradores](../deployment/guide-for-administrators.md)

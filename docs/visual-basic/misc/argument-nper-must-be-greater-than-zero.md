@@ -1,15 +1,16 @@
 ---
+description: "Saiba mais sobre: o argumento ' NPer ' deve ser maior que zero"
 title: O argumento 'NPer' deve ser maior que zero
 ms.date: 07/20/2015
 f1_keywords:
 - vbrRate_NPerMustBeGTZero
 ms.assetid: d49242df-dbd1-4b26-bd8c-ed56d24fdfcd
-ms.openlocfilehash: f0185e30cb711472105955f5febf8d7702b29c72
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ece5e775e2f05f757b2af53594c626f5a023161e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087135"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433402"
 ---
 # <a name="argument-nper-must-be-greater-than-zero"></a>O argumento 'NPer' deve ser maior que zero
 
@@ -21,6 +22,6 @@ A `NPer` função, que retorna um `Double` número de períodos para uma anuidad
   
 - Verifique as operações anteriores em variáveis na expressão, especialmente aquelas passadas para o procedimento como argumentos de outros procedimentos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Passar argumentos por valor e por referência](../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

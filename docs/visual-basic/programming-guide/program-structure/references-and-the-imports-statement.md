@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: referências e a instrução Imports (Visual Basic)'
 title: Referências e a instrução Imports
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Imports statement [Visual Basic], referencing assemblies
 - assemblies [Visual Basic], references
 ms.assetid: 38149bd4-0a6f-4b31-b5f8-94a8c33f1600
-ms.openlocfilehash: 13f250e1b015e5a821da83e557033bc878a8a3b8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3ca685d33f69224a6eea324d7357be4b5203eb45
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91097898"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468233"
 ---
 # <a name="references-and-the-imports-statement-visual-basic"></a>Referências e a instrução Imports (Visual Basic)
 
@@ -51,7 +52,7 @@ Você pode disponibilizar objetos externos para seu projeto escolhendo o comando
   
  Se uma `Imports` instrução não incluir um nome de alias, os elementos definidos no namespace importado poderão ser usados no módulo sem qualificação. Se o nome do alias for especificado, ele deverá ser usado como um qualificador para nomes contidos nesse namespace.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.ControlChars>
 - <xref:Microsoft.VisualBasic>

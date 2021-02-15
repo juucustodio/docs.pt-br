@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: caracteres especiais no código (Visual Basic)'
 title: Caracteres especiais no código
 ms.date: 07/20/2015
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - exclamation point operator (!)
 - Visual Basic code, special characters
 ms.assetid: 310dce0c-45b5-4e0d-83e9-32df258d2a3e
-ms.openlocfilehash: 60f815f0d30fa785f4a2166db5a041d3851aa954
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4afadc13cea6cc41480cb1674b7ff6f31629b569
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91097820"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468246"
 ---
 # <a name="special-characters-in-code-visual-basic"></a>Caracteres especiais no código (Visual Basic)
 
@@ -43,7 +44,7 @@ ms.locfileid: "91097820"
   
 ## <a name="parentheses"></a>Parênteses  
 
- Use parênteses ao definir um procedimento, como um `Sub` ou `Function` . Você deve colocar todas as listas de argumentos de procedimento entre parênteses. Você também usa parênteses para colocar variáveis ou argumentos em grupos lógicos, especialmente para substituir a ordem padrão de precedência de operador em uma expressão complexa. O exemplo a seguir ilustra isto.  
+ Use parênteses ao definir um procedimento, como um `Sub` ou `Function` . Você deve colocar todas as listas de argumentos de procedimento entre parênteses. Você também usa parênteses para colocar variáveis ou argumentos em grupos lógicos, especialmente para substituir a ordem padrão de precedência de operador em uma expressão complexa. O exemplo a seguir ilustra essa situação.  
   
  [!code-vb[VbVbcnConventions#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#11)]  
   
@@ -61,7 +62,7 @@ ms.locfileid: "91097820"
   
 ## <a name="concatenation"></a>Concatenação  
 
- Use o `&` operador para *concatenação*ou vinculação de cadeias de caracteres. Não o confunda com o `+` operador, que adiciona valores numéricos. Se você usar o `+` operador para concatenar ao operar em valores numéricos, poderá obter resultados incorretos. O exemplo a seguir demonstra isso.  
+ Use o `&` operador para *concatenação* ou vinculação de cadeias de caracteres. Não o confunda com o `+` operador, que adiciona valores numéricos. Se você usar o `+` operador para concatenar ao operar em valores numéricos, poderá obter resultados incorretos. O exemplo a seguir demonstra isso.  
   
  [!code-vb[VbVbcnConventions#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#13)]  
   
@@ -73,7 +74,7 @@ ms.locfileid: "91097820"
   
 ### <a name="dot--operator"></a>Ponto (.) Operador  
 
- Use o `.` operador em uma classe, estrutura, interface ou enumeração como um operador de acesso de membro. O membro pode ser um campo, propriedade, evento ou método. O exemplo a seguir ilustra isto.  
+ Use o `.` operador em uma classe, estrutura, interface ou enumeração como um operador de acesso de membro. O membro pode ser um campo, propriedade, evento ou método. O exemplo a seguir ilustra essa situação.  
   
  [!code-vb[VbVbcnConventions#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#14)]  
   
@@ -94,7 +95,7 @@ ms.locfileid: "91097820"
   
  O `!` caractere também é usado como o `Single` caractere de tipo.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estrutura do programa e convenções de código](program-structure-and-code-conventions.md)
 - [Caracteres de tipo](../language-features/data-types/type-characters.md)

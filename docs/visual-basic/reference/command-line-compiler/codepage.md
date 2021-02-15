@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-CodePage (Visual Basic)
 title: -codepage
 ms.date: 03/09/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - codepage compiler option [Visual Basic]
 - -codepage compiler option [Visual Basic]
 ms.assetid: be36ec33-6800-4505-838c-4124564f5cc9
-ms.openlocfilehash: 769f3586ddef7f430fa96d6101b250a5bbc4e26c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 8bc68263bda298787a48dc06729ea17c5adfcfa5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91065730"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468272"
 ---
 # <a name="-codepage-visual-basic"></a>-CodePage (Visual Basic)
 
@@ -27,7 +28,7 @@ Especifica a página de código a ser usada para todos os arquivos de código-fo
   
 |Termo|Definição|  
 |---|---|  
-|`id`|Necessário. O compilador usa a página de código especificada pelo `id` para interpretar a codificação dos arquivos de origem.|  
+|`id`|Obrigatório. O compilador usa a página de código especificada pelo `id` para interpretar a codificação dos arquivos de origem.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -38,6 +39,6 @@ Especifica a página de código a ser usada para todos os arquivos de código-fo
 > [!NOTE]
 > A `-codepage` opção não está disponível no ambiente de desenvolvimento do Visual Studio; ela está disponível somente durante a compilação na linha de comando.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)

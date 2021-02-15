@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: procedimentos no Visual Basic'
 title: Procedimentos
 ms.date: 04/28/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - structured code [Visual Basic], procedures
 - procedures
 ms.assetid: 9effbcf0-80a0-4d1a-98f4-2c6920592766
-ms.openlocfilehash: 926d2dcc7f29102457d5ed9632e7455f8f0c7b96
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: faff01163511d71f6dc5c6fd540b292e1dea72fb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071320"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475143"
 ---
 # <a name="procedures-in-visual-basic"></a>Procedimentos no Visual Basic
 
@@ -67,7 +68,7 @@ Um *procedimento* é um bloco de instruções Visual Basic delimitadas por uma i
   
 - Depois de desenvolver procedimentos para uso em um programa, você pode usá-los em outros programas, geralmente com pouca ou nenhuma modificação. Isso ajuda a evitar a duplicação de código.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como criar um procedimento](./how-to-create-a-procedure.md)
 - [Subprocedimentos](./sub-procedures.md)

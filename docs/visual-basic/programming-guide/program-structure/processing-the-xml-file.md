@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: processando o arquivo XML (Visual Basic)'
 title: Processando o arquivo XML
 ms.date: 07/20/2015
 helpviewer_keywords:
 - XML comments [Visual Basic], parsing [Visual Basic]
 ms.assetid: 78a15cd0-7708-4e79-85d1-c154b7a14a8c
-ms.openlocfilehash: 9e12f6f5d86957a7f9aaea6047a79957fac8ce1e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2314e7dafbd747f9a19b73d06d71c73631e53861
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072126"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468389"
 ---
 # <a name="processing-the-xml-file-visual-basic"></a>Processando o arquivo XML (Visual Basic)
 
@@ -43,7 +44,7 @@ O compilador gera uma cadeia de identificação para cada constructo no seu cód
   
  [!code-vb[VbVbcnXmlDocComments#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#10)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [-Doc](../../reference/command-line-compiler/doc.md)
+- [-doc](../../reference/command-line-compiler/doc.md)
 - [Como criar documentação XML](how-to-create-xml-documentation.md)

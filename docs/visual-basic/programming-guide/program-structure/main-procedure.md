@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: procedimento principal no Visual Basic'
 title: Procedimento principal
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Main method [Visual Basic]
 - main function
 ms.assetid: f0db283e-f283-4464-b521-b90858cc1b44
-ms.openlocfilehash: d6708ee13963aaae43a73b159032f64f0fffac10
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b25190ef216fe4219923a27d6bbe0acff4536685
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072204"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432800"
 ---
 # <a name="main-procedure-in-visual-basic"></a>Procedimento principal no Visual Basic
 
@@ -111,15 +112,15 @@ Cada aplicativo de Visual Basic deve conter um procedimento chamado `Main` . Ess
     End Module
     ```
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>
 - <xref:System.Array.Length%2A>
 - <xref:Microsoft.VisualBasic.Information.UBound%2A>
 - [Estrutura de um programa Visual Basic](structure-of-a-visual-basic-program.md)
-- [-main](../../reference/command-line-compiler/main.md)
+- [-principal](../../reference/command-line-compiler/main.md)
 - [Compartilhado](../../language-reference/modifiers/shared.md)
 - [Instrução Sub](../../language-reference/statements/sub-statement.md)
 - [Instrução Function](../../language-reference/statements/function-statement.md)
-- [Tipo de dados Integer](../../language-reference/data-types/integer-data-type.md)
+- [Tipo de Dados Integer](../../language-reference/data-types/integer-data-type.md)
 - [Tipo de dados da cadeia de caracteres](../../language-reference/data-types/string-data-type.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como chamar uma função do Windows que usa tipos não assinados (Visual Basic)'
 title: 'Como: Chamar uma função do Windows que use tipos não assinados'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - data types [Visual Basic], numeric
 - unsigned types [Visual Basic], using
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
-ms.openlocfilehash: 5b78c808de4a16060d37844ad0f17e89fa6f6d84
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 45851e22db88b9d35e5315398fb4cdbc2a7b920c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548072"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475637"
 ---
 # <a name="how-to-call-a-windows-function-that-takes-unsigned-types-visual-basic"></a>Como chamar uma função do Windows que use tipos não assinados (Visual Basic)
 
@@ -70,7 +71,7 @@ Se você estiver consumindo uma classe, módulo ou estrutura que tem membros de 
     ```
 
     > [!CAUTION]
-    > Os `UInteger` tipos de dados,, e `ULong` não fazem `UShort` `SByte` parte da [independência de linguagem e dos componentes independentes de linguagem](../../../standard/language-independence-and-language-independent-components.md) (CLS), portanto, o código em conformidade com CLS não pode consumir um componente que os utilize.
+    > Os `UInteger` tipos de dados,, e `ULong` não fazem `UShort` `SByte` parte da [independência de linguagem e dos componentes de Language-Independent](../../../standard/language-independence-and-language-independent-components.md) (CLS), portanto, o código em conformidade com CLS não pode consumir um componente que os utilize.
 
     > [!IMPORTANT]
     > Fazer uma chamada para código não gerenciado, como a API (interface de programação de aplicativo) do Windows, expõe seu código a possíveis riscos de segurança.
@@ -78,10 +79,10 @@ Se você estiver consumindo uma classe, módulo ou estrutura que tem membros de 
     > [!IMPORTANT]
     > Chamar a API do Windows requer permissão de código não gerenciado, o que pode afetar sua execução em situações de confiança parcial. Para obter mais informações, consulte <xref:System.Security.Permissions.SecurityPermission> e [permissões de acesso ao código](/previous-versions/dotnet/netframework-4.0/h846e9b3(v=vs.100)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Data Types](../../language-reference/data-types/index.md)
-- [Tipo de dados Integer](../../language-reference/data-types/integer-data-type.md)
+- [Tipo de Dados Integer](../../language-reference/data-types/integer-data-type.md)
 - [Tipo de Dados UInteger](../../language-reference/data-types/uinteger-data-type.md)
 - [Instrução Declare](../../language-reference/statements/declare-statement.md)
 - [Passo a passo: Fazer chamadas de APIs do Windows](walkthrough-calling-windows-apis.md)

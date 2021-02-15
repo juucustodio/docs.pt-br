@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-link (Visual Basic)
 title: -link
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - -l compiler option [Visual Basic]
 - /l compiler option [Visual Basic]
 ms.assetid: 1885f24a-86f5-486c-a064-9fb7e455ccec
-ms.openlocfilehash: 3c02c914a27e6095f8f6bc34e29e2447a1a373e5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 31d98d2c0fb0cbd8e8baff82869501a7ff0ea270
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91065717"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475130"
 ---
 # <a name="-link-visual-basic"></a>-link (Visual Basic)
 
 Faz com que o compilador disponibilize as informações de tipo COM nos assemblies especificados para o projeto sendo compilado no momento.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```console  
 -link:fileList  
@@ -38,7 +39,7 @@ ou
   
 |Termo|Definição|  
 |---|---|  
-|`fileList`|Necessário. Lista delimitada por vírgulas de nomes de arquivo do assembly. Se o nome do arquivo contém um espaço, coloque o nome entre aspas.|  
+|`fileList`|Obrigatório. Lista delimitada por vírgulas de nomes de arquivo do assembly. Se o nome do arquivo contém um espaço, coloque o nome entre aspas.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -95,12 +96,12 @@ ou
 vbc -link:COMData1.dll,COMData2.dll -out:OfficeApp.exe OfficeApp.vb  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [Instruções passo a passo: Inserindo tipos de assemblies gerenciados](../../../standard/assembly/embed-types-visual-studio.md)
 - [-referência (Visual Basic)](reference.md)
 - [-noconfig](noconfig.md)
-- [-libpath](libpath.md)
+- [-LIBPATH](libpath.md)
 - [Linhas de Comando de Compilação de Exemplo](sample-compilation-command-lines.md)
 - [Introdução à Interoperabilidade COM](../../programming-guide/com-interop/introduction-to-com-interop.md)

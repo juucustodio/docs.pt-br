@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de um programa de Visual Basic'
 title: Estrutura de um programa Visual Basic
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], structure
 - Visual Basic code, program structure
 ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
-ms.openlocfilehash: 90bc1fd62a05f670424e1fac368376401d1030c0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e5941b1cbdfdc460e3e860a5449e8ccae0673612
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91097768"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468194"
 ---
 # <a name="structure-of-a-visual-basic-program"></a>Estrutura de um programa Visual Basic
 
@@ -20,7 +21,7 @@ Um programa de Visual Basic é criado A partir dos blocos de construção padrã
   
  Para obter mais informações sobre esses blocos de construção de um programa de Visual Basic, consulte [soluções e projetos](/visualstudio/ide/solutions-and-projects-in-visual-studio) e [assemblies no .net](../../../standard/assembly/index.md).  
   
-## <a name="file-level-programming-elements"></a>Elementos de programação em nível de arquivo  
+## <a name="file-level-programming-elements"></a>Elementos de programação de File-Level  
 
  Quando você inicia um projeto ou arquivo e abre o editor de código, você vê algum código já em vigor e na ordem correta. Qualquer código que você escrever deve seguir a seguinte sequência:  
   
@@ -50,7 +51,7 @@ Um programa de Visual Basic é criado A partir dos blocos de construção padrã
 
  As instruções de compilação condicional podem aparecer quase em qualquer lugar no arquivo de origem. Elas fazem com que partes do seu código sejam incluídas ou excluídas no tempo de compilação, dependendo de determinadas condições. Você também pode usá-los para depurar seu aplicativo, pois o código condicional é executado somente no modo de depuração. Para obter mais informações, consulte [compilação condicional](conditional-compilation.md).  
   
-## <a name="namespace-level-programming-elements"></a>Elementos de programação de nível de namespace  
+## <a name="namespace-level-programming-elements"></a>Elementos de programação de Namespace-Level  
 
  Classes, estruturas e módulos contêm todo o código em seu arquivo de origem. Eles são elementos *de nível de namespace* , que podem aparecer em um namespace ou no nível do arquivo de origem. Eles mantêm as declarações de todos os outros elementos de programação. Interfaces, que definem as assinaturas de elemento, mas não fornecem nenhuma implementação, também aparecem no nível de módulo. Para obter mais informações sobre os elementos de nível de módulo, consulte o seguinte:  
   
@@ -64,7 +65,7 @@ Um programa de Visual Basic é criado A partir dos blocos de construção padrã
   
  Os elementos de dados no nível de namespace são enumerações e delegados.  
   
-## <a name="module-level-programming-elements"></a>Elementos de programação em nível de módulo  
+## <a name="module-level-programming-elements"></a>Elementos de programação de Module-Level  
 
  Procedimentos, operadores, propriedades e eventos são os únicos elementos de programação que podem conter código executável (instruções que executam ações em tempo de execução). Eles são os elementos de *nível de módulo* do seu programa. Para obter mais informações sobre os elementos de nível de procedimento, consulte o seguinte:  
   
@@ -82,7 +83,7 @@ Um programa de Visual Basic é criado A partir dos blocos de construção padrã
   
  Os elementos de dados no nível do módulo são variáveis, constantes, enumerações e delegados.  
   
-## <a name="procedure-level-programming-elements"></a>Elementos de programação de nível de procedimento  
+## <a name="procedure-level-programming-elements"></a>Elementos de programação de Procedure-Level  
 
  A maior parte do conteúdo dos elementos de *nível de procedimento* são instruções Executáveis, que constituem o código de tempo de execução do seu programa. Todo o código executável deve estar em algum procedimento (,,,,,,, `Function` `Sub` `Operator` `Get` `Set` `AddHandler` `RemoveHandler` `RaiseEvent` ). Para obter mais informações, consulte [Instruções](../language-features/statements.md).  
   
@@ -102,7 +103,7 @@ Um programa de Visual Basic é criado A partir dos blocos de construção padrã
   
  A variedade mais comum desse procedimento é `Sub Main()` . Para obter mais informações, consulte o [procedimento principal em Visual Basic](main-procedure.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimento principal no Visual Basic](main-procedure.md)
 - [Convenções de nomenclatura do Visual Basic](naming-conventions.md)

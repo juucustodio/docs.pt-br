@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Fine-Tuning seu aplicativo assíncrono (Visual Basic)'
 title: Ajustando seu aplicativo Async
 ms.date: 07/20/2015
 ms.assetid: 4c3e7997-a95f-4fbe-a6ac-60ba042d30b9
-ms.openlocfilehash: 6ad4f9a526e0497029ff8ddc3e93637a4f9acb00
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1e31ffdee4d2af9379e8073010ed2b1925023e43
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075428"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464411"
 ---
 # <a name="fine-tuning-your-async-application-visual-basic"></a>Ajustando seu aplicativo assíncrono (Visual Basic)
 
@@ -42,6 +43,6 @@ ms.locfileid: "91075428"
   
  É possível baixar projetos completos do WPF (Windows Presentation Foundation) em [Exemplo assíncrono: ajuste fino de seu aplicativo](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Programação assíncrona com Async e Await (Visual Basic)](index.md)

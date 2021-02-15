@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: como criar um método de extensão de adição usado por um inicializador de coleção (Visual Basic)'
 title: Como criar um método para adicionar extensão usado por um inicializador de coleção
 ms.date: 07/20/2015
 helpviewer_keywords:
 - collection initializers [Visual Basic]
 ms.assetid: f64b52c7-8b11-4410-93a6-cb3aeebcc772
-ms.openlocfilehash: c36fab6635a9f7820c52c5f73c20487b92879b9a
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1fbe6f438c4761ae668a6bd6a0a2c38c8efdb439
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086342"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475468"
 ---
 # <a name="how-to-create-an-add-extension-method-used-by-a-collection-initializer-visual-basic"></a>Como criar um método para adicionar extensão usado por um inicializador de coleção (Visual Basic)
 
@@ -27,7 +28,7 @@ Quando você usa um inicializador de coleção para criar uma coleção, o compi
   
  [!code-vb[VbVbalrCollectionInitializersHowTo1#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializersHowTo1/VB/Module1.vb#3)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Inicializadores de coleção](index.md)
 - [Como criar uma coleção usada por um inicializador de coleção](how-to-create-a-collection-used-by-a-collection-initializer.md)

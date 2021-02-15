@@ -2,12 +2,12 @@
 title: 'Tutorial: criar um provedor de tipos'
 description: 'Saiba como criar seus próprios provedores de tipo F # no F # 3,0 examinando vários provedores de tipo simples para ilustrar os conceitos básicos.'
 ms.date: 11/04/2019
-ms.openlocfilehash: 65cb9616f66b5850135dbfcdd9b9a9dad30421de
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 803b6ea141ed4404daf5daccd1a53212d8b42234
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739692"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468298"
 ---
 # <a name="tutorial-create-a-type-provider"></a>Tutorial: criar um provedor de tipos
 
@@ -15,7 +15,7 @@ O mecanismo do provedor de tipos no F # é uma parte significativa de seu suport
 
 O ecossistema F # contém um intervalo de provedores de tipos para serviços de dados empresariais e da Internet usados com frequência. Por exemplo:
 
-- O [FSharp. Data](https://fsharp.github.io/FSharp.Data/) inclui provedores de tipos para formatos de documento JSON, XML, CSV e HTML.
+- O FSharp. Data inclui provedores de tipos para formatos de documento JSON, XML, CSV e HTML.
 
 - O [Sqlfornecetor](https://fsprojects.github.io/SQLProvider/) fornece acesso fortemente tipado a bancos de dados SQL por meio de um mapeamento de objeto e consultas F # LINQ em relação a essas fontes.
 
@@ -1136,7 +1136,7 @@ devenv /debugexe fsc.exe script.fsx
 
   Você pode usar o log de impressão para stdout.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Provedores de tipos](index.md)
 - [O SDK do provedor de tipos](https://github.com/fsprojects/FSharp.TypeProviders.SDK)

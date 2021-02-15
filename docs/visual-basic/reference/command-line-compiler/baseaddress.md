@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-BaseAddress
 title: -baseaddress
 ms.date: 08/09/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - /baseaddress compiler option [Visual Basic]
 - baseaddress compiler option [Visual Basic]
 ms.assetid: c982bcf2-46e5-47a2-bc8f-a5cc32b7dc47
-ms.openlocfilehash: c794d1fc1c9d20e22ffa747e3175c846341ad8ad
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: eaa2992c126ebb83b20cfdbef3ab995a30ee25fd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91097755"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468311"
 ---
 # <a name="-baseaddress"></a>-baseaddress
 
@@ -30,7 +31,7 @@ Especifica um endereço base padrão ao criar uma DLL.
   
 |Termo|Definição|  
 |---|---|  
-|`address`|Necessário. O endereço básico da DLL. Esse endereço deve ser especificado como um número hexadecimal.|  
+|`address`|Obrigatório. O endereço básico da DLL. Esse endereço deve ser especificado como um número hexadecimal.|  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -46,7 +47,7 @@ Especifica um endereço base padrão ao criar uma DLL.
 |---|  
 |1. ter um projeto selecionado em **Gerenciador de soluções**. No menu **Projeto** , clique em **Propriedades**. <br />2. Clique na guia **Compilar** .<br />3. clique em **avançado**.<br />4. modifique o valor na caixa **endereço base do dll:** . **Observação:**      A caixa **endereço base de dll:** é somente leitura a menos que o destino seja uma dll.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [-Target (Visual Basic)](target.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: LINQ to Objects (Visual Basic)'
 title: Objetos LINQ to
 ms.date: 07/20/2015
 ms.assetid: dd4c30bc-1c9b-4781-a482-b5eada38deb2
-ms.openlocfilehash: cb277a255151bf7db9d0fb0a50605ee07ba1423f
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 50f04c77579595cc78ed43d04e0547eb15f91dc3
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075285"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464762"
 ---
 # <a name="linq-to-objects-visual-basic"></a>LINQ to Objects (Visual Basic)
 

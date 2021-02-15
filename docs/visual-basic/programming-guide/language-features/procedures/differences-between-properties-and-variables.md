@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: diferenças entre propriedades e variáveis no Visual Basic'
 title: Diferenças entre Propriedades e Variáveis
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - variables [Visual Basic], and properties
 - properties [Visual Basic], and variables
 ms.assetid: 7a03a8be-5381-431f-bd7c-16e887e4e07b
-ms.openlocfilehash: 95bafcaca98e1a0fbdd62a550291c8ece932c1ba
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6118d37616f3df1f21dda8e3a6392b6a6f37a24e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075025"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464710"
 ---
 # <a name="differences-between-properties-and-variables-in-visual-basic"></a>Diferenças entre propriedades e variáveis no Visual Basic
 
@@ -48,7 +49,7 @@ Variáveis e propriedades representam valores que você pode acessar. No entanto
   
  <sup>1</sup> ao contrário de uma variável, o valor de uma propriedade pode não corresponder diretamente a um único item de armazenamento. O armazenamento pode ser dividido em partes para conveniência ou segurança, ou o valor pode ser armazenado em um formato criptografado. Nesses casos, o `Get` procedimento montaria as partes ou descriptografaria o valor armazenado, e o `Set` procedimento criptografaria o novo valor ou o dividiria no armazenamento de constituintes. Um valor de propriedade pode ser efêmero, como a hora do dia, caso em que o `Get` procedimento o calcularia em tempo real sempre que você acessar a propriedade.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos de propriedade](./property-procedures.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)

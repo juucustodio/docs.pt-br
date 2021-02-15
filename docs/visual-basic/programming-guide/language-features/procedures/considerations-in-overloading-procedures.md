@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: considerações sobre procedimentos de sobrecarga (Visual Basic)'
 title: Considerações sobre procedimentos de sobrecarga
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - restrictions [Visual Basic], overloading procedures
 - procedures [Visual Basic], parameter lists
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
-ms.openlocfilehash: 6197fa4041a22944542b2657e35bc293a6e5c244
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ee6dc0ce23f0706f52ac58673d37d1b72936d2bc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075051"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472612"
 ---
 # <a name="considerations-in-overloading-procedures-visual-basic"></a>Considerações sobre procedimentos de sobrecarga (Visual Basic)
 
@@ -132,7 +133,7 @@ Ao sobrecarregar um procedimento, você deve usar uma *assinatura* diferente par
   
 - O compilador não poderá sinalizar um erro se o código de chamada passar um tipo de dados ao qual o procedimento não dá suporte.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)

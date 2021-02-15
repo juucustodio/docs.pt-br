@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar uma expressão lambda (Visual Basic)'
 title: Como criar uma expressão lambda
 ms.date: 07/20/2015
 helpviewer_keywords:
 - lambda expressions [Visual Basic]
 - expressions [Visual Basic], lambda
 ms.assetid: 3279bd5c-80f7-410a-a7ba-f7085ed36aa5
-ms.openlocfilehash: cc2de38f7375848d104edff6f419656d9caa9cb2
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 386d40c1e2021c9b02b2f785300c4e978b4da87d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071918"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472560"
 ---
 # <a name="how-to-create-a-lambda-expression-visual-basic"></a>Como criar uma expressão lambda (Visual Basic)
 
@@ -102,11 +103,11 @@ Uma *expressão lambda* é uma função ou sub-rotina que não tem um nome. Uma 
   
  [!code-vb[VbVbalrLambdas#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class4.vb#10)]  
   
- O exemplo anterior é equivalente ao código a seguir, que é escrito na sintaxe de LINQ (consulta integrada à linguagem):  
+ O exemplo anterior é equivalente ao código a seguir, que é escrito na sintaxe de consulta de Language-Integrated (LINQ):  
   
  [!code-vb[VbVbalrLambdas#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class5.vb#11)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq.Enumerable>
 - [Expressões lambda](./lambda-expressions.md)

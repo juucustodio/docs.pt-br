@@ -1,5 +1,5 @@
 ---
-description: "Saiba mais sobre: BC30686: o acesso à propriedade padrão é ambíguo entre os membros da interface herdada ' <defaultpropertyname> ' da interface ' <interfacename1> ' e ' <defaultpropertyname> ' da interface '<interfacename2>"
+description: "Saiba mais sobre: BC30686: o acesso à propriedade padrão é ambíguo entre os membros da interface herdada ' <defaultpropertyname> ' da interface ' <interfacename1> ' e ' <defaultpropertyname> ' da interface ' <interfacename2> '"
 title: O acesso à propriedade padrão é ambíguo entre os membros de interface herdada '<defaultpropertyname>' da interface '<interfacename1>' e '<defaultpropertyname>' da interface '<interfacename2>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30686
 ms.assetid: 784fefec-ef57-48cf-b960-957df419b439
-ms.openlocfilehash: 5ae5e5b2dc7a61540e26d125e960d4755141d975
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: edf2823fb11184efb2c3101b81119ea1696234db
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99796646"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455217"
 ---
 # <a name="bc30686-default-property-access-is-ambiguous-between-the-inherited-interface-members-defaultpropertyname-of-interface-interfacename1-and-defaultpropertyname-of-interface-interfacename2"></a>BC30686: o acesso à propriedade padrão é ambíguo entre os membros da interface herdada ' \<defaultpropertyname> ' da interface ' \<interfacename1> ' e ' \<defaultpropertyname> ' da interface ' \<interfacename2> '
 

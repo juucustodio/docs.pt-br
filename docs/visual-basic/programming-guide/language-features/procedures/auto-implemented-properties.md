@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Propriedades autoimplementadas (Visual Basic)'
 title: Propriedades autoimplementadas
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - properties [Visual Basic], auto-implemented
 - auto-implemented properties [Visual Basic]
 ms.assetid: 5c669f0b-cf95-4b4e-ae84-9cc55212ca87
-ms.openlocfilehash: f50b1f40ef9843391c6622561bfd8a8eaae6fc17
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 61f6565f9d4e7ea8731bb09c59cd6d942ab8c129
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090048"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472690"
 ---
 # <a name="auto-implemented-properties-visual-basic"></a>Propriedades autoimplementadas (Visual Basic)
 
@@ -97,7 +98,7 @@ End Class
 
  Se você precisar converter uma propriedade autoimplementada em uma propriedade expandida que contenha `Get` um `Set` procedimento ou, o editor de código Visual Basic poderá gerar automaticamente os procedimentos e a `Get` instrução da `Set` `End Property` propriedade. O código será gerado se você colocar o cursor em uma linha em branco após a `Property` instrução, digite um `G` (para `Get` ) ou um `S` (para `Set` ) e pressione Enter. O editor de código Visual Basic gera automaticamente `Get` o `Set` procedimento ou para propriedades somente leitura e somente gravação quando você pressiona Enter no final de uma `Property` instrução.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como declarar e chamar uma propriedade padrão no Visual Basic](./how-to-declare-and-call-a-default-property.md)
 - [Como declarar uma propriedade com níveis de acesso mistos](./how-to-declare-a-property-with-mixed-access-levels.md)

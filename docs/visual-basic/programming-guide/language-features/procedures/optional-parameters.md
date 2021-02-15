@@ -1,5 +1,6 @@
 ---
-title: Parâmetros opcionais
+description: 'Saiba mais sobre: parâmetros opcionais (Visual Basic)'
+title: Parâmetros Opcionais
 ms.date: 07/20/2015
 helpviewer_keywords:
 - parameters [Visual Basic], optional
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - arguments [Visual Basic], optional
 - optional arguments [Visual Basic], and named arguments
 ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
-ms.openlocfilehash: 73a51ab65a8ea4c38b6fd6737279fb19fb1cfe73
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 048f940f25fc05a66245e267ff23dc9845fcafdd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071853"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436130"
 ---
 # <a name="optional-parameters-visual-basic"></a>Parâmetros opcionais (Visual Basic)
 
@@ -63,7 +64,7 @@ Sub name(argument 1, , , argument 4)
 
  Outra maneira de definir um procedimento com parâmetros opcionais é usar a sobrecarga. Se você tiver um parâmetro opcional, poderá definir duas versões sobrecarregadas do procedimento, uma aceitando o parâmetro e outra sem ele. Essa abordagem torna-se mais complicada à medida que o número de parâmetros opcionais aumenta. No entanto, sua vantagem é que você pode ter certeza absoluta se o programa de chamada forneceu cada argumento opcional.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)

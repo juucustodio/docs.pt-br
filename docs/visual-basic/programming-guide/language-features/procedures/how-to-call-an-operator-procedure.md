@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como chamar um procedimento de operador (Visual Basic)'
 title: Como chamar um procedimento de operador
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - overloaded operators [Visual Basic], calling
 - operator overloading
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
-ms.openlocfilehash: 0e88ff7b36535a709671a1f9b838f2b4488d1d37
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f58d12ac5e4c9071646073184f7824946c00b39b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075181"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472599"
 ---
 # <a name="how-to-call-an-operator-procedure-visual-basic"></a>Como chamar um procedimento de operador (Visual Basic)
 
@@ -56,7 +57,7 @@ Você chama um procedimento de operador usando o símbolo de operador em uma exp
 
  Certifique-se de que a classe ou estrutura que você está usando define o operador que você deseja usar.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos do operador](./operator-procedures.md)
 - [Como definir um operador](./how-to-define-an-operator.md)

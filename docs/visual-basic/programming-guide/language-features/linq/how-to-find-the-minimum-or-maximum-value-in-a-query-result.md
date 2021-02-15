@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como localizar o valor mínimo ou máximo em um resultado de consulta usando LINQ (Visual Basic)'
 title: Como localizar o valor mínimo ou máximo em um resultado de consulta usando LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - queries [LINQ in Visual Basic], aggregate queries
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 238b763b-7dcd-4b14-8050-b65500a4f71c
-ms.openlocfilehash: e397ccd6fe21caaeb9d56ff3b0cc1ce16032639a
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e6337b61b01d720bd37390f61e4e285aa150ec3a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91084002"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422779"
 ---
 # <a name="how-to-find-the-minimum-or-maximum-value-in-a-query-result-by-using-linq-visual-basic"></a>Como localizar o valor mínimo ou máximo em um resultado de consulta usando LINQ (Visual Basic)
 
-A consulta integrada à linguagem (LINQ) facilita o acesso a informações do banco de dados e a execução de consultas.  
+A consulta de Language-Integrated (LINQ) facilita o acesso a informações do banco de dados e a execução de consultas.  
   
  O exemplo a seguir mostra como criar um novo aplicativo que executa consultas em um banco de dados SQL Server. O exemplo determina os valores mínimo e máximo para os resultados usando as `Aggregate` `Group By` cláusulas e. Para obter mais informações, consulte [cláusula Aggregate](../../../language-reference/queries/aggregate-clause.md) e [cláusula Group by](../../../language-reference/queries/group-by-clause.md).  
   
@@ -77,7 +78,7 @@ A consulta integrada à linguagem (LINQ) facilita o acesso a informações do ba
   
 4. Pressione **F5** para executar o projeto e exibir os resultados.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ](index.md)
 - [Consultas](../../../language-reference/queries/index.md)

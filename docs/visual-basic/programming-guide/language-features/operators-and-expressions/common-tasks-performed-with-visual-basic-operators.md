@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tarefas comuns executadas com operadores de Visual Basic'
 title: Tarefas comuns realizadas com operadores do Visual Basic
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - operators [Visual Basic], comparison
 - operators [Visual Basic], short-circuiting logical
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
-ms.openlocfilehash: a8a8d7898e52077fef47b91172e34ad50d7f54e7
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5103241c7c92ffe7264178e9abb6a56ba03d4b52
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075207"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465256"
 ---
 # <a name="common-tasks-performed-with-visual-basic-operators"></a>Tarefas comuns realizadas com operadores do Visual Basic
 
@@ -83,7 +84,7 @@ Os operadores executam muitas tarefas comuns envolvendo uma ou mais expressões 
 |Executar uma disjunção lógica exclusiva bit a bit em dois valores integrais|[Operador Xor](../../../language-reference/operators/xor-operator.md)|  
 |Executar a negação lógica bit a bit em um valor integral|[Operador Not](../../../language-reference/operators/not-operator.md)|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores e expressões](index.md)
 - [Operadores Listados por Funcionalidade](../../../language-reference/operators/operators-listed-by-functionality.md)

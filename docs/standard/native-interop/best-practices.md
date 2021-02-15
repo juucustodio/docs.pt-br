@@ -2,12 +2,12 @@
 title: Práticas recomendadas de interoperabilidade nativa - .NET
 description: Saiba mais sobre as práticas recomendadas para fazer interface com componentes nativos no .NET.
 ms.date: 01/18/2019
-ms.openlocfilehash: 3ed69fd0f57e937da3f43e11d57ead37984fed78
-ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
+ms.openlocfilehash: e64aa0aa43a56145bd7636835f507f8433fa3db4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97593377"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465243"
 ---
 # <a name="native-interoperability-best-practices"></a>Práticas recomendadas de interoperabilidade nativa
 
@@ -95,7 +95,7 @@ Os tipos blittable são tipos que têm a mesma representação em nível de bits
 
 **Tipos com conteúdo blittable:**
 
-- matrizes unidimensionais não aninhadas de tipos blittable (por exemplo, `int[]`)
+- matrizes unidimensionais e não aninhadas de tipos primitivos blittable (por exemplo, `int[]` )
 - classes com layout fixo que só têm tipos de valor blittable para campos de instância
   - layout fixo requer `[StructLayout(LayoutKind.Sequential)]` ou `[StructLayout(LayoutKind.Explicit)]`
   - as classes são `LayoutKind.Auto` por padrão

@@ -16,22 +16,24 @@ helpviewer_keywords:
 - naming code style rules [EditorConfig]
 - naming rules
 - EditorConfig naming conventions
-ms.openlocfilehash: 1fce275204b729b4d23729ca432e06a5a249620d
-ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
+ms.openlocfilehash: df2cbc8299d853b5730bc39eb25c6f97b6575655
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99065129"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429202"
 ---
 # <a name="naming-rules"></a>Regras de nomenclatura
 
-Em seu `.editorconfig` arquivo, você pode definir **regras de nomenclatura** para como elementos de código de linguagem de programação .net, como &mdash; classes, propriedades e métodos, &mdash; devem ser nomeados. Por exemplo, você pode especificar que os membros públicos devem estar em letras maiúsculas ou que os campos particulares devem começar com `_` .
+No `.editorconfig` arquivo, você pode definir **as regras de nomenclatura** que especificam e impõem como elementos de código de linguagem de programação .net, &mdash; como classes, propriedades e métodos, &mdash; devem ser nomeados. Por exemplo, você pode especificar que os membros públicos devem estar em letras maiúsculas ou que os campos particulares devem começar com `_` .
 
 Uma regra de nomenclatura tem três componentes:
 
-* O **grupo** &mdash; de símbolos ao qual se aplica a regra.
-* O **estilo de nomenclatura** a ser associado à regra.
+* O **grupo de símbolos** ao qual a regra se aplica, por exemplo, membros públicos ou campos particulares.
+* O **estilo de nomenclatura** a ser associado à regra, por exemplo, que o nome deve estar em letras maiúsculas ou começar com um sublinhado.
 * A severidade para impor a Convenção.
+
+Primeiro, você deve especificar o grupo de símbolos e o estilo de nomenclatura e dar a cada um deles um título. Em seguida, especifique a regra de nomenclatura, que vincula tudo em conjunto.
 
 ## <a name="general-syntax"></a>Sintaxe geral
 
@@ -89,9 +91,9 @@ Você pode definir as seguintes propriedades para grupos de símbolos, para limi
 
 | Propriedade | Descrição | Valores permitidos | Obrigatório |
 | -- | -- | -- | -- |
-| `applicable_kinds` | Tipos de símbolos no grupo <sup>1</sup> | `*` (use este valor para especificar todos os símbolos)<br/>`namespace`<br/>`class`<br/>`struct`<br/>`interface`<br/>`enum`<br/>`property`<br/>`method`<br/>`field`<br/>`event`<br/>`delegate`<br/>`parameter`<br/>`type_parameter`<br/>`local`<br/>`local_function` | Yes |
-| `applicable_accessibilities` | Níveis de acessibilidade dos símbolos no grupo | `*` (use este valor para especificar todos os níveis de acessibilidade)<br/>`public`<br/>`internal` ou `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` ou `protected_friend`<br/>`private_protected`<br/>`local` (para símbolos definidos dentro de um método) | Yes |
-| `required_modifiers` | Corresponder apenas símbolos com _todos_ os modificadores especificados <sup>2</sup> | `abstract` ou `must_inherit`<br/>`async`<br/>`const`<br/>`readonly`<br/>`static` ou `shared` <sup>3</sup> | No |
+| `applicable_kinds` | Tipos de símbolos no grupo <sup>1</sup> | `*` (use este valor para especificar todos os símbolos)<br/>`namespace`<br/>`class`<br/>`struct`<br/>`interface`<br/>`enum`<br/>`property`<br/>`method`<br/>`field`<br/>`event`<br/>`delegate`<br/>`parameter`<br/>`type_parameter`<br/>`local`<br/>`local_function` | Sim |
+| `applicable_accessibilities` | Níveis de acessibilidade dos símbolos no grupo | `*` (use este valor para especificar todos os níveis de acessibilidade)<br/>`public`<br/>`internal` ou `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` ou `protected_friend`<br/>`private_protected`<br/>`local` (para símbolos definidos dentro de um método) | Sim |
+| `required_modifiers` | Corresponder apenas símbolos com _todos_ os modificadores especificados <sup>2</sup> | `abstract` ou `must_inherit`<br/>`async`<br/>`const`<br/>`readonly`<br/>`static` ou `shared` <sup>3</sup> | Não |
 
 **Observações:**
 
@@ -113,9 +115,9 @@ Você pode definir as seguintes propriedades para um estilo de nomenclatura:
 | Propriedade | Descrição | Valores permitidos | Obrigatório |
 | -- | -- | -- | -- |
 | `capitalization` | Estilo de capitalização de palavras dentro do símbolo | `pascal_case`<br/>`camel_case`<br/>`first_word_upper`<br/>`all_upper`<br/>`all_lower` | Sim<sup>1</sup> |
-| `required_prefix` | Deve começar com estes caracteres | | No |
-| `required_suffix` | Deve terminar com estes caracteres | | No |
-| `word_separator` | As palavras dentro do símbolo precisam ser separadas com este caractere | | No |
+| `required_prefix` | Deve começar com estes caracteres | | Não |
+| `required_suffix` | Deve terminar com estes caracteres | | Não |
+| `word_separator` | As palavras dentro do símbolo precisam ser separadas com este caractere | | Não |
 
 **Observações:**
 
@@ -170,7 +172,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.style    = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Regras de linguagem](language-rules.md)
 - [Regras de formatação](formatting-rules.md)

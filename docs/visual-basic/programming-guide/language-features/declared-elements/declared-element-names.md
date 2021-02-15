@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: nomes de elemento declarados (Visual Basic)'
 title: Nomes de elementos declarados
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - names [Visual Basic], naming conventions
 - identifiers [Visual Basic], elements
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
-ms.openlocfilehash: 327a18644c1dc1d8dae59016b8e30600357d2ca9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ba0a6d6b236c0c4e9ce81c37a1cca4e709cc5588
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086173"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425679"
 ---
 # <a name="declared-element-names-visual-basic"></a>Nomes de elemento declarados (Visual Basic)
 
@@ -65,7 +66,7 @@ Cada elemento declarado tem um nome, também chamado de *identificador*, que é 
  `xyz$wv`  
   
 > [!CAUTION]
-> Nomes de elementos que começam com um sublinhado ( `_` ) não fazem parte da [independência de linguagem e dos componentes independentes de linguagem](../../../../standard/language-independence-and-language-independent-components.md) (CLS), portanto, o código em conformidade com CLS não pode usar um componente que define tais nomes. No entanto, um sublinhado em qualquer outra posição em um nome de elemento é compatível com CLS.  
+> Nomes de elementos que começam com um sublinhado ( `_` ) não fazem parte da [independência de linguagem e dos componentes de Language-Independent](../../../../standard/language-independence-and-language-independent-components.md) (CLS), portanto, o código em conformidade com CLS não pode usar um componente que define esses nomes. No entanto, um sublinhado em qualquer outra posição em um nome de elemento é compatível com CLS.  
   
 ### <a name="name-length-guidelines"></a>Diretrizes de comprimento do nome  
 
@@ -95,7 +96,7 @@ Cada elemento declarado tem um nome, também chamado de *identificador*, que é 
 
  A comparação de nomes é independente da localidade. Se dois nomes corresponderem em uma localidade, eles terão a garantia de corresponder em todas as localidades.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Elementos declarados](index.md)
 - [Características do Elemento Declarado](declared-element-characteristics.md)

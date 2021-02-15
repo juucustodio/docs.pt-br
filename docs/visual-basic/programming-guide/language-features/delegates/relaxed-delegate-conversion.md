@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: conversão de delegado reduzida (Visual Basic)'
 title: Conversão de delegado reduzida
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - delegates [Visual Basic], relaxed conversion
 - conversions [Visual Basic], relaxed delegate
 ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
-ms.openlocfilehash: b914d0479f160199744a8f9923c0bebc87321329
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 36917017cd29d2c71f0c04ca9545b7d4e90c644e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086069"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428487"
 ---
 # <a name="relaxed-delegate-conversion-visual-basic"></a>Conversão de delegado reduzida (Visual Basic)
 
@@ -87,7 +88,7 @@ End Sub
   
  [!code-vb[VbVbalrRelaxedDelegates#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#11)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões lambda](../procedures/lambda-expressions.md)
 - [Conversões de Widening e Narrowing](../data-types/widening-and-narrowing-conversions.md)

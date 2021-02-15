@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como inicializar uma variável de matriz no Visual Basic'
 title: Como inicializar uma variável de matriz
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - arrays [Visual Basic], initializing
 - arrays [Visual Basic], declaring
 ms.assetid: aadd7a60-7ca4-4608-b986-091f19e7fc10
-ms.openlocfilehash: 1add054a6cb6468f4581f92ca3a258c5b0cdc77d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 05cca98457a56db52ee99cfc4ac93c860da7a51d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058853"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427603"
 ---
 # <a name="how-to-initialize-an-array-variable-in-visual-basic"></a>Como inicializar uma variável de matriz no Visual Basic
 
@@ -54,7 +55,7 @@ Você Inicializa uma variável de matriz, incluindo um literal de matriz em uma 
   
      [!code-vb[VbVbalrArrays#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#32)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [matrizes](index.md)
 - [Solução de problemas de matrizes](troubleshooting-arrays.md)

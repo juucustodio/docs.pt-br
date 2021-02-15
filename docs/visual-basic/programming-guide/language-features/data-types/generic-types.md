@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos genéricos em Visual Basic (Visual Basic)'
 title: Tipos genéricos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
-ms.openlocfilehash: f9b343c664baaf316e5cd6df72da8dcf56222382
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1164513825240b1e83fbce2aeb6478430b0bc250
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090255"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428539"
 ---
 # <a name="generic-types-in-visual-basic-visual-basic"></a>Tipos genéricos no Visual Basic (Visual Basic)
 
@@ -129,7 +130,7 @@ Um *tipo genérico* é um único elemento de programação que se adapta para ex
   
 - O argumento de tipo deve expor um construtor sem parâmetros acessível para o código que cria objetos a partir dele  
   
-- O argumento de tipo deve ser um *tipo de referência*ou deve ser um *tipo de valor*  
+- O argumento de tipo deve ser um *tipo de referência* ou deve ser um *tipo de valor*  
   
  Se você precisar impor mais de um requisito, use uma *lista de restrições* separada por vírgulas dentro de chaves ( `{ }` ). Para exigir um construtor acessível, você inclui a palavra-chave [New Operator](../../../language-reference/operators/new-operator.md) na lista. Para exigir um tipo de referência, você inclui a `Class` palavra-chave; para exigir um tipo de valor, você inclui a `Structure` palavra-chave.  
   
@@ -155,11 +156,11 @@ Um *tipo genérico* é um único elemento de programação que se adapta para ex
   
 - *Tipo construído*. Uma classe, estrutura, interface, procedimento ou delegado declarado de um tipo genérico fornecendo argumentos de tipo para seus parâmetros de tipo.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Data Types](index.md)
 - [Caracteres de tipo](type-characters.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)
 - [Conversões de tipo no Visual Basic](type-conversions.md)
 - [Solução de problemas de tipos de dados](troubleshooting-data-types.md)
 - [Data Types](../../../language-reference/data-types/index.md)

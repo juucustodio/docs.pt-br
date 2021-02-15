@@ -1,5 +1,5 @@
 ---
-description: "Saiba mais sobre: BC30007: referência necessária para o assembly ' <assemblyname> ' que contém a classe base '<classname>"
+description: "Saiba mais sobre: BC30007: referência necessária para o assembly ' <assemblyname> ' que contém a classe base ' <classname> '"
 title: Referência obrigatória ao assembly '<assemblyname>' que contém a classe base '<classname>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30007
 ms.assetid: 5f34cf47-6c6e-4954-bd8e-d6b020b75fb7
-ms.openlocfilehash: f01795d3e8147015f9f46697b047a8c63099ff32
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: e6d4cf660453078d9a0f9825bc81bb990c1f55b9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99792044"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456881"
 ---
 # <a name="bc30007-reference-required-to-assembly-assemblyname-containing-the-base-class-classname"></a>BC30007: referência necessária para o assembly ' \<assemblyname> ' que contém a classe base ' \<classname> '
 

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <paramref> (Visual Basic)'
 title: <paramref>
 ms.date: 07/20/2015
 helpviewer_keywords:
 - paramref XML tag
 - <paramref> XML tag
 ms.assetid: 8979d53b-beb1-41b7-b41e-6bbea1c17a03
-ms.openlocfilehash: d7aacc5faea22f9c5a4b865a32c832154fe624c5
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 0ce748213e26c258b290828c42454b0e7fd316f1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90872609"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456829"
 ---
 # <a name="paramref-visual-basic"></a>\<paramref> (Visual Basic)
 
@@ -39,6 +40,6 @@ Formata uma palavra como um parâmetro.
   
  [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Marcações de Comentário XML](index.md)

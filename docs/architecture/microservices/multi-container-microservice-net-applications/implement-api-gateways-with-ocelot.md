@@ -2,12 +2,12 @@
 title: Implementação de Gateways de API com o Ocelot
 description: Saiba como implementar Gateways de API com o Ocelot e como usar o Ocelot em um ambiente baseado em contêiner.
 ms.date: 03/02/2020
-ms.openlocfilehash: 5da8533eff394b587d123970742727484a7236ad
-ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
+ms.openlocfilehash: 3f8fcaac162d2bffd221f07b2e5061455d73e1bd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97678124"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429293"
 ---
 # <a name="implement-api-gateways-with-ocelot"></a>Implementar Gateways de API com o Ocelot
 
@@ -196,7 +196,7 @@ O ponto importante para Ocelot é o arquivo `configuration.json` que você preci
 
 Há duas seções para a configuração. Uma matriz de redirecionamentos e um GlobalConfiguration. As rerotas são os objetos que dizem ao Ocelot como tratar uma solicitação upstream. A configuração global permite substituições de redirecionar configurações específicas. É útil se você não quiser gerenciar muitas configurações específicas de redirecionamento.
 
-Aqui está um exemplo simplificado de [redirecionar o arquivo de configuração](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/ApiGateways/Web.Bff.Shopping/apigw/configuration.json) de um dos gateways de API do eShopOnContainers.
+Aqui está um exemplo simplificado de [redirecionar o arquivo de configuração](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/ApiGateways/Mobile.Bff.Shopping/apigw/configuration.json) de um dos gateways de API do eShopOnContainers.
 
 ```json
 {

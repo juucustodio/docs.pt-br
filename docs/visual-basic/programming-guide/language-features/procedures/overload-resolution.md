@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: resolução de sobrecarga (Visual Basic)'
 title: Resolução de sobrecarga
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - signatures [Visual Basic], procedure
 - overloads [Visual Basic], resolution
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
-ms.openlocfilehash: 9b83eba8efc8dfe14b6ec1cbab270984977198e5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 71375083e661ee156339abf13e1a5b8da21b9358
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071358"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480031"
 ---
 # <a name="overload-resolution-visual-basic"></a>Resolução de sobrecarga (Visual Basic)
 
@@ -60,9 +61,9 @@ Quando o compilador de Visual Basic encontra uma chamada para um procedimento qu
 |Dois ou mais valores em uma lista separada por vírgulas|`ParamArray`|  
 |Uma matriz de qualquer comprimento (incluindo uma matriz vazia)|`ParamArray`|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Parâmetros opcionais](./optional-parameters.md)
+- [Parâmetros Opcionais](./optional-parameters.md)
 - [Matrizes de parâmetros](./parameter-arrays.md)
 - [Sobrecarga de procedimento](./procedure-overloading.md)
 - [Solucionando problemas de procedimentos](./troubleshooting-procedures.md)
@@ -72,4 +73,4 @@ Quando o compilador de Visual Basic encontra uma chamada para um procedimento qu
 - [Como sobrecarregar um procedimento que usa um número indefinido de parâmetros](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)
 - [Considerações sobre procedimentos de sobrecarga](./considerations-in-overloading-procedures.md)
 - [Sobrecargas](../../../language-reference/modifiers/overloads.md)
-- [Métodos de extensão](./extension-methods.md)
+- [Métodos de Extensão](./extension-methods.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: implementando a herança com objetos COM (Visual Basic)'
 title: 'Passo a passo: Implementação de herança com objetos COM'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - inheritance [Visual Basic], walkthroughs
 - derived classes [Visual Basic], COM reusability
 ms.assetid: f8e7263a-de13-48d1-b67c-ca1adf3544d9
-ms.openlocfilehash: bdb891e1a150f0d7b79aefcc3db1f18dc8e84be4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dc16990f25126cba52ef3ea457e8c3157c987c60
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396721"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438938"
 ---
 # <a name="walkthrough-implementing-inheritance-with-com-objects-visual-basic"></a>Instruções passo a passo: implementando a herança com objetos COM (Visual Basic)
 
@@ -26,7 +27,7 @@ O procedimento a seguir mostra como usar Visual Basic 6,0 para criar um objeto C
 
 1. No Visual Basic 6,0, abra um novo projeto de DLL do ActiveX. Um projeto chamado `Project1` é criado. Ele tem uma classe chamada `Class1` .
 
-2. No **Gerenciador de projetos**, clique com o botão direito do mouse em **Projeto1**e clique em **Propriedades de Projeto1**. A caixa de diálogo **Propriedades do projeto** é exibida.
+2. No **Gerenciador de projetos**, clique com o botão direito do mouse em **Projeto1** e clique em **Propriedades de Projeto1**. A caixa de diálogo **Propriedades do projeto** é exibida.
 
 3. Na guia **geral** da caixa de diálogo **Propriedades do projeto** , altere o nome do projeto digitando `ComObject1` o campo **nome do projeto** .
 
@@ -67,7 +68,7 @@ O procedimento a seguir mostra como usar Visual Basic 6,0 para criar um objeto C
     End Function
     ```
 
-10. Crie e registre o objeto COM clicando em **Make ComObject1. dll** no menu **arquivo** .
+10. Crie e registre o objeto COM clicando em **fazer ComObject1.dll** no menu **arquivo** .
 
     > [!NOTE]
     > Embora você também possa expor uma classe criada com Visual Basic como um objeto COM, ela não é um objeto COM verdadeiro e não pode ser usada neste passo-a-passos. Para obter detalhes, consulte [interoperabilidade com em aplicativos .NET Framework](com-interoperability-in-net-framework-applications.md).
@@ -132,7 +133,7 @@ Propriedades e métodos herdados de classes COM podem ser substituídos, o que s
 
 - As propriedades que usam `ByRef` parâmetros não podem ser substituídas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interoperabilidade COM em aplicativos .NET Framework](com-interoperability-in-net-framework-applications.md)
 - [Instrução Inherits](../../language-reference/statements/inherits-statement.md)

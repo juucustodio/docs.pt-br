@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: solução de problemas de interoperabilidade (Visual Basic)'
 title: Solução de problemas de Interoperabilidade
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - interoperability, sharing components
 - shared components, using with assemblies
 ms.assetid: b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37
-ms.openlocfilehash: 135b121638b92adc5a3b0920aa29d10fd1d62d14
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 49a108e47c9614f11db6f6c1e7ba0b8714e936b2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075987"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438951"
 ---
 # <a name="troubleshooting-interoperability-visual-basic"></a>Solucionando problemas de interoperabilidade (Visual Basic)
 
@@ -31,7 +32,7 @@ Ao interoperar entre COM e o código gerenciado do .NET Framework, você pode en
 
  Às vezes, talvez seja necessário usar tipos de dados que não fazem parte do .NET Framework. Os assemblies de interoperabilidade lidam com a maior parte do trabalho para objetos COM, mas você pode ter que controlar os tipos de dados que são usados quando objetos gerenciados são expostos a COM. Por exemplo, estruturas em bibliotecas de classes devem especificar o `BStr` tipo não gerenciado em cadeias de caracteres enviadas a objetos com criados por Visual Basic 6,0 e versões anteriores. Nesses casos, você pode usar o <xref:System.Runtime.InteropServices.MarshalAsAttribute> atributo para fazer com que os tipos gerenciados sejam expostos como tipos não gerenciados.  
   
-## <a name="exporting-fixed-length-strings-to-unmanaged-code"></a><a name="vbconinteroperabilitymarshalinganchor2"></a> Exportando cadeias de caracteres de comprimento fixo para código não gerenciado  
+## <a name="exporting-fixed-length-strings-to-unmanaged-code"></a><a name="vbconinteroperabilitymarshalinganchor2"></a> Exportando cadeias de caracteres Fixed-Length para código não gerenciado  
 
  No Visual Basic 6,0 e versões anteriores, as cadeias de caracteres são exportadas para objetos COM como sequências de bytes sem um caractere de terminação nulo. Para compatibilidade com outras linguagens, Visual Basic .NET inclui um caractere de terminação ao exportar cadeias de caracteres. A melhor maneira de resolver essa incompatibilidade é exportar cadeias de caracteres que não tenham o caractere de término como matrizes de `Byte` ou `Char` .  
   
@@ -115,7 +116,7 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
 - Controle de quadro do Microsoft Forms 2,0  
   
-- Controle de cima para baixo, também conhecido como controle de rotação  
+- Up-Down controle, também conhecido como controle de rotação  
   
 - Controle da guia Sheridan  
   
@@ -141,12 +142,12 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
  Os assemblies que não são compartilhados devem estar localizados lado a lado no diretório com o aplicativo de chamada.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Interoperabilidade COM](index.md)
-- [Tlbimp.exe (Importador de Biblioteca de Tipos)](../../../framework/tools/tlbimp-exe-type-library-importer.md)
-- [Tlbexp.exe (Exportador de Biblioteca de Tipos)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)
+- [Tlbimp.exe (tipo de importador de biblioteca de tipos)](../../../framework/tools/tlbimp-exe-type-library-importer.md)
+- [Tlbexp.exe (exportador de biblioteca de tipos)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)
 - [Passo a passo: Implementação de herança com objetos COM](walkthrough-implementing-inheritance-with-com-objects.md)
 - [Instrução Inherits](../../language-reference/statements/inherits-statement.md)
 - [Cache de assemblies global](../../../framework/app-domains/gac.md)

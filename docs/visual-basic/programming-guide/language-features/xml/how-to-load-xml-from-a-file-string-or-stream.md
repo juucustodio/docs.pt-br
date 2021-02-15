@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como carregar XML de um arquivo, Cadeia de caracteres ou fluxo (Visual Basic)'
 title: Como carregar XML a partir de um arquivo, cadeia de caracteres ou fluxo
 ms.date: 07/20/2015
 helpviewer_keywords:
 - XML [Visual Basic], loading
 - LINQ to XML [Visual Basic], loading XML from files
 ms.assetid: 2b02dcec-4cca-4575-b4ad-89ceb87b984c
-ms.openlocfilehash: 7f2a961ebb7ecd4fc0512e141b4a437be87bec0e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 375190642c93d929abe2ae10bb6ccba927e3bc8a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392282"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480057"
 ---
 # <a name="how-to-load-xml-from-a-file-string-or-stream-visual-basic"></a>Como carregar XML a partir de um arquivo, cadeia de caracteres ou fluxo (Visual Basic)
 
@@ -42,7 +43,7 @@ O exemplo de código a seguir mostra o uso do <xref:System.Xml.Linq.XNode.ReadFr
 
 [!code-vb[VbXMLSamples#46](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples15.vb#46)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar uma cadeia de caracteres de uma matriz de valores char (Visual Basic)'
 title: Como criar uma cadeia de caracteres a partir de uma matriz de valores de caracteres
 ms.date: 07/20/2015
 helpviewer_keywords:
 - examples [Visual Basic], arrays
 - examples [Visual Basic], Char data type
 ms.assetid: 69f94e85-d57c-4ccc-a62a-426e829f5c5e
-ms.openlocfilehash: 08ad2f1c9455853e92533a7f00726c73b6adb87e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 67b675f5f02c92b785e374b99f49248d43d12fb4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071151"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429826"
 ---
 # <a name="how-to-create-a-string-from-an-array-of-char-values-visual-basic"></a>Como criar uma cadeia de caracteres a partir de uma matriz de valores de caracteres (Visual Basic)
 
@@ -30,7 +31,7 @@ Este exemplo cria a cadeia "abcd" de caracteres individuais.
 
  Caracteres nulos (equivalente a `Chr(0)` ) na cadeia de caracteres levam a resultados inesperados ao usar a cadeia de caracteres. O caractere nulo será incluído com a cadeia de caracteres, mas os caracteres após o caractere nulo não serão exibidos em algumas situações.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.String>
 - [Tipo de Dados de Caractere](../../../language-reference/data-types/char-data-type.md)

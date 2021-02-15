@@ -3,12 +3,12 @@ description: 'Saiba mais sobre: migrar seu aplicativo da Windows Store para .NET
 title: Migrando seu aplicativo da Windows Store para .NET Nativo
 ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-ms.openlocfilehash: 39f8427474b37c42d856366bf4e4d677ba77e7f1
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 7a9e8f7108ca21dbbae7ca0097b15af078c8c6bb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99738709"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464671"
 ---
 # <a name="migrate-your-windows-store-app-to-net-native"></a>Migre seu aplicativo da Windows Store para .NET Native
 
@@ -160,7 +160,7 @@ O uso de recursos localizados com a classe <xref:System.Diagnostics.Tracing.Even
 
 - A propriedade [typeInfo. GUID](xref:System.Type.GUID) gera uma <xref:System.PlatformNotSupportedException> exceção se um <xref:System.Runtime.InteropServices.GuidAttribute> atributo não é aplicado ao tipo. O GUID é usado principalmente para suporte a COM.
 
-- O <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> método analisa corretamente as cadeias de caracteres que contêm datas curtas em .net Native. Contudo, ele não mantém a compatibilidade com as alterações na análise de data e hora descritas no artigos da Base de Dados de Conhecimento Microsoft [KB2803771](https://support.microsoft.com/kb/2803771) e [KB2803755](https://support.microsoft.com/kb/2803755).
+- O <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> método analisa corretamente as cadeias de caracteres que contêm datas curtas em .net Native. No entanto, ele não mantém a compatibilidade com determinadas alterações na análise de data e hora.
 
 - <xref:System.Numerics.BigInteger.ToString%2A?displayProperty=nameWithType>`("E")`é arredondado corretamente em .net Native. Em algumas versões do CLR, a cadeia de caracteres de resultado é truncada em vez de arredondada.
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: visão geral de atributos (Visual Basic)'
 title: Visão geral de atributos
 ms.date: 07/20/2015
 ms.assetid: 1449f69b-c063-41de-8d89-f0bbdcf96ac6
-ms.openlocfilehash: a0a080d44796289cc3562803c84ec915dcedd314
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f25e69452f0af1c89af667619e673f8906704d1f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400701"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437716"
 ---
 # <a name="attributes-overview-visual-basic"></a>Visão geral de atributos (Visual Basic)
 
@@ -148,7 +149,7 @@ Para obter mais informações, consulte:
 
 - [Informações do chamador (Visual Basic)](../caller-information.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Guia de programação do Visual Basic](../../index.md)
 - [Reflexão (Visual Basic)](../reflection.md)

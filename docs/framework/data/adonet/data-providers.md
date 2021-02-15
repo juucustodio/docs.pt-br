@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 03a9fc62-2d24-491a-9fe6-d6bdb6dcb131
-ms.openlocfilehash: b61fede9144e554ee68f0b41adac36209adb7288
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ff5ee6569d8526f44ca489ddc48b09b02f6f8804
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177795"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100461652"
 ---
 # <a name="net-framework-data-providers"></a>Provedores de dados .NET Framework
 
@@ -129,7 +129,7 @@ using System.Data.Odbc;
 ```  
   
 > [!NOTE]
-> O .NET Framework Provedor de Dados para ODBC requer o MDAC 2,6 ou uma versão posterior, e o MDAC 2,8 SP1 é recomendado. Você pode baixar o MDAC 2,8 SP1 no [centro de download da Microsoft](https://www.microsoft.com/download/details.aspx?id=5793).
+> O .NET Framework Provedor de Dados para ODBC requer o MDAC 2,6 ou uma versão posterior, e o MDAC 2,8 SP1 é recomendado.
   
 ## <a name="net-framework-data-provider-for-oracle"></a>Provedor de Dados do .NET Framework para Oracle  
 
@@ -155,7 +155,7 @@ using System.Data.OracleClient;
 
  Dependendo do design e da fonte de dados do seu aplicativo, sua escolha de .NET Framework provedor de dados pode melhorar o desempenho, a capacidade e a integridade do seu aplicativo. A tabela a seguir discute as vantagens e limitações de cada provedor de dados de .NET Framework.  
   
-|Provedor|Observações|  
+|Provedor|Anotações|  
 |--------------|-----------|  
 |Provedor de dados do .NET Framework para SQL Server|Recomendado para aplicativos de camada intermediária que usam Microsoft SQL Server.<br /><br /> Recomendado para aplicativos de camada única que usam o Microsoft Mecanismo de Banco de Dados (MSDE) ou SQL Server.<br /><br /> Recomendado para uso do provedor de OLE DB para SQL Server (SQLOLEDB) com o Provedor de Dados de .NET Framework para OLE DB.|  
 |Provedor de dados .NET Framework para OLE DB|Por SQL Server, o .NET Framework Provedor de Dados para SQL Server é recomendado em vez desse provedor.<br /><br /> Recomendado para aplicativos de camada única que usam os bancos de dados Microsoft Access. O uso de um banco de dados Access para um aplicativo de camada intermediária não é recomendado.|  
@@ -166,7 +166,7 @@ using System.Data.OracleClient;
 
  O provedor EntityClient é usado para acessar dados com base no EDM (Modelo de Dados de Entidade). Diferentemente de outros provedores de dados .NET Framework, ele não interage diretamente com uma fonte de dados. Em vez disso, ele usa o Entity SQL para se comunicar com o provedor de dados subjacente. Para obter mais informações, consulte [EntityClient Provider para o Entity Framework](./ef/entityclient-provider-for-the-entity-framework.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do ADO.NET](ado-net-overview.md)
 - [Recuperando e modificando dados no ADO.NET](retrieving-and-modifying-data.md)

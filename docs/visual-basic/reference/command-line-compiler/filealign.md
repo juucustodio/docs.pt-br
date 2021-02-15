@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-filealign
 title: -filealign
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - /filealign compiler option [Visual Basic]
 - filealign compiler option [Visual Basic]
 ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
-ms.openlocfilehash: 809b7ad005b6bb5f127f84425b5d2beb980df471
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f32ae370c0ef832b501f085351eadb9b6156c730
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058125"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100470285"
 ---
 # <a name="-filealign"></a>-filealign
 
@@ -29,7 +30,7 @@ Especifica onde alinhar as seções do arquivo de saída.
 ## <a name="arguments"></a>Argumentos  
 
  `number`  
- Necessário. Um valor que especifica o alinhamento das seções no arquivo de saída. Os valores válidos são 512, 1024, 2048, 4096 e 8192. Esses valores estão em bytes.  
+ Obrigatório. Um valor que especifica o alinhamento das seções no arquivo de saída. Os valores válidos são 512, 1024, 2048, 4096 e 8192. Esses valores estão em bytes.  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -42,6 +43,6 @@ Especifica onde alinhar as seções do arquivo de saída.
 > [!NOTE]
 > A `-filealign` opção não está disponível no ambiente de desenvolvimento do Visual Studio; ela está disponível somente durante a compilação na linha de comando.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)

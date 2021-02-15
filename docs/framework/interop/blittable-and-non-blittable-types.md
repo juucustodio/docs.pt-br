@@ -6,12 +6,12 @@ helpviewer_keywords:
 - interop marshaling, blittable types
 - blittable types, interop marshaling
 ms.assetid: d03b050e-2916-49a0-99ba-f19316e5c1b3
-ms.openlocfilehash: 5f0f6b2f35c184b4df8c93af1c85e7169cb0cc95
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c9168bd245e10232a798b3e6f3b9448b24996a77
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283140"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436117"
 ---
 # <a name="blittable-and-non-blittable-types"></a>Tipos blittable e não blittable
 
@@ -47,13 +47,13 @@ A maioria dos tipos de dados tem uma representação comum na memória gerenciad
   
  Os seguintes tipos complexos também são tipos blittable:  
   
-- Matrizes unidimensionais de tipos blittable, como uma matriz de inteiros. No entanto, um tipo que contém uma matriz variável de tipos blittable não é blittable em si.  
+- Matrizes unidimensionais de tipos primitivos blittable, como uma matriz de inteiros. No entanto, um tipo que contém uma matriz variável de tipos blittable não é blittable em si.
   
 - Tipos de valor formatados que contêm somente tipos blittable (e classes, se elas tiverem o marshaling realizado como tipos formatados). Para obter mais informações sobre os tipos de valor formatados, consulte [Marshaling padrão para tipos de valor](default-marshaling-behavior.md#default-marshaling-for-value-types).  
   
  Referências de objeto não são blittable. Isso inclui uma matriz de referências a objetos que são blittable por si mesmos. Por exemplo, é possível definir uma estrutura blittable, mas não é possível definir um tipo blittable que contém uma matriz de referências a essas estruturas.  
   
- Como uma otimização, as matrizes de tipos blittable e as classes que contêm somente membros blittable são [fixadas](copying-and-pinning.md), em vez de copiadas durante o marshaling. Esses tipos podem parecer como se tivessem o marshaling realizado como parâmetros de Entrada/Saída quando o chamador e o receptor estão no mesmo apartment. No entanto, esses tipos, na verdade, têm o marshaling realizado como parâmetros de Entrada e é necessário aplicar os atributos <xref:System.Runtime.InteropServices.InAttribute> e <xref:System.Runtime.InteropServices.OutAttribute> de você desejar realizar marshaling do argumento como um parâmetro de Entrada/Saída.  
+ Como uma otimização, as matrizes de tipos primitivos blittable e classes que contêm somente membros blittable são [fixas](copying-and-pinning.md) em vez de copiadas durante o marshaling. Esses tipos podem parecer como se tivessem o marshaling realizado como parâmetros de Entrada/Saída quando o chamador e o receptor estão no mesmo apartment. No entanto, esses tipos, na verdade, têm o marshaling realizado como parâmetros de Entrada e é necessário aplicar os atributos <xref:System.Runtime.InteropServices.InAttribute> e <xref:System.Runtime.InteropServices.OutAttribute> de você desejar realizar marshaling do argumento como um parâmetro de Entrada/Saída.
   
  Alguns tipos de dados gerenciados exigem uma representação diferente em um ambiente não gerenciado. Esses tipos de dados não blittable devem ser convertidos em um formato que pode ter o marshaling realizado. Por exemplo, cadeias de caracteres gerenciadas não são tipos blittable porque devem ser convertidas em objetos de cadeia de caracteres antes que possam ter o marshaling realizado.  
   
@@ -73,6 +73,6 @@ A maioria dos tipos de dados tem uma representação comum na memória gerenciad
   
  Há suporte para tipos de objeto e de classe apenas na interoperabilidade COM. Para tipos correspondentes no Visual Basic, C# e C++, consulte a [Visão geral da biblioteca de classes](../../standard/class-library-overview.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Comportamento de marshaling padrão](default-marshaling-behavior.md)

@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-optionexplicit
 title: -optionexplicit
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - optionexplicit compiler option [Visual Basic]
 - -optionexplicit compiler option [Visual Basic]
 ms.assetid: 5d296ab3-bafe-4c4d-9887-78f162ed86c7
-ms.openlocfilehash: 65cc3fb1b2fa9daa04013caa2b93a3949d0a15b9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4d1ab14bbf9de176de17fb5077f4bb919f5472b4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91098929"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433556"
 ---
 # <a name="-optionexplicit"></a>-optionexplicit
 
@@ -49,7 +50,7 @@ Faz com que o compilador Relate erros se as variáveis não forem declaradas ant
   
  [!code-vb[VbVbalrCompiler#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/OptionExplicitOff.vb#5)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [-optioncompare](optioncompare.md)

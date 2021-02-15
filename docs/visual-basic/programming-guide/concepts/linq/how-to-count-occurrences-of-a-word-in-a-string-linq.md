@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como contar ocorrências de uma palavra em uma cadeia de caracteres (LINQ) (Visual Basic)'
 title: 'Como: contar as ocorrências de uma palavra em uma cadeia de caracteres (LINQ)'
 ms.date: 07/20/2015
 ms.assetid: bc367e46-f7cc-45f9-936f-754e661b7bb9
-ms.openlocfilehash: c6894359e5785419ccf8f283f976c0a897288a5d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dd00d1840f8f4eacdf949b0c1200b26f3692e00d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84405320"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464801"
 ---
 # <a name="how-to-count-occurrences-of-a-word-in-a-string-linq-visual-basic"></a>Como: contar ocorrências de uma palavra em uma cadeia de caracteres (LINQ) (Visual Basic)
 
@@ -62,6 +63,6 @@ End Class
 
 Crie um projeto de aplicativo de console Visual Basic, com uma `Imports` instrução para o namespace System. Linq.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ e cadeias de caracteres (Visual Basic)](linq-and-strings.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como corresponder uma cadeia de caracteres em relação a um padrão (Visual Basic)'
 title: Como corresponder uma cadeia de caracteres a um padrão
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - pattern matching, empty strings
 - operators [Visual Basic], comparison
 ms.assetid: 19a83804-b5af-4739-928b-ac93e64e457f
-ms.openlocfilehash: d8a3c363d1a443db4a0b7633e380562af1913aca
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f3e3426f85d420726571f03c88546d181cdccf97
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403440"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100461938"
 ---
 # <a name="how-to-match-a-string-against-a-pattern-visual-basic"></a>Como corresponder uma cadeia de caracteres a um padrão (Visual Basic)
 
 Se você quiser descobrir se uma expressão do [tipo de dados String](../../../language-reference/data-types/string-data-type.md) satisfaz um padrão, você pode usar o [operador Like](../../../language-reference/operators/like-operator.md).
 
-`Like`usa dois operandos. O operando esquerdo é uma expressão de cadeia de caracteres e o operando à direita é uma cadeia de caracteres que contém o padrão a ser usado para correspondência. `Like`Retorna um `Boolean` valor que indica se a expressão de cadeia de caracteres atende ao padrão.
+`Like` usa dois operandos. O operando esquerdo é uma expressão de cadeia de caracteres e o operando à direita é uma cadeia de caracteres que contém o padrão a ser usado para correspondência. `Like` Retorna um `Boolean` valor que indica se a expressão de cadeia de caracteres atende ao padrão.
 
 Você pode corresponder cada caractere na expressão de cadeia de caracteres em relação a um caractere específico, um caractere curinga, uma lista de caracteres ou um intervalo de caracteres. As posições das especificações na cadeia de caracteres de padrão correspondem às posições dos caracteres a serem correspondidos na expressão de cadeia de caracteres.
 
@@ -66,7 +67,7 @@ Observe que essa correspondência diferencia maiúsculas de minúsculas.
 
 ## <a name="matching-empty-strings"></a>Correspondência de cadeias de caracteres vazias
 
-`Like`trata a sequência `[]` como uma cadeia de caracteres de comprimento zero ( `""` ). Você pode usar `[]` para testar se a expressão de cadeia de caracteres inteira está vazia, mas não pode usá-la para testar se uma determinada posição na expressão de cadeia de caracteres está vazia. Se uma posição vazia for uma das opções que você precisa testar, você poderá usar `Like` mais de uma vez.
+`Like` trata a sequência `[]` como uma cadeia de caracteres de comprimento zero ( `""` ). Você pode usar `[]` para testar se a expressão de cadeia de caracteres inteira está vazia, mas não pode usá-la para testar se uma determinada posição na expressão de cadeia de caracteres está vazia. Se uma posição vazia for uma das opções que você precisa testar, você poderá usar `Like` mais de uma vez.
 
 ### <a name="to-match-a-character-in-the-string-expression-against-a-list-of-characters-or-no-character"></a>Para corresponder a um caractere na expressão de cadeia de caracteres em uma lista ou nenhum caractere
 
@@ -80,7 +81,7 @@ Observe que essa correspondência diferencia maiúsculas de minúsculas.
 
     [!code-vb[VbVbalrOperators#74](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#74)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores de comparação](../../../language-reference/operators/comparison-operators.md)
 - [Operadores e expressões](index.md)
